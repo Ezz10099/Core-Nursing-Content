@@ -1,8 +1,23 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 4,
+  "contentVersion": 5,
   "updatedAt": "2026-09-25",
   "faq": [
+    {
+      "id": "sync-test-v5",
+      "question": "🟢 LIVE UPDATE TEST — VERSION 5",
+      "sections": [
+        {
+          "label": "What this proves",
+          "text": "If this entry appears after pressing Check for content updates, Core Nursing successfully downloaded a new content version after the APK was installed. No APK rebuild or reinstall was used for this version 5 change."
+        },
+        {
+          "label": "Expected app status",
+          "text": "The Home screen should report content version 5, and the top badge should show UPDATED v5."
+        }
+      ],
+      "verification": "Technical synchronization test only; no clinical recommendation."
+    },
     {
       "id": "sync-test-v4-obvious",
       "question": "✅ LIVE UPDATE TEST — VERSION 4",
