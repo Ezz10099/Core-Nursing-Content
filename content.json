@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 5,
+  "contentVersion": 6,
   "updatedAt": "2026-09-25",
   "faq": [
     {
@@ -78,6 +78,15 @@
         }
       ],
       "verification": "Synchronization test item only; it contains no clinical recommendation."
+    }
+  ],
+  "faqItems": [
+    {
+      "id": "sync-test-v6",
+      "question": "🟣 LIVE UPDATE TEST — VERSION 6",
+      "answer": "If this appears after you press Check for content updates, the installed APK successfully downloaded fresh content from GitHub without another APK rebuild.",
+      "remember": "UPDATED v6",
+      "sources": []
     }
   ]
 }
