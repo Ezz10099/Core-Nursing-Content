@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 8,
+  "contentVersion": 9,
   "updatedAt": "2026-09-25",
   "faq": [
     {
@@ -123,6 +123,26 @@
         }
       ],
       "verification": "Synchronization test item only; it contains no clinical recommendation."
+    }
+  ],
+  "medications": [
+    {
+      "id": "verified-losartan",
+      "name": "LOSARTAN",
+      "header": "LOSARTAN",
+      "drugclass": "Angiotensin II receptor blocker (ARB).",
+      "availability": "Palestinian-system evidence: the Palestinian Essential Medicines List includes losartan 50 mg tablet as an antihypertensive. Current stock/availability at a specific Gaza facility has not been independently confirmed.",
+      "use": "Main use: treatment of hypertension. Current labeling also includes selected hypertensive patients with left ventricular hypertrophy and diabetic nephropathy in type 2 diabetes.",
+      "administration": "Oral tablet. The Palestinian Essential Medicines List identifies a 50 mg tablet. Administer only according to the prescribed order; verify the product/strength in hand and current local protocol.",
+      "monitor": "• Check blood pressure and watch for symptomatic hypotension, especially with volume or salt depletion. • Review renal function because renal deterioration can occur in susceptible patients. • Monitor serum potassium because hyperkalemia can occur. • Review concurrent potassium-raising drugs, NSAIDs, lithium, and other renin-angiotensin system blockers. • Pregnancy is a major safety issue: current labeling carries a fetal-toxicity boxed warning.",
+      "why": "Blocking angiotensin II AT1-receptor effects reduces vasoconstriction and aldosterone-mediated effects, lowering blood pressure. Renal function and potassium matter because the renin-angiotensin-aldosterone system also helps regulate renal perfusion and potassium balance.",
+      "source": "Verified update · Palestinian EML + current DailyMed",
+      "pages": "Palestinian EML: losartan 50 mg tablet",
+      "category": "verified",
+      "memoryUse": "ARB used mainly to lower blood pressure in hypertension.",
+      "memoryDanger": "Watch K+, renal function and hypotension. Major red flag: pregnancy.",
+      "mechanism": "Selectively blocks angiotensin II binding to the AT1 receptor, reducing vasoconstriction and aldosterone effects.",
+      "mechanismBasis": "Verified against current losartan prescribing information; Palestinian relevance supported by the Palestinian Essential Medicines List. Gaza facility-specific stock remains unconfirmed."
     }
   ]
 }
