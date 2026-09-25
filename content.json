@@ -1,8 +1,23 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 6,
+  "contentVersion": 7,
   "updatedAt": "2026-09-25",
   "faq": [
+    {
+      "id": "sync-test-v7",
+      "question": "🔵 FINAL LIVE UPDATE TEST — VERSION 7",
+      "sections": [
+        {
+          "label": "What this proves",
+          "text": "This version was published only after the final sync-test APK was installed. If it appears after pressing Check for content updates, the GitHub API updater works without rebuilding or reinstalling the APK."
+        },
+        {
+          "label": "Expected app status",
+          "text": "The app should report content version 7 and show UPDATED v7."
+        }
+      ],
+      "verification": "Technical synchronization test only; no clinical recommendation."
+    },
     {
       "id": "sync-test-v6",
       "question": "🟣 LIVE UPDATE TEST — VERSION 6",
