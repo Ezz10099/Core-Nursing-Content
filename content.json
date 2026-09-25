@@ -4,6 +4,21 @@
   "updatedAt": "2026-09-25",
   "faq": [
     {
+      "id": "sync-test-v6",
+      "question": "🟣 LIVE UPDATE TEST — VERSION 6",
+      "sections": [
+        {
+          "label": "What this proves",
+          "text": "If this entry appears after pressing Check for content updates, the installed APK downloaded version 6 after installation without another content-bundling rebuild."
+        },
+        {
+          "label": "Expected app status",
+          "text": "The app should report content version 6 and show UPDATED v6."
+        }
+      ],
+      "verification": "Technical synchronization test only; no clinical recommendation."
+    },
+    {
       "id": "sync-test-v5",
       "question": "🟢 LIVE UPDATE TEST — VERSION 5",
       "sections": [
@@ -78,15 +93,6 @@
         }
       ],
       "verification": "Synchronization test item only; it contains no clinical recommendation."
-    }
-  ],
-  "faqItems": [
-    {
-      "id": "sync-test-v6",
-      "question": "🟣 LIVE UPDATE TEST — VERSION 6",
-      "answer": "If this appears after you press Check for content updates, the installed APK successfully downloaded fresh content from GitHub without another APK rebuild.",
-      "remember": "UPDATED v6",
-      "sources": []
     }
   ]
 }
