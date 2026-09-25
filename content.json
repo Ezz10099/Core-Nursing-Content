@@ -1,21 +1,53 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 2,
+  "contentVersion": 3,
   "updatedAt": "2026-09-25",
   "faq": [
     {
       "id": "lmwh-clexane-fraxiparine-use-renal",
       "question": "Clexane vs Fraxiparine: when is each used, and why might one not be used?",
       "sections": [
-        {"label":"What they are","text":"Clexane is enoxaparin; Fraxiparine/Fraxaparin is nadroparin. Both are low-molecular-weight heparin (LMWH) anticoagulants. They overlap in purpose, but they are different medicines with product-specific dosing and must not be substituted dose-for-dose."},
-        {"label":"When Clexane (enoxaparin) is used","text":"Current enoxaparin labeling includes prevention of DVT in selected surgical or acutely ill medical patients, treatment of acute DVT with or without pulmonary embolism, prevention of ischemic complications in unstable angina/non-Q-wave MI with aspirin, and treatment of acute STEMI with aspirin."},
-        {"label":"When Fraxiparine (nadroparin) is used","text":"Current Fraxiparine product information includes prevention of thromboembolic disorders in surgical patients and high-risk medical/ICU patients, treatment of thromboembolic disorders, prevention of clotting during haemodialysis, and treatment of unstable angina/non-Q-wave MI."},
-        {"label":"Why might Fraxiparine not be used?","text":"Renal function is an important reason. Nadroparin exposure increases as kidney function falls, increasing bleeding risk. Current Fraxiparine product information states that for treatment of thromboembolic disorders, unstable angina and non-Q-wave MI, nadroparin is contraindicated in severe renal impairment (CrCl <30 mL/min). Its prophylaxis recommendations are different and include dose reduction in severe renal impairment, so 'renal failure means never use Fraxiparine' would be too broad."},
-        {"label":"Why might Clexane be used instead?","text":"Enoxaparin also accumulates in renal impairment and bleeding risk increases, but current prescribing information provides specific reduced prophylactic and treatment regimens when CrCl is <30 mL/min. Therefore severe renal impairment does not automatically exclude enoxaparin under its product labeling; the dose/indication must be adjusted and verified."},
-        {"label":"What does NOT decide between them?","text":"Do not choose based on serum creatinine alone, trade-name familiarity, or an assumed dose conversion. Check estimated renal function (especially CrCl), the indication, bleeding risk, platelet history/count, the exact ordered product, and the applicable local protocol/order."},
-        {"label":"CCU nursing takeaway","text":"For ACS or another anticoagulation indication, first identify exactly which LMWH is ordered and why. Before administration, check bleeding risk, platelets and renal function. If renal function is severely impaired, stop and verify the product-specific order/protocol rather than automatically giving the usual dose or swapping Clexane and Fraxiparine."}
+        {
+          "label": "What they are",
+          "text": "Clexane is enoxaparin; Fraxiparine/Fraxaparin is nadroparin. Both are low-molecular-weight heparin (LMWH) anticoagulants. They overlap in purpose, but they are different medicines with product-specific dosing and must not be substituted dose-for-dose."
+        },
+        {
+          "label": "When Clexane (enoxaparin) is used",
+          "text": "Current enoxaparin labeling includes prevention of DVT in selected surgical or acutely ill medical patients, treatment of acute DVT with or without pulmonary embolism, prevention of ischemic complications in unstable angina/non-Q-wave MI with aspirin, and treatment of acute STEMI with aspirin."
+        },
+        {
+          "label": "When Fraxiparine (nadroparin) is used",
+          "text": "Current Fraxiparine product information includes prevention of thromboembolic disorders in surgical patients and high-risk medical/ICU patients, treatment of thromboembolic disorders, prevention of clotting during haemodialysis, and treatment of unstable angina/non-Q-wave MI."
+        },
+        {
+          "label": "Why might Fraxiparine not be used?",
+          "text": "Renal function is an important reason. Nadroparin exposure increases as kidney function falls, increasing bleeding risk. Current Fraxiparine product information states that for treatment of thromboembolic disorders, unstable angina and non-Q-wave MI, nadroparin is contraindicated in severe renal impairment (CrCl <30 mL/min). Its prophylaxis recommendations are different and include dose reduction in severe renal impairment, so 'renal failure means never use Fraxiparine' would be too broad."
+        },
+        {
+          "label": "Why might Clexane be used instead?",
+          "text": "Enoxaparin also accumulates in renal impairment and bleeding risk increases, but current prescribing information provides specific reduced prophylactic and treatment regimens when CrCl is <30 mL/min. Therefore severe renal impairment does not automatically exclude enoxaparin under its product labeling; the dose/indication must be adjusted and verified."
+        },
+        {
+          "label": "What does NOT decide between them?",
+          "text": "Do not choose based on serum creatinine alone, trade-name familiarity, or an assumed dose conversion. Check estimated renal function (especially CrCl), the indication, bleeding risk, platelet history/count, the exact ordered product, and the applicable local protocol/order."
+        },
+        {
+          "label": "CCU nursing takeaway",
+          "text": "For ACS or another anticoagulation indication, first identify exactly which LMWH is ordered and why. Before administration, check bleeding risk, platelets and renal function. If renal function is severely impaired, stop and verify the product-specific order/protocol rather than automatically giving the usual dose or swapping Clexane and Fraxiparine."
+        }
       ],
-      "verification":"Current drug-specific renal and indication statements verified 25 Sep 2026 against current DailyMed enoxaparin prescribing information and current Fraxiparine product information. Gaza-specific preference/selection between enoxaparin and nadroparin remains unverified; do not infer that one is routinely preferred locally."
+      "verification": "Current drug-specific renal and indication statements verified 25 Sep 2026 against current DailyMed enoxaparin prescribing information and current Fraxiparine product information. Gaza-specific preference/selection between enoxaparin and nadroparin remains unverified; do not infer that one is routinely preferred locally."
+    },
+    {
+      "id": "sync-test-v3",
+      "question": "Sync test: did this FAQ arrive without reinstalling the APK?",
+      "sections": [
+        {
+          "label": "Test result",
+          "text": "If you can read this question after tapping Check for content updates, the online content-sync system is working. This item was added as content version 3 without rebuilding the Android APK."
+        }
+      ],
+      "verification": "Synchronization test item only; it contains no clinical recommendation."
     }
   ]
 }
