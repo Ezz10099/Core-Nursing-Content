@@ -1,8 +1,23 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 7,
+  "contentVersion": 8,
   "updatedAt": "2026-09-25",
   "faq": [
+    {
+      "id": "sync-test-v8-second-pass",
+      "question": "🟠 SECOND LIVE UPDATE TEST — VERSION 8",
+      "sections": [
+        {
+          "label": "Test purpose",
+          "text": "This is a second independent update published after version 7 was already downloaded successfully. It tests that the updater continues to receive later versions, not just one successful update."
+        },
+        {
+          "label": "Expected result",
+          "text": "After pressing Check for content updates, the app should report version 8, show UPDATED v8, and this FAQ entry should appear while the previously downloaded content remains available."
+        }
+      ],
+      "verification": "Technical synchronization test only; no clinical recommendation."
+    },
     {
       "id": "sync-test-v7",
       "question": "🔵 FINAL LIVE UPDATE TEST — VERSION 7",
