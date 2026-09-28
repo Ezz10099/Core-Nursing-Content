@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 10,
-  "updatedAt": "2026-09-26",
+  "contentVersion": 11,
+  "updatedAt": "2026-09-28",
   "faq": [
     {
       "id": "sync-test-v8-second-pass",
@@ -123,6 +123,106 @@
         }
       ],
       "verification": "Synchronization test item only; it contains no clinical recommendation."
+    },
+    {
+      "id": "qa-heart-failure-practical",
+      "question": "What is heart failure?",
+      "sections": [
+        {
+          "label": "Core idea",
+          "text": "Heart failure means the heart is not functioning well enough to meet the body's needs without abnormal filling pressures. At the bedside, think in two directions: congestion and poor perfusion."
+        },
+        {
+          "label": "Congestion",
+          "text": "Dyspnea, orthopnea, crackles, leg edema, raised JVP and fluid/weight gain."
+        },
+        {
+          "label": "Poor perfusion",
+          "text": "Hypotension, cold/clammy skin, weak pulse, confusion and low urine output."
+        },
+        {
+          "label": "Left vs right",
+          "text": "Left-sided HF mainly backs up into the lungs → dyspnea, orthopnea, crackles and pulmonary edema. Right-sided HF mainly backs up into the systemic veins → peripheral edema, raised JVP and abdominal/hepatic congestion."
+        },
+        {
+          "label": "EF",
+          "text": "Ejection fraction is the percentage of blood in the LV ejected with each contraction. Current 2026 ESC guidance uses an updated LVEF-based classification; do not judge a patient's clinical severity from EF alone."
+        },
+        {
+          "label": "Nursing focus",
+          "text": "Breathing + BP + rhythm + perfusion + urine output + fluid balance. Escalate sudden severe dyspnea, pulmonary edema, falling BP, altered consciousness, dangerous arrhythmia, very low urine output or ischemic chest pain."
+        },
+        {
+          "label": "Memory",
+          "text": "HF patients may be 'wet' from congestion, 'cold' from poor perfusion, or both."
+        }
+      ],
+      "verification": "Heart-failure framework reviewed against current 2026 ESC heart-failure guidance."
+    },
+    {
+      "id": "qa-what-is-dcm",
+      "question": "What is DCM?",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "DCM = dilated cardiomyopathy. The ventricles, especially the LV, become enlarged and contract weakly, so cardiac output can fall."
+        },
+        {
+          "label": "What you may see",
+          "text": "It often presents with heart-failure features such as dyspnea, orthopnea, fatigue, edema and crackles if congested. Arrhythmias may also occur."
+        },
+        {
+          "label": "Why it matters in CCU",
+          "text": "A patient with DCM can deteriorate with acute heart failure, arrhythmia, low cardiac output or cardiogenic shock."
+        },
+        {
+          "label": "Nursing focus",
+          "text": "Monitor BP, rhythm, SpO₂, breathing, edema, urine output and perfusion."
+        },
+        {
+          "label": "Memory",
+          "text": "DCM = dilated heart + weak pump → heart-failure and arrhythmia risk."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic quick clinical reference."
+    },
+    {
+      "id": "qa-dcm-causes",
+      "question": "What can dilated cardiomyopathy result from?",
+      "sections": [
+        {
+          "label": "High-yield causes",
+          "text": "Genetic/familial disease; myocarditis; alcohol or cardiotoxic drugs; ischemic heart disease or previous MI; peripartum cardiomyopathy; long-standing tachyarrhythmias; and some endocrine, metabolic or nutritional disorders. Sometimes no clear cause is found."
+        },
+        {
+          "label": "Simple idea",
+          "text": "Many different conditions can damage or weaken the myocardium enough to produce ventricular dilation and poor contraction."
+        },
+        {
+          "label": "CCU priority",
+          "text": "At the bedside, also ask whether the DCM patient is currently in heart failure, an arrhythmia or a low-output state."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic quick clinical reference."
+    },
+    {
+      "id": "qa-ihd-vs-mi",
+      "question": "What is the difference between ischemic heart disease (IHD) and myocardial infarction (MI)?",
+      "sections": [
+        {
+          "label": "IHD",
+          "text": "Ischemic heart disease is the broader disease state caused by inadequate coronary blood supply. It can include stable angina, unstable angina, MI and chronic ischemic cardiomyopathy."
+        },
+        {
+          "label": "MI",
+          "text": "Myocardial infarction is a specific event in which myocardial ischemia is severe/prolonged enough to cause myocardial injury with necrosis in the appropriate ischemic clinical context."
+        },
+        {
+          "label": "Memory",
+          "text": "MI is one possible manifestation of ischemic heart disease, but a patient can have IHD without currently having an MI. Example: stable exertional angina."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic quick clinical reference."
     }
   ],
   "medications": [
@@ -578,6 +678,85 @@
         }
       ],
       "sourceNote": "Quick clinical reference from this Core Nursing Diagnostic session."
+    }
+  ],
+  "guides": [
+    {
+      "id": "ccu-lesson-01-acs",
+      "name": "Lesson 1 — Acute Coronary Syndrome (ACS)",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "ACUTE CORONARY SYNDROME (ACS)\n\nEssential meaning\nACS = acute myocardial ischemia from reduced coronary blood flow. It includes unstable angina, NSTEMI and STEMI.\n\nDifferentiate\n• Unstable angina: ischemia without biomarker evidence of myocardial necrosis.\n• NSTEMI: myocardial infarction without persistent ST elevation; ECG may show ST depression or T-wave changes.\n• STEMI: acute ischemic presentation with compatible ST elevation.\n\nRecognize\n• Chest pressure, tightness or heaviness\n• Radiation to arm, shoulder, jaw, neck or back\n• Dyspnea\n• Sweating\n• Nausea or vomiting\n• Dizziness\n\nFirst nursing actions\n• ABC assessment and vital signs\n• Cardiac monitoring and rhythm check\n• Obtain a 12-lead ECG promptly\n• Establish IV access\n• Obtain ordered blood tests\n• Give prescribed ACS treatment\n• Oxygen only when clinically indicated and according to local protocol\n• Escalate immediately for ischemic ECG changes, hypotension, serious arrhythmia, worsening dyspnea, altered consciousness or deterioration\n\nKey rule\nDo not wait for a cardiac biomarker result before escalating concerning ischemic symptoms, ECG changes or hemodynamic instability.\n\nLocal CCU note\nWhere troponin trending is unavailable, CK/CK-MB may still be encountered locally, but symptoms + ECG + clinical status remain essential."
+    },
+    {
+      "id": "ccu-lesson-02-chb",
+      "name": "Lesson 2 — Complete Heart Block (CHB)",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "COMPLETE HEART BLOCK (CHB)\n\nEssential meaning\nComplete heart block = third-degree AV block. Atrial impulses do not conduct to the ventricles, so atria and ventricles beat independently.\n\nECG hallmark\nP waves and QRS complexes march separately with no fixed PR relationship = AV dissociation.\n\nWhy it is dangerous\nA slow ventricular escape rhythm can reduce cardiac output and cause:\n• Dizziness or syncope\n• Hypotension\n• Confusion\n• Ischemic chest discomfort\n• Acute heart failure\n• Shock or cardiac arrest\n\nDifferentiate from sinus bradycardia\nSinus bradycardia: each P wave conducts to a QRS.\nCHB: P waves and QRS complexes are independent.\n\nFirst nursing actions\n• Look at the patient first\n• ABC assessment\n• Check pulse, BP, consciousness, SpO₂ and symptoms\n• Continuous monitoring and 12-lead ECG\n• Establish IV access\n• Escalate rapidly if symptomatic or unstable\n• Prepare for pacing if required\n\nCommon causes\n• MI/ischemia\n• Beta-blockers\n• Calcium-channel blockers\n• Digoxin\n• Hypoxia\n• Hyperkalemia\n\nMemory\nCHB = atria and ventricles beat independently. Poor perfusion = escalate and prepare for pacing."
+    },
+    {
+      "id": "ccu-lesson-03-12lead-ecg",
+      "name": "Lesson 3 — 12-Lead ECG Practical Basics",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "12-LEAD ECG PRACTICAL BASICS\n\n10 electrodes, 12 leads\nA 12-lead ECG uses 10 physical electrodes: 4 limb electrodes + 6 chest electrodes. The machine derives 12 electrical views.\n\nElectrode vs lead\nElectrode = the physical sticker/wire touching the patient.\nLead = the electrical view the machine sees.\n\nChest electrode placement\n• V1: 4th intercostal space, right sternal border\n• V2: 4th intercostal space, left sternal border\n• V3: halfway between V2 and V4\n• V4: 5th intercostal space, left midclavicular line\n• V5: same horizontal level as V4, anterior axillary line\n• V6: same horizontal level as V4, midaxillary line\n\nHelpful placement order\nV1 → V2 → V4 → V3 → V5 → V6\n\nMain waves\nP = atrial depolarization\nQRS = ventricular depolarization\nT = ventricular repolarization\n\nIEC limb colors commonly seen locally\n• RA/R = red\n• LA/L = yellow\n• LL/F = green\n• RL/N = black\n\nCommon mistake\nPlacing V1 and V2 too high can create a misleading tracing."
+    },
+    {
+      "id": "ccu-lesson-04-telemetry",
+      "name": "Lesson 4 — Telemetry & Basic Rhythm Interpretation",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "TELEMETRY & BASIC RHYTHM INTERPRETATION\n\nWhat telemetry is\nTelemetry/bedside ECG monitoring continuously displays cardiac electrical rhythm. It is not the same as a diagnostic 12-lead ECG.\n\n3-lead monitoring\nA common setup uses three electrodes for continuous heart-rate and rhythm monitoring.\n\nECG waveform vs pleth\nECG waveform comes from ECG electrodes and reflects electrical activity.\nPleth waveform comes from the pulse-oximeter probe and reflects pulsatile blood flow; it gives SpO₂ and pulse rate.\n\nRead a rhythm in order\nPatient → Rate → Regularity → P waves → PR interval → QRS → P/QRS relationship.\n\nUseful basics\n• 6-second strip: QRS count × 10 ≈ heart rate\n• Regular rhythm: 300 ÷ large boxes between R waves\n• PR normally about 0.12–0.20 sec\n• QRS normally <0.12 sec\n\nNormal sinus rhythm\nRegular, about 60–100 bpm, P before each QRS, consistent PR, narrow QRS.\n\nArtifact rule\nIf the monitor looks chaotic but the patient is awake, talking and has a strong regular pulse, suspect artifact. Check the patient and pulse before treating the monitor."
+    },
+    {
+      "id": "ccu-lesson-05-dangerous-rhythms",
+      "name": "Lesson 5 — Dangerous Rhythms",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "DANGEROUS RHYTHMS\n\nFirst principle\nPatient + pulse + rhythm.\n\nShockable cardiac-arrest rhythms\n• Ventricular fibrillation (VF)\n• Pulseless ventricular tachycardia (pVT)\n\nNon-shockable cardiac-arrest rhythms\n• Pulseless electrical activity (PEA)\n• Asystole\n\nVF\nChaotic rhythm with no effective cardiac output and no pulse → CPR + defibrillation.\n\nVT\nAlways ask: does the patient have a pulse?\n• Pulseless VT → cardiac-arrest pathway and defibrillation.\n• VT with a pulse → stable/unstable tachyarrhythmia pathway.\n\nPEA\nOrganized electrical activity is present but there is no pulse. PEA has no single ECG appearance.\n\nAsystole\nNo ventricular electrical activity. It is not shockable.\n\nSigns of instability\n• Hypotension\n• Acute altered mental status\n• Signs of shock\n• Ischemic chest discomfort\n• Acute heart failure\n\nMemory\nVF + pVT = shockable.\nPEA + asystole = non-shockable."
+    },
+    {
+      "id": "ccu-lesson-06-electrical-treatment",
+      "name": "Lesson 6 — Defibrillation vs Cardioversion vs Pacing",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "DEFIBRILLATION VS CARDIOVERSION VS PACING\n\nStart with two questions\n1. Does the patient have a pulse?\n2. If yes, are they stable or unstable?\n\nDefibrillation\nUnsynchronized shock used for cardiac arrest with VF or pulseless VT.\nPEA and asystole are not shockable.\n\nSynchronized cardioversion\nA timed shock synchronized to the R wave, typically used for an unstable tachyarrhythmia when a pulse is present.\n\nWhy synchronization matters\nSynchronization avoids delivering the shock during the vulnerable T-wave period.\n\nImportant exception\nPolymorphic VT requiring shock is treated with an unsynchronized shock because reliable synchronization is not possible.\n\nPacing\nRepeated electrical stimulation used for dangerous symptomatic bradycardia/high-grade block such as CHB.\n\nCapture\nElectrical capture = pacing spike followed by a QRS.\nMechanical capture = corresponding pulse/BP/perfusion.\nConfirm both.\n\nNursing role\nAssess the patient, monitor continuously, establish IV access, attach pads, prepare equipment, confirm the correct mode, assist with analgesia/sedation when appropriate, ensure electrical safety, then reassess rhythm, pulse, BP and symptoms.\n\nMemory\nDefib = VF/pVT arrest.\nCardioversion = unstable fast rhythm with pulse.\nPacing = dangerous bradycardia."
+    },
+    {
+      "id": "ccu-lesson-07-deterioration",
+      "name": "Lesson 7 — Sudden Deterioration in CCU",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "SUDDEN DETERIORATION IN CCU\n\nCore sequence\nPatient first → ABC → monitor → identify danger → escalate → reassess.\n\nFirst 30–60 seconds\n• A Airway: can the patient talk? Any obstruction?\n• B Breathing: RR, effort, SpO₂, breath sounds\n• C Circulation: pulse, BP, rhythm, skin/perfusion\n• D Disability: consciousness/confusion\n• E Exposure: bleeding, edema, lines, obvious cause\n\nRed flags\n• New severe chest pain\n• Sudden dyspnea\n• Falling SpO₂\n• Hypotension or marked BP fall\n• New confusion/reduced consciousness\n• Very fast or very slow HR with symptoms\n• Dangerous arrhythmia\n• Cold/clammy skin or weak pulse\n• No pulse\n• Sudden major bleeding\n\nPractical actions\n• ECG + BP + SpO₂ monitoring\n• Ensure IV access\n• Position appropriately\n• Give oxygen when indicated\n• Obtain 12-lead ECG when relevant\n• Prepare emergency equipment/medications as directed\n• Reassess after every intervention\n\nExamples\nMonitor shows VT → look at the patient and check the pulse.\nWorsening chest pain → vitals + rhythm + 12-lead + escalate; do not wait for biomarkers.\nUnresponsive patient → assess responsiveness, breathing and pulse; if pulseless, start the cardiac-arrest response."
+    },
+    {
+      "id": "ccu-lesson-08-cardiogenic-shock",
+      "name": "Lesson 8 — Cardiogenic Shock & Poor Perfusion",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "CARDIOGENIC SHOCK & POOR PERFUSION\n\nEssential meaning\nCardiogenic shock = the heart cannot pump enough blood to perfuse the organs.\nWeak pump → low cardiac output → organ hypoperfusion.\n\nSuspect it when\n• Hypotension\n• Cold/clammy extremities\n• Weak peripheral pulses\n• Confusion/reduced consciousness\n• Low urine output\n• Tachycardia or significant bradycardia\n• Dyspnea/crackles may coexist\n\nCommon CCU causes\n• Acute MI\n• Severe heart failure\n• Serious arrhythmia\n• Mechanical complication after MI\n• Severe valve dysfunction\n\nFirst nursing response\nABC → BP → rhythm → perfusion → escalate.\nAssess SpO₂/breathing, consciousness, skin, pulses and urine output; ensure monitoring and IV access.\n\nImportant mistake\nDo not automatically give a large IV fluid bolus. If the pump is failing, excess fluid can worsen pulmonary edema.\n\nDifferentiate shock types\n• Cardiogenic = pump failure; may have wet lungs/crackles and raised JVP.\n• Hypovolemic = empty tank; often clear lungs, flat neck veins, bleeding/dehydration/fluid-loss history.\n• Distributive = vessels too dilated; septic shock may be warm early.\n• Obstructive = flow physically blocked, e.g. tension pneumothorax, tamponade or massive PE.\n\nMemory\nCardiogenic = weak pump.\nHypovolemic = empty tank.\nUse the whole clinical picture, not one sign."
+    },
+    {
+      "id": "ccu-lesson-09-norepi-dobutamine",
+      "name": "Lesson 9 — Norepinephrine vs Dobutamine",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "NOREPINEPHRINE VS DOBUTAMINE\n\nThe easiest way to remember\nNorepinephrine = Pressure.\nDobutamine = Pump.\n\nNorepinephrine\nThink: BP/perfusion is too low.\nIt mainly increases vascular tone and raises blood pressure.\n\nDobutamine\nThink: the heart itself is pumping too weakly.\nIt mainly increases contractility and cardiac output.\n\nWhy both may be used\nIf the patient has both a weak pump and dangerously low pressure, the team may use dobutamine for pump support and norepinephrine for pressure support.\n\nWhat to monitor\nNorepinephrine:\n• BP/MAP\n• Rhythm\n• Perfusion\n• Urine output\n• IV site\n\nDobutamine:\n• HR/rhythm\n• BP\n• Perfusion\n• Urine output\n\nSafety\nThese are continuous/titrated IV infusions. Do not memorize one universal mL/hour rate; the rate depends on the ordered dose and prepared concentration.\n\nMemory\nNorepinephrine = pressure.\nDobutamine = pump."
+    },
+    {
+      "id": "ccu-lesson-10-electrolytes",
+      "name": "Lesson 10 — Electrolytes That Can Cause Arrhythmias",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "ELECTROLYTES THAT CAN CAUSE ARRHYTHMIAS\n\nPotassium K⁺\nPotassium strongly affects cardiac electrical activity.\n\nLow K⁺\n• Weakness\n• Ectopy/arrhythmias\n• ECG may show flattened T waves or U waves\n• Can occur with loop diuretics such as furosemide\n\nHigh K⁺\n• Weakness\n• ECG may show tall peaked T waves\n• Severe hyperkalemia can progress to QRS widening, dangerous bradyarrhythmias and cardiac arrest\n\nMagnesium Mg²⁺\nLow Mg²⁺ makes the heart electrically irritable and can contribute to ventricular arrhythmias. It can also make hypokalemia harder to correct. Magnesium is especially important in torsades de pointes.\n\nCalcium Ca²⁺\nCalcium affects contraction and the QT interval.\n• Low Ca²⁺ tends to prolong QT\n• High Ca²⁺ tends to shorten QT\n\nPractical CCU example\nA patient on a loop diuretic develops frequent PVCs → do not only think 'the rhythm changed'; also check K⁺ and Mg²⁺.\n\nNursing safety\nIf an electrolyte abnormality is accompanied by rhythm/ECG changes, monitor continuously and escalate promptly.\nNever give IV potassium as a rapid IV push.\n\nMemory\nK⁺ = rhythm priority.\nMg²⁺ = rhythm stability.\nCa²⁺ = contraction + QT."
+    },
+    {
+      "id": "ccu-lesson-11-furosemide",
+      "name": "Lesson 11 — Furosemide in the CCU",
+      "source": "Core Nursing Diagnostic · CCU lesson",
+      "pages": "Live lesson",
+      "body": "FUROSEMIDE IN THE CCU\n\nWhy the patient may receive it\nThink fluid overload/congestion, especially in heart failure:\nbreathlessness + crackles + edema.\n\nWhat furosemide does\nFurosemide is a loop diuretic.\nMore urine → less excess fluid → less congestion.\n\nWhat improvement may look like\n• Easier breathing\n• Less edema\n• Fewer crackles\n• Reduced fluid overload\n\nWhat the nurse monitors\n• BP\n• Urine output\n• Potassium K⁺\n• Renal function\n• Overall fluid status\n\nMain problems to watch for\n• Hypotension\n• Excessive volume depletion/dehydration\n• Hypokalemia\n• Worsening renal function\n\nCCU connection\nIf a patient receiving furosemide develops new PVCs or another rhythm change, think about K⁺ and Mg²⁺ as possible contributors.\n\nMemory\nFurosemide = remove excess fluid.\nWatch BP, urine output, kidney function and K⁺."
     }
   ]
 }
