@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 11,
+  "contentVersion": 12,
   "updatedAt": "2026-09-28",
   "faq": [
     {
@@ -223,6 +223,212 @@
         }
       ],
       "verification": "Core Nursing Diagnostic quick clinical reference."
+    },
+    {
+      "id": "qa-ckmb-meaning",
+      "question": "What does CK-MB mean, and how is it different from total CK?",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "CK = creatine kinase. CK-MB is the MB isoenzyme of creatine kinase. CK isoenzymes are built from M and B subunits: M = muscle subunit, B = brain subunit."
+        },
+        {
+          "label": "Difference",
+          "text": "Total CK is nonspecific and can rise with skeletal-muscle injury. CK-MB is more cardiac-associated than total CK, but it is an older and less specific cardiac biomarker than modern troponin testing."
+        },
+        {
+          "label": "CCU takeaway",
+          "text": "Interpret CK/CK-MB together with symptoms, ECG and the overall ischemic clinical picture; biomarker elevation alone does not define MI."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic clarification; local use of CK/CK-MB reflects reported current CCU practice, not a universal standard."
+    },
+    {
+      "id": "qa-cardioversion-vs-defib",
+      "question": "What is cardioversion, and how is it different from defibrillation?",
+      "sections": [
+        {
+          "label": "Cardioversion",
+          "text": "Synchronized cardioversion is an electrical shock timed to the R wave. It is typically used for an unstable tachyarrhythmia when a pulse is present."
+        },
+        {
+          "label": "Defibrillation",
+          "text": "Defibrillation is an unsynchronized shock used for cardiac arrest with VF or pulseless VT."
+        },
+        {
+          "label": "Memory",
+          "text": "Cardioversion = synchronized + pulse. Defibrillation = unsynchronized + VF/pulseless VT arrest."
+        }
+      ],
+      "verification": "Reviewed against current 2025 AHA adult advanced-life-support guidance."
+    },
+    {
+      "id": "qa-shockable-rhythms",
+      "question": "Which cardiac-arrest rhythms are shockable? Is pulseless VT really shockable?",
+      "sections": [
+        {
+          "label": "Shockable",
+          "text": "Yes. Ventricular fibrillation (VF) and pulseless ventricular tachycardia (pVT) are the two shockable cardiac-arrest rhythms."
+        },
+        {
+          "label": "Non-shockable",
+          "text": "Pulseless electrical activity (PEA) and asystole are non-shockable."
+        },
+        {
+          "label": "Memory",
+          "text": "VF + pVT = shock. PEA + asystole = no shock."
+        }
+      ],
+      "verification": "Reviewed against current 2025 AHA cardiac-arrest guidance."
+    },
+    {
+      "id": "qa-pea",
+      "question": "What is pulseless electrical activity (PEA)?",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "PEA means organized electrical activity is visible on the monitor/ECG but the patient has no palpable pulse and no effective circulation."
+        },
+        {
+          "label": "Important point",
+          "text": "PEA does not have one specific ECG appearance. The defining feature is electrical activity without a pulse."
+        },
+        {
+          "label": "Action concept",
+          "text": "It is a non-shockable cardiac-arrest rhythm: start/continue high-quality CPR, follow the arrest algorithm and search for reversible causes."
+        }
+      ],
+      "verification": "Reviewed against current 2025 AHA adult cardiac-arrest guidance."
+    },
+    {
+      "id": "qa-electrode-vs-lead",
+      "question": "What is the difference between an ECG electrode and a lead?",
+      "sections": [
+        {
+          "label": "Electrode",
+          "text": "The physical sticker/wire touching the patient's skin."
+        },
+        {
+          "label": "Lead",
+          "text": "The electrical view calculated from the electrodes."
+        },
+        {
+          "label": "Memory",
+          "text": "Electrodes touch the patient. Leads are what the machine sees. A standard 12-lead ECG uses 10 electrodes to produce 12 views."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic ECG clarification."
+    },
+    {
+      "id": "qa-three-lead-vs-12lead",
+      "question": "What is the difference between 3-lead monitoring and a 12-lead ECG?",
+      "sections": [
+        {
+          "label": "3-lead monitoring",
+          "text": "Usually three electrodes are used for continuous bedside heart-rate and rhythm monitoring."
+        },
+        {
+          "label": "12-lead ECG",
+          "text": "Uses 10 electrodes to generate 12 electrical views and gives much more diagnostic information, especially for ischemia and conduction abnormalities."
+        },
+        {
+          "label": "Practical takeaway",
+          "text": "Telemetry tells you what the rhythm is doing continuously; a 12-lead gives a fuller diagnostic snapshot."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic telemetry clarification."
+    },
+    {
+      "id": "qa-pleth-waveform",
+      "question": "What is the pleth waveform on the bedside monitor?",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "The pleth waveform comes from the pulse-oximeter probe and represents pulsatile changes in blood volume/perfusion at the probe site."
+        },
+        {
+          "label": "What it gives",
+          "text": "It supports SpO₂ measurement and pulse rate (PR). It is different from the ECG waveform, which reflects cardiac electrical activity."
+        },
+        {
+          "label": "Practical point",
+          "text": "Depending on monitor layout, ECG and pleth waveforms may both be displayed at the same time."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic bedside-monitor clarification."
+    },
+    {
+      "id": "qa-ecg-during-cpr",
+      "question": "How is ECG monitoring handled during CPR?",
+      "sections": [
+        {
+          "label": "Monitoring",
+          "text": "Defibrillator pads can both monitor the rhythm and deliver shocks. They are the key electrical interface during a code."
+        },
+        {
+          "label": "Artifact",
+          "text": "Chest compressions create major ECG artifact, so rhythm analysis is done during brief pauses while interruptions in compressions are minimized."
+        },
+        {
+          "label": "Electrodes",
+          "text": "Existing ECG electrodes can remain if they do not interfere, but defibrillator pads are the priority during cardiac arrest."
+        }
+      ],
+      "verification": "Reviewed against current AHA resuscitation principles."
+    },
+    {
+      "id": "qa-shock-types-difference",
+      "question": "How do I differentiate cardiogenic shock from hypovolemic and other shock types?",
+      "sections": [
+        {
+          "label": "Memory model",
+          "text": "Ask: is the tank empty, the pump failing, the pipes too wide, or flow obstructed?"
+        },
+        {
+          "label": "Cardiogenic",
+          "text": "Pump failure. Often hypotension + cold/clammy skin + weak pulse; lungs may be wet/crackly and JVP may be raised."
+        },
+        {
+          "label": "Hypovolemic",
+          "text": "Empty tank. Often hypotension + tachycardia + cold/clammy skin, flat neck veins, clear lungs, and a history of bleeding or fluid loss."
+        },
+        {
+          "label": "Distributive",
+          "text": "Vessels are too dilated. In septic shock the patient may be warm with bounding pulses early."
+        },
+        {
+          "label": "Obstructive",
+          "text": "Blood flow is physically blocked, such as with tension pneumothorax, cardiac tamponade or massive pulmonary embolism."
+        },
+        {
+          "label": "Important rule",
+          "text": "Do not diagnose the shock type from one sign alone. Combine history, BP, pulse, lungs, JVP, urine output and mental status."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic shock-differentiation clarification."
+    },
+    {
+      "id": "qa-norepi-vs-dobutamine",
+      "question": "How can I easily understand norepinephrine vs dobutamine?",
+      "sections": [
+        {
+          "label": "Norepinephrine",
+          "text": "Think PRESSURE. It mainly increases vascular tone and is used when blood pressure/perfusion is too low."
+        },
+        {
+          "label": "Dobutamine",
+          "text": "Think PUMP. It mainly increases cardiac contractility and is used when the heart is pumping too weakly."
+        },
+        {
+          "label": "Why both may appear",
+          "text": "A patient can have both a weak pump and dangerously low pressure, so both drugs may be used for different hemodynamic goals."
+        },
+        {
+          "label": "Memory",
+          "text": "Norepinephrine = pressure. Dobutamine = pump."
+        }
+      ],
+      "verification": "Core Nursing Diagnostic simplified CCU explanation; dosing/administration remains product/order/protocol specific."
     }
   ],
   "medications": [
