@@ -1,0 +1,50 @@
+name: Validate Core Nursing runtime channel
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'runtime/**'
+      - 'scripts/**'
+      - 'content.json'
+      - 'shell.html'
+      - 'shell-manifest.json'
+      - '.github/workflows/validate-core-nursing-runtime.yml'
+  pull_request:
+    paths:
+      - 'runtime/**'
+      - 'scripts/**'
+      - 'content.json'
+      - 'shell.html'
+      - 'shell-manifest.json'
+      - '.github/workflows/validate-core-nursing-runtime.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regenerate runtime manifest
+        run: python scripts/generate_runtime_manifest.py
+      - name: Manifest is committed and reproducible
+        run: git diff --exit-code -- runtime/runtime-manifest.json
+      - name: Validate runtime and legacy channels
+        run: python scripts/validate_runtime.py
+      - name: Validate JavaScript syntax
+        run: node --check runtime/files/js/app.js
+      - name: Basic local runtime load
+        run: |
+          python -m http.server 8765 --directory runtime/files >/tmp/core-nursing-http.log 2>&1 &
+          server=$!
+          trap 'kill $server' EXIT
+          sleep 1
+          curl --fail --silent http://127.0.0.1:8765/index.html >/dev/null
+          curl --fail --silent http://127.0.0.1:8765/css/app.css >/dev/null
+          curl --fail --silent http://127.0.0.1:8765/js/app.js >/dev/null
