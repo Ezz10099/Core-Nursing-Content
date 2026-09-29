@@ -33,8 +33,13 @@ jobs:
           node-version: '22'
       - name: Regenerate runtime manifest
         run: python scripts/generate_runtime_manifest.py
-      - name: Manifest is committed and reproducible
-        run: git diff --exit-code -- runtime/runtime-manifest.json
+      - name: Runtime publish output is committed and reproducible
+        run: |
+          if [ -n "$(git status --porcelain -- runtime/runtime-manifest.json runtime/objects)" ]; then
+            git diff -- runtime/runtime-manifest.json runtime/objects
+            git status --short -- runtime/runtime-manifest.json runtime/objects
+            exit 1
+          fi
       - name: Validate runtime and legacy channels
         run: python scripts/validate_runtime.py
       - name: Validate JavaScript syntax
