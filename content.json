@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 17,
+  "contentVersion": 18,
   "updatedAt": "2026-09-30",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -1065,5 +1065,26 @@
       "sourceNote": "Quick clinical reference from this Core Nursing Diagnostic session."
     }
   ],
-  "guides": []
+  "guides": [],
+  "targetedMedications": [
+    {
+      "id": "verified-alteplase-v35",
+      "name": "Alteplase (tPA)",
+      "drugclass": "Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA).",
+      "availability": "Local Gaza/Palestinian facility stock has not been independently confirmed. Verify the exact product, strength, order, and local protocol.",
+      "use": "Emergency thrombolytic used in eligible acute ischemic stroke; current Activase labeling also includes acute myocardial infarction and acute massive pulmonary embolism. Current 2026 AHA/ASA stroke guidance includes alteplase as an IV thrombolytic option for eligible adults within the 4.5-hour treatment window; selected later/unknown-onset cases require advanced-imaging selection.",
+      "administration": "IV only and indication-specific. For acute ischemic stroke, current Activase dosing is 0.9 mg/kg (maximum 90 mg), with 10% given as an initial IV bolus and the remainder infused over 60 minutes. MI and massive-PE regimens differ; use the authorized order and current indication-specific protocol. Do not mix other medications into the Activase infusion.",
+      "monitor": "• Major risk: serious bleeding, especially intracranial hemorrhage.\n• Before stroke thrombolysis, confirm brain imaging has excluded hemorrhage and verify eligibility/contraindications.\n• Monitor BP and neurological status closely; current stroke protocols use BP <185/110 mm Hg before IV thrombolysis and ≤180/105 mm Hg afterward.\n• Avoid unnecessary invasive procedures and IM injections; inspect puncture sites and other bleeding sites.\n• Sudden severe headache, acute hypertension, nausea/vomiting, or neurological worsening during infusion requires immediate escalation and emergency brain imaging.\n• Follow the stroke protocol for post-thrombolysis monitoring and follow-up imaging before antiplatelet/anticoagulant therapy.",
+      "why": "Alteplase promotes conversion of fibrin-bound plasminogen to plasmin, breaking down fibrin within a thrombus. That can restore blood flow but also creates the major bleeding risk.",
+      "source": "Verified update · current DailyMed Activase label + 2026 AHA/ASA acute ischemic stroke guideline",
+      "pages": "DailyMed Activase label (updated Jan 2026); AHA/ASA AIS guideline 2026",
+      "category": "verified",
+      "memoryUse": "tPA thrombolytic used to dissolve pathologic clots in selected emergency indications.",
+      "memoryDanger": "Major danger = serious bleeding/ICH. In stroke, hemorrhage must be excluded before treatment and BP must be controlled.",
+      "mechanism": "Recombinant tissue plasminogen activator that activates fibrin-bound plasminogen to plasmin, producing fibrinolysis.",
+      "mechanismBasis": "Drug-specific administration and safety were checked against current DailyMed Activase prescribing information. Stroke timing and BP context were aligned with the 2026 AHA/ASA acute ischemic stroke guideline. The U.S. product label still states a 3-hour stroke window, while the newer guideline supports eligible patients within 4.5 hours; follow the newest applicable local stroke protocol.",
+      "requiresCapability": "contact-email",
+      "targetRelease": "0.2.35"
+    }
+  ]
 }
