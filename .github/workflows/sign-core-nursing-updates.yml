@@ -1,0 +1,54 @@
+name: Sign Core Nursing update channel
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content.json'
+      - 'shell-manifest.json'
+      - 'runtime/runtime-manifest.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: core-nursing-update-signing
+  cancel-in-progress: false
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Load private update-signing key
+        env:
+          UPDATE_SIGNING_KEY: ${{ secrets.CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM }}
+        run: |
+          test -n "$UPDATE_SIGNING_KEY" || { echo "::error::Add repository secret CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM"; exit 1; }
+          printf '%s\n' "$UPDATE_SIGNING_KEY" > "$RUNNER_TEMP/core-nursing-update-private.pem"
+          chmod 600 "$RUNNER_TEMP/core-nursing-update-private.pem"
+          openssl pkey -in "$RUNNER_TEMP/core-nursing-update-private.pem" -pubout -out "$RUNNER_TEMP/derived-public.pem"
+          diff -u update-signing-public-key.pem "$RUNNER_TEMP/derived-public.pem"
+      - name: Sign official update payloads
+        run: |
+          sign_file() {
+            src="$1"; out="$2"
+            openssl dgst -sha256 -sign "$RUNNER_TEMP/core-nursing-update-private.pem" -out "$RUNNER_TEMP/signature.bin" "$src"
+            base64 -w 0 "$RUNNER_TEMP/signature.bin" > "$out"
+            printf '\n' >> "$out"
+            base64 -d "$out" > "$RUNNER_TEMP/verify.bin"
+            openssl dgst -sha256 -verify update-signing-public-key.pem -signature "$RUNNER_TEMP/verify.bin" "$src"
+          }
+          sign_file content.json content.sig
+          sign_file shell-manifest.json shell-manifest.sig
+          sign_file runtime/runtime-manifest.json runtime/runtime-manifest.sig
+      - name: Commit signatures
+        run: |
+          if git diff --quiet -- content.sig shell-manifest.sig runtime/runtime-manifest.sig; then
+            echo "Signatures already current."
+            exit 0
+          fi
+          git config user.name "Core Nursing Update Signer"
+          git config user.email "actions@users.noreply.github.com"
+          git add content.sig shell-manifest.sig runtime/runtime-manifest.sig
+          git commit -m "Sign Core Nursing update payloads"
+          git push origin HEAD:main
