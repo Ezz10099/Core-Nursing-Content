@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 13,
-  "updatedAt": "2026-09-29",
+  "contentVersion": 14,
+  "updatedAt": "2026-09-30",
   "faq": [
     {
       "id": "lmwh-clexane-fraxiparine-use-renal",
@@ -366,6 +366,158 @@
         "norepinephrine",
         "ccu-58"
       ]
+    },
+    {
+      "id": "qa-mi-no-ecg-change-location",
+      "question": "Can a patient have an MI without obvious ECG changes, and how do we know where the MI is?",
+      "sections": [
+        {
+          "label": "Yes",
+          "text": "A myocardial infarction can occur without diagnostic ST-elevation or other obvious changes on the first ECG. NSTEMI may show ST depression or T-wave inversion, but the ECG can also be nondiagnostic."
+        },
+        {
+          "label": "What makes it an MI",
+          "text": "Acute MI requires a rise and/or fall in cardiac troponin with at least one value above the assay's 99th-percentile upper reference limit, plus evidence of acute myocardial ischemia such as ischemic symptoms, ischemic ECG changes, new pathologic Q waves, ischemic imaging findings, or coronary thrombus."
+        },
+        {
+          "label": "If the ECG does not localize it",
+          "text": "Troponin confirms myocardial injury but does not tell you the wall. Location may be identified by echocardiographic regional wall-motion abnormalities, coronary angiography, or other cardiac imaging. Extra leads may help when a standard 12-lead misses posterior or right-ventricular involvement."
+        },
+        {
+          "label": "Memory",
+          "text": "Normal ECG does not rule out MI. Troponin + ischemic evidence diagnoses MI; echo/angiography can help localize it."
+        }
+      ],
+      "verification": "Reviewed 30 Sep 2026 against the Fourth Universal Definition of Myocardial Infarction and current 2025 ACC/AHA acute coronary syndrome guidance.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-acs-meaning-name",
+      "question": "What does ACS mean, and why is it called Acute Coronary Syndrome?",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "ACS = Acute Coronary Syndrome: a group of acute conditions caused by a sudden reduction or interruption of coronary blood flow to the myocardium."
+        },
+        {
+          "label": "Why this name",
+          "text": "Acute = sudden/new. Coronary = involves the coronary arteries/blood flow. Syndrome = an umbrella of related clinical conditions rather than one single diagnosis."
+        },
+        {
+          "label": "What it includes",
+          "text": "ACS includes unstable angina, NSTEMI and STEMI."
+        },
+        {
+          "label": "Memory",
+          "text": "ACS = sudden coronary blood-flow problem causing acute myocardial ischemia."
+        }
+      ],
+      "verification": "Reviewed 30 Sep 2026 against current 2025 ACC/AHA acute coronary syndrome guidance.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-acs-diagnostic-framework",
+      "question": "What are the diagnostic criteria for ACS?",
+      "sections": [
+        {
+          "label": "Important point",
+          "text": "ACS is an umbrella syndrome, so there is not one single lab value that diagnoses every ACS case."
+        },
+        {
+          "label": "Practical diagnostic framework",
+          "text": "Use the combination of ischemic symptoms/clinical presentation + 12-lead ECG + serial cardiac troponin, then classify the patient as STEMI, NSTEMI or unstable angina."
+        },
+        {
+          "label": "STEMI",
+          "text": "Compatible acute ischemic presentation with a qualifying STEMI-pattern ECG should trigger urgent reperfusion assessment; do not wait for troponin before acting when STEMI criteria are met."
+        },
+        {
+          "label": "NSTEMI",
+          "text": "Acute MI criteria are met, but there is no persistent STEMI-pattern ST elevation."
+        },
+        {
+          "label": "Unstable angina",
+          "text": "Acute myocardial ischemia without biomarker evidence of acute myocardial necrosis/injury meeting MI criteria."
+        },
+        {
+          "label": "Memory",
+          "text": "ACS workup = symptoms + ECG + serial troponin + clinical context."
+        }
+      ],
+      "verification": "Reviewed 30 Sep 2026 against current 2025 ACC/AHA ACS guidance and the Fourth Universal Definition of MI.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-ccd-vs-acs",
+      "question": "Is there chronic coronary disease, and how is it different from ACS?",
+      "sections": [
+        {
+          "label": "Chronic coronary disease",
+          "text": "Yes. Chronic coronary disease (CCD) is the long-term coronary disease state and includes obstructive or nonobstructive CAD, chronic angina syndromes, and patients with prior MI or coronary revascularization after acute issues have stabilized."
+        },
+        {
+          "label": "ACS",
+          "text": "ACS is an acute event or syndrome caused by a sudden reduction in coronary blood flow, including unstable angina, NSTEMI and STEMI."
+        },
+        {
+          "label": "Relationship",
+          "text": "A patient with chronic coronary disease can later develop an ACS. After an ACS stabilizes, the patient may again be managed as chronic coronary disease."
+        },
+        {
+          "label": "Memory",
+          "text": "CCD = long-term coronary disease. ACS = something acute happened now."
+        }
+      ],
+      "verification": "Reviewed 30 Sep 2026 against the 2023 AHA/ACC Chronic Coronary Disease guideline and current 2025 ACS guidance.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-young-mi-collateral-interview",
+      "question": "Why do some CCU interviewers say MI can be very severe in young patients because of collateral circulation?",
+      "sections": [
+        {
+          "label": "Interview concept",
+          "text": "If severe coronary narrowing develops slowly over time, collateral coronary arteries may enlarge and provide alternative blood flow. A younger patient with a sudden occlusion may not have had a long period of severe stenosis to develop robust collaterals, so the ischemic territory can be large."
+        },
+        {
+          "label": "Important correction",
+          "text": "Do not say that young MI patients generally have higher mortality than older MI patients. Overall, older age is associated with higher MI mortality. The collateral explanation describes one possible mechanism for why an individual young MI can be abrupt and severe."
+        },
+        {
+          "label": "Correct terminology",
+          "text": "Say coronary collateral arteries or collateral circulation, not collateral veins."
+        },
+        {
+          "label": "Interview answer",
+          "text": "A young patient may have less-developed collateral circulation if there was no long-standing severe coronary stenosis, so a sudden major occlusion may have less alternative blood supply to the myocardium."
+        }
+      ],
+      "verification": "Reviewed 30 Sep 2026 against contemporary coronary-collateral literature, including a 2026 systematic review/meta-analysis; preserves the locally reported interview framing while correcting the mortality claim.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-coronary-collateral-age",
+      "question": "At what age do coronary collateral arteries stop growing?",
+      "sections": [
+        {
+          "label": "No fixed age",
+          "text": "There is no specific age at which coronary collateral arteries stop growing or enlarging."
+        },
+        {
+          "label": "What drives development",
+          "text": "Collateral enlargement is driven mainly by the presence and duration of severe coronary stenosis/ischemia, pressure-flow gradients, and individual biology rather than by reaching a particular age."
+        },
+        {
+          "label": "Age effect",
+          "text": "Older age does not automatically mean better collateral circulation. Aging may actually impair collateral growth/function, so age alone is not a reliable predictor."
+        },
+        {
+          "label": "Memory",
+          "text": "Think chronic stenosis and ischemic stimulus, not an age cutoff."
+        }
+      ],
+      "verification": "Reviewed 30 Sep 2026 against contemporary coronary-collateral literature; no fixed age cutoff is established.",
+      "placement": "clinical"
     }
   ],
   "medications": [
