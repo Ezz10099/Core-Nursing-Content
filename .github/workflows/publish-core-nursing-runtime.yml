@@ -1,0 +1,35 @@
+name: Publish generated Core Nursing runtime manifest
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'runtime/files/**'
+      - 'scripts/generate_runtime_manifest.py'
+permissions:
+  contents: write
+concurrency:
+  group: core-nursing-runtime-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate manifest and content-addressed objects
+        run: python scripts/generate_runtime_manifest.py
+      - name: Commit generated runtime files
+        run: |
+          git add runtime/runtime-manifest.json runtime/objects
+          if git diff --cached --quiet; then
+            echo "Runtime manifest already current."
+            exit 0
+          fi
+          git config user.name "Core Nursing Runtime Publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "Publish generated Core Nursing runtime"
+          git push origin HEAD:main
