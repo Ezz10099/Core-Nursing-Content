@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 14,
+  "contentVersion": 15,
   "updatedAt": "2026-09-30",
   "faq": [
     {
@@ -417,34 +417,30 @@
     },
     {
       "id": "qa-acs-diagnostic-framework",
-      "question": "What are the diagnostic criteria for ACS?",
+      "question": "What is the clear diagnostic difference between unstable angina, NSTEMI and STEMI?",
       "sections": [
         {
-          "label": "Important point",
-          "text": "ACS is an umbrella syndrome, so there is not one single lab value that diagnoses every ACS case."
-        },
-        {
-          "label": "Practical diagnostic framework",
-          "text": "Use the combination of ischemic symptoms/clinical presentation + 12-lead ECG + serial cardiac troponin, then classify the patient as STEMI, NSTEMI or unstable angina."
-        },
-        {
-          "label": "STEMI",
-          "text": "Compatible acute ischemic presentation with a qualifying STEMI-pattern ECG should trigger urgent reperfusion assessment; do not wait for troponin before acting when STEMI criteria are met."
+          "label": "Unstable angina (UA)",
+          "text": "Acute myocardial ischemia without evidence of acute myocardial infarction. Troponin does not show the dynamic MI-level rise/fall pattern. The ECG may be normal or may show transient ischemic changes such as ST depression or T-wave inversion."
         },
         {
           "label": "NSTEMI",
-          "text": "Acute MI criteria are met, but there is no persistent STEMI-pattern ST elevation."
+          "text": "Acute MI criteria are met: cardiac troponin shows a rise/fall with at least one value above the assay's 99th-percentile upper reference limit, plus evidence of acute myocardial ischemia. There is no qualifying persistent STEMI-pattern ST elevation; the ECG may show ST depression, T-wave inversion, or be nondiagnostic."
         },
         {
-          "label": "Unstable angina",
-          "text": "Acute myocardial ischemia without biomarker evidence of acute myocardial necrosis/injury meeting MI criteria."
+          "label": "STEMI",
+          "text": "The patient has an acute ischemic presentation with a qualifying STEMI-pattern ECG. This triggers urgent reperfusion assessment; do not wait for troponin confirmation before activating the STEMI pathway when ECG criteria and clinical context fit."
         },
         {
-          "label": "Memory",
-          "text": "ACS workup = symptoms + ECG + serial troponin + clinical context."
+          "label": "Fast comparison",
+          "text": "UA = ischemia without infarction. NSTEMI = infarction without a STEMI ECG pattern. STEMI = infarction with a STEMI ECG pattern."
+        },
+        {
+          "label": "Important trap",
+          "text": "Troponin elevation alone means myocardial injury, not automatically MI. MI also requires evidence that the injury is due to acute ischemia."
         }
       ],
-      "verification": "Reviewed 30 Sep 2026 against current 2025 ACC/AHA ACS guidance and the Fourth Universal Definition of MI.",
+      "verification": "Reviewed 30 Sep 2026 against current ACS guidance and the current universal-definition framework for myocardial infarction.",
       "placement": "clinical"
     },
     {
@@ -518,6 +514,61 @@
       ],
       "verification": "Reviewed 30 Sep 2026 against contemporary coronary-collateral literature; no fixed age cutoff is established.",
       "placement": "clinical"
+    },
+    {
+      "id": "qa-cardiac-biomarkers-beyond-troponin",
+      "question": "What about other cardiac enzymes/biomarkers besides troponin in suspected MI?",
+      "sections": [
+        {
+          "label": "Troponin",
+          "text": "Cardiac troponin I or T is the preferred biomarker for acute myocardial injury. A dynamic rise/fall is central to diagnosing acute MI when combined with evidence of acute myocardial ischemia."
+        },
+        {
+          "label": "CK-MB",
+          "text": "CK-MB is an older and less sensitive/specific marker. When cardiac troponin is available, CK-MB usually adds little diagnostic value. If troponin is unavailable, serial CK-MB may still support the diagnosis together with symptoms and ECG."
+        },
+        {
+          "label": "Other older markers",
+          "text": "Myoglobin rises early but is very nonspecific. Total CK can rise with skeletal-muscle injury. LDH and AST are historical MI markers and are not routinely used for modern MI diagnosis."
+        },
+        {
+          "label": "Key nursing point",
+          "text": "Biomarkers indicate myocardial injury; they do not decide STEMI versus NSTEMI. The ECG and clinical presentation determine the STEMI pathway, and reperfusion assessment should not be delayed while waiting for biomarkers when STEMI criteria are present."
+        },
+        {
+          "label": "Terminology",
+          "text": "'Cardiac enzymes' is a common older phrase. Troponin itself is a cardiac biomarker/protein, not an enzyme."
+        }
+      ],
+      "verification": "Reviewed 30 Sep 2026 against current ACS/MI diagnostic standards. Local CCU use of CK/CK-MB may reflect resource availability.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-amiodarone-d5w-vs-ns",
+      "question": "Why is IV amiodarone commonly diluted in D5W rather than normal saline?",
+      "sections": [
+        {
+          "label": "Main reason",
+          "text": "For common IV amiodarone concentrate formulations, manufacturer preparation and stability data specify D5W. The reason is formulation compatibility/stability—not because the patient needs glucose."
+        },
+        {
+          "label": "Practical nursing rule",
+          "text": "Prepare and dilute IV amiodarone according to the exact product label, written order and local protocol. Do not automatically substitute normal saline for D5W."
+        },
+        {
+          "label": "Important nuance",
+          "text": "Do not memorize 'normal saline always causes precipitation.' Compatibility can depend on the exact formulation, concentration, container and conditions. The safest rule is to use the diluent validated for the product in hand."
+        },
+        {
+          "label": "Memory",
+          "text": "Amiodarone infusion → think D5W for compatibility/stability; verify the exact product before preparation."
+        }
+      ],
+      "verification": "Verified 30 Sep 2026 against current DailyMed IV amiodarone labeling, which documents physical compatibility/stability in D5W. Product-specific labeling remains controlling.",
+      "placement": "medication",
+      "relatedMeds": [
+        "trolley-32"
+      ]
     }
   ],
   "medications": [
