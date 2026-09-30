@@ -22,7 +22,7 @@
 
 ## Remaining distribution checks
 
-- Confirmed blocker: signing run 36704865429 failed at key loading because the repository secret CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM is missing/empty. The matching original private key must be added securely in GitHub Actions secrets before authenticated updates work. Do not disable signature verification or substitute a new key without coordinating the native app trust key.
+- Confirmed blocker: signing run 36704865429 failed at key loading because the repository secret CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM is missing/empty. This historical failure is superseded by the coordinated replacement below; the replacement private key must be configured for future automatic signing. Do not disable signature verification or substitute a new key without coordinating the native app trust key.
 - Runtime validation run 36704865432 passed for commit dcb940a7a7e9040ddf8f5f70bfdbc21e79662223. Local manifest/hash and JavaScript syntax checks passed; nursing content was verified unchanged. Browser visual validation was blocked by an unsuccessful Chromium download.
 - After configuring the signing secret, rerun the signing workflow and verify all three published signatures against the public key. Until then, this is a published credit/terms update, not a completed authenticated distribution rollout.
 - The separate candidate APK has been verified as a stable signed release with native signature enforcement for content, legacy shell manifests and multifile runtime manifests. Existing installations do not gain these native protections through a content update; install-over verification and a real release-phone bridge check still remain before student distribution.
@@ -39,3 +39,9 @@ The owner confirmed the original update-signing private key was never received. 
 New public-key DER SHA-256: `56381dc75406c48bb68631f17f5fb4faec88ab9a30876f2ca40139f8705b1712`. Use only a subsequently verified candidate with this replacement trust key; the earlier v0.2.33 review candidate trusts the previous key. The Android APK signing certificate is preserved.
 
 Future automatic signing still requires the owner to add `CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM` in Core-Nursing-Content Actions secrets and check its signing workflow. No private key is stored in this public channel. Real release-phone update and offline checks remain required before student distribution.
+
+## Replacement candidate validation
+
+Security candidate `0.2.34` (code commit `5227852f49aba9e80982fa00092d1dfcc816809a`) passed stable build [36714570851](https://github.com/Ezz10099/Core-Nursing-Diagnostic-State/actions/runs/36714570851): full JVM tests, obfuscated release build, original APK certificate and upgrade/package checks. It embeds the replacement trust key matching channel commit `0ca25b6ca01ae4ef8ae4edb8c9cb276960e5891a`. The production Java signature verifier accepts the three published payloads and rejects tampering.
+
+Current signatures are valid. The remaining publishing setup is owner configuration of the replacement private PEM as `CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM` and a successful automated signing run. Real release-phone update, bridge and offline checks remain pending before student distribution. The v0.2.33 review candidate is superseded.
