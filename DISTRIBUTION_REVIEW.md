@@ -31,3 +31,11 @@
 - Preserve source history and official release files privately; retain a private backup of the release keystore and update-signing key. Backup possession and account security were not verified from repository files.
 
 The credit/terms update helps establish attribution. It does not prevent extraction, independently establish copyright ownership of AI-generated material, or prove the distributable APK has every planned security feature.
+
+## Coordinated update-key replacement
+
+The owner confirmed the original update-signing private key was never received. A replacement private key was saved in the owner's private backup before rotation. The matching public key and signatures for the exact existing content, legacy shell manifest and multifile runtime manifest are published together. All three signatures verify. Nursing payloads and their versions are unchanged.
+
+New public-key DER SHA-256: `56381dc75406c48bb68631f17f5fb4faec88ab9a30876f2ca40139f8705b1712`. Use only a subsequently verified candidate with this replacement trust key; the earlier v0.2.33 review candidate trusts the previous key. The Android APK signing certificate is preserved.
+
+Future automatic signing still requires the owner to add `CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM` in Core-Nursing-Content Actions secrets and check its signing workflow. No private key is stored in this public channel. Real release-phone update and offline checks remain required before student distribution.
