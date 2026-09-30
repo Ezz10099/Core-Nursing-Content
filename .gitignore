@@ -1,0 +1,8 @@
+# Never publish private signing material
+*private*.pem
+*.pk8
+*.p12
+*.pfx
+*.jks
+*.keystore
+!update-signing-public-key.pem
