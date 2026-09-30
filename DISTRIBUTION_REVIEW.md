@@ -13,12 +13,19 @@
 - Private app repository has a stable release-signing workflow using repository secrets and APK signature verification.
 - Its separate core-nursing-distribution-hardening branch contains native signature verification, release obfuscation, and a distribution notice. These changes are not assumed to be installed on students' phones. No native changes or APK build are part of this credit update.
 
+## Resumed native security candidate
+
+- Recovered the unfinished engine-v3 signature enforcement, obfuscation, creator credit and private-material checks onto the separate private-app branch `core-nursing-distribution-security-v3`. Candidate code commit: `0be7e109336916f5ac955a67f4b3709541700cfd`. No merge to main.
+- Stable build [36708497200](https://github.com/Ezz10099/Core-Nursing-Diagnostic-State/actions/runs/36708497200) passed: full JVM runtime/update tests, obfuscated release build, APK v2 signature verification and upgrade-package checks. Candidate version is `0.2.33` (version code `33`), with the existing Android signing certificate unchanged.
+- The saved Android release-signing backup was located and checked without exposing its secrets. It does not contain the separate update-signing private key.
+- The original live-update public trust key is unchanged. A missing matching private update-signing key still blocks authenticated-update rollout. Do not distribute the candidate to students until the three channel signatures and subsequent real-phone update/offline checks pass. The emulator WebView checks were skipped on this push.
+
 ## Remaining distribution checks
 
 - Confirmed blocker: signing run 36704865429 failed at key loading because the repository secret CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM is missing/empty. The matching original private key must be added securely in GitHub Actions secrets before authenticated updates work. Do not disable signature verification or substitute a new key without coordinating the native app trust key.
 - Runtime validation run 36704865432 passed for commit dcb940a7a7e9040ddf8f5f70bfdbc21e79662223. Local manifest/hash and JavaScript syntax checks passed; nursing content was verified unchanged. Browser visual validation was blocked by an unsuccessful Chromium download.
 - After configuring the signing secret, rerun the signing workflow and verify all three published signatures against the public key. Until then, this is a published credit/terms update, not a completed authenticated distribution rollout.
-- Confirm the actual APK to be shared is a stable signed release and which native update-verification features it contains. Existing installations do not gain native signature enforcement through a content update.
+- The separate candidate APK has been verified as a stable signed release with native signature enforcement for content, legacy shell manifests and multifile runtime manifests. Existing installations do not gain these native protections through a content update; install-over verification and a real release-phone bridge check still remain before student distribution.
 - The live medication library identifies its baseline documents as “Used in CCU meds” and “Emergency trolley meds.” Their complete source documents and permission records were not available for this review. Page references alone do not establish redistribution permission. Do not treat this review as licence clearance for those documents or adaptations.
 - If Open RN, WHO, or other third-party works are incorporated, record the exact title, edition, authors/publisher, source link, applicable licence, and adaptation notices, and follow the licence for each work. The uploaded project reference list alone does not show which works the app actually incorporates.
 - Preserve source history and official release files privately; retain a private backup of the release keystore and update-signing key. Backup possession and account security were not verified from repository files.
