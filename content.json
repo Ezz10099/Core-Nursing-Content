@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 18,
-  "updatedAt": "2026-09-30",
+  "contentVersion": 19,
+  "updatedAt": "2026-10-01",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -591,6 +591,217 @@
       "memoryDanger": "Watch K+, renal function and hypotension. Major red flag: pregnancy.",
       "mechanism": "Selectively blocks angiotensin II binding to the AT1 receptor, reducing vasoconstriction and aldosterone effects.",
       "mechanismBasis": "Verified against current losartan prescribing information; Palestinian relevance supported by the Palestinian Essential Medicines List. Gaza facility-specific stock remains unconfirmed."
+    },
+    {
+      "id": "ibd2-acamol",
+      "name": "ACAMOL — paracetamol (acetaminophen)",
+      "header": "ACAMOL — paracetamol / acetaminophen",
+      "drugclass": "Non-opioid analgesic and antipyretic.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Acamol tablets contain paracetamol; a common marketed tablet is 500 mg, but verify the exact ward pack and strength before administration.",
+      "use": "Mild-to-moderate pain and fever; in orthopaedics it is commonly part of multimodal pain control after injury or surgery.",
+      "administration": "Give only by the ordered route/formulation. Before administering, calculate the patient's total paracetamol/acetaminophen exposure from ALL products in the previous 24 hours. Do not assume a fixed universal maximum for every patient; liver disease, alcohol use, frailty and other factors can lower the safe limit.",
+      "monitor": "• Assess pain/temperature before and after administration. • Check for duplicate paracetamol/acetaminophen in combination products. • Review liver disease, heavy alcohol use and total 24-hour exposure. • Escalate suspected overdose promptly because serious hepatotoxicity can be delayed.",
+      "why": "Paracetamol provides analgesia and antipyresis without the platelet/GI effects typical of NSAIDs, but excessive total exposure can cause severe liver injury.",
+      "source": "IBD2 meds · ward observation + current product information",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Pain/fever; common non-opioid component of postoperative and fracture pain control.",
+      "memoryDanger": "Count total paracetamol from every product; overdose can cause severe liver injury.",
+      "mechanism": "Predominantly central analgesic/antipyretic action involving inhibition of prostaglandin synthesis in the CNS.",
+      "mechanismBasis": "Brand identity checked against current Acamol product information; nursing safety aligned with current acetaminophen labeling."
+    },
+    {
+      "id": "ibd2-trufen",
+      "name": "TRUFEN — ibuprofen",
+      "header": "TRUFEN — ibuprofen",
+      "drugclass": "NSAID; analgesic, antipyretic and anti-inflammatory.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Palestinian MoH records Trufen 200 mg and 600 mg tablets as ibuprofen. IMPORTANT: Trufen Extra is a different combination product containing ibuprofen + paracetamol, so read the package before giving.",
+      "use": "Mild-to-moderate musculoskeletal pain and inflammation, including painful swelling after soft-tissue injury and orthopaedic conditions.",
+      "administration": "PO when the ordered product is a tablet. Verify the exact strength and whether it is plain Trufen or Trufen Extra. Use the lowest effective ordered dose for the shortest appropriate duration; do not duplicate with another NSAID unless specifically intended.",
+      "monitor": "• Assess pain and inflammation before/after. • Watch for GI pain, melena/hematemesis or other bleeding. • Review renal function, hydration and concurrent nephrotoxic drugs. • Check for NSAID/aspirin hypersensitivity or bronchospasm history. • NSAIDs can worsen fluid retention/BP and increase cardiovascular risk. • Verify combination products to avoid accidental extra paracetamol.",
+      "why": "COX inhibition reduces prostaglandins, improving pain and inflammation but also reducing gastric protection and renal prostaglandin effects.",
+      "source": "IBD2 meds · ward observation + Palestinian MoH/current NSAID safety",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Musculoskeletal pain + inflammation.",
+      "memoryDanger": "GI bleeding and kidney injury; verify plain Trufen vs Trufen Extra before giving.",
+      "mechanism": "Reversibly inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.",
+      "mechanismBasis": "Brand strengths checked against current Palestinian MoH product records; class safety aligned with current ibuprofen/NSAID labeling."
+    },
+    {
+      "id": "ibd2-cefazolin",
+      "name": "CEFAZOLIN",
+      "header": "CEFAZOLIN",
+      "drugclass": "First-generation cephalosporin antibacterial.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Exact vial strength/formulation in the ward was not recorded; verify the vial, diluent, route and local order.",
+      "use": "Highly relevant to orthopaedics for perioperative antibacterial prophylaxis and for treatment of susceptible bacterial infections when prescribed.",
+      "administration": "Parenteral product; preparation and IV administration depend on the exact vial/product and order. Do not memorize one dilution or rate across all cefazolin products. Adjusted dosing may be needed with renal impairment.",
+      "monitor": "• Verify beta-lactam allergy history and watch for hypersensitivity/anaphylaxis. • Review renal function and ordered dose/interval. • Monitor IV site and clinical response. • Watch for significant antibiotic-associated diarrhea/C. difficile features. • For prophylaxis, timing relative to surgery matters—follow the surgical protocol/order.",
+      "why": "Cefazolin inhibits bacterial cell-wall synthesis. In surgery, adequate tissue levels at the time of incision help reduce surgical-site infection risk.",
+      "source": "IBD2 meds · ward observation + current DailyMed cefazolin labeling",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Orthopaedic perioperative prophylaxis and susceptible bacterial infection.",
+      "memoryDanger": "Check allergy + renal function; preparation/timing are product- and protocol-specific.",
+      "mechanism": "Beta-lactam cephalosporin that binds penicillin-binding proteins and inhibits bacterial cell-wall synthesis.",
+      "mechanismBasis": "Drug-specific safety and perioperative indication checked against current 2026 DailyMed cefazolin prescribing information."
+    },
+    {
+      "id": "ibd2-tramadol",
+      "name": "TRAMADOL — oral capsule / ward formulation",
+      "header": "TRAMADOL",
+      "drugclass": "Opioid analgesic with additional serotonin/norepinephrine reuptake effects.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026, including an oral capsule. Other ward formulations may differ; verify the exact product, strength and route before administration.",
+      "use": "Moderate-to-severe pain when an opioid analgesic is prescribed; common relevance after fractures, major trauma or surgery.",
+      "administration": "For the oral capsule, give PO exactly as ordered and confirm formulation/strength. Do not assume oral and parenteral products are interchangeable. Avoid unverified route conversion. Dose selection can require adjustment for renal/hepatic impairment and interacting medicines.",
+      "monitor": "• Assess pain, respiratory rate/effort, sedation/level of consciousness and fall risk. • Serious respiratory depression can occur, especially with other CNS depressants. • Tramadol can cause seizures and serotonin syndrome. • Watch for nausea, dizziness and constipation. • Combining with gabapentin or sedating promethazine can increase sedation/respiratory risk. • Escalate excessive sedation, slow/shallow breathing or reduced responsiveness.",
+      "why": "Opioid activity provides analgesia, while monoamine effects contribute to both analgesia and interaction risks such as serotonin syndrome and seizures.",
+      "source": "IBD2 meds · ward observation + current DailyMed tramadol labeling",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Stronger analgesia for moderate-to-severe acute pain.",
+      "memoryDanger": "Sedation/respiratory depression; also seizures and serotonin syndrome.",
+      "mechanism": "Weak mu-opioid receptor agonism plus inhibition of serotonin and norepinephrine reuptake.",
+      "mechanismBasis": "Safety points checked against current 2026 DailyMed tramadol labeling."
+    },
+    {
+      "id": "ibd2-meropenem",
+      "name": "MEROPENEM",
+      "header": "MEROPENEM",
+      "drugclass": "Carbapenem (penem) broad-spectrum beta-lactam antibacterial.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Exact vial strength was not recorded; verify the vial and order.",
+      "use": "Serious susceptible bacterial infections. Current labeling includes complicated skin/skin-structure infection; it should not be treated as routine orthopaedic prophylaxis simply because it is broad spectrum.",
+      "administration": "IV. Reconstitution, dilution, infusion method and dose depend on the exact product, indication and renal function. Current labeling requires dose adjustment when renal function is reduced.",
+      "monitor": "• Check beta-lactam allergy history and monitor for hypersensitivity. • Review renal function because accumulation increases adverse-effect risk. • Watch for seizures/neurologic changes, particularly with renal impairment or CNS disease. • Monitor for significant diarrhea/C. difficile. • IMPORTANT interaction: meropenem can markedly lower valproic acid/divalproex concentrations and trigger breakthrough seizures.",
+      "why": "Meropenem inhibits bacterial cell-wall synthesis and has broad activity, but broad coverage does not replace culture-guided therapy and antimicrobial stewardship.",
+      "source": "IBD2 meds · ward observation + current DailyMed meropenem labeling",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Broad-spectrum IV antibiotic for serious susceptible infection.",
+      "memoryDanger": "Renal adjustment + seizure risk; major interaction with valproic acid/divalproex.",
+      "mechanism": "Carbapenem beta-lactam that binds penicillin-binding proteins and inhibits bacterial cell-wall synthesis.",
+      "mechanismBasis": "Safety, renal adjustment and valproate interaction checked against current 2026 DailyMed meropenem labeling."
+    },
+    {
+      "id": "ibd2-prothiazine",
+      "name": "PROTHIAZINE — promethazine",
+      "header": "PROTHIAZINE — promethazine HCl",
+      "drugclass": "Sedating first-generation H1 antihistamine; phenothiazine antiemetic.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Palestinian MoH lists Prothiazine 25 mg tablets containing promethazine HCl; verify the exact pack/strength in hand.",
+      "use": "May be used for nausea/vomiting, allergic symptoms or sedation depending on the order. In postoperative patients, its sedating effect is clinically important.",
+      "administration": "For the ward tablet, PO as ordered. Do not infer an injectable route from the tablet brand. Check other sedating medicines before administration.",
+      "monitor": "• Watch drowsiness, dizziness, confusion and orthostatic hypotension/fall risk. • Promethazine has anticholinergic effects such as dry mouth and urinary retention. • Sedation/respiratory depression can be worse with opioids such as tramadol or other CNS depressants. • Escalate excessive sedation or breathing impairment.",
+      "why": "H1 blockade provides antihistamine/antiemetic effects but also causes substantial sedation and anticholinergic effects.",
+      "source": "IBD2 meds · ward observation + Palestinian MoH/current promethazine labeling",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Sedating antihistamine/antiemetic.",
+      "memoryDanger": "Sedation + falls; additive respiratory/CNS depression with opioids.",
+      "mechanism": "Blocks histamine H1 receptors and also has anticholinergic and antidopaminergic effects.",
+      "mechanismBasis": "Brand identity checked against current Palestinian MoH records; safety aligned with current promethazine labeling."
+    },
+    {
+      "id": "ibd2-gabapentin",
+      "name": "GABAPENTIN",
+      "header": "GABAPENTIN",
+      "drugclass": "Gabapentinoid anticonvulsant; neuropathic-pain agent.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Exact capsule/tablet strength was not recorded; verify the product and order.",
+      "use": "Neuropathic pain/nerve-related pain and seizure indications. In an orthopaedic/trauma setting it may be used when pain has a neuropathic component, but confirm the patient's actual indication.",
+      "administration": "PO. Dose selection and interval depend strongly on renal function; do not use a memorized standard dose for every patient. Chronic therapy should not be stopped abruptly without a plan.",
+      "monitor": "• Watch somnolence, dizziness, ataxia and falls. • Review renal function. • Serious respiratory depression has been reported when gabapentin is combined with CNS depressants, especially opioids. • With tramadol or other opioids, monitor sedation and breathing more closely. • Peripheral edema can occur.",
+      "why": "Gabapentin reduces excitatory neurotransmitter release through the alpha-2-delta subunit of voltage-gated calcium channels; it is useful for neuropathic rather than purely inflammatory pain.",
+      "source": "IBD2 meds · ward observation + current DailyMed gabapentin labeling",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Neuropathic/nerve pain; also an anticonvulsant.",
+      "memoryDanger": "Drowsiness/ataxia + renal adjustment; respiratory depression risk rises with opioids.",
+      "mechanism": "Binds the alpha-2-delta subunit of voltage-gated calcium channels, reducing release of excitatory neurotransmitters.",
+      "mechanismBasis": "Respiratory-depression and renal-use safety aligned with current 2026 DailyMed gabapentin labeling."
+    },
+    {
+      "id": "ibd2-avilac",
+      "name": "AVILAC — lactulose",
+      "header": "AVILAC — lactulose syrup",
+      "drugclass": "Osmotic laxative; non-absorbable disaccharide.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Avilac syrup contains lactulose 66.7 g/100 mL in current product information; verify the bottle in hand.",
+      "use": "Constipation. In orthopaedic patients, constipation may be promoted by immobility and opioid analgesics. Lactulose is also used in hepatic encephalopathy for a different indication.",
+      "administration": "PO syrup as ordered. Measure the ordered volume accurately. The dose/goal differs between ordinary constipation and hepatic encephalopathy, so do not transfer one regimen to the other.",
+      "monitor": "• Monitor bowel pattern and response. • Excessive effect can cause diarrhea, abdominal cramping, dehydration and electrolyte disturbance. • Reassess if constipation persists despite therapy or if severe abdominal symptoms occur.",
+      "why": "Lactulose remains in the bowel and draws water osmotically into the colon, softening stool and promoting bowel movements.",
+      "source": "IBD2 meds · ward observation + current Avilac/lactulose product information",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Constipation—especially relevant with immobility/opioids.",
+      "memoryDanger": "Too much effect → diarrhea, dehydration and electrolyte disturbance.",
+      "mechanism": "Non-absorbable sugar metabolized by colonic bacteria; its osmotic effect retains water in the colon and promotes stool passage.",
+      "mechanismBasis": "Avilac identity and concentration checked against current product information."
+    },
+    {
+      "id": "ibd2-carbamazepine",
+      "name": "CARBAMAZEPINE",
+      "header": "CARBAMAZEPINE",
+      "drugclass": "Anticonvulsant; voltage-gated sodium-channel blocker; neuropathic-pain agent.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Exact tablet formulation/strength was not recorded; immediate-release, chewable, suspension and extended-release products are not automatically interchangeable.",
+      "use": "Seizure disorders and selected neuropathic-pain conditions such as trigeminal neuralgia. In an orthopaedic patient, confirm whether it is being continued for epilepsy or prescribed for a specific neuropathic-pain indication.",
+      "administration": "PO in the ordered formulation. Do not crush or interchange extended-release and immediate-release products without checking the product. Do not abruptly stop chronic therapy unless specifically directed.",
+      "monitor": "• New rash is a major red flag because SJS/TEN can occur. • Monitor CBC when ordered; rare aplastic anemia/agranulocytosis and other cytopenias are important. • Monitor sodium because SIADH/hyponatremia can cause confusion, weakness, seizures and falls. • Watch dizziness, drowsiness and ataxia. • Carbamazepine has many drug interactions because it induces hepatic enzymes.",
+      "why": "Sodium-channel blockade reduces repetitive neuronal firing, helping seizures and selected neuropathic pain, but the drug has important hematologic, dermatologic, electrolyte and interaction risks.",
+      "source": "IBD2 meds · ward observation + current DailyMed carbamazepine labeling",
+      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Seizures + selected neuropathic pain.",
+      "memoryDanger": "New rash, falling blood counts or symptomatic hyponatremia require prompt review.",
+      "mechanism": "Stabilizes inactivated voltage-gated sodium channels, reducing sustained repetitive neuronal firing.",
+      "mechanismBasis": "SJS/TEN, blood-dyscrasia and hyponatremia warnings checked against current 2026 DailyMed carbamazepine labeling."
+    },
+    {
+      "id": "trolley-29",
+      "name": "METOCLOPRAMIDE — PRAMIN",
+      "header": "METOCLOPRAMIDE -PRAMIN",
+      "drugclass": "Dopamine D2-antagonist/prokinetic antiemetic.",
+      "availability": "YES. The Palestinian spelling is PRAMIN. A locally registered product, METO-ALISON 10 mg/2 mL, is IV/IM; Palestinian data also list metoclopramide 10-mg ampoules and tablets.",
+      "administration": "The local METO-ALISON ampoule contains 10 mg/2 mL = 5 mg/mL for IV or IM use. For ordinary small IV antiemetic doses, administration should be slow rather than a rapid push; use the actual ampoule insert for the exact minimum time.",
+      "use": "Antiemetic/prokinetic for nausea and vomiting; now also ward-observed in IBD2, where postoperative nausea/vomiting is a common practical context.",
+      "monitor": "• Watch for acute dystonia, akathisia/restlessness and other extrapyramidal reactions, especially after parenteral dosing. • Stop/escalate for sustained neck/jaw/eye deviation, severe restlessness, rigidity or other acute abnormal movements. • Avoid routine use in known mechanical GI obstruction/perforation or where stimulating motility is unsafe. • Parkinsonian symptoms can worsen because of dopamine blockade. • Rapid IV administration can make restlessness/anxiety more prominent.",
+      "why": "D2 blockade helps nausea and gastric emptying, but the same dopamine blockade can produce acute movement disorders.",
+      "source": "Emergency trolley meds · IBD2 meds",
+      "pages": "29–31 · ward-observed 1 Oct 2026",
+      "category": "trolley",
+      "memoryUse": "Primarily antiemetic for nausea/vomiting in ED/CCU patients; cardiac relevance is secondary rather than rhythm-directed.",
+      "memoryDanger": "Stop/escalate for sustained neck/jaw/eye deviation, severe restlessness, rigidity or other acute abnormal movements.",
+      "mechanism": "Blocks dopamine D2 receptors and promotes upper-GI motility, reducing nausea and vomiting.",
+      "mechanismBasis": "Concise conceptual pharmacology addition; not quoted from the CCU PDF.",
+      "categories": [
+        "trolley",
+        "ibd2"
+      ]
     }
   ],
   "lessons": [
