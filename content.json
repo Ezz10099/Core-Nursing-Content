@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 19,
-  "updatedAt": "2026-10-01",
+  "contentVersion": 20,
+  "updatedAt": "2026-10-03",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -681,13 +681,13 @@
       "name": "MEROPENEM",
       "header": "MEROPENEM",
       "drugclass": "Carbapenem (penem) broad-spectrum beta-lactam antibacterial.",
-      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Exact vial strength was not recorded; verify the vial and order.",
+      "availability": "WARD-OBSERVED repeatedly in IBD2 at Nasser Medical Complex in Oct 2026. Exact vial strength was not recorded; verify the vial and order.",
       "use": "Serious susceptible bacterial infections. Current labeling includes complicated skin/skin-structure infection; it should not be treated as routine orthopaedic prophylaxis simply because it is broad spectrum.",
       "administration": "IV. Reconstitution, dilution, infusion method and dose depend on the exact product, indication and renal function. Current labeling requires dose adjustment when renal function is reduced.",
       "monitor": "• Check beta-lactam allergy history and monitor for hypersensitivity. • Review renal function because accumulation increases adverse-effect risk. • Watch for seizures/neurologic changes, particularly with renal impairment or CNS disease. • Monitor for significant diarrhea/C. difficile. • IMPORTANT interaction: meropenem can markedly lower valproic acid/divalproex concentrations and trigger breakthrough seizures.",
       "why": "Meropenem inhibits bacterial cell-wall synthesis and has broad activity, but broad coverage does not replace culture-guided therapy and antimicrobial stewardship.",
       "source": "IBD2 meds · ward observation + current DailyMed meropenem labeling",
-      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "pages": "Nasser orthopaedic rotation · observed Oct 2026",
       "category": "ibd2",
       "categories": [
         "ibd2"
@@ -762,24 +762,24 @@
     },
     {
       "id": "ibd2-carbamazepine",
-      "name": "CARBAMAZEPINE",
-      "header": "CARBAMAZEPINE",
+      "name": "TEGRETOL — carbamazepine",
+      "header": "TEGRETOL — carbamazepine",
       "drugclass": "Anticonvulsant; voltage-gated sodium-channel blocker; neuropathic-pain agent.",
-      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Exact tablet formulation/strength was not recorded; immediate-release, chewable, suspension and extended-release products are not automatically interchangeable.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex. Tegretol is carbamazepine; current product information includes immediate-release and prolonged-release formulations, so verify the exact strength/formulation before administration.",
       "use": "Seizure disorders and selected neuropathic-pain conditions such as trigeminal neuralgia. In an orthopaedic patient, confirm whether it is being continued for epilepsy or prescribed for a specific neuropathic-pain indication.",
       "administration": "PO in the ordered formulation. Do not crush or interchange extended-release and immediate-release products without checking the product. Do not abruptly stop chronic therapy unless specifically directed.",
       "monitor": "• New rash is a major red flag because SJS/TEN can occur. • Monitor CBC when ordered; rare aplastic anemia/agranulocytosis and other cytopenias are important. • Monitor sodium because SIADH/hyponatremia can cause confusion, weakness, seizures and falls. • Watch dizziness, drowsiness and ataxia. • Carbamazepine has many drug interactions because it induces hepatic enzymes.",
       "why": "Sodium-channel blockade reduces repetitive neuronal firing, helping seizures and selected neuropathic pain, but the drug has important hematologic, dermatologic, electrolyte and interaction risks.",
-      "source": "IBD2 meds · ward observation + current DailyMed carbamazepine labeling",
-      "pages": "Nasser orthopaedic rotation · 1 Oct 2026",
+      "source": "IBD2 meds · ward observation + current Tegretol/carbamazepine product information",
+      "pages": "Nasser orthopaedic rotation · observed Oct 2026",
       "category": "ibd2",
       "categories": [
         "ibd2"
       ],
-      "memoryUse": "Seizures + selected neuropathic pain.",
+      "memoryUse": "Tegretol = carbamazepine: seizures + selected neuropathic pain.",
       "memoryDanger": "New rash, falling blood counts or symptomatic hyponatremia require prompt review.",
       "mechanism": "Stabilizes inactivated voltage-gated sodium channels, reducing sustained repetitive neuronal firing.",
-      "mechanismBasis": "SJS/TEN, blood-dyscrasia and hyponatremia warnings checked against current 2026 DailyMed carbamazepine labeling."
+      "mechanismBasis": "Brand identity and formulation differences checked against current 2026 Tegretol product information; SJS/TEN, blood-dyscrasia and hyponatremia safety remain aligned with current carbamazepine labeling."
     },
     {
       "id": "trolley-29",
@@ -802,6 +802,69 @@
         "trolley",
         "ibd2"
       ]
+    },
+    {
+      "id": "ibd2-epanutin-phenytoin",
+      "name": "EPANUTIN — phenytoin",
+      "header": "EPANUTIN — phenytoin",
+      "drugclass": "Hydantoin anticonvulsant; voltage-gated sodium-channel blocker.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex in Oct 2026. Epanutin is a phenytoin brand. Formulations matter: some Epanutin products contain phenytoin sodium while others contain phenytoin, so verify the exact formulation and strength rather than assuming dose-form equivalence.",
+      "use": "Prevention/treatment of selected seizure disorders. In trauma/orthopaedic patients it may also appear when a patient has epilepsy or seizure risk from associated head injury; confirm the actual indication.",
+      "administration": "Use the exact ordered formulation and route. Oral Epanutin formulations are not automatically interchangeable dose-for-dose. If IV phenytoin is ordered, use the specific IV product/protocol and cardiac/BP monitoring requirements; do not infer IV instructions from an oral Epanutin pack.",
+      "monitor": "• Watch for nystagmus, ataxia, slurred speech, confusion and excessive sedation as possible toxicity. • Review serum phenytoin levels when ordered, especially with toxicity, poor seizure control, interacting drugs or formulation changes. • Check for rash/SJS-TEN and other hypersensitivity. • Review albumin, renal/hepatic status when interpreting levels. • Phenytoin has many drug interactions and should not be stopped abruptly without an authorized plan.",
+      "why": "Phenytoin reduces repetitive neuronal firing by stabilizing inactivated sodium channels, but its nonlinear pharmacokinetics and formulation differences make dose changes and interactions clinically important.",
+      "source": "IBD2 meds · ward observation + current Epanutin product information",
+      "pages": "Nasser orthopaedic rotation · observed Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Epanutin = phenytoin: anticonvulsant for seizure control.",
+      "memoryDanger": "Formulations are not automatically interchangeable; toxicity often shows nystagmus/ataxia/slurred speech.",
+      "mechanism": "Prolongs the inactivated state of voltage-gated sodium channels, limiting repetitive neuronal firing.",
+      "mechanismBasis": "Brand identity and formulation differences checked against current 2026 Epanutin product information."
+    },
+    {
+      "id": "ibd2-vancomycin",
+      "name": "VANCOMYCIN",
+      "header": "VANCOMYCIN",
+      "drugclass": "Glycopeptide antibacterial.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex in Oct 2026. Exact vial/ready-to-use formulation and concentration were not recorded; verify the product, concentration and order.",
+      "use": "Serious susceptible gram-positive infections, including MRSA when appropriate. In orthopaedics it may be used for severe wound, bone/joint or hardware-associated infection depending on cultures, local resistance patterns and the treatment plan.",
+      "administration": "IV for systemic infection. Use the exact product-specific dilution/infusion instructions and local protocol. Rapid infusion can cause a vancomycin infusion reaction and hypotension, so do not give as an unmonitored rapid IV push.",
+      "monitor": "• Monitor renal function and urine output. • Therapeutic drug monitoring may be required for systemic therapy; follow the hospital/pharmacy protocol. • Watch for flushing, pruritus, erythema and hypotension during infusion; slow/stop and escalate according to protocol if a significant infusion reaction occurs. • Monitor for nephrotoxicity, especially with other nephrotoxic drugs. • Review cultures and clinical response.",
+      "why": "Vancomycin inhibits gram-positive bacterial cell-wall synthesis. Exposure that is too low can fail therapy, while excessive exposure and nephrotoxic combinations increase kidney-injury risk.",
+      "source": "IBD2 meds · ward observation + current DailyMed vancomycin labeling",
+      "pages": "Nasser orthopaedic rotation · observed Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Serious gram-positive/MRSA infection; important in complex orthopaedic infection.",
+      "memoryDanger": "Kidney injury + infusion reaction; systemic therapy often needs protocol-based drug-level monitoring.",
+      "mechanism": "Binds D-Ala-D-Ala termini of peptidoglycan precursors and inhibits bacterial cell-wall synthesis.",
+      "mechanismBasis": "Administration and major safety points checked against current 2026 DailyMed vancomycin prescribing information."
+    },
+    {
+      "id": "ibd2-levox-levofloxacin",
+      "name": "LEVOX — levofloxacin",
+      "header": "LEVOX — levofloxacin",
+      "drugclass": "Fluoroquinolone antibacterial.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex in Oct 2026. Palestinian MoH records LEVOX 500 mg and 750 mg film-coated tablets containing levofloxacin; verify the exact strength in hand.",
+      "use": "Treatment of susceptible bacterial infections. Palestinian product information includes respiratory, urinary/kidney, and skin/soft-tissue infections; use should match the actual infection, culture data and local antimicrobial plan.",
+      "administration": "For the observed LEVOX tablet, give PO exactly as ordered. Separate oral levofloxacin from products containing multivalent cations such as iron, zinc, magnesium/aluminum antacids, or sucralfate according to the product instructions because absorption can be reduced. Renal impairment may require dose/interval adjustment.",
+      "monitor": "• Important fluoroquinolone warnings include tendinitis/tendon rupture, peripheral neuropathy and CNS effects. • Stop/escalate new tendon pain or swelling rather than encouraging exercise through it. • Review renal function. • Watch for QT-prolongation risk, dysglycemia and significant diarrhea/C. difficile where relevant. • Use only for a susceptible bacterial indication; avoid unnecessary broad-spectrum exposure.",
+      "why": "Levofloxacin inhibits bacterial DNA gyrase and topoisomerase IV. Its broad activity is useful in selected infections, but potentially disabling adverse effects make indication and monitoring important.",
+      "source": "IBD2 meds · ward observation + Palestinian MoH LEVOX record + current DailyMed levofloxacin labeling",
+      "pages": "Nasser orthopaedic rotation · observed Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "LEVOX = levofloxacin: fluoroquinolone antibiotic.",
+      "memoryDanger": "New tendon pain/swelling, neuropathy or major CNS effects are red flags.",
+      "mechanism": "Inhibits bacterial DNA gyrase (topoisomerase II) and topoisomerase IV, blocking DNA replication.",
+      "mechanismBasis": "Brand identity/strength checked against current Palestinian MoH records; boxed-warning safety aligned with current 2026 DailyMed levofloxacin labeling."
     }
   ],
   "lessons": [
