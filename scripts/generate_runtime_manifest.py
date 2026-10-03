@@ -10,7 +10,7 @@ OBJECTS = RUNTIME / "objects"
 MANIFEST = RUNTIME / "runtime-manifest.json"
 
 SCHEMA_VERSION = 2
-RUNTIME_VERSION = 10
+RUNTIME_VERSION = 11
 MIN_ENGINE_VERSION = 2
 
 def safe_path(rel: str) -> bool:
