@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 21,
+  "contentVersion": 22,
   "updatedAt": "2026-10-03",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -765,13 +765,13 @@
       "name": "TEGRETOL — carbamazepine",
       "header": "TEGRETOL — carbamazepine",
       "drugclass": "Anticonvulsant; voltage-gated sodium-channel blocker; neuropathic-pain agent.",
-      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex. Tegretol is carbamazepine; current product information includes immediate-release and prolonged-release formulations, so verify the exact strength/formulation before administration.",
+      "availability": "WARD-OBSERVED repeatedly in IBD2 at Nasser Medical Complex in Oct 2026. Tegretol is carbamazepine; immediate-release and prolonged-release formulations differ, so verify the exact strength/formulation before administration.",
       "use": "Seizure disorders and selected neuropathic-pain conditions such as trigeminal neuralgia. In an orthopaedic patient, confirm whether it is being continued for epilepsy or prescribed for a specific neuropathic-pain indication.",
       "administration": "PO in the ordered formulation. Do not crush or interchange extended-release and immediate-release products without checking the product. Do not abruptly stop chronic therapy unless specifically directed.",
       "monitor": "• New rash is a major red flag because SJS/TEN can occur. • Monitor CBC when ordered; rare aplastic anemia/agranulocytosis and other cytopenias are important. • Monitor sodium because SIADH/hyponatremia can cause confusion, weakness, seizures and falls. • Watch dizziness, drowsiness and ataxia. • Carbamazepine has many drug interactions because it induces hepatic enzymes.",
       "why": "Sodium-channel blockade reduces repetitive neuronal firing, helping seizures and selected neuropathic pain, but the drug has important hematologic, dermatologic, electrolyte and interaction risks.",
       "source": "IBD2 meds · ward observation + current Tegretol/carbamazepine product information",
-      "pages": "Nasser orthopaedic rotation · observed Oct 2026",
+      "pages": "Nasser orthopaedic rotation · observed repeatedly Oct 2026",
       "category": "ibd2",
       "categories": [
         "ibd2"
@@ -865,6 +865,27 @@
       "memoryDanger": "New tendon pain/swelling, neuropathy or major CNS effects are red flags.",
       "mechanism": "Inhibits bacterial DNA gyrase (topoisomerase II) and topoisomerase IV, blocking DNA replication.",
       "mechanismBasis": "Brand identity/strength checked against current Palestinian MoH records; boxed-warning safety aligned with current 2026 DailyMed levofloxacin labeling."
+    },
+    {
+      "id": "ibd2-ketrolac-ketorolac",
+      "name": "KETROLAC — ketorolac tromethamine",
+      "header": "KETROLAC — ketorolac tromethamine",
+      "drugclass": "NSAID analgesic; potent short-term non-opioid analgesic.",
+      "availability": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 3 Oct 2026. Ketrolac is a brand spelling used for ketorolac tromethamine. The exact ward ampoule strength/route was not recorded; verify the ampoule/package before administration.",
+      "use": "Short-term treatment of moderately severe acute pain, commonly relevant after surgery or trauma. Current labeling limits total ketorolac treatment duration to no more than 5 days in adults.",
+      "administration": "Use only the exact ordered formulation and route. Current injectable ketorolac products may be IV and/or IM depending on strength/product; do not assume every ampoule has the same permitted route. Avoid combining with another NSAID unless specifically intended. Review renal function, volume status and bleeding risk before administration.",
+      "monitor": "• Assess pain before/after. • Watch for GI bleeding, melena/hematemesis, abdominal pain and other bleeding. • Review renal function and hydration; ketorolac can precipitate kidney injury, especially with hypovolemia or renal impairment. • Check for NSAID/aspirin hypersensitivity or bronchospasm history. • Avoid duplicate NSAIDs. • It inhibits platelet function and can increase perioperative bleeding risk. • Stop/escalate significant bleeding, oliguria/renal deterioration, severe hypersensitivity or bronchospasm.",
+      "why": "Ketorolac inhibits cyclooxygenase and prostaglandin synthesis, producing strong analgesia but also reducing gastric protection, renal prostaglandin support and platelet function.",
+      "source": "IBD2 meds · ward observation + current DailyMed ketorolac labeling",
+      "pages": "Nasser orthopaedic rotation · 3 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Strong short-term NSAID analgesic for acute postoperative/trauma pain.",
+      "memoryDanger": "Maximum short-term course; GI bleeding + renal injury + platelet/bleeding risk.",
+      "mechanism": "Reversibly inhibits COX-1/COX-2, reducing prostaglandin synthesis and pain/inflammation.",
+      "mechanismBasis": "Brand spelling supported by current Ketrolac/ketorolac product information; major safety and 5-day duration warning checked against current 2026 DailyMed ketorolac labeling."
     }
   ],
   "lessons": [
