@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 25,
+  "contentVersion": 26,
   "updatedAt": "2026-10-05",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -947,6 +947,49 @@
       "memoryDanger": "Main danger = bleeding. Monitor INR and never assume one INR target fits every mechanical valve.",
       "mechanism": "Inhibits VKORC1, reducing regeneration of vitamin K and therefore synthesis of vitamin-K-dependent clotting factors II, VII, IX and X (and proteins C and S).",
       "mechanismBasis": "Onset/peak pharmacodynamics checked against current DailyMed warfarin labeling; mechanical-valve anticoagulation/bridging recommendations checked against the 2025 ESC/EACTS valvular-heart-disease guideline."
+    },
+    {
+      "id": "ibd2-fortum-ceftazidime",
+      "name": "FORTUM — ceftazidime",
+      "header": "FORTUM — ceftazidime",
+      "drugclass": "Third-generation cephalosporin beta-lactam antibacterial.",
+      "availability": "WARD-REPORTED in the current rotation. Palestinian MoH lists FORTUM injection 1 g as ceftazidime 1 g/vial. Fortum/ceftazidime has also been encountered in CCU practice; verify the exact vial strength and order in hand.",
+      "use": "Treatment of susceptible bacterial infections, including serious gram-negative infection and Pseudomonas when appropriate. In orthopaedic/trauma care it may be used for susceptible wound, soft-tissue or other serious infections according to cultures and the antimicrobial plan.",
+      "administration": "Parenteral antibiotic. Reconstitution, dilution, route and infusion time depend on the exact vial/product and order. Check renal function because ceftazidime dosing requires adjustment in renal impairment.",
+      "monitor": "• Check cephalosporin/serious beta-lactam allergy history. • Monitor for rash, wheeze, hypotension or anaphylaxis. • Review renal function and prescribed dose. • Watch for significant diarrhea/C. difficile. • Neurologic toxicity such as confusion, myoclonus or seizures is more likely with accumulation, especially in renal impairment. • Review cultures and clinical response.",
+      "why": "Ceftazidime inhibits bacterial cell-wall synthesis. It has important gram-negative activity including Pseudomonas, but broad-spectrum use should remain culture/indication guided.",
+      "source": "IBD2 meds · Palestinian MoH FORTUM record + current DailyMed ceftazidime labeling",
+      "pages": "Nasser clinical rotation · reported 5 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2",
+        "ccu"
+      ],
+      "memoryUse": "Fortum = ceftazidime; 3rd-gen cephalosporin with Pseudomonas coverage.",
+      "memoryDanger": "Allergy + renal accumulation/neurotoxicity; check kidney function and the exact vial/order.",
+      "mechanism": "Beta-lactam that binds penicillin-binding proteins and inhibits bacterial cell-wall synthesis.",
+      "mechanismBasis": "Brand/strength checked against current Palestinian MoH listing; safety/renal points aligned with current 2026 DailyMed ceftazidime labeling."
+    },
+    {
+      "id": "ibd2-scobutyl-hyoscine-butylbromide",
+      "name": "SCOBUTYL — hyoscine-N-butyl bromide",
+      "header": "SCOBUTYL — hyoscine-N-butyl bromide",
+      "drugclass": "Antimuscarinic antispasmodic.",
+      "availability": "WARD-REPORTED in the current rotation. Palestinian MoH lists SCOBUTYL ampoules containing hyoscine-N-butyl bromide 20 mg; verify ampoule volume, concentration and ordered route. Palestinian OTC records also list Scobutyl 10 mg tablets, so do not assume formulation from the brand name alone.",
+      "use": "Relieves smooth-muscle spasm, such as gastrointestinal, biliary or urinary tract colic/spasm. It treats spasm-related pain; it does not treat the underlying cause of severe unexplained abdominal pain.",
+      "administration": "Give only by the ordered formulation/route. Injectable hyoscine butylbromide products are commonly given slow IV or IM depending on the product and order; rapid IV administration can cause marked hypotension. Verify the local ampoule label before preparation.",
+      "monitor": "• Watch for tachycardia, dry mouth, constipation, urinary retention and blurred vision/accommodation problems. • Contraindications/major cautions include narrow-angle glaucoma, myasthenia gravis, mechanical GI obstruction/ileus and urinary retention risk. • Persistent or worsening abdominal pain with fever, vomiting, hypotension, syncope or blood in stool requires evaluation rather than repeated symptomatic dosing. • Parenteral doses can rarely cause anaphylaxis.",
+      "why": "Blocks muscarinic acetylcholine receptors in peripheral smooth muscle, reducing gastrointestinal and genitourinary spasm.",
+      "source": "IBD2 meds · current Palestinian MoH SCOBUTYL listing + current hyoscine butylbromide SmPC",
+      "pages": "Nasser clinical rotation · reported 5 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Scobutyl = hyoscine-N-butyl bromide; antispasmodic for smooth-muscle colic/spasm.",
+      "memoryDanger": "Can cause tachycardia, urinary retention and glaucoma problems; severe unexplained abdominal pain needs assessment, not just masking.",
+      "mechanism": "Peripheral antimuscarinic action reduces smooth-muscle spasm in the GI and genitourinary tracts.",
+      "mechanismBasis": "Brand identity checked against current Palestinian MoH records; injection cautions and contraindications checked against current hyoscine butylbromide SmPC."
     }
   ],
   "lessons": [
