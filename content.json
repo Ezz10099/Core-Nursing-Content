@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 24,
-  "updatedAt": "2026-10-03",
+  "contentVersion": 25,
+  "updatedAt": "2026-10-05",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -571,6 +571,46 @@
       "relatedMeds": [
         "trolley-32"
       ]
+    },
+    {
+      "id": "qa-mechanical-avr-warfarin-bridge",
+      "question": "Why does a mechanical aortic valve need Coumadin, and why is heparin/Clexane used at first?",
+      "sections": [
+        {
+          "label": "Why the mechanical valve increases clot risk",
+          "text": "Not mainly because it is less elastic. Blood is contacting an artificial, non-endothelial surface and the prosthesis creates disturbed flow. Both promote thrombus formation. A clot can obstruct the valve or embolize and cause stroke/systemic embolism."
+        },
+        {
+          "label": "Why Coumadin",
+          "text": "Coumadin is warfarin, a vitamin K antagonist. Mechanical heart valves generally require long-term VKA anticoagulation to reduce thromboembolic complications."
+        },
+        {
+          "label": "Why the bridge",
+          "text": "Warfarin is not immediately fully effective. An anticoagulation effect usually begins within about 24 hours, but peak effect is delayed about 72–96 hours. After mechanical-valve implantation, current ESC/EACTS guidance recommends starting UFH or LMWH bridging together with the VKA as soon as considered safe."
+        },
+        {
+          "label": "What the '2 weeks' probably meant",
+          "text": "Two weeks is not the pharmacologic onset of warfarin. The ward comment most likely referred to the time sometimes needed to establish or stabilize the correct warfarin dose/INR in a particular patient. There is no universal rule that warfarin takes exactly 2 weeks to work."
+        },
+        {
+          "label": "INR",
+          "text": "Mechanical-valve patients intentionally have an INR above the normal value. The exact therapeutic target depends on the valve type, valve position and patient risk factors, so follow the documented target rather than memorizing one number for every patient."
+        },
+        {
+          "label": "Vitamin K",
+          "text": "Warfarin itself is the vitamin K antagonist. Vitamin K can also be used as a reversal treatment for warfarin when clinically indicated."
+        },
+        {
+          "label": "Complete heart block",
+          "text": "Complete heart block is a separate electrical-conduction problem. It does not itself explain the need for warfarin; in the remembered patient, the mechanical aortic valve was the anticoagulation reason."
+        },
+        {
+          "label": "Memory",
+          "text": "Mechanical valve → artificial surface + disturbed flow → thrombosis risk → warfarin long term. Early after implantation: fast heparin/LMWH bridge + slower VKA until anticoagulation is established."
+        }
+      ],
+      "verification": "Drug onset/mechanism checked against current DailyMed warfarin labeling; mechanical-valve VKA and postoperative bridging recommendations checked against 2025 ESC/EACTS valvular-heart-disease guidance. The recalled '2 weeks' wording is treated as a likely ward explanation of INR/dose stabilization, not a fixed pharmacologic rule.",
+      "placement": "clinical"
     }
   ],
   "medications": [
@@ -886,6 +926,27 @@
       "memoryDanger": "Maximum total course 5 days; major risks = GI bleeding + renal injury. Avoid duplicate NSAIDs.",
       "mechanism": "Nonselectively inhibits cyclooxygenase (COX-1/COX-2), reducing prostaglandin synthesis.",
       "mechanismBasis": "Brand identity checked against current Ketrolac manufacturer information; duration and major safety warnings aligned with current 2026 DailyMed ketorolac prescribing information."
+    },
+    {
+      "id": "ccu-warfarin-coumadin",
+      "name": "COUMADIN — warfarin",
+      "header": "COUMADIN — warfarin",
+      "drugclass": "Vitamin K antagonist (VKA) oral anticoagulant.",
+      "availability": "WARD-REPORTED in the CCU at Nasser Medical Complex as Coumadin/warfarin. Exact tablet strength and current stock should be verified from the package/Kardex before administration.",
+      "use": "Long-term oral anticoagulation for selected thromboembolic indications. A key CCU example is a patient with a mechanical prosthetic heart valve, including mechanical aortic valve replacement.",
+      "administration": "PO exactly as ordered, with dosing adjusted according to INR and the prescribed therapeutic target. Do not treat a single universal INR target as correct for every mechanical valve; the target depends on valve type/position and patient thromboembolic risk. After mechanical-valve implantation, current ESC/EACTS guidance recommends starting UFH or LMWH bridging together with a VKA as soon as considered safe.",
+      "monitor": "• Check INR and the prescribed target range. • Assess for bleeding: gums, urine, stool, bruising, puncture sites, neurological symptoms or unexplained hypotension. • Review new medicines, antibiotics, diet changes and illness because they can change the INR. • Warfarin effect begins within about 24 hours, but peak anticoagulant effect is delayed about 72–96 hours; reaching a stable therapeutic INR can take longer. • Vitamin K is used to reverse warfarin effect in appropriate clinical situations according to severity/protocol.",
+      "why": "Warfarin inhibits vitamin-K recycling, reducing synthesis of vitamin-K-dependent clotting factors II, VII, IX and X. Mechanical valves are thrombogenic because blood contacts an artificial non-endothelial surface and experiences disturbed flow, promoting thrombus formation; anticoagulation reduces valve thrombosis and systemic embolic risk.",
+      "source": "Used in CCU · ward report + 2025 ESC/EACTS mechanical-valve guidance + current DailyMed warfarin labeling",
+      "pages": "Nasser CCU recall · updated 5 Oct 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Coumadin = warfarin = VKA; long-term anticoagulation for mechanical valves and other selected indications.",
+      "memoryDanger": "Main danger = bleeding. Monitor INR and never assume one INR target fits every mechanical valve.",
+      "mechanism": "Inhibits VKORC1, reducing regeneration of vitamin K and therefore synthesis of vitamin-K-dependent clotting factors II, VII, IX and X (and proteins C and S).",
+      "mechanismBasis": "Onset/peak pharmacodynamics checked against current DailyMed warfarin labeling; mechanical-valve anticoagulation/bridging recommendations checked against the 2025 ESC/EACTS valvular-heart-disease guideline."
     }
   ],
   "lessons": [
