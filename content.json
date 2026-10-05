@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 26,
+  "contentVersion": 27,
   "updatedAt": "2026-10-05",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -611,6 +611,94 @@
       ],
       "verification": "Drug onset/mechanism checked against current DailyMed warfarin labeling; mechanical-valve VKA and postoperative bridging recommendations checked against 2025 ESC/EACTS valvular-heart-disease guidance. The recalled '2 weeks' wording is treated as a likely ward explanation of INR/dose stabilization, not a fixed pharmacologic rule.",
       "placement": "clinical"
+    },
+    {
+      "id": "qa-decompensated-heart-failure",
+      "question": "What does decompensated heart failure mean?",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "Decompensated heart failure means previously chronic or relatively stable heart failure has acutely worsened, so the patient develops new or worsening congestion and/or poor perfusion."
+        },
+        {
+          "label": "What you may see",
+          "text": "Worsening dyspnea or orthopnea, crackles/pulmonary edema, increasing peripheral edema or raised JVP, falling blood pressure, cold/poor perfusion, confusion, and low urine output."
+        },
+        {
+          "label": "Common triggers",
+          "text": "Common precipitants include acute ischemia/MI, atrial fibrillation or another arrhythmia, infection, uncontrolled blood pressure, renal deterioration, excess salt/fluid, and missed or interrupted treatment."
+        },
+        {
+          "label": "Nursing focus",
+          "text": "Assess breathing/SpO₂, BP, rhythm, perfusion, mental status, urine output and congestion; escalate deterioration and reassess after each intervention."
+        },
+        {
+          "label": "Memory",
+          "text": "Compensated HF = relatively stable. Decompensated HF = HF has acutely worsened."
+        }
+      ],
+      "verification": "Reviewed 5 Oct 2026 against current 2026 ESC heart-failure guidance.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-paroxysmal-af-trigger-hf-decompensation",
+      "question": "Can severe paroxysmal AF trigger decompensated heart failure?",
+      "sections": [
+        {
+          "label": "Yes",
+          "text": "Yes, especially when AF produces a rapid ventricular response in a patient with little cardiac reserve such as severe HFrEF."
+        },
+        {
+          "label": "Why it worsens HF",
+          "text": "AF removes coordinated atrial contraction and makes ventricular filling irregular. A rapid ventricular rate also shortens diastolic filling time. Together these can reduce cardiac output and raise filling pressures, worsening pulmonary/systemic congestion."
+        },
+        {
+          "label": "Longer-term effect",
+          "text": "Sustained or recurrent rapid tachyarrhythmia can also contribute to tachycardia-mediated cardiomyopathy and further reduce ventricular function."
+        },
+        {
+          "label": "Important relationship",
+          "text": "The relationship goes both ways: rapid AF can precipitate HF decompensation, and worsening HF can itself trigger AF. Timing, ventricular rate and haemodynamic effect help identify which is driving the deterioration."
+        },
+        {
+          "label": "Red flag",
+          "text": "If rapid AF is associated with hypotension, shock, ischemic chest discomfort, altered mental status or acute pulmonary edema and the arrhythmia is causing the instability, urgent synchronized cardioversion is the usual immediate rhythm treatment."
+        }
+      ],
+      "verification": "Reviewed 5 Oct 2026 against current 2026 ESC heart-failure guidance and 2024 ESC atrial-fibrillation guidance.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-verapamil-vs-digoxin-severe-hf",
+      "question": "Why is Ikacor/verapamil avoided in severe HFrEF, and why might digoxin be used instead?",
+      "sections": [
+        {
+          "label": "Ikacor = verapamil",
+          "text": "Ikacor/Ikakor is verapamil, a non-dihydropyridine calcium-channel blocker that slows AV-node conduction but also reduces myocardial contractility."
+        },
+        {
+          "label": "Why avoid it in severe HFrEF",
+          "text": "Verapamil has a negative inotropic effect. In severe LV systolic dysfunction, such as an EF around 15%, further reducing contractility can lower cardiac output and worsen heart failure or hypotension. Current ESC guidance does not recommend verapamil/diltiazem in HFrEF."
+        },
+        {
+          "label": "Why digoxin may fit better",
+          "text": "Digoxin slows AV-node conduction and also has positive inotropic activity. In HFrEF with AF and a high ventricular rate, digoxin may be considered for rate control when beta-blockers are insufficient, contraindicated or not tolerated; in haemodynamically unstable HFrEF with AF, IV digoxin or amiodarone may be considered while the overall instability is managed."
+        },
+        {
+          "label": "Do not oversimplify",
+          "text": "Digoxin is not a universal substitute for verapamil. The correct choice depends on the rhythm, ventricular rate, blood pressure, perfusion, renal function and overall haemodynamic status."
+        },
+        {
+          "label": "Memory",
+          "text": "Verapamil slows the AV node but also weakens the pump. Digoxin can slow the AV node without that same negative-inotropic problem and may support contractility."
+        }
+      ],
+      "verification": "Reviewed 5 Oct 2026 against current 2026 ESC heart-failure guidance and 2024 ESC atrial-fibrillation guidance.",
+      "placement": "medication",
+      "relatedMeds": [
+        "ccu-37",
+        "trolley-44"
+      ]
     }
   ],
   "medications": [
