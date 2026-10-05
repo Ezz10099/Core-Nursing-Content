@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 28,
+  "contentVersion": 29,
   "updatedAt": "2026-10-05",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -699,6 +699,86 @@
         "ccu-37",
         "trolley-44"
       ]
+    },
+    {
+      "id": "qa-spironolactone-vs-furosemide",
+      "question": "When is spironolactone (Aldactone) more useful than furosemide (Lasix)?",
+      "sections": [
+        {
+          "label": "Core difference",
+          "text": "Furosemide is a strong loop diuretic used when you need meaningful fluid removal, such as pulmonary/peripheral congestion. Spironolactone is a weaker potassium-sparing diuretic whose special value is blocking aldosterone."
+        },
+        {
+          "label": "When spironolactone stands out",
+          "text": "It is particularly useful in HFrEF as part of chronic guideline-directed therapy when kidney function and potassium allow, in hyperaldosteronism, and in aldosterone-driven fluid retention such as cirrhotic ascites."
+        },
+        {
+          "label": "Why they are often combined",
+          "text": "Furosemide removes fluid strongly but tends to lower potassium; spironolactone blocks aldosterone and tends to preserve/raise potassium. They do different jobs, so some patients receive both."
+        },
+        {
+          "label": "Kidney warning",
+          "text": "Poor renal function can make spironolactone dangerous because potassium may accumulate. Significant hyperkalemia or worsening renal function should be escalated before routine administration."
+        },
+        {
+          "label": "Memory",
+          "text": "Lasix = stronger fluid removal. Aldactone = aldosterone blocker + potassium saver."
+        }
+      ],
+      "verification": "Source-derived from the approved Routine CCU / emergency-trolley medication references and the CCU teaching clarification from this session.",
+      "placement": "medication",
+      "relatedMeds": [
+        "ccu-furosemide",
+        "trolley-spironolactone"
+      ]
+    },
+    {
+      "id": "qa-aspirin-salicylate-toxicity",
+      "question": "What is the antidote for aspirin (salicylate) poisoning?",
+      "sections": [
+        {
+          "label": "Short answer",
+          "text": "There is no single specific antidote for salicylate poisoning."
+        },
+        {
+          "label": "Key treatment to remember",
+          "text": "IV sodium bicarbonate is a central therapy in significant salicylate toxicity because alkalinization reduces salicylate entry into tissues and increases renal elimination. Management also includes ABC stabilization, glucose/electrolyte/acid-base assessment and poison/toxicology guidance."
+        },
+        {
+          "label": "Severe poisoning",
+          "text": "Hemodialysis can be lifesaving in severe toxicity, especially with major CNS findings, pulmonary edema, severe acid-base disturbance, kidney failure or worsening toxicity despite bicarbonate therapy."
+        },
+        {
+          "label": "Nursing takeaway",
+          "text": "Do not think 'aspirin antidote = bicarbonate' as if it were a reversal agent. Think: no specific antidote → bicarbonate alkalinization + aggressive supportive care; severe cases may need dialysis."
+        }
+      ],
+      "verification": "Salicylate-toxicity principles aligned with American College of Medical Toxicology management guidance; app wording intentionally avoids treating sodium bicarbonate as a literal antidote.",
+      "placement": "medication",
+      "relatedMeds": [
+        "ccu-aspirin",
+        "trolley-sodium-bicarbonate"
+      ]
+    },
+    {
+      "id": "qa-emergency-trolley-not-identical",
+      "question": "Do all emergency trolleys contain the same medicines?",
+      "sections": [
+        {
+          "label": "Short answer",
+          "text": "No. Emergency trolleys usually share a standardized core for resuscitation, but the exact medicines/equipment can differ by department, patient population, local policy and available expertise."
+        },
+        {
+          "label": "CCU example",
+          "text": "A CCU trolley may emphasize arrhythmia/resuscitation and cardiovascular medicines. Pediatric, obstetric, emergency-department and anesthesia areas may require different formulations, doses or specialty-specific items."
+        },
+        {
+          "label": "Practical rule",
+          "text": "Use the local trolley checklist and learn where the core items are kept. Do not assume a drug present on the CCU trolley must be present on every hospital trolley."
+        }
+      ],
+      "verification": "General emergency-trolley practice clarification from this session; exact Nasser Medical Complex department lists remain facility-policy dependent.",
+      "placement": "clinical"
     }
   ],
   "medications": [
@@ -928,7 +1008,8 @@
       "mechanismBasis": "Concise conceptual pharmacology addition; not quoted from the CCU PDF.",
       "categories": [
         "trolley",
-        "ibd2"
+        "ibd2",
+        "ccu"
       ]
     },
     {
@@ -987,7 +1068,8 @@
       "pages": "Nasser orthopaedic rotation · observed Oct 2026",
       "category": "ibd2",
       "categories": [
-        "ibd2"
+        "ibd2",
+        "ccu"
       ],
       "memoryUse": "LEVOX = levofloxacin: fluoroquinolone antibiotic.",
       "memoryDanger": "New tendon pain/swelling, neuropathy or major CNS effects are red flags.",
@@ -1078,6 +1160,1081 @@
       "memoryDanger": "Can cause tachycardia, urinary retention and glaucoma problems; severe unexplained abdominal pain needs assessment, not just masking.",
       "mechanism": "Peripheral antimuscarinic action reduces smooth-muscle spasm in the GI and genitourinary tracts.",
       "mechanismBasis": "Brand identity checked against current Palestinian MoH records; injection cautions and contraindications checked against current hyoscine butylbromide SmPC."
+    },
+    {
+      "id": "ccu-isosorbide-mononitrate",
+      "name": "VASOCORE — isosorbide mononitrate",
+      "header": "VASOCORE — isosorbide mononitrate",
+      "drugclass": "Organic nitrate; long-acting antianginal.",
+      "availability": "YES for the generic/form. Palestinian essential-medicine data document isosorbide mononitrate 20-mg tablets. Vasocore is the ward-reported trade spelling and should be matched to the package.",
+      "administration": "PO. No dilution, IV line or pump. Give the exact ordered formulation and schedule; do not assume immediate-release and modified-release products are interchangeable.",
+      "use": "Prevention/control of angina; not the rapid-rescue formulation for an acute angina attack.",
+      "monitor": "• Check BP and dizziness before/after the dose. • Headache is common. • Never combine with sildenafil, tadalafil or vardenafil because profound hypotension/syncope can occur. • Verify whether the local tablet is immediate- or modified-release.",
+      "why": "Nitrate vasodilation lowers preload/BP; this oral long-acting form is mainly preventive.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Long-acting nitrate used mainly to prevent/control angina.",
+      "memoryDanger": "Major danger: hypotension, especially with PDE-5 inhibitors.",
+      "mechanism": "Releases nitric oxide → increases cGMP → vascular smooth-muscle relaxation.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-isosorbide-dinitrate",
+      "name": "CORDIL — isosorbide dinitrate",
+      "header": "CORDIL — isosorbide dinitrate",
+      "drugclass": "Organic nitrate vasodilator/antianginal.",
+      "availability": "YES for the Palestinian 5-mg sublingual form. A Palestinian IV isosorbide-dinitrate product was not publicly confirmed in the trolley research; Palestine separately lists IV nitroglycerin.",
+      "administration": "For the documented SL product, place under the tongue and let dissolve. Do not treat an SL tablet as an IV product. IV ISDN exists internationally as a controlled infusion, so any IV vial must be verified from the exact product before use.",
+      "use": "Faster nitrate relief than long-acting oral isosorbide mononitrate; IV nitrate therapy may be used for severe/unstable angina or refractory LV failure when specifically ordered.",
+      "monitor": "• Check BP before and after use. • Headache, flushing and dizziness are common. • Check for PDE-5 inhibitor exposure. • If an IV nitrate is ordered, verify the exact product, concentration, tubing and infusion method.",
+      "why": "Route determines onset and delivery; nitrate vasodilation can rapidly lower BP.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu",
+        "trolley"
+      ],
+      "memoryUse": "Sublingual ISDN is a faster nitrate; IV nitrate formulations are separate products.",
+      "memoryDanger": "PDE-5 inhibitor + nitrate can cause severe hypotension.",
+      "mechanism": "Nitric-oxide/cGMP-mediated vasodilation.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-nadroparin",
+      "name": "FRAXIPARINE / FRAXAPARIN — nadroparin",
+      "header": "FRAXIPARINE / FRAXAPARIN — nadroparin",
+      "drugclass": "Low-molecular-weight heparin (LMWH) anticoagulant.",
+      "availability": "WARD-REPORTED. You observed nadroparin locally; the original reference did not locate a nadroparin entry in the public 2024 Palestinian Essential Medicines List.",
+      "administration": "SC using the supplied prefilled syringe; never IM. Read the exact anti-Xa strength/volume from the syringe rather than memorizing one local strength.",
+      "use": "Anticoagulation for selected thromboembolic/ACS indications according to the order; same family as enoxaparin but a different molecule/product.",
+      "monitor": "• Inspect for bleeding/bruising. • Review platelets when ordered and report a significant fall. • Renal impairment can increase accumulation/bleeding risk. • Do not substitute nadroparin and enoxaparin dose-for-dose.",
+      "why": "LMWH products are related but not dose-for-dose interchangeable.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "LMWH anticoagulant; Fraxiparine = nadroparin.",
+      "memoryDanger": "Bleeding + renal accumulation; do not interchange with enoxaparin by dose.",
+      "mechanism": "Enhances antithrombin inhibition of activated clotting factors, especially factor Xa.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-enoxaparin",
+      "name": "CLEXANE / CLEXAN — enoxaparin",
+      "header": "CLEXANE / CLEXAN — enoxaparin",
+      "drugclass": "Low-molecular-weight heparin (LMWH) anticoagulant.",
+      "availability": "YES. Palestinian essential-medicine data document prefilled 20-, 40-, 60- and 80-mg syringes.",
+      "administration": "Deep SC in alternating abdominal sites. With a standard manufacturer prefilled syringe, do not expel the air bubble and do not rub afterward. Never IM.",
+      "use": "Anticoagulation in ACS and other thromboembolic indications according to the written order/protocol.",
+      "monitor": "• Watch gums, urine, stool, puncture sites and bruises for bleeding. • Check platelet and renal information when ordered. • Tell the team the most recent dose before invasive procedures/line removal when relevant. • Verify the exact syringe strength.",
+      "why": "Bleeding risk, renal clearance and timing make the exact syringe and dose important.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Clexane = enoxaparin = LMWH.",
+      "memoryDanger": "Main danger: bleeding; renal impairment can increase exposure.",
+      "mechanism": "LMWH potentiates antithrombin, predominantly reducing factor Xa activity.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-heparin-ufh",
+      "name": "HEPARIN — unfractionated heparin (UFH)",
+      "header": "HEPARIN — unfractionated heparin (UFH)",
+      "drugclass": "Unfractionated heparin anticoagulant.",
+      "availability": "YES. Palestinian essential-medicine data document heparin 5,000 IU/mL in a 5-mL vial.",
+      "administration": "May be SC or IV depending on the order. Therapeutic IV infusion requires a controlled pump after dilution to the hospital-standard concentration. Do not give IM; do not confuse a treatment vial with a catheter-flush product.",
+      "use": "Therapeutic anticoagulation and selected prophylactic uses.",
+      "monitor": "• Inspect for bleeding. • Ensure ordered coagulation/platelet samples are drawn and abnormalities reported. • Do not independently change an infusion rate unless an authorized nurse-driven protocol applies. • Recognize HIT when platelets fall unexpectedly.",
+      "why": "UFH has a variable anticoagulant effect, so therapeutic infusions commonly need controlled delivery and lab follow-up.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "UFH anticoagulant; commonly used as a titrated IV infusion.",
+      "memoryDanger": "Bleeding and HIT are major safety concerns.",
+      "mechanism": "Binds antithrombin and accelerates inhibition of thrombin and factor Xa.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-aspirin",
+      "name": "ASA / ASPIRIN — aspirin",
+      "header": "ASA / ASPIRIN — aspirin",
+      "drugclass": "Antiplatelet; irreversible platelet COX-1 inhibitor.",
+      "availability": "YES. Palestinian essential-medicine data document 100-mg tablets.",
+      "administration": "PO. When an ACS loading dose is specifically ordered, a rapid-release formulation is chewed for faster absorption; an extended-release product is not appropriate for rapid loading.",
+      "use": "Antiplatelet therapy in ACS and secondary cardiovascular prevention.",
+      "monitor": "• Check active bleeding, GI-bleeding history and aspirin hypersensitivity. • Inspect stool, urine and puncture sites when combined with other antithrombotics. • Aspirin + clopidogrel + heparin/LMWH increases bleeding tendency. • ASA and aspirin are the same drug.",
+      "why": "Irreversible platelet inhibition helps prevent thrombosis but increases bleeding risk.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Core antiplatelet in ACS when indicated.",
+      "memoryDanger": "Bleeding and hypersensitivity are the main bedside concerns.",
+      "mechanism": "Irreversibly acetylates platelet COX-1, reducing thromboxane A2 and platelet aggregation.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-clopidogrel",
+      "name": "PLAVIX — clopidogrel",
+      "header": "PLAVIX — clopidogrel",
+      "drugclass": "P2Y12 antiplatelet.",
+      "availability": "YES. Palestinian essential-medicine and registry data document 75-mg tablets.",
+      "administration": "PO. Routine maintenance needs no special preparation; loading doses are separate physician/protocol orders.",
+      "use": "Commonly part of dual antiplatelet therapy after ACS/PCI and coronary stenting.",
+      "monitor": "• Assess for bleeding. • Do not casually omit/discontinue it in a patient with a recent coronary stent; clarify unexpected omissions. • Avoid routine omeprazole with clopidogrel when a suitable alternative PPI is available. • Pantoprazole is generally the less problematic practical PPI choice.",
+      "why": "Premature interruption after stenting can increase thrombosis risk; omeprazole can reduce clopidogrel activation.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "P2Y12 antiplatelet used after ACS/PCI.",
+      "memoryDanger": "Bleeding; avoid casual interruption after recent coronary stenting.",
+      "mechanism": "Prodrug whose active metabolite irreversibly inhibits platelet P2Y12 receptors.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-bisoprolol",
+      "name": "CONCOR / CONCORE — bisoprolol",
+      "header": "CONCOR / CONCORE — bisoprolol",
+      "drugclass": "Relatively beta1-selective beta-blocker.",
+      "availability": "YES. Palestinian essential-medicine data document a 5-mg tablet; Concor 5 mg is registered in Palestine.",
+      "administration": "PO; no special preparation.",
+      "use": "Rate/BP control and reduction of cardiac workload in selected cardiovascular patients.",
+      "monitor": "• Check HR and BP before the dose. • Report symptomatic bradycardia, significant hypotension or new conduction problems. • Do not abruptly stop chronic therapy without an order. • Check for duplicate beta-blockade.",
+      "why": "Beta1 blockade slows HR and lowers cardiac workload/BP; abrupt withdrawal can cause sympathetic rebound.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Heart-selective beta-blocker for selected rate/BP/HF indications.",
+      "memoryDanger": "Bradycardia and hypotension; avoid abrupt withdrawal.",
+      "mechanism": "Blocks cardiac beta1 receptors, reducing HR and contractility.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-metoprolol",
+      "name": "METCARDIUM — metoprolol",
+      "header": "METCARDIUM — metoprolol",
+      "drugclass": "Beta1-selective beta-blocker.",
+      "availability": "WARD-REPORTED for this trade name/form. The exact salt/strength was not confirmed in the public Palestinian list used by the reference.",
+      "administration": "Administer exactly as labeled. Check whether the package says metoprolol tartrate or succinate; tablet formulations and modified-release products are not automatically interchangeable.",
+      "use": "Selected rate/BP control and reduction of myocardial workload.",
+      "monitor": "• Check HR and BP. • Report marked bradycardia/hypotension. • Be cautious with verapamil because both slow AV conduction. • Check for duplicate beta-blocker therapy.",
+      "why": "Metoprolol slows the heart through beta1 blockade; combining AV-node-slowing drugs can produce excessive bradycardia/block.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Beta1-selective blocker; verify tartrate vs succinate.",
+      "memoryDanger": "Bradycardia/hypotension; additive AV-node slowing with verapamil.",
+      "mechanism": "Blocks cardiac beta1 receptors.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-propranolol",
+      "name": "PROPRANOLOL",
+      "header": "PROPRANOLOL",
+      "drugclass": "Nonselective beta1 + beta2 blocker.",
+      "availability": "YES. Palestinian essential-medicine data document 1-mg ampoules and 10- and 40-mg tablets.",
+      "administration": "PO tablets or slow IV administration according to the exact ampoule/protocol with ECG/BP observation; not an unmonitored rapid IV push.",
+      "use": "Selected cardiovascular indications such as rate control, angina or BP treatment.",
+      "monitor": "• Check HR/BP. • Ask about asthma/active bronchospasm. • Beta2 blockade can cause bronchoconstriction. • Remember propranolol is less heart-selective than bisoprolol/metoprolol.",
+      "why": "Nonselective beta blockade affects both the heart and bronchi.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Nonselective beta-blocker.",
+      "memoryDanger": "Bronchospasm risk plus bradycardia/hypotension.",
+      "mechanism": "Blocks beta1 and beta2 adrenergic receptors.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-amlodipine",
+      "name": "AMICORE / AMICOR — amlodipine",
+      "header": "AMICORE / AMICOR — amlodipine",
+      "drugclass": "Dihydropyridine calcium-channel blocker; arterial vasodilator.",
+      "availability": "YES. Palestinian essential-medicine data document 5-mg tablets; AMICOR 5 mg is registered locally.",
+      "administration": "PO; no dilution. It is not an emergency BP-rescue drug because onset is gradual.",
+      "use": "Chronic BP control and antianginal therapy.",
+      "monitor": "• Check BP. • Look for ankle/peripheral edema. • Hypotension/dizziness can occur. • Do not automatically interpret amlodipine edema as total-body fluid overload; assess the whole patient.",
+      "why": "Arteriolar dilation lowers BP but can increase capillary hydrostatic pressure and ankle edema.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Gradual-onset antihypertensive/antianginal CCB.",
+      "memoryDanger": "Hypotension and ankle edema.",
+      "mechanism": "Blocks L-type calcium channels mainly in vascular smooth muscle, causing arterial vasodilation.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-verapamil",
+      "name": "IKACOR / IKAKOR — verapamil",
+      "header": "IKACOR / IKAKOR — verapamil",
+      "drugclass": "Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal.",
+      "availability": "YES. Palestinian essential-medicine data document 5-mg ampoules and 40-mg tablets.",
+      "administration": "IV verapamil is given slowly over at least 2 minutes under continuous ECG and BP monitoring; oral verapamil is a separate formulation.",
+      "use": "Selected supraventricular arrhythmias/rate control and antianginal therapy.",
+      "monitor": "• Watch HR, rhythm and BP. • Report bradycardia, AV block or significant hypotension. • Constipation is common with oral therapy. • Be very cautious when IV verapamil overlaps with beta-blockade.",
+      "why": "Verapamil slows AV-node conduction and myocardial activity; combining AV-node blockers can cause excessive depression.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "AV-node-slowing CCB used for selected SVTs/rate control.",
+      "memoryDanger": "Bradycardia, AV block and hypotension; beta-blocker overlap can be dangerous.",
+      "mechanism": "Blocks L-type calcium channels in the AV node and myocardium.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-enalapril",
+      "name": "ENALAPRIL",
+      "header": "ENALAPRIL",
+      "drugclass": "ACE inhibitor; RAAS blocker.",
+      "availability": "YES. Palestinian essential-medicine data document 5- and 20-mg tablets.",
+      "administration": "PO. Check current BP and whether the patient is volume-depleted before administration.",
+      "use": "Chronic cardiovascular therapy for selected hypertension and heart-failure patients.",
+      "monitor": "• Monitor BP. • Follow potassium and renal function when ordered. • New lip/tongue/face swelling requires urgent escalation. • Previous ACE-inhibitor angioedema is a contraindication.",
+      "why": "ACE inhibition lowers angiotensin II/aldosterone, which lowers BP but can raise potassium and alter kidney function.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "ACE inhibitor for selected HTN/HF patients.",
+      "memoryDanger": "Angioedema is an airway emergency; also monitor K+ and renal function.",
+      "mechanism": "Inhibits ACE, reducing angiotensin II and aldosterone.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-atorvastatin",
+      "name": "TROVAN / LIPIDEX / LIPDIX — atorvastatin",
+      "header": "TROVAN / LIPIDEX / LIPDIX — atorvastatin",
+      "drugclass": "Statin; HMG-CoA reductase inhibitor.",
+      "availability": "YES. Palestinian data support 20- and 40-mg atorvastatin options; TROVAN 40 mg is registry-confirmed.",
+      "administration": "PO; no special bedside preparation.",
+      "use": "Secondary cardiovascular prevention, including after ACS.",
+      "monitor": "• Mild muscle symptoms can occur. • Severe unexplained muscle pain/weakness ± dark urine is a rare red flag for myopathy/rhabdomyolysis. • Do not make rare rhabdomyolysis sound routine. • Flag major new interacting medicines rather than memorizing an exhaustive list.",
+      "why": "Its main CCU role is long-term cardiovascular risk reduction, not acute chest-pain relief.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Statin for secondary cardiovascular prevention.",
+      "memoryDanger": "Rare severe myopathy/rhabdomyolysis; review important interactions.",
+      "mechanism": "Inhibits HMG-CoA reductase, lowering hepatic cholesterol synthesis and LDL.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-furosemide",
+      "name": "LASIX — furosemide",
+      "header": "LASIX — furosemide",
+      "drugclass": "Loop diuretic.",
+      "availability": "YES. Palestinian essential-medicine data document a 20-mg ampoule, 40-mg tablet and a higher-strength injectable presentation.",
+      "administration": "PO or slow IV. Routine IV doses are given slowly; the source reference notes high-dose parenteral therapy should use controlled infusion and avoid rates faster than about 4 mg/min. Verify the actual product/order.",
+      "use": "Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients.",
+      "monitor": "• Track urine output and congestion. • Check BP. • Follow K+, Mg2+, Na+ and renal function. • Report tinnitus/hearing change, especially with large/rapid IV doses. • Routine oral doses are often given earlier in the day to reduce nocturia.",
+      "why": "Loop diuresis removes sodium/water rapidly but can deplete electrolytes and volume.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Strong loop diuretic for fluid overload/pulmonary congestion.",
+      "memoryDanger": "Hypotension, electrolyte loss and high/rapid-dose ototoxicity.",
+      "mechanism": "Blocks the Na-K-2Cl cotransporter in the thick ascending loop of Henle.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-dapagliflozin",
+      "name": "FARIGM — dapagliflozin",
+      "header": "FARIGM — dapagliflozin",
+      "drugclass": "SGLT2 inhibitor.",
+      "availability": "YES. Palestinian essential-medicine data document 10-mg tablets.",
+      "administration": "PO only; it has no acute glucose-correction role.",
+      "use": "Chronic therapy for diabetes, heart failure and kidney disease depending on the patient.",
+      "monitor": "• Watch volume status/BP. • Ask about genital or urinary symptoms. • In acutely ill, fasting or NPO patients, verify whether the drug is intentionally held. • Remember euglycemic ketoacidosis can occur without very high glucose.",
+      "why": "SGLT2 blockade increases urinary glucose/sodium loss; this helps chronic disease but can contribute to dehydration and ketoacidosis risk.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "SGLT2 inhibitor with diabetes/HF/renal roles.",
+      "memoryDanger": "Acute illness/NPO + euglycemic DKA is the key CCU red flag.",
+      "mechanism": "Blocks renal SGLT2, increasing urinary glucose and sodium excretion.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-correction-insulin",
+      "name": "SLIDING-SCALE / CORRECTION INSULIN",
+      "header": "SLIDING-SCALE / CORRECTION INSULIN",
+      "drugclass": "High-alert insulin therapy; usually regular human insulin or a rapid-acting analogue for correction.",
+      "availability": "YES. Palestinian essential-medicine data include regular U-100 vials and rapid-acting U-100 pens among other insulin formulations.",
+      "administration": "Correction insulin is normally SC using the ordered glucose-correction scale. IV insulin is a different protocol and requires a dedicated pump; never assume 'sliding scale' means IV.",
+      "use": "Correction of hyperglycemia according to the current order/protocol.",
+      "monitor": "• Check current bedside glucose. • Verify exact insulin name, concentration, dose and meal/NPO status. • Recheck glucose per protocol. • Hypoglycemia is the immediate major hazard. • Follow product-specific storage limits.",
+      "why": "Insulin is high-alert because type, concentration and timing errors can cause severe hypoglycemia.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Correction insulin lowers high glucose according to an ordered scale.",
+      "memoryDanger": "Wrong insulin/type/dose/timing can cause severe hypoglycemia.",
+      "mechanism": "Activates insulin receptors, increasing glucose uptake and suppressing hepatic glucose output.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-norepinephrine",
+      "name": "NOREPINEPHRINE / NORADRENALINE",
+      "header": "NOREPINEPHRINE / NORADRENALINE",
+      "drugclass": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity.",
+      "availability": "YES. Palestinian essential-medicine data document 4-mg ampoules.",
+      "administration": "Dilute to the hospital-standard concentration and run as a continuous infusion on an infusion pump; never IV push. Central access is preferred for ongoing/concentrated therapy, but a suitable proximal peripheral line may be used short-term when urgent therapy should not be delayed.",
+      "use": "Vasopressor support for severe hypotension/shock when clinically indicated.",
+      "monitor": "• Continuous/very frequent BP and perfusion assessment. • Inspect any peripheral IV frequently. • Pain, pallor, swelling, coolness or loss of flow at the site requires immediate action/escalation. • Pump precision matters because small rate changes can materially change BP.",
+      "why": "Strong vasoconstriction raises systemic vascular resistance/MAP; extravasation can cause local ischemia.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "PRESSURE drug: vasopressor for severe hypotension/shock.",
+      "memoryDanger": "Never IV push; monitor BP/perfusion and peripheral-site extravasation closely.",
+      "mechanism": "Alpha1-mediated vasoconstriction with some beta1 cardiac stimulation.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-dobutamine",
+      "name": "DOBUTAMINE",
+      "header": "DOBUTAMINE",
+      "drugclass": "Predominantly beta1 inotrope.",
+      "availability": "YES. Palestinian essential-medicine data document 250-mg ampoules.",
+      "administration": "The concentrate must be diluted and given by continuous infusion pump; never IV push. Use the local standardized concentration rather than memorizing one bag volume.",
+      "use": "Selected low-cardiac-output states such as severe acute HF/cardiogenic shock when increased contractility is needed.",
+      "monitor": "• Continuous ECG/HR and BP. • Follow urine output and peripheral perfusion. • Watch for tachycardia, ectopy and BP changes. • Peripheral administration may be used with close site monitoring; central access is preferable for concentrated/prolonged therapy.",
+      "why": "Dobutamine increases cardiac contractility/output — think PUMP — but can provoke tachyarrhythmia.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "PUMP drug: inotrope that increases contractility/output.",
+      "memoryDanger": "Tachyarrhythmia and hemodynamic changes; use a controlled infusion.",
+      "mechanism": "Predominantly beta1 agonism increases myocardial contractility.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-dopamine",
+      "name": "DOPAMINE",
+      "header": "DOPAMINE",
+      "drugclass": "Catecholamine inotrope/vasopressor with dose-dependent effects.",
+      "availability": "YES. Palestinian essential-medicine data document 200-mg ampoules.",
+      "administration": "Must be diluted and given continuously through an infusion pump; never IV push. Avoid mixing directly with strongly alkaline solutions such as sodium bicarbonate.",
+      "use": "Selected hemodynamic support and some bradycardia pathways depending on protocol.",
+      "monitor": "• Continuous HR/rhythm/BP. • Check urine output/peripheral perfusion. • Watch for tachyarrhythmia, excessive vasoconstriction and extravasation. • A large peripheral vein may be used initially with frequent inspection; central access is preferred for prolonged/concentrated infusion.",
+      "why": "Effects change with dose; excessive exposure can become pro-arrhythmic or strongly vasoconstrictive.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Dose-dependent catecholamine for selected hemodynamic/bradycardia support.",
+      "memoryDanger": "Never IV push; tachyarrhythmia, vasoconstriction and extravasation are key hazards.",
+      "mechanism": "Stimulates dopaminergic and adrenergic receptors in a dose-dependent pattern.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-atropine",
+      "name": "ATROPINE",
+      "header": "ATROPINE",
+      "drugclass": "Anticholinergic; specifically antimuscarinic.",
+      "availability": "YES. Palestinian essential-medicine data document 1-mg ampoules.",
+      "administration": "For symptomatic bradycardia, given as an IV/IO bolus according to the current resuscitation protocol; not normally a continuous infusion.",
+      "use": "Symptomatic bradycardia in the appropriate resuscitation pathway.",
+      "monitor": "• Watch HR/rhythm immediately. • Dry mouth, reduced secretions, urinary retention and confusion can occur. • If instability persists, escalate along the bradycardia pathway rather than repeatedly relying on atropine alone.",
+      "why": "Atropine does not press the beta1 accelerator; it removes the parasympathetic/vagal brake.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Antimuscarinic used in symptomatic bradycardia pathways.",
+      "memoryDanger": "Persistent instability needs escalation beyond atropine.",
+      "mechanism": "Blocks muscarinic acetylcholine receptors, reducing vagal slowing of the heart.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-pantoprazole",
+      "name": "PANTOVER / PANTOVERE — pantoprazole",
+      "header": "PANTOVER / PANTOVERE — pantoprazole",
+      "drugclass": "Proton-pump inhibitor (PPI).",
+      "availability": "WARD-REPORTED for pantoprazole by name; the Palestinian EML used by the reference had broader 40-mg IV 'PPI or alike' wording.",
+      "administration": "A common 40-mg IV vial is reconstituted with 10 mL 0.9% NaCl. Manufacturer labeling for the referenced product permits slow administration over at least 2 minutes or further dilution for an approximately 15-minute infusion; verify the exact local insert.",
+      "use": "Acid suppression, stress-ulcer prophylaxis or GI-bleeding therapy when ordered.",
+      "monitor": "• Verify IV compatibility when sharing a line. • Watch persistent diarrhea during prolonged therapy. • When a PPI is needed with clopidogrel, pantoprazole generally raises less CYP2C19 concern than omeprazole. • Follow the actual product insert.",
+      "why": "Pantoprazole suppresses gastric acid and generally interferes less with clopidogrel activation than omeprazole.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "PPI used for GI protection/acid suppression.",
+      "memoryDanger": "Check IV product instructions and compatibility; prolonged diarrhea can matter.",
+      "mechanism": "Irreversibly inhibits the gastric proton pump (H+/K+ ATPase).",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-omeprazole",
+      "name": "OMEPRAZOLE",
+      "header": "OMEPRAZOLE",
+      "drugclass": "Proton-pump inhibitor (PPI).",
+      "availability": "YES. Palestinian essential-medicine data document a 20-mg oral tablet/capsule or equivalent.",
+      "administration": "Usually PO before food. Enteric-coated products should not simply be crushed unless that formulation permits it.",
+      "use": "Acid suppression and GI protection according to the indication.",
+      "monitor": "• Assess the ongoing GI indication. • Watch persistent diarrhea if therapy is prolonged. • Avoid routine pairing with clopidogrel when a suitable alternative PPI is available.",
+      "why": "Omeprazole inhibits CYP2C19, which clopidogrel needs for activation.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Oral PPI for acid suppression.",
+      "memoryDanger": "Important CCU interaction: omeprazole can reduce clopidogrel activation.",
+      "mechanism": "Irreversibly inhibits the gastric proton pump.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-metronidazole",
+      "name": "FLAGYL — metronidazole",
+      "header": "FLAGYL — metronidazole",
+      "drugclass": "Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage.",
+      "availability": "YES. Palestinian essential-medicine data include IV 500 mg, 250/500-mg tablets and oral suspension.",
+      "administration": "Common 500-mg IV presentations are intermittent infusions rather than IV push; use the supplied bag/bottle and labeled infusion time, commonly about 30–60 minutes.",
+      "use": "Anaerobic and selected protozoal infections according to the diagnosis.",
+      "monitor": "• Nausea/metallic taste are common. • Report new numbness/tingling during prolonged courses. • Warfarin patients need closer INR attention. • Avoid alcohol/propylene-glycol products during therapy and for the labeled period afterward.",
+      "why": "Metronidazole can interact with alcohol and warfarin; cumulative therapy can cause peripheral neuropathy.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Flagyl = metronidazole; anaerobic/protozoal coverage.",
+      "memoryDanger": "Warfarin interaction and prolonged-course neuropathy; avoid rapid IV push.",
+      "mechanism": "Forms reactive metabolites in susceptible anaerobic organisms that damage DNA.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-linezolid",
+      "name": "LINEZOLID",
+      "header": "LINEZOLID",
+      "drugclass": "Oxazolidinone antibiotic.",
+      "availability": "WARD-REPORTED. You observed linezolid locally; no specific 2024 Palestinian EML entry was located in the original reference.",
+      "administration": "A common IV formulation is a ready-to-use 600 mg/300 mL bag. Do not add medicines to the bag; infuse over the product-specified period rather than IV push.",
+      "use": "Mainly serious resistant Gram-positive infections including MRSA/VRE when prescribed.",
+      "monitor": "• Follow CBC/platelets, particularly when therapy approaches/exceeds 2 weeks. • Watch for thrombocytopenia/bone-marrow suppression. • Review serotonergic medicines and report agitation, hyperreflexia, fever or autonomic instability. • Longer courses increase neuropathy risk.",
+      "why": "Linezolid can cause duration-related marrow suppression and has MAO-inhibiting activity that can contribute to serotonin syndrome.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Antibiotic for resistant Gram-positive infection.",
+      "memoryDanger": "CBC/platelets with longer therapy; serotonin-syndrome interactions matter.",
+      "mechanism": "Blocks bacterial protein synthesis at the 50S ribosomal subunit.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-salbutamol",
+      "name": "VENTOLIN — salbutamol / albuterol",
+      "header": "VENTOLIN — salbutamol / albuterol",
+      "drugclass": "Short-acting beta2 agonist (SABA) bronchodilator.",
+      "availability": "YES. Palestinian essential-medicine data document nebulizer solution and 100-mcg/inhalation aerosol; Palestinian product records also document Ventolin forms.",
+      "administration": "Inhaled by inhaler or nebulizer. For nebulization, measure the ordered dose and dilute with 0.9% NaCl only when required by the device/order. It is not a routine IV medication.",
+      "use": "Relief of bronchospasm/wheeze in the appropriate respiratory patient.",
+      "monitor": "• Reassess work of breathing, wheeze and SpO2. • Monitor HR and tremor. • Repeated/high nebulized doses can lower K+. • Low potassium matters more when the patient is also receiving furosemide or already has hypokalemia.",
+      "why": "Beta2 stimulation bronchodilates but can also shift potassium into cells and produce tachycardia/tremor.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Rapid inhaled bronchodilator for bronchospasm.",
+      "memoryDanger": "Tachycardia/tremor; repeated doses can lower potassium.",
+      "mechanism": "Stimulates beta2 receptors in bronchial smooth muscle.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-nystatin",
+      "name": "NYSTATIN",
+      "header": "NYSTATIN",
+      "drugclass": "Polyene antifungal; local oral therapy.",
+      "availability": "YES. Palestinian medicine data include an oral nystatin preparation; a common suspension strength is 100,000 units/mL.",
+      "administration": "Shake well, measure accurately, distribute around the mouth and retain as long as practical before swallowing. Avoid immediate food/drink when possible.",
+      "use": "Commonly used for oral candidiasis.",
+      "monitor": "• Inspect oral lesions and response. • Nausea, GI upset or oral irritation can occur. • Oral nystatin is not a treatment for systemic fungal infection. • Follow the local product storage label.",
+      "why": "Oral nystatin acts locally and is minimally absorbed.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Local oral antifungal for oral candidiasis.",
+      "memoryDanger": "Do not mistake oral nystatin for systemic antifungal therapy.",
+      "mechanism": "Binds fungal membrane sterols and disrupts membrane integrity.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-betahistine",
+      "name": "MEDIUM — betahistine",
+      "header": "MEDIUM — betahistine",
+      "drugclass": "Histamine analogue / antivertigo drug.",
+      "availability": "YES for betahistine 16-mg tablets. 'Medium' is the ward-reported trade spelling and should be verified against the package.",
+      "administration": "PO; taking it with or after food may reduce stomach upset.",
+      "use": "Symptomatic treatment of vertigo/dizziness rather than a primary cardiac emergency drug.",
+      "monitor": "• Common effects include nausea, dyspepsia and headache. • Use more caution with asthma or peptic-ulcer history. • Verify the package says betahistine because the trade spelling is ward-reported.",
+      "why": "Lower-priority symptom-control medicine in CCU compared with acute cardiac drugs.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Symptomatic antivertigo medicine.",
+      "memoryDanger": "Verify the trade name/generic; GI upset/headache are common.",
+      "mechanism": "Histaminergic effects are thought to improve vestibular microcirculation and compensation.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-propafenone",
+      "name": "PROFEX — propafenone",
+      "header": "PROFEX — propafenone",
+      "drugclass": "Class Ic sodium-channel-blocking antiarrhythmic.",
+      "availability": "WARD-REPORTED in your CCU for the exact trade product. Current manufacturer information supports PROFEX 150-mg and 300-mg oral tablets; this update did not locate a current Palestinian public registry entry for that exact brand.",
+      "administration": "PO tablets. Verify exact strength/schedule from the package and Kardex. This is not an IV emergency-trolley formulation; rhythm-control strategy is cardiology-directed.",
+      "use": "Rhythm control in carefully selected patients with arrhythmias such as AF/flutter, PSVT and some ventricular arrhythmias; not appropriate for every AF patient.",
+      "monitor": "• Check HR, BP and ECG/rhythm when clinically indicated. • Hold/escalate for marked bradycardia, hypotension, new/worsening arrhythmia, important conduction slowing or QRS widening. • Structural heart disease, recent MI, HF or conduction disease can make Class Ic therapy unsafe. • Review electrolytes and other conduction-slowing drugs. • Some beta-blocking activity means bronchospasm risk matters.",
+      "why": "Fast sodium-channel blockade slows conduction; that can suppress arrhythmia but can also create dangerous conduction/proarrhythmic effects.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Class Ic rhythm-control antiarrhythmic.",
+      "memoryDanger": "Structural heart disease/recent MI/HF and conduction problems are important safety issues.",
+      "mechanism": "Blocks fast cardiac sodium channels and slows conduction.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-valzadepine",
+      "name": "VALZADEPINE / 'Valzadipine' — amlodipine + valsartan",
+      "header": "VALZADEPINE / 'Valzadipine' — amlodipine + valsartan",
+      "drugclass": "Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB).",
+      "availability": "YES. Valzadepine is a Palestinian Pharmacare product; Palestinian-market evidence supports amlodipine/valsartan combinations such as 5/80, 5/160 and 10/160 mg. Verify the exact strength on the package.",
+      "administration": "PO tablet. No IV preparation/pump. Give the exact ordered combination strength; do not mentally split the components unless separate products are actually ordered.",
+      "use": "Chronic hypertension treatment when one drug alone is insufficient.",
+      "monitor": "• Check BP and dizziness/hypotension. • Monitor renal function and potassium as ordered because valsartan can affect kidney function and raise K+. • Look for ankle edema from amlodipine. • Avoid in pregnancy. • Do not confuse it with valsartan + hydrochlorothiazide.",
+      "why": "Amlodipine relaxes arteries while valsartan blocks angiotensin-II effects.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Amlodipine + valsartan combination for hypertension.",
+      "memoryDanger": "Do not confuse with valsartan/HCTZ; monitor BP, renal function and K+.",
+      "mechanism": "Combines arterial calcium-channel blockade with angiotensin-II receptor blockade.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-valzan-hct",
+      "name": "VALZAN HCT — valsartan + hydrochlorothiazide",
+      "header": "VALZAN HCT — valsartan + hydrochlorothiazide",
+      "drugclass": "Combination antihypertensive: ARB + thiazide diuretic.",
+      "availability": "YES. Palestinian MoH data list VALZAN-HCT as a local Pharmacare product; Palestinian product data document multiple valsartan/HCTZ strengths.",
+      "administration": "PO film-coated tablet. Give the exact ordered strength; do not assume one combination strength is interchangeable with another.",
+      "use": "Hypertension when monotherapy is insufficient. You observed this combination being used in CCU instead of Valzadepine in some patients; that is a treatment choice, not a dose-for-dose substitution.",
+      "monitor": "• Check BP and orthostatic symptoms. • Follow renal function and electrolytes, especially Na+ and K+. • HCTZ can lower Na+/K+ and cause volume depletion while valsartan can raise K+, so do not guess the net K+ effect. • Watch hydration/volume status. • Avoid in pregnancy. • Do not confuse with Valzadepine.",
+      "why": "Valsartan blocks angiotensin II while HCTZ increases sodium/water excretion.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Valsartan + HCTZ combination for hypertension.",
+      "memoryDanger": "Electrolyte/volume changes plus ARB renal/K+ effects require monitoring.",
+      "mechanism": "Combines angiotensin-II receptor blockade with thiazide diuresis.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-symbicort",
+      "name": "SYMBICORT — budesonide + formoterol",
+      "header": "SYMBICORT — budesonide + formoterol",
+      "drugclass": "Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA).",
+      "availability": "YES. Palestinian MoH registry lists SYMBICORT TURBUHALER 160/4.5 mcg per inhalation in 60- and 120-dose inhalers.",
+      "administration": "Inhaled dry-powder Turbuhaler. Inhale forcefully/deeply through the mouthpiece and do not exhale into it. Rinse the mouth after maintenance doses. Use the exact prescribed regimen.",
+      "use": "Ongoing asthma or COPD treatment in a CCU patient with chronic respiratory disease; not an IV or nebulized CCU drug.",
+      "monitor": "• Check inhaler technique. • Rinse mouth to reduce thrush/hoarseness. • Monitor tremor, palpitations or tachycardia from formoterol, especially in cardiac patients. • Rare red flag: immediate worsening bronchospasm after inhalation. • Increasing reliever need or worsening symptoms requires reassessment.",
+      "why": "Budesonide reduces airway inflammation; formoterol bronchodilates.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Maintenance inhaler combining anti-inflammatory steroid + long-acting bronchodilator.",
+      "memoryDanger": "Poor technique reduces effect; rinse mouth; monitor cardiac beta2 effects.",
+      "mechanism": "ICS reduces airway inflammation; LABA stimulates beta2 receptors.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-gentamicin",
+      "name": "GENTAMICIN",
+      "header": "GENTAMICIN",
+      "drugclass": "Aminoglycoside antibiotic.",
+      "availability": "YES. Palestinian essential-medicine data list gentamicin 80-mg injection; Palestinian registry data also support an 80 mg/2 mL product.",
+      "administration": "IV infusion or IM depending on the order/product. The referenced 80 mg/2 mL product is diluted for IV use; intermittent IV administration is infused over the product-specified period. Follow the exact local product/protocol.",
+      "use": "Treatment of serious susceptible bacterial infections, especially Gram-negative infection, when selected by the treating team.",
+      "monitor": "• Check renal function before/during therapy. • Dosing often requires renal adjustment; do not alter it independently. • Monitor serum levels when ordered/available. • Watch for ototoxicity: tinnitus, hearing change, dizziness/vertigo. • Watch for nephrotoxicity: rising creatinine/falling urine output. • Do not casually premix with other drugs without confirmed compatibility.",
+      "why": "Gentamicin is renally cleared and has a narrow safety margin; accumulation can injure kidneys and the vestibular/auditory system.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Aminoglycoside for serious susceptible infections.",
+      "memoryDanger": "Nephrotoxicity + ototoxicity; renal function and levels matter.",
+      "mechanism": "Binds the bacterial 30S ribosomal subunit and disrupts protein synthesis.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-ipratropium",
+      "name": "AEROVENT — ipratropium bromide",
+      "header": "AEROVENT — ipratropium bromide",
+      "drugclass": "Inhaled antimuscarinic bronchodilator (SAMA).",
+      "availability": "YES. Palestinian MoH drug-price data list AEROVENT SOLUTION as ipratropium bromide. Verify the exact ward bottle/concentration.",
+      "administration": "Nebulized/inhaled solution; not IV. Give the exact ordered dose using the nebulizer/device. It may be combined with salbutamol when ordered. Do not assume one dilution volume across products.",
+      "use": "Bronchodilation in bronchospasm, especially COPD and some asthma exacerbations.",
+      "monitor": "• Reassess work of breathing, wheeze, RR and SpO2. • Dry mouth/throat irritation can occur. • Avoid directing nebulized mist into the eyes. • Use caution in patients prone to urinary retention. • Worsening respiratory distress requires reassessment/escalation, not reliance on the nebulizer alone.",
+      "why": "Ipratropium blocks muscarinic vagal bronchoconstriction, relaxing airway smooth muscle.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "SAMA bronchodilator often nebulized for bronchospasm.",
+      "memoryDanger": "Eye exposure/urinary retention matter; reassess worsening distress.",
+      "mechanism": "Blocks muscarinic receptors in the airways.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-adenosine",
+      "name": "ADENOSINE",
+      "header": "ADENOSINE",
+      "drugclass": "Ultra-short-acting AV-nodal blocking antiarrhythmic.",
+      "availability": "YES. Palestinian essential-medicine data document adenosine 6-mg ampoules.",
+      "administration": "Rapid IV push followed immediately by a rapid saline flush with continuous ECG monitoring. Use a port as close to the patient as practical. The source reference uses the current AHA adult sequence of 6 mg rapid IV, then 12 mg if required. Do not give it slowly through long tubing.",
+      "use": "Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment.",
+      "monitor": "• Continuous ECG/rhythm monitoring. • Warn conscious patients about brief flushing, chest pressure, breathlessness or a frightening pause sensation. • Be prepared for transient AV block/very brief asystole. • Bronchospasm/asthma is an important safety concern. • Theophylline/aminophylline can reduce effect; dipyridamole can increase it.",
+      "why": "Adenosine is cleared within seconds; rapid push + immediate flush gets enough drug to the AV node before it is metabolized.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu",
+        "trolley"
+      ],
+      "memoryUse": "Rapid AV-node blocker for stable regular SVT.",
+      "memoryDanger": "Technique is critical; monitor ECG and be ready for transient AV block/asystole.",
+      "mechanism": "Activates adenosine A1 receptors in the AV node, causing transient conduction block.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-labetalol",
+      "name": "LABETALOL",
+      "header": "LABETALOL",
+      "drugclass": "Combined alpha1- and beta-adrenergic blocker; antihypertensive.",
+      "availability": "YES. Palestinian essential-medicine records include a 100-mg injection ampoule and 100-/200-mg tablets. Verify actual ward concentration.",
+      "administration": "PO or IV. For the verified 5 mg/mL injection, labeling describes slow IV administration over about 2 minutes with BP reassessment; continuous infusion requires a controlled device. Do not copy one schedule to a different product without checking the label.",
+      "use": "Controlled BP lowering for selected severe hypertension and other physician-directed cardiovascular indications.",
+      "monitor": "• Check BP, HR and rhythm before/after IV doses. • Hold/clarify for severe bradycardia, important AV block, cardiogenic shock or overt HF. • Bronchial asthma is a contraindication for the referenced injectable formulation because beta2 blockade can provoke bronchospasm. • Check other BP-lowering/AV-node-slowing drugs for additive effects.",
+      "why": "Alpha1 blockade dilates vessels while beta blockade reduces adrenergic cardiac effects; both BP and HR matter.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu",
+        "trolley"
+      ],
+      "memoryUse": "IV/PO antihypertensive useful when controlled BP reduction is needed.",
+      "memoryDanger": "Bradycardia, hypotension, AV block and bronchospasm risk.",
+      "mechanism": "Blocks alpha1 plus beta1/beta2 adrenergic receptors.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-ketamine",
+      "name": "KETAMINE — ketamine hydrochloride",
+      "header": "KETAMINE — ketamine hydrochloride",
+      "drugclass": "Dissociative anesthetic; NMDA-receptor antagonist.",
+      "availability": "YES. Palestinian essential-medicine data document ketamine HCl injection. Vial content is not a universal concentration; read the actual label.",
+      "administration": "IV or IM according to the prescribed indication. Official labeling for IV anesthetic induction specifies slow administration, about 60 seconds; rapid administration can cause respiratory depression and an excessive pressor response. Sedation/anesthesia requires trained staff, full monitoring and immediately available airway/ventilation equipment.",
+      "use": "Physician-directed procedural sedation or anesthetic induction when indicated.",
+      "monitor": "• Check BP, HR, SpO2, breathing and consciousness; ECG as appropriate. • Have suction, oxygen, BVM and resuscitation support ready. • Airway obstruction, laryngospasm or apnea can occur. • BP/HR often rise, but hypotension/cardiac decompensation can also occur. • Emergence reactions can cause confusion/agitation. • Opioid/benzodiazepine combinations increase respiratory-depression risk.",
+      "why": "NMDA blockade causes dissociative anesthesia; airway and hemodynamic monitoring remain essential.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Dissociative anesthetic/sedative used under monitored, physician-directed conditions.",
+      "memoryDanger": "Airway/ventilation and hemodynamic monitoring are mandatory.",
+      "mechanism": "Noncompetitive NMDA receptor antagonism produces dissociative anesthesia.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-pethidine",
+      "name": "PETHIDINE — meperidine",
+      "header": "PETHIDINE — meperidine",
+      "drugclass": "Opioid analgesic.",
+      "availability": "YES. Palestinian essential-medicine data list pethidine injection in 50- and 100-mg ampoules; verify concentration and route.",
+      "administration": "IM, SC or IV according to the product/order. If IV use is necessary, give very slowly per product labeling, preferably diluted, with monitoring and naloxone/assisted ventilation immediately available. Do not convert ampoule content into a default patient dose.",
+      "use": "Physician-prescribed analgesia for selected severe pain situations; not a routine first-choice treatment for every CCU chest-pain patient.",
+      "monitor": "• Check pain, sedation, RR, SpO2 and BP before/after. • Stop/escalate if breathing or consciousness deteriorates. • Nausea, vomiting, dizziness, sedation and hypotension can occur. • Avoid routine/repeated use with renal impairment because normeperidine can accumulate and increase seizure risk. • Review MAO inhibitors and serotonergic/CNS-depressant medicines. • Follow controlled-drug documentation/waste policy.",
+      "why": "Opioid respiratory depression is the immediate danger; normeperidine accumulation adds a distinctive seizure risk.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Opioid analgesic; use only for a clear prescribed indication.",
+      "memoryDanger": "Respiratory depression; renal accumulation of normeperidine can provoke seizures.",
+      "mechanism": "Mu-opioid receptor agonism produces analgesia and respiratory/CNS depression.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ccu-morphine",
+      "name": "MORPHINE — morphine sulfate / hydrochloride",
+      "header": "MORPHINE — morphine sulfate / hydrochloride",
+      "drugclass": "Strong opioid analgesic.",
+      "availability": "YES. Palestinian essential-medicine data include a 10-mg morphine ampoule; verify salt, concentration, route and ordered dose.",
+      "administration": "IV or IM as appropriate to the product/order. IV morphine is given slowly and titrated under close monitoring, not as an unmonitored rapid bolus. Keep naloxone and airway support available.",
+      "use": "Selected severe pain/distress management when prescribed; not automatically indicated for every ACS patient or every case of pulmonary edema.",
+      "monitor": "• Assess pain, RR, SpO2, consciousness and BP before/after. • Sedation can precede respiratory depression. • Hold/escalate for significant respiratory depression, severe hypotension or reduced consciousness; support airway/ventilation and follow naloxone protocol if toxicity is suspected. • Nausea, vomiting, constipation, pruritus and dizziness can occur. • Opioids + benzodiazepines/other sedatives can cause profound respiratory depression. • Follow controlled-drug procedures.",
+      "why": "Mu-opioid activation relieves severe pain but also reduces respiratory drive and can lower BP.",
+      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "ccu",
+      "categories": [
+        "ccu"
+      ],
+      "memoryUse": "Strong opioid for selected severe pain/distress when ordered.",
+      "memoryDanger": "Respiratory depression and hypotension; naloxone/airway support must be available.",
+      "mechanism": "Mu-opioid receptor agonist.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-spironolactone",
+      "name": "SPIRONOLACTONE — Aldactone",
+      "header": "SPIRONOLACTONE — Aldactone",
+      "drugclass": "Potassium-sparing diuretic; mineralocorticoid-receptor antagonist.",
+      "availability": "YES. Palestine-wide records show spironolactone 25- and 100-mg tablets; exact brand may differ.",
+      "administration": "PO tablets. No routine IV emergency formulation, reconstitution, IV line or pump.",
+      "use": "Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide.",
+      "monitor": "• Check potassium and renal function. • Escalate significant hyperkalemia or worsening renal function before routine administration. • Watch hypotension, dizziness and dehydration with other diuretics/RAAS blockers. • Do not casually add potassium supplements or potassium-containing salt substitutes.",
+      "why": "Spironolactone saves potassium and blocks aldosterone; furosemide provides stronger, faster diuresis and tends to waste potassium.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley",
+        "ccu"
+      ],
+      "memoryUse": "Aldosterone-blocking, potassium-sparing diuretic; especially useful in HFrEF/aldosterone-driven states.",
+      "memoryDanger": "Hyperkalemia is the key danger, especially with renal impairment.",
+      "mechanism": "Blocks mineralocorticoid receptors, reducing aldosterone-mediated sodium retention and potassium loss.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-lidocaine",
+      "name": "LIDOCAINE HCl",
+      "header": "LIDOCAINE HCl",
+      "drugclass": "Class IB ventricular antiarrhythmic; also a local anesthetic.",
+      "availability": "YES. Palestinian essential-medicine data document lidocaine HCl injection in 1%, 2% and 4% presentations.",
+      "administration": "Before IV cardiac use, verify the product is intended for IV antiarrhythmic use and contains no epinephrine/local-anesthetic additive. For perfusing ventricular arrhythmias, the source reference uses controlled IV dosing/infusion; cardiac-arrest use follows the current AHA algorithm.",
+      "use": "AHA allows lidocaine or amiodarone for shock-refractory VF/pulseless VT; it may also be used for selected ventricular arrhythmias with a pulse.",
+      "monitor": "• Continuous ECG during IV antiarrhythmic use. • Worsening conduction, QRS widening, bradycardia or new arrhythmia needs immediate reassessment. • Watch neurologic toxicity: perioral numbness, confusion, drowsiness, tinnitus, twitching or seizures. • Hypotension, myocardial depression, heart block and respiratory depression can occur with excessive exposure.",
+      "why": "Cardiac sodium-channel blockade suppresses ventricular arrhythmia, while systemic toxicity often appears as neurologic or conduction changes.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Ventricular antiarrhythmic; also a local anesthetic, so verify the formulation.",
+      "memoryDanger": "Neurologic toxicity and conduction depression; local-anesthetic products with additives are not automatically suitable for IV cardiac use.",
+      "mechanism": "Blocks fast sodium channels.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-sodium-bicarbonate",
+      "name": "SODIUM BICARBONATE",
+      "header": "SODIUM BICARBONATE",
+      "drugclass": "Systemic alkalinizing agent.",
+      "availability": "YES. Palestinian MoH essential-medicine data document sodium bicarbonate 8.4% injection; container volume can vary.",
+      "administration": "IV. The adult 8.4% emergency formulation is highly concentrated. Do not convert percentage, mL and mEq from memory; administration/dilution depend on the indication and actual product/protocol.",
+      "use": "Not routine in undifferentiated cardiac arrest. Use mainly for selected reversible causes/special circumstances such as specific toxicologic/metabolic indications.",
+      "monitor": "• Verify indication, concentration and ordered mEq. • Follow sodium, pH/ABG or VBG and potassium when indicated. • Excess can cause alkalemia, hypernatremia and sodium/volume load. • Do not improvise Y-site mixing with emergency drugs unless compatibility is confirmed. • It never substitutes for high-quality CPR/defibrillation/ventilation or treatment of the cause.",
+      "why": "It changes acid-base chemistry; without a specific indication it can add sodium/alkali without fixing the cause.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Special-circumstance alkalinizing therapy; not a routine arrest drug.",
+      "memoryDanger": "Concentration/mEq errors, alkalemia and sodium load; verify the indication.",
+      "mechanism": "Provides bicarbonate buffer, raising serum pH and altering acid-base balance.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-hydralazine",
+      "name": "HYDRALAZINE",
+      "header": "HYDRALAZINE",
+      "drugclass": "Direct arterial vasodilator.",
+      "availability": "YES. Palestinian essential-medicine data document 20-mg ampoules and 50-mg tablets.",
+      "administration": "Parenteral products may be IV or IM. Because push instructions vary across products, give slow IV only according to the exact ampoule insert/local protocol rather than memorizing an invented universal rate.",
+      "use": "Parenteral treatment of severe hypertension when indicated.",
+      "monitor": "• Check BP before and repeatedly after parenteral administration. • Watch headache, flushing, dizziness, hypotension and reflex tachycardia. • Escalate new chest discomfort or marked tachycardia in a coronary patient. • Do not confuse with labetalol: hydralazine can increase reflex HR.",
+      "why": "Direct arteriolar dilation can drop BP and trigger reflex sympathetic tachycardia.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Direct vasodilator used for selected severe hypertension.",
+      "memoryDanger": "Reflex tachycardia/hypotension can be clinically important in coronary patients.",
+      "mechanism": "Directly relaxes arteriolar smooth muscle.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-dextrose50",
+      "name": "DEXTROSE 50% — D50",
+      "header": "DEXTROSE 50% — D50",
+      "drugclass": "Hypertonic IV glucose.",
+      "availability": "YES for dextrose 50% in Palestinian documentation; a specific 25-g/50-mL Palestinian emergency syringe was not independently confirmed in the source research.",
+      "administration": "IV only for the concentrated emergency product. Ensure a clearly patent IV, preferably a good large peripheral vein for a single emergency dose, and stop if infiltration/extravasation is suspected. Verify grams and volume on the actual container.",
+      "use": "Severe symptomatic hypoglycemia when IV glucose is indicated.",
+      "monitor": "• Check bedside glucose immediately unless treatment cannot safely wait. • Confirm concentration and grams, not only the label 'D50'. • Recheck glucose and reassess consciousness after treatment. • Watch the IV site closely; extravasation can injure tissue. • Protect the airway in an unconscious patient.",
+      "why": "D50 raises glucose rapidly but is very hypertonic and can injure tissue if it leaves the vein.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Concentrated IV glucose for severe symptomatic hypoglycemia.",
+      "memoryDanger": "Extravasation can injure tissue; always recheck glucose and consciousness.",
+      "mechanism": "Provides rapidly available IV glucose.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-hydrocortisone",
+      "name": "HYDROCORTISONE",
+      "header": "HYDROCORTISONE",
+      "drugclass": "Glucocorticoid.",
+      "availability": "YES. Palestinian essential-medicine data document a 100-mg vial.",
+      "administration": "Product-specific IV injection/infusion or IM administration. Emergency products are commonly hydrocortisone sodium succinate; verify the salt, vial strength and reconstitution from the exact product.",
+      "use": "Adrenal crisis and selected severe inflammatory/allergic or shock states when indicated. In anaphylaxis it is an adjunct and must not delay epinephrine.",
+      "monitor": "• Verify salt and vial strength before reconstitution. • Monitor BP, glucose and clinical response. • With repeated/high-dose therapy follow electrolytes and infection risk as appropriate. • Do not let hydrocortisone delay the first-line lifesaving treatment for the actual emergency.",
+      "why": "Steroids alter inflammatory and stress responses; benefit is diagnosis-specific and not immediate cardiac resuscitation.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Steroid for adrenal crisis and selected inflammatory/allergic emergencies.",
+      "memoryDanger": "In anaphylaxis it is adjunctive — never delay epinephrine.",
+      "mechanism": "Glucocorticoid receptor activation alters inflammatory and stress-response gene transcription.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-diazepam",
+      "name": "DIAZEPAM",
+      "header": "DIAZEPAM",
+      "drugclass": "Benzodiazepine.",
+      "availability": "YES. Palestinian documentation includes 10-mg ampoules and 5-mg tablets; injectable products are available.",
+      "administration": "IV or IM depending on the product/order. For the referenced injectable formulation, do not mix/dilute in a syringe/infusion container; direct IV administration is slow. Follow the exact product instructions.",
+      "use": "Seizure/status epilepticus, severe agitation or selected procedural sedation; not a cardiac antiarrhythmic.",
+      "monitor": "• Have airway support, oxygen and resuscitation capability immediately available. • Monitor RR, SpO2, consciousness and BP. • Opioid + benzodiazepine exposure markedly increases respiratory-depression risk. • Use extra caution in chronic lung disease/frailty/unstable cardiovascular status. • Inspect the IV site because diazepam can irritate veins.",
+      "why": "CNS depression produces the main bedside danger: loss of airway/ventilation.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Benzodiazepine for seizures/sedation indications.",
+      "memoryDanger": "Respiratory depression, especially with opioids; monitor airway and consciousness.",
+      "mechanism": "Enhances GABA-A receptor activity.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-amiodarone",
+      "name": "AMIODARONE — PROCOR",
+      "header": "AMIODARONE — PROCOR",
+      "drugclass": "Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects.",
+      "availability": "YES. Palestinian documentation includes amiodarone HCl 150-mg ampoules and 200-mg tablets; PROCOR 200 mg = amiodarone, not a separate drug.",
+      "administration": "IV ampoules are concentrated and require the product-specific dilution/infusion setup. The source reference distinguishes perfusing ventricular-arrhythmia infusion from cardiac-arrest dosing; use a pump for controlled infusions and follow exact line/filter instructions.",
+      "use": "Selected serious ventricular arrhythmias and shock-refractory VF/pulseless VT; exact regimen depends on whether the patient has a pulse and the rhythm/algorithm.",
+      "monitor": "• Continuous ECG and BP during IV use. • Watch hypotension and bradycardia. • Monitor QT and correct important K+/Mg2+ abnormalities when feasible. • Inspect peripheral IV sites for phlebitis. • Review digoxin because amiodarone can increase digoxin exposure and both slow AV conduction. • Do not confuse the PROCOR tablet with the IV ampoule.",
+      "why": "Amiodarone changes cardiac conduction/repolarization; arrest and perfusing-arrhythmia regimens differ because the clinical situations differ.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Broad antiarrhythmic used for serious ventricular rhythms and refractory VF/pVT.",
+      "memoryDanger": "Hypotension/bradycardia/QT effects; arrest dose and perfusing infusion are different.",
+      "mechanism": "Blocks multiple ion channels and has antiadrenergic effects.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-calcium-gluconate",
+      "name": "CALCIUM GLUCONATE",
+      "header": "CALCIUM GLUCONATE",
+      "drugclass": "IV calcium salt.",
+      "availability": "YES. Palestinian MoH data document calcium gluconate 10% × 10 mL.",
+      "administration": "Dilution/rate depend on indication and product. Use only manufacturer/hospital directions rather than memorizing a universal push rule. Secure IV access is essential.",
+      "use": "Severe symptomatic hypocalcemia and myocardial membrane stabilization in severe hyperkalemia with ECG toxicity when indicated. Calcium does not remove potassium from the body.",
+      "monitor": "• ECG/rhythm monitoring during urgent administration. • Confirm the IV is secure; extravasation can injure tissue. • Check serum calcium/indication when circumstances permit. • Do not casually mix calcium and sodium bicarbonate in the same syringe/line because precipitation can occur. • Calcium gluconate and calcium chloride are not equivalent in elemental calcium.",
+      "why": "In hyperkalemia, calcium protects the myocardium electrically while other therapies shift or remove potassium.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Membrane stabilizer in severe hyperkalemia with ECG toxicity; also treats hypocalcemia.",
+      "memoryDanger": "Extravasation injury and product-equivalence mistakes; calcium does not lower serum K+.",
+      "mechanism": "Raises extracellular calcium and stabilizes cardiac membrane excitability.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-magnesium-sulfate",
+      "name": "MAGNESIUM SULFATE — MgSO4",
+      "header": "MAGNESIUM SULFATE — MgSO4",
+      "drugclass": "Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia.",
+      "availability": "YES. Palestinian essential-medicine data document magnesium sulfate injection 50%.",
+      "administration": "Concentrated magnesium requires controlled administration. Routine IV replacement is diluted/infused rather than given as an uncontrolled rapid push; use the exact product/order for concentration and infusion time.",
+      "use": "May be considered for recurrent polymorphic VT associated with long-QT syndrome/torsades de pointes; not a generic treatment for every ventricular arrhythmia.",
+      "monitor": "• Continuous ECG/BP during urgent antiarrhythmic use. • With repeated/high-dose therapy monitor RR, reflexes, urine output/renal function and magnesium level when appropriate. • Toxicity can cause loss of deep-tendon reflexes, hypotension, respiratory depression and conduction abnormalities. • Renal impairment increases accumulation risk. • Calcium salts can antagonize clinically significant magnesium toxicity.",
+      "why": "Magnesium stabilizes repolarization in torsades; excess magnesium depresses neuromuscular and cardiac conduction.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Key electrolyte/antiarrhythmic for torsades with long QT.",
+      "memoryDanger": "Toxicity = lost reflexes, hypotension, respiratory depression; renal impairment increases risk.",
+      "mechanism": "Modulates ion transport and membrane stability, including cardiac repolarization.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-digoxin",
+      "name": "DIGOXIN",
+      "header": "DIGOXIN",
+      "drugclass": "Cardiac glycoside; positive inotrope and AV-nodal slowing agent.",
+      "availability": "YES. Palestinian documentation includes 0.5-mg ampoules, 0.25-mg tablets and oral liquid.",
+      "administration": "PO or parenteral depending on the product/order. When IV is used, give slowly rather than as a rapid push; the total loading strategy matters more than treating one ampoule as one standard dose.",
+      "use": "Option for ventricular rate control in selected AF/flutter patients, but less commonly used for rapid acute rate control because onset is slower. Do not use for pre-excited AF/flutter.",
+      "monitor": "• Check HR/rhythm before administration. • Review renal function. • Check K+ and Mg2+ when relevant. • Watch nausea/vomiting, confusion, visual disturbance, bradycardia, AV block or new ventricular ectopy as toxicity signals. • Review amiodarone and verapamil interactions. • Interpret a digoxin level with sample timing, renal function and clinical findings.",
+      "why": "Digoxin has a narrow therapeutic window; kidney function, electrolytes and AV-node interactions strongly change toxicity risk.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Cardiac glycoside used for selected rate-control/HF situations.",
+      "memoryDanger": "Narrow therapeutic window; renal function/electrolytes strongly affect toxicity.",
+      "mechanism": "Inhibits Na+/K+ ATPase, increasing intracellular calcium and vagal tone.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "trolley-aminophylline",
+      "name": "AMINOPHYLLINE",
+      "header": "AMINOPHYLLINE",
+      "drugclass": "Methylxanthine bronchodilator; theophylline-ethylenediamine complex.",
+      "availability": "YES. Palestinian documentation includes aminophylline 240–250-mg ampoules; exact brand/concentration should be read from the product.",
+      "administration": "Controlled IV infusion drug, not a casual rapid IV push. Loading/maintenance depend on patient characteristics, recent theophylline/aminophylline exposure and, when available, serum theophylline concentration.",
+      "use": "Bronchodilator that may still appear on emergency trolleys/local protocols; its narrow therapeutic index and pro-arrhythmic potential are particularly relevant in CCU.",
+      "monitor": "• Monitor HR/rhythm. • Watch early toxicity: nausea, vomiting, tremor, agitation and persistent tachycardia. • Severe toxicity can progress to seizures and life-threatening arrhythmias. • Check theophylline concentration when clinically available. • Clearance changes with age, illness, smoking and interacting medicines. • Ampoule content is not automatically the patient dose.",
+      "why": "Aminophylline has a narrow therapeutic range, so extra loading or fast administration can quickly become pro-arrhythmic and neurotoxic.",
+      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "pages": "CCU internship medication reference · Sep 2026",
+      "category": "trolley",
+      "categories": [
+        "trolley"
+      ],
+      "memoryUse": "Methylxanthine bronchodilator with a narrow therapeutic range.",
+      "memoryDanger": "Tachyarrhythmia and seizures are severe toxicity signs.",
+      "mechanism": "Theophylline-related phosphodiesterase inhibition/adenosine antagonism contributes to bronchodilation and toxicity.",
+      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
     }
   ],
   "lessons": [
