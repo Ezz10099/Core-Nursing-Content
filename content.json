@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 27,
+  "contentVersion": 28,
   "updatedAt": "2026-10-05",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -1634,6 +1634,47 @@
       "memoryDanger": "Major danger = serious bleeding/ICH. In stroke, hemorrhage must be excluded before treatment and BP must be controlled.",
       "mechanism": "Recombinant tissue plasminogen activator that activates fibrin-bound plasminogen to plasmin, producing fibrinolysis.",
       "mechanismBasis": "Drug-specific administration and safety were checked against current DailyMed Activase prescribing information. Stroke timing and BP context were aligned with the 2026 AHA/ASA acute ischemic stroke guideline. The U.S. product label still states a 3-hour stroke window, while the newer guideline supports eligible patients within 4.5 hours; follow the newest applicable local stroke protocol.",
+      "requiresCapability": "contact-email",
+      "targetRelease": "0.2.35"
+    }
+  ],
+  "targetedFaqs": [
+    {
+      "id": "qa-af-vs-svt-v35",
+      "question": "AF vs SVT: how are they different, can they come from the same place, and why can one patient have both?",
+      "sections": [
+        {
+          "label": "Core distinction",
+          "text": "Both are supraventricular arrhythmias, but they usually do not arise from the same mechanism. AF is disorganized atrial activation. In bedside shorthand, 'SVT' usually means a regular narrow-complex re-entrant tachycardia such as AVNRT or AVRT, although technically several atrial rhythms are supraventricular."
+        },
+        {
+          "label": "What the ECG usually looks like",
+          "text": "AF is typically irregularly irregular with no consistent P waves. Typical AVNRT/orthodromic AVRT is usually very regular and narrow-complex; P waves may be hidden in or just after the QRS. Atrial flutter with fixed conduction can also look like a regular SVT."
+        },
+        {
+          "label": "Do they come from the same place?",
+          "text": "Usually no. AF commonly involves atrial triggers and substrate, often around the pulmonary veins/left atrium. AVNRT uses a re-entry circuit in or near the AV node. AVRT uses the AV node plus an accessory pathway. Atrial tachycardia is another SVT and can arise from an atrial focus, so its anatomical origin may be closer to an AF trigger region."
+        },
+        {
+          "label": "Why can one patient have both?",
+          "text": "Different arrhythmia mechanisms can coexist in the same patient. Shared problems such as structural heart disease, ischemia, heart failure, atrial enlargement, hypoxia, electrolyte disturbance, infection/fever, thyroid disease or stimulants can increase atrial electrical instability. A rapid re-entrant SVT can also sometimes trigger AF. Current AF guidance recognizes an important association between early-onset AF and re-entrant supraventricular tachyarrhythmias."
+        },
+        {
+          "label": "Nursing bedside approach",
+          "text": "Do not treat the monitor label alone. Assess the patient first, check pulse/BP/SpO₂, inspect the rhythm strip and obtain a 12-lead ECG when available. In a tachyarrhythmia with hypotension, acute altered mental status, signs of shock, ischemic chest discomfort or acute heart failure, escalate immediately; current AHA guidance directs synchronized cardioversion for persistent unstable tachyarrhythmia with a pulse."
+        },
+        {
+          "label": "Important danger: AF with pre-excitation/WPW",
+          "text": "Pre-excited AF may be very fast and irregular, often with a wide or changing QRS, and can deteriorate to ventricular fibrillation. AV-nodal blocking drugs can be harmful in pre-excited AF because they may favor conduction through the accessory pathway. Treat this as an urgent expert/advanced-life-support problem rather than as ordinary regular SVT."
+        },
+        {
+          "label": "Memory",
+          "text": "AF = usually irregularly irregular atrial chaos. Typical AVNRT/AVRT = usually regular narrow-complex re-entry. Same patient can have both; always identify the actual rhythm and patient stability before acting."
+        }
+      ],
+      "verification": "Reviewed 5 Oct 2026 against the current 2023 ACC/AHA/ACCP/HRS atrial fibrillation guideline and the 2025 AHA Adult Tachyarrhythmia With a Pulse algorithm.",
+      "placement": "clinical",
+      "department": "ccu",
       "requiresCapability": "contact-email",
       "targetRelease": "0.2.35"
     }
