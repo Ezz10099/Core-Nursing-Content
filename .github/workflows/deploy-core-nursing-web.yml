@@ -1,0 +1,52 @@
+name: Deploy Core Nursing web app
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'runtime/**'
+      - 'content.json'
+      - 'content.sig'
+      - '.github/workflows/deploy-core-nursing-web.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: core-nursing-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare site
+        run: |
+          mkdir -p public
+          cp -R web public/web
+          cp -R runtime public/runtime
+          cp content.json content.sig public/
+          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=web/"><title>Core Nursing</title><a href="web/">Open Core Nursing</a>\n' > public/index.html
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
