@@ -115,7 +115,181 @@ function closeMed(){current=null;byId('detail').classList.add('hidden');byId('li
 function toggleBookmark(id){memory.bookmarks=memory.bookmarks.includes(id)?memory.bookmarks.filter(x=>x!==id):[...memory.bookmarks,id];save();openMed(id)}
 function renderAids(){byId('aidlinks').innerHTML=aids.map(a=>`<p><button onclick="openAid('${a.id}')">${safe(a.name)} →</button><br><span class="note">${safe(a.source)} · ${safe(a.pages)}</span></p>`).join('')}
 function openAid(id){const a=aids.find(x=>x.id===id);if(!a)return;const target=byId('aidbody');target.classList.remove('hidden');target.innerHTML=`<h3>${safe(a.name)}</h3><p class="note">${safe(a.source)} · ${safe(a.pages)}</p><p class="aid-body">${safe(a.body)}</p><button onclick="byId('aidbody').classList.add('hidden')">Close guide</button>`;target.scrollIntoView({behavior:'smooth',block:'start'})}
-function nextQuestion(){answered=false;qidx++;if(qidx>=sampleMeds.length){byId('quizTitle').textContent='Session complete';byId('quizPrompt').textContent='Review your answers under Progress. A single correct response does not establish mastery.';byId('answers').innerHTML='';byId('feedback').textContent='';byId('nextBtn').textContent='Restart';qidx=-1;return}const m=sampleMeds[qidx];byId('quizTitle').textContent=`Question ${qidx+1} / ${sampleMeds.length} · ${m.name}`;byId('quizPrompt').textContent=m.question;byId('answers').innerHTML=m.options.map((x,i)=>`<button onclick="answer(${i})">${safe(x)}</button>`).join('');byId('feedback').textContent='';byId('nextBtn').classList.add('hidden')}function answer(index){if(answered)return;answered=true;const m=sampleMeds[qidx],ok=index===m.correct;memory.attempts.push({id:m.id,correct:ok,time:new Date().toISOString()});save();[...byId('answers').children].forEach((b,i)=>{b.disabled=true;if(i===m.correct)b.classList.add('correct');else if(i===index)b.classList.add('incorrect')});byId('feedback').textContent=(ok?'Correct. ':'Not quite. ')+m.explain;byId('nextBtn').textContent=qidx===sampleMeds.length-1?'Finish':'Next';byId('nextBtn').classList.remove('hidden')}function renderProgress(){let n=memory.attempts.length,correct=memory.attempts.filter(x=>x.correct).length;byId('stats').textContent=`${memory.bookmarks.length} bookmarked · ${n} quiz attempts · ${correct} correct (${n?Math.round(100*correct/n):0}%). ${persistence?'Local save available.':'Local saving is unavailable in this browser; export a backup after studying.'}`;byId('bookmarks').innerHTML='<div class="panel"><h2>Bookmarks</h2>'+(memory.bookmarks.map(id=>meds.find(m=>m.id===id)).filter(Boolean).map(m=>`<p><button onclick="showTab('library');openMed('${m.id}')">${safe(m.name)}</button></p>`).join('')||'<p class="muted">No bookmarks yet.</p>')+'</div>'}function exportProgress(){const backup=JSON.stringify({app:'core-nursing-ccu-prototype-v1',...memory},null,2);if(window.CoreNursingAndroid&&typeof window.CoreNursingAndroid.saveBackup==='function'){window.CoreNursingAndroid.saveBackup(backup);return;}const blob=new Blob([backup],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='core-nursing-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}function importProgress(e){const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(o.app!=='core-nursing-ccu-prototype-v1'||!Array.isArray(o.bookmarks)||!Array.isArray(o.attempts))throw Error('Invalid Core Nursing backup');if(!confirm('Replace the current saved progress with this backup?'))return;memory={bookmarks:o.bookmarks.filter(id=>meds.some(m=>m.id===id)),attempts:o.attempts.filter(a=>meds.some(m=>m.id===a.id)&&typeof a.correct==='boolean'),dark:!!o.dark};save();renderProgress();alert('Backup imported.')}catch(err){alert('Could not import this backup.')}};r.readAsText(file)}function resetProgress(){if(confirm('Clear local bookmarks and quiz attempts?')){memory.bookmarks=[];memory.attempts=[];save();renderProgress()}}applySyncedContent();renderList();renderAids();renderFaq();renderLessons();setTimeout(function(){checkForUpdates(false)},800);
+function nextQuestion(){answered=false;qidx++;if(qidx>=sampleMeds.length){byId('quizTitle').textContent='Session complete';byId('quizPrompt').textContent='Review your answers under Progress. A single correct response does not establish mastery.';byId('answers').innerHTML='';byId('feedback').textContent='';byId('nextBtn').textContent='Restart';qidx=-1;return}const m=sampleMeds[qidx];byId('quizTitle').textContent=`Question ${qidx+1} / ${sampleMeds.length} · ${m.name}`;byId('quizPrompt').textContent=m.question;byId('answers').innerHTML=m.options.map((x,i)=>`<button onclick="answer(${i})">${safe(x)}</button>`).join('');byId('feedback').textContent='';byId('nextBtn').classList.add('hidden')}function answer(index){if(answered)return;answered=true;const m=sampleMeds[qidx],ok=index===m.correct;memory.attempts.push({id:m.id,correct:ok,time:new Date().toISOString()});save();[...byId('answers').children].forEach((b,i)=>{b.disabled=true;if(i===m.correct)b.classList.add('correct');else if(i===index)b.classList.add('incorrect')});byId('feedback').textContent=(ok?'Correct. ':'Not quite. ')+m.explain;byId('nextBtn').textContent=qidx===sampleMeds.length-1?'Finish':'Next';byId('nextBtn').classList.remove('hidden')}function renderProgress(){let n=memory.attempts.length,correct=memory.attempts.filter(x=>x.correct).length;byId('stats').textContent=`${memory.bookmarks.length} bookmarked · ${n} quiz attempts · ${correct} correct (${n?Math.round(100*correct/n):0}%). ${persistence?'Local save available.':'Local saving is unavailable in this browser; export a backup after studying.'}`;byId('bookmarks').innerHTML='<div class="panel"><h2>Bookmarks</h2>'+(memory.bookmarks.map(id=>meds.find(m=>m.id===id)).filter(Boolean).map(m=>`<p><button onclick="showTab('library');openMed('${m.id}')">${safe(m.name)}</button></p>`).join('')||'<p class="muted">No bookmarks yet.</p>')+'</div>'}function exportProgress(){const backup=JSON.stringify({app:'core-nursing-ccu-prototype-v1',...memory},null,2);if(window.CoreNursingAndroid&&typeof window.CoreNursingAndroid.saveBackup==='function'){window.CoreNursingAndroid.saveBackup(backup);return;}const blob=new Blob([backup],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='core-nursing-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}function importProgress(e){const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(o.app!=='core-nursing-ccu-prototype-v1'||!Array.isArray(o.bookmarks)||!Array.isArray(o.attempts))throw Error('Invalid Core Nursing backup');if(!confirm('Replace the current saved progress with this backup?'))return;memory={bookmarks:o.bookmarks.filter(id=>meds.some(m=>m.id===id)),attempts:o.attempts.filter(a=>meds.some(m=>m.id===a.id)&&typeof a.correct==='boolean'),dark:!!o.dark};save();renderProgress();alert('Backup imported.')}catch(err){alert('Could not import this backup.')}};r.readAsText(file)}function resetProgress(){if(confirm('Clear local bookmarks and quiz attempts?')){memory.bookmarks=[];memory.attempts=[];save();renderProgress()}}
+/* READING TRACKER V1 */
+(function(){
+  if(!memory.reading||typeof memory.reading!=='object'||Array.isArray(memory.reading))memory.reading={};
+  Object.keys(memory.reading).forEach(function(k){if(!['read','in-progress'].includes(memory.reading[k]))delete memory.reading[k]});
+  let readingFilters={med:'all',lesson:'all',faq:'all'};
+  const readingStatusMeta={
+    'not-read':{label:'Not read',icon:'⚪',cls:'not-read'},
+    'in-progress':{label:'In progress',icon:'🟡',cls:'in-progress'},
+    'read':{label:'Read',icon:'✅',cls:'read'}
+  };
+  function readingKey(kind,id){return kind+':'+String(id)}
+  function readingStatus(kind,id){const s=memory.reading[readingKey(kind,id)];return s==='read'||s==='in-progress'?s:'not-read'}
+  function readingMeta(kind,id){return readingStatusMeta[readingStatus(kind,id)]}
+  function readingBadgeHtml(kind,id){const m=readingMeta(kind,id);return '<span class="reading-badge '+m.cls+'">'+m.icon+' '+m.label+'</span>'}
+  function readingActionHtml(kind,id){const s=readingStatus(kind,id),qid=jsQuote(id);return s==='read'
+    ?'<button class="reading-action" onclick="setReadingStatus(\''+kind+'\',\''+qid+'\',\'not-read\')">↩ Mark unread</button>'
+    :'<button class="reading-action primary" onclick="setReadingStatus(\''+kind+'\',\''+qid+'\',\'read\')">✓ Mark as read</button>'}
+  function jsQuote(s){return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'")}
+  function markInProgress(kind,id){if(readingStatus(kind,id)!=='not-read')return;memory.reading[readingKey(kind,id)]='in-progress';save()}
+  window.markInProgress=markInProgress;
+  window.setReadingStatus=function(kind,id,status){
+    const key=readingKey(kind,id);
+    if(status==='read'||status==='in-progress')memory.reading[key]=status;else delete memory.reading[key];
+    save();
+    if(kind==='med'){const y=window.scrollY;renderList();if(current===id){baseOpenMed(id);injectReadingAction('detail','med',id);requestAnimationFrame(()=>window.scrollTo(0,y))}}
+    else if(kind==='lesson'){const d=byId('lessonDetail');const visible=d&&!d.classList.contains('hidden');const y=window.scrollY;renderLessons();if(visible){baseOpenLesson(id);injectReadingAction('lessonDetail','lesson',id);requestAnimationFrame(()=>window.scrollTo(0,y))}}
+    else renderFaq();
+    updateReadingFilterButtons();
+  };
+  function readingMatches(kind,id){const f=readingFilters[kind];return f==='all'||readingStatus(kind,id)===f}
+  window.setReadingFilter=function(kind,status){
+    if(!['med','lesson','faq'].includes(kind)||!['all','not-read','in-progress','read'].includes(status))return;
+    readingFilters[kind]=status;updateReadingFilterButtons();
+    if(kind==='med')renderList();else if(kind==='lesson')renderLessons();else renderFaq();
+  };
+  function readingFilterBar(kind,label){
+    return '<div class="catalog-tabs reading-tabs" id="reading-filter-'+kind+'" role="group" aria-label="'+label+' reading status">'+
+      '<button data-reading-filter="'+kind+':all" onclick="setReadingFilter(\''+kind+'\',\'all\')">All</button>'+
+      '<button data-reading-filter="'+kind+':not-read" onclick="setReadingFilter(\''+kind+'\',\'not-read\')">⚪ Unread</button>'+
+      '<button data-reading-filter="'+kind+':in-progress" onclick="setReadingFilter(\''+kind+'\',\'in-progress\')">🟡 In progress</button>'+
+      '<button data-reading-filter="'+kind+':read" onclick="setReadingFilter(\''+kind+'\',\'read\')">✅ Read</button></div>'
+  }
+  function updateReadingFilterButtons(){
+    document.querySelectorAll('[data-reading-filter]').forEach(function(b){
+      const p=b.getAttribute('data-reading-filter').split(':');b.classList.toggle('selected',readingFilters[p[0]]===p[1])
+    })
+  }
+  function injectReadingAction(containerId,kind,id){
+    const root=byId(containerId);if(!root)return;
+    const old=root.querySelector('.reading-detail-tools');if(old)old.remove();
+    const h=root.querySelector('.page-heading');if(!h)return;
+    h.insertAdjacentHTML('afterend','<div class="reading-detail-tools">'+readingBadgeHtml(kind,id)+readingActionHtml(kind,id)+'</div>')
+  }
+  function allFaqItems(){
+    const arr=syncedContent&&Array.isArray(syncedContent.faq)?syncedContent.faq:[];
+    const seen=new Set();return arr.filter(q=>q&&q.id&&!seen.has(q.id)&&seen.add(q.id))
+  }
+  function trackableItems(){
+    return [
+      ...meds.map(m=>({key:readingKey('med',m.id),kind:'med',id:m.id,title:m.name})),
+      ...lessons.map(l=>({key:readingKey('lesson',l.id),kind:'lesson',id:l.id,title:l.title})),
+      ...allFaqItems().map(q=>({key:readingKey('faq',q.id),kind:'faq',id:q.id,title:q.question}))
+    ]
+  }
+  function readingCount(items,status){return items.filter(x=>readingStatus(x.kind,x.id)===status).length}
+  function progressCard(label,items){
+    const read=readingCount(items,'read'),prog=readingCount(items,'in-progress'),total=items.length;
+    return '<div class="reading-progress-card"><strong>'+read+' / '+total+'</strong><span>'+safe(label)+' read</span><small>🟡 '+prog+' in progress · ⚪ '+Math.max(0,total-read-prog)+' unread</small></div>'
+  }
+  function openFaqById(id){
+    const q=allFaqItems().find(x=>x.id===id);if(!q)return;
+    readingFilters.faq='all';updateReadingFilterButtons();
+    if(q.placement==='medication'&&Array.isArray(q.relatedMeds)&&q.relatedMeds.length){
+      showTab('library');openMed(q.relatedMeds[0]);
+    }else{
+      showTab('clinical');renderFaq();
+    }
+    setTimeout(function(){
+      const d=[...document.querySelectorAll('details[data-faq-id]')].find(x=>x.getAttribute('data-faq-id')===String(id));
+      if(d){d.open=true;d.scrollIntoView({behavior:'smooth',block:'center'})}
+    },0)
+  }
+  window.openReadingItem=function(key){
+    const i=String(key).indexOf(':');if(i<1)return;
+    const kind=key.slice(0,i),id=key.slice(i+1);
+    if(kind==='med'){readingFilters.med='all';showTab('library');openMed(id)}
+    else if(kind==='lesson'){readingFilters.lesson='all';showTab('clinical');openLesson(id)}
+    else if(kind==='faq')openFaqById(id)
+  };
+
+  const baseRenderList=renderList;
+  renderList=function(){
+    const term=byId('search').value.toLowerCase().trim();
+    const matches=meds.filter(m=>(catalogFilter==='all'||m.category===catalogFilter)&&readingMatches('med',m.id)&&[m.name,m.header,m.drugclass,m.availability,m.use].join(' ').toLowerCase().includes(term));
+    byId('list').innerHTML=matches.map(m=>'<div class="item"><div><span class="source-tag">'+safe(m.source)+' · pp. '+safe(m.pages)+'</span><h2>'+safe(m.name)+'</h2><span class="badge">'+safe(m.drugclass.split(';')[0].slice(0,100))+'</span> '+readingBadgeHtml('med',m.id)+'</div><button onclick="openMed(\''+jsQuote(m.id)+'\')">Open</button></div>').join('')||'<p class="muted">No medications match the current search and reading filter.</p>';
+    if(current)byId('list').classList.add('hidden')
+  };
+
+  const baseRenderLessons=renderLessons;
+  renderLessons=function(){
+    const list=byId('lessonList'),detail=byId('lessonDetail'),search=byId('lessonSearch');if(!list||!detail)return;
+    const term=(search?search.value:'').toLowerCase().trim();
+    const matches=lessons.slice().sort((a,b)=>a.order-b.order).filter(l=>readingMatches('lesson',l.id)&&[l.title,l.kind,...l.sections.flatMap(s=>[s.label,s.text])].join(' ').toLowerCase().includes(term));
+    list.innerHTML=matches.map(l=>'<div class="item"><div><span class="source-tag">'+(l.kind==='lesson'?'CORE CCU LESSON':'QUICK CLINICAL NOTE')+'</span><h2>'+safe(l.title)+'</h2><span class="badge">'+(l.kind==='lesson'?'Lesson '+l.order:'Quick reference')+'</span> '+readingBadgeHtml('lesson',l.id)+'</div><button onclick="openLesson(\''+jsQuote(l.id)+'\')">Open</button></div>').join('')||'<p class="muted">No lessons match the current search and reading filter.</p>'
+  };
+
+  const baseOpenMed=openMed;
+  openMed=function(id){markInProgress('med',id);baseOpenMed(id);injectReadingAction('detail','med',id)};
+  const baseOpenLesson=openLesson;
+  openLesson=function(id){markInProgress('lesson',id);baseOpenLesson(id);injectReadingAction('lessonDetail','lesson',id)};
+
+  faqDetails=function(q){
+    const id=jsQuote(q.id||'');
+    return '<details class="med-section faq-track" data-faq-id="'+safe(q.id||'')+'" ontoggle="if(this.open)markInProgress(\'faq\',\''+id+'\')"><summary>'+safe(q.question)+' <span class="faq-reading-inline">'+readingBadgeHtml('faq',q.id)+'</span></summary><div class="section-body">'+(q.sections||[]).map(x=>'<p><strong>'+safe(x.label)+':</strong> '+safe(x.text)+'</p>').join('')+(q.verification?'<p class="note"><strong>Verification:</strong> '+safe(q.verification)+'</p>':'')+'<div class="reading-faq-action">'+readingActionHtml('faq',q.id)+'</div></div></details>'
+  };
+  renderFaq=function(){
+    const t=byId('clinicalFaqItems');
+    if(t){
+      const items=clinicalFaqItems().filter(q=>readingMatches('faq',q.id));
+      t.innerHTML=items.length?items.map(faqDetails).join(''):'<p class="muted">No FAQ items match the reading filter.</p>'
+    }
+    if(current){const m=byId('medfaq');if(m)m.outerHTML=medicationFaqHtml(current)}
+  };
+
+  renderProgress=function(){
+    const attempts=memory.attempts.length,correct=memory.attempts.filter(x=>x.correct).length;
+    const all=trackableItems(),medItems=all.filter(x=>x.kind==='med'),lessonItems=all.filter(x=>x.kind==='lesson'),faqItems=all.filter(x=>x.kind==='faq');
+    const read=readingCount(all,'read'),prog=readingCount(all,'in-progress');
+    byId('stats').textContent=read+' / '+all.length+' reading items completed · '+prog+' in progress · '+memory.bookmarks.length+' bookmarked · '+attempts+' quiz attempts · '+correct+' correct ('+(attempts?Math.round(100*correct/attempts):0)+'%). '+(persistence?'Local save available.':'Local saving is unavailable in this browser; export a backup after studying.');
+    const continuing=all.filter(x=>readingStatus(x.kind,x.id)==='in-progress');
+    byId('bookmarks').innerHTML=
+      '<div class="panel"><h2>Reading progress</h2><div class="reading-progress-grid">'+progressCard('Medications',medItems)+progressCard('Lessons',lessonItems)+progressCard('FAQ',faqItems)+'</div><p class="note">Read means you explicitly marked the item complete. Opening it only changes it to In progress.</p></div>'+
+      '<div class="panel"><h2>Continue reading</h2>'+(continuing.length?continuing.slice(0,20).map(x=>'<p class="continue-reading-row"><button onclick="openReadingItem(\''+jsQuote(x.key)+'\')">🟡 '+safe(x.title)+'</button></p>').join(''):'<p class="muted">Nothing is currently in progress.</p>')+'</div>'+
+      '<div class="panel"><h2>Bookmarks</h2>'+(memory.bookmarks.map(id=>meds.find(m=>m.id===id)).filter(Boolean).map(m=>'<p><button onclick="showTab(\'library\');openMed(\''+jsQuote(m.id)+'\')">'+safe(m.name)+'</button></p>').join('')||'<p class="muted">No bookmarks yet.</p>')+'</div>'
+  };
+
+  importProgress=function(e){
+    const file=e.target.files[0];if(!file)return;const r=new FileReader();
+    r.onload=()=>{try{
+      const o=JSON.parse(r.result);
+      if(o.app!=='core-nursing-ccu-prototype-v1'||!Array.isArray(o.bookmarks)||!Array.isArray(o.attempts))throw Error('Invalid Core Nursing backup');
+      if(!confirm('Replace the current saved progress with this backup?'))return;
+      const restoredReading={};
+      if(o.reading&&typeof o.reading==='object'&&!Array.isArray(o.reading))Object.keys(o.reading).forEach(k=>{if(['read','in-progress'].includes(o.reading[k]))restoredReading[k]=o.reading[k]});
+      memory={bookmarks:o.bookmarks.filter(id=>meds.some(m=>m.id===id)),attempts:o.attempts.filter(a=>meds.some(m=>m.id===a.id)&&typeof a.correct==='boolean'),reading:restoredReading,dark:!!o.dark};
+      save();renderProgress();renderList();renderLessons();renderFaq();alert('Backup imported.')
+    }catch(err){alert('Could not import this backup.')}};r.readAsText(file)
+  };
+  resetProgress=function(){
+    if(confirm('Clear local reading progress, bookmarks, and quiz attempts?')){
+      memory.bookmarks=[];memory.attempts=[];memory.reading={};save();renderProgress();renderList();renderLessons();renderFaq()
+    }
+  };
+
+  function ensureReadingUi(){
+    if(!document.getElementById('reading-tracker-style')){
+      const s=document.createElement('style');s.id='reading-tracker-style';s.textContent=
+        '.reading-tabs{margin-top:10px}.reading-badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:3px 7px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}.reading-badge.read{background:rgba(16,185,129,.10)}.reading-badge.in-progress{background:rgba(245,158,11,.12)}.reading-badge.not-read{opacity:.78}.reading-detail-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 14px}.reading-action{min-height:36px}.faq-reading-inline{margin-left:6px}.faq-reading-inline .reading-badge{font-size:11px;padding:2px 6px}.reading-faq-action{margin-top:12px}.reading-progress-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.reading-progress-card{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:3px}.reading-progress-card strong{font-size:20px}.reading-progress-card span{font-weight:700}.reading-progress-card small{color:var(--muted);line-height:1.4}.continue-reading-row{margin:8px 0}.continue-reading-row button{width:100%;text-align:left}';
+      document.head.appendChild(s)
+    }
+    const sourceTabs=byId('source-all')&&byId('source-all').parentElement;
+    if(sourceTabs&&!byId('reading-filter-med'))sourceTabs.insertAdjacentHTML('afterend',readingFilterBar('med','Medication'));
+    const lessonSearch=byId('lessonSearch');
+    if(lessonSearch&&!byId('reading-filter-lesson'))lessonSearch.insertAdjacentHTML('beforebegin',readingFilterBar('lesson','Lesson'));
+    const faqBox=byId('clinicalFaq'),faqItems=byId('clinicalFaqItems');
+    if(faqBox&&faqItems&&!byId('reading-filter-faq'))faqItems.insertAdjacentHTML('beforebegin',readingFilterBar('faq','FAQ'));
+    const status=byId('saveStatus');if(status)status.textContent='Reading status, bookmarks, and answers save automatically on this phone after each change. Installing a correctly signed update over this app keeps its saved data. Uninstalling or clearing app data erases it.';
+    updateReadingFilterButtons()
+  }
+
+  ensureReadingUi();
+})();
+
+applySyncedContent();renderList();renderAids();renderFaq();renderLessons();setTimeout(function(){checkForUpdates(false)},800);
 
 function downloadOfficialApk(){
   var url="https://raw.githubusercontent.com/Ezz10099/Core-Nursing-Content/main/downloads/Core-Nursing-0.2.35.apk";
