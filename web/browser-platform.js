@@ -83,7 +83,7 @@ B+lNPviMihw5qGKQC7UDgZKxojo3upDXZ39yswoz7y0wcfDJhul7udNAdQ==
 
   async function fetchText(path) {
     const response = await fetch(path, { cache: 'no-store' });
-    if (!response.ok) throw new Error((`HTTP ${response.status`));
+    if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
     return response.text();
   }
 
