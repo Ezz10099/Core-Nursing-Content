@@ -9,6 +9,19 @@ B+lNPviMihw5qGKQC7UDgZKxojo3upDXZ39yswoz7y0wcfDJhul7udNAdQ==
 -----END PUBLIC KEY-----`;
   const encoder = new TextEncoder();
 
+  async function prepareOfflineSupport() {
+    if (!('serviceWorker' in navigator)) return;
+    try {
+      await navigator.serviceWorker.register('./sw.js', { scope: './' });
+      await Promise.race([
+        navigator.serviceWorker.ready,
+        new Promise(resolve => setTimeout(resolve, 2500))
+      ]);
+    } catch (error) {
+      console.warn('Offline support registration failed:', error);
+    }
+  }
+
   function pemBytes(pem) {
     const b64 = pem.replace(/-----[^-]+-----/g, '').replace(/\s+/g, '');
     const raw = atob(b64);
@@ -169,7 +182,9 @@ B+lNPviMihw5qGKQC7UDgZKxojo3upDXZ39yswoz7y0wcfDJhul7udNAdQ==
       html = replaceResourceReference(html, path, url);
     }
 
-    const bridgeMarkup = `<script>window.CORE_NURSING_WEB_RUNTIME_VERSION=${manifest.runtimeVersion};window.CORE_NURSING_WEB_ENGINE_VERSION=${WEB_ENGINE_VERSION};<\/script><script src=\"browser-platform.js\"><\/script>`;
+    const pwaMarkup = '<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Core Nursing">';
+    if (/<\/head>/i.test(html)) html = html.replace(/<\/head>/i, pwaMarkup + '</head>');
+    const bridgeMarkup = `<script>window.CORE_NURSING_WEB_RUNTIME_VERSION=${manifest.runtimeVersion};window.CORE_NURSING_WEB_ENGINE_VERSION=${WEB_ENGINE_VERSION};<\/script><script src="browser-platform.js"><\/script>`;
     const firstScript = html.search(/<script\b/i);
     if (firstScript >= 0) html = html.slice(0, firstScript) + bridgeMarkup + html.slice(firstScript);
     else html = html.replace(/<\/body>/i, `${bridgeMarkup}</body>`);
@@ -180,7 +195,10 @@ B+lNPviMihw5qGKQC7UDgZKxojo3upDXZ39yswoz7y0wcfDJhul7udNAdQ==
     document.close();
   }
 
-  loadRuntime().catch(error => {
+  (async () => {
+    await prepareOfflineSupport();
+    await loadRuntime();
+  })().catch(error => {
     console.error(error);
     showFatal(`Could not start Core Nursing: ${error.message}`);
   });
