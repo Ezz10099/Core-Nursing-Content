@@ -104,7 +104,8 @@ shell=(ROOT/"shell.html").read_bytes()
 shell_manifest=json.loads((ROOT/"shell-manifest.json").read_text(encoding="utf-8"))
 if shell_manifest.get("schemaVersion") != 1:
     fail("legacy shell manifest invalid")
-if hashlib.sha256(shell).hexdigest() != shell_manifest.get("sha256"):
-    fail("legacy shell hash mismatch")
+actual_shell_sha = hashlib.sha256(shell).hexdigest()
+if actual_shell_sha != shell_manifest.get("sha256"):
+    fail(f"legacy shell hash mismatch: actual={actual_shell_sha} expected={shell_manifest.get('sha256')}")
 
 print("content-addressed runtime + legacy channel validation passed")
