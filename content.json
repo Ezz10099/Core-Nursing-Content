@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 29,
-  "updatedAt": "2026-10-05",
+  "contentVersion": 30,
+  "updatedAt": "2026-10-08",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -1269,13 +1269,13 @@
     },
     {
       "id": "ccu-aspirin",
-      "name": "ASA / ASPIRIN — aspirin",
+      "name": "ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”)",
       "header": "ASA / ASPIRIN — aspirin",
       "drugclass": "Antiplatelet; irreversible platelet COX-1 inhibitor.",
-      "availability": "YES. Palestinian essential-medicine data document 100-mg tablets.",
+      "availability": "YES. Palestinian MoH currently lists antiplatelet aspirin 100-mg tablets; 81-mg low-dose products are common in some other markets.",
       "administration": "PO. When an ACS loading dose is specifically ordered, a rapid-release formulation is chewed for faster absorption; an extended-release product is not appropriate for rapid loading.",
-      "use": "Antiplatelet therapy in ACS and secondary cardiovascular prevention.",
-      "monitor": "• Check active bleeding, GI-bleeding history and aspirin hypersensitivity. • Inspect stool, urine and puncture sites when combined with other antithrombotics. • Aspirin + clopidogrel + heparin/LMWH increases bleeding tendency. • ASA and aspirin are the same drug.",
+      "use": "Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product.",
+      "monitor": "• 'Baby aspirin' is NOT a different drug and does not mean it is intended for babies; it is colloquial shorthand for low-dose aspirin. • Check the exact tablet strength and indication. • Check active bleeding, GI-bleeding history and aspirin hypersensitivity. • Inspect stool, urine and puncture sites when combined with other antithrombotics. • Aspirin + clopidogrel + heparin/LMWH increases bleeding tendency.",
       "why": "Irreversible platelet inhibition helps prevent thrombosis but increases bleeding risk.",
       "source": "Routine CCU meds · approved bedside format Sep 2026",
       "pages": "CCU internship medication reference · Sep 2026",
@@ -1283,10 +1283,10 @@
       "categories": [
         "ccu"
       ],
-      "memoryUse": "Core antiplatelet in ACS when indicated.",
-      "memoryDanger": "Bleeding and hypersensitivity are the main bedside concerns.",
+      "memoryUse": "Aspirin = ASA. 'Baby aspirin' = low-dose aspirin, commonly 75–100 mg; same drug, lower dose, mainly antiplatelet.",
+      "memoryDanger": "Do not confuse 'baby aspirin' with pediatric use; check dose/indication and bleeding risk.",
       "mechanism": "Irreversibly acetylates platelet COX-1, reducing thromboxane A2 and platelet aggregation.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "Current Palestinian MoH lists 100-mg antiplatelet aspirin; current low-dose aspirin products commonly contain 81 mg. Antiplatelet mechanism remains irreversible platelet COX-1 inhibition."
     },
     {
       "id": "ccu-clopidogrel",
@@ -2235,6 +2235,27 @@
       "memoryDanger": "Tachyarrhythmia and seizures are severe toxicity signs.",
       "mechanism": "Theophylline-related phosphodiesterase inhibition/adenosine antagonism contributes to bronchodilation and toxicity.",
       "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+    },
+    {
+      "id": "ibd2-amitriptyline",
+      "name": "AMITRIPTYLINE",
+      "header": "AMITRIPTYLINE",
+      "drugclass": "Tricyclic antidepressant (TCA).",
+      "availability": "WARD-REPORTED in the current orthopaedic/IBD2 rotation. Exact tablet strength and indication were not recorded; verify the package and prescription.",
+      "use": "Approved for depressive illness. In orthopaedic/trauma practice it may also be prescribed off-label for neuropathic pain or sleep-related pain symptoms; confirm the actual indication rather than assuming.",
+      "administration": "PO exactly as ordered. Because it is sedating, many regimens are given at night, but timing must follow the prescription. Do not stop long-term therapy abruptly without an authorized plan.",
+      "monitor": "• Watch for drowsiness, dizziness, orthostatic hypotension and falls. • Anticholinergic effects: dry mouth, constipation, blurred vision and urinary retention. • Monitor for worsening mood/suicidal thinking, especially after starting or dose changes in younger adults. • Use caution in cardiovascular disease: TCAs can cause tachycardia, conduction delay and arrhythmias; current labeling does not recommend use during the acute recovery phase after MI. • Overdose can cause life-threatening QRS widening, ventricular dysrhythmias, hypotension and seizures.",
+      "why": "Amitriptyline inhibits reuptake of norepinephrine and serotonin and also has anticholinergic, antihistamine and sodium-channel effects. These explain both its therapeutic actions and many of its adverse effects.",
+      "source": "IBD2 meds · ward report + current DailyMed amitriptyline labeling",
+      "pages": "Nasser orthopaedic rotation · reported 8 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "TCA antidepressant; may also be used for neuropathic pain.",
+      "memoryDanger": "Sedation + anticholinergic effects + orthostatic falls; overdose is cardiotoxic.",
+      "mechanism": "Blocks norepinephrine and serotonin reuptake; additional antimuscarinic, antihistamine and cardiac sodium-channel effects contribute to side effects/toxicity.",
+      "mechanismBasis": "Major safety points checked against current 2026 DailyMed amitriptyline labeling."
     }
   ],
   "lessons": [
