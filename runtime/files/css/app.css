@@ -33,3 +33,15 @@
 .reading-count{font-size:.9rem;margin:12px 0 6px}
 .continue-item{display:block;width:100%;text-align:left;margin:8px 0;white-space:normal}
 .continue-item span{display:block;font-size:.75rem;opacity:.75;margin-bottom:4px}
+
+/* Study callouts mirror the compact visual cues used in ChatGPT study responses. */
+.study-callout{display:flex;align-items:flex-start;gap:13px;margin:14px 0;padding:7px 2px}
+.study-callout-icon{flex:0 0 32px;display:flex;align-items:flex-start;justify-content:center;padding-top:1px}
+.study-callout-icon svg{display:block}
+.study-callout-copy{min-width:0;flex:1}
+.study-callout-copy p{margin:0;font-size:15px;line-height:1.65;color:#eef2f7;white-space:pre-wrap}
+.study-callout-copy strong{font-size:16px;font-weight:800;color:#fff}
+.study-callout.check-callout .study-callout-icon{color:#20d878}
+.study-callout.shield-callout .study-callout-icon{color:#a5adb8}
+.study-callout.shield-callout .study-callout-copy p{color:#e7ebf0}
+@media(max-width:380px){.study-callout{gap:10px}.study-callout-icon{flex-basis:29px}.study-callout-copy p{font-size:14px}.study-callout-copy strong{font-size:15px}}
