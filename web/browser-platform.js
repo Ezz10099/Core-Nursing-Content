@@ -157,7 +157,7 @@ B+lNPviMihw5qGKQC7UDgZKxojo3upDXZ39yswoz7y0wcfDJhul7udNAdQ==
     getActiveRuntimeVersion: () => CURRENT_RUNTIME,
     confirmRuntimeHealthy: () => {},
     hasCapability: name => name === 'contact-email' || name === 'web-browser',
-    contactCreator: () => { window.location.href = 'mailto:siammostafa415@gmail.com'; },
+    contactCreator: () => { window.location.href = 'https://wa.me/970595054226'; },
     openHttpsUrl: url => {
       if (typeof url === 'string' && /^https:\/\//i.test(url)) window.location.href = url;
     },

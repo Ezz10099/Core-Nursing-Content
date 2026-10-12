@@ -90,11 +90,13 @@ setTimeout(function(){checkForUpdates(false)},800);
 
 
 function contactCreator(){
+  const url='https://wa.me/970595054226';
   const bridge=window.CoreNursingAndroid;
-  if(bridge&&typeof bridge.contactCreator==='function'){bridge.contactCreator();return;}
-  if(!bridge){window.location.href='mailto:siammostafa415@gmail.com';return;}
-  if(typeof bridge.copyText==='function')bridge.copyText('Core Nursing','siammostafa415@gmail.com');
-  alert('لفتح رسالة بريد مباشرة، ثبّت أحدث نسخة من التطبيق. البريد: siammostafa415@gmail.com'+(typeof bridge.copyText==='function'?'\nتم نسخ البريد.':''));
+  if(bridge&&typeof bridge.openHttpsUrl==='function'){bridge.openHttpsUrl(url);return;}
+  if(!bridge){window.location.href=url;return;}
+  const canCopy=typeof bridge.copyText==='function';
+  if(canCopy)bridge.copyText('Core Nursing WhatsApp',url);
+  alert('للتواصل والمساعدة عبر واتساب: +970 595054226\n'+(canCopy?'تم نسخ رابط واتساب. افتحه في المتصفح.':url));
 }
 
 
