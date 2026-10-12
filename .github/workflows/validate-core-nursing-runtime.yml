@@ -43,7 +43,8 @@ jobs:
       - name: Validate runtime and legacy channels
         run: python scripts/validate_runtime.py
       - name: Validate JavaScript syntax
-        run: node --check runtime/files/js/app.js
+        run: |
+          for file in runtime/files/js/*.js; do node --check "$file"; done
       - name: Basic local runtime load
         run: |
           python -m http.server 8765 --directory runtime/files >/tmp/core-nursing-http.log 2>&1 &
