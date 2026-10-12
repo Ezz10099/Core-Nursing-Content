@@ -34,14 +34,28 @@
 .continue-item{display:block;width:100%;text-align:left;margin:8px 0;white-space:normal}
 .continue-item span{display:block;font-size:.75rem;opacity:.75;margin-bottom:4px}
 
-/* Study callouts mirror the compact visual cues used in ChatGPT study responses. */
-.study-callout{display:flex;align-items:flex-start;gap:13px;margin:14px 0;padding:7px 2px}
-.study-callout-icon{flex:0 0 32px;display:flex;align-items:flex-start;justify-content:center;padding-top:1px}
-.study-callout-icon svg{display:block}
-.study-callout-copy{min-width:0;flex:1}
-.study-callout-copy p{margin:0;font-size:15px;line-height:1.65;color:#eef2f7;white-space:pre-wrap}
-.study-callout-copy strong{font-size:16px;font-weight:800;color:#fff}
-.study-callout.check-callout .study-callout-icon{color:#20d878}
-.study-callout.shield-callout .study-callout-icon{color:#a5adb8}
-.study-callout.shield-callout .study-callout-copy p{color:#e7ebf0}
-@media(max-width:380px){.study-callout{gap:10px}.study-callout-icon{flex-basis:29px}.study-callout-copy p{font-size:14px}.study-callout-copy strong{font-size:15px}}
+/* Study Pulse: deliberate layout changes that reset attention while studying. */
+.study-pulse{margin:18px 0}
+.pulse-kicker{font-size:10px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:#8ea0b8;margin-bottom:8px}
+.hero-pulse{padding:24px 18px;border:1px solid #36404e;border-radius:20px;background:linear-gradient(145deg,#181d26,#10141b);text-align:center}
+.hero-line{font-size:clamp(25px,8vw,38px);font-weight:900;line-height:1.05;letter-spacing:-.05em;color:#f7f9fc}
+.memory-strip{display:flex;align-items:center;gap:12px;padding:11px 14px;border-top:1px solid #465161;border-bottom:1px solid #465161;background:#11161d}
+.memory-strip span{font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:#8ea0b8;white-space:nowrap}
+.memory-strip strong{font-size:15px;line-height:1.35;color:#f5f7fb}
+.stop-pulse{padding:18px 0 17px;border-top:1px solid #5a3037;border-bottom:1px solid #5a3037}
+.stop-word{font-size:44px;font-weight:950;line-height:.95;letter-spacing:.08em;color:#ff8290;margin-bottom:10px}
+.stop-pulse p{margin:0;color:#f0d8dc;font-size:15px;line-height:1.55}
+.reveal-pulse{border:1px solid #3a4655;border-radius:18px;background:#151a22;overflow:hidden}
+.reveal-pulse summary{padding:17px 16px;list-style:none;display:block}
+.reveal-pulse summary::-webkit-details-marker{display:none}
+.reveal-pulse summary:after{content:none}
+.reveal-pulse summary strong{display:block;font-size:18px;line-height:1.35;color:#f5f7fb;margin-bottom:8px}
+.reveal-pulse summary small{display:inline-block;font-size:11px;color:#7fb1ff;border-bottom:1px dashed #567db5}
+.reveal-answer{border-top:1px solid #313b49;padding:16px;color:#dfe6ef;line-height:1.65}
+.reveal-answer p{margin:0}
+.split-pulse{padding:16px;border:1px solid #394453;border-radius:18px;background:#12171e}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#394453;border:1px solid #394453;border-radius:13px;overflow:hidden}
+.split-grid>div{background:#171d25;padding:14px}
+.split-grid small{display:block;font-size:10px;font-weight:850;letter-spacing:.12em;color:#95a6bb;margin-bottom:8px}
+.split-grid p{margin:0;white-space:pre-wrap;color:#edf1f6;font-size:14px;line-height:1.55}
+@media(max-width:430px){.split-grid{grid-template-columns:1fr}.hero-pulse{padding:22px 15px}.stop-word{font-size:38px}}

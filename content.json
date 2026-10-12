@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 31,
+  "contentVersion": 32,
   "updatedAt": "2026-10-12",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -2784,13 +2784,11 @@
         },
         {
           "label": "Intern responsibilities",
-          "text": "Assess distal neurovascular status within your training, recognize deterioration, report findings urgently, document the change and response, and continue reassessment. Check for an obviously constrictive cast/dressing, but do not independently alter prescribed immobilization unless specifically authorized by the local protocol or order.",
-          "callout": "check"
+          "text": "Assess distal neurovascular status within your training, recognize deterioration, report findings urgently, document the change and response, and continue reassessment. Check for an obviously constrictive cast/dressing, but do not independently alter prescribed immobilization unless specifically authorized by the local protocol or order."
         },
         {
           "label": "Senior/ordered interventions",
-          "text": "Independent treatment decisions, modifying or removing prescribed immobilization/fixation unless specifically authorized, medication changes, compartment-pressure measurement, fasciotomy, and other invasive procedures. Your role is to recognize, report, prepare, and assist within supervision and the authorized MSF/Nasser IBD2 protocol.",
-          "callout": "shield"
+          "text": "Independent treatment decisions, modifying or removing prescribed immobilization/fixation unless specifically authorized, medication changes, compartment-pressure measurement, fasciotomy, and other invasive procedures. Your role is to recognize, report, prepare, and assist within supervision and the authorized MSF/Nasser IBD2 protocol."
         },
         {
           "label": "15-second memory",
@@ -2798,6 +2796,65 @@
         }
       ],
       "sourceNote": "IBD2 Nasser orthopaedic lesson. Study baseline: Open RN Health Alterations 10.6 Fracture (distal neurovascular assessment and acute compartment syndrome). Acute-compartment-syndrome warning signs and the importance of serial assessment were checked against the AAOS 2025 Clinical Practice Guideline/resources. Local cast/dressing escalation and intervention must follow the authorized MSF/Nasser IBD2 protocol."
+    },
+    {
+      "id": "ibd2-lesson-02-external-fixator",
+      "department": "ibd2",
+      "order": 2,
+      "title": "External Fixator — Limb, Pins, Frame",
+      "kind": "lesson",
+      "sections": [
+        {
+          "label": "Essential meaning",
+          "text": "An external fixator stabilizes a fracture using metal pins or screws inserted into bone above and below the fracture and connected to a frame outside the body. It is often used for severe open fractures or when swelling/soft-tissue injury makes immediate internal fixation risky."
+        },
+        {
+          "label": "Build the picture",
+          "text": "PINS IN BONE\\nFRAME OUTSIDE",
+          "display": "hero"
+        },
+        {
+          "label": "Think first",
+          "prompt": "You walk to the bedside. What should you check first: the metal frame or the limb?",
+          "text": "The LIMB first. Reuse Lesson 1: pain → blood → feeling → move → swelling. A fixator can look intact while distal circulation or nerve function is worsening.",
+          "display": "reveal"
+        },
+        {
+          "label": "Bedside sequence",
+          "text": "LIMB → PINS → FRAME → PATIENT",
+          "display": "memory"
+        },
+        {
+          "label": "Scan it in two directions",
+          "text": "Visual contrast for bedside review.",
+          "display": "split",
+          "leftTitle": "LOOK FOR",
+          "leftText": "Limb: worsening pain, swelling, neurovascular change.\\nPins/wound: increasing redness, tenderness, drainage, fever.\\nFrame: loose, broken, shifted, or unexpected movement.",
+          "rightTitle": "DO NOT",
+          "rightText": "Do not independently tighten, loosen, remove, or reposition fixation hardware.\\nDo not invent a pin-cleaning product or schedule; follow the authorized IBD2 order/protocol."
+        },
+        {
+          "label": "LOOSE",
+          "text": "Loose/broken/shifted hardware is a protection-and-escalation problem. Support the limb, limit unsafe movement, report it, and do not adjust the fixation system yourself.",
+          "display": "stop"
+        },
+        {
+          "label": "Pin / wound care",
+          "text": "Pins that enter bone create infection risk. Use strict aseptic technique for pin care, clean/dress the sites according to the authorized health-care/local protocol, and document abnormal findings. Report meaningful changes promptly."
+        },
+        {
+          "label": "Quick decision",
+          "prompt": "A pin site is more painful, red and swollen with new drainage. What is your nursing move?",
+          "text": "Assess the patient and wound, check temperature/vitals and distal neurovascular status, report the deterioration, document it, and continue reassessment. Follow the local IBD2 pin/wound-care and antimicrobial plan rather than choosing a treatment yourself.",
+          "display": "reveal"
+        },
+        {
+          "label": "10-second memory",
+          "text": "LIMB → PINS → FRAME → PATIENT. Neurovascular change, infection signs, or a hardware problem = assess, protect, escalate, document, reassess.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "IBD2 orthopaedic lesson. Study baseline: Open RN Health Alterations 10.6 Fracture for external fixation, aseptic pin care, and distal neurovascular assessment. The exact pin-site product, cleaning method/frequency, weight-bearing status, and hardware interventions must follow the authorized MSF/Nasser IBD2 order/protocol."
     }
   ],
   "guides": [],
