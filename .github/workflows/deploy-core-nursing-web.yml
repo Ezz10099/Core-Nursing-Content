@@ -5,10 +5,12 @@ on:
     branches: [main]
     paths:
       - 'web/**'
-      - 'runtime/**'
-      - 'content.json'
-      - 'content.sig'
       - '.github/workflows/deploy-core-nursing-web.yml'
+  # Updates must be signed before the browser loader can launch them.
+  workflow_run:
+    workflows: ['Sign Core Nursing update channel']
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -22,12 +24,15 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Prepare site
         run: |

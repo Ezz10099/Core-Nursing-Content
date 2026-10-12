@@ -7,7 +7,7 @@ function boot(saved){
  const dom=new JSDOM(fs.readFileSync(path.join(base,'index.html'),'utf8'),{url:'https://test.local',runScripts:'outside-only',pretendToBeVisual:true});
  const w=dom.window;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.alert=()=>{};w.confirm=()=>true;
  if(saved)w.localStorage.setItem(KEY,saved);
- for(const file of ['js/reading.js','js/app.js'])require('node:vm').runInContext(fs.readFileSync(path.join(base,file),'utf8'),dom.getInternalVMContext());
+ for(const file of ['js/study-ui.js','js/reading.js','js/app.js'])require('node:vm').runInContext(fs.readFileSync(path.join(base,file),'utf8'),dom.getInternalVMContext());
  w.CoreNursingSync.receive(fs.readFileSync(path.join(root,'content.json'),'utf8'));
  return w;
 }

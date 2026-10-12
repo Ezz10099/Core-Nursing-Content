@@ -24,3 +24,23 @@ The Android APK, Android live-update engine and current public Android download 
 Serve the repository over HTTPS (or localhost), open web/, allow one successful online load, then reload while offline. Also verify that the browser offers Add to Home Screen / Install App and that a Home Screen launch uses standalone display.
 
 Syntax/runtime checks: node --check web/boot.js, node --check web/browser-platform.js, node --check web/sw.js, and python scripts/validate_runtime.py.
+
+## Shared study presentation (runtime 19)
+
+Android and the web loader use the same redesigned runtime. The header, scrollable
+reading pane, and bottom navigation are separate flex rows, including safe-area
+padding. The navigation cannot overlap lesson endings, expanded answers, or
+completion controls. Reader sections have numbered headings, a contents menu,
+optional light/dark themes, and saved text sizing. Clinical wording stays in
+content.json; reading completion stays separate from mastery and quiz attempts.
+
+The web deployment runs after successful update signing and checks out main so
+the runtime manifest and its matching signature are published together.
+
+DOM regression checks (jsdom 30.1.2; Node >=24):
+
+```sh
+npm install --prefix /tmp/core-nursing-tests --no-audit --no-fund jsdom@30.1.2
+NODE_PATH=/tmp/core-nursing-tests/node_modules node tests/reading-progress.cjs
+NODE_PATH=/tmp/core-nursing-tests/node_modules node tests/study-ui.cjs
+```
