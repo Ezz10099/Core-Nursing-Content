@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 33,
+  "contentVersion": 34,
   "updatedAt": "2026-10-19",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -778,6 +778,38 @@
         }
       ],
       "verification": "General emergency-trolley practice clarification from this session; exact Nasser Medical Complex department lists remain facility-policy dependent.",
+      "placement": "clinical"
+    },
+    {
+      "id": "qa-ibd2-what-is-tsf",
+      "question": "What is TSF (Taylor Spatial Frame), and what should I check as an orthopaedic intern?",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "TSF = Taylor Spatial Frame, a circular external fixator with rings attached to bone by pins/wires and six adjustable struts. It stabilizes bone and can gradually correct position, deformity or length."
+        },
+        {
+          "label": "Why a patient has one",
+          "text": "Common reasons include selected complex fractures, nonunion, bone deformity correction and limb lengthening/reconstruction. Check the individual operative/orthopaedic plan."
+        },
+        {
+          "label": "What to assess first",
+          "text": "LIMB first: pain, distal colour/warmth, capillary refill/pulses, sensation, movement and swelling. Then inspect pin sites for infection and the frame for visible instability or skin pressure."
+        },
+        {
+          "label": "Danger signs",
+          "text": "Disproportionate/increasing pain, especially with passive stretch, or new numbness/weakness/poor perfusion needs urgent escalation for possible compartment syndrome or neurovascular compromise; a pulse can still be present. Fever, spreading redness/pus, loose or broken components also need prompt review."
+        },
+        {
+          "label": "Your role vs authorized adjustments",
+          "text": "Assess, document, protect and escalate; assist with ordered care under supervision. Never independently adjust struts, pins or weight-bearing instructions. The surgeon may prescribe a written computer-planned strut schedule for a trained patient or caregiver—this does not authorize an intern to change it."
+        },
+        {
+          "label": "Remember",
+          "text": "RINGS + PINS/WIRES + SIX STRUTS. LIMB → PINS → FRAME → PATIENT."
+        }
+      ],
+      "verification": "Clinical/device facts checked 19 Oct 2026 against RNOH NHS external fixation guide and Smith+Nephew TSF device information; neurovascular warning signs align with existing IBD2 nursing lessons. Site care and weight-bearing are local order/protocol specific.",
       "placement": "clinical"
     }
   ],
@@ -2919,6 +2951,61 @@
         }
       ],
       "sourceNote": "IBD2 orthopaedic lesson. Study baseline: Open RN Health Alterations 10.6 Fracture for external fixation, aseptic pin care, and distal neurovascular assessment. The exact pin-site product, cleaning method/frequency, weight-bearing status, and hardware interventions must follow the authorized MSF/Nasser IBD2 order/protocol."
+    },
+    {
+      "id": "ibd2-quick-taylor-spatial-frame",
+      "department": "ibd2",
+      "order": 2.5,
+      "title": "Taylor Spatial Frame (TSF) — Bedside Nursing",
+      "kind": "quick-reference",
+      "sections": [
+        {
+          "label": "Essential meaning",
+          "text": "TSF = Taylor Spatial Frame. It is a hexapod circular external fixator used to hold and gradually correct the position of bones. Unlike a simple bar fixator, it can make precise changes in multiple directions."
+        },
+        {
+          "label": "Recognize the parts",
+          "text": "Metal rings surround the limb. Wires and/or half-pins pass through the skin into bone, connecting bone to the frame. Six adjustable telescopic struts connect the main rings; complex frames may have additional rings/struts."
+        },
+        {
+          "label": "Why it is used",
+          "text": "Selected complex fractures; deformity correction; limb lengthening; difficult or poorly healed fractures (nonunion/malunion), and some limb reconstruction cases. The reason for this patient's TSF depends on the surgeon's plan."
+        },
+        {
+          "label": "How correction works",
+          "text": "A surgeon plans the correction using measurements, X-rays, and software. Strut lengths may be changed according to an individualized written schedule. Trained patients/caregivers sometimes make their OWN scheduled adjustments after instruction; an intern must never initiate, change, or improvise a strut adjustment."
+        },
+        {
+          "label": "Assessment: LIMB first",
+          "text": "Start distal to the injured limb: pain and trend, colour/warmth, capillary refill, pulses, sensation, toe/finger movement, swelling and skin pressure points. Compare sides when possible. Then assess pin sites, frame integrity, vital signs and overall comfort."
+        },
+        {
+          "label": "Red flag — acute compartment syndrome",
+          "text": "Severe or rapidly increasing pain out of proportion (especially on passive stretch), tense swelling, new tingling/numbness or weakness = urgent suspicion. Pulses can remain present early; do not wait for pallor or absent pulse. Escalate immediately for emergency orthopaedic assessment."
+        },
+        {
+          "label": "Pin-site and frame red flags",
+          "text": "Report increasing pin-site pain, spreading redness, swelling, new/purulent discharge, fever or feeling unwell. Also report loose/broken wires or struts, unusual frame movement, skin pressure injury or a sudden change in alignment. Do not manipulate hardware yourself."
+        },
+        {
+          "label": "First nursing action & escalation",
+          "text": "If abnormal: check patient/vitals and repeat focused neurovascular assessment; protect/support the limb and stop unsafe movement; inform the responsible nurse and orthopaedic team promptly. For suspected compartment syndrome or marked loss of perfusion/sensation/movement, escalate as an emergency. Follow the prescribed wound/pin-care and weight-bearing orders; assist only within supervised intern scope."
+        },
+        {
+          "label": "Reassessment & documentation",
+          "text": "Repeat pain and neurovascular observations at the ordered frequency and after a clinical change/intervention. Record time, findings, comparison to baseline, person notified, instructions received and patient response. Recheck pin sites, skin contact points and frame stability visually."
+        },
+        {
+          "label": "Common mistakes",
+          "text": "Focusing on the frame instead of the limb; treating worsening pain as 'normal TSF pain'; assuming palpable pulses exclude compartment syndrome; independently turning struts or tightening pins; choosing a pin-cleaning solution or allowing weight-bearing without the local plan."
+        },
+        {
+          "label": "10-second memory",
+          "text": "TSF = RINGS + PINS/WIRES + SIX STRUTS. At bedside: LIMB → PINS → FRAME → PATIENT. New neurovascular problem, infection signs, or broken/loose hardware = assess, protect, escalate, document, reassess.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "IBD2 bedside quick reference, companion to 'Fracture & Limb Safety' and 'External Fixator — Limb, Pins, Frame.' Device anatomy and adjustment principles verified 19 October 2026 with Royal National Orthopaedic Hospital (NHS), 'A Patient's Guide to External Fixation for Bone Correction and Lengthening' (https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/external-fixation-bone-correction-and-lengthening), and Smith+Nephew TSF patient information (https://www.smith-nephew.com/en-US/patients/products/orthopaedics/taylor-spatial-frame_tsf-patient). Bedside assessment follows the existing IBD2 neurovascular/external fixation lessons (Open RN Health Alterations study baseline). Local pin care, weight-bearing, permitted adjustments and intern role remain governed by authorized IBD2 clinical orders/protocol."
     }
   ],
   "guides": [],
