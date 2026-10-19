@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 32,
-  "updatedAt": "2026-10-12",
+  "contentVersion": 33,
+  "updatedAt": "2026-10-19",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -2178,16 +2178,17 @@
       "name": "MAGNESIUM SULFATE — MgSO4",
       "header": "MAGNESIUM SULFATE — MgSO4",
       "drugclass": "Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia.",
-      "availability": "YES. Palestinian essential-medicine data document magnesium sulfate injection 50%.",
+      "availability": "YES. Palestinian essential-medicine data document magnesium sulfate injection 50%. Also WARD-REPORTED in IBD2 on 19 Oct 2026; verify the exact product/concentration and indication.",
       "administration": "Concentrated magnesium requires controlled administration. Routine IV replacement is diluted/infused rather than given as an uncontrolled rapid push; use the exact product/order for concentration and infusion time.",
       "use": "May be considered for recurrent polymorphic VT associated with long-QT syndrome/torsades de pointes; not a generic treatment for every ventricular arrhythmia.",
       "monitor": "• Continuous ECG/BP during urgent antiarrhythmic use. • With repeated/high-dose therapy monitor RR, reflexes, urine output/renal function and magnesium level when appropriate. • Toxicity can cause loss of deep-tendon reflexes, hypotension, respiratory depression and conduction abnormalities. • Renal impairment increases accumulation risk. • Calcium salts can antagonize clinically significant magnesium toxicity.",
       "why": "Magnesium stabilizes repolarization in torsades; excess magnesium depresses neuromuscular and cardiac conduction.",
-      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
-      "pages": "CCU internship medication reference · Sep 2026",
+      "source": "Emergency trolley meds · IBD2 meds · current magnesium sulfate labeling",
+      "pages": "CCU internship reference · also IBD2 ward report 19 Oct 2026",
       "category": "trolley",
       "categories": [
-        "trolley"
+        "trolley",
+        "ibd2"
       ],
       "memoryUse": "Key electrolyte/antiarrhythmic for torsades with long QT.",
       "memoryDanger": "Toxicity = lost reflexes, hypotension, respiratory depression; renal impairment increases risk.",
@@ -2256,6 +2257,69 @@
       "memoryDanger": "Sedation + anticholinergic effects + orthostatic falls; overdose is cardiotoxic.",
       "mechanism": "Blocks norepinephrine and serotonin reuptake; additional antimuscarinic, antihistamine and cardiac sodium-channel effects contribute to side effects/toxicity.",
       "mechanismBasis": "Major safety points checked against current 2026 DailyMed amitriptyline labeling."
+    },
+    {
+      "id": "ibd2-prednitab-prednisolone",
+      "name": "PREDNITAB — prednisolone",
+      "header": "PREDNITAB — prednisolone",
+      "drugclass": "Systemic corticosteroid (glucocorticoid).",
+      "availability": "WARD-REPORTED in IBD2. Palestinian MoH lists PREDNITAB 5 mg and 20 mg tablets containing prednisolone; verify the exact tablet strength before administration.",
+      "use": "Anti-inflammatory and immunosuppressive corticosteroid used for a range of inflammatory, allergic and autoimmune conditions. Confirm the patient-specific indication.",
+      "administration": "PO exactly as ordered. Dose and duration vary greatly by indication. Do not abruptly stop prolonged corticosteroid therapy unless specifically directed because adrenal suppression may occur.",
+      "monitor": "• Monitor glucose, BP, fluid retention and infection risk. • Watch for GI irritation/bleeding, mood or sleep changes, and delayed wound healing. • Longer courses can cause adrenal suppression and other systemic steroid effects. • Verify concurrent NSAID use because GI-risk may increase.",
+      "why": "Prednisolone binds glucocorticoid receptors and suppresses inflammatory and immune responses.",
+      "source": "IBD2 meds · ward report + Palestinian MoH PREDNITAB product information",
+      "pages": "Nasser orthopaedic rotation · reported 19 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Prednitab = prednisolone; systemic anti-inflammatory corticosteroid.",
+      "memoryDanger": "Infection + hyperglycemia + GI risk; prolonged therapy should not be stopped abruptly.",
+      "mechanism": "Glucocorticoid receptor agonist that alters gene transcription and suppresses inflammatory mediators.",
+      "mechanismBasis": "Brand identity/strength checked against current Palestinian MoH records."
+    },
+    {
+      "id": "ibd2-clindamycin",
+      "name": "CLINDAMYCIN",
+      "header": "CLINDAMYCIN",
+      "drugclass": "Lincosamide antibacterial.",
+      "availability": "WARD-REPORTED in IBD2. Exact formulation/strength was not recorded; verify whether the order is oral or injectable and check the product in hand.",
+      "use": "Treatment of susceptible bacterial infections, including some skin/soft-tissue and bone/joint infections depending on organism and local antimicrobial plan.",
+      "administration": "Give by the exact ordered route and formulation. Oral capsules and IV products have different administration requirements; verify concentration, dilution and infusion instructions for injectable products.",
+      "monitor": "• Major warning: antibiotic-associated diarrhea and C. difficile colitis. • Monitor for rash/hypersensitivity and clinical response. • Review culture results when available. • Report severe or persistent diarrhea promptly rather than treating it casually with antidiarrheals.",
+      "why": "Clindamycin binds the bacterial 50S ribosomal subunit and inhibits protein synthesis.",
+      "source": "IBD2 meds · ward report + current DailyMed clindamycin labeling",
+      "pages": "Nasser orthopaedic rotation · reported 19 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Lincosamide antibiotic; commonly relevant to skin/soft-tissue and selected bone/joint infections.",
+      "memoryDanger": "Severe diarrhea/C. difficile is the key bedside red flag.",
+      "mechanism": "Binds the 50S ribosomal subunit and inhibits bacterial protein synthesis.",
+      "mechanismBasis": "Major safety points checked against current 2026 DailyMed clindamycin labeling."
+    },
+    {
+      "id": "ibd2-multivitamin",
+      "name": "MULTIVITAMIN — formulation varies",
+      "header": "MULTIVITAMIN — verify exact product",
+      "drugclass": "Vitamin/mineral supplement; composition varies by brand/product.",
+      "availability": "WARD-REPORTED in IBD2. 'Multivitamin' is not one fixed formulation; verify the exact brand, ingredients and strengths from the package/MAR.",
+      "use": "Nutritional supplementation when prescribed; the exact purpose depends on the patient's nutritional status and the product contents.",
+      "administration": "Use the exact ordered formulation. Check whether it contains iron, calcium, magnesium, zinc, vitamin A, vitamin D or other components because these affect interactions and safety.",
+      "monitor": "• Do not assume all multivitamins are interchangeable. • Check for duplicate vitamins/minerals from other products. • Iron/calcium/magnesium/zinc can interact with absorption of some medicines. • Fat-soluble vitamins A, D, E and K can accumulate with excessive intake.",
+      "why": "Provides selected micronutrients; clinical effect and safety depend on the actual ingredients and doses.",
+      "source": "IBD2 meds · ward report; exact product not yet identified",
+      "pages": "Nasser orthopaedic rotation · reported 19 Oct 2026",
+      "category": "ibd2",
+      "categories": [
+        "ibd2"
+      ],
+      "memoryUse": "Supplement; always identify the exact formulation first.",
+      "memoryDanger": "Not one standard drug—check ingredients to avoid duplication/interactions.",
+      "mechanism": "Varies by included vitamins and minerals.",
+      "mechanismBasis": "Product-specific mechanism cannot be finalized until the exact formulation is identified."
     }
   ],
   "lessons": [
