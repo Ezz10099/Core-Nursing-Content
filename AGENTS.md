@@ -1,19 +1,15 @@
 # Core Nursing runtime/content instructions
 
-## Required continuity check
-Before any Core Nursing app planning, exam-engine work, question-bank generation, coverage tracking, marking feature, UI/content continuation, or related change, read the latest private canonical handoff:
+Before relevant Core Nursing app, exam, question-bank, coverage, marking, or development work, read the canonical private record automatically:
 
 Repository: Ezz10099/Core-Nursing-Diagnostic-State
 Branch: main
-File: docs/active-work.md
+File: docs/principles-and-decisions.md
 
-Use the connected GitHub tools to read it if this repository is the only local checkout. General wording such as "continue," "the big update," "our exams," or "marked information" is sufficient context; do not require the user to remember this path.
+Use connected GitHub access when only this public repository is checked out. General wording such as "continue," "our exams," or "marked information" is sufficient; do not require a file name from the user.
 
-Update that private handoff after meaningful decisions or completed work. Keep this repository's docs/active-work.md as a pointer only; do not copy private session details or notes into this public repository. Clinical learner progress remains in the private MASTER_PROGRESS_WEAKNESS_MAP.md, separate from app planning.
+Update the private record only for lasting principles and agreed decisions. Do not save next steps, current tasks, open issues, blockers, implementation/test progress, release versions, commit snapshots, or other frequently changing details. Retrieve current technical state when needed.
 
-## Work rules
-- Prefer the existing in-app live runtime/content update system.
-- Do not build a new APK unless a native/app-engine requirement genuinely needs it.
-- Preserve stable IDs, saved reading, quiz/bookmark history, and backup compatibility.
-- Use short, plain communication; the user prefers factual exam labels and no green exam marks.
-- Read the canonical handoff before making assumptions about what has been approved or published.
+Public documentation should only point to the private canonical record. Keep actual learner diagnostic progress in the separate private MASTER_PROGRESS_WEAKNESS_MAP.md.
+
+Prefer in-app live runtime/content updates. Build an APK only for a genuine native/app-engine requirement. Preserve stable IDs, saved reading, quiz/exam history, and backup compatibility. Use concise replies and factual exam labels without green exam marks.

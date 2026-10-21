@@ -1,9 +1,7 @@
-# Core Nursing — active work
+# Core Nursing app principles and decisions
 
-The single canonical app handoff is maintained privately:
+The canonical record is private:
 
-[Core Nursing active work and decisions](https://github.com/Ezz10099/Core-Nursing-Diagnostic-State/blob/main/docs/active-work.md)
+[Principles and agreed decisions](https://github.com/Ezz10099/Core-Nursing-Diagnostic-State/blob/main/docs/principles-and-decisions.md)
 
-Read the latest file through the connected GitHub account before continuing app, exam, question-bank, coverage, or marking work. General requests to continue Core Nursing should route there automatically.
-
-This public file is a pointer only. Maintain decisions and session progress in the private canonical record.
+Read it automatically for relevant Core Nursing work. It stores lasting principles and agreed decisions only, not next steps or changing work status.
