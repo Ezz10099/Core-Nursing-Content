@@ -1,0 +1,4334 @@
+{
+  "ccu-lesson-01-acs": [
+    {
+      "stem": "Which set contains the three ACS presentations named in the lesson?",
+      "choices": [
+        {
+          "text": "Unstable angina, NSTEMI, STEMI",
+          "explanation": "These form the ACS spectrum."
+        },
+        {
+          "text": "Stable angina, sinus bradycardia, CHB",
+          "explanation": "These are not the three ACS categories."
+        },
+        {
+          "text": "Heart failure, DCM, pulmonary edema",
+          "explanation": "These describe other cardiac diagnoses or manifestations."
+        },
+        {
+          "text": "PEA, asystole, ventricular fibrillation",
+          "explanation": "These are arrest rhythms rather than ACS categories."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "ACS includes unstable angina, NSTEMI, and STEMI.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which distinction separates unstable angina from myocardial infarction in the lesson?",
+      "choices": [
+        {
+          "text": "No biomarker evidence of myocardial necrosis",
+          "explanation": "Ischemia occurs without the myocardial necrosis defining infarction."
+        },
+        {
+          "text": "No coronary blood-flow reduction",
+          "explanation": "Coronary ischemia remains central to unstable angina."
+        },
+        {
+          "text": "No need for urgent assessment",
+          "explanation": "Concerning ischemic symptoms still require urgent assessment."
+        },
+        {
+          "text": "No possibility of an abnormal ECG",
+          "explanation": "Unstable angina can have ischemic ECG changes."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Unstable angina is ischemia without biomarker evidence of necrosis.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient has myocardial infarction without persistent ST elevation. Which category best matches?",
+      "choices": [
+        {
+          "text": "NSTEMI",
+          "explanation": "This infarction category lacks persistent ST elevation."
+        },
+        {
+          "text": "Stable angina",
+          "explanation": "This does not describe established myocardial infarction."
+        },
+        {
+          "text": "Unstable angina",
+          "explanation": "This lacks the biomarker evidence of necrosis defining MI."
+        },
+        {
+          "text": "Complete heart block",
+          "explanation": "This is a conduction diagnosis rather than the ACS category."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "NSTEMI does not require persistent ST elevation.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which presentation most strongly fits the ischemic symptom pattern in ACS?",
+      "choices": [
+        {
+          "text": "Central chest pressure with sweating and arm radiation",
+          "explanation": "This is the taught ischemic symptom cluster."
+        },
+        {
+          "text": "Sharp localized chest pain reproduced by pressing one rib",
+          "explanation": "This is more suggestive of a chest-wall explanation, although symptoms still need assessment."
+        },
+        {
+          "text": "Burning after a meal with sour regurgitation and no exertional pattern",
+          "explanation": "This more closely fits a reflux pattern."
+        },
+        {
+          "text": "Brief focal chest discomfort during trunk rotation without systemic symptoms",
+          "explanation": "This is less characteristic of the taught ischemic pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Recognize an ischemic symptom cluster.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "After initial assessment of suspected ACS, which test most directly provides electrical evidence used to guide urgent treatment?",
+      "choices": [
+        {
+          "text": "Diagnostic 12-lead ECG",
+          "explanation": "It supplies the electrical views needed to identify ischemic patterns."
+        },
+        {
+          "text": "Continuous pulse-oximeter pleth recording",
+          "explanation": "It measures pulsatile flow and oxygenation rather than ischemic electrical views."
+        },
+        {
+          "text": "Serial noninvasive BP recording",
+          "explanation": "This assesses hemodynamics rather than myocardial electrical patterns."
+        },
+        {
+          "text": "Initial serum electrolyte measurement",
+          "explanation": "Electrolytes inform assessment but do not provide a diagnostic electrical tracing."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Initial ACS assessment includes vitals, monitoring, prompt ECG, access, and escalation.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient with suspected ACS has adequate oxygenation and no respiratory distress. Which factor should determine supplemental oxygen use?",
+      "choices": [
+        {
+          "text": "Evidence of an oxygenation or clinical need under the protocol",
+          "explanation": "The lesson teaches indication-based oxygen."
+        },
+        {
+          "text": "The ACS diagnosis regardless of oxygenation",
+          "explanation": "The diagnosis alone is not the stated indication."
+        },
+        {
+          "text": "The severity of pain regardless of oxygenation",
+          "explanation": "Pain severity does not itself establish a need for oxygen."
+        },
+        {
+          "text": "The presence of ST elevation regardless of oxygenation",
+          "explanation": "ST elevation requires urgent care but does not itself establish hypoxemia."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Use oxygen when oxygenation or clinical status indicates it.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Chest pressure persists with new ischemic ECG changes and a falling BP. The first troponin result is pending. Which action has priority?",
+      "choices": [
+        {
+          "text": "Escalate immediately while continuing assessment and monitoring",
+          "explanation": "Instability and ischemic findings should not wait for a biomarker result."
+        },
+        {
+          "text": "Schedule a repeat pain score after the routine round",
+          "explanation": "This delays action despite deterioration."
+        },
+        {
+          "text": "Complete the dietary history before contacting the team",
+          "explanation": "This is secondary to urgent assessment and escalation."
+        },
+        {
+          "text": "Wait for the biomarker result before reporting the ECG",
+          "explanation": "The lesson specifically warns against this delay."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3,
+        4
+      ],
+      "point": "Do not delay escalation of concerning ischemia while awaiting biomarkers.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A patient has ongoing ischemic chest pain and compatible new ST elevation. Which interpretation is most appropriate?",
+      "choices": [
+        {
+          "text": "A time-critical ACS presentation needing urgent escalation",
+          "explanation": "Clinical and ECG findings support immediate action; a biomarker delay is unsafe."
+        },
+        {
+          "text": "A normal telemetry variant because pain is present",
+          "explanation": "Pain does not make the ECG finding benign."
+        },
+        {
+          "text": "A diagnosis of stable exertional angina established by symptoms",
+          "explanation": "Persistent acute symptoms and compatible ST elevation require a different response."
+        },
+        {
+          "text": "A reason to defer assessment until pain resolves",
+          "explanation": "Waiting can delay time-sensitive care."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1,
+        3,
+        4
+      ],
+      "point": "An acute ischemic presentation with ST elevation needs urgent assessment.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "What is the immediate physiological problem in ACS?",
+      "choices": [
+        {
+          "text": "Reduced coronary supply causing myocardial ischemia",
+          "explanation": "This is the central supply problem in the lesson."
+        },
+        {
+          "text": "Reduced systemic venous return as the defining mechanism",
+          "explanation": "This does not define ACS."
+        },
+        {
+          "text": "Primary AV conduction failure without ischemia",
+          "explanation": "This defines a different problem."
+        },
+        {
+          "text": "Primary ventricular repolarization delay without ischemia",
+          "explanation": "This does not define ACS."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Reduced coronary blood flow produces acute myocardial ischemia.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-lesson-02-chb": [
+    {
+      "stem": "What defines complete heart block?",
+      "choices": [
+        {
+          "text": "Failure of atrial impulses to conduct to the ventricles",
+          "explanation": "Atria and ventricles then beat independently."
+        },
+        {
+          "text": "Uniformly slow sinus impulses that all conduct",
+          "explanation": "This describes sinus bradycardia rather than complete block."
+        },
+        {
+          "text": "Rapid conduction through every atrial impulse",
+          "explanation": "This does not describe AV dissociation."
+        },
+        {
+          "text": "A ventricular rate that must exceed the atrial rate",
+          "explanation": "This is not the defining relationship."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Third-degree AV block produces independent atrial and ventricular activity.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which tracing relationship most supports CHB?",
+      "choices": [
+        {
+          "text": "P waves and QRS complexes with no fixed PR relationship",
+          "explanation": "Independent atrial and ventricular rhythms are the hallmark."
+        },
+        {
+          "text": "Each P wave followed by one QRS with a fixed PR",
+          "explanation": "This demonstrates conducted atrial impulses rather than complete block."
+        },
+        {
+          "text": "A continuous absence of all atrial and ventricular signals",
+          "explanation": "That does not describe an atrial rhythm with a ventricular escape."
+        },
+        {
+          "text": "A normal P/QRS relationship with a fast sinus rate",
+          "explanation": "This is not complete AV block."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Identify AV dissociation on ECG.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which complication explains dizziness and hypotension during severe CHB?",
+      "choices": [
+        {
+          "text": "Reduced cardiac output from a slow ventricular escape",
+          "explanation": "Inadequate effective rate can impair perfusion."
+        },
+        {
+          "text": "Increased coronary flow from faster AV conduction",
+          "explanation": "Complete block prevents normal AV conduction."
+        },
+        {
+          "text": "Increased ventilation from atrial dissociation alone",
+          "explanation": "This does not explain the hemodynamic problem."
+        },
+        {
+          "text": "Reduced platelet aggregation from the escape rhythm",
+          "explanation": "The rhythm does not act as an antiplatelet."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "A slow escape rhythm can reduce output and organ perfusion.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Two patients have a ventricular rate of 38/min. One has fixed P-to-QRS conduction; the other has independent P and QRS rhythms. Which distinction is valid?",
+      "choices": [
+        {
+          "text": "The conduction relationship, not rate alone, separates the patterns",
+          "explanation": "Complete block has AV dissociation; sinus bradycardia preserves conduction."
+        },
+        {
+          "text": "The identical rates establish the same rhythm diagnosis",
+          "explanation": "Rate alone is insufficient."
+        },
+        {
+          "text": "A narrow QRS excludes AV dissociation",
+          "explanation": "QRS width alone does not establish the P/QRS relationship."
+        },
+        {
+          "text": "A palpable pulse excludes complete block",
+          "explanation": "A ventricular escape can produce a pulse despite complete block."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Sinus bradycardia preserves conducted P/QRS relationships.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which recent treatment is a plausible contributor to AV conduction slowing in CHB assessment?",
+      "choices": [
+        {
+          "text": "A beta-blocker or AV-node-slowing calcium-channel blocker",
+          "explanation": "These are named medication contributors."
+        },
+        {
+          "text": "An oral local antifungal alone",
+          "explanation": "This is not a principal AV-node-slowing medicine in the lesson."
+        },
+        {
+          "text": "A vitamin supplement alone",
+          "explanation": "This is not the taught medication contributor."
+        },
+        {
+          "text": "An osmotic laxative alone",
+          "explanation": "This is not a direct AV-node-slowing therapy."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Review reversible contributors including rate-slowing medicines and electrolyte problems.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient with AV dissociation has a slow pulse, confusion, and hypotension. Which treatment capability should the nurse prepare with the urgent team?",
+      "choices": [
+        {
+          "text": "Pacing support",
+          "explanation": "The patient has dangerous symptomatic bradycardia with poor perfusion."
+        },
+        {
+          "text": "Routine synchronized treatment of a fast rhythm",
+          "explanation": "The dominant problem is severe bradycardia."
+        },
+        {
+          "text": "A maintenance oral antihypertensive alone",
+          "explanation": "This does not address the low-output conduction emergency."
+        },
+        {
+          "text": "A routine discharge ECG alone",
+          "explanation": "The unstable presentation requires immediate escalation."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4,
+        6
+      ],
+      "point": "Escalate symptomatic CHB and prepare for pacing.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A monitor suggests CHB while the patient is awake. What determines the urgency of the bedside response?",
+      "choices": [
+        {
+          "text": "Pulse, BP, consciousness, breathing, and symptoms",
+          "explanation": "The rhythm must be interpreted with the patient’s clinical state."
+        },
+        {
+          "text": "The diagnostic label without a patient assessment",
+          "explanation": "The label alone does not quantify current perfusion."
+        },
+        {
+          "text": "The monitor’s alarm volume alone",
+          "explanation": "Alarm volume is a device setting."
+        },
+        {
+          "text": "The time since the last routine meal alone",
+          "explanation": "Meal timing does not establish hemodynamic stability."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Correlate a conduction pattern with the patient’s perfusion.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient with new CHB has worsening hypoxemia and high potassium. Which interpretation should inform escalation?",
+      "choices": [
+        {
+          "text": "Both findings can contribute and need urgent review alongside the block",
+          "explanation": "Hypoxia and hyperkalemia are named contributors."
+        },
+        {
+          "text": "Neither finding matters once complete block is identified",
+          "explanation": "Reversible contributors still require assessment."
+        },
+        {
+          "text": "High potassium establishes that oxygenation no longer matters",
+          "explanation": "Both physiological problems remain relevant."
+        },
+        {
+          "text": "A palpable escape pulse establishes that both abnormalities are harmless",
+          "explanation": "A pulse does not guarantee adequate perfusion or safety."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Hypoxia and hyperkalemia are reversible contributors to conduction deterioration.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    }
+  ],
+  "ccu-lesson-03-12lead-ecg": [
+    {
+      "sections": [
+        0
+      ],
+      "point": "A diagnostic 12-lead ECG uses ten physical electrodes.",
+      "stage": "standard",
+      "format": "numeric-entry",
+      "stem": "How many physical electrodes are used for a standard 12-lead ECG? Enter a whole number.",
+      "answer": 10,
+      "unit": "electrodes",
+      "tolerance": 0,
+      "explanation": "Four limb and six chest electrodes provide ten physical contacts.",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which distinction correctly separates electrode and lead?",
+      "choices": [
+        {
+          "text": "Electrode: physical contact; lead: electrical view",
+          "explanation": "The machine derives views from the physical contacts."
+        },
+        {
+          "text": "Electrode: electrical view; lead: physical sticker",
+          "explanation": "This reverses the terms."
+        },
+        {
+          "text": "Electrode: pulse-oximeter wave; lead: oxygen saturation",
+          "explanation": "These refer to a different monitoring signal."
+        },
+        {
+          "text": "Electrode: ventricular contraction; lead: arterial pulse",
+          "explanation": "Neither definition matches ECG terminology."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "An electrode is a physical contact; a lead is an electrical view.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Where should V1 be placed?",
+      "choices": [
+        {
+          "text": "4th intercostal space, right sternal border",
+          "explanation": "This is the taught V1 position."
+        },
+        {
+          "text": "4th intercostal space, left sternal border",
+          "explanation": "This is the V2 position, not V1."
+        },
+        {
+          "text": "Halfway between V2 and V4",
+          "explanation": "This is the V3 position, not V1."
+        },
+        {
+          "text": "5th intercostal space, left midclavicular line",
+          "explanation": "This is the V4 position, not V1."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "V1 electrode position.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Where should V2 be placed?",
+      "choices": [
+        {
+          "text": "4th intercostal space, left sternal border",
+          "explanation": "This is the taught V2 position."
+        },
+        {
+          "text": "4th intercostal space, right sternal border",
+          "explanation": "This is the V1 position, not V2."
+        },
+        {
+          "text": "Halfway between V2 and V4",
+          "explanation": "This is the V3 position, not V2."
+        },
+        {
+          "text": "5th intercostal space, left midclavicular line",
+          "explanation": "This is the V4 position, not V2."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "V2 electrode position.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Where should V3 be placed?",
+      "choices": [
+        {
+          "text": "Halfway between V2 and V4",
+          "explanation": "This is the taught V3 position."
+        },
+        {
+          "text": "4th intercostal space, right sternal border",
+          "explanation": "This is the V1 position, not V3."
+        },
+        {
+          "text": "4th intercostal space, left sternal border",
+          "explanation": "This is the V2 position, not V3."
+        },
+        {
+          "text": "5th intercostal space, left midclavicular line",
+          "explanation": "This is the V4 position, not V3."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "V3 electrode position.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Where should V4 be placed?",
+      "choices": [
+        {
+          "text": "5th intercostal space, left midclavicular line",
+          "explanation": "This is the taught V4 position."
+        },
+        {
+          "text": "4th intercostal space, right sternal border",
+          "explanation": "This is the V1 position, not V4."
+        },
+        {
+          "text": "4th intercostal space, left sternal border",
+          "explanation": "This is the V2 position, not V4."
+        },
+        {
+          "text": "Halfway between V2 and V4",
+          "explanation": "This is the V3 position, not V4."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "V4 electrode position.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Where should V5 be placed?",
+      "choices": [
+        {
+          "text": "At V4’s horizontal level, anterior axillary line",
+          "explanation": "This is the taught V5 position."
+        },
+        {
+          "text": "4th intercostal space, right sternal border",
+          "explanation": "This is the V1 position, not V5."
+        },
+        {
+          "text": "4th intercostal space, left sternal border",
+          "explanation": "This is the V2 position, not V5."
+        },
+        {
+          "text": "Halfway between V2 and V4",
+          "explanation": "This is the V3 position, not V5."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "V5 electrode position.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Where should V6 be placed?",
+      "choices": [
+        {
+          "text": "At V4’s horizontal level, midaxillary line",
+          "explanation": "This is the taught V6 position."
+        },
+        {
+          "text": "4th intercostal space, right sternal border",
+          "explanation": "This is the V1 position, not V6."
+        },
+        {
+          "text": "4th intercostal space, left sternal border",
+          "explanation": "This is the V2 position, not V6."
+        },
+        {
+          "text": "Halfway between V2 and V4",
+          "explanation": "This is the V3 position, not V6."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "V6 electrode position.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which event is represented by the P wave?",
+      "choices": [
+        {
+          "text": "Atrial depolarization",
+          "explanation": "This is the electrical event associated with the P wave."
+        },
+        {
+          "text": "Ventricular depolarization",
+          "explanation": "This is not the electrical event represented by the P wave."
+        },
+        {
+          "text": "Ventricular repolarization",
+          "explanation": "This is not the electrical event represented by the P wave."
+        },
+        {
+          "text": "Mechanical ventricular ejection",
+          "explanation": "This is not the electrical event represented by the P wave."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "P wave electrical meaning.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which event is represented by the QRS complex?",
+      "choices": [
+        {
+          "text": "Ventricular depolarization",
+          "explanation": "This is the electrical event associated with the QRS complex."
+        },
+        {
+          "text": "Atrial depolarization",
+          "explanation": "This is not the electrical event represented by the QRS complex."
+        },
+        {
+          "text": "Ventricular repolarization",
+          "explanation": "This is not the electrical event represented by the QRS complex."
+        },
+        {
+          "text": "Mechanical ventricular ejection",
+          "explanation": "This is not the electrical event represented by the QRS complex."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "QRS complex electrical meaning.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which event is represented by the T wave?",
+      "choices": [
+        {
+          "text": "Ventricular repolarization",
+          "explanation": "This is the electrical event associated with the T wave."
+        },
+        {
+          "text": "Atrial depolarization",
+          "explanation": "This is not the electrical event represented by the T wave."
+        },
+        {
+          "text": "Ventricular depolarization",
+          "explanation": "This is not the electrical event represented by the T wave."
+        },
+        {
+          "text": "Mechanical ventricular ejection",
+          "explanation": "This is not the electrical event represented by the T wave."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "T wave electrical meaning.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "In the IEC color system specified in the lesson, what color is RA/R?",
+      "choices": [
+        {
+          "text": "Red",
+          "explanation": "This is the specified IEC color for RA/R."
+        },
+        {
+          "text": "Yellow",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Green",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Black",
+          "explanation": "This is a different IEC limb-electrode color."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "IEC RA/R color.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "In the IEC color system specified in the lesson, what color is LA/L?",
+      "choices": [
+        {
+          "text": "Yellow",
+          "explanation": "This is the specified IEC color for LA/L."
+        },
+        {
+          "text": "Red",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Green",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Black",
+          "explanation": "This is a different IEC limb-electrode color."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "IEC LA/L color.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "In the IEC color system specified in the lesson, what color is LL/F?",
+      "choices": [
+        {
+          "text": "Green",
+          "explanation": "This is the specified IEC color for LL/F."
+        },
+        {
+          "text": "Red",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Yellow",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Black",
+          "explanation": "This is a different IEC limb-electrode color."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "IEC LL/F color.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "In the IEC color system specified in the lesson, what color is RL/N?",
+      "choices": [
+        {
+          "text": "Black",
+          "explanation": "This is the specified IEC color for RL/N."
+        },
+        {
+          "text": "Red",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Yellow",
+          "explanation": "This is a different IEC limb-electrode color."
+        },
+        {
+          "text": "Green",
+          "explanation": "This is a different IEC limb-electrode color."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "IEC RL/N color.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "V1 and V2 were placed above the fourth intercostal space, and the tracing now appears unexpectedly abnormal. Which technical issue should be corrected before interpreting a stable patient’s repeat ECG?",
+      "choices": [
+        {
+          "text": "Chest-electrode position",
+          "explanation": "High V1/V2 placement can distort the tracing."
+        },
+        {
+          "text": "The number of electrical leads selected alone",
+          "explanation": "A standard lead display does not correct misplaced electrodes."
+        },
+        {
+          "text": "The pulse-oximeter’s display brightness",
+          "explanation": "That does not correct an ECG electrode-position error."
+        },
+        {
+          "text": "The oxygen tubing length alone",
+          "explanation": "That does not determine chest-electrode anatomy."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2,
+        5
+      ],
+      "point": "High V1/V2 placement can produce a misleading tracing.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "V4 is correctly located. What determines the vertical level of V5 and V6?",
+      "choices": [
+        {
+          "text": "The same horizontal level as V4",
+          "explanation": "Their axillary positions share V4’s level."
+        },
+        {
+          "text": "The same vertical line as V1",
+          "explanation": "The sternal V1 position does not set their axillary placement."
+        },
+        {
+          "text": "One intercostal space above V4",
+          "explanation": "This is not the taught level."
+        },
+        {
+          "text": "One intercostal space below V4",
+          "explanation": "This is not the taught level."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "V5 and V6 share V4’s horizontal level.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient asks why twelve electrical views do not require twelve stickers. Which explanation is correct?",
+      "choices": [
+        {
+          "text": "Leads are derived views rather than one sticker per view",
+          "explanation": "Four limb plus six chest contacts provide the standard derived leads."
+        },
+        {
+          "text": "Two chest electrodes are omitted in a routine recording",
+          "explanation": "A standard recording still uses six chest electrodes."
+        },
+        {
+          "text": "The pleth trace supplies the two missing electrical leads",
+          "explanation": "A pulse-oximeter waveform is not an ECG lead."
+        },
+        {
+          "text": "Two stickers are counted twice because they are spares",
+          "explanation": "Spare contacts do not explain the derived lead system."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0,
+        1
+      ],
+      "point": "Ten electrodes can generate twelve derived views.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "In the IEC limb labels used in this lesson, what do F and N mean?",
+      "choices": [
+        {
+          "text": "F: Foot; N: Neutral",
+          "explanation": "These identify the stated foot and neutral labels."
+        },
+        {
+          "text": "F: Front; N: Neck",
+          "explanation": "These are not the stated IEC label meanings."
+        },
+        {
+          "text": "F: Frequency; N: Node",
+          "explanation": "These are not the stated limb label meanings."
+        },
+        {
+          "text": "F: Filter; N: Negative",
+          "explanation": "These are not the stated limb label meanings."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "In IEC limb labels F means Foot and N means Neutral.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-lesson-04-telemetry": [
+    {
+      "stem": "What is the principal role of telemetry in the lesson?",
+      "choices": [
+        {
+          "text": "Continuous cardiac electrical rhythm monitoring",
+          "explanation": "Telemetry follows heart rate and rhythm over time."
+        },
+        {
+          "text": "Replacement of every diagnostic 12-lead assessment",
+          "explanation": "Continuous rhythm monitoring does not provide the same diagnostic study."
+        },
+        {
+          "text": "Direct measurement of myocardial blood flow",
+          "explanation": "Telemetry measures electrical activity rather than coronary flow."
+        },
+        {
+          "text": "Direct measurement of cardiac output",
+          "explanation": "The ECG waveform does not directly quantify output."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Telemetry monitoring and diagnostic 12-lead ECG have different roles.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which pairing correctly identifies the signals?",
+      "choices": [
+        {
+          "text": "ECG: electrical activity; pleth: pulsatile blood flow",
+          "explanation": "ECG electrodes and an oximeter probe measure different signals."
+        },
+        {
+          "text": "ECG: arterial oxygen content; pleth: AV conduction",
+          "explanation": "This reverses and misidentifies the signal roles."
+        },
+        {
+          "text": "ECG: urine output; pleth: coronary anatomy",
+          "explanation": "Neither definition fits."
+        },
+        {
+          "text": "ECG: ventricular pressure; pleth: clotting intensity",
+          "explanation": "These are not what the waveforms directly measure."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "ECG and pleth arise from different physiological signals.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "After looking at the patient, which set belongs in systematic rhythm interpretation?",
+      "choices": [
+        {
+          "text": "Rate, regularity, P waves, PR, QRS, and P/QRS relationship",
+          "explanation": "These are the taught ECG features."
+        },
+        {
+          "text": "Blood group, INR, platelet count, and bilirubin",
+          "explanation": "These are not the systematic rhythm sequence."
+        },
+        {
+          "text": "Pain score, wound depth, and drainage volume",
+          "explanation": "These assess another clinical domain."
+        },
+        {
+          "text": "Bowel frequency, dietary intake, and stool color",
+          "explanation": "These do not interpret cardiac electrical relationships."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Interpret rate and intervals with the patient and P/QRS relationship.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "sections": [
+        4
+      ],
+      "point": "Estimate rate from a six-second strip.",
+      "stage": "standard",
+      "format": "numeric-entry",
+      "stem": "A six-second ECG strip contains 9 QRS complexes. What is the approximate heart rate?",
+      "answer": 90,
+      "unit": "beats/min",
+      "tolerance": 0,
+      "explanation": "Multiply the six-second QRS count by ten.",
+      "criticalForSafety": false
+    },
+    {
+      "sections": [
+        4
+      ],
+      "point": "Use the 300 method only for a regular rhythm.",
+      "stage": "advanced",
+      "format": "numeric-entry",
+      "stem": "A regular rhythm has 4 large boxes between successive R waves. Estimate the rate using the lesson’s method.",
+      "answer": 75,
+      "unit": "beats/min",
+      "tolerance": 0,
+      "explanation": "For a regular rhythm, 300 divided by 4 equals 75.",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which interval pair is within the usual reference limits taught in the lesson?",
+      "choices": [
+        {
+          "text": "PR 0.16 s; QRS 0.08 s",
+          "explanation": "PR is about 0.12–0.20 s and QRS less than 0.12 s."
+        },
+        {
+          "text": "PR 0.28 s; QRS 0.16 s",
+          "explanation": "Both are outside the stated normal limits."
+        },
+        {
+          "text": "PR 0.32 s; QRS 0.18 s",
+          "explanation": "These are prolonged rather than the taught normal pair."
+        },
+        {
+          "text": "PR 0.26 s; QRS 0.14 s",
+          "explanation": "These exceed the stated reference intervals."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Recognize the taught normal PR and QRS intervals.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "The monitor appears chaotic, but the patient is talking and has a strong regular pulse. Which explanation should be assessed first?",
+      "choices": [
+        {
+          "text": "Artifact or lead-related signal disturbance",
+          "explanation": "The electrical display conflicts with the observed perfusing patient."
+        },
+        {
+          "text": "Established pulseless ventricular fibrillation",
+          "explanation": "The patient has a definite regular pulse and is responsive."
+        },
+        {
+          "text": "Established asystole",
+          "explanation": "A talking patient with a regular pulse is not described as asystolic."
+        },
+        {
+          "text": "Established pulseless electrical activity",
+          "explanation": "A definite pulse contradicts PEA."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Assess the patient and pulse when a tracing may be artifact.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A patient has a regular pleth waveform and new ischemic chest pain. Which investigation is still needed to assess ischemic electrical changes?",
+      "choices": [
+        {
+          "text": "A diagnostic 12-lead ECG",
+          "explanation": "Pleth does not provide diagnostic electrical views."
+        },
+        {
+          "text": "A longer pleth recording",
+          "explanation": "This still measures pulsatile flow rather than ischemic electrical activity."
+        },
+        {
+          "text": "A repeat oxygen-saturation measurement",
+          "explanation": "Oxygenation alone cannot characterize ischemic ECG changes."
+        },
+        {
+          "text": "A repeat peripheral pulse-rate count",
+          "explanation": "Rate alone does not provide ischemic electrical views."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2,
+        5
+      ],
+      "point": "A pleth pulse signal does not replace a diagnostic ECG.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "sections": [
+        1
+      ],
+      "point": "A common basic telemetry setup uses three electrodes.",
+      "stage": "standard",
+      "format": "numeric-entry",
+      "stem": "How many electrodes are used in the common basic telemetry setup described in this lesson?",
+      "answer": 3,
+      "unit": "electrodes",
+      "tolerance": 0,
+      "explanation": "The lesson describes a common three-electrode continuous rhythm-monitoring setup.",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-lesson-05-dangerous-rhythms": [
+    {
+      "stem": "Which pair is shockable in cardiac arrest?",
+      "choices": [
+        {
+          "text": "Ventricular fibrillation and pulseless VT",
+          "explanation": "Both follow the shockable arrest pathway."
+        },
+        {
+          "text": "Asystole and PEA",
+          "explanation": "These are non-shockable arrest rhythms."
+        },
+        {
+          "text": "Sinus bradycardia and CHB with a pulse",
+          "explanation": "These are pulse-present bradycardia problems."
+        },
+        {
+          "text": "Stable sinus tachycardia and normal sinus rhythm",
+          "explanation": "These are not shockable arrest rhythms."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "VF and pulseless VT are shockable arrest rhythms.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which pair belongs to the non-shockable arrest pathway?",
+      "choices": [
+        {
+          "text": "PEA and asystole",
+          "explanation": "They require CPR, indicated medicines, and cause-directed treatment, not routine defibrillation."
+        },
+        {
+          "text": "VF and pulseless VT",
+          "explanation": "These belong to the shockable pathway."
+        },
+        {
+          "text": "Unstable regular SVT and atrial flutter with a pulse",
+          "explanation": "These are pulse-present tachyarrhythmia contexts."
+        },
+        {
+          "text": "Sinus bradycardia and a perfusing ventricular escape",
+          "explanation": "These are not defined here as pulseless arrest."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "PEA and asystole are non-shockable arrest rhythms.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "What defines pulseless electrical activity?",
+      "choices": [
+        {
+          "text": "Organized electrical activity without a pulse",
+          "explanation": "PEA is a clinical electrical–mechanical mismatch, not one specific tracing shape."
+        },
+        {
+          "text": "A rapid rhythm with a strong pulse",
+          "explanation": "A pulse excludes the definition of PEA."
+        },
+        {
+          "text": "A slow rhythm with normal BP",
+          "explanation": "This is a perfusing rhythm."
+        },
+        {
+          "text": "A pleth trace with a normal ECG",
+          "explanation": "This does not define PEA."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "PEA is electrical activity without a palpable pulse.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A wide-complex tachycardia appears. Which bedside assessment first separates the arrest pathway from the pulse-present tachyarrhythmia pathway?",
+      "choices": [
+        {
+          "text": "A definite pulse",
+          "explanation": "Pulse status determines this initial pathway distinction."
+        },
+        {
+          "text": "The degree of hypotension",
+          "explanation": "This helps assess instability after a pulse is confirmed."
+        },
+        {
+          "text": "The severity of chest discomfort",
+          "explanation": "This helps assess instability but does not establish whether a pulse is present."
+        },
+        {
+          "text": "The presence of acute pulmonary edema",
+          "explanation": "This indicates compromise but does not replace the pulse check."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0,
+        3
+      ],
+      "point": "Pulse status separates pulseless VT from pulse-present VT management.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A patient with tachycardia has hypotension and acute confusion. Which interpretation best fits?",
+      "choices": [
+        {
+          "text": "Hemodynamic instability",
+          "explanation": "The perfusion findings determine urgency alongside the rhythm."
+        },
+        {
+          "text": "Stability established by a regular rhythm",
+          "explanation": "Regularity does not exclude poor perfusion."
+        },
+        {
+          "text": "Stability established by a narrow QRS",
+          "explanation": "QRS width does not establish adequate circulation."
+        },
+        {
+          "text": "A harmless rhythm established by a previous similar episode",
+          "explanation": "Prior episodes do not determine the present clinical state."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Hypotension, altered consciousness, shock, ischemia, or acute HF indicates instability.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "An unresponsive patient has organized ECG activity, no normal breathing, and no definite pulse. Which pathway fits?",
+      "choices": [
+        {
+          "text": "The non-shockable cardiac-arrest pathway",
+          "explanation": "Organized electrical activity without a pulse is PEA."
+        },
+        {
+          "text": "Observation for an asymptomatic perfusing rhythm",
+          "explanation": "The patient is unresponsive and pulseless."
+        },
+        {
+          "text": "Routine oral rate control",
+          "explanation": "This does not address cardiac arrest."
+        },
+        {
+          "text": "Routine synchronized cardioversion for a pulse-present rhythm",
+          "explanation": "The patient has no definite pulse."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0,
+        2,
+        4
+      ],
+      "point": "An organized ECG does not exclude cardiac arrest.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    }
+  ],
+  "ccu-lesson-06-electrical-treatment": [
+    {
+      "stem": "Which intervention is used for VF or pulseless VT arrest?",
+      "choices": [
+        {
+          "text": "Unsynchronized defibrillation",
+          "explanation": "These rhythms require a shockable arrest response."
+        },
+        {
+          "text": "Synchronized cardioversion as the arrest default",
+          "explanation": "Synchronization is not the VF/pVT arrest shock mode."
+        },
+        {
+          "text": "Routine transcutaneous pacing as the arrest default",
+          "explanation": "Pacing does not replace defibrillation for VF/pVT."
+        },
+        {
+          "text": "Routine oral AV-nodal blockade",
+          "explanation": "This does not treat the arrest emergency."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Defibrillation is unsynchronized treatment for VF/pVT arrest.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient has an unstable tachyarrhythmia with a pulse. Which electrical mode usually applies?",
+      "choices": [
+        {
+          "text": "Synchronized cardioversion",
+          "explanation": "The shock is timed to the R wave in the appropriate pulse-present rhythm."
+        },
+        {
+          "text": "Unsynchronized shock as the rule for every pulse-present rhythm",
+          "explanation": "This ignores the synchronization requirement and specific exceptions."
+        },
+        {
+          "text": "Transcutaneous pacing as the usual fast-rhythm treatment",
+          "explanation": "Pacing is used for dangerous bradycardia rather than this usual context."
+        },
+        {
+          "text": "No electrical treatment until all biomarkers return",
+          "explanation": "Instability should not be delayed by routine laboratory results."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Synchronized cardioversion treats selected unstable tachyarrhythmia with a pulse.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Why is a cardioversion shock synchronized to the R wave?",
+      "choices": [
+        {
+          "text": "To avoid shock delivery during vulnerable ventricular repolarization",
+          "explanation": "This reduces the risk of triggering a dangerous ventricular rhythm."
+        },
+        {
+          "text": "To make shock energy depend on the atrial rate",
+          "explanation": "Synchronization selects timing, not energy based on atrial rate."
+        },
+        {
+          "text": "To deliver pacing impulses between every pair of QRS complexes",
+          "explanation": "This describes neither a synchronized shock nor its purpose."
+        },
+        {
+          "text": "To guarantee a pulse whenever a QRS is detected",
+          "explanation": "Electrical detection does not guarantee mechanical perfusion."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Synchronization avoids the vulnerable repolarization period.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A critically unstable polymorphic VT requires a shock, but reliable synchronization is not possible. Which mode matches the lesson’s exception?",
+      "choices": [
+        {
+          "text": "Unsynchronized shock",
+          "explanation": "Polymorphic VT cannot reliably support the usual R-wave synchronization."
+        },
+        {
+          "text": "Repeatedly wait for a stable synchronization marker",
+          "explanation": "This can delay needed treatment."
+        },
+        {
+          "text": "Routine pacing to create a marker first",
+          "explanation": "This is not the taught polymorphic VT shock response."
+        },
+        {
+          "text": "A maintenance oral antiarrhythmic alone",
+          "explanation": "This does not address the immediate electrical emergency."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Polymorphic VT may require unsynchronized shock.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Which problem best matches the pacing role taught in this lesson?",
+      "choices": [
+        {
+          "text": "Dangerous symptomatic bradycardia or high-grade block",
+          "explanation": "Pacing provides repeated electrical stimulation when the effective rate is inadequate."
+        },
+        {
+          "text": "VF arrest requiring defibrillation",
+          "explanation": "Pacing is not the shockable VF treatment."
+        },
+        {
+          "text": "Stable sinus tachycardia after exertion",
+          "explanation": "This is not the dangerous slow-rhythm indication."
+        },
+        {
+          "text": "An isolated normal ECG with no symptoms",
+          "explanation": "This does not establish a pacing indication."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Pacing supports dangerous symptomatic bradycardia/high-grade block.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Pacing spikes are followed by QRS complexes, but the patient has no corresponding palpable pulse or BP response. What has not been established?",
+      "choices": [
+        {
+          "text": "Mechanical capture",
+          "explanation": "Electrical capture alone does not prove effective perfusion."
+        },
+        {
+          "text": "Electrical capture",
+          "explanation": "A pacing spike followed by QRS supports electrical capture."
+        },
+        {
+          "text": "The presence of a pacing spike",
+          "explanation": "Spikes are visible in the case."
+        },
+        {
+          "text": "The presence of ventricular electrical activity",
+          "explanation": "QRS complexes establish that electrical finding."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        6
+      ],
+      "point": "Confirm electrical and mechanical capture.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A patient has CHB, a very slow pulse, and poor perfusion. Which electrical preparation best matches the physiology?",
+      "choices": [
+        {
+          "text": "Pacing",
+          "explanation": "The problem is dangerous bradycardia with a pulse."
+        },
+        {
+          "text": "Synchronized cardioversion for rapid SVT",
+          "explanation": "The rhythm is slow, not a tachyarrhythmia."
+        },
+        {
+          "text": "Unsynchronized defibrillation for VF",
+          "explanation": "The patient has a pulse and an organized bradycardic rhythm."
+        },
+        {
+          "text": "Shock avoidance based on ECG appearance alone",
+          "explanation": "The full clinical state requires urgent treatment preparation."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "point": "Choose electrical treatment from pulse status, rate, and stability.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which ECG finding indicates electrical capture during pacing?",
+      "choices": [
+        {
+          "text": "A pacing spike followed by a QRS complex",
+          "explanation": "This is electrical capture; the patient still needs a mechanical response check."
+        },
+        {
+          "text": "A pacing spike without a following QRS complex",
+          "explanation": "A stimulus alone does not establish capture."
+        },
+        {
+          "text": "A QRS complex with no temporal relationship to the pacing spike",
+          "explanation": "This does not demonstrate a paced response."
+        },
+        {
+          "text": "A pacing spike followed by an isolated P wave without QRS",
+          "explanation": "This does not establish the ventricular electrical capture described."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        6
+      ],
+      "point": "Electrical capture is a pacing spike followed by a QRS complex.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-lesson-07-sudden-deterioration": [
+    {
+      "stem": "A monitor alarm sounds as a CCU patient deteriorates. What is the starting point of the taught response?",
+      "choices": [
+        {
+          "text": "The patient’s responsiveness, airway, breathing, and circulation",
+          "explanation": "The monitor is interpreted alongside direct clinical assessment."
+        },
+        {
+          "text": "The monitor’s diagnostic label without patient assessment",
+          "explanation": "A display does not establish the patient’s current physiological state."
+        },
+        {
+          "text": "The routine medication-round sequence",
+          "explanation": "A new deterioration takes priority over routine sequencing."
+        },
+        {
+          "text": "The previous shift’s stable observations alone",
+          "explanation": "Earlier stability does not establish the current condition."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Assess the patient and ABCs before relying on the monitor label.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which observation belongs primarily to the Disability component of the lesson’s rapid assessment?",
+      "choices": [
+        {
+          "text": "Consciousness or new confusion",
+          "explanation": "Disability includes neurological state."
+        },
+        {
+          "text": "Airway obstruction",
+          "explanation": "This belongs to Airway."
+        },
+        {
+          "text": "Respiratory effort",
+          "explanation": "This belongs to Breathing."
+        },
+        {
+          "text": "Pulse and skin perfusion",
+          "explanation": "These belong to Circulation."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Use focused ABCDE assessment to identify immediate problems.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which change is a clear deterioration warning in the lesson?",
+      "choices": [
+        {
+          "text": "New confusion with a marked BP fall",
+          "explanation": "Both are red flags for impaired perfusion or another acute problem."
+        },
+        {
+          "text": "Improved breathing with stable BP",
+          "explanation": "This describes improvement rather than the warning pattern."
+        },
+        {
+          "text": "Pain improving without new symptoms",
+          "explanation": "This does not identify acute deterioration."
+        },
+        {
+          "text": "An unchanged chronic symptom with stable observations",
+          "explanation": "No acute warning change is described."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Recognize sudden clinical red flags.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "After an intervention for sudden deterioration, what establishes whether it has helped?",
+      "choices": [
+        {
+          "text": "Repeat relevant clinical observations and compare the response",
+          "explanation": "Response must be assessed rather than inferred from treatment being given."
+        },
+        {
+          "text": "The fact that the intervention was prescribed",
+          "explanation": "A correct order does not establish effectiveness in this patient."
+        },
+        {
+          "text": "The completion of a medication chart entry alone",
+          "explanation": "Documentation alone does not measure response."
+        },
+        {
+          "text": "The patient’s observations from the previous day alone",
+          "explanation": "These are not a current post-intervention assessment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Reassess after interventions.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A previously monitored patient is now unresponsive, not breathing normally, and has no definite pulse after a prompt check. Which response has priority?",
+      "choices": [
+        {
+          "text": "Activate the arrest response and begin resuscitation",
+          "explanation": "Pulseless deterioration requires immediate action."
+        },
+        {
+          "text": "Obtain a routine 12-lead before starting the arrest response",
+          "explanation": "A diagnostic tracing must not delay resuscitation."
+        },
+        {
+          "text": "Complete a full medication reconciliation first",
+          "explanation": "This is secondary to immediate life support."
+        },
+        {
+          "text": "Wait for a laboratory explanation before treating the collapse",
+          "explanation": "A possible cause does not justify delaying resuscitation."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1,
+        3,
+        4
+      ],
+      "point": "Treat a pulseless unresponsive patient as an arrest.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A CCU patient has rapidly worsening dyspnea, falling oxygen saturation, and confusion. Which response best matches the taught sequence?",
+      "choices": [
+        {
+          "text": "Assess ABCs, obtain current observations, support as indicated, and escalate",
+          "explanation": "The clinical deterioration requires simultaneous assessment, support, and help."
+        },
+        {
+          "text": "Complete routine discharge education before reassessment",
+          "explanation": "This delays response to acute instability."
+        },
+        {
+          "text": "Repeat the previous stable observation values in the chart",
+          "explanation": "Current findings must be measured and reported."
+        },
+        {
+          "text": "Treat the monitor reading without checking breathing or circulation",
+          "explanation": "Direct patient assessment remains essential."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2,
+        3
+      ],
+      "point": "Prepare support while escalating an evolving respiratory/perfusion problem.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "VT appears on telemetry. Which current bedside information immediately determines the major treatment pathway?",
+      "choices": [
+        {
+          "text": "Pulse presence and clinical perfusion",
+          "explanation": "This distinguishes arrest from a stable or unstable pulse-present problem."
+        },
+        {
+          "text": "The previous ECG axis and R-wave progression",
+          "explanation": "Earlier electrical characteristics do not establish current circulation."
+        },
+        {
+          "text": "The last troponin value and planned sampling time",
+          "explanation": "Biomarkers must not delay current pulse and perfusion assessment."
+        },
+        {
+          "text": "The previous antiarrhythmic dose and its routine due time",
+          "explanation": "Medication history matters but does not replace the current circulation assessment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0,
+        4
+      ],
+      "point": "A dangerous monitor pattern needs immediate patient and pulse correlation.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which focused observation belongs to Exposure in the rapid ABCDE assessment?",
+      "choices": [
+        {
+          "text": "Visible bleeding and an abnormal line site",
+          "explanation": "These are visible potential causes assessed under Exposure."
+        },
+        {
+          "text": "The ability to speak through a clear airway",
+          "explanation": "This primarily assesses Airway."
+        },
+        {
+          "text": "Respiratory effort and breath sounds",
+          "explanation": "These primarily assess Breathing."
+        },
+        {
+          "text": "New confusion and reduced responsiveness",
+          "explanation": "These primarily assess Disability."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Exposure assessment includes bleeding, lines, edema, and visible causes.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-lesson-08-cardiogenic-shock": [
+    {
+      "stem": "Which mechanism defines cardiogenic shock in the lesson?",
+      "choices": [
+        {
+          "text": "Insufficient cardiac pumping to perfuse organs",
+          "explanation": "The primary problem is a weak pump and inadequate effective output."
+        },
+        {
+          "text": "An empty intravascular tank as the primary mechanism",
+          "explanation": "That describes hypovolemic shock."
+        },
+        {
+          "text": "Pathological vasodilation as the primary mechanism",
+          "explanation": "That describes a distributive pattern."
+        },
+        {
+          "text": "Mechanical obstruction to flow as the primary mechanism",
+          "explanation": "That describes an obstructive pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Cardiogenic shock is pump failure with organ hypoperfusion.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which cluster supports concern about inadequate organ perfusion?",
+      "choices": [
+        {
+          "text": "Cold skin, weak pulses, confusion, and low urine output",
+          "explanation": "These are taught indicators of hypoperfusion."
+        },
+        {
+          "text": "Normal alertness with improving urine output",
+          "explanation": "This is more consistent with improvement."
+        },
+        {
+          "text": "Warm comfortable skin with stable mentation alone",
+          "explanation": "This does not establish the low-output cluster."
+        },
+        {
+          "text": "A normal pain score with no other findings",
+          "explanation": "Pain severity does not establish adequate organ perfusion."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Recognize a low-perfusion cluster.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which event most directly provides a pump-failure explanation for shock?",
+      "choices": [
+        {
+          "text": "Acute MI with markedly impaired ventricular contraction",
+          "explanation": "Myocardial injury can reduce output."
+        },
+        {
+          "text": "Major gastrointestinal blood loss with reduced circulating volume",
+          "explanation": "This primarily supports a hypovolemic mechanism."
+        },
+        {
+          "text": "Severe infection with predominant loss of vascular tone",
+          "explanation": "This primarily supports a distributive mechanism."
+        },
+        {
+          "text": "A massive pulmonary embolus obstructing forward flow",
+          "explanation": "This primarily supports an obstructive mechanism."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "MI, severe HF, arrhythmia, and mechanical problems can impair the pump.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A hypotensive patient has crackles and suspected pump failure. What is the main concern with assuming a large fluid bolus is appropriate?",
+      "choices": [
+        {
+          "text": "Added filling load may worsen pulmonary edema",
+          "explanation": "A failing pump may not handle the extra volume."
+        },
+        {
+          "text": "Added fluid consistently lowers cardiac filling pressure",
+          "explanation": "This reverses the immediate loading effect."
+        },
+        {
+          "text": "Added fluid directly corrects the loss of myocardial contractility",
+          "explanation": "Volume is not an inotrope."
+        },
+        {
+          "text": "Added fluid reliably distinguishes cardiogenic from hypovolemic shock",
+          "explanation": "The whole clinical picture must guide the authorized plan."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "A large automatic fluid bolus may worsen pulmonary edema in pump failure.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Patient A has hypotension, raised JVP, and crackles after MI. Patient B has hypotension after major fluid loss, flat neck veins, and clear lungs. Which comparison fits?",
+      "choices": [
+        {
+          "text": "A suggests cardiogenic; B suggests hypovolemic shock",
+          "explanation": "The congestion and volume-loss contexts support different mechanisms."
+        },
+        {
+          "text": "A suggests hypovolemic; B suggests cardiogenic shock",
+          "explanation": "This reverses the principal patterns."
+        },
+        {
+          "text": "Both are established as distributive solely from low BP",
+          "explanation": "Hypotension alone does not identify the mechanism."
+        },
+        {
+          "text": "Both are established as obstructive solely from low BP",
+          "explanation": "The cases do not provide that common mechanism."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Differentiate pump failure from volume-loss patterns using the full picture.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which pair correctly matches a shock type to its mechanism?",
+      "choices": [
+        {
+          "text": "Distributive: excessive dilation; obstructive: blocked flow",
+          "explanation": "These are the taught non-pump mechanisms."
+        },
+        {
+          "text": "Distributive: empty tank; obstructive: weak contraction",
+          "explanation": "Those describe different primary mechanisms."
+        },
+        {
+          "text": "Cardiogenic: empty tank; hypovolemic: blocked flow",
+          "explanation": "This reverses the principal definitions."
+        },
+        {
+          "text": "Hypovolemic: excessive dilation; cardiogenic: blocked flow",
+          "explanation": "This misidentifies both mechanisms."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        6
+      ],
+      "point": "Recognize distributive and obstructive shock mechanisms.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "During treatment, BP improves but confusion, cool skin, and oliguria persist. Which conclusion is most defensible?",
+      "choices": [
+        {
+          "text": "Perfusion remains concerning despite a better BP",
+          "explanation": "Multiple organ indicators must improve before response is assumed."
+        },
+        {
+          "text": "The BP improvement establishes complete recovery",
+          "explanation": "Persistent organ findings contradict that inference."
+        },
+        {
+          "text": "Oliguria establishes successful decongestion by itself",
+          "explanation": "Low output does not establish a beneficial treatment response."
+        },
+        {
+          "text": "Cool skin excludes ongoing shock",
+          "explanation": "Coolness can be a hypoperfusion sign."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1,
+        3
+      ],
+      "point": "A BP value must be interpreted with organ perfusion.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-lesson-09-norepi-dobutamine": [
+    {
+      "stem": "Which primary role best describes norepinephrine in this comparison?",
+      "choices": [
+        {
+          "text": "Increase vascular tone and support pressure",
+          "explanation": "It is primarily a vasopressor in this lesson."
+        },
+        {
+          "text": "Reduce platelet aggregation",
+          "explanation": "That is an antiplatelet role."
+        },
+        {
+          "text": "Block the gastric proton pump",
+          "explanation": "That is an acid-suppression role."
+        },
+        {
+          "text": "Increase renal glucose excretion",
+          "explanation": "That is an SGLT2-inhibitor role."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Norepinephrine primarily supports vascular tone and pressure.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which primary role best describes dobutamine?",
+      "choices": [
+        {
+          "text": "Increase cardiac contractility and output",
+          "explanation": "It primarily supports the pump."
+        },
+        {
+          "text": "Reduce cardiac contractility through beta1 blockade",
+          "explanation": "This is the opposite adrenergic action."
+        },
+        {
+          "text": "Suppress gastric acid through proton-pump blockade",
+          "explanation": "This is a PPI action."
+        },
+        {
+          "text": "Inhibit platelet P2Y12 receptors",
+          "explanation": "This is an antiplatelet action."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Dobutamine primarily supports contractility and output.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient has both inadequate contractility and dangerously low arterial pressure. Why might the team prescribe both medicines?",
+      "choices": [
+        {
+          "text": "They address different components of the hemodynamic problem",
+          "explanation": "Dobutamine supports contractility while norepinephrine supports vascular pressure."
+        },
+        {
+          "text": "They are identical drugs with different trade names",
+          "explanation": "They have distinct pharmacological roles."
+        },
+        {
+          "text": "They both work by inhibiting cardiac beta1 receptors",
+          "explanation": "Both are not beta1 antagonists."
+        },
+        {
+          "text": "They replace the need to monitor clinical perfusion",
+          "explanation": "Vasoactive treatment increases the need for monitoring."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Pressure and pump support may be combined.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which group best evaluates the response and safety of these vasoactive infusions?",
+      "choices": [
+        {
+          "text": "BP, rhythm, perfusion, and urine output",
+          "explanation": "These follow hemodynamic response and potential adverse effects."
+        },
+        {
+          "text": "INR, tablet count, and diet history alone",
+          "explanation": "These do not establish the immediate infusion response."
+        },
+        {
+          "text": "Stool color, bowel frequency, and oral lesions alone",
+          "explanation": "These do not assess the principal hemodynamic effects."
+        },
+        {
+          "text": "Wound length, suture count, and joint range alone",
+          "explanation": "These address another clinical domain."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Monitor rhythm, pressure, urine output, and peripheral perfusion.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A norepinephrine bag is changed to twice the concentration while the required dose is unchanged. What mL/hour change gives the same drug amount?",
+      "choices": [
+        {
+          "text": "Half the previous mL/hour",
+          "explanation": "Doubling concentration halves the volume needed for the same dose."
+        },
+        {
+          "text": "Twice the previous mL/hour",
+          "explanation": "This would deliver four times the prior drug amount."
+        },
+        {
+          "text": "The same mL/hour",
+          "explanation": "This would double the delivered drug amount."
+        },
+        {
+          "text": "Four times the previous mL/hour",
+          "explanation": "This would cause a still larger drug delivery increase."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "mL/hour depends on the ordered dose and prepared concentration.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "sections": [
+        5
+      ],
+      "point": "Convert a specified infusion dose and concentration into mL/hour.",
+      "stage": "advanced",
+      "format": "numeric-entry",
+      "stem": "For an authorized training-case order, the required dose is 4 micrograms/min and the ready infusion concentration is 8 micrograms/mL. What pump rate delivers that dose?",
+      "answer": 30,
+      "unit": "mL/hour",
+      "tolerance": 0,
+      "explanation": "4 divided by 8 is 0.5 mL/min; multiply by 60 for 30 mL/hour.",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "BP improves during peripheral norepinephrine, but the IV site becomes painful, pale, and cool. What is the best interpretation?",
+      "choices": [
+        {
+          "text": "A local infusion complication can coexist with systemic pressure benefit",
+          "explanation": "Assess and escalate the threatened site promptly."
+        },
+        {
+          "text": "The BP improvement establishes local tissue safety",
+          "explanation": "Systemic response does not exclude local ischemia/extravasation."
+        },
+        {
+          "text": "Local pallor establishes that the entire circulating volume has fallen",
+          "explanation": "The local signs require a site-focused assessment."
+        },
+        {
+          "text": "Local pain is evidence that the prescribed dose is too low",
+          "explanation": "The site change is not a valid reason to increase the infusion."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Norepinephrine monitoring includes peripheral IV site ischemia/extravasation signs.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    }
+  ],
+  "ccu-lesson-10-electrolytes": [
+    {
+      "stem": "Which ECG pattern is compatible with low potassium in this lesson?",
+      "choices": [
+        {
+          "text": "Flattened T waves or U waves",
+          "explanation": "These can accompany hypokalemia and ectopy."
+        },
+        {
+          "text": "A shortened QT as the main calcium pattern",
+          "explanation": "This relates to a different electrolyte effect."
+        },
+        {
+          "text": "A pacing spike followed by a captured QRS",
+          "explanation": "This describes pacing rather than potassium status."
+        },
+        {
+          "text": "Independent atrial and ventricular rates alone",
+          "explanation": "This identifies a conduction relationship, not a specific low-potassium pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Low potassium can cause flat T waves/U waves and arrhythmia.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient with high potassium develops progressive QRS widening and bradycardia. What does the ECG change indicate?",
+      "choices": [
+        {
+          "text": "Potentially dangerous electrical toxicity needing urgent escalation",
+          "explanation": "Hyperkalemia with ECG changes is a time-critical problem."
+        },
+        {
+          "text": "A reliable sign of improved potassium clearance",
+          "explanation": "Worsening conduction is not evidence of successful correction."
+        },
+        {
+          "text": "An isolated artifact established by the potassium result",
+          "explanation": "A known electrolyte problem does not make the ECG change artifact."
+        },
+        {
+          "text": "An expected therapeutic pacing response",
+          "explanation": "No pacing intervention is described."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Severe high potassium can widen QRS and produce bradyarrhythmia/arrest.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Why is magnesium relevant when hypokalemia is difficult to correct?",
+      "choices": [
+        {
+          "text": "Low magnesium can make potassium correction harder",
+          "explanation": "The lesson identifies their clinically important relationship."
+        },
+        {
+          "text": "Magnesium directly replaces potassium ion for ion",
+          "explanation": "They are different electrolytes."
+        },
+        {
+          "text": "Normal magnesium eliminates every arrhythmia cause",
+          "explanation": "Rhythm problems have multiple possible causes."
+        },
+        {
+          "text": "Low magnesium reliably shortens the potassium treatment course",
+          "explanation": "Deficiency can interfere with correction rather than reliably shorten it."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Low magnesium can contribute to ventricular arrhythmia and refractory hypokalemia.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which calcium/QT pairing matches the lesson?",
+      "choices": [
+        {
+          "text": "Low calcium: longer QT; high calcium: shorter QT",
+          "explanation": "The direction of the QT effect differs with calcium status."
+        },
+        {
+          "text": "Low calcium: shorter QT; high calcium: longer QT",
+          "explanation": "This reverses the taught relationship."
+        },
+        {
+          "text": "Low calcium: no QT effect; high calcium: no QT effect",
+          "explanation": "Calcium influences ventricular repolarization."
+        },
+        {
+          "text": "Low calcium: pacing capture; high calcium: AV dissociation",
+          "explanation": "Those are not calcium/QT definitions."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Calcium affects QT in opposite directions when low or high.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient receiving a loop diuretic develops new ventricular ectopy. Which investigation pair best addresses the lesson’s immediate medication/electrolyte link?",
+      "choices": [
+        {
+          "text": "Potassium and magnesium",
+          "explanation": "Diuretic-associated losses can contribute to ventricular irritability."
+        },
+        {
+          "text": "Albumin and bilirubin",
+          "explanation": "These do not best assess the immediate electrolyte-linked rhythm issue."
+        },
+        {
+          "text": "Amylase and lipase",
+          "explanation": "These assess a different organ system."
+        },
+        {
+          "text": "TSH and thyroxine",
+          "explanation": "Thyroid testing does not best target the acute loop-diuretic loss context."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Loop-diuretic-associated PVCs warrant potassium and magnesium review.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which potassium administration is specifically prohibited by the lesson?",
+      "choices": [
+        {
+          "text": "Rapid IV push",
+          "explanation": "Concentrated rapid IV potassium can cause fatal cardiac effects."
+        },
+        {
+          "text": "A verified protocol-controlled infusion",
+          "explanation": "Properly prescribed controlled infusion is a different method."
+        },
+        {
+          "text": "An authorized oral dose when indicated",
+          "explanation": "Oral treatment is not the rapid-IV-push hazard."
+        },
+        {
+          "text": "A prescribed and monitored replacement plan",
+          "explanation": "The prohibition concerns uncontrolled rapid IV administration."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Never give IV potassium as a rapid IV push.",
+      "stage": "standard",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A patient has recurrent torsades de pointes. Which electrolyte is specifically important in the treatment role taught here?",
+      "choices": [
+        {
+          "text": "Magnesium",
+          "explanation": "The lesson highlights magnesium in torsades."
+        },
+        {
+          "text": "Sodium",
+          "explanation": "This is not the specifically highlighted torsades electrolyte."
+        },
+        {
+          "text": "Phosphate",
+          "explanation": "This is not the specifically highlighted torsades electrolyte."
+        },
+        {
+          "text": "Chloride",
+          "explanation": "This is not the specifically highlighted torsades electrolyte."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Magnesium is important in torsades de pointes.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-lesson-11-furosemide": [
+    {
+      "stem": "Which presentation best matches the furosemide role in this lesson?",
+      "choices": [
+        {
+          "text": "Breathlessness, crackles, and edema from congestion",
+          "explanation": "The loop diuretic helps remove excess fluid."
+        },
+        {
+          "text": "Isolated low glucose requiring immediate replacement",
+          "explanation": "Furosemide does not supply glucose."
+        },
+        {
+          "text": "An isolated mechanical bowel obstruction",
+          "explanation": "This is not the diuretic indication."
+        },
+        {
+          "text": "An isolated oral fungal infection",
+          "explanation": "This requires a different treatment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Furosemide treats congestion and fluid overload.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which effect links furosemide to reduced congestion?",
+      "choices": [
+        {
+          "text": "Increased salt and water excretion",
+          "explanation": "Diuresis reduces excess fluid burden."
+        },
+        {
+          "text": "Increased platelet aggregation",
+          "explanation": "This is not the decongestive mechanism."
+        },
+        {
+          "text": "Increased gastric acid secretion",
+          "explanation": "This does not remove excess fluid."
+        },
+        {
+          "text": "Reduced ventricular pacing threshold",
+          "explanation": "This is not the taught mechanism."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Furosemide is a loop diuretic that increases urine output.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "After furosemide, urine output increases but the patient is more confused and hypotensive. Which conclusion is appropriate?",
+      "choices": [
+        {
+          "text": "Diuresis alone does not establish a safe beneficial response",
+          "explanation": "Perfusion, BP, renal function, and congestion must be reassessed."
+        },
+        {
+          "text": "Higher urine output proves uncomplicated recovery",
+          "explanation": "The new hypotension and confusion are concerning."
+        },
+        {
+          "text": "Confusion establishes that congestion has resolved",
+          "explanation": "It may reflect impaired perfusion or another problem."
+        },
+        {
+          "text": "The dose should be repeated solely because urine increased",
+          "explanation": "A further dose requires review of the whole response."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Evaluate breathing and edema, not urine volume alone.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which monitoring group is most relevant during furosemide therapy?",
+      "choices": [
+        {
+          "text": "BP, urine output, potassium, renal function, and fluid status",
+          "explanation": "These follow benefit and important adverse effects."
+        },
+        {
+          "text": "INR, platelet aggregation, and vitamin-K intake alone",
+          "explanation": "These primarily relate to anticoagulant treatment."
+        },
+        {
+          "text": "Oral lesions, fungal culture, and mouth-contact time alone",
+          "explanation": "These relate to local antifungal therapy."
+        },
+        {
+          "text": "Tendon pain, supplement cations, and antibacterial susceptibility alone",
+          "explanation": "These describe a different drug-safety domain."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3,
+        4
+      ],
+      "point": "Monitor BP, fluid status, kidney function, and potassium.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient develops PVCs after several furosemide doses. Which mechanism best explains the lesson’s electrolyte concern?",
+      "choices": [
+        {
+          "text": "Potassium and magnesium depletion can increase electrical irritability",
+          "explanation": "This connects diuresis with rhythm risk."
+        },
+        {
+          "text": "Increased potassium retention is the defining loop effect",
+          "explanation": "Loop diuretics are not potassium-sparing."
+        },
+        {
+          "text": "Direct P2Y12 blockade is the defining loop effect",
+          "explanation": "Furosemide is not a P2Y12 antiplatelet."
+        },
+        {
+          "text": "Direct AV dissociation is the intended loop effect",
+          "explanation": "The drug is not intended to produce heart block."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "New ectopy during diuresis can be electrolyte-related.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "After furosemide, crackles improve but the patient develops postural dizziness, a BP fall, and rising creatinine. What interpretation best fits?",
+      "choices": [
+        {
+          "text": "Decongestion may coexist with excessive depletion and renal stress",
+          "explanation": "Benefit does not exclude treatment-related harm."
+        },
+        {
+          "text": "Improved crackles establish a safe volume status despite the other findings",
+          "explanation": "The hemodynamic and renal changes remain concerning."
+        },
+        {
+          "text": "The creatinine rise establishes that more fluid removal is always needed",
+          "explanation": "Renal deterioration requires context and an authorized review."
+        },
+        {
+          "text": "Postural dizziness establishes recurrent pulmonary edema",
+          "explanation": "This does not explain the stated pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3,
+        4
+      ],
+      "point": "Excess diuresis can cause volume depletion, hypotension, and renal deterioration.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-quick-heart-failure": [
+    {
+      "stem": "Which two clinical dimensions organize the lesson’s practical HF assessment?",
+      "choices": [
+        {
+          "text": "Congestion and poor perfusion",
+          "explanation": "Both may be present and require assessment."
+        },
+        {
+          "text": "Platelet inhibition and clot dissolution",
+          "explanation": "These are drug mechanisms rather than HF assessment dimensions."
+        },
+        {
+          "text": "Bowel obstruction and oral candidiasis",
+          "explanation": "These are different clinical problems."
+        },
+        {
+          "text": "Drug absorption and tablet dissolution",
+          "explanation": "These do not describe the bedside HF pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Heart failure can involve congestion, inadequate output, or high filling pressures.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which cluster most strongly supports congestion?",
+      "choices": [
+        {
+          "text": "Orthopnea, crackles, edema, and weight gain",
+          "explanation": "These are the taught fluid-backup findings."
+        },
+        {
+          "text": "Low urine output, cold skin, and confusion alone",
+          "explanation": "These primarily identify poor perfusion."
+        },
+        {
+          "text": "Dry mouth, urinary retention, and blurred vision",
+          "explanation": "These suggest an antimuscarinic effect."
+        },
+        {
+          "text": "Nystagmus, ataxia, and slurred speech",
+          "explanation": "These suggest a different drug-toxicity pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Identify pulmonary/systemic congestion.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which HF finding most directly suggests inadequate organ perfusion?",
+      "choices": [
+        {
+          "text": "New confusion with cold skin and oliguria",
+          "explanation": "This is a low-perfusion cluster."
+        },
+        {
+          "text": "Isolated peripheral edema without other changes",
+          "explanation": "Edema primarily suggests congestion."
+        },
+        {
+          "text": "Isolated weight gain without other changes",
+          "explanation": "Weight gain primarily reflects a volume trend."
+        },
+        {
+          "text": "Isolated raised JVP without other changes",
+          "explanation": "Raised venous pressure does not alone establish organ perfusion."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Identify poor perfusion in HF.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which pairing correctly describes the dominant backup patterns?",
+      "choices": [
+        {
+          "text": "Left: pulmonary congestion; right: systemic venous congestion",
+          "explanation": "Lung and systemic venous findings are distinguished in the lesson."
+        },
+        {
+          "text": "Left: systemic venous congestion only; right: pulmonary congestion only",
+          "explanation": "This reverses the principal patterns."
+        },
+        {
+          "text": "Left: platelet deficiency; right: clotting-factor deficiency",
+          "explanation": "These are not HF backup mechanisms."
+        },
+        {
+          "text": "Left: GI obstruction; right: urinary obstruction",
+          "explanation": "These are different organ problems."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Left and right ventricular failure produce different backup patterns.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "What does left ventricular ejection fraction describe?",
+      "choices": [
+        {
+          "text": "The percentage of LV blood ejected with each contraction",
+          "explanation": "It is a fractional measure of systolic emptying."
+        },
+        {
+          "text": "The percentage of blood oxygenated in the lungs",
+          "explanation": "That is not the definition of EF."
+        },
+        {
+          "text": "The percentage of circulating platelets activated",
+          "explanation": "This is unrelated to ventricular ejection."
+        },
+        {
+          "text": "The percentage of heartbeats conducted through the AV node",
+          "explanation": "EF does not measure AV conduction."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "EF describes the fraction of LV blood ejected, not the whole clinical severity.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient has a preserved EF but dyspnea and congestion with impaired ventricular filling. Which interpretation fits?",
+      "choices": [
+        {
+          "text": "HFpEF can occur with impaired filling despite preserved EF",
+          "explanation": "EF alone does not exclude HF or determine severity."
+        },
+        {
+          "text": "A preserved EF excludes every HF diagnosis",
+          "explanation": "The lesson specifically distinguishes HFpEF."
+        },
+        {
+          "text": "A preserved EF proves all symptoms are noncardiac",
+          "explanation": "Other cardiac assessment remains necessary."
+        },
+        {
+          "text": "A preserved EF establishes normal filling pressures",
+          "explanation": "Filling abnormalities may coexist with preserved EF."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Preserved EF does not exclude clinically important HF.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient has crackles and edema together with cold skin, hypotension, and confusion. Which classification best captures the bedside picture?",
+      "choices": [
+        {
+          "text": "Both congested and poorly perfused",
+          "explanation": "The wet and cold patterns can coexist."
+        },
+        {
+          "text": "Congested with adequate perfusion established",
+          "explanation": "The hypotension and confusion contradict that assurance."
+        },
+        {
+          "text": "Poorly perfused with congestion excluded",
+          "explanation": "Crackles and edema indicate a concurrent congestion concern."
+        },
+        {
+          "text": "Neither congested nor poorly perfused",
+          "explanation": "Both sets of findings are present."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1,
+        2,
+        5
+      ],
+      "point": "Congestion and poor perfusion can coexist.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "During HF observation, a patient develops sudden severe dyspnea and reduced consciousness. Which assessment has immediate priority?",
+      "choices": [
+        {
+          "text": "Airway, breathing, oxygenation, and circulation with urgent help",
+          "explanation": "These findings can signal acute cardiopulmonary deterioration."
+        },
+        {
+          "text": "The long-term dietary sodium history first",
+          "explanation": "This is relevant later but not the first response to acute compromise."
+        },
+        {
+          "text": "The discharge medication supply first",
+          "explanation": "This does not address the current emergency."
+        },
+        {
+          "text": "The planned exercise schedule first",
+          "explanation": "Mobilization planning is secondary to acute stabilization."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Acute respiratory or perfusion deterioration in HF needs escalation.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    }
+  ],
+  "ccu-quick-dcm": [
+    {
+      "stem": "Which structural/functional pattern characterizes the DCM teaching point?",
+      "choices": [
+        {
+          "text": "Ventricular enlargement with impaired contraction",
+          "explanation": "A dilated weak pump can reduce cardiac output."
+        },
+        {
+          "text": "Normal ventricular size with mandatory hypercontractility",
+          "explanation": "This is not the taught DCM pattern."
+        },
+        {
+          "text": "An isolated electrical AV block without a structural finding",
+          "explanation": "That does not define DCM."
+        },
+        {
+          "text": "An isolated pulmonary airway narrowing",
+          "explanation": "That describes a different organ mechanism."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "DCM has ventricular dilation and weak systolic contraction.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which presentation is compatible with a dilated weak ventricle?",
+      "choices": [
+        {
+          "text": "Dyspnea, fatigue, congestion, and rhythm problems",
+          "explanation": "These are relevant HF/arrhythmia manifestations."
+        },
+        {
+          "text": "Only oral white plaques",
+          "explanation": "This is not a characteristic cardiac presentation."
+        },
+        {
+          "text": "Only a painful Achilles tendon",
+          "explanation": "This points to another clinical issue."
+        },
+        {
+          "text": "Only dry mouth with urinary retention",
+          "explanation": "This fits a different adverse-effect pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "DCM can present with HF and arrhythmia.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which history is a recognized DCM-related contributor in the lesson?",
+      "choices": [
+        {
+          "text": "Myocarditis or a familial cardiomyopathy history",
+          "explanation": "These are recognized contributors."
+        },
+        {
+          "text": "A single normal ECG recording",
+          "explanation": "A normal recording is not an etiology."
+        },
+        {
+          "text": "An uncomplicated local fungal mouth infection",
+          "explanation": "This is not the named myocardial cause."
+        },
+        {
+          "text": "A remote healed superficial abrasion",
+          "explanation": "This does not establish myocardial injury."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Myocarditis, inherited disease, or cardiotoxic exposures can contribute to a DCM phenotype.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A DCM patient develops low urine output and confusion with cool skin. Which new problem is most concerning?",
+      "choices": [
+        {
+          "text": "Low-output organ hypoperfusion",
+          "explanation": "The findings suggest inadequate effective pumping."
+        },
+        {
+          "text": "An isolated benign change in ventricular size",
+          "explanation": "The patient has acute clinical perfusion findings."
+        },
+        {
+          "text": "A therapeutic increase in renal clearance",
+          "explanation": "Oliguria does not establish improved clearance."
+        },
+        {
+          "text": "A local IV-site problem as the established cause",
+          "explanation": "No local site findings explain the systemic pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1,
+        3
+      ],
+      "point": "Track the clinical weak-pump consequences.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A DCM patient’s edema improves, but a new symptomatic arrhythmia appears. Which conclusion best fits?",
+      "choices": [
+        {
+          "text": "Improved congestion does not establish rhythm safety",
+          "explanation": "Different consequences of the weak-pump condition need separate reassessment."
+        },
+        {
+          "text": "Improved edema excludes an arrhythmia complication",
+          "explanation": "A better volume sign does not exclude electrical deterioration."
+        },
+        {
+          "text": "The rhythm can be ignored until edema returns",
+          "explanation": "Symptoms and a new arrhythmia require current assessment."
+        },
+        {
+          "text": "The arrhythmia proves that the initial DCM diagnosis was impossible",
+          "explanation": "Arrhythmias can occur with DCM."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Monitor rhythm and perfusion as well as congestion.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which set contains contributors listed in the DCM lesson?",
+      "choices": [
+        {
+          "text": "Familial disease, myocarditis, cardiotoxic exposure",
+          "explanation": "All are listed contributors."
+        },
+        {
+          "text": "Peptic ulcer, oral candidiasis, iron chelation",
+          "explanation": "These are not the listed DCM contributor group."
+        },
+        {
+          "text": "Peripheral neuropathy, tendon rupture, dry mouth",
+          "explanation": "These are adverse-effect patterns of other treatments."
+        },
+        {
+          "text": "Pin-site irritation, fracture swelling, cast tightness",
+          "explanation": "These are limb-related concerns rather than the DCM contributor group."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Recognize familial, inflammatory, toxic, peripartum, and tachyarrhythmic contributors.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ],
+  "ccu-quick-ihd-mi": [
+    {
+      "stem": "Which description best defines ischemic heart disease in the lesson?",
+      "choices": [
+        {
+          "text": "A broader disease state involving reduced coronary blood supply",
+          "explanation": "It includes presentations with and without infarction."
+        },
+        {
+          "text": "Only one episode of myocardial cell death",
+          "explanation": "That describes MI more specifically."
+        },
+        {
+          "text": "Only third-degree AV block",
+          "explanation": "A conduction diagnosis is not the definition of IHD."
+        },
+        {
+          "text": "Only a normal coronary circulation",
+          "explanation": "IHD concerns reduced supply, not its absence."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "IHD is a broad coronary blood-supply disease state.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "What makes myocardial infarction more specific than myocardial ischemia alone?",
+      "choices": [
+        {
+          "text": "Myocardial cell death",
+          "explanation": "Infarction includes necrosis from sufficiently severe or prolonged ischemia."
+        },
+        {
+          "text": "Any transient chest discomfort",
+          "explanation": "Symptoms alone do not establish cell death."
+        },
+        {
+          "text": "Any episode of sinus tachycardia",
+          "explanation": "Rate alone does not establish infarction."
+        },
+        {
+          "text": "Any use of an antiplatelet medicine",
+          "explanation": "Treatment does not itself establish the diagnosis."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "MI involves myocardial necrosis from ischemia.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient has stable exertional angina without evidence of an infarction event. Which statement is justified?",
+      "choices": [
+        {
+          "text": "IHD may be present without an MI",
+          "explanation": "Ischemic disease is broader than infarction."
+        },
+        {
+          "text": "The angina label proves myocardial necrosis",
+          "explanation": "Angina alone does not establish MI."
+        },
+        {
+          "text": "The absence of MI excludes every ischemic process",
+          "explanation": "Ischemia can occur without infarction."
+        },
+        {
+          "text": "Stable symptoms establish a noncardiac diagnosis",
+          "explanation": "A stable ischemic presentation remains possible."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Not every IHD presentation is an MI.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which relationship between IHD and MI is correct?",
+      "choices": [
+        {
+          "text": "MI is a myocardial-necrosis event within the broader IHD context",
+          "explanation": "Infarction is a specific ischemic event, whereas IHD includes presentations without infarction."
+        },
+        {
+          "text": "IHD requires myocardial necrosis in each clinical presentation",
+          "explanation": "Ischemia can occur without infarction."
+        },
+        {
+          "text": "MI excludes reduced coronary supply as its underlying mechanism",
+          "explanation": "The taught MI event is ischemic."
+        },
+        {
+          "text": "IHD identifies an electrical rhythm rather than a supply disorder",
+          "explanation": "IHD is a coronary blood-supply disease category."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0,
+        1,
+        2
+      ],
+      "point": "The relationship is broad disease versus a specific necrotic event.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    }
+  ],
+  "ibd2-lesson-01-fracture-limb-safety": [
+    {
+      "stem": "Where is the key neurovascular assessment directed after a limb fracture or immobilization?",
+      "choices": [
+        {
+          "text": "Distal to the injury, compared with the other side when possible",
+          "explanation": "Tissue below the injury may lose blood flow or nerve function."
+        },
+        {
+          "text": "Only at the uninjured shoulder",
+          "explanation": "This does not assess distal tissue at risk."
+        },
+        {
+          "text": "Only at the opposite limb without checking the injured side",
+          "explanation": "Comparison cannot replace assessment of the affected limb."
+        },
+        {
+          "text": "Only at the frame’s outer metal surface",
+          "explanation": "Hardware appearance does not establish tissue perfusion."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Assess distal blood supply and nerve function below an injury/immobilization.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which set best represents the lesson’s focused limb check?",
+      "choices": [
+        {
+          "text": "Pain, blood supply, feeling, movement, and swelling",
+          "explanation": "These cover the taught neurovascular and pressure concerns."
+        },
+        {
+          "text": "Weight, diet, bowel pattern, and sleep alone",
+          "explanation": "These do not replace the focused limb assessment."
+        },
+        {
+          "text": "Frame color, screw count, and bandage brand alone",
+          "explanation": "Hardware description does not establish distal function."
+        },
+        {
+          "text": "Temperature and pain score without distal findings",
+          "explanation": "These are incomplete for the taught neurovascular assessment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Pain, circulation, sensation, movement, and swelling form the focused check.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "What is the central mechanism of acute compartment syndrome?",
+      "choices": [
+        {
+          "text": "Pressure within a closed compartment compromises tissue perfusion",
+          "explanation": "Swelling/bleeding can create an ischemia–edema cycle."
+        },
+        {
+          "text": "An isolated superficial skin allergy increases every distal pulse",
+          "explanation": "This does not describe compartment physiology."
+        },
+        {
+          "text": "A venous cannula removes too much joint fluid",
+          "explanation": "This is not the cause mechanism taught."
+        },
+        {
+          "text": "A normal distal pulse increases compartment space",
+          "explanation": "A pulse does not establish safe compartment pressure."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Raised compartment pressure can reduce perfusion and damage nerve/muscle.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which new finding is a particularly important early compartment-syndrome warning?",
+      "choices": [
+        {
+          "text": "Increasing disproportionate pain worsened by passive stretch",
+          "explanation": "This is a key early warning in the lesson."
+        },
+        {
+          "text": "Comfort improving with unchanged distal findings",
+          "explanation": "This does not describe the warning change."
+        },
+        {
+          "text": "An unchanged old scar without new symptoms",
+          "explanation": "This does not indicate an acute pressure problem."
+        },
+        {
+          "text": "A normal uninjured hand examination",
+          "explanation": "This does not establish safety of the affected compartment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Disproportionate pain, especially with passive stretch, is an early warning.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A fracture patient has severe escalating pain, passive-stretch pain, and new tingling, but a distal pulse remains palpable. Which interpretation is safest?",
+      "choices": [
+        {
+          "text": "Compartment syndrome remains an emergency concern",
+          "explanation": "Pulses can persist while tissue perfusion is threatened."
+        },
+        {
+          "text": "A pulse excludes a significant compartment-pressure problem",
+          "explanation": "This is the critical trap identified in the lesson."
+        },
+        {
+          "text": "Tingling proves that every nerve remains unaffected",
+          "explanation": "New sensory change increases concern."
+        },
+        {
+          "text": "Waiting for pulse loss will identify the earliest stage",
+          "explanation": "Pulselessness can be a late sign."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "A palpable pulse does not rule out compartment syndrome.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "An intern finds worsening distal sensation and tense swelling in a casted limb. Which action has priority?",
+      "choices": [
+        {
+          "text": "Repeat focused findings, protect the limb, and obtain urgent senior assessment",
+          "explanation": "Recognition and prompt escalation are within the taught supervised role."
+        },
+        {
+          "text": "Review the routine analgesic schedule before reporting the new findings",
+          "explanation": "Analgesia review must not delay assessment of threatened tissue."
+        },
+        {
+          "text": "Complete the planned mobility session before reporting",
+          "explanation": "Continued movement may be unsafe with deterioration."
+        },
+        {
+          "text": "Perform the next scheduled dressing inspection before reporting",
+          "explanation": "A scheduled task should not delay urgent neurovascular escalation."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5,
+        6
+      ],
+      "point": "Escalate deterioration within supervised intern scope.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Which task requires a specifically authorized senior/ordered plan rather than independent intern action?",
+      "choices": [
+        {
+          "text": "Altering prescribed immobilization or undertaking an invasive procedure",
+          "explanation": "Scope and authorization govern these interventions."
+        },
+        {
+          "text": "Recognizing a new sensory change",
+          "explanation": "Assessment within training is an intern responsibility."
+        },
+        {
+          "text": "Reporting a worsening distal examination",
+          "explanation": "Prompt reporting is part of the intern role."
+        },
+        {
+          "text": "Documenting the time and response",
+          "explanation": "Documentation is a taught responsibility."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5,
+        6
+      ],
+      "point": "Immobilization modification and invasive treatment need authorization.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient’s pain becomes much worse than baseline with new weakness. The next routine observation is not due yet. Which factor determines the timing of reassessment?",
+      "choices": [
+        {
+          "text": "The new clinical change",
+          "explanation": "Deterioration warrants reassessment and escalation now."
+        },
+        {
+          "text": "The routine observation time alone",
+          "explanation": "A schedule does not override new warning signs."
+        },
+        {
+          "text": "The next elective X-ray time alone",
+          "explanation": "Imaging timing does not establish the safety of waiting."
+        },
+        {
+          "text": "The next routine discharge discussion alone",
+          "explanation": "This is secondary to the new limb findings."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3,
+        4,
+        5
+      ],
+      "point": "Do not normalize a new severe pain trend as ordinary fracture pain.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which group represents late ischemic findings that must not be awaited before escalating suspected compartment syndrome?",
+      "choices": [
+        {
+          "text": "Pallor, paralysis, and absent pulse",
+          "explanation": "Waiting for late signs can delay treatment."
+        },
+        {
+          "text": "Increasing pain, pain with stretch, and new tingling",
+          "explanation": "These are earlier warning findings rather than signs to await."
+        },
+        {
+          "text": "Tense swelling, increasing pain, and new sensory change",
+          "explanation": "These already warrant concern."
+        },
+        {
+          "text": "Pain out of proportion with a still-palpable pulse",
+          "explanation": "This can be an early dangerous presentation."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Pallor, paralysis, and absent pulses are late ischemic findings.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ],
+  "ibd2-lesson-02-external-fixator": [
+    {
+      "stem": "Which description best matches an external fixator?",
+      "choices": [
+        {
+          "text": "Pins anchored in bone connected to a frame outside the body",
+          "explanation": "This provides the external stabilization described."
+        },
+        {
+          "text": "A wholly internal plate with no skin-crossing pins",
+          "explanation": "This describes a different fixation approach."
+        },
+        {
+          "text": "A compression stocking that contains no bone connection",
+          "explanation": "This is not external bone fixation."
+        },
+        {
+          "text": "An ECG lead system around an injured limb",
+          "explanation": "This is not a fracture-fixation device."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0,
+        1
+      ],
+      "point": "An external frame connects pins/wires anchored in bone.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which context is a taught reason for considering external fixation?",
+      "choices": [
+        {
+          "text": "A severe open fracture with major soft-tissue injury",
+          "explanation": "External fixation may be suitable where swelling or tissue injury makes immediate internal fixation risky."
+        },
+        {
+          "text": "An isolated superficial abrasion without a fracture",
+          "explanation": "This does not establish a need for bone fixation."
+        },
+        {
+          "text": "A healed fracture with no instability or correction plan",
+          "explanation": "This does not identify the taught acute fixation context."
+        },
+        {
+          "text": "A simple soft-tissue strain without bone instability",
+          "explanation": "This does not establish a need for the described fixation system."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "External fixation can suit severe open/soft-tissue-compromised fractures.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "The frame appears intact, but the patient reports new numbness and escalating pain. What should lead the bedside assessment?",
+      "choices": [
+        {
+          "text": "The distal limb and neurovascular change",
+          "explanation": "Intact-looking hardware does not establish tissue safety."
+        },
+        {
+          "text": "The frame’s appearance as sufficient reassurance",
+          "explanation": "This would miss the clinically important change."
+        },
+        {
+          "text": "The routine pin-cleaning supplies first",
+          "explanation": "New neurovascular symptoms take priority."
+        },
+        {
+          "text": "The last planned walking distance first",
+          "explanation": "Mobility planning follows reassessment of limb safety."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Assess the limb before focusing on hardware.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Which sequence is the bedside review cue taught for external fixation?",
+      "choices": [
+        {
+          "text": "Limb, pins, frame, patient",
+          "explanation": "The cue begins with tissue safety before hardware and the wider patient review."
+        },
+        {
+          "text": "Frame, stock cupboard, discharge, diet",
+          "explanation": "This is not the taught focused cue."
+        },
+        {
+          "text": "Pins, antibiotics, discharge, exercise",
+          "explanation": "This omits essential limb and frame assessment."
+        },
+        {
+          "text": "Patient name, bed number, billing, transport",
+          "explanation": "This is not a clinical fixation check."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Use the limb–pins–frame–patient bedside structure.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which pin-site change requires review?",
+      "choices": [
+        {
+          "text": "Increasing redness and new drainage with fever",
+          "explanation": "These are infection warning findings."
+        },
+        {
+          "text": "An unchanged clean site without new pain",
+          "explanation": "This does not describe deterioration."
+        },
+        {
+          "text": "An unchanged frame shape with a clean site",
+          "explanation": "No new pin-site problem is established."
+        },
+        {
+          "text": "Improving local tenderness without other changes",
+          "explanation": "This does not identify the warning pattern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4,
+        6
+      ],
+      "point": "New pin-site redness/drainage/fever can indicate infection.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A frame component appears loose and movement is unexpected. Which action best addresses the immediate problem?",
+      "choices": [
+        {
+          "text": "Support/protect the limb and report the hardware change",
+          "explanation": "Stabilization safety needs authorized assessment."
+        },
+        {
+          "text": "Continue the planned unsupported mobility trial",
+          "explanation": "Unexpected movement may make this unsafe."
+        },
+        {
+          "text": "Complete the routine stock check before reporting",
+          "explanation": "A new hardware concern warrants prompt action."
+        },
+        {
+          "text": "Wait for fever to confirm the hardware problem",
+          "explanation": "Mechanical failure need not cause fever."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Loose or broken hardware needs protection and escalation, not independent adjustment.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Which information determines the pin-cleaning product and schedule?",
+      "choices": [
+        {
+          "text": "The authorized local order/protocol",
+          "explanation": "The lesson does not prescribe one universal pin-care product."
+        },
+        {
+          "text": "A product used for another patient without a matching plan",
+          "explanation": "Another patient’s care does not establish this order."
+        },
+        {
+          "text": "A general preference for any household antiseptic",
+          "explanation": "Product choice must be clinically authorized."
+        },
+        {
+          "text": "The external frame’s color",
+          "explanation": "Appearance does not determine pin-care requirements."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        6
+      ],
+      "point": "Pin care follows aseptic technique and the authorized local plan.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A pin site becomes hot, swollen, and draining. What additional assessment best supports the report?",
+      "choices": [
+        {
+          "text": "Vitals, pain trend, wound findings, and distal neurovascular status",
+          "explanation": "These establish local and systemic impact."
+        },
+        {
+          "text": "The dressing brand without a patient assessment",
+          "explanation": "Branding does not describe infection severity or limb function."
+        },
+        {
+          "text": "The hardware serial number without clinical findings",
+          "explanation": "A device identifier does not replace assessment."
+        },
+        {
+          "text": "The next elective clinic date without current observations",
+          "explanation": "Current deterioration needs current findings."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        7
+      ],
+      "point": "Assess the whole patient and wound, report deterioration, document, and reassess.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which pin-care plan matches the lesson?",
+      "choices": [
+        {
+          "text": "Aseptic care using the ordered product and schedule",
+          "explanation": "The local authorized plan determines cleaning and dressings."
+        },
+        {
+          "text": "A preferred antiseptic chosen independently for every patient",
+          "explanation": "A universal improvised product is not the stated approach."
+        },
+        {
+          "text": "The prior patient’s schedule without checking this order",
+          "explanation": "Different patients may have different plans."
+        },
+        {
+          "text": "Cleaning only when drainage has become purulent",
+          "explanation": "Preventive care follows the authorized schedule, not only late changes."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4,
+        6
+      ],
+      "point": "Use aseptic pin care with the authorized product and schedule.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ],
+  "ibd2-quick-taylor-spatial-frame": [
+    {
+      "stem": "What does Taylor Spatial Frame describe in this lesson?",
+      "choices": [
+        {
+          "text": "A circular hexapod external fixation system",
+          "explanation": "It stabilizes bone and allows planned multidirectional correction."
+        },
+        {
+          "text": "A wholly internal intramedullary nail",
+          "explanation": "That is a different fixation method."
+        },
+        {
+          "text": "A passive compression bandage",
+          "explanation": "That is not a hexapod fixation frame."
+        },
+        {
+          "text": "A cardiac transcutaneous pacing system",
+          "explanation": "This is not an orthopaedic TSF."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "TSF is a hexapod circular external fixator for stabilization and correction.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "sections": [
+        1
+      ],
+      "point": "The principal hexapod arrangement has six adjustable struts.",
+      "stage": "standard",
+      "format": "numeric-entry",
+      "stem": "How many adjustable telescopic struts connect the principal rings in the basic TSF arrangement?",
+      "answer": 6,
+      "unit": "struts",
+      "tolerance": 0,
+      "explanation": "The hexapod arrangement uses six main struts; complex frames may add components.",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which TSF components pass through skin into bone to connect the limb to the frame?",
+      "choices": [
+        {
+          "text": "Wires and/or half-pins",
+          "explanation": "They provide the bone-to-frame attachment."
+        },
+        {
+          "text": "Telescopic strut bodies",
+          "explanation": "Struts connect the external rings rather than serving as the skin-crossing bone anchors."
+        },
+        {
+          "text": "The ring circumference alone",
+          "explanation": "Rings surround the limb; pins/wires provide attachment."
+        },
+        {
+          "text": "The software-generated paper schedule",
+          "explanation": "Instructions are not a physical bone attachment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Pins/wires connect bone to the external rings.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which is a taught TSF purpose?",
+      "choices": [
+        {
+          "text": "Planned deformity correction or limb lengthening",
+          "explanation": "The system can support gradual individualized bone correction."
+        },
+        {
+          "text": "Immediate correction of every postoperative pain episode",
+          "explanation": "Pain requires assessment rather than automatic frame adjustment."
+        },
+        {
+          "text": "Treatment of every fever without an infection assessment",
+          "explanation": "A frame is not an antimicrobial treatment."
+        },
+        {
+          "text": "Correction of an ECG conduction delay",
+          "explanation": "This is an orthopaedic rather than cardiac device."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "TSF may be used for complex fractures, deformity, lengthening, or reconstruction.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "What determines planned TSF strut-length changes?",
+      "choices": [
+        {
+          "text": "An individualized written correction schedule based on the surgeon’s plan",
+          "explanation": "Measurements, imaging, and software support the authorized schedule."
+        },
+        {
+          "text": "The patient’s pain score as a direct turn-count formula",
+          "explanation": "Pain is not an independent adjustment prescription."
+        },
+        {
+          "text": "The intern’s preferred direction of visible alignment",
+          "explanation": "Visual preference does not authorize a correction."
+        },
+        {
+          "text": "A universal daily turn count used for every TSF",
+          "explanation": "The plan is individualized rather than universal."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Correction follows a surgeon-planned individualized schedule.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A trained patient adjusts their own TSF under a written schedule. An intern is asked to change the schedule because the limb looks different. Which distinction matters?",
+      "choices": [
+        {
+          "text": "Authorized individual self-care versus a new unsupervised adjustment decision",
+          "explanation": "Patient training does not authorize an intern to alter the surgical plan."
+        },
+        {
+          "text": "All TSF adjustments are prohibited even under a patient’s own plan",
+          "explanation": "The material permits specifically trained individual self-care."
+        },
+        {
+          "text": "A patient request automatically substitutes for a surgical order",
+          "explanation": "A request does not authorize a plan change."
+        },
+        {
+          "text": "A visible alignment difference provides a numerical correction by itself",
+          "explanation": "It does not replace the planned assessment and schedule."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Trained patient self-adjustment does not authorize an intern to improvise.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Which set best checks limb safety before inspecting the rest of a TSF?",
+      "choices": [
+        {
+          "text": "Pain trend, perfusion, sensation, movement, swelling, and pressure points",
+          "explanation": "These assess tissue and nerve function distal to the injury."
+        },
+        {
+          "text": "Ring count and paint condition without a limb examination",
+          "explanation": "Device appearance alone cannot establish tissue safety."
+        },
+        {
+          "text": "Strut length without a distal examination",
+          "explanation": "A length reading does not assess nerve or blood supply."
+        },
+        {
+          "text": "The next scheduled X-ray date without current findings",
+          "explanation": "A future study does not replace bedside assessment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Distal neurovascular assessment precedes frame-focused reassurance.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A TSF patient has rapidly worsening pain, passive-stretch pain, and new paresthesia while pulses remain present. Which complication is the urgent concern?",
+      "choices": [
+        {
+          "text": "Acute compartment syndrome",
+          "explanation": "Pulse presence does not exclude threatened compartment perfusion."
+        },
+        {
+          "text": "Expected adjustment discomfort established by the pulse",
+          "explanation": "The warning cluster needs emergency assessment."
+        },
+        {
+          "text": "An isolated cosmetic frame concern",
+          "explanation": "New pain and sensory change are tissue-safety findings."
+        },
+        {
+          "text": "A normal recovery established by intact hardware",
+          "explanation": "Hardware appearance does not establish neurovascular safety."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "Pulses can persist during early compartment syndrome.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Which TSF change needs prompt reporting?",
+      "choices": [
+        {
+          "text": "New purulent drainage or unusual frame movement",
+          "explanation": "Infection and hardware changes are both explicit red flags."
+        },
+        {
+          "text": "A stable written schedule without new symptoms",
+          "explanation": "This does not establish deterioration."
+        },
+        {
+          "text": "An unchanged pin site with improving comfort",
+          "explanation": "This is not the warning pattern."
+        },
+        {
+          "text": "A stable alignment without skin pressure or symptoms",
+          "explanation": "No new problem is described."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        6
+      ],
+      "point": "Recognize pin infection, hardware failure, skin pressure, and alignment red flags.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A TSF patient wants to increase weight bearing, but the current order is unclear. Which information should determine the activity plan?",
+      "choices": [
+        {
+          "text": "The verified patient-specific weight-bearing order",
+          "explanation": "Device presence alone does not establish permitted loading."
+        },
+        {
+          "text": "Another TSF patient’s walking allowance",
+          "explanation": "Different reconstructions can have different restrictions."
+        },
+        {
+          "text": "The patient’s ability to tolerate one unsupported step",
+          "explanation": "Tolerance does not replace the structural treatment plan."
+        },
+        {
+          "text": "The number of struts as a universal loading rule",
+          "explanation": "Strut count does not determine the individual order."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        7
+      ],
+      "point": "Weight bearing and wound/pin care follow prescribed orders.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which note best supports reassessment after a TSF concern?",
+      "choices": [
+        {
+          "text": "Timed findings, change from baseline, person notified, instructions, and response",
+          "explanation": "These describe the event and follow-up objectively."
+        },
+        {
+          "text": "“Frame checked; fine” without findings or timing",
+          "explanation": "This does not document the actual assessment or response."
+        },
+        {
+          "text": "“Pain expected” without the trend or limb examination",
+          "explanation": "This can obscure a clinically important change."
+        },
+        {
+          "text": "“Doctor aware” without the change or received plan",
+          "explanation": "The note lacks the information needed for follow-up."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        8
+      ],
+      "point": "Document time, change, baseline comparison, notification, instructions, and response.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A TSF patient’s new sensory change was reported and a management instruction received. Which subsequent action closes the bedside response?",
+      "choices": [
+        {
+          "text": "Repeat relevant neurovascular observations and document the response",
+          "explanation": "Reporting does not replace ongoing assessment of tissue safety."
+        },
+        {
+          "text": "Return to routine checks without comparing the change",
+          "explanation": "A new problem requires follow-up of the affected findings."
+        },
+        {
+          "text": "Assume notification establishes resolution",
+          "explanation": "Notification is not a measured clinical outcome."
+        },
+        {
+          "text": "Document only the hardware appearance",
+          "explanation": "The patient’s neurovascular response remains central."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        7,
+        8
+      ],
+      "point": "Reassess after a clinical change or intervention.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Distal pulses remain present, but a TSF contact point is causing new skin breakdown. Which interpretation fits?",
+      "choices": [
+        {
+          "text": "A pressure injury still needs assessment and reporting",
+          "explanation": "Preserved pulses do not make a local skin injury harmless."
+        },
+        {
+          "text": "Normal pulses establish that the contact pressure is acceptable",
+          "explanation": "Neurovascular and skin assessments address different risks."
+        },
+        {
+          "text": "Skin breakdown authorizes independent frame adjustment",
+          "explanation": "The intern must not manipulate hardware independently."
+        },
+        {
+          "text": "The absence of fever establishes that no action is needed",
+          "explanation": "Pressure injury need not be accompanied by fever."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4,
+        6,
+        8
+      ],
+      "point": "Assess and document skin pressure points near the frame.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    }
+  ],
+  "ibd2-lesson-04-osteomyelitis": [
+    {
+      "stem": "Which description correctly defines osteomyelitis?",
+      "choices": [
+        {
+          "text": "Infection of bone",
+          "explanation": "It may follow blood spread, nearby infection, or direct entry after trauma."
+        },
+        {
+          "text": "An isolated reduction in bone density",
+          "explanation": "This is not the definition of infection."
+        },
+        {
+          "text": "A closed compartment-pressure syndrome alone",
+          "explanation": "This is a different mechanism."
+        },
+        {
+          "text": "An isolated tendon rupture",
+          "explanation": "This affects a different structure."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Osteomyelitis is bone infection with possible blood, contiguous, or direct entry.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which cluster warrants consideration of deeper bone infection?",
+      "choices": [
+        {
+          "text": "Persistent deep pain with drainage and poor healing",
+          "explanation": "This fits the lesson’s osteomyelitis warning pattern."
+        },
+        {
+          "text": "A healed wound with steadily improving comfort",
+          "explanation": "This does not identify ongoing deeper infection."
+        },
+        {
+          "text": "A stable old scar without pain or drainage",
+          "explanation": "No active warning finding is described."
+        },
+        {
+          "text": "A normal distal examination without wound symptoms",
+          "explanation": "This does not establish bone infection."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Recognize persistent deep pain, drainage, poor healing, and inflammation.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which set best supports a nursing report of suspected osteomyelitis deterioration?",
+      "choices": [
+        {
+          "text": "Vitals, wound drainage, pain trend, and distal findings",
+          "explanation": "These establish local, systemic, and limb-safety information."
+        },
+        {
+          "text": "A dressing brand and the original appointment date",
+          "explanation": "These do not describe current severity."
+        },
+        {
+          "text": "A tablet count without symptoms or observations",
+          "explanation": "Supply does not establish the clinical condition."
+        },
+        {
+          "text": "A device photograph without a patient assessment",
+          "explanation": "Appearance alone is incomplete."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "Assess vitals, wound/drainage, pain trend, and neurovascular status.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "Which treatment pattern is compatible with osteomyelitis in the lesson?",
+      "choices": [
+        {
+          "text": "An extended antimicrobial plan with possible debridement",
+          "explanation": "Both medical and surgical treatment may be required."
+        },
+        {
+          "text": "A single analgesic dose as complete infection treatment",
+          "explanation": "Pain relief does not eradicate bone infection."
+        },
+        {
+          "text": "A routine bronchodilator as complete infection treatment",
+          "explanation": "This does not treat a bone infection."
+        },
+        {
+          "text": "A vitamin supplement as complete infection treatment",
+          "explanation": "Nutritional support does not replace antimicrobial/surgical care."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Treatment may include prolonged antibiotics and surgery/debridement.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient says a persistently draining wound is normal because it has drained for weeks. Which interpretation is most appropriate?",
+      "choices": [
+        {
+          "text": "Chronicity does not make persistent drainage benign",
+          "explanation": "Deeper infection and poor healing still need assessment."
+        },
+        {
+          "text": "Chronic drainage establishes eradication of infection",
+          "explanation": "Ongoing drainage does not establish cure."
+        },
+        {
+          "text": "A long duration excludes bone involvement",
+          "explanation": "Persistent wounds and bone pain can support concern for deeper infection."
+        },
+        {
+          "text": "Absence of a new injury proves the drainage harmless",
+          "explanation": "Ongoing infection does not require a new injury."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1,
+        5
+      ],
+      "point": "Chronic drainage is not automatically normal.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient with a draining orthopaedic wound becomes febrile, hypotensive, and confused. Which response has priority?",
+      "choices": [
+        {
+          "text": "Assess ABCs/current observations and urgently escalate systemic deterioration",
+          "explanation": "The presentation may reflect a serious infection complication."
+        },
+        {
+          "text": "Complete the next planned education session first",
+          "explanation": "This delays assessment of acute systemic compromise."
+        },
+        {
+          "text": "Wait for the next elective wound review",
+          "explanation": "New instability requires earlier action."
+        },
+        {
+          "text": "Treat drainage as the expected baseline without reassessment",
+          "explanation": "The systemic change invalidates that reassurance."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "Escalate systemic deterioration or worsening infection/hardware problems.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "Which routes can lead to osteomyelitis in this lesson?",
+      "choices": [
+        {
+          "text": "Bloodstream spread, nearby infection, direct traumatic entry",
+          "explanation": "These are the three taught routes."
+        },
+        {
+          "text": "Bloodstream spread only, without local or traumatic entry",
+          "explanation": "This excludes two taught routes."
+        },
+        {
+          "text": "Direct traumatic entry only, without bloodstream spread",
+          "explanation": "This excludes hematogenous and nearby spread."
+        },
+        {
+          "text": "Nearby infection only, without bloodstream or traumatic entry",
+          "explanation": "This excludes two taught routes."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        0
+      ],
+      "point": "Bone infection may arise through bloodstream, contiguous spread, or direct inoculation.",
+      "stage": "standard",
+      "criticalForSafety": false
+    }
+  ]
+}

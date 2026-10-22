@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "itemId": "ibd2-quick-curriculum-map",
+      "reason": "Administrative study roadmap listing planned topics rather than substantive clinical instruction. Do not invent questions about topics not yet taught."
+    }
+  ],
+  "sourceUnitPolicies": [
+    {
+      "fields": ["availability", "source", "pages", "mechanismBasis", "category", "categories", "updatedAt"],
+      "reason": "Provenance, stock observations, catalogue metadata, and evidence notes are not independent nursing knowledge objectives. Clinical instructions in administration/monitor/use/mechanism remain in scope."
+    },
+    {
+      "lessonSections": "memory/summary sections repeating an already taught clinical point",
+      "reason": "Repeated wording does not need a duplicate question. Keep the underlying clinical point in the bank."
+    }
+  ],
+  "sourceIssues": [
+    {
+      "itemId": "ccu-quick-dcm",
+      "sectionIndex": 2,
+      "detail": "The source lists ischemic heart disease/previous MI as a DCM cause. The ESC cardiomyopathy definition distinguishes a DCM phenotype from dysfunction explained solely by coronary disease or abnormal loading.",
+      "handling": "Do not key a question that teaches coronary disease alone as sufficient for the strict DCM diagnosis. Other listed contributors remain testable. Source wording needs separate review.",
+      "evidenceId": "esc-cardiomyopathy-2023"
+    }
+  ],
+  "coverageReview": {
+    "status": "not exhaustive",
+    "reason": "The generated point-to-question map records what is actually tested. It does not certify that the complete source has been reduced to an exhaustive required-point inventory.",
+    "rule": "An untested clinical fact cannot be reclassified as background merely to make coverage appear complete."
+  }
+}

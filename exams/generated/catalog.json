@@ -1,0 +1,1716 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": 1,
+  "status": "authoring draft",
+  "sourceContentVersion": 35,
+  "sourceContentSha256": "55a9b11cbd8bf299081287dc93e1274cfc3f2034e5990d1fc2d1b7567b2c2382",
+  "generationInputs": [
+    "content.json",
+    "exams/authoring/medication-profiles.json",
+    "exams/authoring/medication-concepts.json",
+    "exams/authoring/lesson-questions.json",
+    "exams/authoring/exclusions.json",
+    "exams/sources.json"
+  ],
+  "counts": {
+    "exams": 184,
+    "questions": 756,
+    "single-best-answer": 741,
+    "numeric-entry": 11,
+    "short-answer": 4,
+    "materials": 92,
+    "medications": 74,
+    "lessons": 18,
+    "mappedLearningPoints": 670
+  },
+  "difficulty": {
+    "standard": "recognition, recall, and core interpretation",
+    "advanced": "application, interactions, competing explanations, and calculation",
+    "calibration": "not empirically calibrated"
+  },
+  "appIntegration": "not activated; these files do not implement the exam interface or progression",
+  "entries": [
+    {
+      "itemId": "verified-losartan",
+      "title": "LOSARTAN",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "verified-losartan--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "verified-losartan--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-acamol",
+      "title": "ACAMOL — paracetamol (acetaminophen)",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-acamol--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ibd2-acamol--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-trufen",
+      "title": "TRUFEN — ibuprofen",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-trufen--standard",
+          "stage": "standard",
+          "questionCount": 8
+        },
+        {
+          "id": "ibd2-trufen--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-cefazolin",
+      "title": "CEFAZOLIN",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-cefazolin--standard",
+          "stage": "standard",
+          "questionCount": 8
+        },
+        {
+          "id": "ibd2-cefazolin--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-tramadol",
+      "title": "TRAMADOL — oral capsule / ward formulation",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-tramadol--standard",
+          "stage": "standard",
+          "questionCount": 8
+        },
+        {
+          "id": "ibd2-tramadol--advanced",
+          "stage": "advanced",
+          "questionCount": 6
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-meropenem",
+      "title": "MEROPENEM",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-meropenem--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ibd2-meropenem--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-prothiazine",
+      "title": "PROTHIAZINE — promethazine",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-prothiazine--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-prothiazine--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-gabapentin",
+      "title": "GABAPENTIN",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-gabapentin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-gabapentin--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-avilac",
+      "title": "AVILAC — lactulose",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-avilac--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-avilac--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-carbamazepine",
+      "title": "TEGRETOL — carbamazepine",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-carbamazepine--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ibd2-carbamazepine--advanced",
+          "stage": "advanced",
+          "questionCount": 7
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-29",
+      "title": "METOCLOPRAMIDE — PRAMIN",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "trolley-29--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "trolley-29--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-epanutin-phenytoin",
+      "title": "EPANUTIN — phenytoin",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-epanutin-phenytoin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-epanutin-phenytoin--advanced",
+          "stage": "advanced",
+          "questionCount": 6
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-vancomycin",
+      "title": "VANCOMYCIN",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-vancomycin--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ibd2-vancomycin--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-levox-levofloxacin",
+      "title": "LEVOX — levofloxacin",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-levox-levofloxacin--standard",
+          "stage": "standard",
+          "questionCount": 9
+        },
+        {
+          "id": "ibd2-levox-levofloxacin--advanced",
+          "stage": "advanced",
+          "questionCount": 6
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-ketrolac-ketorolac",
+      "title": "KETROLAC — ketorolac tromethamine",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-ketrolac-ketorolac--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ibd2-ketrolac-ketorolac--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-warfarin-coumadin",
+      "title": "COUMADIN — warfarin",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ccu-warfarin-coumadin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-warfarin-coumadin--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-fortum-ceftazidime",
+      "title": "FORTUM — ceftazidime",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-fortum-ceftazidime--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ibd2-fortum-ceftazidime--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-scobutyl-hyoscine-butylbromide",
+      "title": "SCOBUTYL — hyoscine-N-butyl bromide",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ibd2-scobutyl-hyoscine-butylbromide--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ibd2-scobutyl-hyoscine-butylbromide--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-isosorbide-mononitrate",
+      "title": "VASOCORE — isosorbide mononitrate",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ccu-isosorbide-mononitrate--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-isosorbide-mononitrate--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-isosorbide-dinitrate",
+      "title": "CORDIL — isosorbide dinitrate",
+      "itemType": "medication",
+      "file": "banks-01.json",
+      "forms": [
+        {
+          "id": "ccu-isosorbide-dinitrate--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-isosorbide-dinitrate--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-nadroparin",
+      "title": "FRAXIPARINE / FRAXAPARIN — nadroparin",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-nadroparin--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-nadroparin--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-enoxaparin",
+      "title": "CLEXANE / CLEXAN — enoxaparin",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-enoxaparin--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-enoxaparin--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "title": "HEPARIN — unfractionated heparin (UFH)",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-heparin-ufh--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-heparin-ufh--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-aspirin",
+      "title": "ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”)",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-aspirin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-aspirin--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-clopidogrel",
+      "title": "PLAVIX — clopidogrel",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-clopidogrel--standard",
+          "stage": "standard",
+          "questionCount": 2
+        },
+        {
+          "id": "ccu-clopidogrel--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-bisoprolol",
+      "title": "CONCOR / CONCORE — bisoprolol",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-bisoprolol--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-bisoprolol--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-metoprolol",
+      "title": "METCARDIUM — metoprolol",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-metoprolol--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-metoprolol--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-propranolol",
+      "title": "PROPRANOLOL",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-propranolol--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-propranolol--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-amlodipine",
+      "title": "AMICORE / AMICOR — amlodipine",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-amlodipine--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-amlodipine--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "title": "IKACOR / IKAKOR — verapamil",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-verapamil--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-verapamil--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-enalapril",
+      "title": "ENALAPRIL",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-enalapril--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-enalapril--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-atorvastatin",
+      "title": "TROVAN / LIPIDEX / LIPDIX — atorvastatin",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-atorvastatin--standard",
+          "stage": "standard",
+          "questionCount": 2
+        },
+        {
+          "id": "ccu-atorvastatin--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-furosemide",
+      "title": "LASIX — furosemide",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-furosemide--standard",
+          "stage": "standard",
+          "questionCount": 8
+        },
+        {
+          "id": "ccu-furosemide--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-dapagliflozin",
+      "title": "FARIGM — dapagliflozin",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-dapagliflozin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-dapagliflozin--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-correction-insulin",
+      "title": "SLIDING-SCALE / CORRECTION INSULIN",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-correction-insulin--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-correction-insulin--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-norepinephrine",
+      "title": "NOREPINEPHRINE / NORADRENALINE",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-norepinephrine--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-norepinephrine--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-dobutamine",
+      "title": "DOBUTAMINE",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-dobutamine--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-dobutamine--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-dopamine",
+      "title": "DOPAMINE",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-dopamine--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-dopamine--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-atropine",
+      "title": "ATROPINE",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-atropine--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-atropine--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-pantoprazole",
+      "title": "PANTOVER / PANTOVERE — pantoprazole",
+      "itemType": "medication",
+      "file": "banks-02.json",
+      "forms": [
+        {
+          "id": "ccu-pantoprazole--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-pantoprazole--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-omeprazole",
+      "title": "OMEPRAZOLE",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-omeprazole--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-omeprazole--advanced",
+          "stage": "advanced",
+          "questionCount": 1
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-metronidazole",
+      "title": "FLAGYL — metronidazole",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-metronidazole--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-metronidazole--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-linezolid",
+      "title": "LINEZOLID",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-linezolid--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-linezolid--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-salbutamol",
+      "title": "VENTOLIN — salbutamol / albuterol",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-salbutamol--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-salbutamol--advanced",
+          "stage": "advanced",
+          "questionCount": 1
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-nystatin",
+      "title": "NYSTATIN",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-nystatin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-nystatin--advanced",
+          "stage": "advanced",
+          "questionCount": 1
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-betahistine",
+      "title": "MEDIUM — betahistine",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-betahistine--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-betahistine--advanced",
+          "stage": "advanced",
+          "questionCount": 1
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-propafenone",
+      "title": "PROFEX — propafenone",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-propafenone--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-propafenone--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-valzadepine",
+      "title": "VALZADEPINE / 'Valzadipine' — amlodipine + valsartan",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-valzadepine--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ccu-valzadepine--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-valzan-hct",
+      "title": "VALZAN HCT — valsartan + hydrochlorothiazide",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-valzan-hct--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ccu-valzan-hct--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-symbicort",
+      "title": "SYMBICORT — budesonide + formoterol",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-symbicort--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-symbicort--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-gentamicin",
+      "title": "GENTAMICIN",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-gentamicin--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-gentamicin--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-ipratropium",
+      "title": "AEROVENT — ipratropium bromide",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-ipratropium--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-ipratropium--advanced",
+          "stage": "advanced",
+          "questionCount": 1
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-adenosine",
+      "title": "ADENOSINE",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-adenosine--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-adenosine--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-labetalol",
+      "title": "LABETALOL",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-labetalol--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-labetalol--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-ketamine",
+      "title": "KETAMINE — ketamine hydrochloride",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-ketamine--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-ketamine--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-pethidine",
+      "title": "PETHIDINE — meperidine",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-pethidine--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ccu-pethidine--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-morphine",
+      "title": "MORPHINE — morphine sulfate / hydrochloride",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "ccu-morphine--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ccu-morphine--advanced",
+          "stage": "advanced",
+          "questionCount": 6
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-spironolactone",
+      "title": "SPIRONOLACTONE — Aldactone",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "trolley-spironolactone--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "trolley-spironolactone--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-lidocaine",
+      "title": "LIDOCAINE HCl",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "trolley-lidocaine--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "trolley-lidocaine--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-sodium-bicarbonate",
+      "title": "SODIUM BICARBONATE",
+      "itemType": "medication",
+      "file": "banks-03.json",
+      "forms": [
+        {
+          "id": "trolley-sodium-bicarbonate--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "trolley-sodium-bicarbonate--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-hydralazine",
+      "title": "HYDRALAZINE",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-hydralazine--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "trolley-hydralazine--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-dextrose50",
+      "title": "DEXTROSE 50% — D50",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-dextrose50--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "trolley-dextrose50--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-hydrocortisone",
+      "title": "HYDROCORTISONE",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-hydrocortisone--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "trolley-hydrocortisone--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-diazepam",
+      "title": "DIAZEPAM",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-diazepam--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "trolley-diazepam--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-amiodarone",
+      "title": "AMIODARONE — PROCOR",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-amiodarone--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "trolley-amiodarone--advanced",
+          "stage": "advanced",
+          "questionCount": 6
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-calcium-gluconate",
+      "title": "CALCIUM GLUCONATE",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-calcium-gluconate--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "trolley-calcium-gluconate--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-magnesium-sulfate",
+      "title": "MAGNESIUM SULFATE — MgSO4",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-magnesium-sulfate--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "trolley-magnesium-sulfate--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-digoxin",
+      "title": "DIGOXIN",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-digoxin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "trolley-digoxin--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "trolley-aminophylline",
+      "title": "AMINOPHYLLINE",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "trolley-aminophylline--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "trolley-aminophylline--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-amitriptyline",
+      "title": "AMITRIPTYLINE",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ibd2-amitriptyline--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ibd2-amitriptyline--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-prednitab-prednisolone",
+      "title": "PREDNITAB — prednisolone",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ibd2-prednitab-prednisolone--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-prednitab-prednisolone--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-clindamycin",
+      "title": "CLINDAMYCIN",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ibd2-clindamycin--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ibd2-clindamycin--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-multivitamin",
+      "title": "MULTIVITAMIN — formulation varies",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ibd2-multivitamin--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-multivitamin--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "verified-alteplase-v35",
+      "title": "Alteplase (tPA)",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "verified-alteplase-v35--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "verified-alteplase-v35--advanced",
+          "stage": "advanced",
+          "questionCount": 7
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-01-acs",
+      "title": "Acute Coronary Syndrome (ACS)",
+      "itemType": "lesson",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-01-acs--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-lesson-01-acs--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-02-chb",
+      "title": "Complete Heart Block (CHB)",
+      "itemType": "lesson",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-02-chb--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-lesson-02-chb--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-03-12lead-ecg",
+      "title": "12-Lead ECG Practical Basics",
+      "itemType": "lesson",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-03-12lead-ecg--standard",
+          "stage": "standard",
+          "questionCount": 16
+        },
+        {
+          "id": "ccu-lesson-03-12lead-ecg--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-04-telemetry",
+      "title": "Telemetry & Basic Rhythm Interpretation",
+      "itemType": "lesson",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-04-telemetry--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-lesson-04-telemetry--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-05-dangerous-rhythms",
+      "title": "Dangerous Rhythms",
+      "itemType": "lesson",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-05-dangerous-rhythms--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-05-dangerous-rhythms--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-06-electrical-treatment",
+      "title": "Defibrillation vs Cardioversion vs Pacing",
+      "itemType": "lesson",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-06-electrical-treatment--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-lesson-06-electrical-treatment--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-07-sudden-deterioration",
+      "title": "Sudden Deterioration in CCU: What Do You Do First?",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-07-sudden-deterioration--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-lesson-07-sudden-deterioration--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-08-cardiogenic-shock",
+      "title": "Cardiogenic Shock & Poor Perfusion",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-08-cardiogenic-shock--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-lesson-08-cardiogenic-shock--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-09-norepi-dobutamine",
+      "title": "Norepinephrine vs Dobutamine",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-09-norepi-dobutamine--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-09-norepi-dobutamine--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-10-electrolytes",
+      "title": "Electrolytes That Can Cause Arrhythmias",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-10-electrolytes--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-lesson-10-electrolytes--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-lesson-11-furosemide",
+      "title": "Furosemide in the CCU",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-lesson-11-furosemide--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-11-furosemide--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-quick-heart-failure",
+      "title": "Heart Failure — Practical CCU View",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-quick-heart-failure--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-quick-heart-failure--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-quick-dcm",
+      "title": "Dilated Cardiomyopathy (DCM)",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-quick-dcm--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-quick-dcm--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ccu-quick-ihd-mi",
+      "title": "Ischemic Heart Disease vs Myocardial Infarction",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ccu-quick-ihd-mi--standard",
+          "stage": "standard",
+          "questionCount": 2
+        },
+        {
+          "id": "ccu-quick-ihd-mi--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-01-fracture-limb-safety",
+      "title": "Fracture & Limb Safety — Neurovascular Check",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-01-fracture-limb-safety--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ibd2-lesson-01-fracture-limb-safety--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-02-external-fixator",
+      "title": "External Fixator — Limb, Pins, Frame",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-02-external-fixator--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ibd2-lesson-02-external-fixator--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-quick-taylor-spatial-frame",
+      "title": "Taylor Spatial Frame (TSF) — Bedside Nursing",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-quick-taylor-spatial-frame--standard",
+          "stage": "standard",
+          "questionCount": 8
+        },
+        {
+          "id": "ibd2-quick-taylor-spatial-frame--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-04-osteomyelitis",
+      "title": "Osteomyelitis — Think Deeper Infection",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-04-osteomyelitis--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ibd2-lesson-04-osteomyelitis--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "banks-01.json",
+      "sha256": "03afe29307fe8c89cad1ff376a79ad9ade9f147e33ba86126e9138c6a8cbadb8"
+    },
+    {
+      "path": "banks-02.json",
+      "sha256": "eb12f8ad288e5b03ca947d6679d13ba779d8ad0aeb98449e33dec1be0d330c89"
+    },
+    {
+      "path": "banks-03.json",
+      "sha256": "149320ab0a5a8ed378226cd8c58b3df1432c4b9f08e56a6519b934c28dedba5c"
+    },
+    {
+      "path": "banks-04.json",
+      "sha256": "894f119e29f62931cfdb6b71b7abc9e25aaaf1903690d8792a3ccd9d53e186f3"
+    },
+    {
+      "path": "banks-05.json",
+      "sha256": "2d40b4df91e8049ca24cf1ea396c73e928fcc4f27f9ce8b0dcc845b93dc55ce2"
+    },
+    {
+      "path": "coverage.json",
+      "sha256": "84463123d8f9b45910e201e3d2735954666e1289f273251c9f72815f3e8c9759"
+    }
+  ]
+}
