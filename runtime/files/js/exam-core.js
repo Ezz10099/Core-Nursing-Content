@@ -71,10 +71,12 @@
     const access=eligible(state,bank.itemId,stage,bank.readingSections,now);
     if(!access.ok)throw Error(access.reason);
     const record=item(state,bank.itemId),sourceKey=bank.readingSections.map(s=>s.id).join('|');
-    let form=bank.exams.find(e=>e.stage===stage);
+    let form=bank.exams.find(e=>e.stage===stage),formBankVersion=bank.bankVersion;
     if(!form)throw Error('Questions for this exam have not been added yet.');
     if(stage==='standard'){
-      if(record.standardForm&&record.standardSourceKey===sourceKey&&record.standardBankVersion===bank.bankVersion)form=record.standardForm;
+      // Adding bank questions must not replace the agreed same-form retest.
+      // A changed teaching source still requires a newly bound form.
+      if(record.standardForm&&record.standardSourceKey===sourceKey){form=record.standardForm;formBankVersion=record.standardBankVersion}
       else{record.standardForm=clone(form);record.standardSourceKey=sourceKey;record.standardBankVersion=bank.bankVersion}
     }
     const followups={};
@@ -82,7 +84,7 @@
       const alternate=bank.exams.flatMap(e=>e.questions).find(other=>other.id!==q.id&&other.learningPointIds.some(p=>q.learningPointIds.includes(p)));
       if(alternate)followups[q.id]=clone(alternate);
     }
-    state.active={itemId:bank.itemId,bankVersion:bank.bankVersion,form:clone(form),followups,startedAt:now,
+    state.active={itemId:bank.itemId,bankVersion:formBankVersion,form:clone(form),followups,startedAt:now,
       deadline:stage==='advanced'?now+form.questions.length*90000:null,answers:{},unsure:{},shown:[],index:0};
     return state.active;
   }

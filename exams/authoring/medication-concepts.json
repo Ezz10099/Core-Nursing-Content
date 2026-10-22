@@ -1486,7 +1486,7 @@
     "criticalForSafety": true
   },
   "raas_interactions": {
-    "point": "Review potassium-raising drugs and NSAID/lithium/RAAS interactions.",
+    "point": "Review potassium-raising medicines and NSAIDs with the potassium and renal-function checks tested in this question.",
     "anchor": "concurrent|NSAID|lithium|renin",
     "standard": null,
     "advanced": {
@@ -1573,7 +1573,7 @@
     "criticalForSafety": false
   },
   "trufen_extra": {
-    "point": "Distinguish plain ibuprofen from an ibuprofen/acetaminophen combination.",
+    "point": "Distinguish plain Trufen from Trufen Extra by its added paracetamol.",
     "anchor": "Trufen Extra|combination",
     "standard": {
       "stem": "What distinguishes Trufen Extra from plain Trufen in the taught material?",
@@ -1660,7 +1660,7 @@
     "criticalForSafety": false
   },
   "formulation": {
-    "point": "Formulation, strength, route, and release properties need verification.",
+    "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
     "anchor": "formulation|modified.release|extended.release|immediate.release|product|tablet|capsule|route",
     "standard": null,
     "advanced": {
@@ -6045,7 +6045,7 @@
     "criticalForSafety": false
   },
   "acen_patient_limit": {
-    "point": "Acetaminophen limits must reflect liver disease, alcohol, frailty, and total exposure.",
+    "point": "Review the patient-specific acetaminophen limit in frailty and liver disease.",
     "anchor": "liver disease|frailty|alcohol",
     "standard": null,
     "advanced": {
@@ -6287,5 +6287,614 @@
       "format": "single-best-answer"
     },
     "criticalForSafety": true
+  },
+  "losartan_additional_uses": {
+    "point": "Recognize the selected LVH and type 2 diabetic nephropathy uses taught in addition to hypertension.",
+    "anchor": "left ventricular hypertrophy",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Besides routine hypertension treatment, which pair of conditions is included among the selected uses taught for losartan?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Hypertension with LVH; nephropathy in type 2 diabetes",
+          "explanation": "The entry includes selected hypertensive patients with LVH and diabetic nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
+        },
+        {
+          "text": "Acute MI chest pain; acute cardiogenic shock",
+          "explanation": "These are acute syndromes requiring their own treatment; they are not the additional uses listed here."
+        },
+        {
+          "text": "Symptomatic bradycardia; complete heart block",
+          "explanation": "These are conduction problems, not the additional uses listed for losartan."
+        },
+        {
+          "text": "Ventricular tachycardia; atrial fibrillation",
+          "explanation": "Losartan is not taught here as an antiarrhythmic for these rhythms."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "losartan_lithium": {
+    "point": "Recognize lithium as a medicine requiring interaction review with losartan.",
+    "anchor": "lithium",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which medicine is specifically named in the losartan entry as requiring concurrent-medication review, separately from potassium-raising drugs and NSAIDs?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Lithium",
+          "explanation": "Lithium is explicitly listed for interaction review; the product label describes increased lithium exposure/toxicity."
+        },
+        {
+          "text": "Lactulose",
+          "explanation": "Lactulose is not the separately named interaction in this entry."
+        },
+        {
+          "text": "Levothyroxine",
+          "explanation": "Levothyroxine is not the separately named interaction in this entry."
+        },
+        {
+          "text": "Loratadine",
+          "explanation": "Loratadine is not the separately named interaction in this entry."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "losartan_dual_raas": {
+    "point": "Recognize the need to review concurrent renin-angiotensin system blockers.",
+    "anchor": "other renin-angiotensin system blockers",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "Losartan is on the medication chart. Which newly prescribed antihypertensive most directly raises the entry’s concern about using another renin–angiotensin system blocker?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Enalapril",
+          "explanation": "Enalapril is an ACE inhibitor and also acts on the renin–angiotensin system; this combination needs review."
+        },
+        {
+          "text": "Amlodipine",
+          "explanation": "Amlodipine is a calcium-channel blocker, not another renin–angiotensin system blocker."
+        },
+        {
+          "text": "Bisoprolol",
+          "explanation": "Bisoprolol is a beta blocker, not another renin–angiotensin system blocker."
+        },
+        {
+          "text": "Hydralazine",
+          "explanation": "Hydralazine is a direct vasodilator, not another renin–angiotensin system blocker."
+        }
+      ]
+    },
+    "criticalForSafety": false
+  },
+  "losartan_at1_effects": {
+    "point": "Relate AT1 blockade to reduced vasoconstriction and aldosterone effects.",
+    "anchor": "vasoconstriction and aldosterone",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "Which paired change follows from the AT1-receptor blockade taught for losartan?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Less vasoconstriction and less aldosterone effect",
+          "explanation": "Both are downstream effects of blocking angiotensin II at AT1 receptors."
+        },
+        {
+          "text": "Less vasoconstriction and more aldosterone effect",
+          "explanation": "The vascular direction fits, but the aldosterone direction does not."
+        },
+        {
+          "text": "More vasoconstriction and less aldosterone effect",
+          "explanation": "The aldosterone direction fits, but the vascular direction does not."
+        },
+        {
+          "text": "More vasoconstriction and more aldosterone effect",
+          "explanation": "Both directions oppose the taught consequences of AT1 blockade."
+        }
+      ]
+    },
+    "criticalForSafety": false
+  },
+  "acetam_fever_response": {
+    "point": "Assess temperature response when paracetamol is given for fever.",
+    "anchor": "pain/temperature",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Paracetamol is given for fever in a patient without pain. Which comparison most directly measures the intended response?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Temperature before and after the dose",
+          "explanation": "Temperature is the outcome for antipyretic treatment."
+        },
+        {
+          "text": "Pain score before and after the dose",
+          "explanation": "Pain is an analgesic outcome; it does not measure fever response in this patient."
+        },
+        {
+          "text": "Respiratory rate before and after the dose",
+          "explanation": "Respiratory rate may be clinically relevant but is not the direct measure of fever reduction."
+        },
+        {
+          "text": "Blood pressure before and after the dose",
+          "explanation": "Blood pressure does not directly measure the antipyretic response."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "acetam_nsaid_distinction": {
+    "point": "Distinguish paracetamol from the typical platelet/GI effects of NSAIDs.",
+    "anchor": "platelet/GI effects",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which comparison with NSAIDs is explicitly taught for paracetamol?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Pain/fever relief without the typical NSAID platelet/GI effects",
+          "explanation": "This is the comparison in the entry; paracetamol still has important exposure-related liver risk."
+        },
+        {
+          "text": "Pain/fever relief through the same platelet inhibition as aspirin",
+          "explanation": "The entry distinguishes paracetamol from typical NSAID platelet effects."
+        },
+        {
+          "text": "Inflammation control with stronger peripheral COX inhibition",
+          "explanation": "The entry emphasizes central analgesic/antipyretic action, not stronger peripheral anti-inflammatory action."
+        },
+        {
+          "text": "Equivalent GI bleeding risk but no dose-related liver risk",
+          "explanation": "This reverses the distinction and omits the major taught liver hazard."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "acetam_alcohol_review": {
+    "point": "Include heavy alcohol use in paracetamol safety assessment.",
+    "anchor": "heavy alcohol",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which history item is specifically relevant to the liver-risk review before paracetamol in this entry?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Heavy alcohol use",
+          "explanation": "This is specifically relevant to the liver-risk review described for paracetamol."
+        },
+        {
+          "text": "Previous peptic-ulcer bleeding",
+          "explanation": "This is an important medication history, particularly for NSAIDs, but is not the liver-risk factor asked about."
+        },
+        {
+          "text": "Aspirin-associated bronchospasm",
+          "explanation": "This is important when considering NSAIDs; it is not the liver-risk factor asked about."
+        },
+        {
+          "text": "Previous symptomatic bradycardia",
+          "explanation": "This matters for rate-slowing drugs, but is not the paracetamol liver-risk factor asked about."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "ibuprofen_minimum_exposure": {
+    "point": "Use the lowest effective ordered NSAID dose for the shortest appropriate duration.",
+    "anchor": "lowest effective ordered dose",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "A postoperative patient’s pain and swelling have improved on ibuprofen. Which plan best follows the taught exposure principle?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Review the lowest effective ordered dose and shortest needed course",
+          "explanation": "Both dose and duration should be kept appropriate to the individual treatment goal."
+        },
+        {
+          "text": "Keep the current dose until the entire packet is finished",
+          "explanation": "Packet size does not determine the required treatment duration."
+        },
+        {
+          "text": "Keep the current dose until all swelling has disappeared",
+          "explanation": "A single symptom does not justify continuing unchanged exposure without review."
+        },
+        {
+          "text": "Increase the interval only after the full prescribed course ends",
+          "explanation": "The entry supports reviewing exposure as needs change, not postponing all review until the end."
+        }
+      ]
+    },
+    "criticalForSafety": false
+  },
+  "ibuprofen_cv_risk": {
+    "point": "Recognize cardiovascular risk as a distinct NSAID precaution.",
+    "anchor": "cardiovascular risk",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "In addition to GI bleeding, renal injury, and fluid retention, which risk is explicitly included in the ibuprofen entry?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Serious cardiovascular events",
+          "explanation": "Increased cardiovascular risk is a separate NSAID precaution in the material."
+        },
+        {
+          "text": "Immune-mediated thrombocytopenia",
+          "explanation": "This is not the additional risk identified in this entry."
+        },
+        {
+          "text": "Progressive pulmonary fibrosis",
+          "explanation": "This is not the additional risk identified in this entry."
+        },
+        {
+          "text": "Hemorrhagic bladder injury",
+          "explanation": "This is not the additional risk identified in this entry."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "cefazolin_product_preparation": {
+    "point": "Verify the exact cefazolin product and order before selecting preparation and IV administration instructions.",
+    "anchor": "exact vial/product",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "Two cefazolin products are supplied with different preparation instructions. What determines which dilution and IV method to use?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "The supplied product instructions and the authorized order",
+          "explanation": "Preparation and IV administration are product- and order-specific."
+        },
+        {
+          "text": "The dilution used for the last cefazolin patient",
+          "explanation": "A previous patient’s product and order may differ."
+        },
+        {
+          "text": "The method used for another cephalosporin at the same dose",
+          "explanation": "Related antibiotics are not automatically interchangeable in preparation."
+        },
+        {
+          "text": "The method used for any cefazolin vial of that strength",
+          "explanation": "Strength alone does not establish identical preparation or administration instructions."
+        }
+      ]
+    },
+    "criticalForSafety": false
+  },
+  "cefazolin_tissue_timing": {
+    "point": "Explain prophylaxis timing through adequate tissue antibiotic levels at incision.",
+    "anchor": "tissue levels",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "Why does cefazolin prophylaxis need to be related to incision time?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "To provide adequate tissue antibiotic levels when contamination may occur",
+          "explanation": "The taught rationale is adequate tissue exposure at incision."
+        },
+        {
+          "text": "To produce the highest antibiotic level only after wound closure",
+          "explanation": "Waiting until closure misses the purpose of exposure at incision."
+        },
+        {
+          "text": "To prevent the kidney from eliminating any antibiotic during surgery",
+          "explanation": "Elimination continues; it is not the reason for incision-related timing."
+        },
+        {
+          "text": "To ensure antibiotic activity begins only once infection is confirmed",
+          "explanation": "Prophylaxis precedes established infection rather than waiting for confirmation."
+        }
+      ]
+    },
+    "criticalForSafety": false
+  },
+  "cefazolin_pbp": {
+    "point": "Identify penicillin-binding proteins as cefazolin’s taught bacterial target.",
+    "anchor": "penicillin-binding proteins",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which bacterial target is named in the mechanism taught for cefazolin?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Penicillin-binding proteins",
+          "explanation": "Binding these proteins inhibits bacterial cell-wall synthesis."
+        },
+        {
+          "text": "Bacterial DNA gyrase",
+          "explanation": "This is associated with fluoroquinolone action, not cefazolin’s taught target."
+        },
+        {
+          "text": "Bacterial 50S ribosomal subunit",
+          "explanation": "This is a protein-synthesis target, not cefazolin’s taught target."
+        },
+        {
+          "text": "Bacterial dihydrofolate reductase",
+          "explanation": "This is a folate-pathway target, not cefazolin’s taught target."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "tramadol_monoamines": {
+    "point": "Identify serotonin and norepinephrine as the reuptake pathways taught for tramadol.",
+    "anchor": "serotonin and norepinephrine",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which two neurotransmitters are named in tramadol’s taught reuptake-inhibition mechanism?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Serotonin and norepinephrine",
+          "explanation": "Both are named in the mechanism and contribute to the analgesic/interaction profile."
+        },
+        {
+          "text": "Serotonin and acetylcholine",
+          "explanation": "Serotonin fits, but acetylcholine is not the second named pathway."
+        },
+        {
+          "text": "Dopamine and norepinephrine",
+          "explanation": "Norepinephrine fits, but dopamine is not the other named pathway."
+        },
+        {
+          "text": "Dopamine and acetylcholine",
+          "explanation": "Neither is the pair taught for tramadol’s reuptake inhibition."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "tramadol_named_sedatives": {
+    "point": "Recognize additive sedation/respiratory risk with gabapentin or promethazine.",
+    "anchor": "gabapentin",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair of concurrent medicines is explicitly highlighted in the tramadol entry for increased sedation/respiratory risk?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Gabapentin and promethazine",
+          "explanation": "Both are specifically named as potentially increasing CNS/respiratory depression with tramadol."
+        },
+        {
+          "text": "Paracetamol and cefazolin",
+          "explanation": "These are not the sedating pair highlighted in this entry."
+        },
+        {
+          "text": "Ibuprofen and meropenem",
+          "explanation": "These are not the highlighted sedating pair; meropenem has a different important interaction with valproate."
+        },
+        {
+          "text": "Losartan and paracetamol",
+          "explanation": "These are not the highlighted sedating pair."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "tramadol_nausea": {
+    "point": "Recognize nausea as an adverse effect taught for tramadol.",
+    "anchor": "nausea",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient starts tramadol. Which new symptom is among the adverse effects listed in the material?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Nausea",
+          "explanation": "Nausea is explicitly listed alongside dizziness and constipation."
+        },
+        {
+          "text": "Persistent dry cough",
+          "explanation": "This is more associated with ACE-inhibitor treatment and is not listed here for tramadol."
+        },
+        {
+          "text": "Gingival enlargement",
+          "explanation": "This is not the tramadol adverse effect listed in this entry."
+        },
+        {
+          "text": "Peripheral ankle edema",
+          "explanation": "This is not the tramadol adverse effect listed in this entry."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "meropenem_not_prophylaxis": {
+    "point": "Do not treat meropenem as routine orthopaedic prophylaxis solely because of broad coverage.",
+    "anchor": "routine orthopaedic prophylaxis",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "Meropenem is available on the orthopaedic ward. Is broad-spectrum activity alone a sufficient reason to use it as routine perioperative prophylaxis?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "No; the prescribed indication and antimicrobial plan must support its use",
+          "explanation": "Ward availability and broad activity do not establish an appropriate prophylactic indication."
+        },
+        {
+          "text": "Yes; broader activity makes it preferable for every operation",
+          "explanation": "Broader coverage is not a universal reason to replace the indicated prophylactic regimen."
+        },
+        {
+          "text": "Yes; ward stock establishes the intended prophylactic indication",
+          "explanation": "Stock or observation does not establish the purpose of an individual prescription."
+        },
+        {
+          "text": "No; meropenem has no activity in skin or soft-tissue infections",
+          "explanation": "The conclusion about routine prophylaxis is right, but this rationale is false; the entry includes susceptible skin/skin-structure infections."
+        }
+      ]
+    },
+    "criticalForSafety": false
+  },
+  "meropenem_cns_risk": {
+    "point": "Include pre-existing CNS disease when reviewing meropenem-related seizure risk.",
+    "anchor": "CNS disease",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "A patient with preserved renal function is prescribed meropenem. Which additional history in the entry still warrants extra attention to seizure risk?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Previous seizure disorder",
+          "explanation": "A seizure disorder is CNS disease; the entry highlights CNS disease as well as renal impairment."
+        },
+        {
+          "text": "Previous NSAID-related GI bleeding",
+          "explanation": "This warrants medication review but does not establish the CNS risk factor asked about."
+        },
+        {
+          "text": "Previous opioid-related constipation",
+          "explanation": "This does not establish the CNS risk factor asked about."
+        },
+        {
+          "text": "Previous nitrate-related headache",
+          "explanation": "This does not establish the CNS disease or seizure history asked about."
+        }
+      ]
+    },
+    "criticalForSafety": false
+  },
+  "meropenem_iv_preparation": {
+    "point": "Verify the meropenem IV product, indication, renal function, and order before preparation.",
+    "anchor": "Reconstitution, dilution",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Before preparing meropenem IV, which set of information determines the preparation and prescribed regimen described in this entry?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "The supplied product instructions and the renal-reviewed order",
+          "explanation": "These establish the appropriate preparation and prescribed regimen for this patient."
+        },
+        {
+          "text": "The ward’s usual cefazolin method and the same milligram dose",
+          "explanation": "A different antibiotic’s preparation cannot establish the meropenem method."
+        },
+        {
+          "text": "The last meropenem patient’s preparation and dosing interval",
+          "explanation": "Another patient may have had a different product, indication, and renal function."
+        },
+        {
+          "text": "The usual broad-spectrum antibiotic dilution and adult schedule",
+          "explanation": "Broad-spectrum classification does not establish product-specific preparation or dosing."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "promethazine_h1": {
+    "point": "Identify H1-receptor blockade as promethazine’s taught antihistamine action.",
+    "anchor": "histamine H1 receptors",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which receptor action is responsible for the antihistamine component taught for promethazine?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Histamine H1 blockade",
+          "explanation": "H1 blockade is the antihistamine action described."
+        },
+        {
+          "text": "Histamine H2 blockade",
+          "explanation": "H2 blockade is associated with gastric acid suppression, not this taught antihistamine action."
+        },
+        {
+          "text": "Muscarinic receptor stimulation",
+          "explanation": "Promethazine has anticholinergic activity, not muscarinic stimulation."
+        },
+        {
+          "text": "Beta2-receptor stimulation",
+          "explanation": "This produces bronchodilation rather than the taught antihistamine action."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "promethazine_postural_bp": {
+    "point": "Assess postural hypotension associated with promethazine.",
+    "anchor": "orthostatic hypotension",
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient taking promethazine reports dizziness specifically on standing. Which assessment most directly addresses the adverse effect named in the entry?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Postural BP with associated symptoms",
+          "explanation": "Orthostatic hypotension is explicitly listed and can contribute to falls."
+        },
+        {
+          "text": "Pupil size with response to light",
+          "explanation": "This does not directly assess the suspected postural BP change."
+        },
+        {
+          "text": "Bowel sounds with stool frequency",
+          "explanation": "These do not establish the cause of positional dizziness."
+        },
+        {
+          "text": "Hearing acuity with ear symptoms",
+          "explanation": "These do not directly assess the named circulatory adverse effect."
+        }
+      ]
+    },
+    "advanced": null,
+    "criticalForSafety": false
+  },
+  "promethazine_route": {
+    "point": "Do not infer an injectable route from the observed oral promethazine brand.",
+    "anchor": "injectable route",
+    "standard": null,
+    "advanced": {
+      "format": "single-best-answer",
+      "stem": "The ward has Prothiazine tablets, but a patient cannot take oral medicines. What follows from the formulation guidance in this entry?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Clarify an authorized alternative formulation and route",
+          "explanation": "The tablet brand does not establish an injectable product or an authorized route conversion."
+        },
+        {
+          "text": "Use the tablet strength as the equivalent injectable dose",
+          "explanation": "The observed tablet strength does not establish an injectable equivalent."
+        },
+        {
+          "text": "Dissolve the tablet and use the existing IV access",
+          "explanation": "An oral tablet is not a sterile injectable preparation."
+        },
+        {
+          "text": "Keep the same order and choose any promethazine injection",
+          "explanation": "A change in formulation/route requires an authorized, product-specific plan."
+        }
+      ]
+    },
+    "criticalForSafety": false
   }
 }

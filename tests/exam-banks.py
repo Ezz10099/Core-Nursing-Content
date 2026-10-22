@@ -10,6 +10,7 @@ import re
 import subprocess
 import sys
 import unittest
+from unittest.mock import patch
 from collections import Counter
 from pathlib import Path
 
@@ -114,6 +115,37 @@ class ExamBanks(unittest.TestCase):
     def test_files_match_catalog_checksums(self):
         for file in CATALOG['files']:
             self.assertEqual(hashlib.sha256((OUT / file['path']).read_bytes()).hexdigest(), file['sha256'])
+
+    def test_partial_review_never_claims_full_coverage(self):
+        coverage = json.loads((OUT / 'coverage.json').read_text())['sourceReview']
+        self.assertEqual(coverage['fullyReviewedItemIds'], [])
+        self.assertIn('partial', coverage['status'])
+        by_id = {q['id']: q for q in QUESTIONS}
+        for point in coverage['identifiedRequiredPoints']:
+            self.assertTrue(point['questionIds'])
+            for qid in point['questionIds']:
+                self.assertIn(point['id'], by_id[qid]['learningPointIds'])
+                self.assertEqual(point['point'], by_id[qid]['point'])
+
+    def test_review_rejects_changed_source_or_missing_scored_question(self):
+        spec = importlib.util.spec_from_file_location('exam_builder', ROOT / 'scripts/build_exams.py')
+        builder = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(builder)
+        original_load = builder.load
+        review_path = ROOT / 'exams/authoring/coverage-review.json'
+        review = original_load(review_path)
+        import copy
+        stale = copy.deepcopy(review)
+        stale['items'][0]['sourceFieldSha256']['monitor'] = 'not-the-source-hash'
+        with patch.object(builder, 'load', side_effect=lambda p: stale if p == review_path else original_load(p)):
+            with self.assertRaisesRegex(AssertionError, 'Stale coverage review'):
+                builder.build()
+        missing = copy.deepcopy(review)
+        point = missing['items'][0]['identifiedRequiredPoints'][0]
+        point['questionStages'] = ['advanced' if point['questionStages'] == ['standard'] else 'standard']
+        with patch.object(builder, 'load', side_effect=lambda p: missing if p == review_path else original_load(p)):
+            with self.assertRaisesRegex(AssertionError, 'Required point has no scored question'):
+                builder.build()
 
     def test_class_questions_do_not_copy_the_answer_from_the_displayed_name(self):
         for bank in BANKS:

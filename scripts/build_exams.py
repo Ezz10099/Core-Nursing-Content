@@ -166,6 +166,7 @@ def build():
     lessons = load(AUTHORING / 'lesson-questions.json')
     evidence = load(ROOT / 'exams' / 'sources.json')
     exclusions = load(AUTHORING / 'exclusions.json')
+    review = load(AUTHORING / 'coverage-review.json')
     assert set(profiles['items']) == {item['id'] for item in medications}, 'Medication inventory changed; review profiles.'
     assert set(lessons) | {x['itemId'] for x in exclusions['items']} == {item['id'] for item in content['lessons']}, 'Lesson inventory changed.'
     assert not set(lessons) & {x['itemId'] for x in exclusions['items']}
@@ -239,6 +240,31 @@ def build():
         source_map.append({'itemId': bank['itemId'], 'referencedSourceUnits': refs,
                            'interpretation': 'Source references locate support. They do not claim that every fact in a referenced paragraph is tested.'})
 
+    # Validate identified gaps against both the exact source and actual scored
+    # questions. This partial review never upgrades a material to fully covered.
+    question_index = {q['id']: q for b in banks for e in b['exams'] for q in e['questions']}
+    reviewed_points = []
+    med_index = {m['id']: m for m in medications}
+    for entry in review['items']:
+        material = med_index[entry['itemId']]
+        assert entry['reviewStatus'] == 'partial'
+        for field, source_hash in entry['sourceFieldSha256'].items():
+            assert digest(material.get(field, '')) == source_hash, f"Stale coverage review: {entry['itemId']} / {field}"
+        for point in entry['identifiedRequiredPoints']:
+            assert point['itemId'] == entry['itemId']
+            assert point['id'] == entry['itemId'] + '::' + point['concept']
+            assert re.search(point['sourceAnchor'], material[point['sourceField']], re.I), point['id']
+            mapped = copy.deepcopy(point)
+            mapped['questionIds'] = []
+            for stage in point['questionStages']:
+                qid = f"{entry['itemId']}--{stage}--{point['concept']}"
+                assert qid in question_index, f"Required point has no scored question: {point['id']} / {stage}"
+                assert point['id'] in question_index[qid]['learningPointIds']
+                assert point['point'] == question_index[qid]['point']
+                mapped['questionIds'].append(qid)
+            assert mapped['questionIds'], point['id']
+            reviewed_points.append(mapped)
+
     outputs = {}
     entries = []
     for index, start in enumerate(range(0, len(banks), 20), 1):
@@ -251,14 +277,18 @@ def build():
     outputs['coverage.json'] = encoded({'schemaVersion': 1, 'status': 'mapped authored points; exhaustive source audit pending',
         'learnerExposure': 'not recorded here; no exam has been taken by creating this bank',
         'requiredAuthoredPoints': list(points.values()), 'sourceReferenceMap': source_map, 'exclusions': exclusions,
+        'sourceReview': {'status': review['status'], 'scope': review['scope'],
+                        'partiallyReviewedItemIds': [e['itemId'] for e in review['items']],
+                        'identifiedRequiredPoints': reviewed_points,
+                        'fullyReviewedItemIds': []},
         'questionDesignExclusions': [{'itemId': m['id'], 'detail': 'A separate class-recall question is omitted because the full class label is already supplied by the displayed medication name. Its principal action and clinical information remain tested separately.'}
                                      for m in medications if m['id'] + '::drug-class' not in points],
         'limitations': ['Each listed point has a scored question. The inventory is not yet certified to include every required source fact.',
                         'A point appearing in a distractor, stem, or explanation does not receive additional coverage credit.',
                         'No learner exposure or pass is inferred from bank generation.']})
-    outputs['catalog.json'] = encoded({'schemaVersion': 1, 'bankVersion': 1, 'status': 'authoring draft',
+    outputs['catalog.json'] = encoded({'schemaVersion': 1, 'bankVersion': 2, 'status': 'authoring draft',
         'sourceContentVersion': content['contentVersion'], 'sourceContentSha256': hashlib.sha256(content_bytes).hexdigest(),
-        'generationInputs': ['content.json', 'exams/authoring/medication-profiles.json', 'exams/authoring/medication-concepts.json', 'exams/authoring/lesson-questions.json', 'exams/authoring/exclusions.json', 'exams/sources.json'],
+        'generationInputs': ['content.json', 'exams/authoring/medication-profiles.json', 'exams/authoring/medication-concepts.json', 'exams/authoring/lesson-questions.json', 'exams/authoring/exclusions.json', 'exams/authoring/coverage-review.json', 'exams/sources.json'],
         'counts': dict(counts, materials=len(banks), medications=len(medications), lessons=len(lessons), mappedLearningPoints=len(points)),
         'difficulty': {'standard': 'recognition, recall, and core interpretation', 'advanced': 'application, interactions, competing explanations, and calculation',
                        'calibration': 'not empirically calibrated'},
