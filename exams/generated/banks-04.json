@@ -634,30 +634,30 @@
               "answerKey": "B"
             },
             {
+              "format": "single-best-answer",
               "stem": "What does a 50% w/v glucose solution contain?",
               "choices": [
                 {
                   "id": "A",
                   "text": "50 g per 100 mL",
-                  "explanation": "A 50% w/v concentration is 50 grams in each 100 mL of solution."
+                  "explanation": "50% w/v means 50 grams per 100 mL."
                 },
                 {
                   "id": "B",
-                  "text": "50 mg per 1 mL",
-                  "explanation": "This equals 5 g per 100 mL, not 50 g per 100 mL."
+                  "text": "50 g per 1000 mL",
+                  "explanation": "This corresponds to 5% w/v."
                 },
                 {
                   "id": "C",
-                  "text": "50 g per 1 mL",
-                  "explanation": "This is one hundred times the stated mass per mL."
+                  "text": "5 g per 100 mL",
+                  "explanation": "This corresponds to 5% w/v."
                 },
                 {
                   "id": "D",
                   "text": "50 mg per 100 mL",
-                  "explanation": "This is a thousand-fold lower mass than 50 grams."
+                  "explanation": "This is a thousandfold smaller mass than 50 g."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Read the actual dextrose concentration, grams, and volume.",
               "sourceRefs": [
                 {
@@ -722,30 +722,30 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "stem": "During D50 administration, the cannula site becomes swollen and painful. Which risk requires immediate attention?",
+              "format": "single-best-answer",
+              "stem": "During D50, the cannula site becomes swollen and painful while consciousness has not yet improved. Which explanation needs immediate attention?",
               "choices": [
                 {
                   "id": "A",
                   "text": "Extravasation with local tissue injury",
-                  "explanation": "Hypertonic glucose can damage tissue outside the vein."
+                  "explanation": "Concentrated dextrose is hypertonic and can injure tissue outside the vein."
                 },
                 {
                   "id": "B",
-                  "text": "Isolated improvement in systemic hypoglycemia",
-                  "explanation": "A systemic response does not explain the local complication."
+                  "text": "A systemic glucose rise without a local complication",
+                  "explanation": "Systemic response cannot explain away new site findings."
                 },
                 {
                   "id": "C",
-                  "text": "An expected sign of increased venous patency",
-                  "explanation": "Swelling and pain argue against secure intravascular delivery."
+                  "text": "Expected tissue storage of the administered glucose",
+                  "explanation": "Swelling/pain is not an expected beneficial local glucose depot."
                 },
                 {
                   "id": "D",
-                  "text": "Expected local glucose storage",
-                  "explanation": "New swelling and pain should not be interpreted as a therapeutic depot."
+                  "text": "Improved flow through the peripheral vein",
+                  "explanation": "Pain and swelling suggest compromised access rather than restored patency."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Concentrated IV dextrose requires patent access and site monitoring.",
               "sourceRefs": [
                 {
@@ -972,30 +972,30 @@
               "answerKey": "A"
             },
             {
-              "stem": "Which metabolic trend is especially relevant during systemic HYDROCORTISONE therapy?",
+              "format": "single-best-answer",
+              "stem": "Which glucose trend should be anticipated during systemic HYDROCORTISONE treatment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Decreasing serum glucose as the intended effect",
-                  "explanation": "Glucocorticoids are not insulin-like glucose-lowering treatment."
+                  "text": "Unchanged glucose despite changes in steroid exposure",
+                  "explanation": "Steroid treatment can alter glucose control."
                 },
                 {
                   "id": "B",
-                  "text": "Increasing blood glucose",
-                  "explanation": "Glucocorticoids can impair glucose control."
+                  "text": "Higher glucose, possibly increasing correction needs",
+                  "explanation": "Glucocorticoids can raise glucose; use the authorized monitoring/correction plan."
                 },
                 {
                   "id": "C",
-                  "text": "Decreasing INR as the intended effect",
-                  "explanation": "Anticoagulation intensity is not the intended glucocorticoid action."
+                  "text": "Lower glucose, reliably reducing correction needs",
+                  "explanation": "This reverses the usual corticosteroid concern."
                 },
                 {
                   "id": "D",
-                  "text": "Increasing cardiac capture threshold as the intended effect",
-                  "explanation": "This is not the metabolic effect being tested."
+                  "text": "Lower glucose whenever BP rises",
+                  "explanation": "BP does not predict a glucose-lowering effect from steroids."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Systemic glucocorticoids can increase glucose.",
               "sourceRefs": [
                 {
@@ -2640,30 +2640,30 @@
               "answerKey": "B"
             },
             {
-              "stem": "During IV calcium gluconate, swelling and pain develop at the site. What is the main local concern?",
+              "format": "single-best-answer",
+              "stem": "Swelling and pain appear at the cannula during IV calcium gluconate. Which explanation needs immediate attention?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "An isolated correction of the serum calcium",
-                  "explanation": "A serum effect does not establish local site safety."
+                  "text": "A harmless calcium depot at the intended injection site",
+                  "explanation": "An IV medicine should not form a local extravascular depot."
                 },
                 {
                   "id": "B",
-                  "text": "Expected formation of a calcium depot",
-                  "explanation": "A new painful swelling is not the intended intravascular response."
+                  "text": "A systemic calcium correction without a local complication",
+                  "explanation": "Systemic benefit would not establish that the IV site is safe."
                 },
                 {
                   "id": "C",
-                  "text": "Improved peripheral venous flow",
-                  "explanation": "The site findings suggest a complication rather than improved patency."
+                  "text": "Improved venous patency from the infusion",
+                  "explanation": "Pain and swelling suggest impaired access rather than improved flow."
                 },
                 {
                   "id": "D",
                   "text": "Extravasation-related tissue injury",
-                  "explanation": "Secure IV access is essential for this treatment."
+                  "explanation": "IV calcium outside the vein can cause important tissue injury."
                 }
               ],
-              "format": "single-best-answer",
               "point": "IV calcium extravasation can injure tissue.",
               "sourceRefs": [
                 {
@@ -3128,30 +3128,30 @@
               "answerKey": "D"
             },
             {
-              "stem": "During repeated magnesium treatment, reflexes diminish and respiratory effort becomes depressed. Which complication is most concerning?",
+              "format": "single-best-answer",
+              "stem": "During repeated IV magnesium, reflexes diminish and breathing becomes depressed. Which explanation best unifies the findings?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Warfarin reversal",
-                  "explanation": "Coagulation-factor restoration does not explain these findings."
+                  "text": "Isolated vasodilator intolerance",
+                  "explanation": "Hypotension or dizziness alone would not explain the combined reflex and respiratory findings."
                 },
                 {
                   "id": "B",
-                  "text": "Therapeutic beta2 stimulation",
-                  "explanation": "This does not explain the characteristic toxic pattern."
+                  "text": "Beta2-agonist toxicity",
+                  "explanation": "Tremor and tachycardia fit beta2 stimulation better than reflex loss and respiratory depression."
                 },
                 {
                   "id": "C",
                   "text": "Magnesium toxicity",
-                  "explanation": "Reflex loss and respiratory depression are important toxicity findings."
+                  "explanation": "Excess magnesium depresses neuromuscular function and respiration."
                 },
                 {
                   "id": "D",
-                  "text": "An intended improvement in ventilatory drive",
-                  "explanation": "Breathing is worsening rather than improving."
+                  "text": "Isolated hypokalemia",
+                  "explanation": "Hypokalemia can cause weakness and arrhythmia but does not best explain this pattern during magnesium exposure."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Recognize respiratory depression and reflex loss as magnesium toxicity signs.",
               "sourceRefs": [
                 {
@@ -3502,30 +3502,30 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "stem": "A patient on digoxin develops nausea, visual disturbance, and new ventricular ectopy. Which explanation should be investigated?",
+              "format": "single-best-answer",
+              "stem": "A patient taking digoxin develops nausea, visual disturbance, and new ventricular ectopy. Which explanation best unifies the findings?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "An intended rapid diuretic response",
-                  "explanation": "Digoxin is not a loop diuretic."
+                  "text": "Isolated vestibular disease",
+                  "explanation": "This could explain nausea but not the ventricular ectopy and drug-related visual pattern."
                 },
                 {
                   "id": "B",
-                  "text": "Isolated oral candidiasis",
-                  "explanation": "This does not explain the visual and cardiac findings."
+                  "text": "Uncomplicated gastric irritation",
+                  "explanation": "This does not explain the visual and rhythm changes."
                 },
                 {
                   "id": "C",
-                  "text": "Expected antimuscarinic bladder relaxation",
-                  "explanation": "This does not account for the described pattern."
+                  "text": "Isolated volume depletion",
+                  "explanation": "Volume loss can affect renal clearance but alone does not best account for the complete cluster."
                 },
                 {
                   "id": "D",
                   "text": "Digoxin toxicity",
-                  "explanation": "The combined gastrointestinal, visual, and rhythm findings support this concern."
+                  "explanation": "GI, visual, and rhythm changes are a characteristic taught toxicity cluster."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Recognize gastrointestinal, neurological, and rhythm features of digoxin toxicity.",
               "sourceRefs": [
                 {
@@ -3919,30 +3919,30 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "stem": "During aminophylline treatment, nausea and tremor progress to persistent tachycardia and agitation. What should be considered?",
+              "format": "single-best-answer",
+              "stem": "During aminophylline, nausea and tremor progress to persistent tachycardia and agitation. Which explanation best fits?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A routine antimuscarinic response",
-                  "explanation": "Aminophylline is a methylxanthine, not an inhaled antimuscarinic."
+                  "text": "Uncomplicated improvement in bronchospasm",
+                  "explanation": "Improved breathing would not explain the progressive systemic toxicity cluster."
                 },
                 {
                   "id": "B",
-                  "text": "A therapeutic anticoagulation response",
-                  "explanation": "These medicines do not use that mechanism."
+                  "text": "Beta-blocker-related conduction suppression",
+                  "explanation": "That does not best fit increasing tachycardia and tremor."
                 },
                 {
                   "id": "C",
-                  "text": "Expected proof of adequate bronchodilation alone",
-                  "explanation": "The adverse cluster is not simply evidence of therapeutic benefit."
+                  "text": "Opioid-related respiratory depression",
+                  "explanation": "That more typically produces depressed consciousness and breathing rather than this stimulant pattern."
                 },
                 {
                   "id": "D",
                   "text": "Theophylline-related toxicity",
-                  "explanation": "Early toxicity can progress to seizures and dangerous arrhythmias."
+                  "explanation": "The progression involves the taught GI, neurological, and cardiac toxicity findings."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Aminophylline has a narrow therapeutic index and can cause seizures or arrhythmias.",
               "sourceRefs": [
                 {
@@ -4592,30 +4592,30 @@
               "answerKey": "B"
             },
             {
-              "stem": "After suspected amitriptyline overdose, which cluster is especially concerning?",
+              "format": "single-best-answer",
+              "stem": "After suspected amitriptyline overdose, which cluster most strongly supports serious systemic toxicity?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Isolated mild dry mouth with unchanged alertness",
-                  "explanation": "This is less specific for life-threatening overdose."
+                  "text": "Mild sleepiness with a stable ECG and BP",
+                  "explanation": "Sedation requires assessment but this cluster is less supportive of the severe systemic toxicity described."
                 },
                 {
                   "id": "B",
-                  "text": "Isolated constipation with normal vital signs",
-                  "explanation": "This is not the severe overdose pattern."
+                  "text": "Dry mouth and constipation with stable observations",
+                  "explanation": "These antimuscarinic effects can occur but do not establish the same severe systemic pattern."
                 },
                 {
                   "id": "C",
-                  "text": "Improved mood with stable ECG and BP",
-                  "explanation": "This does not identify the toxic deterioration."
+                  "text": "Postural dizziness without ECG or consciousness change",
+                  "explanation": "This is less specific for severe overdose than the complete dangerous cluster."
                 },
                 {
                   "id": "D",
                   "text": "QRS widening, hypotension, and seizures",
-                  "explanation": "This matches the serious cardiac and neurological toxicity described."
+                  "explanation": "TCA overdose can produce this cardiac and neurological toxicity."
                 }
               ],
-              "format": "single-best-answer",
               "point": "TCA overdose can cause QRS widening, hypotension, seizures, and dysrhythmia.",
               "sourceRefs": [
                 {
@@ -4792,30 +4792,30 @@
               "answerKey": "C"
             },
             {
-              "stem": "Which metabolic trend is especially relevant during systemic PREDNITAB — prednisolone therapy?",
+              "format": "single-best-answer",
+              "stem": "Which glucose trend should be anticipated during systemic PREDNITAB — prednisolone treatment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Decreasing serum glucose as the intended effect",
-                  "explanation": "Glucocorticoids are not insulin-like glucose-lowering treatment."
+                  "text": "Unchanged glucose despite changes in steroid exposure",
+                  "explanation": "Steroid treatment can alter glucose control."
                 },
                 {
                   "id": "B",
-                  "text": "Increasing blood glucose",
-                  "explanation": "Glucocorticoids can impair glucose control."
+                  "text": "Higher glucose, possibly increasing correction needs",
+                  "explanation": "Glucocorticoids can raise glucose; use the authorized monitoring/correction plan."
                 },
                 {
                   "id": "C",
-                  "text": "Decreasing INR as the intended effect",
-                  "explanation": "Anticoagulation intensity is not the intended glucocorticoid action."
+                  "text": "Lower glucose, reliably reducing correction needs",
+                  "explanation": "This reverses the usual corticosteroid concern."
                 },
                 {
                   "id": "D",
-                  "text": "Increasing cardiac capture threshold as the intended effect",
-                  "explanation": "This is not the metabolic effect being tested."
+                  "text": "Lower glucose whenever BP rises",
+                  "explanation": "BP does not predict a glucose-lowering effect from steroids."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Systemic glucocorticoids can increase glucose.",
               "sourceRefs": [
                 {
@@ -4835,30 +4835,30 @@
               "answerKey": "B"
             },
             {
-              "stem": "Which new symptom during prednisolone treatment is a recognized monitoring concern?",
+              "format": "single-best-answer",
+              "stem": "Which new symptom is a recognized monitoring issue during prednisolone treatment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Mood or sleep disturbance",
-                  "explanation": "Systemic corticosteroids can affect mood and sleep."
+                  "text": "Insomnia or marked mood change",
+                  "explanation": "Systemic steroids can affect mood and sleep."
                 },
                 {
                   "id": "B",
-                  "text": "New platelet inhibition as the intended response",
-                  "explanation": "Prednisolone is not an antiplatelet drug."
+                  "text": "New tendon pain during activity",
+                  "explanation": "This is a prominent warning with fluoroquinolones rather than the mood/sleep issue asked here."
                 },
                 {
                   "id": "C",
-                  "text": "New tendon rupture as the intended response",
-                  "explanation": "That is neither an intended nor characteristic steroid response in this material."
+                  "text": "Tinnitus with hearing loss",
+                  "explanation": "This more specifically raises ototoxicity concerns with other medicines."
                 },
                 {
                   "id": "D",
-                  "text": "New oral anesthetic numbness as the intended response",
-                  "explanation": "It is not a local anesthetic."
+                  "text": "Sustained dystonic eye deviation",
+                  "explanation": "This more specifically suggests an extrapyramidal drug reaction."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Systemic steroids can affect mood and sleep.",
               "sourceRefs": [
                 {
@@ -6267,30 +6267,30 @@
               "answerKey": "D"
             },
             {
-              "stem": "During alteplase infusion, a patient develops a sudden severe headache, vomiting, and neurological worsening. Which complication requires urgent evaluation?",
+              "format": "single-best-answer",
+              "stem": "During alteplase, sudden severe headache, vomiting, and neurological worsening occur. Which complication is the priority to exclude?",
               "choices": [
                 {
                   "id": "A",
                   "text": "Intracranial hemorrhage",
-                  "explanation": "The pattern during thrombolysis requires immediate escalation and emergency evaluation."
+                  "explanation": "This is a major thrombolysis complication requiring immediate escalation and emergency assessment."
                 },
                 {
                   "id": "B",
-                  "text": "A routine minor infusion-site reaction",
-                  "explanation": "The neurological change is systemic and potentially life-threatening."
+                  "text": "A routine migraine episode",
+                  "explanation": "The treatment context and acute neurological change require urgent exclusion of hemorrhage rather than assuming a benign headache."
                 },
                 {
                   "id": "C",
-                  "text": "An expected sign of completed fibrinolysis",
-                  "explanation": "Deterioration is not proof of successful reperfusion."
+                  "text": "An uncomplicated therapeutic response",
+                  "explanation": "Neurological deterioration is not a sign of successful treatment."
                 },
                 {
                   "id": "D",
-                  "text": "An expected effect of oral mineral chelation",
-                  "explanation": "This is unrelated to the treatment and presentation."
+                  "text": "An isolated local infusion reaction",
+                  "explanation": "A local site problem does not explain this neurological cluster."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Acute neurological worsening during thrombolysis needs immediate escalation.",
               "sourceRefs": [
                 {

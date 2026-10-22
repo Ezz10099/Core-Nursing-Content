@@ -578,30 +578,30 @@
               "answerKey": "B"
             },
             {
-              "stem": "Which administration matches the common IV metronidazole presentation in the material?",
+              "format": "single-best-answer",
+              "stem": "Which delivery pattern matches the common IV metronidazole bag described in the material?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A sublingual dose from the infusion container",
-                  "explanation": "This is not the product’s route."
+                  "text": "A continuous day-long infusion using an intermittent-dose order",
+                  "explanation": "A different delivery schedule requires a corresponding authorized regimen."
                 },
                 {
                   "id": "B",
-                  "text": "A rapid IV push from the full infusion container",
-                  "explanation": "This conflicts with the stated delivery method."
+                  "text": "A rapid IV push using the full bag as the bolus",
+                  "explanation": "An intermittent infusion bag is not a rapid-push dose."
                 },
                 {
                   "id": "C",
-                  "text": "An intermittent infusion over the product-specified time",
-                  "explanation": "The described presentation is not intended as a rapid IV push."
+                  "text": "An intermittent infusion over its labeled time",
+                  "explanation": "Use the product-specified intermittent infusion time."
                 },
                 {
                   "id": "D",
-                  "text": "An intramuscular dose from the infusion container",
-                  "explanation": "An infusion presentation is not automatically an IM preparation."
+                  "text": "Uncontrolled gravity flow until the bag is empty",
+                  "explanation": "The labeled infusion time must be respected."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Use labeled intermittent infusion for the stated metronidazole IV product.",
               "sourceRefs": [
                 {
@@ -1863,30 +1863,30 @@
               "answerKey": "B"
             },
             {
-              "stem": "Which technique supports local oral contact with the nystatin suspension in the material?",
+              "format": "single-best-answer",
+              "stem": "Which technique best supports the intended oral contact of nystatin suspension?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Swallow immediately without oral distribution",
-                  "explanation": "This reduces the intended mucosal contact."
+                  "text": "Mix it into a full meal and consume it gradually",
+                  "explanation": "This does not provide the directed oral distribution/contact."
                 },
                 {
                   "id": "B",
-                  "text": "Apply the suspension to the IV cannula site",
-                  "explanation": "This is not its oral local use."
+                  "text": "Rinse it out immediately as if it were a cleaning mouthwash",
+                  "explanation": "This does not follow the taught retain-then-swallow technique."
                 },
                 {
                   "id": "C",
-                  "text": "Measure, distribute around the mouth, and retain before swallowing",
-                  "explanation": "Local contact is part of the taught administration technique."
+                  "text": "Distribute around the mouth and retain before swallowing",
+                  "explanation": "This increases contact with the oral lesions after measuring the dose."
                 },
                 {
                   "id": "D",
-                  "text": "Place the measured suspension in a nebulizer",
-                  "explanation": "This does not match the specified oral product."
+                  "text": "Swallow the measured dose immediately without distribution",
+                  "explanation": "This reduces intended oral contact time."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Distribute oral nystatin and retain local contact as directed.",
               "sourceRefs": [
                 {
@@ -4282,30 +4282,30 @@
               "answerKey": "C"
             },
             {
-              "stem": "The prescribed Symbicort device is a Turbuhaler. Which inhalation technique matches the material?",
+              "format": "single-best-answer",
+              "stem": "Which inspiratory technique matches a Symbicort Turbuhaler dry-powder device?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Inhale forcefully and deeply through the mouthpiece",
-                  "explanation": "Dry-powder delivery depends on the specified inhalation technique."
+                  "text": "A forceful, deep inhalation through the mouthpiece",
+                  "explanation": "The powder device requires this inspiratory maneuver; do not exhale into it."
                 },
                 {
                   "id": "B",
-                  "text": "Pour the powder into a nebulizer chamber",
-                  "explanation": "A dry-powder device is not the same as a nebulizer solution."
+                  "text": "An exhalation into the loaded mouthpiece before inhaling",
+                  "explanation": "Exhaling into the device can interfere with proper powder delivery."
                 },
                 {
                   "id": "C",
-                  "text": "Dissolve the powder for IV administration",
-                  "explanation": "This is not an injectable product."
+                  "text": "A slow inhalation coordinated with pressing an aerosol canister",
+                  "explanation": "This describes a different device type."
                 },
                 {
                   "id": "D",
-                  "text": "Exhale forcefully into the mouthpiece before inhaling",
-                  "explanation": "Exhaling into the device is discouraged."
+                  "text": "A gentle tidal inhalation through a spacer after actuation",
+                  "explanation": "A spacer technique does not apply to this dry-powder device."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Use the specific dry-powder inhaler technique.",
               "sourceRefs": [
                 {
@@ -9522,30 +9522,30 @@
               "answerKey": "D"
             },
             {
-              "stem": "Which adverse-effect combination is relevant to excessive sodium bicarbonate exposure?",
+              "format": "single-best-answer",
+              "stem": "Which paired disturbance is a concern after excessive IV sodium bicarbonate?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Alkalemia and sodium/volume loading",
-                  "explanation": "These follow from excess buffer and sodium administration."
+                  "text": "Alkalemia with sodium/volume loading",
+                  "explanation": "Excess bicarbonate supplies alkali and sodium."
                 },
                 {
                   "id": "B",
-                  "text": "Acidemia and loss of administered sodium",
-                  "explanation": "This reverses the principal direction of effect."
+                  "text": "Acidemia with sodium depletion",
+                  "explanation": "This reverses both taught concerns."
                 },
                 {
                   "id": "C",
-                  "text": "Vitamin-K depletion and platelet blockade",
-                  "explanation": "These are antithrombotic mechanisms, not bicarbonate effects."
+                  "text": "Acidemia with sodium/volume loading",
+                  "explanation": "The sodium load is plausible, but added bicarbonate can cause alkalemia rather than the stated primary acidemia."
                 },
                 {
                   "id": "D",
-                  "text": "Bronchodilation and suppression of airway inflammation",
-                  "explanation": "These are respiratory drug effects."
+                  "text": "Alkalemia with sodium depletion",
+                  "explanation": "The alkali effect is plausible, but the sodium-containing treatment adds rather than removes sodium."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Excess bicarbonate can cause alkalemia and sodium/volume load.",
               "sourceRefs": [
                 {
@@ -9579,30 +9579,30 @@
               "answerKey": "A"
             },
             {
-              "stem": "Before sodium bicarbonate administration, which pair must be reconciled against the actual product and order?",
+              "format": "single-best-answer",
+              "stem": "A sodium bicarbonate order is written in mEq. Which calculation links the order to the actual container?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Tablet coating and dietary fiber grams",
-                  "explanation": "These do not determine an IV bicarbonate dose."
+                  "text": "Ordered mEq multiplied by the product’s mEq/mL",
+                  "explanation": "This does not yield the required volume."
                 },
                 {
                   "id": "B",
-                  "text": "Concentration and ordered mEq",
-                  "explanation": "Percentage, mL, and mEq cannot be treated as interchangeable labels."
+                  "text": "Ordered mEq divided by the product’s mEq/mL",
+                  "explanation": "This gives the ordered volume; concentration and units must be reconciled."
                 },
                 {
                   "id": "C",
-                  "text": "Inhaler actuation count and inspiratory flow",
-                  "explanation": "These refer to an inhaled device."
+                  "text": "Container volume alone regardless of concentration",
+                  "explanation": "Container volume is not the prescribed dose."
                 },
                 {
                   "id": "D",
-                  "text": "Sublingual dissolution time and tablet score",
-                  "explanation": "These do not establish the IV buffer preparation."
+                  "text": "Percentage alone without converting to the labeled units",
+                  "explanation": "The percentage must be related to the actual mEq/mL before calculating volume."
                 }
               ],
-              "format": "single-best-answer",
               "point": "Read concentration and ordered units from the actual emergency product.",
               "sourceRefs": [
                 {

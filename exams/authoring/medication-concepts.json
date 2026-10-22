@@ -2389,27 +2389,27 @@
     "anchor": "prevention|rapid.rescue|acute.*attack",
     "standard": null,
     "advanced": {
-      "stem": "A patient with sudden chest pain asks whether their maintenance isosorbide mononitrate tablet is the rapid-rescue treatment. Which distinction matters?",
+      "format": "single-best-answer",
+      "stem": "A patient with sudden chest pain asks to use a maintenance isosorbide mononitrate tablet as rescue. Which distinction matters?",
+      "correct": 0,
       "choices": [
         {
-          "text": "Maintenance prevention versus an authorized acute chest-pain plan",
-          "explanation": "The long-acting oral preparation does not replace urgent ACS assessment or prescribed rescue therapy."
+          "text": "Long-acting prevention versus the authorized acute chest-pain plan",
+          "explanation": "Maintenance oral mononitrate is not the rapid-rescue formulation taught here."
         },
         {
-          "text": "Antiplatelet therapy versus fibrinolytic therapy",
-          "explanation": "Isosorbide mononitrate is neither of these drug categories."
+          "text": "The trade name alone rather than its formulation and intended role",
+          "explanation": "The formulation and indication are essential; a familiar name does not establish rapid rescue."
         },
         {
-          "text": "Oral antibiotic therapy versus IV antibiotic therapy",
-          "explanation": "This does not describe a nitrate."
+          "text": "An identical nitrate class establishing an identical onset",
+          "explanation": "Shared class does not make maintenance and rescue products equivalent."
         },
         {
-          "text": "Rate control versus ventricular pacing",
-          "explanation": "This is not the preventive-versus-rescue distinction tested."
+          "text": "The tablet’s total milligrams establishing the speed of relief",
+          "explanation": "Dose size alone does not establish an appropriate rescue onset."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": false
   },
@@ -3826,27 +3826,27 @@
     "point": "Use labeled intermittent infusion for the stated metronidazole IV product.",
     "anchor": "infusion|bag|bottle|IV push",
     "standard": {
-      "stem": "Which administration matches the common IV metronidazole presentation in the material?",
+      "format": "single-best-answer",
+      "stem": "Which delivery pattern matches the common IV metronidazole bag described in the material?",
+      "correct": 0,
       "choices": [
         {
-          "text": "An intermittent infusion over the product-specified time",
-          "explanation": "The described presentation is not intended as a rapid IV push."
+          "text": "An intermittent infusion over its labeled time",
+          "explanation": "Use the product-specified intermittent infusion time."
         },
         {
-          "text": "A rapid IV push from the full infusion container",
-          "explanation": "This conflicts with the stated delivery method."
+          "text": "A rapid IV push using the full bag as the bolus",
+          "explanation": "An intermittent infusion bag is not a rapid-push dose."
         },
         {
-          "text": "A sublingual dose from the infusion container",
-          "explanation": "This is not the product’s route."
+          "text": "Uncontrolled gravity flow until the bag is empty",
+          "explanation": "The labeled infusion time must be respected."
         },
         {
-          "text": "An intramuscular dose from the infusion container",
-          "explanation": "An infusion presentation is not automatically an IM preparation."
+          "text": "A continuous day-long infusion using an intermittent-dose order",
+          "explanation": "A different delivery schedule requires a corresponding authorized regimen."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -4029,27 +4029,27 @@
     "point": "Distribute oral nystatin and retain local contact as directed.",
     "anchor": "shake|retain|mouth|swallow",
     "standard": {
-      "stem": "Which technique supports local oral contact with the nystatin suspension in the material?",
+      "format": "single-best-answer",
+      "stem": "Which technique best supports the intended oral contact of nystatin suspension?",
+      "correct": 0,
       "choices": [
         {
-          "text": "Measure, distribute around the mouth, and retain before swallowing",
-          "explanation": "Local contact is part of the taught administration technique."
+          "text": "Distribute around the mouth and retain before swallowing",
+          "explanation": "This increases contact with the oral lesions after measuring the dose."
         },
         {
-          "text": "Swallow immediately without oral distribution",
-          "explanation": "This reduces the intended mucosal contact."
+          "text": "Swallow the measured dose immediately without distribution",
+          "explanation": "This reduces intended oral contact time."
         },
         {
-          "text": "Apply the suspension to the IV cannula site",
-          "explanation": "This is not its oral local use."
+          "text": "Rinse it out immediately as if it were a cleaning mouthwash",
+          "explanation": "This does not follow the taught retain-then-swallow technique."
         },
         {
-          "text": "Place the measured suspension in a nebulizer",
-          "explanation": "This does not match the specified oral product."
+          "text": "Mix it into a full meal and consume it gradually",
+          "explanation": "This does not provide the directed oral distribution/contact."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -4261,27 +4261,27 @@
     "point": "Use the specific dry-powder inhaler technique.",
     "anchor": "Turbuhaler|forcefully|mouthpiece|inhale",
     "standard": {
-      "stem": "The prescribed Symbicort device is a Turbuhaler. Which inhalation technique matches the material?",
+      "format": "single-best-answer",
+      "stem": "Which inspiratory technique matches a Symbicort Turbuhaler dry-powder device?",
+      "correct": 0,
       "choices": [
         {
-          "text": "Inhale forcefully and deeply through the mouthpiece",
-          "explanation": "Dry-powder delivery depends on the specified inhalation technique."
+          "text": "A forceful, deep inhalation through the mouthpiece",
+          "explanation": "The powder device requires this inspiratory maneuver; do not exhale into it."
         },
         {
-          "text": "Exhale forcefully into the mouthpiece before inhaling",
-          "explanation": "Exhaling into the device is discouraged."
+          "text": "A slow inhalation coordinated with pressing an aerosol canister",
+          "explanation": "This describes a different device type."
         },
         {
-          "text": "Pour the powder into a nebulizer chamber",
-          "explanation": "A dry-powder device is not the same as a nebulizer solution."
+          "text": "A gentle tidal inhalation through a spacer after actuation",
+          "explanation": "A spacer technique does not apply to this dry-powder device."
         },
         {
-          "text": "Dissolve the powder for IV administration",
-          "explanation": "This is not an injectable product."
+          "text": "An exhalation into the loaded mouthpiece before inhaling",
+          "explanation": "Exhaling into the device can interfere with proper powder delivery."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -4841,27 +4841,27 @@
     "point": "Excess bicarbonate can cause alkalemia and sodium/volume load.",
     "anchor": "alkalemia|hypernatremia|sodium|volume",
     "standard": {
-      "stem": "Which adverse-effect combination is relevant to excessive sodium bicarbonate exposure?",
+      "format": "single-best-answer",
+      "stem": "Which paired disturbance is a concern after excessive IV sodium bicarbonate?",
+      "correct": 0,
       "choices": [
         {
-          "text": "Alkalemia and sodium/volume loading",
-          "explanation": "These follow from excess buffer and sodium administration."
+          "text": "Alkalemia with sodium/volume loading",
+          "explanation": "Excess bicarbonate supplies alkali and sodium."
         },
         {
-          "text": "Acidemia and loss of administered sodium",
-          "explanation": "This reverses the principal direction of effect."
+          "text": "Acidemia with sodium/volume loading",
+          "explanation": "The sodium load is plausible, but added bicarbonate can cause alkalemia rather than the stated primary acidemia."
         },
         {
-          "text": "Vitamin-K depletion and platelet blockade",
-          "explanation": "These are antithrombotic mechanisms, not bicarbonate effects."
+          "text": "Alkalemia with sodium depletion",
+          "explanation": "The alkali effect is plausible, but the sodium-containing treatment adds rather than removes sodium."
         },
         {
-          "text": "Bronchodilation and suppression of airway inflammation",
-          "explanation": "These are respiratory drug effects."
+          "text": "Acidemia with sodium depletion",
+          "explanation": "This reverses both taught concerns."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -4870,27 +4870,27 @@
     "point": "Read concentration and ordered units from the actual emergency product.",
     "anchor": "concentration|mEq|percentage|mL",
     "standard": {
-      "stem": "Before sodium bicarbonate administration, which pair must be reconciled against the actual product and order?",
+      "format": "single-best-answer",
+      "stem": "A sodium bicarbonate order is written in mEq. Which calculation links the order to the actual container?",
+      "correct": 0,
       "choices": [
         {
-          "text": "Concentration and ordered mEq",
-          "explanation": "Percentage, mL, and mEq cannot be treated as interchangeable labels."
+          "text": "Ordered mEq divided by the product’s mEq/mL",
+          "explanation": "This gives the ordered volume; concentration and units must be reconciled."
         },
         {
-          "text": "Tablet coating and dietary fiber grams",
-          "explanation": "These do not determine an IV bicarbonate dose."
+          "text": "Ordered mEq multiplied by the product’s mEq/mL",
+          "explanation": "This does not yield the required volume."
         },
         {
-          "text": "Inhaler actuation count and inspiratory flow",
-          "explanation": "These refer to an inhaled device."
+          "text": "Container volume alone regardless of concentration",
+          "explanation": "Container volume is not the prescribed dose."
         },
         {
-          "text": "Sublingual dissolution time and tablet score",
-          "explanation": "These do not establish the IV buffer preparation."
+          "text": "Percentage alone without converting to the labeled units",
+          "explanation": "The percentage must be related to the actual mEq/mL before calculating volume."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -4929,27 +4929,27 @@
     "anchor": "patent|extravasation|infiltration|site",
     "standard": null,
     "advanced": {
-      "stem": "During D50 administration, the cannula site becomes swollen and painful. Which risk requires immediate attention?",
+      "format": "single-best-answer",
+      "stem": "During D50, the cannula site becomes swollen and painful while consciousness has not yet improved. Which explanation needs immediate attention?",
+      "correct": 0,
       "choices": [
         {
           "text": "Extravasation with local tissue injury",
-          "explanation": "Hypertonic glucose can damage tissue outside the vein."
+          "explanation": "Concentrated dextrose is hypertonic and can injure tissue outside the vein."
         },
         {
-          "text": "Expected local glucose storage",
-          "explanation": "New swelling and pain should not be interpreted as a therapeutic depot."
+          "text": "Expected tissue storage of the administered glucose",
+          "explanation": "Swelling/pain is not an expected beneficial local glucose depot."
         },
         {
-          "text": "Isolated improvement in systemic hypoglycemia",
-          "explanation": "A systemic response does not explain the local complication."
+          "text": "A systemic glucose rise without a local complication",
+          "explanation": "Systemic response cannot explain away new site findings."
         },
         {
-          "text": "An expected sign of increased venous patency",
-          "explanation": "Swelling and pain argue against secure intravascular delivery."
+          "text": "Improved flow through the peripheral vein",
+          "explanation": "Pain and swelling suggest compromised access rather than restored patency."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": true
   },
@@ -4958,27 +4958,27 @@
     "anchor": "extravasation|IV.*secure|secure.*IV",
     "standard": null,
     "advanced": {
-      "stem": "During IV calcium gluconate, swelling and pain develop at the site. What is the main local concern?",
+      "format": "single-best-answer",
+      "stem": "Swelling and pain appear at the cannula during IV calcium gluconate. Which explanation needs immediate attention?",
+      "correct": 0,
       "choices": [
         {
           "text": "Extravasation-related tissue injury",
-          "explanation": "Secure IV access is essential for this treatment."
+          "explanation": "IV calcium outside the vein can cause important tissue injury."
         },
         {
-          "text": "Expected formation of a calcium depot",
-          "explanation": "A new painful swelling is not the intended intravascular response."
+          "text": "A harmless calcium depot at the intended injection site",
+          "explanation": "An IV medicine should not form a local extravascular depot."
         },
         {
-          "text": "An isolated correction of the serum calcium",
-          "explanation": "A serum effect does not establish local site safety."
+          "text": "A systemic calcium correction without a local complication",
+          "explanation": "Systemic benefit would not establish that the IV site is safe."
         },
         {
-          "text": "Improved peripheral venous flow",
-          "explanation": "The site findings suggest a complication rather than improved patency."
+          "text": "Improved venous patency from the infusion",
+          "explanation": "Pain and swelling suggest impaired access rather than improved flow."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": true
   },
@@ -4986,27 +4986,27 @@
     "point": "Read the actual dextrose concentration, grams, and volume.",
     "anchor": "grams|concentration|volume|D50",
     "standard": {
+      "format": "single-best-answer",
       "stem": "What does a 50% w/v glucose solution contain?",
+      "correct": 0,
       "choices": [
         {
           "text": "50 g per 100 mL",
-          "explanation": "A 50% w/v concentration is 50 grams in each 100 mL of solution."
+          "explanation": "50% w/v means 50 grams per 100 mL."
+        },
+        {
+          "text": "5 g per 100 mL",
+          "explanation": "This corresponds to 5% w/v."
         },
         {
           "text": "50 mg per 100 mL",
-          "explanation": "This is a thousand-fold lower mass than 50 grams."
+          "explanation": "This is a thousandfold smaller mass than 50 g."
         },
         {
-          "text": "50 g per 1 mL",
-          "explanation": "This is one hundred times the stated mass per mL."
-        },
-        {
-          "text": "50 mg per 1 mL",
-          "explanation": "This equals 5 g per 100 mL, not 50 g per 100 mL."
+          "text": "50 g per 1000 mL",
+          "explanation": "This corresponds to 5% w/v."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -5044,27 +5044,27 @@
     "point": "Systemic glucocorticoids can increase glucose.",
     "anchor": "glucose",
     "standard": {
-      "stem": "Which metabolic trend is especially relevant during systemic {drug} therapy?",
+      "format": "single-best-answer",
+      "stem": "Which glucose trend should be anticipated during systemic {drug} treatment?",
+      "correct": 0,
       "choices": [
         {
-          "text": "Increasing blood glucose",
-          "explanation": "Glucocorticoids can impair glucose control."
+          "text": "Higher glucose, possibly increasing correction needs",
+          "explanation": "Glucocorticoids can raise glucose; use the authorized monitoring/correction plan."
         },
         {
-          "text": "Decreasing INR as the intended effect",
-          "explanation": "Anticoagulation intensity is not the intended glucocorticoid action."
+          "text": "Lower glucose, reliably reducing correction needs",
+          "explanation": "This reverses the usual corticosteroid concern."
         },
         {
-          "text": "Decreasing serum glucose as the intended effect",
-          "explanation": "Glucocorticoids are not insulin-like glucose-lowering treatment."
+          "text": "Unchanged glucose despite changes in steroid exposure",
+          "explanation": "Steroid treatment can alter glucose control."
         },
         {
-          "text": "Increasing cardiac capture threshold as the intended effect",
-          "explanation": "This is not the metabolic effect being tested."
+          "text": "Lower glucose whenever BP rises",
+          "explanation": "BP does not predict a glucose-lowering effect from steroids."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -5160,27 +5160,27 @@
     "point": "Systemic steroids can affect mood and sleep.",
     "anchor": "mood|sleep",
     "standard": {
-      "stem": "Which new symptom during prednisolone treatment is a recognized monitoring concern?",
+      "format": "single-best-answer",
+      "stem": "Which new symptom is a recognized monitoring issue during prednisolone treatment?",
+      "correct": 0,
       "choices": [
         {
-          "text": "Mood or sleep disturbance",
-          "explanation": "Systemic corticosteroids can affect mood and sleep."
+          "text": "Insomnia or marked mood change",
+          "explanation": "Systemic steroids can affect mood and sleep."
         },
         {
-          "text": "New tendon rupture as the intended response",
-          "explanation": "That is neither an intended nor characteristic steroid response in this material."
+          "text": "Sustained dystonic eye deviation",
+          "explanation": "This more specifically suggests an extrapyramidal drug reaction."
         },
         {
-          "text": "New platelet inhibition as the intended response",
-          "explanation": "Prednisolone is not an antiplatelet drug."
+          "text": "Tinnitus with hearing loss",
+          "explanation": "This more specifically raises ototoxicity concerns with other medicines."
         },
         {
-          "text": "New oral anesthetic numbness as the intended response",
-          "explanation": "It is not a local anesthetic."
+          "text": "New tendon pain during activity",
+          "explanation": "This is a prominent warning with fluoroquinolones rather than the mood/sleep issue asked here."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "advanced": null,
     "criticalForSafety": false
@@ -5382,27 +5382,27 @@
     "anchor": "reflex|respiratory|toxicity",
     "standard": null,
     "advanced": {
-      "stem": "During repeated magnesium treatment, reflexes diminish and respiratory effort becomes depressed. Which complication is most concerning?",
+      "format": "single-best-answer",
+      "stem": "During repeated IV magnesium, reflexes diminish and breathing becomes depressed. Which explanation best unifies the findings?",
+      "correct": 0,
       "choices": [
         {
           "text": "Magnesium toxicity",
-          "explanation": "Reflex loss and respiratory depression are important toxicity findings."
+          "explanation": "Excess magnesium depresses neuromuscular function and respiration."
         },
         {
-          "text": "Therapeutic beta2 stimulation",
-          "explanation": "This does not explain the characteristic toxic pattern."
+          "text": "Beta2-agonist toxicity",
+          "explanation": "Tremor and tachycardia fit beta2 stimulation better than reflex loss and respiratory depression."
         },
         {
-          "text": "Warfarin reversal",
-          "explanation": "Coagulation-factor restoration does not explain these findings."
+          "text": "Isolated hypokalemia",
+          "explanation": "Hypokalemia can cause weakness and arrhythmia but does not best explain this pattern during magnesium exposure."
         },
         {
-          "text": "An intended improvement in ventilatory drive",
-          "explanation": "Breathing is worsening rather than improving."
+          "text": "Isolated vasodilator intolerance",
+          "explanation": "Hypotension or dizziness alone would not explain the combined reflex and respiratory findings."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": true
   },
@@ -5440,27 +5440,27 @@
     "anchor": "visual|nausea|vomiting|ectopy|toxicity",
     "standard": null,
     "advanced": {
-      "stem": "A patient on digoxin develops nausea, visual disturbance, and new ventricular ectopy. Which explanation should be investigated?",
+      "format": "single-best-answer",
+      "stem": "A patient taking digoxin develops nausea, visual disturbance, and new ventricular ectopy. Which explanation best unifies the findings?",
+      "correct": 0,
       "choices": [
         {
           "text": "Digoxin toxicity",
-          "explanation": "The combined gastrointestinal, visual, and rhythm findings support this concern."
+          "explanation": "GI, visual, and rhythm changes are a characteristic taught toxicity cluster."
         },
         {
-          "text": "Isolated oral candidiasis",
-          "explanation": "This does not explain the visual and cardiac findings."
+          "text": "Isolated volume depletion",
+          "explanation": "Volume loss can affect renal clearance but alone does not best account for the complete cluster."
         },
         {
-          "text": "An intended rapid diuretic response",
-          "explanation": "Digoxin is not a loop diuretic."
+          "text": "Isolated vestibular disease",
+          "explanation": "This could explain nausea but not the ventricular ectopy and drug-related visual pattern."
         },
         {
-          "text": "Expected antimuscarinic bladder relaxation",
-          "explanation": "This does not account for the described pattern."
+          "text": "Uncomplicated gastric irritation",
+          "explanation": "This does not explain the visual and rhythm changes."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": false
   },
@@ -5527,27 +5527,27 @@
     "anchor": "toxicity|tachycardia|seizure|arrhythmia",
     "standard": null,
     "advanced": {
-      "stem": "During aminophylline treatment, nausea and tremor progress to persistent tachycardia and agitation. What should be considered?",
+      "format": "single-best-answer",
+      "stem": "During aminophylline, nausea and tremor progress to persistent tachycardia and agitation. Which explanation best fits?",
+      "correct": 0,
       "choices": [
         {
           "text": "Theophylline-related toxicity",
-          "explanation": "Early toxicity can progress to seizures and dangerous arrhythmias."
+          "explanation": "The progression involves the taught GI, neurological, and cardiac toxicity findings."
         },
         {
-          "text": "Expected proof of adequate bronchodilation alone",
-          "explanation": "The adverse cluster is not simply evidence of therapeutic benefit."
+          "text": "Opioid-related respiratory depression",
+          "explanation": "That more typically produces depressed consciousness and breathing rather than this stimulant pattern."
         },
         {
-          "text": "A routine antimuscarinic response",
-          "explanation": "Aminophylline is a methylxanthine, not an inhaled antimuscarinic."
+          "text": "Beta-blocker-related conduction suppression",
+          "explanation": "That does not best fit increasing tachycardia and tremor."
         },
         {
-          "text": "A therapeutic anticoagulation response",
-          "explanation": "These medicines do not use that mechanism."
+          "text": "Uncomplicated improvement in bronchospasm",
+          "explanation": "Improved breathing would not explain the progressive systemic toxicity cluster."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": false
   },
@@ -5643,27 +5643,27 @@
     "anchor": "overdose|QRS|seizure",
     "standard": null,
     "advanced": {
-      "stem": "After suspected amitriptyline overdose, which cluster is especially concerning?",
+      "format": "single-best-answer",
+      "stem": "After suspected amitriptyline overdose, which cluster most strongly supports serious systemic toxicity?",
+      "correct": 0,
       "choices": [
         {
           "text": "QRS widening, hypotension, and seizures",
-          "explanation": "This matches the serious cardiac and neurological toxicity described."
+          "explanation": "TCA overdose can produce this cardiac and neurological toxicity."
         },
         {
-          "text": "Isolated constipation with normal vital signs",
-          "explanation": "This is not the severe overdose pattern."
+          "text": "Dry mouth and constipation with stable observations",
+          "explanation": "These antimuscarinic effects can occur but do not establish the same severe systemic pattern."
         },
         {
-          "text": "Isolated mild dry mouth with unchanged alertness",
-          "explanation": "This is less specific for life-threatening overdose."
+          "text": "Postural dizziness without ECG or consciousness change",
+          "explanation": "This is less specific for severe overdose than the complete dangerous cluster."
         },
         {
-          "text": "Improved mood with stable ECG and BP",
-          "explanation": "This does not identify the toxic deterioration."
+          "text": "Mild sleepiness with a stable ECG and BP",
+          "explanation": "Sedation requires assessment but this cluster is less supportive of the severe systemic toxicity described."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": true
   },
@@ -5817,27 +5817,27 @@
     "anchor": "headache|neurological worsening|neurological|brain imaging",
     "standard": null,
     "advanced": {
-      "stem": "During alteplase infusion, a patient develops a sudden severe headache, vomiting, and neurological worsening. Which complication requires urgent evaluation?",
+      "format": "single-best-answer",
+      "stem": "During alteplase, sudden severe headache, vomiting, and neurological worsening occur. Which complication is the priority to exclude?",
+      "correct": 0,
       "choices": [
         {
           "text": "Intracranial hemorrhage",
-          "explanation": "The pattern during thrombolysis requires immediate escalation and emergency evaluation."
+          "explanation": "This is a major thrombolysis complication requiring immediate escalation and emergency assessment."
         },
         {
-          "text": "An expected sign of completed fibrinolysis",
-          "explanation": "Deterioration is not proof of successful reperfusion."
+          "text": "A routine migraine episode",
+          "explanation": "The treatment context and acute neurological change require urgent exclusion of hemorrhage rather than assuming a benign headache."
         },
         {
-          "text": "A routine minor infusion-site reaction",
-          "explanation": "The neurological change is systemic and potentially life-threatening."
+          "text": "An isolated local infusion reaction",
+          "explanation": "A local site problem does not explain this neurological cluster."
         },
         {
-          "text": "An expected effect of oral mineral chelation",
-          "explanation": "This is unrelated to the treatment and presentation."
+          "text": "An uncomplicated therapeutic response",
+          "explanation": "Neurological deterioration is not a sign of successful treatment."
         }
-      ],
-      "correct": 0,
-      "format": "single-best-answer"
+      ]
     },
     "criticalForSafety": true
   },
