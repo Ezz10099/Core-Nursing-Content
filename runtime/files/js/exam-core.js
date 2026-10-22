@@ -76,7 +76,20 @@
     if(stage==='standard'){
       // Adding bank questions must not replace the agreed same-form retest.
       // A changed teaching source still requires a newly bound form.
-      if(record.standardForm&&record.standardSourceKey===sourceKey){form=record.standardForm;formBankVersion=record.standardBankVersion}
+      if(record.standardForm&&record.standardSourceKey===sourceKey){
+        const latest=new Map(form.questions.map(q=>[q.id,q]));
+        form=record.standardForm;formBankVersion=record.standardBankVersion;
+        for(const q of form.questions){
+          const current=latest.get(q.id);
+          // Apply prose fixes only when the source and entire scoring contract
+          // match. Keep the saved questions, choice order, keys and provenance.
+          const contract=x=>JSON.stringify([x.format,x.answerKey,x.answer,x.acceptedAnswers,x.unit,x.tolerance,x.points,x.criticalForSafety,x.learningPointIds,x.choices?.map(c=>[c.id,c.text])]);
+          if(!current||contract(q)!==contract(current))continue;
+          q.stem=current.stem;
+          if(q.choices)q.choices.forEach((c,i)=>{c.explanation=current.choices[i].explanation});
+          if(current.explanation!==undefined)q.explanation=current.explanation;
+        }
+      }
       else{record.standardForm=clone(form);record.standardSourceKey=sourceKey;record.standardBankVersion=bank.bankVersion}
     }
     const followups={};

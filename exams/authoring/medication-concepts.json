@@ -109,7 +109,7 @@
       "choices": [
         {
           "text": "Rising serum potassium",
-          "explanation": "The taught treatment can increase potassium or reduce its loss."
+          "explanation": "The treatment can increase potassium or reduce its loss."
         },
         {
           "text": "Falling serum potassium",
@@ -744,7 +744,7 @@
       "choices": [
         {
           "text": "Hyperreflexia",
-          "explanation": "Neuromuscular excitation supports the syndrome described in the material."
+          "explanation": "Neuromuscular excitation supports the syndrome described in this case."
         },
         {
           "text": "Markedly depressed respiratory effort",
@@ -870,7 +870,7 @@
     "point": "Some treatments or their accumulation can provoke seizures.",
     "anchor": "seizure|neurologic",
     "standard": {
-      "stem": "The material identifies neurotoxicity with {drug}. Which new event needs the most urgent assessment?",
+      "stem": "Which new neurological event during {drug} therapy needs the most urgent assessment?",
       "choices": [
         {
           "text": "A new generalized seizure",
@@ -1027,7 +1027,7 @@
       "choices": [
         {
           "text": "Hyponatremia",
-          "explanation": "The material identifies low sodium as a potential cause of neurological symptoms."
+          "explanation": "Low sodium can cause neurological symptoms."
         },
         {
           "text": "Hypercalcemia",
@@ -1050,7 +1050,7 @@
       "choices": [
         {
           "text": "A compatible neurological change and a relevant sodium trend",
-          "explanation": "The symptoms and taught adverse effect support assessment together."
+          "explanation": "The symptoms and adverse effect support assessment together."
         },
         {
           "text": "A compatible neurological change and a normal sodium trend",
@@ -1125,7 +1125,7 @@
     "point": "Stimulating GI motility may be unsafe in mechanical obstruction.",
     "anchor": "obstruction|perforation|ileus",
     "standard": {
-      "stem": "Which gastrointestinal history most directly requires clarification before {drug} under the cautions in the material?",
+      "stem": "Which gastrointestinal history most directly requires clarification before {drug}?",
       "choices": [
         {
           "text": "Mechanical bowel obstruction",
@@ -1490,7 +1490,7 @@
     "anchor": "concurrent|NSAID|lithium|renin",
     "standard": null,
     "advanced": {
-      "stem": "A patient on {drug} has newly added potassium supplements and an NSAID. Which review is most directly supported by the material?",
+      "stem": "A patient on {drug} has newly added potassium supplements and an NSAID. Which review best addresses the interaction risks?",
       "choices": [
         {
           "text": "Potassium, renal function, and the interacting medicines",
@@ -1576,7 +1576,7 @@
     "point": "Distinguish plain Trufen from Trufen Extra by its added paracetamol.",
     "anchor": "Trufen Extra|combination",
     "standard": {
-      "stem": "What distinguishes Trufen Extra from plain Trufen in the taught material?",
+      "stem": "What distinguishes Trufen Extra from plain Trufen?",
       "choices": [
         {
           "text": "It also contains paracetamol",
@@ -1584,7 +1584,7 @@
         },
         {
           "text": "It replaces ibuprofen with tramadol",
-          "explanation": "That is not the combination identified in the material."
+          "explanation": "This is not the combination associated with this interaction."
         },
         {
           "text": "It replaces ibuprofen with prednisolone",
@@ -1904,7 +1904,7 @@
         },
         {
           "text": "The route changes from oral to IV for encephalopathy",
-          "explanation": "The taught product is oral; this is not the relevant distinction."
+          "explanation": "The product is oral; this is not the relevant distinction."
         },
         {
           "text": "The drug changes from a laxative to a systemic antibiotic",
@@ -2044,7 +2044,7 @@
       "choices": [
         {
           "text": "Peripheral neuropathy",
-          "explanation": "New sensory symptoms can be a treatment-related warning in this material."
+          "explanation": "New sensory symptoms can be a treatment-related warning."
         },
         {
           "text": "Acute dystonia",
@@ -2256,7 +2256,7 @@
         },
         {
           "text": "Oral versus parenteral administration of warfarin maintenance",
-          "explanation": "The taught maintenance is oral and the target is not established this way."
+          "explanation": "The maintenance is oral and the target is not established this way."
         },
         {
           "text": "Presence versus absence of a pre-dose meal",
@@ -2395,7 +2395,7 @@
       "choices": [
         {
           "text": "Long-acting prevention versus the authorized acute chest-pain plan",
-          "explanation": "Maintenance oral mononitrate is not the rapid-rescue formulation taught here."
+          "explanation": "Maintenance oral mononitrate is not a rapid-rescue formulation."
         },
         {
           "text": "The trade name alone rather than its formulation and intended role",
@@ -2505,7 +2505,7 @@
     "anchor": "never IM|not.*IM|SC|intramuscular",
     "standard": {
       "format": "short-answer",
-      "stem": "Which injection route is explicitly prohibited for {drug} in this material? Write the route name or abbreviation.",
+      "stem": "Which injection route is explicitly prohibited for {drug}? Write the route name or abbreviation.",
       "acceptedAnswers": [
         "IM",
         "intramuscular",
@@ -2521,7 +2521,7 @@
     "point": "Use the manufacturer’s standard prefilled-syringe technique.",
     "anchor": "air bubble|rub|abdominal",
     "standard": {
-      "stem": "For a standard manufacturer prefilled enoxaparin syringe, which technique matches the material?",
+      "stem": "Which technique is appropriate for a standard manufacturer prefilled enoxaparin syringe?",
       "choices": [
         {
           "text": "Retain the air bubble; do not rub afterward",
@@ -2666,7 +2666,7 @@
     "point": "Low-dose or baby aspirin is aspirin at a smaller dose.",
     "anchor": "baby aspirin|same drug|low.dose",
     "standard": {
-      "stem": "What does the term baby aspirin mean in this material?",
+      "stem": "What does the term baby aspirin mean?",
       "choices": [
         {
           "text": "Low-dose aspirin used mainly for its antiplatelet effect",
@@ -2915,7 +2915,7 @@
         },
         {
           "text": "AT1 blockade directly activates airway mast cells",
-          "explanation": "This is not the mechanism described in the material."
+          "explanation": "This does not explain the drug’s mechanism."
         }
       ],
       "correct": 0,
@@ -2931,7 +2931,7 @@
       "choices": [
         {
           "text": "Active asthma or bronchospasm",
-          "explanation": "The material identifies this respiratory concern."
+          "explanation": "This is a respiratory safety concern."
         },
         {
           "text": "Previously controlled constipation",
@@ -2957,7 +2957,7 @@
     "anchor": "gradual|emergency|chronic",
     "standard": null,
     "advanced": {
-      "stem": "Amlodipine is prescribed for chronic hypertension. Which interpretation of a high acute BP reading best matches its taught role?",
+      "stem": "Amlodipine is prescribed for chronic hypertension. How should a high acute BP reading be interpreted in relation to this medicine?",
       "choices": [
         {
           "text": "Acute assessment and the authorized emergency plan remain necessary",
@@ -2989,7 +2989,7 @@
       "choices": [
         {
           "text": "Constipation",
-          "explanation": "It is a recognized adverse effect in the material."
+          "explanation": "It is a recognized adverse effect."
         },
         {
           "text": "Profuse osmotic diarrhea as the intended response",
@@ -3250,7 +3250,7 @@
       "choices": [
         {
           "text": "Genital irritation or urinary symptoms",
-          "explanation": "The material highlights infection-related symptoms in these areas."
+          "explanation": "Infection-related symptoms in these areas require assessment."
         },
         {
           "text": "New tendon pain during walking",
@@ -3407,7 +3407,7 @@
         },
         {
           "text": "Correction and IV insulin use an interchangeable unmonitored bolus",
-          "explanation": "The material distinguishes rather than merges these delivery plans."
+          "explanation": "These delivery plans use different formulations and administration methods."
         }
       ],
       "correct": 0,
@@ -3478,7 +3478,7 @@
     "point": "Use controlled, product-appropriate IV infusion rather than an improvised rapid bolus.",
     "anchor": "continuous|infusion pump|IV push",
     "standard": {
-      "stem": "Which feature is required for the IV delivery of {drug} described in this material?",
+      "stem": "Which feature is required for safe IV administration of {drug}?",
       "choices": [
         {
           "text": "Controlled infusion using the product-specific preparation and order",
@@ -3652,7 +3652,7 @@
     "point": "Atropine for symptomatic bradycardia is a protocol-directed bolus.",
     "anchor": "bolus|IV/IO|continuous",
     "standard": {
-      "stem": "Which administration pattern matches atropine in the symptomatic-bradycardia material?",
+      "stem": "How is atropine administered for symptomatic bradycardia?",
       "choices": [
         {
           "text": "A protocol-directed IV/IO bolus",
@@ -3660,7 +3660,7 @@
         },
         {
           "text": "A routine continuous maintenance infusion",
-          "explanation": "This is not the taught bradycardia pattern."
+          "explanation": "This is not the bradycardia pattern."
         },
         {
           "text": "A routine nebulized dose",
@@ -3743,7 +3743,7 @@
       "choices": [
         {
           "text": "Persistent diarrhea",
-          "explanation": "The material highlights this symptom during prolonged treatment."
+          "explanation": "This symptom can indicate an adverse effect during prolonged treatment."
         },
         {
           "text": "An unchanged normal bowel pattern",
@@ -3827,7 +3827,7 @@
     "anchor": "infusion|bag|bottle|IV push",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which delivery pattern matches the common IV metronidazole bag described in the material?",
+      "stem": "How should a ready-to-use IV metronidazole bag be administered?",
       "correct": 0,
       "choices": [
         {
@@ -3867,7 +3867,7 @@
         },
         {
           "text": "Convert the entire bag to a rapid IV push",
-          "explanation": "The material specifies infusion rather than push."
+          "explanation": "This formulation is administered by infusion rather than IV push."
         },
         {
           "text": "Use the oral dose instructions to set the infusion rate",
@@ -4043,7 +4043,7 @@
         },
         {
           "text": "Rinse it out immediately as if it were a cleaning mouthwash",
-          "explanation": "This does not follow the taught retain-then-swallow technique."
+          "explanation": "This does not follow the retain-then-swallow technique."
         },
         {
           "text": "Mix it into a full meal and consume it gradually",
@@ -4095,7 +4095,7 @@
         },
         {
           "text": "On an empty stomach before breakfast",
-          "explanation": "This is not the taught way to reduce stomach upset."
+          "explanation": "This is not the way to reduce stomach upset."
         },
         {
           "text": "Separated from all fluid for two hours",
@@ -4124,7 +4124,7 @@
         },
         {
           "text": "AV block and recent myocardial infarction",
-          "explanation": "These are central concerns for other cardiac medicines, not the pair taught here."
+          "explanation": "These are central concerns for other cardiac medicines, not the relevant pair."
         },
         {
           "text": "Tendon rupture and peripheral neuropathy",
@@ -4203,7 +4203,7 @@
     "point": "Distinguish the two valsartan combination products.",
     "anchor": "amlodipine|hydrochlorothiazide|combination",
     "standard": {
-      "stem": "Which pairing correctly distinguishes the two valsartan combinations in this material?",
+      "stem": "Which pairing correctly identifies the components of Valzadepine and Valzan HCT?",
       "choices": [
         {
           "text": "Valzadepine: amlodipine; Valzan HCT: hydrochlorothiazide",
@@ -4381,7 +4381,7 @@
       "choices": [
         {
           "text": "Avoid directing the mist into the eyes",
-          "explanation": "The material identifies ocular exposure as a safety concern."
+          "explanation": "Ocular exposure is a safety concern."
         },
         {
           "text": "Direct the mist into the eyes to improve absorption",
@@ -4423,7 +4423,7 @@
         },
         {
           "text": "A long infusion is required for the drug to accumulate in the AV node",
-          "explanation": "This is opposite to the taught delivery principle."
+          "explanation": "This is opposite to the delivery principle."
         }
       ],
       "correct": 0,
@@ -4523,7 +4523,7 @@
     "anchor": "cardiogenic|overt HF|AV block|bradycardia",
     "standard": null,
     "advanced": {
-      "stem": "Which presentation most directly raises concern before labetalol in the material?",
+      "stem": "Which presentation most directly raises concern before labetalol?",
       "choices": [
         {
           "text": "Marked bradycardia with cardiogenic shock",
@@ -4655,7 +4655,7 @@
         },
         {
           "text": "Direct stimulation of GABA-A receptors by a new metabolite",
-          "explanation": "This is not the taught pethidine toxicity mechanism."
+          "explanation": "This is not the pethidine toxicity mechanism."
         }
       ],
       "correct": 0,
@@ -4859,7 +4859,7 @@
         },
         {
           "text": "Acidemia with sodium depletion",
-          "explanation": "This reverses both taught concerns."
+          "explanation": "This reverses both concerns."
         }
       ]
     },
@@ -4900,7 +4900,7 @@
     "anchor": "reflex|tachycardia|HR",
     "standard": null,
     "advanced": {
-      "stem": "After hydralazine, BP falls and HR rises. Which mechanism best fits the taught effect?",
+      "stem": "After hydralazine, BP falls and HR rises. Which mechanism best fits the effect?",
       "choices": [
         {
           "text": "Reflex tachycardia after arterial vasodilation",
@@ -5119,7 +5119,7 @@
         },
         {
           "text": "The drug permanently blocks renal sodium filtration",
-          "explanation": "This is not the taught withdrawal hazard."
+          "explanation": "This is not the withdrawal hazard."
         }
       ],
       "correct": 0,
@@ -5194,7 +5194,7 @@
       "choices": [
         {
           "text": "Gastrointestinal injury and bleeding",
-          "explanation": "The material identifies increased GI concern with this combination."
+          "explanation": "This combination increases GI risk."
         },
         {
           "text": "Opposing glucose-replacement effects",
@@ -5306,7 +5306,7 @@
     "anchor": "bicarbonate|precipitation|mix",
     "standard": {
       "format": "short-answer",
-      "stem": "Which emergency alkalinizing solution has the specifically taught precipitation risk when directly mixed with IV calcium? Write the solution name.",
+      "stem": "Which emergency alkalinizing solution can precipitate when directly mixed with IV calcium? Write the solution name.",
       "acceptedAnswers": [
         "sodium bicarbonate",
         "bicarbonate",
@@ -5353,15 +5353,15 @@
     "anchor": "torsades|long.QT|polymorphic",
     "standard": null,
     "advanced": {
-      "stem": "Which rhythm context most specifically supports the magnesium role taught in this material?",
+      "stem": "Which rhythm most specifically supports the use of magnesium sulfate?",
       "choices": [
         {
           "text": "Recurrent polymorphic VT with prolonged QT",
-          "explanation": "The lesson highlights magnesium in long-QT torsades."
+          "explanation": "Magnesium is used for torsades associated with a prolonged QT interval."
         },
         {
           "text": "Regular narrow-complex tachycardia with preserved perfusion",
-          "explanation": "This does not identify the taught torsades indication."
+          "explanation": "This does not identify the torsades indication."
         },
         {
           "text": "Sinus bradycardia with hypotension and confusion",
@@ -5446,7 +5446,7 @@
       "choices": [
         {
           "text": "Digoxin toxicity",
-          "explanation": "GI, visual, and rhythm changes are a characteristic taught toxicity cluster."
+          "explanation": "GI, visual, and rhythm changes are a characteristic toxicity cluster."
         },
         {
           "text": "Isolated volume depletion",
@@ -5498,11 +5498,11 @@
     "anchor": "pre.excited",
     "standard": null,
     "advanced": {
-      "stem": "Which rhythm context is specifically identified as unsuitable for digoxin in the material?",
+      "stem": "In which rhythm should digoxin be avoided?",
       "choices": [
         {
           "text": "Pre-excited AF/flutter",
-          "explanation": "The material explicitly warns against this use."
+          "explanation": "This use is unsafe in this clinical context."
         },
         {
           "text": "Selected AF without pre-excitation under an authorized plan",
@@ -5533,7 +5533,7 @@
       "choices": [
         {
           "text": "Theophylline-related toxicity",
-          "explanation": "The progression involves the taught GI, neurological, and cardiac toxicity findings."
+          "explanation": "The progression involves the GI, neurological, and cardiac toxicity findings."
         },
         {
           "text": "Opioid-related respiratory depression",
@@ -5588,7 +5588,7 @@
       "choices": [
         {
           "text": "New suicidal thinking or marked worsening mood",
-          "explanation": "The material highlights this concern, particularly after initiation or dose changes."
+          "explanation": "This risk is particularly important after initiation or dose changes."
         },
         {
           "text": "Improved sleep with stable mood",
@@ -5758,7 +5758,7 @@
     "point": "Excess fat-soluble vitamins can accumulate.",
     "anchor": "fat.soluble|A, D|accumulate",
     "standard": {
-      "stem": "Which group in an excessive supplement regimen raises the accumulation concern identified in the material?",
+      "stem": "Which vitamin group is most likely to accumulate with excessive supplementation?",
       "choices": [
         {
           "text": "Vitamins A, D, E, and K",
@@ -5949,7 +5949,7 @@
         },
         {
           "text": "Change to fasting doses; wheeze indicates vestibular recovery",
-          "explanation": "Fasting is not the taught way to reduce stomach upset, and wheeze is not evidence of vestibular response."
+          "explanation": "Fasting is not the way to reduce stomach upset, and wheeze is not evidence of vestibular response."
         }
       ],
       "correct": 0,
@@ -5995,7 +5995,7 @@
       "choices": [
         {
           "text": "INR/bleeding assessment and possible peripheral neuropathy",
-          "explanation": "The two findings connect to different taught metronidazole safety issues."
+          "explanation": "The two findings connect to different metronidazole safety issues."
         },
         {
           "text": "INR alone, treating the tingling as a measure of anticoagulation",
@@ -6019,7 +6019,7 @@
     "point": "Prior ACE-inhibitor angioedema makes repeat ACE exposure unsafe.",
     "anchor": "previous.*angioedema|ACE.inhibitor angioedema",
     "standard": {
-      "stem": "Which previous reaction is a contraindication to enalapril in this material?",
+      "stem": "Which previous reaction is a contraindication to enalapril?",
       "choices": [
         {
           "text": "ACE-inhibitor angioedema",
@@ -6152,7 +6152,7 @@
         },
         {
           "text": "Ataxia proves insufficient anticonvulsant exposure",
-          "explanation": "Ataxia is a taught toxicity signal, not proof of underdosing."
+          "explanation": "Ataxia is a toxicity signal, not proof of underdosing."
         }
       ],
       "correct": 0,
@@ -6165,11 +6165,11 @@
     "anchor": "6 mg",
     "standard": {
       "format": "numeric-entry",
-      "stem": "In the adult AHA sequence quoted in this lesson, what is the first adenosine dose? Enter mg.",
+      "stem": "For an adult with stable, regular narrow-complex tachycardia, what is the first adenosine dose in the AHA algorithm? Enter mg.",
       "answer": 6,
       "unit": "mg",
       "tolerance": 0,
-      "explanation": "The taught adult sequence begins with 6 mg rapid IV followed by a rapid flush."
+      "explanation": "The adult sequence begins with 6 mg rapid IV followed by a rapid flush."
     },
     "advanced": null,
     "criticalForSafety": false
@@ -6198,7 +6198,7 @@
       "answer": 90,
       "unit": "mg",
       "tolerance": 0,
-      "explanation": "110 × 0.9 = 99 mg before the cap; the taught maximum limits the total to 90 mg."
+      "explanation": "110 × 0.9 = 99 mg before the cap; the maximum limits the total to 90 mg."
     },
     "criticalForSafety": false
   },
@@ -6207,11 +6207,11 @@
     "anchor": "10%",
     "standard": {
       "format": "numeric-entry",
-      "stem": "For the stroke regimen taught here, what percentage of the total alteplase dose is the initial IV bolus?",
+      "stem": "For acute ischemic stroke treated with IV alteplase, what percentage of the total dose is given as the initial bolus?",
       "answer": 10,
       "unit": "%",
       "tolerance": 0,
-      "explanation": "The taught regimen gives 10% initially and the remainder by infusion."
+      "explanation": "The regimen gives 10% initially and the remainder by infusion."
     },
     "advanced": null,
     "criticalForSafety": false
@@ -6221,7 +6221,7 @@
     "anchor": "60 minutes",
     "standard": {
       "format": "numeric-entry",
-      "stem": "In the taught stroke regimen, over how many minutes is the remainder infused after the initial bolus?",
+      "stem": "For acute ischemic stroke treated with IV alteplase, over how many minutes is the remainder infused after the initial bolus?",
       "answer": 60,
       "unit": "minutes",
       "tolerance": 0,
@@ -6235,11 +6235,11 @@
     "anchor": "185/110|180/105",
     "standard": null,
     "advanced": {
-      "stem": "Which BP pair matches the stroke protocol limits quoted in the material?",
+      "stem": "Which BP limits apply immediately before and during the first 24 hours after IV alteplase for acute ischemic stroke?",
       "choices": [
         {
           "text": "Before: <185/110; afterward: ≤180/105 mm Hg",
-          "explanation": "These are the taught pre- and post-treatment limits."
+          "explanation": "These are the pre- and post-treatment limits."
         },
         {
           "text": "Before: <180/105; afterward: ≤185/110 mm Hg",
@@ -6247,11 +6247,11 @@
         },
         {
           "text": "Before: <200/120; afterward: ≤200/120 mm Hg",
-          "explanation": "These are not the taught limits."
+          "explanation": "These are not the limits."
         },
         {
           "text": "Before: <160/90; afterward: ≤160/90 mm Hg",
-          "explanation": "These are not the taught protocol limits."
+          "explanation": "These are not the protocol limits."
         }
       ],
       "correct": 0,
@@ -6264,7 +6264,7 @@
     "anchor": "follow.up imaging|antiplatelet/anticoagulant",
     "standard": null,
     "advanced": {
-      "stem": "After stroke thrombolysis, an antiplatelet or anticoagulant is proposed. Which prerequisite is emphasized in the material?",
+      "stem": "An antiplatelet or anticoagulant is proposed after IV alteplase for acute ischemic stroke. What is required before starting it?",
       "choices": [
         {
           "text": "The authorized post-thrombolysis assessment and follow-up imaging plan",
@@ -6293,24 +6293,24 @@
     "anchor": "left ventricular hypertrophy",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Besides routine hypertension treatment, which pair of conditions is included among the selected uses taught for losartan?",
+      "stem": "Besides routine hypertension treatment, in which pair of conditions may losartan also be indicated?",
       "correct": 0,
       "choices": [
         {
           "text": "Hypertension with LVH; nephropathy in type 2 diabetes",
-          "explanation": "The entry includes selected hypertensive patients with LVH and diabetic nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
+          "explanation": "Losartan may be indicated in selected hypertensive patients with LVH or nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
         },
         {
           "text": "Acute MI chest pain; acute cardiogenic shock",
-          "explanation": "These are acute syndromes requiring their own treatment; they are not the additional uses listed here."
+          "explanation": "These are acute syndromes requiring their own treatment; they are not the additional uses applicable here."
         },
         {
           "text": "Symptomatic bradycardia; complete heart block",
-          "explanation": "These are conduction problems, not the additional uses listed for losartan."
+          "explanation": "These are conduction problems, not the additional uses associated with losartan."
         },
         {
           "text": "Ventricular tachycardia; atrial fibrillation",
-          "explanation": "Losartan is not taught here as an antiarrhythmic for these rhythms."
+          "explanation": "Losartan is not used as an antiarrhythmic for these rhythms."
         }
       ]
     },
@@ -6322,7 +6322,7 @@
     "anchor": "lithium",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which medicine is specifically named in the losartan entry as requiring concurrent-medication review, separately from potassium-raising drugs and NSAIDs?",
+      "stem": "Besides potassium-raising drugs and NSAIDs, which medicine requires interaction review with losartan?",
       "correct": 0,
       "choices": [
         {
@@ -6331,15 +6331,15 @@
         },
         {
           "text": "Lactulose",
-          "explanation": "Lactulose is not the separately named interaction in this entry."
+          "explanation": "Lactulose is not the separately named interaction."
         },
         {
           "text": "Levothyroxine",
-          "explanation": "Levothyroxine is not the separately named interaction in this entry."
+          "explanation": "Levothyroxine is not the separately named interaction."
         },
         {
           "text": "Loratadine",
-          "explanation": "Loratadine is not the separately named interaction in this entry."
+          "explanation": "Loratadine is not the separately named interaction."
         }
       ]
     },
@@ -6352,7 +6352,7 @@
     "standard": null,
     "advanced": {
       "format": "single-best-answer",
-      "stem": "Losartan is on the medication chart. Which newly prescribed antihypertensive most directly raises the entry’s concern about using another renin–angiotensin system blocker?",
+      "stem": "Losartan is on the medication chart. Which newly prescribed antihypertensive also blocks the renin–angiotensin system?",
       "correct": 0,
       "choices": [
         {
@@ -6381,7 +6381,7 @@
     "standard": null,
     "advanced": {
       "format": "single-best-answer",
-      "stem": "Which paired change follows from the AT1-receptor blockade taught for losartan?",
+      "stem": "Which paired change follows from the AT1-receptor blockade for losartan?",
       "correct": 0,
       "choices": [
         {
@@ -6398,7 +6398,7 @@
         },
         {
           "text": "More vasoconstriction and more aldosterone effect",
-          "explanation": "Both directions oppose the taught consequences of AT1 blockade."
+          "explanation": "Both directions oppose the consequences of AT1 blockade."
         }
       ]
     },
@@ -6438,24 +6438,24 @@
     "anchor": "platelet/GI effects",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which comparison with NSAIDs is explicitly taught for paracetamol?",
+      "stem": "Which statement correctly compares paracetamol with NSAIDs?",
       "correct": 0,
       "choices": [
         {
           "text": "Pain/fever relief without the typical NSAID platelet/GI effects",
-          "explanation": "This is the comparison in the entry; paracetamol still has important exposure-related liver risk."
+          "explanation": "Paracetamol lacks the typical NSAID platelet/GI effects but still has important exposure-related liver risk."
         },
         {
           "text": "Pain/fever relief through the same platelet inhibition as aspirin",
-          "explanation": "The entry distinguishes paracetamol from typical NSAID platelet effects."
+          "explanation": "Paracetamol does not share the typical NSAID platelet effects."
         },
         {
           "text": "Inflammation control with stronger peripheral COX inhibition",
-          "explanation": "The entry emphasizes central analgesic/antipyretic action, not stronger peripheral anti-inflammatory action."
+          "explanation": "Paracetamol acts predominantly as a central analgesic/antipyretic, rather than a stronger peripheral anti-inflammatory drug."
         },
         {
           "text": "Equivalent GI bleeding risk but no dose-related liver risk",
-          "explanation": "This reverses the distinction and omits the major taught liver hazard."
+          "explanation": "This reverses the distinction and omits the major liver hazard."
         }
       ]
     },
@@ -6467,7 +6467,7 @@
     "anchor": "heavy alcohol",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which history item is specifically relevant to the liver-risk review before paracetamol in this entry?",
+      "stem": "Which history item is specifically relevant to the liver-risk review before paracetamol?",
       "correct": 0,
       "choices": [
         {
@@ -6497,7 +6497,7 @@
     "standard": null,
     "advanced": {
       "format": "single-best-answer",
-      "stem": "A postoperative patient’s pain and swelling have improved on ibuprofen. Which plan best follows the taught exposure principle?",
+      "stem": "A postoperative patient’s pain and swelling have improved on ibuprofen. Which plan best limits unnecessary drug exposure?",
       "correct": 0,
       "choices": [
         {
@@ -6514,7 +6514,7 @@
         },
         {
           "text": "Increase the interval only after the full prescribed course ends",
-          "explanation": "The entry supports reviewing exposure as needs change, not postponing all review until the end."
+          "explanation": "Dose and duration should be reviewed as treatment needs change."
         }
       ]
     },
@@ -6525,24 +6525,24 @@
     "anchor": "cardiovascular risk",
     "standard": {
       "format": "single-best-answer",
-      "stem": "In addition to GI bleeding, renal injury, and fluid retention, which risk is explicitly included in the ibuprofen entry?",
+      "stem": "In addition to GI bleeding, renal injury, and fluid retention, which risk is associated with ibuprofen?",
       "correct": 0,
       "choices": [
         {
           "text": "Serious cardiovascular events",
-          "explanation": "Increased cardiovascular risk is a separate NSAID precaution in the material."
+          "explanation": "Increased cardiovascular risk is a separate NSAID precaution in this case."
         },
         {
           "text": "Immune-mediated thrombocytopenia",
-          "explanation": "This is not the additional risk identified in this entry."
+          "explanation": "This is not the additional risk identified."
         },
         {
           "text": "Progressive pulmonary fibrosis",
-          "explanation": "This is not the additional risk identified in this entry."
+          "explanation": "This is not the additional risk identified."
         },
         {
           "text": "Hemorrhagic bladder injury",
-          "explanation": "This is not the additional risk identified in this entry."
+          "explanation": "This is not the additional risk identified."
         }
       ]
     },
@@ -6589,7 +6589,7 @@
       "choices": [
         {
           "text": "To provide adequate tissue antibiotic levels when contamination may occur",
-          "explanation": "The taught rationale is adequate tissue exposure at incision."
+          "explanation": "The rationale is adequate tissue exposure at incision."
         },
         {
           "text": "To produce the highest antibiotic level only after wound closure",
@@ -6612,7 +6612,7 @@
     "anchor": "penicillin-binding proteins",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which bacterial target is named in the mechanism taught for cefazolin?",
+      "stem": "Which bacterial target does cefazolin bind?",
       "correct": 0,
       "choices": [
         {
@@ -6621,15 +6621,15 @@
         },
         {
           "text": "Bacterial DNA gyrase",
-          "explanation": "This is associated with fluoroquinolone action, not cefazolin’s taught target."
+          "explanation": "This is associated with fluoroquinolone action, not cefazolin’s target."
         },
         {
           "text": "Bacterial 50S ribosomal subunit",
-          "explanation": "This is a protein-synthesis target, not cefazolin’s taught target."
+          "explanation": "This is a protein-synthesis target, not cefazolin’s target."
         },
         {
           "text": "Bacterial dihydrofolate reductase",
-          "explanation": "This is a folate-pathway target, not cefazolin’s taught target."
+          "explanation": "This is a folate-pathway target, not cefazolin’s target."
         }
       ]
     },
@@ -6641,7 +6641,7 @@
     "anchor": "serotonin and norepinephrine",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which two neurotransmitters are named in tramadol’s taught reuptake-inhibition mechanism?",
+      "stem": "Tramadol inhibits the reuptake of which two neurotransmitters?",
       "correct": 0,
       "choices": [
         {
@@ -6658,7 +6658,7 @@
         },
         {
           "text": "Dopamine and acetylcholine",
-          "explanation": "Neither is the pair taught for tramadol’s reuptake inhibition."
+          "explanation": "Neither is the pair for tramadol’s reuptake inhibition."
         }
       ]
     },
@@ -6670,7 +6670,7 @@
     "anchor": "gabapentin",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which pair of concurrent medicines is explicitly highlighted in the tramadol entry for increased sedation/respiratory risk?",
+      "stem": "Which pair of medicines can increase sedation and respiratory depression when combined with tramadol?",
       "correct": 0,
       "choices": [
         {
@@ -6679,7 +6679,7 @@
         },
         {
           "text": "Paracetamol and cefazolin",
-          "explanation": "These are not the sedating pair highlighted in this entry."
+          "explanation": "These are not the sedating pair highlighted."
         },
         {
           "text": "Ibuprofen and meropenem",
@@ -6699,7 +6699,7 @@
     "anchor": "nausea",
     "standard": {
       "format": "single-best-answer",
-      "stem": "A patient starts tramadol. Which new symptom is among the adverse effects listed in the material?",
+      "stem": "A patient starts tramadol. Which new symptom is a recognized adverse effect?",
       "correct": 0,
       "choices": [
         {
@@ -6708,15 +6708,15 @@
         },
         {
           "text": "Persistent dry cough",
-          "explanation": "This is more associated with ACE-inhibitor treatment and is not listed here for tramadol."
+          "explanation": "This is more associated with ACE-inhibitor treatment and is not applicable here for tramadol."
         },
         {
           "text": "Gingival enlargement",
-          "explanation": "This is not the tramadol adverse effect listed in this entry."
+          "explanation": "This is not the tramadol adverse effect listed."
         },
         {
           "text": "Peripheral ankle edema",
-          "explanation": "This is not the tramadol adverse effect listed in this entry."
+          "explanation": "This is not the tramadol adverse effect listed."
         }
       ]
     },
@@ -6746,7 +6746,7 @@
         },
         {
           "text": "No; meropenem has no activity in skin or soft-tissue infections",
-          "explanation": "The conclusion about routine prophylaxis is right, but this rationale is false; the entry includes susceptible skin/skin-structure infections."
+          "explanation": "The conclusion about routine prophylaxis is right, but this rationale is false; meropenem can treat susceptible skin/skin-structure infections."
         }
       ]
     },
@@ -6758,12 +6758,12 @@
     "standard": null,
     "advanced": {
       "format": "single-best-answer",
-      "stem": "A patient with preserved renal function is prescribed meropenem. Which additional history in the entry still warrants extra attention to seizure risk?",
+      "stem": "A patient with preserved renal function is prescribed meropenem. Which history still increases concern about seizure risk?",
       "correct": 0,
       "choices": [
         {
           "text": "Previous seizure disorder",
-          "explanation": "A seizure disorder is CNS disease; the entry highlights CNS disease as well as renal impairment."
+          "explanation": "A seizure disorder is CNS disease and increases concern about seizures even with preserved renal function."
         },
         {
           "text": "Previous NSAID-related GI bleeding",
@@ -6786,7 +6786,7 @@
     "anchor": "Reconstitution, dilution",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Before preparing meropenem IV, which set of information determines the preparation and prescribed regimen described in this entry?",
+      "stem": "Which information should be verified before preparing and administering IV meropenem?",
       "correct": 0,
       "choices": [
         {
@@ -6815,7 +6815,7 @@
     "anchor": "histamine H1 receptors",
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which receptor action is responsible for the antihistamine component taught for promethazine?",
+      "stem": "Which receptor action explains promethazine’s antihistamine effect?",
       "correct": 0,
       "choices": [
         {
@@ -6824,7 +6824,7 @@
         },
         {
           "text": "Histamine H2 blockade",
-          "explanation": "H2 blockade is associated with gastric acid suppression, not this taught antihistamine action."
+          "explanation": "H2 blockade is associated with gastric acid suppression, not this antihistamine action."
         },
         {
           "text": "Muscarinic receptor stimulation",
@@ -6832,7 +6832,7 @@
         },
         {
           "text": "Beta2-receptor stimulation",
-          "explanation": "This produces bronchodilation rather than the taught antihistamine action."
+          "explanation": "This produces bronchodilation rather than the antihistamine action."
         }
       ]
     },
@@ -6844,7 +6844,7 @@
     "anchor": "orthostatic hypotension",
     "standard": {
       "format": "single-best-answer",
-      "stem": "A patient taking promethazine reports dizziness specifically on standing. Which assessment most directly addresses the adverse effect named in the entry?",
+      "stem": "A patient taking promethazine reports dizziness specifically on standing. Which assessment most directly checks the suspected adverse effect?",
       "correct": 0,
       "choices": [
         {
@@ -6874,7 +6874,7 @@
     "standard": null,
     "advanced": {
       "format": "single-best-answer",
-      "stem": "The ward has Prothiazine tablets, but a patient cannot take oral medicines. What follows from the formulation guidance in this entry?",
+      "stem": "The ward has Prothiazine tablets, but a patient cannot take oral medicines. What should happen before changing the formulation or route?",
       "correct": 0,
       "choices": [
         {
