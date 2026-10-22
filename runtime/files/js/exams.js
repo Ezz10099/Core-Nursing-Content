@@ -19,7 +19,7 @@
   function persist(){save();const warning=byId('examSaveWarning');if(warning)warning.hidden=persistence}
   function saveState(){persist();refreshDashboards()}
   function status(bank){
-    const r=record(bank.itemId),latest=r.attempts.at(-1),parts=[];
+    const r=record(bank.itemId),latest=r.attempts.slice(-1)[0],parts=[];
     if(r.attempts.some(a=>a.stage==='advanced'&&a.completedAt))parts.push('Advanced exam passed.');
     else if(r.attempts.some(a=>a.stage==='standard'&&a.completedAt))parts.push('Standard exam passed.');
     if(latest)parts.push(label(latest.stage)+': '+latest.correct+'/'+latest.total+' ('+(100*latest.correct/latest.total).toFixed(1)+'%).');
