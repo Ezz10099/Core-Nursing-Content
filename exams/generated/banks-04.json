@@ -26,7 +26,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -41,30 +41,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches HYDRALAZINE?",
+              "stem": "Which principal action explains the taught effect of HYDRALAZINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "ACE inhibitor: reduces angiotensin-II formation",
-                  "explanation": "This describes a different class/action. HYDRALAZINE is taught here as Direct arterial vasodilator."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The taught action is: Hydralazine reduces arterial resistance through direct smooth-muscle relaxation."
                 },
                 {
                   "id": "B",
-                  "text": "Direct vasodilator: relaxes arteriolar smooth muscle",
-                  "explanation": "Hydralazine reduces arterial resistance through direct smooth-muscle relaxation."
+                  "text": "Binds D-Ala-D-Ala cell-wall precursors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Hydralazine reduces arterial resistance through direct smooth-muscle relaxation."
                 },
                 {
                   "id": "C",
-                  "text": "Alpha/beta blocker: reduces vascular and cardiac adrenergic effects",
-                  "explanation": "This describes a different class/action. HYDRALAZINE is taught here as Direct arterial vasodilator."
+                  "text": "Relaxes arteriolar smooth muscle",
+                  "explanation": "Hydralazine reduces arterial resistance through direct smooth-muscle relaxation."
                 },
                 {
                   "id": "D",
-                  "text": "Beta1 blocker: reduces cardiac adrenergic stimulation",
-                  "explanation": "This describes a different class/action. HYDRALAZINE is taught here as Direct arterial vasodilator."
+                  "text": "Activates plasminogen to break down fibrin",
+                  "explanation": "This is a different pharmacological action. The taught action is: Hydralazine reduces arterial resistance through direct smooth-muscle relaxation."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -89,10 +89,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-hydralazine--standard--class-action",
+              "id": "trolley-hydralazine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-hydralazine::class-action"
+                "trolley-hydralazine::principal-action"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for HYDRALAZINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ACE inhibitor",
+                  "explanation": "The entry identifies the medicine as: Direct arterial vasodilator."
+                },
+                {
+                  "id": "B",
+                  "text": "Direct vasodilator",
+                  "explanation": "Direct arterial vasodilator."
+                },
+                {
+                  "id": "C",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Direct arterial vasodilator."
+                },
+                {
+                  "id": "D",
+                  "text": "ARB",
+                  "explanation": "The entry identifies the medicine as: Direct arterial vasodilator."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-hydralazine",
+                  "field": "drugclass",
+                  "textSha256": "358078480cd31a1c481960823e2f2914ea481530ebd0f259c663bd5762e4bba9"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-hydralazine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-hydralazine::drug-class"
               ],
               "answerKey": "B"
             },
@@ -218,13 +261,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
+                  "text": "The IV rate previously used for a different drug class",
+                  "explanation": "Another drug’s administration rate is not transferable."
                 },
                 {
                   "id": "D",
-                  "text": "The IV rate previously used for a different drug class",
-                  "explanation": "Another drug’s administration rate is not transferable."
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 }
               ],
               "format": "single-best-answer",
@@ -251,10 +294,10 @@
               "learningPointIds": [
                 "trolley-hydralazine::slow_iv"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-hydralazine--advanced",
@@ -271,7 +314,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -428,7 +471,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -443,30 +486,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches DEXTROSE 50% — D50?",
+              "stem": "Which principal action explains the taught effect of DEXTROSE 50% — D50?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "IV calcium salt: supports calcium and cardiac membrane stability",
-                  "explanation": "This describes a different class/action. DEXTROSE 50% — D50 is taught here as Hypertonic IV glucose."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Concentrated dextrose can correct severe hypoglycemia but can injure tissue if extravasated."
                 },
                 {
                   "id": "B",
-                  "text": "Electrolyte: modulates membrane stability and repolarization",
-                  "explanation": "This describes a different class/action. DEXTROSE 50% — D50 is taught here as Hypertonic IV glucose."
+                  "text": "Supplies rapidly available glucose",
+                  "explanation": "Concentrated dextrose can correct severe hypoglycemia but can injure tissue if extravasated."
                 },
                 {
                   "id": "C",
-                  "text": "Systemic alkalinizer: supplies bicarbonate buffer",
-                  "explanation": "This describes a different class/action. DEXTROSE 50% — D50 is taught here as Hypertonic IV glucose."
+                  "text": "Bronchodilation with a narrow therapeutic index",
+                  "explanation": "This is a different pharmacological action. The taught action is: Concentrated dextrose can correct severe hypoglycemia but can injure tissue if extravasated."
                 },
                 {
                   "id": "D",
-                  "text": "Hypertonic IV glucose: supplies rapidly available glucose",
-                  "explanation": "Concentrated dextrose can correct severe hypoglycemia but can injure tissue if extravasated."
+                  "text": "Blocks mineralocorticoid receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Concentrated dextrose can correct severe hypoglycemia but can injure tissue if extravasated."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -491,10 +534,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-dextrose50--standard--class-action",
+              "id": "trolley-dextrose50--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-dextrose50::class-action"
+                "trolley-dextrose50::principal-action"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for DEXTROSE 50% — D50?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Electrolyte",
+                  "explanation": "The entry identifies the medicine as: Hypertonic IV glucose."
+                },
+                {
+                  "id": "B",
+                  "text": "Systemic alkalinizer",
+                  "explanation": "The entry identifies the medicine as: Hypertonic IV glucose."
+                },
+                {
+                  "id": "C",
+                  "text": "IV calcium salt",
+                  "explanation": "The entry identifies the medicine as: Hypertonic IV glucose."
+                },
+                {
+                  "id": "D",
+                  "text": "Hypertonic IV glucose",
+                  "explanation": "Hypertonic IV glucose."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-dextrose50",
+                  "field": "drugclass",
+                  "textSha256": "342d7b233317e4259bf8550106bcbe3ae816464a217743ad071857f85ffbdf6e"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-dextrose50--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-dextrose50::drug-class"
               ],
               "answerKey": "D"
             },
@@ -504,18 +590,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "IV treatment of severe symptomatic hypoglycemia",
+                  "explanation": "This is the treatment role taught in the entry: Severe symptomatic hypoglycemia when IV glucose is indicated."
+                },
+                {
+                  "id": "B",
                   "text": "Treatment of a susceptible bacterial infection",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Inhibition of platelet aggregation after coronary stenting",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "C",
-                  "text": "IV treatment of severe symptomatic hypoglycemia",
-                  "explanation": "This is the treatment role taught in the entry: Severe symptomatic hypoglycemia when IV glucose is indicated."
                 },
                 {
                   "id": "D",
@@ -546,7 +632,7 @@
               "learningPointIds": [
                 "trolley-dextrose50::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "After treatment for a significant glucose abnormality, which reassessment best establishes the immediate response?",
@@ -558,13 +644,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Repeat glucose with consciousness and symptoms",
-                  "explanation": "Biochemical and clinical response should be assessed together."
+                  "text": "Repeat pain score without symptom review",
+                  "explanation": "This does not establish resolution of the glucose problem."
                 },
                 {
                   "id": "C",
-                  "text": "Repeat pain score without symptom review",
-                  "explanation": "This does not establish resolution of the glucose problem."
+                  "text": "Repeat glucose with consciousness and symptoms",
+                  "explanation": "Biochemical and clinical response should be assessed together."
                 },
                 {
                   "id": "D",
@@ -631,7 +717,7 @@
               "learningPointIds": [
                 "trolley-dextrose50::glucose_recheck"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -639,23 +725,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "50 g per 100 mL",
-                  "explanation": "50% w/v means 50 grams per 100 mL."
-                },
-                {
-                  "id": "B",
                   "text": "50 g per 1000 mL",
                   "explanation": "This corresponds to 5% w/v."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "5 g per 100 mL",
                   "explanation": "This corresponds to 5% w/v."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "50 mg per 100 mL",
                   "explanation": "This is a thousandfold smaller mass than 50 g."
+                },
+                {
+                  "id": "D",
+                  "text": "50 g per 100 mL",
+                  "explanation": "50% w/v means 50 grams per 100 mL."
                 }
               ],
               "point": "Read the actual dextrose concentration, grams, and volume.",
@@ -688,10 +774,10 @@
               "learningPointIds": [
                 "trolley-dextrose50::dextrose_units"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-dextrose50--advanced",
@@ -708,7 +794,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -851,7 +937,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -866,30 +952,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches HYDROCORTISONE?",
+              "stem": "Which principal action explains the taught effect of HYDROCORTISONE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Methylxanthine: bronchodilation with a narrow therapeutic index",
-                  "explanation": "This describes a different class/action. HYDROCORTISONE is taught here as Glucocorticoid."
+                  "text": "Changes inflammatory/stress-response gene transcription",
+                  "explanation": "Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 },
                 {
                   "id": "B",
-                  "text": "Inhaled antimuscarinic: reduces vagal bronchoconstriction",
-                  "explanation": "This describes a different class/action. HYDROCORTISONE is taught here as Glucocorticoid."
+                  "text": "Slows AV-nodal calcium-dependent conduction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 },
                 {
                   "id": "C",
-                  "text": "Short-acting beta2 agonist: relaxes bronchial smooth muscle",
-                  "explanation": "This describes a different class/action. HYDROCORTISONE is taught here as Glucocorticoid."
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 },
                 {
                   "id": "D",
-                  "text": "Glucocorticoid: changes inflammatory/stress-response gene transcription",
-                  "explanation": "Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
+                  "text": "Receptor blockade and arterial dilation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -914,10 +1000,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-hydrocortisone--standard--class-action",
+              "id": "trolley-hydrocortisone--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-hydrocortisone::class-action"
+                "trolley-hydrocortisone::principal-action"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for HYDROCORTISONE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Methylxanthine",
+                  "explanation": "The entry identifies the medicine as: Glucocorticoid."
+                },
+                {
+                  "id": "B",
+                  "text": "Inhaled antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Glucocorticoid."
+                },
+                {
+                  "id": "C",
+                  "text": "Short-acting beta2 agonist",
+                  "explanation": "The entry identifies the medicine as: Glucocorticoid."
+                },
+                {
+                  "id": "D",
+                  "text": "Glucocorticoid",
+                  "explanation": "Glucocorticoid."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-hydrocortisone",
+                  "field": "drugclass",
+                  "textSha256": "ecba3cbc8212c4bf8f8a42fe498447711fc5da4eaf2553da92d74d8be706b63d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-hydrocortisone--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-hydrocortisone::drug-class"
               ],
               "answerKey": "D"
             },
@@ -927,18 +1056,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Adrenal crisis or selected severe inflammatory states",
-                  "explanation": "This is the treatment role taught in the entry: Adrenal crisis and selected severe inflammatory/allergic or shock states when indicated. In anaphylaxis it is an adjunct and must not delay epinephrine."
-                },
-                {
-                  "id": "B",
                   "text": "Inhibition of platelet aggregation after coronary stenting",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Reversal of vitamin-K-antagonist activity",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "C",
+                  "text": "Adrenal crisis or selected severe inflammatory states",
+                  "explanation": "This is the treatment role taught in the entry: Adrenal crisis and selected severe inflammatory/allergic or shock states when indicated. In anaphylaxis it is an adjunct and must not delay epinephrine."
                 },
                 {
                   "id": "D",
@@ -969,7 +1098,7 @@
               "learningPointIds": [
                 "trolley-hydrocortisone::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -1015,7 +1144,7 @@
               "answerKey": "B"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-hydrocortisone--advanced",
@@ -1032,7 +1161,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1211,7 +1340,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1226,30 +1355,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches DIAZEPAM?",
+              "stem": "Which principal action explains the taught effect of DIAZEPAM?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Anticonvulsant: stabilizes inactivated voltage-gated sodium channels",
-                  "explanation": "This describes a different class/action. DIAZEPAM is taught here as Benzodiazepine."
+                  "text": "Inhibits cyclooxygenase and reduces prostaglandins",
+                  "explanation": "This is a different pharmacological action. The taught action is: Enhanced inhibitory GABA activity produces anticonvulsant and sedative effects."
                 },
                 {
                   "id": "B",
-                  "text": "Dissociative anesthetic: antagonizes NMDA receptors",
-                  "explanation": "This describes a different class/action. DIAZEPAM is taught here as Benzodiazepine."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "This is a different pharmacological action. The taught action is: Enhanced inhibitory GABA activity produces anticonvulsant and sedative effects."
                 },
                 {
                   "id": "C",
-                  "text": "Tricyclic antidepressant: inhibits serotonin/norepinephrine reuptake",
-                  "explanation": "This describes a different class/action. DIAZEPAM is taught here as Benzodiazepine."
+                  "text": "Disrupts sterol-containing fungal membranes",
+                  "explanation": "This is a different pharmacological action. The taught action is: Enhanced inhibitory GABA activity produces anticonvulsant and sedative effects."
                 },
                 {
                   "id": "D",
-                  "text": "Benzodiazepine: enhances GABA-A receptor activity",
+                  "text": "Enhances GABA-A receptor activity",
                   "explanation": "Enhanced inhibitory GABA activity produces anticonvulsant and sedative effects."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1274,12 +1403,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-diazepam--standard--class-action",
+              "id": "trolley-diazepam--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-diazepam::class-action"
+                "trolley-diazepam::principal-action"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for DIAZEPAM?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Tricyclic antidepressant",
+                  "explanation": "The entry identifies the medicine as: Benzodiazepine."
+                },
+                {
+                  "id": "B",
+                  "text": "Gabapentinoid",
+                  "explanation": "The entry identifies the medicine as: Benzodiazepine."
+                },
+                {
+                  "id": "C",
+                  "text": "Benzodiazepine",
+                  "explanation": "Benzodiazepine."
+                },
+                {
+                  "id": "D",
+                  "text": "Dissociative anesthetic",
+                  "explanation": "The entry identifies the medicine as: Benzodiazepine."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-diazepam",
+                  "field": "drugclass",
+                  "textSha256": "b6216a5f1931713c8e0078c602afef67a5b28b7756e040e8da0619668db195e1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-diazepam--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-diazepam::drug-class"
+              ],
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -1297,13 +1469,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inhibition of platelet aggregation after coronary stenting",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Selected seizure, agitation, or sedation treatment",
+                  "explanation": "This is the treatment role taught in the entry: Seizure/status epilepticus, severe agitation or selected procedural sedation; not a cardiac antiarrhythmic."
                 },
                 {
                   "id": "D",
-                  "text": "Selected seizure, agitation, or sedation treatment",
-                  "explanation": "This is the treatment role taught in the entry: Seizure/status epilepticus, severe agitation or selected procedural sedation; not a cardiac antiarrhythmic."
+                  "text": "Inhibition of platelet aggregation after coronary stenting",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -1329,30 +1501,30 @@
               "learningPointIds": [
                 "trolley-diazepam::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "A patient becomes light-headed on standing after DIAZEPAM. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
-                },
-                {
-                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                },
+                {
+                  "id": "D",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -1372,20 +1544,20 @@
               "learningPointIds": [
                 "trolley-diazepam::hypotension"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "The referenced diazepam injection instructions prohibit mixing or diluting it in a syringe or infusion container. Which preparation follows those instructions?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Mix it with another sedative in the same syringe",
-                  "explanation": "A shared clinical purpose does not establish mixing compatibility."
+                  "text": "Use the ordered direct-IV method at the specified slow rate",
+                  "explanation": "The exact product’s instructions govern preparation."
                 },
                 {
                   "id": "B",
-                  "text": "Use the ordered direct-IV method at the specified slow rate",
-                  "explanation": "The exact product’s instructions govern preparation."
+                  "text": "Mix it with another sedative in the same syringe",
+                  "explanation": "A shared clinical purpose does not establish mixing compatibility."
                 },
                 {
                   "id": "C",
@@ -1415,7 +1587,7 @@
               "learningPointIds": [
                 "trolley-diazepam::diazepam_product"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "An IV site becomes painful and erythematous during DIAZEPAM. What local complication should be assessed?",
@@ -1427,13 +1599,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "A therapeutic increase in tissue exposure",
-                  "explanation": "Local pain and redness are not proof of a beneficial drug effect."
+                  "text": "Infusion-site irritation or phlebitis",
+                  "explanation": "Pain and erythema along a cannulated vein need local assessment."
                 },
                 {
                   "id": "C",
-                  "text": "Infusion-site irritation or phlebitis",
-                  "explanation": "Pain and erythema along a cannulated vein need local assessment."
+                  "text": "A therapeutic increase in tissue exposure",
+                  "explanation": "Local pain and redness are not proof of a beneficial drug effect."
                 },
                 {
                   "id": "D",
@@ -1458,10 +1630,10 @@
               "learningPointIds": [
                 "trolley-diazepam::iv_site"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "trolley-diazepam--advanced",
@@ -1478,7 +1650,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1694,7 +1866,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1709,30 +1881,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches AMIODARONE — PROCOR?",
+              "stem": "Which principal action explains the taught effect of AMIODARONE — PROCOR?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A1-receptor agonist: briefly blocks AV-nodal conduction",
-                  "explanation": "This describes a different class/action. AMIODARONE — PROCOR is taught here as Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects."
+                  "text": "Inhibits cyclooxygenase and reduces prostaglandins",
+                  "explanation": "This is a different pharmacological action. The taught action is: Amiodarone affects several cardiac ion channels and adrenergic signaling."
                 },
                 {
                   "id": "B",
-                  "text": "Antimuscarinic: reduces vagal slowing of the heart",
-                  "explanation": "This describes a different class/action. AMIODARONE — PROCOR is taught here as Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects."
+                  "text": "Supplies bicarbonate buffer",
+                  "explanation": "This is a different pharmacological action. The taught action is: Amiodarone affects several cardiac ion channels and adrenergic signaling."
                 },
                 {
                   "id": "C",
-                  "text": "Cardiac glycoside: inhibits Na/K ATPase and increases vagal tone",
-                  "explanation": "This describes a different class/action. AMIODARONE — PROCOR is taught here as Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects."
+                  "text": "Multiple channel/adrenergic effects",
+                  "explanation": "Amiodarone affects several cardiac ion channels and adrenergic signaling."
                 },
                 {
                   "id": "D",
-                  "text": "Predominantly class III agent: multiple channel/adrenergic effects",
-                  "explanation": "Amiodarone affects several cardiac ion channels and adrenergic signaling."
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: Amiodarone affects several cardiac ion channels and adrenergic signaling."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1757,12 +1929,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-amiodarone--standard--class-action",
+              "id": "trolley-amiodarone--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-amiodarone::class-action"
+                "trolley-amiodarone::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for AMIODARONE — PROCOR?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A1-receptor agonist",
+                  "explanation": "The entry identifies the medicine as: Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects."
+                },
+                {
+                  "id": "B",
+                  "text": "Class Ib antiarrhythmic",
+                  "explanation": "The entry identifies the medicine as: Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Predominantly class III agent",
+                  "explanation": "Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Predominantly Class III antiarrhythmic with multiple channel and adrenergic effects."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-amiodarone",
+                  "field": "drugclass",
+                  "textSha256": "845798b351c9be8279836368a3e33dbb5aded25efaa67fff33c710cc1973c34b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-amiodarone--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-amiodarone::drug-class"
+              ],
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -1824,18 +2039,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
-                },
-                {
-                  "id": "C",
                   "text": "Dry mouth with an unchanged pulse",
                   "explanation": "This is a different adverse-effect pattern."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Tremor with an unchanged pulse",
                   "explanation": "This does not identify the cardiac slowing pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 }
               ],
               "format": "single-best-answer",
@@ -1869,7 +2084,7 @@
               "learningPointIds": [
                 "trolley-amiodarone::bradycardia"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after AMIODARONE — PROCOR. Which paired assessment best checks the suspected adverse effect?",
@@ -1981,13 +2196,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "A systemic electrolyte correction",
-                  "explanation": "A local inflamed site does not establish electrolyte response."
+                  "text": "Infusion-site irritation or phlebitis",
+                  "explanation": "Pain and erythema along a cannulated vein need local assessment."
                 },
                 {
                   "id": "C",
-                  "text": "Infusion-site irritation or phlebitis",
-                  "explanation": "Pain and erythema along a cannulated vein need local assessment."
+                  "text": "A systemic electrolyte correction",
+                  "explanation": "A local inflamed site does not establish electrolyte response."
                 },
                 {
                   "id": "D",
@@ -2012,10 +2227,10 @@
               "learningPointIds": [
                 "trolley-amiodarone::iv_site"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "trolley-amiodarone--advanced",
@@ -2032,7 +2247,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2396,7 +2611,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2411,30 +2626,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches CALCIUM GLUCONATE?",
+              "stem": "Which principal action explains the taught effect of CALCIUM GLUCONATE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "IV calcium salt: supports calcium and cardiac membrane stability",
-                  "explanation": "In hyperkalemic ECG toxicity, calcium stabilizes myocardium without removing potassium."
+                  "text": "Activates mu receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: In hyperkalemic ECG toxicity, calcium stabilizes myocardium without removing potassium."
                 },
                 {
                   "id": "B",
-                  "text": "Systemic alkalinizer: supplies bicarbonate buffer",
-                  "explanation": "This describes a different class/action. CALCIUM GLUCONATE is taught here as IV calcium salt."
+                  "text": "Supports calcium and cardiac membrane stability",
+                  "explanation": "In hyperkalemic ECG toxicity, calcium stabilizes myocardium without removing potassium."
                 },
                 {
                   "id": "C",
-                  "text": "Hypertonic IV glucose: supplies rapidly available glucose",
-                  "explanation": "This describes a different class/action. CALCIUM GLUCONATE is taught here as IV calcium salt."
+                  "text": "Blocks angiotensin-II AT1 receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: In hyperkalemic ECG toxicity, calcium stabilizes myocardium without removing potassium."
                 },
                 {
                   "id": "D",
-                  "text": "Electrolyte: modulates membrane stability and repolarization",
-                  "explanation": "This describes a different class/action. CALCIUM GLUCONATE is taught here as IV calcium salt."
+                  "text": "Stabilizes inactivated voltage-gated sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: In hyperkalemic ECG toxicity, calcium stabilizes myocardium without removing potassium."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -2459,10 +2674,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-calcium-gluconate--standard--class-action",
+              "id": "trolley-calcium-gluconate--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-calcium-gluconate::class-action"
+                "trolley-calcium-gluconate::principal-action"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for CALCIUM GLUCONATE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "IV calcium salt",
+                  "explanation": "IV calcium salt."
+                },
+                {
+                  "id": "B",
+                  "text": "Electrolyte",
+                  "explanation": "The entry identifies the medicine as: IV calcium salt."
+                },
+                {
+                  "id": "C",
+                  "text": "Systemic alkalinizer",
+                  "explanation": "The entry identifies the medicine as: IV calcium salt."
+                },
+                {
+                  "id": "D",
+                  "text": "Hypertonic IV glucose",
+                  "explanation": "The entry identifies the medicine as: IV calcium salt."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-calcium-gluconate",
+                  "field": "drugclass",
+                  "textSha256": "fcd60e0e0e5261143d2f1174e7f3d6e9063119d83ee3eba977ffd9a3a2fbdc32"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-calcium-gluconate--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-calcium-gluconate::drug-class"
               ],
               "answerKey": "A"
             },
@@ -2477,18 +2735,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Selected symptomatic hypocalcemia or hyperkalemic ECG toxicity",
-                  "explanation": "This is the treatment role taught in the entry: Severe symptomatic hypocalcemia and myocardial membrane stabilization in severe hyperkalemia with ECG toxicity when indicated. Calcium does not remove potassium from the body."
-                },
-                {
-                  "id": "C",
                   "text": "Treatment of a susceptible bacterial infection",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Long-term suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Selected symptomatic hypocalcemia or hyperkalemic ECG toxicity",
+                  "explanation": "This is the treatment role taught in the entry: Severe symptomatic hypocalcemia and myocardial membrane stabilization in severe hyperkalemia with ECG toxicity when indicated. Calcium does not remove potassium from the body."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -2514,7 +2772,7 @@
               "learningPointIds": [
                 "trolley-calcium-gluconate::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "short-answer",
@@ -2545,7 +2803,7 @@
               ]
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-calcium-gluconate--advanced",
@@ -2562,7 +2820,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2826,7 +3084,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2841,30 +3099,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches MAGNESIUM SULFATE — MgSO4?",
+              "stem": "Which principal action explains the taught effect of MAGNESIUM SULFATE — MgSO4?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Systemic alkalinizer: supplies bicarbonate buffer",
-                  "explanation": "This describes a different class/action. MAGNESIUM SULFATE — MgSO4 is taught here as Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia."
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Magnesium has indication-specific replacement and antiarrhythmic roles."
                 },
                 {
                   "id": "B",
-                  "text": "Electrolyte: modulates membrane stability and repolarization",
+                  "text": "Modulates membrane stability and repolarization",
                   "explanation": "Magnesium has indication-specific replacement and antiarrhythmic roles."
                 },
                 {
                   "id": "C",
-                  "text": "IV calcium salt: supports calcium and cardiac membrane stability",
-                  "explanation": "This describes a different class/action. MAGNESIUM SULFATE — MgSO4 is taught here as Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia."
+                  "text": "Inhibits Na/K ATPase and increases vagal tone",
+                  "explanation": "This is a different pharmacological action. The taught action is: Magnesium has indication-specific replacement and antiarrhythmic roles."
                 },
                 {
                   "id": "D",
-                  "text": "Hypertonic IV glucose: supplies rapidly available glucose",
-                  "explanation": "This describes a different class/action. MAGNESIUM SULFATE — MgSO4 is taught here as Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "This is a different pharmacological action. The taught action is: Magnesium has indication-specific replacement and antiarrhythmic roles."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -2889,12 +3147,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-magnesium-sulfate--standard--class-action",
+              "id": "trolley-magnesium-sulfate--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-magnesium-sulfate::class-action"
+                "trolley-magnesium-sulfate::principal-action"
               ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for MAGNESIUM SULFATE — MgSO4?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "IV calcium salt",
+                  "explanation": "The entry identifies the medicine as: Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia."
+                },
+                {
+                  "id": "B",
+                  "text": "Hypertonic IV glucose",
+                  "explanation": "The entry identifies the medicine as: Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia."
+                },
+                {
+                  "id": "C",
+                  "text": "Systemic alkalinizer",
+                  "explanation": "The entry identifies the medicine as: Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia."
+                },
+                {
+                  "id": "D",
+                  "text": "Electrolyte",
+                  "explanation": "Electrolyte replacement; antiarrhythmic in selected ventricular arrhythmias; anticonvulsant in eclampsia."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-magnesium-sulfate",
+                  "field": "drugclass",
+                  "textSha256": "b95ae4929a80ec5fa6b308b7eb2496a476099dcf7542bc8d69c7f4e9a98117f8"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-magnesium-sulfate--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-magnesium-sulfate::drug-class"
+              ],
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -2902,13 +3203,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Indication-specific replacement or torsades treatment",
-                  "explanation": "This is the treatment role taught in the entry: May be considered for recurrent polymorphic VT associated with long-QT syndrome/torsades de pointes; not a generic treatment for every ventricular arrhythmia."
+                  "text": "Long-term suppression of gastric acid secretion",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "B",
-                  "text": "Long-term suppression of gastric acid secretion",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Indication-specific replacement or torsades treatment",
+                  "explanation": "This is the treatment role taught in the entry: May be considered for recurrent polymorphic VT associated with long-QT syndrome/torsades de pointes; not a generic treatment for every ventricular arrhythmia."
                 },
                 {
                   "id": "C",
@@ -2944,25 +3245,25 @@
               "learningPointIds": [
                 "trolley-magnesium-sulfate::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for MAGNESIUM SULFATE — MgSO4?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                },
+                {
+                  "id": "B",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
-                },
-                {
-                  "id": "C",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "D",
@@ -2994,7 +3295,7 @@
               "learningPointIds": [
                 "trolley-magnesium-sulfate::renal_monitor"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which treatment may be used under an emergency order to antagonize significant magnesium toxicity?",
@@ -3011,13 +3312,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "An antiplatelet loading dose",
-                  "explanation": "Platelet inhibition does not address the magnesium effect."
+                  "text": "A calcium salt",
+                  "explanation": "Calcium can antagonize important magnesium effects while the full emergency plan is implemented."
                 },
                 {
                   "id": "D",
-                  "text": "A calcium salt",
-                  "explanation": "Calcium can antagonize important magnesium effects while the full emergency plan is implemented."
+                  "text": "An antiplatelet loading dose",
+                  "explanation": "Platelet inhibition does not address the magnesium effect."
                 }
               ],
               "format": "single-best-answer",
@@ -3037,10 +3338,10 @@
               "learningPointIds": [
                 "trolley-magnesium-sulfate::magnesium_calcium"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-magnesium-sulfate--advanced",
@@ -3057,7 +3358,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3250,7 +3551,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3265,30 +3566,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches DIGOXIN?",
+              "stem": "Which principal action explains the taught effect of DIGOXIN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A1-receptor agonist: briefly blocks AV-nodal conduction",
-                  "explanation": "This describes a different class/action. DIGOXIN is taught here as Cardiac glycoside; positive inotrope and AV-nodal slowing agent."
+                  "text": "Blocks mineralocorticoid receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: It increases contractile calcium availability while slowing AV-nodal conduction."
                 },
                 {
                   "id": "B",
-                  "text": "Class Ic antiarrhythmic: blocks fast sodium channels",
-                  "explanation": "This describes a different class/action. DIGOXIN is taught here as Cardiac glycoside; positive inotrope and AV-nodal slowing agent."
+                  "text": "Antagonizes NMDA receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: It increases contractile calcium availability while slowing AV-nodal conduction."
                 },
                 {
                   "id": "C",
-                  "text": "Antimuscarinic: reduces vagal slowing of the heart",
-                  "explanation": "This describes a different class/action. DIGOXIN is taught here as Cardiac glycoside; positive inotrope and AV-nodal slowing agent."
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: It increases contractile calcium availability while slowing AV-nodal conduction."
                 },
                 {
                   "id": "D",
-                  "text": "Cardiac glycoside: inhibits Na/K ATPase and increases vagal tone",
+                  "text": "Inhibits Na/K ATPase and increases vagal tone",
                   "explanation": "It increases contractile calcium availability while slowing AV-nodal conduction."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -3313,12 +3614,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-digoxin--standard--class-action",
+              "id": "trolley-digoxin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-digoxin::class-action"
+                "trolley-digoxin::principal-action"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for DIGOXIN?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Predominantly class III agent",
+                  "explanation": "The entry identifies the medicine as: Cardiac glycoside; positive inotrope and AV-nodal slowing agent."
+                },
+                {
+                  "id": "B",
+                  "text": "Cardiac glycoside",
+                  "explanation": "Cardiac glycoside; positive inotrope and AV-nodal slowing agent."
+                },
+                {
+                  "id": "C",
+                  "text": "A1-receptor agonist",
+                  "explanation": "The entry identifies the medicine as: Cardiac glycoside; positive inotrope and AV-nodal slowing agent."
+                },
+                {
+                  "id": "D",
+                  "text": "Antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Cardiac glycoside; positive inotrope and AV-nodal slowing agent."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-digoxin",
+                  "field": "drugclass",
+                  "textSha256": "f9f7692bddb4624eeff8278c3d72fd86f78c03e021592ab5baeeb1e8c0339028"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-digoxin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-digoxin::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -3471,7 +3815,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-digoxin--advanced",
@@ -3488,7 +3832,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3724,7 +4068,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3739,30 +4083,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches AMINOPHYLLINE?",
+              "stem": "Which principal action explains the taught effect of AMINOPHYLLINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Glucocorticoid: changes inflammatory/stress-response gene transcription",
-                  "explanation": "This describes a different class/action. AMINOPHYLLINE is taught here as Methylxanthine bronchodilator; theophylline-ethylenediamine complex."
+                  "text": "Bronchodilation with a narrow therapeutic index",
+                  "explanation": "Theophylline-related PDE/adenosine effects contribute to bronchodilation and toxicity."
                 },
                 {
                   "id": "B",
-                  "text": "Short-acting beta2 agonist: relaxes bronchial smooth muscle",
-                  "explanation": "This describes a different class/action. AMINOPHYLLINE is taught here as Methylxanthine bronchodilator; theophylline-ethylenediamine complex."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Theophylline-related PDE/adenosine effects contribute to bronchodilation and toxicity."
                 },
                 {
                   "id": "C",
-                  "text": "Inhaled antimuscarinic: reduces vagal bronchoconstriction",
-                  "explanation": "This describes a different class/action. AMINOPHYLLINE is taught here as Methylxanthine bronchodilator; theophylline-ethylenediamine complex."
+                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Theophylline-related PDE/adenosine effects contribute to bronchodilation and toxicity."
                 },
                 {
                   "id": "D",
-                  "text": "Methylxanthine: bronchodilation with a narrow therapeutic index",
-                  "explanation": "Theophylline-related PDE/adenosine effects contribute to bronchodilation and toxicity."
+                  "text": "Activates receptors to promote glucose uptake",
+                  "explanation": "This is a different pharmacological action. The taught action is: Theophylline-related PDE/adenosine effects contribute to bronchodilation and toxicity."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -3787,12 +4131,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-aminophylline--standard--class-action",
+              "id": "trolley-aminophylline--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-aminophylline::class-action"
+                "trolley-aminophylline::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for AMINOPHYLLINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Inhaled antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Methylxanthine bronchodilator; theophylline-ethylenediamine complex."
+                },
+                {
+                  "id": "B",
+                  "text": "Methylxanthine",
+                  "explanation": "Methylxanthine bronchodilator; theophylline-ethylenediamine complex."
+                },
+                {
+                  "id": "C",
+                  "text": "Glucocorticoid",
+                  "explanation": "The entry identifies the medicine as: Methylxanthine bronchodilator; theophylline-ethylenediamine complex."
+                },
+                {
+                  "id": "D",
+                  "text": "Short-acting beta2 agonist",
+                  "explanation": "The entry identifies the medicine as: Methylxanthine bronchodilator; theophylline-ethylenediamine complex."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-aminophylline",
+                  "field": "drugclass",
+                  "textSha256": "873c7f490625cb70a0f20381d6924f39c1d9b62866694452373dfe2915f18121"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-aminophylline--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-aminophylline::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -3805,18 +4192,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Selected bronchodilation under an authorized regimen",
-                  "explanation": "This is the treatment role taught in the entry: Bronchodilator that may still appear on emergency trolleys/local protocols; its narrow therapeutic index and pro-arrhythmic potential are particularly relevant in CCU."
-                },
-                {
-                  "id": "C",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Reversal of vitamin-K-antagonist activity",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Selected bronchodilation under an authorized regimen",
+                  "explanation": "This is the treatment role taught in the entry: Bronchodilator that may still appear on emergency trolleys/local protocols; its narrow therapeutic index and pro-arrhythmic potential are particularly relevant in CCU."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -3842,7 +4229,7 @@
               "learningPointIds": [
                 "trolley-aminophylline::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Which feature is required for the IV delivery of AMINOPHYLLINE described in this material?",
@@ -3888,7 +4275,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-aminophylline--advanced",
@@ -3905,7 +4292,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4155,7 +4542,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4170,30 +4557,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches AMITRIPTYLINE?",
+              "stem": "Which principal action explains the taught effect of AMITRIPTYLINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Benzodiazepine: enhances GABA-A receptor activity",
-                  "explanation": "This describes a different class/action. AMITRIPTYLINE is taught here as Tricyclic antidepressant (TCA)."
-                },
-                {
-                  "id": "B",
-                  "text": "Gabapentinoid: binds the alpha-2-delta calcium-channel subunit",
-                  "explanation": "This describes a different class/action. AMITRIPTYLINE is taught here as Tricyclic antidepressant (TCA)."
-                },
-                {
-                  "id": "C",
-                  "text": "Tricyclic antidepressant: inhibits serotonin/norepinephrine reuptake",
+                  "text": "Inhibits serotonin/norepinephrine reuptake",
                   "explanation": "Additional antimuscarinic, antihistamine, and sodium-channel actions explain important adverse effects."
                 },
                 {
+                  "id": "B",
+                  "text": "Modulates membrane stability and repolarization",
+                  "explanation": "This is a different pharmacological action. The taught action is: Additional antimuscarinic, antihistamine, and sodium-channel actions explain important adverse effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The taught action is: Additional antimuscarinic, antihistamine, and sodium-channel actions explain important adverse effects."
+                },
+                {
                   "id": "D",
-                  "text": "Anticonvulsant: stabilizes inactivated voltage-gated sodium channels",
-                  "explanation": "This describes a different class/action. AMITRIPTYLINE is taught here as Tricyclic antidepressant (TCA)."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "This is a different pharmacological action. The taught action is: Additional antimuscarinic, antihistamine, and sodium-channel actions explain important adverse effects."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -4218,12 +4605,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ibd2-amitriptyline--standard--class-action",
+              "id": "ibd2-amitriptyline--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ibd2-amitriptyline::class-action"
+                "ibd2-amitriptyline::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for AMITRIPTYLINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Gabapentinoid",
+                  "explanation": "The entry identifies the medicine as: Tricyclic antidepressant (TCA)."
+                },
+                {
+                  "id": "B",
+                  "text": "Anticonvulsant",
+                  "explanation": "The entry identifies the medicine as: Tricyclic antidepressant (TCA)."
+                },
+                {
+                  "id": "C",
+                  "text": "Benzodiazepine",
+                  "explanation": "The entry identifies the medicine as: Tricyclic antidepressant (TCA)."
+                },
+                {
+                  "id": "D",
+                  "text": "Tricyclic antidepressant",
+                  "explanation": "Tricyclic antidepressant (TCA)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-amitriptyline",
+                  "field": "drugclass",
+                  "textSha256": "47d617add389a278fbc77f664d58262ec5f5abe242361abd7a003182791f543b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-amitriptyline--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-amitriptyline::drug-class"
+              ],
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -4236,18 +4666,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Depressive illness or prescribed off-label neuropathic-pain treatment",
+                  "explanation": "This is the treatment role taught in the entry: Approved for depressive illness. In orthopaedic/trauma practice it may also be prescribed off-label for neuropathic pain or sleep-related pain symptoms; confirm the actual indication rather than assuming."
+                },
+                {
+                  "id": "C",
                   "text": "Inhibition of platelet aggregation after coronary stenting",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Treatment of a susceptible bacterial infection",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "D",
-                  "text": "Depressive illness or prescribed off-label neuropathic-pain treatment",
-                  "explanation": "This is the treatment role taught in the entry: Approved for depressive illness. In orthopaedic/trauma practice it may also be prescribed off-label for neuropathic pain or sleep-related pain symptoms; confirm the actual indication rather than assuming."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -4273,30 +4703,30 @@
               "learningPointIds": [
                 "ibd2-amitriptyline::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A patient taking AMITRIPTYLINE is newly drowsy and ataxic but has stable vital signs. Which activity most directly requires additional assistance?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Standing and transferring to the bathroom",
+                  "explanation": "Impaired alertness and coordination increase fall risk."
+                },
+                {
+                  "id": "B",
                   "text": "Choosing a meal while seated with support",
                   "explanation": "This does not carry the same immediate fall exposure."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Reporting pain while seated with support",
                   "explanation": "The described impairment most directly compromises unsupported mobility."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Using the call bell while seated with support",
                   "explanation": "This does not require the impaired balance involved in standing."
-                },
-                {
-                  "id": "D",
-                  "text": "Standing and transferring to the bathroom",
-                  "explanation": "Impaired alertness and coordination increase fall risk."
                 }
               ],
               "format": "single-best-answer",
@@ -4330,7 +4760,7 @@
               "learningPointIds": [
                 "ibd2-amitriptyline::sedation_falls"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which pair of effects is consistent with the antimuscarinic component of AMITRIPTYLINE?",
@@ -4342,18 +4772,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dry mouth and urinary retention",
-                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
-                },
-                {
-                  "id": "C",
                   "text": "Salivation and urinary urgency",
                   "explanation": "These are opposite to the characteristic antimuscarinic effects."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Miosis and bronchial secretions",
                   "explanation": "These do not fit the principal antimuscarinic pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Dry mouth and urinary retention",
+                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
                 }
               ],
               "format": "single-best-answer",
@@ -4387,25 +4817,25 @@
               "learningPointIds": [
                 "ibd2-amitriptyline::anticholinergic"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Which change after starting amitriptyline needs prompt mental-state review?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "New suicidal thinking or marked worsening mood",
-                  "explanation": "The material highlights this concern, particularly after initiation or dose changes."
-                },
-                {
-                  "id": "B",
                   "text": "An unchanged appetite without distress",
                   "explanation": "This does not establish the important mental-state warning."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "An unchanged long-standing preference for quiet",
                   "explanation": "This is not a new treatment-associated deterioration."
+                },
+                {
+                  "id": "C",
+                  "text": "New suicidal thinking or marked worsening mood",
+                  "explanation": "The material highlights this concern, particularly after initiation or dose changes."
                 },
                 {
                   "id": "D",
@@ -4430,10 +4860,10 @@
               "learningPointIds": [
                 "ibd2-amitriptyline::tca_mood"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ibd2-amitriptyline--advanced",
@@ -4450,7 +4880,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4671,7 +5101,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4686,30 +5116,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches PREDNITAB — prednisolone?",
+              "stem": "Which principal action explains the taught effect of PREDNITAB — prednisolone?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Methylxanthine: bronchodilation with a narrow therapeutic index",
-                  "explanation": "This describes a different class/action. PREDNITAB — prednisolone is taught here as Systemic corticosteroid (glucocorticoid)."
+                  "text": "Changes inflammatory/stress-response gene transcription",
+                  "explanation": "Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 },
                 {
                   "id": "B",
-                  "text": "Inhaled antimuscarinic: reduces vagal bronchoconstriction",
-                  "explanation": "This describes a different class/action. PREDNITAB — prednisolone is taught here as Systemic corticosteroid (glucocorticoid)."
+                  "text": "Reduces cardiac adrenergic stimulation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 },
                 {
                   "id": "C",
-                  "text": "Short-acting beta2 agonist: relaxes bronchial smooth muscle",
-                  "explanation": "This describes a different class/action. PREDNITAB — prednisolone is taught here as Systemic corticosteroid (glucocorticoid)."
+                  "text": "Receptor blockade and arterial dilation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 },
                 {
                   "id": "D",
-                  "text": "Glucocorticoid: changes inflammatory/stress-response gene transcription",
-                  "explanation": "Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -4734,12 +5164,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ibd2-prednitab-prednisolone--standard--class-action",
+              "id": "ibd2-prednitab-prednisolone--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ibd2-prednitab-prednisolone::class-action"
+                "ibd2-prednitab-prednisolone::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for PREDNITAB — prednisolone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Short-acting beta2 agonist",
+                  "explanation": "The entry identifies the medicine as: Systemic corticosteroid (glucocorticoid)."
+                },
+                {
+                  "id": "B",
+                  "text": "Glucocorticoid",
+                  "explanation": "Systemic corticosteroid (glucocorticoid)."
+                },
+                {
+                  "id": "C",
+                  "text": "Inhaled antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Systemic corticosteroid (glucocorticoid)."
+                },
+                {
+                  "id": "D",
+                  "text": "Methylxanthine",
+                  "explanation": "The entry identifies the medicine as: Systemic corticosteroid (glucocorticoid)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-prednitab-prednisolone",
+                  "field": "drugclass",
+                  "textSha256": "bf28de012193a159833367660bddf15080c9b9eb4432052199eb13007f6122ff"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-prednitab-prednisolone--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-prednitab-prednisolone::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -4802,13 +5275,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Higher glucose, possibly increasing correction needs",
-                  "explanation": "Glucocorticoids can raise glucose; use the authorized monitoring/correction plan."
+                  "text": "Lower glucose, reliably reducing correction needs",
+                  "explanation": "This reverses the usual corticosteroid concern."
                 },
                 {
                   "id": "C",
-                  "text": "Lower glucose, reliably reducing correction needs",
-                  "explanation": "This reverses the usual corticosteroid concern."
+                  "text": "Higher glucose, possibly increasing correction needs",
+                  "explanation": "Glucocorticoids can raise glucose; use the authorized monitoring/correction plan."
                 },
                 {
                   "id": "D",
@@ -4832,7 +5305,7 @@
               "learningPointIds": [
                 "ibd2-prednitab-prednisolone::steroid_glucose"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -4840,23 +5313,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Insomnia or marked mood change",
-                  "explanation": "Systemic steroids can affect mood and sleep."
-                },
-                {
-                  "id": "B",
                   "text": "New tendon pain during activity",
                   "explanation": "This is a prominent warning with fluoroquinolones rather than the mood/sleep issue asked here."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Tinnitus with hearing loss",
                   "explanation": "This more specifically raises ototoxicity concerns with other medicines."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Sustained dystonic eye deviation",
                   "explanation": "This more specifically suggests an extrapyramidal drug reaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Insomnia or marked mood change",
+                  "explanation": "Systemic steroids can affect mood and sleep."
                 }
               ],
               "point": "Systemic steroids can affect mood and sleep.",
@@ -4875,10 +5348,10 @@
               "learningPointIds": [
                 "ibd2-prednitab-prednisolone::steroid_mood"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ibd2-prednitab-prednisolone--advanced",
@@ -4895,7 +5368,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5102,7 +5575,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5117,30 +5590,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches CLINDAMYCIN?",
+              "stem": "Which principal action explains the taught effect of CLINDAMYCIN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Fluoroquinolone: inhibits bacterial DNA gyrase/topoisomerase IV",
-                  "explanation": "This describes a different class/action. CLINDAMYCIN is taught here as Lincosamide antibacterial."
+                  "text": "Blocks fast sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: Clindamycin is a lincosamide, distinct from oxazolidinones despite a shared broad ribosomal target."
                 },
                 {
                   "id": "B",
-                  "text": "Polyene antifungal: disrupts sterol-containing fungal membranes",
-                  "explanation": "This describes a different class/action. CLINDAMYCIN is taught here as Lincosamide antibacterial."
+                  "text": "Bronchodilation with a narrow therapeutic index",
+                  "explanation": "This is a different pharmacological action. The taught action is: Clindamycin is a lincosamide, distinct from oxazolidinones despite a shared broad ribosomal target."
                 },
                 {
                   "id": "C",
-                  "text": "Lincosamide: inhibits protein synthesis at the 50S subunit",
+                  "text": "Inhibits protein synthesis at the 50S subunit",
                   "explanation": "Clindamycin is a lincosamide, distinct from oxazolidinones despite a shared broad ribosomal target."
                 },
                 {
                   "id": "D",
-                  "text": "First-generation cephalosporin: inhibits bacterial cell-wall synthesis",
-                  "explanation": "This describes a different class/action. CLINDAMYCIN is taught here as Lincosamide antibacterial."
+                  "text": "Slows AV-nodal calcium-dependent conduction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Clindamycin is a lincosamide, distinct from oxazolidinones despite a shared broad ribosomal target."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5165,12 +5638,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ibd2-clindamycin--standard--class-action",
+              "id": "ibd2-clindamycin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ibd2-clindamycin::class-action"
+                "ibd2-clindamycin::principal-action"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for CLINDAMYCIN?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Glycopeptide",
+                  "explanation": "The entry identifies the medicine as: Lincosamide antibacterial."
+                },
+                {
+                  "id": "B",
+                  "text": "Lincosamide",
+                  "explanation": "Lincosamide antibacterial."
+                },
+                {
+                  "id": "C",
+                  "text": "Oxazolidinone",
+                  "explanation": "The entry identifies the medicine as: Lincosamide antibacterial."
+                },
+                {
+                  "id": "D",
+                  "text": "Polyene antifungal",
+                  "explanation": "The entry identifies the medicine as: Lincosamide antibacterial."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-clindamycin",
+                  "field": "drugclass",
+                  "textSha256": "e66bb2e7316fcc8e232821d0bbd73df57f9e215ccf69c7cc293b88bdff2e4442"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-clindamycin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-clindamycin::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -5178,13 +5694,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Prevention of valve-related thromboembolism",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Treatment of susceptible bacterial infection",
+                  "explanation": "This is the treatment role taught in the entry: Treatment of susceptible bacterial infections, including some skin/soft-tissue and bone/joint infections depending on organism and local antimicrobial plan."
                 },
                 {
                   "id": "B",
-                  "text": "Treatment of susceptible bacterial infection",
-                  "explanation": "This is the treatment role taught in the entry: Treatment of susceptible bacterial infections, including some skin/soft-tissue and bone/joint infections depending on organism and local antimicrobial plan."
+                  "text": "Prevention of valve-related thromboembolism",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
@@ -5220,7 +5736,7 @@
               "learningPointIds": [
                 "ibd2-clindamycin::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "During CLINDAMYCIN therapy, which new bowel pattern most warrants assessment for antibiotic-associated colitis?",
@@ -5237,13 +5753,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Normal formed stool after breakfast",
-                  "explanation": "This is not a new concerning diarrhea pattern."
+                  "text": "Frequent, persistent watery diarrhea",
+                  "explanation": "Persistent diarrhea during antibiotic exposure needs assessment for C. difficile and other causes."
                 },
                 {
                   "id": "D",
-                  "text": "Frequent, persistent watery diarrhea",
-                  "explanation": "Persistent diarrhea during antibiotic exposure needs assessment for C. difficile and other causes."
+                  "text": "Normal formed stool after breakfast",
+                  "explanation": "This is not a new concerning diarrhea pattern."
                 }
               ],
               "format": "single-best-answer",
@@ -5270,30 +5786,30 @@
               "learningPointIds": [
                 "ibd2-clindamycin::antibiotic_diarrhea"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Soon after CLINDAMYCIN, a patient develops wheeze, facial swelling, and hypotension. Which reaction best fits?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Anaphylaxis",
-                  "explanation": "Airway symptoms, swelling, and circulatory compromise fit immediate systemic hypersensitivity."
-                },
-                {
-                  "id": "B",
                   "text": "Dose-related neuropathy",
                   "explanation": "Neuropathy does not explain rapid facial swelling and circulatory compromise."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Antibiotic-associated colitis",
                   "explanation": "Colitis primarily presents with gastrointestinal findings rather than this immediate cluster."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Infusion-site phlebitis",
                   "explanation": "Local phlebitis does not explain the systemic airway and BP findings."
+                },
+                {
+                  "id": "D",
+                  "text": "Anaphylaxis",
+                  "explanation": "Airway symptoms, swelling, and circulatory compromise fit immediate systemic hypersensitivity."
                 }
               ],
               "format": "single-best-answer",
@@ -5313,7 +5829,7 @@
               "learningPointIds": [
                 "ibd2-clindamycin::drug_hypersensitivity"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "A bacterial infection is being treated with CLINDAMYCIN. Which paired findings most directly inform whether the antimicrobial plan remains suitable?",
@@ -5366,7 +5882,7 @@
               "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ibd2-clindamycin--advanced",
@@ -5383,7 +5899,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5520,7 +6036,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5535,30 +6051,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches MULTIVITAMIN — formulation varies?",
+              "stem": "Which principal action explains the taught effect of MULTIVITAMIN — formulation varies?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vitamin/mineral supplement: effects depend on the ingredients",
-                  "explanation": "Composition varies, so a single universal mechanism or dose cannot be assumed."
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: Composition varies, so a single universal mechanism or dose cannot be assumed."
                 },
                 {
                   "id": "B",
-                  "text": "Class Ib antiarrhythmic: blocks fast sodium channels",
-                  "explanation": "This describes a different class/action. MULTIVITAMIN — formulation varies is taught here as Vitamin/mineral supplement; composition varies by brand/product."
+                  "text": "Blocks fast sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: Composition varies, so a single universal mechanism or dose cannot be assumed."
                 },
                 {
                   "id": "C",
-                  "text": "Statin: inhibits hepatic HMG-CoA reductase",
-                  "explanation": "This describes a different class/action. MULTIVITAMIN — formulation varies is taught here as Vitamin/mineral supplement; composition varies by brand/product."
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Composition varies, so a single universal mechanism or dose cannot be assumed."
                 },
                 {
                   "id": "D",
-                  "text": "Opioid/monoamine analgesic: mu agonism and reuptake inhibition",
-                  "explanation": "This describes a different class/action. MULTIVITAMIN — formulation varies is taught here as Vitamin/mineral supplement; composition varies by brand/product."
+                  "text": "Effects depend on the ingredients",
+                  "explanation": "Composition varies, so a single universal mechanism or dose cannot be assumed."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5583,10 +6099,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ibd2-multivitamin--standard--class-action",
+              "id": "ibd2-multivitamin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ibd2-multivitamin::class-action"
+                "ibd2-multivitamin::principal-action"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for MULTIVITAMIN — formulation varies?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Vitamin/mineral supplement",
+                  "explanation": "Vitamin/mineral supplement; composition varies by brand/product."
+                },
+                {
+                  "id": "B",
+                  "text": "Inhaled antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Vitamin/mineral supplement; composition varies by brand/product."
+                },
+                {
+                  "id": "C",
+                  "text": "Oxazolidinone",
+                  "explanation": "The entry identifies the medicine as: Vitamin/mineral supplement; composition varies by brand/product."
+                },
+                {
+                  "id": "D",
+                  "text": "Statin",
+                  "explanation": "The entry identifies the medicine as: Vitamin/mineral supplement; composition varies by brand/product."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-multivitamin",
+                  "field": "drugclass",
+                  "textSha256": "65f3ff322f19a61f462f75c26a66b154802dfbb42ca51be95e6101abb7dcc257"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-multivitamin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-multivitamin::drug-class"
               ],
               "answerKey": "A"
             },
@@ -5601,13 +6160,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Prescribed nutritional supplementation",
-                  "explanation": "This is the treatment role taught in the entry: Nutritional supplementation when prescribed; the exact purpose depends on the patient's nutritional status and the product contents."
+                  "text": "Treatment of a susceptible bacterial infection",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
-                  "text": "Treatment of a susceptible bacterial infection",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Prescribed nutritional supplementation",
+                  "explanation": "This is the treatment role taught in the entry: Nutritional supplementation when prescribed; the exact purpose depends on the patient's nutritional status and the product contents."
                 },
                 {
                   "id": "D",
@@ -5638,7 +6197,7 @@
               "learningPointIds": [
                 "ibd2-multivitamin::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Two products are both called multivitamins. What must match before they can be treated as the same prescribed supplement?",
@@ -5650,18 +6209,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "The ingredients and the amounts per prescribed dose",
+                  "explanation": "Composition and strength determine equivalence."
+                },
+                {
+                  "id": "C",
                   "text": "The shared indication of nutritional supplementation",
                   "explanation": "A shared indication does not establish matching contents."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "The use of the oral route by both products",
                   "explanation": "A shared route does not establish matching contents."
-                },
-                {
-                  "id": "D",
-                  "text": "The ingredients and the amounts per prescribed dose",
-                  "explanation": "Composition and strength determine equivalence."
                 }
               ],
               "format": "single-best-answer",
@@ -5709,25 +6268,25 @@
               "learningPointIds": [
                 "ibd2-multivitamin::multivitamin_contents"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Which group in an excessive supplement regimen raises the accumulation concern identified in the material?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Vitamins A, D, E, and K",
+                  "explanation": "These fat-soluble vitamins can accumulate with excessive intake."
+                },
+                {
+                  "id": "B",
                   "text": "Vitamins C, B12, B1, and folate",
                   "explanation": "These are not the stated fat-soluble vitamins."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Vitamins B1, B2, B6, and C",
                   "explanation": "This is not the fat-soluble group identified."
-                },
-                {
-                  "id": "C",
-                  "text": "Vitamins A, D, E, and K",
-                  "explanation": "These fat-soluble vitamins can accumulate with excessive intake."
                 },
                 {
                   "id": "D",
@@ -5752,10 +6311,10 @@
               "learningPointIds": [
                 "ibd2-multivitamin::vitamin_accumulation"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ibd2-multivitamin--advanced",
@@ -5772,7 +6331,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5910,7 +6469,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5925,30 +6484,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches Alteplase (tPA)?",
+              "stem": "Which principal action explains the taught effect of Alteplase (tPA)?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Fibrinolytic: activates plasminogen to break down fibrin",
+                  "text": "Activates plasminogen to break down fibrin",
                   "explanation": "Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
                 },
                 {
                   "id": "B",
-                  "text": "Antiplatelet: irreversibly inhibits platelet COX-1",
-                  "explanation": "This describes a different class/action. Alteplase (tPA) is taught here as Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                  "text": "Bronchodilation with a narrow therapeutic index",
+                  "explanation": "This is a different pharmacological action. The taught action is: Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
                 },
                 {
                   "id": "C",
-                  "text": "Vitamin-K antagonist: reduces vitamin-K-dependent factor synthesis",
-                  "explanation": "This describes a different class/action. Alteplase (tPA) is taught here as Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                  "text": "Activates receptors to promote glucose uptake",
+                  "explanation": "This is a different pharmacological action. The taught action is: Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
                 },
                 {
                   "id": "D",
-                  "text": "Unfractionated heparin: enhances antithrombin inhibition of IIa/Xa",
-                  "explanation": "This describes a different class/action. Alteplase (tPA) is taught here as Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                  "text": "Binds the alpha-2-delta calcium-channel subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5973,12 +6532,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "verified-alteplase-v35--standard--class-action",
+              "id": "verified-alteplase-v35--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "verified-alteplase-v35::class-action"
+                "verified-alteplase-v35::principal-action"
               ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for Alteplase (tPA)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "LMWH",
+                  "explanation": "The entry identifies the medicine as: Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                },
+                {
+                  "id": "B",
+                  "text": "Fibrinolytic",
+                  "explanation": "Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                },
+                {
+                  "id": "C",
+                  "text": "Antiplatelet",
+                  "explanation": "The entry identifies the medicine as: Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                },
+                {
+                  "id": "D",
+                  "text": "Unfractionated heparin",
+                  "explanation": "The entry identifies the medicine as: Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "targetedMedications",
+                  "itemId": "verified-alteplase-v35",
+                  "field": "drugclass",
+                  "textSha256": "ea898a5b5bddf85ce2f1ee0a4ea80c948dd0d3eff736b655bb162109b914baae"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "verified-alteplase-v35--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "verified-alteplase-v35::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -6122,7 +6724,7 @@
               ]
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "verified-alteplase-v35--advanced",
@@ -6139,7 +6741,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6490,7 +7092,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6785,7 +7387,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6983,7 +7585,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7190,7 +7792,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7415,7 +8017,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8131,7 +8733,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8320,7 +8922,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8577,7 +9179,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8742,7 +9344,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8905,7 +9507,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -9105,7 +9707,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -9356,7 +9958,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,

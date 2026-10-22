@@ -47,17 +47,46 @@ def rank(seed, values):
 
 def core_questions(item, profile, families):
     family = families[profile['family']]
-    # Prefer plausible class/action alternatives in the same therapeutic domain.
-    others = [key for key in families if key != profile['family'] and families[key]['pair'] != family['pair']]
-    near = [key for key in others if families[key]['group'] == family['group']]
-    candidates = rank(item['id'] + ':near', near) + rank(item['id'] + ':far', [key for key in others if key not in near])
-    choices = [(family['pair'], family['why'])]
-    for key in candidates[:3]:
+    action = lambda f: f['pair'].split(': ', 1)[1]
+    class_name = lambda f: f['pair'].split(':', 1)[0]
+    # A class label inside a choice must not let the displayed drug name supply
+    # the answer. Ask about action without those labels. Avoid nearby classes
+    # whose overlapping physiological actions could also be defensible.
+    excluded_groups = {family['group']}
+    if family['group'] in {'bp', 'rhythm', 'vascular'}:
+        excluded_groups |= {'bp', 'rhythm', 'vascular'}
+    others = [key for key in families if families[key]['group'] not in excluded_groups]
+    candidates = rank(item['id'] + ':action', others)
+    sentence = lambda t: t[0].upper() + t[1:]
+    choices = [(sentence(action(family)), family['why'])]
+    used_actions = {action(family).casefold()}
+    used_groups = set()
+    for key in candidates:
         alternative = families[key]
-        choices.append((alternative['pair'], f"This describes a different class/action. {item['name']} is taught here as {item['drugclass']}"))
-    mechanism = mcq(f"Which class–action pairing matches {item['name']}?", choices)
-    mechanism.update(concept='class-action', point='Identify the taught drug class and its principal action.',
+        if action(alternative).casefold() in used_actions or alternative['group'] in used_groups:
+            continue
+        choices.append((sentence(action(alternative)), f"This is a different pharmacological action. The taught action is: {family['why']}"))
+        used_actions.add(action(alternative).casefold())
+        used_groups.add(alternative['group'])
+        if len(choices) == 4:
+            break
+    mechanism = mcq(f"Which principal action explains the taught effect of {item['name']}?", choices)
+    mechanism.update(concept='principal-action', point='Identify the principal pharmacological action taught for this medicine.',
                      sourceRefs=field_refs(item, ['drugclass', 'mechanism', 'why']), criticalForSafety=False)
+    core = [mechanism]
+    if not re.search(r'\b' + re.escape(class_name(family)) + r'\b', item['name'], re.I):
+        unique = {}
+        for key in rank(item['id'] + ':class', list(families)):
+            other = families[key]
+            name = class_name(other)
+            if name != class_name(family):
+                unique.setdefault(name, other)
+        names = sorted(unique, key=lambda n: (unique[n]['group'] != family['group'], digest(item['id'] + n)))[:3]
+        cls = mcq(f"Which drug class is taught for {item['name']}?",
+                  [(class_name(family), item['drugclass'])] + [(n, f"The entry identifies the medicine as: {item['drugclass']}") for n in names])
+        cls.update(concept='drug-class', point='Identify the drug class taught for this medicine.',
+                   sourceRefs=field_refs(item, ['drugclass']), criticalForSafety=False)
+        core.append(cls)
     # Alternatives are broad roles from other domains; do not use another true
     # indication of the same class as an allegedly wrong answer.
     roles = {
@@ -80,7 +109,7 @@ def core_questions(item, profile, families):
     use = mcq(f"Which treatment role is taught for {item['name']} in this entry?", choices)
     use.update(concept='treatment-role', point='Identify the main treatment role taught for this medicine.',
                sourceRefs=field_refs(item, ['use', 'memoryUse']), criticalForSafety=False)
-    return [mechanism, use]
+    return core + [use]
 
 
 def render_question(spec, item_id, stage, concept, index):
@@ -115,7 +144,7 @@ def make_exam(item, kind, stage, questions):
             'title': item.get('name', item.get('title')), 'stage': stage,
             'reviewStatus': 'authoring draft', 'passRule': {'operator': '>=' if stage == 'standard' else '>', 'percent': 90, 'roundBeforeComparison': False},
             'timing': {'timed': stage == 'advanced', 'secondsPerQuestion': 90 if stage == 'advanced' else None,
-                       'timerEnforcement': 'not implemented'},
+                       'timerEnforcement': 'persisted total deadline: 90 seconds multiplied by question count'},
             'scoring': {'correct': 1, 'incorrect': 0, 'unanswered': 0, 'partialCredit': False,
                         'unsureOrGuessed': 'review flag only', 'criticalSafetyMiss': 'separate follow-up required; original numeric score unchanged'},
             'feedback': 'show keys and all option explanations after submission',
@@ -222,6 +251,8 @@ def build():
     outputs['coverage.json'] = encoded({'schemaVersion': 1, 'status': 'mapped authored points; exhaustive source audit pending',
         'learnerExposure': 'not recorded here; no exam has been taken by creating this bank',
         'requiredAuthoredPoints': list(points.values()), 'sourceReferenceMap': source_map, 'exclusions': exclusions,
+        'questionDesignExclusions': [{'itemId': m['id'], 'detail': 'A separate class-recall question is omitted because the full class label is already supplied by the displayed medication name. Its principal action and clinical information remain tested separately.'}
+                                     for m in medications if m['id'] + '::drug-class' not in points],
         'limitations': ['Each listed point has a scored question. The inventory is not yet certified to include every required source fact.',
                         'A point appearing in a distractor, stem, or explanation does not receive additional coverage credit.',
                         'No learner exposure or pass is inferred from bank generation.']})
@@ -231,7 +262,7 @@ def build():
         'counts': dict(counts, materials=len(banks), medications=len(medications), lessons=len(lessons), mappedLearningPoints=len(points)),
         'difficulty': {'standard': 'recognition, recall, and core interpretation', 'advanced': 'application, interactions, competing explanations, and calculation',
                        'calibration': 'not empirically calibrated'},
-        'appIntegration': 'not activated; these files do not implement the exam interface or progression',
+        'appIntegration': 'Packaged for the draft standard/advanced exam interface. Scheduled-exam question sets are not yet generated.',
         'entries': entries,
         'files': [{'path': name, 'sha256': digest(data)} for name, data in outputs.items()]})
     return outputs

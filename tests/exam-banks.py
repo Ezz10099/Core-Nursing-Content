@@ -42,7 +42,7 @@ class ExamBanks(unittest.TestCase):
             self.assertNotIn('mark', path.lower())
         for path in CATALOG['generationInputs']:
             self.assertTrue((ROOT / path).is_file())
-        self.assertIn('not activated', CATALOG['appIntegration'])
+        self.assertIn('draft standard/advanced', CATALOG['appIntegration'])
 
     def test_source_references(self):
         for question in QUESTIONS:
@@ -97,7 +97,7 @@ class ExamBanks(unittest.TestCase):
                 self.assertEqual(exam['passRule'], {'operator': '>' if advanced else '>=', 'percent': 90, 'roundBeforeComparison': False})
                 self.assertEqual(exam['timing']['secondsPerQuestion'], 90 if advanced else None)
                 self.assertEqual(exam['timing']['timed'], advanced)
-                self.assertEqual(exam['timing']['timerEnforcement'], 'not implemented')
+                self.assertEqual(exam['timing']['timerEnforcement'], 'persisted total deadline: 90 seconds multiplied by question count')
                 self.assertIn('unchanged', exam['scoring']['criticalSafetyMiss'])
                 self.assertEqual(exam['scoring']['unsureOrGuessed'], 'review flag only')
 
@@ -114,6 +114,14 @@ class ExamBanks(unittest.TestCase):
     def test_files_match_catalog_checksums(self):
         for file in CATALOG['files']:
             self.assertEqual(hashlib.sha256((OUT / file['path']).read_bytes()).hexdigest(), file['sha256'])
+
+    def test_class_questions_do_not_copy_the_answer_from_the_displayed_name(self):
+        for bank in BANKS:
+            for exam in bank['exams']:
+                for q in exam['questions']:
+                    if q['id'].endswith('--drug-class'):
+                        key = next(c['text'] for c in q['choices'] if c['id'] == q['answerKey'])
+                        self.assertIsNone(re.search(r'\b' + re.escape(key) + r'\b', bank['title'], re.I), q['id'])
 
     def test_reproducibility(self):
         subprocess.run([sys.executable, str(ROOT / 'scripts/build_exams.py'), '--check'], cwd=ROOT, check=True, stdout=subprocess.PIPE)

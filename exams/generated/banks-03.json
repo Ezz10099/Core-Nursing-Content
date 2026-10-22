@@ -26,7 +26,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -41,30 +41,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches OMEPRAZOLE?",
+              "stem": "Which principal action explains the taught effect of OMEPRAZOLE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Histamine analogue: vestibular symptom treatment",
-                  "explanation": "This describes a different class/action. OMEPRAZOLE is taught here as Proton-pump inhibitor (PPI)."
+                  "text": "Inhibits serotonin/norepinephrine reuptake",
+                  "explanation": "This is a different pharmacological action. The taught action is: Blocking the final gastric acid-secretory pump reduces acid production."
                 },
                 {
                   "id": "B",
-                  "text": "D2 antagonist/prokinetic: promotes upper-GI motility",
-                  "explanation": "This describes a different class/action. OMEPRAZOLE is taught here as Proton-pump inhibitor (PPI)."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Blocking the final gastric acid-secretory pump reduces acid production."
                 },
                 {
                   "id": "C",
-                  "text": "First-generation H1 antagonist: sedating antihistamine/antiemetic effects",
-                  "explanation": "This describes a different class/action. OMEPRAZOLE is taught here as Proton-pump inhibitor (PPI)."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The taught action is: Blocking the final gastric acid-secretory pump reduces acid production."
                 },
                 {
                   "id": "D",
-                  "text": "Proton-pump inhibitor: suppresses gastric H/K ATPase",
+                  "text": "Suppresses gastric H/K ATPase",
                   "explanation": "Blocking the final gastric acid-secretory pump reduces acid production."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -89,12 +89,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-omeprazole--standard--class-action",
+              "id": "ccu-omeprazole--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-omeprazole::class-action"
+                "ccu-omeprazole::principal-action"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for OMEPRAZOLE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Osmotic laxative",
+                  "explanation": "The entry identifies the medicine as: Proton-pump inhibitor (PPI)."
+                },
+                {
+                  "id": "B",
+                  "text": "Peripheral antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Proton-pump inhibitor (PPI)."
+                },
+                {
+                  "id": "C",
+                  "text": "Proton-pump inhibitor",
+                  "explanation": "Proton-pump inhibitor (PPI)."
+                },
+                {
+                  "id": "D",
+                  "text": "Histamine analogue",
+                  "explanation": "The entry identifies the medicine as: Proton-pump inhibitor (PPI)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-omeprazole",
+                  "field": "drugclass",
+                  "textSha256": "1f514edaaef066d688daa1dac116fd6de4f3920a1a26657f5ecc28dc37129f4d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-omeprazole--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-omeprazole::drug-class"
+              ],
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -107,18 +150,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Prescribed acid suppression or GI protection",
-                  "explanation": "This is the treatment role taught in the entry: Acid suppression and GI protection according to the indication."
-                },
-                {
-                  "id": "C",
                   "text": "Suppression of ventricular ectopy by cardiac sodium-channel blockade",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Prescribed acid suppression or GI protection",
+                  "explanation": "This is the treatment role taught in the entry: Acid suppression and GI protection according to the indication."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -144,25 +187,25 @@
               "learningPointIds": [
                 "ccu-omeprazole::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "During prolonged OMEPRAZOLE therapy, which new gastrointestinal symptom is specifically identified for review?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Persistent diarrhea",
+                  "explanation": "The material highlights this symptom during prolonged treatment."
+                },
+                {
+                  "id": "B",
                   "text": "An unchanged appetite without diarrhea",
                   "explanation": "This does not establish the identified gastrointestinal problem."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "An unchanged normal bowel pattern",
                   "explanation": "This does not identify a new adverse symptom."
-                },
-                {
-                  "id": "C",
-                  "text": "Persistent diarrhea",
-                  "explanation": "The material highlights this symptom during prolonged treatment."
                 },
                 {
                   "id": "D",
@@ -187,20 +230,20 @@
               "learningPointIds": [
                 "ccu-omeprazole::persistent_diarrhea"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Why must the exact formulation be checked before crushing enteric-coated omeprazole?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "The coating protects the intended release and drug delivery",
-                  "explanation": "Crushing may disrupt acid protection and delivery."
+                  "text": "Crushing removes the CYP2C19 interaction with clopidogrel",
+                  "explanation": "Physical crushing does not remove that pharmacological interaction."
                 },
                 {
                   "id": "B",
-                  "text": "Crushing removes the CYP2C19 interaction with clopidogrel",
-                  "explanation": "Physical crushing does not remove that pharmacological interaction."
+                  "text": "The coating protects the intended release and drug delivery",
+                  "explanation": "Crushing may disrupt acid protection and delivery."
                 },
                 {
                   "id": "C",
@@ -230,10 +273,10 @@
               "learningPointIds": [
                 "ccu-omeprazole::enteric_coating"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-omeprazole--advanced",
@@ -250,7 +293,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -350,7 +393,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -365,30 +408,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches FLAGYL — metronidazole?",
+              "stem": "Which principal action explains the taught effect of FLAGYL — metronidazole?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Nitroimidazole: forms metabolites that damage microbial DNA",
-                  "explanation": "Susceptible anaerobic organisms and protozoa are targeted by reactive metabolites."
+                  "text": "Effects depend on the ingredients",
+                  "explanation": "This is a different pharmacological action. The taught action is: Susceptible anaerobic organisms and protozoa are targeted by reactive metabolites."
                 },
                 {
                   "id": "B",
-                  "text": "Polyene antifungal: disrupts sterol-containing fungal membranes",
-                  "explanation": "This describes a different class/action. FLAGYL — metronidazole is taught here as Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage."
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: Susceptible anaerobic organisms and protozoa are targeted by reactive metabolites."
                 },
                 {
                   "id": "C",
-                  "text": "First-generation cephalosporin: inhibits bacterial cell-wall synthesis",
-                  "explanation": "This describes a different class/action. FLAGYL — metronidazole is taught here as Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "Susceptible anaerobic organisms and protozoa are targeted by reactive metabolites."
                 },
                 {
                   "id": "D",
-                  "text": "Glycopeptide: binds D-Ala-D-Ala cell-wall precursors",
-                  "explanation": "This describes a different class/action. FLAGYL — metronidazole is taught here as Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage."
+                  "text": "Supplies rapidly available glucose",
+                  "explanation": "This is a different pharmacological action. The taught action is: Susceptible anaerobic organisms and protozoa are targeted by reactive metabolites."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -413,12 +456,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-metronidazole--standard--class-action",
+              "id": "ccu-metronidazole--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-metronidazole::class-action"
+                "ccu-metronidazole::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for FLAGYL — metronidazole?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Glycopeptide",
+                  "explanation": "The entry identifies the medicine as: Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage."
+                },
+                {
+                  "id": "B",
+                  "text": "Nitroimidazole",
+                  "explanation": "Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage."
+                },
+                {
+                  "id": "C",
+                  "text": "Third-generation cephalosporin",
+                  "explanation": "The entry identifies the medicine as: Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage."
+                },
+                {
+                  "id": "D",
+                  "text": "First-generation cephalosporin",
+                  "explanation": "The entry identifies the medicine as: Nitroimidazole antibacterial/antiprotozoal; important anaerobic coverage."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "drugclass",
+                  "textSha256": "b4fa40480c5785f8e2e01e453f156c889f863e3b6455ccae48eefff3e575c379"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-metronidazole--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metronidazole::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -426,23 +512,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Treatment of susceptible anaerobic or protozoal infection",
+                  "explanation": "This is the treatment role taught in the entry: Anaerobic and selected protozoal infections according to the diagnosis."
+                },
+                {
+                  "id": "B",
                   "text": "Suppression of ventricular ectopy by cardiac sodium-channel blockade",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Prevention of valve-related thromboembolism",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Relief of bronchospasm by beta2 stimulation",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "D",
-                  "text": "Treatment of susceptible anaerobic or protozoal infection",
-                  "explanation": "This is the treatment role taught in the entry: Anaerobic and selected protozoal infections according to the diagnosis."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -468,7 +554,7 @@
               "learningPointIds": [
                 "ccu-metronidazole::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "A patient taking FLAGYL — metronidazole reports new burning or numbness in the feet. Which drug-related concern is relevant?",
@@ -480,18 +566,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Peripheral neuropathy",
-                  "explanation": "New sensory symptoms can be a treatment-related warning in this material."
-                },
-                {
-                  "id": "C",
                   "text": "Gastrointestinal bleeding",
                   "explanation": "This does not best explain the new distal sensory pattern."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Acute dystonia",
                   "explanation": "This mainly produces abnormal sustained muscle postures."
+                },
+                {
+                  "id": "D",
+                  "text": "Peripheral neuropathy",
+                  "explanation": "New sensory symptoms can be a treatment-related warning in this material."
                 }
               ],
               "format": "single-best-answer",
@@ -525,7 +611,7 @@
               "learningPointIds": [
                 "ccu-metronidazole::neuropathy"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Which exposure needs review under metronidazole’s labeled precautions?",
@@ -537,18 +623,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Alcohol or propylene-glycol-containing products",
-                  "explanation": "The label includes avoidance during treatment and for its specified period afterward."
-                },
-                {
-                  "id": "C",
                   "text": "Plain drinking water",
                   "explanation": "It is not the exposure identified by the alcohol/propylene-glycol warning."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "A saline nasal rinse",
                   "explanation": "This does not establish the relevant ingredient exposure."
+                },
+                {
+                  "id": "D",
+                  "text": "Alcohol or propylene-glycol-containing products",
+                  "explanation": "The label includes avoidance during treatment and for its specified period afterward."
                 }
               ],
               "format": "single-best-answer",
@@ -575,7 +661,7 @@
               "learningPointIds": [
                 "ccu-metronidazole::metronidazole_alcohol"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -588,13 +674,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "A rapid IV push using the full bag as the bolus",
-                  "explanation": "An intermittent infusion bag is not a rapid-push dose."
+                  "text": "An intermittent infusion over its labeled time",
+                  "explanation": "Use the product-specified intermittent infusion time."
                 },
                 {
                   "id": "C",
-                  "text": "An intermittent infusion over its labeled time",
-                  "explanation": "Use the product-specified intermittent infusion time."
+                  "text": "A rapid IV push using the full bag as the bolus",
+                  "explanation": "An intermittent infusion bag is not a rapid-push dose."
                 },
                 {
                   "id": "D",
@@ -625,7 +711,7 @@
               "learningPointIds": [
                 "ccu-metronidazole::metronidazole_infusion"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "A bacterial infection is being treated with FLAGYL — metronidazole. Which paired findings most directly inform whether the antimicrobial plan remains suitable?",
@@ -671,7 +757,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-metronidazole--advanced",
@@ -688,7 +774,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -845,7 +931,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -860,30 +946,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches LINEZOLID?",
+              "stem": "Which principal action explains the taught effect of LINEZOLID?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Aminoglycoside: disrupts protein synthesis at the 30S subunit",
-                  "explanation": "This describes a different class/action. LINEZOLID is taught here as Oxazolidinone antibiotic."
+                  "text": "Blocks angiotensin-II AT1 receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Linezolid interferes with bacterial protein synthesis; its class distinguishes it from other 50S agents."
                 },
                 {
                   "id": "B",
-                  "text": "Lincosamide: inhibits protein synthesis at the 50S subunit",
-                  "explanation": "This describes a different class/action. LINEZOLID is taught here as Oxazolidinone antibiotic."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "This is a different pharmacological action. The taught action is: Linezolid interferes with bacterial protein synthesis; its class distinguishes it from other 50S agents."
                 },
                 {
                   "id": "C",
-                  "text": "Oxazolidinone: inhibits protein synthesis at the 50S subunit",
-                  "explanation": "Linezolid interferes with bacterial protein synthesis; its class distinguishes it from other 50S agents."
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Linezolid interferes with bacterial protein synthesis; its class distinguishes it from other 50S agents."
                 },
                 {
                   "id": "D",
-                  "text": "Third-generation cephalosporin: inhibits bacterial cell-wall synthesis",
-                  "explanation": "This describes a different class/action. LINEZOLID is taught here as Oxazolidinone antibiotic."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "Linezolid interferes with bacterial protein synthesis; its class distinguishes it from other 50S agents."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -908,10 +994,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-linezolid--standard--class-action",
+              "id": "ccu-linezolid--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-linezolid::class-action"
+                "ccu-linezolid::principal-action"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for LINEZOLID?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Beta-lactam",
+                  "explanation": "The entry identifies the medicine as: Oxazolidinone antibiotic."
+                },
+                {
+                  "id": "B",
+                  "text": "Polyene antifungal",
+                  "explanation": "The entry identifies the medicine as: Oxazolidinone antibiotic."
+                },
+                {
+                  "id": "C",
+                  "text": "Oxazolidinone",
+                  "explanation": "Oxazolidinone antibiotic."
+                },
+                {
+                  "id": "D",
+                  "text": "Aminoglycoside",
+                  "explanation": "The entry identifies the medicine as: Oxazolidinone antibiotic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "drugclass",
+                  "textSha256": "a9913388421c24a33b5e943e44e96edd17a0a69195f475b78f8637fe6a6a6704"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-linezolid--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-linezolid::drug-class"
               ],
               "answerKey": "C"
             },
@@ -970,23 +1099,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Complete blood count",
+                  "explanation": "It measures relevant blood-cell lines, including platelets and white cells."
+                },
+                {
+                  "id": "B",
                   "text": "Hepatic function profile",
                   "explanation": "Liver tests do not directly quantify the blood-cell lines."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Renal function profile",
                   "explanation": "Renal function is a different monitoring domain."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Coagulation profile",
                   "explanation": "Clotting times do not replace measurement of cell counts."
-                },
-                {
-                  "id": "D",
-                  "text": "Complete blood count",
-                  "explanation": "It measures relevant blood-cell lines, including platelets and white cells."
                 }
               ],
               "format": "single-best-answer",
@@ -1020,7 +1149,7 @@
               "learningPointIds": [
                 "ccu-linezolid::cbc"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "After LINEZOLID, which syndrome best explains agitation, fever, hyperreflexia, and autonomic instability?",
@@ -1166,7 +1295,7 @@
               "answerKey": "B"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-linezolid--advanced",
@@ -1183,7 +1312,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1340,7 +1469,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1355,30 +1484,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches VENTOLIN — salbutamol / albuterol?",
+              "stem": "Which principal action explains the taught effect of VENTOLIN — salbutamol / albuterol?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Methylxanthine: bronchodilation with a narrow therapeutic index",
-                  "explanation": "This describes a different class/action. VENTOLIN — salbutamol / albuterol is taught here as Short-acting beta2 agonist (SABA) bronchodilator."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Salbutamol relieves bronchospasm; repeated doses may lower potassium."
                 },
                 {
                   "id": "B",
-                  "text": "Short-acting beta2 agonist: relaxes bronchial smooth muscle",
-                  "explanation": "Salbutamol relieves bronchospasm; repeated doses may lower potassium."
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "This is a different pharmacological action. The taught action is: Salbutamol relieves bronchospasm; repeated doses may lower potassium."
                 },
                 {
                   "id": "C",
-                  "text": "Inhaled antimuscarinic: reduces vagal bronchoconstriction",
-                  "explanation": "This describes a different class/action. VENTOLIN — salbutamol / albuterol is taught here as Short-acting beta2 agonist (SABA) bronchodilator."
+                  "text": "Reduces vascular and cardiac adrenergic effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Salbutamol relieves bronchospasm; repeated doses may lower potassium."
                 },
                 {
                   "id": "D",
-                  "text": "Glucocorticoid: changes inflammatory/stress-response gene transcription",
-                  "explanation": "This describes a different class/action. VENTOLIN — salbutamol / albuterol is taught here as Short-acting beta2 agonist (SABA) bronchodilator."
+                  "text": "Relaxes bronchial smooth muscle",
+                  "explanation": "Salbutamol relieves bronchospasm; repeated doses may lower potassium."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1403,12 +1532,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-salbutamol--standard--class-action",
+              "id": "ccu-salbutamol--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-salbutamol::class-action"
+                "ccu-salbutamol::principal-action"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for VENTOLIN — salbutamol / albuterol?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Short-acting beta2 agonist",
+                  "explanation": "Short-acting beta2 agonist (SABA) bronchodilator."
+                },
+                {
+                  "id": "B",
+                  "text": "Inhaled antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Short-acting beta2 agonist (SABA) bronchodilator."
+                },
+                {
+                  "id": "C",
+                  "text": "Methylxanthine",
+                  "explanation": "The entry identifies the medicine as: Short-acting beta2 agonist (SABA) bronchodilator."
+                },
+                {
+                  "id": "D",
+                  "text": "Glucocorticoid",
+                  "explanation": "The entry identifies the medicine as: Short-acting beta2 agonist (SABA) bronchodilator."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-salbutamol",
+                  "field": "drugclass",
+                  "textSha256": "319241c8ac56bc7c2c6fd4f9c01df91b5c48f01ae403c82fc95fbffdcc787cd1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-salbutamol--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-salbutamol::drug-class"
+              ],
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -1525,13 +1697,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Melena and hematemesis",
-                  "explanation": "These indicate a bleeding pattern."
+                  "text": "Tremor and palpitations",
+                  "explanation": "These are recognized beta-agonist effects."
                 },
                 {
                   "id": "D",
-                  "text": "Tremor and palpitations",
-                  "explanation": "These are recognized beta-agonist effects."
+                  "text": "Melena and hematemesis",
+                  "explanation": "These indicate a bleeding pattern."
                 }
               ],
               "format": "single-best-answer",
@@ -1565,20 +1737,20 @@
               "learningPointIds": [
                 "ccu-salbutamol::beta2_effects"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "The supplied VENTOLIN — salbutamol / albuterol is a nebulizer solution. Which route matches that product?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Inhalation through the prescribed nebulizer setup",
-                  "explanation": "The solution is intended for inhaled delivery."
+                  "text": "IV injection through the nearest cannula",
+                  "explanation": "A nebulizer solution is not an IV preparation."
                 },
                 {
                   "id": "B",
-                  "text": "IV injection through the nearest cannula",
-                  "explanation": "A nebulizer solution is not an IV preparation."
+                  "text": "Inhalation through the prescribed nebulizer setup",
+                  "explanation": "The solution is intended for inhaled delivery."
                 },
                 {
                   "id": "C",
@@ -1622,10 +1794,10 @@
               "learningPointIds": [
                 "ccu-salbutamol::inhaled_route"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-salbutamol--advanced",
@@ -1642,7 +1814,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1742,7 +1914,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1757,30 +1929,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches NYSTATIN?",
+              "stem": "Which principal action explains the taught effect of NYSTATIN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Oxazolidinone: inhibits protein synthesis at the 50S subunit",
-                  "explanation": "This describes a different class/action. NYSTATIN is taught here as Polyene antifungal; local oral therapy."
+                  "text": "Disrupts sterol-containing fungal membranes",
+                  "explanation": "Nystatin binds fungal membrane sterols; oral local therapy does not treat systemic infection."
                 },
                 {
                   "id": "B",
-                  "text": "Glycopeptide: binds D-Ala-D-Ala cell-wall precursors",
-                  "explanation": "This describes a different class/action. NYSTATIN is taught here as Polyene antifungal; local oral therapy."
+                  "text": "Reduces vascular and cardiac adrenergic effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Nystatin binds fungal membrane sterols; oral local therapy does not treat systemic infection."
                 },
                 {
                   "id": "C",
-                  "text": "Third-generation cephalosporin: inhibits bacterial cell-wall synthesis",
-                  "explanation": "This describes a different class/action. NYSTATIN is taught here as Polyene antifungal; local oral therapy."
+                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Nystatin binds fungal membrane sterols; oral local therapy does not treat systemic infection."
                 },
                 {
                   "id": "D",
-                  "text": "Polyene antifungal: disrupts sterol-containing fungal membranes",
-                  "explanation": "Nystatin binds fungal membrane sterols; oral local therapy does not treat systemic infection."
+                  "text": "Mu agonism and reuptake inhibition",
+                  "explanation": "This is a different pharmacological action. The taught action is: Nystatin binds fungal membrane sterols; oral local therapy does not treat systemic infection."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1805,10 +1977,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-nystatin--standard--class-action",
+              "id": "ccu-nystatin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-nystatin::class-action"
+                "ccu-nystatin::principal-action"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for NYSTATIN?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Beta-lactam",
+                  "explanation": "The entry identifies the medicine as: Polyene antifungal; local oral therapy."
+                },
+                {
+                  "id": "B",
+                  "text": "Third-generation cephalosporin",
+                  "explanation": "The entry identifies the medicine as: Polyene antifungal; local oral therapy."
+                },
+                {
+                  "id": "C",
+                  "text": "Fluoroquinolone",
+                  "explanation": "The entry identifies the medicine as: Polyene antifungal; local oral therapy."
+                },
+                {
+                  "id": "D",
+                  "text": "Polyene antifungal",
+                  "explanation": "Polyene antifungal; local oral therapy."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nystatin",
+                  "field": "drugclass",
+                  "textSha256": "c93859f8e6d84cbf43a038ea90a2964108bab1caa647bc319c79d1ec7d22e1b3"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-nystatin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-nystatin::drug-class"
               ],
               "answerKey": "D"
             },
@@ -1984,7 +2199,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-nystatin--advanced",
@@ -2001,7 +2216,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2115,7 +2330,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2130,30 +2345,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches MEDIUM — betahistine?",
+              "stem": "Which principal action explains the taught effect of MEDIUM — betahistine?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Proton-pump inhibitor: suppresses gastric H/K ATPase",
-                  "explanation": "This describes a different class/action. MEDIUM — betahistine is taught here as Histamine analogue / antivertigo drug."
-                },
-                {
-                  "id": "B",
-                  "text": "Histamine analogue: vestibular symptom treatment",
+                  "text": "Vestibular symptom treatment",
                   "explanation": "Histaminergic effects are used for vertigo; it is not a primary cardiac emergency drug."
                 },
                 {
+                  "id": "B",
+                  "text": "Blocks fast sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: Histaminergic effects are used for vertigo; it is not a primary cardiac emergency drug."
+                },
+                {
                   "id": "C",
-                  "text": "First-generation H1 antagonist: sedating antihistamine/antiemetic effects",
-                  "explanation": "This describes a different class/action. MEDIUM — betahistine is taught here as Histamine analogue / antivertigo drug."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Histaminergic effects are used for vertigo; it is not a primary cardiac emergency drug."
                 },
                 {
                   "id": "D",
-                  "text": "D2 antagonist/prokinetic: promotes upper-GI motility",
-                  "explanation": "This describes a different class/action. MEDIUM — betahistine is taught here as Histamine analogue / antivertigo drug."
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Histaminergic effects are used for vertigo; it is not a primary cardiac emergency drug."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -2178,10 +2393,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-betahistine--standard--class-action",
+              "id": "ccu-betahistine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-betahistine::class-action"
+                "ccu-betahistine::principal-action"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for MEDIUM — betahistine?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "D2 antagonist/prokinetic",
+                  "explanation": "The entry identifies the medicine as: Histamine analogue / antivertigo drug."
+                },
+                {
+                  "id": "B",
+                  "text": "Histamine analogue",
+                  "explanation": "Histamine analogue / antivertigo drug."
+                },
+                {
+                  "id": "C",
+                  "text": "Peripheral antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Histamine analogue / antivertigo drug."
+                },
+                {
+                  "id": "D",
+                  "text": "First-generation H1 antagonist",
+                  "explanation": "The entry identifies the medicine as: Histamine analogue / antivertigo drug."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-betahistine",
+                  "field": "drugclass",
+                  "textSha256": "5d20a1d8a5060d1103171c6ee0907d5649188b386b137cc2911367edc41caa2f"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-betahistine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-betahistine::drug-class"
               ],
               "answerKey": "B"
             },
@@ -2250,13 +2508,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Only after symptoms have become severe",
-                  "explanation": "This is not the prescribed administration principle."
+                  "text": "With or after food",
+                  "explanation": "This may reduce stomach upset."
                 },
                 {
                   "id": "D",
-                  "text": "With or after food",
-                  "explanation": "This may reduce stomach upset."
+                  "text": "Only after symptoms have become severe",
+                  "explanation": "This is not the prescribed administration principle."
                 }
               ],
               "format": "single-best-answer",
@@ -2283,30 +2541,30 @@
               "learningPointIds": [
                 "ccu-betahistine::betahistine_tolerance"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which history pair is specifically relevant before betahistine?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Asthma and peptic-ulcer disease",
-                  "explanation": "Both are stated cautions."
-                },
-                {
-                  "id": "B",
                   "text": "AV block and recent myocardial infarction",
                   "explanation": "These are central concerns for other cardiac medicines, not the pair taught here."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Tendon rupture and peripheral neuropathy",
                   "explanation": "These are prominent fluoroquinolone concerns."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Thrombocytopenia and heparin-induced thrombosis",
                   "explanation": "These are central heparin-family concerns."
+                },
+                {
+                  "id": "D",
+                  "text": "Asthma and peptic-ulcer disease",
+                  "explanation": "Both are stated cautions."
                 }
               ],
               "format": "single-best-answer",
@@ -2326,10 +2584,10 @@
               "learningPointIds": [
                 "ccu-betahistine::betahistine_cautions"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-betahistine--advanced",
@@ -2346,7 +2604,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2439,7 +2697,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2454,30 +2712,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches PROFEX — propafenone?",
+              "stem": "Which principal action explains the taught effect of PROFEX — propafenone?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Predominantly class III agent: multiple channel/adrenergic effects",
-                  "explanation": "This describes a different class/action. PROFEX — propafenone is taught here as Class Ic sodium-channel-blocking antiarrhythmic."
-                },
-                {
-                  "id": "B",
-                  "text": "A1-receptor agonist: briefly blocks AV-nodal conduction",
-                  "explanation": "This describes a different class/action. PROFEX — propafenone is taught here as Class Ic sodium-channel-blocking antiarrhythmic."
-                },
-                {
-                  "id": "C",
-                  "text": "Class Ic antiarrhythmic: blocks fast sodium channels",
+                  "text": "Blocks fast sodium channels",
                   "explanation": "Propafenone slows conduction and is unsuitable in important structural/conduction disease contexts."
                 },
                 {
+                  "id": "B",
+                  "text": "Activates plasminogen to break down fibrin",
+                  "explanation": "This is a different pharmacological action. The taught action is: Propafenone slows conduction and is unsuitable in important structural/conduction disease contexts."
+                },
+                {
+                  "id": "C",
+                  "text": "Sedating antihistamine/antiemetic effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Propafenone slows conduction and is unsuitable in important structural/conduction disease contexts."
+                },
+                {
                   "id": "D",
-                  "text": "Cardiac glycoside: inhibits Na/K ATPase and increases vagal tone",
-                  "explanation": "This describes a different class/action. PROFEX — propafenone is taught here as Class Ic sodium-channel-blocking antiarrhythmic."
+                  "text": "Relaxes bronchial smooth muscle",
+                  "explanation": "This is a different pharmacological action. The taught action is: Propafenone slows conduction and is unsuitable in important structural/conduction disease contexts."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -2502,12 +2760,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-propafenone--standard--class-action",
+              "id": "ccu-propafenone--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-propafenone::class-action"
+                "ccu-propafenone::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for PROFEX — propafenone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Class Ic sodium-channel-blocking antiarrhythmic."
+                },
+                {
+                  "id": "B",
+                  "text": "Cardiac glycoside",
+                  "explanation": "The entry identifies the medicine as: Class Ic sodium-channel-blocking antiarrhythmic."
+                },
+                {
+                  "id": "C",
+                  "text": "A1-receptor agonist",
+                  "explanation": "The entry identifies the medicine as: Class Ic sodium-channel-blocking antiarrhythmic."
+                },
+                {
+                  "id": "D",
+                  "text": "Class Ic antiarrhythmic",
+                  "explanation": "Class Ic sodium-channel-blocking antiarrhythmic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "drugclass",
+                  "textSha256": "dbad0c0fe9a3a30b56734b7587c9b630e6cd9a06e6ec314c955a82678feeb384"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-propafenone--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-propafenone::drug-class"
+              ],
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -2525,13 +2826,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Suppression of gastric acid secretion",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Rhythm control in carefully selected arrhythmia patients",
+                  "explanation": "This is the treatment role taught in the entry: Rhythm control in carefully selected patients with arrhythmias such as AF/flutter, PSVT and some ventricular arrhythmias; not appropriate for every AF patient."
                 },
                 {
                   "id": "D",
-                  "text": "Rhythm control in carefully selected arrhythmia patients",
-                  "explanation": "This is the treatment role taught in the entry: Rhythm control in carefully selected patients with arrhythmias such as AF/flutter, PSVT and some ventricular arrhythmias; not appropriate for every AF patient."
+                  "text": "Suppression of gastric acid secretion",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -2557,7 +2858,7 @@
               "learningPointIds": [
                 "ccu-propafenone::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which new change during PROFEX — propafenone treatment most directly matches its cardiac slowing risk?",
@@ -2667,7 +2968,7 @@
               "answerKey": "B"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-propafenone--advanced",
@@ -2684,7 +2985,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2876,7 +3177,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2891,30 +3192,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches VALZADEPINE / 'Valzadipine' — amlodipine + valsartan?",
+              "stem": "Which principal action explains the taught effect of VALZADEPINE / 'Valzadipine' — amlodipine + valsartan?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "ARB plus thiazide: receptor blockade and sodium loss",
-                  "explanation": "This describes a different class/action. VALZADEPINE / 'Valzadipine' — amlodipine + valsartan is taught here as Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB)."
+                  "text": "Activates receptors to promote glucose uptake",
+                  "explanation": "This is a different pharmacological action. The taught action is: The combination contains valsartan and amlodipine."
                 },
                 {
                   "id": "B",
-                  "text": "ARB plus dihydropyridine CCB: receptor blockade and arterial dilation",
+                  "text": "Receptor blockade and arterial dilation",
                   "explanation": "The combination contains valsartan and amlodipine."
                 },
                 {
                   "id": "C",
-                  "text": "Alpha/beta blocker: reduces vascular and cardiac adrenergic effects",
-                  "explanation": "This describes a different class/action. VALZADEPINE / 'Valzadipine' — amlodipine + valsartan is taught here as Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB)."
+                  "text": "Reduces vagal slowing of the heart",
+                  "explanation": "This is a different pharmacological action. The taught action is: The combination contains valsartan and amlodipine."
                 },
                 {
                   "id": "D",
-                  "text": "ICS plus LABA: airway anti-inflammatory and bronchodilator effects",
-                  "explanation": "This describes a different class/action. VALZADEPINE / 'Valzadipine' — amlodipine + valsartan is taught here as Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB)."
+                  "text": "Supplies rapidly available glucose",
+                  "explanation": "This is a different pharmacological action. The taught action is: The combination contains valsartan and amlodipine."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -2939,10 +3240,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-valzadepine--standard--class-action",
+              "id": "ccu-valzadepine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-valzadepine::class-action"
+                "ccu-valzadepine::principal-action"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for VALZADEPINE / 'Valzadipine' — amlodipine + valsartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ARB plus thiazide",
+                  "explanation": "The entry identifies the medicine as: Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB)."
+                },
+                {
+                  "id": "B",
+                  "text": "ARB plus dihydropyridine CCB",
+                  "explanation": "Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB)."
+                },
+                {
+                  "id": "C",
+                  "text": "Organic nitrate",
+                  "explanation": "The entry identifies the medicine as: Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB)."
+                },
+                {
+                  "id": "D",
+                  "text": "ICS plus LABA",
+                  "explanation": "The entry identifies the medicine as: Combination antihypertensive: dihydropyridine CCB + angiotensin-II receptor blocker (ARB)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "drugclass",
+                  "textSha256": "aba84252ade12ed2e2b5634e86fa69a191afe67a24880535cf89b3708c8e2e53"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzadepine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzadepine::drug-class"
               ],
               "answerKey": "B"
             },
@@ -3051,13 +3395,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Falling serum potassium",
-                  "explanation": "This is the opposite of the characteristic potassium-raising concern."
+                  "text": "Rising serum potassium",
+                  "explanation": "The taught treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "B",
-                  "text": "Rising serum potassium",
-                  "explanation": "The taught treatment can increase potassium or reduce its loss."
+                  "text": "Falling serum potassium",
+                  "explanation": "This is the opposite of the characteristic potassium-raising concern."
                 },
                 {
                   "id": "C",
@@ -3094,7 +3438,7 @@
               "learningPointIds": [
                 "ccu-valzadepine::high_k"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for VALZADEPINE / 'Valzadipine' — amlodipine + valsartan?",
@@ -3111,13 +3455,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "INR and puncture-site bleeding trends",
+                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
                   "id": "D",
-                  "text": "INR and puncture-site bleeding trends",
-                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 }
               ],
               "format": "single-best-answer",
@@ -3144,7 +3488,7 @@
               "learningPointIds": [
                 "ccu-valzadepine::renal_monitor"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A patient taking VALZADEPINE / 'Valzadipine' — amlodipine + valsartan reports pregnancy. Which risk is the main reason to review the prescription promptly?",
@@ -3194,18 +3538,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Valzadepine: amlodipine; Valzan HCT: hydrochlorothiazide",
-                  "explanation": "Both contain valsartan with these different second agents."
-                },
-                {
-                  "id": "B",
                   "text": "Valzadepine: hydrochlorothiazide; Valzan HCT: amlodipine",
                   "explanation": "The second agents have been reversed."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Valzadepine: amlodipine; Valzan HCT: furosemide",
                   "explanation": "HCT is hydrochlorothiazide, not furosemide."
+                },
+                {
+                  "id": "C",
+                  "text": "Valzadepine: amlodipine; Valzan HCT: hydrochlorothiazide",
+                  "explanation": "Both contain valsartan with these different second agents."
                 },
                 {
                   "id": "D",
@@ -3258,10 +3602,10 @@
               "learningPointIds": [
                 "ccu-valzadepine::combo_components"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-valzadepine--advanced",
@@ -3278,7 +3622,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3507,7 +3851,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3522,30 +3866,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches VALZAN HCT — valsartan + hydrochlorothiazide?",
+              "stem": "Which principal action explains the taught effect of VALZAN HCT — valsartan + hydrochlorothiazide?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "ARB plus dihydropyridine CCB: receptor blockade and arterial dilation",
-                  "explanation": "This describes a different class/action. VALZAN HCT — valsartan + hydrochlorothiazide is taught here as Combination antihypertensive: ARB + thiazide diuretic."
+                  "text": "Receptor blockade and sodium loss",
+                  "explanation": "The combination contains valsartan and hydrochlorothiazide."
                 },
                 {
                   "id": "B",
-                  "text": "Opioid analgesic: activates mu receptors",
-                  "explanation": "This describes a different class/action. VALZAN HCT — valsartan + hydrochlorothiazide is taught here as Combination antihypertensive: ARB + thiazide diuretic."
+                  "text": "Mu agonism and reuptake inhibition",
+                  "explanation": "This is a different pharmacological action. The taught action is: The combination contains valsartan and hydrochlorothiazide."
                 },
                 {
                   "id": "C",
-                  "text": "ICS plus LABA: airway anti-inflammatory and bronchodilator effects",
-                  "explanation": "This describes a different class/action. VALZAN HCT — valsartan + hydrochlorothiazide is taught here as Combination antihypertensive: ARB + thiazide diuretic."
+                  "text": "Inhibits Na/K ATPase and increases vagal tone",
+                  "explanation": "This is a different pharmacological action. The taught action is: The combination contains valsartan and hydrochlorothiazide."
                 },
                 {
                   "id": "D",
-                  "text": "ARB plus thiazide: receptor blockade and sodium loss",
-                  "explanation": "The combination contains valsartan and hydrochlorothiazide."
+                  "text": "Binds the alpha-2-delta calcium-channel subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: The combination contains valsartan and hydrochlorothiazide."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -3570,10 +3914,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-valzan-hct--standard--class-action",
+              "id": "ccu-valzan-hct--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-valzan-hct::class-action"
+                "ccu-valzan-hct::principal-action"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for VALZAN HCT — valsartan + hydrochlorothiazide?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ARB plus dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Combination antihypertensive: ARB + thiazide diuretic."
+                },
+                {
+                  "id": "B",
+                  "text": "ICS plus LABA",
+                  "explanation": "The entry identifies the medicine as: Combination antihypertensive: ARB + thiazide diuretic."
+                },
+                {
+                  "id": "C",
+                  "text": "First-generation H1 antagonist",
+                  "explanation": "The entry identifies the medicine as: Combination antihypertensive: ARB + thiazide diuretic."
+                },
+                {
+                  "id": "D",
+                  "text": "ARB plus thiazide",
+                  "explanation": "Combination antihypertensive: ARB + thiazide diuretic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "drugclass",
+                  "textSha256": "64f5512857c55dc94522912d1e06da01b44eb89b5b1c09f530ec7a8a459480a2"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzan-hct--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzan-hct::drug-class"
               ],
               "answerKey": "D"
             },
@@ -3583,13 +3970,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Acute replacement of low serum calcium",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Chronic treatment of hypertension",
+                  "explanation": "This is the treatment role taught in the entry: Hypertension when monotherapy is insufficient. You observed this combination being used in CCU instead of Valzadepine in some patients; that is a treatment choice, not a dose-for-dose substitution."
                 },
                 {
                   "id": "B",
-                  "text": "Chronic treatment of hypertension",
-                  "explanation": "This is the treatment role taught in the entry: Hypertension when monotherapy is insufficient. You observed this combination being used in CCU instead of Valzadepine in some patients; that is a treatment choice, not a dose-for-dose substitution."
+                  "text": "Acute replacement of low serum calcium",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
@@ -3625,7 +4012,7 @@
               "learningPointIds": [
                 "ccu-valzan-hct::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after VALZAN HCT — valsartan + hydrochlorothiazide. Which paired assessment best checks the suspected adverse effect?",
@@ -3730,18 +4117,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Fetal toxicity",
+                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
+                },
+                {
+                  "id": "C",
                   "text": "Fetal opioid withdrawal",
                   "explanation": "This treatment is not an opioid."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Maternal ototoxicity",
                   "explanation": "Hearing injury is not the pregnancy warning being tested."
-                },
-                {
-                  "id": "D",
-                  "text": "Fetal toxicity",
-                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
                 }
               ],
               "format": "single-best-answer",
@@ -3761,7 +4148,7 @@
               "learningPointIds": [
                 "ccu-valzan-hct::pregnancy"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Which abnormality is particularly relevant when a patient taking VALZAN HCT — valsartan + hydrochlorothiazide develops confusion and weakness?",
@@ -3778,13 +4165,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Hyponatremia",
-                  "explanation": "The material identifies low sodium as a potential cause of neurological symptoms."
+                  "text": "Hypoalbuminemia",
+                  "explanation": "Albumin changes do not establish the sodium-related complication."
                 },
                 {
                   "id": "D",
-                  "text": "Hypoalbuminemia",
-                  "explanation": "Albumin changes do not establish the sodium-related complication."
+                  "text": "Hyponatremia",
+                  "explanation": "The material identifies low sodium as a potential cause of neurological symptoms."
                 }
               ],
               "format": "single-best-answer",
@@ -3811,25 +4198,25 @@
               "learningPointIds": [
                 "ccu-valzan-hct::low_na"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which pairing correctly distinguishes the two valsartan combinations in this material?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Valzadepine: amlodipine; Valzan HCT: hydrochlorothiazide",
-                  "explanation": "Both contain valsartan with these different second agents."
-                },
-                {
-                  "id": "B",
                   "text": "Valzadepine: amlodipine; Valzan HCT: furosemide",
                   "explanation": "HCT is hydrochlorothiazide, not furosemide."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Valzadepine: enalapril; Valzan HCT: hydrochlorothiazide",
                   "explanation": "Valzadepine contains amlodipine, not enalapril."
+                },
+                {
+                  "id": "C",
+                  "text": "Valzadepine: amlodipine; Valzan HCT: hydrochlorothiazide",
+                  "explanation": "Both contain valsartan with these different second agents."
                 },
                 {
                   "id": "D",
@@ -3875,10 +4262,10 @@
               "learningPointIds": [
                 "ccu-valzan-hct::combo_components"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-valzan-hct--advanced",
@@ -3895,7 +4282,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4161,7 +4548,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4176,30 +4563,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches SYMBICORT — budesonide + formoterol?",
+              "stem": "Which principal action explains the taught effect of SYMBICORT — budesonide + formoterol?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Lincosamide: inhibits protein synthesis at the 50S subunit",
-                  "explanation": "This describes a different class/action. SYMBICORT — budesonide + formoterol is taught here as Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA)."
-                },
-                {
-                  "id": "B",
-                  "text": "ICS plus LABA: airway anti-inflammatory and bronchodilator effects",
+                  "text": "Airway anti-inflammatory and bronchodilator effects",
                   "explanation": "Budesonide suppresses airway inflammation; formoterol stimulates beta2 receptors."
                 },
                 {
+                  "id": "B",
+                  "text": "Predominantly beta1-mediated increased contractility",
+                  "explanation": "This is a different pharmacological action. The taught action is: Budesonide suppresses airway inflammation; formoterol stimulates beta2 receptors."
+                },
+                {
                   "id": "C",
-                  "text": "ARB plus dihydropyridine CCB: receptor blockade and arterial dilation",
-                  "explanation": "This describes a different class/action. SYMBICORT — budesonide + formoterol is taught here as Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA)."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "This is a different pharmacological action. The taught action is: Budesonide suppresses airway inflammation; formoterol stimulates beta2 receptors."
                 },
                 {
                   "id": "D",
-                  "text": "ARB plus thiazide: receptor blockade and sodium loss",
-                  "explanation": "This describes a different class/action. SYMBICORT — budesonide + formoterol is taught here as Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA)."
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: Budesonide suppresses airway inflammation; formoterol stimulates beta2 receptors."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -4224,10 +4611,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-symbicort--standard--class-action",
+              "id": "ccu-symbicort--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-symbicort::class-action"
+                "ccu-symbicort::principal-action"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for SYMBICORT — budesonide + formoterol?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ARB plus dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA)."
+                },
+                {
+                  "id": "B",
+                  "text": "ICS plus LABA",
+                  "explanation": "Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA)."
+                },
+                {
+                  "id": "C",
+                  "text": "Opioid analgesic",
+                  "explanation": "The entry identifies the medicine as: Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA)."
+                },
+                {
+                  "id": "D",
+                  "text": "ARB plus thiazide",
+                  "explanation": "The entry identifies the medicine as: Inhaled corticosteroid (ICS) + long-acting beta2 agonist (LABA)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "drugclass",
+                  "textSha256": "b2cafa422b871f59ccd2035a19464d0225808aecd9f272c2f6d800382648c450"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-symbicort--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-symbicort::drug-class"
               ],
               "answerKey": "B"
             },
@@ -4287,23 +4717,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "A forceful, deep inhalation through the mouthpiece",
-                  "explanation": "The powder device requires this inspiratory maneuver; do not exhale into it."
-                },
-                {
-                  "id": "B",
                   "text": "An exhalation into the loaded mouthpiece before inhaling",
                   "explanation": "Exhaling into the device can interfere with proper powder delivery."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "A slow inhalation coordinated with pressing an aerosol canister",
                   "explanation": "This describes a different device type."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "A gentle tidal inhalation through a spacer after actuation",
                   "explanation": "A spacer technique does not apply to this dry-powder device."
+                },
+                {
+                  "id": "D",
+                  "text": "A forceful, deep inhalation through the mouthpiece",
+                  "explanation": "The powder device requires this inspiratory maneuver; do not exhale into it."
                 }
               ],
               "point": "Use the specific dry-powder inhaler technique.",
@@ -4343,7 +4773,7 @@
               "learningPointIds": [
                 "ccu-symbicort::inhaler_technique"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which new symptoms can reflect the beta-agonist component of SYMBICORT — budesonide + formoterol?",
@@ -4360,13 +4790,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Dry mouth and urinary retention",
-                  "explanation": "These suggest an antimuscarinic pattern."
+                  "text": "Tremor and palpitations",
+                  "explanation": "These are recognized beta-agonist effects."
                 },
                 {
                   "id": "D",
-                  "text": "Tremor and palpitations",
-                  "explanation": "These are recognized beta-agonist effects."
+                  "text": "Dry mouth and urinary retention",
+                  "explanation": "These suggest an antimuscarinic pattern."
                 }
               ],
               "format": "single-best-answer",
@@ -4400,10 +4830,10 @@
               "learningPointIds": [
                 "ccu-symbicort::beta2_effects"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-symbicort--advanced",
@@ -4420,7 +4850,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4606,7 +5036,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4621,30 +5051,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches GENTAMICIN?",
+              "stem": "Which principal action explains the taught effect of GENTAMICIN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Third-generation cephalosporin: inhibits bacterial cell-wall synthesis",
-                  "explanation": "This describes a different class/action. GENTAMICIN is taught here as Aminoglycoside antibiotic."
+                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Gentamicin acts on the bacterial 30S ribosomal subunit."
                 },
                 {
                   "id": "B",
-                  "text": "Oxazolidinone: inhibits protein synthesis at the 50S subunit",
-                  "explanation": "This describes a different class/action. GENTAMICIN is taught here as Aminoglycoside antibiotic."
+                  "text": "Predominantly central analgesic/antipyretic action",
+                  "explanation": "This is a different pharmacological action. The taught action is: Gentamicin acts on the bacterial 30S ribosomal subunit."
                 },
                 {
                   "id": "C",
-                  "text": "Aminoglycoside: disrupts protein synthesis at the 30S subunit",
+                  "text": "Disrupts protein synthesis at the 30S subunit",
                   "explanation": "Gentamicin acts on the bacterial 30S ribosomal subunit."
                 },
                 {
                   "id": "D",
-                  "text": "Carbapenem beta-lactam: inhibits bacterial cell-wall synthesis",
-                  "explanation": "This describes a different class/action. GENTAMICIN is taught here as Aminoglycoside antibiotic."
+                  "text": "Promotes upper-GI motility",
+                  "explanation": "This is a different pharmacological action. The taught action is: Gentamicin acts on the bacterial 30S ribosomal subunit."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -4669,12 +5099,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-gentamicin--standard--class-action",
+              "id": "ccu-gentamicin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-gentamicin::class-action"
+                "ccu-gentamicin::principal-action"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for GENTAMICIN?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Nitroimidazole",
+                  "explanation": "The entry identifies the medicine as: Aminoglycoside antibiotic."
+                },
+                {
+                  "id": "B",
+                  "text": "Aminoglycoside",
+                  "explanation": "Aminoglycoside antibiotic."
+                },
+                {
+                  "id": "C",
+                  "text": "Carbapenem beta-lactam",
+                  "explanation": "The entry identifies the medicine as: Aminoglycoside antibiotic."
+                },
+                {
+                  "id": "D",
+                  "text": "Fluoroquinolone",
+                  "explanation": "The entry identifies the medicine as: Aminoglycoside antibiotic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "drugclass",
+                  "textSha256": "ab52fa02f07f8039829dd2d18752206d69f4ebb5dec10d1c88d9da9ee312f1f4"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-gentamicin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-gentamicin::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -4731,18 +5204,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                },
+                {
+                  "id": "B",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
-                },
-                {
-                  "id": "C",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "D",
@@ -4781,7 +5254,7 @@
               "learningPointIds": [
                 "ccu-gentamicin::renal_monitor"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which new symptom during GENTAMICIN therapy specifically warrants review for ototoxicity?",
@@ -4843,13 +5316,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Infection response and culture susceptibility",
-                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
+                  "text": "Pain response and analgesic requirement",
+                  "explanation": "These can improve without establishing antimicrobial susceptibility."
                 },
                 {
                   "id": "C",
-                  "text": "Pain response and analgesic requirement",
-                  "explanation": "These can improve without establishing antimicrobial susceptibility."
+                  "text": "Infection response and culture susceptibility",
+                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
                 },
                 {
                   "id": "D",
@@ -4881,10 +5354,10 @@
               "learningPointIds": [
                 "ccu-gentamicin::antimicrobial_response"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-gentamicin--advanced",
@@ -4901,7 +5374,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5051,7 +5524,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5066,30 +5539,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches AEROVENT — ipratropium bromide?",
+              "stem": "Which principal action explains the taught effect of AEROVENT — ipratropium bromide?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Short-acting beta2 agonist: relaxes bronchial smooth muscle",
-                  "explanation": "This describes a different class/action. AEROVENT — ipratropium bromide is taught here as Inhaled antimuscarinic bronchodilator (SAMA)."
+                  "text": "Reduces angiotensin-II formation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Airway muscarinic blockade produces bronchodilation."
                 },
                 {
                   "id": "B",
-                  "text": "Inhaled antimuscarinic: reduces vagal bronchoconstriction",
+                  "text": "Reduces vagal bronchoconstriction",
                   "explanation": "Airway muscarinic blockade produces bronchodilation."
                 },
                 {
                   "id": "C",
-                  "text": "Methylxanthine: bronchodilation with a narrow therapeutic index",
-                  "explanation": "This describes a different class/action. AEROVENT — ipratropium bromide is taught here as Inhaled antimuscarinic bronchodilator (SAMA)."
+                  "text": "Blocks fast sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: Airway muscarinic blockade produces bronchodilation."
                 },
                 {
                   "id": "D",
-                  "text": "Glucocorticoid: changes inflammatory/stress-response gene transcription",
-                  "explanation": "This describes a different class/action. AEROVENT — ipratropium bromide is taught here as Inhaled antimuscarinic bronchodilator (SAMA)."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "This is a different pharmacological action. The taught action is: Airway muscarinic blockade produces bronchodilation."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5114,12 +5587,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-ipratropium--standard--class-action",
+              "id": "ccu-ipratropium--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-ipratropium::class-action"
+                "ccu-ipratropium::principal-action"
               ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for AEROVENT — ipratropium bromide?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Methylxanthine",
+                  "explanation": "The entry identifies the medicine as: Inhaled antimuscarinic bronchodilator (SAMA)."
+                },
+                {
+                  "id": "B",
+                  "text": "Short-acting beta2 agonist",
+                  "explanation": "The entry identifies the medicine as: Inhaled antimuscarinic bronchodilator (SAMA)."
+                },
+                {
+                  "id": "C",
+                  "text": "Inhaled antimuscarinic",
+                  "explanation": "Inhaled antimuscarinic bronchodilator (SAMA)."
+                },
+                {
+                  "id": "D",
+                  "text": "Glucocorticoid",
+                  "explanation": "The entry identifies the medicine as: Inhaled antimuscarinic bronchodilator (SAMA)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ipratropium",
+                  "field": "drugclass",
+                  "textSha256": "c78a36c9d2849e6908db65789d9a7c4a267fafe353eeb9ba7d0202b565cfaeef"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-ipratropium--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ipratropium::drug-class"
+              ],
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -5127,23 +5643,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Bronchodilation in selected obstructive-airway disease",
-                  "explanation": "This is the treatment role taught in the entry: Bronchodilation in bronchospasm, especially COPD and some asthma exacerbations."
-                },
-                {
-                  "id": "B",
                   "text": "Reversal of vitamin-K-antagonist activity",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Inhibition of platelet aggregation after coronary stenting",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Bronchodilation in selected obstructive-airway disease",
+                  "explanation": "This is the treatment role taught in the entry: Bronchodilation in bronchospasm, especially COPD and some asthma exacerbations."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -5169,25 +5685,25 @@
               "learningPointIds": [
                 "ccu-ipratropium::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which reassessment best evaluates the intended respiratory effect of AEROVENT — ipratropium bromide?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Work of breathing, wheeze, RR, and SpO2",
+                  "explanation": "These assess the patient’s response to bronchodilation."
+                },
+                {
+                  "id": "B",
                   "text": "INR, bruising, and puncture-site bleeding",
                   "explanation": "These assess an anticoagulation domain."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Bowel pattern, abdominal girth, and stool consistency",
                   "explanation": "These do not establish an airway treatment response."
-                },
-                {
-                  "id": "C",
-                  "text": "Work of breathing, wheeze, RR, and SpO2",
-                  "explanation": "These assess the patient’s response to bronchodilation."
                 },
                 {
                   "id": "D",
@@ -5212,7 +5728,7 @@
               "learningPointIds": [
                 "ccu-ipratropium::bronchodilator_response"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which pair of effects is consistent with the antimuscarinic component of AEROVENT — ipratropium bromide?",
@@ -5274,13 +5790,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Inhalation through the prescribed nebulizer setup",
-                  "explanation": "The solution is intended for inhaled delivery."
+                  "text": "IV injection through the nearest cannula",
+                  "explanation": "A nebulizer solution is not an IV preparation."
                 },
                 {
                   "id": "C",
-                  "text": "IV injection through the nearest cannula",
-                  "explanation": "A nebulizer solution is not an IV preparation."
+                  "text": "Inhalation through the prescribed nebulizer setup",
+                  "explanation": "The solution is intended for inhaled delivery."
                 },
                 {
                   "id": "D",
@@ -5326,7 +5842,7 @@
               "learningPointIds": [
                 "ccu-ipratropium::inhaled_route"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which delivery issue is specifically important for nebulized ipratropium?",
@@ -5338,18 +5854,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Avoid directing the mist into the eyes",
+                  "explanation": "The material identifies ocular exposure as a safety concern."
+                },
+                {
+                  "id": "C",
                   "text": "Direct the mist into the eyes to improve absorption",
                   "explanation": "Ocular deposition is not the intended therapeutic route."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Use the nebulizer container as an IV syringe",
                   "explanation": "Nebulizer solution is not an injectable formulation."
-                },
-                {
-                  "id": "D",
-                  "text": "Avoid directing the mist into the eyes",
-                  "explanation": "The material identifies ocular exposure as a safety concern."
                 }
               ],
               "format": "single-best-answer",
@@ -5376,10 +5892,10 @@
               "learningPointIds": [
                 "ccu-ipratropium::eye_mist"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-ipratropium--advanced",
@@ -5396,7 +5912,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5491,7 +6007,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5506,30 +6022,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches ADENOSINE?",
+              "stem": "Which principal action explains the taught effect of ADENOSINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Antimuscarinic: reduces vagal slowing of the heart",
-                  "explanation": "This describes a different class/action. ADENOSINE is taught here as Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "This is a different pharmacological action. The taught action is: Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 },
                 {
                   "id": "B",
-                  "text": "Class Ic antiarrhythmic: blocks fast sodium channels",
-                  "explanation": "This describes a different class/action. ADENOSINE is taught here as Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                  "text": "Suppresses gastric H/K ATPase",
+                  "explanation": "This is a different pharmacological action. The taught action is: Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 },
                 {
                   "id": "C",
-                  "text": "Class Ib antiarrhythmic: blocks fast sodium channels",
-                  "explanation": "This describes a different class/action. ADENOSINE is taught here as Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 },
                 {
                   "id": "D",
-                  "text": "A1-receptor agonist: briefly blocks AV-nodal conduction",
+                  "text": "Briefly blocks AV-nodal conduction",
                   "explanation": "Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5554,12 +6070,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-adenosine--standard--class-action",
+              "id": "ccu-adenosine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-adenosine::class-action"
+                "ccu-adenosine::principal-action"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for ADENOSINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A1-receptor agonist",
+                  "explanation": "Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                },
+                {
+                  "id": "B",
+                  "text": "Predominantly class III agent",
+                  "explanation": "The entry identifies the medicine as: Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                },
+                {
+                  "id": "C",
+                  "text": "Antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                },
+                {
+                  "id": "D",
+                  "text": "Class Ic antiarrhythmic",
+                  "explanation": "The entry identifies the medicine as: Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "drugclass",
+                  "textSha256": "73367a387ad118c3e68a55ae940a02ce0a3f2ebdc4133b4ae0e7b02ae5e9fda7"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-adenosine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::drug-class"
+              ],
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -5572,13 +6131,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Protocol-directed treatment of selected regular SVT",
-                  "explanation": "This is the treatment role taught in the entry: Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment."
+                  "text": "Correction of a nutritional micronutrient deficiency",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
-                  "text": "Correction of a nutritional micronutrient deficiency",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Protocol-directed treatment of selected regular SVT",
+                  "explanation": "This is the treatment role taught in the entry: Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment."
                 },
                 {
                   "id": "D",
@@ -5609,20 +6168,20 @@
               "learningPointIds": [
                 "ccu-adenosine::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which immediate effect should the team anticipate and monitor during indicated adenosine use?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Brief AV block with transient flushing or chest discomfort",
-                  "explanation": "The short-lived AV-nodal effect can feel frightening and requires monitoring."
+                  "text": "Gradual renal glucose excretion over several days",
+                  "explanation": "This is an SGLT2-inhibitor mechanism."
                 },
                 {
                   "id": "B",
-                  "text": "Gradual renal glucose excretion over several days",
-                  "explanation": "This is an SGLT2-inhibitor mechanism."
+                  "text": "Brief AV block with transient flushing or chest discomfort",
+                  "explanation": "The short-lived AV-nodal effect can feel frightening and requires monitoring."
                 },
                 {
                   "id": "C",
@@ -5666,7 +6225,7 @@
               "learningPointIds": [
                 "ccu-adenosine::adenosine_transient"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which history most directly changes the respiratory safety review before ADENOSINE?",
@@ -5683,13 +6242,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Active asthma or bronchospasm",
-                  "explanation": "The material identifies this respiratory concern."
+                  "text": "Previously controlled constipation",
+                  "explanation": "This does not establish bronchospasm risk."
                 },
                 {
                   "id": "D",
-                  "text": "Previously controlled constipation",
-                  "explanation": "This does not establish bronchospasm risk."
+                  "text": "Active asthma or bronchospasm",
+                  "explanation": "The material identifies this respiratory concern."
                 }
               ],
               "format": "single-best-answer",
@@ -5709,7 +6268,7 @@
               "learningPointIds": [
                 "ccu-adenosine::bronchospasm_risk"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "numeric-entry",
@@ -5736,7 +6295,7 @@
               ]
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-adenosine--advanced",
@@ -5753,7 +6312,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5946,7 +6505,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5961,30 +6520,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches LABETALOL?",
+              "stem": "Which principal action explains the taught effect of LABETALOL?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Non-dihydropyridine CCB: slows AV-nodal calcium-dependent conduction",
-                  "explanation": "This describes a different class/action. LABETALOL is taught here as Combined alpha1- and beta-adrenergic blocker; antihypertensive."
+                  "text": "Stabilizes inactivated voltage-gated sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: Labetalol combines alpha1 with beta1/beta2 blockade."
                 },
                 {
                   "id": "B",
-                  "text": "Beta1 blocker: reduces cardiac adrenergic stimulation",
-                  "explanation": "This describes a different class/action. LABETALOL is taught here as Combined alpha1- and beta-adrenergic blocker; antihypertensive."
+                  "text": "Disrupts protein synthesis at the 30S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Labetalol combines alpha1 with beta1/beta2 blockade."
                 },
                 {
                   "id": "C",
-                  "text": "ARB: blocks angiotensin-II AT1 receptors",
-                  "explanation": "This describes a different class/action. LABETALOL is taught here as Combined alpha1- and beta-adrenergic blocker; antihypertensive."
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "This is a different pharmacological action. The taught action is: Labetalol combines alpha1 with beta1/beta2 blockade."
                 },
                 {
                   "id": "D",
-                  "text": "Alpha/beta blocker: reduces vascular and cardiac adrenergic effects",
+                  "text": "Reduces vascular and cardiac adrenergic effects",
                   "explanation": "Labetalol combines alpha1 with beta1/beta2 blockade."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -6009,12 +6568,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-labetalol--standard--class-action",
+              "id": "ccu-labetalol--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-labetalol::class-action"
+                "ccu-labetalol::principal-action"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for LABETALOL?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Alpha/beta blocker",
+                  "explanation": "Combined alpha1- and beta-adrenergic blocker; antihypertensive."
+                },
+                {
+                  "id": "B",
+                  "text": "Nonselective beta blocker",
+                  "explanation": "The entry identifies the medicine as: Combined alpha1- and beta-adrenergic blocker; antihypertensive."
+                },
+                {
+                  "id": "C",
+                  "text": "ACE inhibitor",
+                  "explanation": "The entry identifies the medicine as: Combined alpha1- and beta-adrenergic blocker; antihypertensive."
+                },
+                {
+                  "id": "D",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Combined alpha1- and beta-adrenergic blocker; antihypertensive."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "drugclass",
+                  "textSha256": "c09b94d83127b8a7a8178c5759b15bf45df0fb6272c226ad4ea059085834918b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-labetalol--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-labetalol::drug-class"
+              ],
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -6220,23 +6822,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
-                },
-                {
-                  "id": "B",
                   "text": "The instructions for a similar-looking vial on the trolley",
                   "explanation": "Appearance does not establish an equivalent product or rate."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "The instructions for an oral product of the same name",
                   "explanation": "Oral instructions do not establish an IV administration rate."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "The IV rate previously used for a different drug class",
                   "explanation": "Another drug’s administration rate is not transferable."
+                },
+                {
+                  "id": "D",
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 }
               ],
               "format": "single-best-answer",
@@ -6263,10 +6865,10 @@
               "learningPointIds": [
                 "ccu-labetalol::slow_iv"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-labetalol--advanced",
@@ -6283,7 +6885,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6568,7 +7170,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6583,30 +7185,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches KETAMINE — ketamine hydrochloride?",
+              "stem": "Which principal action explains the taught effect of KETAMINE — ketamine hydrochloride?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dissociative anesthetic: antagonizes NMDA receptors",
-                  "explanation": "NMDA antagonism underlies dissociative anesthesia; airway complications remain possible."
+                  "text": "Briefly blocks AV-nodal conduction",
+                  "explanation": "This is a different pharmacological action. The taught action is: NMDA antagonism underlies dissociative anesthesia; airway complications remain possible."
                 },
                 {
                   "id": "B",
-                  "text": "Gabapentinoid: binds the alpha-2-delta calcium-channel subunit",
-                  "explanation": "This describes a different class/action. KETAMINE — ketamine hydrochloride is taught here as Dissociative anesthetic; NMDA-receptor antagonist."
+                  "text": "Relaxes arterial smooth muscle",
+                  "explanation": "This is a different pharmacological action. The taught action is: NMDA antagonism underlies dissociative anesthesia; airway complications remain possible."
                 },
                 {
                   "id": "C",
-                  "text": "Benzodiazepine: enhances GABA-A receptor activity",
-                  "explanation": "This describes a different class/action. KETAMINE — ketamine hydrochloride is taught here as Dissociative anesthetic; NMDA-receptor antagonist."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: NMDA antagonism underlies dissociative anesthesia; airway complications remain possible."
                 },
                 {
                   "id": "D",
-                  "text": "Tricyclic antidepressant: inhibits serotonin/norepinephrine reuptake",
-                  "explanation": "This describes a different class/action. KETAMINE — ketamine hydrochloride is taught here as Dissociative anesthetic; NMDA-receptor antagonist."
+                  "text": "Antagonizes NMDA receptors",
+                  "explanation": "NMDA antagonism underlies dissociative anesthesia; airway complications remain possible."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -6631,12 +7233,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-ketamine--standard--class-action",
+              "id": "ccu-ketamine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-ketamine::class-action"
+                "ccu-ketamine::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for KETAMINE — ketamine hydrochloride?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Gabapentinoid",
+                  "explanation": "The entry identifies the medicine as: Dissociative anesthetic; NMDA-receptor antagonist."
+                },
+                {
+                  "id": "B",
+                  "text": "Dissociative anesthetic",
+                  "explanation": "Dissociative anesthetic; NMDA-receptor antagonist."
+                },
+                {
+                  "id": "C",
+                  "text": "Anticonvulsant",
+                  "explanation": "The entry identifies the medicine as: Dissociative anesthetic; NMDA-receptor antagonist."
+                },
+                {
+                  "id": "D",
+                  "text": "Tricyclic antidepressant",
+                  "explanation": "The entry identifies the medicine as: Dissociative anesthetic; NMDA-receptor antagonist."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "drugclass",
+                  "textSha256": "a874e911dca9467cb2db8a5d344bffb13e2160dd9e9a661c610965d403a37e8f"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-ketamine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ketamine::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -6654,13 +7299,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Treatment of a susceptible bacterial infection",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Procedural sedation or anesthesia under trained supervision",
+                  "explanation": "This is the treatment role taught in the entry: Physician-directed procedural sedation or anesthetic induction when indicated."
                 },
                 {
                   "id": "D",
-                  "text": "Procedural sedation or anesthesia under trained supervision",
-                  "explanation": "This is the treatment role taught in the entry: Physician-directed procedural sedation or anesthetic induction when indicated."
+                  "text": "Treatment of a susceptible bacterial infection",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -6686,7 +7331,7 @@
               "learningPointIds": [
                 "ccu-ketamine::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which hemodynamic pattern is most typical of ketamine while recognizing that decompensation can also occur?",
@@ -6703,13 +7348,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Unchanged BP and HR throughout anesthesia",
-                  "explanation": "Significant cardiovascular changes can occur."
+                  "text": "Increased BP and HR",
+                  "explanation": "Sympathetic cardiovascular effects commonly increase BP/HR; monitoring remains necessary."
                 },
                 {
                   "id": "D",
-                  "text": "Increased BP and HR",
-                  "explanation": "Sympathetic cardiovascular effects commonly increase BP/HR; monitoring remains necessary."
+                  "text": "Unchanged BP and HR throughout anesthesia",
+                  "explanation": "Significant cardiovascular changes can occur."
                 }
               ],
               "format": "single-best-answer",
@@ -6736,7 +7381,7 @@
               "learningPointIds": [
                 "ccu-ketamine::ketamine_bp"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "A patient recovering from ketamine becomes confused and agitated. Which drug-associated phenomenon best fits?",
@@ -6748,18 +7393,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "An emergence reaction",
-                  "explanation": "Confusion or agitation can occur during recovery."
-                },
-                {
-                  "id": "C",
                   "text": "Anticoagulant-related blood loss",
                   "explanation": "The scenario provides no bleeding findings to support this explanation."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "A dystonic reaction from dopamine blockade",
                   "explanation": "This mechanism and presentation fit other drugs more closely."
+                },
+                {
+                  "id": "D",
+                  "text": "An emergence reaction",
+                  "explanation": "Confusion or agitation can occur during recovery."
                 }
               ],
               "format": "single-best-answer",
@@ -6779,25 +7424,25 @@
               "learningPointIds": [
                 "ccu-ketamine::ketamine_emergence"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "A KETAMINE — ketamine hydrochloride injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
+                },
+                {
+                  "id": "B",
                   "text": "The instructions for an oral product of the same name",
                   "explanation": "Oral instructions do not establish an IV administration rate."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "The IV rate previously used for a different drug class",
                   "explanation": "Another drug’s administration rate is not transferable."
-                },
-                {
-                  "id": "C",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 },
                 {
                   "id": "D",
@@ -6822,10 +7467,10 @@
               "learningPointIds": [
                 "ccu-ketamine::slow_iv"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-ketamine--advanced",
@@ -6842,7 +7487,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7013,7 +7658,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7028,30 +7673,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches PETHIDINE — meperidine?",
+              "stem": "Which principal action explains the taught effect of PETHIDINE — meperidine?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "NSAID: inhibits cyclooxygenase and reduces prostaglandins",
-                  "explanation": "This describes a different class/action. PETHIDINE — meperidine is taught here as Opioid analgesic."
+                  "text": "Inhibits Na/K ATPase and increases vagal tone",
+                  "explanation": "This is a different pharmacological action. The taught action is: Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 },
                 {
                   "id": "B",
-                  "text": "Opioid/monoamine analgesic: mu agonism and reuptake inhibition",
-                  "explanation": "This describes a different class/action. PETHIDINE — meperidine is taught here as Opioid analgesic."
+                  "text": "Supplies bicarbonate buffer",
+                  "explanation": "This is a different pharmacological action. The taught action is: Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 },
                 {
                   "id": "C",
-                  "text": "Non-opioid analgesic: predominantly central analgesic/antipyretic action",
-                  "explanation": "This describes a different class/action. PETHIDINE — meperidine is taught here as Opioid analgesic."
+                  "text": "Activates mu receptors",
+                  "explanation": "Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 },
                 {
                   "id": "D",
-                  "text": "Opioid analgesic: activates mu receptors",
-                  "explanation": "Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -7076,10 +7721,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-pethidine--standard--class-action",
+              "id": "ccu-pethidine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-pethidine::class-action"
+                "ccu-pethidine::principal-action"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for PETHIDINE — meperidine?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Non-opioid analgesic",
+                  "explanation": "The entry identifies the medicine as: Opioid analgesic."
+                },
+                {
+                  "id": "B",
+                  "text": "NSAID",
+                  "explanation": "The entry identifies the medicine as: Opioid analgesic."
+                },
+                {
+                  "id": "C",
+                  "text": "Opioid/monoamine analgesic",
+                  "explanation": "The entry identifies the medicine as: Opioid analgesic."
+                },
+                {
+                  "id": "D",
+                  "text": "Opioid analgesic",
+                  "explanation": "Opioid analgesic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "drugclass",
+                  "textSha256": "62915714f176daff85fab5b5bd6fa8083b922f9c5ade5af5f59b598d7efb56fd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-pethidine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pethidine::drug-class"
               ],
               "answerKey": "D"
             },
@@ -7094,18 +7782,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Prescribed analgesia in selected severe pain",
+                  "explanation": "This is the treatment role taught in the entry: Physician-prescribed analgesia for selected severe pain situations; not a routine first-choice treatment for every CCU chest-pain patient."
+                },
+                {
+                  "id": "C",
                   "text": "Replacement therapy for an adrenal crisis",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Prevention of valve-related thromboembolism",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "D",
-                  "text": "Prescribed analgesia in selected severe pain",
-                  "explanation": "This is the treatment role taught in the entry: Physician-prescribed analgesia for selected severe pain situations; not a routine first-choice treatment for every CCU chest-pain patient."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -7131,20 +7819,20 @@
               "learningPointIds": [
                 "ccu-pethidine::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "After PETHIDINE — meperidine, which change requires the most urgent assessment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "New nausea with preserved alertness",
-                  "explanation": "This is less immediately threatening than reduced responsiveness with abnormal breathing."
+                  "text": "New reduced responsiveness and shallow breathing",
+                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
                 },
                 {
                   "id": "B",
-                  "text": "New reduced responsiveness and shallow breathing",
-                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
+                  "text": "New nausea with preserved alertness",
+                  "explanation": "This is less immediately threatening than reduced responsiveness with abnormal breathing."
                 },
                 {
                   "id": "C",
@@ -7195,7 +7883,7 @@
               "learningPointIds": [
                 "ccu-pethidine::opioid_respiration"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "A patient taking PETHIDINE — meperidine is newly drowsy and ataxic but has stable vital signs. Which activity most directly requires additional assistance?",
@@ -7341,13 +8029,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
+                  "text": "The IV rate previously used for a different drug class",
+                  "explanation": "Another drug’s administration rate is not transferable."
                 },
                 {
                   "id": "D",
-                  "text": "The IV rate previously used for a different drug class",
-                  "explanation": "Another drug’s administration rate is not transferable."
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 }
               ],
               "format": "single-best-answer",
@@ -7374,10 +8062,10 @@
               "learningPointIds": [
                 "ccu-pethidine::slow_iv"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-pethidine--advanced",
@@ -7394,7 +8082,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7687,7 +8375,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7702,30 +8390,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches MORPHINE — morphine sulfate / hydrochloride?",
+              "stem": "Which principal action explains the taught effect of MORPHINE — morphine sulfate / hydrochloride?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Opioid analgesic: activates mu receptors",
+                  "text": "Activates mu receptors",
                   "explanation": "Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 },
                 {
                   "id": "B",
-                  "text": "Non-opioid analgesic: predominantly central analgesic/antipyretic action",
-                  "explanation": "This describes a different class/action. MORPHINE — morphine sulfate / hydrochloride is taught here as Strong opioid analgesic."
+                  "text": "Reduces vitamin-K-dependent factor synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 },
                 {
                   "id": "C",
-                  "text": "Opioid/monoamine analgesic: mu agonism and reuptake inhibition",
-                  "explanation": "This describes a different class/action. MORPHINE — morphine sulfate / hydrochloride is taught here as Strong opioid analgesic."
+                  "text": "Dose-dependent dopaminergic and adrenergic effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 },
                 {
                   "id": "D",
-                  "text": "NSAID: inhibits cyclooxygenase and reduces prostaglandins",
-                  "explanation": "This describes a different class/action. MORPHINE — morphine sulfate / hydrochloride is taught here as Strong opioid analgesic."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -7750,12 +8438,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-morphine--standard--class-action",
+              "id": "ccu-morphine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-morphine::class-action"
+                "ccu-morphine::principal-action"
               ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for MORPHINE — morphine sulfate / hydrochloride?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Opioid/monoamine analgesic",
+                  "explanation": "The entry identifies the medicine as: Strong opioid analgesic."
+                },
+                {
+                  "id": "B",
+                  "text": "Opioid analgesic",
+                  "explanation": "Strong opioid analgesic."
+                },
+                {
+                  "id": "C",
+                  "text": "NSAID",
+                  "explanation": "The entry identifies the medicine as: Strong opioid analgesic."
+                },
+                {
+                  "id": "D",
+                  "text": "Non-opioid analgesic",
+                  "explanation": "The entry identifies the medicine as: Strong opioid analgesic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "drugclass",
+                  "textSha256": "d232416c9d3896c83cdd3989bea55c2b60ec7d289b5836bb25ac57442a6c5d11"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-morphine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-morphine::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -7768,13 +8499,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Prescribed treatment of selected severe pain or distress",
-                  "explanation": "This is the treatment role taught in the entry: Selected severe pain/distress management when prescribed; not automatically indicated for every ACS patient or every case of pulmonary edema."
+                  "text": "Treatment of susceptible bacterial infection",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
-                  "text": "Treatment of susceptible bacterial infection",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Prescribed treatment of selected severe pain or distress",
+                  "explanation": "This is the treatment role taught in the entry: Selected severe pain/distress management when prescribed; not automatically indicated for every ACS patient or every case of pulmonary edema."
                 },
                 {
                   "id": "D",
@@ -7805,7 +8536,7 @@
               "learningPointIds": [
                 "ccu-morphine::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "After MORPHINE — morphine sulfate / hydrochloride, which change requires the most urgent assessment?",
@@ -7817,13 +8548,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "New itching without airway or BP change",
-                  "explanation": "This requires assessment but is less urgent than ventilation impairment."
+                  "text": "New reduced responsiveness and shallow breathing",
+                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
                 },
                 {
                   "id": "C",
-                  "text": "New reduced responsiveness and shallow breathing",
-                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
+                  "text": "New itching without airway or BP change",
+                  "explanation": "This requires assessment but is less urgent than ventilation impairment."
                 },
                 {
                   "id": "D",
@@ -7862,7 +8593,7 @@
               "learningPointIds": [
                 "ccu-morphine::opioid_respiration"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "A patient taking MORPHINE — morphine sulfate / hydrochloride is newly drowsy and ataxic but has stable vital signs. Which activity most directly requires additional assistance?",
@@ -7879,13 +8610,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Standing and transferring to the bathroom",
-                  "explanation": "Impaired alertness and coordination increase fall risk."
+                  "text": "Using the call bell while seated with support",
+                  "explanation": "This does not require the impaired balance involved in standing."
                 },
                 {
                   "id": "D",
-                  "text": "Using the call bell while seated with support",
-                  "explanation": "This does not require the impaired balance involved in standing."
+                  "text": "Standing and transferring to the bathroom",
+                  "explanation": "Impaired alertness and coordination increase fall risk."
                 }
               ],
               "format": "single-best-answer",
@@ -7905,7 +8636,7 @@
               "learningPointIds": [
                 "ccu-morphine::sedation_falls"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after MORPHINE — morphine sulfate / hydrochloride. Which paired assessment best checks the suspected adverse effect?",
@@ -7922,13 +8653,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Resting temperature and infection symptoms",
-                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
                 }
               ],
               "format": "single-best-answer",
@@ -7962,30 +8693,30 @@
               "learningPointIds": [
                 "ccu-morphine::hypotension"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "An immobilized patient receiving MORPHINE — morphine sulfate / hydrochloride develops reduced stool frequency and straining. Which problem best fits?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Constipation",
-                  "explanation": "The symptoms fit impaired bowel transit associated with opioid exposure and immobility."
-                },
-                {
-                  "id": "B",
                   "text": "Acute infusion intolerance",
                   "explanation": "This is not an infusion-related presentation."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Upper gastrointestinal bleeding",
                   "explanation": "No bleeding pattern is described."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Serotonin toxicity",
                   "explanation": "The case does not describe autonomic and neuromuscular excitation."
+                },
+                {
+                  "id": "D",
+                  "text": "Constipation",
+                  "explanation": "The symptoms fit impaired bowel transit associated with opioid exposure and immobility."
                 }
               ],
               "format": "single-best-answer",
@@ -8005,20 +8736,20 @@
               "learningPointIds": [
                 "ccu-morphine::constipation"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "A MORPHINE — morphine sulfate / hydrochloride injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "The instructions for a similar-looking vial on the trolley",
-                  "explanation": "Appearance does not establish an equivalent product or rate."
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 },
                 {
                   "id": "B",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
+                  "text": "The instructions for a similar-looking vial on the trolley",
+                  "explanation": "Appearance does not establish an equivalent product or rate."
                 },
                 {
                   "id": "C",
@@ -8048,10 +8779,10 @@
               "learningPointIds": [
                 "ccu-morphine::slow_iv"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-morphine--advanced",
@@ -8068,7 +8799,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8439,7 +9170,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8454,30 +9185,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches SPIRONOLACTONE — Aldactone?",
+              "stem": "Which principal action explains the taught effect of SPIRONOLACTONE — Aldactone?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Loop diuretic: inhibits Na-K-2Cl transport in the ascending loop",
-                  "explanation": "This describes a different class/action. SPIRONOLACTONE — Aldactone is taught here as Potassium-sparing diuretic; mineralocorticoid-receptor antagonist."
+                  "text": "Blocks mineralocorticoid receptors",
+                  "explanation": "Aldosterone antagonism reduces sodium retention and potassium loss."
                 },
                 {
                   "id": "B",
-                  "text": "SGLT2 inhibitor: increases renal glucose and sodium excretion",
-                  "explanation": "This describes a different class/action. SPIRONOLACTONE — Aldactone is taught here as Potassium-sparing diuretic; mineralocorticoid-receptor antagonist."
+                  "text": "Effects depend on the ingredients",
+                  "explanation": "This is a different pharmacological action. The taught action is: Aldosterone antagonism reduces sodium retention and potassium loss."
                 },
                 {
                   "id": "C",
-                  "text": "Insulin: activates receptors to promote glucose uptake",
-                  "explanation": "This describes a different class/action. SPIRONOLACTONE — Aldactone is taught here as Potassium-sparing diuretic; mineralocorticoid-receptor antagonist."
+                  "text": "Promotes upper-GI motility",
+                  "explanation": "This is a different pharmacological action. The taught action is: Aldosterone antagonism reduces sodium retention and potassium loss."
                 },
                 {
                   "id": "D",
-                  "text": "Potassium-sparing diuretic: blocks mineralocorticoid receptors",
-                  "explanation": "Aldosterone antagonism reduces sodium retention and potassium loss."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Aldosterone antagonism reduces sodium retention and potassium loss."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -8502,12 +9233,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-spironolactone--standard--class-action",
+              "id": "trolley-spironolactone--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-spironolactone::class-action"
+                "trolley-spironolactone::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for SPIRONOLACTONE — Aldactone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Loop diuretic",
+                  "explanation": "The entry identifies the medicine as: Potassium-sparing diuretic; mineralocorticoid-receptor antagonist."
+                },
+                {
+                  "id": "B",
+                  "text": "Potassium-sparing diuretic",
+                  "explanation": "Potassium-sparing diuretic; mineralocorticoid-receptor antagonist."
+                },
+                {
+                  "id": "C",
+                  "text": "SGLT2 inhibitor",
+                  "explanation": "The entry identifies the medicine as: Potassium-sparing diuretic; mineralocorticoid-receptor antagonist."
+                },
+                {
+                  "id": "D",
+                  "text": "Insulin",
+                  "explanation": "The entry identifies the medicine as: Potassium-sparing diuretic; mineralocorticoid-receptor antagonist."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "drugclass",
+                  "textSha256": "59e7c1d1a6e35ebcf2d6491d597ed611b7b6955d52bf2c6b8b4ed1e315e84724"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-spironolactone--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -8525,13 +9299,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Selected chronic HFrEF, hypertension, or aldosterone-related retention",
-                  "explanation": "This is the treatment role taught in the entry: Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide."
+                  "text": "Suppression of bacterial cell-wall synthesis",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "D",
-                  "text": "Suppression of bacterial cell-wall synthesis",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Selected chronic HFrEF, hypertension, or aldosterone-related retention",
+                  "explanation": "This is the treatment role taught in the entry: Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -8557,7 +9331,7 @@
               "learningPointIds": [
                 "trolley-spironolactone::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting SPIRONOLACTONE — Aldactone?",
@@ -8569,13 +9343,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Rising serum potassium",
-                  "explanation": "The taught treatment can increase potassium or reduce its loss."
+                  "text": "Rising serum calcium",
+                  "explanation": "Calcium elevation is not the principal effect being tested."
                 },
                 {
                   "id": "C",
-                  "text": "Rising serum calcium",
-                  "explanation": "Calcium elevation is not the principal effect being tested."
+                  "text": "Rising serum potassium",
+                  "explanation": "The taught treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "D",
@@ -8628,7 +9402,7 @@
               "learningPointIds": [
                 "trolley-spironolactone::high_k"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for SPIRONOLACTONE — Aldactone?",
@@ -8685,13 +9459,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Bowel frequency and abdominal distension",
+                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
                   "id": "B",
-                  "text": "Bowel frequency and abdominal distension",
-                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "C",
@@ -8721,10 +9495,10 @@
               "learningPointIds": [
                 "trolley-spironolactone::hypotension"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "trolley-spironolactone--advanced",
@@ -8741,7 +9515,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8950,7 +9724,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8965,30 +9739,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches LIDOCAINE HCl?",
+              "stem": "Which principal action explains the taught effect of LIDOCAINE HCl?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Class Ic antiarrhythmic: blocks fast sodium channels",
-                  "explanation": "This describes a different class/action. LIDOCAINE HCl is taught here as Class IB ventricular antiarrhythmic; also a local anesthetic."
+                  "text": "Retains water in the colon",
+                  "explanation": "This is a different pharmacological action. The taught action is: IV cardiac lidocaine is distinct from local-anesthetic preparations with additives."
                 },
                 {
                   "id": "B",
-                  "text": "A1-receptor agonist: briefly blocks AV-nodal conduction",
-                  "explanation": "This describes a different class/action. LIDOCAINE HCl is taught here as Class IB ventricular antiarrhythmic; also a local anesthetic."
-                },
-                {
-                  "id": "C",
-                  "text": "Class Ib antiarrhythmic: blocks fast sodium channels",
+                  "text": "Blocks fast sodium channels",
                   "explanation": "IV cardiac lidocaine is distinct from local-anesthetic preparations with additives."
                 },
                 {
+                  "id": "C",
+                  "text": "Stabilizes inactivated voltage-gated sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: IV cardiac lidocaine is distinct from local-anesthetic preparations with additives."
+                },
+                {
                   "id": "D",
-                  "text": "Predominantly class III agent: multiple channel/adrenergic effects",
-                  "explanation": "This describes a different class/action. LIDOCAINE HCl is taught here as Class IB ventricular antiarrhythmic; also a local anesthetic."
+                  "text": "Changes inflammatory/stress-response gene transcription",
+                  "explanation": "This is a different pharmacological action. The taught action is: IV cardiac lidocaine is distinct from local-anesthetic preparations with additives."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -9013,12 +9787,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-lidocaine--standard--class-action",
+              "id": "trolley-lidocaine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-lidocaine::class-action"
+                "trolley-lidocaine::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for LIDOCAINE HCl?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Antimuscarinic",
+                  "explanation": "The entry identifies the medicine as: Class IB ventricular antiarrhythmic; also a local anesthetic."
+                },
+                {
+                  "id": "B",
+                  "text": "Predominantly class III agent",
+                  "explanation": "The entry identifies the medicine as: Class IB ventricular antiarrhythmic; also a local anesthetic."
+                },
+                {
+                  "id": "C",
+                  "text": "Class Ic antiarrhythmic",
+                  "explanation": "The entry identifies the medicine as: Class IB ventricular antiarrhythmic; also a local anesthetic."
+                },
+                {
+                  "id": "D",
+                  "text": "Class Ib antiarrhythmic",
+                  "explanation": "Class IB ventricular antiarrhythmic; also a local anesthetic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "drugclass",
+                  "textSha256": "61b33d2320d5f2e289a9f74925e6a968e6adf96d52eaafacae07db779057af6e"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-lidocaine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-lidocaine::drug-class"
+              ],
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -9031,13 +9848,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Selected ventricular-arrhythmia or refractory-arrest treatment",
-                  "explanation": "This is the treatment role taught in the entry: AHA allows lidocaine or amiodarone for shock-refractory VF/pulseless VT; it may also be used for selected ventricular arrhythmias with a pulse."
+                  "text": "Correction of a nutritional micronutrient deficiency",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
-                  "text": "Correction of a nutritional micronutrient deficiency",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Selected ventricular-arrhythmia or refractory-arrest treatment",
+                  "explanation": "This is the treatment role taught in the entry: AHA allows lidocaine or amiodarone for shock-refractory VF/pulseless VT; it may also be used for selected ventricular arrhythmias with a pulse."
                 },
                 {
                   "id": "D",
@@ -9068,7 +9885,7 @@
               "learningPointIds": [
                 "trolley-lidocaine::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which cluster is especially relevant to systemic lidocaine toxicity?",
@@ -9128,7 +9945,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-lidocaine--advanced",
@@ -9145,7 +9962,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -9401,7 +10218,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -9416,30 +10233,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches SODIUM BICARBONATE?",
+              "stem": "Which principal action explains the taught effect of SODIUM BICARBONATE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Electrolyte: modulates membrane stability and repolarization",
-                  "explanation": "This describes a different class/action. SODIUM BICARBONATE is taught here as Systemic alkalinizing agent."
+                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Bicarbonate changes acid-base balance and is reserved for selected indications."
                 },
                 {
                   "id": "B",
-                  "text": "Hypertonic IV glucose: supplies rapidly available glucose",
-                  "explanation": "This describes a different class/action. SODIUM BICARBONATE is taught here as Systemic alkalinizing agent."
+                  "text": "Relaxes arterial smooth muscle",
+                  "explanation": "This is a different pharmacological action. The taught action is: Bicarbonate changes acid-base balance and is reserved for selected indications."
                 },
                 {
                   "id": "C",
-                  "text": "Systemic alkalinizer: supplies bicarbonate buffer",
+                  "text": "Supplies bicarbonate buffer",
                   "explanation": "Bicarbonate changes acid-base balance and is reserved for selected indications."
                 },
                 {
                   "id": "D",
-                  "text": "IV calcium salt: supports calcium and cardiac membrane stability",
-                  "explanation": "This describes a different class/action. SODIUM BICARBONATE is taught here as Systemic alkalinizing agent."
+                  "text": "Blocks fast sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: Bicarbonate changes acid-base balance and is reserved for selected indications."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -9464,12 +10281,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "trolley-sodium-bicarbonate--standard--class-action",
+              "id": "trolley-sodium-bicarbonate--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "trolley-sodium-bicarbonate::class-action"
+                "trolley-sodium-bicarbonate::principal-action"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for SODIUM BICARBONATE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Hypertonic IV glucose",
+                  "explanation": "The entry identifies the medicine as: Systemic alkalinizing agent."
+                },
+                {
+                  "id": "B",
+                  "text": "IV calcium salt",
+                  "explanation": "The entry identifies the medicine as: Systemic alkalinizing agent."
+                },
+                {
+                  "id": "C",
+                  "text": "Electrolyte",
+                  "explanation": "The entry identifies the medicine as: Systemic alkalinizing agent."
+                },
+                {
+                  "id": "D",
+                  "text": "Systemic alkalinizer",
+                  "explanation": "Systemic alkalinizing agent."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-sodium-bicarbonate",
+                  "field": "drugclass",
+                  "textSha256": "9152353948046f8dbe590ae8837387667466188cb3734a820b5ae093f8efd7fb"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-sodium-bicarbonate--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-sodium-bicarbonate::drug-class"
+              ],
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -9482,18 +10342,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Selected metabolic or toxicologic indications",
+                  "explanation": "This is the treatment role taught in the entry: Not routine in undifferentiated cardiac arrest. Use mainly for selected reversible causes/special circumstances such as specific toxicologic/metabolic indications."
+                },
+                {
+                  "id": "C",
                   "text": "Long-term suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Inhibition of platelet aggregation after coronary stenting",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "D",
-                  "text": "Selected metabolic or toxicologic indications",
-                  "explanation": "This is the treatment role taught in the entry: Not routine in undifferentiated cardiac arrest. Use mainly for selected reversible causes/special circumstances such as specific toxicologic/metabolic indications."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -9519,7 +10379,7 @@
               "learningPointIds": [
                 "trolley-sodium-bicarbonate::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -9589,13 +10449,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Ordered mEq divided by the product’s mEq/mL",
-                  "explanation": "This gives the ordered volume; concentration and units must be reconciled."
+                  "text": "Container volume alone regardless of concentration",
+                  "explanation": "Container volume is not the prescribed dose."
                 },
                 {
                   "id": "C",
-                  "text": "Container volume alone regardless of concentration",
-                  "explanation": "Container volume is not the prescribed dose."
+                  "text": "Ordered mEq divided by the product’s mEq/mL",
+                  "explanation": "This gives the ordered volume; concentration and units must be reconciled."
                 },
                 {
                   "id": "D",
@@ -9633,10 +10493,10 @@
               "learningPointIds": [
                 "trolley-sodium-bicarbonate::concentration_units"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-sodium-bicarbonate--advanced",
@@ -9653,7 +10513,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
