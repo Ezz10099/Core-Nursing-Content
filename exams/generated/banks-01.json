@@ -45,23 +45,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Blocks angiotensin-II AT1 receptors",
+                  "explanation": "AT1 blockade reduces vasoconstriction and aldosterone effects."
+                },
+                {
+                  "id": "B",
                   "text": "Inhibits hepatic HMG-CoA reductase",
                   "explanation": "This is a different pharmacological action. The taught action is: AT1 blockade reduces vasoconstriction and aldosterone effects."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Suppresses gastric H/K ATPase",
                   "explanation": "This is a different pharmacological action. The taught action is: AT1 blockade reduces vasoconstriction and aldosterone effects."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Inhibits protein synthesis at the 50S subunit",
                   "explanation": "This is a different pharmacological action. The taught action is: AT1 blockade reduces vasoconstriction and aldosterone effects."
-                },
-                {
-                  "id": "D",
-                  "text": "Blocks angiotensin-II AT1 receptors",
-                  "explanation": "AT1 blockade reduces vasoconstriction and aldosterone effects."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -94,7 +94,7 @@
               "learningPointIds": [
                 "verified-losartan::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -102,18 +102,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "ARB",
-                  "explanation": "Angiotensin II receptor blocker (ARB)."
-                },
-                {
-                  "id": "B",
                   "text": "Dihydropyridine CCB",
                   "explanation": "The entry identifies the medicine as: Angiotensin II receptor blocker (ARB)."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Beta1 blocker",
                   "explanation": "The entry identifies the medicine as: Angiotensin II receptor blocker (ARB)."
+                },
+                {
+                  "id": "C",
+                  "text": "ARB",
+                  "explanation": "Angiotensin II receptor blocker (ARB)."
                 },
                 {
                   "id": "D",
@@ -137,7 +137,7 @@
               "learningPointIds": [
                 "verified-losartan::drug-class"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -155,13 +155,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Treatment of hypertension",
-                  "explanation": "This is the treatment role taught in the entry: Main use: treatment of hypertension. Current labeling also includes selected hypertensive patients with left ventricular hypertrophy and diabetic nephropathy in type 2 diabetes."
+                  "text": "Acute reversal of opioid respiratory toxicity",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "D",
-                  "text": "Acute reversal of opioid respiratory toxicity",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Treatment of hypertension",
+                  "explanation": "This is the treatment role taught in the entry: Main use: treatment of hypertension. Current labeling also includes selected hypertensive patients with left ventricular hypertrophy and diabetic nephropathy in type 2 diabetes."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -187,7 +187,7 @@
               "learningPointIds": [
                 "verified-losartan::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after LOSARTAN. Which paired assessment best checks the suspected adverse effect?",
@@ -258,23 +258,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                },
+                {
+                  "id": "B",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "INR and puncture-site bleeding trends",
                   "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
-                },
-                {
-                  "id": "D",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 }
               ],
               "format": "single-best-answer",
@@ -308,20 +308,20 @@
               "learningPointIds": [
                 "verified-losartan::renal_monitor"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting LOSARTAN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Rising serum potassium",
-                  "explanation": "The taught treatment can increase potassium or reduce its loss."
+                  "text": "Rising serum calcium",
+                  "explanation": "Calcium elevation is not the principal effect being tested."
                 },
                 {
                   "id": "B",
-                  "text": "Rising serum calcium",
-                  "explanation": "Calcium elevation is not the principal effect being tested."
+                  "text": "Rising serum potassium",
+                  "explanation": "The taught treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "C",
@@ -365,7 +365,7 @@
               "learningPointIds": [
                 "verified-losartan::high_k"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "A patient taking LOSARTAN reports pregnancy. Which risk is the main reason to review the prescription promptly?",
@@ -377,13 +377,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Fetal toxicity",
-                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
+                  "text": "Fetal opioid withdrawal",
+                  "explanation": "This treatment is not an opioid."
                 },
                 {
                   "id": "C",
-                  "text": "Fetal opioid withdrawal",
-                  "explanation": "This treatment is not an opioid."
+                  "text": "Fetal toxicity",
+                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
                 },
                 {
                   "id": "D",
@@ -415,10 +415,96 @@
               "learningPointIds": [
                 "verified-losartan::pregnancy"
               ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Besides routine hypertension treatment, which pair of conditions is included among the selected uses taught for losartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Symptomatic bradycardia; complete heart block",
+                  "explanation": "These are conduction problems, not the additional uses listed for losartan."
+                },
+                {
+                  "id": "B",
+                  "text": "Ventricular tachycardia; atrial fibrillation",
+                  "explanation": "Losartan is not taught here as an antiarrhythmic for these rhythms."
+                },
+                {
+                  "id": "C",
+                  "text": "Acute MI chest pain; acute cardiogenic shock",
+                  "explanation": "These are acute syndromes requiring their own treatment; they are not the additional uses listed here."
+                },
+                {
+                  "id": "D",
+                  "text": "Hypertension with LVH; nephropathy in type 2 diabetes",
+                  "explanation": "The entry includes selected hypertensive patients with LVH and diabetic nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
+                }
+              ],
+              "point": "Recognize the selected LVH and type 2 diabetic nephropathy uses taught in addition to hypertension.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "use",
+                  "textSha256": "1db6e500cc3a3d2a16d1e03ac99bd955eec76e60c61e19e8bbb3e66a155717ba"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "verified-losartan--standard--losartan_additional_uses",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_additional_uses"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which medicine is specifically named in the losartan entry as requiring concurrent-medication review, separately from potassium-raising drugs and NSAIDs?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Levothyroxine",
+                  "explanation": "Levothyroxine is not the separately named interaction in this entry."
+                },
+                {
+                  "id": "B",
+                  "text": "Lithium",
+                  "explanation": "Lithium is explicitly listed for interaction review; the product label describes increased lithium exposure/toxicity."
+                },
+                {
+                  "id": "C",
+                  "text": "Lactulose",
+                  "explanation": "Lactulose is not the separately named interaction in this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Loratadine",
+                  "explanation": "Loratadine is not the separately named interaction in this entry."
+                }
+              ],
+              "point": "Recognize lithium as a medicine requiring interaction review with losartan.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "monitor",
+                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "verified-losartan--standard--losartan_lithium",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_lithium"
+              ],
               "answerKey": "B"
             }
           ],
-          "questionCount": 7
+          "questionCount": 9
         },
         {
           "id": "verified-losartan--advanced",
@@ -644,7 +730,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Review potassium-raising drugs and NSAID/lithium/RAAS interactions.",
+              "point": "Review potassium-raising medicines and NSAIDs with the potassium and renal-function checks tested in this question.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -668,9 +754,102 @@
                 "verified-losartan::raas_interactions"
               ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Losartan is on the medication chart. Which newly prescribed antihypertensive most directly raises the entry’s concern about using another renin–angiotensin system blocker?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Enalapril",
+                  "explanation": "Enalapril is an ACE inhibitor and also acts on the renin–angiotensin system; this combination needs review."
+                },
+                {
+                  "id": "B",
+                  "text": "Hydralazine",
+                  "explanation": "Hydralazine is a direct vasodilator, not another renin–angiotensin system blocker."
+                },
+                {
+                  "id": "C",
+                  "text": "Amlodipine",
+                  "explanation": "Amlodipine is a calcium-channel blocker, not another renin–angiotensin system blocker."
+                },
+                {
+                  "id": "D",
+                  "text": "Bisoprolol",
+                  "explanation": "Bisoprolol is a beta blocker, not another renin–angiotensin system blocker."
+                }
+              ],
+              "point": "Recognize the need to review concurrent renin-angiotensin system blockers.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "monitor",
+                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "verified-losartan--advanced--losartan_dual_raas",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_dual_raas"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired change follows from the AT1-receptor blockade taught for losartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Less vasoconstriction and more aldosterone effect",
+                  "explanation": "The vascular direction fits, but the aldosterone direction does not."
+                },
+                {
+                  "id": "B",
+                  "text": "More vasoconstriction and less aldosterone effect",
+                  "explanation": "The aldosterone direction fits, but the vascular direction does not."
+                },
+                {
+                  "id": "C",
+                  "text": "More vasoconstriction and more aldosterone effect",
+                  "explanation": "Both directions oppose the taught consequences of AT1 blockade."
+                },
+                {
+                  "id": "D",
+                  "text": "Less vasoconstriction and less aldosterone effect",
+                  "explanation": "Both are downstream effects of blocking angiotensin II at AT1 receptors."
+                }
+              ],
+              "point": "Relate AT1 blockade to reduced vasoconstriction and aldosterone effects.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "why",
+                  "textSha256": "72b0d753cedd2338c978812daed58f3e7f7d4adb27914a7b923713b7a4bbe2e5"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "mechanism",
+                  "textSha256": "e0590ea2f88e8a84c2829a289e5099c669335322d3388d8d8177fac5b497ea41"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "verified-losartan--advanced--losartan_at1_effects",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_at1_effects"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 6
         }
       ]
     },
@@ -723,13 +902,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Predominantly central analgesic/antipyretic action",
-                  "explanation": "Paracetamol treats pain and fever without the usual NSAID platelet/GI effects."
+                  "text": "Airway anti-inflammatory and bronchodilator effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Paracetamol treats pain and fever without the usual NSAID platelet/GI effects."
                 },
                 {
                   "id": "C",
-                  "text": "Airway anti-inflammatory and bronchodilator effects",
-                  "explanation": "This is a different pharmacological action. The taught action is: Paracetamol treats pain and fever without the usual NSAID platelet/GI effects."
+                  "text": "Predominantly central analgesic/antipyretic action",
+                  "explanation": "Paracetamol treats pain and fever without the usual NSAID platelet/GI effects."
                 },
                 {
                   "id": "D",
@@ -767,7 +946,7 @@
               "learningPointIds": [
                 "ibd2-acamol::principal-action"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -775,23 +954,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Non-opioid analgesic",
-                  "explanation": "Non-opioid analgesic and antipyretic."
-                },
-                {
-                  "id": "B",
                   "text": "Opioid/monoamine analgesic",
                   "explanation": "The entry identifies the medicine as: Non-opioid analgesic and antipyretic."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Opioid analgesic",
                   "explanation": "The entry identifies the medicine as: Non-opioid analgesic and antipyretic."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "NSAID",
                   "explanation": "The entry identifies the medicine as: Non-opioid analgesic and antipyretic."
+                },
+                {
+                  "id": "D",
+                  "text": "Non-opioid analgesic",
+                  "explanation": "Non-opioid analgesic and antipyretic."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -810,7 +989,7 @@
               "learningPointIds": [
                 "ibd2-acamol::drug-class"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -867,13 +1046,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "The combined volume of fluid swallowed",
-                  "explanation": "Fluid volume does not establish acetaminophen exposure."
+                  "text": "Acetaminophen contributed by both products",
+                  "explanation": "Total exposure depends on the shared active ingredient."
                 },
                 {
                   "id": "B",
-                  "text": "Acetaminophen contributed by both products",
-                  "explanation": "Total exposure depends on the shared active ingredient."
+                  "text": "The combined volume of fluid swallowed",
+                  "explanation": "Fluid volume does not establish acetaminophen exposure."
                 },
                 {
                   "id": "C",
@@ -917,7 +1096,7 @@
               "learningPointIds": [
                 "ibd2-acamol::acetaminophen_total"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "After excessive total exposure to ACAMOL — paracetamol (acetaminophen), which serious toxicity is the principal concern?",
@@ -929,13 +1108,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Ototoxicity",
-                  "explanation": "This is not the characteristic principal overdose hazard."
+                  "text": "Hepatotoxicity",
+                  "explanation": "Excess acetaminophen can cause severe liver injury."
                 },
                 {
                   "id": "C",
-                  "text": "Hepatotoxicity",
-                  "explanation": "Excess acetaminophen can cause severe liver injury."
+                  "text": "Ototoxicity",
+                  "explanation": "This is not the characteristic principal overdose hazard."
                 },
                 {
                   "id": "D",
@@ -981,7 +1160,7 @@
               "learningPointIds": [
                 "ibd2-acamol::hepatic_overdose"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which paired reassessment directly measures the intended analgesic response to ACAMOL — paracetamol (acetaminophen)?",
@@ -998,13 +1177,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Alertness and respiratory effort during rest",
-                  "explanation": "These assess important adverse effects rather than analgesic benefit itself."
+                  "text": "Pain intensity and ability to perform the agreed activity",
+                  "explanation": "These compare pain and function with baseline."
                 },
                 {
                   "id": "D",
-                  "text": "Pain intensity and ability to perform the agreed activity",
-                  "explanation": "These compare pain and function with baseline."
+                  "text": "Alertness and respiratory effort during rest",
+                  "explanation": "These assess important adverse effects rather than analgesic benefit itself."
                 }
               ],
               "format": "single-best-answer",
@@ -1038,10 +1217,139 @@
               "learningPointIds": [
                 "ibd2-acamol::pain_response"
               ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Paracetamol is given for fever in a patient without pain. Which comparison most directly measures the intended response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Pain score before and after the dose",
+                  "explanation": "Pain is an analgesic outcome; it does not measure fever response in this patient."
+                },
+                {
+                  "id": "B",
+                  "text": "Respiratory rate before and after the dose",
+                  "explanation": "Respiratory rate may be clinically relevant but is not the direct measure of fever reduction."
+                },
+                {
+                  "id": "C",
+                  "text": "Blood pressure before and after the dose",
+                  "explanation": "Blood pressure does not directly measure the antipyretic response."
+                },
+                {
+                  "id": "D",
+                  "text": "Temperature before and after the dose",
+                  "explanation": "Temperature is the outcome for antipyretic treatment."
+                }
+              ],
+              "point": "Assess temperature response when paracetamol is given for fever.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-acamol",
+                  "field": "monitor",
+                  "textSha256": "8c0b9c7e37b76a71fc3d388934d4f6f89afd742aca9808bf7ab9cb3a1f4a71a8"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-acamol--standard--acetam_fever_response",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-acamol::acetam_fever_response"
+              ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which comparison with NSAIDs is explicitly taught for paracetamol?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Pain/fever relief without the typical NSAID platelet/GI effects",
+                  "explanation": "This is the comparison in the entry; paracetamol still has important exposure-related liver risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Equivalent GI bleeding risk but no dose-related liver risk",
+                  "explanation": "This reverses the distinction and omits the major taught liver hazard."
+                },
+                {
+                  "id": "C",
+                  "text": "Pain/fever relief through the same platelet inhibition as aspirin",
+                  "explanation": "The entry distinguishes paracetamol from typical NSAID platelet effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Inflammation control with stronger peripheral COX inhibition",
+                  "explanation": "The entry emphasizes central analgesic/antipyretic action, not stronger peripheral anti-inflammatory action."
+                }
+              ],
+              "point": "Distinguish paracetamol from the typical platelet/GI effects of NSAIDs.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-acamol",
+                  "field": "why",
+                  "textSha256": "83ca2568b731928c51c62e0bde25b53cff839328ef5410f4e8088b56ba44005b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-acamol--standard--acetam_nsaid_distinction",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-acamol::acetam_nsaid_distinction"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which history item is specifically relevant to the liver-risk review before paracetamol in this entry?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Aspirin-associated bronchospasm",
+                  "explanation": "This is important when considering NSAIDs; it is not the liver-risk factor asked about."
+                },
+                {
+                  "id": "B",
+                  "text": "Heavy alcohol use",
+                  "explanation": "This is specifically relevant to the liver-risk review described for paracetamol."
+                },
+                {
+                  "id": "C",
+                  "text": "Previous symptomatic bradycardia",
+                  "explanation": "This matters for rate-slowing drugs, but is not the paracetamol liver-risk factor asked about."
+                },
+                {
+                  "id": "D",
+                  "text": "Previous peptic-ulcer bleeding",
+                  "explanation": "This is an important medication history, particularly for NSAIDs, but is not the liver-risk factor asked about."
+                }
+              ],
+              "point": "Include heavy alcohol use in paracetamol safety assessment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-acamol",
+                  "field": "monitor",
+                  "textSha256": "8c0b9c7e37b76a71fc3d388934d4f6f89afd742aca9808bf7ab9cb3a1f4a71a8"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-acamol--standard--acetam_alcohol_review",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-acamol::acetam_alcohol_review"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 6
+          "questionCount": 9
         },
         {
           "id": "ibd2-acamol--advanced",
@@ -1217,7 +1525,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Acetaminophen limits must reflect liver disease, alcohol, frailty, and total exposure.",
+              "point": "Review the patient-specific acetaminophen limit in frailty and liver disease.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1660,7 +1968,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Distinguish plain ibuprofen from an ibuprofen/acetaminophen combination.",
+              "point": "Distinguish plain Trufen from Trufen Extra by its added paracetamol.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1755,9 +2063,52 @@
                 "ibd2-trufen::pain_response"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "In addition to GI bleeding, renal injury, and fluid retention, which risk is explicitly included in the ibuprofen entry?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Progressive pulmonary fibrosis",
+                  "explanation": "This is not the additional risk identified in this entry."
+                },
+                {
+                  "id": "B",
+                  "text": "Immune-mediated thrombocytopenia",
+                  "explanation": "This is not the additional risk identified in this entry."
+                },
+                {
+                  "id": "C",
+                  "text": "Serious cardiovascular events",
+                  "explanation": "Increased cardiovascular risk is a separate NSAID precaution in the material."
+                },
+                {
+                  "id": "D",
+                  "text": "Hemorrhagic bladder injury",
+                  "explanation": "This is not the additional risk identified in this entry."
+                }
+              ],
+              "point": "Recognize cardiovascular risk as a distinct NSAID precaution.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-trufen",
+                  "field": "monitor",
+                  "textSha256": "f4660c1363af6f79704fe2e94abefe09244982ee46dde3b9d9273e074f1b6929"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-trufen--standard--ibuprofen_cv_risk",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-trufen::ibuprofen_cv_risk"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 9
+          "questionCount": 10
         },
         {
           "id": "ibd2-trufen--advanced",
@@ -1954,18 +2305,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Analgesic benefit with possible worsening congestion",
-                  "explanation": "The desired effect and fluid-related harm can coexist."
-                },
-                {
-                  "id": "C",
                   "text": "Analgesic failure with improving cardiac perfusion",
                   "explanation": "Pain improved, and the new symptoms do not establish better perfusion."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Reduced extracellular volume with ongoing inflammation",
                   "explanation": "Edema and breathlessness suggest a different volume concern."
+                },
+                {
+                  "id": "D",
+                  "text": "Analgesic benefit with possible worsening congestion",
+                  "explanation": "The desired effect and fluid-related harm can coexist."
                 }
               ],
               "format": "single-best-answer",
@@ -1985,7 +2336,7 @@
               "learningPointIds": [
                 "ibd2-trufen::nsaid_cv"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "A patient is prescribed TRUFEN — ibuprofen and reports taking an additional NSAID bought outside the hospital. Which issue needs clarification?",
@@ -2036,9 +2387,52 @@
                 "ibd2-trufen::duplicate_nsaid"
               ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A postoperative patient’s pain and swelling have improved on ibuprofen. Which plan best follows the taught exposure principle?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Increase the interval only after the full prescribed course ends",
+                  "explanation": "The entry supports reviewing exposure as needs change, not postponing all review until the end."
+                },
+                {
+                  "id": "B",
+                  "text": "Review the lowest effective ordered dose and shortest needed course",
+                  "explanation": "Both dose and duration should be kept appropriate to the individual treatment goal."
+                },
+                {
+                  "id": "C",
+                  "text": "Keep the current dose until all swelling has disappeared",
+                  "explanation": "A single symptom does not justify continuing unchanged exposure without review."
+                },
+                {
+                  "id": "D",
+                  "text": "Keep the current dose until the entire packet is finished",
+                  "explanation": "Packet size does not determine the required treatment duration."
+                }
+              ],
+              "point": "Use the lowest effective ordered NSAID dose for the shortest appropriate duration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-trufen",
+                  "field": "administration",
+                  "textSha256": "e1faf95123c64e205f6c42e2cbe36583c2507b501f3a3e6e2e91b4337efd6201"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-trufen--advanced--ibuprofen_minimum_exposure",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-trufen::ibuprofen_minimum_exposure"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         }
       ]
     },
@@ -2148,18 +2542,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "First-generation cephalosporin",
-                  "explanation": "First-generation cephalosporin antibacterial."
-                },
-                {
-                  "id": "C",
                   "text": "Fluoroquinolone",
                   "explanation": "The entry identifies the medicine as: First-generation cephalosporin antibacterial."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Polyene antifungal",
                   "explanation": "The entry identifies the medicine as: First-generation cephalosporin antibacterial."
+                },
+                {
+                  "id": "D",
+                  "text": "First-generation cephalosporin",
+                  "explanation": "First-generation cephalosporin antibacterial."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -2178,7 +2572,7 @@
               "learningPointIds": [
                 "ibd2-cefazolin::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -2191,18 +2585,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Perioperative prophylaxis or susceptible bacterial infection",
-                  "explanation": "This is the treatment role taught in the entry: Highly relevant to orthopaedics for perioperative antibacterial prophylaxis and for treatment of susceptible bacterial infections when prescribed."
-                },
-                {
-                  "id": "C",
                   "text": "Prevention of valve-related thromboembolism",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Suppression of ventricular ectopy by cardiac sodium-channel blockade",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Perioperative prophylaxis or susceptible bacterial infection",
+                  "explanation": "This is the treatment role taught in the entry: Highly relevant to orthopaedics for perioperative antibacterial prophylaxis and for treatment of susceptible bacterial infections when prescribed."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -2228,7 +2622,7 @@
               "learningPointIds": [
                 "ibd2-cefazolin::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Minutes after starting CEFAZOLIN, a patient develops wheeze, facial swelling, and hypotension. Which reaction best fits?",
@@ -2245,13 +2639,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Antibiotic-associated colitis",
-                  "explanation": "This does not explain the immediate airway and circulatory pattern."
+                  "text": "Anaphylaxis",
+                  "explanation": "Acute airway and circulatory compromise after exposure is strongly concerning."
                 },
                 {
                   "id": "D",
-                  "text": "Anaphylaxis",
-                  "explanation": "Acute airway and circulatory compromise after exposure is strongly concerning."
+                  "text": "Antibiotic-associated colitis",
+                  "explanation": "This does not explain the immediate airway and circulatory pattern."
                 }
               ],
               "format": "single-best-answer",
@@ -2278,25 +2672,25 @@
               "learningPointIds": [
                 "ibd2-cefazolin::betalactam_allergy"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for CEFAZOLIN?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Creatinine trend and estimated GFR",
+                  "explanation": "These inform renal clearance and regimen review."
+                },
+                {
+                  "id": "B",
                   "text": "ALT trend and serum bilirubin",
                   "explanation": "These assess hepatic injury rather than directly estimate renal clearance."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "TSH trend and free thyroxine",
                   "explanation": "These assess thyroid function rather than renal elimination."
-                },
-                {
-                  "id": "C",
-                  "text": "Creatinine trend and estimated GFR",
-                  "explanation": "These inform renal clearance and regimen review."
                 },
                 {
                   "id": "D",
@@ -2335,20 +2729,20 @@
               "learningPointIds": [
                 "ibd2-cefazolin::renal_dose"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "During CEFAZOLIN therapy, which new bowel pattern most warrants assessment for antibiotic-associated colitis?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Frequent, persistent watery diarrhea",
-                  "explanation": "Persistent diarrhea during antibiotic exposure needs assessment for C. difficile and other causes."
+                  "text": "Normal formed stool after breakfast",
+                  "explanation": "This is not a new concerning diarrhea pattern."
                 },
                 {
                   "id": "B",
-                  "text": "Normal formed stool after breakfast",
-                  "explanation": "This is not a new concerning diarrhea pattern."
+                  "text": "Frequent, persistent watery diarrhea",
+                  "explanation": "Persistent diarrhea during antibiotic exposure needs assessment for C. difficile and other causes."
                 },
                 {
                   "id": "C",
@@ -2378,25 +2772,25 @@
               "learningPointIds": [
                 "ibd2-cefazolin::antibiotic_diarrhea"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "When CEFAZOLIN is ordered for perioperative prophylaxis, which event determines the key timing relationship?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "The surgical incision",
+                  "explanation": "Protective antibacterial exposure is needed during operative contamination risk."
+                },
+                {
+                  "id": "B",
                   "text": "The first postoperative fever",
                   "explanation": "Waiting for fever would not meet a prophylactic purpose."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "The first postoperative dressing change",
                   "explanation": "The protective aim precedes this later event."
-                },
-                {
-                  "id": "C",
-                  "text": "The surgical incision",
-                  "explanation": "Protective antibacterial exposure is needed during operative contamination risk."
                 },
                 {
                   "id": "D",
@@ -2442,20 +2836,20 @@
               "learningPointIds": [
                 "ibd2-cefazolin::prophylaxis_timing"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "A bacterial infection is being treated with CEFAZOLIN. Which paired findings most directly inform whether the antimicrobial plan remains suitable?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Infection response and culture susceptibility",
-                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
+                  "text": "Appetite and bowel frequency",
+                  "explanation": "These inform general tolerance but not the organism-directed treatment decision."
                 },
                 {
                   "id": "B",
-                  "text": "Appetite and bowel frequency",
-                  "explanation": "These inform general tolerance but not the organism-directed treatment decision."
+                  "text": "Infection response and culture susceptibility",
+                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
                 },
                 {
                   "id": "C",
@@ -2499,7 +2893,7 @@
               "learningPointIds": [
                 "ibd2-cefazolin::antimicrobial_response"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "An IV site becomes painful and erythematous during CEFAZOLIN. What local complication should be assessed?",
@@ -2516,13 +2910,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "A therapeutic increase in tissue exposure",
-                  "explanation": "Local pain and redness are not proof of a beneficial drug effect."
+                  "text": "Infusion-site irritation or phlebitis",
+                  "explanation": "Pain and erythema along a cannulated vein need local assessment."
                 },
                 {
                   "id": "D",
-                  "text": "Infusion-site irritation or phlebitis",
-                  "explanation": "Pain and erythema along a cannulated vein need local assessment."
+                  "text": "A therapeutic increase in tissue exposure",
+                  "explanation": "Local pain and redness are not proof of a beneficial drug effect."
                 }
               ],
               "format": "single-best-answer",
@@ -2542,10 +2936,53 @@
               "learningPointIds": [
                 "ibd2-cefazolin::iv_site"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which bacterial target is named in the mechanism taught for cefazolin?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Bacterial dihydrofolate reductase",
+                  "explanation": "This is a folate-pathway target, not cefazolin’s taught target."
+                },
+                {
+                  "id": "B",
+                  "text": "Penicillin-binding proteins",
+                  "explanation": "Binding these proteins inhibits bacterial cell-wall synthesis."
+                },
+                {
+                  "id": "C",
+                  "text": "Bacterial 50S ribosomal subunit",
+                  "explanation": "This is a protein-synthesis target, not cefazolin’s taught target."
+                },
+                {
+                  "id": "D",
+                  "text": "Bacterial DNA gyrase",
+                  "explanation": "This is associated with fluoroquinolone action, not cefazolin’s taught target."
+                }
+              ],
+              "point": "Identify penicillin-binding proteins as cefazolin’s taught bacterial target.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-cefazolin",
+                  "field": "mechanism",
+                  "textSha256": "5ff8fc6a43a3e42cf7bf3cfa3c15b6a4c5a11f11001637f1a26d32a070bc0136"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-cefazolin--standard--cefazolin_pbp",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-cefazolin::cefazolin_pbp"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 9
+          "questionCount": 10
         },
         {
           "id": "ibd2-cefazolin--advanced",
@@ -2687,23 +3124,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Antibiotic-associated disturbance of intestinal flora",
-                  "explanation": "This can permit C. difficile-associated disease."
-                },
-                {
-                  "id": "B",
                   "text": "An immediate IgE-mediated airway reaction",
                   "explanation": "The case describes a gastrointestinal pattern rather than acute anaphylaxis."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "An intended increase in osmotic laxative activity",
                   "explanation": "The antibiotic is not being used as an osmotic laxative."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Therapeutic stimulation of intestinal glucose absorption",
                   "explanation": "This does not explain the antibiotic-associated diarrhea warning."
+                },
+                {
+                  "id": "D",
+                  "text": "Antibiotic-associated disturbance of intestinal flora",
+                  "explanation": "This can permit C. difficile-associated disease."
                 }
               ],
               "format": "single-best-answer",
@@ -2723,7 +3160,7 @@
               "learningPointIds": [
                 "ibd2-cefazolin::antibiotic_diarrhea"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Surgery is delayed after CEFAZOLIN prophylaxis was scheduled. Which relationship needs review under the surgical protocol?",
@@ -2788,9 +3225,95 @@
                 "ibd2-cefazolin::prophylaxis_timing"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Two cefazolin products are supplied with different preparation instructions. What determines which dilution and IV method to use?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The dilution used for the last cefazolin patient",
+                  "explanation": "A previous patient’s product and order may differ."
+                },
+                {
+                  "id": "B",
+                  "text": "The supplied product instructions and the authorized order",
+                  "explanation": "Preparation and IV administration are product- and order-specific."
+                },
+                {
+                  "id": "C",
+                  "text": "The method used for any cefazolin vial of that strength",
+                  "explanation": "Strength alone does not establish identical preparation or administration instructions."
+                },
+                {
+                  "id": "D",
+                  "text": "The method used for another cephalosporin at the same dose",
+                  "explanation": "Related antibiotics are not automatically interchangeable in preparation."
+                }
+              ],
+              "point": "Verify the exact cefazolin product and order before selecting preparation and IV administration instructions.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-cefazolin",
+                  "field": "administration",
+                  "textSha256": "f71b769025b1696c2504871bcfe4b2f0a0148cbd47ad59606f18078e3e8c1481"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-cefazolin--advanced--cefazolin_product_preparation",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-cefazolin::cefazolin_product_preparation"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why does cefazolin prophylaxis need to be related to incision time?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "To provide adequate tissue antibiotic levels when contamination may occur",
+                  "explanation": "The taught rationale is adequate tissue exposure at incision."
+                },
+                {
+                  "id": "B",
+                  "text": "To prevent the kidney from eliminating any antibiotic during surgery",
+                  "explanation": "Elimination continues; it is not the reason for incision-related timing."
+                },
+                {
+                  "id": "C",
+                  "text": "To produce the highest antibiotic level only after wound closure",
+                  "explanation": "Waiting until closure misses the purpose of exposure at incision."
+                },
+                {
+                  "id": "D",
+                  "text": "To ensure antibiotic activity begins only once infection is confirmed",
+                  "explanation": "Prophylaxis precedes established infection rather than waiting for confirmation."
+                }
+              ],
+              "point": "Explain prophylaxis timing through adequate tissue antibiotic levels at incision.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-cefazolin",
+                  "field": "why",
+                  "textSha256": "7ad5c601afcf221031f91d4f750189d0aa3cadc5e9b1d224bf9f1f546adc992e"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-cefazolin--advanced--cefazolin_tissue_timing",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-cefazolin::cefazolin_tissue_timing"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 4
+          "questionCount": 6
         }
       ]
     },
@@ -2838,23 +3361,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Mu agonism and reuptake inhibition",
+                  "explanation": "Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
+                },
+                {
+                  "id": "B",
                   "text": "Reduces angiotensin-II formation",
                   "explanation": "This is a different pharmacological action. The taught action is: Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Retains water in the colon",
                   "explanation": "This is a different pharmacological action. The taught action is: Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Predominantly beta1-mediated increased contractility",
                   "explanation": "This is a different pharmacological action. The taught action is: Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
-                },
-                {
-                  "id": "D",
-                  "text": "Mu agonism and reuptake inhibition",
-                  "explanation": "Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -2887,7 +3410,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -2895,13 +3418,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Non-opioid analgesic",
-                  "explanation": "The entry identifies the medicine as: Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
+                  "text": "Opioid/monoamine analgesic",
+                  "explanation": "Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
                 },
                 {
                   "id": "B",
-                  "text": "Opioid/monoamine analgesic",
-                  "explanation": "Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
+                  "text": "Non-opioid analgesic",
+                  "explanation": "The entry identifies the medicine as: Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
                 },
                 {
                   "id": "C",
@@ -2930,7 +3453,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -2992,13 +3515,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "New constipation and abdominal discomfort",
-                  "explanation": "These matter but do not outrank the described ventilatory threat."
+                  "text": "New reduced responsiveness and shallow breathing",
+                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
                 },
                 {
                   "id": "C",
-                  "text": "New reduced responsiveness and shallow breathing",
-                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
+                  "text": "New constipation and abdominal discomfort",
+                  "explanation": "These matter but do not outrank the described ventilatory threat."
                 },
                 {
                   "id": "D",
@@ -3030,7 +3553,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::opioid_respiration"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "After TRAMADOL — oral capsule / ward formulation, which syndrome best explains agitation, fever, hyperreflexia, and autonomic instability?",
@@ -3113,18 +3636,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "A new generalized seizure",
-                  "explanation": "This is a potentially serious neurological adverse effect or another emergency."
-                },
-                {
-                  "id": "C",
                   "text": "Improving original symptoms",
                   "explanation": "Therapeutic improvement does not itself identify neurotoxicity."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Mild unchanged nausea",
                   "explanation": "This is less urgent than a new seizure."
+                },
+                {
+                  "id": "D",
+                  "text": "A new generalized seizure",
+                  "explanation": "This is a potentially serious neurological adverse effect or another emergency."
                 }
               ],
               "format": "single-best-answer",
@@ -3158,25 +3681,25 @@
               "learningPointIds": [
                 "ibd2-tramadol::seizure_risk"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "A patient taking TRAMADOL — oral capsule / ward formulation is newly drowsy and ataxic but has stable vital signs. Which activity most directly requires additional assistance?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Standing and transferring to the bathroom",
-                  "explanation": "Impaired alertness and coordination increase fall risk."
-                },
-                {
-                  "id": "B",
                   "text": "Using the call bell while seated with support",
                   "explanation": "This does not require the impaired balance involved in standing."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Choosing a meal while seated with support",
                   "explanation": "This does not carry the same immediate fall exposure."
+                },
+                {
+                  "id": "C",
+                  "text": "Standing and transferring to the bathroom",
+                  "explanation": "Impaired alertness and coordination increase fall risk."
                 },
                 {
                   "id": "D",
@@ -3208,7 +3731,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::sedation_falls"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "An immobilized patient receiving TRAMADOL — oral capsule / ward formulation develops reduced stool frequency and straining. Which problem best fits?",
@@ -3309,9 +3832,138 @@
                 "ibd2-tramadol::pain_response"
               ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which two neurotransmitters are named in tramadol’s taught reuptake-inhibition mechanism?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dopamine and acetylcholine",
+                  "explanation": "Neither is the pair taught for tramadol’s reuptake inhibition."
+                },
+                {
+                  "id": "B",
+                  "text": "Dopamine and norepinephrine",
+                  "explanation": "Norepinephrine fits, but dopamine is not the other named pathway."
+                },
+                {
+                  "id": "C",
+                  "text": "Serotonin and norepinephrine",
+                  "explanation": "Both are named in the mechanism and contribute to the analgesic/interaction profile."
+                },
+                {
+                  "id": "D",
+                  "text": "Serotonin and acetylcholine",
+                  "explanation": "Serotonin fits, but acetylcholine is not the second named pathway."
+                }
+              ],
+              "point": "Identify serotonin and norepinephrine as the reuptake pathways taught for tramadol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-tramadol",
+                  "field": "mechanism",
+                  "textSha256": "346c86f53770937bc5b976a10a87d1e3b2dda4cde3147031f1ec7dd27d0c38dd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-tramadol--standard--tramadol_monoamines",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-tramadol::tramadol_monoamines"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair of concurrent medicines is explicitly highlighted in the tramadol entry for increased sedation/respiratory risk?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ibuprofen and meropenem",
+                  "explanation": "These are not the highlighted sedating pair; meropenem has a different important interaction with valproate."
+                },
+                {
+                  "id": "B",
+                  "text": "Losartan and paracetamol",
+                  "explanation": "These are not the highlighted sedating pair."
+                },
+                {
+                  "id": "C",
+                  "text": "Paracetamol and cefazolin",
+                  "explanation": "These are not the sedating pair highlighted in this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Gabapentin and promethazine",
+                  "explanation": "Both are specifically named as potentially increasing CNS/respiratory depression with tramadol."
+                }
+              ],
+              "point": "Recognize additive sedation/respiratory risk with gabapentin or promethazine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-tramadol",
+                  "field": "monitor",
+                  "textSha256": "5ca01be119c163f76a734eb556b91a30bdc3fb4e9f16a9295483cab1cf3c0bff"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-tramadol--standard--tramadol_named_sedatives",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-tramadol::tramadol_named_sedatives"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient starts tramadol. Which new symptom is among the adverse effects listed in the material?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Gingival enlargement",
+                  "explanation": "This is not the tramadol adverse effect listed in this entry."
+                },
+                {
+                  "id": "B",
+                  "text": "Nausea",
+                  "explanation": "Nausea is explicitly listed alongside dizziness and constipation."
+                },
+                {
+                  "id": "C",
+                  "text": "Peripheral ankle edema",
+                  "explanation": "This is not the tramadol adverse effect listed in this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Persistent dry cough",
+                  "explanation": "This is more associated with ACE-inhibitor treatment and is not listed here for tramadol."
+                }
+              ],
+              "point": "Recognize nausea as an adverse effect taught for tramadol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-tramadol",
+                  "field": "monitor",
+                  "textSha256": "5ca01be119c163f76a734eb556b91a30bdc3fb4e9f16a9295483cab1cf3c0bff"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-tramadol--standard--tramadol_nausea",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-tramadol::tramadol_nausea"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 9
+          "questionCount": 12
         },
         {
           "id": "ibd2-tramadol--advanced",
@@ -3637,7 +4289,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Formulation, strength, route, and release properties need verification.",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -3714,13 +4366,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inhibits bacterial cell-wall synthesis",
-                  "explanation": "Meropenem is a carbapenem beta-lactam acting through PBPs."
+                  "text": "Activates plasminogen to break down fibrin",
+                  "explanation": "This is a different pharmacological action. The taught action is: Meropenem is a carbapenem beta-lactam acting through PBPs."
                 },
                 {
                   "id": "D",
-                  "text": "Activates plasminogen to break down fibrin",
-                  "explanation": "This is a different pharmacological action. The taught action is: Meropenem is a carbapenem beta-lactam acting through PBPs."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "Meropenem is a carbapenem beta-lactam acting through PBPs."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -3753,7 +4405,7 @@
               "learningPointIds": [
                 "ibd2-meropenem::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -3761,13 +4413,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Glycopeptide",
-                  "explanation": "The entry identifies the medicine as: Carbapenem (penem) broad-spectrum beta-lactam antibacterial."
+                  "text": "Carbapenem beta-lactam",
+                  "explanation": "Carbapenem (penem) broad-spectrum beta-lactam antibacterial."
                 },
                 {
                   "id": "B",
-                  "text": "Carbapenem beta-lactam",
-                  "explanation": "Carbapenem (penem) broad-spectrum beta-lactam antibacterial."
+                  "text": "Glycopeptide",
+                  "explanation": "The entry identifies the medicine as: Carbapenem (penem) broad-spectrum beta-lactam antibacterial."
                 },
                 {
                   "id": "C",
@@ -3796,7 +4448,7 @@
               "learningPointIds": [
                 "ibd2-meropenem::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -3804,18 +4456,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Treatment of serious susceptible bacterial infection",
-                  "explanation": "This is the treatment role taught in the entry: Serious susceptible bacterial infections. Current labeling includes complicated skin/skin-structure infection; it should not be treated as routine orthopaedic prophylaxis simply because it is broad spectrum."
-                },
-                {
-                  "id": "B",
                   "text": "Suppression of ventricular ectopy by cardiac sodium-channel blockade",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Relief of bronchospasm by beta2 stimulation",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "C",
+                  "text": "Treatment of serious susceptible bacterial infection",
+                  "explanation": "This is the treatment role taught in the entry: Serious susceptible bacterial infections. Current labeling includes complicated skin/skin-structure infection; it should not be treated as routine orthopaedic prophylaxis simply because it is broad spectrum."
                 },
                 {
                   "id": "D",
@@ -3846,7 +4498,7 @@
               "learningPointIds": [
                 "ibd2-meropenem::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Minutes after starting MEROPENEM, a patient develops wheeze, facial swelling, and hypotension. Which reaction best fits?",
@@ -3863,13 +4515,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Anaphylaxis",
-                  "explanation": "Acute airway and circulatory compromise after exposure is strongly concerning."
+                  "text": "Isolated infusion-site phlebitis",
+                  "explanation": "A local vein reaction does not explain the multisystem findings."
                 },
                 {
                   "id": "D",
-                  "text": "Isolated infusion-site phlebitis",
-                  "explanation": "A local vein reaction does not explain the multisystem findings."
+                  "text": "Anaphylaxis",
+                  "explanation": "Acute airway and circulatory compromise after exposure is strongly concerning."
                 }
               ],
               "format": "single-best-answer",
@@ -3889,7 +4541,7 @@
               "learningPointIds": [
                 "ibd2-meropenem::betalactam_allergy"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for MEROPENEM?",
@@ -3901,18 +4553,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Creatinine trend and estimated GFR",
+                  "explanation": "These inform renal clearance and regimen review."
+                },
+                {
+                  "id": "C",
                   "text": "ALT trend and serum bilirubin",
                   "explanation": "These assess hepatic injury rather than directly estimate renal clearance."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "INR trend and prothrombin time",
                   "explanation": "These assess a coagulation pathway rather than renal clearance."
-                },
-                {
-                  "id": "D",
-                  "text": "Creatinine trend and estimated GFR",
-                  "explanation": "These inform renal clearance and regimen review."
                 }
               ],
               "format": "single-best-answer",
@@ -3946,20 +4598,20 @@
               "learningPointIds": [
                 "ibd2-meropenem::renal_dose"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "During MEROPENEM therapy, which new bowel pattern most warrants assessment for antibiotic-associated colitis?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Reduced stool frequency during immobility",
-                  "explanation": "This does not identify the complication being tested."
+                  "text": "Frequent, persistent watery diarrhea",
+                  "explanation": "Persistent diarrhea during antibiotic exposure needs assessment for C. difficile and other causes."
                 },
                 {
                   "id": "B",
-                  "text": "Frequent, persistent watery diarrhea",
-                  "explanation": "Persistent diarrhea during antibiotic exposure needs assessment for C. difficile and other causes."
+                  "text": "Reduced stool frequency during immobility",
+                  "explanation": "This does not identify the complication being tested."
                 },
                 {
                   "id": "C",
@@ -3989,25 +4641,25 @@
               "learningPointIds": [
                 "ibd2-meropenem::antibiotic_diarrhea"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "The material identifies neurotoxicity with MEROPENEM. Which new event needs the most urgent assessment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A new generalized seizure",
-                  "explanation": "This is a potentially serious neurological adverse effect or another emergency."
-                },
-                {
-                  "id": "B",
                   "text": "An unchanged chronic headache",
                   "explanation": "The case does not describe a new neurological deterioration in this option."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Mild unchanged nausea",
                   "explanation": "This is less urgent than a new seizure."
+                },
+                {
+                  "id": "C",
+                  "text": "A new generalized seizure",
+                  "explanation": "This is a potentially serious neurological adverse effect or another emergency."
                 },
                 {
                   "id": "D",
@@ -4039,7 +4691,7 @@
               "learningPointIds": [
                 "ibd2-meropenem::seizure_risk"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "A bacterial infection is being treated with MEROPENEM. Which paired findings most directly inform whether the antimicrobial plan remains suitable?",
@@ -4051,18 +4703,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Infection response and culture susceptibility",
+                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
+                },
+                {
+                  "id": "C",
                   "text": "Pain response and analgesic requirement",
                   "explanation": "These can improve without establishing antimicrobial susceptibility."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Fluid balance and serum sodium",
                   "explanation": "These inform hydration but do not establish antimicrobial appropriateness."
-                },
-                {
-                  "id": "D",
-                  "text": "Infection response and culture susceptibility",
-                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
                 }
               ],
               "format": "single-best-answer",
@@ -4096,10 +4748,53 @@
               "learningPointIds": [
                 "ibd2-meropenem::antimicrobial_response"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Before preparing meropenem IV, which set of information determines the preparation and prescribed regimen described in this entry?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The usual broad-spectrum antibiotic dilution and adult schedule",
+                  "explanation": "Broad-spectrum classification does not establish product-specific preparation or dosing."
+                },
+                {
+                  "id": "B",
+                  "text": "The ward’s usual cefazolin method and the same milligram dose",
+                  "explanation": "A different antibiotic’s preparation cannot establish the meropenem method."
+                },
+                {
+                  "id": "C",
+                  "text": "The supplied product instructions and the renal-reviewed order",
+                  "explanation": "These establish the appropriate preparation and prescribed regimen for this patient."
+                },
+                {
+                  "id": "D",
+                  "text": "The last meropenem patient’s preparation and dosing interval",
+                  "explanation": "Another patient may have had a different product, indication, and renal function."
+                }
+              ],
+              "point": "Verify the meropenem IV product, indication, renal function, and order before preparation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-meropenem",
+                  "field": "administration",
+                  "textSha256": "3f245b647a1e82a271e3b1d762d9014904150691b22f303d1396799b7ba2b7b6"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-meropenem--standard--meropenem_iv_preparation",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-meropenem::meropenem_iv_preparation"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         },
         {
           "id": "ibd2-meropenem--advanced",
@@ -4371,9 +5066,95 @@
                 "ibd2-meropenem::valproate"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Meropenem is available on the orthopaedic ward. Is broad-spectrum activity alone a sufficient reason to use it as routine perioperative prophylaxis?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "No; meropenem has no activity in skin or soft-tissue infections",
+                  "explanation": "The conclusion about routine prophylaxis is right, but this rationale is false; the entry includes susceptible skin/skin-structure infections."
+                },
+                {
+                  "id": "B",
+                  "text": "Yes; ward stock establishes the intended prophylactic indication",
+                  "explanation": "Stock or observation does not establish the purpose of an individual prescription."
+                },
+                {
+                  "id": "C",
+                  "text": "Yes; broader activity makes it preferable for every operation",
+                  "explanation": "Broader coverage is not a universal reason to replace the indicated prophylactic regimen."
+                },
+                {
+                  "id": "D",
+                  "text": "No; the prescribed indication and antimicrobial plan must support its use",
+                  "explanation": "Ward availability and broad activity do not establish an appropriate prophylactic indication."
+                }
+              ],
+              "point": "Do not treat meropenem as routine orthopaedic prophylaxis solely because of broad coverage.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-meropenem",
+                  "field": "use",
+                  "textSha256": "cf20ecce68f2e7c1cdc8ccb2a72bcc184875cfaba835097c3917274fedc1e979"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-meropenem--advanced--meropenem_not_prophylaxis",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-meropenem::meropenem_not_prophylaxis"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with preserved renal function is prescribed meropenem. Which additional history in the entry still warrants extra attention to seizure risk?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Previous opioid-related constipation",
+                  "explanation": "This does not establish the CNS risk factor asked about."
+                },
+                {
+                  "id": "B",
+                  "text": "Previous seizure disorder",
+                  "explanation": "A seizure disorder is CNS disease; the entry highlights CNS disease as well as renal impairment."
+                },
+                {
+                  "id": "C",
+                  "text": "Previous nitrate-related headache",
+                  "explanation": "This does not establish the CNS disease or seizure history asked about."
+                },
+                {
+                  "id": "D",
+                  "text": "Previous NSAID-related GI bleeding",
+                  "explanation": "This warrants medication review but does not establish the CNS risk factor asked about."
+                }
+              ],
+              "point": "Include pre-existing CNS disease when reviewing meropenem-related seizure risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-meropenem",
+                  "field": "monitor",
+                  "textSha256": "df161e73a41a1c1d49dd3d25101044fe3aa48ce3221e5814a3f719c2d0433c50"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-meropenem--advanced--meropenem_cns_risk",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-meropenem::meropenem_cns_risk"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 7
         }
       ]
     },
@@ -4526,13 +5307,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Prescribed control of nausea or allergic symptoms",
-                  "explanation": "This is the treatment role taught in the entry: May be used for nausea/vomiting, allergic symptoms or sedation depending on the order. In postoperative patients, its sedating effect is clinically important."
+                  "text": "Replacement of glucose during severe hypoglycemia",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
-                  "text": "Replacement of glucose during severe hypoglycemia",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Prescribed control of nausea or allergic symptoms",
+                  "explanation": "This is the treatment role taught in the entry: May be used for nausea/vomiting, allergic symptoms or sedation depending on the order. In postoperative patients, its sedating effect is clinically important."
                 },
                 {
                   "id": "D",
@@ -4563,7 +5344,7 @@
               "learningPointIds": [
                 "ibd2-prothiazine::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "A patient taking PROTHIAZINE — promethazine is newly drowsy and ataxic but has stable vital signs. Which activity most directly requires additional assistance?",
@@ -4660,18 +5441,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Dry mouth and urinary retention",
+                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
+                },
+                {
+                  "id": "C",
                   "text": "Salivation and urinary urgency",
                   "explanation": "These are opposite to the characteristic antimuscarinic effects."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Diarrhea and increased lacrimation",
                   "explanation": "These suggest increased rather than blocked muscarinic activity."
-                },
-                {
-                  "id": "D",
-                  "text": "Dry mouth and urinary retention",
-                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
                 }
               ],
               "format": "single-best-answer",
@@ -4705,10 +5486,96 @@
               "learningPointIds": [
                 "ibd2-prothiazine::anticholinergic"
               ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which receptor action is responsible for the antihistamine component taught for promethazine?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Beta2-receptor stimulation",
+                  "explanation": "This produces bronchodilation rather than the taught antihistamine action."
+                },
+                {
+                  "id": "B",
+                  "text": "Muscarinic receptor stimulation",
+                  "explanation": "Promethazine has anticholinergic activity, not muscarinic stimulation."
+                },
+                {
+                  "id": "C",
+                  "text": "Histamine H2 blockade",
+                  "explanation": "H2 blockade is associated with gastric acid suppression, not this taught antihistamine action."
+                },
+                {
+                  "id": "D",
+                  "text": "Histamine H1 blockade",
+                  "explanation": "H1 blockade is the antihistamine action described."
+                }
+              ],
+              "point": "Identify H1-receptor blockade as promethazine’s taught antihistamine action.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-prothiazine",
+                  "field": "mechanism",
+                  "textSha256": "c54fa33aa0241a45c91e5b394b8cb929fba0faa653268c96c31af6c04d9708cc"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-prothiazine--standard--promethazine_h1",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-prothiazine::promethazine_h1"
+              ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient taking promethazine reports dizziness specifically on standing. Which assessment most directly addresses the adverse effect named in the entry?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Postural BP with associated symptoms",
+                  "explanation": "Orthostatic hypotension is explicitly listed and can contribute to falls."
+                },
+                {
+                  "id": "B",
+                  "text": "Hearing acuity with ear symptoms",
+                  "explanation": "These do not directly assess the named circulatory adverse effect."
+                },
+                {
+                  "id": "C",
+                  "text": "Pupil size with response to light",
+                  "explanation": "This does not directly assess the suspected postural BP change."
+                },
+                {
+                  "id": "D",
+                  "text": "Bowel sounds with stool frequency",
+                  "explanation": "These do not establish the cause of positional dizziness."
+                }
+              ],
+              "point": "Assess postural hypotension associated with promethazine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-prothiazine",
+                  "field": "monitor",
+                  "textSha256": "67c8c55eb30b273063a5408ec6b01ba99a061a6694a9a06e85414160767dc571"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-prothiazine--standard--promethazine_postural_bp",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-prothiazine::promethazine_postural_bp"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 5
+          "questionCount": 7
         },
         {
           "id": "ibd2-prothiazine--advanced",
@@ -4828,13 +5695,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Consciousness and respiratory effort",
-                  "explanation": "Combined depressant effects can compromise alertness and ventilation."
+                  "text": "Bowel sounds and abdominal girth",
+                  "explanation": "These do not directly assess the immediate central-depressant hazard."
                 },
                 {
                   "id": "B",
-                  "text": "Bowel sounds and abdominal girth",
-                  "explanation": "These do not directly assess the immediate central-depressant hazard."
+                  "text": "Consciousness and respiratory effort",
+                  "explanation": "Combined depressant effects can compromise alertness and ventilation."
                 },
                 {
                   "id": "C",
@@ -4906,7 +5773,7 @@
               "learningPointIds": [
                 "ibd2-prothiazine::cns_combination"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "The prescribed PROTHIAZINE — promethazine and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
@@ -4933,7 +5800,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Formulation, strength, route, and release properties need verification.",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -4950,9 +5817,52 @@
                 "ibd2-prothiazine::formulation"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "The ward has Prothiazine tablets, but a patient cannot take oral medicines. What follows from the formulation guidance in this entry?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Clarify an authorized alternative formulation and route",
+                  "explanation": "The tablet brand does not establish an injectable product or an authorized route conversion."
+                },
+                {
+                  "id": "B",
+                  "text": "Use the tablet strength as the equivalent injectable dose",
+                  "explanation": "The observed tablet strength does not establish an injectable equivalent."
+                },
+                {
+                  "id": "C",
+                  "text": "Dissolve the tablet and use the existing IV access",
+                  "explanation": "An oral tablet is not a sterile injectable preparation."
+                },
+                {
+                  "id": "D",
+                  "text": "Keep the same order and choose any promethazine injection",
+                  "explanation": "A change in formulation/route requires an authorized, product-specific plan."
+                }
+              ],
+              "point": "Do not infer an injectable route from the observed oral promethazine brand.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-prothiazine",
+                  "field": "administration",
+                  "textSha256": "06d7b27a0090762027675a116ca9c9501db6d2ec7ee30968b15397e803f085ed"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ibd2-prothiazine--advanced--promethazine_route",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-prothiazine::promethazine_route"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         }
       ]
     },
@@ -6697,7 +7607,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Formulation, strength, route, and release properties need verification.",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -7727,7 +8637,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Formulation, strength, route, and release properties need verification.",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -12229,7 +13139,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Formulation, strength, route, and release properties need verification.",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -12767,7 +13677,7 @@
                 }
               ],
               "format": "single-best-answer",
-              "point": "Formulation, strength, route, and release properties need verification.",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
               "sourceRefs": [
                 {
                   "file": "content.json",

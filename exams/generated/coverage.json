@@ -87,11 +87,55 @@
       ]
     },
     {
+      "id": "verified-losartan::losartan_additional_uses",
+      "itemId": "verified-losartan",
+      "point": "Recognize the selected LVH and type 2 diabetic nephropathy uses taught in addition to hypertension.",
+      "questionIds": [
+        "verified-losartan--standard--losartan_additional_uses"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
+      "id": "verified-losartan::losartan_lithium",
+      "itemId": "verified-losartan",
+      "point": "Recognize lithium as a medicine requiring interaction review with losartan.",
+      "questionIds": [
+        "verified-losartan--standard--losartan_lithium"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
       "id": "verified-losartan::raas_interactions",
       "itemId": "verified-losartan",
-      "point": "Review potassium-raising drugs and NSAID/lithium/RAAS interactions.",
+      "point": "Review potassium-raising medicines and NSAIDs with the potassium and renal-function checks tested in this question.",
       "questionIds": [
         "verified-losartan--advanced--raas_interactions"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
+      "id": "verified-losartan::losartan_dual_raas",
+      "itemId": "verified-losartan",
+      "point": "Recognize the need to review concurrent renin-angiotensin system blockers.",
+      "questionIds": [
+        "verified-losartan--advanced--losartan_dual_raas"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
+      "id": "verified-losartan::losartan_at1_effects",
+      "itemId": "verified-losartan",
+      "point": "Relate AT1 blockade to reduced vasoconstriction and aldosterone effects.",
+      "questionIds": [
+        "verified-losartan--advanced--losartan_at1_effects"
       ],
       "stages": [
         "advanced"
@@ -168,9 +212,42 @@
       ]
     },
     {
+      "id": "ibd2-acamol::acetam_fever_response",
+      "itemId": "ibd2-acamol",
+      "point": "Assess temperature response when paracetamol is given for fever.",
+      "questionIds": [
+        "ibd2-acamol--standard--acetam_fever_response"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
+      "id": "ibd2-acamol::acetam_nsaid_distinction",
+      "itemId": "ibd2-acamol",
+      "point": "Distinguish paracetamol from the typical platelet/GI effects of NSAIDs.",
+      "questionIds": [
+        "ibd2-acamol--standard--acetam_nsaid_distinction"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
+      "id": "ibd2-acamol::acetam_alcohol_review",
+      "itemId": "ibd2-acamol",
+      "point": "Include heavy alcohol use in paracetamol safety assessment.",
+      "questionIds": [
+        "ibd2-acamol--standard--acetam_alcohol_review"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
       "id": "ibd2-acamol::acen_patient_limit",
       "itemId": "ibd2-acamol",
-      "point": "Acetaminophen limits must reflect liver disease, alcohol, frailty, and total exposure.",
+      "point": "Review the patient-specific acetaminophen limit in frailty and liver disease.",
       "questionIds": [
         "ibd2-acamol--advanced--acen_patient_limit"
       ],
@@ -266,7 +343,7 @@
     {
       "id": "ibd2-trufen::trufen_extra",
       "itemId": "ibd2-trufen",
-      "point": "Distinguish plain ibuprofen from an ibuprofen/acetaminophen combination.",
+      "point": "Distinguish plain Trufen from Trufen Extra by its added paracetamol.",
       "questionIds": [
         "ibd2-trufen--standard--trufen_extra"
       ],
@@ -286,11 +363,33 @@
       ]
     },
     {
+      "id": "ibd2-trufen::ibuprofen_cv_risk",
+      "itemId": "ibd2-trufen",
+      "point": "Recognize cardiovascular risk as a distinct NSAID precaution.",
+      "questionIds": [
+        "ibd2-trufen--standard--ibuprofen_cv_risk"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
       "id": "ibd2-trufen::duplicate_nsaid",
       "itemId": "ibd2-trufen",
       "point": "Avoid unintended duplication of NSAIDs.",
       "questionIds": [
         "ibd2-trufen--advanced--duplicate_nsaid"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
+      "id": "ibd2-trufen::ibuprofen_minimum_exposure",
+      "itemId": "ibd2-trufen",
+      "point": "Use the lowest effective ordered NSAID dose for the shortest appropriate duration.",
+      "questionIds": [
+        "ibd2-trufen--advanced--ibuprofen_minimum_exposure"
       ],
       "stages": [
         "advanced"
@@ -404,6 +503,39 @@
       ]
     },
     {
+      "id": "ibd2-cefazolin::cefazolin_pbp",
+      "itemId": "ibd2-cefazolin",
+      "point": "Identify penicillin-binding proteins as cefazolin’s taught bacterial target.",
+      "questionIds": [
+        "ibd2-cefazolin--standard--cefazolin_pbp"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
+      "id": "ibd2-cefazolin::cefazolin_product_preparation",
+      "itemId": "ibd2-cefazolin",
+      "point": "Verify the exact cefazolin product and order before selecting preparation and IV administration instructions.",
+      "questionIds": [
+        "ibd2-cefazolin--advanced--cefazolin_product_preparation"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
+      "id": "ibd2-cefazolin::cefazolin_tissue_timing",
+      "itemId": "ibd2-cefazolin",
+      "point": "Explain prophylaxis timing through adequate tissue antibiotic levels at incision.",
+      "questionIds": [
+        "ibd2-cefazolin--advanced--cefazolin_tissue_timing"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
       "id": "ibd2-tramadol::principal-action",
       "itemId": "ibd2-tramadol",
       "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -513,9 +645,42 @@
       ]
     },
     {
+      "id": "ibd2-tramadol::tramadol_monoamines",
+      "itemId": "ibd2-tramadol",
+      "point": "Identify serotonin and norepinephrine as the reuptake pathways taught for tramadol.",
+      "questionIds": [
+        "ibd2-tramadol--standard--tramadol_monoamines"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
+      "id": "ibd2-tramadol::tramadol_named_sedatives",
+      "itemId": "ibd2-tramadol",
+      "point": "Recognize additive sedation/respiratory risk with gabapentin or promethazine.",
+      "questionIds": [
+        "ibd2-tramadol--standard--tramadol_named_sedatives"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
+      "id": "ibd2-tramadol::tramadol_nausea",
+      "itemId": "ibd2-tramadol",
+      "point": "Recognize nausea as an adverse effect taught for tramadol.",
+      "questionIds": [
+        "ibd2-tramadol--standard--tramadol_nausea"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
       "id": "ibd2-tramadol::formulation",
       "itemId": "ibd2-tramadol",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ibd2-tramadol--advanced--formulation"
       ],
@@ -620,11 +785,44 @@
       ]
     },
     {
+      "id": "ibd2-meropenem::meropenem_iv_preparation",
+      "itemId": "ibd2-meropenem",
+      "point": "Verify the meropenem IV product, indication, renal function, and order before preparation.",
+      "questionIds": [
+        "ibd2-meropenem--standard--meropenem_iv_preparation"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
       "id": "ibd2-meropenem::valproate",
       "itemId": "ibd2-meropenem",
       "point": "Meropenem can lower valproate exposure and cause breakthrough seizures.",
       "questionIds": [
         "ibd2-meropenem--advanced--valproate"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
+      "id": "ibd2-meropenem::meropenem_not_prophylaxis",
+      "itemId": "ibd2-meropenem",
+      "point": "Do not treat meropenem as routine orthopaedic prophylaxis solely because of broad coverage.",
+      "questionIds": [
+        "ibd2-meropenem--advanced--meropenem_not_prophylaxis"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
+      "id": "ibd2-meropenem::meropenem_cns_risk",
+      "itemId": "ibd2-meropenem",
+      "point": "Include pre-existing CNS disease when reviewing meropenem-related seizure risk.",
+      "questionIds": [
+        "ibd2-meropenem--advanced--meropenem_cns_risk"
       ],
       "stages": [
         "advanced"
@@ -688,6 +886,28 @@
       ]
     },
     {
+      "id": "ibd2-prothiazine::promethazine_h1",
+      "itemId": "ibd2-prothiazine",
+      "point": "Identify H1-receptor blockade as promethazine’s taught antihistamine action.",
+      "questionIds": [
+        "ibd2-prothiazine--standard--promethazine_h1"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
+      "id": "ibd2-prothiazine::promethazine_postural_bp",
+      "itemId": "ibd2-prothiazine",
+      "point": "Assess postural hypotension associated with promethazine.",
+      "questionIds": [
+        "ibd2-prothiazine--standard--promethazine_postural_bp"
+      ],
+      "stages": [
+        "standard"
+      ]
+    },
+    {
       "id": "ibd2-prothiazine::cns_combination",
       "itemId": "ibd2-prothiazine",
       "point": "CNS depressants can compound sedation and respiratory risk.",
@@ -701,9 +921,20 @@
     {
       "id": "ibd2-prothiazine::formulation",
       "itemId": "ibd2-prothiazine",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ibd2-prothiazine--advanced--formulation"
+      ],
+      "stages": [
+        "advanced"
+      ]
+    },
+    {
+      "id": "ibd2-prothiazine::promethazine_route",
+      "itemId": "ibd2-prothiazine",
+      "point": "Do not infer an injectable route from the observed oral promethazine brand.",
+      "questionIds": [
+        "ibd2-prothiazine--advanced--promethazine_route"
       ],
       "stages": [
         "advanced"
@@ -977,7 +1208,7 @@
     {
       "id": "ibd2-carbamazepine::formulation",
       "itemId": "ibd2-carbamazepine",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ibd2-carbamazepine--advanced--formulation"
       ],
@@ -1150,7 +1381,7 @@
     {
       "id": "ibd2-epanutin-phenytoin::formulation",
       "itemId": "ibd2-epanutin-phenytoin",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ibd2-epanutin-phenytoin--advanced--formulation"
       ],
@@ -1873,7 +2104,7 @@
     {
       "id": "ccu-isosorbide-mononitrate::formulation",
       "itemId": "ccu-isosorbide-mononitrate",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ccu-isosorbide-mononitrate--advanced--formulation"
       ],
@@ -1963,7 +2194,7 @@
     {
       "id": "ccu-isosorbide-dinitrate::formulation",
       "itemId": "ccu-isosorbide-dinitrate",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ccu-isosorbide-dinitrate--advanced--formulation"
       ],
@@ -2578,7 +2809,7 @@
     {
       "id": "ccu-metoprolol::formulation",
       "itemId": "ccu-metoprolol",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ccu-metoprolol--advanced--formulation"
       ],
@@ -3637,7 +3868,7 @@
     {
       "id": "ccu-pantoprazole::formulation",
       "itemId": "ccu-pantoprazole",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ccu-pantoprazole--advanced--formulation"
       ],
@@ -5624,7 +5855,7 @@
     {
       "id": "trolley-hydrocortisone::formulation",
       "itemId": "trolley-hydrocortisone",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "trolley-hydrocortisone--advanced--formulation"
       ],
@@ -5839,7 +6070,7 @@
     {
       "id": "trolley-amiodarone::formulation",
       "itemId": "trolley-amiodarone",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "trolley-amiodarone--advanced--formulation"
       ],
@@ -6459,7 +6690,7 @@
     {
       "id": "ibd2-clindamycin::formulation",
       "itemId": "ibd2-clindamycin",
-      "point": "Formulation, strength, route, and release properties need verification.",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
       "questionIds": [
         "ibd2-clindamycin--advanced--formulation"
       ],
@@ -8347,7 +8578,8 @@
           "verified-losartan--standard--drug-class"
         ],
         "mechanism": [
-          "verified-losartan--standard--principal-action"
+          "verified-losartan--standard--principal-action",
+          "verified-losartan--advanced--losartan_at1_effects"
         ],
         "why": [
           "verified-losartan--standard--principal-action",
@@ -8356,10 +8588,12 @@
           "verified-losartan--standard--high_k",
           "verified-losartan--advanced--hypotension",
           "verified-losartan--advanced--high_k",
-          "verified-losartan--advanced--raas_interactions"
+          "verified-losartan--advanced--raas_interactions",
+          "verified-losartan--advanced--losartan_at1_effects"
         ],
         "use": [
-          "verified-losartan--standard--treatment-role"
+          "verified-losartan--standard--treatment-role",
+          "verified-losartan--standard--losartan_additional_uses"
         ],
         "memoryUse": [
           "verified-losartan--standard--treatment-role",
@@ -8371,10 +8605,12 @@
           "verified-losartan--standard--renal_monitor",
           "verified-losartan--standard--high_k",
           "verified-losartan--standard--pregnancy",
+          "verified-losartan--standard--losartan_lithium",
           "verified-losartan--advanced--hypotension",
           "verified-losartan--advanced--high_k",
           "verified-losartan--advanced--pregnancy",
-          "verified-losartan--advanced--raas_interactions"
+          "verified-losartan--advanced--raas_interactions",
+          "verified-losartan--advanced--losartan_dual_raas"
         ],
         "memoryDanger": [
           "verified-losartan--standard--hypotension",
@@ -8402,6 +8638,7 @@
           "ibd2-acamol--standard--principal-action",
           "ibd2-acamol--standard--acetaminophen_total",
           "ibd2-acamol--standard--hepatic_overdose",
+          "ibd2-acamol--standard--acetam_nsaid_distinction",
           "ibd2-acamol--advanced--acetaminophen_total",
           "ibd2-acamol--advanced--hepatic_overdose"
         ],
@@ -8424,6 +8661,8 @@
           "ibd2-acamol--standard--acetaminophen_total",
           "ibd2-acamol--standard--hepatic_overdose",
           "ibd2-acamol--standard--pain_response",
+          "ibd2-acamol--standard--acetam_fever_response",
+          "ibd2-acamol--standard--acetam_alcohol_review",
           "ibd2-acamol--advanced--acetaminophen_total",
           "ibd2-acamol--advanced--hepatic_overdose",
           "ibd2-acamol--advanced--acen_patient_limit"
@@ -8468,6 +8707,7 @@
           "ibd2-trufen--standard--nsaid_cv",
           "ibd2-trufen--standard--trufen_extra",
           "ibd2-trufen--standard--pain_response",
+          "ibd2-trufen--standard--ibuprofen_cv_risk",
           "ibd2-trufen--advanced--nsaid_gi",
           "ibd2-trufen--advanced--nsaid_renal",
           "ibd2-trufen--advanced--nsaid_allergy",
@@ -8483,7 +8723,8 @@
         ],
         "administration": [
           "ibd2-trufen--standard--trufen_extra",
-          "ibd2-trufen--advanced--duplicate_nsaid"
+          "ibd2-trufen--advanced--duplicate_nsaid",
+          "ibd2-trufen--advanced--ibuprofen_minimum_exposure"
         ]
       },
       "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
@@ -8496,12 +8737,14 @@
           "ibd2-cefazolin--standard--drug-class"
         ],
         "mechanism": [
-          "ibd2-cefazolin--standard--principal-action"
+          "ibd2-cefazolin--standard--principal-action",
+          "ibd2-cefazolin--standard--cefazolin_pbp"
         ],
         "why": [
           "ibd2-cefazolin--standard--principal-action",
           "ibd2-cefazolin--standard--prophylaxis_timing",
-          "ibd2-cefazolin--advanced--prophylaxis_timing"
+          "ibd2-cefazolin--advanced--prophylaxis_timing",
+          "ibd2-cefazolin--advanced--cefazolin_tissue_timing"
         ],
         "use": [
           "ibd2-cefazolin--standard--treatment-role",
@@ -8535,7 +8778,8 @@
         ],
         "administration": [
           "ibd2-cefazolin--standard--renal_dose",
-          "ibd2-cefazolin--advanced--renal_dose"
+          "ibd2-cefazolin--advanced--renal_dose",
+          "ibd2-cefazolin--advanced--cefazolin_product_preparation"
         ]
       },
       "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
@@ -8552,6 +8796,7 @@
         "mechanism": [
           "ibd2-tramadol--standard--principal-action",
           "ibd2-tramadol--standard--serotonin",
+          "ibd2-tramadol--standard--tramadol_monoamines",
           "ibd2-tramadol--advanced--serotonin"
         ],
         "why": [
@@ -8576,6 +8821,8 @@
           "ibd2-tramadol--standard--sedation_falls",
           "ibd2-tramadol--standard--constipation",
           "ibd2-tramadol--standard--pain_response",
+          "ibd2-tramadol--standard--tramadol_named_sedatives",
+          "ibd2-tramadol--standard--tramadol_nausea",
           "ibd2-tramadol--advanced--opioid_respiration",
           "ibd2-tramadol--advanced--serotonin",
           "ibd2-tramadol--advanced--seizure_risk",
@@ -8614,7 +8861,8 @@
         ],
         "use": [
           "ibd2-meropenem--standard--treatment-role",
-          "ibd2-meropenem--standard--antimicrobial_response"
+          "ibd2-meropenem--standard--antimicrobial_response",
+          "ibd2-meropenem--advanced--meropenem_not_prophylaxis"
         ],
         "memoryUse": [
           "ibd2-meropenem--standard--treatment-role",
@@ -8629,10 +8877,12 @@
           "ibd2-meropenem--advanced--renal_dose",
           "ibd2-meropenem--advanced--antibiotic_diarrhea",
           "ibd2-meropenem--advanced--seizure_risk",
-          "ibd2-meropenem--advanced--valproate"
+          "ibd2-meropenem--advanced--valproate",
+          "ibd2-meropenem--advanced--meropenem_cns_risk"
         ],
         "administration": [
           "ibd2-meropenem--standard--renal_dose",
+          "ibd2-meropenem--standard--meropenem_iv_preparation",
           "ibd2-meropenem--advanced--renal_dose"
         ],
         "memoryDanger": [
@@ -8657,7 +8907,8 @@
         ],
         "mechanism": [
           "ibd2-prothiazine--standard--principal-action",
-          "ibd2-prothiazine--standard--anticholinergic"
+          "ibd2-prothiazine--standard--anticholinergic",
+          "ibd2-prothiazine--standard--promethazine_h1"
         ],
         "why": [
           "ibd2-prothiazine--standard--principal-action",
@@ -8682,11 +8933,13 @@
           "ibd2-prothiazine--standard--sedation_falls",
           "ibd2-prothiazine--advanced--sedation_falls",
           "ibd2-prothiazine--advanced--cns_combination",
-          "ibd2-prothiazine--advanced--formulation"
+          "ibd2-prothiazine--advanced--formulation",
+          "ibd2-prothiazine--advanced--promethazine_route"
         ],
         "monitor": [
           "ibd2-prothiazine--standard--sedation_falls",
           "ibd2-prothiazine--standard--anticholinergic",
+          "ibd2-prothiazine--standard--promethazine_postural_bp",
           "ibd2-prothiazine--advanced--sedation_falls",
           "ibd2-prothiazine--advanced--cns_combination"
         ],
@@ -12047,6 +12300,316 @@
       "reason": "The generated point-to-question map records what is actually tested. It does not certify that the complete source has been reduced to an exhaustive required-point inventory.",
       "rule": "An untested clinical fact cannot be reclassified as background merely to make coverage appear complete."
     }
+  },
+  "sourceReview": {
+    "status": "partial source review; exhaustive inventory pending",
+    "scope": "Identified additional required points in seven medication entries. Other taught points remain subject to review. This file does not certify complete coverage of any material.",
+    "partiallyReviewedItemIds": [
+      "verified-losartan",
+      "ibd2-acamol",
+      "ibd2-trufen",
+      "ibd2-cefazolin",
+      "ibd2-tramadol",
+      "ibd2-meropenem",
+      "ibd2-prothiazine"
+    ],
+    "identifiedRequiredPoints": [
+      {
+        "itemId": "verified-losartan",
+        "concept": "losartan_additional_uses",
+        "point": "Recognize the selected LVH and type 2 diabetic nephropathy uses taught in addition to hypertension.",
+        "sourceField": "use",
+        "sourceAnchor": "left ventricular hypertrophy",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "verified-losartan::losartan_additional_uses",
+        "questionIds": [
+          "verified-losartan--standard--losartan_additional_uses"
+        ]
+      },
+      {
+        "itemId": "verified-losartan",
+        "concept": "losartan_lithium",
+        "point": "Recognize lithium as a medicine requiring interaction review with losartan.",
+        "sourceField": "monitor",
+        "sourceAnchor": "lithium",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "verified-losartan::losartan_lithium",
+        "questionIds": [
+          "verified-losartan--standard--losartan_lithium"
+        ]
+      },
+      {
+        "itemId": "verified-losartan",
+        "concept": "losartan_dual_raas",
+        "point": "Recognize the need to review concurrent renin-angiotensin system blockers.",
+        "sourceField": "monitor",
+        "sourceAnchor": "other renin-angiotensin system blockers",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "verified-losartan::losartan_dual_raas",
+        "questionIds": [
+          "verified-losartan--advanced--losartan_dual_raas"
+        ]
+      },
+      {
+        "itemId": "verified-losartan",
+        "concept": "losartan_at1_effects",
+        "point": "Relate AT1 blockade to reduced vasoconstriction and aldosterone effects.",
+        "sourceField": "mechanism",
+        "sourceAnchor": "vasoconstriction and aldosterone",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "verified-losartan::losartan_at1_effects",
+        "questionIds": [
+          "verified-losartan--advanced--losartan_at1_effects"
+        ]
+      },
+      {
+        "itemId": "ibd2-acamol",
+        "concept": "acetam_fever_response",
+        "point": "Assess temperature response when paracetamol is given for fever.",
+        "sourceField": "monitor",
+        "sourceAnchor": "pain/temperature",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-acamol::acetam_fever_response",
+        "questionIds": [
+          "ibd2-acamol--standard--acetam_fever_response"
+        ]
+      },
+      {
+        "itemId": "ibd2-acamol",
+        "concept": "acetam_nsaid_distinction",
+        "point": "Distinguish paracetamol from the typical platelet/GI effects of NSAIDs.",
+        "sourceField": "why",
+        "sourceAnchor": "platelet/GI effects",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-acamol::acetam_nsaid_distinction",
+        "questionIds": [
+          "ibd2-acamol--standard--acetam_nsaid_distinction"
+        ]
+      },
+      {
+        "itemId": "ibd2-acamol",
+        "concept": "acetam_alcohol_review",
+        "point": "Include heavy alcohol use in paracetamol safety assessment.",
+        "sourceField": "monitor",
+        "sourceAnchor": "heavy alcohol",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-acamol::acetam_alcohol_review",
+        "questionIds": [
+          "ibd2-acamol--standard--acetam_alcohol_review"
+        ]
+      },
+      {
+        "itemId": "ibd2-trufen",
+        "concept": "ibuprofen_minimum_exposure",
+        "point": "Use the lowest effective ordered NSAID dose for the shortest appropriate duration.",
+        "sourceField": "administration",
+        "sourceAnchor": "lowest effective ordered dose",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "ibd2-trufen::ibuprofen_minimum_exposure",
+        "questionIds": [
+          "ibd2-trufen--advanced--ibuprofen_minimum_exposure"
+        ]
+      },
+      {
+        "itemId": "ibd2-trufen",
+        "concept": "ibuprofen_cv_risk",
+        "point": "Recognize cardiovascular risk as a distinct NSAID precaution.",
+        "sourceField": "monitor",
+        "sourceAnchor": "cardiovascular risk",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-trufen::ibuprofen_cv_risk",
+        "questionIds": [
+          "ibd2-trufen--standard--ibuprofen_cv_risk"
+        ]
+      },
+      {
+        "itemId": "ibd2-cefazolin",
+        "concept": "cefazolin_product_preparation",
+        "point": "Verify the exact cefazolin product and order before selecting preparation and IV administration instructions.",
+        "sourceField": "administration",
+        "sourceAnchor": "exact vial/product",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "ibd2-cefazolin::cefazolin_product_preparation",
+        "questionIds": [
+          "ibd2-cefazolin--advanced--cefazolin_product_preparation"
+        ]
+      },
+      {
+        "itemId": "ibd2-cefazolin",
+        "concept": "cefazolin_tissue_timing",
+        "point": "Explain prophylaxis timing through adequate tissue antibiotic levels at incision.",
+        "sourceField": "why",
+        "sourceAnchor": "tissue levels",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "ibd2-cefazolin::cefazolin_tissue_timing",
+        "questionIds": [
+          "ibd2-cefazolin--advanced--cefazolin_tissue_timing"
+        ]
+      },
+      {
+        "itemId": "ibd2-cefazolin",
+        "concept": "cefazolin_pbp",
+        "point": "Identify penicillin-binding proteins as cefazolin’s taught bacterial target.",
+        "sourceField": "mechanism",
+        "sourceAnchor": "penicillin-binding proteins",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-cefazolin::cefazolin_pbp",
+        "questionIds": [
+          "ibd2-cefazolin--standard--cefazolin_pbp"
+        ]
+      },
+      {
+        "itemId": "ibd2-tramadol",
+        "concept": "tramadol_monoamines",
+        "point": "Identify serotonin and norepinephrine as the reuptake pathways taught for tramadol.",
+        "sourceField": "mechanism",
+        "sourceAnchor": "serotonin and norepinephrine",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-tramadol::tramadol_monoamines",
+        "questionIds": [
+          "ibd2-tramadol--standard--tramadol_monoamines"
+        ]
+      },
+      {
+        "itemId": "ibd2-tramadol",
+        "concept": "tramadol_named_sedatives",
+        "point": "Recognize additive sedation/respiratory risk with gabapentin or promethazine.",
+        "sourceField": "monitor",
+        "sourceAnchor": "gabapentin",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-tramadol::tramadol_named_sedatives",
+        "questionIds": [
+          "ibd2-tramadol--standard--tramadol_named_sedatives"
+        ]
+      },
+      {
+        "itemId": "ibd2-tramadol",
+        "concept": "tramadol_nausea",
+        "point": "Recognize nausea as an adverse effect taught for tramadol.",
+        "sourceField": "monitor",
+        "sourceAnchor": "nausea",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-tramadol::tramadol_nausea",
+        "questionIds": [
+          "ibd2-tramadol--standard--tramadol_nausea"
+        ]
+      },
+      {
+        "itemId": "ibd2-meropenem",
+        "concept": "meropenem_not_prophylaxis",
+        "point": "Do not treat meropenem as routine orthopaedic prophylaxis solely because of broad coverage.",
+        "sourceField": "use",
+        "sourceAnchor": "routine orthopaedic prophylaxis",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "ibd2-meropenem::meropenem_not_prophylaxis",
+        "questionIds": [
+          "ibd2-meropenem--advanced--meropenem_not_prophylaxis"
+        ]
+      },
+      {
+        "itemId": "ibd2-meropenem",
+        "concept": "meropenem_cns_risk",
+        "point": "Include pre-existing CNS disease when reviewing meropenem-related seizure risk.",
+        "sourceField": "monitor",
+        "sourceAnchor": "CNS disease",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "ibd2-meropenem::meropenem_cns_risk",
+        "questionIds": [
+          "ibd2-meropenem--advanced--meropenem_cns_risk"
+        ]
+      },
+      {
+        "itemId": "ibd2-meropenem",
+        "concept": "meropenem_iv_preparation",
+        "point": "Verify the meropenem IV product, indication, renal function, and order before preparation.",
+        "sourceField": "administration",
+        "sourceAnchor": "Reconstitution, dilution",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-meropenem::meropenem_iv_preparation",
+        "questionIds": [
+          "ibd2-meropenem--standard--meropenem_iv_preparation"
+        ]
+      },
+      {
+        "itemId": "ibd2-prothiazine",
+        "concept": "promethazine_h1",
+        "point": "Identify H1-receptor blockade as promethazine’s taught antihistamine action.",
+        "sourceField": "mechanism",
+        "sourceAnchor": "histamine H1 receptors",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-prothiazine::promethazine_h1",
+        "questionIds": [
+          "ibd2-prothiazine--standard--promethazine_h1"
+        ]
+      },
+      {
+        "itemId": "ibd2-prothiazine",
+        "concept": "promethazine_postural_bp",
+        "point": "Assess postural hypotension associated with promethazine.",
+        "sourceField": "monitor",
+        "sourceAnchor": "orthostatic hypotension",
+        "questionStages": [
+          "standard"
+        ],
+        "id": "ibd2-prothiazine::promethazine_postural_bp",
+        "questionIds": [
+          "ibd2-prothiazine--standard--promethazine_postural_bp"
+        ]
+      },
+      {
+        "itemId": "ibd2-prothiazine",
+        "concept": "promethazine_route",
+        "point": "Do not infer an injectable route from the observed oral promethazine brand.",
+        "sourceField": "administration",
+        "sourceAnchor": "injectable route",
+        "questionStages": [
+          "advanced"
+        ],
+        "id": "ibd2-prothiazine::promethazine_route",
+        "questionIds": [
+          "ibd2-prothiazine--advanced--promethazine_route"
+        ]
+      }
+    ],
+    "fullyReviewedItemIds": []
   },
   "questionDesignExclusions": [
     {

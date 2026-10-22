@@ -39,4 +39,15 @@ assert(C.isCorrect({format:'numeric-entry',answer:5},'5.0'));assert(!C.isCorrect
 assert(C.isCorrect({format:'short-answer',acceptedAnswers:['intramuscular injection']},'  Intramuscular   Injection '));
 const hostile=JSON.parse('{"version":1,"items":{"__proto__":{"attempts":[]},"constructor":{"attempts":[]},"future-item":{"attempts":[],"reads":[]}}}');
 assert.deepEqual(Object.keys(C.normalize(hostile).items),['future-item']);
+// A question-bank addition must preserve the same standard form after reading,
+// including its original bank provenance. A changed source gets a new form.
+state=C.empty();attempt(state,'standard',6,1000);
+r=C.item(state,'test');r.reads.push({sectionId:'s1',at:1002},{sectionId:'s2',at:1002});
+const expanded=JSON.parse(JSON.stringify(bank));expanded.bankVersion=2;expanded.exams[0]=form('standard',12);
+state=C.normalize(JSON.parse(JSON.stringify(state)));
+C.start(state,expanded,'standard',1003);assert.equal(state.active.form.questions.length,10);assert.equal(state.active.bankVersion,1);
+state.active.answers=answers(state.active.form,10);C.submit(state,1004);
+const changedSource=JSON.parse(JSON.stringify(expanded));changedSource.readingSections[0].id='s1-revised';
+C.item(state,'test').reads.push({sectionId:'s1-revised',at:1005});
+C.start(state,changedSource,'standard',1005);assert.equal(state.active.form.questions.length,12);assert.equal(state.active.bankVersion,2);
 console.log('PASS: exact score boundaries, unsure flags, safety checks, rereading, timer persistence, 7/21-day retries, history and answer formats');

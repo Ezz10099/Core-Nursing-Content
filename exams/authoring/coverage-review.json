@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "status": "partial source review; exhaustive inventory pending",
+  "scope": "Identified additional required points in seven medication entries. Other taught points remain subject to review. This file does not certify complete coverage of any material.",
+  "rules": [
+    "Only a scored answer that requires the point counts as tested.",
+    "Source anchors locate support; they do not grant coverage to a whole paragraph.",
+    "No learner exposure or pass is inferred."
+  ],
+  "items": [
+    {
+      "itemId": "verified-losartan",
+      "reviewStatus": "partial",
+      "sourceFieldSha256": {
+        "drugclass": "3f1fae5eb01a2edd2e9b6529b13941a10b8db7d02d1ad890f7b5704935d01504",
+        "use": "1db6e500cc3a3d2a16d1e03ac99bd955eec76e60c61e19e8bbb3e66a155717ba",
+        "administration": "211952c68f0127a411407346d79224435cd4136304b9c071fda30154f1772e09",
+        "monitor": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185",
+        "why": "72b0d753cedd2338c978812daed58f3e7f7d4adb27914a7b923713b7a4bbe2e5",
+        "mechanism": "e0590ea2f88e8a84c2829a289e5099c669335322d3388d8d8177fac5b497ea41",
+        "memoryUse": "26cc7b2c11cf12cf55da36115c96cea613f719f518ea79ddf3cb1c4fc9d34a29",
+        "memoryDanger": "b8cd5dc7645e86f8082c01cf46d29933dac382f8882e7a237984a122ce647827"
+      },
+      "identifiedRequiredPoints": [
+        {
+          "itemId": "verified-losartan",
+          "concept": "losartan_additional_uses",
+          "point": "Recognize the selected LVH and type 2 diabetic nephropathy uses taught in addition to hypertension.",
+          "sourceField": "use",
+          "sourceAnchor": "left ventricular hypertrophy",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "verified-losartan::losartan_additional_uses"
+        },
+        {
+          "itemId": "verified-losartan",
+          "concept": "losartan_lithium",
+          "point": "Recognize lithium as a medicine requiring interaction review with losartan.",
+          "sourceField": "monitor",
+          "sourceAnchor": "lithium",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "verified-losartan::losartan_lithium"
+        },
+        {
+          "itemId": "verified-losartan",
+          "concept": "losartan_dual_raas",
+          "point": "Recognize the need to review concurrent renin-angiotensin system blockers.",
+          "sourceField": "monitor",
+          "sourceAnchor": "other renin-angiotensin system blockers",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "verified-losartan::losartan_dual_raas"
+        },
+        {
+          "itemId": "verified-losartan",
+          "concept": "losartan_at1_effects",
+          "point": "Relate AT1 blockade to reduced vasoconstriction and aldosterone effects.",
+          "sourceField": "mechanism",
+          "sourceAnchor": "vasoconstriction and aldosterone",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "verified-losartan::losartan_at1_effects"
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-acamol",
+      "reviewStatus": "partial",
+      "sourceFieldSha256": {
+        "drugclass": "97aa2c209f83b77da6baca36c44a42844251cdea65d1c19bbf7506cf1a969f16",
+        "use": "f9a05cb6cb9998f3d7c31b2eb4987615763ed40998442ce61dc2b57839f18c7b",
+        "administration": "0e21f0aac72c941141e3e84be4ac3192a2b0ca0d0b38a1f30f74b3a3bc921a36",
+        "monitor": "8c0b9c7e37b76a71fc3d388934d4f6f89afd742aca9808bf7ab9cb3a1f4a71a8",
+        "why": "83ca2568b731928c51c62e0bde25b53cff839328ef5410f4e8088b56ba44005b",
+        "mechanism": "d04ecbab35b3e9729e38c5a29cf3fa4e0920434dbf40527c34637ba7df0ec339",
+        "memoryUse": "fcba682fa49bc8f12a10a2df79a76c3e5b6f5c4ff4690267da72ab42b0d78ab1",
+        "memoryDanger": "d02fc3e8e9f0439acd52259fcdb20792b5126b66ba7f62ff5e46d481f6d94696"
+      },
+      "identifiedRequiredPoints": [
+        {
+          "itemId": "ibd2-acamol",
+          "concept": "acetam_fever_response",
+          "point": "Assess temperature response when paracetamol is given for fever.",
+          "sourceField": "monitor",
+          "sourceAnchor": "pain/temperature",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-acamol::acetam_fever_response"
+        },
+        {
+          "itemId": "ibd2-acamol",
+          "concept": "acetam_nsaid_distinction",
+          "point": "Distinguish paracetamol from the typical platelet/GI effects of NSAIDs.",
+          "sourceField": "why",
+          "sourceAnchor": "platelet/GI effects",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-acamol::acetam_nsaid_distinction"
+        },
+        {
+          "itemId": "ibd2-acamol",
+          "concept": "acetam_alcohol_review",
+          "point": "Include heavy alcohol use in paracetamol safety assessment.",
+          "sourceField": "monitor",
+          "sourceAnchor": "heavy alcohol",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-acamol::acetam_alcohol_review"
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-trufen",
+      "reviewStatus": "partial",
+      "sourceFieldSha256": {
+        "drugclass": "2159478ee8bb4344c272ac60f2f612a615972c32ca5005a585eb97c1db9e2f01",
+        "use": "3111790c29d0616db80a46cd938d0c024a8637e09b551c6f6f6d9a79c7b554a4",
+        "administration": "e1faf95123c64e205f6c42e2cbe36583c2507b501f3a3e6e2e91b4337efd6201",
+        "monitor": "f4660c1363af6f79704fe2e94abefe09244982ee46dde3b9d9273e074f1b6929",
+        "why": "04ce5ce3d6ca38cc7d1e007df82defb9c5a155ddea01f4f714a169a954e98569",
+        "mechanism": "f8965b02108ebcdd66392609887bfec36bc99905f6342ee7ceaf9dbe7f948376",
+        "memoryUse": "549b3f2abb409c62fd95d2629ecc5fb79f09665f4d0083e9872962a6b6339ef4",
+        "memoryDanger": "c1df52c85e445b30f23522ccfdd881e31f2ac84174a21fa54fba55efc507a9bf"
+      },
+      "identifiedRequiredPoints": [
+        {
+          "itemId": "ibd2-trufen",
+          "concept": "ibuprofen_minimum_exposure",
+          "point": "Use the lowest effective ordered NSAID dose for the shortest appropriate duration.",
+          "sourceField": "administration",
+          "sourceAnchor": "lowest effective ordered dose",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "ibd2-trufen::ibuprofen_minimum_exposure"
+        },
+        {
+          "itemId": "ibd2-trufen",
+          "concept": "ibuprofen_cv_risk",
+          "point": "Recognize cardiovascular risk as a distinct NSAID precaution.",
+          "sourceField": "monitor",
+          "sourceAnchor": "cardiovascular risk",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-trufen::ibuprofen_cv_risk"
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-cefazolin",
+      "reviewStatus": "partial",
+      "sourceFieldSha256": {
+        "drugclass": "f02fbe3a70853711d1a2ae71185cba8d5ddce0e4e18996c11153b9dfd9d752d2",
+        "use": "c769a22cf41316d859dc165c0fdf44551833a8685451f381b01327e06667d48f",
+        "administration": "f71b769025b1696c2504871bcfe4b2f0a0148cbd47ad59606f18078e3e8c1481",
+        "monitor": "7293dc59d973d28297bbe8145fa9fe0bf2322d5ddc340d4a6c06318761342dcc",
+        "why": "7ad5c601afcf221031f91d4f750189d0aa3cadc5e9b1d224bf9f1f546adc992e",
+        "mechanism": "5ff8fc6a43a3e42cf7bf3cfa3c15b6a4c5a11f11001637f1a26d32a070bc0136",
+        "memoryUse": "3e3cee2b5898f86b8abcca441ec5206e910fbb1f0b602bf7dafca711c928116f",
+        "memoryDanger": "4b6ef2fdd54f60adbfac8acbb9df37af20e511493c8e718420712ee6d27003de"
+      },
+      "identifiedRequiredPoints": [
+        {
+          "itemId": "ibd2-cefazolin",
+          "concept": "cefazolin_product_preparation",
+          "point": "Verify the exact cefazolin product and order before selecting preparation and IV administration instructions.",
+          "sourceField": "administration",
+          "sourceAnchor": "exact vial/product",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "ibd2-cefazolin::cefazolin_product_preparation"
+        },
+        {
+          "itemId": "ibd2-cefazolin",
+          "concept": "cefazolin_tissue_timing",
+          "point": "Explain prophylaxis timing through adequate tissue antibiotic levels at incision.",
+          "sourceField": "why",
+          "sourceAnchor": "tissue levels",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "ibd2-cefazolin::cefazolin_tissue_timing"
+        },
+        {
+          "itemId": "ibd2-cefazolin",
+          "concept": "cefazolin_pbp",
+          "point": "Identify penicillin-binding proteins as cefazolin’s taught bacterial target.",
+          "sourceField": "mechanism",
+          "sourceAnchor": "penicillin-binding proteins",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-cefazolin::cefazolin_pbp"
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-tramadol",
+      "reviewStatus": "partial",
+      "sourceFieldSha256": {
+        "drugclass": "e8332608edc23353c46909dfdee25abd9d376a09db3b61189b5e471cc1ac368e",
+        "use": "4e1d69f5e663d5d7da48acd30ca06482d63b1de94a9986cfb59fc3f965442c7f",
+        "administration": "13b0acd2fd96e7762b2c6bd16188cc5c9c1ce3faa7a1e7aa7be9152a4da0c1db",
+        "monitor": "5ca01be119c163f76a734eb556b91a30bdc3fb4e9f16a9295483cab1cf3c0bff",
+        "why": "2a38b5def33cade343f5e82af99b1e5223e508c6b483778b593eaab3fe5c36a5",
+        "mechanism": "346c86f53770937bc5b976a10a87d1e3b2dda4cde3147031f1ec7dd27d0c38dd",
+        "memoryUse": "293d275ae9e5c0470b27aee77537e65dca12d22069cfaaa386022f10b63f30ff",
+        "memoryDanger": "0166486f99b4fef73ef3be81b2ad1f106826401751d914ab4bd48365d12e66fc"
+      },
+      "identifiedRequiredPoints": [
+        {
+          "itemId": "ibd2-tramadol",
+          "concept": "tramadol_monoamines",
+          "point": "Identify serotonin and norepinephrine as the reuptake pathways taught for tramadol.",
+          "sourceField": "mechanism",
+          "sourceAnchor": "serotonin and norepinephrine",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-tramadol::tramadol_monoamines"
+        },
+        {
+          "itemId": "ibd2-tramadol",
+          "concept": "tramadol_named_sedatives",
+          "point": "Recognize additive sedation/respiratory risk with gabapentin or promethazine.",
+          "sourceField": "monitor",
+          "sourceAnchor": "gabapentin",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-tramadol::tramadol_named_sedatives"
+        },
+        {
+          "itemId": "ibd2-tramadol",
+          "concept": "tramadol_nausea",
+          "point": "Recognize nausea as an adverse effect taught for tramadol.",
+          "sourceField": "monitor",
+          "sourceAnchor": "nausea",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-tramadol::tramadol_nausea"
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-meropenem",
+      "reviewStatus": "partial",
+      "sourceFieldSha256": {
+        "drugclass": "172212d9f00e3bc85263d54030f007c473dddbe297835ca88a07fb70dc3bce5d",
+        "use": "cf20ecce68f2e7c1cdc8ccb2a72bcc184875cfaba835097c3917274fedc1e979",
+        "administration": "3f245b647a1e82a271e3b1d762d9014904150691b22f303d1396799b7ba2b7b6",
+        "monitor": "df161e73a41a1c1d49dd3d25101044fe3aa48ce3221e5814a3f719c2d0433c50",
+        "why": "db38ab732427baf1858b62de0e35b3ac043c98b518ed4f697707a1aa153bed20",
+        "mechanism": "a54bcc99c1436284542d14a7438faec6513a0e3790f386e205ceb955943b5c92",
+        "memoryUse": "0653d33fda1735f59d0025239f27717686ac62ab5c5ba1f4661d42ad4626b8c6",
+        "memoryDanger": "597417ba17ce82d2d65d98aebf91ef0a09dd9816794331cdbbf2823b73243e98"
+      },
+      "identifiedRequiredPoints": [
+        {
+          "itemId": "ibd2-meropenem",
+          "concept": "meropenem_not_prophylaxis",
+          "point": "Do not treat meropenem as routine orthopaedic prophylaxis solely because of broad coverage.",
+          "sourceField": "use",
+          "sourceAnchor": "routine orthopaedic prophylaxis",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "ibd2-meropenem::meropenem_not_prophylaxis"
+        },
+        {
+          "itemId": "ibd2-meropenem",
+          "concept": "meropenem_cns_risk",
+          "point": "Include pre-existing CNS disease when reviewing meropenem-related seizure risk.",
+          "sourceField": "monitor",
+          "sourceAnchor": "CNS disease",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "ibd2-meropenem::meropenem_cns_risk"
+        },
+        {
+          "itemId": "ibd2-meropenem",
+          "concept": "meropenem_iv_preparation",
+          "point": "Verify the meropenem IV product, indication, renal function, and order before preparation.",
+          "sourceField": "administration",
+          "sourceAnchor": "Reconstitution, dilution",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-meropenem::meropenem_iv_preparation"
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-prothiazine",
+      "reviewStatus": "partial",
+      "sourceFieldSha256": {
+        "drugclass": "c4140951ca2cd25d7969d4af562fa6b5065a5cc520e48a47f152f7a4c196da61",
+        "use": "cbe9f5dffa664044d68b2fdc79e18a63e06354770940f6ab52fc8d2d9d408dad",
+        "administration": "06d7b27a0090762027675a116ca9c9501db6d2ec7ee30968b15397e803f085ed",
+        "monitor": "67c8c55eb30b273063a5408ec6b01ba99a061a6694a9a06e85414160767dc571",
+        "why": "8aa06eddf68f60d78e88f54c111a51d9afe1c8f016a4fa4264a31644ec2a63c0",
+        "mechanism": "c54fa33aa0241a45c91e5b394b8cb929fba0faa653268c96c31af6c04d9708cc",
+        "memoryUse": "38888e8ee51ec4be7d10f00b89a47faf6cdf98cbacf6a56defd511bcb819bd72",
+        "memoryDanger": "01fd469cc7e6070e6bee9de68ef976093dcbe208ff2117aa6df94176fa39354e"
+      },
+      "identifiedRequiredPoints": [
+        {
+          "itemId": "ibd2-prothiazine",
+          "concept": "promethazine_h1",
+          "point": "Identify H1-receptor blockade as promethazine’s taught antihistamine action.",
+          "sourceField": "mechanism",
+          "sourceAnchor": "histamine H1 receptors",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-prothiazine::promethazine_h1"
+        },
+        {
+          "itemId": "ibd2-prothiazine",
+          "concept": "promethazine_postural_bp",
+          "point": "Assess postural hypotension associated with promethazine.",
+          "sourceField": "monitor",
+          "sourceAnchor": "orthostatic hypotension",
+          "questionStages": [
+            "standard"
+          ],
+          "id": "ibd2-prothiazine::promethazine_postural_bp"
+        },
+        {
+          "itemId": "ibd2-prothiazine",
+          "concept": "promethazine_route",
+          "point": "Do not infer an injectable route from the observed oral promethazine brand.",
+          "sourceField": "administration",
+          "sourceAnchor": "injectable route",
+          "questionStages": [
+            "advanced"
+          ],
+          "id": "ibd2-prothiazine::promethazine_route"
+        }
+      ]
+    }
+  ]
+}
