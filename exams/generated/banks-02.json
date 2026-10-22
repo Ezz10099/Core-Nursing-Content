@@ -26,7 +26,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -41,30 +41,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches FRAXIPARINE / FRAXAPARIN — nadroparin?",
+              "stem": "Which principal action explains the taught effect of FRAXIPARINE / FRAXAPARIN — nadroparin?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Antiplatelet: irreversibly inhibits platelet COX-1",
-                  "explanation": "This describes a different class/action. FRAXIPARINE / FRAXAPARIN — nadroparin is taught here as Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The taught action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "B",
-                  "text": "LMWH: enhances antithrombin activity, predominantly against Xa",
-                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
+                  "text": "Airway anti-inflammatory and bronchodilator effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "C",
-                  "text": "Vitamin-K antagonist: reduces vitamin-K-dependent factor synthesis",
-                  "explanation": "This describes a different class/action. FRAXIPARINE / FRAXAPARIN — nadroparin is taught here as Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "D",
-                  "text": "Fibrinolytic: activates plasminogen to break down fibrin",
-                  "explanation": "This describes a different class/action. FRAXIPARINE / FRAXAPARIN — nadroparin is taught here as Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Blocks angiotensin-II AT1 receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -89,10 +89,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-nadroparin--standard--class-action",
+              "id": "ccu-nadroparin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-nadroparin::class-action"
+                "ccu-nadroparin::principal-action"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for FRAXIPARINE / FRAXAPARIN — nadroparin?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Fibrinolytic",
+                  "explanation": "The entry identifies the medicine as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                },
+                {
+                  "id": "B",
+                  "text": "LMWH",
+                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
+                },
+                {
+                  "id": "C",
+                  "text": "Antiplatelet",
+                  "explanation": "The entry identifies the medicine as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                },
+                {
+                  "id": "D",
+                  "text": "Unfractionated heparin",
+                  "explanation": "The entry identifies the medicine as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nadroparin",
+                  "field": "drugclass",
+                  "textSha256": "5bd6cd7f5b5a6c330e84ee14e51d59902522bc12da6e1788977a74ca4d699713"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-nadroparin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-nadroparin::drug-class"
               ],
               "answerKey": "B"
             },
@@ -151,13 +194,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "A significant platelet fall",
-                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
+                  "text": "An unchanged normal hemoglobin",
+                  "explanation": "This does not identify the platelet-related warning."
                 },
                 {
                   "id": "B",
-                  "text": "An unchanged normal hemoglobin",
-                  "explanation": "This does not identify the platelet-related warning."
+                  "text": "A significant platelet fall",
+                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
                 },
                 {
                   "id": "C",
@@ -187,25 +230,25 @@
               "learningPointIds": [
                 "ccu-nadroparin::platelets"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for FRAXIPARINE / FRAXAPARIN — nadroparin?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Creatinine trend and estimated GFR",
+                  "explanation": "These inform renal clearance and regimen review."
+                },
+                {
+                  "id": "B",
                   "text": "ALT trend and serum bilirubin",
                   "explanation": "These assess hepatic injury rather than directly estimate renal clearance."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "TSH trend and free thyroxine",
                   "explanation": "These assess thyroid function rather than renal elimination."
-                },
-                {
-                  "id": "C",
-                  "text": "Creatinine trend and estimated GFR",
-                  "explanation": "These inform renal clearance and regimen review."
                 },
                 {
                   "id": "D",
@@ -237,7 +280,7 @@
               "learningPointIds": [
                 "ccu-nadroparin::renal_dose"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "format": "short-answer",
@@ -267,7 +310,7 @@
               ]
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-nadroparin--advanced",
@@ -284,7 +327,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -484,7 +527,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -499,30 +542,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches CLEXANE / CLEXAN — enoxaparin?",
+              "stem": "Which principal action explains the taught effect of CLEXANE / CLEXAN — enoxaparin?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Fibrinolytic: activates plasminogen to break down fibrin",
-                  "explanation": "This describes a different class/action. CLEXANE / CLEXAN — enoxaparin is taught here as Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Bronchodilation with a narrow therapeutic index",
+                  "explanation": "This is a different pharmacological action. The taught action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "B",
-                  "text": "Antiplatelet: irreversibly inhibits platelet COX-1",
-                  "explanation": "This describes a different class/action. CLEXANE / CLEXAN — enoxaparin is taught here as Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Activates mu receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "C",
-                  "text": "LMWH: enhances antithrombin activity, predominantly against Xa",
-                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
+                  "text": "Inhibits serotonin/norepinephrine reuptake",
+                  "explanation": "This is a different pharmacological action. The taught action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "D",
-                  "text": "Vitamin-K antagonist: reduces vitamin-K-dependent factor synthesis",
-                  "explanation": "This describes a different class/action. CLEXANE / CLEXAN — enoxaparin is taught here as Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -547,12 +590,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-enoxaparin--standard--class-action",
+              "id": "ccu-enoxaparin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-enoxaparin::class-action"
+                "ccu-enoxaparin::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for CLEXANE / CLEXAN — enoxaparin?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Antiplatelet",
+                  "explanation": "The entry identifies the medicine as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                },
+                {
+                  "id": "B",
+                  "text": "Fibrinolytic",
+                  "explanation": "The entry identifies the medicine as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                },
+                {
+                  "id": "C",
+                  "text": "Vitamin-K antagonist",
+                  "explanation": "The entry identifies the medicine as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                },
+                {
+                  "id": "D",
+                  "text": "LMWH",
+                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "drugclass",
+                  "textSha256": "5bd6cd7f5b5a6c330e84ee14e51d59902522bc12da6e1788977a74ca4d699713"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-enoxaparin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enoxaparin::drug-class"
+              ],
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -560,18 +646,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Prescribed anticoagulation in ACS or thromboembolic disease",
-                  "explanation": "This is the treatment role taught in the entry: Anticoagulation in ACS and other thromboembolic indications according to the written order/protocol."
-                },
-                {
-                  "id": "B",
                   "text": "Relief of bronchospasm through airway receptor stimulation",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "C",
+                  "text": "Prescribed anticoagulation in ACS or thromboembolic disease",
+                  "explanation": "This is the treatment role taught in the entry: Anticoagulation in ACS and other thromboembolic indications according to the written order/protocol."
                 },
                 {
                   "id": "D",
@@ -602,30 +688,30 @@
               "learningPointIds": [
                 "ccu-enoxaparin::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "During CLEXANE / CLEXAN — enoxaparin therapy, which blood-count change requires particular review?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "A significant platelet fall",
+                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
+                },
+                {
+                  "id": "B",
                   "text": "An isolated normal red-cell index",
                   "explanation": "Red-cell size does not establish platelet safety."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "An unchanged normal neutrophil count",
                   "explanation": "This does not assess the heparin-related platelet change."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "An unchanged normal hemoglobin",
                   "explanation": "This does not identify the platelet-related warning."
-                },
-                {
-                  "id": "D",
-                  "text": "A significant platelet fall",
-                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
                 }
               ],
               "format": "single-best-answer",
@@ -645,7 +731,7 @@
               "learningPointIds": [
                 "ccu-enoxaparin::platelets"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for CLEXANE / CLEXAN — enoxaparin?",
@@ -775,7 +861,7 @@
               ]
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-enoxaparin--advanced",
@@ -792,7 +878,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -992,7 +1078,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1007,30 +1093,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches HEPARIN — unfractionated heparin (UFH)?",
+              "stem": "Which principal action explains the taught effect of HEPARIN — unfractionated heparin (UFH)?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Antiplatelet: irreversibly inhibits platelet COX-1",
-                  "explanation": "This describes a different class/action. HEPARIN — unfractionated heparin (UFH) is taught here as Unfractionated heparin anticoagulant."
+                  "text": "Suppresses gastric H/K ATPase",
+                  "explanation": "This is a different pharmacological action. The taught action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
                   "id": "B",
-                  "text": "Unfractionated heparin: enhances antithrombin inhibition of IIa/Xa",
-                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The taught action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
                   "id": "C",
-                  "text": "Fibrinolytic: activates plasminogen to break down fibrin",
-                  "explanation": "This describes a different class/action. HEPARIN — unfractionated heparin (UFH) is taught here as Unfractionated heparin anticoagulant."
+                  "text": "Disrupts protein synthesis at the 30S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
                   "id": "D",
-                  "text": "Antiplatelet: irreversibly inhibits platelet P2Y12 receptors",
-                  "explanation": "This describes a different class/action. HEPARIN — unfractionated heparin (UFH) is taught here as Unfractionated heparin anticoagulant."
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1055,12 +1141,12 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-heparin-ufh--standard--class-action",
+              "id": "ccu-heparin-ufh--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-heparin-ufh::class-action"
+                "ccu-heparin-ufh::principal-action"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -1122,18 +1208,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Treatment-vial concentration versus catheter-flush concentration",
+                  "explanation": "Confusing them can create a major dosing error."
+                },
+                {
+                  "id": "C",
                   "text": "Immediate-release tablet versus modified-release tablet",
                   "explanation": "This is not the product distinction for a UFH infusion."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Dry-powder inhaler strength versus nebulizer strength",
                   "explanation": "These are unrelated formulation categories."
-                },
-                {
-                  "id": "D",
-                  "text": "Treatment-vial concentration versus catheter-flush concentration",
-                  "explanation": "Confusing them can create a major dosing error."
                 }
               ],
               "format": "single-best-answer",
@@ -1174,7 +1260,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::heparin_infusion"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "short-answer",
@@ -1221,7 +1307,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1485,7 +1571,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -1500,30 +1586,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”)?",
+              "stem": "Which principal action explains the taught effect of ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”)?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "LMWH: enhances antithrombin activity, predominantly against Xa",
-                  "explanation": "This describes a different class/action. ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”) is taught here as Antiplatelet; irreversible platelet COX-1 inhibitor."
+                  "text": "Stabilizes inactivated voltage-gated sodium channels",
+                  "explanation": "This is a different pharmacological action. The taught action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 },
                 {
                   "id": "B",
-                  "text": "Fibrinolytic: activates plasminogen to break down fibrin",
-                  "explanation": "This describes a different class/action. ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”) is taught here as Antiplatelet; irreversible platelet COX-1 inhibitor."
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 },
                 {
                   "id": "C",
-                  "text": "Vitamin-K antagonist: reduces vitamin-K-dependent factor synthesis",
-                  "explanation": "This describes a different class/action. ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”) is taught here as Antiplatelet; irreversible platelet COX-1 inhibitor."
+                  "text": "Slows AV-nodal calcium-dependent conduction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 },
                 {
                   "id": "D",
-                  "text": "Antiplatelet: irreversibly inhibits platelet COX-1",
-                  "explanation": "Reduced thromboxane A2 synthesis impairs platelet aggregation."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -1548,12 +1634,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-aspirin--standard--class-action",
+              "id": "ccu-aspirin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-aspirin::class-action"
+                "ccu-aspirin::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Antiplatelet",
+                  "explanation": "Antiplatelet; irreversible platelet COX-1 inhibitor."
+                },
+                {
+                  "id": "B",
+                  "text": "Fibrinolytic",
+                  "explanation": "The entry identifies the medicine as: Antiplatelet; irreversible platelet COX-1 inhibitor."
+                },
+                {
+                  "id": "C",
+                  "text": "Vitamin-K antagonist",
+                  "explanation": "The entry identifies the medicine as: Antiplatelet; irreversible platelet COX-1 inhibitor."
+                },
+                {
+                  "id": "D",
+                  "text": "LMWH",
+                  "explanation": "The entry identifies the medicine as: Antiplatelet; irreversible platelet COX-1 inhibitor."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
+                  "field": "drugclass",
+                  "textSha256": "51adca8a4c95a5775cdfc298adfe5ab4da4bca49da75ff4e8364b76bad7d6da1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-aspirin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-aspirin::drug-class"
+              ],
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -1571,13 +1700,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Antiplatelet treatment when indicated",
-                  "explanation": "This is the treatment role taught in the entry: Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product."
+                  "text": "Replacement of glucose during severe hypoglycemia",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "D",
-                  "text": "Replacement of glucose during severe hypoglycemia",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Antiplatelet treatment when indicated",
+                  "explanation": "This is the treatment role taught in the entry: Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -1603,30 +1732,30 @@
               "learningPointIds": [
                 "ccu-aspirin::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "What does the term baby aspirin mean in this material?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Low-dose aspirin used mainly for its antiplatelet effect",
-                  "explanation": "It is the same active drug, not a separate medicine for babies."
-                },
-                {
-                  "id": "B",
                   "text": "A pediatric formulation of clopidogrel",
                   "explanation": "Clopidogrel is a different antiplatelet drug."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "A modified-release form of warfarin",
                   "explanation": "Warfarin is a different anticoagulant mechanism."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "A low-dose formulation of heparin",
                   "explanation": "Heparin is a different anticoagulant."
+                },
+                {
+                  "id": "D",
+                  "text": "Low-dose aspirin used mainly for its antiplatelet effect",
+                  "explanation": "It is the same active drug, not a separate medicine for babies."
                 }
               ],
               "format": "single-best-answer",
@@ -1667,7 +1796,7 @@
               "learningPointIds": [
                 "ccu-aspirin::aspirin_identity"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which previous reaction most directly changes the hypersensitivity assessment before ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”)?",
@@ -1679,13 +1808,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Bronchospasm after aspirin",
-                  "explanation": "This may indicate a significant reaction relevant to another NSAID."
+                  "text": "Dry cough during an ACE inhibitor",
+                  "explanation": "This is a different treatment-related effect."
                 },
                 {
                   "id": "C",
-                  "text": "Dry cough during an ACE inhibitor",
-                  "explanation": "This is a different treatment-related effect."
+                  "text": "Bronchospasm after aspirin",
+                  "explanation": "This may indicate a significant reaction relevant to another NSAID."
                 },
                 {
                   "id": "D",
@@ -1731,10 +1860,10 @@
               "learningPointIds": [
                 "ccu-aspirin::nsaid_allergy"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-aspirin--advanced",
@@ -1751,7 +1880,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2029,7 +2158,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2044,30 +2173,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches PLAVIX — clopidogrel?",
+              "stem": "Which principal action explains the taught effect of PLAVIX — clopidogrel?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Unfractionated heparin: enhances antithrombin inhibition of IIa/Xa",
-                  "explanation": "This describes a different class/action. PLAVIX — clopidogrel is taught here as P2Y12 antiplatelet."
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "This is a different pharmacological action. The taught action is: Its active metabolite inhibits ADP-mediated platelet activation."
                 },
                 {
                   "id": "B",
-                  "text": "Antiplatelet: irreversibly inhibits platelet COX-1",
-                  "explanation": "This describes a different class/action. PLAVIX — clopidogrel is taught here as P2Y12 antiplatelet."
-                },
-                {
-                  "id": "C",
-                  "text": "Antiplatelet: irreversibly inhibits platelet P2Y12 receptors",
+                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
                   "explanation": "Its active metabolite inhibits ADP-mediated platelet activation."
                 },
                 {
+                  "id": "C",
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Its active metabolite inhibits ADP-mediated platelet activation."
+                },
+                {
                   "id": "D",
-                  "text": "Fibrinolytic: activates plasminogen to break down fibrin",
-                  "explanation": "This describes a different class/action. PLAVIX — clopidogrel is taught here as P2Y12 antiplatelet."
+                  "text": "Airway anti-inflammatory and bronchodilator effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Its active metabolite inhibits ADP-mediated platelet activation."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -2092,10 +2221,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-clopidogrel--standard--class-action",
+              "id": "ccu-clopidogrel--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-clopidogrel::class-action"
+                "ccu-clopidogrel::principal-action"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for PLAVIX — clopidogrel?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Unfractionated heparin",
+                  "explanation": "The entry identifies the medicine as: P2Y12 antiplatelet."
+                },
+                {
+                  "id": "B",
+                  "text": "Fibrinolytic",
+                  "explanation": "The entry identifies the medicine as: P2Y12 antiplatelet."
+                },
+                {
+                  "id": "C",
+                  "text": "Antiplatelet",
+                  "explanation": "P2Y12 antiplatelet."
+                },
+                {
+                  "id": "D",
+                  "text": "LMWH",
+                  "explanation": "The entry identifies the medicine as: P2Y12 antiplatelet."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-clopidogrel",
+                  "field": "drugclass",
+                  "textSha256": "9a71b5d9eb9afb1d9066175c629f86d11573f1bf265ac89253da11d99f7cc7d3"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-clopidogrel--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-clopidogrel::drug-class"
               ],
               "answerKey": "C"
             },
@@ -2150,7 +2322,7 @@
               "answerKey": "D"
             }
           ],
-          "questionCount": 2
+          "questionCount": 3
         },
         {
           "id": "ccu-clopidogrel--advanced",
@@ -2167,7 +2339,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2431,7 +2603,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2446,30 +2618,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches CONCOR / CONCORE — bisoprolol?",
+              "stem": "Which principal action explains the taught effect of CONCOR / CONCORE — bisoprolol?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Beta1 blocker: reduces cardiac adrenergic stimulation",
-                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
+                  "text": "Effects depend on the ingredients",
+                  "explanation": "This is a different pharmacological action. The taught action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
                   "id": "B",
-                  "text": "Nonselective beta blocker: blocks beta1 and beta2 receptors",
-                  "explanation": "This describes a different class/action. CONCOR / CONCORE — bisoprolol is taught here as Relatively beta1-selective beta-blocker."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
                   "id": "C",
-                  "text": "Alpha/beta blocker: reduces vascular and cardiac adrenergic effects",
-                  "explanation": "This describes a different class/action. CONCOR / CONCORE — bisoprolol is taught here as Relatively beta1-selective beta-blocker."
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "This is a different pharmacological action. The taught action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
                   "id": "D",
-                  "text": "ACE inhibitor: reduces angiotensin-II formation",
-                  "explanation": "This describes a different class/action. CONCOR / CONCORE — bisoprolol is taught here as Relatively beta1-selective beta-blocker."
+                  "text": "Reduces cardiac adrenergic stimulation",
+                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -2494,12 +2666,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-bisoprolol--standard--class-action",
+              "id": "ccu-bisoprolol--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-bisoprolol::class-action"
+                "ccu-bisoprolol::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for CONCOR / CONCORE — bisoprolol?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Relatively beta1-selective beta-blocker."
+                },
+                {
+                  "id": "B",
+                  "text": "Beta1 blocker",
+                  "explanation": "Relatively beta1-selective beta-blocker."
+                },
+                {
+                  "id": "C",
+                  "text": "Direct vasodilator",
+                  "explanation": "The entry identifies the medicine as: Relatively beta1-selective beta-blocker."
+                },
+                {
+                  "id": "D",
+                  "text": "Nonselective beta blocker",
+                  "explanation": "The entry identifies the medicine as: Relatively beta1-selective beta-blocker."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
+                  "field": "drugclass",
+                  "textSha256": "64793bac364e6abfe09a7cbd5f523473324d2ed3dbad75e62fefa2a15cb24650"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-bisoprolol--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-bisoprolol::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -2512,18 +2727,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Selected rate or BP control",
-                  "explanation": "This is the treatment role taught in the entry: Rate/BP control and reduction of cardiac workload in selected cardiovascular patients."
-                },
-                {
-                  "id": "C",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "D",
+                  "text": "Selected rate or BP control",
+                  "explanation": "This is the treatment role taught in the entry: Rate/BP control and reduction of cardiac workload in selected cardiovascular patients."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -2549,25 +2764,25 @@
               "learningPointIds": [
                 "ccu-bisoprolol::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after CONCOR / CONCORE — bisoprolol. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
-                },
-                {
-                  "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -2620,7 +2835,7 @@
               "learningPointIds": [
                 "ccu-bisoprolol::hypotension"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which new change during CONCOR / CONCORE — bisoprolol treatment most directly matches its cardiac slowing risk?",
@@ -2637,13 +2852,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Flushing with an unchanged pulse",
-                  "explanation": "This does not establish bradycardia or AV block."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "D",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Flushing with an unchanged pulse",
+                  "explanation": "This does not establish bradycardia or AV block."
                 }
               ],
               "format": "single-best-answer",
@@ -2698,10 +2913,10 @@
               "learningPointIds": [
                 "ccu-bisoprolol::bradycardia"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-bisoprolol--advanced",
@@ -2718,7 +2933,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2946,7 +3161,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -2961,30 +3176,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches METCARDIUM — metoprolol?",
+              "stem": "Which principal action explains the taught effect of METCARDIUM — metoprolol?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Alpha/beta blocker: reduces vascular and cardiac adrenergic effects",
-                  "explanation": "This describes a different class/action. METCARDIUM — metoprolol is taught here as Beta1-selective beta-blocker."
+                  "text": "Receptor blockade and sodium loss",
+                  "explanation": "This is a different pharmacological action. The taught action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
                   "id": "B",
-                  "text": "Nonselective beta blocker: blocks beta1 and beta2 receptors",
-                  "explanation": "This describes a different class/action. METCARDIUM — metoprolol is taught here as Beta1-selective beta-blocker."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "This is a different pharmacological action. The taught action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
                   "id": "C",
-                  "text": "Dihydropyridine CCB: relaxes arterial smooth muscle",
-                  "explanation": "This describes a different class/action. METCARDIUM — metoprolol is taught here as Beta1-selective beta-blocker."
+                  "text": "Changes inflammatory/stress-response gene transcription",
+                  "explanation": "This is a different pharmacological action. The taught action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
                   "id": "D",
-                  "text": "Beta1 blocker: reduces cardiac adrenergic stimulation",
+                  "text": "Reduces cardiac adrenergic stimulation",
                   "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -3009,12 +3224,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-metoprolol--standard--class-action",
+              "id": "ccu-metoprolol--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-metoprolol::class-action"
+                "ccu-metoprolol::principal-action"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for METCARDIUM — metoprolol?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Direct vasodilator",
+                  "explanation": "The entry identifies the medicine as: Beta1-selective beta-blocker."
+                },
+                {
+                  "id": "B",
+                  "text": "ACE inhibitor",
+                  "explanation": "The entry identifies the medicine as: Beta1-selective beta-blocker."
+                },
+                {
+                  "id": "C",
+                  "text": "Beta1 blocker",
+                  "explanation": "Beta1-selective beta-blocker."
+                },
+                {
+                  "id": "D",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Beta1-selective beta-blocker."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metoprolol",
+                  "field": "drugclass",
+                  "textSha256": "27223fad4c0d6d67766709008c0e9f66f00d73356d0b3d77a19627d2687aa8e0"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-metoprolol--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metoprolol::drug-class"
+              ],
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -3022,18 +3280,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Selected rate or BP control",
+                  "explanation": "This is the treatment role taught in the entry: Selected rate/BP control and reduction of myocardial workload."
+                },
+                {
+                  "id": "B",
                   "text": "Treatment of susceptible bacterial infection",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "C",
-                  "text": "Selected rate or BP control",
-                  "explanation": "This is the treatment role taught in the entry: Selected rate/BP control and reduction of myocardial workload."
                 },
                 {
                   "id": "D",
@@ -3064,7 +3322,7 @@
               "learningPointIds": [
                 "ccu-metoprolol::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after METCARDIUM — metoprolol. Which paired assessment best checks the suspected adverse effect?",
@@ -3076,13 +3334,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
                   "id": "C",
-                  "text": "Resting temperature and infection symptoms",
-                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -3121,20 +3379,20 @@
               "learningPointIds": [
                 "ccu-metoprolol::hypotension"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which new change during METCARDIUM — metoprolol treatment most directly matches its cardiac slowing risk?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Dry mouth with an unchanged pulse",
+                  "explanation": "This is a different adverse-effect pattern."
                 },
                 {
                   "id": "B",
-                  "text": "Dry mouth with an unchanged pulse",
-                  "explanation": "This is a different adverse-effect pattern."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "C",
@@ -3199,10 +3457,10 @@
               "learningPointIds": [
                 "ccu-metoprolol::bradycardia"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-metoprolol--advanced",
@@ -3219,7 +3477,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3476,7 +3734,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3491,30 +3749,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches PROPRANOLOL?",
+              "stem": "Which principal action explains the taught effect of PROPRANOLOL?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Beta1 blocker: reduces cardiac adrenergic stimulation",
-                  "explanation": "This describes a different class/action. PROPRANOLOL is taught here as Nonselective beta1 + beta2 blocker."
-                },
-                {
-                  "id": "B",
-                  "text": "Direct vasodilator: relaxes arteriolar smooth muscle",
-                  "explanation": "This describes a different class/action. PROPRANOLOL is taught here as Nonselective beta1 + beta2 blocker."
-                },
-                {
-                  "id": "C",
-                  "text": "Nonselective beta blocker: blocks beta1 and beta2 receptors",
+                  "text": "Blocks beta1 and beta2 receptors",
                   "explanation": "Beta1 and beta2 blockade explains cardiac effects and bronchospasm risk."
                 },
                 {
+                  "id": "B",
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Beta1 and beta2 blockade explains cardiac effects and bronchospasm risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Activates mu receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Beta1 and beta2 blockade explains cardiac effects and bronchospasm risk."
+                },
+                {
                   "id": "D",
-                  "text": "ARB: blocks angiotensin-II AT1 receptors",
-                  "explanation": "This describes a different class/action. PROPRANOLOL is taught here as Nonselective beta1 + beta2 blocker."
+                  "text": "Reduces GI/GU smooth-muscle spasm",
+                  "explanation": "This is a different pharmacological action. The taught action is: Beta1 and beta2 blockade explains cardiac effects and bronchospasm risk."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -3539,12 +3797,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-propranolol--standard--class-action",
+              "id": "ccu-propranolol--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-propranolol::class-action"
+                "ccu-propranolol::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for PROPRANOLOL?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Beta1 blocker",
+                  "explanation": "The entry identifies the medicine as: Nonselective beta1 + beta2 blocker."
+                },
+                {
+                  "id": "B",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Nonselective beta1 + beta2 blocker."
+                },
+                {
+                  "id": "C",
+                  "text": "Alpha/beta blocker",
+                  "explanation": "The entry identifies the medicine as: Nonselective beta1 + beta2 blocker."
+                },
+                {
+                  "id": "D",
+                  "text": "Nonselective beta blocker",
+                  "explanation": "Nonselective beta1 + beta2 blocker."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propranolol",
+                  "field": "drugclass",
+                  "textSha256": "08593b86956918edbae611deb02744be9ce61ab80354d1a4990e0c0702436067"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-propranolol--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-propranolol::drug-class"
+              ],
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -3552,18 +3853,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Selected rate, BP, or angina treatment",
-                  "explanation": "This is the treatment role taught in the entry: Selected cardiovascular indications such as rate control, angina or BP treatment."
-                },
-                {
-                  "id": "B",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "C",
+                  "text": "Selected rate, BP, or angina treatment",
+                  "explanation": "This is the treatment role taught in the entry: Selected cardiovascular indications such as rate control, angina or BP treatment."
                 },
                 {
                   "id": "D",
@@ -3594,7 +3895,7 @@
               "learningPointIds": [
                 "ccu-propranolol::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "A patient becomes light-headed on standing after PROPRANOLOL. Which paired assessment best checks the suspected adverse effect?",
@@ -3606,18 +3907,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "C",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
-                },
-                {
-                  "id": "D",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -3658,20 +3959,20 @@
               "learningPointIds": [
                 "ccu-propranolol::hypotension"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Which new change during PROPRANOLOL treatment most directly matches its cardiac slowing risk?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Flushing with an unchanged pulse",
-                  "explanation": "This does not establish bradycardia or AV block."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "B",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Flushing with an unchanged pulse",
+                  "explanation": "This does not establish bradycardia or AV block."
                 },
                 {
                   "id": "C",
@@ -3736,7 +4037,7 @@
               "learningPointIds": [
                 "ccu-propranolol::bradycardia"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "A PROPRANOLOL injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
@@ -3789,7 +4090,7 @@
               "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-propranolol--advanced",
@@ -3806,7 +4107,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3977,7 +4278,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -3992,30 +4293,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches AMICORE / AMICOR — amlodipine?",
+              "stem": "Which principal action explains the taught effect of AMICORE / AMICOR — amlodipine?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Non-dihydropyridine CCB: slows AV-nodal calcium-dependent conduction",
-                  "explanation": "This describes a different class/action. AMICORE / AMICOR — amlodipine is taught here as Dihydropyridine calcium-channel blocker; arterial vasodilator."
-                },
-                {
-                  "id": "B",
-                  "text": "ARB: blocks angiotensin-II AT1 receptors",
-                  "explanation": "This describes a different class/action. AMICORE / AMICOR — amlodipine is taught here as Dihydropyridine calcium-channel blocker; arterial vasodilator."
-                },
-                {
-                  "id": "C",
-                  "text": "Dihydropyridine CCB: relaxes arterial smooth muscle",
+                  "text": "Relaxes arterial smooth muscle",
                   "explanation": "Vascular L-type calcium-channel blockade produces arterial vasodilation."
                 },
                 {
+                  "id": "B",
+                  "text": "Enhances GABA-A receptor activity",
+                  "explanation": "This is a different pharmacological action. The taught action is: Vascular L-type calcium-channel blockade produces arterial vasodilation."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Vascular L-type calcium-channel blockade produces arterial vasodilation."
+                },
+                {
                   "id": "D",
-                  "text": "ACE inhibitor: reduces angiotensin-II formation",
-                  "explanation": "This describes a different class/action. AMICORE / AMICOR — amlodipine is taught here as Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                  "text": "Receptor blockade and sodium loss",
+                  "explanation": "This is a different pharmacological action. The taught action is: Vascular L-type calcium-channel blockade produces arterial vasodilation."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -4040,12 +4341,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-amlodipine--standard--class-action",
+              "id": "ccu-amlodipine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-amlodipine::class-action"
+                "ccu-amlodipine::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for AMICORE / AMICOR — amlodipine?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Beta1 blocker",
+                  "explanation": "The entry identifies the medicine as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                },
+                {
+                  "id": "B",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                },
+                {
+                  "id": "C",
+                  "text": "Alpha/beta blocker",
+                  "explanation": "The entry identifies the medicine as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                },
+                {
+                  "id": "D",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-amlodipine",
+                  "field": "drugclass",
+                  "textSha256": "2eebc30e8f2cc13718e08cd8fd27f7bd54fafdd7198af91af285be90efdd28eb"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-amlodipine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-amlodipine::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -4102,18 +4446,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
-                },
-                {
-                  "id": "B",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
+                },
+                {
+                  "id": "C",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -4166,10 +4510,10 @@
               "learningPointIds": [
                 "ccu-amlodipine::hypotension"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-amlodipine--advanced",
@@ -4186,7 +4530,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4414,7 +4758,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4429,30 +4773,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches IKACOR / IKAKOR — verapamil?",
+              "stem": "Which principal action explains the taught effect of IKACOR / IKAKOR — verapamil?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Direct vasodilator: relaxes arteriolar smooth muscle",
-                  "explanation": "This describes a different class/action. IKACOR / IKAKOR — verapamil is taught here as Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "This is a different pharmacological action. The taught action is: Verapamil acts in the AV node and myocardium."
                 },
                 {
                   "id": "B",
-                  "text": "Nonselective beta blocker: blocks beta1 and beta2 receptors",
-                  "explanation": "This describes a different class/action. IKACOR / IKAKOR — verapamil is taught here as Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "This is a different pharmacological action. The taught action is: Verapamil acts in the AV node and myocardium."
                 },
                 {
                   "id": "C",
-                  "text": "Non-dihydropyridine CCB: slows AV-nodal calcium-dependent conduction",
-                  "explanation": "Verapamil acts in the AV node and myocardium."
+                  "text": "Supplies rapidly available glucose",
+                  "explanation": "This is a different pharmacological action. The taught action is: Verapamil acts in the AV node and myocardium."
                 },
                 {
                   "id": "D",
-                  "text": "Dihydropyridine CCB: relaxes arterial smooth muscle",
-                  "explanation": "This describes a different class/action. IKACOR / IKAKOR — verapamil is taught here as Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                  "text": "Slows AV-nodal calcium-dependent conduction",
+                  "explanation": "Verapamil acts in the AV node and myocardium."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -4477,10 +4821,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-verapamil--standard--class-action",
+              "id": "ccu-verapamil--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-verapamil::class-action"
+                "ccu-verapamil::principal-action"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for IKACOR / IKAKOR — verapamil?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ACE inhibitor",
+                  "explanation": "The entry identifies the medicine as: Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                },
+                {
+                  "id": "B",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                },
+                {
+                  "id": "C",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                },
+                {
+                  "id": "D",
+                  "text": "ARB",
+                  "explanation": "The entry identifies the medicine as: Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "drugclass",
+                  "textSha256": "68df9b3c76e17e4340fbf02884cd37575419e5644d808e509acf373ef8140411"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-verapamil--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::drug-class"
               ],
               "answerKey": "C"
             },
@@ -4549,13 +4936,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Resting temperature and infection symptoms",
-                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
                 }
               ],
               "format": "single-best-answer",
@@ -4589,20 +4976,20 @@
               "learningPointIds": [
                 "ccu-verapamil::hypotension"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which new change during IKACOR / IKAKOR — verapamil treatment most directly matches its cardiac slowing risk?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dry mouth with an unchanged pulse",
-                  "explanation": "This is a different adverse-effect pattern."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "B",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Dry mouth with an unchanged pulse",
+                  "explanation": "This is a different adverse-effect pattern."
                 },
                 {
                   "id": "C",
@@ -4660,20 +5047,20 @@
               "learningPointIds": [
                 "ccu-verapamil::bradycardia"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which bowel effect is particularly relevant during oral verapamil treatment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Constipation",
-                  "explanation": "It is a recognized adverse effect in the material."
+                  "text": "A predictable acceleration of upper-GI motility",
+                  "explanation": "That describes a different pharmacological role."
                 },
                 {
                   "id": "B",
-                  "text": "A predictable acceleration of upper-GI motility",
-                  "explanation": "That describes a different pharmacological role."
+                  "text": "Constipation",
+                  "explanation": "It is a recognized adverse effect in the material."
                 },
                 {
                   "id": "C",
@@ -4703,25 +5090,25 @@
               "learningPointIds": [
                 "ccu-verapamil::verapamil_constipation"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "A IKACOR / IKAKOR — verapamil injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
+                },
+                {
+                  "id": "B",
                   "text": "The instructions for a similar-looking vial on the trolley",
                   "explanation": "Appearance does not establish an equivalent product or rate."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "The IV rate previously used for a different drug class",
                   "explanation": "Another drug’s administration rate is not transferable."
-                },
-                {
-                  "id": "C",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 },
                 {
                   "id": "D",
@@ -4774,10 +5161,10 @@
               "learningPointIds": [
                 "ccu-verapamil::slow_iv"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-verapamil--advanced",
@@ -4794,7 +5181,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -4986,7 +5373,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5001,30 +5388,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches ENALAPRIL?",
+              "stem": "Which principal action explains the taught effect of ENALAPRIL?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Alpha/beta blocker: reduces vascular and cardiac adrenergic effects",
-                  "explanation": "This describes a different class/action. ENALAPRIL is taught here as ACE inhibitor; RAAS blocker."
+                  "text": "Reduces angiotensin-II formation",
+                  "explanation": "ACE inhibition reduces angiotensin II and aldosterone."
                 },
                 {
                   "id": "B",
-                  "text": "Direct vasodilator: relaxes arteriolar smooth muscle",
-                  "explanation": "This describes a different class/action. ENALAPRIL is taught here as ACE inhibitor; RAAS blocker."
+                  "text": "Receptor blockade and sodium loss",
+                  "explanation": "This is a different pharmacological action. The taught action is: ACE inhibition reduces angiotensin II and aldosterone."
                 },
                 {
                   "id": "C",
-                  "text": "Beta1 blocker: reduces cardiac adrenergic stimulation",
-                  "explanation": "This describes a different class/action. ENALAPRIL is taught here as ACE inhibitor; RAAS blocker."
+                  "text": "Binds the alpha-2-delta calcium-channel subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: ACE inhibition reduces angiotensin II and aldosterone."
                 },
                 {
                   "id": "D",
-                  "text": "ACE inhibitor: reduces angiotensin-II formation",
-                  "explanation": "ACE inhibition reduces angiotensin II and aldosterone."
+                  "text": "Disrupts sterol-containing fungal membranes",
+                  "explanation": "This is a different pharmacological action. The taught action is: ACE inhibition reduces angiotensin II and aldosterone."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5049,12 +5436,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-enalapril--standard--class-action",
+              "id": "ccu-enalapril--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-enalapril::class-action"
+                "ccu-enalapril::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for ENALAPRIL?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: ACE inhibitor; RAAS blocker."
+                },
+                {
+                  "id": "B",
+                  "text": "Nonselective beta blocker",
+                  "explanation": "The entry identifies the medicine as: ACE inhibitor; RAAS blocker."
+                },
+                {
+                  "id": "C",
+                  "text": "ACE inhibitor",
+                  "explanation": "ACE inhibitor; RAAS blocker."
+                },
+                {
+                  "id": "D",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: ACE inhibitor; RAAS blocker."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enalapril",
+                  "field": "drugclass",
+                  "textSha256": "7846e2afd591ed022d0d2b32131e069ffb5b15714b43c2e7cc8aa74c126b2dc1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-enalapril--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enalapril::drug-class"
+              ],
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -5062,13 +5492,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Selected chronic hypertension or heart-failure treatment",
-                  "explanation": "This is the treatment role taught in the entry: Chronic cardiovascular therapy for selected hypertension and heart-failure patients."
+                  "text": "Replacement of circulating glucose in severe hypoglycemia",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "B",
-                  "text": "Replacement of circulating glucose in severe hypoglycemia",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Selected chronic hypertension or heart-failure treatment",
+                  "explanation": "This is the treatment role taught in the entry: Chronic cardiovascular therapy for selected hypertension and heart-failure patients."
                 },
                 {
                   "id": "C",
@@ -5104,20 +5534,20 @@
               "learningPointIds": [
                 "ccu-enalapril::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "A patient becomes light-headed on standing after ENALAPRIL. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Visual acuity and accommodation symptoms",
+                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
                   "id": "B",
-                  "text": "Visual acuity and accommodation symptoms",
-                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "C",
@@ -5161,7 +5591,7 @@
               "learningPointIds": [
                 "ccu-enalapril::hypotension"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting ENALAPRIL?",
@@ -5173,13 +5603,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Rising serum potassium",
-                  "explanation": "The taught treatment can increase potassium or reduce its loss."
+                  "text": "Rising serum calcium",
+                  "explanation": "Calcium elevation is not the principal effect being tested."
                 },
                 {
                   "id": "C",
-                  "text": "Rising serum calcium",
-                  "explanation": "Calcium elevation is not the principal effect being tested."
+                  "text": "Rising serum potassium",
+                  "explanation": "The taught treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "D",
@@ -5218,25 +5648,25 @@
               "learningPointIds": [
                 "ccu-enalapril::high_k"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for ENALAPRIL?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                },
+                {
+                  "id": "B",
                   "text": "INR and puncture-site bleeding trends",
                   "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
-                },
-                {
-                  "id": "C",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "D",
@@ -5275,7 +5705,7 @@
               "learningPointIds": [
                 "ccu-enalapril::renal_monitor"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which previous reaction is a contraindication to enalapril in this material?",
@@ -5287,18 +5717,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "ACE-inhibitor angioedema",
-                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
-                },
-                {
-                  "id": "C",
                   "text": "Isolated opioid constipation",
                   "explanation": "This is a different adverse effect and mechanism."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Uncomplicated nitrate headache",
                   "explanation": "This does not establish ACE-associated angioedema."
+                },
+                {
+                  "id": "D",
+                  "text": "ACE-inhibitor angioedema",
+                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
                 }
               ],
               "format": "single-best-answer",
@@ -5318,10 +5748,10 @@
               "learningPointIds": [
                 "ccu-enalapril::ace_history"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-enalapril--advanced",
@@ -5338,7 +5768,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5545,7 +5975,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5560,30 +5990,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches TROVAN / LIPIDEX / LIPDIX — atorvastatin?",
+              "stem": "Which principal action explains the taught effect of TROVAN / LIPIDEX / LIPDIX — atorvastatin?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vitamin/mineral supplement: effects depend on the ingredients",
-                  "explanation": "This describes a different class/action. TROVAN / LIPIDEX / LIPDIX — atorvastatin is taught here as Statin; HMG-CoA reductase inhibitor."
+                  "text": "Antagonizes NMDA receptors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Reduced cholesterol synthesis lowers LDL and contributes to cardiovascular prevention."
                 },
                 {
                   "id": "B",
-                  "text": "Dissociative anesthetic: antagonizes NMDA receptors",
-                  "explanation": "This describes a different class/action. TROVAN / LIPIDEX / LIPDIX — atorvastatin is taught here as Statin; HMG-CoA reductase inhibitor."
-                },
-                {
-                  "id": "C",
-                  "text": "Statin: inhibits hepatic HMG-CoA reductase",
+                  "text": "Inhibits hepatic HMG-CoA reductase",
                   "explanation": "Reduced cholesterol synthesis lowers LDL and contributes to cardiovascular prevention."
                 },
                 {
+                  "id": "C",
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Reduced cholesterol synthesis lowers LDL and contributes to cardiovascular prevention."
+                },
+                {
                   "id": "D",
-                  "text": "Beta-lactam: inhibits bacterial cell-wall synthesis through PBPs",
-                  "explanation": "This describes a different class/action. TROVAN / LIPIDEX / LIPDIX — atorvastatin is taught here as Statin; HMG-CoA reductase inhibitor."
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Reduced cholesterol synthesis lowers LDL and contributes to cardiovascular prevention."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5608,10 +6038,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-atorvastatin--standard--class-action",
+              "id": "ccu-atorvastatin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-atorvastatin::class-action"
+                "ccu-atorvastatin::principal-action"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for TROVAN / LIPIDEX / LIPDIX — atorvastatin?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Vitamin/mineral supplement",
+                  "explanation": "The entry identifies the medicine as: Statin; HMG-CoA reductase inhibitor."
+                },
+                {
+                  "id": "B",
+                  "text": "Opioid analgesic",
+                  "explanation": "The entry identifies the medicine as: Statin; HMG-CoA reductase inhibitor."
+                },
+                {
+                  "id": "C",
+                  "text": "Statin",
+                  "explanation": "Statin; HMG-CoA reductase inhibitor."
+                },
+                {
+                  "id": "D",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The entry identifies the medicine as: Statin; HMG-CoA reductase inhibitor."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-atorvastatin",
+                  "field": "drugclass",
+                  "textSha256": "9bfb8caffdd9178efd09390f5bc0c5b90d64af863e7ffef1160505c2b0448bba"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-atorvastatin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-atorvastatin::drug-class"
               ],
               "answerKey": "C"
             },
@@ -5666,7 +6139,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 2
+          "questionCount": 3
         },
         {
           "id": "ccu-atorvastatin--advanced",
@@ -5683,7 +6156,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5826,7 +6299,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -5841,30 +6314,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches LASIX — furosemide?",
+              "stem": "Which principal action explains the taught effect of LASIX — furosemide?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Potassium-sparing diuretic: blocks mineralocorticoid receptors",
-                  "explanation": "This describes a different class/action. LASIX — furosemide is taught here as Loop diuretic."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Furosemide promotes salt and water loss, reducing congestion."
                 },
                 {
                   "id": "B",
-                  "text": "Insulin: activates receptors to promote glucose uptake",
-                  "explanation": "This describes a different class/action. LASIX — furosemide is taught here as Loop diuretic."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
                 },
                 {
                   "id": "C",
-                  "text": "SGLT2 inhibitor: increases renal glucose and sodium excretion",
-                  "explanation": "This describes a different class/action. LASIX — furosemide is taught here as Loop diuretic."
+                  "text": "Receptor blockade and sodium loss",
+                  "explanation": "This is a different pharmacological action. The taught action is: Furosemide promotes salt and water loss, reducing congestion."
                 },
                 {
                   "id": "D",
-                  "text": "Loop diuretic: inhibits Na-K-2Cl transport in the ascending loop",
-                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The taught action is: Furosemide promotes salt and water loss, reducing congestion."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -5889,12 +6362,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-furosemide--standard--class-action",
+              "id": "ccu-furosemide--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-furosemide::class-action"
+                "ccu-furosemide::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for LASIX — furosemide?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Insulin",
+                  "explanation": "The entry identifies the medicine as: Loop diuretic."
+                },
+                {
+                  "id": "B",
+                  "text": "Potassium-sparing diuretic",
+                  "explanation": "The entry identifies the medicine as: Loop diuretic."
+                },
+                {
+                  "id": "C",
+                  "text": "Loop diuretic",
+                  "explanation": "Loop diuretic."
+                },
+                {
+                  "id": "D",
+                  "text": "SGLT2 inhibitor",
+                  "explanation": "The entry identifies the medicine as: Loop diuretic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "drugclass",
+                  "textSha256": "adff96e02a802564efa6824dba7314776f32e1641d014dea815f50954f01ec81"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-furosemide--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::drug-class"
+              ],
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -5912,13 +6428,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Relief of congestion and fluid overload",
-                  "explanation": "This is the treatment role taught in the entry: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
+                  "text": "Suppression of bacterial cell-wall synthesis",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "D",
-                  "text": "Suppression of bacterial cell-wall synthesis",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Relief of congestion and fluid overload",
+                  "explanation": "This is the treatment role taught in the entry: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -5944,7 +6460,7 @@
               "learningPointIds": [
                 "ccu-furosemide::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which change best supports a beneficial decongestive response to furosemide?",
@@ -6058,13 +6574,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Troponin and chest-pain trends",
-                  "explanation": "These assess myocardial injury rather than directly establish renal status."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "B",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "Troponin and chest-pain trends",
+                  "explanation": "These assess myocardial injury rather than directly establish renal status."
                 },
                 {
                   "id": "C",
@@ -6094,7 +6610,7 @@
               "learningPointIds": [
                 "ccu-furosemide::renal_monitor"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which new symptom during LASIX — furosemide therapy specifically warrants review for ototoxicity?",
@@ -6194,18 +6710,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Less sleep disruption from nocturia",
-                  "explanation": "The timing reduces inconvenient overnight diuresis."
-                },
-                {
-                  "id": "B",
                   "text": "Less potassium loss at an identical total dose",
                   "explanation": "Time of day does not remove the need to monitor potassium."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Faster conversion into a potassium-sparing metabolite",
                   "explanation": "Furosemide does not become a potassium-sparing diuretic."
+                },
+                {
+                  "id": "C",
+                  "text": "Less sleep disruption from nocturia",
+                  "explanation": "The timing reduces inconvenient overnight diuresis."
                 },
                 {
                   "id": "D",
@@ -6230,10 +6746,10 @@
               "learningPointIds": [
                 "ccu-furosemide::diuretic_timing"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         },
         {
           "id": "ccu-furosemide--advanced",
@@ -6250,7 +6766,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6407,7 +6923,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6422,30 +6938,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches FARIGM — dapagliflozin?",
+              "stem": "Which principal action explains the taught effect of FARIGM — dapagliflozin?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Insulin: activates receptors to promote glucose uptake",
-                  "explanation": "This describes a different class/action. FARIGM — dapagliflozin is taught here as SGLT2 inhibitor."
-                },
-                {
-                  "id": "B",
-                  "text": "SGLT2 inhibitor: increases renal glucose and sodium excretion",
+                  "text": "Increases renal glucose and sodium excretion",
                   "explanation": "Dapagliflozin acts on renal sodium-glucose cotransport rather than supplying insulin."
                 },
                 {
+                  "id": "B",
+                  "text": "Predominantly alpha1-mediated vasoconstriction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dapagliflozin acts on renal sodium-glucose cotransport rather than supplying insulin."
+                },
+                {
                   "id": "C",
-                  "text": "Potassium-sparing diuretic: blocks mineralocorticoid receptors",
-                  "explanation": "This describes a different class/action. FARIGM — dapagliflozin is taught here as SGLT2 inhibitor."
+                  "text": "Relaxes bronchial smooth muscle",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dapagliflozin acts on renal sodium-glucose cotransport rather than supplying insulin."
                 },
                 {
                   "id": "D",
-                  "text": "Loop diuretic: inhibits Na-K-2Cl transport in the ascending loop",
-                  "explanation": "This describes a different class/action. FARIGM — dapagliflozin is taught here as SGLT2 inhibitor."
+                  "text": "Reduces vascular and cardiac adrenergic effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dapagliflozin acts on renal sodium-glucose cotransport rather than supplying insulin."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -6470,10 +6986,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-dapagliflozin--standard--class-action",
+              "id": "ccu-dapagliflozin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-dapagliflozin::class-action"
+                "ccu-dapagliflozin::principal-action"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for FARIGM — dapagliflozin?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Loop diuretic",
+                  "explanation": "The entry identifies the medicine as: SGLT2 inhibitor."
+                },
+                {
+                  "id": "B",
+                  "text": "SGLT2 inhibitor",
+                  "explanation": "SGLT2 inhibitor."
+                },
+                {
+                  "id": "C",
+                  "text": "Potassium-sparing diuretic",
+                  "explanation": "The entry identifies the medicine as: SGLT2 inhibitor."
+                },
+                {
+                  "id": "D",
+                  "text": "Insulin",
+                  "explanation": "The entry identifies the medicine as: SGLT2 inhibitor."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dapagliflozin",
+                  "field": "drugclass",
+                  "textSha256": "55f658b7a9cc5334f3c5a8f0ad947f47cb911e0fdf9ea3acc73673bb2cd3ffd1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-dapagliflozin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dapagliflozin::drug-class"
               ],
               "answerKey": "B"
             },
@@ -6628,7 +7187,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-dapagliflozin--advanced",
@@ -6645,7 +7204,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6859,7 +7418,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -6874,30 +7433,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches SLIDING-SCALE / CORRECTION INSULIN?",
+              "stem": "Which principal action explains the taught effect of SLIDING-SCALE / CORRECTION INSULIN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Insulin: activates receptors to promote glucose uptake",
+                  "text": "Activates receptors to promote glucose uptake",
                   "explanation": "Insulin increases glucose uptake and suppresses hepatic glucose production."
                 },
                 {
                   "id": "B",
-                  "text": "SGLT2 inhibitor: increases renal glucose and sodium excretion",
-                  "explanation": "This describes a different class/action. SLIDING-SCALE / CORRECTION INSULIN is taught here as High-alert insulin therapy; usually regular human insulin or a rapid-acting analogue for correction."
+                  "text": "Reduces vascular and cardiac adrenergic effects",
+                  "explanation": "This is a different pharmacological action. The taught action is: Insulin increases glucose uptake and suppresses hepatic glucose production."
                 },
                 {
                   "id": "C",
-                  "text": "Potassium-sparing diuretic: blocks mineralocorticoid receptors",
-                  "explanation": "This describes a different class/action. SLIDING-SCALE / CORRECTION INSULIN is taught here as High-alert insulin therapy; usually regular human insulin or a rapid-acting analogue for correction."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Insulin increases glucose uptake and suppresses hepatic glucose production."
                 },
                 {
                   "id": "D",
-                  "text": "Loop diuretic: inhibits Na-K-2Cl transport in the ascending loop",
-                  "explanation": "This describes a different class/action. SLIDING-SCALE / CORRECTION INSULIN is taught here as High-alert insulin therapy; usually regular human insulin or a rapid-acting analogue for correction."
+                  "text": "Briefly blocks AV-nodal conduction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Insulin increases glucose uptake and suppresses hepatic glucose production."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -6922,10 +7481,10 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-correction-insulin--standard--class-action",
+              "id": "ccu-correction-insulin--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-correction-insulin::class-action"
+                "ccu-correction-insulin::principal-action"
               ],
               "answerKey": "A"
             },
@@ -7189,7 +7748,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7332,7 +7891,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7347,30 +7906,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches NOREPINEPHRINE / NORADRENALINE?",
+              "stem": "Which principal action explains the taught effect of NOREPINEPHRINE / NORADRENALINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Organic nitrate: nitric-oxide/cGMP-mediated vascular relaxation",
-                  "explanation": "This describes a different class/action. NOREPINEPHRINE / NORADRENALINE is taught here as Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The taught action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "B",
-                  "text": "Catecholamine: dose-dependent dopaminergic and adrenergic effects",
-                  "explanation": "This describes a different class/action. NOREPINEPHRINE / NORADRENALINE is taught here as Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "C",
-                  "text": "Inotrope: predominantly beta1-mediated increased contractility",
-                  "explanation": "This describes a different class/action. NOREPINEPHRINE / NORADRENALINE is taught here as Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Predominantly alpha1-mediated vasoconstriction",
+                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "D",
-                  "text": "Vasopressor: predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "This is a different pharmacological action. The taught action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -7395,12 +7954,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-norepinephrine--standard--class-action",
+              "id": "ccu-norepinephrine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-norepinephrine::class-action"
+                "ccu-norepinephrine::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for NOREPINEPHRINE / NORADRENALINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Catecholamine",
+                  "explanation": "The entry identifies the medicine as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                },
+                {
+                  "id": "B",
+                  "text": "Vasopressor",
+                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                },
+                {
+                  "id": "C",
+                  "text": "Organic nitrate",
+                  "explanation": "The entry identifies the medicine as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                },
+                {
+                  "id": "D",
+                  "text": "Inotrope",
+                  "explanation": "The entry identifies the medicine as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "drugclass",
+                  "textSha256": "7f7dc2e8353dc150e6a95552e96b1d54e44a9e471b1e828149de942d3a50b4f2"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-norepinephrine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -7408,13 +8010,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Suppression of gastric acid secretion",
-                  "explanation": "This is a different treatment role, not the main role taught for this entry."
+                  "text": "Pressure support in severe hypotension or shock",
+                  "explanation": "This is the treatment role taught in the entry: Vasopressor support for severe hypotension/shock when clinically indicated."
                 },
                 {
                   "id": "B",
-                  "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is the treatment role taught in the entry: Vasopressor support for severe hypotension/shock when clinically indicated."
+                  "text": "Suppression of gastric acid secretion",
+                  "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
                   "id": "C",
@@ -7450,7 +8052,7 @@
               "learningPointIds": [
                 "ccu-norepinephrine::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which feature is required for the IV delivery of NOREPINEPHRINE / NORADRENALINE described in this material?",
@@ -7467,13 +8069,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
+                  "text": "Intermittent manual boluses using the last infusion’s mL/hour",
+                  "explanation": "An infusion rate cannot define a safe bolus."
                 },
                 {
                   "id": "D",
-                  "text": "Intermittent manual boluses using the last infusion’s mL/hour",
-                  "explanation": "An infusion rate cannot define a safe bolus."
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 }
               ],
               "format": "single-best-answer",
@@ -7507,10 +8109,10 @@
               "learningPointIds": [
                 "ccu-norepinephrine::infusion_route"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-norepinephrine--advanced",
@@ -7527,7 +8129,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7734,7 +8336,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -7749,30 +8351,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches DOBUTAMINE?",
+              "stem": "Which principal action explains the taught effect of DOBUTAMINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vasopressor: predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "This describes a different class/action. DOBUTAMINE is taught here as Predominantly beta1 inotrope."
+                  "text": "Effects depend on the ingredients",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dobutamine primarily supports cardiac pumping and output."
                 },
                 {
                   "id": "B",
-                  "text": "Organic nitrate: nitric-oxide/cGMP-mediated vascular relaxation",
-                  "explanation": "This describes a different class/action. DOBUTAMINE is taught here as Predominantly beta1 inotrope."
+                  "text": "Binds D-Ala-D-Ala cell-wall precursors",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dobutamine primarily supports cardiac pumping and output."
                 },
                 {
                   "id": "C",
-                  "text": "Catecholamine: dose-dependent dopaminergic and adrenergic effects",
-                  "explanation": "This describes a different class/action. DOBUTAMINE is taught here as Predominantly beta1 inotrope."
+                  "text": "Predominantly beta1-mediated increased contractility",
+                  "explanation": "Dobutamine primarily supports cardiac pumping and output."
                 },
                 {
                   "id": "D",
-                  "text": "Inotrope: predominantly beta1-mediated increased contractility",
-                  "explanation": "Dobutamine primarily supports cardiac pumping and output."
+                  "text": "Inhibits serotonin/norepinephrine reuptake",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dobutamine primarily supports cardiac pumping and output."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -7797,12 +8399,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-dobutamine--standard--class-action",
+              "id": "ccu-dobutamine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-dobutamine::class-action"
+                "ccu-dobutamine::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for DOBUTAMINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Inotrope",
+                  "explanation": "Predominantly beta1 inotrope."
+                },
+                {
+                  "id": "B",
+                  "text": "Catecholamine",
+                  "explanation": "The entry identifies the medicine as: Predominantly beta1 inotrope."
+                },
+                {
+                  "id": "C",
+                  "text": "Organic nitrate",
+                  "explanation": "The entry identifies the medicine as: Predominantly beta1 inotrope."
+                },
+                {
+                  "id": "D",
+                  "text": "Vasopressor",
+                  "explanation": "The entry identifies the medicine as: Predominantly beta1 inotrope."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dobutamine",
+                  "field": "drugclass",
+                  "textSha256": "754f31f1eb843066ebf55145612d80f2ffe787bc815f703ee51585861d6e557b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-dobutamine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dobutamine::drug-class"
+              ],
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -7810,18 +8455,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Pump support in selected low-output states",
-                  "explanation": "This is the treatment role taught in the entry: Selected low-cardiac-output states such as severe acute HF/cardiogenic shock when increased contractility is needed."
-                },
-                {
-                  "id": "B",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
+                },
+                {
+                  "id": "C",
+                  "text": "Pump support in selected low-output states",
+                  "explanation": "This is the treatment role taught in the entry: Selected low-cardiac-output states such as severe acute HF/cardiogenic shock when increased contractility is needed."
                 },
                 {
                   "id": "D",
@@ -7852,7 +8497,7 @@
               "learningPointIds": [
                 "ccu-dobutamine::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which new change during DOBUTAMINE infusion is a relevant cardiac adverse-effect warning?",
@@ -7864,13 +8509,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Improving peripheral warmth without rhythm change",
-                  "explanation": "This can reflect a beneficial perfusion response."
+                  "text": "New tachycardia or ventricular ectopy",
+                  "explanation": "Catecholamine effects can increase rhythm instability."
                 },
                 {
                   "id": "C",
-                  "text": "New tachycardia or ventricular ectopy",
-                  "explanation": "Catecholamine effects can increase rhythm instability."
+                  "text": "Improving peripheral warmth without rhythm change",
+                  "explanation": "This can reflect a beneficial perfusion response."
                 },
                 {
                   "id": "D",
@@ -7909,7 +8554,7 @@
               "learningPointIds": [
                 "ccu-dobutamine::tachyarrhythmia"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which feature is required for the IV delivery of DOBUTAMINE described in this material?",
@@ -7921,18 +8566,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
-                },
-                {
-                  "id": "C",
                   "text": "Gravity flow without accounting for the prepared concentration",
                   "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Undiluted rapid injection based on the ampoule’s full volume",
                   "explanation": "Container content is not a default patient bolus."
+                },
+                {
+                  "id": "D",
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 }
               ],
               "format": "single-best-answer",
@@ -7959,10 +8604,10 @@
               "learningPointIds": [
                 "ccu-dobutamine::infusion_route"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-dobutamine--advanced",
@@ -7979,7 +8624,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8136,7 +8781,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8151,30 +8796,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches DOPAMINE?",
+              "stem": "Which principal action explains the taught effect of DOPAMINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Organic nitrate: nitric-oxide/cGMP-mediated vascular relaxation",
-                  "explanation": "This describes a different class/action. DOPAMINE is taught here as Catecholamine inotrope/vasopressor with dose-dependent effects."
+                  "text": "Binds the alpha-2-delta calcium-channel subunit",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dopamine can provide selected hemodynamic support; effects depend on the regimen."
                 },
                 {
                   "id": "B",
-                  "text": "Catecholamine: dose-dependent dopaminergic and adrenergic effects",
+                  "text": "Dose-dependent dopaminergic and adrenergic effects",
                   "explanation": "Dopamine can provide selected hemodynamic support; effects depend on the regimen."
                 },
                 {
                   "id": "C",
-                  "text": "Inotrope: predominantly beta1-mediated increased contractility",
-                  "explanation": "This describes a different class/action. DOPAMINE is taught here as Catecholamine inotrope/vasopressor with dose-dependent effects."
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dopamine can provide selected hemodynamic support; effects depend on the regimen."
                 },
                 {
                   "id": "D",
-                  "text": "Vasopressor: predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "This describes a different class/action. DOPAMINE is taught here as Catecholamine inotrope/vasopressor with dose-dependent effects."
+                  "text": "Supports calcium and cardiac membrane stability",
+                  "explanation": "This is a different pharmacological action. The taught action is: Dopamine can provide selected hemodynamic support; effects depend on the regimen."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -8199,10 +8844,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-dopamine--standard--class-action",
+              "id": "ccu-dopamine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-dopamine::class-action"
+                "ccu-dopamine::principal-action"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for DOPAMINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Inotrope",
+                  "explanation": "The entry identifies the medicine as: Catecholamine inotrope/vasopressor with dose-dependent effects."
+                },
+                {
+                  "id": "B",
+                  "text": "Catecholamine",
+                  "explanation": "Catecholamine inotrope/vasopressor with dose-dependent effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Vasopressor",
+                  "explanation": "The entry identifies the medicine as: Catecholamine inotrope/vasopressor with dose-dependent effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Organic nitrate",
+                  "explanation": "The entry identifies the medicine as: Catecholamine inotrope/vasopressor with dose-dependent effects."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "drugclass",
+                  "textSha256": "41d64d1d95301c68a5cbdf42e1bbdab59ac2f5fa932d0e69df0d5ef34ee553f5"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-dopamine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::drug-class"
               ],
               "answerKey": "B"
             },
@@ -8316,18 +9004,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Sodium bicarbonate",
-                  "explanation": "Strong alkalinity can inactivate dopamine."
-                },
-                {
-                  "id": "C",
                   "text": "0.9% sodium chloride",
                   "explanation": "This is a compatible dopamine diluent for referenced products, subject to the actual label."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "5% dextrose in 0.9% sodium chloride",
                   "explanation": "This is a compatible dopamine diluent for referenced products, subject to the actual label."
+                },
+                {
+                  "id": "D",
+                  "text": "Sodium bicarbonate",
+                  "explanation": "Strong alkalinity can inactivate dopamine."
                 }
               ],
               "format": "single-best-answer",
@@ -8347,7 +9035,7 @@
               "learningPointIds": [
                 "ccu-dopamine::dopamine_bicarbonate"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Which feature is required for the IV delivery of DOPAMINE described in this material?",
@@ -8407,7 +9095,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-dopamine--advanced",
@@ -8424,7 +9112,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8611,7 +9299,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8626,30 +9314,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches ATROPINE?",
+              "stem": "Which principal action explains the taught effect of ATROPINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Antimuscarinic: reduces vagal slowing of the heart",
-                  "explanation": "Muscarinic blockade removes parasympathetic slowing rather than directly stimulating beta1 receptors."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The taught action is: Muscarinic blockade removes parasympathetic slowing rather than directly stimulating beta1 receptors."
                 },
                 {
                   "id": "B",
-                  "text": "Predominantly class III agent: multiple channel/adrenergic effects",
-                  "explanation": "This describes a different class/action. ATROPINE is taught here as Anticholinergic; specifically antimuscarinic."
+                  "text": "Supplies rapidly available glucose",
+                  "explanation": "This is a different pharmacological action. The taught action is: Muscarinic blockade removes parasympathetic slowing rather than directly stimulating beta1 receptors."
                 },
                 {
                   "id": "C",
-                  "text": "A1-receptor agonist: briefly blocks AV-nodal conduction",
-                  "explanation": "This describes a different class/action. ATROPINE is taught here as Anticholinergic; specifically antimuscarinic."
+                  "text": "Increases renal glucose and sodium excretion",
+                  "explanation": "This is a different pharmacological action. The taught action is: Muscarinic blockade removes parasympathetic slowing rather than directly stimulating beta1 receptors."
                 },
                 {
                   "id": "D",
-                  "text": "Class Ic antiarrhythmic: blocks fast sodium channels",
-                  "explanation": "This describes a different class/action. ATROPINE is taught here as Anticholinergic; specifically antimuscarinic."
+                  "text": "Reduces vagal slowing of the heart",
+                  "explanation": "Muscarinic blockade removes parasympathetic slowing rather than directly stimulating beta1 receptors."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -8674,12 +9362,55 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-atropine--standard--class-action",
+              "id": "ccu-atropine--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-atropine::class-action"
+                "ccu-atropine::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for ATROPINE?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Class Ic antiarrhythmic",
+                  "explanation": "The entry identifies the medicine as: Anticholinergic; specifically antimuscarinic."
+                },
+                {
+                  "id": "B",
+                  "text": "Antimuscarinic",
+                  "explanation": "Anticholinergic; specifically antimuscarinic."
+                },
+                {
+                  "id": "C",
+                  "text": "A1-receptor agonist",
+                  "explanation": "The entry identifies the medicine as: Anticholinergic; specifically antimuscarinic."
+                },
+                {
+                  "id": "D",
+                  "text": "Cardiac glycoside",
+                  "explanation": "The entry identifies the medicine as: Anticholinergic; specifically antimuscarinic."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-atropine",
+                  "field": "drugclass",
+                  "textSha256": "6894df62672ae07d500a09628ae51ca73cda4c640a7dbb12ceb1f7609cf18f57"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-atropine--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-atropine::drug-class"
+              ],
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -8687,18 +9418,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Treatment within a symptomatic-bradycardia pathway",
+                  "explanation": "This is the treatment role taught in the entry: Symptomatic bradycardia in the appropriate resuscitation pathway."
+                },
+                {
+                  "id": "B",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Correction of a nutritional micronutrient deficiency",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "C",
-                  "text": "Treatment within a symptomatic-bradycardia pathway",
-                  "explanation": "This is the treatment role taught in the entry: Symptomatic bradycardia in the appropriate resuscitation pathway."
                 },
                 {
                   "id": "D",
@@ -8729,7 +9460,7 @@
               "learningPointIds": [
                 "ccu-atropine::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which pair of effects is consistent with the antimuscarinic component of ATROPINE?",
@@ -8741,13 +9472,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dry mouth and urinary retention",
-                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
+                  "text": "Salivation and urinary urgency",
+                  "explanation": "These are opposite to the characteristic antimuscarinic effects."
                 },
                 {
                   "id": "C",
-                  "text": "Salivation and urinary urgency",
-                  "explanation": "These are opposite to the characteristic antimuscarinic effects."
+                  "text": "Dry mouth and urinary retention",
+                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
                 },
                 {
                   "id": "D",
@@ -8779,7 +9510,7 @@
               "learningPointIds": [
                 "ccu-atropine::anticholinergic"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which administration pattern matches atropine in the symptomatic-bradycardia material?",
@@ -8825,7 +9556,7 @@
               "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-atropine--advanced",
@@ -8842,7 +9573,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -8985,7 +9716,7 @@
           "timing": {
             "timed": false,
             "secondsPerQuestion": null,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,
@@ -9000,30 +9731,30 @@
           "questions": [
             {
               "format": "single-best-answer",
-              "stem": "Which class–action pairing matches PANTOVER / PANTOVERE — pantoprazole?",
+              "stem": "Which principal action explains the taught effect of PANTOVER / PANTOVERE — pantoprazole?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Proton-pump inhibitor: suppresses gastric H/K ATPase",
-                  "explanation": "Blocking the final gastric acid-secretory pump reduces acid production."
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The taught action is: Blocking the final gastric acid-secretory pump reduces acid production."
                 },
                 {
                   "id": "B",
-                  "text": "Histamine analogue: vestibular symptom treatment",
-                  "explanation": "This describes a different class/action. PANTOVER / PANTOVERE — pantoprazole is taught here as Proton-pump inhibitor (PPI)."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "This is a different pharmacological action. The taught action is: Blocking the final gastric acid-secretory pump reduces acid production."
                 },
                 {
                   "id": "C",
-                  "text": "D2 antagonist/prokinetic: promotes upper-GI motility",
-                  "explanation": "This describes a different class/action. PANTOVER / PANTOVERE — pantoprazole is taught here as Proton-pump inhibitor (PPI)."
+                  "text": "Supplies bicarbonate buffer",
+                  "explanation": "This is a different pharmacological action. The taught action is: Blocking the final gastric acid-secretory pump reduces acid production."
                 },
                 {
                   "id": "D",
-                  "text": "First-generation H1 antagonist: sedating antihistamine/antiemetic effects",
-                  "explanation": "This describes a different class/action. PANTOVER / PANTOVERE — pantoprazole is taught here as Proton-pump inhibitor (PPI)."
+                  "text": "Suppresses gastric H/K ATPase",
+                  "explanation": "Blocking the final gastric acid-secretory pump reduces acid production."
                 }
               ],
-              "point": "Identify the taught drug class and its principal action.",
+              "point": "Identify the principal pharmacological action taught for this medicine.",
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -9048,10 +9779,53 @@
                 }
               ],
               "criticalForSafety": false,
-              "id": "ccu-pantoprazole--standard--class-action",
+              "id": "ccu-pantoprazole--standard--principal-action",
               "points": 1,
               "learningPointIds": [
-                "ccu-pantoprazole::class-action"
+                "ccu-pantoprazole::principal-action"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class is taught for PANTOVER / PANTOVERE — pantoprazole?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Proton-pump inhibitor",
+                  "explanation": "Proton-pump inhibitor (PPI)."
+                },
+                {
+                  "id": "B",
+                  "text": "Histamine analogue",
+                  "explanation": "The entry identifies the medicine as: Proton-pump inhibitor (PPI)."
+                },
+                {
+                  "id": "C",
+                  "text": "D2 antagonist/prokinetic",
+                  "explanation": "The entry identifies the medicine as: Proton-pump inhibitor (PPI)."
+                },
+                {
+                  "id": "D",
+                  "text": "Osmotic laxative",
+                  "explanation": "The entry identifies the medicine as: Proton-pump inhibitor (PPI)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pantoprazole",
+                  "field": "drugclass",
+                  "textSha256": "1f514edaaef066d688daa1dac116fd6de4f3920a1a26657f5ecc28dc37129f4d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-pantoprazole--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pantoprazole::drug-class"
               ],
               "answerKey": "A"
             },
@@ -9066,18 +9840,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Prescribed acid suppression or GI protection",
+                  "explanation": "This is the treatment role taught in the entry: Acid suppression, stress-ulcer prophylaxis or GI-bleeding therapy when ordered."
+                },
+                {
+                  "id": "C",
                   "text": "Prevention of valve-related thromboembolism",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role, not the main role taught for this entry."
-                },
-                {
-                  "id": "D",
-                  "text": "Prescribed acid suppression or GI protection",
-                  "explanation": "This is the treatment role taught in the entry: Acid suppression, stress-ulcer prophylaxis or GI-bleeding therapy when ordered."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -9103,7 +9877,7 @@
               "learningPointIds": [
                 "ccu-pantoprazole::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "During prolonged PANTOVER / PANTOVERE — pantoprazole therapy, which new gastrointestinal symptom is specifically identified for review?",
@@ -9115,13 +9889,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Persistent diarrhea",
-                  "explanation": "The material highlights this symptom during prolonged treatment."
+                  "text": "An unchanged normal bowel pattern",
+                  "explanation": "This does not identify a new adverse symptom."
                 },
                 {
                   "id": "C",
-                  "text": "An unchanged normal bowel pattern",
-                  "explanation": "This does not identify a new adverse symptom."
+                  "text": "Persistent diarrhea",
+                  "explanation": "The material highlights this symptom during prolonged treatment."
                 },
                 {
                   "id": "D",
@@ -9153,10 +9927,10 @@
               "learningPointIds": [
                 "ccu-pantoprazole::persistent_diarrhea"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-pantoprazole--advanced",
@@ -9173,7 +9947,7 @@
           "timing": {
             "timed": true,
             "secondsPerQuestion": 90,
-            "timerEnforcement": "not implemented"
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
           },
           "scoring": {
             "correct": 1,

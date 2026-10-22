@@ -14,21 +14,21 @@
   ],
   "counts": {
     "exams": 184,
-    "questions": 756,
-    "single-best-answer": 741,
+    "questions": 828,
+    "single-best-answer": 813,
     "numeric-entry": 11,
     "short-answer": 4,
     "materials": 92,
     "medications": 74,
     "lessons": 18,
-    "mappedLearningPoints": 670
+    "mappedLearningPoints": 742
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
     "advanced": "application, interactions, competing explanations, and calculation",
     "calibration": "not empirically calibrated"
   },
-  "appIntegration": "not activated; these files do not implement the exam interface or progression",
+  "appIntegration": "Packaged for the draft standard/advanced exam interface. Scheduled-exam question sets are not yet generated.",
   "entries": [
     {
       "itemId": "verified-losartan",
@@ -39,7 +39,7 @@
         {
           "id": "verified-losartan--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "verified-losartan--advanced",
@@ -57,7 +57,7 @@
         {
           "id": "ibd2-acamol--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ibd2-acamol--advanced",
@@ -75,7 +75,7 @@
         {
           "id": "ibd2-trufen--standard",
           "stage": "standard",
-          "questionCount": 8
+          "questionCount": 9
         },
         {
           "id": "ibd2-trufen--advanced",
@@ -93,7 +93,7 @@
         {
           "id": "ibd2-cefazolin--standard",
           "stage": "standard",
-          "questionCount": 8
+          "questionCount": 9
         },
         {
           "id": "ibd2-cefazolin--advanced",
@@ -111,7 +111,7 @@
         {
           "id": "ibd2-tramadol--standard",
           "stage": "standard",
-          "questionCount": 8
+          "questionCount": 9
         },
         {
           "id": "ibd2-tramadol--advanced",
@@ -129,7 +129,7 @@
         {
           "id": "ibd2-meropenem--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ibd2-meropenem--advanced",
@@ -147,7 +147,7 @@
         {
           "id": "ibd2-prothiazine--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ibd2-prothiazine--advanced",
@@ -165,7 +165,7 @@
         {
           "id": "ibd2-gabapentin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ibd2-gabapentin--advanced",
@@ -183,7 +183,7 @@
         {
           "id": "ibd2-avilac--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ibd2-avilac--advanced",
@@ -201,7 +201,7 @@
         {
           "id": "ibd2-carbamazepine--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ibd2-carbamazepine--advanced",
@@ -219,7 +219,7 @@
         {
           "id": "trolley-29--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "trolley-29--advanced",
@@ -237,7 +237,7 @@
         {
           "id": "ibd2-epanutin-phenytoin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ibd2-epanutin-phenytoin--advanced",
@@ -255,7 +255,7 @@
         {
           "id": "ibd2-vancomycin--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ibd2-vancomycin--advanced",
@@ -273,7 +273,7 @@
         {
           "id": "ibd2-levox-levofloxacin--standard",
           "stage": "standard",
-          "questionCount": 9
+          "questionCount": 10
         },
         {
           "id": "ibd2-levox-levofloxacin--advanced",
@@ -291,7 +291,7 @@
         {
           "id": "ibd2-ketrolac-ketorolac--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ibd2-ketrolac-ketorolac--advanced",
@@ -309,7 +309,7 @@
         {
           "id": "ccu-warfarin-coumadin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-warfarin-coumadin--advanced",
@@ -327,7 +327,7 @@
         {
           "id": "ibd2-fortum-ceftazidime--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ibd2-fortum-ceftazidime--advanced",
@@ -345,7 +345,7 @@
         {
           "id": "ibd2-scobutyl-hyoscine-butylbromide--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ibd2-scobutyl-hyoscine-butylbromide--advanced",
@@ -363,7 +363,7 @@
         {
           "id": "ccu-isosorbide-mononitrate--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-isosorbide-mononitrate--advanced",
@@ -381,7 +381,7 @@
         {
           "id": "ccu-isosorbide-dinitrate--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-isosorbide-dinitrate--advanced",
@@ -399,7 +399,7 @@
         {
           "id": "ccu-nadroparin--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-nadroparin--advanced",
@@ -417,7 +417,7 @@
         {
           "id": "ccu-enoxaparin--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-enoxaparin--advanced",
@@ -453,7 +453,7 @@
         {
           "id": "ccu-aspirin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-aspirin--advanced",
@@ -471,7 +471,7 @@
         {
           "id": "ccu-clopidogrel--standard",
           "stage": "standard",
-          "questionCount": 2
+          "questionCount": 3
         },
         {
           "id": "ccu-clopidogrel--advanced",
@@ -489,7 +489,7 @@
         {
           "id": "ccu-bisoprolol--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-bisoprolol--advanced",
@@ -507,7 +507,7 @@
         {
           "id": "ccu-metoprolol--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-metoprolol--advanced",
@@ -525,7 +525,7 @@
         {
           "id": "ccu-propranolol--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-propranolol--advanced",
@@ -543,7 +543,7 @@
         {
           "id": "ccu-amlodipine--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-amlodipine--advanced",
@@ -561,7 +561,7 @@
         {
           "id": "ccu-verapamil--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-verapamil--advanced",
@@ -579,7 +579,7 @@
         {
           "id": "ccu-enalapril--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-enalapril--advanced",
@@ -597,7 +597,7 @@
         {
           "id": "ccu-atorvastatin--standard",
           "stage": "standard",
-          "questionCount": 2
+          "questionCount": 3
         },
         {
           "id": "ccu-atorvastatin--advanced",
@@ -615,7 +615,7 @@
         {
           "id": "ccu-furosemide--standard",
           "stage": "standard",
-          "questionCount": 8
+          "questionCount": 9
         },
         {
           "id": "ccu-furosemide--advanced",
@@ -633,7 +633,7 @@
         {
           "id": "ccu-dapagliflozin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-dapagliflozin--advanced",
@@ -669,7 +669,7 @@
         {
           "id": "ccu-norepinephrine--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-norepinephrine--advanced",
@@ -687,7 +687,7 @@
         {
           "id": "ccu-dobutamine--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-dobutamine--advanced",
@@ -705,7 +705,7 @@
         {
           "id": "ccu-dopamine--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-dopamine--advanced",
@@ -723,7 +723,7 @@
         {
           "id": "ccu-atropine--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-atropine--advanced",
@@ -741,7 +741,7 @@
         {
           "id": "ccu-pantoprazole--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-pantoprazole--advanced",
@@ -759,7 +759,7 @@
         {
           "id": "ccu-omeprazole--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-omeprazole--advanced",
@@ -777,7 +777,7 @@
         {
           "id": "ccu-metronidazole--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-metronidazole--advanced",
@@ -795,7 +795,7 @@
         {
           "id": "ccu-linezolid--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-linezolid--advanced",
@@ -813,7 +813,7 @@
         {
           "id": "ccu-salbutamol--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-salbutamol--advanced",
@@ -831,7 +831,7 @@
         {
           "id": "ccu-nystatin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-nystatin--advanced",
@@ -849,7 +849,7 @@
         {
           "id": "ccu-betahistine--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-betahistine--advanced",
@@ -867,7 +867,7 @@
         {
           "id": "ccu-propafenone--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-propafenone--advanced",
@@ -885,7 +885,7 @@
         {
           "id": "ccu-valzadepine--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-valzadepine--advanced",
@@ -903,7 +903,7 @@
         {
           "id": "ccu-valzan-hct--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-valzan-hct--advanced",
@@ -921,7 +921,7 @@
         {
           "id": "ccu-symbicort--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-symbicort--advanced",
@@ -939,7 +939,7 @@
         {
           "id": "ccu-gentamicin--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-gentamicin--advanced",
@@ -957,7 +957,7 @@
         {
           "id": "ccu-ipratropium--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-ipratropium--advanced",
@@ -975,7 +975,7 @@
         {
           "id": "ccu-adenosine--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-adenosine--advanced",
@@ -993,7 +993,7 @@
         {
           "id": "ccu-labetalol--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-labetalol--advanced",
@@ -1011,7 +1011,7 @@
         {
           "id": "ccu-ketamine--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-ketamine--advanced",
@@ -1029,7 +1029,7 @@
         {
           "id": "ccu-pethidine--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-pethidine--advanced",
@@ -1047,7 +1047,7 @@
         {
           "id": "ccu-morphine--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-morphine--advanced",
@@ -1065,7 +1065,7 @@
         {
           "id": "trolley-spironolactone--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "trolley-spironolactone--advanced",
@@ -1083,7 +1083,7 @@
         {
           "id": "trolley-lidocaine--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-lidocaine--advanced",
@@ -1101,7 +1101,7 @@
         {
           "id": "trolley-sodium-bicarbonate--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-sodium-bicarbonate--advanced",
@@ -1119,7 +1119,7 @@
         {
           "id": "trolley-hydralazine--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-hydralazine--advanced",
@@ -1137,7 +1137,7 @@
         {
           "id": "trolley-dextrose50--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-dextrose50--advanced",
@@ -1155,7 +1155,7 @@
         {
           "id": "trolley-hydrocortisone--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-hydrocortisone--advanced",
@@ -1173,7 +1173,7 @@
         {
           "id": "trolley-diazepam--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "trolley-diazepam--advanced",
@@ -1191,7 +1191,7 @@
         {
           "id": "trolley-amiodarone--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "trolley-amiodarone--advanced",
@@ -1209,7 +1209,7 @@
         {
           "id": "trolley-calcium-gluconate--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-calcium-gluconate--advanced",
@@ -1227,7 +1227,7 @@
         {
           "id": "trolley-magnesium-sulfate--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-magnesium-sulfate--advanced",
@@ -1245,7 +1245,7 @@
         {
           "id": "trolley-digoxin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "trolley-digoxin--advanced",
@@ -1263,7 +1263,7 @@
         {
           "id": "trolley-aminophylline--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "trolley-aminophylline--advanced",
@@ -1281,7 +1281,7 @@
         {
           "id": "ibd2-amitriptyline--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ibd2-amitriptyline--advanced",
@@ -1299,7 +1299,7 @@
         {
           "id": "ibd2-prednitab-prednisolone--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ibd2-prednitab-prednisolone--advanced",
@@ -1317,7 +1317,7 @@
         {
           "id": "ibd2-clindamycin--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ibd2-clindamycin--advanced",
@@ -1335,7 +1335,7 @@
         {
           "id": "ibd2-multivitamin--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ibd2-multivitamin--advanced",
@@ -1353,7 +1353,7 @@
         {
           "id": "verified-alteplase-v35--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "verified-alteplase-v35--advanced",
@@ -1690,27 +1690,27 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "6d06dfaf2e91a18d424a4a88003e74bc8aaecb57c1143cb420474efccebe6764"
+      "sha256": "af7777765e7021bbc3f293f9cbb5e9cd1c962dd8e9545506aa29e0e9cda5ca92"
     },
     {
       "path": "banks-02.json",
-      "sha256": "eb12f8ad288e5b03ca947d6679d13ba779d8ad0aeb98449e33dec1be0d330c89"
+      "sha256": "e805e61667bb2932efa12eded882ed6a250f083ca3d6d168433a3c090adf4e1b"
     },
     {
       "path": "banks-03.json",
-      "sha256": "b93ee4bb58c4ec53840c3719442248d7671a7cf05c63759a1a9bbde78c9ba531"
+      "sha256": "6836e62a96afe297033344f9ccacb5fadb0c25769490de3fd7aa0782d61b0026"
     },
     {
       "path": "banks-04.json",
-      "sha256": "26774ed3839aceef26eb31c30832f29d184d7f82696e7d9d25f3a506a9138e78"
+      "sha256": "a5d53680ee76e885e2e57c7524cc29b0277e5e8d7215fc70443b74d3726f20d1"
     },
     {
       "path": "banks-05.json",
-      "sha256": "2d40b4df91e8049ca24cf1ea396c73e928fcc4f27f9ce8b0dcc845b93dc55ce2"
+      "sha256": "f1d082d124a3186d12f70f8f36611f99b5fa77cbbb308b3c9f4e36cdc3168b43"
     },
     {
       "path": "coverage.json",
-      "sha256": "84463123d8f9b45910e201e3d2735954666e1289f273251c9f72815f3e8c9759"
+      "sha256": "bd42710d29446fd30da8b6d5877a75bfdc12840004637265e7bc55d1aa505c2d"
     }
   ]
 }
