@@ -6,6 +6,7 @@ on:
       - 'runtime/**'
       - 'scripts/**'
       - 'tests/**'
+      - 'exams/**'
       - 'content.json'
       - 'shell.html'
       - 'shell-manifest.json'
@@ -15,6 +16,7 @@ on:
       - 'runtime/**'
       - 'scripts/**'
       - 'tests/**'
+      - 'exams/**'
       - 'content.json'
       - 'shell.html'
       - 'shell-manifest.json'
@@ -44,6 +46,10 @@ jobs:
           fi
       - name: Validate runtime and legacy channels
         run: python scripts/validate_runtime.py
+      - name: Validate source-bound exam banks
+        run: |
+          python scripts/build_exams.py --check
+          python tests/exam-banks.py
       - name: Validate JavaScript syntax
         run: |
           for file in runtime/files/js/*.js; do node --check "$file"; done

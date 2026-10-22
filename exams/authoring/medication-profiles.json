@@ -1,0 +1,1157 @@
+{
+  "families": {
+    "arb": {
+      "group": "bp",
+      "pair": "ARB: blocks angiotensin-II AT1 receptors",
+      "why": "AT1 blockade reduces vasoconstriction and aldosterone effects."
+    },
+    "ace": {
+      "group": "bp",
+      "pair": "ACE inhibitor: reduces angiotensin-II formation",
+      "why": "ACE inhibition reduces angiotensin II and aldosterone."
+    },
+    "dhp": {
+      "group": "bp",
+      "pair": "Dihydropyridine CCB: relaxes arterial smooth muscle",
+      "why": "Vascular L-type calcium-channel blockade produces arterial vasodilation."
+    },
+    "beta1": {
+      "group": "bp",
+      "pair": "Beta1 blocker: reduces cardiac adrenergic stimulation",
+      "why": "Cardiac beta1 blockade reduces heart rate and contractile workload."
+    },
+    "nonselective_beta": {
+      "group": "bp",
+      "pair": "Nonselective beta blocker: blocks beta1 and beta2 receptors",
+      "why": "Beta1 and beta2 blockade explains cardiac effects and bronchospasm risk."
+    },
+    "alpha_beta": {
+      "group": "bp",
+      "pair": "Alpha/beta blocker: reduces vascular and cardiac adrenergic effects",
+      "why": "Labetalol combines alpha1 with beta1/beta2 blockade."
+    },
+    "verapamil": {
+      "group": "bp",
+      "pair": "Non-dihydropyridine CCB: slows AV-nodal calcium-dependent conduction",
+      "why": "Verapamil acts in the AV node and myocardium."
+    },
+    "hydralazine": {
+      "group": "bp",
+      "pair": "Direct vasodilator: relaxes arteriolar smooth muscle",
+      "why": "Hydralazine reduces arterial resistance through direct smooth-muscle relaxation."
+    },
+    "arb_dhp": {
+      "group": "combination",
+      "pair": "ARB plus dihydropyridine CCB: receptor blockade and arterial dilation",
+      "why": "The combination contains valsartan and amlodipine."
+    },
+    "arb_thiazide": {
+      "group": "combination",
+      "pair": "ARB plus thiazide: receptor blockade and sodium loss",
+      "why": "The combination contains valsartan and hydrochlorothiazide."
+    },
+    "ics_laba": {
+      "group": "combination",
+      "pair": "ICS plus LABA: airway anti-inflammatory and bronchodilator effects",
+      "why": "Budesonide suppresses airway inflammation; formoterol stimulates beta2 receptors."
+    },
+    "tramadol": {
+      "group": "pain",
+      "pair": "Opioid/monoamine analgesic: mu agonism and reuptake inhibition",
+      "why": "Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
+    },
+    "opioid": {
+      "group": "pain",
+      "pair": "Opioid analgesic: activates mu receptors",
+      "why": "Mu-receptor agonism provides analgesia and can depress consciousness and breathing."
+    },
+    "paracetamol": {
+      "group": "pain",
+      "pair": "Non-opioid analgesic: predominantly central analgesic/antipyretic action",
+      "why": "Paracetamol treats pain and fever without the usual NSAID platelet/GI effects."
+    },
+    "nsaid": {
+      "group": "pain",
+      "pair": "NSAID: inhibits cyclooxygenase and reduces prostaglandins",
+      "why": "Reduced prostaglandins explain analgesia, anti-inflammatory effects, and important adverse effects."
+    },
+    "gabapentin": {
+      "group": "neuro",
+      "pair": "Gabapentinoid: binds the alpha-2-delta calcium-channel subunit",
+      "why": "This modulates excitatory neurotransmitter release; it is not a direct GABA agonist."
+    },
+    "sodium_anticonvulsant": {
+      "group": "neuro",
+      "pair": "Anticonvulsant: stabilizes inactivated voltage-gated sodium channels",
+      "why": "Carbamazepine and phenytoin limit repetitive neuronal firing through sodium-channel effects."
+    },
+    "tca": {
+      "group": "neuro",
+      "pair": "Tricyclic antidepressant: inhibits serotonin/norepinephrine reuptake",
+      "why": "Additional antimuscarinic, antihistamine, and sodium-channel actions explain important adverse effects."
+    },
+    "benzodiazepine": {
+      "group": "neuro",
+      "pair": "Benzodiazepine: enhances GABA-A receptor activity",
+      "why": "Enhanced inhibitory GABA activity produces anticonvulsant and sedative effects."
+    },
+    "ketamine": {
+      "group": "neuro",
+      "pair": "Dissociative anesthetic: antagonizes NMDA receptors",
+      "why": "NMDA antagonism underlies dissociative anesthesia; airway complications remain possible."
+    },
+    "beta_lactam": {
+      "group": "antibiotic",
+      "pair": "Beta-lactam: inhibits bacterial cell-wall synthesis through PBPs",
+      "why": "Penicillin-binding-protein inhibition disrupts bacterial cell-wall construction."
+    },
+    "glycopeptide": {
+      "group": "antibiotic",
+      "pair": "Glycopeptide: binds D-Ala-D-Ala cell-wall precursors",
+      "why": "Vancomycin inhibits cell-wall synthesis by binding precursor termini."
+    },
+    "fluoroquinolone": {
+      "group": "antibiotic",
+      "pair": "Fluoroquinolone: inhibits bacterial DNA gyrase/topoisomerase IV",
+      "why": "These effects impair bacterial DNA replication."
+    },
+    "aminoglycoside": {
+      "group": "antibiotic",
+      "pair": "Aminoglycoside: disrupts protein synthesis at the 30S subunit",
+      "why": "Gentamicin acts on the bacterial 30S ribosomal subunit."
+    },
+    "linezolid": {
+      "group": "antibiotic",
+      "pair": "Oxazolidinone: inhibits protein synthesis at the 50S subunit",
+      "why": "Linezolid interferes with bacterial protein synthesis; its class distinguishes it from other 50S agents."
+    },
+    "clindamycin": {
+      "group": "antibiotic",
+      "pair": "Lincosamide: inhibits protein synthesis at the 50S subunit",
+      "why": "Clindamycin is a lincosamide, distinct from oxazolidinones despite a shared broad ribosomal target."
+    },
+    "metronidazole": {
+      "group": "antibiotic",
+      "pair": "Nitroimidazole: forms metabolites that damage microbial DNA",
+      "why": "Susceptible anaerobic organisms and protozoa are targeted by reactive metabolites."
+    },
+    "nystatin": {
+      "group": "antibiotic",
+      "pair": "Polyene antifungal: disrupts sterol-containing fungal membranes",
+      "why": "Nystatin binds fungal membrane sterols; oral local therapy does not treat systemic infection."
+    },
+    "warfarin": {
+      "group": "antithrombotic",
+      "pair": "Vitamin-K antagonist: reduces vitamin-K-dependent factor synthesis",
+      "why": "VKORC1 inhibition reduces regeneration of vitamin K and synthesis of functional clotting factors."
+    },
+    "lmwh": {
+      "group": "antithrombotic",
+      "pair": "LMWH: enhances antithrombin activity, predominantly against Xa",
+      "why": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
+    },
+    "ufh": {
+      "group": "antithrombotic",
+      "pair": "Unfractionated heparin: enhances antithrombin inhibition of IIa/Xa",
+      "why": "UFH accelerates inhibition of thrombin and activated factor X."
+    },
+    "aspirin": {
+      "group": "antithrombotic",
+      "pair": "Antiplatelet: irreversibly inhibits platelet COX-1",
+      "why": "Reduced thromboxane A2 synthesis impairs platelet aggregation."
+    },
+    "clopidogrel": {
+      "group": "antithrombotic",
+      "pair": "Antiplatelet: irreversibly inhibits platelet P2Y12 receptors",
+      "why": "Its active metabolite inhibits ADP-mediated platelet activation."
+    },
+    "alteplase": {
+      "group": "antithrombotic",
+      "pair": "Fibrinolytic: activates plasminogen to break down fibrin",
+      "why": "Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
+    },
+    "nitrate": {
+      "group": "vascular",
+      "pair": "Organic nitrate: nitric-oxide/cGMP-mediated vascular relaxation",
+      "why": "Nitrates relax vascular smooth muscle and reduce cardiac workload."
+    },
+    "norepinephrine": {
+      "group": "vascular",
+      "pair": "Vasopressor: predominantly alpha1-mediated vasoconstriction",
+      "why": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+    },
+    "dobutamine": {
+      "group": "vascular",
+      "pair": "Inotrope: predominantly beta1-mediated increased contractility",
+      "why": "Dobutamine primarily supports cardiac pumping and output."
+    },
+    "dopamine": {
+      "group": "vascular",
+      "pair": "Catecholamine: dose-dependent dopaminergic and adrenergic effects",
+      "why": "Dopamine can provide selected hemodynamic support; effects depend on the regimen."
+    },
+    "atropine": {
+      "group": "rhythm",
+      "pair": "Antimuscarinic: reduces vagal slowing of the heart",
+      "why": "Muscarinic blockade removes parasympathetic slowing rather than directly stimulating beta1 receptors."
+    },
+    "adenosine": {
+      "group": "rhythm",
+      "pair": "A1-receptor agonist: briefly blocks AV-nodal conduction",
+      "why": "Its very short action requires rapid delivery when used in the indicated rhythm pathway."
+    },
+    "propafenone": {
+      "group": "rhythm",
+      "pair": "Class Ic antiarrhythmic: blocks fast sodium channels",
+      "why": "Propafenone slows conduction and is unsuitable in important structural/conduction disease contexts."
+    },
+    "lidocaine": {
+      "group": "rhythm",
+      "pair": "Class Ib antiarrhythmic: blocks fast sodium channels",
+      "why": "IV cardiac lidocaine is distinct from local-anesthetic preparations with additives."
+    },
+    "amiodarone": {
+      "group": "rhythm",
+      "pair": "Predominantly class III agent: multiple channel/adrenergic effects",
+      "why": "Amiodarone affects several cardiac ion channels and adrenergic signaling."
+    },
+    "digoxin": {
+      "group": "rhythm",
+      "pair": "Cardiac glycoside: inhibits Na/K ATPase and increases vagal tone",
+      "why": "It increases contractile calcium availability while slowing AV-nodal conduction."
+    },
+    "loop": {
+      "group": "renal",
+      "pair": "Loop diuretic: inhibits Na-K-2Cl transport in the ascending loop",
+      "why": "Furosemide promotes salt and water loss, reducing congestion."
+    },
+    "spironolactone": {
+      "group": "renal",
+      "pair": "Potassium-sparing diuretic: blocks mineralocorticoid receptors",
+      "why": "Aldosterone antagonism reduces sodium retention and potassium loss."
+    },
+    "sglt2": {
+      "group": "renal",
+      "pair": "SGLT2 inhibitor: increases renal glucose and sodium excretion",
+      "why": "Dapagliflozin acts on renal sodium-glucose cotransport rather than supplying insulin."
+    },
+    "insulin": {
+      "group": "renal",
+      "pair": "Insulin: activates receptors to promote glucose uptake",
+      "why": "Insulin increases glucose uptake and suppresses hepatic glucose production."
+    },
+    "ppi": {
+      "group": "gi",
+      "pair": "Proton-pump inhibitor: suppresses gastric H/K ATPase",
+      "why": "Blocking the final gastric acid-secretory pump reduces acid production."
+    },
+    "lactulose": {
+      "group": "gi",
+      "pair": "Osmotic laxative: retains water in the colon",
+      "why": "A nonabsorbable disaccharide promotes stool passage through colonic osmotic effects."
+    },
+    "metoclopramide": {
+      "group": "gi",
+      "pair": "D2 antagonist/prokinetic: promotes upper-GI motility",
+      "why": "Dopamine blockade contributes to antiemesis and extrapyramidal adverse effects."
+    },
+    "antispasmodic": {
+      "group": "gi",
+      "pair": "Peripheral antimuscarinic: reduces GI/GU smooth-muscle spasm",
+      "why": "Hyoscine butylbromide treats spasm without resolving every underlying cause of abdominal pain."
+    },
+    "promethazine": {
+      "group": "gi",
+      "pair": "First-generation H1 antagonist: sedating antihistamine/antiemetic effects",
+      "why": "Promethazine also has anticholinergic effects and can add to opioid-related sedation."
+    },
+    "betahistine": {
+      "group": "gi",
+      "pair": "Histamine analogue: vestibular symptom treatment",
+      "why": "Histaminergic effects are used for vertigo; it is not a primary cardiac emergency drug."
+    },
+    "saba": {
+      "group": "respiratory",
+      "pair": "Short-acting beta2 agonist: relaxes bronchial smooth muscle",
+      "why": "Salbutamol relieves bronchospasm; repeated doses may lower potassium."
+    },
+    "ipratropium": {
+      "group": "respiratory",
+      "pair": "Inhaled antimuscarinic: reduces vagal bronchoconstriction",
+      "why": "Airway muscarinic blockade produces bronchodilation."
+    },
+    "aminophylline": {
+      "group": "respiratory",
+      "pair": "Methylxanthine: bronchodilation with a narrow therapeutic index",
+      "why": "Theophylline-related PDE/adenosine effects contribute to bronchodilation and toxicity."
+    },
+    "steroid": {
+      "group": "respiratory",
+      "pair": "Glucocorticoid: changes inflammatory/stress-response gene transcription",
+      "why": "Corticosteroids have anti-inflammatory effects with glucose, infection, and suppression risks."
+    },
+    "bicarbonate": {
+      "group": "electrolyte",
+      "pair": "Systemic alkalinizer: supplies bicarbonate buffer",
+      "why": "Bicarbonate changes acid-base balance and is reserved for selected indications."
+    },
+    "dextrose": {
+      "group": "electrolyte",
+      "pair": "Hypertonic IV glucose: supplies rapidly available glucose",
+      "why": "Concentrated dextrose can correct severe hypoglycemia but can injure tissue if extravasated."
+    },
+    "calcium": {
+      "group": "electrolyte",
+      "pair": "IV calcium salt: supports calcium and cardiac membrane stability",
+      "why": "In hyperkalemic ECG toxicity, calcium stabilizes myocardium without removing potassium."
+    },
+    "magnesium": {
+      "group": "electrolyte",
+      "pair": "Electrolyte: modulates membrane stability and repolarization",
+      "why": "Magnesium has indication-specific replacement and antiarrhythmic roles."
+    },
+    "statin": {
+      "group": "metabolic",
+      "pair": "Statin: inhibits hepatic HMG-CoA reductase",
+      "why": "Reduced cholesterol synthesis lowers LDL and contributes to cardiovascular prevention."
+    },
+    "multivitamin": {
+      "group": "metabolic",
+      "pair": "Vitamin/mineral supplement: effects depend on the ingredients",
+      "why": "Composition varies, so a single universal mechanism or dose cannot be assumed."
+    },
+    "cefazolin": {
+      "group": "antibiotic",
+      "pair": "First-generation cephalosporin: inhibits bacterial cell-wall synthesis",
+      "why": "Cefazolin is a first-generation cephalosporin beta-lactam acting through PBPs."
+    },
+    "meropenem": {
+      "group": "antibiotic",
+      "pair": "Carbapenem beta-lactam: inhibits bacterial cell-wall synthesis",
+      "why": "Meropenem is a carbapenem beta-lactam acting through PBPs."
+    },
+    "ceftazidime": {
+      "group": "antibiotic",
+      "pair": "Third-generation cephalosporin: inhibits bacterial cell-wall synthesis",
+      "why": "Ceftazidime is a third-generation cephalosporin beta-lactam acting through PBPs."
+    }
+  },
+  "items": {
+    "verified-losartan": {
+      "family": "arb",
+      "use": "Treatment of hypertension",
+      "concepts": [
+        "hypotension",
+        "renal_monitor",
+        "high_k",
+        "pregnancy",
+        "raas_interactions"
+      ]
+    },
+    "ibd2-acamol": {
+      "family": "paracetamol",
+      "use": "Relief of pain and fever",
+      "concepts": [
+        "acetaminophen_total",
+        "hepatic_overdose",
+        "pain_response",
+        "acen_patient_limit"
+      ]
+    },
+    "ibd2-trufen": {
+      "family": "nsaid",
+      "use": "Relief of musculoskeletal pain and inflammation",
+      "concepts": [
+        "nsaid_gi",
+        "nsaid_renal",
+        "nsaid_allergy",
+        "nsaid_cv",
+        "duplicate_nsaid",
+        "trufen_extra",
+        "pain_response"
+      ]
+    },
+    "ibd2-cefazolin": {
+      "family": "cefazolin",
+      "use": "Perioperative prophylaxis or susceptible bacterial infection",
+      "concepts": [
+        "betalactam_allergy",
+        "renal_dose",
+        "antibiotic_diarrhea",
+        "prophylaxis_timing",
+        "antimicrobial_response",
+        "iv_site"
+      ]
+    },
+    "ibd2-tramadol": {
+      "family": "tramadol",
+      "use": "Prescribed treatment of moderate-to-severe pain",
+      "concepts": [
+        "opioid_respiration",
+        "serotonin",
+        "seizure_risk",
+        "sedation_falls",
+        "constipation",
+        "formulation",
+        "pain_response"
+      ]
+    },
+    "ibd2-meropenem": {
+      "family": "meropenem",
+      "use": "Treatment of serious susceptible bacterial infection",
+      "concepts": [
+        "betalactam_allergy",
+        "renal_dose",
+        "antibiotic_diarrhea",
+        "seizure_risk",
+        "valproate",
+        "antimicrobial_response"
+      ]
+    },
+    "ibd2-prothiazine": {
+      "family": "promethazine",
+      "use": "Prescribed control of nausea or allergic symptoms",
+      "concepts": [
+        "sedation_falls",
+        "anticholinergic",
+        "cns_combination",
+        "formulation"
+      ]
+    },
+    "ibd2-gabapentin": {
+      "family": "gabapentin",
+      "use": "Neuropathic-pain or selected seizure treatment",
+      "concepts": [
+        "renal_dose",
+        "sedation_falls",
+        "cns_combination",
+        "anticonvulsant_stop",
+        "edema"
+      ]
+    },
+    "ibd2-avilac": {
+      "family": "lactulose",
+      "use": "Treatment of constipation",
+      "concepts": [
+        "laxative_response",
+        "dehydration",
+        "lactulose_goal"
+      ]
+    },
+    "ibd2-carbamazepine": {
+      "family": "sodium_anticonvulsant",
+      "use": "Seizure or selected neuropathic-pain treatment",
+      "concepts": [
+        "rash_serious",
+        "cbc",
+        "low_na",
+        "sedation_falls",
+        "enzyme_induction",
+        "anticonvulsant_stop",
+        "formulation"
+      ]
+    },
+    "trolley-29": {
+      "family": "metoclopramide",
+      "use": "Treatment of nausea with a prokinetic role",
+      "concepts": [
+        "eps",
+        "gi_obstruction",
+        "parkinsonism",
+        "slow_iv",
+        "metoclopramide_concentration"
+      ]
+    },
+    "ibd2-epanutin-phenytoin": {
+      "family": "sodium_anticonvulsant",
+      "use": "Prevention or treatment of selected seizures",
+      "concepts": [
+        "phenytoin_toxicity",
+        "rash_serious",
+        "anticonvulsant_stop",
+        "formulation",
+        "drug_levels",
+        "phenytoin_albumin"
+      ]
+    },
+    "ibd2-vancomycin": {
+      "family": "glycopeptide",
+      "use": "Systemic treatment of serious susceptible Gram-positive infection",
+      "concepts": [
+        "renal_monitor",
+        "vanco_infusion",
+        "drug_levels",
+        "antimicrobial_response"
+      ]
+    },
+    "ibd2-levox-levofloxacin": {
+      "family": "fluoroquinolone",
+      "use": "Treatment of susceptible bacterial infection",
+      "concepts": [
+        "oral_cations",
+        "renal_dose",
+        "tendon",
+        "neuropathy",
+        "qt",
+        "dysglycemia",
+        "antibiotic_diarrhea",
+        "antimicrobial_response"
+      ]
+    },
+    "ibd2-ketrolac-ketorolac": {
+      "family": "nsaid",
+      "use": "Short-term treatment of acute pain",
+      "concepts": [
+        "nsaid_gi",
+        "nsaid_renal",
+        "nsaid_allergy",
+        "duplicate_nsaid",
+        "ketorolac_duration",
+        "pain_response"
+      ]
+    },
+    "ccu-warfarin-coumadin": {
+      "family": "warfarin",
+      "use": "Long-term anticoagulation for selected indications",
+      "concepts": [
+        "warfarin_inr",
+        "bleeding",
+        "warfarin_delay",
+        "warfarin_interactions",
+        "warfarin_reversal",
+        "mechanical_valve",
+        "valve_thrombosis"
+      ]
+    },
+    "ibd2-fortum-ceftazidime": {
+      "family": "ceftazidime",
+      "use": "Treatment of susceptible serious Gram-negative infection",
+      "concepts": [
+        "betalactam_allergy",
+        "renal_dose",
+        "antibiotic_diarrhea",
+        "seizure_risk",
+        "antimicrobial_response"
+      ]
+    },
+    "ibd2-scobutyl-hyoscine-butylbromide": {
+      "family": "antispasmodic",
+      "use": "Relief of GI or GU smooth-muscle spasm",
+      "concepts": [
+        "anticholinergic",
+        "gi_obstruction",
+        "acute_abdomen",
+        "antimuscarinic_cautions",
+        "slow_iv"
+      ]
+    },
+    "ccu-isosorbide-mononitrate": {
+      "family": "nitrate",
+      "use": "Prevention and control of angina",
+      "concepts": [
+        "hypotension",
+        "nitrate_pde5",
+        "nitrate_headache",
+        "nitrate_rescue",
+        "formulation"
+      ]
+    },
+    "ccu-isosorbide-dinitrate": {
+      "family": "nitrate",
+      "use": "Relief of angina using the prescribed nitrate formulation",
+      "concepts": [
+        "hypotension",
+        "nitrate_pde5",
+        "nitrate_headache",
+        "sl_tablet",
+        "formulation"
+      ]
+    },
+    "ccu-nadroparin": {
+      "family": "lmwh",
+      "use": "Prescribed anticoagulation for selected thromboembolic indications",
+      "concepts": [
+        "bleeding",
+        "platelets",
+        "renal_dose",
+        "lmwh_substitution",
+        "lmwh_route"
+      ]
+    },
+    "ccu-enoxaparin": {
+      "family": "lmwh",
+      "use": "Prescribed anticoagulation in ACS or thromboembolic disease",
+      "concepts": [
+        "bleeding",
+        "platelets",
+        "renal_dose",
+        "enoxaparin_syringe",
+        "lmwh_route",
+        "procedure_timing"
+      ]
+    },
+    "ccu-heparin-ufh": {
+      "family": "ufh",
+      "use": "Therapeutic anticoagulation or selected prophylaxis",
+      "concepts": [
+        "bleeding",
+        "hit",
+        "heparin_infusion",
+        "heparin_samples",
+        "infusion_precision",
+        "lmwh_route"
+      ]
+    },
+    "ccu-aspirin": {
+      "family": "aspirin",
+      "use": "Antiplatelet treatment when indicated",
+      "concepts": [
+        "bleeding",
+        "aspirin_identity",
+        "aspirin_loading",
+        "nsaid_allergy",
+        "antithrombotic_combination"
+      ]
+    },
+    "ccu-clopidogrel": {
+      "family": "clopidogrel",
+      "use": "Antiplatelet treatment after ACS or coronary stenting",
+      "concepts": [
+        "bleeding",
+        "stent_omission",
+        "ppi_clopidogrel",
+        "antithrombotic_combination"
+      ]
+    },
+    "ccu-bisoprolol": {
+      "family": "beta1",
+      "use": "Selected rate or BP control",
+      "concepts": [
+        "hypotension",
+        "bradycardia",
+        "duplicate_beta",
+        "beta_rebound"
+      ]
+    },
+    "ccu-metoprolol": {
+      "family": "beta1",
+      "use": "Selected rate or BP control",
+      "concepts": [
+        "hypotension",
+        "bradycardia",
+        "duplicate_beta",
+        "avnode_combination",
+        "formulation"
+      ]
+    },
+    "ccu-propranolol": {
+      "family": "nonselective_beta",
+      "use": "Selected rate, BP, or angina treatment",
+      "concepts": [
+        "hypotension",
+        "bradycardia",
+        "beta_asthma",
+        "slow_iv"
+      ]
+    },
+    "ccu-amlodipine": {
+      "family": "dhp",
+      "use": "Chronic hypertension or angina treatment",
+      "concepts": [
+        "hypotension",
+        "edema",
+        "amlodipine_onset"
+      ]
+    },
+    "ccu-verapamil": {
+      "family": "verapamil",
+      "use": "Selected supraventricular rate control or angina treatment",
+      "concepts": [
+        "hypotension",
+        "bradycardia",
+        "avnode_combination",
+        "verapamil_constipation",
+        "slow_iv"
+      ]
+    },
+    "ccu-enalapril": {
+      "family": "ace",
+      "use": "Selected chronic hypertension or heart-failure treatment",
+      "concepts": [
+        "hypotension",
+        "high_k",
+        "renal_monitor",
+        "angioedema",
+        "ace_history"
+      ]
+    },
+    "ccu-atorvastatin": {
+      "family": "statin",
+      "use": "Secondary cardiovascular prevention",
+      "concepts": [
+        "statin_muscle",
+        "interaction_review"
+      ]
+    },
+    "ccu-furosemide": {
+      "family": "loop",
+      "use": "Relief of congestion and fluid overload",
+      "concepts": [
+        "decongestion",
+        "hypotension",
+        "low_k_mg",
+        "renal_monitor",
+        "ototoxicity",
+        "slow_iv",
+        "diuretic_timing"
+      ]
+    },
+    "ccu-dapagliflozin": {
+      "family": "sglt2",
+      "use": "Selected chronic diabetes, HF, or kidney-disease treatment",
+      "concepts": [
+        "hypotension",
+        "sglt2_dka",
+        "genital_urinary",
+        "chronic_not_correction"
+      ]
+    },
+    "ccu-correction-insulin": {
+      "family": "insulin",
+      "use": "Protocol-directed correction of hyperglycemia",
+      "concepts": [
+        "insulin_hypo",
+        "insulin_product",
+        "insulin_meals",
+        "insulin_route",
+        "glucose_recheck"
+      ]
+    },
+    "ccu-norepinephrine": {
+      "family": "norepinephrine",
+      "use": "Pressure support in severe hypotension or shock",
+      "concepts": [
+        "infusion_precision",
+        "pressor_site",
+        "perfusion",
+        "infusion_route"
+      ]
+    },
+    "ccu-dobutamine": {
+      "family": "dobutamine",
+      "use": "Pump support in selected low-output states",
+      "concepts": [
+        "infusion_precision",
+        "perfusion",
+        "tachyarrhythmia",
+        "infusion_route"
+      ]
+    },
+    "ccu-dopamine": {
+      "family": "dopamine",
+      "use": "Selected hemodynamic or bradycardia support",
+      "concepts": [
+        "infusion_precision",
+        "perfusion",
+        "tachyarrhythmia",
+        "pressor_site",
+        "dopamine_bicarbonate",
+        "infusion_route"
+      ]
+    },
+    "ccu-atropine": {
+      "family": "atropine",
+      "use": "Treatment within a symptomatic-bradycardia pathway",
+      "concepts": [
+        "anticholinergic",
+        "atropine_failure",
+        "atropine_route",
+        "rhythm_response"
+      ]
+    },
+    "ccu-pantoprazole": {
+      "family": "ppi",
+      "use": "Prescribed acid suppression or GI protection",
+      "concepts": [
+        "ppi_clopidogrel",
+        "persistent_diarrhea",
+        "compatibility",
+        "formulation"
+      ]
+    },
+    "ccu-omeprazole": {
+      "family": "ppi",
+      "use": "Prescribed acid suppression or GI protection",
+      "concepts": [
+        "ppi_clopidogrel",
+        "persistent_diarrhea",
+        "enteric_coating"
+      ]
+    },
+    "ccu-metronidazole": {
+      "family": "metronidazole",
+      "use": "Treatment of susceptible anaerobic or protozoal infection",
+      "concepts": [
+        "neuropathy",
+        "metronidazole_alcohol",
+        "warfarin_interactions",
+        "metronidazole_infusion",
+        "antimicrobial_response",
+        "metronidazole_case"
+      ]
+    },
+    "ccu-linezolid": {
+      "family": "linezolid",
+      "use": "Treatment of serious resistant Gram-positive infection",
+      "concepts": [
+        "cbc",
+        "serotonin",
+        "neuropathy",
+        "linezolid_bag"
+      ]
+    },
+    "ccu-salbutamol": {
+      "family": "saba",
+      "use": "Relief of bronchospasm",
+      "concepts": [
+        "bronchodilator_response",
+        "beta2_effects",
+        "beta2_potassium",
+        "inhaled_route"
+      ]
+    },
+    "ccu-nystatin": {
+      "family": "nystatin",
+      "use": "Local treatment of oral candidiasis",
+      "concepts": [
+        "nystatin_local",
+        "nystatin_technique",
+        "local_response"
+      ]
+    },
+    "ccu-betahistine": {
+      "family": "betahistine",
+      "use": "Symptomatic treatment of vestibular vertigo",
+      "concepts": [
+        "betahistine_tolerance",
+        "betahistine_cautions",
+        "betahistine_case"
+      ]
+    },
+    "ccu-propafenone": {
+      "family": "propafenone",
+      "use": "Rhythm control in carefully selected arrhythmia patients",
+      "concepts": [
+        "bradycardia",
+        "conduction_toxicity",
+        "structural_heart",
+        "bronchospasm_risk"
+      ]
+    },
+    "ccu-valzadepine": {
+      "family": "arb_dhp",
+      "use": "Chronic treatment of hypertension",
+      "concepts": [
+        "hypotension",
+        "high_k",
+        "renal_monitor",
+        "pregnancy",
+        "edema",
+        "combo_components"
+      ]
+    },
+    "ccu-valzan-hct": {
+      "family": "arb_thiazide",
+      "use": "Chronic treatment of hypertension",
+      "concepts": [
+        "hypotension",
+        "renal_monitor",
+        "pregnancy",
+        "combo_potassium",
+        "low_na",
+        "dehydration",
+        "combo_components"
+      ]
+    },
+    "ccu-symbicort": {
+      "family": "ics_laba",
+      "use": "Ongoing prescribed asthma or COPD treatment",
+      "concepts": [
+        "inhaler_technique",
+        "rinse_mouth",
+        "beta2_effects",
+        "paradoxical_bronchospasm",
+        "respiratory_worsening"
+      ]
+    },
+    "ccu-gentamicin": {
+      "family": "aminoglycoside",
+      "use": "Treatment of susceptible bacterial infection",
+      "concepts": [
+        "renal_monitor",
+        "ototoxicity",
+        "drug_levels",
+        "antimicrobial_response",
+        "gentamicin_case"
+      ]
+    },
+    "ccu-ipratropium": {
+      "family": "ipratropium",
+      "use": "Bronchodilation in selected obstructive-airway disease",
+      "concepts": [
+        "bronchodilator_response",
+        "anticholinergic",
+        "inhaled_route",
+        "eye_mist",
+        "respiratory_worsening"
+      ]
+    },
+    "ccu-adenosine": {
+      "family": "adenosine",
+      "use": "Protocol-directed treatment of selected regular SVT",
+      "concepts": [
+        "adenosine_delivery",
+        "adenosine_transient",
+        "adenosine_interaction",
+        "bronchospasm_risk",
+        "tachy_instability",
+        "adenosine_first"
+      ]
+    },
+    "ccu-labetalol": {
+      "family": "alpha_beta",
+      "use": "Controlled lowering of severe BP when indicated",
+      "concepts": [
+        "hypotension",
+        "bradycardia",
+        "avnode_combination",
+        "beta_asthma",
+        "labetalol_cautions",
+        "slow_iv"
+      ]
+    },
+    "ccu-ketamine": {
+      "family": "ketamine",
+      "use": "Procedural sedation or anesthesia under trained supervision",
+      "concepts": [
+        "sedation_airway",
+        "ketamine_bp",
+        "ketamine_emergence",
+        "cns_combination",
+        "slow_iv"
+      ]
+    },
+    "ccu-pethidine": {
+      "family": "opioid",
+      "use": "Prescribed analgesia in selected severe pain",
+      "concepts": [
+        "opioid_respiration",
+        "sedation_falls",
+        "hypotension",
+        "meperidine_renal",
+        "serotonin",
+        "slow_iv"
+      ]
+    },
+    "ccu-morphine": {
+      "family": "opioid",
+      "use": "Prescribed treatment of selected severe pain or distress",
+      "concepts": [
+        "opioid_respiration",
+        "sedation_falls",
+        "hypotension",
+        "constipation",
+        "cns_combination",
+        "slow_iv",
+        "opioid_indication"
+      ]
+    },
+    "trolley-spironolactone": {
+      "family": "spironolactone",
+      "use": "Selected chronic HFrEF, hypertension, or aldosterone-related retention",
+      "concepts": [
+        "high_k",
+        "renal_monitor",
+        "hypotension",
+        "spirono_not_loop"
+      ]
+    },
+    "trolley-lidocaine": {
+      "family": "lidocaine",
+      "use": "Selected ventricular-arrhythmia or refractory-arrest treatment",
+      "concepts": [
+        "conduction_toxicity",
+        "lidocaine_neuro",
+        "lidocaine_product",
+        "rhythm_pathway"
+      ]
+    },
+    "trolley-sodium-bicarbonate": {
+      "family": "bicarbonate",
+      "use": "Selected metabolic or toxicologic indications",
+      "concepts": [
+        "bicarbonate_selected",
+        "bicarbonate_load",
+        "compatibility",
+        "concentration_units"
+      ]
+    },
+    "trolley-hydralazine": {
+      "family": "hydralazine",
+      "use": "Parenteral treatment of severe hypertension",
+      "concepts": [
+        "hypotension",
+        "hydralazine_reflex",
+        "slow_iv"
+      ]
+    },
+    "trolley-dextrose50": {
+      "family": "dextrose",
+      "use": "IV treatment of severe symptomatic hypoglycemia",
+      "concepts": [
+        "dextrose_site",
+        "glucose_recheck",
+        "dextrose_units",
+        "unconscious_airway"
+      ]
+    },
+    "trolley-hydrocortisone": {
+      "family": "steroid",
+      "use": "Adrenal crisis or selected severe inflammatory states",
+      "concepts": [
+        "steroid_glucose",
+        "steroid_infection",
+        "steroid_anaphylaxis",
+        "formulation"
+      ]
+    },
+    "trolley-diazepam": {
+      "family": "benzodiazepine",
+      "use": "Selected seizure, agitation, or sedation treatment",
+      "concepts": [
+        "sedation_airway",
+        "cns_combination",
+        "hypotension",
+        "diazepam_product",
+        "iv_site"
+      ]
+    },
+    "trolley-amiodarone": {
+      "family": "amiodarone",
+      "use": "Selected serious ventricular arrhythmia treatment",
+      "concepts": [
+        "bradycardia",
+        "hypotension",
+        "qt",
+        "amiodarone_digoxin",
+        "iv_site",
+        "rhythm_pathway",
+        "infusion_precision",
+        "formulation"
+      ]
+    },
+    "trolley-calcium-gluconate": {
+      "family": "calcium",
+      "use": "Selected symptomatic hypocalcemia or hyperkalemic ECG toxicity",
+      "concepts": [
+        "calcium_no_k_removal",
+        "iv_tissue",
+        "calcium_bicarbonate",
+        "calcium_salts",
+        "rhythm_response"
+      ]
+    },
+    "trolley-magnesium-sulfate": {
+      "family": "magnesium",
+      "use": "Indication-specific replacement or torsades treatment",
+      "concepts": [
+        "magnesium_indication",
+        "magnesium_toxicity",
+        "renal_monitor",
+        "magnesium_calcium",
+        "infusion_precision"
+      ]
+    },
+    "trolley-digoxin": {
+      "family": "digoxin",
+      "use": "Selected AF/flutter ventricular-rate control",
+      "concepts": [
+        "bradycardia",
+        "renal_monitor",
+        "digoxin_toxicity",
+        "digoxin_interaction",
+        "drug_levels",
+        "digoxin_prewp"
+      ]
+    },
+    "trolley-aminophylline": {
+      "family": "aminophylline",
+      "use": "Selected bronchodilation under an authorized regimen",
+      "concepts": [
+        "aminophylline_toxicity",
+        "drug_levels",
+        "aminophylline_exposure",
+        "interaction_review",
+        "infusion_route"
+      ]
+    },
+    "ibd2-amitriptyline": {
+      "family": "tca",
+      "use": "Depressive illness or prescribed off-label neuropathic-pain treatment",
+      "concepts": [
+        "sedation_falls",
+        "anticholinergic",
+        "tca_mood",
+        "tca_cardiac",
+        "tca_overdose"
+      ]
+    },
+    "ibd2-prednitab-prednisolone": {
+      "family": "steroid",
+      "use": "Anti-inflammatory or immunosuppressive treatment",
+      "concepts": [
+        "steroid_glucose",
+        "steroid_infection",
+        "steroid_adrenal",
+        "steroid_nsaid",
+        "steroid_mood"
+      ]
+    },
+    "ibd2-clindamycin": {
+      "family": "clindamycin",
+      "use": "Treatment of susceptible bacterial infection",
+      "concepts": [
+        "antibiotic_diarrhea",
+        "drug_hypersensitivity",
+        "antimicrobial_response",
+        "formulation"
+      ]
+    },
+    "ibd2-multivitamin": {
+      "family": "multivitamin",
+      "use": "Prescribed nutritional supplementation",
+      "concepts": [
+        "multivitamin_contents",
+        "multivitamin_duplicate",
+        "multivitamin_absorption",
+        "vitamin_accumulation"
+      ]
+    },
+    "verified-alteplase-v35": {
+      "family": "alteplase",
+      "use": "Indication-specific emergency thrombolysis in eligible patients",
+      "concepts": [
+        "bleeding",
+        "alteplase_screen",
+        "alteplase_neuro",
+        "alteplase_regimen",
+        "alteplase_timing",
+        "alteplase_total",
+        "alteplase_bolus",
+        "alteplase_duration",
+        "alteplase_bp",
+        "alteplase_followup"
+      ]
+    }
+  }
+}
