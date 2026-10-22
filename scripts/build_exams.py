@@ -65,12 +65,12 @@ def core_questions(item, profile, families):
         alternative = families[key]
         if action(alternative).casefold() in used_actions or alternative['group'] in used_groups:
             continue
-        choices.append((sentence(action(alternative)), f"This is a different pharmacological action. The taught action is: {family['why']}"))
+        choices.append((sentence(action(alternative)), f"This is a different pharmacological action. The drug’s action is: {family['why']}"))
         used_actions.add(action(alternative).casefold())
         used_groups.add(alternative['group'])
         if len(choices) == 4:
             break
-    mechanism = mcq(f"Which principal action explains the taught effect of {item['name']}?", choices)
+    mechanism = mcq(f"What is the principal mechanism of action of {item['name']}?", choices)
     mechanism.update(concept='principal-action', point='Identify the principal pharmacological action taught for this medicine.',
                      sourceRefs=field_refs(item, ['drugclass', 'mechanism', 'why']), criticalForSafety=False)
     core = [mechanism]
@@ -82,8 +82,8 @@ def core_questions(item, profile, families):
             if name != class_name(family):
                 unique.setdefault(name, other)
         names = sorted(unique, key=lambda n: (unique[n]['group'] != family['group'], digest(item['id'] + n)))[:3]
-        cls = mcq(f"Which drug class is taught for {item['name']}?",
-                  [(class_name(family), item['drugclass'])] + [(n, f"The entry identifies the medicine as: {item['drugclass']}") for n in names])
+        cls = mcq(f"Which drug class does {item['name']} belong to?",
+                  [(class_name(family), item['drugclass'])] + [(n, f"The medicine is classified as: {item['drugclass']}") for n in names])
         cls.update(concept='drug-class', point='Identify the drug class taught for this medicine.',
                    sourceRefs=field_refs(item, ['drugclass']), criticalForSafety=False)
         core.append(cls)
@@ -104,9 +104,9 @@ def core_questions(item, profile, families):
         'electrolyte': ['Inhibition of platelet aggregation after coronary stenting', 'Treatment of a susceptible bacterial infection', 'Long-term suppression of gastric acid secretion'],
         'metabolic': ['Reversal of opioid respiratory toxicity', 'Treatment of a susceptible bacterial infection', 'Immediate electrical treatment of ventricular fibrillation'],
     }
-    choices = [(profile['use'], f"This is the treatment role taught in the entry: {item.get('use', item.get('memoryUse', ''))}")]
-    choices += [(role, 'This is a different treatment role, not the main role taught for this entry.') for role in roles[family['group']]]
-    use = mcq(f"Which treatment role is taught for {item['name']} in this entry?", choices)
+    choices = [(profile['use'], f"This is a clinical use of the medicine: {item.get('use', item.get('memoryUse', ''))}")]
+    choices += [(role, 'This is a different treatment role.') for role in roles[family['group']]]
+    use = mcq(f"Which is a clinical use of {item['name']}?", choices)
     use.update(concept='treatment-role', point='Identify the main treatment role taught for this medicine.',
                sourceRefs=field_refs(item, ['use', 'memoryUse']), criticalForSafety=False)
     return core + [use]
