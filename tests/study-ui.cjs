@@ -7,7 +7,7 @@ function boot(saved){
  const dom=new JSDOM(fs.readFileSync(path.join(base,'index.html'),'utf8'),{url:'https://test.local',runScripts:'outside-only',pretendToBeVisual:true}),w=dom.window;
  w.HTMLElement.prototype.scrollIntoView=function(){w.lastJump=this};w.alert=()=>{};w.confirm=()=>true;
  if(saved)w.localStorage.setItem(KEY,saved);
- for(const file of ['js/study-ui.js','js/reading.js','js/app.js'])vm.runInContext(fs.readFileSync(path.join(base,file),'utf8'),dom.getInternalVMContext());
+ for(const file of ['js/study-ui.js','js/reading.js','js/question-marks.js','js/app.js'])vm.runInContext(fs.readFileSync(path.join(base,file),'utf8'),dom.getInternalVMContext());
  w.CoreNursingSync.receive(JSON.stringify(content));return w;
 }
 (async()=>{
@@ -35,7 +35,8 @@ function boot(saved){
   });
  }
  const finalId=content.lessons.at(-1).id;
- w.jumpStudySection(8);await new Promise(r=>w.requestAnimationFrame(r));assert.equal(w.lastJump.dataset.studySection,'8');
+ const jumpIndex=Math.min(8,content.lessons.at(-1).sections.length-1);
+ w.jumpStudySection(jumpIndex);await new Promise(r=>w.requestAnimationFrame(r));assert.equal(w.lastJump.dataset.studySection,String(jumpIndex));
  w.toggleReading(d.querySelector('#lessonDetail .reader-finish .reading-control'));
  assert.equal(state().reading['lesson:'+finalId],'read');
  assert.equal(d.querySelector('#lessonDetail .reading-control button').textContent,'Mark as unread');
