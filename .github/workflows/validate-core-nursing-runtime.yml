@@ -63,6 +63,7 @@ jobs:
           node tests/study-ui.cjs
           node tests/question-marks.cjs
           node tests/exams-ui.cjs
+          node tests/updates-ui.cjs
       - name: Basic local runtime load
         run: |
           python -m http.server 8765 --directory runtime/files >/tmp/core-nursing-http.log 2>&1 &
