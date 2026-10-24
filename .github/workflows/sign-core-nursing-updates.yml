@@ -1,7 +1,7 @@
 name: Sign Core Nursing update channel
 on:
   push:
-    branches: [main]
+    branches: [main, 'updates/**']
     paths:
       - 'content.json'
       - 'shell-manifest.json'
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
       - name: Load private update-signing key
         env:
           UPDATE_SIGNING_KEY: ${{ secrets.CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM }}
@@ -51,7 +51,7 @@ jobs:
           git config user.name "Core Nursing Update Signer"
           git config user.email "actions@users.noreply.github.com"
           git commit -m "Sign Core Nursing update payloads"
-          git push origin HEAD:main
+          git push origin HEAD:"${{ github.ref_name }}"
       - name: Remove temporary signing material
         if: always()
         run: rm -f "$RUNNER_TEMP/core-nursing-update-private.pem" "$RUNNER_TEMP/signature.bin" "$RUNNER_TEMP/verify.bin"

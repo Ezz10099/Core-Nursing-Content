@@ -32,3 +32,5 @@ h1,h2,h3,p{margin-top:0}h1{font-size:30px;line-height:1.2;letter-spacing:-.045em
 #examProgress:empty{display:none}
 
 #updatePanel{margin-top:0;margin-bottom:20px}#updatePanel h2{font-size:18px;margin-bottom:10px}#updateButton{display:block;width:100%;min-height:52px;white-space:normal;font-weight:700}#updateButton:disabled{opacity:.65;cursor:wait}#updateVersions{font-size:11px;margin:12px 0 0}#updateNotice{font-weight:700;color:var(--blue)}.update-popup{position:fixed;inset:0;z-index:1000;background:#000a;display:flex;align-items:center;justify-content:center;padding:20px}.update-popup>.panel{width:min(100%,430px);max-height:85dvh;overflow:auto;box-shadow:0 12px 60px #0008}.update-popup .tools{display:flex;gap:10px;flex-wrap:wrap}.update-popup button{min-height:48px;flex:1}
+
+#updatePanel{margin-top:24px;margin-bottom:20px}#updatePanel summary{cursor:pointer;font-size:13px;font-weight:600}#updatePanel[open] summary{margin-bottom:14px}#updateButton{font-size:13px;min-height:44px;font-weight:500}#homeUpdateNotice{padding:12px;margin-bottom:18px}#homeUpdateNotice button{width:100%;min-height:44px;white-space:normal}
