@@ -3,7 +3,7 @@
   const Core=window.CoreNursingExamCore, data=window.CoreNursingExamData;
   if(!Core||!data)return;
   const banks=new Map(data.banks.map(b=>[b.itemId,b]));
-  let selected=null,resultView=null,safetyMode=false,safetyAnswers={},timer=null;
+  let selected=null,resultView=null,safetyMode=false,safetyAnswers={},timer=null,viewingExam=false;
   const state=()=>memory.exams, record=id=>state().items[id]||{attempts:[],reads:[],readingAfter:null,pendingSafety:[],due:null}, now=()=>Date.now();
   const canonical=id=>data.aliases[id]||id;
   const bankFor=id=>banks.get(canonical(id));
@@ -35,7 +35,33 @@
     if(r.due)parts.push(label(r.due.stage)+(r.due.at<=now()?' due: ':' scheduled: ')+date(r.due.at)+'.');
     return parts.join(' ')||'No exam attempts.';
   }
+  function practiceOverview(){
+    const node=byId('practiceExamOverview');if(!node)return;
+    const a=state().active;
+    const resume=a?'<div class="panel"><h2>Continue exam</h2><p>'+safe(banks.get(a.itemId)?.title||a.itemId)+' · '+safe(label(a.form.stage))+'</p><p class="note">Question '+(a.index+1)+' of '+a.form.questions.length+'. '+(a.deadline?'The advanced timer continues while you are away.':'Your answers are saved.')+'</p><button class="primary" id="continueExam" onclick="CoreNursingExams.resume()">Continue exam</button></div>':'';
+    const passed=[];
+    for(const bank of banks.values()){
+      if(!allowed(bank))continue;
+      for(const stage of ['standard','advanced','7-day','21-day']){
+        const attempt=record(bank.itemId).attempts.filter(a=>a.stage===stage&&a.completedAt).sort((a,b)=>b.completedAt-a.completedAt)[0];
+        if(attempt)passed.push({bank,attempt});
+      }
+    }
+    passed.sort((a,b)=>b.attempt.completedAt-a.attempt.completedAt);
+    node.innerHTML=resume+'<div class="panel" id="practicePassedExams"><h2>Passed exams · '+passed.length+'</h2>'+(passed.length?passed.map(({bank,attempt})=>'<button class="exam-link" onclick="CoreNursingExams.open(\''+bank.itemId+'\')"><strong>'+safe(bank.title)+'</strong><small>'+safe(label(attempt.stage))+' · Passed · '+attempt.correct+'/'+attempt.total+'<br>'+safe(date(attempt.completedAt))+'</small></button>').join(''):'<p class="muted">No passed exams yet.</p>')+'</div>';
+  }
+  function resume(){
+    if(!state().active)return;
+    if(expired())return;
+    showTab('practice');selected=state().active.itemId;resultView=null;safetyMode=false;viewingExam=true;render();scrollStudyTo(0,0);
+  }
+  function navigation(t){
+    viewingExam=false;
+    if(t==='practice'){selected=null;resultView=null;safetyMode=false}
+    render();
+  }
   function refreshDashboards(){
+    practiceOverview();
     const due=Array.from(banks.values()).filter(b=>allowed(b)&&record(b.itemId).due&&record(b.itemId).due.at<=now());
     for(const id of ['dueExamsHome','dueExamsProgress']){
       const node=byId(id);if(!node)continue;
@@ -54,7 +80,7 @@
   }
   function open(id){
     const bank=bankFor(id);if(!bank||!allowed(bank))return;
-    selected=bank.itemId;resultView=null;safetyMode=false;showTab('practice');render();scrollStudyTo(0,0);
+    showTab('practice');selected=bank.itemId;resultView=null;safetyMode=false;viewingExam=false;render();scrollStudyTo(0,0);
   }
   function inputHtml(q,value,followup=false){
     const fn=followup?'followupAnswer':'answer',key=safe(q.id);
@@ -63,14 +89,14 @@
   }
   function render(){
     const hub=byId('examsHub'),session=byId('examSession');if(!hub||!session)return;
-    const active=state().active;
+    const active=viewingExam&&state().active;
     document.body.classList.toggle('exam-in-progress',!!active);
     byId('legacyPractice').hidden=!!active||!!selected;
     hub.hidden=!!active||!!selected;session.hidden=!active&&!selected;
     if(active){renderActive(session);return}
     if(!selected){
-      hub.innerHTML='<div class="panel"><h2>Standard & advanced exams</h2><p class="note">Draft question bank. Source coverage review is incomplete; scores refer to these exams only.</p><label for="examSearch">Find a medication or lesson</label><input id="examSearch" type="search" class="search" oninput="CoreNursingExams.filter(this.value)" placeholder="Search exams…"><div id="examCatalog">'+Array.from(banks.values()).filter(allowed).map(b=>'<button class="exam-link" data-exam-title="'+safe(b.title.toLowerCase())+'" onclick="CoreNursingExams.open(\''+b.itemId+'\')">'+safe(b.title)+'<small>'+b.exams.map(e=>safe(label(e.stage))+': '+e.questionCount+' questions'+(stageResult(b,e.stage)?' · '+safe(stageResult(b,e.stage)):'')).join(' · ')+'</small></button>').join('')+'</div></div>';
-      session.innerHTML='';return;
+      hub.innerHTML='<div id="practiceExamOverview"></div><div class="panel"><h2>Standard & advanced exams</h2><p class="note">Draft question bank. Source coverage review is incomplete; scores refer to these exams only.</p><label for="examSearch">Find a medication or lesson</label><input id="examSearch" type="search" class="search" oninput="CoreNursingExams.filter(this.value)" placeholder="Search exams…"><div id="examCatalog">'+Array.from(banks.values()).filter(allowed).map(b=>'<button class="exam-link" data-exam-title="'+safe(b.title.toLowerCase())+'" onclick="CoreNursingExams.open(\''+b.itemId+'\')">'+safe(b.title)+'<small>'+b.exams.map(e=>safe(label(e.stage))+': '+e.questionCount+' questions'+(stageResult(b,e.stage)?' · '+safe(stageResult(b,e.stage)):'')).join(' · ')+'</small></button>').join('')+'</div></div>';
+      session.innerHTML='';practiceOverview();return;
     }
     const bank=banks.get(selected);if(!bank)return;
     if(resultView){renderResult(session,bank);return}
@@ -92,7 +118,7 @@
     if(a.deadline&&now()>=a.deadline){submit(true);return}
     const q=a.form.questions[a.index];
     if(!a.shown.includes(q.id)){a.shown.push(q.id);save()}
-    container.innerHTML='<div class="panel exam-active"><p>'+safe(label(a.form.stage))+' · '+(a.index+1)+'/'+a.form.questions.length+'</p><p id="examTimer" role="timer"></p><h2 id="examQuestion" tabindex="-1">'+safe(q.stem)+'</h2>'+inputHtml(q,a.answers[q.id])+ '<label class="exam-unsure"><input type="checkbox" '+(a.unsure[q.id]?'checked':'')+' onchange="CoreNursingExams.unsure(this.checked)"> Unsure / guessed — flag for review</label><div class="tools"><button '+(a.index===0?'disabled':'')+' onclick="CoreNursingExams.move(-1)">Previous</button><button '+(a.index===a.form.questions.length-1?'disabled':'')+' onclick="CoreNursingExams.move(1)">Next</button><button onclick="CoreNursingExams.submit()">Submit exam</button></div><p class="note">Answers save on this device as you go. Returning later does not restart the advanced timer. Unanswered questions score zero.</p></div>';
+    container.innerHTML='<button class="back" onclick="CoreNursingExams.catalog()">← Back to Practice</button><div class="panel exam-active"><p>'+safe(label(a.form.stage))+' · '+(a.index+1)+'/'+a.form.questions.length+'</p><p id="examTimer" role="timer"></p><h2 id="examQuestion" tabindex="-1">'+safe(q.stem)+'</h2>'+inputHtml(q,a.answers[q.id])+ '<label class="exam-unsure"><input type="checkbox" '+(a.unsure[q.id]?'checked':'')+' onchange="CoreNursingExams.unsure(this.checked)"> Unsure / guessed — flag for review</label><div class="tools"><button '+(a.index===0?'disabled':'')+' onclick="CoreNursingExams.move(-1)">Previous</button><button '+(a.index===a.form.questions.length-1?'disabled':'')+' onclick="CoreNursingExams.move(1)">Next</button><button onclick="CoreNursingExams.submit()">Submit exam</button></div><p class="note">Answers save on this device as you go. Returning later does not restart the advanced timer. Unanswered questions score zero.</p></div>';
     tick();
   }
   function expired(){const a=state().active;if(a?.deadline&&now()>=a.deadline){submit(true);return true}return false}
@@ -111,7 +137,10 @@
   function submit(automatic=false){
     const a=state().active;if(!a)return;
     if(!automatic&&!confirm('Submit this exam? Unanswered questions score zero.'))return;
-    selected=a.itemId;resultView=Core.submit(state(),now());safetyMode=false;saveState();render();
+    const showResult=!automatic||(viewingExam&&tab==='practice');
+    selected=a.itemId;resultView=Core.submit(state(),now());safetyMode=false;viewingExam=false;
+    if(!showResult){selected=null;resultView=null}
+    saveState();render();
     if(tab==='practice')scrollStudyTo(0,0);
   }
   function feedback(q,response){
@@ -131,18 +160,18 @@
     const bank=banks.get(selected);if(!bank||changed(bank))return;
     const access=Core.eligible(state(),selected,stage,bank.readingSections,now());if(!access.ok){alert(access.reason);return}
     if(!confirm('Start '+label(stage).toLowerCase()+'? '+(stage==='advanced'?'Total allowance is 90 seconds multiplied by the question count. The timer continues if you leave.':'This exam is untimed.')))return;
-    try{Core.start(state(),bank,stage,now());resultView=null;saveState();render();scrollStudyTo(0,0)}catch(e){alert(e.message)}
+    try{Core.start(state(),bank,stage,now());viewingExam=true;resultView=null;saveState();render();scrollStudyTo(0,0)}catch(e){alert(e.message)}
   }
   function read(sectionId){const bank=banks.get(selected);if(!bank?.readingSections.some(s=>s.id===sectionId))return;Core.item(state(),selected).reads.push({sectionId,at:now()});saveState();render()}
   function safety(){if(state().active){alert('Complete the current exam first.');return}safetyMode=true;resultView=null;safetyAnswers={};render();scrollStudyTo(0,0)}
   function submitSafety(){
     const checks=Core.safetyCheck(state(),selected,safetyAnswers,now());saveState();safetyMode=false;render();alert(checks.every(x=>x.correct)?'Safety follow-up check completed. Original exam score unchanged.':'Some safety points still require a follow-up check. Original exam score unchanged.');
   }
-  function restore(){memory.exams=Core.normalize(memory.exams);selected=null;resultView=null;safetyMode=false;refreshDashboards();render();tick()}
-  window.CoreNursingExams={open,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
+  function restore(){memory.exams=Core.normalize(memory.exams);selected=null;resultView=null;safetyMode=false;viewingExam=false;refreshDashboards();render();tick()}
+  window.CoreNursingExams={open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
     followupAnswer:(qid,value)=>{safetyAnswers[qid]=String(value).slice(0,500)},
     filter:text=>document.querySelectorAll('[data-exam-title]').forEach(node=>node.hidden=!node.dataset.examTitle.includes(text.toLowerCase())),
-    catalog:()=>{selected=null;resultView=null;safetyMode=false;render();scrollStudyTo(0,0)},reviewItem:()=>{resultView=null;safetyMode=false;render();scrollStudyTo(0,0)}};
+    catalog:()=>{viewingExam=false;selected=null;resultView=null;safetyMode=false;render();scrollStudyTo(0,0)},reviewItem:()=>{resultView=null;safetyMode=false;render();scrollStudyTo(0,0)}};
   restore();timer=setInterval(tick,1000);setInterval(refreshDashboards,60000);
   document.addEventListener('visibilitychange',tick);
   window.addEventListener('pagehide',()=>{if(state().active)save()});

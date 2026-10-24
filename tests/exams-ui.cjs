@@ -25,14 +25,24 @@ w.CoreNursingExams.open('heparin');assert(d.querySelector('#examSession').textCo
 assert(d.querySelector('#examSession').textContent.includes('Pass the standard exam'));
 w.CoreNursingExams.start('standard');assert(!d.querySelector('#examSession .exam-feedback'),'Keys and explanations must not appear during an exam.');
 assert(d.querySelector('#examTimer').textContent.includes('Untimed'));
-const first=state(w).exams.active.form.questions[0];w.CoreNursingExams.unsure(true);answerAll(w);w.CoreNursingExams.submit();
+const first=state(w).exams.active.form.questions[0];w.CoreNursingExams.unsure(true);
+w.CoreNursingExams.answer(first.id,first.answerKey??first.answer??first.acceptedAnswers?.[0]);w.CoreNursingExams.move(1);
+const unfinished=JSON.stringify(state(w).exams.active);
+w.showTab('home');w.showTab('practice');assert(!d.querySelector('#examsHub').hidden);assert(d.querySelector('#examSession').hidden);
+assert(d.querySelector('#continueExam'));assert(d.querySelector('#practicePassedExams'));assert.equal(JSON.stringify(state(w).exams.active),unfinished);
+w.CoreNursingExams.resume();assert.equal(state(w).exams.active.index,1);assert(state(w).exams.active.unsure[first.id]);
+assert.equal(state(w).exams.active.answers[first.id],first.answerKey??first.answer??first.acceptedAnswers?.[0]);
+w.CoreNursingExams.catalog();assert(!d.querySelector('#examsHub').hidden);assert.equal(JSON.stringify(state(w).exams.active),unfinished);
+w.CoreNursingExams.resume();w.CoreNursingExams.move(-1);answerAll(w);w.CoreNursingExams.submit();
 let saved=state(w);assert(saved.exams.items['ccu-heparin-ufh'].attempts[0].passed);assert.equal(saved.attempts.length,1);assert.deepEqual(saved.reading,{'med:heparin':'read'});
 assert(d.querySelector('.exam-feedback'));assert(d.querySelector('#examSession').textContent.includes('Standard exam passed.'));
 w.CoreNursingExams.reviewItem();assert(d.querySelector('.exam-start h3').textContent.includes('Standard exam · Passed'));
 w.CoreNursingExams.catalog();assert([...d.querySelectorAll('.exam-link')].some(n=>n.textContent.includes('HEPARIN')&&n.textContent.includes('Standard exam:')&&n.textContent.includes('Passed')));
 w.CoreNursingExams.open('heparin');w.CoreNursingExams.start('advanced');assert(state(w).exams.active.deadline);
 const deadline=state(w).exams.active.deadline,backup=JSON.stringify(state(w));w.close();w=boot(backup);d=w.document;
-assert.equal(state(w).exams.active.deadline,deadline);w.showTab('practice');assert(d.querySelector('#examTimer').textContent.includes('remaining'));
+assert.equal(state(w).exams.active.deadline,deadline);w.showTab('practice');assert(d.querySelector('#examSession').hidden);assert(d.querySelector('#continueExam'));
+assert(d.querySelector('#practicePassedExams').textContent.includes('Standard exam · Passed'));
+w.CoreNursingExams.resume();assert(d.querySelector('#examTimer').textContent.includes('remaining'));assert.equal(state(w).exams.active.deadline,deadline);
 answerAll(w);w.CoreNursingExams.submit();saved=state(w);let r=saved.exams.items['ccu-heparin-ufh'];assert(r.attempts.at(-1).passed);assert.equal(r.due.stage,'7-day');
 assert(d.querySelector('#examSession').textContent.includes('Advanced exam passed.'));
 // Advanced timers expire after reload and do not silently restart.
@@ -55,6 +65,6 @@ assert([...d.querySelectorAll('.exam-start h3')].some(n=>n.textContent==='Advanc
 let exported;w.CoreNursingAndroid={saveBackup:data=>exported=data};w.exportProgress();assert(JSON.parse(exported).exams.items[bank.itemId].attempts.length===3);
 w.FileReader=class{readAsText(file){this.result=file.text;this.onload()}};
 w.importProgress({target:{files:[{text:exported}]}});assert.equal(state(w).exams.items[bank.itemId].attempts.length,3);
-w.resetProgress();assert.deepEqual(state(w).exams.items,{});assert.equal(state(w).attempts.length,0);
+w.resetProgress();w.showTab('practice');assert(!d.querySelector('#continueExam'));assert(d.querySelector('#practicePassedExams').textContent.includes('No passed exams yet.'));assert.deepEqual(state(w).exams.items,{});assert.equal(state(w).attempts.length,0);
 w.close();
 console.log('PASS: medication aliases, hidden answer keys, grading, separate reading/history, timer resume/expiry, required section rereading, backups and reset');
