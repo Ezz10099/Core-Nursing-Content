@@ -1,7 +1,7 @@
 /* Shared Android/web update discovery and visible status; installation stays in the verified platform updater. */
 (function(){
   'use strict';
-  const RUNTIME=27, ROOT='https://raw.githubusercontent.com/Ezz10099/Core-Nursing-Content/main/';
+  const RUNTIME=28, ROOT='https://raw.githubusercontent.com/Ezz10099/Core-Nursing-Content/main/';
   const KEY='core-nursing-update-request', DISMISSED='core-nursing-update-dismissed';
   const PUBLIC_KEY='MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAfKs7X3Y39m6tuUCjV+3x9Bij8MuB+lNPviMihw5qGKQC7UDgZKxojo3upDXZ39yswoz7y0wcfDJhul7udNAdQ==';
   let available=null,busy=false,checking=false,failure='',previousFocus=null,runtimeApplied=0;
@@ -26,7 +26,7 @@
     previousFocus?.focus();
   }
   function notify(){
-    if(!available||busy||memory.exams?.active||!node('updatePopup').hidden||document.hidden)return;
+    if(!available||busy||document.body.classList.contains('exam-in-progress')||!node('updatePopup').hidden||document.hidden)return;
     if(stored(sessionStorage,DISMISSED)===target())return;
     previousFocus=document.activeElement;
     node('updatePopupText').textContent='A new '+(available.runtime>installed()?'app feature':'study content')+' update is ready. Tap Update now to download and apply it.';
