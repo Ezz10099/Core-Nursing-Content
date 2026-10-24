@@ -1,7 +1,7 @@
 /* Shared Android/web update discovery and visible status; installation stays in the verified platform updater. */
 (function(){
   'use strict';
-  const RUNTIME=27, ROOT='https://raw.githubusercontent.com/Ezz10099/Core-Nursing-Content/main/';
+  const RUNTIME=29, ROOT='https://raw.githubusercontent.com/Ezz10099/Core-Nursing-Content/main/';
   const KEY='core-nursing-update-request', DISMISSED='core-nursing-update-dismissed';
   const PUBLIC_KEY='MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAfKs7X3Y39m6tuUCjV+3x9Bij8MuB+lNPviMihw5qGKQC7UDgZKxojo3upDXZ39yswoz7y0wcfDJhul7udNAdQ==';
   let available=null,busy=false,checking=false,failure='',previousFocus=null,runtimeApplied=0;
@@ -18,6 +18,7 @@
     node('updatePanel').setAttribute('aria-busy',String(busy));
     node('updateVersions').textContent=versions();
     node('updateNotice').hidden=!available;
+    node('homeUpdateNotice').hidden=!available;
   }
   function status(text){node('syncStatus').textContent=text;controls()}
   function closePopup(){
