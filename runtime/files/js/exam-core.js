@@ -61,6 +61,10 @@
     const record=item(state,id);
     if(!stages.includes(stage))return {ok:false,reason:'Unknown exam stage.'};
     if(state.active)return {ok:false,reason:'An exam is already in progress.'};
+    if(stage==='advanced'){
+      const latest=record.attempts.filter(a=>a.stage==='advanced').at(-1);
+      if(latest&&!latest.passed&&now<latest.finishedAt+DAY)return {ok:false,reason:'Advanced exam locked for 24 hours after a failed attempt.',unlockAt:latest.finishedAt+DAY};
+    }
     if(readingRemaining(record,sections).length)return {ok:false,reason:'Mark every section as read again before another attempt.'};
     if(record.pendingSafety.length)return {ok:false,reason:'Complete the separate safety follow-up check first.'};
     if(stage==='advanced'&&!record.attempts.some(a=>a.stage==='standard'&&a.passed&&a.completedAt))return {ok:false,reason:'Pass the standard exam with at least 90% first.'};

@@ -65,3 +65,31 @@ assert.equal(state.active.form.questions[1].stem,'Old wording');assert.equal(sta
 assert.equal(state.active.bankVersion,1);assert.equal(state.active.form.questions.length,10);
 assert.equal(JSON.stringify(C.item(state,'test').attempts),before);
 console.log('PASS: exact score boundaries, unsure flags, safety checks, rereading, timer persistence, 7/21-day retries, history, safe prose refresh and answer formats');
+// Failed advanced exams lock only that material's advanced stage for exactly 24h.
+state=C.empty();attempt(state,'standard',10,3000);
+const failedAdvanced=attempt(state,'advanced',9,3010),unlock=failedAdvanced.attempt.finishedAt+C.DAY;
+let access=C.eligible(state,'test','advanced',bank.readingSections,unlock-1);
+assert(!access.ok);assert.equal(access.unlockAt,unlock);
+assert.throws(()=>C.start(state,bank,'advanced',unlock-1),/locked for 24 hours/);
+assert(C.eligible(state,'test','standard',bank.readingSections,3020).ok);
+const other={...bank,itemId:'other'};attempt(state,'standard',10,3020,other);
+assert(C.eligible(state,'other','advanced',other.readingSections,3030).ok);
+state=C.normalize(JSON.parse(JSON.stringify(state)));
+assert(!C.eligible(state,'test','advanced',bank.readingSections,unlock-1).ok);
+assert(C.eligible(state,'test','advanced',bank.readingSections,unlock).ok);
+attempt(state,'advanced',9,unlock);
+assert.equal(C.eligible(state,'test','advanced',bank.readingSections,unlock+2).unlockAt,unlock+1+C.DAY);
+// Reading and safety follow-ups cannot clear the cooldown; expiry cannot skip them.
+state=C.empty();attempt(state,'standard',10,4000);
+const safetyBank=JSON.parse(JSON.stringify(bank));safetyBank.exams[1]=form('advanced',10,true);
+C.start(state,safetyBank,'advanced',4010);state.active.answers=answers(state.active.form,7);state.active.answers.q0='A';C.submit(state,4011);r=C.item(state,'test');
+const unlockLow=r.attempts.at(-1).finishedAt+C.DAY;
+assert(!C.eligible(state,'test','advanced',bank.readingSections,unlockLow).ok);
+r.reads.push({sectionId:'s1',at:4020},{sectionId:'s2',at:4020});
+assert(!C.eligible(state,'test','advanced',bank.readingSections,unlockLow).ok);
+C.safetyCheck(state,'test',{q0:'B'},4021);
+assert(!C.eligible(state,'test','advanced',bank.readingSections,unlockLow-1).ok);
+assert(C.eligible(state,'test','advanced',bank.readingSections,unlockLow).ok);
+attempt(state,'advanced',10,unlockLow);
+assert(C.eligible(state,'test','advanced',bank.readingSections,unlockLow+2).ok);
+console.log('PASS: 24-hour advanced lock boundary, reload/backup persistence, per-material isolation, repeat failures, reading/safety gates and successful attempts');

@@ -18,6 +18,12 @@
   }
   function persist(){save();const warning=byId('examSaveWarning');if(warning)warning.hidden=persistence}
   function saveState(){persist();refreshDashboards()}
+  function stageResult(bank,stage){
+    const attempts=record(bank.itemId).attempts.filter(a=>a.stage===stage);
+    if(attempts.some(a=>a.completedAt))return 'Passed';
+    if(attempts.some(a=>a.passed))return 'Score passed; safety follow-up required';
+    return '';
+  }
   function status(bank){
     const r=record(bank.itemId),latest=r.attempts.slice(-1)[0],parts=[];
     if(r.attempts.some(a=>a.stage==='advanced'&&a.completedAt))parts.push('Advanced exam passed.');
@@ -63,7 +69,7 @@
     hub.hidden=!!active||!!selected;session.hidden=!active&&!selected;
     if(active){renderActive(session);return}
     if(!selected){
-      hub.innerHTML='<div class="panel"><h2>Standard & advanced exams</h2><p class="note">Draft question bank. Source coverage review is incomplete; scores refer to these exams only.</p><label for="examSearch">Find a medication or lesson</label><input id="examSearch" type="search" class="search" oninput="CoreNursingExams.filter(this.value)" placeholder="Search exams…"><div id="examCatalog">'+Array.from(banks.values()).filter(allowed).map(b=>'<button class="exam-link" data-exam-title="'+safe(b.title.toLowerCase())+'" onclick="CoreNursingExams.open(\''+b.itemId+'\')">'+safe(b.title)+'<small>'+b.exams.map(e=>safe(label(e.stage))+': '+e.questionCount+' questions').join(' · ')+'</small></button>').join('')+'</div></div>';
+      hub.innerHTML='<div class="panel"><h2>Standard & advanced exams</h2><p class="note">Draft question bank. Source coverage review is incomplete; scores refer to these exams only.</p><label for="examSearch">Find a medication or lesson</label><input id="examSearch" type="search" class="search" oninput="CoreNursingExams.filter(this.value)" placeholder="Search exams…"><div id="examCatalog">'+Array.from(banks.values()).filter(allowed).map(b=>'<button class="exam-link" data-exam-title="'+safe(b.title.toLowerCase())+'" onclick="CoreNursingExams.open(\''+b.itemId+'\')">'+safe(b.title)+'<small>'+b.exams.map(e=>safe(label(e.stage))+': '+e.questionCount+' questions'+(stageResult(b,e.stage)?' · '+safe(stageResult(b,e.stage)):'')).join(' · ')+'</small></button>').join('')+'</div></div>';
       session.innerHTML='';return;
     }
     const bank=banks.get(selected);if(!bank)return;
@@ -72,7 +78,7 @@
     const r=record(bank.itemId),remaining=Core.readingRemaining(r,bank.readingSections);
     const startButtons=bank.exams.map(form=>{
       const access=Core.eligible(state(),bank.itemId,form.stage,bank.readingSections,now()),stale=changed(bank);
-      return '<div class="exam-start"><h3>'+safe(label(form.stage))+'</h3><p>'+form.questionCount+' questions · '+(form.stage==='advanced'?'Total time: '+(form.questionCount*90)+' seconds (90 seconds per question). Score must be above 90%.':'Untimed. At least 90% passes. The same form is used on retake.')+'</p><button '+(!access.ok||stale?'disabled':'')+' onclick="CoreNursingExams.start(\''+form.stage+'\')">Start '+safe(label(form.stage).toLowerCase())+'</button>'+(!access.ok?'<p class="note">'+safe(access.reason)+'</p>':'')+'</div>';
+      return '<div class="exam-start"><h3>'+safe(label(form.stage))+(stageResult(bank,form.stage)?' · '+safe(stageResult(bank,form.stage)):'')+'</h3><p>'+form.questionCount+' questions · '+(form.stage==='advanced'?'Total time: '+(form.questionCount*90)+' seconds (90 seconds per question). Score must be above 90%.':'Untimed. At least 90% passes. The same form is used on retake.')+'</p><button '+(!access.ok||stale?'disabled':'')+' onclick="CoreNursingExams.start(\''+form.stage+'\')">Start '+safe(label(form.stage).toLowerCase())+'</button>'+(!access.ok?'<p class="note">'+safe(access.reason)+(access.unlockAt?' <span class="exam-cooldown" data-unlock-at="'+access.unlockAt+'">Available '+safe(date(access.unlockAt))+'.</span>':'')+'</p>':'')+'</div>';
     }).join('');
     const points=new Map();for(const form of bank.exams)for(const q of form.questions)for(const p of q.learningPointIds)points.set(p,q.point);
     const shown=new Set(r.attempts.flatMap(a=>a.shownQuestionIds||[]));const tested=new Set();for(const e of bank.exams)for(const q of e.questions)if(shown.has(q.id))q.learningPointIds.forEach(p=>tested.add(p));
@@ -91,7 +97,11 @@
   }
   function expired(){const a=state().active;if(a?.deadline&&now()>=a.deadline){submit(true);return true}return false}
   function tick(){
-    const a=state().active;if(!a)return;
+    const a=state().active;if(!a){
+      const lock=document.querySelector('.exam-cooldown');
+      if(lock&&Number(lock.dataset.unlockAt)<=now()&&!resultView&&!safetyMode)render();
+      return;
+    }
     if(expired())return;
     const node=byId('examTimer');if(node){const left=a.deadline?Math.max(0,Math.ceil((a.deadline-now())/1000)):null;node.textContent=left===null?'Untimed':Math.floor(left/60)+':'+String(left%60).padStart(2,'0')+' remaining'}
   }
@@ -111,7 +121,7 @@
   }
   function renderResult(container,bank){
     const {attempt,form,result}=resultView;
-    container.innerHTML='<div class="panel"><h2>'+safe(label(attempt.stage))+' result</h2><p class="exam-score">'+result.correct+'/'+result.total+' · '+result.percent.toFixed(1)+'%</p><p>'+(result.passed?(attempt.completedAt?safe(label(attempt.stage))+' passed.':'Score passed. Safety follow-up required.'):safe(label(attempt.stage))+' below passing score.')+'</p>'+(result.below65?'<p>Before another attempt, mark every section as read again.</p>':'')+(attempt.expired?'<p>The advanced exam time expired.</p>':'')+'<button onclick="CoreNursingExams.reviewItem()">Return to material and exams</button><p class="note">The pass decision uses the exact score, before rounding. '+result.review.length+' questions flagged for review.</p></div><div class="panel"><h3>Answers and explanations</h3>'+form.questions.map((q,i)=>feedback(q,result.responses[i])).join('')+'</div>';
+    container.innerHTML='<div class="panel"><h2>'+safe(label(attempt.stage))+' result</h2><p class="exam-score">'+result.correct+'/'+result.total+' · '+result.percent.toFixed(1)+'%</p><p>'+(result.passed?(attempt.completedAt?safe(label(attempt.stage))+' passed.':'Score passed. Safety follow-up required.'):safe(label(attempt.stage))+' below passing score.')+'</p>'+(result.below65?'<p>Before another attempt, mark every section as read again.</p>':'')+(!result.passed&&attempt.stage==='advanced'?'<p>Advanced exam locked for 24 hours. Available '+safe(date(attempt.finishedAt+Core.DAY))+'.</p>':'')+(attempt.expired?'<p>The advanced exam time expired.</p>':'')+'<button onclick="CoreNursingExams.reviewItem()">Return to material and exams</button><p class="note">The pass decision uses the exact score, before rounding. '+result.review.length+' questions flagged for review.</p></div><div class="panel"><h3>Answers and explanations</h3>'+form.questions.map((q,i)=>feedback(q,result.responses[i])).join('')+'</div>';
   }
   function renderSafety(container,bank){
     const pending=record(bank.itemId).pendingSafety;

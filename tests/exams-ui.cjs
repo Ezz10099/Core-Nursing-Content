@@ -28,7 +28,9 @@ assert(d.querySelector('#examTimer').textContent.includes('Untimed'));
 const first=state(w).exams.active.form.questions[0];w.CoreNursingExams.unsure(true);answerAll(w);w.CoreNursingExams.submit();
 let saved=state(w);assert(saved.exams.items['ccu-heparin-ufh'].attempts[0].passed);assert.equal(saved.attempts.length,1);assert.deepEqual(saved.reading,{'med:heparin':'read'});
 assert(d.querySelector('.exam-feedback'));assert(d.querySelector('#examSession').textContent.includes('Standard exam passed.'));
-w.CoreNursingExams.reviewItem();w.CoreNursingExams.start('advanced');assert(state(w).exams.active.deadline);
+w.CoreNursingExams.reviewItem();assert(d.querySelector('.exam-start h3').textContent.includes('Standard exam · Passed'));
+w.CoreNursingExams.catalog();assert([...d.querySelectorAll('.exam-link')].some(n=>n.textContent.includes('HEPARIN')&&n.textContent.includes('Standard exam:')&&n.textContent.includes('Passed')));
+w.CoreNursingExams.open('heparin');w.CoreNursingExams.start('advanced');assert(state(w).exams.active.deadline);
 const deadline=state(w).exams.active.deadline,backup=JSON.stringify(state(w));w.close();w=boot(backup);d=w.document;
 assert.equal(state(w).exams.active.deadline,deadline);w.showTab('practice');assert(d.querySelector('#examTimer').textContent.includes('remaining'));
 answerAll(w);w.CoreNursingExams.submit();saved=state(w);let r=saved.exams.items['ccu-heparin-ufh'];assert(r.attempts.at(-1).passed);assert.equal(r.due.stage,'7-day');
@@ -39,6 +41,16 @@ assert.equal(state(w).exams.active,null);r=state(w).exams.items['ccu-heparin-ufh
 w.CoreNursingExams.open('heparin');assert(d.querySelector('#examSession').textContent.includes('7 sections must be marked as read again'));
 const bank=w.CoreNursingExamData.banks.find(b=>b.itemId==='ccu-heparin-ufh');for(const section of bank.readingSections)w.CoreNursingExams.read(section.id);
 assert.equal(w.CoreNursingExamCore.readingRemaining(state(w).exams.items[bank.itemId],bank.readingSections).length,0);
+// A failed/expired advanced exam stays locked after rereading, safety checks and reload.
+w.CoreNursingExams.safety();
+for(const pending of state(w).exams.items[bank.itemId].pendingSafety){const q=pending.question;w.CoreNursingExams.followupAnswer(q.id,q.answerKey??q.answer??q.acceptedAnswers?.[0])}
+w.CoreNursingExams.submitSafety();
+assert(d.querySelector('.exam-cooldown'));assert(d.querySelector('#examSession').textContent.includes('24 hours'));
+assert([...d.querySelectorAll('.exam-start')].find(n=>n.textContent.includes('Advanced exam')).querySelector('button').disabled);
+const cooldownBackup=JSON.stringify(state(w));w.close();w=boot(cooldownBackup);d=w.document;w.CoreNursingExams.open('heparin');
+assert(d.querySelector('.exam-cooldown'));w.CoreNursingExams.start('advanced');assert.equal(state(w).exams.active,null);
+assert([...d.querySelectorAll('.exam-start h3')].some(n=>n.textContent==='Advanced exam · Passed'),'Historical passes remain clearly labeled after a later failure');
+
 // Old backups, new backups, unknown material records, and reset all remain explicit.
 let exported;w.CoreNursingAndroid={saveBackup:data=>exported=data};w.exportProgress();assert(JSON.parse(exported).exams.items[bank.itemId].attempts.length===3);
 w.FileReader=class{readAsText(file){this.result=file.text;this.onload()}};
