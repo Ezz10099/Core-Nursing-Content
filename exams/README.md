@@ -10,7 +10,7 @@ These remain **draft question banks**. The app provides standard/advanced exam s
 
 - [Generated catalogue](generated/catalog.json): item IDs, form IDs, question counts, source hash, and file hashes.
 - `generated/banks-01.json` through `generated/banks-05.json`: exam questions, keys, explanations, source references, safety flags, and scoring/timing metadata.
-- [Coverage map](generated/coverage.json): 826 authored learning points linked to actual scored questions. It explicitly distinguishes this map from exhaustive source coverage and from learner exposure.
+- [Coverage map](generated/coverage.json): 763 authored learning points linked to actual scored questions. It explicitly distinguishes this map from exhaustive source coverage and from learner exposure.
 - [Sources](sources.json): taught-content provenance, retrieved primary labels/guidelines, selected verification notes, and evidence limitations. Retrieving a label is not clinical approval of every question.
 - [Exclusions and source issues](authoring/exclusions.json): administrative/background exclusions and the DCM classification ambiguity that was not used for a misleading key.
 - [Partial source review](authoring/coverage-review.json): 21 additional required points identified in seven medication entries, bound to exact source hashes and scored questions. No material is certified fully reviewed; stale source bindings or missing questions fail the build.
@@ -41,7 +41,7 @@ An advanced pass schedules the 7-day due date; later-stage date/retry logic is c
 
 The editable baseline is `authoring/retention-questions.json`. It binds questions to existing taught medication concepts and lesson sections. Standard and advanced forms, IDs and scoring are preserved. The baseline does not wait for markings. Later shared passages can inform revisions to the relevant retest; the complete material remains its source. No private local markings were retrieved or published.
 
-These forms test delayed recall, distinctions, recognition, first actions and reassessment using different stems and examples. They are not a higher difficulty tier than advanced exams. Counts range from two to eight with material length and selected points. With fewer than ten questions, the agreed above-90% rule requires all answers correct. A short retest does not test every source point, and a finite form can repeat on later attempts.
+These forms test delayed recall, distinctions, recognition, first actions and reassessment using different stems and examples. They are not a higher difficulty tier than advanced exams. Counts range from two to seven with material length and selected points. With fewer than ten questions, the agreed above-90% rule requires all answers correct. A short retest does not test every source point, and a finite form can repeat on later attempts.
 
 For later revisions, review the source and current primary evidence, retain IDs for unchanged points, rebuild bank/runtime data, increment bank/runtime versions, then publish a verified signed release. Active attempts retain their saved question snapshot. Updating a form does not recalculate history, reading records, pass dates or due dates.
 

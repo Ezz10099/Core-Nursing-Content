@@ -3069,7 +3069,7 @@
         "sections": [
           1
         ],
-        "point": "Distinguish unstable angina from infarction by myocardial injury.",
+        "point": "Unstable angina is ischemia without biomarker evidence of necrosis.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3098,7 +3098,7 @@
         "sections": [
           1
         ],
-        "point": "NSTEMI can occur without persistent ST elevation.",
+        "point": "NSTEMI does not require persistent ST elevation.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3129,7 +3129,7 @@
           3,
           4
         ],
-        "point": "Escalate concerning ischemia without waiting for biomarkers.",
+        "point": "Do not delay escalation of concerning ischemia while awaiting biomarkers.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -3158,7 +3158,7 @@
         "sections": [
           3
         ],
-        "point": "A 12-lead ECG supports prompt ACS assessment.",
+        "point": "Initial ACS assessment includes vitals, monitoring, prompt ECG, access, and escalation.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3191,7 +3191,7 @@
           1,
           3
         ],
-        "point": "Recognize AV dissociation rather than conducted sinus bradycardia.",
+        "point": "Identify AV dissociation on ECG.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3221,7 +3221,7 @@
           2,
           4
         ],
-        "point": "Poor perfusion in CHB requires rapid escalation and pacing readiness.",
+        "point": "Escalate symptomatic CHB and prepare for pacing.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -3250,7 +3250,7 @@
         "sections": [
           5
         ],
-        "point": "Review rate-slowing drugs in CHB assessment.",
+        "point": "Review reversible contributors including rate-slowing medicines and electrolyte problems.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3282,7 +3282,7 @@
           0,
           1
         ],
-        "point": "Distinguish physical electrodes from derived ECG leads.",
+        "point": "Ten electrodes can generate twelve derived views.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3312,7 +3312,7 @@
           2,
           5
         ],
-        "point": "Place V1 and V2 at the fourth intercostal space.",
+        "point": "High V1/V2 placement can produce a misleading tracing.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3341,7 +3341,7 @@
         "sections": [
           2
         ],
-        "point": "V5 and V6 stay horizontally level with V4.",
+        "point": "V5 and V6 share V4’s horizontal level.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3370,7 +3370,7 @@
         "sections": [
           3
         ],
-        "point": "The T wave represents ventricular repolarization.",
+        "point": "T wave electrical meaning.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3399,7 +3399,7 @@
         "sections": [
           4
         ],
-        "point": "Use the stated IEC limb-electrode convention.",
+        "point": "IEC RL/N color.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3431,7 +3431,7 @@
           0,
           2
         ],
-        "point": "Telemetry is rhythm monitoring rather than diagnostic 12-lead ECG.",
+        "point": "Telemetry monitoring and diagnostic 12-lead ECG have different roles.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3460,7 +3460,7 @@
         "sections": [
           2
         ],
-        "point": "Pleth reflects pulsatile blood flow rather than electrical activity.",
+        "point": "ECG and pleth arise from different physiological signals.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3489,7 +3489,7 @@
         "sections": [
           4
         ],
-        "point": "Estimate rate from QRS count on a six-second strip.",
+        "point": "Estimate rate from a six-second strip.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3518,9 +3518,9 @@
         "sections": [
           5
         ],
-        "point": "Check the patient and pulse before treating suspected artifact.",
+        "point": "Assess the patient and pulse when a tracing may be artifact.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "The monitor appears chaotic while the patient talks normally with a strong regular pulse. What comes first?",
         "correct": 0,
@@ -3550,9 +3550,9 @@
           0,
           3
         ],
-        "point": "Pulse status changes the VT treatment pathway.",
+        "point": "Pulse status separates pulseless VT from pulse-present VT management.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "Why must pulse status be checked promptly when VT is seen?",
         "correct": 0,
@@ -3581,7 +3581,7 @@
           2,
           4
         ],
-        "point": "PEA is non-shockable organized electrical activity without a pulse.",
+        "point": "PEA is electrical activity without a palpable pulse.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3611,7 +3611,7 @@
           1,
           2
         ],
-        "point": "Distinguish shockable from non-shockable arrest.",
+        "point": "VF and pulseless VT are shockable arrest rhythms.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3643,7 +3643,7 @@
           2,
           3
         ],
-        "point": "Synchronize a shock to avoid the vulnerable T-wave period.",
+        "point": "Synchronization avoids the vulnerable repolarization period.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3672,9 +3672,9 @@
         "sections": [
           4
         ],
-        "point": "Polymorphic VT requiring shock uses an unsynchronized shock.",
+        "point": "Polymorphic VT may require unsynchronized shock.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "Polymorphic VT requires an immediate shock. Why is reliable synchronization problematic?",
         "correct": 0,
@@ -3701,9 +3701,9 @@
         "sections": [
           6
         ],
-        "point": "Confirm mechanical capture as well as electrical capture.",
+        "point": "Confirm electrical and mechanical capture.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "Pacing spikes are followed by QRS complexes, but the patient remains hypotensive. What must be checked?",
         "correct": 0,
@@ -3732,7 +3732,7 @@
           2,
           5
         ],
-        "point": "Choose electrical treatment using pulse and rate-related instability.",
+        "point": "Pacing supports dangerous symptomatic bradycardia/high-grade block.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3764,7 +3764,7 @@
           0,
           1
         ],
-        "point": "Assess the patient with ABCDE during sudden deterioration.",
+        "point": "Use focused ABCDE assessment to identify immediate problems.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3794,7 +3794,7 @@
           2,
           3
         ],
-        "point": "New shock signs require prompt escalation.",
+        "point": "Recognize sudden clinical red flags.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -3824,7 +3824,7 @@
           0,
           3
         ],
-        "point": "Reassess after intervention rather than assuming benefit.",
+        "point": "Reassess after interventions.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3856,7 +3856,7 @@
           0,
           1
         ],
-        "point": "Weak pump function can cause organ hypoperfusion.",
+        "point": "Cardiogenic shock is pump failure with organ hypoperfusion.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3886,9 +3886,9 @@
           4,
           5
         ],
-        "point": "Large automatic fluid boluses can worsen pump-failure congestion.",
+        "point": "A large automatic fluid bolus may worsen pulmonary edema in pump failure.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "A hypotensive patient has weak pump function and pulmonary crackles. Why must a large fluid bolus not be assumed appropriate?",
         "correct": 0,
@@ -3915,7 +3915,7 @@
         "sections": [
           5
         ],
-        "point": "Use history and the whole examination to distinguish shock patterns.",
+        "point": "Differentiate pump failure from volume-loss patterns using the full picture.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3944,7 +3944,7 @@
         "sections": [
           3
         ],
-        "point": "Track organ perfusion alongside BP in shock.",
+        "point": "A BP value must be interpreted with organ perfusion.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -3977,7 +3977,7 @@
           1,
           2
         ],
-        "point": "Distinguish vascular pressure support from contractility support.",
+        "point": "Pressure and pump support may be combined.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4006,7 +4006,7 @@
         "sections": [
           4
         ],
-        "point": "Assess perfusion and rhythm during vasoactive treatment.",
+        "point": "Monitor rhythm, pressure, urine output, and peripheral perfusion.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4035,9 +4035,9 @@
         "sections": [
           5
         ],
-        "point": "Infusion rates depend on dose and concentration.",
+        "point": "mL/hour depends on the ordered dose and prepared concentration.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "Why is memorizing one universal mL/hour rate unsafe for vasoactive infusions?",
         "correct": 0,
@@ -4067,7 +4067,7 @@
           0,
           4
         ],
-        "point": "Hyperkalemia with ECG change needs urgent monitoring and escalation.",
+        "point": "Severe high potassium can widen QRS and produce bradyarrhythmia/arrest.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -4096,7 +4096,7 @@
         "sections": [
           1
         ],
-        "point": "Low magnesium can make hypokalemia harder to correct.",
+        "point": "Low magnesium can contribute to ventricular arrhythmia and refractory hypokalemia.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4125,7 +4125,7 @@
         "sections": [
           2
         ],
-        "point": "Calcium abnormalities can change the QT interval.",
+        "point": "Calcium affects QT in opposite directions when low or high.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4154,7 +4154,7 @@
         "sections": [
           4
         ],
-        "point": "Never give potassium as a rapid IV push.",
+        "point": "Never give IV potassium as a rapid IV push.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -4187,7 +4187,7 @@
           1,
           2
         ],
-        "point": "Judge decongestion by the patient's respiratory and fluid response.",
+        "point": "Evaluate breathing and edema, not urine volume alone.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4217,7 +4217,7 @@
           3,
           4
         ],
-        "point": "Monitor BP, renal function and electrolytes during diuresis.",
+        "point": "Excess diuresis can cause volume depletion, hypotension, and renal deterioration.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4246,7 +4246,7 @@
         "sections": [
           5
         ],
-        "point": "New ectopy during loop diuresis prompts K/Mg review.",
+        "point": "New ectopy during diuresis can be electrolyte-related.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4278,7 +4278,7 @@
           1,
           2
         ],
-        "point": "Distinguish congestion from poor perfusion in HF.",
+        "point": "Congestion and poor perfusion can coexist.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4307,7 +4307,7 @@
         "sections": [
           3
         ],
-        "point": "Left-sided congestion affects lungs; right-sided congestion affects systemic veins.",
+        "point": "Left and right ventricular failure produce different backup patterns.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4365,7 +4365,7 @@
         "sections": [
           5
         ],
-        "point": "Escalate acute pulmonary edema or worsening perfusion.",
+        "point": "Acute respiratory or perfusion deterioration in HF needs escalation.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -4396,7 +4396,7 @@
         "sections": [
           0
         ],
-        "point": "Dilated ventricles with weak contraction can lower cardiac output.",
+        "point": "DCM has ventricular dilation and weak systolic contraction.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4426,7 +4426,7 @@
           1,
           3
         ],
-        "point": "Monitor DCM for HF, rhythm problems and low-output deterioration.",
+        "point": "Track the clinical weak-pump consequences.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4459,7 +4459,7 @@
           1,
           2
         ],
-        "point": "MI is myocardial death from ischemia within the broader IHD spectrum.",
+        "point": "The relationship is broad disease versus a specific necrotic event.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4489,7 +4489,7 @@
           0,
           2
         ],
-        "point": "Stable exertional angina does not itself establish infarction.",
+        "point": "Not every IHD presentation is an MI.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4521,7 +4521,7 @@
           0,
           1
         ],
-        "point": "Assess distal perfusion, sensation and movement below the injury.",
+        "point": "Assess distal blood supply and nerve function below an injury/immobilization.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4552,7 +4552,7 @@
           3,
           4
         ],
-        "point": "A palpable pulse does not exclude compartment syndrome.",
+        "point": "A palpable pulse does not rule out compartment syndrome.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -4582,7 +4582,7 @@
           5,
           6
         ],
-        "point": "Recognize and escalate deterioration within supervised intern scope.",
+        "point": "Escalate deterioration within supervised intern scope.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -4612,7 +4612,7 @@
           1,
           3
         ],
-        "point": "New sensory or motor change strengthens neurovascular concern.",
+        "point": "Pain, circulation, sensation, movement, and swelling form the focused check.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4645,9 +4645,9 @@
           2,
           3
         ],
-        "point": "Check the limb before the fixation hardware.",
+        "point": "Assess the limb before focusing on hardware.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "At the bedside of a patient with an external fixator, what should be checked first?",
         "correct": 0,
@@ -4675,7 +4675,7 @@
           4,
           5
         ],
-        "point": "Protect and escalate a loose frame rather than adjusting it independently.",
+        "point": "Loose or broken hardware needs protection and escalation, not independent adjustment.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -4705,7 +4705,7 @@
           6,
           7
         ],
-        "point": "Assess spreading pin-site inflammation and follow authorized care.",
+        "point": "New pin-site redness/drainage/fever can indicate infection.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4734,7 +4734,7 @@
         "sections": [
           8
         ],
-        "point": "Document and reassess after reporting a limb or frame problem.",
+        "point": "Assess the whole patient and wound, report deterioration, document, and reassess.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4766,7 +4766,7 @@
           0,
           1
         ],
-        "point": "Identify the TSF as a circular hexapod external fixator.",
+        "point": "The principal hexapod arrangement has six adjustable struts.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4795,7 +4795,7 @@
         "sections": [
           3
         ],
-        "point": "TSF correction follows an individualized written schedule.",
+        "point": "Correction follows a surgeon-planned individualized schedule.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4826,7 +4826,7 @@
           5,
           7
         ],
-        "point": "Treat new TSF neurovascular deterioration as urgent.",
+        "point": "Distal neurovascular assessment precedes frame-focused reassurance.",
         "stage": "7-day",
         "criticalForSafety": true,
         "format": "single-best-answer",
@@ -4856,7 +4856,7 @@
           6,
           9
         ],
-        "point": "Weight-bearing and hardware changes require the local prescribed plan.",
+        "point": "Weight bearing and wound/pin care follow prescribed orders.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4885,7 +4885,7 @@
         "sections": [
           8
         ],
-        "point": "Record reassessment and comparison to the neurovascular baseline.",
+        "point": "Document time, change, baseline comparison, notification, instructions, and response.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4918,7 +4918,7 @@
           1,
           5
         ],
-        "point": "Persistent deep pain and drainage can indicate bone infection.",
+        "point": "Recognize persistent deep pain, drainage, poor healing, and inflammation.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
@@ -4948,9 +4948,9 @@
           2,
           3
         ],
-        "point": "Assess systemic deterioration, wound and limb status in suspected bone infection.",
+        "point": "Escalate systemic deterioration or worsening infection/hardware problems.",
         "stage": "7-day",
-        "criticalForSafety": false,
+        "criticalForSafety": true,
         "format": "single-best-answer",
         "stem": "A patient with a draining wound becomes unwell with worsening pain. What should the nurse prioritize?",
         "correct": 0,
@@ -4977,7 +4977,7 @@
         "sections": [
           4
         ],
-        "point": "Osteomyelitis may require antibiotics and surgical source control.",
+        "point": "Treatment may include prolonged antibiotics and surgery/debridement.",
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",

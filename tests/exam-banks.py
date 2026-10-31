@@ -87,6 +87,8 @@ class ExamBanks(unittest.TestCase):
             standard, advanced, retention = bank['exams']
             std_stems = {q['stem'] for q in standard['questions']}
             self.assertFalse(std_stems & {q['stem'] for q in advanced['questions']}, bank['itemId'])
+            prior_points={p for e in (standard,advanced) for q in e['questions'] for p in q['learningPointIds']}
+            self.assertTrue(all(set(q['learningPointIds'])<=prior_points for q in retention['questions']))
             prior = std_stems | {q['stem'] for q in advanced['questions']}
             self.assertFalse(prior & {q['stem'] for q in retention['questions']}, bank['itemId'])
             for exam in bank['exams']:

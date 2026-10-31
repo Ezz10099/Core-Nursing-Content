@@ -10934,7 +10934,7 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "point": "Distinguish unstable angina from infarction by myocardial injury.",
+              "point": "Unstable angina is ischemia without biomarker evidence of necrosis.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "A patient has acute ischemic symptoms but no biomarker evidence of myocardial necrosis after appropriate assessment. Which ACS category fits that distinction?",
@@ -10970,28 +10970,28 @@
                   "textSha256": "250b5c927a91a589afe0d2d6f0a4682cbb13d52a39dc97178cc21cbbd8435e11"
                 }
               ],
-              "id": "ccu-lesson-01-acs--7-day--point-0c668e86d1d3",
+              "id": "ccu-lesson-01-acs--7-day--point-7092cc8eea66",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-01-acs::point-0c668e86d1d3"
+                "ccu-lesson-01-acs::point-7092cc8eea66"
               ],
               "answerKey": "A"
             },
             {
-              "point": "NSTEMI can occur without persistent ST elevation.",
+              "point": "NSTEMI does not require persistent ST elevation.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Ischemic symptoms accompany myocardial injury, but there is no persistent ST elevation. Which interpretation is appropriate?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Myocardial infarction is excluded",
-                  "explanation": "That would incorrectly exclude NSTEMI."
+                  "text": "Only stable angina is possible",
+                  "explanation": "Established myocardial injury is not explained by stable angina alone."
                 },
                 {
                   "id": "B",
-                  "text": "Only stable angina is possible",
-                  "explanation": "Established myocardial injury is not explained by stable angina alone."
+                  "text": "Myocardial infarction is excluded",
+                  "explanation": "That would incorrectly exclude NSTEMI."
                 },
                 {
                   "id": "C",
@@ -11014,15 +11014,15 @@
                   "textSha256": "250b5c927a91a589afe0d2d6f0a4682cbb13d52a39dc97178cc21cbbd8435e11"
                 }
               ],
-              "id": "ccu-lesson-01-acs--7-day--point-99c1aed87c9b",
+              "id": "ccu-lesson-01-acs--7-day--point-003ec79aabe2",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-01-acs::point-99c1aed87c9b"
+                "ccu-lesson-01-acs::point-003ec79aabe2"
               ],
               "answerKey": "C"
             },
             {
-              "point": "Escalate concerning ischemia without waiting for biomarkers.",
+              "point": "Do not delay escalation of concerning ischemia while awaiting biomarkers.",
               "criticalForSafety": true,
               "format": "single-best-answer",
               "stem": "A patient develops chest pressure, sweating and a falling BP while troponin is pending. What takes priority?",
@@ -11039,13 +11039,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Completing routine discharge teaching first",
-                  "explanation": "Urgent clinical assessment takes priority."
+                  "text": "Waiting for the laboratory result before contacting the team",
+                  "explanation": "Delay is unsafe in an unstable ischemic presentation."
                 },
                 {
                   "id": "D",
-                  "text": "Waiting for the laboratory result before contacting the team",
-                  "explanation": "Delay is unsafe in an unstable ischemic presentation."
+                  "text": "Completing routine discharge teaching first",
+                  "explanation": "Urgent clinical assessment takes priority."
                 }
               ],
               "sourceRefs": [
@@ -11074,15 +11074,15 @@
                   "textSha256": "a6fadfe6d195959ecb717ca468a957c97cd8464fc493b3ed55eb73c342de0caf"
                 }
               ],
-              "id": "ccu-lesson-01-acs--7-day--point-a49d4323a7f3",
+              "id": "ccu-lesson-01-acs--7-day--point-dbf4e7e71650",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-01-acs::point-a49d4323a7f3"
+                "ccu-lesson-01-acs::point-dbf4e7e71650"
               ],
               "answerKey": "B"
             },
             {
-              "point": "A 12-lead ECG supports prompt ACS assessment.",
+              "point": "Initial ACS assessment includes vitals, monitoring, prompt ECG, access, and escalation.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Which investigation should be obtained promptly alongside bedside assessment when ACS is suspected?",
@@ -11118,10 +11118,10 @@
                   "textSha256": "5af4453d145d99770522e3d03c5192140b8d7921a234a820aa1347abd0a41fd7"
                 }
               ],
-              "id": "ccu-lesson-01-acs--7-day--point-c65d24112137",
+              "id": "ccu-lesson-01-acs--7-day--point-8ad4d83cf04b",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-01-acs::point-c65d24112137"
+                "ccu-lesson-01-acs::point-8ad4d83cf04b"
               ],
               "answerKey": "D"
             }
@@ -11590,7 +11590,7 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "point": "Recognize AV dissociation rather than conducted sinus bradycardia.",
+              "point": "Identify AV dissociation on ECG.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "A slow tracing shows regular P waves and regular QRS complexes at independent rates. Which explanation fits?",
@@ -11602,8 +11602,8 @@
                 },
                 {
                   "id": "B",
-                  "text": "The ventricles are electrically silent",
-                  "explanation": "QRS complexes are present."
+                  "text": "The pulse rate must equal the atrial rate",
+                  "explanation": "An independent ventricular escape rhythm can be much slower."
                 },
                 {
                   "id": "C",
@@ -11612,8 +11612,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "The pulse rate must equal the atrial rate",
-                  "explanation": "An independent ventricular escape rhythm can be much slower."
+                  "text": "The ventricles are electrically silent",
+                  "explanation": "QRS complexes are present."
                 }
               ],
               "sourceRefs": [
@@ -11642,23 +11642,23 @@
                   "textSha256": "aedf1bc705ec2da101003534e286ed22a3ff384fb9b4a9815b506e3cf487b992"
                 }
               ],
-              "id": "ccu-lesson-02-chb--7-day--point-c9ad47943326",
+              "id": "ccu-lesson-02-chb--7-day--point-7fe65b35a1cd",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-02-chb::point-c9ad47943326"
+                "ccu-lesson-02-chb::point-7fe65b35a1cd"
               ],
               "answerKey": "C"
             },
             {
-              "point": "Poor perfusion in CHB requires rapid escalation and pacing readiness.",
+              "point": "Escalate symptomatic CHB and prepare for pacing.",
               "criticalForSafety": true,
               "format": "single-best-answer",
               "stem": "A patient with complete heart block becomes confused and hypotensive. What should the nurse prioritize?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Use the P-wave rate to judge perfusion as adequate",
-                  "explanation": "The ventricular response and patient condition matter."
+                  "text": "Wait for the rhythm to become fast before calling",
+                  "explanation": "Severe bradycardia can already compromise output."
                 },
                 {
                   "id": "B",
@@ -11667,8 +11667,8 @@
                 },
                 {
                   "id": "C",
-                  "text": "Wait for the rhythm to become fast before calling",
-                  "explanation": "Severe bradycardia can already compromise output."
+                  "text": "Use the P-wave rate to judge perfusion as adequate",
+                  "explanation": "The ventricular response and patient condition matter."
                 },
                 {
                   "id": "D",
@@ -11694,23 +11694,23 @@
                   "textSha256": "e721c23ec122e7cb9ad74e1605902aad168e1b4dcaeb3bc52de15d97647920d9"
                 }
               ],
-              "id": "ccu-lesson-02-chb--7-day--point-b39e4a5330d9",
+              "id": "ccu-lesson-02-chb--7-day--point-d32e19bce8ab",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-02-chb::point-b39e4a5330d9"
+                "ccu-lesson-02-chb::point-d32e19bce8ab"
               ],
               "answerKey": "D"
             },
             {
-              "point": "Review rate-slowing drugs in CHB assessment.",
+              "point": "Review reversible contributors including rate-slowing medicines and electrolyte problems.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Which medication history is especially relevant when investigating new complete heart block?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A local oral antifungal alone",
-                  "explanation": "It is not the highlighted AV-node-slowing group."
+                  "text": "An occasional multivitamin alone",
+                  "explanation": "It does not establish nodal depression."
                 },
                 {
                   "id": "B",
@@ -11719,13 +11719,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "An occasional multivitamin alone",
-                  "explanation": "It does not establish nodal depression."
+                  "text": "A stool-softening regimen alone",
+                  "explanation": "It does not explain AV-conduction suppression."
                 },
                 {
                   "id": "D",
-                  "text": "A stool-softening regimen alone",
-                  "explanation": "It does not explain AV-conduction suppression."
+                  "text": "A local oral antifungal alone",
+                  "explanation": "It is not the highlighted AV-node-slowing group."
                 }
               ],
               "sourceRefs": [
@@ -11738,10 +11738,10 @@
                   "textSha256": "6240d457d0166d068dfeee22b65acc03ba8285b0e8a5467f0340fa74e4c45552"
                 }
               ],
-              "id": "ccu-lesson-02-chb--7-day--point-e2a09a39ba32",
+              "id": "ccu-lesson-02-chb--7-day--point-3ec24eb4fcd4",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-02-chb::point-e2a09a39ba32"
+                "ccu-lesson-02-chb::point-3ec24eb4fcd4"
               ],
               "answerKey": "B"
             }
@@ -12682,25 +12682,25 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "point": "Distinguish physical electrodes from derived ECG leads.",
+              "point": "Ten electrodes can generate twelve derived views.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "A complete diagnostic ECG is recorded using ten stickers. Why can it display twelve leads?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Leads are electrical views derived from the electrodes",
+                  "explanation": "The number of views differs from physical contacts."
+                },
+                {
+                  "id": "B",
                   "text": "Two stickers are missing from the recording",
                   "explanation": "Ten electrodes are the normal physical setup."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Each sticker must represent exactly one displayed lead",
                   "explanation": "That would incorrectly equate electrode and lead."
-                },
-                {
-                  "id": "C",
-                  "text": "Leads are electrical views derived from the electrodes",
-                  "explanation": "The number of views differs from physical contacts."
                 },
                 {
                   "id": "D",
@@ -12726,15 +12726,15 @@
                   "textSha256": "2a185af16ceb0cb6d6c447cd67a44f0f893fee0e7490c95169739ccea74a40a2"
                 }
               ],
-              "id": "ccu-lesson-03-12lead-ecg--7-day--point-aec216829ef8",
+              "id": "ccu-lesson-03-12lead-ecg--7-day--point-906efc4003a9",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-03-12lead-ecg::point-aec216829ef8"
+                "ccu-lesson-03-12lead-ecg::point-906efc4003a9"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
-              "point": "Place V1 and V2 at the fourth intercostal space.",
+              "point": "High V1/V2 placement can produce a misleading tracing.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "V1 and V2 have been placed in the second intercostal space. What should be corrected?",
@@ -12746,18 +12746,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Move both to the fifth space at the midaxillary line",
-                  "explanation": "That is not the correct V1/V2 position."
-                },
-                {
-                  "id": "C",
                   "text": "Move them to the same point as V4",
                   "explanation": "Each chest position has a defined anatomical location."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Keep them because only limb electrodes affect the tracing",
                   "explanation": "Chest electrode position affects the recorded views."
+                },
+                {
+                  "id": "D",
+                  "text": "Move both to the fifth space at the midaxillary line",
+                  "explanation": "That is not the correct V1/V2 position."
                 }
               ],
               "sourceRefs": [
@@ -12778,15 +12778,15 @@
                   "textSha256": "4421417733c26a9f2b473f5eacb9973b3da25de40286dc32ff2a58f10992d0e4"
                 }
               ],
-              "id": "ccu-lesson-03-12lead-ecg--7-day--point-51547b1eb5fb",
+              "id": "ccu-lesson-03-12lead-ecg--7-day--point-4d46dbadc4bf",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-03-12lead-ecg::point-51547b1eb5fb"
+                "ccu-lesson-03-12lead-ecg::point-4d46dbadc4bf"
               ],
               "answerKey": "A"
             },
             {
-              "point": "V5 and V6 stay horizontally level with V4.",
+              "point": "V5 and V6 share V4’s horizontal level.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "After finding V4, how should V5 and V6 be positioned?",
@@ -12798,8 +12798,8 @@
                 },
                 {
                   "id": "B",
-                  "text": "At V4's horizontal level along their specified axillary lines",
-                  "explanation": "Do not follow a descending rib to place them lower."
+                  "text": "Both halfway between V2 and V4",
+                  "explanation": "That describes V3's relationship, not V5/V6."
                 },
                 {
                   "id": "C",
@@ -12808,8 +12808,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "Both halfway between V2 and V4",
-                  "explanation": "That describes V3's relationship, not V5/V6."
+                  "text": "At V4's horizontal level along their specified axillary lines",
+                  "explanation": "Do not follow a descending rib to place them lower."
                 }
               ],
               "sourceRefs": [
@@ -12822,33 +12822,33 @@
                   "textSha256": "0787f291cb31460fe8919b63644dc528df0a78a66ec8015aa1a667917ebb9f60"
                 }
               ],
-              "id": "ccu-lesson-03-12lead-ecg--7-day--point-7508d12ec7ce",
+              "id": "ccu-lesson-03-12lead-ecg--7-day--point-9d000f77a6a7",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-03-12lead-ecg::point-7508d12ec7ce"
+                "ccu-lesson-03-12lead-ecg::point-9d000f77a6a7"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
-              "point": "The T wave represents ventricular repolarization.",
+              "point": "T wave electrical meaning.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Which waveform represents the ventricles recovering electrically after depolarization?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "T wave",
-                  "explanation": "It represents ventricular repolarization."
-                },
-                {
-                  "id": "B",
                   "text": "Pacing spike",
                   "explanation": "It represents an artificial electrical stimulus."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "P wave",
                   "explanation": "It represents atrial depolarization."
+                },
+                {
+                  "id": "C",
+                  "text": "T wave",
+                  "explanation": "It represents ventricular repolarization."
                 },
                 {
                   "id": "D",
@@ -12866,15 +12866,15 @@
                   "textSha256": "2dfd0f52680bd931cb25a615a741d683fe77e05cd6577f516af568ed00cdfff6"
                 }
               ],
-              "id": "ccu-lesson-03-12lead-ecg--7-day--point-7e307da72de2",
+              "id": "ccu-lesson-03-12lead-ecg--7-day--point-d45adee2c939",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-03-12lead-ecg::point-7e307da72de2"
+                "ccu-lesson-03-12lead-ecg::point-d45adee2c939"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
-              "point": "Use the stated IEC limb-electrode convention.",
+              "point": "IEC RL/N color.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Using the IEC colour convention, which electrode is the neutral right-leg connection?",
@@ -12886,18 +12886,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Black, RL/N",
+                  "explanation": "N denotes neutral in this convention."
+                },
+                {
+                  "id": "C",
                   "text": "Yellow, LA/L",
                   "explanation": "This is the left-arm connection."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Green, LL/F",
                   "explanation": "This is the left-leg or foot connection."
-                },
-                {
-                  "id": "D",
-                  "text": "Black, RL/N",
-                  "explanation": "N denotes neutral in this convention."
                 }
               ],
               "sourceRefs": [
@@ -12910,12 +12910,12 @@
                   "textSha256": "3f23b21b07bd817199b41189e34a4227bdbff6bafa11fa1f493dd849c8ab0e94"
                 }
               ],
-              "id": "ccu-lesson-03-12lead-ecg--7-day--point-0269d22ce622",
+              "id": "ccu-lesson-03-12lead-ecg--7-day--point-7aa70e65b26f",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-03-12lead-ecg::point-0269d22ce622"
+                "ccu-lesson-03-12lead-ecg::point-7aa70e65b26f"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             }
           ],
           "questionCount": 5
@@ -13368,20 +13368,20 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "point": "Telemetry is rhythm monitoring rather than diagnostic 12-lead ECG.",
+              "point": "Telemetry monitoring and diagnostic 12-lead ECG have different roles.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "A patient with new ischemic chest pain already has bedside telemetry. Which statement is correct?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Telemetry does not replace an indicated diagnostic 12-lead ECG",
-                  "explanation": "Continuous rhythm surveillance and diagnostic views have different roles."
+                  "text": "A displayed rate excludes myocardial ischemia",
+                  "explanation": "Rate alone cannot exclude ischemia."
                 },
                 {
                   "id": "B",
-                  "text": "A displayed rate excludes myocardial ischemia",
-                  "explanation": "Rate alone cannot exclude ischemia."
+                  "text": "Telemetry does not replace an indicated diagnostic 12-lead ECG",
+                  "explanation": "Continuous rhythm surveillance and diagnostic views have different roles."
                 },
                 {
                   "id": "C",
@@ -13412,38 +13412,38 @@
                   "textSha256": "4ec647db4124c5931e540e8d000f4d3453b95de9a54155408520b35c46ad8641"
                 }
               ],
-              "id": "ccu-lesson-04-telemetry--7-day--point-4e04ad12c6b2",
+              "id": "ccu-lesson-04-telemetry--7-day--point-3397423ac575",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-04-telemetry::point-4e04ad12c6b2"
+                "ccu-lesson-04-telemetry::point-3397423ac575"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
-              "point": "Pleth reflects pulsatile blood flow rather than electrical activity.",
+              "point": "ECG and pleth arise from different physiological signals.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "The pulse-oximeter pleth disappears while the ECG still displays complexes. What must be assessed?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Whether the ECG electrodes also generate the pleth",
-                  "explanation": "The pleth comes from the pulse-oximeter probe."
+                  "text": "Only the ECG print speed",
+                  "explanation": "Print speed does not establish circulation or probe contact."
                 },
                 {
                   "id": "B",
-                  "text": "The patient, pulse and probe/perfusion status",
-                  "explanation": "Electrical activity does not guarantee a usable peripheral pulse signal."
-                },
-                {
-                  "id": "C",
                   "text": "Whether every QRS guarantees a palpable pulse",
                   "explanation": "Electrical complexes can exist without effective circulation."
                 },
                 {
+                  "id": "C",
+                  "text": "Whether the ECG electrodes also generate the pleth",
+                  "explanation": "The pleth comes from the pulse-oximeter probe."
+                },
+                {
                   "id": "D",
-                  "text": "Only the ECG print speed",
-                  "explanation": "Print speed does not establish circulation or probe contact."
+                  "text": "The patient, pulse and probe/perfusion status",
+                  "explanation": "Electrical activity does not guarantee a usable peripheral pulse signal."
                 }
               ],
               "sourceRefs": [
@@ -13456,15 +13456,15 @@
                   "textSha256": "4ec647db4124c5931e540e8d000f4d3453b95de9a54155408520b35c46ad8641"
                 }
               ],
-              "id": "ccu-lesson-04-telemetry--7-day--point-dcfdc1b62431",
+              "id": "ccu-lesson-04-telemetry--7-day--point-340f7b7bf923",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-04-telemetry::point-dcfdc1b62431"
+                "ccu-lesson-04-telemetry::point-340f7b7bf923"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
-              "point": "Estimate rate from QRS count on a six-second strip.",
+              "point": "Estimate rate from a six-second strip.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "There are nine QRS complexes on a six-second rhythm strip. What is the approximate ventricular rate?",
@@ -13500,38 +13500,38 @@
                   "textSha256": "b4e30cce351cf0008d9af2c377f6bac10dc33b9d5acdac3c7ad003f7c2891fe1"
                 }
               ],
-              "id": "ccu-lesson-04-telemetry--7-day--point-0dce41e396e0",
+              "id": "ccu-lesson-04-telemetry--7-day--point-727538d3de4f",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-04-telemetry::point-0dce41e396e0"
+                "ccu-lesson-04-telemetry::point-727538d3de4f"
               ],
               "answerKey": "C"
             },
             {
-              "point": "Check the patient and pulse before treating suspected artifact.",
-              "criticalForSafety": false,
+              "point": "Assess the patient and pulse when a tracing may be artifact.",
+              "criticalForSafety": true,
               "format": "single-best-answer",
               "stem": "The monitor appears chaotic while the patient talks normally with a strong regular pulse. What comes first?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Assess the patient and check electrodes for artifact",
+                  "explanation": "Clinical findings and equipment assessment help avoid treating artifact."
+                },
+                {
+                  "id": "B",
                   "text": "Deliver a shock solely from the screen image",
                   "explanation": "A monitor appearance alone is not enough in this situation."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Disconnect all monitoring and leave",
                   "explanation": "The tracing still needs safe assessment and correction."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Declare cardiac arrest despite the strong pulse",
                   "explanation": "Arrest requires loss of effective circulation."
-                },
-                {
-                  "id": "D",
-                  "text": "Assess the patient and check electrodes for artifact",
-                  "explanation": "Clinical findings and equipment assessment help avoid treating artifact."
                 }
               ],
               "sourceRefs": [
@@ -13544,12 +13544,12 @@
                   "textSha256": "ae0ea36a992179303d6fce551cba94aa6b0ea3684b4af7e92a5c0fde3f4c3d9f"
                 }
               ],
-              "id": "ccu-lesson-04-telemetry--7-day--point-d4b75e9992c0",
+              "id": "ccu-lesson-04-telemetry--7-day--point-1b90d5368da5",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-04-telemetry::point-d4b75e9992c0"
+                "ccu-lesson-04-telemetry::point-1b90d5368da5"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             }
           ],
           "questionCount": 4
@@ -13946,30 +13946,30 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "point": "Pulse status changes the VT treatment pathway.",
-              "criticalForSafety": false,
+              "point": "Pulse status separates pulseless VT from pulse-present VT management.",
+              "criticalForSafety": true,
               "format": "single-best-answer",
               "stem": "Why must pulse status be checked promptly when VT is seen?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Pulseless VT and VT with a pulse use different pathways",
+                  "explanation": "Circulation determines arrest versus peri-arrest management."
+                },
+                {
+                  "id": "B",
                   "text": "VT always has a palpable pulse",
                   "explanation": "VT can be pulseless."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "VT never causes circulatory compromise",
                   "explanation": "VT can cause shock or arrest."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Every VT rhythm receives the same treatment",
                   "explanation": "Pulse and instability change treatment selection."
-                },
-                {
-                  "id": "D",
-                  "text": "Pulseless VT and VT with a pulse use different pathways",
-                  "explanation": "Circulation determines arrest versus peri-arrest management."
                 }
               ],
               "sourceRefs": [
@@ -13990,38 +13990,38 @@
                   "textSha256": "9847534df8b5393adadc7acd64832443bca1422264574c4eea3b3b53927e2646"
                 }
               ],
-              "id": "ccu-lesson-05-dangerous-rhythms--7-day--point-117c5c9b060c",
+              "id": "ccu-lesson-05-dangerous-rhythms--7-day--point-eed583a10922",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-05-dangerous-rhythms::point-117c5c9b060c"
+                "ccu-lesson-05-dangerous-rhythms::point-eed583a10922"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
-              "point": "PEA is non-shockable organized electrical activity without a pulse.",
+              "point": "PEA is electrical activity without a palpable pulse.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "An unresponsive patient has organized ECG complexes but no definite pulse. Which interpretation fits?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A stable perfusing rhythm",
-                  "explanation": "Electrical appearance does not prove perfusion."
-                },
-                {
-                  "id": "B",
                   "text": "Sinus bradycardia with adequate circulation",
                   "explanation": "The absence of a pulse excludes adequate circulation."
                 },
                 {
+                  "id": "B",
+                  "text": "Ventricular fibrillation",
+                  "explanation": "VF does not show organized complexes as described."
+                },
+                {
                   "id": "C",
-                  "text": "Pulseless electrical activity",
-                  "explanation": "PEA is defined by absent effective circulation despite electrical activity."
+                  "text": "A stable perfusing rhythm",
+                  "explanation": "Electrical appearance does not prove perfusion."
                 },
                 {
                   "id": "D",
-                  "text": "Ventricular fibrillation",
-                  "explanation": "VF does not show organized complexes as described."
+                  "text": "Pulseless electrical activity",
+                  "explanation": "PEA is defined by absent effective circulation despite electrical activity."
                 }
               ],
               "sourceRefs": [
@@ -14050,38 +14050,38 @@
                   "textSha256": "4d81f2cc661d50be4030f7f5af1d552bd1aed60da1686ab1d1a483b5cf6c7eac"
                 }
               ],
-              "id": "ccu-lesson-05-dangerous-rhythms--7-day--point-092dba70cc67",
+              "id": "ccu-lesson-05-dangerous-rhythms--7-day--point-f9fd36fa2920",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-05-dangerous-rhythms::point-092dba70cc67"
+                "ccu-lesson-05-dangerous-rhythms::point-f9fd36fa2920"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
-              "point": "Distinguish shockable from non-shockable arrest.",
+              "point": "VF and pulseless VT are shockable arrest rhythms.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Which pair should be selected as shockable cardiac-arrest rhythms?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "VF and pulseless VT",
-                  "explanation": "Both use the shockable arrest pathway."
+                  "text": "Asystole and VF",
+                  "explanation": "Only VF in this pair is shockable."
                 },
                 {
                   "id": "B",
-                  "text": "PEA and asystole",
-                  "explanation": "These are non-shockable arrest rhythms."
-                },
-                {
-                  "id": "C",
                   "text": "PEA and pulseless VT",
                   "explanation": "Only pulseless VT in this pair is shockable."
                 },
                 {
+                  "id": "C",
+                  "text": "VF and pulseless VT",
+                  "explanation": "Both use the shockable arrest pathway."
+                },
+                {
                   "id": "D",
-                  "text": "Asystole and VF",
-                  "explanation": "Only VF in this pair is shockable."
+                  "text": "PEA and asystole",
+                  "explanation": "These are non-shockable arrest rhythms."
                 }
               ],
               "sourceRefs": [
@@ -14102,12 +14102,12 @@
                   "textSha256": "b01d9575daa1184cfc1f17e05032ca76b7d1375fc492159176a1990fe091927d"
                 }
               ],
-              "id": "ccu-lesson-05-dangerous-rhythms--7-day--point-9b05111242b7",
+              "id": "ccu-lesson-05-dangerous-rhythms--7-day--point-0d5b961c439c",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-05-dangerous-rhythms::point-9b05111242b7"
+                "ccu-lesson-05-dangerous-rhythms::point-0d5b961c439c"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             }
           ],
           "questionCount": 3
@@ -14592,20 +14592,20 @@
           "retestPolicy": "different from standard",
           "questions": [
             {
-              "point": "Synchronize a shock to avoid the vulnerable T-wave period.",
+              "point": "Synchronization avoids the vulnerable repolarization period.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Why is synchronization used for indicated cardioversion of a tachyarrhythmia with a pulse?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "To convert every shock into pacing",
-                  "explanation": "Cardioversion and pacing are different interventions."
+                  "text": "To guarantee painless treatment without sedation",
+                  "explanation": "Synchronization does not provide analgesia or sedation."
                 },
                 {
                   "id": "B",
-                  "text": "To guarantee painless treatment without sedation",
-                  "explanation": "Synchronization does not provide analgesia or sedation."
+                  "text": "To convert every shock into pacing",
+                  "explanation": "Cardioversion and pacing are different interventions."
                 },
                 {
                   "id": "C",
@@ -14636,33 +14636,33 @@
                   "textSha256": "a46659cf8c11a98fc6a00fb71f32224af7518afefd507731070626b2cb255bf3"
                 }
               ],
-              "id": "ccu-lesson-06-electrical-treatment--7-day--point-e4f7c6c889fc",
+              "id": "ccu-lesson-06-electrical-treatment--7-day--point-91888987f923",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-06-electrical-treatment::point-e4f7c6c889fc"
+                "ccu-lesson-06-electrical-treatment::point-91888987f923"
               ],
               "answerKey": "C"
             },
             {
-              "point": "Polymorphic VT requiring shock uses an unsynchronized shock.",
-              "criticalForSafety": false,
+              "point": "Polymorphic VT may require unsynchronized shock.",
+              "criticalForSafety": true,
               "format": "single-best-answer",
               "stem": "Polymorphic VT requires an immediate shock. Why is reliable synchronization problematic?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "A pacing spike must be inserted before each shock",
+                  "explanation": "That is not the defining requirement."
+                },
+                {
+                  "id": "B",
                   "text": "The changing QRS pattern prevents dependable synchronization",
                   "explanation": "Use the indicated unsynchronized shock pathway."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Polymorphic VT is always a non-shockable rhythm",
                   "explanation": "It can require defibrillation."
-                },
-                {
-                  "id": "C",
-                  "text": "A pacing spike must be inserted before each shock",
-                  "explanation": "That is not the defining requirement."
                 },
                 {
                   "id": "D",
@@ -14680,38 +14680,38 @@
                   "textSha256": "e15426f37dc00724144e8bee334aa80992f366e9765fcbe5e9a243b294d23b13"
                 }
               ],
-              "id": "ccu-lesson-06-electrical-treatment--7-day--point-547debb8e86f",
+              "id": "ccu-lesson-06-electrical-treatment--7-day--point-897c24a18e0f",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-06-electrical-treatment::point-547debb8e86f"
+                "ccu-lesson-06-electrical-treatment::point-897c24a18e0f"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
-              "point": "Confirm mechanical capture as well as electrical capture.",
-              "criticalForSafety": false,
+              "point": "Confirm electrical and mechanical capture.",
+              "criticalForSafety": true,
               "format": "single-best-answer",
               "stem": "Pacing spikes are followed by QRS complexes, but the patient remains hypotensive. What must be checked?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Whether the spikes are visually symmetrical",
-                  "explanation": "Spike appearance does not prove output."
+                  "text": "A corresponding pulse and perfusion response",
+                  "explanation": "Electrical capture alone does not establish effective mechanical capture."
                 },
                 {
                   "id": "B",
-                  "text": "Whether the monitor displays the programmed pacing rate",
-                  "explanation": "A displayed rate does not guarantee perfusion."
-                },
-                {
-                  "id": "C",
                   "text": "Whether all further clinical checks can stop",
                   "explanation": "Persistent hypotension requires reassessment."
                 },
                 {
+                  "id": "C",
+                  "text": "Whether the monitor displays the programmed pacing rate",
+                  "explanation": "A displayed rate does not guarantee perfusion."
+                },
+                {
                   "id": "D",
-                  "text": "A corresponding pulse and perfusion response",
-                  "explanation": "Electrical capture alone does not establish effective mechanical capture."
+                  "text": "Whether the spikes are visually symmetrical",
+                  "explanation": "Spike appearance does not prove output."
                 }
               ],
               "sourceRefs": [
@@ -14724,38 +14724,38 @@
                   "textSha256": "17ad642178dbe5cddfe87f090bd5d12308712f2e03de45fbbdcbe6e80a4eec5f"
                 }
               ],
-              "id": "ccu-lesson-06-electrical-treatment--7-day--point-4f26b170b604",
+              "id": "ccu-lesson-06-electrical-treatment--7-day--point-c458bf987351",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-06-electrical-treatment::point-4f26b170b604"
+                "ccu-lesson-06-electrical-treatment::point-c458bf987351"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
-              "point": "Choose electrical treatment using pulse and rate-related instability.",
+              "point": "Pacing supports dangerous symptomatic bradycardia/high-grade block.",
               "criticalForSafety": false,
               "format": "single-best-answer",
               "stem": "Which electrical support best matches dangerous symptomatic bradycardia from high-grade block?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Routine defibrillation of a perfusing slow rhythm",
-                  "explanation": "Defibrillation is not routine treatment for this bradycardia."
+                  "text": "No intervention because a pulse is present",
+                  "explanation": "A pulse does not make severe symptomatic bradycardia safe."
                 },
                 {
                   "id": "B",
-                  "text": "Pacing",
-                  "explanation": "Repeated stimulation can support a dangerously slow ventricular response."
-                },
-                {
-                  "id": "C",
                   "text": "Synchronized cardioversion of the slow rhythm",
                   "explanation": "Cardioversion is used for selected tachyarrhythmias."
                 },
                 {
+                  "id": "C",
+                  "text": "Routine defibrillation of a perfusing slow rhythm",
+                  "explanation": "Defibrillation is not routine treatment for this bradycardia."
+                },
+                {
                   "id": "D",
-                  "text": "No intervention because a pulse is present",
-                  "explanation": "A pulse does not make severe symptomatic bradycardia safe."
+                  "text": "Pacing",
+                  "explanation": "Repeated stimulation can support a dangerously slow ventricular response."
                 }
               ],
               "sourceRefs": [
@@ -14784,12 +14784,12 @@
                   "textSha256": "f1bc67769316365f72a0aecb2636847f824e6ee681a48a633a5f0075ca52bd79"
                 }
               ],
-              "id": "ccu-lesson-06-electrical-treatment--7-day--point-2a28e785a158",
+              "id": "ccu-lesson-06-electrical-treatment--7-day--point-e0e64a4bf128",
               "points": 1,
               "learningPointIds": [
-                "ccu-lesson-06-electrical-treatment::point-2a28e785a158"
+                "ccu-lesson-06-electrical-treatment::point-e0e64a4bf128"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             }
           ],
           "questionCount": 4
