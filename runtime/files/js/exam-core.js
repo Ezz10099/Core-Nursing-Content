@@ -118,7 +118,7 @@
     const record=item(state,active.itemId),result=grade(active.form,active.answers,active.unsure);
     const attempt={id:active.itemId+'--attempt-'+now+'-'+record.attempts.length,stage:active.form.stage,formId:active.form.id,bankVersion:active.bankVersion,
       startedAt:active.startedAt,finishedAt:now,expired:!!active.deadline&&now>=active.deadline,correct:result.correct,total:result.total,passed:result.passed,
-      responses:result.responses,shownQuestionIds:active.shown.slice(),safetyMisses:result.safetyMisses,completedAt:null};
+      reviewQuestions:active.form.questions.filter(q=>result.review.includes(q.id)).map(clone),responses:result.responses,shownQuestionIds:active.shown.slice(),safetyMisses:result.safetyMisses,completedAt:null};
     record.attempts.push(attempt);
     if(result.below65)record.readingAfter=now;
     if(['7-day','21-day'].includes(attempt.stage)&&!attempt.passed)record.due={stage:attempt.stage,at:now+7*DAY};

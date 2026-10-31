@@ -36,8 +36,26 @@ w.CoreNursingExams.catalog();assert(!d.querySelector('#examsHub').hidden);assert
 w.CoreNursingExams.resume();w.CoreNursingExams.move(-1);answerAll(w);w.CoreNursingExams.submit();
 let saved=state(w);assert(saved.exams.items['ccu-heparin-ufh'].attempts[0].passed);assert.equal(saved.attempts.length,1);assert.deepEqual(saved.reading,{'med:heparin':'read'});
 assert(d.querySelector('.exam-feedback'));assert(d.querySelector('#examSession').textContent.includes('Standard exam passed.'));
+
+// Saved unsure answers remain accessible after closing the result, without changing history.
+let reviewWindow=boot(JSON.stringify(saved));
+const reviewHistory=JSON.stringify(state(reviewWindow).exams.items['ccu-heparin-ufh'].attempts);
+reviewWindow.CoreNursingExams.review();
+assert(reviewWindow.document.querySelector('.review-answer'));
+assert(reviewWindow.document.querySelector('.review-answer').textContent.includes('Unsure / guessed'));
+assert(reviewWindow.document.querySelector('.review-answer').textContent.includes(first.stem));
+reviewWindow.CoreNursingExams.reviewFilter('incorrect');
+assert.equal(reviewWindow.document.querySelectorAll('.review-answer').length,0);
+reviewWindow.CoreNursingExams.reviewFilter('unsure');
+assert(reviewWindow.document.querySelector('.review-answer'));
+assert.equal(JSON.stringify(state(reviewWindow).exams.items['ccu-heparin-ufh'].attempts),reviewHistory);
+assert.equal(state(reviewWindow).exams.items['ccu-heparin-ufh'].attempts[0].reviewQuestions.length,1);
+reviewWindow.CoreNursingExams.material('ccu-heparin-ufh');
+assert(!reviewWindow.document.querySelector('#library').classList.contains('hidden'));
+reviewWindow.close();
+
 w.CoreNursingExams.reviewItem();assert(d.querySelector('.exam-start h3').textContent.includes('Standard exam · Passed'));
-w.CoreNursingExams.catalog();assert([...d.querySelectorAll('.exam-link')].some(n=>n.textContent.includes('HEPARIN')&&n.textContent.includes('Standard exam:')&&n.textContent.includes('Passed')));
+w.CoreNursingExams.catalog();assert([...d.querySelectorAll('.exam-card')].some(n=>n.textContent.includes('HEPARIN')&&n.textContent.includes('Standard exam:')&&n.textContent.includes('Passed')));
 w.CoreNursingExams.open('heparin');w.CoreNursingExams.start('advanced');assert(state(w).exams.active.deadline);
 const deadline=state(w).exams.active.deadline,backup=JSON.stringify(state(w));w.close();w=boot(backup);d=w.document;
 assert.equal(state(w).exams.active.deadline,deadline);w.showTab('practice');assert(d.querySelector('#examSession').hidden);assert(d.querySelector('#continueExam'));
