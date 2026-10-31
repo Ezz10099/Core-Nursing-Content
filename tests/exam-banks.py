@@ -31,7 +31,7 @@ class ExamBanks(unittest.TestCase):
         self.assertEqual({b['itemId'] for b in BANKS}, expected)
         self.assertEqual(len(BANKS), len(expected))
         for bank in BANKS:
-            self.assertEqual([e['stage'] for e in bank['exams']], ['standard', 'advanced'])
+            self.assertEqual([e['stage'] for e in bank['exams']], ['standard', 'advanced', '7-day'])
             for exam in bank['exams']:
                 self.assertGreater(exam['questionCount'], 0)
                 self.assertEqual(exam['questionCount'], len(exam['questions']))
@@ -84,9 +84,13 @@ class ExamBanks(unittest.TestCase):
 
     def test_answer_position_balance_and_different_forms(self):
         for bank in BANKS:
-            standard, advanced = bank['exams']
+            standard, advanced, retention = bank['exams']
             std_stems = {q['stem'] for q in standard['questions']}
             self.assertFalse(std_stems & {q['stem'] for q in advanced['questions']}, bank['itemId'])
+            prior_points={p for e in (standard,advanced) for q in e['questions'] for p in q['learningPointIds']}
+            self.assertTrue(all(set(q['learningPointIds'])<=prior_points for q in retention['questions']))
+            prior = std_stems | {q['stem'] for q in advanced['questions']}
+            self.assertFalse(prior & {q['stem'] for q in retention['questions']}, bank['itemId'])
             for exam in bank['exams']:
                 count = Counter(q['answerKey'] for q in exam['questions'] if q['format'] == 'single-best-answer')
                 self.assertLessEqual(max([count[x] for x in 'ABCD']) - min([count[x] for x in 'ABCD']), 1)
@@ -95,7 +99,7 @@ class ExamBanks(unittest.TestCase):
         for bank in BANKS:
             for exam in bank['exams']:
                 advanced = exam['stage'] == 'advanced'
-                self.assertEqual(exam['passRule'], {'operator': '>' if advanced else '>=', 'percent': 90, 'roundBeforeComparison': False})
+                self.assertEqual(exam['passRule'], {'operator': '>=' if exam['stage'] == 'standard' else '>', 'percent': 90, 'roundBeforeComparison': False})
                 self.assertEqual(exam['timing']['secondsPerQuestion'], 90 if advanced else None)
                 self.assertEqual(exam['timing']['timed'], advanced)
                 self.assertEqual(exam['timing']['timerEnforcement'], 'persisted total deadline: 90 seconds multiplied by question count')
@@ -161,3 +165,4 @@ class ExamBanks(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

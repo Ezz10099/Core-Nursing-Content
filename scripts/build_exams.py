@@ -167,6 +167,7 @@ def build():
     evidence = load(ROOT / 'exams' / 'sources.json')
     exclusions = load(AUTHORING / 'exclusions.json')
     review = load(AUTHORING / 'coverage-review.json')
+    retention = load(AUTHORING / 'retention-questions.json')
     assert set(profiles['items']) == {item['id'] for item in medications}, 'Medication inventory changed; review profiles.'
     assert set(lessons) | {x['itemId'] for x in exclusions['items']} == {item['id'] for item in content['lessons']}, 'Lesson inventory changed.'
     assert not set(lessons) & {x['itemId'] for x in exclusions['items']}
@@ -175,15 +176,18 @@ def build():
     source_map = []
     for item in medications:
         profile = profiles['items'][item['id']]
-        by_stage = {'standard': core_questions(item, profile, profiles['families']), 'advanced': []}
+        by_stage = {'standard': core_questions(item, profile, profiles['families']), 'advanced': [], '7-day': []}
         for key in profile['concepts']:
             concept = concepts[key]
             fields = [field for field in MED_FIELDS if re.search(concept['anchor'], item.get(field, ''), re.I)]
             assert fields, f"No taught source anchor: {item['id']} / {key}"
             for stage in by_stage:
-                if not concept.get(stage):
+                retained = retention['medicationConcepts'].get(key) if stage == '7-day' else None
+                if stage == '7-day' and key in retention.get('medicationRestrictions', {}) and item['id'] not in retention['medicationRestrictions'][key]:
                     continue
-                question = copy.deepcopy(concept[stage])
+                if not (retained or concept.get(stage)):
+                    continue
+                question = copy.deepcopy(retained or concept[stage])
                 # Replace literal placeholders only; mathematical braces must survive.
                 for name in ('stem',):
                     question[name] = question[name].replace('{drug}', item['name'])
@@ -204,8 +208,9 @@ def build():
     for item in content['lessons']:
         if item['id'] not in lessons:
             continue
-        by_stage = {'standard': [], 'advanced': []}
-        for spec in lessons[item['id']]:
+        by_stage = {'standard': [], 'advanced': [], '7-day': []}
+        assert item['id'] in retention['lessonQuestions'], 'Missing 7-day lesson: ' + item['id']
+        for spec in lessons[item['id']] + retention['lessonQuestions'][item['id']]:
             refs = []
             for index in spec['sections']:
                 section = item['sections'][index]
@@ -286,13 +291,15 @@ def build():
         'limitations': ['Each listed point has a scored question. The inventory is not yet certified to include every required source fact.',
                         'A point appearing in a distractor, stem, or explanation does not receive additional coverage credit.',
                         'No learner exposure or pass is inferred from bank generation.']})
-    outputs['catalog.json'] = encoded({'schemaVersion': 1, 'bankVersion': 2, 'status': 'authoring draft',
+    outputs['catalog.json'] = encoded({'schemaVersion': 1, 'bankVersion': 3, 'status': 'authoring draft',
         'sourceContentVersion': content['contentVersion'], 'sourceContentSha256': hashlib.sha256(content_bytes).hexdigest(),
-        'generationInputs': ['content.json', 'exams/authoring/medication-profiles.json', 'exams/authoring/medication-concepts.json', 'exams/authoring/lesson-questions.json', 'exams/authoring/exclusions.json', 'exams/authoring/coverage-review.json', 'exams/sources.json'],
+        'generationInputs': ['content.json', 'exams/authoring/medication-profiles.json', 'exams/authoring/medication-concepts.json', 'exams/authoring/lesson-questions.json', 'exams/authoring/retention-questions.json', 'exams/authoring/exclusions.json', 'exams/authoring/coverage-review.json', 'exams/sources.json'],
         'counts': dict(counts, materials=len(banks), medications=len(medications), lessons=len(lessons), mappedLearningPoints=len(points)),
         'difficulty': {'standard': 'recognition, recall, and core interpretation', 'advanced': 'application, interactions, competing explanations, and calculation',
+                       '7-day': 'delayed recall, distinctions and clinical application using separately authored questions on taught material',
                        'calibration': 'not empirically calibrated'},
-        'appIntegration': 'Packaged for the draft standard/advanced exam interface. Scheduled-exam question sets are not yet generated.',
+        'appIntegration': 'Packaged for the draft standard/advanced and 7-day exam interface. The 21-day sets are not yet generated.',
+        'retentionPolicy': retention['selectionPolicy'],
         'entries': entries,
         'files': [{'path': name, 'sha256': digest(data)} for name, data in outputs.items()]})
     return outputs
@@ -323,3 +330,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

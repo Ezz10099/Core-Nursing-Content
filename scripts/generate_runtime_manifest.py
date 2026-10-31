@@ -10,7 +10,7 @@ OBJECTS = RUNTIME / "objects"
 MANIFEST = RUNTIME / "runtime-manifest.json"
 
 SCHEMA_VERSION = 2
-RUNTIME_VERSION = 29
+RUNTIME_VERSION = 30
 MIN_ENGINE_VERSION = 2
 
 def safe_path(rel: str) -> bool:
@@ -55,5 +55,6 @@ manifest = {
 }
 
 MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+
 
 

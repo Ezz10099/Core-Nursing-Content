@@ -457,6 +457,193 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-07-sudden-deterioration--7-day",
+          "itemId": "ccu-lesson-07-sudden-deterioration",
+          "itemType": "lesson",
+          "title": "Sudden Deterioration in CCU: What Do You Do First?",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Use focused ABCDE assessment to identify immediate problems.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A previously alert patient becomes confused and breathless. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Read the old discharge summary before assessing",
+                  "explanation": "Historical detail must not delay current assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait for a monitor alarm to confirm deterioration",
+                  "explanation": "Clinical deterioration may precede or occur without an alarm."
+                },
+                {
+                  "id": "C",
+                  "text": "Go to the bedside and perform an immediate ABCDE assessment",
+                  "explanation": "Start with the patient's current airway, breathing and circulation."
+                },
+                {
+                  "id": "D",
+                  "text": "Finish routine documentation before checking the patient",
+                  "explanation": "Urgent assessment takes priority."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-07-sudden-deterioration",
+                  "sectionIndex": 0,
+                  "label": "Core sequence",
+                  "textSha256": "10d0a9961877ae48eff6d6a9590b1f26cbaca181778c8e41a563bcfa9e9bb653"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-07-sudden-deterioration",
+                  "sectionIndex": 1,
+                  "label": "First 30–60 seconds",
+                  "textSha256": "3bf70126dadad40db18ae3445c4d0eefbaaca9d9171338689f3760cff2626f60"
+                }
+              ],
+              "id": "ccu-lesson-07-sudden-deterioration--7-day--point-d7b1a704bead",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-07-sudden-deterioration::point-d7b1a704bead"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "Recognize sudden clinical red flags.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "Which combination requires urgent escalation rather than routine observation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stable BP, normal alertness and unchanged breathing",
+                  "explanation": "This does not describe new deterioration."
+                },
+                {
+                  "id": "B",
+                  "text": "Unchanged chronic edema without new symptoms",
+                  "explanation": "This is less urgent than new shock signs."
+                },
+                {
+                  "id": "C",
+                  "text": "A request to adjust the pillow with stable observations",
+                  "explanation": "Comfort needs differ from acute instability."
+                },
+                {
+                  "id": "D",
+                  "text": "New confusion, cold clammy skin and falling BP",
+                  "explanation": "These are signs of possible poor perfusion."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-07-sudden-deterioration",
+                  "sectionIndex": 2,
+                  "label": "Red flags",
+                  "textSha256": "1943a7bf96704037cc1ffb7c167abd94b2f0242ce10979a7eabacfa5ab884d40"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-07-sudden-deterioration",
+                  "sectionIndex": 3,
+                  "label": "Practical actions",
+                  "textSha256": "02d64358d62cb971b2624a32b2efd6bbd1940978cab39421156e6e7c457f36fc"
+                }
+              ],
+              "id": "ccu-lesson-07-sudden-deterioration--7-day--point-d1f0fd2ce29c",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-07-sudden-deterioration::point-d1f0fd2ce29c"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "point": "Reassess after interventions.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "After an urgent intervention, which action completes the immediate nursing cycle?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeat relevant observations and assess the response",
+                  "explanation": "Treatment must be checked for benefit and adverse effects."
+                },
+                {
+                  "id": "B",
+                  "text": "Stop documenting changes once help arrives",
+                  "explanation": "Changes, actions and response remain important."
+                },
+                {
+                  "id": "C",
+                  "text": "Assume completion proves the problem resolved",
+                  "explanation": "An intervention can fail or create complications."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait until the next shift to check effectiveness",
+                  "explanation": "Deterioration needs timely reassessment."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-07-sudden-deterioration",
+                  "sectionIndex": 0,
+                  "label": "Core sequence",
+                  "textSha256": "10d0a9961877ae48eff6d6a9590b1f26cbaca181778c8e41a563bcfa9e9bb653"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-07-sudden-deterioration",
+                  "sectionIndex": 3,
+                  "label": "Practical actions",
+                  "textSha256": "02d64358d62cb971b2624a32b2efd6bbd1940978cab39421156e6e7c457f36fc"
+                }
+              ],
+              "id": "ccu-lesson-07-sudden-deterioration--7-day--point-8c26ef3a5a44",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-07-sudden-deterioration::point-8c26ef3a5a44"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     },
@@ -845,6 +1032,229 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-08-cardiogenic-shock--7-day",
+          "itemId": "ccu-lesson-08-cardiogenic-shock",
+          "itemType": "lesson",
+          "title": "Cardiogenic Shock & Poor Perfusion",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Cardiogenic shock is pump failure with organ hypoperfusion.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "After MI, a patient has hypotension, cold extremities, confusion and oliguria. What unifies these findings?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Improved renal perfusion from the pressure fall",
+                  "explanation": "Hypotension with oliguria suggests the opposite."
+                },
+                {
+                  "id": "B",
+                  "text": "Inadequate cardiac output causing organ hypoperfusion",
+                  "explanation": "This is the core cardiogenic-shock concern."
+                },
+                {
+                  "id": "C",
+                  "text": "Adequate circulation because the heart is still beating",
+                  "explanation": "A heartbeat does not guarantee sufficient output."
+                },
+                {
+                  "id": "D",
+                  "text": "Isolated peripheral edema without perfusion effects",
+                  "explanation": "Several organ-perfusion signs are abnormal."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-08-cardiogenic-shock",
+                  "sectionIndex": 0,
+                  "label": "Essential meaning",
+                  "textSha256": "3158ecb55dfc2e74ab15d25c195172714bd914fad2b1c50e1d9bb69b31109896"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-08-cardiogenic-shock",
+                  "sectionIndex": 1,
+                  "label": "Suspect it when",
+                  "textSha256": "deef05a3cc853168b6411756454eb4cb41306cbde4cec92a3549bf0b2af37fac"
+                }
+              ],
+              "id": "ccu-lesson-08-cardiogenic-shock--7-day--point-5fd178011d01",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-08-cardiogenic-shock::point-5fd178011d01"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "A large automatic fluid bolus may worsen pulmonary edema in pump failure.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "A hypotensive patient has weak pump function and pulmonary crackles. Why must a large fluid bolus not be assumed appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Additional fluid can worsen pulmonary congestion",
+                  "explanation": "The full hemodynamic picture needs an authorized treatment plan."
+                },
+                {
+                  "id": "B",
+                  "text": "Fluid always strengthens myocardial contraction directly",
+                  "explanation": "Volume loading does not repair intrinsic contractile failure."
+                },
+                {
+                  "id": "C",
+                  "text": "Every hypotensive patient is necessarily volume depleted",
+                  "explanation": "Hypotension has several causes, including pump failure."
+                },
+                {
+                  "id": "D",
+                  "text": "Crackles prove that the circulation contains no fluid",
+                  "explanation": "Crackles can reflect pulmonary congestion."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-08-cardiogenic-shock",
+                  "sectionIndex": 4,
+                  "label": "Important mistake",
+                  "textSha256": "9dcd7559d0c74e65ae12883b87a13ec8a2ec8f4b662bdca075d70b4905c8824c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-08-cardiogenic-shock",
+                  "sectionIndex": 5,
+                  "label": "Cardiogenic vs hypovolemic",
+                  "textSha256": "b2b189e5b863da762601055cbc4e52bf2322046a8bb84cc580a86d45d26b2e6d"
+                }
+              ],
+              "id": "ccu-lesson-08-cardiogenic-shock--7-day--point-976e3458b01e",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-08-cardiogenic-shock::point-976e3458b01e"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "point": "Differentiate pump failure from volume-loss patterns using the full picture.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which picture more strongly supports hypovolemia than pump failure?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A low BP result without any other findings",
+                  "explanation": "BP alone cannot distinguish the mechanism."
+                },
+                {
+                  "id": "B",
+                  "text": "Pulmonary crackles with raised JVP and weak output",
+                  "explanation": "This more strongly suggests congestion with pump failure."
+                },
+                {
+                  "id": "C",
+                  "text": "Recent major fluid loss, flat neck veins and clear lungs",
+                  "explanation": "Together these support an empty-tank pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Tachycardia alone",
+                  "explanation": "It can occur in several shock states."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-08-cardiogenic-shock",
+                  "sectionIndex": 5,
+                  "label": "Cardiogenic vs hypovolemic",
+                  "textSha256": "b2b189e5b863da762601055cbc4e52bf2322046a8bb84cc580a86d45d26b2e6d"
+                }
+              ],
+              "id": "ccu-lesson-08-cardiogenic-shock--7-day--point-a2b5356936cd",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-08-cardiogenic-shock::point-a2b5356936cd"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "A BP value must be interpreted with organ perfusion.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which trend is particularly important alongside BP during shock reassessment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Heart rate without other observations",
+                  "explanation": "Rate alone does not establish sufficient output."
+                },
+                {
+                  "id": "B",
+                  "text": "The prescribed pump rate without patient reassessment",
+                  "explanation": "A correct setting does not establish organ response."
+                },
+                {
+                  "id": "C",
+                  "text": "A single SpO2 reading without circulatory findings",
+                  "explanation": "Oxygen saturation does not establish organ blood flow."
+                },
+                {
+                  "id": "D",
+                  "text": "Consciousness and urine output",
+                  "explanation": "These reflect cerebral and renal perfusion."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-08-cardiogenic-shock",
+                  "sectionIndex": 3,
+                  "label": "First nursing response",
+                  "textSha256": "1651b50ba1c218483e8bd84a366c9e1d30b0510ca8fd27abd48e0a404000054b"
+                }
+              ],
+              "id": "ccu-lesson-08-cardiogenic-shock--7-day--point-adbe496f1648",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-08-cardiogenic-shock::point-adbe496f1648"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -1206,6 +1616,185 @@
             }
           ],
           "questionCount": 4
+        },
+        {
+          "id": "ccu-lesson-09-norepi-dobutamine--7-day",
+          "itemId": "ccu-lesson-09-norepi-dobutamine",
+          "itemType": "lesson",
+          "title": "Norepinephrine vs Dobutamine",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Pressure and pump support may be combined.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Why might norepinephrine and dobutamine be used together?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "One supports vascular pressure while the other supports contractility",
+                  "explanation": "They address different components of circulatory failure."
+                },
+                {
+                  "id": "B",
+                  "text": "Both are simply two brands of the same drug",
+                  "explanation": "They have different principal actions."
+                },
+                {
+                  "id": "C",
+                  "text": "Both reduce cardiac contraction to the same extent",
+                  "explanation": "Dobutamine principally increases contractile support."
+                },
+                {
+                  "id": "D",
+                  "text": "One replaces all monitoring required by the other",
+                  "explanation": "Both require close hemodynamic monitoring."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-09-norepi-dobutamine",
+                  "sectionIndex": 0,
+                  "label": "The easiest way to remember",
+                  "textSha256": "26b87bdeebaa83f070ad94b1eb848f1209d6d5a0ea7ac468bd7581cccee3ac75"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-09-norepi-dobutamine",
+                  "sectionIndex": 1,
+                  "label": "Norepinephrine",
+                  "textSha256": "35cc29725bc49e8d3efe3cb4c695be90d13656984d42f89d86a55d32a0650105"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-09-norepi-dobutamine",
+                  "sectionIndex": 2,
+                  "label": "Dobutamine",
+                  "textSha256": "5ce8399c2b1b0975114a3a2c3c499969863962bac6a09d2f88e69c70a735a485"
+                }
+              ],
+              "id": "ccu-lesson-09-norepi-dobutamine--7-day--point-1455df78142f",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-09-norepi-dobutamine::point-1455df78142f"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "point": "Monitor rhythm, pressure, urine output, and peripheral perfusion.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "During dobutamine support, HR rises markedly without better perfusion. What is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stop measuring urine because BP is displayed",
+                  "explanation": "Organ response remains relevant."
+                },
+                {
+                  "id": "B",
+                  "text": "Reassess rhythm, BP and organ response and report",
+                  "explanation": "More tachycardia does not guarantee improved output."
+                },
+                {
+                  "id": "C",
+                  "text": "Assume faster HR proves effective pump support",
+                  "explanation": "Excessive rate can be harmful."
+                },
+                {
+                  "id": "D",
+                  "text": "Judge effectiveness from pump settings alone",
+                  "explanation": "Device settings do not establish clinical response."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-09-norepi-dobutamine",
+                  "sectionIndex": 4,
+                  "label": "What you monitor",
+                  "textSha256": "84d9d6f634bcb59c163afaf836aba422511f95ca6c9392ced6facd872fc3cf3e"
+                }
+              ],
+              "id": "ccu-lesson-09-norepi-dobutamine--7-day--point-4da335fed1fe",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-09-norepi-dobutamine::point-4da335fed1fe"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "mL/hour depends on the ordered dose and prepared concentration.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "Why is memorizing one universal mL/hour rate unsafe for vasoactive infusions?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Every prepared bag has identical concentration",
+                  "explanation": "Preparation can vary."
+                },
+                {
+                  "id": "B",
+                  "text": "A pump setting removes the need to read the order",
+                  "explanation": "The pump must be set against a verified prescription."
+                },
+                {
+                  "id": "C",
+                  "text": "The rate changes with prescribed dose and prepared concentration",
+                  "explanation": "mL/hour alone does not specify drug delivery."
+                },
+                {
+                  "id": "D",
+                  "text": "The same rate always produces the same patient response",
+                  "explanation": "Dose and physiological response vary."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-09-norepi-dobutamine",
+                  "sectionIndex": 5,
+                  "label": "Safety memory",
+                  "textSha256": "49bc5024b3640be4974503152b2f9d461e2d035386efa007f677e7b16350a1fc"
+                }
+              ],
+              "id": "ccu-lesson-09-norepi-dobutamine--7-day--point-7dcb7151eebf",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-09-norepi-dobutamine::point-7dcb7151eebf"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     },
@@ -1586,6 +2175,221 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-10-electrolytes--7-day",
+          "itemId": "ccu-lesson-10-electrolytes",
+          "itemType": "lesson",
+          "title": "Electrolytes That Can Cause Arrhythmias",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Severe high potassium can widen QRS and produce bradyarrhythmia/arrest.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "Potassium is high and QRS complexes are widening. What takes priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Treating the result as harmless if the patient can speak",
+                  "explanation": "Alertness does not exclude electrical toxicity."
+                },
+                {
+                  "id": "B",
+                  "text": "Continuous monitoring and urgent clinical escalation",
+                  "explanation": "ECG toxicity can precede life-threatening arrhythmia."
+                },
+                {
+                  "id": "C",
+                  "text": "A routine repeat next week",
+                  "explanation": "The ECG change makes this an urgent problem."
+                },
+                {
+                  "id": "D",
+                  "text": "Waiting for loss of pulse before reporting",
+                  "explanation": "Escalation should occur before arrest."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-10-electrolytes",
+                  "sectionIndex": 0,
+                  "label": "Potassium K⁺",
+                  "textSha256": "64a4e6e314c121943457a71d6c3b462c904272d2f31f69725e8eecd14d8d028c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-10-electrolytes",
+                  "sectionIndex": 4,
+                  "label": "Nursing safety",
+                  "textSha256": "9716a8df068759b535d419d496122db70102b996aa32f1ee2a8de04d64742109"
+                }
+              ],
+              "id": "ccu-lesson-10-electrolytes--7-day--point-d6a2ae26a89b",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-10-electrolytes::point-d6a2ae26a89b"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "Low magnesium can contribute to ventricular arrhythmia and refractory hypokalemia.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Potassium remains low despite replacement in a patient with ventricular ectopy. Which associated result should be reviewed?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Magnesium",
+                  "explanation": "Magnesium depletion can contribute to persistent hypokalemia."
+                },
+                {
+                  "id": "B",
+                  "text": "An isolated normal bilirubin",
+                  "explanation": "It does not assess the highlighted electrolyte relationship."
+                },
+                {
+                  "id": "C",
+                  "text": "The platelet count alone",
+                  "explanation": "Platelets do not establish magnesium status."
+                },
+                {
+                  "id": "D",
+                  "text": "An old serum cholesterol result",
+                  "explanation": "It does not guide this acute electrolyte problem."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-10-electrolytes",
+                  "sectionIndex": 1,
+                  "label": "Magnesium Mg²⁺",
+                  "textSha256": "707654aed22eec4ddcbadadb98418ceec23e0ab859b1ce7ad0b0fd39ec4ba2ad"
+                }
+              ],
+              "id": "ccu-lesson-10-electrolytes--7-day--point-73070375f78e",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-10-electrolytes::point-73070375f78e"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "point": "Calcium affects QT in opposite directions when low or high.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which ECG interval change is associated with low calcium?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reliable QT shortening",
+                  "explanation": "Shortening is associated with high calcium."
+                },
+                {
+                  "id": "B",
+                  "text": "Guaranteed loss of every P wave",
+                  "explanation": "This is not the defining calcium effect."
+                },
+                {
+                  "id": "C",
+                  "text": "QT prolongation",
+                  "explanation": "Hypocalcemia tends to prolong QT."
+                },
+                {
+                  "id": "D",
+                  "text": "A mandatory normal QRS and QT in every patient",
+                  "explanation": "Electrolyte disturbances can change ECG intervals."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-10-electrolytes",
+                  "sectionIndex": 2,
+                  "label": "Calcium Ca²⁺",
+                  "textSha256": "0af498a8f228aea12eb364bc82eafb5294d51ec189c6af8e83facd0aecbba782"
+                }
+              ],
+              "id": "ccu-lesson-10-electrolytes--7-day--point-519cd17d1574",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-10-electrolytes::point-519cd17d1574"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "Never give IV potassium as a rapid IV push.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "A potassium prescription is mistakenly prepared for rapid IV push. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give it faster if the potassium result is very low",
+                  "explanation": "Severe depletion still requires a controlled replacement plan."
+                },
+                {
+                  "id": "B",
+                  "text": "Give it rapidly if the patient is monitored",
+                  "explanation": "Monitoring does not make IV push potassium safe."
+                },
+                {
+                  "id": "C",
+                  "text": "Use a smaller syringe but the same push method",
+                  "explanation": "Syringe size does not remove the hazard."
+                },
+                {
+                  "id": "D",
+                  "text": "Stop and clarify a safe authorized infusion method",
+                  "explanation": "Rapid IV potassium can cause fatal arrhythmia."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-10-electrolytes",
+                  "sectionIndex": 4,
+                  "label": "Nursing safety",
+                  "textSha256": "9716a8df068759b535d419d496122db70102b996aa32f1ee2a8de04d64742109"
+                }
+              ],
+              "id": "ccu-lesson-10-electrolytes--7-day--point-4987f7b0c9f3",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-10-electrolytes::point-4987f7b0c9f3"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -1935,6 +2739,193 @@
                 "ccu-lesson-11-furosemide::point-d6f3ea811684"
               ],
               "answerKey": "B"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-11-furosemide--7-day",
+          "itemId": "ccu-lesson-11-furosemide",
+          "itemType": "lesson",
+          "title": "Furosemide in the CCU",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Evaluate breathing and edema, not urine volume alone.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "After furosemide, urine increases but breathlessness worsens. What is the best interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Further assessment can wait until the bag is empty",
+                  "explanation": "Current deterioration needs attention."
+                },
+                {
+                  "id": "B",
+                  "text": "Urine output alone does not establish clinical improvement",
+                  "explanation": "The breathing and full fluid/perfusion picture need reassessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Any increase in urine proves successful treatment",
+                  "explanation": "The patient can still deteriorate."
+                },
+                {
+                  "id": "D",
+                  "text": "Worsening dyspnea is the intended effect",
+                  "explanation": "The intended effect is reduced congestion."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-11-furosemide",
+                  "sectionIndex": 0,
+                  "label": "Why the patient may receive it",
+                  "textSha256": "3db3e2fa7bea4475957f6797d15a98d5375f04302ecce060a6f379c181ad16d7"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-11-furosemide",
+                  "sectionIndex": 1,
+                  "label": "What furosemide does",
+                  "textSha256": "08653e700e49d24ea96da0a1043e868bd256e02edd142d4c7e199e300dd60a4c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-11-furosemide",
+                  "sectionIndex": 2,
+                  "label": "What improvement may look like",
+                  "textSha256": "f224bb26deb935d433a1cddd1a0776753c5ccf506cbe16333d3a8d7e67e50195"
+                }
+              ],
+              "id": "ccu-lesson-11-furosemide--7-day--point-4fdbe499bda3",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-11-furosemide::point-4fdbe499bda3"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "Excess diuresis can cause volume depletion, hypotension, and renal deterioration.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "During diuresis, BP falls, creatinine rises and the patient becomes thirsty. What should be assessed?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Guaranteed successful decongestion without risk",
+                  "explanation": "These are safety concerns, not proof of uncomplicated benefit."
+                },
+                {
+                  "id": "B",
+                  "text": "A reason to stop measuring urine output",
+                  "explanation": "Output remains useful in assessing the change."
+                },
+                {
+                  "id": "C",
+                  "text": "An unrelated skin condition only",
+                  "explanation": "That would not explain the hemodynamic and renal trend."
+                },
+                {
+                  "id": "D",
+                  "text": "Possible excessive volume depletion and renal deterioration",
+                  "explanation": "The trend can indicate intolerance of fluid loss."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-11-furosemide",
+                  "sectionIndex": 3,
+                  "label": "What the nurse monitors",
+                  "textSha256": "4feb9be72d9b099ca24d9702b5e9fe1911130eab550be90a0976b610986b2955"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-11-furosemide",
+                  "sectionIndex": 4,
+                  "label": "Main problems to watch for",
+                  "textSha256": "6575890fbe03dfdc784f929e77de295e44f470c23ed7649f72182ebef4280574"
+                }
+              ],
+              "id": "ccu-lesson-11-furosemide--7-day--point-d6f3ea811684",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-11-furosemide::point-d6f3ea811684"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "point": "New ectopy during diuresis can be electrolyte-related.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A furosemide-treated patient develops frequent PVCs. Which paired tests are most directly relevant?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Platelets and INR only",
+                  "explanation": "They address hemostasis rather than the highlighted electrolyte losses."
+                },
+                {
+                  "id": "B",
+                  "text": "TSH and free T4 only",
+                  "explanation": "They do not replace immediate electrolyte checks."
+                },
+                {
+                  "id": "C",
+                  "text": "Potassium and magnesium",
+                  "explanation": "Diuretic-related losses can contribute to ectopy."
+                },
+                {
+                  "id": "D",
+                  "text": "ALT and bilirubin only",
+                  "explanation": "They do not assess the highlighted rhythm mechanism."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-lesson-11-furosemide",
+                  "sectionIndex": 5,
+                  "label": "CCU connection",
+                  "textSha256": "167016c74501528c673fa1c2a15e7a0e50800d8d8441b0e097c91a01c6ed23c9"
+                }
+              ],
+              "id": "ccu-lesson-11-furosemide--7-day--point-6c7bc227eccb",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-lesson-11-furosemide::point-6c7bc227eccb"
+              ],
+              "answerKey": "C"
             }
           ],
           "questionCount": 3
@@ -2378,6 +3369,221 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "ccu-quick-heart-failure--7-day",
+          "itemId": "ccu-quick-heart-failure",
+          "itemType": "lesson",
+          "title": "Heart Failure — Practical CCU View",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Congestion and poor perfusion can coexist.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "An HF patient has both crackles and cold clammy skin. Which interpretation fits?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Cold skin excludes fluid overload",
+                  "explanation": "Both findings can be present together."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the ankle swelling can determine severity",
+                  "explanation": "The overall respiratory and perfusion picture matters."
+                },
+                {
+                  "id": "C",
+                  "text": "Crackles prove organ perfusion is adequate",
+                  "explanation": "Congestion does not guarantee effective output."
+                },
+                {
+                  "id": "D",
+                  "text": "Congestion and poor perfusion may coexist",
+                  "explanation": "The patient can be both wet and cold."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-heart-failure",
+                  "sectionIndex": 1,
+                  "label": "Congestion",
+                  "textSha256": "b27ad1b1d788bcf1d3d168eec5cf422f5c3db14395317fc8a3dd45fa9cc48e0f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-heart-failure",
+                  "sectionIndex": 2,
+                  "label": "Poor perfusion",
+                  "textSha256": "a9cf02cf2922a6d75755bdb143885e09b0d29e154f5a2822a8be84f3b7625cc4"
+                }
+              ],
+              "id": "ccu-quick-heart-failure--7-day--point-539c0d1deede",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-heart-failure::point-539c0d1deede"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "point": "Left and right ventricular failure produce different backup patterns.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which pattern most strongly reflects systemic venous congestion?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Raised JVP with peripheral edema",
+                  "explanation": "These are characteristic right-sided backup findings."
+                },
+                {
+                  "id": "B",
+                  "text": "Isolated pulmonary crackles and orthopnea",
+                  "explanation": "These principally reflect pulmonary congestion."
+                },
+                {
+                  "id": "C",
+                  "text": "An isolated normal urine test",
+                  "explanation": "It does not define congestion distribution."
+                },
+                {
+                  "id": "D",
+                  "text": "New tongue swelling",
+                  "explanation": "This is an airway warning rather than systemic venous congestion."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-heart-failure",
+                  "sectionIndex": 3,
+                  "label": "Left vs right",
+                  "textSha256": "7275b526099f5b306e781009caa1c3682edac2a2460287d0154b8e3d05c56d66"
+                }
+              ],
+              "id": "ccu-quick-heart-failure--7-day--point-6006909ae774",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-heart-failure::point-6006909ae774"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "point": "Preserved EF does not exclude clinically important HF.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A patient has preserved EF but substantial orthopnea and congestion. Which statement is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Preserved EF removes the need to assess breathing",
+                  "explanation": "Symptoms and congestion still require assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "EF measures the percentage of all body blood in the heart",
+                  "explanation": "It is the fraction of LV blood ejected per contraction."
+                },
+                {
+                  "id": "C",
+                  "text": "HF can occur with impaired filling despite preserved EF",
+                  "explanation": "EF alone cannot determine the presence or severity of HF."
+                },
+                {
+                  "id": "D",
+                  "text": "Preserved EF excludes heart failure",
+                  "explanation": "HFpEF is possible."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-heart-failure",
+                  "sectionIndex": 4,
+                  "label": "EF",
+                  "textSha256": "61ac4667938c14ee58bd03349da7605b16cba93e3df13bfa5f0e1dfdd449dfa7"
+                }
+              ],
+              "id": "ccu-quick-heart-failure--7-day--point-03676bf960fa",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-heart-failure::point-03676bf960fa"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "Acute respiratory or perfusion deterioration in HF needs escalation.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "Which HF change requires urgent escalation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An unchanged daily weight with comfortable breathing",
+                  "explanation": "This does not describe acute instability."
+                },
+                {
+                  "id": "B",
+                  "text": "Sudden severe dyspnea with falling BP",
+                  "explanation": "This suggests acute deterioration."
+                },
+                {
+                  "id": "C",
+                  "text": "Unchanged chronic edema without new symptoms",
+                  "explanation": "It lacks the same acute red flags."
+                },
+                {
+                  "id": "D",
+                  "text": "A request for routine diet advice",
+                  "explanation": "Education can follow urgent clinical priorities."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-heart-failure",
+                  "sectionIndex": 5,
+                  "label": "Nursing focus",
+                  "textSha256": "5d79be469bdedfa68801f9cd21beaa9f28e36afba8774b7d585fa38f085a82fd"
+                }
+              ],
+              "id": "ccu-quick-heart-failure--7-day--point-40564cb2c6cd",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-heart-failure::point-40564cb2c6cd"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -2723,6 +3929,133 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "ccu-quick-dcm--7-day",
+          "itemId": "ccu-quick-dcm",
+          "itemType": "lesson",
+          "title": "Dilated Cardiomyopathy (DCM)",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "DCM has ventricular dilation and weak systolic contraction.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "How does the structural change in DCM contribute to symptoms?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A larger chamber guarantees normal organ perfusion",
+                  "explanation": "Size does not establish adequate effective output."
+                },
+                {
+                  "id": "B",
+                  "text": "Dilated ventricles always contract more effectively",
+                  "explanation": "Dilation in DCM does not guarantee stronger contraction."
+                },
+                {
+                  "id": "C",
+                  "text": "Enlarged ventricles contract weakly and reduce effective output",
+                  "explanation": "This links chamber dilation and pump failure."
+                },
+                {
+                  "id": "D",
+                  "text": "DCM affects only the heart's electrical leads",
+                  "explanation": "It is a myocardial structural and functional disorder."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-dcm",
+                  "sectionIndex": 0,
+                  "label": "What it means",
+                  "textSha256": "4462a45dc929c8c9ef4eabf6d14af0cebc03048e697b9a4e9ccf281767247fa0"
+                }
+              ],
+              "id": "ccu-quick-dcm--7-day--point-70eb3ca4c427",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-dcm::point-70eb3ca4c427"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "Track the clinical weak-pump consequences.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which new DCM finding needs prompt assessment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Confusion with oliguria and a falling BP",
+                  "explanation": "These suggest low-output organ hypoperfusion."
+                },
+                {
+                  "id": "B",
+                  "text": "A preference to change appointment time",
+                  "explanation": "This is not a clinical red flag."
+                },
+                {
+                  "id": "C",
+                  "text": "An unchanged healed scar",
+                  "explanation": "It is not an acute pump-failure sign."
+                },
+                {
+                  "id": "D",
+                  "text": "Stable observations with unchanged exercise tolerance",
+                  "explanation": "This does not show new deterioration."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-dcm",
+                  "sectionIndex": 1,
+                  "label": "What it causes",
+                  "textSha256": "2bf015c22defcc32ede9710ee4976cfad2f3388da8379f45327e8aefac4ae4b3"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-dcm",
+                  "sectionIndex": 3,
+                  "label": "Nursing focus",
+                  "textSha256": "2915e284ea1ab581fc397e93dfb52672d78f720e1a606840753f9ce43da27f50"
+                }
+              ],
+              "id": "ccu-quick-dcm--7-day--point-f69a5cd7b9d9",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-dcm::point-f69a5cd7b9d9"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 2
         }
       ]
     },
@@ -2984,6 +4317,149 @@
                 "ccu-quick-ihd-mi::point-0427c4fd7638"
               ],
               "answerKey": "B"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ccu-quick-ihd-mi--7-day",
+          "itemId": "ccu-quick-ihd-mi",
+          "itemType": "lesson",
+          "title": "Ischemic Heart Disease vs Myocardial Infarction",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "The relationship is broad disease versus a specific necrotic event.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which statement correctly relates ischemic heart disease and MI?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "MI is a specific ischemic event involving myocardial cell death",
+                  "explanation": "IHD is broader than infarction."
+                },
+                {
+                  "id": "B",
+                  "text": "IHD and MI describe unrelated diseases",
+                  "explanation": "MI belongs to the ischemic spectrum."
+                },
+                {
+                  "id": "C",
+                  "text": "MI means reduced flow without any cell injury",
+                  "explanation": "Infarction involves myocardial cell death."
+                },
+                {
+                  "id": "D",
+                  "text": "Every episode of stable angina is an MI",
+                  "explanation": "Ischemia can occur without myocardial necrosis."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-ihd-mi",
+                  "sectionIndex": 0,
+                  "label": "IHD",
+                  "textSha256": "169095f23b8de7957b75bd30a7151462f4aca01d1796368e93cd47b774c73a2d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-ihd-mi",
+                  "sectionIndex": 1,
+                  "label": "MI",
+                  "textSha256": "d8c58ef707d9be5deb67b06016c375303a3474c54a547e295b48789e94829c24"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-ihd-mi",
+                  "sectionIndex": 2,
+                  "label": "Memory",
+                  "textSha256": "13986578bfa8b6cbe2e31c9706e80cb0f7e2315df7b706bdeca18733b2aebaea"
+                }
+              ],
+              "id": "ccu-quick-ihd-mi--7-day--point-0427c4fd7638",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-ihd-mi::point-0427c4fd7638"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "point": "Not every IHD presentation is an MI.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A patient has stable exertional angina. What can be concluded from that diagnosis alone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Coronary blood supply is necessarily normal",
+                  "explanation": "Angina can reflect reduced coronary supply."
+                },
+                {
+                  "id": "B",
+                  "text": "The patient must be having an acute MI",
+                  "explanation": "Stable angina alone does not establish acute infarction."
+                },
+                {
+                  "id": "C",
+                  "text": "All future ischemic symptoms can be ignored",
+                  "explanation": "New or changing symptoms still require assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "IHD is present, but MI is not established",
+                  "explanation": "Angina does not by itself prove myocardial necrosis."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-ihd-mi",
+                  "sectionIndex": 0,
+                  "label": "IHD",
+                  "textSha256": "169095f23b8de7957b75bd30a7151462f4aca01d1796368e93cd47b774c73a2d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ccu-quick-ihd-mi",
+                  "sectionIndex": 2,
+                  "label": "Memory",
+                  "textSha256": "13986578bfa8b6cbe2e31c9706e80cb0f7e2315df7b706bdeca18733b2aebaea"
+                }
+              ],
+              "id": "ccu-quick-ihd-mi--7-day--point-3c6a5b8771cc",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-quick-ihd-mi::point-3c6a5b8771cc"
+              ],
+              "answerKey": "D"
             }
           ],
           "questionCount": 2
@@ -3488,6 +4964,253 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-01-fracture-limb-safety--7-day",
+          "itemId": "ibd2-lesson-01-fracture-limb-safety",
+          "itemType": "lesson",
+          "title": "Fracture & Limb Safety — Neurovascular Check",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Assess distal blood supply and nerve function below an injury/immobilization.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A casted limb becomes more painful. Where should the focused neurovascular check be directed?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Only the skin above the cast",
+                  "explanation": "This misses the distal neurovascular status."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the uninjured limb",
+                  "explanation": "Comparison helps, but the injured limb must be assessed."
+                },
+                {
+                  "id": "C",
+                  "text": "Only the appearance of the cast surface",
+                  "explanation": "An intact cast does not prove tissue safety."
+                },
+                {
+                  "id": "D",
+                  "text": "Distal to the injury, compared with baseline and the other side",
+                  "explanation": "The tissues below the injury may lose perfusion or nerve function."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 0,
+                  "label": "The one question",
+                  "textSha256": "1dd8aecddc79ab08f10f706a4331b2e021bbc8121ee7a6afce7da07a72f8209f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 1,
+                  "label": "Memory sequence",
+                  "textSha256": "08a572b372a0985c09db7fe87d558b570e920550f162ae6c1aa35b84264f08a7"
+                }
+              ],
+              "id": "ibd2-lesson-01-fracture-limb-safety--7-day--point-4361d515fd95",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-01-fracture-limb-safety::point-4361d515fd95"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "point": "A palpable pulse does not rule out compartment syndrome.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "Severe increasing pain on passive stretch occurs despite a palpable distal pulse. What is the best interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Passive-stretch pain is always normal after fracture",
+                  "explanation": "Disproportionate worsening pain is an important warning."
+                },
+                {
+                  "id": "B",
+                  "text": "Compartment syndrome remains an emergency concern",
+                  "explanation": "Pulses may persist while tissue pressure compromises perfusion."
+                },
+                {
+                  "id": "C",
+                  "text": "Only absent movement justifies escalation",
+                  "explanation": "Motor loss may be a late finding."
+                },
+                {
+                  "id": "D",
+                  "text": "A palpable pulse safely excludes compartment syndrome",
+                  "explanation": "Waiting for pulselessness can dangerously delay treatment."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 2,
+                  "label": "Compartment syndrome — the emergency",
+                  "textSha256": "dfa059439084c8b5fdde981bf806a981adb1cac0fbb1b7f290f28c4b8d5d2932"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 3,
+                  "label": "Early warning to remember",
+                  "textSha256": "6b2ef9122a4f53fcffd1405924b5de13a8e6343bcc78b5bbc28f1091ae01e248"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 4,
+                  "label": "Critical trap",
+                  "textSha256": "f2ecf207f6b55f622678f338e6394d12e7657d6c0e3f59ac6f953dd46f7cb118"
+                }
+              ],
+              "id": "ibd2-lesson-01-fracture-limb-safety--7-day--point-1d241a82847f",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-01-fracture-limb-safety::point-1d241a82847f"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "Escalate deterioration within supervised intern scope.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "An intern suspects compartment syndrome under a cast. What is the appropriate response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for the next routine pain dose before reporting",
+                  "explanation": "Analgesic timing must not delay emergency assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Independently cut all prescribed immobilization without authorization",
+                  "explanation": "Modification requires the applicable order or protocol."
+                },
+                {
+                  "id": "C",
+                  "text": "Urgently report, reassess and prepare to assist under the authorized plan",
+                  "explanation": "Recognition and escalation are immediate nursing responsibilities."
+                },
+                {
+                  "id": "D",
+                  "text": "Declare the limb safe because the cast is intact",
+                  "explanation": "A structurally intact cast does not exclude tissue compromise."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 5,
+                  "label": "Intern responsibilities",
+                  "textSha256": "2c2fbd34a9932895ae1f5b3bd6df042ff88913dc36bd9e293b29d3f060d1014c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 6,
+                  "label": "Senior/ordered interventions",
+                  "textSha256": "6f9396fc4eb09d07d56c85476dfb03a53fc33f2f86d5655e4335d35666a43d80"
+                }
+              ],
+              "id": "ibd2-lesson-01-fracture-limb-safety--7-day--point-7228d4263c1d",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-01-fracture-limb-safety::point-7228d4263c1d"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "Pain, circulation, sensation, movement, and swelling form the focused check.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which new observation most strengthens concern about a worsening injured limb?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "New tingling with reduced toe movement",
+                  "explanation": "This adds neurological dysfunction to the pain assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "A clean cast surface",
+                  "explanation": "Surface cleanliness does not assess nerves."
+                },
+                {
+                  "id": "C",
+                  "text": "Unchanged toe sensation and movement",
+                  "explanation": "These do not demonstrate new neurological loss."
+                },
+                {
+                  "id": "D",
+                  "text": "A stable appetite",
+                  "explanation": "Appetite does not assess distal neurovascular function."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 1,
+                  "label": "Memory sequence",
+                  "textSha256": "08a572b372a0985c09db7fe87d558b570e920550f162ae6c1aa35b84264f08a7"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 3,
+                  "label": "Early warning to remember",
+                  "textSha256": "6b2ef9122a4f53fcffd1405924b5de13a8e6343bcc78b5bbc28f1091ae01e248"
+                }
+              ],
+              "id": "ibd2-lesson-01-fracture-limb-safety--7-day--point-4cc0e9cbfd91",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-01-fracture-limb-safety::point-4cc0e9cbfd91"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -3982,6 +5705,245 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-02-external-fixator--7-day",
+          "itemId": "ibd2-lesson-02-external-fixator",
+          "itemType": "lesson",
+          "title": "External Fixator — Limb, Pins, Frame",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Assess the limb before focusing on hardware.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "At the bedside of a patient with an external fixator, what should be checked first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Frame alignment without examining the limb",
+                  "explanation": "Hardware appearance does not establish neurovascular safety."
+                },
+                {
+                  "id": "B",
+                  "text": "Pin-site dressings before distal limb assessment",
+                  "explanation": "Wound care matters but must not distract from limb perfusion."
+                },
+                {
+                  "id": "C",
+                  "text": "Pain and distal neurovascular status",
+                  "explanation": "The limb can deteriorate despite an intact frame."
+                },
+                {
+                  "id": "D",
+                  "text": "The adjustment record before checking new symptoms",
+                  "explanation": "Records must not delay current patient assessment."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 0,
+                  "label": "Essential meaning",
+                  "textSha256": "3e5cefd47ee04f8d955b8728ff917d3cd8477e0748b3757e6769ed61079c29ed"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 2,
+                  "label": "Think first",
+                  "textSha256": "0546fcce4df9e3d1a584da666ddfd37672c400a98584b35dff99a1e27f73ebd2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 3,
+                  "label": "Bedside sequence",
+                  "textSha256": "84030f251f72ad71af7e0744303b4b9ec859dbf7235f69a169d7563b8c623b74"
+                }
+              ],
+              "id": "ibd2-lesson-02-external-fixator--7-day--point-a37b801777da",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-02-external-fixator::point-a37b801777da"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "Loose or broken hardware needs protection and escalation, not independent adjustment.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "A fixator bar appears loose with unexpected movement. What is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ignore it if the dressing is dry",
+                  "explanation": "Dry dressings do not establish mechanical stability."
+                },
+                {
+                  "id": "B",
+                  "text": "Ask a visitor to hold the bar while the patient walks",
+                  "explanation": "This is not an authorized stabilization plan."
+                },
+                {
+                  "id": "C",
+                  "text": "Tighten it by feel to match the other bars",
+                  "explanation": "Unsupervised adjustment can alter alignment."
+                },
+                {
+                  "id": "D",
+                  "text": "Support the limb, prevent unsafe movement and report",
+                  "explanation": "Hardware problems require protection and authorized review."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 4,
+                  "label": "Scan it in two directions",
+                  "textSha256": "2fe921b3154ca1227f73870d0fccac0cd62fe203211b010fbf3e850bb70a4e9f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 5,
+                  "label": "LOOSE",
+                  "textSha256": "4ab4ad365ca9954ac99626f8f03a8a2cd548d62cbaebbad678692092987384e9"
+                }
+              ],
+              "id": "ibd2-lesson-02-external-fixator--7-day--point-297f9ef846ac",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-02-external-fixator::point-297f9ef846ac"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "point": "New pin-site redness/drainage/fever can indicate infection.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A pin site has increasing pain, spreading redness and new drainage. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Choose a new cleansing product without checking the plan",
+                  "explanation": "Pin care should follow the authorized protocol."
+                },
+                {
+                  "id": "B",
+                  "text": "Assess the patient and site, report and follow the prescribed plan",
+                  "explanation": "This may indicate infection and needs clinical review."
+                },
+                {
+                  "id": "C",
+                  "text": "Accept all new drainage as normal",
+                  "explanation": "Meaningful changes need assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Adjust the pin to release the discharge",
+                  "explanation": "Hardware must not be manipulated independently."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 6,
+                  "label": "Pin / wound care",
+                  "textSha256": "4fc2956a862dc029d7a1c5bc1672ab81d6530b516896a22c20fef1837fe6135e"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 7,
+                  "label": "Quick decision",
+                  "textSha256": "f49b572a791c4f4027dde6b6aade6f07854d7a0c1fa2a30cc42265d47ffcfebc"
+                }
+              ],
+              "id": "ibd2-lesson-02-external-fixator--7-day--point-983b27d58dc1",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-02-external-fixator::point-983b27d58dc1"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "Assess the whole patient and wound, report deterioration, document, and reassess.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "After reporting a fixator problem, what should be documented?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Time, findings, notification, instructions and patient response",
+                  "explanation": "These support continuity and reassessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Nothing until the next shift",
+                  "explanation": "Timely documentation and reassessment are needed."
+                },
+                {
+                  "id": "C",
+                  "text": "Only the colour of the dressing",
+                  "explanation": "This does not record the relevant change."
+                },
+                {
+                  "id": "D",
+                  "text": "Only that the frame is present",
+                  "explanation": "This omits the clinical problem and response."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-02-external-fixator",
+                  "sectionIndex": 8,
+                  "label": "10-second memory",
+                  "textSha256": "3254f63d8ce6db5a08c9f9033f2667534177c0d07c917df492bb0930cc4f1380"
+                }
+              ],
+              "id": "ibd2-lesson-02-external-fixator--7-day--point-08afffcbe885",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-02-external-fixator::point-08afffcbe885"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -4633,6 +6595,289 @@
             }
           ],
           "questionCount": 5
+        },
+        {
+          "id": "ibd2-quick-taylor-spatial-frame--7-day",
+          "itemId": "ibd2-quick-taylor-spatial-frame",
+          "itemType": "lesson",
+          "title": "Taylor Spatial Frame (TSF) — Bedside Nursing",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "The principal hexapod arrangement has six adjustable struts.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "What feature most specifically distinguishes a typical Taylor Spatial Frame?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A cast containing no pins or wires",
+                  "explanation": "A TSF is an external fixation system."
+                },
+                {
+                  "id": "B",
+                  "text": "Rings connected by six adjustable struts",
+                  "explanation": "The hexapod system supports planned multidirectional correction."
+                },
+                {
+                  "id": "C",
+                  "text": "A single traction weight attached to a bed",
+                  "explanation": "That is not the TSF structure."
+                },
+                {
+                  "id": "D",
+                  "text": "An internal plate fully beneath the skin",
+                  "explanation": "The frame is external and connected to bone."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 0,
+                  "label": "Essential meaning",
+                  "textSha256": "f91d46926204494da6ff6724a6b7c805a03700ad332691b8e7ba330c52b8e602"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 1,
+                  "label": "Recognize the parts",
+                  "textSha256": "2eada54566ae13cf4ececdb442ccda6951a42bd2ab86b691525d379435517bb1"
+                }
+              ],
+              "id": "ibd2-quick-taylor-spatial-frame--7-day--point-cbb3ccedabc0",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-quick-taylor-spatial-frame::point-cbb3ccedabc0"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "Correction follows a surgeon-planned individualized schedule.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A patient says one strut adjustment was missed. What should an intern do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Check the written plan and obtain authorized guidance",
+                  "explanation": "Do not improvise a catch-up adjustment."
+                },
+                {
+                  "id": "B",
+                  "text": "Turn all struts equally to compensate",
+                  "explanation": "The schedule is individualized and direction-specific."
+                },
+                {
+                  "id": "C",
+                  "text": "Adjust whichever strut looks shortest",
+                  "explanation": "Appearance does not determine the correction plan."
+                },
+                {
+                  "id": "D",
+                  "text": "Double the next adjustment without instruction",
+                  "explanation": "This changes the prescribed correction."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 3,
+                  "label": "How correction works",
+                  "textSha256": "ddd1c3061604da93cf86b80a7f287c1057816d1cfd07b56b32b664744c72bce4"
+                }
+              ],
+              "id": "ibd2-quick-taylor-spatial-frame--7-day--point-d1501cbdc26f",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-quick-taylor-spatial-frame::point-d1501cbdc26f"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "point": "Distal neurovascular assessment precedes frame-focused reassurance.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "A TSF patient's toes become numb and pain rises rapidly. What takes priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assuming it is routine correction discomfort",
+                  "explanation": "Rapid worsening and numbness are red flags."
+                },
+                {
+                  "id": "B",
+                  "text": "Photographing every frame component before checking the limb",
+                  "explanation": "Patient assessment must not wait for device photography."
+                },
+                {
+                  "id": "C",
+                  "text": "Permitting walking to test alignment",
+                  "explanation": "Unsafe movement can worsen the situation."
+                },
+                {
+                  "id": "D",
+                  "text": "Focused neurovascular assessment and emergency escalation",
+                  "explanation": "New neurological and pain changes can indicate limb-threatening compromise."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 4,
+                  "label": "Assessment: LIMB first",
+                  "textSha256": "43cc07d70536297d329354dec90d55330b59467f790b06eb835442b43389c9ad"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 5,
+                  "label": "Red flag — acute compartment syndrome",
+                  "textSha256": "ef1ad43a51be5e642985218604e516daeaf001c8c40c2dc38e89f26b0721afdc"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 7,
+                  "label": "First nursing action & escalation",
+                  "textSha256": "a14b3d0b4d34596f4647a52e070479fbb384989b5e0b36312ac73f450d6c87bb"
+                }
+              ],
+              "id": "ibd2-quick-taylor-spatial-frame--7-day--point-0cfa2609d327",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-quick-taylor-spatial-frame::point-0cfa2609d327"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "point": "Weight bearing and wound/pin care follow prescribed orders.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A TSF patient asks whether full weight-bearing is allowed. What should guide the answer?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The absence of pain during one step",
+                  "explanation": "One painless step does not authorize full weight-bearing."
+                },
+                {
+                  "id": "B",
+                  "text": "Another patient's mobility instructions",
+                  "explanation": "Orders are patient-specific."
+                },
+                {
+                  "id": "C",
+                  "text": "The individual weight-bearing order and authorized plan",
+                  "explanation": "A frame does not imply unrestricted loading."
+                },
+                {
+                  "id": "D",
+                  "text": "The fact that the frame looks strong",
+                  "explanation": "Appearance does not establish permitted loading."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 6,
+                  "label": "Pin-site and frame red flags",
+                  "textSha256": "05c79dd8a9294947d3b04c4c142953e80a84f488b89cf3464e6cdf50c475e436"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 9,
+                  "label": "Common mistakes",
+                  "textSha256": "4a9ed248c38a23c1afd7ef1a12d88d0b30bb202ea76c74747747b794655d9117"
+                }
+              ],
+              "id": "ibd2-quick-taylor-spatial-frame--7-day--point-bb61ba030fb4",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-quick-taylor-spatial-frame::point-bb61ba030fb4"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "point": "Document time, change, baseline comparison, notification, instructions, and response.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Which note best supports follow-up after a TSF neurovascular change?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Timed findings, baseline comparison, notification and reassessment",
+                  "explanation": "This records the clinical trajectory and response."
+                },
+                {
+                  "id": "B",
+                  "text": "Routine observations normal yesterday",
+                  "explanation": "Yesterday's status does not document today's event."
+                },
+                {
+                  "id": "C",
+                  "text": "Dressing colour recorded without limb findings",
+                  "explanation": "This omits the main concern."
+                },
+                {
+                  "id": "D",
+                  "text": "Frame present; patient seen",
+                  "explanation": "This is too vague to track the change."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-quick-taylor-spatial-frame",
+                  "sectionIndex": 8,
+                  "label": "Reassessment & documentation",
+                  "textSha256": "240080dc22f5df80ad63da256477202b874d005bd0155d3be97dc5fb375cf579"
+                }
+              ],
+              "id": "ibd2-quick-taylor-spatial-frame--7-day--point-4bb6b362ceb3",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-quick-taylor-spatial-frame::point-4bb6b362ceb3"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 5
         }
       ]
     },
@@ -5022,6 +7267,193 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-04-osteomyelitis--7-day",
+          "itemId": "ibd2-lesson-04-osteomyelitis",
+          "itemType": "lesson",
+          "title": "Osteomyelitis — Think Deeper Infection",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "point": "Recognize persistent deep pain, drainage, poor healing, and inflammation.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A fracture wound has persistent drainage and deep pain despite little fever. What should be considered?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Possible osteomyelitis requiring review",
+                  "explanation": "Bone infection can occur without prominent fever."
+                },
+                {
+                  "id": "B",
+                  "text": "A reason to stop all wound observations",
+                  "explanation": "Persistent abnormal findings need continued assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "A problem confined to the skin by definition",
+                  "explanation": "Deep pain and persistence raise concern beyond superficial tissue."
+                },
+                {
+                  "id": "D",
+                  "text": "Normal healing proven by the absence of fever",
+                  "explanation": "Lack of fever does not establish normal healing."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-04-osteomyelitis",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "2e7385ff33942edefcb8976bba8a698482bcd20c581afe21c555fe6972195c6b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-04-osteomyelitis",
+                  "sectionIndex": 1,
+                  "label": "Think of it when",
+                  "textSha256": "8e994d22cba1eaaef5cdad46bb59d05cb990d1e4bc0bcee26fd20f214de9932a"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-04-osteomyelitis",
+                  "sectionIndex": 5,
+                  "label": "Common mistake",
+                  "textSha256": "5bb742511b0a48d02c066d22819a4f3e37ea989a2bac7fc3958d3b952d6a3384"
+                }
+              ],
+              "id": "ibd2-lesson-04-osteomyelitis--7-day--point-168c0b764886",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-04-osteomyelitis::point-168c0b764886"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "point": "Escalate systemic deterioration or worsening infection/hardware problems.",
+              "criticalForSafety": true,
+              "format": "single-best-answer",
+              "stem": "A patient with a draining wound becomes unwell with worsening pain. What should the nurse prioritize?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Changing antibiotics independently",
+                  "explanation": "Antimicrobial decisions require an authorized plan."
+                },
+                {
+                  "id": "B",
+                  "text": "Vitals, wound findings, neurovascular assessment and escalation",
+                  "explanation": "Systemic and local deterioration require prompt review."
+                },
+                {
+                  "id": "C",
+                  "text": "Documenting drainage without examining the patient",
+                  "explanation": "The systemic condition and limb must also be assessed."
+                },
+                {
+                  "id": "D",
+                  "text": "Waiting for the next dressing appointment",
+                  "explanation": "Deterioration needs earlier assessment."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-04-osteomyelitis",
+                  "sectionIndex": 2,
+                  "label": "Nursing check",
+                  "textSha256": "6a56e844490faef8b2f93889b53c423bf0f0444722ad06e619e8b617c2d02738"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-04-osteomyelitis",
+                  "sectionIndex": 3,
+                  "label": "Escalate",
+                  "textSha256": "763be2b8b48d999d4f9fc7beb6afcc230d38a64c119bd35a680308927b06c336"
+                }
+              ],
+              "id": "ibd2-lesson-04-osteomyelitis--7-day--point-a91227805c79",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-04-osteomyelitis::point-a91227805c79"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "point": "Treatment may include prolonged antibiotics and surgery/debridement.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "Why can osteomyelitis management involve both antibiotics and debridement?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Debridement means all antimicrobial follow-up is unnecessary",
+                  "explanation": "The full treatment and monitoring plan remains important."
+                },
+                {
+                  "id": "B",
+                  "text": "A clean surface dressing guarantees infected bone is treated",
+                  "explanation": "Surface care alone may not address deeper infection."
+                },
+                {
+                  "id": "C",
+                  "text": "Antibiotics always make surgery unnecessary",
+                  "explanation": "Surgery can still be needed."
+                },
+                {
+                  "id": "D",
+                  "text": "Infection may need antimicrobial treatment plus removal of infected tissue",
+                  "explanation": "The treatment plan can combine medical and surgical approaches."
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-04-osteomyelitis",
+                  "sectionIndex": 4,
+                  "label": "Treatment",
+                  "textSha256": "b26ee23db4663f320cdedc328282a27cc930cc15fce4fc48ce7b2615316ec0bb"
+                }
+              ],
+              "id": "ibd2-lesson-04-osteomyelitis--7-day--point-0216476272b3",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-04-osteomyelitis::point-0216476272b3"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     }
