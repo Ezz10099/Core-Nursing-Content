@@ -38,3 +38,30 @@ h1,h2,h3,p{margin-top:0}h1{font-size:30px;line-height:1.2;letter-spacing:-.045em
 /* Action-led navigation. */
 :root:not([data-theme=light]){--text:#f1f6f6;--muted:#bbccd1;--line:#41555f}
 #home .panel,#examsHub .panel{padding:18px;border-radius:17px;margin-bottom:14px}.next-actions h1{font-size:25px;margin:0 0 12px}.next-actions>.primary{width:100%;white-space:normal;text-align:left}.next-links{display:flex;gap:8px;margin-top:10px}.next-links button{flex:1;min-height:44px;font-size:13px}.due-row{border-top:1px solid var(--line);padding:12px 0;display:grid;gap:5px}.due-row small{color:var(--muted)}.due-row button{justify-self:start;min-height:44px}.exam-filters{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 16px}.exam-filters button{min-height:44px;padding:9px 12px;font-size:13px}.exam-filters [aria-pressed=true]{background:var(--tint);border-color:var(--accent);color:var(--accent)}.exam-card{border:1px solid var(--line);border-radius:13px;padding:14px;margin:10px 0}.exam-card h3{font-size:16px;line-height:1.45;margin:0 0 10px}.exam-card>button{min-height:44px;white-space:normal}.exam-card>details{margin-top:10px}.exam-card summary,.exam-about summary,#continue-reading summary,#practicePassedExams>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:13px}.exam-card .exam-link{font-size:13px;padding:10px;margin:0}.review-answer h3{font-size:17px;margin-top:0}.review-answer>.note{font-size:12px}.review-answer>button{margin-top:12px}.exam-about{margin-top:16px}#home .continue-item{padding:12px;font-size:14px;min-height:48px;margin-top:8px}#home .continue-item span{font-size:10px}#homeSnapshot{padding:13px 17px;margin:12px 0}#homeSnapshot p{display:none}#practicePassedExams .exam-link{font-size:14px;padding:12px}#practicePassedExams .exam-link small{font-size:12px}
+
+/* Material exam page: result, next step, then optional detail. */
+.exam-material-view #practice>.title-row{display:none}
+#examSession>.back{margin:0 0 12px;padding:8px 0;min-height:44px}
+#examSession>.panel{padding:18px;border-radius:17px;margin-bottom:12px}
+.exam-material-header h2{margin:0 0 14px;font-size:21px;line-height:1.4}
+.exam-latest>span,.exam-section-label{display:block;font-size:11px;letter-spacing:.04em;color:var(--muted);margin-bottom:5px}
+.exam-latest>strong{display:block;font-size:16px;line-height:1.4}
+.exam-latest p{margin:7px 0 0;font-size:16px;font-variant-numeric:tabular-nums}
+.exam-latest small,.exam-passed-row small{display:block;margin-top:3px;color:var(--muted);font-size:12px;font-weight:400}
+.exam-next-step h2{margin:5px 0 8px;font-size:20px;line-height:1.4}
+.exam-next-step .next-step-description{font-size:15px;margin:8px 0 12px;line-height:1.6}
+.exam-next-step>.primary{width:100%;min-height:48px}
+.exam-availability{display:block;font-size:12px;margin-top:6px;color:var(--muted)}
+.exam-next-step .exam-start{border:0;padding:0;margin:10px 0 16px}
+.exam-next-step .exam-start h3{font-size:17px}
+.exam-next-step .exam-start>button{min-height:48px;width:100%}
+.exam-secondary{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.exam-secondary button{flex:1;font-size:12px;min-height:44px;padding:9px 10px}
+.exam-completed>summary,.exam-reading>summary,.exam-details>summary{min-height:44px;cursor:pointer;font-size:15px;font-weight:600;display:flex;align-items:center}
+.exam-passed-row{border-top:1px solid var(--line);padding:12px 0}
+.exam-passed-row h3{font-size:14px;line-height:1.5;margin:0 0 3px}
+.exam-passed-row p{margin:0;font-size:14px;font-variant-numeric:tabular-nums}
+.exam-details .exam-start{padding:14px 0}
+.exam-details .exam-start h3{font-size:16px}
+.exam-details .note,.exam-reading>.note,.exam-rules{font-size:13px}
+.exam-rules{padding-left:18px;line-height:1.7}.exam-rules li{margin:8px 0}
