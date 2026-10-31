@@ -45,6 +45,23 @@ assert(d.querySelector('#practicePassedExams').textContent.includes('Standard ex
 w.CoreNursingExams.resume();assert(d.querySelector('#examTimer').textContent.includes('remaining'));assert.equal(state(w).exams.active.deadline,deadline);
 answerAll(w);w.CoreNursingExams.submit();saved=state(w);let r=saved.exams.items['ccu-heparin-ufh'];assert(r.attempts.at(-1).passed);assert.equal(r.due.stage,'7-day');
 assert(d.querySelector('#examSession').textContent.includes('Advanced exam passed.'));
+// Real 7-day banks unlock on the saved due date, resume untimed, and schedule 21 days from the actual pass.
+let sevenSaved=JSON.parse(JSON.stringify(saved));sevenSaved.exams.items['ccu-heparin-ufh'].due.at=Date.now()-1;
+let seven=boot(JSON.stringify(sevenSaved));seven.CoreNursingExams.open('heparin');
+assert(!seven.document.querySelector('#examSession').textContent.includes('Questions for this scheduled exam have not been added yet.'));
+assert([...seven.document.querySelectorAll('.exam-start')].find(n=>n.textContent.includes('7-day exam')).textContent.includes('above 90%'));
+seven.CoreNursingExams.start('7-day');assert.equal(state(seven).exams.active.deadline,null);
+assert(!seven.document.querySelector('.exam-feedback'));
+const sevenSnapshot=JSON.stringify(state(seven).exams.active.form),sevenBackup=JSON.stringify(state(seven));seven.close();seven=boot(sevenBackup);
+seven.CoreNursingExams.resume();assert.equal(JSON.stringify(state(seven).exams.active.form),sevenSnapshot);
+answerAll(seven);seven.CoreNursingExams.submit();let sevenRecord=state(seven).exams.items['ccu-heparin-ufh'];
+assert(sevenRecord.attempts.at(-1).completedAt);assert.equal(sevenRecord.due.stage,'21-day');
+assert.equal(sevenRecord.due.at-sevenRecord.attempts.at(-1).completedAt,21*86400000);seven.close();
+// A failed real 7-day form stays at the same stage with another seven-day interval.
+seven=boot(JSON.stringify(sevenSaved));seven.CoreNursingExams.open('heparin');seven.CoreNursingExams.start('7-day');answerAll(seven,false);seven.CoreNursingExams.submit();
+sevenRecord=state(seven).exams.items['ccu-heparin-ufh'];assert.equal(sevenRecord.due.stage,'7-day');
+assert.equal(sevenRecord.due.at-sevenRecord.attempts.at(-1).finishedAt,7*86400000);seven.close();
+
 // Advanced timers expire after reload and do not silently restart.
 w.CoreNursingExams.reviewItem();w.CoreNursingExams.start('advanced');saved=state(w);saved.exams.active.deadline=Date.now()-1;const expireBackup=JSON.stringify(saved);w.close();w=boot(expireBackup);d=w.document;
 assert.equal(state(w).exams.active,null);r=state(w).exams.items['ccu-heparin-ufh'];assert(r.attempts.at(-1).expired);assert.equal(r.attempts.at(-1).correct,0);

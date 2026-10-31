@@ -1,35 +1,38 @@
 {
   "schemaVersion": 1,
-  "bankVersion": 2,
+  "bankVersion": 3,
   "status": "authoring draft",
-  "sourceContentVersion": 35,
-  "sourceContentSha256": "55a9b11cbd8bf299081287dc93e1274cfc3f2034e5990d1fc2d1b7567b2c2382",
+  "sourceContentVersion": 36,
+  "sourceContentSha256": "964db5aecee75cb0c380dba123acfbe24d58168772204f6b07f506af0fe971d1",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
     "exams/authoring/medication-concepts.json",
     "exams/authoring/lesson-questions.json",
+    "exams/authoring/retention-questions.json",
     "exams/authoring/exclusions.json",
     "exams/authoring/coverage-review.json",
     "exams/sources.json"
   ],
   "counts": {
-    "exams": 184,
-    "questions": 849,
-    "single-best-answer": 834,
+    "exams": 276,
+    "questions": 1209,
+    "single-best-answer": 1194,
     "numeric-entry": 11,
     "short-answer": 4,
     "materials": 92,
     "medications": 74,
     "lessons": 18,
-    "mappedLearningPoints": 763
+    "mappedLearningPoints": 826
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
     "advanced": "application, interactions, competing explanations, and calculation",
+    "7-day": "delayed recall, distinctions and clinical application using separately authored questions on taught material",
     "calibration": "not empirically calibrated"
   },
-  "appIntegration": "Packaged for the draft standard/advanced exam interface. Scheduled-exam question sets are not yet generated.",
+  "appIntegration": "Packaged for the draft standard/advanced and 7-day exam interface. The 21-day sets are not yet generated.",
+  "retentionPolicy": "Representative high-value recall, relationships, recognition, action and reassessment. A form is not an exhaustive assessment of all taught points. No learner marks are required or inferred.",
   "entries": [
     {
       "itemId": "verified-losartan",
@@ -46,6 +49,11 @@
           "id": "verified-losartan--advanced",
           "stage": "advanced",
           "questionCount": 6
+        },
+        {
+          "id": "verified-losartan--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -63,6 +71,11 @@
         {
           "id": "ibd2-acamol--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-acamol--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -82,6 +95,11 @@
           "id": "ibd2-trufen--advanced",
           "stage": "advanced",
           "questionCount": 6
+        },
+        {
+          "id": "ibd2-trufen--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -100,6 +118,11 @@
           "id": "ibd2-cefazolin--advanced",
           "stage": "advanced",
           "questionCount": 6
+        },
+        {
+          "id": "ibd2-cefazolin--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -118,6 +141,11 @@
           "id": "ibd2-tramadol--advanced",
           "stage": "advanced",
           "questionCount": 6
+        },
+        {
+          "id": "ibd2-tramadol--7-day",
+          "stage": "7-day",
+          "questionCount": 7
         }
       ]
     },
@@ -136,6 +164,11 @@
           "id": "ibd2-meropenem--advanced",
           "stage": "advanced",
           "questionCount": 7
+        },
+        {
+          "id": "ibd2-meropenem--7-day",
+          "stage": "7-day",
+          "questionCount": 6
         }
       ]
     },
@@ -153,6 +186,11 @@
         {
           "id": "ibd2-prothiazine--advanced",
           "stage": "advanced",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-prothiazine--7-day",
+          "stage": "7-day",
           "questionCount": 4
         }
       ]
@@ -172,6 +210,11 @@
           "id": "ibd2-gabapentin--advanced",
           "stage": "advanced",
           "questionCount": 5
+        },
+        {
+          "id": "ibd2-gabapentin--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -190,6 +233,11 @@
           "id": "ibd2-avilac--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ibd2-avilac--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -208,6 +256,11 @@
           "id": "ibd2-carbamazepine--advanced",
           "stage": "advanced",
           "questionCount": 7
+        },
+        {
+          "id": "ibd2-carbamazepine--7-day",
+          "stage": "7-day",
+          "questionCount": 6
         }
       ]
     },
@@ -225,6 +278,11 @@
         {
           "id": "trolley-29--advanced",
           "stage": "advanced",
+          "questionCount": 4
+        },
+        {
+          "id": "trolley-29--7-day",
+          "stage": "7-day",
           "questionCount": 4
         }
       ]
@@ -244,6 +302,11 @@
           "id": "ibd2-epanutin-phenytoin--advanced",
           "stage": "advanced",
           "questionCount": 6
+        },
+        {
+          "id": "ibd2-epanutin-phenytoin--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -262,6 +325,11 @@
           "id": "ibd2-vancomycin--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ibd2-vancomycin--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -280,6 +348,11 @@
           "id": "ibd2-levox-levofloxacin--advanced",
           "stage": "advanced",
           "questionCount": 6
+        },
+        {
+          "id": "ibd2-levox-levofloxacin--7-day",
+          "stage": "7-day",
+          "questionCount": 7
         }
       ]
     },
@@ -298,6 +371,11 @@
           "id": "ibd2-ketrolac-ketorolac--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ibd2-ketrolac-ketorolac--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -316,6 +394,11 @@
           "id": "ccu-warfarin-coumadin--advanced",
           "stage": "advanced",
           "questionCount": 5
+        },
+        {
+          "id": "ccu-warfarin-coumadin--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -334,6 +417,11 @@
           "id": "ibd2-fortum-ceftazidime--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ibd2-fortum-ceftazidime--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -351,6 +439,11 @@
         {
           "id": "ibd2-scobutyl-hyoscine-butylbromide--advanced",
           "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-scobutyl-hyoscine-butylbromide--7-day",
+          "stage": "7-day",
           "questionCount": 2
         }
       ]
@@ -370,6 +463,11 @@
           "id": "ccu-isosorbide-mononitrate--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-isosorbide-mononitrate--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -387,6 +485,11 @@
         {
           "id": "ccu-isosorbide-dinitrate--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-isosorbide-dinitrate--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -406,6 +509,11 @@
           "id": "ccu-nadroparin--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-nadroparin--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -424,6 +532,11 @@
           "id": "ccu-enoxaparin--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-enoxaparin--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -442,6 +555,11 @@
           "id": "ccu-heparin-ufh--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-heparin-ufh--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -460,6 +578,11 @@
           "id": "ccu-aspirin--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-aspirin--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -477,6 +600,11 @@
         {
           "id": "ccu-clopidogrel--advanced",
           "stage": "advanced",
+          "questionCount": 4
+        },
+        {
+          "id": "ccu-clopidogrel--7-day",
+          "stage": "7-day",
           "questionCount": 4
         }
       ]
@@ -496,6 +624,11 @@
           "id": "ccu-bisoprolol--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-bisoprolol--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -514,6 +647,11 @@
           "id": "ccu-metoprolol--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-metoprolol--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -532,6 +670,11 @@
           "id": "ccu-propranolol--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-propranolol--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -550,6 +693,11 @@
           "id": "ccu-amlodipine--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-amlodipine--7-day",
+          "stage": "7-day",
+          "questionCount": 2
         }
       ]
     },
@@ -568,6 +716,11 @@
           "id": "ccu-verapamil--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-verapamil--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -586,6 +739,11 @@
           "id": "ccu-enalapril--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-enalapril--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -603,6 +761,11 @@
         {
           "id": "ccu-atorvastatin--advanced",
           "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ccu-atorvastatin--7-day",
+          "stage": "7-day",
           "questionCount": 2
         }
       ]
@@ -622,6 +785,11 @@
           "id": "ccu-furosemide--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-furosemide--7-day",
+          "stage": "7-day",
+          "questionCount": 6
         }
       ]
     },
@@ -639,6 +807,11 @@
         {
           "id": "ccu-dapagliflozin--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-dapagliflozin--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -658,6 +831,11 @@
           "id": "ccu-correction-insulin--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-correction-insulin--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -676,6 +854,11 @@
           "id": "ccu-norepinephrine--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-norepinephrine--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -694,6 +877,11 @@
           "id": "ccu-dobutamine--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-dobutamine--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -712,6 +900,11 @@
           "id": "ccu-dopamine--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-dopamine--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -730,6 +923,11 @@
           "id": "ccu-atropine--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-atropine--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -747,6 +945,11 @@
         {
           "id": "ccu-pantoprazole--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-pantoprazole--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -766,6 +969,11 @@
           "id": "ccu-omeprazole--advanced",
           "stage": "advanced",
           "questionCount": 1
+        },
+        {
+          "id": "ccu-omeprazole--7-day",
+          "stage": "7-day",
+          "questionCount": 2
         }
       ]
     },
@@ -784,6 +992,11 @@
           "id": "ccu-metronidazole--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-metronidazole--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -802,6 +1015,11 @@
           "id": "ccu-linezolid--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-linezolid--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -820,6 +1038,11 @@
           "id": "ccu-salbutamol--advanced",
           "stage": "advanced",
           "questionCount": 1
+        },
+        {
+          "id": "ccu-salbutamol--7-day",
+          "stage": "7-day",
+          "questionCount": 2
         }
       ]
     },
@@ -838,6 +1061,11 @@
           "id": "ccu-nystatin--advanced",
           "stage": "advanced",
           "questionCount": 1
+        },
+        {
+          "id": "ccu-nystatin--7-day",
+          "stage": "7-day",
+          "questionCount": 2
         }
       ]
     },
@@ -856,6 +1084,11 @@
           "id": "ccu-betahistine--advanced",
           "stage": "advanced",
           "questionCount": 1
+        },
+        {
+          "id": "ccu-betahistine--7-day",
+          "stage": "7-day",
+          "questionCount": 2
         }
       ]
     },
@@ -874,6 +1107,11 @@
           "id": "ccu-propafenone--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-propafenone--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -892,6 +1130,11 @@
           "id": "ccu-valzadepine--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-valzadepine--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -909,6 +1152,11 @@
         {
           "id": "ccu-valzan-hct--advanced",
           "stage": "advanced",
+          "questionCount": 5
+        },
+        {
+          "id": "ccu-valzan-hct--7-day",
+          "stage": "7-day",
           "questionCount": 5
         }
       ]
@@ -928,6 +1176,11 @@
           "id": "ccu-symbicort--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-symbicort--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -946,6 +1199,11 @@
           "id": "ccu-gentamicin--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-gentamicin--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -964,6 +1222,11 @@
           "id": "ccu-ipratropium--advanced",
           "stage": "advanced",
           "questionCount": 1
+        },
+        {
+          "id": "ccu-ipratropium--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -981,6 +1244,11 @@
         {
           "id": "ccu-adenosine--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-adenosine--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -1000,6 +1268,11 @@
           "id": "ccu-labetalol--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-labetalol--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -1018,6 +1291,11 @@
           "id": "ccu-ketamine--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-ketamine--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1036,6 +1314,11 @@
           "id": "ccu-pethidine--advanced",
           "stage": "advanced",
           "questionCount": 5
+        },
+        {
+          "id": "ccu-pethidine--7-day",
+          "stage": "7-day",
+          "questionCount": 6
         }
       ]
     },
@@ -1053,6 +1336,11 @@
         {
           "id": "ccu-morphine--advanced",
           "stage": "advanced",
+          "questionCount": 6
+        },
+        {
+          "id": "ccu-morphine--7-day",
+          "stage": "7-day",
           "questionCount": 6
         }
       ]
@@ -1072,6 +1360,11 @@
           "id": "trolley-spironolactone--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "trolley-spironolactone--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1089,6 +1382,11 @@
         {
           "id": "trolley-lidocaine--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "trolley-lidocaine--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -1108,6 +1406,11 @@
           "id": "trolley-sodium-bicarbonate--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "trolley-sodium-bicarbonate--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -1126,6 +1429,11 @@
           "id": "trolley-hydralazine--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "trolley-hydralazine--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -1144,6 +1452,11 @@
           "id": "trolley-dextrose50--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "trolley-dextrose50--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1162,6 +1475,11 @@
           "id": "trolley-hydrocortisone--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "trolley-hydrocortisone--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1179,6 +1497,11 @@
         {
           "id": "trolley-diazepam--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "trolley-diazepam--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -1198,6 +1521,11 @@
           "id": "trolley-amiodarone--advanced",
           "stage": "advanced",
           "questionCount": 6
+        },
+        {
+          "id": "trolley-amiodarone--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -1215,6 +1543,11 @@
         {
           "id": "trolley-calcium-gluconate--advanced",
           "stage": "advanced",
+          "questionCount": 4
+        },
+        {
+          "id": "trolley-calcium-gluconate--7-day",
+          "stage": "7-day",
           "questionCount": 4
         }
       ]
@@ -1234,6 +1567,11 @@
           "id": "trolley-magnesium-sulfate--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "trolley-magnesium-sulfate--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -1252,6 +1590,11 @@
           "id": "trolley-digoxin--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "trolley-digoxin--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -1270,12 +1613,17 @@
           "id": "trolley-aminophylline--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "trolley-aminophylline--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
     {
       "itemId": "ibd2-amitriptyline",
-      "title": "AMITRIPTYLINE",
+      "title": "ELATROL — amitriptyline",
       "itemType": "medication",
       "file": "banks-04.json",
       "forms": [
@@ -1288,6 +1636,11 @@
           "id": "ibd2-amitriptyline--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ibd2-amitriptyline--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1305,6 +1658,11 @@
         {
           "id": "ibd2-prednitab-prednisolone--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-prednitab-prednisolone--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -1324,6 +1682,11 @@
           "id": "ibd2-clindamycin--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ibd2-clindamycin--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -1342,6 +1705,11 @@
           "id": "ibd2-multivitamin--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ibd2-multivitamin--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -1360,6 +1728,11 @@
           "id": "verified-alteplase-v35--advanced",
           "stage": "advanced",
           "questionCount": 7
+        },
+        {
+          "id": "verified-alteplase-v35--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -1378,6 +1751,11 @@
           "id": "ccu-lesson-01-acs--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-01-acs--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1396,6 +1774,11 @@
           "id": "ccu-lesson-02-chb--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-lesson-02-chb--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -1414,6 +1797,11 @@
           "id": "ccu-lesson-03-12lead-ecg--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-03-12lead-ecg--7-day",
+          "stage": "7-day",
+          "questionCount": 5
         }
       ]
     },
@@ -1432,6 +1820,11 @@
           "id": "ccu-lesson-04-telemetry--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-04-telemetry--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1449,6 +1842,11 @@
         {
           "id": "ccu-lesson-05-dangerous-rhythms--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-05-dangerous-rhythms--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -1468,6 +1866,11 @@
           "id": "ccu-lesson-06-electrical-treatment--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-06-electrical-treatment--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1485,6 +1888,11 @@
         {
           "id": "ccu-lesson-07-sudden-deterioration--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-07-sudden-deterioration--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -1504,6 +1912,11 @@
           "id": "ccu-lesson-08-cardiogenic-shock--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-08-cardiogenic-shock--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1522,6 +1935,11 @@
           "id": "ccu-lesson-09-norepi-dobutamine--advanced",
           "stage": "advanced",
           "questionCount": 4
+        },
+        {
+          "id": "ccu-lesson-09-norepi-dobutamine--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     },
@@ -1540,6 +1958,11 @@
           "id": "ccu-lesson-10-electrolytes--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-10-electrolytes--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1557,6 +1980,11 @@
         {
           "id": "ccu-lesson-11-furosemide--advanced",
           "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-lesson-11-furosemide--7-day",
+          "stage": "7-day",
           "questionCount": 3
         }
       ]
@@ -1576,6 +2004,11 @@
           "id": "ccu-quick-heart-failure--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ccu-quick-heart-failure--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1593,6 +2026,11 @@
         {
           "id": "ccu-quick-dcm--advanced",
           "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ccu-quick-dcm--7-day",
+          "stage": "7-day",
           "questionCount": 2
         }
       ]
@@ -1612,6 +2050,11 @@
           "id": "ccu-quick-ihd-mi--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ccu-quick-ihd-mi--7-day",
+          "stage": "7-day",
+          "questionCount": 2
         }
       ]
     },
@@ -1630,6 +2073,11 @@
           "id": "ibd2-lesson-01-fracture-limb-safety--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-01-fracture-limb-safety--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1648,6 +2096,11 @@
           "id": "ibd2-lesson-02-external-fixator--advanced",
           "stage": "advanced",
           "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-02-external-fixator--7-day",
+          "stage": "7-day",
+          "questionCount": 4
         }
       ]
     },
@@ -1665,6 +2118,11 @@
         {
           "id": "ibd2-quick-taylor-spatial-frame--advanced",
           "stage": "advanced",
+          "questionCount": 5
+        },
+        {
+          "id": "ibd2-quick-taylor-spatial-frame--7-day",
+          "stage": "7-day",
           "questionCount": 5
         }
       ]
@@ -1684,6 +2142,11 @@
           "id": "ibd2-lesson-04-osteomyelitis--advanced",
           "stage": "advanced",
           "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-04-osteomyelitis--7-day",
+          "stage": "7-day",
+          "questionCount": 3
         }
       ]
     }
@@ -1691,27 +2154,27 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "d5ed26a2e5f5c3a1994c24678ac50bd3b77308cdc70ad5302d117c95e07c9ca0"
+      "sha256": "e9967145074ca8ad2003d1da9317e5595bbaeb9e8644dba4a58f3398c7299927"
     },
     {
       "path": "banks-02.json",
-      "sha256": "6819be9b1c25e73a44fa7401ed8e83330d9493a4edba6f64501673a8236fc057"
+      "sha256": "2e0ac95999032ea44a6683aab18ff4b40469f9169595985f18e2bffa16a9bd50"
     },
     {
       "path": "banks-03.json",
-      "sha256": "2cee3e9a3660a4f4ec10fe0d9194f8f7916599e3c3cfe7db6e0abce7b36bba94"
+      "sha256": "acf8a27e3fcba57b268eec278b8387dd73219b028ec78d652d939e3d4889cc58"
     },
     {
       "path": "banks-04.json",
-      "sha256": "6c90ccdfa25f1ba21211b99beb98a2328eb2dd3b7af5cc34b496b70c41b82c5e"
+      "sha256": "0e0fe3e630e0e1ffb76220809bb1eec953b56c4bfb21181e5b18802751c8230c"
     },
     {
       "path": "banks-05.json",
-      "sha256": "ba990d17c23b58c284d4165169c57ee4a467c571794c4230979cd5fb698963c7"
+      "sha256": "72ed797ec74bb3740b9622caee7c5951d77dfb10ea4623a4543584b52d1d7fe5"
     },
     {
       "path": "coverage.json",
-      "sha256": "fd1e8e56a9f82f9001ed05fe6fd6947e7bd398d4d5e8d28c748572cd58d1639a"
+      "sha256": "75b44ac106690c11a31b6469ccf91bc44bfeb5935f3abe52bc62bd9cbe5e7e55"
     }
   ]
 }

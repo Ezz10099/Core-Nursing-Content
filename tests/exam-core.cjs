@@ -93,3 +93,5 @@ assert(C.eligible(state,'test','advanced',bank.readingSections,unlockLow).ok);
 attempt(state,'advanced',10,unlockLow);
 assert(C.eligible(state,'test','advanced',bank.readingSections,unlockLow+2).ok);
 console.log('PASS: 24-hour advanced lock boundary, reload/backup persistence, per-material isolation, repeat failures, reading/safety gates and successful attempts');
+
+require('./seven-day.cjs');

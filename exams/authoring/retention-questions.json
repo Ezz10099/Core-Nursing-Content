@@ -1,0 +1,5012 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Baseline 7-day retention forms from taught content; optional shared markings can inform later revisions.",
+  "selectionPolicy": "Representative high-value recall, relationships, recognition, action and reassessment. A form is not an exhaustive assessment of all taught points. No learner marks are required or inferred.",
+  "medicationConcepts": {
+    "hypotension": {
+      "format": "single-best-answer",
+      "stem": "After {drug}, a patient feels faint during a transfer. What should the nurse do first?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Help the patient sit or lie safely and assess BP",
+          "explanation": "Prevent a fall while checking circulatory tolerance."
+        },
+        {
+          "text": "Complete the transfer before assessing BP",
+          "explanation": "Continuing upright activity can worsen presyncope."
+        },
+        {
+          "text": "Offer a drink and reassess at the next round",
+          "explanation": "Symptoms require assessment now, not delayed review."
+        },
+        {
+          "text": "Record dizziness and continue the medication round",
+          "explanation": "Documentation alone does not address current instability."
+        }
+      ]
+    },
+    "renal_dose": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving {drug} develops acute kidney injury. Which prescription detail most needs review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Dose and interval against current renal function",
+          "explanation": "Reduced clearance can require regimen adjustment."
+        },
+        {
+          "text": "Dose against the last normal creatinine only",
+          "explanation": "An old normal result does not establish current clearance."
+        },
+        {
+          "text": "Interval against serum potassium alone",
+          "explanation": "Potassium does not quantify the renal clearance needed for this review."
+        },
+        {
+          "text": "Dose against symptom relief alone",
+          "explanation": "Benefit does not exclude accumulation or a need for adjustment."
+        }
+      ]
+    },
+    "renal_monitor": {
+      "format": "single-best-answer",
+      "stem": "Which handover finding most changes the safety review for {drug}?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Rising creatinine with falling urine output",
+          "explanation": "Together these suggest deteriorating kidney function."
+        },
+        {
+          "text": "Stable creatinine with falling hemoglobin",
+          "explanation": "The hemoglobin change primarily suggests a different concern."
+        },
+        {
+          "text": "Normal urine colour without a current renal result",
+          "explanation": "Colour does not reliably assess filtration."
+        },
+        {
+          "text": "Normal creatinine from a previous admission",
+          "explanation": "Past renal function cannot establish current safety."
+        }
+      ]
+    },
+    "high_k": {
+      "format": "single-best-answer",
+      "stem": "A patient taking {drug} asks whether a potassium salt substitute is suitable. What is the best response?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Review serum potassium and other potassium-raising treatments",
+          "explanation": "Additional potassium can compound hyperkalemia risk."
+        },
+        {
+          "text": "Review serum sodium and dietary sodium alone",
+          "explanation": "Sodium review does not establish potassium safety."
+        },
+        {
+          "text": "Base approval on a normal BP reading",
+          "explanation": "BP cannot rule out hyperkalemia."
+        },
+        {
+          "text": "Replace the prescribed potassium check with an ECG alone",
+          "explanation": "An ECG does not reliably exclude abnormal potassium."
+        }
+      ]
+    },
+    "pregnancy": {
+      "format": "single-best-answer",
+      "stem": "Which new history needs prompt prescription review during RAAS-blocking treatment with {drug}?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "A positive pregnancy test",
+          "explanation": "Fetal toxicity makes pregnancy a major safety concern."
+        },
+        {
+          "text": "A preference for taking tablets with breakfast",
+          "explanation": "Meal preference does not carry this fetal risk."
+        },
+        {
+          "text": "A change from evening to morning exercise",
+          "explanation": "Exercise timing does not establish fetal safety."
+        },
+        {
+          "text": "A normal home BP reading",
+          "explanation": "Normal BP does not remove pregnancy-related risk."
+        }
+      ]
+    },
+    "acetaminophen_total": {
+      "format": "single-best-answer",
+      "stem": "A patient brings two pain medicines and a cold remedy while prescribed {drug}. What prevents an unintended overdose?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Add acetaminophen amounts from every product",
+          "explanation": "Different products may contribute the same ingredient."
+        },
+        {
+          "text": "Count only the medicine prescribed for pain",
+          "explanation": "A cold remedy may also contain acetaminophen."
+        },
+        {
+          "text": "Calculate each product's daily limit separately",
+          "explanation": "Separate product limits can hide combined overdose."
+        },
+        {
+          "text": "Count only products taken at the same time",
+          "explanation": "Doses across the full relevant period contribute to exposure."
+        }
+      ]
+    },
+    "hepatic_overdose": {
+      "format": "single-best-answer",
+      "stem": "A patient reports a potentially toxic acetaminophen ingestion but feels well. What should happen next?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Urgent toxicity assessment despite absent symptoms",
+          "explanation": "Early well-being does not exclude evolving liver injury."
+        },
+        {
+          "text": "Wait for jaundice before requesting review",
+          "explanation": "Waiting for established injury delays assessment."
+        },
+        {
+          "text": "Review only if abdominal pain develops",
+          "explanation": "Symptoms can be absent early after overdose."
+        },
+        {
+          "text": "Reassure because the patient is alert",
+          "explanation": "Alertness does not exclude acetaminophen toxicity."
+        }
+      ]
+    },
+    "pain_response": {
+      "format": "single-best-answer",
+      "stem": "Which note best documents benefit after prescribed {drug} for pain?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Pain fell from 7 to 3 and movement became easier",
+          "explanation": "This records symptom and functional response."
+        },
+        {
+          "text": "The scheduled dose was administered at 10:00",
+          "explanation": "Administration is not evidence of benefit."
+        },
+        {
+          "text": "The patient swallowed the medicine without difficulty",
+          "explanation": "Swallowing does not establish analgesic response."
+        },
+        {
+          "text": "The medication chart contains a signed entry",
+          "explanation": "A signature confirms administration, not effectiveness."
+        }
+      ]
+    },
+    "nsaid_gi": {
+      "format": "single-best-answer",
+      "stem": "During {drug} treatment a patient passes black tarry stool. Which action is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess bleeding and circulation and escalate promptly",
+          "explanation": "Melena can indicate gastrointestinal bleeding."
+        },
+        {
+          "text": "Offer food with the next dose and observe",
+          "explanation": "Food does not resolve suspected bleeding."
+        },
+        {
+          "text": "Document the stool as an expected analgesic effect",
+          "explanation": "Melena is an adverse warning, not the intended effect."
+        },
+        {
+          "text": "Check the pain score before deciding to report",
+          "explanation": "Pain relief does not make possible bleeding safe."
+        }
+      ]
+    },
+    "nsaid_renal": {
+      "format": "single-best-answer",
+      "stem": "An NSAID-treated patient has vomiting and poor intake. Which complication becomes more likely?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Acute kidney injury from reduced renal perfusion",
+          "explanation": "Volume depletion increases NSAID-related renal risk."
+        },
+        {
+          "text": "Improved filtration from prostaglandin inhibition",
+          "explanation": "Prostaglandin inhibition can compromise renal perfusion."
+        },
+        {
+          "text": "Protection against kidney injury from less urine",
+          "explanation": "Oliguria can indicate deterioration, not protection."
+        },
+        {
+          "text": "Increased kidney clearance from dehydration",
+          "explanation": "Dehydration does not improve renal clearance."
+        }
+      ]
+    },
+    "nsaid_allergy": {
+      "format": "single-best-answer",
+      "stem": "Before {drug}, a patient recalls wheezing and facial swelling after aspirin. What should the nurse do?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Clarify the reaction before administering the NSAID",
+          "explanation": "Wheeze and facial swelling may signal serious hypersensitivity."
+        },
+        {
+          "text": "Give it with food and monitor dyspepsia",
+          "explanation": "Food does not prevent an allergic or bronchospastic reaction."
+        },
+        {
+          "text": "Use a smaller dose without clarifying the reaction",
+          "explanation": "A reduced dose does not establish hypersensitivity safety."
+        },
+        {
+          "text": "Separate it from other medicines by two hours",
+          "explanation": "Timing separation does not prevent NSAID hypersensitivity."
+        }
+      ]
+    },
+    "duplicate_nsaid": {
+      "format": "single-best-answer",
+      "stem": "A patient taking {drug} also uses an over-the-counter anti-inflammatory. What should be checked?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Identify overlapping NSAID ingredients and exposure",
+          "explanation": "Duplication can increase gastrointestinal and renal harm."
+        },
+        {
+          "text": "Separate the two NSAIDs by a meal",
+          "explanation": "Meal separation does not remove duplicate pharmacological exposure."
+        },
+        {
+          "text": "Count only prescribed anti-inflammatory doses",
+          "explanation": "Nonprescription doses also contribute exposure."
+        },
+        {
+          "text": "Use both if the first does not fully relieve pain",
+          "explanation": "Unplanned duplication needs prescription review rather than automatic addition."
+        }
+      ]
+    },
+    "betalactam_allergy": {
+      "format": "single-best-answer",
+      "stem": "Shortly after {drug}, a patient develops wheeze, urticaria and hypotension. Which response takes priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop exposure and activate emergency anaphylaxis care",
+          "explanation": "Airway and circulatory compromise require an emergency response."
+        },
+        {
+          "text": "Slow administration and finish the prescribed dose",
+          "explanation": "Continued exposure can worsen a systemic reaction."
+        },
+        {
+          "text": "Record a mild rash for review at discharge",
+          "explanation": "Wheeze and hypotension are not a mild isolated rash."
+        },
+        {
+          "text": "Treat the nausea before reassessing the wheeze",
+          "explanation": "Airway and circulatory threats take priority."
+        }
+      ]
+    },
+    "antibiotic_diarrhea": {
+      "format": "single-best-answer",
+      "stem": "After antibiotic treatment, a patient reports frequent watery stools and abdominal cramps. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess and report possible antibiotic-associated colitis",
+          "explanation": "Significant diarrhea requires evaluation, including C. difficile when indicated."
+        },
+        {
+          "text": "Assume the infection is resolving through the bowel",
+          "explanation": "Diarrhea does not establish treatment success."
+        },
+        {
+          "text": "Recommend an antidiarrheal without further assessment",
+          "explanation": "Symptom suppression may be inappropriate before evaluating colitis."
+        },
+        {
+          "text": "Ignore it unless the next antibiotic dose is due",
+          "explanation": "Assessment is driven by symptoms, not the dosing time."
+        }
+      ]
+    },
+    "prophylaxis_timing": {
+      "format": "single-best-answer",
+      "stem": "Why is giving surgical antibiotic prophylaxis only after wound closure a concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Protective tissue exposure was needed at incision",
+          "explanation": "Prophylaxis aims to cover the contamination period."
+        },
+        {
+          "text": "The antibiotic cannot circulate after surgery",
+          "explanation": "It can circulate, but that misses the intended timing."
+        },
+        {
+          "text": "The drug becomes inactive when skin is closed",
+          "explanation": "Skin closure does not determine drug activity."
+        },
+        {
+          "text": "Prophylaxis is intended to treat established osteomyelitis",
+          "explanation": "Treatment of established infection is a different purpose."
+        }
+      ]
+    },
+    "antimicrobial_response": {
+      "format": "single-best-answer",
+      "stem": "After several doses of {drug}, fever persists and the patient deteriorates. What should guide the next review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Clinical course, cultures and the authorized treatment plan",
+          "explanation": "These help assess diagnosis, susceptibility and response."
+        },
+        {
+          "text": "The fever response to an antipyretic alone",
+          "explanation": "Temporary fever relief does not prove antimicrobial effectiveness."
+        },
+        {
+          "text": "The white cell count in isolation",
+          "explanation": "A single laboratory value does not replace the full clinical review."
+        },
+        {
+          "text": "An old culture from a different infection",
+          "explanation": "It may not represent the current pathogen or susceptibility."
+        }
+      ]
+    },
+    "opioid_respiration": {
+      "format": "single-best-answer",
+      "stem": "A patient given {drug} is difficult to wake and breathing slowly. What is the priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Support airway and breathing and summon urgent help",
+          "explanation": "Sedation with slow breathing suggests dangerous respiratory depression."
+        },
+        {
+          "text": "Walk the patient to improve alertness",
+          "explanation": "Mobilization is unsafe and does not support ventilation."
+        },
+        {
+          "text": "Reassess the pain score before calling for help",
+          "explanation": "Ventilation takes priority over analgesic benefit."
+        },
+        {
+          "text": "Let the patient sleep and repeat observations later",
+          "explanation": "Delay can allow respiratory failure to progress."
+        }
+      ]
+    },
+    "serotonin": {
+      "format": "single-best-answer",
+      "stem": "A patient on {drug} and a serotonergic antidepressant develops fever, agitation and clonus. What needs urgent review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Possible serotonin toxicity",
+          "explanation": "The medication combination and neuromuscular findings support this concern."
+        },
+        {
+          "text": "Expected isolated opioid constipation",
+          "explanation": "Constipation does not explain fever and clonus."
+        },
+        {
+          "text": "An uncomplicated local infusion reaction",
+          "explanation": "A local reaction does not explain the systemic neurological pattern."
+        },
+        {
+          "text": "Routine postural hypotension",
+          "explanation": "Postural hypotension does not account for clonus and fever."
+        }
+      ]
+    },
+    "sedation_falls": {
+      "format": "single-best-answer",
+      "stem": "A newly drowsy patient receiving {drug} wants to walk alone. What is the best immediate plan?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assist mobility and reassess sedation",
+          "explanation": "New drowsiness makes unassisted walking unsafe."
+        },
+        {
+          "text": "Allow walking because oxygen saturation is normal",
+          "explanation": "Normal SpO2 does not exclude impaired balance or sedation."
+        },
+        {
+          "text": "Use the previous day's mobility assessment",
+          "explanation": "A new change requires current assessment."
+        },
+        {
+          "text": "Delay help until the next scheduled observation",
+          "explanation": "The current fall risk needs action now."
+        }
+      ]
+    },
+    "constipation": {
+      "format": "single-best-answer",
+      "stem": "Pain is controlled with {drug}, but stools have become hard and infrequent. Which response is appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Review bowel pattern and the prescribed prevention plan",
+          "explanation": "Opioid-related reduced motility can need bowel management."
+        },
+        {
+          "text": "Stop checking bowel function once pain improves",
+          "explanation": "Analgesic benefit does not remove bowel adverse effects."
+        },
+        {
+          "text": "Treat absent stools as proof of drug absorption",
+          "explanation": "Bowel inactivity does not measure absorption."
+        },
+        {
+          "text": "Reassure that reduced mobility prevents impaction",
+          "explanation": "Immobility can worsen constipation rather than prevent it."
+        }
+      ]
+    },
+    "seizure_risk": {
+      "format": "single-best-answer",
+      "stem": "A seizure occurs after a medicine change involving {drug}. Which review best addresses a medication contribution?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Recent doses, renal trend and interacting medicines",
+          "explanation": "These can reveal accumulation or an interaction."
+        },
+        {
+          "text": "The most recent dose time without the regimen",
+          "explanation": "One timestamp does not establish exposure over time."
+        },
+        {
+          "text": "The original admission creatinine alone",
+          "explanation": "Renal function may have changed during treatment."
+        },
+        {
+          "text": "The previous seizure history without current exposure",
+          "explanation": "History matters but does not adequately assess a new medication contribution."
+        }
+      ]
+    },
+    "rash_serious": {
+      "format": "single-best-answer",
+      "stem": "A patient on {drug} develops widespread rash, fever and mouth ulcers. What should the nurse do?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Seek urgent assessment for a serious drug reaction",
+          "explanation": "Mucosal involvement and systemic symptoms are red flags."
+        },
+        {
+          "text": "Apply moisturizer and review at the next visit",
+          "explanation": "This delays assessment of a potentially severe reaction."
+        },
+        {
+          "text": "Give the next dose because seizure control is good",
+          "explanation": "Treatment benefit does not exclude serious hypersensitivity."
+        },
+        {
+          "text": "Treat it as simple dry skin without reporting",
+          "explanation": "Fever and mouth ulcers are inconsistent with simple dryness."
+        }
+      ]
+    },
+    "cbc": {
+      "format": "single-best-answer",
+      "stem": "During {drug} therapy, which new finding most supports checking the prescribed CBC urgently?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Unexpected bruising with gum bleeding",
+          "explanation": "These suggest a platelet or other hematological problem."
+        },
+        {
+          "text": "Postural dizziness with an isolated BP fall",
+          "explanation": "This more directly calls for circulatory assessment."
+        },
+        {
+          "text": "Burning feet with persistent numbness",
+          "explanation": "This more directly suggests neuropathy."
+        },
+        {
+          "text": "Dry mouth with urinary hesitancy",
+          "explanation": "This more directly suggests an antimuscarinic effect."
+        }
+      ]
+    },
+    "low_na": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving {drug} has new confusion and a low sodium result. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess neurological status and escalate the electrolyte change",
+          "explanation": "Symptomatic hyponatremia can be clinically important."
+        },
+        {
+          "text": "Assume the confusion is normal tiredness",
+          "explanation": "The abnormal sodium requires a clinical assessment."
+        },
+        {
+          "text": "Use the normal potassium to dismiss the result",
+          "explanation": "Normal potassium does not exclude sodium-related symptoms."
+        },
+        {
+          "text": "Repeat the dose before reviewing consciousness",
+          "explanation": "A symptomatic electrolyte problem needs prompt review."
+        }
+      ]
+    },
+    "eps": {
+      "format": "single-best-answer",
+      "stem": "After metoclopramide, a patient's neck twists painfully and the eyes deviate upward. Which adverse reaction is most likely?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Acute dystonia",
+          "explanation": "Sustained abnormal contractions can follow dopamine blockade."
+        },
+        {
+          "text": "Simple postural dizziness",
+          "explanation": "Dizziness does not explain sustained abnormal postures."
+        },
+        {
+          "text": "Expected relief of gastric stasis",
+          "explanation": "Improved motility does not produce this motor pattern."
+        },
+        {
+          "text": "Isolated antimuscarinic dry mouth",
+          "explanation": "Dry mouth does not explain the movement disorder."
+        }
+      ]
+    },
+    "gi_obstruction": {
+      "format": "single-best-answer",
+      "stem": "A metoclopramide order is written for a patient with confirmed mechanical bowel obstruction. Why clarify it?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Increasing motility can be unsafe against an obstruction",
+          "explanation": "Mechanical obstruction is a safety concern for prokinetic therapy."
+        },
+        {
+          "text": "The medicine suppresses all intestinal movement",
+          "explanation": "Metoclopramide has prokinetic actions."
+        },
+        {
+          "text": "The drug is primarily a replacement electrolyte",
+          "explanation": "It is not an electrolyte replacement."
+        },
+        {
+          "text": "Obstruction proves that every antiemetic is appropriate",
+          "explanation": "Antiemetic suitability depends on its specific action and contraindications."
+        }
+      ]
+    },
+    "phenytoin_toxicity": {
+      "format": "single-best-answer",
+      "stem": "A patient on phenytoin develops nystagmus, ataxia and slurred speech. Which interpretation requires review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Possible concentration-related neurotoxicity",
+          "explanation": "These neurological findings are compatible with phenytoin toxicity."
+        },
+        {
+          "text": "Adequate seizure control without adverse effects",
+          "explanation": "Seizure control does not explain new ataxia or dysarthria."
+        },
+        {
+          "text": "Expected uncomplicated constipation",
+          "explanation": "Constipation does not explain these neurological signs."
+        },
+        {
+          "text": "A harmless change requiring no medication review",
+          "explanation": "New neurological signs require assessment."
+        }
+      ]
+    },
+    "drug_levels": {
+      "format": "single-best-answer",
+      "stem": "A drug concentration arrives without a recorded sampling time. What should the nurse clarify?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Sampling time, recent doses and current symptoms",
+          "explanation": "These are needed to interpret measured exposure."
+        },
+        {
+          "text": "The printed laboratory range without sampling time",
+          "explanation": "A range alone cannot establish correct interpretation."
+        },
+        {
+          "text": "The last normal concentration from weeks earlier",
+          "explanation": "Exposure may have changed since that result."
+        },
+        {
+          "text": "The medicine's prescribed daily total alone",
+          "explanation": "Dose alone does not establish concentration timing or toxicity."
+        }
+      ]
+    },
+    "vanco_infusion": {
+      "format": "single-best-answer",
+      "stem": "A vancomycin infusion was accidentally accelerated and flushing develops. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Pause the infusion and assess airway, BP and symptoms",
+          "explanation": "An infusion reaction needs assessment; severe symptoms also require emergency review."
+        },
+        {
+          "text": "Finish quickly because the total dose is unchanged",
+          "explanation": "Rate can matter even when the total dose is correct."
+        },
+        {
+          "text": "Record flushing without checking circulation",
+          "explanation": "Hypotension and systemic involvement must be assessed."
+        },
+        {
+          "text": "Give the next infusion faster to shorten exposure",
+          "explanation": "Faster infusion can increase infusion-reaction risk."
+        }
+      ]
+    },
+    "tendon": {
+      "format": "single-best-answer",
+      "stem": "A patient taking levofloxacin reports new Achilles pain. What advice is appropriate while obtaining prompt review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Avoid stressing the tendon and report the symptom",
+          "explanation": "Fluoroquinolone-associated tendon injury needs assessment."
+        },
+        {
+          "text": "Exercise through the pain to restore strength",
+          "explanation": "Loading may worsen a developing tendon injury."
+        },
+        {
+          "text": "Ignore the pain if there is no visible bruising",
+          "explanation": "Tendon injury can present without bruising."
+        },
+        {
+          "text": "Double the next dose to treat presumed infection there",
+          "explanation": "Unprescribed dose changes are unsafe and miss the adverse effect."
+        }
+      ]
+    },
+    "oral_cations": {
+      "format": "single-best-answer",
+      "stem": "Oral levofloxacin and an iron supplement are scheduled together. What should the nurse check?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Product-directed separation to reduce chelation",
+          "explanation": "Multivalent cations can reduce oral fluoroquinolone absorption."
+        },
+        {
+          "text": "Whether extra iron improves antibiotic absorption",
+          "explanation": "Iron can bind the antibiotic instead."
+        },
+        {
+          "text": "Whether both can be crushed into the same mixture",
+          "explanation": "Mixing does not prevent the absorption interaction."
+        },
+        {
+          "text": "Whether IV compatibility guarantees oral compatibility",
+          "explanation": "IV compatibility does not address gastrointestinal chelation."
+        }
+      ]
+    },
+    "qt": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving {drug} has QT prolongation with low K and Mg. What is the main safety concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Increased risk of ventricular dysrhythmia",
+          "explanation": "QT prolongation plus electrolyte depletion raises proarrhythmic concern."
+        },
+        {
+          "text": "Proof that the medicine has no cardiac effect",
+          "explanation": "QT prolongation is a cardiac safety signal."
+        },
+        {
+          "text": "A reason to discontinue rhythm observation",
+          "explanation": "The abnormality calls for closer review and monitoring."
+        },
+        {
+          "text": "A normal expected finding requiring no correction review",
+          "explanation": "Electrolyte abnormalities and QT change need assessment."
+        }
+      ]
+    },
+    "bleeding": {
+      "format": "single-best-answer",
+      "stem": "Which new finding during {drug} therapy needs prompt bleeding assessment?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Hematuria with dizziness and a falling BP",
+          "explanation": "Blood loss with circulatory symptoms can be significant."
+        },
+        {
+          "text": "A healed venepuncture site without bruising",
+          "explanation": "This does not suggest current bleeding."
+        },
+        {
+          "text": "Stable hemoglobin with no reported symptoms",
+          "explanation": "This does not demonstrate a new bleeding event."
+        },
+        {
+          "text": "A regular pulse with unchanged observations",
+          "explanation": "Stable observations alone are not a bleeding warning."
+        }
+      ]
+    },
+    "formulation": {
+      "format": "single-best-answer",
+      "stem": "A supplied {drug} product has a different route or release type from the prescription. What is the safest action?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Verify the exact product and authorized substitution",
+          "explanation": "Matching a drug name does not establish formulation equivalence."
+        },
+        {
+          "text": "Substitute if the tablet strength looks similar",
+          "explanation": "Strength alone does not establish release or route suitability."
+        },
+        {
+          "text": "Crush the product to make absorption equivalent",
+          "explanation": "Crushing can alter release and may be unsafe."
+        },
+        {
+          "text": "Use the previous patient's preparation instructions",
+          "explanation": "Preparation must match this exact product and order."
+        }
+      ]
+    },
+    "valproate": {
+      "format": "single-best-answer",
+      "stem": "Why might a previously controlled epilepsy patient seize after meropenem is started with valproate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Meropenem can reduce valproate concentrations",
+          "explanation": "This interaction can cause loss of seizure control."
+        },
+        {
+          "text": "Meropenem reliably increases valproate concentrations",
+          "explanation": "The important interaction lowers valproate exposure."
+        },
+        {
+          "text": "Valproate prevents every antibiotic-related seizure",
+          "explanation": "It does not eliminate interactions or all seizure risks."
+        },
+        {
+          "text": "The combination cannot affect anticonvulsant treatment",
+          "explanation": "Carbapenem-valproate interactions are clinically important."
+        }
+      ]
+    },
+    "anticholinergic": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving {drug} develops dry mouth, blurred vision and difficulty passing urine. Which pattern fits?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Antimuscarinic adverse effects",
+          "explanation": "Muscarinic blockade can affect salivation, vision and bladder emptying."
+        },
+        {
+          "text": "A therapeutic increase in bladder emptying",
+          "explanation": "Urinary retention is an adverse effect, not improved emptying."
+        },
+        {
+          "text": "A selective fall in blood glucose",
+          "explanation": "The symptom pattern does not establish hypoglycemia."
+        },
+        {
+          "text": "An isolated local skin reaction",
+          "explanation": "Several organ systems are involved, not just skin."
+        }
+      ]
+    },
+    "cns_combination": {
+      "format": "single-best-answer",
+      "stem": "A new opioid is added to a sedating regimen containing {drug}. Which change needs close observation?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Increasing drowsiness with slow or shallow breathing",
+          "explanation": "These suggest additive CNS and respiratory depression."
+        },
+        {
+          "text": "Dry mouth with urinary hesitancy",
+          "explanation": "This more directly suggests antimuscarinic effects."
+        },
+        {
+          "text": "Hard stools without altered consciousness",
+          "explanation": "This suggests constipation rather than respiratory depression."
+        },
+        {
+          "text": "An isolated mild rash without sedation",
+          "explanation": "This suggests a different adverse-effect pathway."
+        }
+      ]
+    },
+    "anticonvulsant_stop": {
+      "format": "single-best-answer",
+      "stem": "A patient stops chronic {drug} because no seizures have occurred recently. What is the best teaching?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Seek an authorized plan before changing treatment",
+          "explanation": "Abrupt interruption can lead to loss of seizure control."
+        },
+        {
+          "text": "Recent seizure freedom proves treatment is unnecessary",
+          "explanation": "Seizure freedom may reflect effective treatment."
+        },
+        {
+          "text": "Replace missed doses with any available anticonvulsant",
+          "explanation": "Anticonvulsants are not freely interchangeable."
+        },
+        {
+          "text": "Restart with twice the usual dose without advice",
+          "explanation": "Unsupervised dose doubling can cause toxicity."
+        }
+      ]
+    },
+    "edema": {
+      "format": "single-best-answer",
+      "stem": "After {drug}, ankle swelling appears. Which assessment best distinguishes isolated edema from worsening HF?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Breathing, weight trend, JVP and other congestion signs",
+          "explanation": "Interpret edema within the full clinical picture."
+        },
+        {
+          "text": "The ankle circumference alone",
+          "explanation": "One local measurement does not establish systemic congestion."
+        },
+        {
+          "text": "The patient's preferred tablet timing",
+          "explanation": "Timing preference does not explain cardiopulmonary status."
+        },
+        {
+          "text": "The absence of pain in the ankle alone",
+          "explanation": "Painless edema can still have important systemic causes."
+        }
+      ]
+    },
+    "laxative_response": {
+      "format": "single-best-answer",
+      "stem": "Which change indicates the intended constipation response to lactulose?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Easier passage of a soft stool",
+          "explanation": "This measures the desired bowel effect."
+        },
+        {
+          "text": "Increasing watery diarrhea with thirst",
+          "explanation": "This can indicate excessive effect and dehydration."
+        },
+        {
+          "text": "No stool with increasing abdominal distension",
+          "explanation": "This does not demonstrate constipation relief."
+        },
+        {
+          "text": "A lower pain score without any bowel change",
+          "explanation": "Pain score alone does not establish laxative response."
+        }
+      ]
+    },
+    "dehydration": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving {drug} develops marked fluid loss and postural dizziness. What needs reassessment?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Volume status, BP and relevant electrolytes",
+          "explanation": "Losses can cause hypovolemia and electrolyte disturbance."
+        },
+        {
+          "text": "The original symptom response without fluid balance",
+          "explanation": "Benefit does not exclude excessive losses."
+        },
+        {
+          "text": "A single urine colour observation without vitals",
+          "explanation": "Colour cannot establish the degree of circulatory compromise."
+        },
+        {
+          "text": "The previous week's weight without a current assessment",
+          "explanation": "An old weight does not explain a new symptomatic loss."
+        }
+      ]
+    },
+    "lactulose_goal": {
+      "format": "single-best-answer",
+      "stem": "Why should the nurse verify the indication before judging a lactulose regimen?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Constipation and hepatic encephalopathy have different goals",
+          "explanation": "The treatment target and assessment plan depend on indication."
+        },
+        {
+          "text": "Every indication uses an identical clinical target",
+          "explanation": "Indication-specific goals differ."
+        },
+        {
+          "text": "Diarrhea always proves optimal treatment",
+          "explanation": "Excess diarrhea can cause dehydration and electrolyte loss."
+        },
+        {
+          "text": "The indication does not affect reassessment",
+          "explanation": "Clinical response must be judged against the prescribed purpose."
+        }
+      ]
+    },
+    "parkinsonism": {
+      "format": "single-best-answer",
+      "stem": "Which history most directly raises concern before metoclopramide?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Parkinson disease with troublesome motor symptoms",
+          "explanation": "Dopamine blockade can worsen parkinsonism."
+        },
+        {
+          "text": "Constipation treated with dietary advice",
+          "explanation": "This is not the specific dopamine-related concern."
+        },
+        {
+          "text": "A healed fracture without neurological disease",
+          "explanation": "It does not establish the same contraindication concern."
+        },
+        {
+          "text": "Seasonal rhinitis without medication",
+          "explanation": "This does not explain dopamine-related motor risk."
+        }
+      ]
+    },
+    "slow_iv": {
+      "format": "single-best-answer",
+      "stem": "Two injection products with the same drug name have different preparation instructions. Which should guide administration?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "The supplied product's instructions and authorized order",
+          "explanation": "Route, dilution and rate are product- and indication-specific."
+        },
+        {
+          "text": "The rate remembered from another manufacturer's product",
+          "explanation": "Similar names do not guarantee identical preparation."
+        },
+        {
+          "text": "The fastest rate used elsewhere on the ward",
+          "explanation": "Ward custom cannot replace verified instructions."
+        },
+        {
+          "text": "The remaining time in the medication round",
+          "explanation": "Convenience does not determine a safe administration rate."
+        }
+      ]
+    },
+    "neuropathy": {
+      "format": "single-best-answer",
+      "stem": "During {drug} treatment, which symptom needs review for peripheral nerve injury?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "New persistent burning and numbness in the feet",
+          "explanation": "These are compatible with peripheral neuropathy."
+        },
+        {
+          "text": "A brief taste change after swallowing",
+          "explanation": "Taste change does not establish peripheral nerve injury."
+        },
+        {
+          "text": "Unchanged sensation and normal movement",
+          "explanation": "This does not demonstrate new neuropathy."
+        },
+        {
+          "text": "An old healed scar without sensory change",
+          "explanation": "A stable scar is not new treatment-related sensory loss."
+        }
+      ]
+    },
+    "warfarin_inr": {
+      "format": "single-best-answer",
+      "stem": "A warfarin patient's INR result returns. What is the appropriate comparison?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "The individual's prescribed therapeutic INR target",
+          "explanation": "Targets depend on indication and patient factors."
+        },
+        {
+          "text": "A universal target for every patient",
+          "explanation": "One target does not fit every indication."
+        },
+        {
+          "text": "The platelet count reference interval",
+          "explanation": "INR and platelet count measure different aspects of hemostasis."
+        },
+        {
+          "text": "The normal range for an untreated person only",
+          "explanation": "Therapeutic anticoagulation is judged against its prescribed target."
+        }
+      ]
+    },
+    "warfarin_delay": {
+      "format": "single-best-answer",
+      "stem": "A patient asks why warfarin has not immediately produced its full effect. Which explanation fits?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Existing clotting factors must decline after synthesis is inhibited",
+          "explanation": "This explains the delayed anticoagulant effect."
+        },
+        {
+          "text": "Warfarin must first dissolve the existing thrombus",
+          "explanation": "It is not a direct clot-dissolving drug."
+        },
+        {
+          "text": "Warfarin works only while the tablet is in the stomach",
+          "explanation": "Its effect follows absorption and hepatic action."
+        },
+        {
+          "text": "Warfarin permanently removes circulating platelets",
+          "explanation": "Its principal mechanism is not platelet removal."
+        }
+      ]
+    },
+    "warfarin_interactions": {
+      "format": "single-best-answer",
+      "stem": "A patient stabilized on warfarin starts an interacting medicine. What follow-up is most relevant?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Review bleeding symptoms and the ordered INR plan",
+          "explanation": "Interactions can alter anticoagulant response."
+        },
+        {
+          "text": "Wait for the next annual review regardless of symptoms",
+          "explanation": "A new interaction can require earlier monitoring."
+        },
+        {
+          "text": "Use a normal pulse to rule out interaction",
+          "explanation": "Pulse alone cannot establish anticoagulation safety."
+        },
+        {
+          "text": "Assume stable old doses guarantee a stable INR",
+          "explanation": "New medicines or illness can change the response."
+        }
+      ]
+    },
+    "nitrate_pde5": {
+      "format": "single-best-answer",
+      "stem": "A patient due for a nitrate reports recent PDE5-inhibitor use. What should the nurse do?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Clarify timing and obtain prescription review before giving it",
+          "explanation": "The combination can cause profound hypotension."
+        },
+        {
+          "text": "Give it if the patient has no headache",
+          "explanation": "Absence of headache does not exclude the interaction."
+        },
+        {
+          "text": "Give it with food to cancel the interaction",
+          "explanation": "Food does not cancel the hemodynamic interaction."
+        },
+        {
+          "text": "Rely on the usual dose to guarantee safety",
+          "explanation": "A usual dose can still interact dangerously."
+        }
+      ]
+    },
+    "nitrate_rescue": {
+      "format": "single-best-answer",
+      "stem": "A patient carries long-acting isosorbide mononitrate for angina. Which understanding is correct?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "It is maintenance treatment rather than rapid attack rescue",
+          "explanation": "Its role must not be confused with an acute rescue formulation."
+        },
+        {
+          "text": "It replaces urgent assessment for new persistent pain",
+          "explanation": "New concerning pain still requires assessment."
+        },
+        {
+          "text": "It should be crushed whenever chest pain starts",
+          "explanation": "Crushing can be unsafe and does not establish a rescue plan."
+        },
+        {
+          "text": "It acts like every sublingual nitrate product",
+          "explanation": "Formulations have different intended uses and kinetics."
+        }
+      ]
+    },
+    "platelets": {
+      "format": "single-best-answer",
+      "stem": "A platelet count falls substantially during LMWH treatment. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Report the trend and review heparin-related complications",
+          "explanation": "A significant fall can require investigation, including HIT assessment."
+        },
+        {
+          "text": "Ignore it if a clot is not visible",
+          "explanation": "HIT and other thrombocytopenias need not have visible thrombosis."
+        },
+        {
+          "text": "Use INR alone to exclude the complication",
+          "explanation": "INR does not exclude HIT."
+        },
+        {
+          "text": "Continue without review because LMWH cannot affect platelets",
+          "explanation": "LMWH does not eliminate heparin-related thrombocytopenia risk."
+        }
+      ]
+    },
+    "lmwh_substitution": {
+      "format": "single-best-answer",
+      "stem": "A ward proposes replacing nadroparin with the same syringe volume of enoxaparin. Why clarify it?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Check product-specific units, strength and prescribed regimen",
+          "explanation": "Equal volumes of different LMWHs are not dose-equivalent."
+        },
+        {
+          "text": "Give the same volume if both are subcutaneous",
+          "explanation": "A shared route does not establish equivalent dosing."
+        },
+        {
+          "text": "Match the number of milligrams without checking the product",
+          "explanation": "Dose selection is product- and indication-specific."
+        },
+        {
+          "text": "Use the same syringe size with the old instructions",
+          "explanation": "Syringe size does not establish strength or interchangeability."
+        }
+      ]
+    },
+    "lmwh_route": {
+      "format": "single-best-answer",
+      "stem": "A heparin or LMWH order is mistakenly transcribed as intramuscular. What is the concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Intramuscular injection increases hematoma risk and is not an authorized route",
+          "explanation": "Use the prescribed approved route after clarification."
+        },
+        {
+          "text": "Intramuscular injection is equivalent to subcutaneous dosing",
+          "explanation": "The routes are not interchangeable."
+        },
+        {
+          "text": "A smaller needle removes the route restriction",
+          "explanation": "Needle size does not authorize an unsuitable route."
+        },
+        {
+          "text": "A normal INR makes the intramuscular route acceptable",
+          "explanation": "INR does not establish route safety for these drugs."
+        }
+      ]
+    },
+    "procedure_timing": {
+      "format": "single-best-answer",
+      "stem": "An anticoagulated patient is booked for an invasive procedure. What information must be communicated?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "The anticoagulant, prescribed dose and last dose time",
+          "explanation": "All three inform procedure-related bleeding decisions."
+        },
+        {
+          "text": "Only today's platelet count",
+          "explanation": "A platelet result does not identify residual anticoagulant exposure."
+        },
+        {
+          "text": "Only the latest INR",
+          "explanation": "INR does not quantify every anticoagulant's effect."
+        },
+        {
+          "text": "Only whether visible bruising is present",
+          "explanation": "Absence of bruising does not establish procedural safety."
+        }
+      ]
+    },
+    "hit": {
+      "format": "single-best-answer",
+      "stem": "During UFH exposure, platelets fall and a new thrombosis is suspected. Which interpretation is most important?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Possible heparin-induced thrombocytopenia",
+          "explanation": "HIT can produce thrombosis despite a falling platelet count."
+        },
+        {
+          "text": "Proof that all anticoagulation effects have stopped",
+          "explanation": "Thrombocytopenia does not mean thrombosis risk is absent."
+        },
+        {
+          "text": "A normal expected response requiring no review",
+          "explanation": "This combination requires urgent evaluation."
+        },
+        {
+          "text": "A complication excluded by the presence of thrombosis",
+          "explanation": "Thrombosis is a key concern in HIT."
+        }
+      ]
+    },
+    "heparin_infusion": {
+      "format": "single-best-answer",
+      "stem": "A heparin infusion bag and catheter-flush product are both available. What prevents a major error?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Verify concentration, intended use and prescribed units",
+          "explanation": "Therapeutic and flush products are not interchangeable."
+        },
+        {
+          "text": "Choose whichever bag has the same generic name",
+          "explanation": "The name alone does not establish strength or purpose."
+        },
+        {
+          "text": "Match volumes without checking concentration",
+          "explanation": "Equal volumes can contain very different amounts."
+        },
+        {
+          "text": "Adjust flow using the previous patient's pump setting",
+          "explanation": "Dose and concentration must match this patient's order."
+        }
+      ]
+    },
+    "antithrombotic_combination": {
+      "format": "single-best-answer",
+      "stem": "A patient receives an anticoagulant plus antiplatelet treatment. What should the nurse emphasize?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Bleeding surveillance and verification of the intended combination",
+          "explanation": "Combined effects can increase bleeding risk."
+        },
+        {
+          "text": "Assuming one medicine cancels the other",
+          "explanation": "They do not cancel each other's bleeding risk."
+        },
+        {
+          "text": "Stopping one medicine without checking the indication",
+          "explanation": "Some combinations are intentional and require authorized review."
+        },
+        {
+          "text": "Replacing bleeding assessment with pulse checks alone",
+          "explanation": "Pulse alone does not adequately screen for bleeding."
+        }
+      ]
+    },
+    "stent_omission": {
+      "format": "single-best-answer",
+      "stem": "Clopidogrel is unexpectedly absent from a recent coronary-stent patient's chart. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Clarify the omission promptly with the responsible team",
+          "explanation": "Unplanned interruption can create stent-thrombosis risk."
+        },
+        {
+          "text": "Assume the stent removes the need for antiplatelets",
+          "explanation": "A stent can make antiplatelet continuity especially important."
+        },
+        {
+          "text": "Wait for chest pain before reviewing the chart",
+          "explanation": "Prevention should not wait for an ischemic complication."
+        },
+        {
+          "text": "Substitute an over-the-counter analgesic",
+          "explanation": "Analgesics are not authorized substitutes for the prescribed plan."
+        }
+      ]
+    },
+    "ppi_clopidogrel": {
+      "format": "single-best-answer",
+      "stem": "Which acid-suppression order warrants interaction review in a patient on clopidogrel?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Omeprazole",
+          "explanation": "It can impair clopidogrel activation more than pantoprazole."
+        },
+        {
+          "text": "Pantoprazole as the less problematic option",
+          "explanation": "It has less CYP2C19 inhibition than omeprazole."
+        },
+        {
+          "text": "A non-drug positioning instruction",
+          "explanation": "Positioning does not inhibit clopidogrel activation."
+        },
+        {
+          "text": "An instruction to avoid late meals",
+          "explanation": "Meal timing does not create this drug interaction."
+        }
+      ]
+    },
+    "bradycardia": {
+      "format": "single-best-answer",
+      "stem": "Before a heart-rate-slowing drug, the patient is newly dizzy with a very slow pulse. What takes priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess BP, rhythm and perfusion and escalate",
+          "explanation": "Symptomatic bradycardia can indicate clinically important deterioration."
+        },
+        {
+          "text": "Give it because the pulse is regular",
+          "explanation": "Regularity does not establish adequate rate or perfusion."
+        },
+        {
+          "text": "Wait until the patient faints before reporting",
+          "explanation": "Symptoms already justify prompt assessment."
+        },
+        {
+          "text": "Judge safety from the last normal pulse alone",
+          "explanation": "Current findings take precedence over an older reading."
+        }
+      ]
+    },
+    "avnode_combination": {
+      "format": "single-best-answer",
+      "stem": "Why does adding a second AV-node-slowing medicine need review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Combined effects can worsen bradycardia or conduction block",
+          "explanation": "AV-nodal depression may be additive."
+        },
+        {
+          "text": "The two agents always cancel their cardiac effects",
+          "explanation": "Opposing cancellation cannot be assumed."
+        },
+        {
+          "text": "A normal temperature prevents conduction problems",
+          "explanation": "Temperature does not remove the interaction."
+        },
+        {
+          "text": "The interaction affects only tablet absorption",
+          "explanation": "The important hazard can be pharmacodynamic cardiac slowing."
+        }
+      ]
+    },
+    "duplicate_beta": {
+      "format": "single-best-answer",
+      "stem": "Two beta blockers appear on a new medication chart. What should the nurse verify?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Verify whether dual beta-blockade is intentional",
+          "explanation": "Unintended duplication can increase bradycardia and hypotension."
+        },
+        {
+          "text": "Administer both because the doses occur at different times",
+          "explanation": "Timing separation does not remove cumulative beta blockade."
+        },
+        {
+          "text": "Use one for BP and one for pulse without clarification",
+          "explanation": "Their effects overlap and the combination needs review."
+        },
+        {
+          "text": "Rely only on a normal pulse from the previous shift",
+          "explanation": "Current assessment and prescription intent are required."
+        }
+      ]
+    },
+    "beta_asthma": {
+      "format": "single-best-answer",
+      "stem": "A patient with asthma develops wheeze after nonselective beta blockade. Which mechanism explains the concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Beta2 blockade can oppose bronchodilation",
+          "explanation": "Airway beta2 blockade can provoke bronchospasm."
+        },
+        {
+          "text": "Beta2 blockade directly relaxes bronchial muscle",
+          "explanation": "Beta2 stimulation, not blockade, promotes bronchodilation."
+        },
+        {
+          "text": "Beta1 blockade directly kills airway bacteria",
+          "explanation": "Beta blockers are not antibacterial treatment."
+        },
+        {
+          "text": "Wheeze proves the medicine has no respiratory effects",
+          "explanation": "Nonselective beta blockade can affect the airways."
+        }
+      ]
+    },
+    "angioedema": {
+      "format": "single-best-answer",
+      "stem": "During enalapril treatment a patient develops tongue swelling and a changed voice. What is the priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Activate urgent airway assessment and emergency help",
+          "explanation": "ACE-inhibitor angioedema can obstruct the airway."
+        },
+        {
+          "text": "Offer a tablet with water and reassess later",
+          "explanation": "Swallowing and airway safety may be compromised."
+        },
+        {
+          "text": "Check ankle swelling before calling for help",
+          "explanation": "A threatened airway takes priority over peripheral edema."
+        },
+        {
+          "text": "Treat it as an expected mild dry cough",
+          "explanation": "Tongue swelling and voice change are different red flags."
+        }
+      ]
+    },
+    "statin_muscle": {
+      "format": "single-best-answer",
+      "stem": "Which report during atorvastatin therapy most needs prompt review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Marked muscle pain with weakness and dark urine",
+          "explanation": "This raises concern for serious muscle injury."
+        },
+        {
+          "text": "Mild hunger before the evening meal",
+          "explanation": "Hunger does not suggest rhabdomyolysis."
+        },
+        {
+          "text": "An unchanged exercise tolerance and no symptoms",
+          "explanation": "This does not indicate new muscle toxicity."
+        },
+        {
+          "text": "A preference for a different tablet size",
+          "explanation": "Tablet preference does not establish muscle injury."
+        }
+      ]
+    },
+    "interaction_review": {
+      "format": "single-best-answer",
+      "stem": "Before adding a new medicine to {drug}, what is the best safety step?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Review the full regimen for clinically relevant interactions",
+          "explanation": "New medicines and illness can alter safety or exposure."
+        },
+        {
+          "text": "Check only whether both names start with the same letter",
+          "explanation": "Spelling does not predict interactions."
+        },
+        {
+          "text": "Assume previous tolerance guarantees future safety",
+          "explanation": "The new combination changes the clinical situation."
+        },
+        {
+          "text": "Exclude nonprescription medicines from the review",
+          "explanation": "Nonprescription products can also interact."
+        }
+      ]
+    },
+    "decongestion": {
+      "format": "single-best-answer",
+      "stem": "After furosemide for congestion, which trend best supports benefit?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Easier breathing with fewer crackles and less edema",
+          "explanation": "These findings fit reduced congestion."
+        },
+        {
+          "text": "More urine with worsening dyspnea and hypotension",
+          "explanation": "Urine volume alone does not establish safe improvement."
+        },
+        {
+          "text": "Lower BP with increasing confusion",
+          "explanation": "This suggests possible poor perfusion, not successful decongestion alone."
+        },
+        {
+          "text": "Less ankle pain with unchanged fluid findings",
+          "explanation": "Pain does not directly assess congestion."
+        }
+      ]
+    },
+    "low_k_mg": {
+      "format": "single-best-answer",
+      "stem": "A loop-diuretic patient develops new ventricular ectopy. Which results are particularly relevant?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Potassium and magnesium",
+          "explanation": "Losses can contribute to ventricular irritability."
+        },
+        {
+          "text": "Hemoglobin and platelet count only",
+          "explanation": "These do not directly assess the highlighted electrolyte mechanism."
+        },
+        {
+          "text": "Bilirubin and albumin only",
+          "explanation": "These do not identify low K or Mg."
+        },
+        {
+          "text": "TSH and free T4 only",
+          "explanation": "Thyroid tests do not replace immediate electrolyte review."
+        }
+      ]
+    },
+    "ototoxicity": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving {drug} reports new ringing in the ears. What should the nurse do?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Report the change and review possible ototoxicity",
+          "explanation": "New auditory symptoms can be a treatment safety warning."
+        },
+        {
+          "text": "Assume it is harmless because hearing is not fully lost",
+          "explanation": "Early toxicity need not cause complete hearing loss."
+        },
+        {
+          "text": "Wait until the full course is finished",
+          "explanation": "Delay can miss progressive injury."
+        },
+        {
+          "text": "Use a normal temperature to exclude drug toxicity",
+          "explanation": "Temperature does not establish auditory safety."
+        }
+      ]
+    },
+    "sglt2_dka": {
+      "format": "single-best-answer",
+      "stem": "A patient on dapagliflozin has vomiting, abdominal pain and deep breathing, but glucose is not very high. What must be considered?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Ketoacidosis despite a modest glucose level",
+          "explanation": "SGLT2-associated ketoacidosis may lack marked hyperglycemia."
+        },
+        {
+          "text": "Ketoacidosis is excluded by modest glucose",
+          "explanation": "Glucose alone cannot safely exclude this complication."
+        },
+        {
+          "text": "A normal drug effect requiring no assessment",
+          "explanation": "These symptoms require urgent clinical evaluation."
+        },
+        {
+          "text": "A reason to give another dose before review",
+          "explanation": "Suspected ketoacidosis requires prompt assessment and treatment review."
+        }
+      ]
+    },
+    "chronic_not_correction": {
+      "format": "single-best-answer",
+      "stem": "A patient asks to use dapagliflozin as a one-off correction for a high bedside glucose. Which response is correct?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Use the prescribed acute glucose-management plan instead",
+          "explanation": "Dapagliflozin is not acute correction insulin."
+        },
+        {
+          "text": "It is interchangeable with rapid correction insulin",
+          "explanation": "The drugs have different roles and kinetics."
+        },
+        {
+          "text": "Its daily tablet dose determines the correction scale",
+          "explanation": "A daily dose is not an insulin correction scale."
+        },
+        {
+          "text": "Doubling it provides a standard emergency correction",
+          "explanation": "An improvised extra dose is not a safe correction regimen."
+        }
+      ]
+    },
+    "insulin_hypo": {
+      "format": "single-best-answer",
+      "stem": "After correction insulin, a patient becomes sweaty, shaky and confused. What is the immediate priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Check glucose promptly and treat through the hypoglycemia protocol",
+          "explanation": "These are possible hypoglycemia symptoms."
+        },
+        {
+          "text": "Wait for the next routine premeal glucose",
+          "explanation": "Current symptoms require immediate assessment."
+        },
+        {
+          "text": "Give the next correction dose because confusion means hyperglycemia",
+          "explanation": "Symptoms alone cannot establish hyperglycemia and extra insulin may worsen harm."
+        },
+        {
+          "text": "Offer food regardless of swallowing ability",
+          "explanation": "Oral treatment requires safe consciousness and swallowing."
+        }
+      ]
+    },
+    "insulin_product": {
+      "format": "single-best-answer",
+      "stem": "Which check most directly prevents an insulin concentration error?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Verify product identity, concentration and ordered units",
+          "explanation": "All three determine safe insulin selection and dosing."
+        },
+        {
+          "text": "Match the previous syringe volume before reading the concentration",
+          "explanation": "Different strengths can make volume copying unsafe."
+        },
+        {
+          "text": "Use only the generic word insulin on the order",
+          "explanation": "Insulin products differ in action and concentration."
+        },
+        {
+          "text": "Copy the dose from the last correction without a current check",
+          "explanation": "The current product and authorized dosing plan must be checked."
+        }
+      ]
+    },
+    "insulin_meals": {
+      "format": "single-best-answer",
+      "stem": "A correction-insulin patient becomes NPO unexpectedly. What should be checked before dosing?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Current glucose and the authorized NPO insulin plan",
+          "explanation": "Meal status changes the safety context of insulin treatment."
+        },
+        {
+          "text": "The previous day's meal size alone",
+          "explanation": "Current glucose and fasting status are needed."
+        },
+        {
+          "text": "Whether the patient wants the same dose as yesterday",
+          "explanation": "Preference does not establish a safe dose."
+        },
+        {
+          "text": "Whether all insulin is automatically forbidden when NPO",
+          "explanation": "Management depends on insulin type and the prescribed plan."
+        }
+      ]
+    },
+    "glucose_recheck": {
+      "format": "single-best-answer",
+      "stem": "After treatment for hypoglycemia, the patient feels better. What is still required?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Repeat glucose and reassess according to protocol",
+          "explanation": "Symptom relief alone does not prove sustained correction."
+        },
+        {
+          "text": "End monitoring once the patient can speak",
+          "explanation": "Speaking does not establish a safe glucose trend."
+        },
+        {
+          "text": "Assume one rescue dose prevents recurrence",
+          "explanation": "The cause or medicine effect may persist."
+        },
+        {
+          "text": "Restart the previous correction dose without review",
+          "explanation": "Further insulin decisions require current assessment."
+        }
+      ]
+    },
+    "infusion_precision": {
+      "format": "single-best-answer",
+      "stem": "A new infusion bag contains twice the concentration at the same prescribed dose. What must happen?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Recalculate and verify the pump rate before changing bags",
+          "explanation": "The rate depends on dose and concentration."
+        },
+        {
+          "text": "Keep the previous rate because the drug name is unchanged",
+          "explanation": "This would change the delivered dose."
+        },
+        {
+          "text": "Double the rate to match the stronger bag",
+          "explanation": "That would further increase delivered dose."
+        },
+        {
+          "text": "Use the empty bag's remaining volume as the new rate",
+          "explanation": "Bag volume does not establish the prescribed dose rate."
+        }
+      ]
+    },
+    "infusion_route": {
+      "format": "single-best-answer",
+      "stem": "A titrated IV infusion order has no clear concentration or delivery instructions. What should the nurse do?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Clarify preparation and controlled delivery before starting",
+          "explanation": "An improvised rate or bolus is unsafe."
+        },
+        {
+          "text": "Give the intended total as a rapid bolus",
+          "explanation": "A continuous infusion is not interchangeable with a bolus."
+        },
+        {
+          "text": "Use the fastest pump setting available",
+          "explanation": "Pump capability does not determine a safe dose."
+        },
+        {
+          "text": "Copy the rate from a patient with a different weight",
+          "explanation": "The order and concentration must match this patient."
+        }
+      ]
+    },
+    "pressor_site": {
+      "format": "single-best-answer",
+      "stem": "A peripheral vasopressor site becomes painful, pale and swollen. What is the priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop delivery through that site and activate the extravasation response",
+          "explanation": "Continued local exposure can worsen tissue ischemia."
+        },
+        {
+          "text": "Flush forcefully and continue the infusion there",
+          "explanation": "Flushing can push more drug into affected tissue."
+        },
+        {
+          "text": "Massage the swelling before checking the patient",
+          "explanation": "This does not address ischemic exposure and delays assessment."
+        },
+        {
+          "text": "Cover the site and wait for the next bag",
+          "explanation": "Delay can allow tissue injury to progress."
+        }
+      ]
+    },
+    "perfusion": {
+      "format": "single-best-answer",
+      "stem": "BP improves during vasoactive treatment. What further finding best supports improved organ perfusion?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Improving mentation and urine output",
+          "explanation": "Pressure must be interpreted alongside organ response."
+        },
+        {
+          "text": "The pump displays the intended rate",
+          "explanation": "A correct setting does not prove clinical benefit."
+        },
+        {
+          "text": "The IV bag is nearly empty",
+          "explanation": "Bag volume does not measure perfusion."
+        },
+        {
+          "text": "The patient has a faster pulse only",
+          "explanation": "Tachycardia alone does not establish improved perfusion."
+        }
+      ]
+    },
+    "tachyarrhythmia": {
+      "format": "single-best-answer",
+      "stem": "During inotropic treatment, new rapid ectopy appears. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess rhythm, BP and perfusion and report",
+          "explanation": "A new arrhythmia may change tolerance of inotropic treatment."
+        },
+        {
+          "text": "Judge benefit from the faster rate alone",
+          "explanation": "Tachycardia does not guarantee improved cardiac output."
+        },
+        {
+          "text": "Increase the infusion for presumed low output without review",
+          "explanation": "More stimulation can worsen the arrhythmia."
+        },
+        {
+          "text": "Wait for the next routine strip despite new symptoms",
+          "explanation": "New symptomatic rhythm change needs prompt assessment."
+        }
+      ]
+    },
+    "atropine_failure": {
+      "format": "single-best-answer",
+      "stem": "A patient remains hypotensive with symptomatic bradycardia after atropine. What should happen next?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Escalate promptly and prepare the authorized pacing or alternative pathway",
+          "explanation": "Persistent instability needs more than reassurance after a drug dose."
+        },
+        {
+          "text": "Wait for atropine to solve every high-grade block",
+          "explanation": "Atropine may be ineffective, particularly in some blocks."
+        },
+        {
+          "text": "Treat a monitor rate increase as sufficient without checking perfusion",
+          "explanation": "The clinical response, not rate alone, matters."
+        },
+        {
+          "text": "Leave the patient while a routine repeat is awaited",
+          "explanation": "An unstable patient needs ongoing support and escalation."
+        }
+      ]
+    },
+    "rhythm_response": {
+      "format": "single-best-answer",
+      "stem": "After a rhythm intervention, what establishes meaningful clinical improvement?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "A perfusing pulse, BP and improved patient condition",
+          "explanation": "Electrical appearance must be matched to mechanical perfusion."
+        },
+        {
+          "text": "A cleaner tracing without checking the patient",
+          "explanation": "A rhythm strip alone does not prove circulation."
+        },
+        {
+          "text": "A pacing spike alone",
+          "explanation": "A spike does not establish electrical and mechanical capture."
+        },
+        {
+          "text": "The intervention being recorded as completed",
+          "explanation": "Completion is not evidence of physiological success."
+        }
+      ]
+    },
+    "enteric_coating": {
+      "format": "single-best-answer",
+      "stem": "A patient cannot swallow an enteric-coated capsule or tablet. What is appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Verify a suitable formulation or authorized administration method",
+          "explanation": "Coatings and release systems may be disrupted by crushing."
+        },
+        {
+          "text": "Crush it because all solid products are equivalent",
+          "explanation": "Crushing can change intended release or protection."
+        },
+        {
+          "text": "Dissolve it using any available solvent",
+          "explanation": "Preparation must follow the exact product instructions."
+        },
+        {
+          "text": "Use an injectable product by mouth without review",
+          "explanation": "Route substitution needs an authorized product-specific plan."
+        }
+      ]
+    },
+    "compatibility": {
+      "format": "single-best-answer",
+      "stem": "Two IV medicines are prescribed through one line. What should establish compatibility?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Verify exact products, concentrations and line conditions",
+          "explanation": "Compatibility depends on the specific preparation and contact."
+        },
+        {
+          "text": "Rely on the absence of visible cloudiness alone",
+          "explanation": "Some incompatibilities are not reliably excluded visually."
+        },
+        {
+          "text": "Assume separate safety makes same-line mixing safe",
+          "explanation": "Individually acceptable products can be incompatible together."
+        },
+        {
+          "text": "Use a compatibility result for different concentrations",
+          "explanation": "Different concentrations or diluents may change compatibility."
+        }
+      ]
+    },
+    "bronchodilator_response": {
+      "format": "single-best-answer",
+      "stem": "After an inhaled bronchodilator, which reassessment best checks benefit?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Work of breathing, air entry and oxygenation",
+          "explanation": "These assess the respiratory response."
+        },
+        {
+          "text": "Tablet swallowing and bowel frequency",
+          "explanation": "These do not assess bronchodilation."
+        },
+        {
+          "text": "Bruising and platelet count only",
+          "explanation": "These do not measure airway response."
+        },
+        {
+          "text": "The number of doses remaining in the pack",
+          "explanation": "Remaining supply does not establish clinical benefit."
+        }
+      ]
+    },
+    "beta2_effects": {
+      "format": "single-best-answer",
+      "stem": "After salbutamol or formoterol, tremor and palpitations occur. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess HR/rhythm and symptom severity",
+          "explanation": "Beta2-agonist treatment can cause tremor and tachycardia."
+        },
+        {
+          "text": "Assume the symptoms prove treatment failure",
+          "explanation": "They can be adverse effects despite bronchodilation."
+        },
+        {
+          "text": "Give extra doses solely to stop the tremor",
+          "explanation": "Additional stimulation may worsen it."
+        },
+        {
+          "text": "Use a normal temperature to exclude a drug effect",
+          "explanation": "Temperature does not rule out adrenergic adverse effects."
+        }
+      ]
+    },
+    "nystatin_local": {
+      "format": "single-best-answer",
+      "stem": "An oral nystatin prescription is written for candidiasis. Which infection is it intended to treat locally?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Oral thrush",
+          "explanation": "Local oral nystatin is used for oral candidiasis."
+        },
+        {
+          "text": "Candidemia",
+          "explanation": "Local oral treatment is not adequate for bloodstream infection."
+        },
+        {
+          "text": "Invasive fungal endocarditis",
+          "explanation": "This requires systemic specialist treatment."
+        },
+        {
+          "text": "Disseminated fungal sepsis",
+          "explanation": "Local oral suspension does not provide systemic treatment."
+        }
+      ]
+    },
+    "nystatin_technique": {
+      "format": "single-best-answer",
+      "stem": "Why is oral nystatin distributed around affected mouth areas rather than swallowed immediately?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Local contact supports treatment of oral lesions",
+          "explanation": "The formulation acts at the local mucosal site."
+        },
+        {
+          "text": "It must reach the lungs as an aerosol",
+          "explanation": "Oral suspension is not an inhaled aerosol."
+        },
+        {
+          "text": "It treats candidemia after brief mouth contact",
+          "explanation": "Local contact does not provide systemic treatment."
+        },
+        {
+          "text": "It prevents every recurrence after one dose",
+          "explanation": "A single contact does not guarantee cure or prevent recurrence."
+        }
+      ]
+    },
+    "betahistine_tolerance": {
+      "format": "single-best-answer",
+      "stem": "A patient reports stomach upset after betahistine but no breathing symptoms. Which advice fits the taught tolerance point?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Taking it with food may improve gastric tolerance",
+          "explanation": "Food can reduce stomach discomfort."
+        },
+        {
+          "text": "Use an extra dose on an empty stomach",
+          "explanation": "This can increase exposure without resolving intolerance."
+        },
+        {
+          "text": "Treat all stomach upset as proof of anaphylaxis",
+          "explanation": "Isolated dyspepsia does not establish systemic hypersensitivity."
+        },
+        {
+          "text": "Ignore new severe symptoms because food always prevents harm",
+          "explanation": "Severe or changing symptoms still need assessment."
+        }
+      ]
+    },
+    "betahistine_cautions": {
+      "format": "single-best-answer",
+      "stem": "Which history deserves particular review before betahistine?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Asthma and peptic-ulcer disease",
+          "explanation": "These are relevant betahistine cautions."
+        },
+        {
+          "text": "Reflux symptoms without an ulcer history",
+          "explanation": "Clarification is useful, but this is not the stated pair of cautions."
+        },
+        {
+          "text": "A remote ankle sprain with intermittent mild pain",
+          "explanation": "This is not the highlighted respiratory or ulcer risk."
+        },
+        {
+          "text": "Previously corrected iron deficiency without current symptoms",
+          "explanation": "This does not identify the stated precautions."
+        }
+      ]
+    },
+    "conduction_toxicity": {
+      "format": "single-best-answer",
+      "stem": "During antiarrhythmic treatment, QRS duration widens and the patient becomes dizzy. What should be done?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess rhythm, BP and possible conduction toxicity promptly",
+          "explanation": "New conduction slowing with symptoms needs review."
+        },
+        {
+          "text": "Assume a wider QRS proves successful rhythm control",
+          "explanation": "Widening may signal toxicity or deterioration."
+        },
+        {
+          "text": "Continue solely because the pulse remains palpable",
+          "explanation": "A pulse does not exclude unsafe conduction changes."
+        },
+        {
+          "text": "Review it only if the next ECG is also abnormal",
+          "explanation": "Current symptoms and changes already warrant assessment."
+        }
+      ]
+    },
+    "structural_heart": {
+      "format": "single-best-answer",
+      "stem": "Why is a history of significant structural heart disease important before propafenone?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "It changes the safety of class Ic antiarrhythmic selection",
+          "explanation": "Proarrhythmic risk makes patient selection important."
+        },
+        {
+          "text": "It guarantees class Ic treatment is always safest",
+          "explanation": "Structural disease can increase risk."
+        },
+        {
+          "text": "It removes the need for rhythm monitoring",
+          "explanation": "Monitoring remains important."
+        },
+        {
+          "text": "It determines only whether the tablet is swallowed whole",
+          "explanation": "The concern is cardiac safety, not just administration technique."
+        }
+      ]
+    },
+    "rinse_mouth": {
+      "format": "single-best-answer",
+      "stem": "What advice reduces local adverse effects after maintenance inhaled corticosteroid doses?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Rinse the mouth and spit out the water",
+          "explanation": "This reduces local steroid deposition and oral adverse effects."
+        },
+        {
+          "text": "Swallow extra steroid powder after each dose",
+          "explanation": "This does not remove local deposition."
+        },
+        {
+          "text": "Stop all mouth care while using the inhaler",
+          "explanation": "Oral care remains useful."
+        },
+        {
+          "text": "Use the inhaler to treat new oral thrush",
+          "explanation": "The steroid-containing inhaler is not an antifungal treatment."
+        }
+      ]
+    },
+    "paradoxical_bronchospasm": {
+      "format": "single-best-answer",
+      "stem": "Wheeze worsens immediately after an inhaled dose. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop that dose and obtain prompt assessment for paradoxical bronchospasm",
+          "explanation": "Immediate worsening can be a serious treatment reaction."
+        },
+        {
+          "text": "Repeat several doses through the same product without review",
+          "explanation": "More exposure can worsen a suspected reaction."
+        },
+        {
+          "text": "Ignore it because inhalers cannot worsen breathing",
+          "explanation": "Paradoxical bronchospasm is possible."
+        },
+        {
+          "text": "Assess only after finishing the full inhaler course",
+          "explanation": "Current breathing deterioration needs prompt review."
+        }
+      ]
+    },
+    "eye_mist": {
+      "format": "single-best-answer",
+      "stem": "During ipratropium nebulization, why should the mask fit and mist be kept away from the eyes?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Ocular exposure can cause adverse eye effects",
+          "explanation": "Avoiding eye contact is a product safety precaution."
+        },
+        {
+          "text": "Eye exposure improves bronchodilation",
+          "explanation": "The intended site is the airway, not the eye."
+        },
+        {
+          "text": "Mist must reach the cornea to confirm delivery",
+          "explanation": "Corneal exposure does not verify lung deposition."
+        },
+        {
+          "text": "A loose mask always delivers the same safe dose",
+          "explanation": "Fit affects exposure and appropriate delivery."
+        }
+      ]
+    },
+    "adenosine_delivery": {
+      "format": "single-best-answer",
+      "stem": "Why is an ordered adenosine dose followed immediately by the prescribed saline flush?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Its very short action requires prompt delivery to the heart",
+          "explanation": "Slow transit can reduce effective delivery."
+        },
+        {
+          "text": "The flush converts it into a long-acting infusion",
+          "explanation": "Flushing does not change its short duration."
+        },
+        {
+          "text": "Adenosine is intended to remain in the cannula",
+          "explanation": "The intended target is cardiac tissue."
+        },
+        {
+          "text": "The flush removes the need for rhythm observation",
+          "explanation": "Transient conduction changes still require monitoring."
+        }
+      ]
+    },
+    "adenosine_transient": {
+      "format": "single-best-answer",
+      "stem": "Before adenosine, which preparation is appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Explain possible brief symptoms and ensure continuous rhythm monitoring",
+          "explanation": "Transient AV block and discomfort can occur."
+        },
+        {
+          "text": "Promise that no chest sensation can occur",
+          "explanation": "Unpleasant transient symptoms are possible."
+        },
+        {
+          "text": "Remove the monitor to reduce anxiety",
+          "explanation": "Monitoring is part of safe administration."
+        },
+        {
+          "text": "Describe a prolonged unmonitored infusion",
+          "explanation": "The indicated regimen uses rapid controlled delivery with monitoring."
+        }
+      ]
+    },
+    "tachy_instability": {
+      "format": "single-best-answer",
+      "stem": "A patient with tachyarrhythmia becomes hypotensive and confused. What determines the immediate pathway?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Instability caused by the rhythm",
+          "explanation": "This requires urgent escalation along the unstable pathway."
+        },
+        {
+          "text": "The number of minutes until routine medication time",
+          "explanation": "A schedule must not delay treatment of instability."
+        },
+        {
+          "text": "Whether the patient prefers tablets",
+          "explanation": "Treatment urgency is based on clinical condition."
+        },
+        {
+          "text": "Whether all laboratory results have returned",
+          "explanation": "Instability may require treatment before complete laboratory data."
+        }
+      ]
+    },
+    "sedation_airway": {
+      "format": "single-best-answer",
+      "stem": "Before procedural ketamine or diazepam, which preparation is essential?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Monitoring and immediate airway/ventilation capability",
+          "explanation": "Sedation requires readiness to manage respiratory compromise."
+        },
+        {
+          "text": "A quiet room without monitoring equipment",
+          "explanation": "Comfort alone does not provide sedation safety."
+        },
+        {
+          "text": "A normal pre-dose SpO2 as the only precaution",
+          "explanation": "Normal baseline oxygenation does not prevent later compromise."
+        },
+        {
+          "text": "The ability to call for equipment after deterioration",
+          "explanation": "Essential support should be ready before sedation."
+        }
+      ]
+    },
+    "ketamine_emergence": {
+      "format": "single-best-answer",
+      "stem": "During recovery from ketamine, the patient becomes confused and agitated. What should be considered?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "An emergence reaction while continuing safety assessment",
+          "explanation": "Ketamine recovery can involve perceptual or behavioral disturbance."
+        },
+        {
+          "text": "Proof that monitoring can now stop",
+          "explanation": "Agitation does not establish complete safe recovery."
+        },
+        {
+          "text": "A reason to leave the patient alone",
+          "explanation": "Supervision and reassessment remain necessary."
+        },
+        {
+          "text": "A guarantee that no other cause needs assessment",
+          "explanation": "Hypoxia and other causes must still be considered."
+        }
+      ]
+    },
+    "meperidine_renal": {
+      "format": "single-best-answer",
+      "stem": "Why does renal deterioration matter during pethidine treatment?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Normeperidine can accumulate and increase neurotoxicity",
+          "explanation": "Accumulation can increase seizure risk."
+        },
+        {
+          "text": "Renal failure makes all opioid metabolites harmless",
+          "explanation": "Impaired clearance can worsen toxicity."
+        },
+        {
+          "text": "Renal impairment guarantees faster metabolite elimination",
+          "explanation": "Elimination can be reduced."
+        },
+        {
+          "text": "Pethidine becomes a protective anticonvulsant",
+          "explanation": "It does not become an anticonvulsant in renal failure."
+        }
+      ]
+    },
+    "spirono_not_loop": {
+      "format": "single-best-answer",
+      "stem": "Why is oral spironolactone not a substitute for rapid IV loop-diuretic rescue?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Its role and onset differ from rapid IV decongestion",
+          "explanation": "The medicines are not interchangeable for urgent fluid removal."
+        },
+        {
+          "text": "Both medicines act identically at the same speed",
+          "explanation": "Their sites, kinetics and electrolyte effects differ."
+        },
+        {
+          "text": "Spironolactone always lowers potassium",
+          "explanation": "It can raise potassium."
+        },
+        {
+          "text": "A tablet must act faster than an IV medicine",
+          "explanation": "Route alone does not support that claim."
+        }
+      ]
+    },
+    "lidocaine_neuro": {
+      "format": "single-best-answer",
+      "stem": "During IV lidocaine, new perioral numbness, tinnitus and confusion develop. What is the concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Possible systemic lidocaine toxicity",
+          "explanation": "Neurological symptoms can be early toxicity warnings."
+        },
+        {
+          "text": "Successful antiarrhythmic treatment without adverse effects",
+          "explanation": "These symptoms require safety assessment."
+        },
+        {
+          "text": "A normal required stage before rhythm conversion",
+          "explanation": "Neurological toxicity is not a desired treatment stage."
+        },
+        {
+          "text": "Proof that the IV line is blocked",
+          "explanation": "The pattern does not establish mechanical line blockage."
+        }
+      ]
+    },
+    "lidocaine_product": {
+      "format": "single-best-answer",
+      "stem": "Which lidocaine product must be verified for an IV antiarrhythmic order?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "An IV antiarrhythmic preparation without unsuitable additives",
+          "explanation": "The exact route and product must be verified."
+        },
+        {
+          "text": "A dental cartridge containing epinephrine",
+          "explanation": "Its additives and intended use may make it unsuitable."
+        },
+        {
+          "text": "A topical solution with the same percentage",
+          "explanation": "A topical product is not interchangeable with an IV preparation."
+        },
+        {
+          "text": "An injectable local mixture selected by total volume",
+          "explanation": "Total volume does not establish composition or IV suitability."
+        }
+      ]
+    },
+    "bicarbonate_selected": {
+      "format": "single-best-answer",
+      "stem": "Why should sodium bicarbonate not be given automatically in every cardiac arrest?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "It has selected indications rather than routine undifferentiated use",
+          "explanation": "Resuscitation follows the cause-specific guideline pathway."
+        },
+        {
+          "text": "It replaces chest compressions when acidosis is suspected",
+          "explanation": "It does not replace high-quality CPR."
+        },
+        {
+          "text": "A normal ECG always establishes its indication",
+          "explanation": "An ECG alone does not establish a bicarbonate indication."
+        },
+        {
+          "text": "It removes the need to investigate reversible causes",
+          "explanation": "Cause assessment remains essential."
+        }
+      ]
+    },
+    "bicarbonate_load": {
+      "format": "single-best-answer",
+      "stem": "After excessive bicarbonate exposure, what should be considered?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Alkalemia and sodium/volume burden",
+          "explanation": "These can result from excessive administration."
+        },
+        {
+          "text": "Guaranteed removal of all excess body potassium",
+          "explanation": "Bicarbonate does not guarantee potassium removal."
+        },
+        {
+          "text": "A permanent inability to develop acidosis",
+          "explanation": "Acid-base disorders can recur or persist."
+        },
+        {
+          "text": "A lack of any need for reassessment",
+          "explanation": "Acid-base, electrolyte and volume status need monitoring."
+        }
+      ]
+    },
+    "hydralazine_reflex": {
+      "format": "single-best-answer",
+      "stem": "BP falls after hydralazine while the pulse accelerates. Which mechanism can explain this?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Reflex tachycardia after arteriolar dilation",
+          "explanation": "A pressure fall can trigger a compensatory heart-rate rise."
+        },
+        {
+          "text": "Direct beta-receptor blockade",
+          "explanation": "Hydralazine is not a beta blocker."
+        },
+        {
+          "text": "Complete suppression of sympathetic reflexes",
+          "explanation": "Reflex activation can still occur."
+        },
+        {
+          "text": "Replacement of circulating glucose",
+          "explanation": "This is not its principal pharmacological action."
+        }
+      ]
+    },
+    "dextrose_site": {
+      "format": "single-best-answer",
+      "stem": "A dextrose infusion site becomes swollen and painful. What should happen first?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop delivery through the affected site and assess extravasation",
+          "explanation": "Concentrated dextrose can injure tissue outside the vein."
+        },
+        {
+          "text": "Flush the site forcefully and continue",
+          "explanation": "This may worsen local exposure."
+        },
+        {
+          "text": "Cover swelling and wait until the dose is complete",
+          "explanation": "Continued delivery can worsen injury."
+        },
+        {
+          "text": "Massage before assessing line patency",
+          "explanation": "This does not safely address extravasation."
+        }
+      ]
+    },
+    "dextrose_units": {
+      "format": "single-best-answer",
+      "stem": "A label states dextrose 50% w/v. How much dextrose is contained in 20 mL?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "10 g",
+          "explanation": "50 g per 100 mL gives 10 g in 20 mL."
+        },
+        {
+          "text": "1 g",
+          "explanation": "This treats the concentration as 5% rather than 50%."
+        },
+        {
+          "text": "20 g",
+          "explanation": "This assumes 1 g per mL instead of 0.5 g per mL."
+        },
+        {
+          "text": "50 g",
+          "explanation": "That amount is in 100 mL, not 20 mL."
+        }
+      ]
+    },
+    "unconscious_airway": {
+      "format": "single-best-answer",
+      "stem": "An unconscious hypoglycemic patient cannot swallow safely. What must be avoided?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Giving oral glucose or fluid into the mouth",
+          "explanation": "Reduced consciousness creates aspiration risk."
+        },
+        {
+          "text": "Calling for urgent assistance",
+          "explanation": "Urgent assistance is appropriate."
+        },
+        {
+          "text": "Assessing airway and breathing",
+          "explanation": "Airway and breathing assessment is essential."
+        },
+        {
+          "text": "Using the authorized non-oral rescue pathway",
+          "explanation": "Non-oral treatment is appropriate when swallowing is unsafe."
+        }
+      ]
+    },
+    "steroid_glucose": {
+      "format": "single-best-answer",
+      "stem": "During systemic corticosteroid treatment, glucose rises above the patient's usual pattern. What should be considered?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "A steroid-related increase needing monitoring and plan review",
+          "explanation": "Glucocorticoids can increase glucose."
+        },
+        {
+          "text": "Proof that corticosteroids lower glucose",
+          "explanation": "The usual metabolic risk is hyperglycemia."
+        },
+        {
+          "text": "A reason to stop all glucose checks",
+          "explanation": "The change supports monitoring rather than stopping it."
+        },
+        {
+          "text": "A finding explained only by insulin overdose",
+          "explanation": "Excess insulin usually lowers glucose."
+        }
+      ]
+    },
+    "steroid_infection": {
+      "format": "single-best-answer",
+      "stem": "Why should infection surveillance continue during systemic steroid treatment?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Steroids can increase infection risk and affect healing",
+          "explanation": "Clinical vigilance remains important."
+        },
+        {
+          "text": "Steroids sterilize an infected wound",
+          "explanation": "They are not antimicrobial treatment."
+        },
+        {
+          "text": "Reduced inflammation always means the pathogen is gone",
+          "explanation": "Suppressed inflammatory signs do not prove eradication."
+        },
+        {
+          "text": "The infection risk ends after the first dose",
+          "explanation": "Risk depends on regimen and patient context."
+        }
+      ]
+    },
+    "steroid_adrenal": {
+      "format": "single-best-answer",
+      "stem": "A patient on prolonged prednisolone wants to stop abruptly. What is the concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Adrenal suppression may require an authorized withdrawal plan",
+          "explanation": "Abrupt cessation after prolonged exposure can be unsafe."
+        },
+        {
+          "text": "Every course can be stopped identically",
+          "explanation": "Duration, dose and clinical context matter."
+        },
+        {
+          "text": "The medicine permanently replaces all stress responses",
+          "explanation": "Adrenal function can be suppressed rather than permanently supported."
+        },
+        {
+          "text": "Stopping abruptly prevents all steroid complications",
+          "explanation": "Unplanned withdrawal can introduce serious risk."
+        }
+      ]
+    },
+    "steroid_anaphylaxis": {
+      "format": "single-best-answer",
+      "stem": "In suspected anaphylaxis, which statement about hydrocortisone is correct?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "It must not delay epinephrine and immediate emergency care",
+          "explanation": "It is not the first lifesaving treatment for airway or circulatory compromise."
+        },
+        {
+          "text": "It replaces epinephrine when the patient is hypotensive",
+          "explanation": "It does not provide equivalent immediate rescue."
+        },
+        {
+          "text": "It works quickly enough to postpone airway support",
+          "explanation": "Airway compromise needs immediate management."
+        },
+        {
+          "text": "It removes the need for monitoring after symptoms improve",
+          "explanation": "Ongoing reassessment remains important."
+        }
+      ]
+    },
+    "calcium_no_k_removal": {
+      "format": "single-best-answer",
+      "stem": "After IV calcium for hyperkalemic ECG toxicity, the tracing improves. What remains necessary?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Treatment and monitoring of the elevated potassium",
+          "explanation": "Calcium stabilizes the myocardium but does not remove potassium."
+        },
+        {
+          "text": "Assume the total body potassium has been removed",
+          "explanation": "ECG stabilization is not potassium removal."
+        },
+        {
+          "text": "Stop checking potassium because the QRS improved",
+          "explanation": "The potassium hazard can persist."
+        },
+        {
+          "text": "Use the ECG change to calculate the new potassium exactly",
+          "explanation": "ECG appearance cannot precisely quantify serum potassium."
+        }
+      ]
+    },
+    "calcium_bicarbonate": {
+      "format": "single-best-answer",
+      "stem": "Why should calcium and bicarbonate not be mixed without verified compatibility?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "They may form a precipitate when mixed",
+          "explanation": "This is a clinically important physical incompatibility."
+        },
+        {
+          "text": "They only need to have the same labelled strength",
+          "explanation": "Matching strengths does not establish compatibility."
+        },
+        {
+          "text": "A slow injection makes every mixture compatible",
+          "explanation": "Slower delivery does not prevent chemical incompatibility."
+        },
+        {
+          "text": "Clear separate solutions are sufficient proof of compatibility",
+          "explanation": "Precipitation can occur after the solutions meet."
+        }
+      ]
+    },
+    "calcium_salts": {
+      "format": "single-best-answer",
+      "stem": "Why is equal volume substitution between calcium gluconate and calcium chloride unsafe?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Their elemental calcium contents differ",
+          "explanation": "Dose equivalence requires checking the specific salts and concentrations."
+        },
+        {
+          "text": "Both salts always provide identical calcium per mL",
+          "explanation": "They do not have universal volume equivalence."
+        },
+        {
+          "text": "Salt names affect packaging only",
+          "explanation": "The salt affects the supplied elemental calcium."
+        },
+        {
+          "text": "Only the syringe size determines elemental calcium",
+          "explanation": "Product concentration and salt are essential."
+        }
+      ]
+    },
+    "magnesium_indication": {
+      "format": "single-best-answer",
+      "stem": "Which arrhythmia most specifically matches magnesium's taught role?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Torsades de pointes associated with long QT",
+          "explanation": "Magnesium has an indication-specific role here."
+        },
+        {
+          "text": "Every cardiac arrest regardless of rhythm",
+          "explanation": "Routine use in undifferentiated arrest is not recommended."
+        },
+        {
+          "text": "Every normal sinus rhythm",
+          "explanation": "Normal sinus rhythm is not itself an indication."
+        },
+        {
+          "text": "All asymptomatic bradycardias",
+          "explanation": "Bradycardia alone does not establish a magnesium indication."
+        }
+      ]
+    },
+    "magnesium_toxicity": {
+      "format": "single-best-answer",
+      "stem": "During magnesium infusion, reflexes disappear and breathing slows. What is the priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop administration and obtain emergency toxicity assessment",
+          "explanation": "Respiratory depression and reflex loss are important toxicity signs."
+        },
+        {
+          "text": "Increase infusion because absent reflexes prove benefit",
+          "explanation": "These findings can signal dangerous toxicity."
+        },
+        {
+          "text": "Wait for the next scheduled magnesium result alone",
+          "explanation": "Clinical respiratory deterioration needs immediate action."
+        },
+        {
+          "text": "Ask the patient to walk to restore reflexes",
+          "explanation": "Mobilization is unsafe and does not treat toxicity."
+        }
+      ]
+    },
+    "magnesium_calcium": {
+      "format": "single-best-answer",
+      "stem": "Which treatment should be anticipated under the emergency plan for important magnesium toxicity?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "An authorized IV calcium salt",
+          "explanation": "Calcium can antagonize magnesium's toxic effects."
+        },
+        {
+          "text": "An additional magnesium bolus",
+          "explanation": "More magnesium can worsen toxicity."
+        },
+        {
+          "text": "An oral multivitamin as immediate rescue",
+          "explanation": "It does not provide appropriate acute antagonism."
+        },
+        {
+          "text": "A routine extra loop-diuretic dose without assessment",
+          "explanation": "Treatment requires an authorized toxicity plan and supportive care."
+        }
+      ]
+    },
+    "digoxin_toxicity": {
+      "format": "single-best-answer",
+      "stem": "A patient on digoxin develops nausea, visual symptoms and a new slow irregular pulse. What is most appropriate?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Assess for digoxin toxicity and escalate",
+          "explanation": "Gastrointestinal, neurological and rhythm findings can occur together."
+        },
+        {
+          "text": "Treat nausea alone and give the next dose automatically",
+          "explanation": "The combined pattern requires medication and rhythm review."
+        },
+        {
+          "text": "Exclude toxicity because the medicine was previously tolerated",
+          "explanation": "Renal change and interactions can alter exposure."
+        },
+        {
+          "text": "Use the normal temperature to dismiss the symptoms",
+          "explanation": "Temperature does not establish digoxin safety."
+        }
+      ]
+    },
+    "digoxin_interaction": {
+      "format": "single-best-answer",
+      "stem": "Why is a new amiodarone order important in a patient already receiving digoxin?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "It can increase digoxin exposure and compound cardiac slowing",
+          "explanation": "The combination needs dose/monitoring review."
+        },
+        {
+          "text": "It guarantees lower digoxin concentrations",
+          "explanation": "Exposure may rise rather than fall."
+        },
+        {
+          "text": "It removes the need to check the pulse",
+          "explanation": "Cardiac slowing makes pulse and rhythm assessment important."
+        },
+        {
+          "text": "It makes renal function irrelevant",
+          "explanation": "Renal function remains relevant to digoxin safety."
+        }
+      ]
+    },
+    "aminophylline_toxicity": {
+      "format": "single-best-answer",
+      "stem": "A patient on aminophylline develops vomiting, tremor and tachyarrhythmia. What should be considered?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Concentration-related toxicity",
+          "explanation": "Aminophylline has a narrow therapeutic index."
+        },
+        {
+          "text": "A desired response proving ideal bronchodilation",
+          "explanation": "These findings can represent toxicity, not treatment success."
+        },
+        {
+          "text": "A reason to omit rhythm assessment",
+          "explanation": "Arrhythmia needs prompt clinical assessment."
+        },
+        {
+          "text": "An effect excluded by a previously normal concentration",
+          "explanation": "Exposure can change and an old level may no longer apply."
+        }
+      ]
+    },
+    "aminophylline_exposure": {
+      "format": "single-best-answer",
+      "stem": "Before aminophylline is prescribed, what prior treatment information is especially relevant?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Recent theophylline or aminophylline doses",
+          "explanation": "Prior methylxanthine exposure affects accumulation risk."
+        },
+        {
+          "text": "Only the last inhaled bronchodilator time",
+          "explanation": "This does not establish the existing methylxanthine burden."
+        },
+        {
+          "text": "Only whether the patient currently has wheeze",
+          "explanation": "Symptoms do not quantify prior drug exposure."
+        },
+        {
+          "text": "Only the admission respiratory rate",
+          "explanation": "A baseline observation does not establish recent systemic dosing."
+        }
+      ]
+    },
+    "tca_cardiac": {
+      "format": "single-best-answer",
+      "stem": "Why does recent MI matter when reviewing amitriptyline?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "TCAs can affect cardiac conduction and are unsuitable in acute MI recovery",
+          "explanation": "This is a clinically important cardiac safety issue."
+        },
+        {
+          "text": "TCAs prevent every post-MI dysrhythmia",
+          "explanation": "They can instead worsen conduction and toxicity risks."
+        },
+        {
+          "text": "Amitriptyline has no cardiac effects",
+          "explanation": "Its cardiac effects are important."
+        },
+        {
+          "text": "Recent MI determines only the tablet's coating",
+          "explanation": "The concern is physiological safety, not coating."
+        }
+      ]
+    },
+    "tca_overdose": {
+      "format": "single-best-answer",
+      "stem": "Suspected amitriptyline overdose is accompanied by QRS widening and hypotension. What is the priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Urgent monitored toxicology/emergency assessment",
+          "explanation": "TCA overdose can cause life-threatening conduction and circulatory toxicity."
+        },
+        {
+          "text": "Routine reassurance because it is an antidepressant",
+          "explanation": "Its usual indication does not make overdose benign."
+        },
+        {
+          "text": "Waiting for mood symptoms before escalation",
+          "explanation": "Cardiac toxicity can be an immediate threat."
+        },
+        {
+          "text": "Giving the next regular dose while awaiting review",
+          "explanation": "Further exposure is inappropriate in suspected overdose."
+        }
+      ]
+    },
+    "multivitamin_contents": {
+      "format": "single-best-answer",
+      "stem": "Two products are both labelled multivitamin. What determines whether they duplicate treatment?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Compare the actual ingredients and strengths",
+          "explanation": "Products labelled multivitamin may have different compositions."
+        },
+        {
+          "text": "Match the number of tablets recommended daily",
+          "explanation": "Tablet count does not identify the ingredient amounts."
+        },
+        {
+          "text": "Assume equivalent content from the shared product category",
+          "explanation": "Multivitamin is not a standardized composition."
+        },
+        {
+          "text": "Compare only the amounts of one shared vitamin",
+          "explanation": "Other vitamins and minerals may still differ or overlap."
+        }
+      ]
+    },
+    "multivitamin_duplicate": {
+      "format": "single-best-answer",
+      "stem": "A patient takes two multivitamins plus a separate vitamin supplement. What should be reviewed?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Add overlapping ingredient amounts across all products",
+          "explanation": "Several supplements can duplicate exposure."
+        },
+        {
+          "text": "Review only the prescribed multivitamin",
+          "explanation": "Other supplements also contribute doses."
+        },
+        {
+          "text": "Count each product against its own label independently",
+          "explanation": "This can miss a combined excessive intake."
+        },
+        {
+          "text": "Assume separate administration times avoid duplication",
+          "explanation": "Time separation does not remove the total nutrient exposure."
+        }
+      ]
+    },
+    "multivitamin_absorption": {
+      "format": "single-best-answer",
+      "stem": "A mineral-containing supplement is taken with a medicine affected by chelation. What should be checked?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Check mineral ingredients and product-specific separation advice",
+          "explanation": "Chelation can reduce absorption of susceptible medicines."
+        },
+        {
+          "text": "Keep the doses together if both are taken with food",
+          "explanation": "Food does not necessarily prevent the interaction."
+        },
+        {
+          "text": "Use a double antibiotic dose to compensate without an order",
+          "explanation": "Improvised dose changes are unsafe."
+        },
+        {
+          "text": "Apply one separation interval to every drug and supplement",
+          "explanation": "Recommendations are medicine- and product-specific."
+        }
+      ]
+    },
+    "alteplase_screen": {
+      "format": "single-best-answer",
+      "stem": "Before stroke thrombolysis, why must brain imaging be reviewed?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "To exclude intracranial hemorrhage and assess eligibility",
+          "explanation": "A hemorrhagic stroke must not be treated as an eligible ischemic stroke."
+        },
+        {
+          "text": "To guarantee every suspected stroke receives alteplase",
+          "explanation": "Imaging is part of selection, not automatic treatment."
+        },
+        {
+          "text": "To replace the clinical and timing assessment",
+          "explanation": "Eligibility also depends on the full clinical context."
+        },
+        {
+          "text": "To calculate the dose without a patient weight",
+          "explanation": "Imaging does not provide the required weight-based dose."
+        }
+      ]
+    },
+    "alteplase_neuro": {
+      "format": "single-best-answer",
+      "stem": "During alteplase infusion, the patient develops sudden severe headache and neurological worsening. What is the priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop the infusion and activate urgent neurological/bleeding assessment",
+          "explanation": "Acute deterioration can indicate intracranial bleeding."
+        },
+        {
+          "text": "Complete the infusion before reporting",
+          "explanation": "Continuing while delaying assessment can worsen harm."
+        },
+        {
+          "text": "Give an antiplatelet immediately without a new order",
+          "explanation": "Urgent assessment and the post-thrombolysis protocol are required."
+        },
+        {
+          "text": "Treat it as expected proof of clot dissolution",
+          "explanation": "Neurological worsening is a red flag, not a desired response."
+        }
+      ]
+    },
+    "alteplase_regimen": {
+      "format": "single-best-answer",
+      "stem": "Why must the indication be checked before preparing alteplase?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "The indication determines the appropriate dose and schedule",
+          "explanation": "Stroke, MI and PE regimens differ."
+        },
+        {
+          "text": "The same vial permits copying any previous regimen",
+          "explanation": "A shared vial does not make regimens interchangeable."
+        },
+        {
+          "text": "The available bag size alone determines the dose",
+          "explanation": "The prescribed indication and patient factors guide dosing."
+        },
+        {
+          "text": "The last patient's infusion duration is sufficient",
+          "explanation": "Another patient's indication may require a different regimen."
+        }
+      ]
+    },
+    "alteplase_timing": {
+      "format": "single-best-answer",
+      "stem": "A possible stroke patient's onset time is unclear. What should be communicated promptly?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Last-known-well and the circumstances of discovery",
+          "explanation": "Eligibility uses current stroke guidance and the applicable pathway."
+        },
+        {
+          "text": "Only the time the hospital chart was opened",
+          "explanation": "That may differ greatly from last-known-well."
+        },
+        {
+          "text": "Only the time the family called a taxi",
+          "explanation": "This does not establish neurological onset."
+        },
+        {
+          "text": "An estimated time invented to fit a treatment window",
+          "explanation": "Uncertain history must not be replaced with invented timing."
+        }
+      ]
+    }
+  },
+  "lessonQuestions": {
+    "ccu-lesson-01-acs": [
+      {
+        "sections": [
+          1
+        ],
+        "point": "Distinguish unstable angina from infarction by myocardial injury.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A patient has acute ischemic symptoms but no biomarker evidence of myocardial necrosis after appropriate assessment. Which ACS category fits that distinction?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Unstable angina",
+            "explanation": "It involves ischemia without biomarker evidence of necrosis."
+          },
+          {
+            "text": "NSTEMI",
+            "explanation": "NSTEMI requires myocardial infarction, not ischemia alone."
+          },
+          {
+            "text": "STEMI",
+            "explanation": "This is an infarction category with a compatible ST-elevation presentation."
+          },
+          {
+            "text": "Complete heart block",
+            "explanation": "This is a conduction disorder, not an ACS category."
+          }
+        ]
+      },
+      {
+        "sections": [
+          1
+        ],
+        "point": "NSTEMI can occur without persistent ST elevation.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Ischemic symptoms accompany myocardial injury, but there is no persistent ST elevation. Which interpretation is appropriate?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "NSTEMI remains possible",
+            "explanation": "Infarction does not require persistent ST elevation."
+          },
+          {
+            "text": "Myocardial infarction is excluded",
+            "explanation": "That would incorrectly exclude NSTEMI."
+          },
+          {
+            "text": "Only stable angina is possible",
+            "explanation": "Established myocardial injury is not explained by stable angina alone."
+          },
+          {
+            "text": "The result establishes asystole",
+            "explanation": "Asystole is an arrest rhythm, not this diagnostic distinction."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2,
+          3,
+          4
+        ],
+        "point": "Escalate concerning ischemia without waiting for biomarkers.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "A patient develops chest pressure, sweating and a falling BP while troponin is pending. What takes priority?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Immediate assessment, monitoring and escalation",
+            "explanation": "Hemodynamic deterioration must not wait for biomarkers."
+          },
+          {
+            "text": "Waiting for the laboratory result before contacting the team",
+            "explanation": "Delay is unsafe in an unstable ischemic presentation."
+          },
+          {
+            "text": "Completing routine discharge teaching first",
+            "explanation": "Urgent clinical assessment takes priority."
+          },
+          {
+            "text": "Reassuring the patient because infarction is not yet proven",
+            "explanation": "Uncertainty does not remove the need for urgent assessment."
+          }
+        ]
+      },
+      {
+        "sections": [
+          3
+        ],
+        "point": "A 12-lead ECG supports prompt ACS assessment.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which investigation should be obtained promptly alongside bedside assessment when ACS is suspected?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "A diagnostic 12-lead ECG",
+            "explanation": "This promptly assesses ischemic and rhythm changes."
+          },
+          {
+            "text": "A routine rhythm strip as the only ECG assessment",
+            "explanation": "A monitoring strip does not replace diagnostic views."
+          },
+          {
+            "text": "An exercise test before urgent evaluation",
+            "explanation": "Acute concerning symptoms require immediate assessment."
+          },
+          {
+            "text": "A repeat troponin before any ECG",
+            "explanation": "Do not delay the ECG while waiting for biomarkers."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-02-chb": [
+      {
+        "sections": [
+          0,
+          1,
+          3
+        ],
+        "point": "Recognize AV dissociation rather than conducted sinus bradycardia.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A slow tracing shows regular P waves and regular QRS complexes at independent rates. Which explanation fits?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Atrial impulses are not conducting to the ventricles",
+            "explanation": "Independent atrial and ventricular activity supports complete block."
+          },
+          {
+            "text": "Every P wave conducts with a fixed PR interval",
+            "explanation": "That contradicts the described independence."
+          },
+          {
+            "text": "The ventricles are electrically silent",
+            "explanation": "QRS complexes are present."
+          },
+          {
+            "text": "The pulse rate must equal the atrial rate",
+            "explanation": "An independent ventricular escape rhythm can be much slower."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2,
+          4
+        ],
+        "point": "Poor perfusion in CHB requires rapid escalation and pacing readiness.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "A patient with complete heart block becomes confused and hypotensive. What should the nurse prioritize?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Support ABCs, escalate and prepare for pacing",
+            "explanation": "Poor perfusion makes this an urgent symptomatic block."
+          },
+          {
+            "text": "Wait for the rhythm to become fast before calling",
+            "explanation": "Severe bradycardia can already compromise output."
+          },
+          {
+            "text": "Use the P-wave rate to judge perfusion as adequate",
+            "explanation": "The ventricular response and patient condition matter."
+          },
+          {
+            "text": "Leave the patient for routine oral medication collection",
+            "explanation": "An unstable patient needs ongoing monitoring and support."
+          }
+        ]
+      },
+      {
+        "sections": [
+          5
+        ],
+        "point": "Review rate-slowing drugs in CHB assessment.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which medication history is especially relevant when investigating new complete heart block?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Beta blocker, verapamil or digoxin exposure",
+            "explanation": "These medicines can impair conduction."
+          },
+          {
+            "text": "A local oral antifungal alone",
+            "explanation": "It is not the highlighted AV-node-slowing group."
+          },
+          {
+            "text": "An occasional multivitamin alone",
+            "explanation": "It does not establish nodal depression."
+          },
+          {
+            "text": "A stool-softening regimen alone",
+            "explanation": "It does not explain AV-conduction suppression."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-03-12lead-ecg": [
+      {
+        "sections": [
+          0,
+          1
+        ],
+        "point": "Distinguish physical electrodes from derived ECG leads.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A complete diagnostic ECG is recorded using ten stickers. Why can it display twelve leads?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Leads are electrical views derived from the electrodes",
+            "explanation": "The number of views differs from physical contacts."
+          },
+          {
+            "text": "Each sticker must represent exactly one displayed lead",
+            "explanation": "That would incorrectly equate electrode and lead."
+          },
+          {
+            "text": "Two stickers are missing from the recording",
+            "explanation": "Ten electrodes are the normal physical setup."
+          },
+          {
+            "text": "Two of the displayed views are pulse-oximeter waveforms",
+            "explanation": "ECG leads do not come from the pulse-oximeter probe."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2,
+          5
+        ],
+        "point": "Place V1 and V2 at the fourth intercostal space.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "V1 and V2 have been placed in the second intercostal space. What should be corrected?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Move them to the fourth intercostal space at the respective sternal borders",
+            "explanation": "High placement can create misleading changes."
+          },
+          {
+            "text": "Keep them because only limb electrodes affect the tracing",
+            "explanation": "Chest electrode position affects the recorded views."
+          },
+          {
+            "text": "Move both to the fifth space at the midaxillary line",
+            "explanation": "That is not the correct V1/V2 position."
+          },
+          {
+            "text": "Move them to the same point as V4",
+            "explanation": "Each chest position has a defined anatomical location."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2
+        ],
+        "point": "V5 and V6 stay horizontally level with V4.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "After finding V4, how should V5 and V6 be positioned?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "At V4's horizontal level along their specified axillary lines",
+            "explanation": "Do not follow a descending rib to place them lower."
+          },
+          {
+            "text": "One intercostal space lower for each successive electrode",
+            "explanation": "They remain horizontally level with V4."
+          },
+          {
+            "text": "Both at the left sternal border",
+            "explanation": "Their landmarks are axillary rather than sternal."
+          },
+          {
+            "text": "Both halfway between V2 and V4",
+            "explanation": "That describes V3's relationship, not V5/V6."
+          }
+        ]
+      },
+      {
+        "sections": [
+          3
+        ],
+        "point": "The T wave represents ventricular repolarization.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which waveform represents the ventricles recovering electrically after depolarization?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "T wave",
+            "explanation": "It represents ventricular repolarization."
+          },
+          {
+            "text": "P wave",
+            "explanation": "It represents atrial depolarization."
+          },
+          {
+            "text": "QRS complex",
+            "explanation": "It represents ventricular depolarization."
+          },
+          {
+            "text": "Pacing spike",
+            "explanation": "It represents an artificial electrical stimulus."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4
+        ],
+        "point": "Use the stated IEC limb-electrode convention.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Using the IEC colour convention, which electrode is the neutral right-leg connection?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Black, RL/N",
+            "explanation": "N denotes neutral in this convention."
+          },
+          {
+            "text": "Green, LL/F",
+            "explanation": "This is the left-leg or foot connection."
+          },
+          {
+            "text": "Yellow, LA/L",
+            "explanation": "This is the left-arm connection."
+          },
+          {
+            "text": "Red, RA/R",
+            "explanation": "This is the right-arm connection."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-04-telemetry": [
+      {
+        "sections": [
+          0,
+          2
+        ],
+        "point": "Telemetry is rhythm monitoring rather than diagnostic 12-lead ECG.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A patient with new ischemic chest pain already has bedside telemetry. Which statement is correct?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Telemetry does not replace an indicated diagnostic 12-lead ECG",
+            "explanation": "Continuous rhythm surveillance and diagnostic views have different roles."
+          },
+          {
+            "text": "Telemetry always provides the same twelve diagnostic views",
+            "explanation": "A routine monitoring setup does not do this."
+          },
+          {
+            "text": "A pulse-oximeter pleth replaces all ECG assessment",
+            "explanation": "Pleth measures pulsatile flow rather than cardiac electrical views."
+          },
+          {
+            "text": "A displayed rate excludes myocardial ischemia",
+            "explanation": "Rate alone cannot exclude ischemia."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2
+        ],
+        "point": "Pleth reflects pulsatile blood flow rather than electrical activity.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "The pulse-oximeter pleth disappears while the ECG still displays complexes. What must be assessed?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "The patient, pulse and probe/perfusion status",
+            "explanation": "Electrical activity does not guarantee a usable peripheral pulse signal."
+          },
+          {
+            "text": "Only the ECG print speed",
+            "explanation": "Print speed does not establish circulation or probe contact."
+          },
+          {
+            "text": "Whether every QRS guarantees a palpable pulse",
+            "explanation": "Electrical complexes can exist without effective circulation."
+          },
+          {
+            "text": "Whether the ECG electrodes also generate the pleth",
+            "explanation": "The pleth comes from the pulse-oximeter probe."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4
+        ],
+        "point": "Estimate rate from QRS count on a six-second strip.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "There are nine QRS complexes on a six-second rhythm strip. What is the approximate ventricular rate?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "90/min",
+            "explanation": "Nine multiplied by ten gives about 90/min."
+          },
+          {
+            "text": "54/min",
+            "explanation": "This incorrectly multiplies by six."
+          },
+          {
+            "text": "60/min",
+            "explanation": "This ignores the counted complexes."
+          },
+          {
+            "text": "150/min",
+            "explanation": "This does not follow the six-second calculation."
+          }
+        ]
+      },
+      {
+        "sections": [
+          5
+        ],
+        "point": "Check the patient and pulse before treating suspected artifact.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "The monitor appears chaotic while the patient talks normally with a strong regular pulse. What comes first?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Assess the patient and check electrodes for artifact",
+            "explanation": "Clinical findings and equipment assessment help avoid treating artifact."
+          },
+          {
+            "text": "Deliver a shock solely from the screen image",
+            "explanation": "A monitor appearance alone is not enough in this situation."
+          },
+          {
+            "text": "Declare cardiac arrest despite the strong pulse",
+            "explanation": "Arrest requires loss of effective circulation."
+          },
+          {
+            "text": "Disconnect all monitoring and leave",
+            "explanation": "The tracing still needs safe assessment and correction."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-05-dangerous-rhythms": [
+      {
+        "sections": [
+          0,
+          3
+        ],
+        "point": "Pulse status changes the VT treatment pathway.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Why must pulse status be checked promptly when VT is seen?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Pulseless VT and VT with a pulse use different pathways",
+            "explanation": "Circulation determines arrest versus peri-arrest management."
+          },
+          {
+            "text": "Every VT rhythm receives the same treatment",
+            "explanation": "Pulse and instability change treatment selection."
+          },
+          {
+            "text": "VT always has a palpable pulse",
+            "explanation": "VT can be pulseless."
+          },
+          {
+            "text": "VT never causes circulatory compromise",
+            "explanation": "VT can cause shock or arrest."
+          }
+        ]
+      },
+      {
+        "sections": [
+          1,
+          2,
+          4
+        ],
+        "point": "PEA is non-shockable organized electrical activity without a pulse.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "An unresponsive patient has organized ECG complexes but no definite pulse. Which interpretation fits?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Pulseless electrical activity",
+            "explanation": "PEA is defined by absent effective circulation despite electrical activity."
+          },
+          {
+            "text": "A stable perfusing rhythm",
+            "explanation": "Electrical appearance does not prove perfusion."
+          },
+          {
+            "text": "Ventricular fibrillation",
+            "explanation": "VF does not show organized complexes as described."
+          },
+          {
+            "text": "Sinus bradycardia with adequate circulation",
+            "explanation": "The absence of a pulse excludes adequate circulation."
+          }
+        ]
+      },
+      {
+        "sections": [
+          1,
+          2
+        ],
+        "point": "Distinguish shockable from non-shockable arrest.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which pair should be selected as shockable cardiac-arrest rhythms?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "VF and pulseless VT",
+            "explanation": "Both use the shockable arrest pathway."
+          },
+          {
+            "text": "PEA and asystole",
+            "explanation": "These are non-shockable arrest rhythms."
+          },
+          {
+            "text": "Asystole and VF",
+            "explanation": "Only VF in this pair is shockable."
+          },
+          {
+            "text": "PEA and pulseless VT",
+            "explanation": "Only pulseless VT in this pair is shockable."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-06-electrical-treatment": [
+      {
+        "sections": [
+          2,
+          3
+        ],
+        "point": "Synchronize a shock to avoid the vulnerable T-wave period.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Why is synchronization used for indicated cardioversion of a tachyarrhythmia with a pulse?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "To time the shock with the R wave",
+            "explanation": "This avoids delivering it during the vulnerable T-wave period."
+          },
+          {
+            "text": "To deliver the shock specifically on the T wave",
+            "explanation": "That would increase proarrhythmic risk."
+          },
+          {
+            "text": "To guarantee painless treatment without sedation",
+            "explanation": "Synchronization does not provide analgesia or sedation."
+          },
+          {
+            "text": "To convert every shock into pacing",
+            "explanation": "Cardioversion and pacing are different interventions."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4
+        ],
+        "point": "Polymorphic VT requiring shock uses an unsynchronized shock.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Polymorphic VT requires an immediate shock. Why is reliable synchronization problematic?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "The changing QRS pattern prevents dependable synchronization",
+            "explanation": "Use the indicated unsynchronized shock pathway."
+          },
+          {
+            "text": "The presence of a pulse makes any shock impossible",
+            "explanation": "Some tachyarrhythmias with a pulse require urgent shocks."
+          },
+          {
+            "text": "A pacing spike must be inserted before each shock",
+            "explanation": "That is not the defining requirement."
+          },
+          {
+            "text": "Polymorphic VT is always a non-shockable rhythm",
+            "explanation": "It can require defibrillation."
+          }
+        ]
+      },
+      {
+        "sections": [
+          6
+        ],
+        "point": "Confirm mechanical capture as well as electrical capture.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Pacing spikes are followed by QRS complexes, but the patient remains hypotensive. What must be checked?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "A corresponding pulse and perfusion response",
+            "explanation": "Electrical capture alone does not establish effective mechanical capture."
+          },
+          {
+            "text": "Whether the spikes are visually symmetrical",
+            "explanation": "Spike appearance does not prove output."
+          },
+          {
+            "text": "Whether the monitor displays the programmed pacing rate",
+            "explanation": "A displayed rate does not guarantee perfusion."
+          },
+          {
+            "text": "Whether all further clinical checks can stop",
+            "explanation": "Persistent hypotension requires reassessment."
+          }
+        ]
+      },
+      {
+        "sections": [
+          1,
+          2,
+          5
+        ],
+        "point": "Choose electrical treatment using pulse and rate-related instability.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which electrical support best matches dangerous symptomatic bradycardia from high-grade block?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Pacing",
+            "explanation": "Repeated stimulation can support a dangerously slow ventricular response."
+          },
+          {
+            "text": "Synchronized cardioversion of the slow rhythm",
+            "explanation": "Cardioversion is used for selected tachyarrhythmias."
+          },
+          {
+            "text": "Routine defibrillation of a perfusing slow rhythm",
+            "explanation": "Defibrillation is not routine treatment for this bradycardia."
+          },
+          {
+            "text": "No intervention because a pulse is present",
+            "explanation": "A pulse does not make severe symptomatic bradycardia safe."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-07-sudden-deterioration": [
+      {
+        "sections": [
+          0,
+          1
+        ],
+        "point": "Assess the patient with ABCDE during sudden deterioration.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A previously alert patient becomes confused and breathless. What should the nurse do first?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Go to the bedside and perform an immediate ABCDE assessment",
+            "explanation": "Start with the patient's current airway, breathing and circulation."
+          },
+          {
+            "text": "Read the old discharge summary before assessing",
+            "explanation": "Historical detail must not delay current assessment."
+          },
+          {
+            "text": "Wait for a monitor alarm to confirm deterioration",
+            "explanation": "Clinical deterioration may precede or occur without an alarm."
+          },
+          {
+            "text": "Finish routine documentation before checking the patient",
+            "explanation": "Urgent assessment takes priority."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2,
+          3
+        ],
+        "point": "New shock signs require prompt escalation.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "Which combination requires urgent escalation rather than routine observation?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "New confusion, cold clammy skin and falling BP",
+            "explanation": "These are signs of possible poor perfusion."
+          },
+          {
+            "text": "Stable BP, normal alertness and unchanged breathing",
+            "explanation": "This does not describe new deterioration."
+          },
+          {
+            "text": "Unchanged chronic edema without new symptoms",
+            "explanation": "This is less urgent than new shock signs."
+          },
+          {
+            "text": "A request to adjust the pillow with stable observations",
+            "explanation": "Comfort needs differ from acute instability."
+          }
+        ]
+      },
+      {
+        "sections": [
+          0,
+          3
+        ],
+        "point": "Reassess after intervention rather than assuming benefit.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "After an urgent intervention, which action completes the immediate nursing cycle?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Repeat relevant observations and assess the response",
+            "explanation": "Treatment must be checked for benefit and adverse effects."
+          },
+          {
+            "text": "Assume completion proves the problem resolved",
+            "explanation": "An intervention can fail or create complications."
+          },
+          {
+            "text": "Stop documenting changes once help arrives",
+            "explanation": "Changes, actions and response remain important."
+          },
+          {
+            "text": "Wait until the next shift to check effectiveness",
+            "explanation": "Deterioration needs timely reassessment."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-08-cardiogenic-shock": [
+      {
+        "sections": [
+          0,
+          1
+        ],
+        "point": "Weak pump function can cause organ hypoperfusion.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "After MI, a patient has hypotension, cold extremities, confusion and oliguria. What unifies these findings?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Inadequate cardiac output causing organ hypoperfusion",
+            "explanation": "This is the core cardiogenic-shock concern."
+          },
+          {
+            "text": "Adequate circulation because the heart is still beating",
+            "explanation": "A heartbeat does not guarantee sufficient output."
+          },
+          {
+            "text": "Isolated peripheral edema without perfusion effects",
+            "explanation": "Several organ-perfusion signs are abnormal."
+          },
+          {
+            "text": "Improved renal perfusion from the pressure fall",
+            "explanation": "Hypotension with oliguria suggests the opposite."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4,
+          5
+        ],
+        "point": "Large automatic fluid boluses can worsen pump-failure congestion.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A hypotensive patient has weak pump function and pulmonary crackles. Why must a large fluid bolus not be assumed appropriate?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Additional fluid can worsen pulmonary congestion",
+            "explanation": "The full hemodynamic picture needs an authorized treatment plan."
+          },
+          {
+            "text": "Every hypotensive patient is necessarily volume depleted",
+            "explanation": "Hypotension has several causes, including pump failure."
+          },
+          {
+            "text": "Crackles prove that the circulation contains no fluid",
+            "explanation": "Crackles can reflect pulmonary congestion."
+          },
+          {
+            "text": "Fluid always strengthens myocardial contraction directly",
+            "explanation": "Volume loading does not repair intrinsic contractile failure."
+          }
+        ]
+      },
+      {
+        "sections": [
+          5
+        ],
+        "point": "Use history and the whole examination to distinguish shock patterns.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which picture more strongly supports hypovolemia than pump failure?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Recent major fluid loss, flat neck veins and clear lungs",
+            "explanation": "Together these support an empty-tank pattern."
+          },
+          {
+            "text": "Pulmonary crackles with raised JVP and weak output",
+            "explanation": "This more strongly suggests congestion with pump failure."
+          },
+          {
+            "text": "A low BP result without any other findings",
+            "explanation": "BP alone cannot distinguish the mechanism."
+          },
+          {
+            "text": "Tachycardia alone",
+            "explanation": "It can occur in several shock states."
+          }
+        ]
+      },
+      {
+        "sections": [
+          3
+        ],
+        "point": "Track organ perfusion alongside BP in shock.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which trend is particularly important alongside BP during shock reassessment?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Consciousness and urine output",
+            "explanation": "These reflect cerebral and renal perfusion."
+          },
+          {
+            "text": "The prescribed pump rate without patient reassessment",
+            "explanation": "A correct setting does not establish organ response."
+          },
+          {
+            "text": "Heart rate without other observations",
+            "explanation": "Rate alone does not establish sufficient output."
+          },
+          {
+            "text": "A single SpO2 reading without circulatory findings",
+            "explanation": "Oxygen saturation does not establish organ blood flow."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-09-norepi-dobutamine": [
+      {
+        "sections": [
+          0,
+          1,
+          2
+        ],
+        "point": "Distinguish vascular pressure support from contractility support.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Why might norepinephrine and dobutamine be used together?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "One supports vascular pressure while the other supports contractility",
+            "explanation": "They address different components of circulatory failure."
+          },
+          {
+            "text": "Both are simply two brands of the same drug",
+            "explanation": "They have different principal actions."
+          },
+          {
+            "text": "Both reduce cardiac contraction to the same extent",
+            "explanation": "Dobutamine principally increases contractile support."
+          },
+          {
+            "text": "One replaces all monitoring required by the other",
+            "explanation": "Both require close hemodynamic monitoring."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4
+        ],
+        "point": "Assess perfusion and rhythm during vasoactive treatment.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "During dobutamine support, HR rises markedly without better perfusion. What is appropriate?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Reassess rhythm, BP and organ response and report",
+            "explanation": "More tachycardia does not guarantee improved output."
+          },
+          {
+            "text": "Assume faster HR proves effective pump support",
+            "explanation": "Excessive rate can be harmful."
+          },
+          {
+            "text": "Judge effectiveness from pump settings alone",
+            "explanation": "Device settings do not establish clinical response."
+          },
+          {
+            "text": "Stop measuring urine because BP is displayed",
+            "explanation": "Organ response remains relevant."
+          }
+        ]
+      },
+      {
+        "sections": [
+          5
+        ],
+        "point": "Infusion rates depend on dose and concentration.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Why is memorizing one universal mL/hour rate unsafe for vasoactive infusions?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "The rate changes with prescribed dose and prepared concentration",
+            "explanation": "mL/hour alone does not specify drug delivery."
+          },
+          {
+            "text": "Every prepared bag has identical concentration",
+            "explanation": "Preparation can vary."
+          },
+          {
+            "text": "The same rate always produces the same patient response",
+            "explanation": "Dose and physiological response vary."
+          },
+          {
+            "text": "A pump setting removes the need to read the order",
+            "explanation": "The pump must be set against a verified prescription."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-10-electrolytes": [
+      {
+        "sections": [
+          0,
+          4
+        ],
+        "point": "Hyperkalemia with ECG change needs urgent monitoring and escalation.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "Potassium is high and QRS complexes are widening. What takes priority?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Continuous monitoring and urgent clinical escalation",
+            "explanation": "ECG toxicity can precede life-threatening arrhythmia."
+          },
+          {
+            "text": "Waiting for loss of pulse before reporting",
+            "explanation": "Escalation should occur before arrest."
+          },
+          {
+            "text": "Treating the result as harmless if the patient can speak",
+            "explanation": "Alertness does not exclude electrical toxicity."
+          },
+          {
+            "text": "A routine repeat next week",
+            "explanation": "The ECG change makes this an urgent problem."
+          }
+        ]
+      },
+      {
+        "sections": [
+          1
+        ],
+        "point": "Low magnesium can make hypokalemia harder to correct.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Potassium remains low despite replacement in a patient with ventricular ectopy. Which associated result should be reviewed?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Magnesium",
+            "explanation": "Magnesium depletion can contribute to persistent hypokalemia."
+          },
+          {
+            "text": "An isolated normal bilirubin",
+            "explanation": "It does not assess the highlighted electrolyte relationship."
+          },
+          {
+            "text": "The platelet count alone",
+            "explanation": "Platelets do not establish magnesium status."
+          },
+          {
+            "text": "An old serum cholesterol result",
+            "explanation": "It does not guide this acute electrolyte problem."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2
+        ],
+        "point": "Calcium abnormalities can change the QT interval.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which ECG interval change is associated with low calcium?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "QT prolongation",
+            "explanation": "Hypocalcemia tends to prolong QT."
+          },
+          {
+            "text": "Reliable QT shortening",
+            "explanation": "Shortening is associated with high calcium."
+          },
+          {
+            "text": "Guaranteed loss of every P wave",
+            "explanation": "This is not the defining calcium effect."
+          },
+          {
+            "text": "A mandatory normal QRS and QT in every patient",
+            "explanation": "Electrolyte disturbances can change ECG intervals."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4
+        ],
+        "point": "Never give potassium as a rapid IV push.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "A potassium prescription is mistakenly prepared for rapid IV push. What should the nurse do?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Stop and clarify a safe authorized infusion method",
+            "explanation": "Rapid IV potassium can cause fatal arrhythmia."
+          },
+          {
+            "text": "Give it rapidly if the patient is monitored",
+            "explanation": "Monitoring does not make IV push potassium safe."
+          },
+          {
+            "text": "Use a smaller syringe but the same push method",
+            "explanation": "Syringe size does not remove the hazard."
+          },
+          {
+            "text": "Give it faster if the potassium result is very low",
+            "explanation": "Severe depletion still requires a controlled replacement plan."
+          }
+        ]
+      }
+    ],
+    "ccu-lesson-11-furosemide": [
+      {
+        "sections": [
+          0,
+          1,
+          2
+        ],
+        "point": "Judge decongestion by the patient's respiratory and fluid response.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "After furosemide, urine increases but breathlessness worsens. What is the best interpretation?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Urine output alone does not establish clinical improvement",
+            "explanation": "The breathing and full fluid/perfusion picture need reassessment."
+          },
+          {
+            "text": "Any increase in urine proves successful treatment",
+            "explanation": "The patient can still deteriorate."
+          },
+          {
+            "text": "Worsening dyspnea is the intended effect",
+            "explanation": "The intended effect is reduced congestion."
+          },
+          {
+            "text": "Further assessment can wait until the bag is empty",
+            "explanation": "Current deterioration needs attention."
+          }
+        ]
+      },
+      {
+        "sections": [
+          3,
+          4
+        ],
+        "point": "Monitor BP, renal function and electrolytes during diuresis.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "During diuresis, BP falls, creatinine rises and the patient becomes thirsty. What should be assessed?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Possible excessive volume depletion and renal deterioration",
+            "explanation": "The trend can indicate intolerance of fluid loss."
+          },
+          {
+            "text": "Guaranteed successful decongestion without risk",
+            "explanation": "These are safety concerns, not proof of uncomplicated benefit."
+          },
+          {
+            "text": "An unrelated skin condition only",
+            "explanation": "That would not explain the hemodynamic and renal trend."
+          },
+          {
+            "text": "A reason to stop measuring urine output",
+            "explanation": "Output remains useful in assessing the change."
+          }
+        ]
+      },
+      {
+        "sections": [
+          5
+        ],
+        "point": "New ectopy during loop diuresis prompts K/Mg review.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A furosemide-treated patient develops frequent PVCs. Which paired tests are most directly relevant?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Potassium and magnesium",
+            "explanation": "Diuretic-related losses can contribute to ectopy."
+          },
+          {
+            "text": "ALT and bilirubin only",
+            "explanation": "They do not assess the highlighted rhythm mechanism."
+          },
+          {
+            "text": "TSH and free T4 only",
+            "explanation": "They do not replace immediate electrolyte checks."
+          },
+          {
+            "text": "Platelets and INR only",
+            "explanation": "They address hemostasis rather than the highlighted electrolyte losses."
+          }
+        ]
+      }
+    ],
+    "ccu-quick-heart-failure": [
+      {
+        "sections": [
+          1,
+          2
+        ],
+        "point": "Distinguish congestion from poor perfusion in HF.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "An HF patient has both crackles and cold clammy skin. Which interpretation fits?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Congestion and poor perfusion may coexist",
+            "explanation": "The patient can be both wet and cold."
+          },
+          {
+            "text": "Crackles prove organ perfusion is adequate",
+            "explanation": "Congestion does not guarantee effective output."
+          },
+          {
+            "text": "Cold skin excludes fluid overload",
+            "explanation": "Both findings can be present together."
+          },
+          {
+            "text": "Only the ankle swelling can determine severity",
+            "explanation": "The overall respiratory and perfusion picture matters."
+          }
+        ]
+      },
+      {
+        "sections": [
+          3
+        ],
+        "point": "Left-sided congestion affects lungs; right-sided congestion affects systemic veins.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which pattern most strongly reflects systemic venous congestion?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Raised JVP with peripheral edema",
+            "explanation": "These are characteristic right-sided backup findings."
+          },
+          {
+            "text": "Isolated pulmonary crackles and orthopnea",
+            "explanation": "These principally reflect pulmonary congestion."
+          },
+          {
+            "text": "New tongue swelling",
+            "explanation": "This is an airway warning rather than systemic venous congestion."
+          },
+          {
+            "text": "An isolated normal urine test",
+            "explanation": "It does not define congestion distribution."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4
+        ],
+        "point": "Preserved EF does not exclude clinically important HF.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A patient has preserved EF but substantial orthopnea and congestion. Which statement is appropriate?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "HF can occur with impaired filling despite preserved EF",
+            "explanation": "EF alone cannot determine the presence or severity of HF."
+          },
+          {
+            "text": "Preserved EF excludes heart failure",
+            "explanation": "HFpEF is possible."
+          },
+          {
+            "text": "EF measures the percentage of all body blood in the heart",
+            "explanation": "It is the fraction of LV blood ejected per contraction."
+          },
+          {
+            "text": "Preserved EF removes the need to assess breathing",
+            "explanation": "Symptoms and congestion still require assessment."
+          }
+        ]
+      },
+      {
+        "sections": [
+          5
+        ],
+        "point": "Escalate acute pulmonary edema or worsening perfusion.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "Which HF change requires urgent escalation?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Sudden severe dyspnea with falling BP",
+            "explanation": "This suggests acute deterioration."
+          },
+          {
+            "text": "Unchanged chronic edema without new symptoms",
+            "explanation": "It lacks the same acute red flags."
+          },
+          {
+            "text": "An unchanged daily weight with comfortable breathing",
+            "explanation": "This does not describe acute instability."
+          },
+          {
+            "text": "A request for routine diet advice",
+            "explanation": "Education can follow urgent clinical priorities."
+          }
+        ]
+      }
+    ],
+    "ccu-quick-dcm": [
+      {
+        "sections": [
+          0
+        ],
+        "point": "Dilated ventricles with weak contraction can lower cardiac output.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "How does the structural change in DCM contribute to symptoms?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Enlarged ventricles contract weakly and reduce effective output",
+            "explanation": "This links chamber dilation and pump failure."
+          },
+          {
+            "text": "Dilated ventricles always contract more effectively",
+            "explanation": "Dilation in DCM does not guarantee stronger contraction."
+          },
+          {
+            "text": "DCM affects only the heart's electrical leads",
+            "explanation": "It is a myocardial structural and functional disorder."
+          },
+          {
+            "text": "A larger chamber guarantees normal organ perfusion",
+            "explanation": "Size does not establish adequate effective output."
+          }
+        ]
+      },
+      {
+        "sections": [
+          1,
+          3
+        ],
+        "point": "Monitor DCM for HF, rhythm problems and low-output deterioration.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which new DCM finding needs prompt assessment?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Confusion with oliguria and a falling BP",
+            "explanation": "These suggest low-output organ hypoperfusion."
+          },
+          {
+            "text": "Stable observations with unchanged exercise tolerance",
+            "explanation": "This does not show new deterioration."
+          },
+          {
+            "text": "An unchanged healed scar",
+            "explanation": "It is not an acute pump-failure sign."
+          },
+          {
+            "text": "A preference to change appointment time",
+            "explanation": "This is not a clinical red flag."
+          }
+        ]
+      }
+    ],
+    "ccu-quick-ihd-mi": [
+      {
+        "sections": [
+          0,
+          1,
+          2
+        ],
+        "point": "MI is myocardial death from ischemia within the broader IHD spectrum.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which statement correctly relates ischemic heart disease and MI?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "MI is a specific ischemic event involving myocardial cell death",
+            "explanation": "IHD is broader than infarction."
+          },
+          {
+            "text": "Every episode of stable angina is an MI",
+            "explanation": "Ischemia can occur without myocardial necrosis."
+          },
+          {
+            "text": "IHD and MI describe unrelated diseases",
+            "explanation": "MI belongs to the ischemic spectrum."
+          },
+          {
+            "text": "MI means reduced flow without any cell injury",
+            "explanation": "Infarction involves myocardial cell death."
+          }
+        ]
+      },
+      {
+        "sections": [
+          0,
+          2
+        ],
+        "point": "Stable exertional angina does not itself establish infarction.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A patient has stable exertional angina. What can be concluded from that diagnosis alone?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "IHD is present, but MI is not established",
+            "explanation": "Angina does not by itself prove myocardial necrosis."
+          },
+          {
+            "text": "The patient must be having an acute MI",
+            "explanation": "Stable angina alone does not establish acute infarction."
+          },
+          {
+            "text": "Coronary blood supply is necessarily normal",
+            "explanation": "Angina can reflect reduced coronary supply."
+          },
+          {
+            "text": "All future ischemic symptoms can be ignored",
+            "explanation": "New or changing symptoms still require assessment."
+          }
+        ]
+      }
+    ],
+    "ibd2-lesson-01-fracture-limb-safety": [
+      {
+        "sections": [
+          0,
+          1
+        ],
+        "point": "Assess distal perfusion, sensation and movement below the injury.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A casted limb becomes more painful. Where should the focused neurovascular check be directed?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Distal to the injury, compared with baseline and the other side",
+            "explanation": "The tissues below the injury may lose perfusion or nerve function."
+          },
+          {
+            "text": "Only the skin above the cast",
+            "explanation": "This misses the distal neurovascular status."
+          },
+          {
+            "text": "Only the uninjured limb",
+            "explanation": "Comparison helps, but the injured limb must be assessed."
+          },
+          {
+            "text": "Only the appearance of the cast surface",
+            "explanation": "An intact cast does not prove tissue safety."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2,
+          3,
+          4
+        ],
+        "point": "A palpable pulse does not exclude compartment syndrome.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "Severe increasing pain on passive stretch occurs despite a palpable distal pulse. What is the best interpretation?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Compartment syndrome remains an emergency concern",
+            "explanation": "Pulses may persist while tissue pressure compromises perfusion."
+          },
+          {
+            "text": "A palpable pulse safely excludes compartment syndrome",
+            "explanation": "Waiting for pulselessness can dangerously delay treatment."
+          },
+          {
+            "text": "Only absent movement justifies escalation",
+            "explanation": "Motor loss may be a late finding."
+          },
+          {
+            "text": "Passive-stretch pain is always normal after fracture",
+            "explanation": "Disproportionate worsening pain is an important warning."
+          }
+        ]
+      },
+      {
+        "sections": [
+          5,
+          6
+        ],
+        "point": "Recognize and escalate deterioration within supervised intern scope.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "An intern suspects compartment syndrome under a cast. What is the appropriate response?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Urgently report, reassess and prepare to assist under the authorized plan",
+            "explanation": "Recognition and escalation are immediate nursing responsibilities."
+          },
+          {
+            "text": "Independently cut all prescribed immobilization without authorization",
+            "explanation": "Modification requires the applicable order or protocol."
+          },
+          {
+            "text": "Wait for the next routine pain dose before reporting",
+            "explanation": "Analgesic timing must not delay emergency assessment."
+          },
+          {
+            "text": "Declare the limb safe because the cast is intact",
+            "explanation": "A structurally intact cast does not exclude tissue compromise."
+          }
+        ]
+      },
+      {
+        "sections": [
+          1,
+          3
+        ],
+        "point": "New sensory or motor change strengthens neurovascular concern.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which new observation most strengthens concern about a worsening injured limb?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "New tingling with reduced toe movement",
+            "explanation": "This adds neurological dysfunction to the pain assessment."
+          },
+          {
+            "text": "Unchanged toe sensation and movement",
+            "explanation": "These do not demonstrate new neurological loss."
+          },
+          {
+            "text": "A clean cast surface",
+            "explanation": "Surface cleanliness does not assess nerves."
+          },
+          {
+            "text": "A stable appetite",
+            "explanation": "Appetite does not assess distal neurovascular function."
+          }
+        ]
+      }
+    ],
+    "ibd2-lesson-02-external-fixator": [
+      {
+        "sections": [
+          0,
+          2,
+          3
+        ],
+        "point": "Check the limb before the fixation hardware.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "At the bedside of a patient with an external fixator, what should be checked first?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Pain and distal neurovascular status",
+            "explanation": "The limb can deteriorate despite an intact frame."
+          },
+          {
+            "text": "Pin-site dressings before distal limb assessment",
+            "explanation": "Wound care matters but must not distract from limb perfusion."
+          },
+          {
+            "text": "Frame alignment without examining the limb",
+            "explanation": "Hardware appearance does not establish neurovascular safety."
+          },
+          {
+            "text": "The adjustment record before checking new symptoms",
+            "explanation": "Records must not delay current patient assessment."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4,
+          5
+        ],
+        "point": "Protect and escalate a loose frame rather than adjusting it independently.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "A fixator bar appears loose with unexpected movement. What is appropriate?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Support the limb, prevent unsafe movement and report",
+            "explanation": "Hardware problems require protection and authorized review."
+          },
+          {
+            "text": "Tighten it by feel to match the other bars",
+            "explanation": "Unsupervised adjustment can alter alignment."
+          },
+          {
+            "text": "Ask a visitor to hold the bar while the patient walks",
+            "explanation": "This is not an authorized stabilization plan."
+          },
+          {
+            "text": "Ignore it if the dressing is dry",
+            "explanation": "Dry dressings do not establish mechanical stability."
+          }
+        ]
+      },
+      {
+        "sections": [
+          6,
+          7
+        ],
+        "point": "Assess spreading pin-site inflammation and follow authorized care.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A pin site has increasing pain, spreading redness and new drainage. What should the nurse do?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Assess the patient and site, report and follow the prescribed plan",
+            "explanation": "This may indicate infection and needs clinical review."
+          },
+          {
+            "text": "Choose a new cleansing product without checking the plan",
+            "explanation": "Pin care should follow the authorized protocol."
+          },
+          {
+            "text": "Accept all new drainage as normal",
+            "explanation": "Meaningful changes need assessment."
+          },
+          {
+            "text": "Adjust the pin to release the discharge",
+            "explanation": "Hardware must not be manipulated independently."
+          }
+        ]
+      },
+      {
+        "sections": [
+          8
+        ],
+        "point": "Document and reassess after reporting a limb or frame problem.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "After reporting a fixator problem, what should be documented?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Time, findings, notification, instructions and patient response",
+            "explanation": "These support continuity and reassessment."
+          },
+          {
+            "text": "Only that the frame is present",
+            "explanation": "This omits the clinical problem and response."
+          },
+          {
+            "text": "Only the colour of the dressing",
+            "explanation": "This does not record the relevant change."
+          },
+          {
+            "text": "Nothing until the next shift",
+            "explanation": "Timely documentation and reassessment are needed."
+          }
+        ]
+      }
+    ],
+    "ibd2-quick-taylor-spatial-frame": [
+      {
+        "sections": [
+          0,
+          1
+        ],
+        "point": "Identify the TSF as a circular hexapod external fixator.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "What feature most specifically distinguishes a typical Taylor Spatial Frame?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Rings connected by six adjustable struts",
+            "explanation": "The hexapod system supports planned multidirectional correction."
+          },
+          {
+            "text": "A cast containing no pins or wires",
+            "explanation": "A TSF is an external fixation system."
+          },
+          {
+            "text": "An internal plate fully beneath the skin",
+            "explanation": "The frame is external and connected to bone."
+          },
+          {
+            "text": "A single traction weight attached to a bed",
+            "explanation": "That is not the TSF structure."
+          }
+        ]
+      },
+      {
+        "sections": [
+          3
+        ],
+        "point": "TSF correction follows an individualized written schedule.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A patient says one strut adjustment was missed. What should an intern do?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Check the written plan and obtain authorized guidance",
+            "explanation": "Do not improvise a catch-up adjustment."
+          },
+          {
+            "text": "Double the next adjustment without instruction",
+            "explanation": "This changes the prescribed correction."
+          },
+          {
+            "text": "Turn all struts equally to compensate",
+            "explanation": "The schedule is individualized and direction-specific."
+          },
+          {
+            "text": "Adjust whichever strut looks shortest",
+            "explanation": "Appearance does not determine the correction plan."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4,
+          5,
+          7
+        ],
+        "point": "Treat new TSF neurovascular deterioration as urgent.",
+        "stage": "7-day",
+        "criticalForSafety": true,
+        "format": "single-best-answer",
+        "stem": "A TSF patient's toes become numb and pain rises rapidly. What takes priority?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Focused neurovascular assessment and emergency escalation",
+            "explanation": "New neurological and pain changes can indicate limb-threatening compromise."
+          },
+          {
+            "text": "Photographing every frame component before checking the limb",
+            "explanation": "Patient assessment must not wait for device photography."
+          },
+          {
+            "text": "Assuming it is routine correction discomfort",
+            "explanation": "Rapid worsening and numbness are red flags."
+          },
+          {
+            "text": "Permitting walking to test alignment",
+            "explanation": "Unsafe movement can worsen the situation."
+          }
+        ]
+      },
+      {
+        "sections": [
+          6,
+          9
+        ],
+        "point": "Weight-bearing and hardware changes require the local prescribed plan.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A TSF patient asks whether full weight-bearing is allowed. What should guide the answer?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "The individual weight-bearing order and authorized plan",
+            "explanation": "A frame does not imply unrestricted loading."
+          },
+          {
+            "text": "The fact that the frame looks strong",
+            "explanation": "Appearance does not establish permitted loading."
+          },
+          {
+            "text": "Another patient's mobility instructions",
+            "explanation": "Orders are patient-specific."
+          },
+          {
+            "text": "The absence of pain during one step",
+            "explanation": "One painless step does not authorize full weight-bearing."
+          }
+        ]
+      },
+      {
+        "sections": [
+          8
+        ],
+        "point": "Record reassessment and comparison to the neurovascular baseline.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Which note best supports follow-up after a TSF neurovascular change?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Timed findings, baseline comparison, notification and reassessment",
+            "explanation": "This records the clinical trajectory and response."
+          },
+          {
+            "text": "Frame present; patient seen",
+            "explanation": "This is too vague to track the change."
+          },
+          {
+            "text": "Dressing colour recorded without limb findings",
+            "explanation": "This omits the main concern."
+          },
+          {
+            "text": "Routine observations normal yesterday",
+            "explanation": "Yesterday's status does not document today's event."
+          }
+        ]
+      }
+    ],
+    "ibd2-lesson-04-osteomyelitis": [
+      {
+        "sections": [
+          0,
+          1,
+          5
+        ],
+        "point": "Persistent deep pain and drainage can indicate bone infection.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A fracture wound has persistent drainage and deep pain despite little fever. What should be considered?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Possible osteomyelitis requiring review",
+            "explanation": "Bone infection can occur without prominent fever."
+          },
+          {
+            "text": "Normal healing proven by the absence of fever",
+            "explanation": "Lack of fever does not establish normal healing."
+          },
+          {
+            "text": "A problem confined to the skin by definition",
+            "explanation": "Deep pain and persistence raise concern beyond superficial tissue."
+          },
+          {
+            "text": "A reason to stop all wound observations",
+            "explanation": "Persistent abnormal findings need continued assessment."
+          }
+        ]
+      },
+      {
+        "sections": [
+          2,
+          3
+        ],
+        "point": "Assess systemic deterioration, wound and limb status in suspected bone infection.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "A patient with a draining wound becomes unwell with worsening pain. What should the nurse prioritize?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Vitals, wound findings, neurovascular assessment and escalation",
+            "explanation": "Systemic and local deterioration require prompt review."
+          },
+          {
+            "text": "Waiting for the next dressing appointment",
+            "explanation": "Deterioration needs earlier assessment."
+          },
+          {
+            "text": "Documenting drainage without examining the patient",
+            "explanation": "The systemic condition and limb must also be assessed."
+          },
+          {
+            "text": "Changing antibiotics independently",
+            "explanation": "Antimicrobial decisions require an authorized plan."
+          }
+        ]
+      },
+      {
+        "sections": [
+          4
+        ],
+        "point": "Osteomyelitis may require antibiotics and surgical source control.",
+        "stage": "7-day",
+        "criticalForSafety": false,
+        "format": "single-best-answer",
+        "stem": "Why can osteomyelitis management involve both antibiotics and debridement?",
+        "correct": 0,
+        "choices": [
+          {
+            "text": "Infection may need antimicrobial treatment plus removal of infected tissue",
+            "explanation": "The treatment plan can combine medical and surgical approaches."
+          },
+          {
+            "text": "A clean surface dressing guarantees infected bone is treated",
+            "explanation": "Surface care alone may not address deeper infection."
+          },
+          {
+            "text": "Antibiotics always make surgery unnecessary",
+            "explanation": "Surgery can still be needed."
+          },
+          {
+            "text": "Debridement means all antimicrobial follow-up is unnecessary",
+            "explanation": "The full treatment and monitoring plan remains important."
+          }
+        ]
+      }
+    ]
+  },
+  "medicationRestrictions": {
+    "gi_obstruction": [
+      "trolley-29"
+    ]
+  }
+}

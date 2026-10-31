@@ -365,6 +365,137 @@
             }
           ],
           "questionCount": 1
+        },
+        {
+          "id": "ccu-omeprazole--7-day",
+          "itemId": "ccu-omeprazole",
+          "itemType": "medication",
+          "title": "OMEPRAZOLE",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "Which acid-suppression order warrants interaction review in a patient on clopidogrel?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Omeprazole",
+                  "explanation": "It can impair clopidogrel activation more than pantoprazole."
+                },
+                {
+                  "id": "B",
+                  "text": "A non-drug positioning instruction",
+                  "explanation": "Positioning does not inhibit clopidogrel activation."
+                },
+                {
+                  "id": "C",
+                  "text": "An instruction to avoid late meals",
+                  "explanation": "Meal timing does not create this drug interaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Pantoprazole as the less problematic option",
+                  "explanation": "It has less CYP2C19 inhibition than omeprazole."
+                }
+              ],
+              "point": "Omeprazole can impair clopidogrel activation; pantoprazole is less problematic.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-omeprazole",
+                  "field": "monitor",
+                  "textSha256": "a826a57dc02a9855c399aa583c08a1ca4283c4517b76870327d63492b2e01ae7"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-omeprazole",
+                  "field": "why",
+                  "textSha256": "925f398e7fa48f05b698d04a8bd78a804f2aaba186301837027906e0a7bfcf6f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-omeprazole",
+                  "field": "memoryDanger",
+                  "textSha256": "29331ca9b3ec54fec813538fd4ef3b28cfee6a451c91c84d83284ffd40b1a24e"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-omeprazole--7-day--ppi_clopidogrel",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-omeprazole::ppi_clopidogrel"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient cannot swallow an enteric-coated capsule or tablet. What is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dissolve it using any available solvent",
+                  "explanation": "Preparation must follow the exact product instructions."
+                },
+                {
+                  "id": "B",
+                  "text": "Crush it because all solid products are equivalent",
+                  "explanation": "Crushing can change intended release or protection."
+                },
+                {
+                  "id": "C",
+                  "text": "Verify a suitable formulation or authorized administration method",
+                  "explanation": "Coatings and release systems may be disrupted by crushing."
+                },
+                {
+                  "id": "D",
+                  "text": "Use an injectable product by mouth without review",
+                  "explanation": "Route substitution needs an authorized product-specific plan."
+                }
+              ],
+              "point": "Do not assume enteric-coated products can be crushed.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-omeprazole",
+                  "field": "administration",
+                  "textSha256": "9038df306cd8adafd10fc558fba30025688e205ae5def8613e3f634e31924528"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-omeprazole--7-day--enteric_coating",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-omeprazole::enteric_coating"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 2
         }
       ]
     },
@@ -903,6 +1034,194 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "ccu-metronidazole--7-day",
+          "itemId": "ccu-metronidazole",
+          "itemType": "medication",
+          "title": "FLAGYL — metronidazole",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "During FLAGYL — metronidazole treatment, which symptom needs review for peripheral nerve injury?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An old healed scar without sensory change",
+                  "explanation": "A stable scar is not new treatment-related sensory loss."
+                },
+                {
+                  "id": "B",
+                  "text": "New persistent burning and numbness in the feet",
+                  "explanation": "These are compatible with peripheral neuropathy."
+                },
+                {
+                  "id": "C",
+                  "text": "Unchanged sensation and normal movement",
+                  "explanation": "This does not demonstrate new neuropathy."
+                },
+                {
+                  "id": "D",
+                  "text": "A brief taste change after swallowing",
+                  "explanation": "Taste change does not establish peripheral nerve injury."
+                }
+              ],
+              "point": "New sensory symptoms during susceptible treatment need review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "monitor",
+                  "textSha256": "5f247497ab25048788f5774cbc04ca2f683b625d0b2061e0eb1435e76b52cb6a"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "why",
+                  "textSha256": "26594449714c6d95fcd0bb762ed01c648165fb86c1c06894c5ed8ed822194d3d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "memoryDanger",
+                  "textSha256": "4d108a2719ee9985ea738123b0ea66ba90f45768eca478dbb2e81fca922e89f8"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-metronidazole--7-day--neuropathy",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metronidazole::neuropathy"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient stabilized on warfarin starts an interacting medicine. What follow-up is most relevant?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for the next annual review regardless of symptoms",
+                  "explanation": "A new interaction can require earlier monitoring."
+                },
+                {
+                  "id": "B",
+                  "text": "Use a normal pulse to rule out interaction",
+                  "explanation": "Pulse alone cannot establish anticoagulation safety."
+                },
+                {
+                  "id": "C",
+                  "text": "Review bleeding symptoms and the ordered INR plan",
+                  "explanation": "Interactions can alter anticoagulant response."
+                },
+                {
+                  "id": "D",
+                  "text": "Assume stable old doses guarantee a stable INR",
+                  "explanation": "New medicines or illness can change the response."
+                }
+              ],
+              "point": "Medicines, illness, and diet changes can alter warfarin response.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "monitor",
+                  "textSha256": "5f247497ab25048788f5774cbc04ca2f683b625d0b2061e0eb1435e76b52cb6a"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "why",
+                  "textSha256": "26594449714c6d95fcd0bb762ed01c648165fb86c1c06894c5ed8ed822194d3d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "memoryDanger",
+                  "textSha256": "4d108a2719ee9985ea738123b0ea66ba90f45768eca478dbb2e81fca922e89f8"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-metronidazole--7-day--warfarin_interactions",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metronidazole::warfarin_interactions"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After several doses of FLAGYL — metronidazole, fever persists and the patient deteriorates. What should guide the next review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An old culture from a different infection",
+                  "explanation": "It may not represent the current pathogen or susceptibility."
+                },
+                {
+                  "id": "B",
+                  "text": "The white cell count in isolation",
+                  "explanation": "A single laboratory value does not replace the full clinical review."
+                },
+                {
+                  "id": "C",
+                  "text": "The fever response to an antipyretic alone",
+                  "explanation": "Temporary fever relief does not prove antimicrobial effectiveness."
+                },
+                {
+                  "id": "D",
+                  "text": "Clinical course, cultures and the authorized treatment plan",
+                  "explanation": "These help assess diagnosis, susceptibility and response."
+                }
+              ],
+              "point": "Use clinical response, cultures, and the authorized antimicrobial plan.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metronidazole",
+                  "field": "mechanism",
+                  "textSha256": "0887cf81a4ab56fbb2503268a94a54302e3418e976d197e4b0e1650b5bb2d82a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-metronidazole--7-day--antimicrobial_response",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metronidazole::antimicrobial_response"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     },
@@ -1441,6 +1760,194 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "ccu-linezolid--7-day",
+          "itemId": "ccu-linezolid",
+          "itemType": "medication",
+          "title": "LINEZOLID",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "During LINEZOLID therapy, which new finding most supports checking the prescribed CBC urgently?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dry mouth with urinary hesitancy",
+                  "explanation": "This more directly suggests an antimuscarinic effect."
+                },
+                {
+                  "id": "B",
+                  "text": "Unexpected bruising with gum bleeding",
+                  "explanation": "These suggest a platelet or other hematological problem."
+                },
+                {
+                  "id": "C",
+                  "text": "Burning feet with persistent numbness",
+                  "explanation": "This more directly suggests neuropathy."
+                },
+                {
+                  "id": "D",
+                  "text": "Postural dizziness with an isolated BP fall",
+                  "explanation": "This more directly calls for circulatory assessment."
+                }
+              ],
+              "point": "Treatment can cause cytopenias; use the ordered CBC/platelet monitoring.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "monitor",
+                  "textSha256": "6633cab69d28950a078967208ce9784729f31df368f4bde87c1143d090c7aa8b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "why",
+                  "textSha256": "e1751c02e3c631f8800a6a4b0eac4c45fa210fcfa06b25f077b41f52bb8b4244"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "memoryDanger",
+                  "textSha256": "948571dc552dd55286be3907a0b6e7e4d902bfaa17a8d72dd381a55c25630509"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-linezolid--7-day--cbc",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-linezolid::cbc"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient on LINEZOLID and a serotonergic antidepressant develops fever, agitation and clonus. What needs urgent review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An uncomplicated local infusion reaction",
+                  "explanation": "A local reaction does not explain the systemic neurological pattern."
+                },
+                {
+                  "id": "B",
+                  "text": "Expected isolated opioid constipation",
+                  "explanation": "Constipation does not explain fever and clonus."
+                },
+                {
+                  "id": "C",
+                  "text": "Routine postural hypotension",
+                  "explanation": "Postural hypotension does not account for clonus and fever."
+                },
+                {
+                  "id": "D",
+                  "text": "Possible serotonin toxicity",
+                  "explanation": "The medication combination and neuromuscular findings support this concern."
+                }
+              ],
+              "point": "Recognize serotonin toxicity and review serotonergic combinations.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "monitor",
+                  "textSha256": "6633cab69d28950a078967208ce9784729f31df368f4bde87c1143d090c7aa8b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "why",
+                  "textSha256": "e1751c02e3c631f8800a6a4b0eac4c45fa210fcfa06b25f077b41f52bb8b4244"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "memoryDanger",
+                  "textSha256": "948571dc552dd55286be3907a0b6e7e4d902bfaa17a8d72dd381a55c25630509"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-linezolid--7-day--serotonin",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-linezolid::serotonin"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During LINEZOLID treatment, which symptom needs review for peripheral nerve injury?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "New persistent burning and numbness in the feet",
+                  "explanation": "These are compatible with peripheral neuropathy."
+                },
+                {
+                  "id": "B",
+                  "text": "An old healed scar without sensory change",
+                  "explanation": "A stable scar is not new treatment-related sensory loss."
+                },
+                {
+                  "id": "C",
+                  "text": "Unchanged sensation and normal movement",
+                  "explanation": "This does not demonstrate new neuropathy."
+                },
+                {
+                  "id": "D",
+                  "text": "A brief taste change after swallowing",
+                  "explanation": "Taste change does not establish peripheral nerve injury."
+                }
+              ],
+              "point": "New sensory symptoms during susceptible treatment need review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-linezolid",
+                  "field": "monitor",
+                  "textSha256": "6633cab69d28950a078967208ce9784729f31df368f4bde87c1143d090c7aa8b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-linezolid--7-day--neuropathy",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-linezolid::neuropathy"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     },
@@ -1886,6 +2393,144 @@
             }
           ],
           "questionCount": 1
+        },
+        {
+          "id": "ccu-salbutamol--7-day",
+          "itemId": "ccu-salbutamol",
+          "itemType": "medication",
+          "title": "VENTOLIN — salbutamol / albuterol",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "After an inhaled bronchodilator, which reassessment best checks benefit?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Work of breathing, air entry and oxygenation",
+                  "explanation": "These assess the respiratory response."
+                },
+                {
+                  "id": "B",
+                  "text": "Tablet swallowing and bowel frequency",
+                  "explanation": "These do not assess bronchodilation."
+                },
+                {
+                  "id": "C",
+                  "text": "Bruising and platelet count only",
+                  "explanation": "These do not measure airway response."
+                },
+                {
+                  "id": "D",
+                  "text": "The number of doses remaining in the pack",
+                  "explanation": "Remaining supply does not establish clinical benefit."
+                }
+              ],
+              "point": "Evaluate bronchodilation using breathing and oxygenation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-salbutamol",
+                  "field": "use",
+                  "textSha256": "b42f7b7f66c82ef1e9fadba1443d710f6496588485f23e31909e70173f9f2ba7"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-salbutamol",
+                  "field": "monitor",
+                  "textSha256": "d2aebd07de740f33ad39bf3b9f607edc70e2afa02bf18b31ce018d5a53ff2f17"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-salbutamol--7-day--bronchodilator_response",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-salbutamol::bronchodilator_response"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After salbutamol or formoterol, tremor and palpitations occur. What is most appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assume the symptoms prove treatment failure",
+                  "explanation": "They can be adverse effects despite bronchodilation."
+                },
+                {
+                  "id": "B",
+                  "text": "Use a normal temperature to exclude a drug effect",
+                  "explanation": "Temperature does not rule out adrenergic adverse effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Assess HR/rhythm and symptom severity",
+                  "explanation": "Beta2-agonist treatment can cause tremor and tachycardia."
+                },
+                {
+                  "id": "D",
+                  "text": "Give extra doses solely to stop the tremor",
+                  "explanation": "Additional stimulation may worsen it."
+                }
+              ],
+              "point": "Beta2-agonist therapy can cause tremor and palpitations/tachycardia.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-salbutamol",
+                  "field": "monitor",
+                  "textSha256": "d2aebd07de740f33ad39bf3b9f607edc70e2afa02bf18b31ce018d5a53ff2f17"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-salbutamol",
+                  "field": "why",
+                  "textSha256": "27fad59c7bf8f91881779f2112f9c50441da9f4afe84c3586911d0891e047acd"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-salbutamol",
+                  "field": "memoryDanger",
+                  "textSha256": "bb83b6ebad22812bc96553000331706236f2cbf0df80282de2f67b904662fe45"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-salbutamol--7-day--beta2_effects",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-salbutamol::beta2_effects"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 2
         }
       ]
     },
@@ -2302,6 +2947,151 @@
             }
           ],
           "questionCount": 1
+        },
+        {
+          "id": "ccu-nystatin--7-day",
+          "itemId": "ccu-nystatin",
+          "itemType": "medication",
+          "title": "NYSTATIN",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "An oral nystatin prescription is written for candidiasis. Which infection is it intended to treat locally?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Invasive fungal endocarditis",
+                  "explanation": "This requires systemic specialist treatment."
+                },
+                {
+                  "id": "B",
+                  "text": "Oral thrush",
+                  "explanation": "Local oral nystatin is used for oral candidiasis."
+                },
+                {
+                  "id": "C",
+                  "text": "Disseminated fungal sepsis",
+                  "explanation": "Local oral suspension does not provide systemic treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "Candidemia",
+                  "explanation": "Local oral treatment is not adequate for bloodstream infection."
+                }
+              ],
+              "point": "Oral local nystatin treats oral candidiasis rather than systemic fungal infection.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nystatin",
+                  "field": "drugclass",
+                  "textSha256": "c93859f8e6d84cbf43a038ea90a2964108bab1caa647bc319c79d1ec7d22e1b3"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nystatin",
+                  "field": "use",
+                  "textSha256": "df1457e6212f64da9a805cfe93c76e548c3c81f600e23435faf739fb95c5d099"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nystatin",
+                  "field": "monitor",
+                  "textSha256": "9e0e70756174ca9347faaa8e6b688e2879e601b68f19fb77d02c92c018aa5e9c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nystatin",
+                  "field": "memoryUse",
+                  "textSha256": "5261b6c1189731beeba501bd0d4e9d911b562595724d6659a0a5af6bfdae475a"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nystatin",
+                  "field": "memoryDanger",
+                  "textSha256": "a3547f016277209638f0b2b6bbca187d88438a924726e2d96e53185f53c070c1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-nystatin--7-day--nystatin_local",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-nystatin::nystatin_local"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why is oral nystatin distributed around affected mouth areas rather than swallowed immediately?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Local contact supports treatment of oral lesions",
+                  "explanation": "The formulation acts at the local mucosal site."
+                },
+                {
+                  "id": "B",
+                  "text": "It must reach the lungs as an aerosol",
+                  "explanation": "Oral suspension is not an inhaled aerosol."
+                },
+                {
+                  "id": "C",
+                  "text": "It treats candidemia after brief mouth contact",
+                  "explanation": "Local contact does not provide systemic treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "It prevents every recurrence after one dose",
+                  "explanation": "A single contact does not guarantee cure or prevent recurrence."
+                }
+              ],
+              "point": "Distribute oral nystatin and retain local contact as directed.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-nystatin",
+                  "field": "administration",
+                  "textSha256": "40874456e10e5e98f720d18a56c23ace71d8c08c25d93dea8b7a55cac684fee2"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-nystatin--7-day--nystatin_technique",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-nystatin::nystatin_technique"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 2
         }
       ]
     },
@@ -2669,6 +3459,130 @@
             }
           ],
           "questionCount": 1
+        },
+        {
+          "id": "ccu-betahistine--7-day",
+          "itemId": "ccu-betahistine",
+          "itemType": "medication",
+          "title": "MEDIUM — betahistine",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "A patient reports stomach upset after betahistine but no breathing symptoms. Which advice fits the taught tolerance point?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Taking it with food may improve gastric tolerance",
+                  "explanation": "Food can reduce stomach discomfort."
+                },
+                {
+                  "id": "B",
+                  "text": "Treat all stomach upset as proof of anaphylaxis",
+                  "explanation": "Isolated dyspepsia does not establish systemic hypersensitivity."
+                },
+                {
+                  "id": "C",
+                  "text": "Use an extra dose on an empty stomach",
+                  "explanation": "This can increase exposure without resolving intolerance."
+                },
+                {
+                  "id": "D",
+                  "text": "Ignore new severe symptoms because food always prevents harm",
+                  "explanation": "Severe or changing symptoms still need assessment."
+                }
+              ],
+              "point": "Food can reduce betahistine-associated stomach upset.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-betahistine",
+                  "field": "administration",
+                  "textSha256": "2e7f3b6e00698d6c7c6d888889dc767abc8454df2f18bf61a9e0acf7913821a7"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-betahistine",
+                  "field": "monitor",
+                  "textSha256": "fc85a5eb7a45842bd5ff8e242c4b36fc9b73496960a7c299eda64f2c796577b1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-betahistine--7-day--betahistine_tolerance",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-betahistine::betahistine_tolerance"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which history deserves particular review before betahistine?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A remote ankle sprain with intermittent mild pain",
+                  "explanation": "This is not the highlighted respiratory or ulcer risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Reflux symptoms without an ulcer history",
+                  "explanation": "Clarification is useful, but this is not the stated pair of cautions."
+                },
+                {
+                  "id": "C",
+                  "text": "Asthma and peptic-ulcer disease",
+                  "explanation": "These are relevant betahistine cautions."
+                },
+                {
+                  "id": "D",
+                  "text": "Previously corrected iron deficiency without current symptoms",
+                  "explanation": "This does not identify the stated precautions."
+                }
+              ],
+              "point": "Review asthma and peptic-ulcer history before betahistine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-betahistine",
+                  "field": "monitor",
+                  "textSha256": "fc85a5eb7a45842bd5ff8e242c4b36fc9b73496960a7c299eda64f2c796577b1"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-betahistine--7-day--betahistine_cautions",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-betahistine::betahistine_cautions"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 2
         }
       ]
     },
@@ -3149,6 +4063,250 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "ccu-propafenone--7-day",
+          "itemId": "ccu-propafenone",
+          "itemType": "medication",
+          "title": "PROFEX — propafenone",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "Before a heart-rate-slowing drug, the patient is newly dizzy with a very slow pulse. What takes priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give it because the pulse is regular",
+                  "explanation": "Regularity does not establish adequate rate or perfusion."
+                },
+                {
+                  "id": "B",
+                  "text": "Assess BP, rhythm and perfusion and escalate",
+                  "explanation": "Symptomatic bradycardia can indicate clinically important deterioration."
+                },
+                {
+                  "id": "C",
+                  "text": "Wait until the patient faints before reporting",
+                  "explanation": "Symptoms already justify prompt assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Judge safety from the last normal pulse alone",
+                  "explanation": "Current findings take precedence over an older reading."
+                }
+              ],
+              "point": "Recognize symptomatic bradycardia and conduction deterioration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "drugclass",
+                  "textSha256": "dbad0c0fe9a3a30b56734b7587c9b630e6cd9a06e6ec314c955a82678feeb384"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "monitor",
+                  "textSha256": "add0b16d8155a9ffac993a719f140c7350016118db8a48685530103b6771050d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "why",
+                  "textSha256": "71058b1138f6bef886d60cae17f4aaf0bc29dc3aca694feb2b4c455cea70158b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "mechanism",
+                  "textSha256": "110cb21469bb109df3060a56724527b5f98ba344681fca6906f5a1402b663186"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-propafenone--7-day--bradycardia",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-propafenone::bradycardia"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During antiarrhythmic treatment, QRS duration widens and the patient becomes dizzy. What should be done?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assume a wider QRS proves successful rhythm control",
+                  "explanation": "Widening may signal toxicity or deterioration."
+                },
+                {
+                  "id": "B",
+                  "text": "Review it only if the next ECG is also abnormal",
+                  "explanation": "Current symptoms and changes already warrant assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Continue solely because the pulse remains palpable",
+                  "explanation": "A pulse does not exclude unsafe conduction changes."
+                },
+                {
+                  "id": "D",
+                  "text": "Assess rhythm, BP and possible conduction toxicity promptly",
+                  "explanation": "New conduction slowing with symptoms needs review."
+                }
+              ],
+              "point": "New conduction slowing or QRS widening during antiarrhythmic treatment needs review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "drugclass",
+                  "textSha256": "dbad0c0fe9a3a30b56734b7587c9b630e6cd9a06e6ec314c955a82678feeb384"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "monitor",
+                  "textSha256": "add0b16d8155a9ffac993a719f140c7350016118db8a48685530103b6771050d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "why",
+                  "textSha256": "71058b1138f6bef886d60cae17f4aaf0bc29dc3aca694feb2b4c455cea70158b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "mechanism",
+                  "textSha256": "110cb21469bb109df3060a56724527b5f98ba344681fca6906f5a1402b663186"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "memoryDanger",
+                  "textSha256": "aed0066baac9aaad3897187659a09195607ad0634aefa511070b089c678d98d3"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-propafenone--7-day--conduction_toxicity",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-propafenone::conduction_toxicity"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why is a history of significant structural heart disease important before propafenone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It changes the safety of class Ic antiarrhythmic selection",
+                  "explanation": "Proarrhythmic risk makes patient selection important."
+                },
+                {
+                  "id": "B",
+                  "text": "It guarantees class Ic treatment is always safest",
+                  "explanation": "Structural disease can increase risk."
+                },
+                {
+                  "id": "C",
+                  "text": "It removes the need for rhythm monitoring",
+                  "explanation": "Monitoring remains important."
+                },
+                {
+                  "id": "D",
+                  "text": "It determines only whether the tablet is swallowed whole",
+                  "explanation": "The concern is cardiac safety, not just administration technique."
+                }
+              ],
+              "point": "Class Ic therapy requires careful selection in structural heart disease.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "drugclass",
+                  "textSha256": "dbad0c0fe9a3a30b56734b7587c9b630e6cd9a06e6ec314c955a82678feeb384"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "use",
+                  "textSha256": "21a9fa40f67394d0e736789578f8b8a1cb58a48822fec586d7960f2517ea3a88"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "monitor",
+                  "textSha256": "add0b16d8155a9ffac993a719f140c7350016118db8a48685530103b6771050d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "why",
+                  "textSha256": "71058b1138f6bef886d60cae17f4aaf0bc29dc3aca694feb2b4c455cea70158b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "memoryUse",
+                  "textSha256": "c7c1b7de079b93e0ca5766486411ab4e03a20f595e4b06849d6ab083650d2e8d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-propafenone",
+                  "field": "memoryDanger",
+                  "textSha256": "aed0066baac9aaad3897187659a09195607ad0634aefa511070b089c678d98d3"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-propafenone--7-day--structural_heart",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-propafenone::structural_heart"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     },
@@ -3823,6 +4981,273 @@
             }
           ],
           "questionCount": 4
+        },
+        {
+          "id": "ccu-valzadepine--7-day",
+          "itemId": "ccu-valzadepine",
+          "itemType": "medication",
+          "title": "VALZADEPINE / 'Valzadipine' — amlodipine + valsartan",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "After VALZADEPINE / 'Valzadipine' — amlodipine + valsartan, a patient feels faint during a transfer. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Complete the transfer before assessing BP",
+                  "explanation": "Continuing upright activity can worsen presyncope."
+                },
+                {
+                  "id": "B",
+                  "text": "Record dizziness and continue the medication round",
+                  "explanation": "Documentation alone does not address current instability."
+                },
+                {
+                  "id": "C",
+                  "text": "Help the patient sit or lie safely and assess BP",
+                  "explanation": "Prevent a fall while checking circulatory tolerance."
+                },
+                {
+                  "id": "D",
+                  "text": "Offer a drink and reassess at the next round",
+                  "explanation": "Symptoms require assessment now, not delayed review."
+                }
+              ],
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "monitor",
+                  "textSha256": "3698470f364c7b5ae2cf9f500f08185a212aa7cdb2ffbf977e7b06abf924ad7d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "memoryDanger",
+                  "textSha256": "89bf392462929b28d8f86b8a943774c82f7401eacd9f943e762d7051fc95bb3a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzadepine--7-day--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzadepine::hypotension"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient taking VALZADEPINE / 'Valzadipine' — amlodipine + valsartan asks whether a potassium salt substitute is suitable. What is the best response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Review serum sodium and dietary sodium alone",
+                  "explanation": "Sodium review does not establish potassium safety."
+                },
+                {
+                  "id": "B",
+                  "text": "Replace the prescribed potassium check with an ECG alone",
+                  "explanation": "An ECG does not reliably exclude abnormal potassium."
+                },
+                {
+                  "id": "C",
+                  "text": "Review serum potassium and other potassium-raising treatments",
+                  "explanation": "Additional potassium can compound hyperkalemia risk."
+                },
+                {
+                  "id": "D",
+                  "text": "Base approval on a normal BP reading",
+                  "explanation": "BP cannot rule out hyperkalemia."
+                }
+              ],
+              "point": "Monitor for hyperkalemia with potassium-raising treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "monitor",
+                  "textSha256": "3698470f364c7b5ae2cf9f500f08185a212aa7cdb2ffbf977e7b06abf924ad7d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "memoryDanger",
+                  "textSha256": "89bf392462929b28d8f86b8a943774c82f7401eacd9f943e762d7051fc95bb3a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzadepine--7-day--high_k",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzadepine::high_k"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which handover finding most changes the safety review for VALZADEPINE / 'Valzadipine' — amlodipine + valsartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stable creatinine with falling hemoglobin",
+                  "explanation": "The hemoglobin change primarily suggests a different concern."
+                },
+                {
+                  "id": "B",
+                  "text": "Rising creatinine with falling urine output",
+                  "explanation": "Together these suggest deteriorating kidney function."
+                },
+                {
+                  "id": "C",
+                  "text": "Normal creatinine from a previous admission",
+                  "explanation": "Past renal function cannot establish current safety."
+                },
+                {
+                  "id": "D",
+                  "text": "Normal urine colour without a current renal result",
+                  "explanation": "Colour does not reliably assess filtration."
+                }
+              ],
+              "point": "Monitor renal function when kidney injury or altered treatment safety is relevant.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "monitor",
+                  "textSha256": "3698470f364c7b5ae2cf9f500f08185a212aa7cdb2ffbf977e7b06abf924ad7d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "memoryDanger",
+                  "textSha256": "89bf392462929b28d8f86b8a943774c82f7401eacd9f943e762d7051fc95bb3a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzadepine--7-day--renal_monitor",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzadepine::renal_monitor"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which new history needs prompt prescription review during RAAS-blocking treatment with VALZADEPINE / 'Valzadipine' — amlodipine + valsartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A preference for taking tablets with breakfast",
+                  "explanation": "Meal preference does not carry this fetal risk."
+                },
+                {
+                  "id": "B",
+                  "text": "A normal home BP reading",
+                  "explanation": "Normal BP does not remove pregnancy-related risk."
+                },
+                {
+                  "id": "C",
+                  "text": "A change from evening to morning exercise",
+                  "explanation": "Exercise timing does not establish fetal safety."
+                },
+                {
+                  "id": "D",
+                  "text": "A positive pregnancy test",
+                  "explanation": "Fetal toxicity makes pregnancy a major safety concern."
+                }
+              ],
+              "point": "Recognize pregnancy as a major safety concern with RAAS-blocking therapy.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "monitor",
+                  "textSha256": "3698470f364c7b5ae2cf9f500f08185a212aa7cdb2ffbf977e7b06abf924ad7d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-valzadepine--7-day--pregnancy",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzadepine::pregnancy"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After VALZADEPINE / 'Valzadipine' — amlodipine + valsartan, ankle swelling appears. Which assessment best distinguishes isolated edema from worsening HF?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Breathing, weight trend, JVP and other congestion signs",
+                  "explanation": "Interpret edema within the full clinical picture."
+                },
+                {
+                  "id": "B",
+                  "text": "The ankle circumference alone",
+                  "explanation": "One local measurement does not establish systemic congestion."
+                },
+                {
+                  "id": "C",
+                  "text": "The patient's preferred tablet timing",
+                  "explanation": "Timing preference does not explain cardiopulmonary status."
+                },
+                {
+                  "id": "D",
+                  "text": "The absence of pain in the ankle alone",
+                  "explanation": "Painless edema can still have important systemic causes."
+                }
+              ],
+              "point": "Peripheral edema needs clinical interpretation rather than automatic attribution to volume overload.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzadepine",
+                  "field": "monitor",
+                  "textSha256": "3698470f364c7b5ae2cf9f500f08185a212aa7cdb2ffbf977e7b06abf924ad7d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzadepine--7-day--edema",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzadepine::edema"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 5
         }
       ]
     },
@@ -4519,6 +5944,266 @@
             }
           ],
           "questionCount": 5
+        },
+        {
+          "id": "ccu-valzan-hct--7-day",
+          "itemId": "ccu-valzan-hct",
+          "itemType": "medication",
+          "title": "VALZAN HCT — valsartan + hydrochlorothiazide",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "After VALZAN HCT — valsartan + hydrochlorothiazide, a patient feels faint during a transfer. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Complete the transfer before assessing BP",
+                  "explanation": "Continuing upright activity can worsen presyncope."
+                },
+                {
+                  "id": "B",
+                  "text": "Offer a drink and reassess at the next round",
+                  "explanation": "Symptoms require assessment now, not delayed review."
+                },
+                {
+                  "id": "C",
+                  "text": "Record dizziness and continue the medication round",
+                  "explanation": "Documentation alone does not address current instability."
+                },
+                {
+                  "id": "D",
+                  "text": "Help the patient sit or lie safely and assess BP",
+                  "explanation": "Prevent a fall while checking circulatory tolerance."
+                }
+              ],
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "monitor",
+                  "textSha256": "f0534bebc167052a6ecde0a9dec85356a6b65f6e6fd337752344778802a3e062"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzan-hct--7-day--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzan-hct::hypotension"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which handover finding most changes the safety review for VALZAN HCT — valsartan + hydrochlorothiazide?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Normal creatinine from a previous admission",
+                  "explanation": "Past renal function cannot establish current safety."
+                },
+                {
+                  "id": "B",
+                  "text": "Rising creatinine with falling urine output",
+                  "explanation": "Together these suggest deteriorating kidney function."
+                },
+                {
+                  "id": "C",
+                  "text": "Normal urine colour without a current renal result",
+                  "explanation": "Colour does not reliably assess filtration."
+                },
+                {
+                  "id": "D",
+                  "text": "Stable creatinine with falling hemoglobin",
+                  "explanation": "The hemoglobin change primarily suggests a different concern."
+                }
+              ],
+              "point": "Monitor renal function when kidney injury or altered treatment safety is relevant.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "monitor",
+                  "textSha256": "f0534bebc167052a6ecde0a9dec85356a6b65f6e6fd337752344778802a3e062"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "memoryDanger",
+                  "textSha256": "135ecf6f05b44ade0d24efc869292b06af7d7dcdff00fc8d061b79c55b3fc5cf"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzan-hct--7-day--renal_monitor",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzan-hct::renal_monitor"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which new history needs prompt prescription review during RAAS-blocking treatment with VALZAN HCT — valsartan + hydrochlorothiazide?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A change from evening to morning exercise",
+                  "explanation": "Exercise timing does not establish fetal safety."
+                },
+                {
+                  "id": "B",
+                  "text": "A normal home BP reading",
+                  "explanation": "Normal BP does not remove pregnancy-related risk."
+                },
+                {
+                  "id": "C",
+                  "text": "A preference for taking tablets with breakfast",
+                  "explanation": "Meal preference does not carry this fetal risk."
+                },
+                {
+                  "id": "D",
+                  "text": "A positive pregnancy test",
+                  "explanation": "Fetal toxicity makes pregnancy a major safety concern."
+                }
+              ],
+              "point": "Recognize pregnancy as a major safety concern with RAAS-blocking therapy.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "monitor",
+                  "textSha256": "f0534bebc167052a6ecde0a9dec85356a6b65f6e6fd337752344778802a3e062"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-valzan-hct--7-day--pregnancy",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzan-hct::pregnancy"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving VALZAN HCT — valsartan + hydrochlorothiazide has new confusion and a low sodium result. What is most appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assess neurological status and escalate the electrolyte change",
+                  "explanation": "Symptomatic hyponatremia can be clinically important."
+                },
+                {
+                  "id": "B",
+                  "text": "Use the normal potassium to dismiss the result",
+                  "explanation": "Normal potassium does not exclude sodium-related symptoms."
+                },
+                {
+                  "id": "C",
+                  "text": "Assume the confusion is normal tiredness",
+                  "explanation": "The abnormal sodium requires a clinical assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Repeat the dose before reviewing consciousness",
+                  "explanation": "A symptomatic electrolyte problem needs prompt review."
+                }
+              ],
+              "point": "Hyponatremia can cause neurological symptoms during susceptible treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "monitor",
+                  "textSha256": "f0534bebc167052a6ecde0a9dec85356a6b65f6e6fd337752344778802a3e062"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "why",
+                  "textSha256": "8d0641be166973e02aeda7f88913220c29572266dbd75d70a5af2ede324b8a64"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzan-hct--7-day--low_na",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzan-hct::low_na"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving VALZAN HCT — valsartan + hydrochlorothiazide develops marked fluid loss and postural dizziness. What needs reassessment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A single urine colour observation without vitals",
+                  "explanation": "Colour cannot establish the degree of circulatory compromise."
+                },
+                {
+                  "id": "B",
+                  "text": "The previous week's weight without a current assessment",
+                  "explanation": "An old weight does not explain a new symptomatic loss."
+                },
+                {
+                  "id": "C",
+                  "text": "Volume status, BP and relevant electrolytes",
+                  "explanation": "Losses can cause hypovolemia and electrolyte disturbance."
+                },
+                {
+                  "id": "D",
+                  "text": "The original symptom response without fluid balance",
+                  "explanation": "Benefit does not exclude excessive losses."
+                }
+              ],
+              "point": "Excess fluid loss can cause volume depletion and electrolyte disturbance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-valzan-hct",
+                  "field": "monitor",
+                  "textSha256": "f0534bebc167052a6ecde0a9dec85356a6b65f6e6fd337752344778802a3e062"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-valzan-hct--7-day--dehydration",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-valzan-hct::dehydration"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 5
         }
       ]
     },
@@ -5003,6 +6688,194 @@
               "points": 1,
               "learningPointIds": [
                 "ccu-symbicort::respiratory_worsening"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-symbicort--7-day",
+          "itemId": "ccu-symbicort",
+          "itemType": "medication",
+          "title": "SYMBICORT — budesonide + formoterol",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "What advice reduces local adverse effects after maintenance inhaled corticosteroid doses?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Swallow extra steroid powder after each dose",
+                  "explanation": "This does not remove local deposition."
+                },
+                {
+                  "id": "B",
+                  "text": "Rinse the mouth and spit out the water",
+                  "explanation": "This reduces local steroid deposition and oral adverse effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Stop all mouth care while using the inhaler",
+                  "explanation": "Oral care remains useful."
+                },
+                {
+                  "id": "D",
+                  "text": "Use the inhaler to treat new oral thrush",
+                  "explanation": "The steroid-containing inhaler is not an antifungal treatment."
+                }
+              ],
+              "point": "Rinsing after maintenance inhaled corticosteroid doses reduces local adverse effects.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "administration",
+                  "textSha256": "11d566af26061d880ca2f3634721a4e73e442a5f52fe6c951e8419a21bbb9160"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "monitor",
+                  "textSha256": "1c38ab407607f2c5b5aee47a7902af0db4a5972c0fcb5d0ff54e4414257fc565"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "memoryDanger",
+                  "textSha256": "7429e3737dd755e2fc3874a76a149ff6d77d032356be6401c4466e053b217439"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-symbicort--7-day--rinse_mouth",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-symbicort::rinse_mouth"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After salbutamol or formoterol, tremor and palpitations occur. What is most appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assess HR/rhythm and symptom severity",
+                  "explanation": "Beta2-agonist treatment can cause tremor and tachycardia."
+                },
+                {
+                  "id": "B",
+                  "text": "Assume the symptoms prove treatment failure",
+                  "explanation": "They can be adverse effects despite bronchodilation."
+                },
+                {
+                  "id": "C",
+                  "text": "Give extra doses solely to stop the tremor",
+                  "explanation": "Additional stimulation may worsen it."
+                },
+                {
+                  "id": "D",
+                  "text": "Use a normal temperature to exclude a drug effect",
+                  "explanation": "Temperature does not rule out adrenergic adverse effects."
+                }
+              ],
+              "point": "Beta2-agonist therapy can cause tremor and palpitations/tachycardia.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "use",
+                  "textSha256": "72abe31d18aa7d4f7f4445b6cde921943900b08eef57a21ee5574074a852a99f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "administration",
+                  "textSha256": "11d566af26061d880ca2f3634721a4e73e442a5f52fe6c951e8419a21bbb9160"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "monitor",
+                  "textSha256": "1c38ab407607f2c5b5aee47a7902af0db4a5972c0fcb5d0ff54e4414257fc565"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-symbicort--7-day--beta2_effects",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-symbicort::beta2_effects"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Wheeze worsens immediately after an inhaled dose. What is most appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ignore it because inhalers cannot worsen breathing",
+                  "explanation": "Paradoxical bronchospasm is possible."
+                },
+                {
+                  "id": "B",
+                  "text": "Assess only after finishing the full inhaler course",
+                  "explanation": "Current breathing deterioration needs prompt review."
+                },
+                {
+                  "id": "C",
+                  "text": "Repeat several doses through the same product without review",
+                  "explanation": "More exposure can worsen a suspected reaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Stop that dose and obtain prompt assessment for paradoxical bronchospasm",
+                  "explanation": "Immediate worsening can be a serious treatment reaction."
+                }
+              ],
+              "point": "Immediate worsening after inhalation can be paradoxical bronchospasm.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-symbicort",
+                  "field": "monitor",
+                  "textSha256": "1c38ab407607f2c5b5aee47a7902af0db4a5972c0fcb5d0ff54e4414257fc565"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-symbicort--7-day--paradoxical_bronchospasm",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-symbicort::paradoxical_bronchospasm"
               ],
               "answerKey": "D"
             }
@@ -5496,6 +7369,244 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "ccu-gentamicin--7-day",
+          "itemId": "ccu-gentamicin",
+          "itemType": "medication",
+          "title": "GENTAMICIN",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "Which handover finding most changes the safety review for GENTAMICIN?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Normal creatinine from a previous admission",
+                  "explanation": "Past renal function cannot establish current safety."
+                },
+                {
+                  "id": "B",
+                  "text": "Normal urine colour without a current renal result",
+                  "explanation": "Colour does not reliably assess filtration."
+                },
+                {
+                  "id": "C",
+                  "text": "Stable creatinine with falling hemoglobin",
+                  "explanation": "The hemoglobin change primarily suggests a different concern."
+                },
+                {
+                  "id": "D",
+                  "text": "Rising creatinine with falling urine output",
+                  "explanation": "Together these suggest deteriorating kidney function."
+                }
+              ],
+              "point": "Monitor renal function when kidney injury or altered treatment safety is relevant.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "monitor",
+                  "textSha256": "971646bc8e590568a8706769b7d4e291ce326be94c5be89f255196915453cbd4"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "why",
+                  "textSha256": "ab00856ea01107297acf4ef9777253496aa508287d2a80e391caafebf2e98956"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "memoryDanger",
+                  "textSha256": "02a1bc6c0600126c1da9b1459241e2e9d5d5af3a5b19a797b31e084b3f39f5f0"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-gentamicin--7-day--renal_monitor",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-gentamicin::renal_monitor"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving GENTAMICIN reports new ringing in the ears. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assume it is harmless because hearing is not fully lost",
+                  "explanation": "Early toxicity need not cause complete hearing loss."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait until the full course is finished",
+                  "explanation": "Delay can miss progressive injury."
+                },
+                {
+                  "id": "C",
+                  "text": "Report the change and review possible ototoxicity",
+                  "explanation": "New auditory symptoms can be a treatment safety warning."
+                },
+                {
+                  "id": "D",
+                  "text": "Use a normal temperature to exclude drug toxicity",
+                  "explanation": "Temperature does not establish auditory safety."
+                }
+              ],
+              "point": "New tinnitus or hearing change can indicate treatment-associated ototoxicity.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "monitor",
+                  "textSha256": "971646bc8e590568a8706769b7d4e291ce326be94c5be89f255196915453cbd4"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "memoryDanger",
+                  "textSha256": "02a1bc6c0600126c1da9b1459241e2e9d5d5af3a5b19a797b31e084b3f39f5f0"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-gentamicin--7-day--ototoxicity",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-gentamicin::ototoxicity"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A drug concentration arrives without a recorded sampling time. What should the nurse clarify?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The printed laboratory range without sampling time",
+                  "explanation": "A range alone cannot establish correct interpretation."
+                },
+                {
+                  "id": "B",
+                  "text": "Sampling time, recent doses and current symptoms",
+                  "explanation": "These are needed to interpret measured exposure."
+                },
+                {
+                  "id": "C",
+                  "text": "The last normal concentration from weeks earlier",
+                  "explanation": "Exposure may have changed since that result."
+                },
+                {
+                  "id": "D",
+                  "text": "The medicine's prescribed daily total alone",
+                  "explanation": "Dose alone does not establish concentration timing or toxicity."
+                }
+              ],
+              "point": "Interpret therapeutic drug concentrations with timing and clinical context.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "monitor",
+                  "textSha256": "971646bc8e590568a8706769b7d4e291ce326be94c5be89f255196915453cbd4"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "memoryDanger",
+                  "textSha256": "02a1bc6c0600126c1da9b1459241e2e9d5d5af3a5b19a797b31e084b3f39f5f0"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-gentamicin--7-day--drug_levels",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-gentamicin::drug_levels"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After several doses of GENTAMICIN, fever persists and the patient deteriorates. What should guide the next review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Clinical course, cultures and the authorized treatment plan",
+                  "explanation": "These help assess diagnosis, susceptibility and response."
+                },
+                {
+                  "id": "B",
+                  "text": "The white cell count in isolation",
+                  "explanation": "A single laboratory value does not replace the full clinical review."
+                },
+                {
+                  "id": "C",
+                  "text": "An old culture from a different infection",
+                  "explanation": "It may not represent the current pathogen or susceptibility."
+                },
+                {
+                  "id": "D",
+                  "text": "The fever response to an antipyretic alone",
+                  "explanation": "Temporary fever relief does not prove antimicrobial effectiveness."
+                }
+              ],
+              "point": "Use clinical response, cultures, and the authorized antimicrobial plan.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "use",
+                  "textSha256": "12bd59c49dfc21638e2df1dd269eaf9c5b5a401f8ba4b4af5bcead5f6afd83df"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-gentamicin",
+                  "field": "memoryUse",
+                  "textSha256": "74d5462e7273d0612f7f8326f74e02176383f28af9e6010fe16a7783a70d15f8"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-gentamicin--7-day--antimicrobial_response",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-gentamicin::antimicrobial_response"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -5977,6 +8088,180 @@
             }
           ],
           "questionCount": 1
+        },
+        {
+          "id": "ccu-ipratropium--7-day",
+          "itemId": "ccu-ipratropium",
+          "itemType": "medication",
+          "title": "AEROVENT — ipratropium bromide",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "After an inhaled bronchodilator, which reassessment best checks benefit?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Bruising and platelet count only",
+                  "explanation": "These do not measure airway response."
+                },
+                {
+                  "id": "B",
+                  "text": "The number of doses remaining in the pack",
+                  "explanation": "Remaining supply does not establish clinical benefit."
+                },
+                {
+                  "id": "C",
+                  "text": "Work of breathing, air entry and oxygenation",
+                  "explanation": "These assess the respiratory response."
+                },
+                {
+                  "id": "D",
+                  "text": "Tablet swallowing and bowel frequency",
+                  "explanation": "These do not assess bronchodilation."
+                }
+              ],
+              "point": "Evaluate bronchodilation using breathing and oxygenation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ipratropium",
+                  "field": "monitor",
+                  "textSha256": "2f4278f458024c5d7298ac73022974fe653d6a282017d4f4a70fdce124ae7bf0"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-ipratropium--7-day--bronchodilator_response",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ipratropium::bronchodilator_response"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving AEROVENT — ipratropium bromide develops dry mouth, blurred vision and difficulty passing urine. Which pattern fits?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A therapeutic increase in bladder emptying",
+                  "explanation": "Urinary retention is an adverse effect, not improved emptying."
+                },
+                {
+                  "id": "B",
+                  "text": "An isolated local skin reaction",
+                  "explanation": "Several organ systems are involved, not just skin."
+                },
+                {
+                  "id": "C",
+                  "text": "A selective fall in blood glucose",
+                  "explanation": "The symptom pattern does not establish hypoglycemia."
+                },
+                {
+                  "id": "D",
+                  "text": "Antimuscarinic adverse effects",
+                  "explanation": "Muscarinic blockade can affect salivation, vision and bladder emptying."
+                }
+              ],
+              "point": "Recognize muscarinic-blockade adverse effects.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ipratropium",
+                  "field": "monitor",
+                  "textSha256": "2f4278f458024c5d7298ac73022974fe653d6a282017d4f4a70fdce124ae7bf0"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ipratropium",
+                  "field": "memoryDanger",
+                  "textSha256": "c214e8275d0e90c6a0201f3c0118e10cbbf189cfb170524a22580ac1a71a1e47"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-ipratropium--7-day--anticholinergic",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ipratropium::anticholinergic"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During ipratropium nebulization, why should the mask fit and mist be kept away from the eyes?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ocular exposure can cause adverse eye effects",
+                  "explanation": "Avoiding eye contact is a product safety precaution."
+                },
+                {
+                  "id": "B",
+                  "text": "Eye exposure improves bronchodilation",
+                  "explanation": "The intended site is the airway, not the eye."
+                },
+                {
+                  "id": "C",
+                  "text": "Mist must reach the cornea to confirm delivery",
+                  "explanation": "Corneal exposure does not verify lung deposition."
+                },
+                {
+                  "id": "D",
+                  "text": "A loose mask always delivers the same safe dose",
+                  "explanation": "Fit affects exposure and appropriate delivery."
+                }
+              ],
+              "point": "Keep ipratropium nebulizer mist away from the eyes.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ipratropium",
+                  "field": "monitor",
+                  "textSha256": "2f4278f458024c5d7298ac73022974fe653d6a282017d4f4a70fdce124ae7bf0"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ipratropium",
+                  "field": "memoryDanger",
+                  "textSha256": "c214e8275d0e90c6a0201f3c0118e10cbbf189cfb170524a22580ac1a71a1e47"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-ipratropium--7-day--eye_mist",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ipratropium::eye_mist"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     },
@@ -6474,6 +8759,201 @@
                 "ccu-adenosine::tachy_instability"
               ],
               "answerKey": "B"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ccu-adenosine--7-day",
+          "itemId": "ccu-adenosine",
+          "itemType": "medication",
+          "title": "ADENOSINE",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "Why is an ordered adenosine dose followed immediately by the prescribed saline flush?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Adenosine is intended to remain in the cannula",
+                  "explanation": "The intended target is cardiac tissue."
+                },
+                {
+                  "id": "B",
+                  "text": "Its very short action requires prompt delivery to the heart",
+                  "explanation": "Slow transit can reduce effective delivery."
+                },
+                {
+                  "id": "C",
+                  "text": "The flush converts it into a long-acting infusion",
+                  "explanation": "Flushing does not change its short duration."
+                },
+                {
+                  "id": "D",
+                  "text": "The flush removes the need for rhythm observation",
+                  "explanation": "Transient conduction changes still require monitoring."
+                }
+              ],
+              "point": "Rapid IV delivery and saline flush are required for the indicated adenosine treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "administration",
+                  "textSha256": "b61c912fe7134c0898a7b121b48c481f3ee36ad93e9340bac83d57f94b7e7c07"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "monitor",
+                  "textSha256": "acfbf14e34e62b1a82d6f214819376721390bf0f9f1643cccb1e743d2383edca"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "why",
+                  "textSha256": "77248295b1183ff0c322aff5786c5d94f61ac4ada9af3460ec4f576b2dc8f0cb"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "memoryUse",
+                  "textSha256": "1b9121fc6e47b1d4ed84d6f8e792c71798d48172a0782e421bf2c3240c2fabfa"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-adenosine--7-day--adenosine_delivery",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_delivery"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Before adenosine, which preparation is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Explain possible brief symptoms and ensure continuous rhythm monitoring",
+                  "explanation": "Transient AV block and discomfort can occur."
+                },
+                {
+                  "id": "B",
+                  "text": "Describe a prolonged unmonitored infusion",
+                  "explanation": "The indicated regimen uses rapid controlled delivery with monitoring."
+                },
+                {
+                  "id": "C",
+                  "text": "Remove the monitor to reduce anxiety",
+                  "explanation": "Monitoring is part of safe administration."
+                },
+                {
+                  "id": "D",
+                  "text": "Promise that no chest sensation can occur",
+                  "explanation": "Unpleasant transient symptoms are possible."
+                }
+              ],
+              "point": "Brief AV block and unpleasant sensations can occur with adenosine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "monitor",
+                  "textSha256": "acfbf14e34e62b1a82d6f214819376721390bf0f9f1643cccb1e743d2383edca"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "mechanism",
+                  "textSha256": "70de82d3d8d56f9e5cb528582321d26cbfa0463780091923f730d899528370e2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "memoryDanger",
+                  "textSha256": "04d155db96c4e1811d4f0b1e4f3d3b86e66bf35c6112f1d8bde34e37372ade2e"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-adenosine--7-day--adenosine_transient",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_transient"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with tachyarrhythmia becomes hypotensive and confused. What determines the immediate pathway?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The number of minutes until routine medication time",
+                  "explanation": "A schedule must not delay treatment of instability."
+                },
+                {
+                  "id": "B",
+                  "text": "Whether all laboratory results have returned",
+                  "explanation": "Instability may require treatment before complete laboratory data."
+                },
+                {
+                  "id": "C",
+                  "text": "Instability caused by the rhythm",
+                  "explanation": "This requires urgent escalation along the unstable pathway."
+                },
+                {
+                  "id": "D",
+                  "text": "Whether the patient prefers tablets",
+                  "explanation": "Treatment urgency is based on clinical condition."
+                }
+              ],
+              "point": "Unstable tachyarrhythmia needs the instability pathway without delay.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "use",
+                  "textSha256": "22923f572eb36fc6faa522122e09040c396c269ae9546807ce51f7488b73adc1"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-adenosine--7-day--tachy_instability",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::tachy_instability"
+              ],
+              "answerKey": "C"
             }
           ],
           "questionCount": 3
@@ -7142,6 +9622,350 @@
             }
           ],
           "questionCount": 4
+        },
+        {
+          "id": "ccu-labetalol--7-day",
+          "itemId": "ccu-labetalol",
+          "itemType": "medication",
+          "title": "LABETALOL",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "After LABETALOL, a patient feels faint during a transfer. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Complete the transfer before assessing BP",
+                  "explanation": "Continuing upright activity can worsen presyncope."
+                },
+                {
+                  "id": "B",
+                  "text": "Offer a drink and reassess at the next round",
+                  "explanation": "Symptoms require assessment now, not delayed review."
+                },
+                {
+                  "id": "C",
+                  "text": "Record dizziness and continue the medication round",
+                  "explanation": "Documentation alone does not address current instability."
+                },
+                {
+                  "id": "D",
+                  "text": "Help the patient sit or lie safely and assess BP",
+                  "explanation": "Prevent a fall while checking circulatory tolerance."
+                }
+              ],
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "use",
+                  "textSha256": "34d11275bda03c20f16046eba1719b6ed4abb09b9582e35f1bbf8e13149008f8"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "administration",
+                  "textSha256": "76d8ded7cfed75197f1265ca41fb9a701958a399cabdab000c89f257c4c8af5e"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "monitor",
+                  "textSha256": "ddaf0638ea4ec884cc6d4bb358fed98864b1c284a3038fbb9ba3e6e25fe12286"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "why",
+                  "textSha256": "b4703ac7ee0c5cf1d8bbf24c91baa2088b859943bf7b943aaadc241683b95994"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "memoryUse",
+                  "textSha256": "b5636cfadda1ee4186eee19b9165dd45b9bc9194df4a7e6b29836e8e9ae320d0"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "memoryDanger",
+                  "textSha256": "6309a0b658a7538f5791fdd209c1f15106a0f25ad89c25049174dcde0fb53331"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-labetalol--7-day--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-labetalol::hypotension"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Before a heart-rate-slowing drug, the patient is newly dizzy with a very slow pulse. What takes priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assess BP, rhythm and perfusion and escalate",
+                  "explanation": "Symptomatic bradycardia can indicate clinically important deterioration."
+                },
+                {
+                  "id": "B",
+                  "text": "Give it because the pulse is regular",
+                  "explanation": "Regularity does not establish adequate rate or perfusion."
+                },
+                {
+                  "id": "C",
+                  "text": "Wait until the patient faints before reporting",
+                  "explanation": "Symptoms already justify prompt assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Judge safety from the last normal pulse alone",
+                  "explanation": "Current findings take precedence over an older reading."
+                }
+              ],
+              "point": "Recognize symptomatic bradycardia and conduction deterioration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "drugclass",
+                  "textSha256": "c09b94d83127b8a7a8178c5759b15bf45df0fb6272c226ad4ea059085834918b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "monitor",
+                  "textSha256": "ddaf0638ea4ec884cc6d4bb358fed98864b1c284a3038fbb9ba3e6e25fe12286"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "why",
+                  "textSha256": "b4703ac7ee0c5cf1d8bbf24c91baa2088b859943bf7b943aaadc241683b95994"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "mechanism",
+                  "textSha256": "1ded73f3ae3b84d4c43377ca2df28d0dda729957450a47822eadd9e9679a996f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "memoryDanger",
+                  "textSha256": "6309a0b658a7538f5791fdd209c1f15106a0f25ad89c25049174dcde0fb53331"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-labetalol--7-day--bradycardia",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-labetalol::bradycardia"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why does adding a second AV-node-slowing medicine need review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The interaction affects only tablet absorption",
+                  "explanation": "The important hazard can be pharmacodynamic cardiac slowing."
+                },
+                {
+                  "id": "B",
+                  "text": "The two agents always cancel their cardiac effects",
+                  "explanation": "Opposing cancellation cannot be assumed."
+                },
+                {
+                  "id": "C",
+                  "text": "Combined effects can worsen bradycardia or conduction block",
+                  "explanation": "AV-nodal depression may be additive."
+                },
+                {
+                  "id": "D",
+                  "text": "A normal temperature prevents conduction problems",
+                  "explanation": "Temperature does not remove the interaction."
+                }
+              ],
+              "point": "Combining AV-node-slowing drugs can compound bradycardia or block.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "monitor",
+                  "textSha256": "ddaf0638ea4ec884cc6d4bb358fed98864b1c284a3038fbb9ba3e6e25fe12286"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "why",
+                  "textSha256": "b4703ac7ee0c5cf1d8bbf24c91baa2088b859943bf7b943aaadc241683b95994"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "memoryDanger",
+                  "textSha256": "6309a0b658a7538f5791fdd209c1f15106a0f25ad89c25049174dcde0fb53331"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-labetalol--7-day--avnode_combination",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-labetalol::avnode_combination"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with asthma develops wheeze after nonselective beta blockade. Which mechanism explains the concern?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Beta2 blockade directly relaxes bronchial muscle",
+                  "explanation": "Beta2 stimulation, not blockade, promotes bronchodilation."
+                },
+                {
+                  "id": "B",
+                  "text": "Wheeze proves the medicine has no respiratory effects",
+                  "explanation": "Nonselective beta blockade can affect the airways."
+                },
+                {
+                  "id": "C",
+                  "text": "Beta1 blockade directly kills airway bacteria",
+                  "explanation": "Beta blockers are not antibacterial treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "Beta2 blockade can oppose bronchodilation",
+                  "explanation": "Airway beta2 blockade can provoke bronchospasm."
+                }
+              ],
+              "point": "Beta2 blockade can provoke bronchoconstriction.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "monitor",
+                  "textSha256": "ddaf0638ea4ec884cc6d4bb358fed98864b1c284a3038fbb9ba3e6e25fe12286"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "mechanism",
+                  "textSha256": "1ded73f3ae3b84d4c43377ca2df28d0dda729957450a47822eadd9e9679a996f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "memoryDanger",
+                  "textSha256": "6309a0b658a7538f5791fdd209c1f15106a0f25ad89c25049174dcde0fb53331"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-labetalol--7-day--beta_asthma",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-labetalol::beta_asthma"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Two injection products with the same drug name have different preparation instructions. Which should guide administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The rate remembered from another manufacturer's product",
+                  "explanation": "Similar names do not guarantee identical preparation."
+                },
+                {
+                  "id": "B",
+                  "text": "The supplied product's instructions and authorized order",
+                  "explanation": "Route, dilution and rate are product- and indication-specific."
+                },
+                {
+                  "id": "C",
+                  "text": "The fastest rate used elsewhere on the ward",
+                  "explanation": "Ward custom cannot replace verified instructions."
+                },
+                {
+                  "id": "D",
+                  "text": "The remaining time in the medication round",
+                  "explanation": "Convenience does not determine a safe administration rate."
+                }
+              ],
+              "point": "IV administration speed follows the exact product and indication.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "administration",
+                  "textSha256": "76d8ded7cfed75197f1265ca41fb9a701958a399cabdab000c89f257c4c8af5e"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-labetalol",
+                  "field": "monitor",
+                  "textSha256": "ddaf0638ea4ec884cc6d4bb358fed98864b1c284a3038fbb9ba3e6e25fe12286"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-labetalol--7-day--slow_iv",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-labetalol::slow_iv"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 5
         }
       ]
     },
@@ -7630,6 +10454,251 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "ccu-ketamine--7-day",
+          "itemId": "ccu-ketamine",
+          "itemType": "medication",
+          "title": "KETAMINE — ketamine hydrochloride",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "Before procedural ketamine or diazepam, which preparation is essential?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A normal pre-dose SpO2 as the only precaution",
+                  "explanation": "Normal baseline oxygenation does not prevent later compromise."
+                },
+                {
+                  "id": "B",
+                  "text": "The ability to call for equipment after deterioration",
+                  "explanation": "Essential support should be ready before sedation."
+                },
+                {
+                  "id": "C",
+                  "text": "A quiet room without monitoring equipment",
+                  "explanation": "Comfort alone does not provide sedation safety."
+                },
+                {
+                  "id": "D",
+                  "text": "Monitoring and immediate airway/ventilation capability",
+                  "explanation": "Sedation requires readiness to manage respiratory compromise."
+                }
+              ],
+              "point": "Procedural sedatives require full monitoring and immediate airway/ventilation capability.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "administration",
+                  "textSha256": "12d4ed99da5b772b0056a96493076f018e02c34fb11f2c843bb57d2cd3527d19"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "monitor",
+                  "textSha256": "37b99164c92a01d32bf3f76ae803edaa21e1b9ecc7a033e7cf85dd9ea0910d27"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "why",
+                  "textSha256": "1b694d45e5e546c3560471d7c8c937a29bf0576001926c3a673a559afdf19eb5"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "memoryDanger",
+                  "textSha256": "d91f6be4358304cf62bd9a6285662d50ea0796341c970a4a9a688a8dce73e7f7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-ketamine--7-day--sedation_airway",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ketamine::sedation_airway"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During recovery from ketamine, the patient becomes confused and agitated. What should be considered?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Proof that monitoring can now stop",
+                  "explanation": "Agitation does not establish complete safe recovery."
+                },
+                {
+                  "id": "B",
+                  "text": "An emergence reaction while continuing safety assessment",
+                  "explanation": "Ketamine recovery can involve perceptual or behavioral disturbance."
+                },
+                {
+                  "id": "C",
+                  "text": "A reason to leave the patient alone",
+                  "explanation": "Supervision and reassessment remain necessary."
+                },
+                {
+                  "id": "D",
+                  "text": "A guarantee that no other cause needs assessment",
+                  "explanation": "Hypoxia and other causes must still be considered."
+                }
+              ],
+              "point": "Confusion or agitation can occur during emergence.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "monitor",
+                  "textSha256": "37b99164c92a01d32bf3f76ae803edaa21e1b9ecc7a033e7cf85dd9ea0910d27"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-ketamine--7-day--ketamine_emergence",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ketamine::ketamine_emergence"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A new opioid is added to a sedating regimen containing KETAMINE — ketamine hydrochloride. Which change needs close observation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dry mouth with urinary hesitancy",
+                  "explanation": "This more directly suggests antimuscarinic effects."
+                },
+                {
+                  "id": "B",
+                  "text": "An isolated mild rash without sedation",
+                  "explanation": "This suggests a different adverse-effect pathway."
+                },
+                {
+                  "id": "C",
+                  "text": "Increasing drowsiness with slow or shallow breathing",
+                  "explanation": "These suggest additive CNS and respiratory depression."
+                },
+                {
+                  "id": "D",
+                  "text": "Hard stools without altered consciousness",
+                  "explanation": "This suggests constipation rather than respiratory depression."
+                }
+              ],
+              "point": "CNS depressants can compound sedation and respiratory risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "use",
+                  "textSha256": "52ba39416fa5c636dfd7af9317f935cb147acaf3d1cffac3ca7074767ecc16a9"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "administration",
+                  "textSha256": "12d4ed99da5b772b0056a96493076f018e02c34fb11f2c843bb57d2cd3527d19"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "monitor",
+                  "textSha256": "37b99164c92a01d32bf3f76ae803edaa21e1b9ecc7a033e7cf85dd9ea0910d27"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "memoryUse",
+                  "textSha256": "9b007997dbbbc3fabb97c9917f1f18f4639f8976cc793e5dffae2e20634e17fd"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-ketamine--7-day--cns_combination",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ketamine::cns_combination"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Two injection products with the same drug name have different preparation instructions. Which should guide administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The supplied product's instructions and authorized order",
+                  "explanation": "Route, dilution and rate are product- and indication-specific."
+                },
+                {
+                  "id": "B",
+                  "text": "The rate remembered from another manufacturer's product",
+                  "explanation": "Similar names do not guarantee identical preparation."
+                },
+                {
+                  "id": "C",
+                  "text": "The remaining time in the medication round",
+                  "explanation": "Convenience does not determine a safe administration rate."
+                },
+                {
+                  "id": "D",
+                  "text": "The fastest rate used elsewhere on the ward",
+                  "explanation": "Ward custom cannot replace verified instructions."
+                }
+              ],
+              "point": "IV administration speed follows the exact product and indication.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-ketamine",
+                  "field": "administration",
+                  "textSha256": "12d4ed99da5b772b0056a96493076f018e02c34fb11f2c843bb57d2cd3527d19"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-ketamine--7-day--slow_iv",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-ketamine::slow_iv"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -8347,6 +11416,337 @@
             }
           ],
           "questionCount": 5
+        },
+        {
+          "id": "ccu-pethidine--7-day",
+          "itemId": "ccu-pethidine",
+          "itemType": "medication",
+          "title": "PETHIDINE — meperidine",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "A patient given PETHIDINE — meperidine is difficult to wake and breathing slowly. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Walk the patient to improve alertness",
+                  "explanation": "Mobilization is unsafe and does not support ventilation."
+                },
+                {
+                  "id": "B",
+                  "text": "Let the patient sleep and repeat observations later",
+                  "explanation": "Delay can allow respiratory failure to progress."
+                },
+                {
+                  "id": "C",
+                  "text": "Support airway and breathing and summon urgent help",
+                  "explanation": "Sedation with slow breathing suggests dangerous respiratory depression."
+                },
+                {
+                  "id": "D",
+                  "text": "Reassess the pain score before calling for help",
+                  "explanation": "Ventilation takes priority over analgesic benefit."
+                }
+              ],
+              "point": "Recognize opioid-related sedation and respiratory depression.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "monitor",
+                  "textSha256": "f01e7119b7088495a8b018ea2461b672b0ad047f534cf0e8daa63dd824039d6d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "why",
+                  "textSha256": "a725c84c9bc56f6ae3e146bb1ff92f18bf3ab6c98a5b5aa44f0e19692d687590"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "mechanism",
+                  "textSha256": "3d319036a8e7e47ec8fd9b46265ebb232e4b4413c9356494448a776079402707"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "memoryDanger",
+                  "textSha256": "05d91e66fca2ac6d72b1f526a1fafc4ad2098342c4ae0b837686e95a6df93e0d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-pethidine--7-day--opioid_respiration",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pethidine::opioid_respiration"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A newly drowsy patient receiving PETHIDINE — meperidine wants to walk alone. What is the best immediate plan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assist mobility and reassess sedation",
+                  "explanation": "New drowsiness makes unassisted walking unsafe."
+                },
+                {
+                  "id": "B",
+                  "text": "Allow walking because oxygen saturation is normal",
+                  "explanation": "Normal SpO2 does not exclude impaired balance or sedation."
+                },
+                {
+                  "id": "C",
+                  "text": "Use the previous day's mobility assessment",
+                  "explanation": "A new change requires current assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Delay help until the next scheduled observation",
+                  "explanation": "The current fall risk needs action now."
+                }
+              ],
+              "point": "Sedation, dizziness, and ataxia can increase fall risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "monitor",
+                  "textSha256": "f01e7119b7088495a8b018ea2461b672b0ad047f534cf0e8daa63dd824039d6d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-pethidine--7-day--sedation_falls",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pethidine::sedation_falls"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After PETHIDINE — meperidine, a patient feels faint during a transfer. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Record dizziness and continue the medication round",
+                  "explanation": "Documentation alone does not address current instability."
+                },
+                {
+                  "id": "B",
+                  "text": "Help the patient sit or lie safely and assess BP",
+                  "explanation": "Prevent a fall while checking circulatory tolerance."
+                },
+                {
+                  "id": "C",
+                  "text": "Offer a drink and reassess at the next round",
+                  "explanation": "Symptoms require assessment now, not delayed review."
+                },
+                {
+                  "id": "D",
+                  "text": "Complete the transfer before assessing BP",
+                  "explanation": "Continuing upright activity can worsen presyncope."
+                }
+              ],
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "monitor",
+                  "textSha256": "f01e7119b7088495a8b018ea2461b672b0ad047f534cf0e8daa63dd824039d6d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-pethidine--7-day--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pethidine::hypotension"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why does renal deterioration matter during pethidine treatment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Renal failure makes all opioid metabolites harmless",
+                  "explanation": "Impaired clearance can worsen toxicity."
+                },
+                {
+                  "id": "B",
+                  "text": "Pethidine becomes a protective anticonvulsant",
+                  "explanation": "It does not become an anticonvulsant in renal failure."
+                },
+                {
+                  "id": "C",
+                  "text": "Renal impairment guarantees faster metabolite elimination",
+                  "explanation": "Elimination can be reduced."
+                },
+                {
+                  "id": "D",
+                  "text": "Normeperidine can accumulate and increase neurotoxicity",
+                  "explanation": "Accumulation can increase seizure risk."
+                }
+              ],
+              "point": "Normeperidine accumulation in renal impairment can increase seizure risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "monitor",
+                  "textSha256": "f01e7119b7088495a8b018ea2461b672b0ad047f534cf0e8daa63dd824039d6d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "why",
+                  "textSha256": "a725c84c9bc56f6ae3e146bb1ff92f18bf3ab6c98a5b5aa44f0e19692d687590"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "memoryDanger",
+                  "textSha256": "05d91e66fca2ac6d72b1f526a1fafc4ad2098342c4ae0b837686e95a6df93e0d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-pethidine--7-day--meperidine_renal",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pethidine::meperidine_renal"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient on PETHIDINE — meperidine and a serotonergic antidepressant develops fever, agitation and clonus. What needs urgent review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Possible serotonin toxicity",
+                  "explanation": "The medication combination and neuromuscular findings support this concern."
+                },
+                {
+                  "id": "B",
+                  "text": "An uncomplicated local infusion reaction",
+                  "explanation": "A local reaction does not explain the systemic neurological pattern."
+                },
+                {
+                  "id": "C",
+                  "text": "Expected isolated opioid constipation",
+                  "explanation": "Constipation does not explain fever and clonus."
+                },
+                {
+                  "id": "D",
+                  "text": "Routine postural hypotension",
+                  "explanation": "Postural hypotension does not account for clonus and fever."
+                }
+              ],
+              "point": "Recognize serotonin toxicity and review serotonergic combinations.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "monitor",
+                  "textSha256": "f01e7119b7088495a8b018ea2461b672b0ad047f534cf0e8daa63dd824039d6d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-pethidine--7-day--serotonin",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pethidine::serotonin"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Two injection products with the same drug name have different preparation instructions. Which should guide administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The rate remembered from another manufacturer's product",
+                  "explanation": "Similar names do not guarantee identical preparation."
+                },
+                {
+                  "id": "B",
+                  "text": "The supplied product's instructions and authorized order",
+                  "explanation": "Route, dilution and rate are product- and indication-specific."
+                },
+                {
+                  "id": "C",
+                  "text": "The remaining time in the medication round",
+                  "explanation": "Convenience does not determine a safe administration rate."
+                },
+                {
+                  "id": "D",
+                  "text": "The fastest rate used elsewhere on the ward",
+                  "explanation": "Ward custom cannot replace verified instructions."
+                }
+              ],
+              "point": "IV administration speed follows the exact product and indication.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "administration",
+                  "textSha256": "c8c76f72d3be83e16649d1070412eaa50a2260377f36f3b8bed03b9e371d62d1"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-pethidine",
+                  "field": "monitor",
+                  "textSha256": "f01e7119b7088495a8b018ea2461b672b0ad047f534cf0e8daa63dd824039d6d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-pethidine--7-day--slow_iv",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-pethidine::slow_iv"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 6
         }
       ]
     },
@@ -9142,6 +12542,358 @@
             }
           ],
           "questionCount": 6
+        },
+        {
+          "id": "ccu-morphine--7-day",
+          "itemId": "ccu-morphine",
+          "itemType": "medication",
+          "title": "MORPHINE — morphine sulfate / hydrochloride",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "A patient given MORPHINE — morphine sulfate / hydrochloride is difficult to wake and breathing slowly. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Let the patient sleep and repeat observations later",
+                  "explanation": "Delay can allow respiratory failure to progress."
+                },
+                {
+                  "id": "B",
+                  "text": "Support airway and breathing and summon urgent help",
+                  "explanation": "Sedation with slow breathing suggests dangerous respiratory depression."
+                },
+                {
+                  "id": "C",
+                  "text": "Reassess the pain score before calling for help",
+                  "explanation": "Ventilation takes priority over analgesic benefit."
+                },
+                {
+                  "id": "D",
+                  "text": "Walk the patient to improve alertness",
+                  "explanation": "Mobilization is unsafe and does not support ventilation."
+                }
+              ],
+              "point": "Recognize opioid-related sedation and respiratory depression.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "monitor",
+                  "textSha256": "a898ee6f25ab9d1a159c2f627c16ded7abcb212b7dfc42195d264d346e406b81"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "why",
+                  "textSha256": "c61364b1f676b4751e6a929564fc3cc417e46895920af2ebbe8c2b8709b87bcf"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "memoryDanger",
+                  "textSha256": "f90237bfd7e8ab98712d5047242e024b53e52438390c5fbb77b8ac211ca7a84a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-morphine--7-day--opioid_respiration",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-morphine::opioid_respiration"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A newly drowsy patient receiving MORPHINE — morphine sulfate / hydrochloride wants to walk alone. What is the best immediate plan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Allow walking because oxygen saturation is normal",
+                  "explanation": "Normal SpO2 does not exclude impaired balance or sedation."
+                },
+                {
+                  "id": "B",
+                  "text": "Delay help until the next scheduled observation",
+                  "explanation": "The current fall risk needs action now."
+                },
+                {
+                  "id": "C",
+                  "text": "Use the previous day's mobility assessment",
+                  "explanation": "A new change requires current assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Assist mobility and reassess sedation",
+                  "explanation": "New drowsiness makes unassisted walking unsafe."
+                }
+              ],
+              "point": "Sedation, dizziness, and ataxia can increase fall risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "monitor",
+                  "textSha256": "a898ee6f25ab9d1a159c2f627c16ded7abcb212b7dfc42195d264d346e406b81"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-morphine--7-day--sedation_falls",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-morphine::sedation_falls"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After MORPHINE — morphine sulfate / hydrochloride, a patient feels faint during a transfer. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Help the patient sit or lie safely and assess BP",
+                  "explanation": "Prevent a fall while checking circulatory tolerance."
+                },
+                {
+                  "id": "B",
+                  "text": "Offer a drink and reassess at the next round",
+                  "explanation": "Symptoms require assessment now, not delayed review."
+                },
+                {
+                  "id": "C",
+                  "text": "Record dizziness and continue the medication round",
+                  "explanation": "Documentation alone does not address current instability."
+                },
+                {
+                  "id": "D",
+                  "text": "Complete the transfer before assessing BP",
+                  "explanation": "Continuing upright activity can worsen presyncope."
+                }
+              ],
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "monitor",
+                  "textSha256": "a898ee6f25ab9d1a159c2f627c16ded7abcb212b7dfc42195d264d346e406b81"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "why",
+                  "textSha256": "c61364b1f676b4751e6a929564fc3cc417e46895920af2ebbe8c2b8709b87bcf"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "memoryDanger",
+                  "textSha256": "f90237bfd7e8ab98712d5047242e024b53e52438390c5fbb77b8ac211ca7a84a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-morphine--7-day--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-morphine::hypotension"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Pain is controlled with MORPHINE — morphine sulfate / hydrochloride, but stools have become hard and infrequent. Which response is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Treat absent stools as proof of drug absorption",
+                  "explanation": "Bowel inactivity does not measure absorption."
+                },
+                {
+                  "id": "B",
+                  "text": "Review bowel pattern and the prescribed prevention plan",
+                  "explanation": "Opioid-related reduced motility can need bowel management."
+                },
+                {
+                  "id": "C",
+                  "text": "Reassure that reduced mobility prevents impaction",
+                  "explanation": "Immobility can worsen constipation rather than prevent it."
+                },
+                {
+                  "id": "D",
+                  "text": "Stop checking bowel function once pain improves",
+                  "explanation": "Analgesic benefit does not remove bowel adverse effects."
+                }
+              ],
+              "point": "Opioids can contribute to constipation and require bowel-pattern review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "monitor",
+                  "textSha256": "a898ee6f25ab9d1a159c2f627c16ded7abcb212b7dfc42195d264d346e406b81"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-morphine--7-day--constipation",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-morphine::constipation"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A new opioid is added to a sedating regimen containing MORPHINE — morphine sulfate / hydrochloride. Which change needs close observation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An isolated mild rash without sedation",
+                  "explanation": "This suggests a different adverse-effect pathway."
+                },
+                {
+                  "id": "B",
+                  "text": "Hard stools without altered consciousness",
+                  "explanation": "This suggests constipation rather than respiratory depression."
+                },
+                {
+                  "id": "C",
+                  "text": "Increasing drowsiness with slow or shallow breathing",
+                  "explanation": "These suggest additive CNS and respiratory depression."
+                },
+                {
+                  "id": "D",
+                  "text": "Dry mouth with urinary hesitancy",
+                  "explanation": "This more directly suggests antimuscarinic effects."
+                }
+              ],
+              "point": "CNS depressants can compound sedation and respiratory risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "drugclass",
+                  "textSha256": "d232416c9d3896c83cdd3989bea55c2b60ec7d289b5836bb25ac57442a6c5d11"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "monitor",
+                  "textSha256": "a898ee6f25ab9d1a159c2f627c16ded7abcb212b7dfc42195d264d346e406b81"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "why",
+                  "textSha256": "c61364b1f676b4751e6a929564fc3cc417e46895920af2ebbe8c2b8709b87bcf"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "mechanism",
+                  "textSha256": "39c0da32a519a0b53e26293edbb7c8953977cafcec6886e5834e69e66ef57401"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "memoryUse",
+                  "textSha256": "916ed4392df7af356b0aca5268d13755a11c42cb8c35c28709e4a895acfca778"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "memoryDanger",
+                  "textSha256": "f90237bfd7e8ab98712d5047242e024b53e52438390c5fbb77b8ac211ca7a84a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-morphine--7-day--cns_combination",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-morphine::cns_combination"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Two injection products with the same drug name have different preparation instructions. Which should guide administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The fastest rate used elsewhere on the ward",
+                  "explanation": "Ward custom cannot replace verified instructions."
+                },
+                {
+                  "id": "B",
+                  "text": "The remaining time in the medication round",
+                  "explanation": "Convenience does not determine a safe administration rate."
+                },
+                {
+                  "id": "C",
+                  "text": "The rate remembered from another manufacturer's product",
+                  "explanation": "Similar names do not guarantee identical preparation."
+                },
+                {
+                  "id": "D",
+                  "text": "The supplied product's instructions and authorized order",
+                  "explanation": "Route, dilution and rate are product- and indication-specific."
+                }
+              ],
+              "point": "IV administration speed follows the exact product and indication.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-morphine",
+                  "field": "administration",
+                  "textSha256": "6d05c9946f059ceb6578a9ccf9cd25b0b81867a45eef55d33d6476fcec1bf212"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-morphine--7-day--slow_iv",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-morphine::slow_iv"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 6
         }
       ]
     },
@@ -9694,6 +13446,251 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "trolley-spironolactone--7-day",
+          "itemId": "trolley-spironolactone",
+          "itemType": "medication",
+          "title": "SPIRONOLACTONE — Aldactone",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "A patient taking SPIRONOLACTONE — Aldactone asks whether a potassium salt substitute is suitable. What is the best response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Review serum potassium and other potassium-raising treatments",
+                  "explanation": "Additional potassium can compound hyperkalemia risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Review serum sodium and dietary sodium alone",
+                  "explanation": "Sodium review does not establish potassium safety."
+                },
+                {
+                  "id": "C",
+                  "text": "Base approval on a normal BP reading",
+                  "explanation": "BP cannot rule out hyperkalemia."
+                },
+                {
+                  "id": "D",
+                  "text": "Replace the prescribed potassium check with an ECG alone",
+                  "explanation": "An ECG does not reliably exclude abnormal potassium."
+                }
+              ],
+              "point": "Monitor for hyperkalemia with potassium-raising treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "drugclass",
+                  "textSha256": "59e7c1d1a6e35ebcf2d6491d597ed611b7b6955d52bf2c6b8b4ed1e315e84724"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "why",
+                  "textSha256": "f7de80a749cee4ad2bfbf76a894e4d724303b1964dcce78871b4a5cefa798d84"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "mechanism",
+                  "textSha256": "84af512a96644985f46eaa682693013cd97dcf80a54d1287d33f8e423cbcca4d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "memoryUse",
+                  "textSha256": "06d3487f4d880c1f9ebee745542702ec691e38a29ed1768f3618b357b93a0f49"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-spironolactone--7-day--high_k",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::high_k"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which handover finding most changes the safety review for SPIRONOLACTONE — Aldactone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stable creatinine with falling hemoglobin",
+                  "explanation": "The hemoglobin change primarily suggests a different concern."
+                },
+                {
+                  "id": "B",
+                  "text": "Normal creatinine from a previous admission",
+                  "explanation": "Past renal function cannot establish current safety."
+                },
+                {
+                  "id": "C",
+                  "text": "Normal urine colour without a current renal result",
+                  "explanation": "Colour does not reliably assess filtration."
+                },
+                {
+                  "id": "D",
+                  "text": "Rising creatinine with falling urine output",
+                  "explanation": "Together these suggest deteriorating kidney function."
+                }
+              ],
+              "point": "Monitor renal function when kidney injury or altered treatment safety is relevant.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "memoryDanger",
+                  "textSha256": "f20d1466533b7a131ee890bc50e0611584764eda5d583b29c9798c6305e3232b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-spironolactone--7-day--renal_monitor",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::renal_monitor"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After SPIRONOLACTONE — Aldactone, a patient feels faint during a transfer. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Record dizziness and continue the medication round",
+                  "explanation": "Documentation alone does not address current instability."
+                },
+                {
+                  "id": "B",
+                  "text": "Help the patient sit or lie safely and assess BP",
+                  "explanation": "Prevent a fall while checking circulatory tolerance."
+                },
+                {
+                  "id": "C",
+                  "text": "Offer a drink and reassess at the next round",
+                  "explanation": "Symptoms require assessment now, not delayed review."
+                },
+                {
+                  "id": "D",
+                  "text": "Complete the transfer before assessing BP",
+                  "explanation": "Continuing upright activity can worsen presyncope."
+                }
+              ],
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-spironolactone--7-day--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::hypotension"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why is oral spironolactone not a substitute for rapid IV loop-diuretic rescue?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A tablet must act faster than an IV medicine",
+                  "explanation": "Route alone does not support that claim."
+                },
+                {
+                  "id": "B",
+                  "text": "Both medicines act identically at the same speed",
+                  "explanation": "Their sites, kinetics and electrolyte effects differ."
+                },
+                {
+                  "id": "C",
+                  "text": "Its role and onset differ from rapid IV decongestion",
+                  "explanation": "The medicines are not interchangeable for urgent fluid removal."
+                },
+                {
+                  "id": "D",
+                  "text": "Spironolactone always lowers potassium",
+                  "explanation": "It can raise potassium."
+                }
+              ],
+              "point": "Spironolactone is not rapid IV decongestion rescue.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "use",
+                  "textSha256": "c7a5bcfc60546927c54a1a19d03884c3e231a786bcf0509ddf96c490f07d6f2a"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "why",
+                  "textSha256": "f7de80a749cee4ad2bfbf76a894e4d724303b1964dcce78871b4a5cefa798d84"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-spironolactone--7-day--spirono_not_loop",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_not_loop"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 4
         }
       ]
     },
@@ -10190,6 +14187,229 @@
             }
           ],
           "questionCount": 3
+        },
+        {
+          "id": "trolley-lidocaine--7-day",
+          "itemId": "trolley-lidocaine",
+          "itemType": "medication",
+          "title": "LIDOCAINE HCl",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "During antiarrhythmic treatment, QRS duration widens and the patient becomes dizzy. What should be done?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assess rhythm, BP and possible conduction toxicity promptly",
+                  "explanation": "New conduction slowing with symptoms needs review."
+                },
+                {
+                  "id": "B",
+                  "text": "Continue solely because the pulse remains palpable",
+                  "explanation": "A pulse does not exclude unsafe conduction changes."
+                },
+                {
+                  "id": "C",
+                  "text": "Review it only if the next ECG is also abnormal",
+                  "explanation": "Current symptoms and changes already warrant assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Assume a wider QRS proves successful rhythm control",
+                  "explanation": "Widening may signal toxicity or deterioration."
+                }
+              ],
+              "point": "New conduction slowing or QRS widening during antiarrhythmic treatment needs review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "monitor",
+                  "textSha256": "88c70a4949cd2aab2467f61cdb7d01081f4febb398d02599a720809b960e4a75"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "why",
+                  "textSha256": "194ed5f37320d8c23e45b3d07553d9cb3c5beec96cc5f99618d123f5de11dd0e"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "mechanism",
+                  "textSha256": "83cffa8459fe598cf85c1a4b67fde1c8a691aeb889631080ed38115094a44855"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "memoryDanger",
+                  "textSha256": "bd27e18b1644831f7f49b259bd7c3621cfdd1a7dcab42d33f0d8c644d401c688"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-lidocaine--7-day--conduction_toxicity",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-lidocaine::conduction_toxicity"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During IV lidocaine, new perioral numbness, tinnitus and confusion develop. What is the concern?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Successful antiarrhythmic treatment without adverse effects",
+                  "explanation": "These symptoms require safety assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Possible systemic lidocaine toxicity",
+                  "explanation": "Neurological symptoms can be early toxicity warnings."
+                },
+                {
+                  "id": "C",
+                  "text": "A normal required stage before rhythm conversion",
+                  "explanation": "Neurological toxicity is not a desired treatment stage."
+                },
+                {
+                  "id": "D",
+                  "text": "Proof that the IV line is blocked",
+                  "explanation": "The pattern does not establish mechanical line blockage."
+                }
+              ],
+              "point": "Recognize early neurological lidocaine toxicity.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "monitor",
+                  "textSha256": "88c70a4949cd2aab2467f61cdb7d01081f4febb398d02599a720809b960e4a75"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "why",
+                  "textSha256": "194ed5f37320d8c23e45b3d07553d9cb3c5beec96cc5f99618d123f5de11dd0e"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "memoryDanger",
+                  "textSha256": "bd27e18b1644831f7f49b259bd7c3621cfdd1a7dcab42d33f0d8c644d401c688"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-lidocaine--7-day--lidocaine_neuro",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-lidocaine::lidocaine_neuro"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which lidocaine product must be verified for an IV antiarrhythmic order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A topical solution with the same percentage",
+                  "explanation": "A topical product is not interchangeable with an IV preparation."
+                },
+                {
+                  "id": "B",
+                  "text": "An injectable local mixture selected by total volume",
+                  "explanation": "Total volume does not establish composition or IV suitability."
+                },
+                {
+                  "id": "C",
+                  "text": "A dental cartridge containing epinephrine",
+                  "explanation": "Its additives and intended use may make it unsuitable."
+                },
+                {
+                  "id": "D",
+                  "text": "An IV antiarrhythmic preparation without unsuitable additives",
+                  "explanation": "The exact route and product must be verified."
+                }
+              ],
+              "point": "Verify an IV antiarrhythmic product without local-anesthetic additives.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "drugclass",
+                  "textSha256": "61b33d2320d5f2e289a9f74925e6a968e6adf96d52eaafacae07db779057af6e"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "administration",
+                  "textSha256": "fb7f202551760742a751a5e70848d7f66baa69d06f13f91e7a11bf338f4a2aae"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "monitor",
+                  "textSha256": "88c70a4949cd2aab2467f61cdb7d01081f4febb398d02599a720809b960e4a75"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "memoryUse",
+                  "textSha256": "388de13409d32fd5b537eda5add93afd986fcefcada6bb0971d7331f3522839d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-lidocaine",
+                  "field": "memoryDanger",
+                  "textSha256": "bd27e18b1644831f7f49b259bd7c3621cfdd1a7dcab42d33f0d8c644d401c688"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-lidocaine--7-day--lidocaine_product",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-lidocaine::lidocaine_product"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     },
@@ -10614,6 +14834,180 @@
             }
           ],
           "questionCount": 2
+        },
+        {
+          "id": "trolley-sodium-bicarbonate--7-day",
+          "itemId": "trolley-sodium-bicarbonate",
+          "itemType": "medication",
+          "title": "SODIUM BICARBONATE",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "Why should sodium bicarbonate not be given automatically in every cardiac arrest?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It removes the need to investigate reversible causes",
+                  "explanation": "Cause assessment remains essential."
+                },
+                {
+                  "id": "B",
+                  "text": "It has selected indications rather than routine undifferentiated use",
+                  "explanation": "Resuscitation follows the cause-specific guideline pathway."
+                },
+                {
+                  "id": "C",
+                  "text": "It replaces chest compressions when acidosis is suspected",
+                  "explanation": "It does not replace high-quality CPR."
+                },
+                {
+                  "id": "D",
+                  "text": "A normal ECG always establishes its indication",
+                  "explanation": "An ECG alone does not establish a bicarbonate indication."
+                }
+              ],
+              "point": "Bicarbonate is not routine treatment for undifferentiated cardiac arrest.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-sodium-bicarbonate",
+                  "field": "use",
+                  "textSha256": "58bed618c4760ecd9e1a523ca3da90ad1a3b1e4c69452dc7c0d017765357e34e"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-sodium-bicarbonate--7-day--bicarbonate_selected",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-sodium-bicarbonate::bicarbonate_selected"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After excessive bicarbonate exposure, what should be considered?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Alkalemia and sodium/volume burden",
+                  "explanation": "These can result from excessive administration."
+                },
+                {
+                  "id": "B",
+                  "text": "A permanent inability to develop acidosis",
+                  "explanation": "Acid-base disorders can recur or persist."
+                },
+                {
+                  "id": "C",
+                  "text": "Guaranteed removal of all excess body potassium",
+                  "explanation": "Bicarbonate does not guarantee potassium removal."
+                },
+                {
+                  "id": "D",
+                  "text": "A lack of any need for reassessment",
+                  "explanation": "Acid-base, electrolyte and volume status need monitoring."
+                }
+              ],
+              "point": "Excess bicarbonate can cause alkalemia and sodium/volume load.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-sodium-bicarbonate",
+                  "field": "monitor",
+                  "textSha256": "9bac17d6925d3d816e7cbeb71f55c817eea31a6e95f25d09dc343d6c3aee8c9d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-sodium-bicarbonate",
+                  "field": "why",
+                  "textSha256": "d44e60015754c237b57e31cf36e62f2f6e36a29818706fc6a5ab444e2ed5ddbe"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-sodium-bicarbonate",
+                  "field": "memoryDanger",
+                  "textSha256": "3a3b17a3709cea5d166b45480f35725ed293760c7a6ccbf9bdc5111ce708ccfd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-sodium-bicarbonate--7-day--bicarbonate_load",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-sodium-bicarbonate::bicarbonate_load"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Two IV medicines are prescribed through one line. What should establish compatibility?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assume separate safety makes same-line mixing safe",
+                  "explanation": "Individually acceptable products can be incompatible together."
+                },
+                {
+                  "id": "B",
+                  "text": "Use a compatibility result for different concentrations",
+                  "explanation": "Different concentrations or diluents may change compatibility."
+                },
+                {
+                  "id": "C",
+                  "text": "Verify exact products, concentrations and line conditions",
+                  "explanation": "Compatibility depends on the specific preparation and contact."
+                },
+                {
+                  "id": "D",
+                  "text": "Rely on the absence of visible cloudiness alone",
+                  "explanation": "Some incompatibilities are not reliably excluded visually."
+                }
+              ],
+              "point": "IV compatibility must be verified for the exact medicines and preparation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-sodium-bicarbonate",
+                  "field": "monitor",
+                  "textSha256": "9bac17d6925d3d816e7cbeb71f55c817eea31a6e95f25d09dc343d6c3aee8c9d"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-sodium-bicarbonate--7-day--compatibility",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-sodium-bicarbonate::compatibility"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 3
         }
       ]
     }
