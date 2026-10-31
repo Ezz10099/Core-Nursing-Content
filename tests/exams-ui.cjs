@@ -54,7 +54,7 @@ reviewWindow.CoreNursingExams.material('ccu-heparin-ufh');
 assert(!reviewWindow.document.querySelector('#library').classList.contains('hidden'));
 reviewWindow.close();
 
-w.CoreNursingExams.reviewItem();assert(d.querySelector('.exam-start h3').textContent.includes('Standard exam · Passed'));
+w.CoreNursingExams.reviewItem();assert(d.querySelector('.exam-completed [data-stage="standard"] h3').textContent.includes('Standard exam · Passed'));
 w.CoreNursingExams.catalog();assert([...d.querySelectorAll('.exam-card')].some(n=>n.textContent.includes('HEPARIN')&&n.textContent.includes('Standard exam:')&&n.textContent.includes('Passed')));
 w.CoreNursingExams.open('heparin');w.CoreNursingExams.start('advanced');assert(state(w).exams.active.deadline);
 const deadline=state(w).exams.active.deadline,backup=JSON.stringify(state(w));w.close();w=boot(backup);d=w.document;
@@ -74,7 +74,19 @@ const sevenSnapshot=JSON.stringify(state(seven).exams.active.form),sevenBackup=J
 seven.CoreNursingExams.resume();assert.equal(JSON.stringify(state(seven).exams.active.form),sevenSnapshot);
 answerAll(seven);seven.CoreNursingExams.submit();let sevenRecord=state(seven).exams.items['ccu-heparin-ufh'];
 assert(sevenRecord.attempts.at(-1).completedAt);assert.equal(sevenRecord.due.stage,'21-day');
-assert.equal(sevenRecord.due.at-sevenRecord.attempts.at(-1).completedAt,21*86400000);seven.close();
+assert.equal(sevenRecord.due.at-sevenRecord.attempts.at(-1).completedAt,21*86400000);
+const sevenHistory=JSON.stringify(state(seven).exams);
+seven.CoreNursingExams.reviewItem();
+assert(seven.document.querySelector('.exam-latest').textContent.includes('7-day exam · Passed'));
+assert(seven.document.querySelector('.exam-latest').textContent.includes('100%'));
+assert(seven.document.querySelector('#examNextStep').textContent.includes('21-day exam'));
+assert(seven.document.querySelector('#examNextStep').textContent.includes('Questions pending'));
+assert.equal(seven.document.querySelectorAll('.exam-passed-row').length,3);
+assert.equal(seven.document.querySelector('.exam-completed').open,false);
+assert.equal(seven.document.querySelector('.exam-reading').open,false);
+assert(![...seven.document.querySelectorAll('button')].some(b=>b.textContent==='Start 7-day exam'));
+assert.equal(JSON.stringify(state(seven).exams),sevenHistory);
+seven.close();
 // A failed real 7-day form stays at the same stage with another seven-day interval.
 seven=boot(JSON.stringify(sevenSaved));seven.CoreNursingExams.open('heparin');seven.CoreNursingExams.start('7-day');answerAll(seven,false);seven.CoreNursingExams.submit();
 sevenRecord=state(seven).exams.items['ccu-heparin-ufh'];assert.equal(sevenRecord.due.stage,'7-day');
@@ -84,6 +96,8 @@ assert.equal(sevenRecord.due.at-sevenRecord.attempts.at(-1).finishedAt,7*8640000
 w.CoreNursingExams.reviewItem();w.CoreNursingExams.start('advanced');saved=state(w);saved.exams.active.deadline=Date.now()-1;const expireBackup=JSON.stringify(saved);w.close();w=boot(expireBackup);d=w.document;
 assert.equal(state(w).exams.active,null);r=state(w).exams.items['ccu-heparin-ufh'];assert(r.attempts.at(-1).expired);assert.equal(r.attempts.at(-1).correct,0);
 w.CoreNursingExams.open('heparin');assert(d.querySelector('#examSession').textContent.includes('7 sections must be marked as read again'));
+w.CoreNursingExams.requiredReading();
+assert(d.querySelector('.exam-reading').open);assert(d.querySelector('.exam-reading .exam-source[open]'));
 const bank=w.CoreNursingExamData.banks.find(b=>b.itemId==='ccu-heparin-ufh');for(const section of bank.readingSections)w.CoreNursingExams.read(section.id);
 assert.equal(w.CoreNursingExamCore.readingRemaining(state(w).exams.items[bank.itemId],bank.readingSections).length,0);
 // A failed/expired advanced exam stays locked after rereading, safety checks and reload.
@@ -94,7 +108,7 @@ assert(d.querySelector('.exam-cooldown'));assert(d.querySelector('#examSession')
 assert([...d.querySelectorAll('.exam-start')].find(n=>n.textContent.includes('Advanced exam')).querySelector('button').disabled);
 const cooldownBackup=JSON.stringify(state(w));w.close();w=boot(cooldownBackup);d=w.document;w.CoreNursingExams.open('heparin');
 assert(d.querySelector('.exam-cooldown'));w.CoreNursingExams.start('advanced');assert.equal(state(w).exams.active,null);
-assert([...d.querySelectorAll('.exam-start h3')].some(n=>n.textContent==='Advanced exam · Passed'),'Historical passes remain clearly labeled after a later failure');
+assert([...d.querySelectorAll('.exam-completed h3')].some(n=>n.textContent==='Advanced exam · Passed'),'Historical passes remain clearly labeled after a later failure');
 
 // Old backups, new backups, unknown material records, and reset all remain explicit.
 let exported;w.CoreNursingAndroid={saveBackup:data=>exported=data};w.exportProgress();assert(JSON.parse(exported).exams.items[bank.itemId].attempts.length===3);

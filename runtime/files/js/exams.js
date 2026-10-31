@@ -27,8 +27,8 @@
   }
   function status(bank){
     const r=record(bank.itemId),latest=r.attempts.slice(-1)[0],parts=[];
-    if(r.attempts.some(a=>a.stage==='advanced'&&a.completedAt))parts.push('Advanced exam passed.');
-    else if(r.attempts.some(a=>a.stage==='standard'&&a.completedAt))parts.push('Standard exam passed.');
+    const highest=['21-day','7-day','advanced','standard'].find(stage=>r.attempts.some(a=>a.stage===stage&&a.completedAt));
+    if(highest)parts.push(label(highest)+' passed.');
     if(latest)parts.push(label(latest.stage)+': '+latest.correct+'/'+latest.total+' ('+(100*latest.correct/latest.total).toFixed(1)+'%).');
     if(r.pendingSafety.length)parts.push('Safety follow-up required.');
     const left=Core.readingRemaining(r,bank.readingSections).length;
@@ -139,10 +139,57 @@
     if(q.format==='single-best-answer')return '<div class="exam-options">'+q.choices.map(c=>'<label><input type="radio" name="'+key+'" value="'+c.id+'" '+(value===c.id?'checked':'')+' onchange="CoreNursingExams.'+fn+'(\''+key+'\',this.value)"><span>'+safe(c.text)+'</span></label>').join('')+'</div>';
     return '<label class="exam-written">'+(q.format==='numeric-entry'?'Answer in '+safe(q.unit):'Answer')+'<input autocomplete="off" '+(q.format==='numeric-entry'?'inputmode="decimal"':'')+' value="'+safe(value??'')+'" oninput="CoreNursingExams.'+fn+'(\''+key+'\',this.value)" aria-label="'+(q.format==='numeric-entry'?safe(q.unit):'Written answer')+'"></label>';
   }
+
+  function exactPercent(a){return (100*a.correct/a.total).toLocaleString(undefined,{maximumFractionDigits:1});}
+  function examDuration(form){const seconds=form.questionCount*90;return seconds%60===0?(seconds/60)+' min':Math.floor(seconds/60)+' min '+(seconds%60)+' sec';}
+  function stageMeta(form){return form.questionCount+' questions · '+(form.stage==='advanced'?examDuration(form):'Untimed')+' · '+(form.stage==='standard'?'Pass at least 90%':'Pass above 90%');}
+  function formControls(bank,form,retake=false){
+    const access=Core.eligible({...state(),items:{...state().items}},bank.itemId,form.stage,bank.readingSections,now()),stale=changed(bank);
+    return '<div class="exam-start" data-stage="'+form.stage+'"><h3>'+safe(label(form.stage))+'</h3><p class="note">'+safe(stageMeta(form))+'</p><button '+(!access.ok||stale?'disabled':'')+' onclick="CoreNursingExams.start(\''+form.stage+'\')">'+(retake?'Retake ':'Start ')+safe(label(form.stage).toLowerCase())+'</button>'+(!access.ok?'<p class="note">'+safe(access.reason)+(access.unlockAt?' <span class="exam-cooldown" data-unlock-at="'+access.unlockAt+'">Available '+safe(date(access.unlockAt))+'.</span>':'')+'</p>':'')+'</div>';
+  }
+  function nextStep(bank,r,remaining){
+    const active=state().active;
+    if(active)return {title:'Continue your exam',text:safe(banks.get(active.itemId)?.title||active.itemId)+' · '+safe(label(active.form.stage)),button:'<button class="primary" onclick="CoreNursingExams.resume()">Continue exam</button>'};
+    if(changed(bank))return {title:'Study material updated',text:'The question bank needs an update before a new attempt.',button:'<button onclick="CoreNursingExams.material(\''+bank.itemId+'\')">Open material</button>'};
+    if(remaining.length)return {title:'Review required sections',text:remaining.length+' sections must be marked as read again before another attempt.',button:'<button class="primary" onclick="CoreNursingExams.requiredReading()">Open required sections</button>'};
+    if(r.pendingSafety.length)return {title:'Complete your safety check',text:r.pendingSafety.length+' safety '+(r.pendingSafety.length===1?'point needs':'points need')+' follow-up.',button:'<button class="primary" onclick="CoreNursingExams.safety()">Open safety follow-up check</button>'};
+    if(r.due){
+      const form=bank.exams.find(e=>e.stage===r.due.stage),future=r.due.at>now();
+      if(!form||future)return {title:label(r.due.stage),text:'<time>'+safe(date(r.due.at))+'</time><span class="exam-availability">'+(!form?'Questions pending':'Scheduled')+'</span>',button:'',scheduled:true};
+      return {title:'Take your due exam',text:'Due '+safe(date(r.due.at)),button:formControls(bank,form),stage:form.stage};
+    }
+    if(r.attempts.some(a=>a.stage==='21-day'&&a.completedAt))return {title:'No exam scheduled',text:'Your 21-day exam is recorded as passed.',button:''};
+    const stage=r.attempts.some(a=>a.stage==='standard'&&a.completedAt)?'advanced':'standard',form=bank.exams.find(e=>e.stage===stage);
+    return {title:'Next exam',text:'',button:form?formControls(bank,form):'',stage};
+  }
+  function requiredReading(){
+    const panel=byId('examSession')?.querySelector('.exam-reading');
+    if(!panel)return;panel.open=true;
+    const first=Array.from(panel.querySelectorAll('.exam-source')).find(node=>!node.querySelector('button').disabled);
+    if(first){first.open=true;first.scrollIntoView({block:'start'});first.querySelector('summary')?.focus({preventScroll:true});}
+    else panel.scrollIntoView({block:'start'});
+  }
+  function renderMaterial(container,bank){
+    const r=record(bank.itemId),remaining=Core.readingRemaining(r,bank.readingSections),latest=r.attempts.at(-1),next=nextStep(bank,r,remaining);
+    const passed=['standard','advanced','7-day','21-day'].map(stage=>r.attempts.filter(a=>a.stage===stage&&a.completedAt).sort((a,b)=>b.completedAt-a.completedAt)[0]).filter(Boolean);
+    const headline=latest?'<div class="exam-latest"><span>Latest result</span><strong>'+safe(label(latest.stage))+' · '+(latest.completedAt?'Passed':latest.passed?'Score passed':'Below passing score')+'</strong><p>'+latest.correct+'/'+latest.total+' · '+exactPercent(latest)+'%<small>'+safe(date(latest.finishedAt))+'</small></p></div>':'<p class="note">No exam attempts yet.</p>';
+    const completed=passed.length?'<details class="panel exam-completed"><summary>Passed exams · '+passed.length+'</summary>'+passed.map(a=>'<div class="exam-passed-row" data-stage="'+a.stage+'"><h3>'+safe(label(a.stage))+' · Passed</h3><p>'+a.correct+'/'+a.total+' · '+exactPercent(a)+'%<small>'+safe(date(a.completedAt))+'</small></p></div>').join('')+'</details>':'';
+    const source='<details class="panel exam-reading" '+(remaining.length?'open':'')+'><summary>'+(remaining.length?'Required reading · '+remaining.length+' sections':'Read the material')+'</summary><p class="note">Mark each section after reading. Reading and exam results are saved separately.</p>'+bank.readingSections.map(section=>{
+      const read=r.reads.some(x=>x.sectionId===section.id&&(r.readingAfter===null||x.at>r.readingAfter));
+      return '<details class="exam-source"><summary>'+safe(section.label)+'</summary><div class="exam-source-text">'+safe(section.text.replace(/\\n/g,'\n'))+'</div><button '+(read?'disabled':'')+' onclick="CoreNursingExams.read(\''+section.id+'\')">'+(read?'Section marked as read':'Mark section as read')+'</button></details>';
+    }).join('')+'</details>';
+    const otherForms=bank.exams.filter(form=>form.stage!==next.stage&&((form.stage==='standard'||form.stage==='advanced')||(!stageResult(bank,form.stage)&&r.due?.stage===form.stage&&r.due.at<=now())));
+    const rules='<details class="panel exam-details"><summary>Exam details &amp; options · Draft bank</summary><p class="note">Full source coverage review is incomplete. Scores refer to these exams only.</p><ul class="exam-rules"><li>Standard: at least 90% passes. Other stages: above 90%.</li><li>Only advanced exams are timed: 90 seconds per question.</li><li>Correct unsure/guessed answers keep their score.</li><li>Missed safety points require a separate follow-up check.</li><li>A failed scheduled stage repeats after seven days.</li></ul>'+(otherForms.length?'<h3>Other exam options</h3><p class="note">Earlier passes remain in your history.</p>'+otherForms.map(form=>formControls(bank,form,stageResult(bank,form.stage)==='Passed')).join(''):'')+'</details>';
+    const points=new Map();for(const form of bank.exams)for(const q of form.questions)for(const p of q.learningPointIds)points.set(p,q.point);
+    const shown=new Set(r.attempts.flatMap(a=>a.shownQuestionIds||[])),tested=new Set();for(const form of bank.exams)for(const q of form.questions)if(shown.has(q.id))q.learningPointIds.forEach(p=>tested.add(p));
+    container.innerHTML='<button class="back" onclick="CoreNursingExams.catalog()">← All exams</button><div class="panel exam-material-header"><h2>'+safe(bank.title)+'</h2>'+headline+'</div><div class="panel exam-next-step" id="examNextStep"><span class="exam-section-label">'+(next.scheduled?'Next scheduled exam':'Your next step')+'</span><h2>'+safe(next.title)+'</h2>'+(next.text?'<p class="next-step-description">'+next.text+'</p>':'')+next.button+'<div class="exam-secondary"><button onclick="CoreNursingExams.material(\''+bank.itemId+'\')">Open material</button><button onclick="CoreNursingExams.review()">Review saved answers</button></div></div>'+completed+source+rules+'<details class="panel"><summary>Tested points · '+tested.size+'/'+points.size+' bank points asked</summary><p class="note">Mapped bank points only. Unvisited questions remain not yet tested.</p>'+Array.from(points).map(([id,text])=>'<p>'+safe(text)+'<br><small>'+(tested.has(id)?'Asked in an exam':'Not yet tested')+'</small></p>').join('')+'</details>';
+  }
+
   function render(){
     const hub=byId('examsHub'),session=byId('examSession');if(!hub||!session)return;
     const active=viewingExam&&state().active;
     document.body.classList.toggle('exam-in-progress',!!active);
+    document.body.classList.toggle('exam-material-view',!!selected&&!active&&!reviewing);
     byId('legacyPractice').hidden=!!active||!!selected;
     hub.hidden=!!active||!!selected;session.hidden=!active&&!selected;
     if(active){renderActive(session);return}
@@ -154,18 +201,9 @@
     const bank=banks.get(selected);if(!bank)return;
     if(resultView){renderResult(session,bank);return}
     if(safetyMode){renderSafety(session,bank);return}
-    const r=record(bank.itemId),remaining=Core.readingRemaining(r,bank.readingSections);
-    const startButtons=bank.exams.map(form=>{
-      const access=Core.eligible(state(),bank.itemId,form.stage,bank.readingSections,now()),stale=changed(bank);
-      return '<div class="exam-start"><h3>'+safe(label(form.stage))+(stageResult(bank,form.stage)?' · '+safe(stageResult(bank,form.stage)):'')+'</h3><p>'+form.questionCount+' questions · '+(form.stage==='advanced'?'Total time: '+(form.questionCount*90)+' seconds (90 seconds per question). Score must be above 90%.':(form.stage==='standard'?'Untimed. At least 90% passes. The same form is used on retake.':'Untimed. Score must be above 90%. If below passing, repeat this stage after seven days.'))+'</p><button '+(!access.ok||stale?'disabled':'')+' onclick="CoreNursingExams.start(\''+form.stage+'\')">Start '+safe(label(form.stage).toLowerCase())+'</button>'+(!access.ok?'<p class="note">'+safe(access.reason)+(access.unlockAt?' <span class="exam-cooldown" data-unlock-at="'+access.unlockAt+'">Available '+safe(date(access.unlockAt))+'.</span>':'')+'</p>':'')+'</div>';
-    }).join('');
-    const points=new Map();for(const form of bank.exams)for(const q of form.questions)for(const p of q.learningPointIds)points.set(p,q.point);
-    const shown=new Set(r.attempts.flatMap(a=>a.shownQuestionIds||[]));const tested=new Set();for(const e of bank.exams)for(const q of e.questions)if(shown.has(q.id))q.learningPointIds.forEach(p=>tested.add(p));
-    session.innerHTML='<button class="back" onclick="CoreNursingExams.catalog()">← All exams</button><div class="panel"><h2>'+safe(bank.title)+'</h2><p>'+safe(status(bank))+'</p><p class="note">Draft question bank · full source coverage review is incomplete. Correct unsure/guessed answers keep their score. Missed predefined safety questions require a separate follow-up check.</p>'+(changed(bank)?'<p role="status">The study material has changed. These exams need an update before a new attempt.</p>':'')+startButtons+(r.pendingSafety.length?'<button onclick="CoreNursingExams.safety()">Open safety follow-up check</button>':'')+(r.due?'<p>'+safe(label(r.due.stage))+' '+safe(date(r.due.at))+(bank.exams.some(e=>e.stage===r.due.stage)?'.</p>':'. Questions for this scheduled exam have not been added yet.</p>'):'')+'</div><div class="panel"><h3>'+(remaining.length?'Required reading before another attempt':'Read the material')+'</h3><p class="note">Confirm each section yourself. Exam scores do not mark material as read.</p>'+bank.readingSections.map(section=>{
-      const read=r.reads.some(x=>x.sectionId===section.id&&(r.readingAfter===null||x.at>r.readingAfter));
-      return '<details class="exam-source"><summary>'+safe(section.label)+'</summary><div class="exam-source-text">'+safe(section.text.replace(/\\n/g,'\n'))+'</div><button '+(read?'disabled':'')+' onclick="CoreNursingExams.read(\''+section.id+'\')">'+(read?'Section marked as read':'Mark section as read')+'</button></details>';
-    }).join('')+'</div><details class="panel"><summary>Tested points · '+tested.size+'/'+points.size+' bank points asked</summary><p class="note">This covers mapped bank points, not every fact in the source. Questions not visited before submission remain not yet tested.</p>'+Array.from(points).map(([id,text])=>'<p>'+safe(text)+'<br><small>'+(tested.has(id)?'Asked in an exam':'Not yet tested')+'</small></p>').join('')+'</details>';
+    renderMaterial(session,bank);
   }
+
   function renderActive(container){
     const a=state().active;
     if(a.deadline&&now()>=a.deadline){submit(true);return}
@@ -221,7 +259,7 @@
     const checks=Core.safetyCheck(state(),selected,safetyAnswers,now());saveState();safetyMode=false;render();alert(checks.every(x=>x.correct)?'Safety follow-up check completed. Original exam score unchanged.':'Some safety points still require a follow-up check. Original exam score unchanged.');
   }
   function restore(){memory.exams=Core.normalize(memory.exams);selected=null;resultView=null;safetyMode=false;viewingExam=false;refreshDashboards();render();tick()}
-  window.CoreNursingExams={launch,review,material,reviewRows,nextAction:action,showDue:()=>{examListFilter='due';showTab('practice')},reviewFilter:value=>{if(['all','unsure','incorrect'].includes(value)){reviewFilter=value;render()}},listFilter:value=>{if(['due','available','upcoming','passed'].includes(value)){examListFilter=value;renderCatalog()}},open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
+  window.CoreNursingExams={requiredReading,launch,review,material,reviewRows,nextAction:action,showDue:()=>{examListFilter='due';showTab('practice')},reviewFilter:value=>{if(['all','unsure','incorrect'].includes(value)){reviewFilter=value;render()}},listFilter:value=>{if(['due','available','upcoming','passed'].includes(value)){examListFilter=value;renderCatalog()}},open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
     followupAnswer:(qid,value)=>{safetyAnswers[qid]=String(value).slice(0,500)},
     filter:text=>{examSearch=text.toLowerCase();renderCatalog()},
     catalog:()=>{reviewing=false;viewingExam=false;selected=null;resultView=null;safetyMode=false;render();scrollStudyTo(0,0)},reviewItem:()=>{resultView=null;safetyMode=false;render();scrollStudyTo(0,0)}};
