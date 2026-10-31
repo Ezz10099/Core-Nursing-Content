@@ -50,7 +50,7 @@
     }
     if(r.attempts.some(a=>a.stage==='21-day'&&a.completedAt))return {text:'View results',kind:'view',group:'passed'};
     const stage=r.attempts.some(a=>a.stage==='standard'&&a.completedAt)?'advanced':'standard';
-    const access=Core.eligible(state(),bank.itemId,stage,bank.readingSections,now());
+    const access=Core.eligible({...state(),items:{...state().items}},bank.itemId,stage,bank.readingSections,now());
     return {text:access.ok?'Start '+label(stage):'View requirements',kind:access.ok?'start':'view',stage,group:access.unlockAt?'upcoming':'available',note:access.ok?'':access.reason};
   }
   function launch(id){const bank=bankFor(id);if(!bank)return;const a=action(bank);if(a.kind==='resume'){resume();return}open(id);if(a.kind==='start')start(a.stage);else if(a.kind==='safety')safety();else if(a.kind==='read')byId('examSession').querySelector('.exam-source')?.scrollIntoView({block:'start'});}
