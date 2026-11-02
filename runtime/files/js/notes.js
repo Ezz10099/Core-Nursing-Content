@@ -83,7 +83,8 @@
       sourceId: old ? old.sourceId || '' : '',
       syncState: old && old.sourceId ? 'local' : 'pending',
       cloudQuestionSHA: old ? old.cloudQuestionSHA || '' : '',
-      cloudAnswerSHA: old ? old.cloudAnswerSHA || '' : ''
+      cloudAnswerSHA: old ? old.cloudAnswerSHA || '' : '',
+      sourceType:old ? old.sourceType || '' : '', sourceTitle:old ? old.sourceTitle || '' : ''
     };
     if (old) Object.assign(old, n); else memory.notes.unshift(n);
     save(); cancel(); render();
@@ -171,7 +172,7 @@
   }
   function publicQuestion(n) {
     return {schemaVersion:1, id:n.id, department:n.department,
-      question:n.question, tags:n.tags, createdAt:n.createdAt, updatedAt:n.updatedAt,
+      question:n.question, tags:n.tags, sourceType:n.sourceType || '', sourceTitle:n.sourceTitle || '', sourceId:n.sourceId || '', createdAt:n.createdAt, updatedAt:n.updatedAt,
       status:'unanswered'};
   }
   async function upload(n) {
