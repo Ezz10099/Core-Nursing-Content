@@ -334,6 +334,26 @@
       "group": "antibiotic",
       "pair": "Third-generation cephalosporin: inhibits bacterial cell-wall synthesis",
       "why": "Ceftazidime is a third-generation cephalosporin beta-lactam acting through PBPs."
+    },
+    "metamizole": {
+      "group": "pain",
+      "pair": "Pyrazolone analgesic: predominantly non-opioid analgesia and antipyresis",
+      "why": "Metamizole relieves pain and fever, while its precise mechanism remains incompletely defined."
+    },
+    "ondansetron": {
+      "group": "gi",
+      "pair": "5-HT3 antagonist: blocks serotonin-mediated emesis",
+      "why": "Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
+    },
+    "vitamin_k": {
+      "group": "metabolic",
+      "pair": "Vitamin K replacement: restores vitamin-K-dependent clotting factor activity",
+      "why": "Phytonadione provides a required cofactor for the liver to form functional clotting factors."
+    },
+    "tranexamic": {
+      "group": "antithrombotic",
+      "pair": "Antifibrinolytic: prevents premature breakdown of fibrin clots",
+      "why": "Tranexamic acid interferes with plasminogen binding to fibrin and helps stabilize clots."
     }
   },
   "items": {
@@ -1172,6 +1192,77 @@
         "alteplase_duration",
         "alteplase_bp",
         "alteplase_followup"
+      ]
+    },
+    "ed-novalgin-metamizole": {
+      "family": "metamizole",
+      "use": "Selected acute pain or fever treatment",
+      "concepts": [
+        "hypotension",
+        "pain_response",
+        "formulation",
+        "slow_iv",
+        "metamizole_agranulocytosis"
+      ]
+    },
+    "ed-decort-dexamethasone": {
+      "family": "steroid",
+      "use": "Inflammatory and selected emergency corticosteroid indications",
+      "concepts": [
+        "steroid_glucose",
+        "steroid_infection",
+        "formulation"
+      ]
+    },
+    "ed-ondansetron-provisional-shelf": {
+      "family": "ondansetron",
+      "use": "Prevention and treatment of nausea or vomiting",
+      "concepts": [
+        "qt",
+        "serotonin",
+        "formulation"
+      ]
+    },
+    "ed-diclofenac-injection": {
+      "family": "nsaid",
+      "use": "Selected acute inflammatory pain management",
+      "concepts": [
+        "nsaid_gi",
+        "nsaid_renal",
+        "nsaid_allergy",
+        "duplicate_nsaid",
+        "formulation"
+      ]
+    },
+    "ed-vitamin-k-phytonadione": {
+      "family": "vitamin_k",
+      "use": "Vitamin K deficiency treatment or indicated warfarin reversal",
+      "concepts": [
+        "warfarin_reversal",
+        "formulation",
+        "vitk_anaphylaxis",
+        "vitk_delayed_effect"
+      ]
+    },
+    "ed-hexakapron-tranexamic": {
+      "family": "tranexamic",
+      "use": "Control of selected acute bleeding through antifibrinolysis",
+      "concepts": [
+        "renal_dose",
+        "slow_iv",
+        "formulation",
+        "txa_wrong_route"
+      ]
+    },
+    "ed-captopril-tablets": {
+      "family": "ace",
+      "use": "Oral antihypertensive treatment for selected indications",
+      "concepts": [
+        "pregnancy",
+        "high_k",
+        "hypotension",
+        "renal_monitor",
+        "ace_history"
       ]
     }
   }
