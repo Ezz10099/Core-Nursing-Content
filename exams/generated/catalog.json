@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 3,
   "status": "authoring draft",
-  "sourceContentVersion": 36,
-  "sourceContentSha256": "964db5aecee75cb0c380dba123acfbe24d58168772204f6b07f506af0fe971d1",
+  "sourceContentVersion": 37,
+  "sourceContentSha256": "80c50a5f5d70997cf35248b6a56d98240dfda825f3580bff3b311be06ac07909",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -15,15 +15,15 @@
     "exams/sources.json"
   ],
   "counts": {
-    "exams": 276,
-    "questions": 1209,
-    "single-best-answer": 1194,
+    "exams": 297,
+    "questions": 1259,
+    "single-best-answer": 1244,
     "numeric-entry": 11,
     "short-answer": 4,
-    "materials": 92,
+    "materials": 99,
     "medications": 74,
-    "lessons": 18,
-    "mappedLearningPoints": 763
+    "lessons": 25,
+    "mappedLearningPoints": 799
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -2149,6 +2149,167 @@
           "questionCount": 3
         }
       ]
+    },
+    {
+      "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+      "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--7-day",
+          "stage": "7-day",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-05-bka-aka-care",
+      "title": "BKA / AKA — Post-Amputation Nursing",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-05-bka-aka-care--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-05-bka-aka-care--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-05-bka-aka-care--7-day",
+          "stage": "7-day",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+      "title": "Orthopaedic Pain + Common Medications",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-06-orthopaedic-pain-meds--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-06-orthopaedic-pain-meds--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-06-orthopaedic-pain-meds--7-day",
+          "stage": "7-day",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+      "title": "Mobility, Pressure Injury & VTE Prevention",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-07-mobility-pressure-vte--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-07-mobility-pressure-vte--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-07-mobility-pressure-vte--7-day",
+          "stage": "7-day",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-08-infection-labs-culture",
+      "title": "CRP, ESR, CBC & Culture — What They Actually Tell You",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-08-infection-labs-culture--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-08-infection-labs-culture--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-08-infection-labs-culture--7-day",
+          "stage": "7-day",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-09-documentation-sbar",
+      "title": "Documentation & SBAR — Report What Matters",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-09-documentation-sbar--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-09-documentation-sbar--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-09-documentation-sbar--7-day",
+          "stage": "7-day",
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-10-integrated-scenarios",
+      "title": "Integrated IBD2 Scenarios",
+      "itemType": "lesson",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-10-integrated-scenarios--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-10-integrated-scenarios--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-10-integrated-scenarios--7-day",
+          "stage": "7-day",
+          "questionCount": 2
+        }
+      ]
     }
   ],
   "files": [
@@ -2170,11 +2331,11 @@
     },
     {
       "path": "banks-05.json",
-      "sha256": "b5dec024e03299f516e4711c4636f09c092dc09267fc29a5f4bc9d73d8253fe7"
+      "sha256": "1f810792ef473c45cba66eea289c4d942aeb0352c6c4627b4a2b10d96d422ef1"
     },
     {
       "path": "coverage.json",
-      "sha256": "10289b8001c51a7c0e230ec73ab67d31f5e93db47f94c4c8cfdb4af47932e851"
+      "sha256": "3dc26043e147d02053c26f4c43b43684bc4af89c14cdb707841039e287aff933"
     }
   ]
 }

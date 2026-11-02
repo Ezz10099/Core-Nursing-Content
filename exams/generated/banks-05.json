@@ -7456,6 +7456,3075 @@
           "questionCount": 3
         }
       ]
+    },
+    {
+      "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+      "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-health-alterations",
+        "aaos-major-extremity-trauma",
+        "cdc-tetanus-2026"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--standard",
+          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+          "itemType": "lesson",
+          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "Which finding defines an open fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Pain severe enough to require an opioid",
+                  "explanation": "Pain severity does not determine whether the fracture is open."
+                },
+                {
+                  "id": "B",
+                  "text": "A wound that communicates with the fracture",
+                  "explanation": "Communication with the outside is the defining concept; visible bone is not required."
+                },
+                {
+                  "id": "C",
+                  "text": "Any bruise over a closed fracture",
+                  "explanation": "Bruising alone does not establish communication with the fracture."
+                },
+                {
+                  "id": "D",
+                  "text": "Visible bone protruding through the skin in every case",
+                  "explanation": "Bone exposure can occur, but it is not required for an open fracture."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "An open fracture communicates with an external wound; visible bone is not required.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "c477ed9405b16467212a90b6188c069b2634d7b9c1a2818a69769ffe27f3cf76"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 5,
+                  "label": "Common mistake",
+                  "textSha256": "d3267b3c9ae4f08c41d818f2c6d26521f24a420a69a3e84f68f8cd84aa5a0960"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-4c6113edba15",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-4c6113edba15"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "What should the focused bedside check include after an open extremity fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Only wound size and dressing colour",
+                  "explanation": "This misses circulation, nerves and systemic status."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the distal pulse",
+                  "explanation": "A pulse alone does not assess the whole neurovascular picture."
+                },
+                {
+                  "id": "C",
+                  "text": "Only whether the patient can sleep",
+                  "explanation": "Sleep does not establish limb safety."
+                },
+                {
+                  "id": "D",
+                  "text": "Bleeding, wound, distal neurovascular status, pain/swelling and vitals",
+                  "explanation": "These findings address immediate limb and systemic risk."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Open-fracture nursing assessment includes bleeding, wound, distal neurovascular status, pain/swelling and vitals.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-dfc6dc14831e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-dfc6dc14831e"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "Which action best matches nursing care for a fresh open fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Choose an antibiotic without an order",
+                  "explanation": "Antimicrobial selection requires the authorized plan."
+                },
+                {
+                  "id": "B",
+                  "text": "Delay neurovascular assessment until after dressing care",
+                  "explanation": "Limb perfusion and nerve function must not be deferred."
+                },
+                {
+                  "id": "C",
+                  "text": "Protect the wound, follow aseptic care, give ordered antibiotics promptly and verify tetanus assessment",
+                  "explanation": "These actions reduce contamination risk and support time-sensitive treatment within scope."
+                },
+                {
+                  "id": "D",
+                  "text": "Probe the wound to determine its depth",
+                  "explanation": "Unnecessary probing can contaminate or injure tissue and is not an intern decision."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Protect the wound, follow the ordered antimicrobial plan, verify tetanus assessment and avoid independent wound manipulation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 2,
+                  "label": "Do",
+                  "textSha256": "9f6c83e9b16e2b4fb27e45861907f2e9b5e7b267b1c63718bd13939ce56447da"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-bc700ec5854d",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-bc700ec5854d"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--advanced",
+          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+          "itemType": "lesson",
+          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "An open-fracture wound develops increasing pain, redness, swelling and purulent drainage. What is the best interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "This pattern proves normal fracture healing",
+                  "explanation": "Purulent drainage and worsening inflammation are not normal healing findings."
+                },
+                {
+                  "id": "B",
+                  "text": "The findings can be ignored if hardware is intact",
+                  "explanation": "Hardware appearance does not exclude infection."
+                },
+                {
+                  "id": "C",
+                  "text": "Only fever can indicate infection",
+                  "explanation": "Local infection can be evident before prominent systemic signs."
+                },
+                {
+                  "id": "D",
+                  "text": "These are infection warning signs that require review",
+                  "explanation": "The pattern is consistent with worsening wound infection."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Increasing pain, redness, swelling, purulent drainage or fever are infection warning signs.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 3,
+                  "label": "Watch for infection",
+                  "textSha256": "8e54d7d424455fa35eaf2d5944e0b89cd3f09dd862f04b820ede072ca5667e5a"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-35eff7fe4031",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-35eff7fe4031"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A patient with an open leg fracture develops worsening sensation and movement in the foot. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for the next routine dressing change",
+                  "explanation": "This delays assessment of possible limb compromise."
+                },
+                {
+                  "id": "B",
+                  "text": "Urgent neurovascular reassessment and escalation",
+                  "explanation": "Deteriorating nerve or perfusion findings can threaten the limb."
+                },
+                {
+                  "id": "C",
+                  "text": "Assume swelling alone explains all neurological changes",
+                  "explanation": "New neurological loss requires urgent review."
+                },
+                {
+                  "id": "D",
+                  "text": "Document the finding without contacting the team",
+                  "explanation": "Documentation does not replace escalation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Neurovascular deterioration or systemic deterioration after an open fracture requires urgent escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "d37a3180ee9cb43936f00d3d3cab3be860adfd9995fa7dec76fd2843c0b84170"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-e66a67a7fc87",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-e66a67a7fc87"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--7-day",
+          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+          "itemType": "lesson",
+          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A tibial fracture has only a small puncture wound nearby and no visible bone. Could it still be open?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "No, bone must be protruding",
+                  "explanation": "Visible bone is not required."
+                },
+                {
+                  "id": "B",
+                  "text": "No, all puncture wounds are superficial",
+                  "explanation": "A puncture can communicate deeply."
+                },
+                {
+                  "id": "C",
+                  "text": "Only if the patient has a fever",
+                  "explanation": "Fever does not define an open fracture."
+                },
+                {
+                  "id": "D",
+                  "text": "Yes, if the wound communicates with the fracture",
+                  "explanation": "Open fractures do not require visible bone."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "An open fracture communicates with an external wound; visible bone is not required.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "c477ed9405b16467212a90b6188c069b2634d7b9c1a2818a69769ffe27f3cf76"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 5,
+                  "label": "Common mistake",
+                  "textSha256": "d3267b3c9ae4f08c41d818f2c6d26521f24a420a69a3e84f68f8cd84aa5a0960"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-4c6113edba15",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-4c6113edba15"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "After an open fracture, the foot becomes numb and movement weakens. What should happen next?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Urgent neurovascular reassessment and escalation",
+                  "explanation": "New neurological loss can indicate limb-threatening deterioration."
+                },
+                {
+                  "id": "B",
+                  "text": "Change the wound dressing first and reassess tomorrow",
+                  "explanation": "This delays a limb-safety assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Wait for the next antibiotic dose",
+                  "explanation": "Antibiotic timing does not address acute neurovascular decline."
+                },
+                {
+                  "id": "D",
+                  "text": "Assume the findings are expected after trauma",
+                  "explanation": "New deterioration is not safely assumed to be normal."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Neurovascular deterioration or systemic deterioration after an open fracture requires urgent escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "d37a3180ee9cb43936f00d3d3cab3be860adfd9995fa7dec76fd2843c0b84170"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-e66a67a7fc87",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-e66a67a7fc87"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-05-bka-aka-care",
+      "title": "BKA / AKA — Post-Amputation Nursing",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-health-alterations"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-05-bka-aka-care--standard",
+          "itemId": "ibd2-lesson-05-bka-aka-care",
+          "itemType": "lesson",
+          "title": "BKA / AKA — Post-Amputation Nursing",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "What is the key anatomical difference between BKA and AKA?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The terms describe wound dressings rather than amputation levels",
+                  "explanation": "They describe the level of lower-limb amputation."
+                },
+                {
+                  "id": "B",
+                  "text": "BKA preserves the knee; AKA removes the limb above the knee",
+                  "explanation": "Knee preservation is the main functional distinction."
+                },
+                {
+                  "id": "C",
+                  "text": "Both remove the knee joint",
+                  "explanation": "BKA preserves the knee."
+                },
+                {
+                  "id": "D",
+                  "text": "BKA is above the hip and AKA is below it",
+                  "explanation": "This reverses and misstates the levels."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "BKA preserves the knee, whereas AKA is above the knee and generally requires more energy for mobility.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "ff8f501388a16f4fd0bd424543c2d03b5b4e7aa4f0d14fa0bee764d92e8e20c0"
+                }
+              ],
+              "id": "ibd2-lesson-05-bka-aka-care--standard--point-3a41ab8345fe",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-05-bka-aka-care::point-3a41ab8345fe"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "Which focused sequence is most appropriate after lower-limb amputation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Only phantom sensation",
+                  "explanation": "Phantom pain matters but is not the entire assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Diet preference, sleep pattern, then wound appearance",
+                  "explanation": "This omits immediate postoperative risks."
+                },
+                {
+                  "id": "C",
+                  "text": "Only prosthetic fit on the first postoperative assessment",
+                  "explanation": "Early care prioritizes bleeding, wound, circulation and pain."
+                },
+                {
+                  "id": "D",
+                  "text": "Bleeding, wound/infection, residual-limb circulation, pain and position",
+                  "explanation": "These are the high-yield postoperative nursing priorities taught."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Post-amputation nursing assessment prioritizes bleeding, wound/infection, residual-limb circulation, pain and position.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "60212d0d4ba61fabc5d5976f5c177486fd3a9c6d2d0b93ed6a8b0b12042fb223"
+                }
+              ],
+              "id": "ibd2-lesson-05-bka-aka-care--standard--point-e190559c3e49",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-05-bka-aka-care::point-e190559c3e49"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "How should phantom limb pain be understood?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It is real pain perceived in the removed limb and should be assessed and treated",
+                  "explanation": "Phantom pain is a recognized neurological phenomenon."
+                },
+                {
+                  "id": "B",
+                  "text": "It means the amputation level was documented incorrectly",
+                  "explanation": "Phantom pain does not indicate a documentation error."
+                },
+                {
+                  "id": "C",
+                  "text": "It is always a sign of wound infection",
+                  "explanation": "It can occur without infection."
+                },
+                {
+                  "id": "D",
+                  "text": "It proves the patient is imagining symptoms",
+                  "explanation": "The pain is not dismissed as imagination."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Phantom limb pain is real pain perceived in the removed limb.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 2,
+                  "label": "Phantom pain",
+                  "textSha256": "9b4f2cb249f3a589448b0c2d7d6638ba0747e162883e2a9a41043434303dad2c"
+                }
+              ],
+              "id": "ibd2-lesson-05-bka-aka-care--standard--point-3e31ff10cea1",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-05-bka-aka-care::point-3e31ff10cea1"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-05-bka-aka-care--advanced",
+          "itemId": "ibd2-lesson-05-bka-aka-care",
+          "itemType": "lesson",
+          "title": "BKA / AKA — Post-Amputation Nursing",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "Why should prolonged flexion of a residual limb be avoided?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It increases blood production",
+                  "explanation": "This is unrelated to positioning."
+                },
+                {
+                  "id": "B",
+                  "text": "It guarantees faster wound closure",
+                  "explanation": "This is not the purpose of contracture prevention."
+                },
+                {
+                  "id": "C",
+                  "text": "It prevents all phantom pain",
+                  "explanation": "Positioning does not guarantee prevention of phantom pain."
+                },
+                {
+                  "id": "D",
+                  "text": "It can contribute to flexion contracture and loss of range of motion",
+                  "explanation": "Prolonged flexed positioning can shorten tissues and impair function."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Avoid prolonged flexion because it can promote flexion contracture; follow the positioning and physiotherapy plan.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 3,
+                  "label": "Position",
+                  "textSha256": "7397fac626ef7e5a209e1293ec616666ad085859bbc05b992f64b6b82ac3b39f"
+                }
+              ],
+              "id": "ibd2-lesson-05-bka-aka-care--advanced--point-8ea1aad8f833",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-05-bka-aka-care::point-8ea1aad8f833"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A post-amputation dressing becomes rapidly blood-soaked and the patient becomes tachycardic. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for the next scheduled dressing round",
+                  "explanation": "Possible hemorrhage requires prompt action."
+                },
+                {
+                  "id": "B",
+                  "text": "Focus first on phantom pain education",
+                  "explanation": "Bleeding takes priority."
+                },
+                {
+                  "id": "C",
+                  "text": "Assess circulation/vitals and escalate urgently for possible hemorrhage",
+                  "explanation": "Rapid bleeding with tachycardia can indicate significant blood loss."
+                },
+                {
+                  "id": "D",
+                  "text": "Encourage independent walking before assessment",
+                  "explanation": "Mobilization is unsafe before evaluating possible hemorrhage."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Active or increasing bleeding after amputation requires urgent assessment and escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "60212d0d4ba61fabc5d5976f5c177486fd3a9c6d2d0b93ed6a8b0b12042fb223"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "7b71ce41188c0cbd1223c4a2621b31df898dd28398d37ee8477e6eb83bc4039d"
+                }
+              ],
+              "id": "ibd2-lesson-05-bka-aka-care--advanced--point-f59cbe42ccca",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-05-bka-aka-care::point-f59cbe42ccca"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-05-bka-aka-care--7-day",
+          "itemId": "ibd2-lesson-05-bka-aka-care",
+          "itemType": "lesson",
+          "title": "BKA / AKA — Post-Amputation Nursing",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A patient says the missing foot is burning painfully. What is the best response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Document anxiety only",
+                  "explanation": "This misses the pain complaint."
+                },
+                {
+                  "id": "B",
+                  "text": "Ignore it unless the wound is infected",
+                  "explanation": "Phantom pain can occur without infection."
+                },
+                {
+                  "id": "C",
+                  "text": "Explain that pain is impossible because the foot is absent",
+                  "explanation": "The neurological pain experience can persist after amputation."
+                },
+                {
+                  "id": "D",
+                  "text": "Assess it as phantom limb pain and treat according to the plan",
+                  "explanation": "Phantom pain is real and clinically relevant."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Phantom limb pain is real pain perceived in the removed limb.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 2,
+                  "label": "Phantom pain",
+                  "textSha256": "9b4f2cb249f3a589448b0c2d7d6638ba0747e162883e2a9a41043434303dad2c"
+                }
+              ],
+              "id": "ibd2-lesson-05-bka-aka-care--7-day--point-3e31ff10cea1",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-05-bka-aka-care::point-3e31ff10cea1"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "Which new finding after amputation needs the fastest escalation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A patient asking about rehabilitation",
+                  "explanation": "This is important but not an acute threat."
+                },
+                {
+                  "id": "B",
+                  "text": "Stable pain that improves after prescribed analgesia",
+                  "explanation": "This suggests treatment response."
+                },
+                {
+                  "id": "C",
+                  "text": "Rapidly increasing bleeding with tachycardia",
+                  "explanation": "This can indicate postoperative hemorrhage."
+                },
+                {
+                  "id": "D",
+                  "text": "A clean dry dressing",
+                  "explanation": "This is reassuring rather than emergent."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Active or increasing bleeding after amputation requires urgent assessment and escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "60212d0d4ba61fabc5d5976f5c177486fd3a9c6d2d0b93ed6a8b0b12042fb223"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-05-bka-aka-care",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "7b71ce41188c0cbd1223c4a2621b31df898dd28398d37ee8477e6eb83bc4039d"
+                }
+              ],
+              "id": "ibd2-lesson-05-bka-aka-care--7-day--point-f59cbe42ccca",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-05-bka-aka-care::point-f59cbe42ccca"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+      "title": "Orthopaedic Pain + Common Medications",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-health-alterations"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-06-orthopaedic-pain-meds--standard",
+          "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+          "itemType": "lesson",
+          "title": "Orthopaedic Pain + Common Medications",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "Why should pain be reassessed as a trend rather than treated as a number alone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Unexpectedly worsening pain can signal a new limb complication",
+                  "explanation": "Pain trend can reveal deterioration such as neurovascular compromise or infection."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the first pain score is clinically useful",
+                  "explanation": "Response and change over time matter."
+                },
+                {
+                  "id": "C",
+                  "text": "Pain severity always identifies the exact diagnosis",
+                  "explanation": "Pain alone is not diagnostic."
+                },
+                {
+                  "id": "D",
+                  "text": "A lower score means neurovascular checks are unnecessary",
+                  "explanation": "Other limb findings still matter."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Unexpectedly worsening orthopaedic pain should trigger reassessment for a cause, not just repeated analgesia.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 0,
+                  "label": "First rule",
+                  "textSha256": "95be8fe0ff8a8073e8201db33fb15aa4f0d4d765ce42d2adf3a82d3cd2a700c6"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 1,
+                  "label": "Danger pain",
+                  "textSha256": "e88e8767e2dd765606ef3d6ecb149689481dd9038ee4136db5de4ace34ce1c6d"
+                }
+              ],
+              "id": "ibd2-lesson-06-orthopaedic-pain-meds--standard--point-8c7b76432c3a",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-06-orthopaedic-pain-meds::point-8c7b76432c3a"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "Which medication-safety pairing is correct?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Gabapentin: it cannot contribute to drowsiness",
+                  "explanation": "Gabapentin can cause drowsiness and ataxia."
+                },
+                {
+                  "id": "B",
+                  "text": "Tramadol: respiratory status never matters",
+                  "explanation": "Sedation and respiratory depression can occur."
+                },
+                {
+                  "id": "C",
+                  "text": "Ketorolac: combine freely with other NSAIDs",
+                  "explanation": "Duplicate NSAIDs increase adverse-effect risk."
+                },
+                {
+                  "id": "D",
+                  "text": "Paracetamol: count the total from all products",
+                  "explanation": "Duplicate acetaminophen/paracetamol can create overdose risk."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Common IBD2 analgesics require product-specific safety checks: total paracetamol, no duplicate NSAIDs, and sedation/respiratory monitoring for sedating drugs.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 2,
+                  "label": "Common IBD2 groups",
+                  "textSha256": "caf669b15f476174e5672e22a3383265e2943ea44a40ac8db34fc958f6cfa26e"
+                }
+              ],
+              "id": "ibd2-lesson-06-orthopaedic-pain-meds--standard--point-5fd5cb2b0292",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-06-orthopaedic-pain-meds::point-5fd5cb2b0292"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "What should be checked after a sedating analgesic is given?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Only the colour of the tablet package",
+                  "explanation": "Packaging does not assess patient response."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the wound dressing label",
+                  "explanation": "This does not assess medication safety."
+                },
+                {
+                  "id": "C",
+                  "text": "Pain response, alertness and respiratory status",
+                  "explanation": "These show both benefit and important adverse effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Only the next scheduled dose time",
+                  "explanation": "Reassessment must include clinical effect."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "After analgesia, reassess pain response and monitor alertness/respiration when sedating medicines are used.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 3,
+                  "label": "Reassess",
+                  "textSha256": "10796c527bd4c60a43880106b37e5fb5faa53feb78486669eb01d53208659848"
+                }
+              ],
+              "id": "ibd2-lesson-06-orthopaedic-pain-meds--standard--point-cb621ff74d14",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-06-orthopaedic-pain-meds::point-cb621ff74d14"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-06-orthopaedic-pain-meds--advanced",
+          "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+          "itemType": "lesson",
+          "title": "Orthopaedic Pain + Common Medications",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A fracture patient reports severe pain that is much worse than expected and passive stretch increases it. What should come before simply giving more analgesia?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait until the pain score reaches 10/10",
+                  "explanation": "Urgency is not defined by one numerical threshold."
+                },
+                {
+                  "id": "B",
+                  "text": "Assume tolerance to pain medicine has developed",
+                  "explanation": "This can miss limb-threatening deterioration."
+                },
+                {
+                  "id": "C",
+                  "text": "Encourage weight-bearing to test the limb",
+                  "explanation": "This is unsafe in a potentially compromised limb."
+                },
+                {
+                  "id": "D",
+                  "text": "Repeat the neurovascular assessment and escalate concern",
+                  "explanation": "The pain pattern can warn of acute compartment syndrome."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Danger pain requires limb and neurovascular reassessment before assuming the problem is inadequate analgesia.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 1,
+                  "label": "Danger pain",
+                  "textSha256": "e88e8767e2dd765606ef3d6ecb149689481dd9038ee4136db5de4ace34ce1c6d"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 4,
+                  "label": "Common mistake",
+                  "textSha256": "223b4952e450f28af1f19869bb24cb84ca502782c65ec41476fdd5bb434611da"
+                }
+              ],
+              "id": "ibd2-lesson-06-orthopaedic-pain-meds--advanced--point-3a7e6f4fea1b",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-06-orthopaedic-pain-meds::point-3a7e6f4fea1b"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "Why are exact routes, contraindications and interaction details kept in the Medication Library rather than memorized from this lesson?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The trade name alone determines safe administration",
+                  "explanation": "The exact generic, formulation and order must be verified."
+                },
+                {
+                  "id": "B",
+                  "text": "All analgesics share identical administration rules",
+                  "explanation": "They do not."
+                },
+                {
+                  "id": "C",
+                  "text": "They are drug- and product-specific and must match the current order and reference",
+                  "explanation": "Medication safety details change by product, formulation and patient context."
+                },
+                {
+                  "id": "D",
+                  "text": "They are unimportant to nursing care",
+                  "explanation": "They are important but belong in the verified medication entry."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Use the verified medication entry and current order for drug-specific administration, contraindications and interactions.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 5,
+                  "label": "Medication detail",
+                  "textSha256": "d5c9ba74630f60631c9dca46b0abe232d34463f2403489cd8d82d8e3d92fd3b6"
+                }
+              ],
+              "id": "ibd2-lesson-06-orthopaedic-pain-meds--advanced--point-32a2b2c032e4",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-06-orthopaedic-pain-meds::point-32a2b2c032e4"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-06-orthopaedic-pain-meds--7-day",
+          "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+          "itemType": "lesson",
+          "title": "Orthopaedic Pain + Common Medications",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A fracture patient's pain abruptly increases despite scheduled analgesia. What is the next priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assume the medication has failed without examining the limb",
+                  "explanation": "The cause of pain must be reassessed."
+                },
+                {
+                  "id": "B",
+                  "text": "Automatically double the next analgesic dose",
+                  "explanation": "Dose changes require an authorized plan and may miss deterioration."
+                },
+                {
+                  "id": "C",
+                  "text": "Wait until the end of shift to compare pain scores",
+                  "explanation": "This delays assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Reassess the limb and neurovascular status",
+                  "explanation": "Unexpected pain can signal a complication."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Unexpectedly worsening orthopaedic pain should trigger reassessment for a cause, not just repeated analgesia.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 0,
+                  "label": "First rule",
+                  "textSha256": "95be8fe0ff8a8073e8201db33fb15aa4f0d4d765ce42d2adf3a82d3cd2a700c6"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 1,
+                  "label": "Danger pain",
+                  "textSha256": "e88e8767e2dd765606ef3d6ecb149689481dd9038ee4136db5de4ace34ce1c6d"
+                }
+              ],
+              "id": "ibd2-lesson-06-orthopaedic-pain-meds--7-day--point-8c7b76432c3a",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-06-orthopaedic-pain-meds::point-8c7b76432c3a"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "After tramadol or another sedating analgesic, which finding is most important to monitor?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Whether the medication name is easy to pronounce",
+                  "explanation": "This has no safety value."
+                },
+                {
+                  "id": "B",
+                  "text": "Increasing drowsiness with slow or shallow breathing",
+                  "explanation": "Sedation and respiratory depression are safety concerns."
+                },
+                {
+                  "id": "C",
+                  "text": "The patient's preferred meal time",
+                  "explanation": "This is not the key acute medication concern."
+                },
+                {
+                  "id": "D",
+                  "text": "A stable dry dressing alone",
+                  "explanation": "This does not assess medication effect."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "After analgesia, reassess pain response and monitor alertness/respiration when sedating medicines are used.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
+                  "sectionIndex": 3,
+                  "label": "Reassess",
+                  "textSha256": "10796c527bd4c60a43880106b37e5fb5faa53feb78486669eb01d53208659848"
+                }
+              ],
+              "id": "ibd2-lesson-06-orthopaedic-pain-meds--7-day--point-cb621ff74d14",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-06-orthopaedic-pain-meds::point-cb621ff74d14"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+      "title": "Mobility, Pressure Injury & VTE Prevention",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-health-alterations",
+        "supplied-fundamentals"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-07-mobility-pressure-vte--standard",
+          "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+          "itemType": "lesson",
+          "title": "Mobility, Pressure Injury & VTE Prevention",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "What should be verified before mobilizing an orthopaedic patient?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The strength of the bed rails alone",
+                  "explanation": "This does not determine weight-bearing status."
+                },
+                {
+                  "id": "B",
+                  "text": "Only whether the patient wants to walk",
+                  "explanation": "Preference matters but does not replace safety orders."
+                },
+                {
+                  "id": "C",
+                  "text": "Weight-bearing status, assistive device and required staff help",
+                  "explanation": "These determine whether and how mobilization is safe."
+                },
+                {
+                  "id": "D",
+                  "text": "Only the room number",
+                  "explanation": "This does not establish mobility safety."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Before mobilizing, verify prescribed weight-bearing status, assistive device and needed assistance.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 0,
+                  "label": "Before mobilizing",
+                  "textSha256": "ecf99b003840613560ba156d7416bd57db57bdda93a0621f77a11d534a0687af"
+                }
+              ],
+              "id": "ibd2-lesson-07-mobility-pressure-vte--standard--point-f6fd4ef2afa6",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-07-mobility-pressure-vte::point-f6fd4ef2afa6"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "Which areas deserve particular pressure-injury attention in an immobile patient?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Sacrum and heels",
+                  "explanation": "These are common pressure points in bedbound patients."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the scalp",
+                  "explanation": "This is not the main routine focus."
+                },
+                {
+                  "id": "C",
+                  "text": "Only the fingertips",
+                  "explanation": "This misses major weight-bearing pressure areas."
+                },
+                {
+                  "id": "D",
+                  "text": "Only the wound incision",
+                  "explanation": "Pressure risk exists beyond the surgical site."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Immobility requires skin inspection and repositioning/weight shifts, especially at high-risk pressure areas such as sacrum and heels.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 1,
+                  "label": "Pressure injury",
+                  "textSha256": "dd826ac4b6a769e596d9f3b5781810776dfde1b74bcc2a555618003af52d6760"
+                }
+              ],
+              "id": "ibd2-lesson-07-mobility-pressure-vte--standard--point-32c9a33577b1",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-07-mobility-pressure-vte::point-32c9a33577b1"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "Which new limb pattern most strongly suggests DVT?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Isolated shoulder stiffness",
+                  "explanation": "This does not suggest lower-limb DVT."
+                },
+                {
+                  "id": "B",
+                  "text": "Symmetric cool feet without pain",
+                  "explanation": "This does not fit the taught DVT pattern."
+                },
+                {
+                  "id": "C",
+                  "text": "Bilateral hand itching after soap",
+                  "explanation": "This is unrelated."
+                },
+                {
+                  "id": "D",
+                  "text": "Unilateral swelling, pain, warmth and redness",
+                  "explanation": "This is a classic concerning DVT pattern."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "New unilateral swelling, pain, warmth or redness should raise concern for DVT.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 2,
+                  "label": "DVT",
+                  "textSha256": "d0d77d77d89acfea47e98c88d3c75c55292cd7303d1a8733894ec9040a5b80b3"
+                }
+              ],
+              "id": "ibd2-lesson-07-mobility-pressure-vte--standard--point-c5d41223b6b3",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-07-mobility-pressure-vte::point-c5d41223b6b3"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-07-mobility-pressure-vte--advanced",
+          "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+          "itemType": "lesson",
+          "title": "Mobility, Pressure Injury & VTE Prevention",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "An immobilized patient suddenly develops dyspnea and chest pain. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Massage the painful calf vigorously",
+                  "explanation": "Manipulation is not an appropriate response to suspected DVT/PE."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait for routine physiotherapy review",
+                  "explanation": "This delays emergency assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Urgent escalation for possible pulmonary embolism while assessing ABCs/vitals",
+                  "explanation": "PE is a medical emergency."
+                },
+                {
+                  "id": "D",
+                  "text": "Encourage unassisted walking to improve circulation",
+                  "explanation": "This is unsafe during possible PE."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Sudden dyspnea/chest pain in a VTE-risk patient requires emergency escalation for possible PE.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 3,
+                  "label": "PE emergency",
+                  "textSha256": "0a39848d810e1bd85fe63b3dd6fb5fe98b8e5c715c19b3c6466f09f3cfcb0645"
+                }
+              ],
+              "id": "ibd2-lesson-07-mobility-pressure-vte--advanced--point-c869d2eeacb7",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-07-mobility-pressure-vte::point-c869d2eeacb7"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "Which prevention approach best matches the taught VTE plan after fracture repair?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Use compression even when specifically contraindicated",
+                  "explanation": "Patient-specific orders and contraindications matter."
+                },
+                {
+                  "id": "B",
+                  "text": "Start anticoagulation independently without an order",
+                  "explanation": "Anticoagulants require the authorized plan."
+                },
+                {
+                  "id": "C",
+                  "text": "Keep every patient on strict bed rest regardless of orders",
+                  "explanation": "Unnecessary immobility increases complications."
+                },
+                {
+                  "id": "D",
+                  "text": "Mobilize when allowed and follow prescribed anticoagulation/compression",
+                  "explanation": "These are established prevention measures when appropriate."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "VTE prevention may include early mobilization when allowed plus prescribed anticoagulation and compression.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 2,
+                  "label": "DVT",
+                  "textSha256": "d0d77d77d89acfea47e98c88d3c75c55292cd7303d1a8733894ec9040a5b80b3"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 4,
+                  "label": "Common mistake",
+                  "textSha256": "5287f78c5e1b36707021a66a3747b222437653c7f7bba1f4e6088c55bef7bd74"
+                }
+              ],
+              "id": "ibd2-lesson-07-mobility-pressure-vte--advanced--point-a8a84472bffe",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-07-mobility-pressure-vte::point-a8a84472bffe"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-07-mobility-pressure-vte--7-day",
+          "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+          "itemType": "lesson",
+          "title": "Mobility, Pressure Injury & VTE Prevention",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A patient with a leg fracture is ready to stand. What should the nurse check first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Whether the patient has eaten breakfast",
+                  "explanation": "This does not determine fracture loading."
+                },
+                {
+                  "id": "B",
+                  "text": "The weight-bearing order and required assistance",
+                  "explanation": "Safe loading depends on the prescribed plan."
+                },
+                {
+                  "id": "C",
+                  "text": "Whether the external frame looks strong enough",
+                  "explanation": "Appearance does not authorize weight-bearing."
+                },
+                {
+                  "id": "D",
+                  "text": "Whether another patient was allowed to walk",
+                  "explanation": "Orders are patient-specific."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Before mobilizing, verify prescribed weight-bearing status, assistive device and needed assistance.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 0,
+                  "label": "Before mobilizing",
+                  "textSha256": "ecf99b003840613560ba156d7416bd57db57bdda93a0621f77a11d534a0687af"
+                }
+              ],
+              "id": "ibd2-lesson-07-mobility-pressure-vte--7-day--point-f6fd4ef2afa6",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-07-mobility-pressure-vte::point-f6fd4ef2afa6"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "New unilateral calf swelling is followed by sudden dyspnea and chest pain. What should be suspected?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A pressure injury without respiratory involvement",
+                  "explanation": "Pressure injury does not explain acute dyspnea and chest pain."
+                },
+                {
+                  "id": "B",
+                  "text": "Normal deconditioning only",
+                  "explanation": "Sudden cardiopulmonary symptoms are not explained safely by deconditioning alone."
+                },
+                {
+                  "id": "C",
+                  "text": "Expected post-fracture discomfort",
+                  "explanation": "The sudden respiratory symptoms require emergency assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Pulmonary embolism from possible DVT",
+                  "explanation": "This combination is an emergency VTE pattern."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Sudden dyspnea/chest pain in a VTE-risk patient requires emergency escalation for possible PE.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 2,
+                  "label": "DVT",
+                  "textSha256": "d0d77d77d89acfea47e98c88d3c75c55292cd7303d1a8733894ec9040a5b80b3"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-07-mobility-pressure-vte",
+                  "sectionIndex": 3,
+                  "label": "PE emergency",
+                  "textSha256": "0a39848d810e1bd85fe63b3dd6fb5fe98b8e5c715c19b3c6466f09f3cfcb0645"
+                }
+              ],
+              "id": "ibd2-lesson-07-mobility-pressure-vte--7-day--point-c869d2eeacb7",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-07-mobility-pressure-vte::point-c869d2eeacb7"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-08-infection-labs-culture",
+      "title": "CRP, ESR, CBC & Culture — What They Actually Tell You",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-health-alterations",
+        "boast-fri"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-08-infection-labs-culture--standard",
+          "itemId": "ibd2-lesson-08-infection-labs-culture",
+          "itemType": "lesson",
+          "title": "CRP, ESR, CBC & Culture — What They Actually Tell You",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "What does an elevated CRP tell you by itself?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The infecting organism is known",
+                  "explanation": "A culture is needed to identify an organism."
+                },
+                {
+                  "id": "B",
+                  "text": "The patient must have a normal WBC count",
+                  "explanation": "CRP does not determine the WBC result."
+                },
+                {
+                  "id": "C",
+                  "text": "Osteomyelitis is definitively diagnosed",
+                  "explanation": "CRP alone cannot diagnose osteomyelitis."
+                },
+                {
+                  "id": "D",
+                  "text": "Inflammation is present, but the source is not identified",
+                  "explanation": "CRP is nonspecific."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "CRP is a nonspecific inflammatory marker and must be interpreted with the clinical picture and trend.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 1,
+                  "label": "CRP",
+                  "textSha256": "1146d1288e8fb9320209488e97e65ddec0ca7f5f264d4ce5c2b4489e2825b375"
+                }
+              ],
+              "id": "ibd2-lesson-08-infection-labs-culture--standard--point-9ae9adfc5e3a",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-08-infection-labs-culture::point-9ae9adfc5e3a"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "Which CBC information is most useful in an infected orthopaedic patient?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Only hemoglobin to identify the infecting organism",
+                  "explanation": "Hemoglobin does not identify microorganisms."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the platelet count for every clinical question",
+                  "explanation": "Platelets do not replace WBC or hemoglobin assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "WBC/neutrophils for infection context, hemoglobin for blood loss/anemia, and platelets for bleeding/clotting context",
+                  "explanation": "Each component answers a different bedside question."
+                },
+                {
+                  "id": "D",
+                  "text": "Only the mean cell volume",
+                  "explanation": "This misses the key infection, anemia and platelet information."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "CBC components support infection, anemia/blood-loss and bleeding-risk assessment.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 0,
+                  "label": "CBC",
+                  "textSha256": "d6f2d52affc7f44dd10915609833956f549d1c724d86266dce9721b8502ec7eb"
+                }
+              ],
+              "id": "ibd2-lesson-08-infection-labs-culture--standard--point-50ec370cd072",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-08-infection-labs-culture::point-50ec370cd072"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "What is the main purpose of a correctly collected culture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Identify an organism and help guide antimicrobial choice",
+                  "explanation": "Culture can support targeted antimicrobial therapy."
+                },
+                {
+                  "id": "B",
+                  "text": "Determine weight-bearing status",
+                  "explanation": "That comes from the orthopaedic plan."
+                },
+                {
+                  "id": "C",
+                  "text": "Replace wound assessment",
+                  "explanation": "Culture results must be interpreted with the patient and wound."
+                },
+                {
+                  "id": "D",
+                  "text": "Measure the patient's pain severity",
+                  "explanation": "Pain requires clinical assessment."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A correctly collected culture helps identify the organism and guide antimicrobial therapy.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 3,
+                  "label": "Culture",
+                  "textSha256": "dca0b578481f83e8e81e16993e0093a0f05f0ba18ac4552d553e23769c8c90c9"
+                }
+              ],
+              "id": "ibd2-lesson-08-infection-labs-culture--standard--point-428901f9366e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-08-infection-labs-culture::point-428901f9366e"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-08-infection-labs-culture--advanced",
+          "itemId": "ibd2-lesson-08-infection-labs-culture",
+          "itemType": "lesson",
+          "title": "CRP, ESR, CBC & Culture — What They Actually Tell You",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A patient with suspected fracture-related infection is unstable and septic. Cultures have not yet been collected. What is the safest principle?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ignore cultures permanently once treatment begins",
+                  "explanation": "Sampling can still be important when clinically feasible."
+                },
+                {
+                  "id": "B",
+                  "text": "Withhold all treatment until every specimen is collected",
+                  "explanation": "This can dangerously delay care."
+                },
+                {
+                  "id": "C",
+                  "text": "Do not delay urgent treatment solely to obtain cultures",
+                  "explanation": "Sepsis requires immediate assessment and treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "Use CRP alone to choose the antibiotic",
+                  "explanation": "CRP does not identify the organism."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "In an unstable septic patient, urgent treatment must not be delayed solely for culture collection.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 4,
+                  "label": "Safety rule",
+                  "textSha256": "07ce4a1f20f7b190a00ac4ef1726a4eb1365f71392e3469f7bf364c15395dbda"
+                }
+              ],
+              "id": "ibd2-lesson-08-infection-labs-culture--advanced--point-8d6e728960e0",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-08-infection-labs-culture::point-8d6e728960e0"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "CRP and ESR remain elevated, but the wound and patient are clinically improving. What is the best interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Use the trend with the clinical picture; the markers alone do not prove worsening osteomyelitis",
+                  "explanation": "Inflammatory markers are supportive rather than diagnostic by themselves."
+                },
+                {
+                  "id": "B",
+                  "text": "The high markers prove treatment failure",
+                  "explanation": "This overinterprets nonspecific tests."
+                },
+                {
+                  "id": "C",
+                  "text": "Stop all clinical assessments because labs are available",
+                  "explanation": "Bedside findings remain essential."
+                },
+                {
+                  "id": "D",
+                  "text": "Assume the culture result is irrelevant",
+                  "explanation": "Microbiology may remain important to treatment decisions."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Inflammatory markers support assessment but do not diagnose or define worsening osteomyelitis by themselves.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 1,
+                  "label": "CRP",
+                  "textSha256": "1146d1288e8fb9320209488e97e65ddec0ca7f5f264d4ce5c2b4489e2825b375"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 2,
+                  "label": "ESR",
+                  "textSha256": "70dc3ed4fd9690e413a5e50fcf31beecd204ed4ce8e29cd8f5fb4d84fbf2bb73"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 5,
+                  "label": "Common mistake",
+                  "textSha256": "e163b0769ca4ced6a98151add7a2c6077e559af57ea5f531ee42fec9a068c4f1"
+                }
+              ],
+              "id": "ibd2-lesson-08-infection-labs-culture--advanced--point-716bc876363a",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-08-infection-labs-culture::point-716bc876363a"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-08-infection-labs-culture--7-day",
+          "itemId": "ibd2-lesson-08-infection-labs-culture",
+          "itemType": "lesson",
+          "title": "CRP, ESR, CBC & Culture — What They Actually Tell You",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "Which statement about CRP is correct?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It identifies the exact bacterium",
+                  "explanation": "Culture is used for organism identification."
+                },
+                {
+                  "id": "B",
+                  "text": "It is a nonspecific marker of inflammation",
+                  "explanation": "It can rise from many inflammatory conditions."
+                },
+                {
+                  "id": "C",
+                  "text": "It replaces wound assessment",
+                  "explanation": "Clinical findings remain necessary."
+                },
+                {
+                  "id": "D",
+                  "text": "It proves osteomyelitis when elevated",
+                  "explanation": "It is not diagnostic by itself."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "CRP is a nonspecific inflammatory marker and must be interpreted with the clinical picture and trend.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 1,
+                  "label": "CRP",
+                  "textSha256": "1146d1288e8fb9320209488e97e65ddec0ca7f5f264d4ce5c2b4489e2825b375"
+                }
+              ],
+              "id": "ibd2-lesson-08-infection-labs-culture--7-day--point-9ae9adfc5e3a",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-08-infection-labs-culture::point-9ae9adfc5e3a"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "A septic orthopaedic patient is unstable and cultures are pending. What should not happen?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Cultures should be obtained when feasible under the plan",
+                  "explanation": "Sampling can still be useful."
+                },
+                {
+                  "id": "B",
+                  "text": "The team should be informed of deterioration",
+                  "explanation": "Escalation is necessary."
+                },
+                {
+                  "id": "C",
+                  "text": "The patient should be assessed promptly",
+                  "explanation": "Prompt assessment is appropriate."
+                },
+                {
+                  "id": "D",
+                  "text": "Urgent treatment should not be delayed solely for cultures",
+                  "explanation": "The unstable patient needs immediate care."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "In an unstable septic patient, urgent treatment must not be delayed solely for culture collection.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-08-infection-labs-culture",
+                  "sectionIndex": 4,
+                  "label": "Safety rule",
+                  "textSha256": "07ce4a1f20f7b190a00ac4ef1726a4eb1365f71392e3469f7bf364c15395dbda"
+                }
+              ],
+              "id": "ibd2-lesson-08-infection-labs-culture--7-day--point-8d6e728960e0",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-08-infection-labs-culture::point-8d6e728960e0"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-09-documentation-sbar",
+      "title": "Documentation & SBAR — Report What Matters",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-fundamentals"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-09-documentation-sbar--standard",
+          "itemId": "ibd2-lesson-09-documentation-sbar",
+          "itemType": "lesson",
+          "title": "Documentation & SBAR — Report What Matters",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "What does the A in SBAR represent?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assessment: your focused findings and evaluation of the current situation",
+                  "explanation": "Assessment communicates what you found and what it means."
+                },
+                {
+                  "id": "B",
+                  "text": "Action performed by the surgeon",
+                  "explanation": "This is not the SBAR definition."
+                },
+                {
+                  "id": "C",
+                  "text": "Allergies only",
+                  "explanation": "Allergies may be background information but do not define A."
+                },
+                {
+                  "id": "D",
+                  "text": "Admission date only",
+                  "explanation": "This belongs in background if relevant."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "SBAR means Situation, Background, Assessment and Recommendation/Request.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 0,
+                  "label": "SBAR",
+                  "textSha256": "6c1d18557a85c367ef653511bab196e9ed654c83ebf0e9b49b2cc57988031240"
+                }
+              ],
+              "id": "ibd2-lesson-09-documentation-sbar--standard--point-9bdc8a4d4ae9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-09-documentation-sbar::point-9bdc8a4d4ae9"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "Which documentation best supports continuity after a patient deteriorates?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Patient bad",
+                  "explanation": "This is vague and nonobjective."
+                },
+                {
+                  "id": "B",
+                  "text": "Time, objective findings, action, person notified, instructions and reassessment",
+                  "explanation": "This records the event and response clearly."
+                },
+                {
+                  "id": "C",
+                  "text": "See previous note",
+                  "explanation": "This does not document the current change."
+                },
+                {
+                  "id": "D",
+                  "text": "Doctor informed",
+                  "explanation": "This omits what happened and what followed."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Document time, objective findings, action, notification, instructions and the patient's response/reassessment.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 1,
+                  "label": "Document",
+                  "textSha256": "9b3cf56b7e2635960a0d562bab834c75cd2d5ac0f604afd32c94231b9abc6a1c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 4,
+                  "label": "Common mistake",
+                  "textSha256": "84a270b77131fa9df7aec8d3b23070385a367a604d5aae55767535ef873d42f9"
+                }
+              ],
+              "id": "ibd2-lesson-09-documentation-sbar--standard--point-deadfb676c10",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-09-documentation-sbar::point-deadfb676c10"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "Why is read-back used for new verbal or telephone orders?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "To let the nurse change the order wording",
+                  "explanation": "The goal is confirmation, not alteration."
+                },
+                {
+                  "id": "B",
+                  "text": "To replace documentation entirely",
+                  "explanation": "The communication still needs documentation."
+                },
+                {
+                  "id": "C",
+                  "text": "To avoid identifying the patient",
+                  "explanation": "Patient identification remains essential."
+                },
+                {
+                  "id": "D",
+                  "text": "To confirm accuracy before carrying out and documenting the order",
+                  "explanation": "Read-back reduces communication error."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "New verbal/telephone orders should be repeated back according to policy and documented.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 3,
+                  "label": "Read back",
+                  "textSha256": "cd30ca3ec17f9ade0aae297519425672e7e68540124097331006f490e2707e91"
+                }
+              ],
+              "id": "ibd2-lesson-09-documentation-sbar--standard--point-ea79946c6122",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-09-documentation-sbar::point-ea79946c6122"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-09-documentation-sbar--advanced",
+          "itemId": "ibd2-lesson-09-documentation-sbar",
+          "itemType": "lesson",
+          "title": "Documentation & SBAR — Report What Matters",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A patient with an external fixator develops fever, worse pain and purulent drainage. Which SBAR opening is strongest?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Background: the hospital opened many years ago",
+                  "explanation": "This is irrelevant background."
+                },
+                {
+                  "id": "B",
+                  "text": "Situation: new fever, increased pain and purulent drainage in this patient now",
+                  "explanation": "It immediately states the current problem."
+                },
+                {
+                  "id": "C",
+                  "text": "Assessment: the patient has a bed in the ward",
+                  "explanation": "This does not describe the clinical change."
+                },
+                {
+                  "id": "D",
+                  "text": "Recommendation: no review is needed because a dressing is present",
+                  "explanation": "The findings require review."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A useful SBAR begins with the current change, then relevant background, focused assessment and a clear request.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 0,
+                  "label": "SBAR",
+                  "textSha256": "6c1d18557a85c367ef653511bab196e9ed654c83ebf0e9b49b2cc57988031240"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 2,
+                  "label": "Example",
+                  "textSha256": "b9e5ae6351de75f066cc1b5048942d8eb707b14a36c43552a656e17210e52f81"
+                }
+              ],
+              "id": "ibd2-lesson-09-documentation-sbar--advanced--point-b1d4f9c203a5",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-09-documentation-sbar::point-b1d4f9c203a5"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "Which note is weakest after escalating a neurovascular change?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Timed neurovascular findings with the person notified and repeat assessment",
+                  "explanation": "This supports continuity."
+                },
+                {
+                  "id": "B",
+                  "text": "Objective description of sensation and movement before and after escalation",
+                  "explanation": "This documents the clinical trend."
+                },
+                {
+                  "id": "C",
+                  "text": "Recorded instructions received and patient response",
+                  "explanation": "This completes the communication loop."
+                },
+                {
+                  "id": "D",
+                  "text": "“Doctor informed” with no time, findings or response",
+                  "explanation": "This is insufficient for tracking what changed and what happened next."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Avoid vague documentation such as “doctor informed” without the clinical details and follow-up.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 1,
+                  "label": "Document",
+                  "textSha256": "9b3cf56b7e2635960a0d562bab834c75cd2d5ac0f604afd32c94231b9abc6a1c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 4,
+                  "label": "Common mistake",
+                  "textSha256": "84a270b77131fa9df7aec8d3b23070385a367a604d5aae55767535ef873d42f9"
+                }
+              ],
+              "id": "ibd2-lesson-09-documentation-sbar--advanced--point-80cec0c1c4bb",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-09-documentation-sbar::point-80cec0c1c4bb"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-09-documentation-sbar--7-day",
+          "itemId": "ibd2-lesson-09-documentation-sbar",
+          "itemType": "lesson",
+          "title": "Documentation & SBAR — Report What Matters",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "In SBAR, where do the current vital signs and abnormal focused findings mainly belong?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Recommendation only",
+                  "explanation": "Recommendation states what you need next."
+                },
+                {
+                  "id": "B",
+                  "text": "They should be omitted to keep the call short",
+                  "explanation": "Concise communication still needs critical findings."
+                },
+                {
+                  "id": "C",
+                  "text": "Background only",
+                  "explanation": "Background gives relevant history/context."
+                },
+                {
+                  "id": "D",
+                  "text": "Assessment, with the immediate problem stated in Situation",
+                  "explanation": "Assessment carries the findings; Situation states why you are calling."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "SBAR means Situation, Background, Assessment and Recommendation/Request.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 0,
+                  "label": "SBAR",
+                  "textSha256": "6c1d18557a85c367ef653511bab196e9ed654c83ebf0e9b49b2cc57988031240"
+                }
+              ],
+              "id": "ibd2-lesson-09-documentation-sbar--7-day--point-9bdc8a4d4ae9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-09-documentation-sbar::point-9bdc8a4d4ae9"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "After reporting a new limb-safety problem, what should the chart show?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Only the medication list",
+                  "explanation": "This does not document the event."
+                },
+                {
+                  "id": "B",
+                  "text": "Time, findings, action, notification, instructions and reassessment",
+                  "explanation": "These document the clinical event and response."
+                },
+                {
+                  "id": "C",
+                  "text": "Nothing until discharge",
+                  "explanation": "Documentation should be timely."
+                },
+                {
+                  "id": "D",
+                  "text": "Only the words “team aware”",
+                  "explanation": "This is too vague."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Document time, objective findings, action, notification, instructions and the patient's response/reassessment.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 1,
+                  "label": "Document",
+                  "textSha256": "9b3cf56b7e2635960a0d562bab834c75cd2d5ac0f604afd32c94231b9abc6a1c"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-09-documentation-sbar",
+                  "sectionIndex": 4,
+                  "label": "Common mistake",
+                  "textSha256": "84a270b77131fa9df7aec8d3b23070385a367a604d5aae55767535ef873d42f9"
+                }
+              ],
+              "id": "ibd2-lesson-09-documentation-sbar--7-day--point-deadfb676c10",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-09-documentation-sbar::point-deadfb676c10"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 2
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-10-integrated-scenarios",
+      "title": "Integrated IBD2 Scenarios",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-health-alterations",
+        "supplied-fundamentals"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-10-integrated-scenarios--standard",
+          "itemId": "ibd2-lesson-10-integrated-scenarios",
+          "itemType": "lesson",
+          "title": "Integrated IBD2 Scenarios",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "A fracture patient has severe increasing pain on passive stretch and tingling, but a pulse is present. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give analgesia and end the assessment",
+                  "explanation": "Pain relief must not replace emergency assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Encourage walking to test the limb",
+                  "explanation": "This is unsafe."
+                },
+                {
+                  "id": "C",
+                  "text": "Urgent neurovascular reassessment and escalation for compartment syndrome",
+                  "explanation": "A pulse does not exclude acute compartment syndrome."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait until the pulse disappears",
+                  "explanation": "Pulselessness is a late finding."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize compartment syndrome despite a palpable pulse and escalate urgently.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 0,
+                  "label": "Scenario 1",
+                  "textSha256": "7761734c16114ac4c6abc13d0bf395edc2561060db44c5a77656a72bd33465ae"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--standard--point-341ae1bdad7d",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-341ae1bdad7d"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "An external fixator has purulent drainage and a component appears loose. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ignore the drainage if the pulse is present",
+                  "explanation": "A pulse does not exclude infection or hardware problems."
+                },
+                {
+                  "id": "B",
+                  "text": "Assess the patient/limb, protect it and escalate without adjusting the frame",
+                  "explanation": "Both infection and mechanical problems require authorized review."
+                },
+                {
+                  "id": "C",
+                  "text": "Tighten the frame before checking the patient",
+                  "explanation": "Independent adjustment can alter alignment."
+                },
+                {
+                  "id": "D",
+                  "text": "Allow unrestricted walking to test stability",
+                  "explanation": "This is unsafe."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "External-fixator infection or hardware problems require assessment, protection and escalation without independent adjustment.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 1,
+                  "label": "Scenario 2",
+                  "textSha256": "655065f91ec869bcd8c59844e53c853f787fc01e5d98985b9197a13b6ceeacd1"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--standard--point-b9b62f4b9164",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-b9b62f4b9164"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "A post-BKA dressing rapidly soaks with blood and the heart rate rises. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Focus on phantom pain first",
+                  "explanation": "Hemorrhage takes priority."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait for the next scheduled dressing change",
+                  "explanation": "This delays urgent care."
+                },
+                {
+                  "id": "C",
+                  "text": "Begin routine gait training",
+                  "explanation": "Mobility is not the immediate priority."
+                },
+                {
+                  "id": "D",
+                  "text": "Assess circulation/vitals and escalate for possible hemorrhage",
+                  "explanation": "Bleeding with tachycardia is a postoperative emergency concern."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Rapid postoperative bleeding after amputation requires urgent hemorrhage assessment and escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 2,
+                  "label": "Scenario 3",
+                  "textSha256": "1904eb22754fdffb9b92eb92705d616453808183948920107f0fbdafc2f98206"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--standard--point-4e957cc9f0b6",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-4e957cc9f0b6"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-10-integrated-scenarios--advanced",
+          "itemId": "ibd2-lesson-10-integrated-scenarios",
+          "itemType": "lesson",
+          "title": "Integrated IBD2 Scenarios",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "An immobilized orthopaedic patient develops unilateral calf swelling, then sudden dyspnea and chest pain. What is the best response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Massage the calf and reassess tomorrow",
+                  "explanation": "Massage is not appropriate and delay is unsafe."
+                },
+                {
+                  "id": "B",
+                  "text": "Ask the patient to walk unassisted",
+                  "explanation": "This is unsafe."
+                },
+                {
+                  "id": "C",
+                  "text": "Treat as possible PE: assess ABCs/vitals and escalate urgently",
+                  "explanation": "This is an emergency VTE pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Assume deconditioning explains the symptoms",
+                  "explanation": "Sudden cardiopulmonary symptoms need emergency review."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Possible DVT with sudden cardiopulmonary symptoms requires emergency escalation for PE.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 3,
+                  "label": "Scenario 4",
+                  "textSha256": "a415e40690fd962de9a9af9fdd5e330d4fd7388ee97801bbaac73b6ea245e1d1"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--advanced--point-ec373ddc4526",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-ec373ddc4526"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "A fracture patient's pain is much worse today despite analgesia. Which action best integrates the IBD2 approach?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reassess neurovascular status, wound/infection and hardware before assuming analgesia is inadequate",
+                  "explanation": "Worsening pain may be the first sign of a complication."
+                },
+                {
+                  "id": "B",
+                  "text": "Use CRP alone to decide the cause",
+                  "explanation": "A lab result cannot replace bedside assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Document the pain score and take no further action",
+                  "explanation": "Trend and cause matter."
+                },
+                {
+                  "id": "D",
+                  "text": "Increase medication independently without reassessment",
+                  "explanation": "This can mask deterioration and exceeds scope."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Unexpected worsening pain requires reassessment for limb, wound and hardware complications.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 4,
+                  "label": "Scenario 5",
+                  "textSha256": "852688fe6668f858abc91b4001b304f0596b44ab57260482c9a74fc0bd854eb4"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--advanced--point-01de110b0181",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-01de110b0181"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "CRP and ESR are high while the wound and patient are clinically improving. What is the correct interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The high values prove worsening osteomyelitis",
+                  "explanation": "This overinterprets nonspecific markers."
+                },
+                {
+                  "id": "B",
+                  "text": "The wound examination can now be stopped",
+                  "explanation": "Clinical assessment remains necessary."
+                },
+                {
+                  "id": "C",
+                  "text": "Culture results no longer matter",
+                  "explanation": "Microbiology can still guide treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "The markers are nonspecific and must be interpreted with the clinical trend",
+                  "explanation": "They support but do not define the diagnosis alone."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Inflammatory markers do not replace the patient, wound and overall trend.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 5,
+                  "label": "Scenario 6",
+                  "textSha256": "0d50c0f04e5369601c1c0d70341b647bb0f12b3496db9fcf405ead48a5612efb"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--advanced--point-af90eb41f8f9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-af90eb41f8f9"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-10-integrated-scenarios--7-day",
+          "itemId": "ibd2-lesson-10-integrated-scenarios",
+          "itemType": "lesson",
+          "title": "Integrated IBD2 Scenarios",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A pulse is still palpable in a limb with severe pain on passive stretch. What should you remember?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The next analgesic dose is the only priority",
+                  "explanation": "Emergency reassessment is needed."
+                },
+                {
+                  "id": "B",
+                  "text": "The pulse rules out compartment syndrome",
+                  "explanation": "This is a dangerous misconception."
+                },
+                {
+                  "id": "C",
+                  "text": "Only fever determines urgency",
+                  "explanation": "Compartment syndrome is not defined by fever."
+                },
+                {
+                  "id": "D",
+                  "text": "Compartment syndrome is still possible and needs urgent escalation",
+                  "explanation": "A pulse may persist early."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize compartment syndrome despite a palpable pulse and escalate urgently.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 0,
+                  "label": "Scenario 1",
+                  "textSha256": "7761734c16114ac4c6abc13d0bf395edc2561060db44c5a77656a72bd33465ae"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--7-day--point-341ae1bdad7d",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-341ae1bdad7d"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A patient with a possible DVT suddenly becomes short of breath with chest pain. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for routine rounds",
+                  "explanation": "Delay is unsafe."
+                },
+                {
+                  "id": "B",
+                  "text": "Encourage independent walking",
+                  "explanation": "This is unsafe."
+                },
+                {
+                  "id": "C",
+                  "text": "Urgent ABC assessment and escalation for possible PE",
+                  "explanation": "This is a medical emergency."
+                },
+                {
+                  "id": "D",
+                  "text": "Apply heat and reassess the calf only",
+                  "explanation": "This does not address the cardiopulmonary emergency."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Possible DVT with sudden cardiopulmonary symptoms requires emergency escalation for PE.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-10-integrated-scenarios",
+                  "sectionIndex": 3,
+                  "label": "Scenario 4",
+                  "textSha256": "a415e40690fd962de9a9af9fdd5e330d4fd7388ee97801bbaac73b6ea245e1d1"
+                }
+              ],
+              "id": "ibd2-lesson-10-integrated-scenarios--7-day--point-ec373ddc4526",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-10-integrated-scenarios::point-ec373ddc4526"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 2
+        }
+      ]
     }
   ]
 }
