@@ -90,7 +90,10 @@ class ExamBanks(unittest.TestCase):
             prior_points={p for e in (standard,advanced) for q in e['questions'] for p in q['learningPointIds']}
             self.assertTrue(all(set(q['learningPointIds'])<=prior_points for q in retention['questions']))
             prior = std_stems | {q['stem'] for q in advanced['questions']}
-            self.assertFalse(prior & {q['stem'] for q in retention['questions']}, bank['itemId'])
+            retained_points=[p for q in retention['questions'] for p in q['learningPointIds']]
+            self.assertEqual(prior_points, set(retained_points), bank['itemId'])
+            self.assertEqual(len(retained_points), len(set(retained_points)), bank['itemId'])
+            self.assertIn('questions may repeat', retention['retestPolicy'])
             for exam in bank['exams']:
                 count = Counter(q['answerKey'] for q in exam['questions'] if q['format'] == 'single-best-answer')
                 self.assertLessEqual(max([count[x] for x in 'ABCD']) - min([count[x] for x in 'ABCD']), 1)
