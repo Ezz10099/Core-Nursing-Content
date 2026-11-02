@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 36,
-  "updatedAt": "2026-10-27",
+  "contentVersion": 37,
+  "updatedAt": "2026-11-02",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -3045,6 +3045,283 @@
         }
       ],
       "sourceNote": "Study baseline: Open RN Health Alterations 10.10 Osteomyelitis. Focused for IBD2 internship readiness."
+    },
+    {
+      "id": "ibd2-lesson-03-open-gunshot-fractures",
+      "department": "ibd2",
+      "order": 3,
+      "kind": "lesson",
+      "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "An open fracture communicates with a wound to the outside; the bone does not have to be visibly protruding. Gunshot fractures are major extremity trauma with wound, soft-tissue and infection concerns."
+        },
+        {
+          "label": "Check",
+          "text": "Bleeding → wound/contamination → distal neurovascular status → pain/swelling → vitals."
+        },
+        {
+          "label": "Do",
+          "text": "Protect the wound, use aseptic/sterile wound care per local protocol, give ordered IV antibiotics promptly, and confirm tetanus status has been assessed. Do not independently probe, debride, or manipulate the fracture wound."
+        },
+        {
+          "label": "Watch for infection",
+          "text": "Increasing pain, redness, swelling, purulent drainage, fever, or systemic deterioration."
+        },
+        {
+          "label": "Escalate",
+          "text": "Uncontrolled bleeding, worsening circulation/sensation/movement, severe increasing pain, or systemic deterioration/sepsis."
+        },
+        {
+          "label": "Common mistake",
+          "text": "Assuming a small wound means the fracture is closed."
+        },
+        {
+          "label": "Memory",
+          "text": "OPEN FRACTURE = LIMB INJURY + INFECTION PATHWAY.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "Study baseline: Open RN Health Alterations 10.6 Fracture. Current infection-prevention context checked against AAOS major-extremity-trauma guidance and CDC tetanus wound guidance (reviewed 2 Nov 2026). Exact wound care, antibiotics and tetanus actions follow the local ward order/protocol."
+    },
+    {
+      "id": "ibd2-lesson-05-bka-aka-care",
+      "department": "ibd2",
+      "order": 5,
+      "kind": "lesson",
+      "title": "BKA / AKA — Post-Amputation Nursing",
+      "sections": [
+        {
+          "label": "Meaning",
+          "text": "BKA = below-knee amputation; the knee is preserved. AKA = above-knee amputation; mobility generally requires more energy because the knee is absent."
+        },
+        {
+          "label": "Check",
+          "text": "Bleeding → wound/infection → residual-limb skin/circulation → pain/phantom pain → position and mobility."
+        },
+        {
+          "label": "Phantom pain",
+          "text": "Phantom limb pain is real pain perceived in the removed limb; assess and treat it as pain, not as imagination."
+        },
+        {
+          "label": "Position",
+          "text": "Avoid prolonged flexion that promotes contracture; follow the prescribed positioning and physiotherapy plan."
+        },
+        {
+          "label": "Escalate",
+          "text": "Active/increasing bleeding, deteriorating residual-limb circulation, infection, severe uncontrolled pain, or systemic deterioration."
+        },
+        {
+          "label": "Common mistake",
+          "text": "Ignoring phantom pain or leaving the residual limb flexed for long periods."
+        },
+        {
+          "label": "Memory",
+          "text": "BLEED → WOUND → CIRCULATION → PAIN → POSITION.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "Study baseline: Open RN Health Alterations 10.5 Amputation (BKA/AKA, hemorrhage, infection, phantom pain, residual-limb assessment and flexion contracture). Positioning and rehabilitation follow the local surgical/physiotherapy plan."
+    },
+    {
+      "id": "ibd2-lesson-06-orthopaedic-pain-meds",
+      "department": "ibd2",
+      "order": 6,
+      "kind": "lesson",
+      "title": "Orthopaedic Pain + Common Medications",
+      "sections": [
+        {
+          "label": "First rule",
+          "text": "Pain is assessment data. Check location, severity, character and trend before and after analgesia."
+        },
+        {
+          "label": "Danger pain",
+          "text": "Sudden severe/increasing pain, pain out of proportion, or pain with passive stretch needs a neurovascular reassessment—not just another analgesic."
+        },
+        {
+          "label": "Common IBD2 groups",
+          "text": "Paracetamol: count total from all products. NSAIDs such as ibuprofen/ketorolac: avoid duplication and watch GI/renal risk. Tramadol/opioid-type analgesia: watch sedation and breathing. Gabapentin/amitriptyline may be used for neuropathic pain and can increase drowsiness/fall risk."
+        },
+        {
+          "label": "Reassess",
+          "text": "After analgesia: pain response + alertness + respiratory status when sedating medicines are used."
+        },
+        {
+          "label": "Common mistake",
+          "text": "Treating worsening pain repeatedly without asking why it is worsening."
+        },
+        {
+          "label": "Medication detail",
+          "text": "Use the IBD2 Medication Library for the exact product, route, contraindications, interactions and order-specific safety checks."
+        },
+        {
+          "label": "Memory",
+          "text": "PAIN ↑ unexpectedly? REASSESS THE LIMB BEFORE BLAMING THE PAIN SCORE.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "Study baseline: Open RN fracture pain therapy plus the current verified IBD2 medication entries in Core Nursing. Drug-specific dosing and administration are intentionally kept in the Medication Library and local orders rather than duplicated here."
+    },
+    {
+      "id": "ibd2-lesson-07-mobility-pressure-vte",
+      "department": "ibd2",
+      "order": 7,
+      "kind": "lesson",
+      "title": "Mobility, Pressure Injury & VTE Prevention",
+      "sections": [
+        {
+          "label": "Before mobilizing",
+          "text": "Verify the prescribed weight-bearing status, required assistive device, and whether the patient needs staff assistance."
+        },
+        {
+          "label": "Pressure injury",
+          "text": "Immobility increases pressure/shear risk. Inspect high-risk skin—especially sacrum and heels—and reposition/weight-shift according to patient risk and the local plan."
+        },
+        {
+          "label": "DVT",
+          "text": "Think DVT with new unilateral swelling, pain, warmth or redness. Prevention may include early mobilization when allowed, prescribed anticoagulation and compression."
+        },
+        {
+          "label": "PE emergency",
+          "text": "Sudden dyspnea, chest pain, tachycardia, hemoptysis, marked anxiety/dizziness, or collapse in a VTE-risk patient requires urgent escalation for possible pulmonary embolism."
+        },
+        {
+          "label": "Common mistake",
+          "text": "Mobilizing without checking the weight-bearing order, or focusing on the fracture while forgetting skin and VTE risk."
+        },
+        {
+          "label": "Memory",
+          "text": "IMMOBILE? THINK: SKIN + CLOT + STRENGTH.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "Study baseline: Open RN Fundamentals pressure-injury/immobility content and Open RN Health Alterations fracture/DVT content. Exact anticoagulant and compression use follows the prescription and local protocol."
+    },
+    {
+      "id": "ibd2-lesson-08-infection-labs-culture",
+      "department": "ibd2",
+      "order": 8,
+      "kind": "lesson",
+      "title": "CRP, ESR, CBC & Culture — What They Actually Tell You",
+      "sections": [
+        {
+          "label": "CBC",
+          "text": "WBC/neutrophils can support infection/inflammation assessment; hemoglobin/hematocrit help assess anemia or blood loss; platelets matter for bleeding/clotting context."
+        },
+        {
+          "label": "CRP",
+          "text": "CRP rises with inflammation but is not specific to the source. Trend it with the patient's clinical picture."
+        },
+        {
+          "label": "ESR",
+          "text": "ESR is another nonspecific inflammatory marker. It can support the picture but does not diagnose osteomyelitis by itself."
+        },
+        {
+          "label": "Culture",
+          "text": "A correctly collected culture helps identify the organism and guides antimicrobial choice. Follow the ordered sampling method; specimen quality matters."
+        },
+        {
+          "label": "Safety rule",
+          "text": "If the patient is systemically septic or unstable, urgent treatment must not be delayed just to obtain a culture."
+        },
+        {
+          "label": "Common mistake",
+          "text": "Diagnosing infection or osteomyelitis from one high CRP/ESR value alone."
+        },
+        {
+          "label": "Memory",
+          "text": "LABS SUPPORT THE DIAGNOSIS; THE PATIENT + WOUND + TREND DRIVE THE CONCERN.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "Study baseline: Open RN Health Alterations/Fundamentals descriptions of CBC, CRP, ESR and cultures. Fracture-related-infection sampling/sepsis safety checked against BOAST FRI guidance; unstable septic patients require immediate medical assessment and treatment should not be delayed for sampling."
+    },
+    {
+      "id": "ibd2-lesson-09-documentation-sbar",
+      "department": "ibd2",
+      "order": 9,
+      "kind": "lesson",
+      "title": "Documentation & SBAR — Report What Matters",
+      "sections": [
+        {
+          "label": "SBAR",
+          "text": "S = Situation: what changed now. B = Background: diagnosis/procedure and relevant context. A = Assessment: vitals + focused findings. R = Recommendation/Request: what you need next."
+        },
+        {
+          "label": "Document",
+          "text": "Record the time, objective finding, action taken, who was notified, instructions/orders received, and the patient's response/reassessment."
+        },
+        {
+          "label": "Example",
+          "text": "S: New fever and purulent drainage. B: Open tibial fracture with external fixation. A: Pain increased, wound red/swollen, vitals and neurovascular findings stated. R: Request urgent review and clarification of culture/wound/antibiotic plan."
+        },
+        {
+          "label": "Read back",
+          "text": "Repeat back new verbal/telephone orders according to policy and document the communication."
+        },
+        {
+          "label": "Common mistake",
+          "text": "Writing only “doctor informed” without documenting what changed, when, what was reported, and what happened next."
+        },
+        {
+          "label": "Memory",
+          "text": "CHANGE → FINDINGS → ACTION → WHO YOU TOLD → RESPONSE.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "Study baseline: Open RN Nursing Fundamentals 2.4 communication/SBAR and documentation principles. Local documentation fields and escalation chain follow facility policy."
+    },
+    {
+      "id": "ibd2-lesson-10-integrated-scenarios",
+      "department": "ibd2",
+      "order": 10,
+      "kind": "lesson",
+      "title": "Integrated IBD2 Scenarios",
+      "sections": [
+        {
+          "label": "Scenario 1",
+          "prompt": "Fracture patient: pain suddenly becomes severe, passive toe movement worsens it, tingling appears, but a distal pulse is still present. Priority?",
+          "text": "Suspect acute compartment syndrome. Repeat focused neurovascular assessment and escalate urgently; a palpable pulse does not rule it out.",
+          "display": "reveal"
+        },
+        {
+          "label": "Scenario 2",
+          "prompt": "External fixator: increasing pin-site pain and purulent drainage; one component also looks loose. Priority?",
+          "text": "Assess patient/vitals and distal neurovascular status, protect the limb, escalate infection + hardware concerns, and do not adjust the frame yourself.",
+          "display": "reveal"
+        },
+        {
+          "label": "Scenario 3",
+          "prompt": "Post-BKA dressing becomes rapidly blood-soaked and the patient becomes tachycardic. Priority?",
+          "text": "Treat as possible postoperative hemorrhage: assess circulation/vitals, call for urgent help/escalation, and follow the local postoperative bleeding response.",
+          "display": "reveal"
+        },
+        {
+          "label": "Scenario 4",
+          "prompt": "Immobilized orthopaedic patient develops new unilateral calf swelling, then sudden dyspnea and chest pain. Priority?",
+          "text": "Possible DVT with pulmonary embolism. Escalate as an emergency and assess ABCs/vitals immediately.",
+          "display": "reveal"
+        },
+        {
+          "label": "Scenario 5",
+          "prompt": "Patient on analgesia reports much worse limb pain than yesterday. What comes before simply giving more pain medicine?",
+          "text": "Reassess the limb and neurovascular status and look for infection, swelling, compartment syndrome or hardware problems.",
+          "display": "reveal"
+        },
+        {
+          "label": "Scenario 6",
+          "prompt": "CRP and ESR are high, but the patient is clinically improving and the wound looks better. Does the lab result alone prove worsening osteomyelitis?",
+          "text": "No. CRP/ESR are nonspecific. Interpret trends with the patient, wound, cultures and overall clinical course.",
+          "display": "reveal"
+        },
+        {
+          "label": "Memory",
+          "text": "IBD2 PRIORITY = PATIENT → LIMB → WOUND/HARDWARE → ACTION → ESCALATE → REASSESS.",
+          "display": "memory"
+        }
+      ],
+      "sourceNote": "Integrated review of IBD2 Lessons 1–9. Scenarios intentionally test only taught bedside recognition, nursing action and escalation points."
     }
   ],
   "guides": [],
