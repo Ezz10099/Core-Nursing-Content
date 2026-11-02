@@ -30,6 +30,7 @@
   function syncMessage(msg) { const e = $('noteSyncStatus'); if (e) e.textContent = msg; }
   function token() { try { return localStorage.getItem(TOKEN_KEY) || ''; } catch (_) { return ''; } }
   function cloudConfigured() { return Boolean(token()); }
+  function inlinePanel(department, type, id, title) { return '<div class="panel inline-question"><h3>Have a question about this topic?</h3><textarea maxlength="1000" rows="2" placeholder="Write a question to save offline"></textarea><button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save question</button><p class="note inline-feedback" role="status"></p></div>'; }
   function open() {
     showTab('notes');
     render();
