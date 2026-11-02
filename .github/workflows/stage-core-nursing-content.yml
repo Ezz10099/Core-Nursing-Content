@@ -6,6 +6,9 @@ on:
       - 'content.json'
       - 'exams/authoring/**'
       - 'exams/sources.json'
+      - 'runtime/files/js/app.js'
+      - 'runtime/files/index.html'
+      - 'scripts/generate_runtime_manifest.py'
       - '.github/workflows/stage-core-nursing-content.yml'
 permissions:
   contents: write
