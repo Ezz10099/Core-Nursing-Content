@@ -3,7 +3,7 @@
   'use strict';
   function collection() {
     if (!Array.isArray(memory.notes)) memory.notes = [];
-    memory.notes = memory.notes.filter(x => x && typeof x.id === 'string' && typeof x.question === 'string' && typeof x.answer === 'string').slice(0, 500);
+    memory.notes = memory.notes.filter(x => x && typeof x.id === 'string' && typeof x.question === 'string' && typeof x.answer === 'string').slice(0, 500); memory.notes.forEach(x => { if (!Array.isArray(x.tags)) x.tags = []; x.tags = x.tags.filter(t => typeof t === 'string').slice(0, 8); if (!['ibd2','ccu','ed','general'].includes(x.department)) x.department = 'general'; });
     return memory.notes;
   }
   function text(x) { return safe(String(x == null ? '' : x)); }
@@ -78,7 +78,7 @@
     memory.notes.unshift({
       id: 'q-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8),
       question: q.question.slice(0, 1000), answer: answer.slice(0, 10000),
-      department: q.department === 'ibd2' ? 'ibd2' : 'ccu',
+      department: q.department === 'ibd2' || /^qa-ibd2-|^ibd2-/.test(q.id) ? 'ibd2' : 'ccu',
       tags: ['Saved FAQ'], status: 'review',
       createdAt: now, updatedAt: now, sourceId: id
     });
