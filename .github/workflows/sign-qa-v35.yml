@@ -1,0 +1,42 @@
+name: Pre-sign staged Q&A runtime v35
+on:
+  push:
+    branches: [updates/private-questions-v35]
+    paths:
+      - '.github/workflows/sign-qa-v35.yml'
+permissions:
+  contents: write
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: updates/private-questions-v35
+      - name: Check runtime manifest reproducibility
+        run: |
+          python scripts/generate_runtime_manifest.py
+          test -z "$(git status --porcelain -- runtime/runtime-manifest.json runtime/objects)"
+          python scripts/validate_runtime.py
+      - name: Sign with official Core Nursing private key
+        env:
+          UPDATE_SIGNING_KEY: ${{ secrets.CORE_NURSING_UPDATE_SIGNING_PRIVATE_KEY_PEM }}
+        run: |
+          test -n "$UPDATE_SIGNING_KEY"
+          printf '%s\n' "$UPDATE_SIGNING_KEY" > "$RUNNER_TEMP/private.pem"
+          chmod 600 "$RUNNER_TEMP/private.pem"
+          openssl pkey -in "$RUNNER_TEMP/private.pem" -pubout -out "$RUNNER_TEMP/public.pem"
+          diff update-signing-public-key.pem "$RUNNER_TEMP/public.pem"
+          openssl dgst -sha256 -sign "$RUNNER_TEMP/private.pem" -out "$RUNNER_TEMP/signature.bin" runtime/runtime-manifest.json
+          base64 -w 0 "$RUNNER_TEMP/signature.bin" > runtime/runtime-manifest.sig
+          printf '\n' >> runtime/runtime-manifest.sig
+          openssl dgst -sha256 -verify update-signing-public-key.pem -signature "$RUNNER_TEMP/signature.bin" runtime/runtime-manifest.json
+          rm -f "$RUNNER_TEMP/private.pem" "$RUNNER_TEMP/signature.bin"
+      - name: Commit staged signed payload
+        run: |
+          git add runtime/runtime-manifest.sig
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "Core Nursing Update Signer"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "Sign Core Nursing private question inbox v35"
+          git push origin HEAD:updates/private-questions-v35
