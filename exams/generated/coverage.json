@@ -7976,6 +7976,684 @@
       ]
     },
     {
+      "id": "ed-novalgin-metamizole::principal-action",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-novalgin-metamizole--standard--principal-action",
+        "ed-novalgin-metamizole--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-novalgin-metamizole::drug-class",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-novalgin-metamizole--standard--drug-class",
+        "ed-novalgin-metamizole--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-novalgin-metamizole::treatment-role",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-novalgin-metamizole--standard--treatment-role",
+        "ed-novalgin-metamizole--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-novalgin-metamizole::hypotension",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "Recognize symptomatic hypotension during treatment.",
+      "questionIds": [
+        "ed-novalgin-metamizole--standard--hypotension",
+        "ed-novalgin-metamizole--advanced--hypotension",
+        "ed-novalgin-metamizole--7-day--hypotension"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-novalgin-metamizole::pain_response",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "Assess the intended analgesic or antipyretic response before and after treatment.",
+      "questionIds": [
+        "ed-novalgin-metamizole--standard--pain_response",
+        "ed-novalgin-metamizole--7-day--pain_response"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-novalgin-metamizole::slow_iv",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "IV administration speed follows the exact product and indication.",
+      "questionIds": [
+        "ed-novalgin-metamizole--standard--slow_iv",
+        "ed-novalgin-metamizole--7-day--slow_iv"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-novalgin-metamizole::metamizole_agranulocytosis",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "Recognize possible metamizole-induced agranulocytosis and escalate promptly.",
+      "questionIds": [
+        "ed-novalgin-metamizole--standard--metamizole_agranulocytosis",
+        "ed-novalgin-metamizole--advanced--metamizole_agranulocytosis",
+        "ed-novalgin-metamizole--7-day--metamizole_agranulocytosis"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-novalgin-metamizole::formulation",
+      "itemId": "ed-novalgin-metamizole",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+      "questionIds": [
+        "ed-novalgin-metamizole--advanced--formulation",
+        "ed-novalgin-metamizole--7-day--formulation"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-decort-dexamethasone::principal-action",
+      "itemId": "ed-decort-dexamethasone",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-decort-dexamethasone--standard--principal-action",
+        "ed-decort-dexamethasone--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-decort-dexamethasone::drug-class",
+      "itemId": "ed-decort-dexamethasone",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-decort-dexamethasone--standard--drug-class",
+        "ed-decort-dexamethasone--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-decort-dexamethasone::treatment-role",
+      "itemId": "ed-decort-dexamethasone",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-decort-dexamethasone--standard--treatment-role",
+        "ed-decort-dexamethasone--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-decort-dexamethasone::steroid_glucose",
+      "itemId": "ed-decort-dexamethasone",
+      "point": "Systemic glucocorticoids can increase glucose.",
+      "questionIds": [
+        "ed-decort-dexamethasone--standard--steroid_glucose",
+        "ed-decort-dexamethasone--7-day--steroid_glucose"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-decort-dexamethasone::steroid_infection",
+      "itemId": "ed-decort-dexamethasone",
+      "point": "Systemic corticosteroids can increase infection risk and affect healing.",
+      "questionIds": [
+        "ed-decort-dexamethasone--advanced--steroid_infection",
+        "ed-decort-dexamethasone--7-day--steroid_infection"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-decort-dexamethasone::formulation",
+      "itemId": "ed-decort-dexamethasone",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+      "questionIds": [
+        "ed-decort-dexamethasone--advanced--formulation",
+        "ed-decort-dexamethasone--7-day--formulation"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::principal-action",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--principal-action",
+        "ed-ondansetron-provisional-shelf--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::drug-class",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--drug-class",
+        "ed-ondansetron-provisional-shelf--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::treatment-role",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--treatment-role",
+        "ed-ondansetron-provisional-shelf--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::qt",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "QT-prolonging treatment requires attention to rhythm and electrolyte context.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--qt",
+        "ed-ondansetron-provisional-shelf--advanced--qt",
+        "ed-ondansetron-provisional-shelf--7-day--qt"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::serotonin",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Recognize serotonin toxicity and review serotonergic combinations.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--serotonin",
+        "ed-ondansetron-provisional-shelf--advanced--serotonin",
+        "ed-ondansetron-provisional-shelf--7-day--serotonin"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::formulation",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--advanced--formulation",
+        "ed-ondansetron-provisional-shelf--7-day--formulation"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::principal-action",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-diclofenac-injection--standard--principal-action",
+        "ed-diclofenac-injection--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::drug-class",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-diclofenac-injection--standard--drug-class",
+        "ed-diclofenac-injection--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::treatment-role",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-diclofenac-injection--standard--treatment-role",
+        "ed-diclofenac-injection--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::nsaid_gi",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Recognize gastrointestinal bleeding during NSAID treatment.",
+      "questionIds": [
+        "ed-diclofenac-injection--standard--nsaid_gi",
+        "ed-diclofenac-injection--advanced--nsaid_gi",
+        "ed-diclofenac-injection--7-day--nsaid_gi"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::nsaid_renal",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Volume depletion increases NSAID-associated renal risk.",
+      "questionIds": [
+        "ed-diclofenac-injection--standard--nsaid_renal",
+        "ed-diclofenac-injection--advanced--nsaid_renal",
+        "ed-diclofenac-injection--7-day--nsaid_renal"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::nsaid_allergy",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Review prior aspirin/NSAID hypersensitivity and bronchospasm.",
+      "questionIds": [
+        "ed-diclofenac-injection--standard--nsaid_allergy",
+        "ed-diclofenac-injection--advanced--nsaid_allergy",
+        "ed-diclofenac-injection--7-day--nsaid_allergy"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::duplicate_nsaid",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Avoid unintended duplication of NSAIDs.",
+      "questionIds": [
+        "ed-diclofenac-injection--advanced--duplicate_nsaid",
+        "ed-diclofenac-injection--7-day--duplicate_nsaid"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-diclofenac-injection::formulation",
+      "itemId": "ed-diclofenac-injection",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+      "questionIds": [
+        "ed-diclofenac-injection--advanced--formulation",
+        "ed-diclofenac-injection--7-day--formulation"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione::principal-action",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--standard--principal-action",
+        "ed-vitamin-k-phytonadione--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione::drug-class",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--standard--drug-class",
+        "ed-vitamin-k-phytonadione--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione::treatment-role",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--standard--treatment-role",
+        "ed-vitamin-k-phytonadione--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione::warfarin_reversal",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Vitamin K has an indication-specific role in warfarin reversal.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+        "ed-vitamin-k-phytonadione--7-day--warfarin_reversal"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione::vitk_anaphylaxis",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Recognize severe hypersensitivity during injectable phytonadione administration.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--standard--vitk_anaphylaxis",
+        "ed-vitamin-k-phytonadione--advanced--vitk_anaphylaxis",
+        "ed-vitamin-k-phytonadione--7-day--vitk_anaphylaxis"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione::vitk_delayed_effect",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Understand vitamin K reversal acts over hours; major warfarin bleeding can need PCC.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--standard--vitk_delayed_effect",
+        "ed-vitamin-k-phytonadione--advanced--vitk_delayed_effect",
+        "ed-vitamin-k-phytonadione--7-day--vitk_delayed_effect"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione::formulation",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--advanced--formulation",
+        "ed-vitamin-k-phytonadione--7-day--formulation"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::principal-action",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--principal-action",
+        "ed-hexakapron-tranexamic--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::drug-class",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--drug-class",
+        "ed-hexakapron-tranexamic--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::treatment-role",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--treatment-role",
+        "ed-hexakapron-tranexamic--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::renal_dose",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Renal impairment can require review of drug exposure and the prescribed regimen.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--renal_dose",
+        "ed-hexakapron-tranexamic--advanced--renal_dose",
+        "ed-hexakapron-tranexamic--7-day--renal_dose"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::slow_iv",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "IV administration speed follows the exact product and indication.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--slow_iv",
+        "ed-hexakapron-tranexamic--7-day--slow_iv"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::txa_wrong_route",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Recognize that injectable tranexamic acid is IV-only and never neuraxial.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--txa_wrong_route",
+        "ed-hexakapron-tranexamic--advanced--txa_wrong_route",
+        "ed-hexakapron-tranexamic--7-day--txa_wrong_route"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::formulation",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--advanced--formulation",
+        "ed-hexakapron-tranexamic--7-day--formulation"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::principal-action",
+      "itemId": "ed-captopril-tablets",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--principal-action",
+        "ed-captopril-tablets--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::drug-class",
+      "itemId": "ed-captopril-tablets",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--drug-class",
+        "ed-captopril-tablets--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::treatment-role",
+      "itemId": "ed-captopril-tablets",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--treatment-role",
+        "ed-captopril-tablets--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::pregnancy",
+      "itemId": "ed-captopril-tablets",
+      "point": "Recognize pregnancy as a major safety concern with RAAS-blocking therapy.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--pregnancy",
+        "ed-captopril-tablets--advanced--pregnancy",
+        "ed-captopril-tablets--7-day--pregnancy"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::high_k",
+      "itemId": "ed-captopril-tablets",
+      "point": "Monitor for hyperkalemia with potassium-raising treatment.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--high_k",
+        "ed-captopril-tablets--advanced--high_k",
+        "ed-captopril-tablets--7-day--high_k"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::hypotension",
+      "itemId": "ed-captopril-tablets",
+      "point": "Recognize symptomatic hypotension during treatment.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--hypotension",
+        "ed-captopril-tablets--advanced--hypotension",
+        "ed-captopril-tablets--7-day--hypotension"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::renal_monitor",
+      "itemId": "ed-captopril-tablets",
+      "point": "Monitor renal function when kidney injury or altered treatment safety is relevant.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--renal_monitor",
+        "ed-captopril-tablets--7-day--renal_monitor"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::ace_history",
+      "itemId": "ed-captopril-tablets",
+      "point": "Prior ACE-inhibitor angioedema makes repeat ACE exposure unsafe.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--ace_history",
+        "ed-captopril-tablets--7-day--ace_history"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "verified-alteplase-v35::principal-action",
       "itemId": "verified-alteplase-v35",
       "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -15047,6 +15725,415 @@
           "ibd2-multivitamin--7-day--vitamin_accumulation",
           "ibd2-multivitamin--7-day--multivitamin_duplicate",
           "ibd2-multivitamin--7-day--multivitamin_absorption"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-novalgin-metamizole",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-novalgin-metamizole--standard--principal-action",
+          "ed-novalgin-metamizole--standard--drug-class",
+          "ed-novalgin-metamizole--7-day--principal-action",
+          "ed-novalgin-metamizole--7-day--drug-class"
+        ],
+        "mechanism": [
+          "ed-novalgin-metamizole--standard--principal-action",
+          "ed-novalgin-metamizole--7-day--principal-action"
+        ],
+        "why": [
+          "ed-novalgin-metamizole--standard--principal-action",
+          "ed-novalgin-metamizole--standard--hypotension",
+          "ed-novalgin-metamizole--advanced--hypotension",
+          "ed-novalgin-metamizole--7-day--principal-action",
+          "ed-novalgin-metamizole--7-day--hypotension"
+        ],
+        "use": [
+          "ed-novalgin-metamizole--standard--treatment-role",
+          "ed-novalgin-metamizole--standard--pain_response",
+          "ed-novalgin-metamizole--standard--slow_iv",
+          "ed-novalgin-metamizole--7-day--treatment-role",
+          "ed-novalgin-metamizole--7-day--pain_response",
+          "ed-novalgin-metamizole--7-day--slow_iv"
+        ],
+        "memoryUse": [
+          "ed-novalgin-metamizole--standard--treatment-role",
+          "ed-novalgin-metamizole--standard--pain_response",
+          "ed-novalgin-metamizole--7-day--treatment-role",
+          "ed-novalgin-metamizole--7-day--pain_response"
+        ],
+        "administration": [
+          "ed-novalgin-metamizole--standard--hypotension",
+          "ed-novalgin-metamizole--standard--slow_iv",
+          "ed-novalgin-metamizole--advanced--hypotension",
+          "ed-novalgin-metamizole--advanced--formulation",
+          "ed-novalgin-metamizole--7-day--hypotension",
+          "ed-novalgin-metamizole--7-day--slow_iv",
+          "ed-novalgin-metamizole--7-day--formulation"
+        ],
+        "monitor": [
+          "ed-novalgin-metamizole--standard--hypotension",
+          "ed-novalgin-metamizole--standard--pain_response",
+          "ed-novalgin-metamizole--standard--metamizole_agranulocytosis",
+          "ed-novalgin-metamizole--advanced--hypotension",
+          "ed-novalgin-metamizole--advanced--metamizole_agranulocytosis",
+          "ed-novalgin-metamizole--7-day--hypotension",
+          "ed-novalgin-metamizole--7-day--pain_response",
+          "ed-novalgin-metamizole--7-day--metamizole_agranulocytosis"
+        ],
+        "memoryDanger": [
+          "ed-novalgin-metamizole--standard--hypotension",
+          "ed-novalgin-metamizole--standard--pain_response",
+          "ed-novalgin-metamizole--standard--metamizole_agranulocytosis",
+          "ed-novalgin-metamizole--advanced--hypotension",
+          "ed-novalgin-metamizole--advanced--metamizole_agranulocytosis",
+          "ed-novalgin-metamizole--7-day--hypotension",
+          "ed-novalgin-metamizole--7-day--pain_response",
+          "ed-novalgin-metamizole--7-day--metamizole_agranulocytosis"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-decort-dexamethasone",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-decort-dexamethasone--standard--principal-action",
+          "ed-decort-dexamethasone--standard--drug-class",
+          "ed-decort-dexamethasone--7-day--principal-action",
+          "ed-decort-dexamethasone--7-day--drug-class"
+        ],
+        "mechanism": [
+          "ed-decort-dexamethasone--standard--principal-action",
+          "ed-decort-dexamethasone--7-day--principal-action"
+        ],
+        "why": [
+          "ed-decort-dexamethasone--standard--principal-action",
+          "ed-decort-dexamethasone--standard--steroid_glucose",
+          "ed-decort-dexamethasone--7-day--principal-action",
+          "ed-decort-dexamethasone--7-day--steroid_glucose"
+        ],
+        "use": [
+          "ed-decort-dexamethasone--standard--treatment-role",
+          "ed-decort-dexamethasone--7-day--treatment-role"
+        ],
+        "memoryUse": [
+          "ed-decort-dexamethasone--standard--treatment-role",
+          "ed-decort-dexamethasone--7-day--treatment-role"
+        ],
+        "monitor": [
+          "ed-decort-dexamethasone--standard--steroid_glucose",
+          "ed-decort-dexamethasone--advanced--steroid_infection",
+          "ed-decort-dexamethasone--7-day--steroid_glucose",
+          "ed-decort-dexamethasone--7-day--steroid_infection"
+        ],
+        "memoryDanger": [
+          "ed-decort-dexamethasone--advanced--steroid_infection",
+          "ed-decort-dexamethasone--7-day--steroid_infection"
+        ],
+        "administration": [
+          "ed-decort-dexamethasone--advanced--formulation",
+          "ed-decort-dexamethasone--7-day--formulation"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-ondansetron-provisional-shelf--standard--principal-action",
+          "ed-ondansetron-provisional-shelf--standard--drug-class",
+          "ed-ondansetron-provisional-shelf--7-day--principal-action",
+          "ed-ondansetron-provisional-shelf--7-day--drug-class"
+        ],
+        "mechanism": [
+          "ed-ondansetron-provisional-shelf--standard--principal-action",
+          "ed-ondansetron-provisional-shelf--standard--serotonin",
+          "ed-ondansetron-provisional-shelf--advanced--serotonin",
+          "ed-ondansetron-provisional-shelf--7-day--principal-action",
+          "ed-ondansetron-provisional-shelf--7-day--serotonin"
+        ],
+        "why": [
+          "ed-ondansetron-provisional-shelf--standard--principal-action",
+          "ed-ondansetron-provisional-shelf--standard--serotonin",
+          "ed-ondansetron-provisional-shelf--advanced--serotonin",
+          "ed-ondansetron-provisional-shelf--7-day--principal-action",
+          "ed-ondansetron-provisional-shelf--7-day--serotonin"
+        ],
+        "use": [
+          "ed-ondansetron-provisional-shelf--standard--treatment-role",
+          "ed-ondansetron-provisional-shelf--7-day--treatment-role"
+        ],
+        "memoryUse": [
+          "ed-ondansetron-provisional-shelf--standard--treatment-role",
+          "ed-ondansetron-provisional-shelf--7-day--treatment-role"
+        ],
+        "monitor": [
+          "ed-ondansetron-provisional-shelf--standard--qt",
+          "ed-ondansetron-provisional-shelf--standard--serotonin",
+          "ed-ondansetron-provisional-shelf--advanced--qt",
+          "ed-ondansetron-provisional-shelf--advanced--serotonin",
+          "ed-ondansetron-provisional-shelf--7-day--qt",
+          "ed-ondansetron-provisional-shelf--7-day--serotonin"
+        ],
+        "memoryDanger": [
+          "ed-ondansetron-provisional-shelf--standard--qt",
+          "ed-ondansetron-provisional-shelf--advanced--qt",
+          "ed-ondansetron-provisional-shelf--7-day--qt"
+        ],
+        "administration": [
+          "ed-ondansetron-provisional-shelf--advanced--formulation",
+          "ed-ondansetron-provisional-shelf--7-day--formulation"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-diclofenac-injection",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-diclofenac-injection--standard--principal-action",
+          "ed-diclofenac-injection--standard--drug-class",
+          "ed-diclofenac-injection--7-day--principal-action",
+          "ed-diclofenac-injection--7-day--drug-class"
+        ],
+        "mechanism": [
+          "ed-diclofenac-injection--standard--principal-action",
+          "ed-diclofenac-injection--7-day--principal-action"
+        ],
+        "why": [
+          "ed-diclofenac-injection--standard--principal-action",
+          "ed-diclofenac-injection--standard--nsaid_gi",
+          "ed-diclofenac-injection--standard--nsaid_renal",
+          "ed-diclofenac-injection--advanced--nsaid_gi",
+          "ed-diclofenac-injection--advanced--nsaid_renal",
+          "ed-diclofenac-injection--advanced--formulation",
+          "ed-diclofenac-injection--7-day--principal-action",
+          "ed-diclofenac-injection--7-day--nsaid_gi",
+          "ed-diclofenac-injection--7-day--nsaid_renal",
+          "ed-diclofenac-injection--7-day--formulation"
+        ],
+        "use": [
+          "ed-diclofenac-injection--standard--treatment-role",
+          "ed-diclofenac-injection--standard--nsaid_renal",
+          "ed-diclofenac-injection--advanced--nsaid_renal",
+          "ed-diclofenac-injection--7-day--treatment-role",
+          "ed-diclofenac-injection--7-day--nsaid_renal"
+        ],
+        "memoryUse": [
+          "ed-diclofenac-injection--standard--treatment-role",
+          "ed-diclofenac-injection--7-day--treatment-role"
+        ],
+        "monitor": [
+          "ed-diclofenac-injection--standard--nsaid_gi",
+          "ed-diclofenac-injection--standard--nsaid_renal",
+          "ed-diclofenac-injection--standard--nsaid_allergy",
+          "ed-diclofenac-injection--advanced--nsaid_gi",
+          "ed-diclofenac-injection--advanced--nsaid_renal",
+          "ed-diclofenac-injection--advanced--nsaid_allergy",
+          "ed-diclofenac-injection--advanced--duplicate_nsaid",
+          "ed-diclofenac-injection--7-day--nsaid_gi",
+          "ed-diclofenac-injection--7-day--nsaid_renal",
+          "ed-diclofenac-injection--7-day--nsaid_allergy",
+          "ed-diclofenac-injection--7-day--duplicate_nsaid"
+        ],
+        "memoryDanger": [
+          "ed-diclofenac-injection--standard--nsaid_gi",
+          "ed-diclofenac-injection--standard--nsaid_renal",
+          "ed-diclofenac-injection--advanced--nsaid_gi",
+          "ed-diclofenac-injection--advanced--nsaid_renal",
+          "ed-diclofenac-injection--advanced--duplicate_nsaid",
+          "ed-diclofenac-injection--7-day--nsaid_gi",
+          "ed-diclofenac-injection--7-day--nsaid_renal",
+          "ed-diclofenac-injection--7-day--duplicate_nsaid"
+        ],
+        "administration": [
+          "ed-diclofenac-injection--advanced--formulation",
+          "ed-diclofenac-injection--7-day--formulation"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-vitamin-k-phytonadione",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-vitamin-k-phytonadione--standard--principal-action",
+          "ed-vitamin-k-phytonadione--standard--drug-class",
+          "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--7-day--principal-action",
+          "ed-vitamin-k-phytonadione--7-day--drug-class",
+          "ed-vitamin-k-phytonadione--7-day--warfarin_reversal"
+        ],
+        "mechanism": [
+          "ed-vitamin-k-phytonadione--standard--principal-action",
+          "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--7-day--principal-action",
+          "ed-vitamin-k-phytonadione--7-day--warfarin_reversal"
+        ],
+        "why": [
+          "ed-vitamin-k-phytonadione--standard--principal-action",
+          "ed-vitamin-k-phytonadione--7-day--principal-action"
+        ],
+        "use": [
+          "ed-vitamin-k-phytonadione--standard--treatment-role",
+          "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--7-day--treatment-role",
+          "ed-vitamin-k-phytonadione--7-day--warfarin_reversal"
+        ],
+        "memoryUse": [
+          "ed-vitamin-k-phytonadione--standard--treatment-role",
+          "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--7-day--treatment-role",
+          "ed-vitamin-k-phytonadione--7-day--warfarin_reversal"
+        ],
+        "administration": [
+          "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--advanced--formulation",
+          "ed-vitamin-k-phytonadione--7-day--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--7-day--formulation"
+        ],
+        "monitor": [
+          "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--standard--vitk_anaphylaxis",
+          "ed-vitamin-k-phytonadione--standard--vitk_delayed_effect",
+          "ed-vitamin-k-phytonadione--advanced--vitk_anaphylaxis",
+          "ed-vitamin-k-phytonadione--advanced--vitk_delayed_effect",
+          "ed-vitamin-k-phytonadione--7-day--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--7-day--vitk_anaphylaxis",
+          "ed-vitamin-k-phytonadione--7-day--vitk_delayed_effect"
+        ],
+        "memoryDanger": [
+          "ed-vitamin-k-phytonadione--standard--vitk_anaphylaxis",
+          "ed-vitamin-k-phytonadione--advanced--vitk_anaphylaxis",
+          "ed-vitamin-k-phytonadione--7-day--vitk_anaphylaxis"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-hexakapron-tranexamic",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-hexakapron-tranexamic--standard--principal-action",
+          "ed-hexakapron-tranexamic--standard--drug-class",
+          "ed-hexakapron-tranexamic--7-day--principal-action",
+          "ed-hexakapron-tranexamic--7-day--drug-class"
+        ],
+        "mechanism": [
+          "ed-hexakapron-tranexamic--standard--principal-action",
+          "ed-hexakapron-tranexamic--7-day--principal-action"
+        ],
+        "why": [
+          "ed-hexakapron-tranexamic--standard--principal-action",
+          "ed-hexakapron-tranexamic--standard--slow_iv",
+          "ed-hexakapron-tranexamic--7-day--principal-action",
+          "ed-hexakapron-tranexamic--7-day--slow_iv"
+        ],
+        "use": [
+          "ed-hexakapron-tranexamic--standard--treatment-role",
+          "ed-hexakapron-tranexamic--standard--slow_iv",
+          "ed-hexakapron-tranexamic--advanced--formulation",
+          "ed-hexakapron-tranexamic--7-day--treatment-role",
+          "ed-hexakapron-tranexamic--7-day--slow_iv",
+          "ed-hexakapron-tranexamic--7-day--formulation"
+        ],
+        "memoryUse": [
+          "ed-hexakapron-tranexamic--standard--treatment-role",
+          "ed-hexakapron-tranexamic--7-day--treatment-role"
+        ],
+        "monitor": [
+          "ed-hexakapron-tranexamic--standard--renal_dose",
+          "ed-hexakapron-tranexamic--standard--slow_iv",
+          "ed-hexakapron-tranexamic--advanced--renal_dose",
+          "ed-hexakapron-tranexamic--advanced--formulation",
+          "ed-hexakapron-tranexamic--7-day--renal_dose",
+          "ed-hexakapron-tranexamic--7-day--slow_iv",
+          "ed-hexakapron-tranexamic--7-day--formulation"
+        ],
+        "administration": [
+          "ed-hexakapron-tranexamic--standard--slow_iv",
+          "ed-hexakapron-tranexamic--standard--txa_wrong_route",
+          "ed-hexakapron-tranexamic--advanced--formulation",
+          "ed-hexakapron-tranexamic--advanced--txa_wrong_route",
+          "ed-hexakapron-tranexamic--7-day--slow_iv",
+          "ed-hexakapron-tranexamic--7-day--txa_wrong_route",
+          "ed-hexakapron-tranexamic--7-day--formulation"
+        ],
+        "memoryDanger": [
+          "ed-hexakapron-tranexamic--standard--slow_iv",
+          "ed-hexakapron-tranexamic--standard--txa_wrong_route",
+          "ed-hexakapron-tranexamic--advanced--txa_wrong_route",
+          "ed-hexakapron-tranexamic--7-day--slow_iv",
+          "ed-hexakapron-tranexamic--7-day--txa_wrong_route"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-captopril-tablets",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-captopril-tablets--standard--principal-action",
+          "ed-captopril-tablets--standard--drug-class",
+          "ed-captopril-tablets--7-day--principal-action",
+          "ed-captopril-tablets--7-day--drug-class"
+        ],
+        "mechanism": [
+          "ed-captopril-tablets--standard--principal-action",
+          "ed-captopril-tablets--7-day--principal-action"
+        ],
+        "why": [
+          "ed-captopril-tablets--standard--principal-action",
+          "ed-captopril-tablets--standard--high_k",
+          "ed-captopril-tablets--standard--renal_monitor",
+          "ed-captopril-tablets--advanced--high_k",
+          "ed-captopril-tablets--7-day--principal-action",
+          "ed-captopril-tablets--7-day--high_k",
+          "ed-captopril-tablets--7-day--renal_monitor"
+        ],
+        "use": [
+          "ed-captopril-tablets--standard--treatment-role",
+          "ed-captopril-tablets--7-day--treatment-role"
+        ],
+        "memoryUse": [
+          "ed-captopril-tablets--standard--treatment-role",
+          "ed-captopril-tablets--standard--hypotension",
+          "ed-captopril-tablets--advanced--hypotension",
+          "ed-captopril-tablets--7-day--treatment-role",
+          "ed-captopril-tablets--7-day--hypotension"
+        ],
+        "monitor": [
+          "ed-captopril-tablets--standard--pregnancy",
+          "ed-captopril-tablets--standard--high_k",
+          "ed-captopril-tablets--standard--hypotension",
+          "ed-captopril-tablets--standard--renal_monitor",
+          "ed-captopril-tablets--standard--ace_history",
+          "ed-captopril-tablets--advanced--pregnancy",
+          "ed-captopril-tablets--advanced--high_k",
+          "ed-captopril-tablets--advanced--hypotension",
+          "ed-captopril-tablets--7-day--pregnancy",
+          "ed-captopril-tablets--7-day--high_k",
+          "ed-captopril-tablets--7-day--hypotension",
+          "ed-captopril-tablets--7-day--renal_monitor",
+          "ed-captopril-tablets--7-day--ace_history"
+        ],
+        "memoryDanger": [
+          "ed-captopril-tablets--standard--pregnancy",
+          "ed-captopril-tablets--standard--hypotension",
+          "ed-captopril-tablets--standard--renal_monitor",
+          "ed-captopril-tablets--advanced--pregnancy",
+          "ed-captopril-tablets--advanced--hypotension",
+          "ed-captopril-tablets--7-day--pregnancy",
+          "ed-captopril-tablets--7-day--hypotension",
+          "ed-captopril-tablets--7-day--renal_monitor"
+        ],
+        "administration": [
+          "ed-captopril-tablets--standard--hypotension",
+          "ed-captopril-tablets--advanced--hypotension",
+          "ed-captopril-tablets--7-day--hypotension"
         ]
       },
       "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."

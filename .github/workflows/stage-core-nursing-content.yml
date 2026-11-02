@@ -1,0 +1,54 @@
+name: Build Core Nursing content on staging branches
+on:
+  push:
+    branches: ['updates/**']
+    paths:
+      - 'content.json'
+      - 'exams/authoring/**'
+      - 'exams/sources.json'
+      - 'runtime/files/js/app.js'
+      - 'runtime/files/index.html'
+      - 'scripts/generate_runtime_manifest.py'
+      - '.github/workflows/stage-core-nursing-content.yml'
+permissions:
+  contents: write
+concurrency:
+  group: core-nursing-staging-${{ github.ref_name }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build source-bound ED exam banks and runtime exam data
+        run: |
+          python scripts/build_exams.py
+          python scripts/build_runtime_exam_data.py
+          python scripts/generate_runtime_manifest.py
+          python scripts/validate_runtime.py
+      - name: Commit generated outputs to staging
+        run: |
+          git add exams/generated runtime/files/js/exam-data*.js runtime/runtime-manifest.json runtime/objects
+          if git diff --cached --quiet; then
+            echo "Staging outputs already current."
+            exit 0
+          fi
+          git config user.name "Core Nursing Staging Builder"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "Build staged ED medication exams and runtime data"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            if git push origin HEAD:"${{ github.ref_name }}"; then
+              exit 0
+            fi
+            echo "Concurrent signer updated staging branch; retrying push"
+            sleep 2
+          done
+          echo "::error::Unable to push staged output after five safe retries"
+          exit 1
