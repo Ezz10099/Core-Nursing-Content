@@ -83,6 +83,15 @@ class RefParser(html.parser.HTMLParser):
 
 index=(FILES / m["entryPoint"]).read_text(encoding="utf-8")
 parser=RefParser(); parser.feed(index)
+# Every generated exam data shard must actually load in the browser and Android WebView.
+exam_shards = sorted(p.relative_to(FILES).as_posix() for p in (FILES / "js").glob("exam-data-[0-9][0-9].js"))
+loaded_shards = [ref for ref in parser.refs if re.fullmatch(r"js/exam-data-[0-9]{2}\.js", ref)]
+if loaded_shards != exam_shards:
+    fail(f"Generated exam shards not fully loaded: expected={exam_shards}, actual={loaded_shards}")
+if exam_shards and ("js/exam-data.js" not in parser.refs or
+                    parser.refs.index("js/exam-data.js") > parser.refs.index(exam_shards[0]) or
+                    parser.refs.index("js/app.js") < parser.refs.index(exam_shards[-1])):
+    fail("Exam data scripts must initialize, then load all shards before app JS")
 for ref in parser.refs:
     if re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*:", ref) or ref.startswith("//"):
         fail(f"external runtime resource forbidden: {ref}")
