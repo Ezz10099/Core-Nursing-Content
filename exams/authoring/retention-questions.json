@@ -5002,6 +5002,432 @@
           }
         ]
       }
+    ],
+    "ibd2-lesson-03-open-gunshot-fractures": [
+      {
+        "stem": "A tibial fracture has only a small puncture wound nearby and no visible bone. Could it still be open?",
+        "choices": [
+          {
+            "text": "Yes, if the wound communicates with the fracture",
+            "explanation": "Open fractures do not require visible bone."
+          },
+          {
+            "text": "No, bone must be protruding",
+            "explanation": "Visible bone is not required."
+          },
+          {
+            "text": "No, all puncture wounds are superficial",
+            "explanation": "A puncture can communicate deeply."
+          },
+          {
+            "text": "Only if the patient has a fever",
+            "explanation": "Fever does not define an open fracture."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          0,
+          5
+        ],
+        "point": "An open fracture communicates with an external wound; visible bone is not required.",
+        "stage": "7-day",
+        "criticalForSafety": false
+      },
+      {
+        "stem": "After an open fracture, the foot becomes numb and movement weakens. What should happen next?",
+        "choices": [
+          {
+            "text": "Urgent neurovascular reassessment and escalation",
+            "explanation": "New neurological loss can indicate limb-threatening deterioration."
+          },
+          {
+            "text": "Wait for the next antibiotic dose",
+            "explanation": "Antibiotic timing does not address acute neurovascular decline."
+          },
+          {
+            "text": "Change the wound dressing first and reassess tomorrow",
+            "explanation": "This delays a limb-safety assessment."
+          },
+          {
+            "text": "Assume the findings are expected after trauma",
+            "explanation": "New deterioration is not safely assumed to be normal."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          1,
+          4
+        ],
+        "point": "Neurovascular deterioration or systemic deterioration after an open fracture requires urgent escalation.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      }
+    ],
+    "ibd2-lesson-05-bka-aka-care": [
+      {
+        "stem": "A patient says the missing foot is burning painfully. What is the best response?",
+        "choices": [
+          {
+            "text": "Assess it as phantom limb pain and treat according to the plan",
+            "explanation": "Phantom pain is real and clinically relevant."
+          },
+          {
+            "text": "Explain that pain is impossible because the foot is absent",
+            "explanation": "The neurological pain experience can persist after amputation."
+          },
+          {
+            "text": "Ignore it unless the wound is infected",
+            "explanation": "Phantom pain can occur without infection."
+          },
+          {
+            "text": "Document anxiety only",
+            "explanation": "This misses the pain complaint."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          2
+        ],
+        "point": "Phantom limb pain is real pain perceived in the removed limb.",
+        "stage": "7-day",
+        "criticalForSafety": false
+      },
+      {
+        "stem": "Which new finding after amputation needs the fastest escalation?",
+        "choices": [
+          {
+            "text": "Rapidly increasing bleeding with tachycardia",
+            "explanation": "This can indicate postoperative hemorrhage."
+          },
+          {
+            "text": "Stable pain that improves after prescribed analgesia",
+            "explanation": "This suggests treatment response."
+          },
+          {
+            "text": "A clean dry dressing",
+            "explanation": "This is reassuring rather than emergent."
+          },
+          {
+            "text": "A patient asking about rehabilitation",
+            "explanation": "This is important but not an acute threat."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          1,
+          4
+        ],
+        "point": "Active or increasing bleeding after amputation requires urgent assessment and escalation.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      }
+    ],
+    "ibd2-lesson-06-orthopaedic-pain-meds": [
+      {
+        "stem": "A fracture patient's pain abruptly increases despite scheduled analgesia. What is the next priority?",
+        "choices": [
+          {
+            "text": "Reassess the limb and neurovascular status",
+            "explanation": "Unexpected pain can signal a complication."
+          },
+          {
+            "text": "Automatically double the next analgesic dose",
+            "explanation": "Dose changes require an authorized plan and may miss deterioration."
+          },
+          {
+            "text": "Wait until the end of shift to compare pain scores",
+            "explanation": "This delays assessment."
+          },
+          {
+            "text": "Assume the medication has failed without examining the limb",
+            "explanation": "The cause of pain must be reassessed."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          0,
+          1
+        ],
+        "point": "Unexpectedly worsening orthopaedic pain should trigger reassessment for a cause, not just repeated analgesia.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      },
+      {
+        "stem": "After tramadol or another sedating analgesic, which finding is most important to monitor?",
+        "choices": [
+          {
+            "text": "Increasing drowsiness with slow or shallow breathing",
+            "explanation": "Sedation and respiratory depression are safety concerns."
+          },
+          {
+            "text": "A stable dry dressing alone",
+            "explanation": "This does not assess medication effect."
+          },
+          {
+            "text": "The patient's preferred meal time",
+            "explanation": "This is not the key acute medication concern."
+          },
+          {
+            "text": "Whether the medication name is easy to pronounce",
+            "explanation": "This has no safety value."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          3
+        ],
+        "point": "After analgesia, reassess pain response and monitor alertness/respiration when sedating medicines are used.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      }
+    ],
+    "ibd2-lesson-07-mobility-pressure-vte": [
+      {
+        "stem": "A patient with a leg fracture is ready to stand. What should the nurse check first?",
+        "choices": [
+          {
+            "text": "The weight-bearing order and required assistance",
+            "explanation": "Safe loading depends on the prescribed plan."
+          },
+          {
+            "text": "Whether the external frame looks strong enough",
+            "explanation": "Appearance does not authorize weight-bearing."
+          },
+          {
+            "text": "Whether another patient was allowed to walk",
+            "explanation": "Orders are patient-specific."
+          },
+          {
+            "text": "Whether the patient has eaten breakfast",
+            "explanation": "This does not determine fracture loading."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          0
+        ],
+        "point": "Before mobilizing, verify prescribed weight-bearing status, assistive device and needed assistance.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      },
+      {
+        "stem": "New unilateral calf swelling is followed by sudden dyspnea and chest pain. What should be suspected?",
+        "choices": [
+          {
+            "text": "Pulmonary embolism from possible DVT",
+            "explanation": "This combination is an emergency VTE pattern."
+          },
+          {
+            "text": "Normal deconditioning only",
+            "explanation": "Sudden cardiopulmonary symptoms are not explained safely by deconditioning alone."
+          },
+          {
+            "text": "A pressure injury without respiratory involvement",
+            "explanation": "Pressure injury does not explain acute dyspnea and chest pain."
+          },
+          {
+            "text": "Expected post-fracture discomfort",
+            "explanation": "The sudden respiratory symptoms require emergency assessment."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          2,
+          3
+        ],
+        "point": "Sudden dyspnea/chest pain in a VTE-risk patient requires emergency escalation for possible PE.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      }
+    ],
+    "ibd2-lesson-08-infection-labs-culture": [
+      {
+        "stem": "Which statement about CRP is correct?",
+        "choices": [
+          {
+            "text": "It is a nonspecific marker of inflammation",
+            "explanation": "It can rise from many inflammatory conditions."
+          },
+          {
+            "text": "It identifies the exact bacterium",
+            "explanation": "Culture is used for organism identification."
+          },
+          {
+            "text": "It proves osteomyelitis when elevated",
+            "explanation": "It is not diagnostic by itself."
+          },
+          {
+            "text": "It replaces wound assessment",
+            "explanation": "Clinical findings remain necessary."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          1
+        ],
+        "point": "CRP is a nonspecific inflammatory marker and must be interpreted with the clinical picture and trend.",
+        "stage": "7-day",
+        "criticalForSafety": false
+      },
+      {
+        "stem": "A septic orthopaedic patient is unstable and cultures are pending. What should not happen?",
+        "choices": [
+          {
+            "text": "Urgent treatment should not be delayed solely for cultures",
+            "explanation": "The unstable patient needs immediate care."
+          },
+          {
+            "text": "The patient should be assessed promptly",
+            "explanation": "Prompt assessment is appropriate."
+          },
+          {
+            "text": "Cultures should be obtained when feasible under the plan",
+            "explanation": "Sampling can still be useful."
+          },
+          {
+            "text": "The team should be informed of deterioration",
+            "explanation": "Escalation is necessary."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          4
+        ],
+        "point": "In an unstable septic patient, urgent treatment must not be delayed solely for culture collection.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      }
+    ],
+    "ibd2-lesson-09-documentation-sbar": [
+      {
+        "stem": "In SBAR, where do the current vital signs and abnormal focused findings mainly belong?",
+        "choices": [
+          {
+            "text": "Assessment, with the immediate problem stated in Situation",
+            "explanation": "Assessment carries the findings; Situation states why you are calling."
+          },
+          {
+            "text": "Recommendation only",
+            "explanation": "Recommendation states what you need next."
+          },
+          {
+            "text": "Background only",
+            "explanation": "Background gives relevant history/context."
+          },
+          {
+            "text": "They should be omitted to keep the call short",
+            "explanation": "Concise communication still needs critical findings."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          0
+        ],
+        "point": "SBAR means Situation, Background, Assessment and Recommendation/Request.",
+        "stage": "7-day",
+        "criticalForSafety": false
+      },
+      {
+        "stem": "After reporting a new limb-safety problem, what should the chart show?",
+        "choices": [
+          {
+            "text": "Time, findings, action, notification, instructions and reassessment",
+            "explanation": "These document the clinical event and response."
+          },
+          {
+            "text": "Only the words “team aware”",
+            "explanation": "This is too vague."
+          },
+          {
+            "text": "Only the medication list",
+            "explanation": "This does not document the event."
+          },
+          {
+            "text": "Nothing until discharge",
+            "explanation": "Documentation should be timely."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          1,
+          4
+        ],
+        "point": "Document time, objective findings, action, notification, instructions and the patient's response/reassessment.",
+        "stage": "7-day",
+        "criticalForSafety": false
+      }
+    ],
+    "ibd2-lesson-10-integrated-scenarios": [
+      {
+        "stem": "A pulse is still palpable in a limb with severe pain on passive stretch. What should you remember?",
+        "choices": [
+          {
+            "text": "Compartment syndrome is still possible and needs urgent escalation",
+            "explanation": "A pulse may persist early."
+          },
+          {
+            "text": "The pulse rules out compartment syndrome",
+            "explanation": "This is a dangerous misconception."
+          },
+          {
+            "text": "Only fever determines urgency",
+            "explanation": "Compartment syndrome is not defined by fever."
+          },
+          {
+            "text": "The next analgesic dose is the only priority",
+            "explanation": "Emergency reassessment is needed."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          0
+        ],
+        "point": "Recognize compartment syndrome despite a palpable pulse and escalate urgently.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      },
+      {
+        "stem": "A patient with a possible DVT suddenly becomes short of breath with chest pain. What is the priority?",
+        "choices": [
+          {
+            "text": "Urgent ABC assessment and escalation for possible PE",
+            "explanation": "This is a medical emergency."
+          },
+          {
+            "text": "Wait for routine rounds",
+            "explanation": "Delay is unsafe."
+          },
+          {
+            "text": "Apply heat and reassess the calf only",
+            "explanation": "This does not address the cardiopulmonary emergency."
+          },
+          {
+            "text": "Encourage independent walking",
+            "explanation": "This is unsafe."
+          }
+        ],
+        "correct": 0,
+        "format": "single-best-answer",
+        "sections": [
+          3
+        ],
+        "point": "Possible DVT with sudden cardiopulmonary symptoms requires emergency escalation for PE.",
+        "stage": "7-day",
+        "criticalForSafety": true
+      }
     ]
   },
   "medicationRestrictions": {

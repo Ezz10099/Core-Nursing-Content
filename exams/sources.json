@@ -1102,6 +1102,43 @@
       "type": "supplied reference",
       "filename": "05-Health-Alterations-1781195254.pdf",
       "scope": "Fracture neurovascular/compartment-syndrome mechanisms consulted."
+    },
+    {
+      "id": "content-v37",
+      "type": "taught content",
+      "file": "content.json",
+      "scope": "Core Nursing content version 37; exact lesson sections are linked by question hashes."
+    },
+    {
+      "id": "supplied-fundamentals",
+      "type": "project source",
+      "filename": "Nursing-Fundamentals-2e-1781194661.pdf",
+      "checkedDate": "2026-11-02",
+      "reviewScope": "Structured study baseline for pressure injury, mobility, communication and documentation."
+    },
+    {
+      "id": "cdc-tetanus-2026",
+      "type": "official clinical guidance",
+      "title": "CDC Clinical Guidance for Wound Management to Prevent Tetanus",
+      "url": "https://www.cdc.gov/tetanus/hcp/clinical-guidance/",
+      "checkedDate": "2026-11-02",
+      "reviewScope": "Tetanus wound-risk and prophylaxis context for open/compound trauma."
+    },
+    {
+      "id": "aaos-major-extremity-trauma",
+      "type": "professional clinical practice guideline",
+      "title": "AAOS Prevention of Surgical Site Infections After Major Extremity Trauma",
+      "url": "https://www.aaos.org/ssitraumacpg",
+      "checkedDate": "2026-11-02",
+      "reviewScope": "Major-extremity-trauma infection prevention context, including open and gunshot injuries."
+    },
+    {
+      "id": "boast-fri",
+      "type": "professional standard",
+      "title": "BOAST Fracture Related Infections",
+      "url": "https://www.boa.ac.uk/resource/boast-fracture-related-infections.html",
+      "checkedDate": "2026-11-02",
+      "reviewScope": "Sampling, escalation and sepsis-treatment principles for fracture-related infection."
     }
   ],
   "itemEvidence": {
@@ -1484,6 +1521,39 @@
     "ibd2-lesson-04-osteomyelitis": [
       "content-v35",
       "supplied-health-alterations"
+    ],
+    "ibd2-lesson-03-open-gunshot-fractures": [
+      "content-v37",
+      "supplied-health-alterations",
+      "aaos-major-extremity-trauma",
+      "cdc-tetanus-2026"
+    ],
+    "ibd2-lesson-05-bka-aka-care": [
+      "content-v37",
+      "supplied-health-alterations"
+    ],
+    "ibd2-lesson-06-orthopaedic-pain-meds": [
+      "content-v37",
+      "supplied-health-alterations"
+    ],
+    "ibd2-lesson-07-mobility-pressure-vte": [
+      "content-v37",
+      "supplied-health-alterations",
+      "supplied-fundamentals"
+    ],
+    "ibd2-lesson-08-infection-labs-culture": [
+      "content-v37",
+      "supplied-health-alterations",
+      "boast-fri"
+    ],
+    "ibd2-lesson-09-documentation-sbar": [
+      "content-v37",
+      "supplied-fundamentals"
+    ],
+    "ibd2-lesson-10-integrated-scenarios": [
+      "content-v37",
+      "supplied-health-alterations",
+      "supplied-fundamentals"
     ]
   },
   "selectedChecks": [
