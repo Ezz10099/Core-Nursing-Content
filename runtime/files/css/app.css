@@ -65,3 +65,26 @@ h1,h2,h3,p{margin-top:0}h1{font-size:30px;line-height:1.2;letter-spacing:-.045em
 .exam-details .exam-start h3{font-size:16px}
 .exam-details .note,.exam-reading>.note,.exam-rules{font-size:13px}
 .exam-rules{padding-left:18px;line-height:1.7}.exam-rules li{margin:8px 0}
+
+/* Private clinical Q&A notebook */
+.notes-toolbar .primary{width:100%;min-height:48px}
+.notes-searchbar{display:grid;grid-template-columns:1fr;gap:9px;margin-top:12px}
+.notes-searchbar input,.notes-searchbar select,.notes-editor input,.notes-editor select,.notes-editor textarea{box-sizing:border-box;width:100%;background:var(--bg,var(--surface,#fff));color:var(--text);border:1px solid var(--line);border-radius:11px;padding:12px;font:inherit}
+.notes-editor{display:grid;gap:8px;margin:14px 0}
+.notes-editor[hidden]{display:none}
+.notes-editor label{font-weight:600;font-size:13px;margin-top:8px}
+.notes-editor textarea{min-height:88px;resize:vertical;line-height:1.6}
+.notes-toolbar .note{margin:10px 0 0}
+.note-card{background:var(--surface,var(--card,#19232a));border:1px solid var(--line);border-radius:15px;padding:17px;margin-bottom:12px;overflow-wrap:anywhere}
+.note-card h3{font-size:16px;line-height:1.55;margin:10px 0 12px}
+.note-card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.note-card-top small{color:var(--muted)}
+.note-card summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600}
+.note-answer{white-space:pre-wrap;line-height:1.7;font-size:14px;border-top:1px solid var(--line);padding-top:10px}
+.note-tags{display:flex;gap:5px;flex-wrap:wrap;margin:12px 0}
+.note-tags span{border:1px solid var(--line);border-radius:30px;padding:4px 8px;font-size:11px}
+.note-card .tools{display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.note-state{font-size:11px;color:var(--muted);flex:1}
+.note-card .tools button{min-height:44px;font-size:13px}
+.note-save{margin:10px 0 4px;min-height:44px;width:100%;white-space:normal}
+@media(min-width:650px){.notes-searchbar{grid-template-columns:1fr 190px}}
