@@ -60,4 +60,19 @@
 <button id="tab-practice" aria-pressed="false" onclick="showTab('practice')"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg>Exams</button>
 <button id="tab-progress" aria-pressed="false" onclick="showTab('progress')"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V4M4 20h17M8 16v-4m5 4V7m5 9V9"/></svg>Progress</button>
 </div></nav>
+<button id="quickQuestionFab" class="quick-question-fab" type="button" aria-label="Ask a nursing question" aria-haspopup="dialog" aria-controls="quickQuestionOverlay" aria-expanded="false" onclick="CoreNursingNotes.quickOpen()"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9a4 4 0 1 1 7 2.6c-1.6 1.2-3 1.7-3 3.4"/><path d="M12 18h.01"/><path d="M4 3h16v18H4z"/></svg><span>Ask</span></button>
+<div id="quickQuestionOverlay" class="quick-question-overlay" role="dialog" aria-modal="true" aria-labelledby="quickQuestionTitle" hidden>
+<form class="quick-question-sheet" onsubmit="event.preventDefault();CoreNursingNotes.quickSave()">
+<div class="quick-question-heading"><h2 id="quickQuestionTitle">Save a question</h2><button type="button" class="quick-close" aria-label="Close question form" onclick="CoreNursingNotes.quickClose()">✕</button></div>
+<p id="quickQuestionContext" class="quick-question-context"></p>
+<label for="quickQuestionText">What would you like to understand?</label>
+<textarea id="quickQuestionText" maxlength="1000" rows="4" required placeholder="Type your question here. You can continue studying after saving."></textarea>
+<label for="quickQuestionDept">Department</label>
+<select id="quickQuestionDept"><option value="general">General</option><option value="ibd2">Orthopaedics (IBD2)</option><option value="ed">Emergency (ED)</option><option value="ccu">CCU</option></select>
+<p id="quickQuestionTiming" class="quick-question-warning" hidden>Advanced exam timer continues while you write.</p>
+<p class="quick-question-help">Saves immediately on this device, even offline. Never include patient-identifying details.</p>
+<p id="quickQuestionMessage" class="quick-question-error" role="status"></p>
+<div class="quick-question-actions"><button type="button" onclick="CoreNursingNotes.quickView()">My Q&amp;A</button><button class="primary" type="submit">Save &amp; return</button></div>
+</form></div>
+<div id="quickQuestionToast" class="quick-question-toast" role="status" hidden></div>
 <div id="updatePopup" class="update-popup" role="dialog" aria-modal="true" aria-labelledby="updatePopupTitle" aria-describedby="updatePopupText" hidden><div class="panel"><h2 id="updatePopupTitle">Update available</h2><p id="updatePopupText"></p><div class="tools"><button class="primary" id="popupUpdateNow">Update now</button><button id="popupUpdateLater">Later</button></div></div></div><script src="js/study-ui.js"></script><script src="js/reading.js"></script><script src="js/question-marks.js"></script><script src="js/exam-core.js"></script><script src="js/exam-data.js"></script><script src="js/exam-data-01.js"></script><script src="js/exam-data-02.js"></script><script src="js/exam-data-03.js"></script><script src="js/exam-data-04.js"></script><script src="js/exam-data-05.js"></script><script src="js/exam-data-06.js"></script><script src="js/app.js"></script><script src="js/notes.js"></script><script src="js/exams.js"></script><script src="js/updates.js"></script></body></html>
