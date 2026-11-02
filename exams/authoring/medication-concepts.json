@@ -6896,5 +6896,209 @@
       ]
     },
     "criticalForSafety": false
+  },
+  "metamizole_agranulocytosis": {
+    "point": "Recognize possible metamizole-induced agranulocytosis and escalate promptly.",
+    "anchor": "agranulocytosis|sore throat|mucosal ulcers",
+    "standard": {
+      "stem": "A patient recently given {drug} reports a new sore throat, fever and painful mouth ulcers. What serious adverse reaction must be considered?",
+      "choices": [
+        {
+          "text": "Agranulocytosis",
+          "explanation": "Metamizole can rarely cause life-threatening agranulocytosis, sometimes after the medicine has stopped."
+        },
+        {
+          "text": "Fluid retention",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Antimuscarinic toxicity",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Drug-induced hyperkalemia",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "A patient receiving {drug} develops fever and painful mouth ulcers. What should the nurse initiate while notifying the medical team?",
+      "choices": [
+        {
+          "text": "Stop the drug and arrange urgent differential blood count",
+          "explanation": "Suspected agranulocytosis warrants discontinuation and urgent blood count; prior tolerance or a prior normal CBC does not rule it out."
+        },
+        {
+          "text": "Continue until a routine follow-up appointment",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Rely on a normal previous blood count",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Treat only the fever and keep dosing",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "criticalForSafety": true
+  },
+  "txa_wrong_route": {
+    "point": "Recognize that injectable tranexamic acid is IV-only and never neuraxial.",
+    "anchor": "intrathecal|epidural|IV ONLY",
+    "standard": {
+      "stem": "An injectable {drug} ampoule is brought to a neuraxial procedure. Which medication-administration danger should the nurse recognize?",
+      "choices": [
+        {
+          "text": "Accidental intrathecal or epidural administration",
+          "explanation": "Injectable tranexamic acid is for IV use; neuraxial administration has caused fatal injury."
+        },
+        {
+          "text": "Oral absorption failure",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Delayed tablet disintegration",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Interference with inhaler delivery",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "A team prepares to inject {drug} through an epidural line after confusing it with a local anesthetic. What is the nursing priority?",
+      "choices": [
+        {
+          "text": "Stop the wrong-route preparation and escalate immediately",
+          "explanation": "No volume reduction or slow injection makes neuraxial TXA safe."
+        },
+        {
+          "text": "Continue using a smaller volume",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Give the solution more slowly via the epidural line",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Flush the epidural catheter before administration",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "criticalForSafety": true
+  },
+  "vitk_anaphylaxis": {
+    "point": "Recognize severe hypersensitivity during injectable phytonadione administration.",
+    "anchor": "hypersensitivity|anaphylaxis",
+    "standard": {
+      "stem": "A patient develops acute wheeze, flushing and hypotension after injectable {drug}. What should the nurse suspect?",
+      "choices": [
+        {
+          "text": "Severe hypersensitivity or anaphylaxis",
+          "explanation": "Parenteral phytonadione can rarely cause severe, even fatal hypersensitivity."
+        },
+        {
+          "text": "Expected antiplatelet action",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Normal delayed correction of INR",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Ordinary tablet intolerance",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "During IV administration of {drug}, a patient becomes hypotensive and develops airway symptoms. Which immediate response is appropriate?",
+      "choices": [
+        {
+          "text": "Stop the drug and activate emergency anaphylaxis care",
+          "explanation": "Immediate recognition, cessation and emergency anaphylaxis response take priority."
+        },
+        {
+          "text": "Continue the remaining dose more slowly",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Wait for a repeat INR result",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Switch the remaining dose to a larger syringe",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "criticalForSafety": true
+  },
+  "vitk_delayed_effect": {
+    "point": "Understand vitamin K reversal acts over hours; major warfarin bleeding can need PCC.",
+    "anchor": "hours|not immediately|rapid reversal",
+    "standard": {
+      "stem": "A patient has life-threatening warfarin-associated bleeding and is prescribed {drug}. Why might four-factor PCC also be ordered?",
+      "choices": [
+        {
+          "text": "Vitamin K correction of clotting factor activity is not immediate",
+          "explanation": "Phytonadione takes time; four-factor PCC supplies clotting factors for rapid reversal in indicated cases."
+        },
+        {
+          "text": "Vitamin K directly reverses all DOACs",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "PCC is only for pain relief",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "Vitamin K neutralizes heparin within seconds",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "A patient with severe warfarin-related bleeding receives {drug}. INR improvement has not yet occurred. Which explanation is clinically sound?",
+      "choices": [
+        {
+          "text": "Clotting factor synthesis and correction require time",
+          "explanation": "Vitamin K supports synthesis of vitamin-K-dependent factors rather than instant neutralization of circulating warfarin."
+        },
+        {
+          "text": "The medicine works only through platelet inhibition",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "The medicine is used solely to reduce fibrinolysis",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        },
+        {
+          "text": "The drug immediately destroys circulating warfarin",
+          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "criticalForSafety": true
   }
 }
