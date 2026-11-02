@@ -6,6 +6,7 @@ on:
       - 'content.json'
       - 'shell-manifest.json'
       - 'runtime/runtime-manifest.json'
+      - '.github/workflows/sign-core-nursing-updates.yml'
   workflow_dispatch:
 permissions:
   contents: write
