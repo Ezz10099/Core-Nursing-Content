@@ -88,3 +88,28 @@ h1,h2,h3,p{margin-top:0}h1{font-size:30px;line-height:1.2;letter-spacing:-.045em
 .note-card .tools button{min-height:44px;font-size:13px}
 .note-save{margin:10px 0 4px;min-height:44px;width:100%;white-space:normal}
 @media(min-width:650px){.notes-searchbar{grid-template-columns:1fr 190px}}
+
+/* Persistent, non-navigating capture button for studying and active exams. */
+main.wrap{padding-bottom:88px}
+.quick-question-fab{position:fixed;right:max(15px,env(safe-area-inset-right));bottom:calc(84px + env(safe-area-inset-bottom));z-index:80;display:flex;align-items:center;justify-content:center;gap:7px;min-height:49px;min-width:82px;padding:10px 15px;border:1px solid var(--accent);border-radius:100px;background:var(--accent);color:var(--bg);font-weight:800;font-size:14px;box-shadow:0 6px 22px #0007}
+.quick-question-fab svg{flex:none}
+.quick-question-fab:focus-visible{outline:3px solid var(--text);outline-offset:2px}
+.quick-question-overlay{position:fixed;inset:0;z-index:1100;display:flex;align-items:flex-end;justify-content:center;padding:12px max(12px,env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-right));background:#000a}
+.quick-question-sheet{width:min(100%,530px);max-height:calc(100dvh - 28px);overflow-y:auto;overscroll-behavior:contain;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 60px #0008}
+.quick-question-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:5px}
+.quick-question-heading h2{font-size:21px;margin:0}
+.quick-close{min-width:44px;min-height:44px;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text)}
+.quick-question-context{font-size:12px;color:var(--accent);font-weight:700;margin:0 0 15px;overflow-wrap:anywhere}
+.quick-question-sheet label{display:block;font-weight:700;font-size:13px;margin:10px 0 6px}
+.quick-question-sheet textarea,.quick-question-sheet select{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);font:inherit}
+.quick-question-sheet textarea{min-height:105px;resize:vertical;line-height:1.55}
+.quick-question-sheet select{min-height:43px}
+.quick-question-help{color:var(--muted);font-size:12px;line-height:1.5;margin:13px 0 4px}
+.quick-question-warning{padding:8px 10px;background:var(--warm-bg);color:var(--warm);font-size:12px;border-radius:9px;margin:12px 0 0}
+.quick-question-error{font-size:12px;color:var(--danger);min-height:0;margin:8px 0}
+.quick-question-error:empty{display:none}
+.quick-question-actions{display:flex;gap:10px;margin-top:12px}
+.quick-question-actions button{flex:1;min-height:48px;padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);font-weight:700}
+.quick-question-actions .primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.quick-question-toast{position:fixed;bottom:calc(142px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:1050;width:max-content;max-width:calc(100vw - 30px);padding:11px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--text);font-size:13px;box-shadow:0 9px 25px #0007;pointer-events:none;text-align:center}
+@media(min-width:640px){.quick-question-fab{right:max(22px,calc((100vw - 760px)/2 + 20px))}.quick-question-overlay{align-items:center}}

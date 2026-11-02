@@ -48,6 +48,104 @@
     save();field.value='';if(msg)msg.textContent='Saved offline. Continue studying.';
     if(cloudConfigured())sync(false);
   }
+
+  // One-tap question capture from any screen. Never navigates away from an active exam.
+  let quickContext = null, quickPriorFocus = null, quickToastTimer = null;
+  function quickStudyContext() {
+    const context = {department:'general', sourceType:'', sourceId:'', sourceTitle:''};
+    if (tab === 'clinical' || tab === 'library') {
+      const panel = tab === 'clinical' ? $('lessonDetail') : $('detail');
+      const inline = panel && !panel.classList.contains('hidden') && panel.querySelector('[data-save-inline]');
+      if (inline) {
+        return {
+          department:inline.getAttribute('data-dept') || 'general',
+          sourceType:inline.getAttribute('data-source-type') || '',
+          sourceId:inline.getAttribute('data-source-id') || '',
+          sourceTitle:inline.getAttribute('data-source-title') || ''
+        };
+      }
+      if (tab === 'clinical') {
+        const opened = $('clinicalFaqItems')?.querySelector('details.faq-section[open][data-reading-faq]');
+        if (opened) {
+          const id = opened.getAttribute('data-reading-faq');
+          const title = opened.querySelector('summary')?.textContent?.trim() || 'Clinical FAQ';
+          return {department:clinicalDepartment,sourceType:'faq',sourceId:id,sourceTitle:title.slice(0,160)};
+        }
+        context.department = clinicalDepartment;
+      }
+      if (tab === 'library' && ['ed','ibd2','ccu'].includes(catalogFilter)) context.department = catalogFilter;
+    } else if (tab === 'practice' && memory.exams?.active && !$('examSession')?.hidden) {
+      const exam = memory.exams.active;
+      const bank = window.CoreNursingExamData?.banks?.find(b=>b.itemId === exam.itemId);
+      if (bank) {
+        return {
+          department:bank.itemId.startsWith('ibd2-')?'ibd2':bank.itemId.startsWith('ed-')?'ed':'ccu',
+          sourceType:'exam',sourceId:bank.itemId,sourceTitle:bank.title+' · '+exam.stage+' exam'
+        };
+      }
+    }
+    return context;
+  }
+  function quickOpen() {
+    const overlay = $('quickQuestionOverlay'), input = $('quickQuestionText');
+    if (!overlay || !input || !overlay.hidden) return;
+    quickPriorFocus = document.activeElement;
+    // Preserve unfinished draft and its original source when reopening.
+    if (!input.value.trim() || !quickContext) quickContext = quickStudyContext();
+    const ctx = quickContext;
+    put('quickQuestionDept',['ibd2','ccu','ed','general'].includes(ctx.department)?ctx.department:'general');
+    const label = $('quickQuestionContext');
+    if (label) label.textContent = ctx.sourceTitle ? 'Linked to: '+ctx.sourceTitle : (
+      ctx.department === 'ibd2' ? 'Orthopaedics · general question' :
+      ctx.department === 'ccu' ? 'CCU · general question' :
+      ctx.department === 'ed' ? 'Emergency · general question' : 'General question');
+    const timing = $('quickQuestionTiming');
+    if (timing) timing.hidden = !(memory.exams?.active?.stage === 'advanced');
+    const msg = $('quickQuestionMessage');if(msg) msg.textContent = '';
+    overlay.hidden = false;
+    $('quickQuestionFab')?.setAttribute('aria-expanded','true');
+    input.focus({preventScroll:true});
+  }
+  function quickClose() {
+    const overlay = $('quickQuestionOverlay');
+    if (overlay) overlay.hidden = true;
+    $('quickQuestionFab')?.setAttribute('aria-expanded','false');
+    if (quickPriorFocus && typeof quickPriorFocus.focus === 'function') quickPriorFocus.focus({preventScroll:true});
+  }
+  function quickSave() {
+    const input = $('quickQuestionText'), msg = $('quickQuestionMessage');
+    const question = (input?.value || '').trim().slice(0,1000);
+    if (!question) {if(msg)msg.textContent='Write your question first.';input?.focus();return;}
+    if (collection().length >= MAX_ITEMS) {if(msg)msg.textContent='Question inbox is full (500).';return;}
+    const ctx = quickContext || quickStudyContext(), now = new Date().toISOString();
+    const n = {
+      id:'q-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10),
+      question,answer:'',tags:[],
+      department:['ibd2','ccu','ed','general'].includes(value('quickQuestionDept'))?value('quickQuestionDept'):'general',
+      sourceType:ctx.sourceType,sourceId:ctx.sourceId,sourceTitle:ctx.sourceTitle,
+      status:'unanswered',syncState:'pending',createdAt:now,updatedAt:now
+    };
+    memory.notes.unshift(n);save();
+    if (!persistence) {
+      memory.notes=memory.notes.filter(x=>x.id!==n.id);
+      if(msg)msg.textContent='Could not save on this device. Keep your text and check available storage.';
+      return;
+    }
+    input.value = '';quickContext = null;quickClose();
+    const toast = $('quickQuestionToast');
+    if (toast) {
+      toast.textContent='Question saved offline · '+collection().filter(x=>!x.answer).length+' unanswered';
+      toast.hidden=false;
+      if (quickToastTimer) clearTimeout(quickToastTimer);
+      quickToastTimer=setTimeout(()=>{toast.hidden=true},3000);
+    }
+    if (cloudConfigured()) sync(false);
+  }
+  function quickView() {quickClose();open();}
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape' && !$('quickQuestionOverlay')?.hidden){e.preventDefault();quickClose();}
+  });
+
   function open() {
     showTab('notes');
     render();
@@ -265,6 +363,6 @@
   });
   window.addEventListener('online',()=>sync(false));
   collection();
-  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect,inlinePanel};
+  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect,inlinePanel,quickOpen,quickClose,quickSave,quickView};
   setTimeout(()=>sync(false),3000);
 })();
