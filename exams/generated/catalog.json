@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 37,
-  "sourceContentSha256": "80c50a5f5d70997cf35248b6a56d98240dfda825f3580bff3b311be06ac07909",
+  "sourceContentVersion": 38,
+  "sourceContentSha256": "df13f0e6430b7f71efb780f68300a36207b51e053d52dca6ce8649f5d1d95195",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -15,15 +15,15 @@
     "exams/sources.json"
   ],
   "counts": {
-    "exams": 297,
-    "questions": 1684,
-    "single-best-answer": 1654,
+    "exams": 318,
+    "questions": 1798,
+    "single-best-answer": 1768,
     "numeric-entry": 22,
     "short-answer": 8,
-    "materials": 99,
-    "medications": 74,
+    "materials": 106,
+    "medications": 81,
     "lessons": 25,
-    "mappedLearningPoints": 799
+    "mappedLearningPoints": 849
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -1714,10 +1714,171 @@
       ]
     },
     {
+      "itemId": "ed-novalgin-metamizole",
+      "title": "NOVALGIN — metamizole (dipyrone)",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ed-novalgin-metamizole--standard",
+          "stage": "standard",
+          "questionCount": 7
+        },
+        {
+          "id": "ed-novalgin-metamizole--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ed-novalgin-metamizole--7-day",
+          "stage": "7-day",
+          "questionCount": 8
+        }
+      ]
+    },
+    {
+      "itemId": "ed-decort-dexamethasone",
+      "title": "DECORT — dexamethasone (sodium phosphate injection)",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ed-decort-dexamethasone--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ed-decort-dexamethasone--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ed-decort-dexamethasone--7-day",
+          "stage": "7-day",
+          "questionCount": 6
+        }
+      ]
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "title": "ONDANSETRON — injectable (ED shelf name unverified: 'Andset')",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ed-ondansetron-provisional-shelf--standard",
+          "stage": "standard",
+          "questionCount": 5
+        },
+        {
+          "id": "ed-ondansetron-provisional-shelf--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ed-ondansetron-provisional-shelf--7-day",
+          "stage": "7-day",
+          "questionCount": 6
+        }
+      ]
+    },
+    {
+      "itemId": "ed-diclofenac-injection",
+      "title": "DICLOFENAC — injection",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ed-diclofenac-injection--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ed-diclofenac-injection--advanced",
+          "stage": "advanced",
+          "questionCount": 5
+        },
+        {
+          "id": "ed-diclofenac-injection--7-day",
+          "stage": "7-day",
+          "questionCount": 8
+        }
+      ]
+    },
+    {
+      "itemId": "ed-vitamin-k-phytonadione",
+      "title": "VITAMIN K1 — phytonadione (phytomenadione)",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ed-vitamin-k-phytonadione--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ed-vitamin-k-phytonadione--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ed-vitamin-k-phytonadione--7-day",
+          "stage": "7-day",
+          "questionCount": 7
+        }
+      ]
+    },
+    {
+      "itemId": "ed-hexakapron-tranexamic",
+      "title": "HEXAKAPRON — tranexamic acid (TXA)",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ed-hexakapron-tranexamic--standard",
+          "stage": "standard",
+          "questionCount": 6
+        },
+        {
+          "id": "ed-hexakapron-tranexamic--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ed-hexakapron-tranexamic--7-day",
+          "stage": "7-day",
+          "questionCount": 7
+        }
+      ]
+    },
+    {
+      "itemId": "ed-captopril-tablets",
+      "title": "CAPTOPRIL — oral tablets",
+      "itemType": "medication",
+      "file": "banks-04.json",
+      "forms": [
+        {
+          "id": "ed-captopril-tablets--standard",
+          "stage": "standard",
+          "questionCount": 8
+        },
+        {
+          "id": "ed-captopril-tablets--advanced",
+          "stage": "advanced",
+          "questionCount": 3
+        },
+        {
+          "id": "ed-captopril-tablets--7-day",
+          "stage": "7-day",
+          "questionCount": 8
+        }
+      ]
+    },
+    {
       "itemId": "verified-alteplase-v35",
       "title": "Alteplase (tPA)",
       "itemType": "medication",
-      "file": "banks-04.json",
+      "file": "banks-05.json",
       "forms": [
         {
           "id": "verified-alteplase-v35--standard",
@@ -1740,7 +1901,7 @@
       "itemId": "ccu-lesson-01-acs",
       "title": "Acute Coronary Syndrome (ACS)",
       "itemType": "lesson",
-      "file": "banks-04.json",
+      "file": "banks-05.json",
       "forms": [
         {
           "id": "ccu-lesson-01-acs--standard",
@@ -1763,7 +1924,7 @@
       "itemId": "ccu-lesson-02-chb",
       "title": "Complete Heart Block (CHB)",
       "itemType": "lesson",
-      "file": "banks-04.json",
+      "file": "banks-05.json",
       "forms": [
         {
           "id": "ccu-lesson-02-chb--standard",
@@ -1786,7 +1947,7 @@
       "itemId": "ccu-lesson-03-12lead-ecg",
       "title": "12-Lead ECG Practical Basics",
       "itemType": "lesson",
-      "file": "banks-04.json",
+      "file": "banks-05.json",
       "forms": [
         {
           "id": "ccu-lesson-03-12lead-ecg--standard",
@@ -1809,7 +1970,7 @@
       "itemId": "ccu-lesson-04-telemetry",
       "title": "Telemetry & Basic Rhythm Interpretation",
       "itemType": "lesson",
-      "file": "banks-04.json",
+      "file": "banks-05.json",
       "forms": [
         {
           "id": "ccu-lesson-04-telemetry--standard",
@@ -1832,7 +1993,7 @@
       "itemId": "ccu-lesson-05-dangerous-rhythms",
       "title": "Dangerous Rhythms",
       "itemType": "lesson",
-      "file": "banks-04.json",
+      "file": "banks-05.json",
       "forms": [
         {
           "id": "ccu-lesson-05-dangerous-rhythms--standard",
@@ -1855,7 +2016,7 @@
       "itemId": "ccu-lesson-06-electrical-treatment",
       "title": "Defibrillation vs Cardioversion vs Pacing",
       "itemType": "lesson",
-      "file": "banks-04.json",
+      "file": "banks-05.json",
       "forms": [
         {
           "id": "ccu-lesson-06-electrical-treatment--standard",
@@ -2177,7 +2338,7 @@
       "itemId": "ibd2-lesson-05-bka-aka-care",
       "title": "BKA / AKA — Post-Amputation Nursing",
       "itemType": "lesson",
-      "file": "banks-05.json",
+      "file": "banks-06.json",
       "forms": [
         {
           "id": "ibd2-lesson-05-bka-aka-care--standard",
@@ -2200,7 +2361,7 @@
       "itemId": "ibd2-lesson-06-orthopaedic-pain-meds",
       "title": "Orthopaedic Pain + Common Medications",
       "itemType": "lesson",
-      "file": "banks-05.json",
+      "file": "banks-06.json",
       "forms": [
         {
           "id": "ibd2-lesson-06-orthopaedic-pain-meds--standard",
@@ -2223,7 +2384,7 @@
       "itemId": "ibd2-lesson-07-mobility-pressure-vte",
       "title": "Mobility, Pressure Injury & VTE Prevention",
       "itemType": "lesson",
-      "file": "banks-05.json",
+      "file": "banks-06.json",
       "forms": [
         {
           "id": "ibd2-lesson-07-mobility-pressure-vte--standard",
@@ -2246,7 +2407,7 @@
       "itemId": "ibd2-lesson-08-infection-labs-culture",
       "title": "CRP, ESR, CBC & Culture — What They Actually Tell You",
       "itemType": "lesson",
-      "file": "banks-05.json",
+      "file": "banks-06.json",
       "forms": [
         {
           "id": "ibd2-lesson-08-infection-labs-culture--standard",
@@ -2269,7 +2430,7 @@
       "itemId": "ibd2-lesson-09-documentation-sbar",
       "title": "Documentation & SBAR — Report What Matters",
       "itemType": "lesson",
-      "file": "banks-05.json",
+      "file": "banks-06.json",
       "forms": [
         {
           "id": "ibd2-lesson-09-documentation-sbar--standard",
@@ -2292,7 +2453,7 @@
       "itemId": "ibd2-lesson-10-integrated-scenarios",
       "title": "Integrated IBD2 Scenarios",
       "itemType": "lesson",
-      "file": "banks-05.json",
+      "file": "banks-06.json",
       "forms": [
         {
           "id": "ibd2-lesson-10-integrated-scenarios--standard",
@@ -2315,27 +2476,31 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "e6ec7aea7a759ada5d7665f75142f928b8ecadafb69e7f64c7d11f70538e3e75"
+      "sha256": "90503ac3c0434d53c4c5057fd9e2739372a2d5b14a6f86bfae91f2fb2428d54a"
     },
     {
       "path": "banks-02.json",
-      "sha256": "4f73b3b2ddca7fada5c9f0dc7733893eb6e4f3819463275cd32e716971daa530"
+      "sha256": "7a655bc88113644ad1881e0f43bd8ff73152db9a381de6acce8c68bd7771e6a0"
     },
     {
       "path": "banks-03.json",
-      "sha256": "9c2035c8a7ab8bcaa1e16d7b66b6ad8be05248acf16865b071fafd998dfe7cff"
+      "sha256": "757e0e394e87b329721b70981b816860678af985371aae07cb0bd6137f8e337b"
     },
     {
       "path": "banks-04.json",
-      "sha256": "5c44f546692d4a0cca48f199b8f3b9a91b421acf27ae36bd818a21d105a4e2be"
+      "sha256": "1ddec203c17da288faf09cef039564f7608ccaa2ddd0b480761290be325d49d4"
     },
     {
       "path": "banks-05.json",
-      "sha256": "61f2979e1120f07c445ae737da30f396031cf843e81f7ff1a0d1911153c92e5e"
+      "sha256": "418d01befabfaba5c01cc7cebea87e1a6f0029c1c84a094443fc253affa363bd"
+    },
+    {
+      "path": "banks-06.json",
+      "sha256": "5b1d6810d01e0ed44fa90258f7bfedc83b7eaa02c4f3f483e80f8304e52c14b2"
     },
     {
       "path": "coverage.json",
-      "sha256": "1b05a768bbf54b7dc725cf48386de71273c486f35dd63cdbb1ba83e915272b23"
+      "sha256": "1922dc96aa3fc585a9c5edf6bad648484fdf85c68237115d05250643e5d6d94c"
     }
   ]
 }
