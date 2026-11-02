@@ -38,5 +38,14 @@ jobs:
           git config user.name "Core Nursing Staging Builder"
           git config user.email "actions@users.noreply.github.com"
           git commit -m "Build staged ED medication exams and runtime data"
-          git pull --rebase origin "${{ github.ref_name }}"
-          git push origin HEAD:"${{ github.ref_name }}"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin "${{ github.ref_name }}"
+            git rebase FETCH_HEAD
+            if git push origin HEAD:"${{ github.ref_name }}"; then
+              exit 0
+            fi
+            echo "Concurrent signer updated staging branch; retrying push"
+            sleep 2
+          done
+          echo "::error::Unable to push staged output after five safe retries"
+          exit 1
