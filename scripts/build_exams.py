@@ -148,7 +148,7 @@ def make_exam(item, kind, stage, questions):
             'scoring': {'correct': 1, 'incorrect': 0, 'unanswered': 0, 'partialCredit': False,
                         'unsureOrGuessed': 'review flag only', 'criticalSafetyMiss': 'separate follow-up required; original numeric score unchanged'},
             'feedback': 'show keys and all option explanations after submission',
-            'retestPolicy': 'same standard form after required reading' if stage == 'standard' else 'different from standard',
+            'retestPolicy': 'same standard form after required reading' if stage == 'standard' else ('comprehensive memory retest; questions may repeat' if stage == '7-day' else 'different from standard'),
             'questions': questions}
     arrange_answers(exam)
     exam['questionCount'] = len(questions)
@@ -224,6 +224,37 @@ def build():
         banks.append({'itemId': item['id'], 'title': item['title'], 'itemType': 'lesson', 'evidenceIds': evidence['lessonEvidence'][item['id']],
                       'exams': [make_exam(item, 'lesson', stage, questions) for stage, questions in by_stage.items()]})
 
+    # Retest every mapped essential point; novelty is not a selection rule.
+    for bank in banks:
+        standard, advanced, previous = bank['exams']
+        candidates = {}
+        for exam in (standard, advanced, previous):
+            for question in exam['questions']:
+                candidates.setdefault(question['learningPointIds'][0], []).append(question)
+        required = dict.fromkeys(p for exam in (standard, advanced) for q in exam['questions'] for p in q['learningPointIds'])
+        questions = []
+        for point in required:
+            # Prefer recall questions with comparable option lengths. Existing
+            # questions may be reused without inventing a harder or novel item.
+            def cues(q):
+                if q['format'] != 'single-best-answer':
+                    return 0
+                key = next(c for c in q['choices'] if c['id'] == q['answerKey'])
+                wrong = [c for c in q['choices'] if c['id'] != q['answerKey']]
+                lengths = sorted(len(c['text'].split()) for c in wrong)
+                return max(0, len(key['text'].split()) - lengths[1] - 3)
+            question = copy.deepcopy(min(candidates[point], key=cues))
+            original_id = question['id']
+            question['id'] = bank['itemId'] + '--7-day--' + point.split('::', 1)[1]
+            question['reusedFromQuestionId'] = original_id
+            if question['format'] == 'single-best-answer':
+                question['correct'] = next(i for i, c in enumerate(question['choices']) if c['id'] == question['answerKey'])
+                del question['answerKey']
+                for choice in question['choices']:
+                    del choice['id']
+            questions.append(question)
+        bank['exams'][2] = make_exam({'id': bank['itemId'], 'title': bank['title']}, bank['itemType'], '7-day', questions)
+
     counts = Counter()
     for bank in banks:
         for exam in bank['exams']:
@@ -291,12 +322,12 @@ def build():
         'limitations': ['Each listed point has a scored question. The inventory is not yet certified to include every required source fact.',
                         'A point appearing in a distractor, stem, or explanation does not receive additional coverage credit.',
                         'No learner exposure or pass is inferred from bank generation.']})
-    outputs['catalog.json'] = encoded({'schemaVersion': 1, 'bankVersion': 3, 'status': 'authoring draft',
+    outputs['catalog.json'] = encoded({'schemaVersion': 1, 'bankVersion': 4, 'status': 'authoring draft',
         'sourceContentVersion': content['contentVersion'], 'sourceContentSha256': hashlib.sha256(content_bytes).hexdigest(),
         'generationInputs': ['content.json', 'exams/authoring/medication-profiles.json', 'exams/authoring/medication-concepts.json', 'exams/authoring/lesson-questions.json', 'exams/authoring/retention-questions.json', 'exams/authoring/exclusions.json', 'exams/authoring/coverage-review.json', 'exams/sources.json'],
         'counts': dict(counts, materials=len(banks), medications=len(medications), lessons=len(lessons), mappedLearningPoints=len(points)),
         'difficulty': {'standard': 'recognition, recall, and core interpretation', 'advanced': 'application, interactions, competing explanations, and calculation',
-                       '7-day': 'delayed recall, distinctions and clinical application using separately authored questions on taught material',
+                       '7-day': 'comprehensive delayed recall of every mapped essential point; suitable questions may repeat',
                        'calibration': 'not empirically calibrated'},
         'appIntegration': 'Packaged for the draft standard/advanced and 7-day exam interface. The 21-day sets are not yet generated.',
         'retentionPolicy': retention['selectionPolicy'],
