@@ -31,6 +31,23 @@
   function token() { try { return localStorage.getItem(TOKEN_KEY) || ''; } catch (_) { return ''; } }
   function cloudConfigured() { return Boolean(token()); }
   function inlinePanel(department, type, id, title) { return '<div class="panel inline-question"><h3>Have a question about this topic?</h3><textarea maxlength="1000" rows="2" placeholder="Write a question to save offline"></textarea><button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save question</button><p class="note inline-feedback" role="status"></p></div>'; }
+  function saveInline(button) {
+    const panel=button.closest('.inline-question'), field=panel && panel.querySelector('textarea');
+    const question=field && field.value.trim().slice(0,1000), msg=panel && panel.querySelector('.inline-feedback');
+    if(!question){if(msg)msg.textContent='Write a question first.';return;}
+    if(collection().length>=MAX_ITEMS){if(msg)msg.textContent='Inbox full.';return;}
+    const now=new Date().toISOString(), dept=button.getAttribute('data-dept');
+    memory.notes.unshift({
+      id:'q-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10),
+      question,answer:'',tags:[],department:['ibd2','ccu','ed','general'].includes(dept)?dept:'general',
+      sourceType:button.getAttribute('data-source-type')||'',
+      sourceId:button.getAttribute('data-source-id')||'',
+      sourceTitle:button.getAttribute('data-source-title')||'',
+      status:'unanswered',syncState:'pending',createdAt:now,updatedAt:now
+    });
+    save();field.value='';if(msg)msg.textContent='Saved offline. Continue studying.';
+    if(cloudConfigured())sync(false);
+  }
   function open() {
     showTab('notes');
     render();
@@ -237,6 +254,7 @@
     render(); syncMessage('Private sync disconnected; questions remain saved offline.');
   }
   document.addEventListener('click', function(e) {
+    const inline=e.target.closest('[data-save-inline]');if(inline){saveInline(inline);return;}
     const faq=e.target.closest('[data-note-faq]');
     const editBtn=e.target.closest('[data-edit-note]');
     const del=e.target.closest('[data-delete-note]');
@@ -246,6 +264,6 @@
   });
   window.addEventListener('online',()=>sync(false));
   collection();
-  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect};
+  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect,inlinePanel};
   setTimeout(()=>sync(false),3000);
 })();
