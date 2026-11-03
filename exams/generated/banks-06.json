@@ -2,6 +2,589 @@
   "schemaVersion": 1,
   "banks": [
     {
+      "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+      "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "content-v37",
+        "supplied-health-alterations",
+        "aaos-major-extremity-trauma",
+        "cdc-tetanus-2026"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--standard",
+          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+          "itemType": "lesson",
+          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "Which finding is required to classify a fracture as open?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A skin wound anywhere on the injured extremity",
+                  "explanation": "The wound must communicate with the fracture."
+                },
+                {
+                  "id": "B",
+                  "text": "A wound communicating with the fracture",
+                  "explanation": "Communication with the fracture defines an open fracture."
+                },
+                {
+                  "id": "C",
+                  "text": "A wound with bone visibly protruding through the skin",
+                  "explanation": "Visible bone is not required for a fracture to be open."
+                },
+                {
+                  "id": "D",
+                  "text": "A fracture with severe surrounding bruising and swelling",
+                  "explanation": "Bruising and swelling alone do not establish communication with the outside."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "An open fracture communicates with an external wound; visible bone is not required.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "c477ed9405b16467212a90b6188c069b2634d7b9c1a2818a69769ffe27f3cf76"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 5,
+                  "label": "Common mistake",
+                  "textSha256": "d3267b3c9ae4f08c41d818f2c6d26521f24a420a69a3e84f68f8cd84aa5a0960"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-4c6113edba15",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-4c6113edba15"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "Which assessment set most directly checks for immediate limb and systemic complications after an open fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Joint range, walking distance, muscle bulk and rehabilitation goals",
+                  "explanation": "Rehabilitation measures do not replace assessment for immediate complications."
+                },
+                {
+                  "id": "B",
+                  "text": "Wound dimensions, dressing type, exudate volume and skin edges",
+                  "explanation": "This wound-focused set omits distal function and systemic observations."
+                },
+                {
+                  "id": "C",
+                  "text": "Pain score, sleep quality, appetite and response to reassurance",
+                  "explanation": "These do not adequately check perfusion, movement and systemic stability."
+                },
+                {
+                  "id": "D",
+                  "text": "Bleeding, distal perfusion, sensation, movement and vital signs",
+                  "explanation": "These identify bleeding, neurovascular change and systemic deterioration."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Open-fracture nursing assessment includes bleeding, wound, distal neurovascular status, pain/swelling and vitals.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-dfc6dc14831e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-dfc6dc14831e"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "Which infection-prevention plan fits nursing care for a fresh open fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Protect aseptically; await visible drainage before ordered antibiotics",
+                  "explanation": "The infection-prevention plan should not wait for drainage to appear."
+                },
+                {
+                  "id": "B",
+                  "text": "Clean the surface; omit antibiotics if bone is not visible",
+                  "explanation": "Visible protruding bone is not required for an open fracture."
+                },
+                {
+                  "id": "C",
+                  "text": "Protect aseptically; give ordered antibiotics; verify tetanus assessment",
+                  "explanation": "These match the taught plan while preserving authorized prescribing."
+                },
+                {
+                  "id": "D",
+                  "text": "Cover the wound; omit tetanus assessment after starting antibiotics",
+                  "explanation": "Antibiotics do not replace tetanus assessment."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Protect the wound, follow the ordered antimicrobial plan, verify tetanus assessment and avoid independent wound manipulation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 2,
+                  "label": "Do",
+                  "textSha256": "9f6c83e9b16e2b4fb27e45861907f2e9b5e7b267b1c63718bd13939ce56447da"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-bc700ec5854d",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-bc700ec5854d"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--advanced",
+          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+          "itemType": "lesson",
+          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "An open-fracture wound develops increasing pain, redness, swelling and purulent drainage. What is the best interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "This pattern proves normal fracture healing",
+                  "explanation": "Purulent drainage and worsening inflammation are not normal healing findings."
+                },
+                {
+                  "id": "B",
+                  "text": "The findings can be ignored if hardware is intact",
+                  "explanation": "Hardware appearance does not exclude infection."
+                },
+                {
+                  "id": "C",
+                  "text": "Only fever can indicate infection",
+                  "explanation": "Local infection can be evident before prominent systemic signs."
+                },
+                {
+                  "id": "D",
+                  "text": "These are infection warning signs that require review",
+                  "explanation": "The pattern is consistent with worsening wound infection."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Increasing pain, redness, swelling, purulent drainage or fever are infection warning signs.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 3,
+                  "label": "Watch for infection",
+                  "textSha256": "8e54d7d424455fa35eaf2d5944e0b89cd3f09dd862f04b820ede072ca5667e5a"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-35eff7fe4031",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-35eff7fe4031"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A patient with an open leg fracture develops worsening sensation and movement in the foot. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for the next routine dressing change",
+                  "explanation": "This delays assessment of possible limb compromise."
+                },
+                {
+                  "id": "B",
+                  "text": "Urgent neurovascular reassessment and escalation",
+                  "explanation": "Deteriorating nerve or perfusion findings can threaten the limb."
+                },
+                {
+                  "id": "C",
+                  "text": "Assume swelling alone explains all neurological changes",
+                  "explanation": "New neurological loss requires urgent review."
+                },
+                {
+                  "id": "D",
+                  "text": "Document the finding without contacting the team",
+                  "explanation": "Documentation does not replace escalation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Neurovascular deterioration or systemic deterioration after an open fracture requires urgent escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "d37a3180ee9cb43936f00d3d3cab3be860adfd9995fa7dec76fd2843c0b84170"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-e66a67a7fc87",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-e66a67a7fc87"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-03-open-gunshot-fractures--7-day",
+          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+          "itemType": "lesson",
+          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "comprehensive memory retest; questions may repeat",
+          "questions": [
+            {
+              "stem": "Which finding is required to classify a fracture as open?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A wound communicating with the fracture",
+                  "explanation": "Communication with the fracture defines an open fracture."
+                },
+                {
+                  "id": "B",
+                  "text": "A skin wound anywhere on the injured extremity",
+                  "explanation": "The wound must communicate with the fracture."
+                },
+                {
+                  "id": "C",
+                  "text": "A fracture with severe surrounding bruising and swelling",
+                  "explanation": "Bruising and swelling alone do not establish communication with the outside."
+                },
+                {
+                  "id": "D",
+                  "text": "A wound with bone visibly protruding through the skin",
+                  "explanation": "Visible bone is not required for a fracture to be open."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "An open fracture communicates with an external wound; visible bone is not required.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "c477ed9405b16467212a90b6188c069b2634d7b9c1a2818a69769ffe27f3cf76"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 5,
+                  "label": "Common mistake",
+                  "textSha256": "d3267b3c9ae4f08c41d818f2c6d26521f24a420a69a3e84f68f8cd84aa5a0960"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-4c6113edba15",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-4c6113edba15"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--standard--point-4c6113edba15",
+              "answerKey": "A"
+            },
+            {
+              "stem": "Which assessment set most directly checks for immediate limb and systemic complications after an open fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wound dimensions, dressing type, exudate volume and skin edges",
+                  "explanation": "This wound-focused set omits distal function and systemic observations."
+                },
+                {
+                  "id": "B",
+                  "text": "Pain score, sleep quality, appetite and response to reassurance",
+                  "explanation": "These do not adequately check perfusion, movement and systemic stability."
+                },
+                {
+                  "id": "C",
+                  "text": "Bleeding, distal perfusion, sensation, movement and vital signs",
+                  "explanation": "These identify bleeding, neurovascular change and systemic deterioration."
+                },
+                {
+                  "id": "D",
+                  "text": "Joint range, walking distance, muscle bulk and rehabilitation goals",
+                  "explanation": "Rehabilitation measures do not replace assessment for immediate complications."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Open-fracture nursing assessment includes bleeding, wound, distal neurovascular status, pain/swelling and vitals.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-dfc6dc14831e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-dfc6dc14831e"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--standard--point-dfc6dc14831e",
+              "answerKey": "C"
+            },
+            {
+              "stem": "Which infection-prevention plan fits nursing care for a fresh open fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Protect aseptically; await visible drainage before ordered antibiotics",
+                  "explanation": "The infection-prevention plan should not wait for drainage to appear."
+                },
+                {
+                  "id": "B",
+                  "text": "Clean the surface; omit antibiotics if bone is not visible",
+                  "explanation": "Visible protruding bone is not required for an open fracture."
+                },
+                {
+                  "id": "C",
+                  "text": "Cover the wound; omit tetanus assessment after starting antibiotics",
+                  "explanation": "Antibiotics do not replace tetanus assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Protect aseptically; give ordered antibiotics; verify tetanus assessment",
+                  "explanation": "These match the taught plan while preserving authorized prescribing."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Protect the wound, follow the ordered antimicrobial plan, verify tetanus assessment and avoid independent wound manipulation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 2,
+                  "label": "Do",
+                  "textSha256": "9f6c83e9b16e2b4fb27e45861907f2e9b5e7b267b1c63718bd13939ce56447da"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-bc700ec5854d",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-bc700ec5854d"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--standard--point-bc700ec5854d",
+              "answerKey": "D"
+            },
+            {
+              "stem": "An open-fracture wound develops increasing pain, redness, swelling and purulent drainage. What is the best interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "These are infection warning signs that require review",
+                  "explanation": "The pattern is consistent with worsening wound infection."
+                },
+                {
+                  "id": "B",
+                  "text": "This pattern proves normal fracture healing",
+                  "explanation": "Purulent drainage and worsening inflammation are not normal healing findings."
+                },
+                {
+                  "id": "C",
+                  "text": "The findings can be ignored if hardware is intact",
+                  "explanation": "Hardware appearance does not exclude infection."
+                },
+                {
+                  "id": "D",
+                  "text": "Only fever can indicate infection",
+                  "explanation": "Local infection can be evident before prominent systemic signs."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Increasing pain, redness, swelling, purulent drainage or fever are infection warning signs.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 3,
+                  "label": "Watch for infection",
+                  "textSha256": "8e54d7d424455fa35eaf2d5944e0b89cd3f09dd862f04b820ede072ca5667e5a"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-35eff7fe4031",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-35eff7fe4031"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-35eff7fe4031",
+              "answerKey": "A"
+            },
+            {
+              "stem": "A patient with an open leg fracture develops worsening sensation and movement in the foot. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assume swelling alone explains all neurological changes",
+                  "explanation": "New neurological loss requires urgent review."
+                },
+                {
+                  "id": "B",
+                  "text": "Urgent neurovascular reassessment and escalation",
+                  "explanation": "Deteriorating nerve or perfusion findings can threaten the limb."
+                },
+                {
+                  "id": "C",
+                  "text": "Document the finding without contacting the team",
+                  "explanation": "Documentation does not replace escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait for the next routine dressing change",
+                  "explanation": "This delays assessment of possible limb compromise."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Neurovascular deterioration or systemic deterioration after an open fracture requires urgent escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 1,
+                  "label": "Check",
+                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "d37a3180ee9cb43936f00d3d3cab3be860adfd9995fa7dec76fd2843c0b84170"
+                }
+              ],
+              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-e66a67a7fc87",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-03-open-gunshot-fractures::point-e66a67a7fc87"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-e66a67a7fc87",
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 5
+        }
+      ]
+    },
+    {
       "itemId": "ibd2-lesson-05-bka-aka-care",
       "title": "BKA / AKA — Post-Amputation Nursing",
       "itemType": "lesson",

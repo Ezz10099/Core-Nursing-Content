@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 39,
-  "sourceContentSha256": "2ce002621513217f73310f1dca6b98259148dda6cdf0455f8d7f5430351d8db2",
+  "sourceContentVersion": 40,
+  "sourceContentSha256": "f83cdce82758806896dcb4d1651657b7a5464ccbe88148ebde5750d09175a771",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -15,15 +15,15 @@
     "exams/sources.json"
   ],
   "counts": {
-    "exams": 318,
-    "questions": 1798,
-    "single-best-answer": 1768,
+    "exams": 321,
+    "questions": 1821,
+    "single-best-answer": 1791,
     "numeric-entry": 22,
     "short-answer": 8,
-    "materials": 106,
-    "medications": 81,
+    "materials": 107,
+    "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 849
+    "mappedLearningPoints": 858
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -1875,6 +1875,29 @@
       ]
     },
     {
+      "itemId": "ed-omnic-tamsulosin",
+      "title": "OMNIC — tamsulosin (oral)",
+      "itemType": "medication",
+      "file": "banks-05.json",
+      "forms": [
+        {
+          "id": "ed-omnic-tamsulosin--standard",
+          "stage": "standard",
+          "questionCount": 8
+        },
+        {
+          "id": "ed-omnic-tamsulosin--advanced",
+          "stage": "advanced",
+          "questionCount": 6
+        },
+        {
+          "id": "ed-omnic-tamsulosin--7-day",
+          "stage": "7-day",
+          "questionCount": 9
+        }
+      ]
+    },
+    {
       "itemId": "verified-alteplase-v35",
       "title": "Alteplase (tPA)",
       "itemType": "medication",
@@ -2315,7 +2338,7 @@
       "itemId": "ibd2-lesson-03-open-gunshot-fractures",
       "title": "Open / Gunshot Fractures — Infection & Limb Safety",
       "itemType": "lesson",
-      "file": "banks-05.json",
+      "file": "banks-06.json",
       "forms": [
         {
           "id": "ibd2-lesson-03-open-gunshot-fractures--standard",
@@ -2476,31 +2499,31 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "df8104ff576190738af53e6c18ebc88022cc37334a039159b31c6ca85feb7456"
+      "sha256": "ad38d6963cb89a23d17a6928cda80b730fe8c85a9e118951eb8e7f36dd8f2a74"
     },
     {
       "path": "banks-02.json",
-      "sha256": "7a655bc88113644ad1881e0f43bd8ff73152db9a381de6acce8c68bd7771e6a0"
+      "sha256": "58898e5481fe8f76db3172dc72122d6ac6eb03790fce9546a1e8d1a99a59c892"
     },
     {
       "path": "banks-03.json",
-      "sha256": "607bf5edb191a3af8d33ae06e99b1c9b16e2c8d8eccf17b55be28b974cf2caca"
+      "sha256": "63c0ebb288ac15decd3cd120eeb768a20a8b5daefdfd733ee8ab110f9cda2883"
     },
     {
       "path": "banks-04.json",
-      "sha256": "c0c305d4d7a481aceee9cd57e3ca6c2897a59ae78030e59f0d74cf1390a12173"
+      "sha256": "e43c356892f238bb6ee3873bc060188b6d6d42236e07e61fec3d6a1e82ae0610"
     },
     {
       "path": "banks-05.json",
-      "sha256": "b1d5847b96bd2e02827ff9bf4c51c110d4d3af650fc01d83e1efc79c3b39bd68"
+      "sha256": "be0034d4127d65122bb5519bec386e24d4780e79ebf72f6039895eddc33f5df3"
     },
     {
       "path": "banks-06.json",
-      "sha256": "a106669e4720183ffcf8a3a570386563a597dcf8bb7e265136c28d57cb55af7c"
+      "sha256": "0dc67be4039ae901a743d1bc12e531be87d97ecd4913559cdf04a1c812d6de77"
     },
     {
       "path": "coverage.json",
-      "sha256": "b603170e10e85367a71191341d06063826a793c06e66d2b7ac03cbffa4fd4de7"
+      "sha256": "bbbf9a4e37b7e19b0512c7b755811ee267359ab35ac6281ea8973c12a93a2d4a"
     }
   ]
 }
