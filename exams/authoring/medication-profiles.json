@@ -354,6 +354,11 @@
       "group": "antithrombotic",
       "pair": "Antifibrinolytic: prevents premature breakdown of fibrin clots",
       "why": "Tranexamic acid interferes with plasminogen binding to fibrin and helps stabilize clots."
+    },
+    "tamsulosin": {
+      "group": "bp",
+      "pair": "Uroselective alpha-1 blocker: relaxes prostate and urethral smooth muscle",
+      "why": "Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
     }
   },
   "items": {
@@ -1263,6 +1268,18 @@
         "hypotension",
         "renal_monitor",
         "ace_history"
+      ]
+    },
+    "ed-omnic-tamsulosin": {
+      "family": "tamsulosin",
+      "use": "Relief of lower urinary tract symptoms caused by benign prostatic hyperplasia",
+      "concepts": [
+        "hypotension",
+        "formulation",
+        "tamsulosin_orthostasis",
+        "tamsulosin_ifis",
+        "tamsulosin_distal_stone",
+        "tamsulosin_infected_obstruction"
       ]
     }
   }
