@@ -65,6 +65,7 @@ jobs:
           node tests/exams-ui.cjs
           node tests/updates-ui.cjs
           node tests/quick-questions.cjs
+          node tests/qa-sync.cjs
       - name: Basic local runtime load
         run: |
           python -m http.server 8765 --directory runtime/files >/tmp/core-nursing-http.log 2>&1 &
