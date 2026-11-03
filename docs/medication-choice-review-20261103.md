@@ -15,3 +15,5 @@ The taught medication fields remain the source baseline. IV-site wording was che
 - https://www.fda.gov/drugs/drug-safety-and-availability/fda-provides-update-health-care-professionals-about-risk-inadvertent-intrathecal-spinal
 
 Remaining: review other shared templates and lesson forms manually, audit cross-question answer leakage, and obtain independent clinical review. A length-based scan alone cannot establish plausibility or absence of clues.
+
+Integration check: this batch includes the current Q&A synchronization fix from the live v40 release. All three v41 payload signatures, content-addressed objects and manifest reproducibility were verified after staged generation.
