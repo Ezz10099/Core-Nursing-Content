@@ -4529,20 +4529,20 @@
         "correct": 0,
         "choices": [
           {
-            "text": "Distal to the injury, compared with baseline and the other side",
-            "explanation": "The tissues below the injury may lose perfusion or nerve function."
+            "text": "Below the injury, comparing findings with baseline and the other limb",
+            "explanation": "This checks distal perfusion and neurological function for a new change."
           },
           {
-            "text": "Only the skin above the cast",
-            "explanation": "This misses the distal neurovascular status."
+            "text": "Above the injury, comparing swelling with the last dressing check",
+            "explanation": "This does not assess function and perfusion beyond the injury."
           },
           {
-            "text": "Only the uninjured limb",
-            "explanation": "Comparison helps, but the injured limb must be assessed."
+            "text": "Across the cast surface, comparing the contour with the other limb",
+            "explanation": "Cast appearance does not establish distal neurovascular safety."
           },
           {
-            "text": "Only the appearance of the cast surface",
-            "explanation": "An intact cast does not prove tissue safety."
+            "text": "At the painful area, comparing tenderness before and after analgesia",
+            "explanation": "Pain assessment alone omits distal sensation, movement and perfusion."
           }
         ]
       },
@@ -4616,24 +4616,24 @@
         "stage": "7-day",
         "criticalForSafety": false,
         "format": "single-best-answer",
-        "stem": "Which new observation most strengthens concern about a worsening injured limb?",
+        "stem": "Which new finding most directly indicates worsening neurological function in an injured limb?",
         "correct": 0,
         "choices": [
           {
             "text": "New tingling with reduced toe movement",
-            "explanation": "This adds neurological dysfunction to the pain assessment."
+            "explanation": "This combines a sensory and motor change."
           },
           {
-            "text": "Unchanged toe sensation and movement",
-            "explanation": "These do not demonstrate new neurological loss."
+            "text": "Increasing dependent swelling with unchanged toe sensation",
+            "explanation": "Swelling needs assessment but this choice does not demonstrate a new neurological deficit."
           },
           {
-            "text": "A clean cast surface",
-            "explanation": "Surface cleanliness does not assess nerves."
+            "text": "More wound drainage with unchanged toe movement",
+            "explanation": "Drainage is important but is not itself a new neurological deficit."
           },
           {
-            "text": "A stable appetite",
-            "explanation": "Appetite does not assess distal neurovascular function."
+            "text": "Increased local warmth with unchanged distal sensation",
+            "explanation": "Local warmth does not directly demonstrate loss of neurological function."
           }
         ]
       }
@@ -4775,19 +4775,19 @@
         "choices": [
           {
             "text": "Rings connected by six adjustable struts",
-            "explanation": "The hexapod system supports planned multidirectional correction."
+            "explanation": "The basic hexapod arrangement uses six adjustable struts."
           },
           {
-            "text": "A cast containing no pins or wires",
-            "explanation": "A TSF is an external fixation system."
+            "text": "Rings connected by four adjustable struts",
+            "explanation": "Four is not the basic six-strut hexapod arrangement."
           },
           {
-            "text": "An internal plate fully beneath the skin",
-            "explanation": "The frame is external and connected to bone."
+            "text": "Rings connected by eight adjustable struts",
+            "explanation": "Eight is not the basic six-strut hexapod arrangement."
           },
           {
-            "text": "A single traction weight attached to a bed",
-            "explanation": "That is not the TSF structure."
+            "text": "Rings connected by two adjustable struts",
+            "explanation": "Two is not the basic six-strut hexapod arrangement."
           }
         ]
       },
@@ -4985,20 +4985,20 @@
         "correct": 0,
         "choices": [
           {
-            "text": "Infection may need antimicrobial treatment plus removal of infected tissue",
-            "explanation": "The treatment plan can combine medical and surgical approaches."
+            "text": "Antibiotics target organisms; debridement removes infected tissue",
+            "explanation": "These approaches address complementary components of the infection."
           },
           {
-            "text": "A clean surface dressing guarantees infected bone is treated",
-            "explanation": "Surface care alone may not address deeper infection."
+            "text": "Antibiotics remove dead tissue; debridement identifies drug sensitivity",
+            "explanation": "This reverses the roles and misstates how susceptibility is assessed."
           },
           {
-            "text": "Antibiotics always make surgery unnecessary",
-            "explanation": "Surgery can still be needed."
+            "text": "Antibiotics restore bone alignment; debridement prevents joint stiffness",
+            "explanation": "These are not the principal purposes of infection treatment."
           },
           {
-            "text": "Debridement means all antimicrobial follow-up is unnecessary",
-            "explanation": "The full treatment and monitoring plan remains important."
+            "text": "Antibiotics cover the surface wound; debridement replaces systemic treatment",
+            "explanation": "Surface care is different, and debridement does not automatically replace antimicrobials."
           }
         ]
       }
@@ -5067,23 +5067,23 @@
     ],
     "ibd2-lesson-05-bka-aka-care": [
       {
-        "stem": "A patient says the missing foot is burning painfully. What is the best response?",
+        "stem": "A patient reports burning pain in the foot that was amputated. Which pain description fits?",
         "choices": [
           {
-            "text": "Assess it as phantom limb pain and treat according to the plan",
-            "explanation": "Phantom pain is real and clinically relevant."
+            "text": "Phantom limb pain",
+            "explanation": "Pain is perceived in the removed body part."
           },
           {
-            "text": "Explain that pain is impossible because the foot is absent",
-            "explanation": "The neurological pain experience can persist after amputation."
+            "text": "Residual-limb incisional pain",
+            "explanation": "This is located in tissue that remains."
           },
           {
-            "text": "Ignore it unless the wound is infected",
-            "explanation": "Phantom pain can occur without infection."
+            "text": "Prosthetic contact-pressure pain",
+            "explanation": "This is located at a remaining tissue contact site."
           },
           {
-            "text": "Document anxiety only",
-            "explanation": "This misses the pain complaint."
+            "text": "Painless phantom limb sensation",
+            "explanation": "The symptom described is painful, not a painless sensation."
           }
         ],
         "correct": 0,
@@ -5158,23 +5158,23 @@
         "criticalForSafety": true
       },
       {
-        "stem": "After tramadol or another sedating analgesic, which finding is most important to monitor?",
+        "stem": "After a sedating analgesic, which new finding raises the greatest concern about respiratory safety?",
         "choices": [
           {
-            "text": "Increasing drowsiness with slow or shallow breathing",
-            "explanation": "Sedation and respiratory depression are safety concerns."
+            "text": "Increasing drowsiness with slow, shallow breathing",
+            "explanation": "Together these indicate a concerning change in consciousness and breathing."
           },
           {
-            "text": "A stable dry dressing alone",
-            "explanation": "This does not assess medication effect."
+            "text": "Increasing nausea with a reduced desire to eat",
+            "explanation": "This is an adverse symptom but does not directly show depressed ventilation."
           },
           {
-            "text": "The patient's preferred meal time",
-            "explanation": "This is not the key acute medication concern."
+            "text": "Increasing constipation with abdominal discomfort",
+            "explanation": "This needs review but is not the immediate respiratory-safety finding."
           },
           {
-            "text": "Whether the medication name is easy to pronounce",
-            "explanation": "This has no safety value."
+            "text": "Increasing dizziness with discomfort on standing",
+            "explanation": "This warrants assessment but does not directly demonstrate depressed breathing."
           }
         ],
         "correct": 0,
@@ -5192,20 +5192,20 @@
         "stem": "A patient with a leg fracture is ready to stand. What should the nurse check first?",
         "choices": [
           {
-            "text": "The weight-bearing order and required assistance",
-            "explanation": "Safe loading depends on the prescribed plan."
+            "text": "Weight-bearing order, mobility aid and required assistance",
+            "explanation": "These establish how the patient can mobilize under the individual plan."
           },
           {
-            "text": "Whether the external frame looks strong enough",
-            "explanation": "Appearance does not authorize weight-bearing."
+            "text": "Pain score, preferred route and planned walking distance",
+            "explanation": "These do not establish the permitted loading or required support."
           },
           {
-            "text": "Whether another patient was allowed to walk",
-            "explanation": "Orders are patient-specific."
+            "text": "Previous activity level, shoe size and exercise preference",
+            "explanation": "Baseline details do not replace current postoperative orders."
           },
           {
-            "text": "Whether the patient has eaten breakfast",
-            "explanation": "This does not determine fracture loading."
+            "text": "Frame appearance, patient confidence and available corridor space",
+            "explanation": "Appearance and confidence do not establish a safe authorized mobility plan."
           }
         ],
         "correct": 0,
@@ -5218,23 +5218,23 @@
         "criticalForSafety": true
       },
       {
-        "stem": "New unilateral calf swelling is followed by sudden dyspnea and chest pain. What should be suspected?",
+        "stem": "New unilateral calf swelling is followed by sudden dyspnea and chest pain. Which complication best links both findings?",
         "choices": [
           {
-            "text": "Pulmonary embolism from possible DVT",
-            "explanation": "This combination is an emergency VTE pattern."
+            "text": "Pulmonary embolism following deep vein thrombosis",
+            "explanation": "This connects the leg findings with the sudden respiratory symptoms."
           },
           {
-            "text": "Normal deconditioning only",
-            "explanation": "Sudden cardiopulmonary symptoms are not explained safely by deconditioning alone."
+            "text": "Local wound infection with pain-limited chest expansion",
+            "explanation": "This does not explain the combined pattern as well as possible thromboembolism."
           },
           {
-            "text": "A pressure injury without respiratory involvement",
-            "explanation": "Pressure injury does not explain acute dyspnea and chest pain."
+            "text": "Pressure injury associated with prolonged immobilization",
+            "explanation": "A pressure injury does not explain the sudden cardiopulmonary change."
           },
           {
-            "text": "Expected post-fracture discomfort",
-            "explanation": "The sudden respiratory symptoms require emergency assessment."
+            "text": "Joint stiffness associated with reduced physical activity",
+            "explanation": "Joint stiffness does not explain the new calf and respiratory findings."
           }
         ],
         "correct": 0,
@@ -5250,23 +5250,23 @@
     ],
     "ibd2-lesson-08-infection-labs-culture": [
       {
-        "stem": "Which statement about CRP is correct?",
+        "stem": "What can an elevated CRP establish by itself?",
         "choices": [
           {
-            "text": "It is a nonspecific marker of inflammation",
-            "explanation": "It can rise from many inflammatory conditions."
+            "text": "An inflammatory response without identifying its cause",
+            "explanation": "CRP is nonspecific; interpret it with the clinical findings."
           },
           {
-            "text": "It identifies the exact bacterium",
-            "explanation": "Culture is used for organism identification."
+            "text": "A bacterial cause rather than a noninfectious inflammatory cause",
+            "explanation": "CRP alone cannot distinguish these causes."
           },
           {
-            "text": "It proves osteomyelitis when elevated",
-            "explanation": "It is not diagnostic by itself."
+            "text": "Bone involvement rather than infection limited to soft tissue",
+            "explanation": "CRP does not locate the inflammation."
           },
           {
-            "text": "It replaces wound assessment",
-            "explanation": "Clinical findings remain necessary."
+            "text": "A susceptible organism rather than an antibiotic-resistant organism",
+            "explanation": "CRP does not identify an organism or its susceptibility."
           }
         ],
         "correct": 0,
@@ -5310,23 +5310,23 @@
     ],
     "ibd2-lesson-09-documentation-sbar": [
       {
-        "stem": "In SBAR, where do the current vital signs and abnormal focused findings mainly belong?",
+        "stem": "Which SBAR heading primarily contains the nurse’s evaluation and focused findings?",
         "choices": [
           {
-            "text": "Assessment, with the immediate problem stated in Situation",
-            "explanation": "Assessment carries the findings; Situation states why you are calling."
+            "text": "Assessment",
+            "explanation": "Assessment gives the focused findings and clinical evaluation."
           },
           {
-            "text": "Recommendation only",
-            "explanation": "Recommendation states what you need next."
+            "text": "Situation",
+            "explanation": "Situation states the current problem requiring attention."
           },
           {
-            "text": "Background only",
-            "explanation": "Background gives relevant history/context."
+            "text": "Background",
+            "explanation": "Background gives relevant prior history and context."
           },
           {
-            "text": "They should be omitted to keep the call short",
-            "explanation": "Concise communication still needs critical findings."
+            "text": "Recommendation",
+            "explanation": "Recommendation states the requested review or next action."
           }
         ],
         "correct": 0,
@@ -5342,20 +5342,20 @@
         "stem": "After reporting a new limb-safety problem, what should the chart show?",
         "choices": [
           {
-            "text": "Time, findings, action, notification, instructions and reassessment",
-            "explanation": "These document the clinical event and response."
+            "text": "Timed findings, actions, instructions and repeat observations",
+            "explanation": "These link the change and response to the care given."
           },
           {
-            "text": "Only the words “team aware”",
-            "explanation": "This is too vague."
+            "text": "Timed findings, actions, instructions and prior medical history",
+            "explanation": "Relevant background does not substitute for observations after the intervention."
           },
           {
-            "text": "Only the medication list",
-            "explanation": "This does not document the event."
+            "text": "Timed findings, actions, instructions and planned appointments",
+            "explanation": "Planned appointments do not show the response to the intervention."
           },
           {
-            "text": "Nothing until discharge",
-            "explanation": "Documentation should be timely."
+            "text": "Timed findings, actions, instructions and routine medication list",
+            "explanation": "The medication list does not show whether the patient improved."
           }
         ],
         "correct": 0,

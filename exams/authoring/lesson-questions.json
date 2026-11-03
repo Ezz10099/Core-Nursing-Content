@@ -3497,20 +3497,20 @@
       "stem": "Which description best matches an external fixator?",
       "choices": [
         {
-          "text": "Pins anchored in bone connected to a frame outside the body",
-          "explanation": "This provides the external stabilization described."
+          "text": "Bone-anchored pins connected to an external supporting frame",
+          "explanation": "The frame is outside the body and connected to bone."
         },
         {
-          "text": "A wholly internal plate with no skin-crossing pins",
-          "explanation": "This describes a different fixation approach."
+          "text": "A plate and screws placed completely beneath the skin",
+          "explanation": "This describes internal fixation."
         },
         {
-          "text": "A compression stocking that contains no bone connection",
-          "explanation": "This is not external bone fixation."
+          "text": "Traction weights connected to the limb without a supporting frame",
+          "explanation": "This describes a different stabilization arrangement."
         },
         {
-          "text": "An ECG lead system around an injured limb",
-          "explanation": "This is not a fracture-fixation device."
+          "text": "A molded cast enclosing the limb without bone-anchored pins",
+          "explanation": "A cast does not have the defining pin-to-frame connection."
         }
       ],
       "correct": 0,
@@ -3763,20 +3763,20 @@
       "stem": "What does Taylor Spatial Frame describe?",
       "choices": [
         {
-          "text": "A circular hexapod external fixation system",
-          "explanation": "It stabilizes bone and allows planned multidirectional correction."
+          "text": "A circular external fixator with adjustable struts",
+          "explanation": "This describes the TSF system."
         },
         {
-          "text": "A wholly internal intramedullary nail",
-          "explanation": "That is a different fixation method."
+          "text": "An internal fixation plate with locking screws",
+          "explanation": "An internal plate is not an external hexapod frame."
         },
         {
-          "text": "A passive compression bandage",
-          "explanation": "That is not a hexapod fixation frame."
+          "text": "A linear external fixator with a single connecting bar",
+          "explanation": "This lacks the characteristic circular hexapod arrangement."
         },
         {
-          "text": "A cardiac transcutaneous pacing system",
-          "explanation": "This is not an orthopaedic TSF."
+          "text": "A skeletal traction system with suspended weights",
+          "explanation": "Traction weights are not the TSF system."
         }
       ],
       "correct": 0,
@@ -3835,20 +3835,20 @@
       "stem": "What is a purpose of a Taylor Spatial Frame?",
       "choices": [
         {
-          "text": "Planned deformity correction or limb lengthening",
-          "explanation": "The system can support gradual individualized bone correction."
+          "text": "Gradual deformity correction or limb lengthening",
+          "explanation": "These are taught purposes of the frame."
         },
         {
-          "text": "Immediate correction of every postoperative pain episode",
-          "explanation": "Pain requires assessment rather than automatic frame adjustment."
+          "text": "Permanent replacement of an artificial knee joint",
+          "explanation": "A TSF is not a joint prosthesis."
         },
         {
-          "text": "Treatment of every fever without an infection assessment",
-          "explanation": "A frame is not an antimicrobial treatment."
+          "text": "Direct removal of infected bone without an operation",
+          "explanation": "The frame does not itself perform debridement."
         },
         {
-          "text": "Correction of an ECG conduction delay",
-          "explanation": "This is an orthopaedic rather than cardiac device."
+          "text": "Measurement of compartment pressure during routine walking",
+          "explanation": "A TSF is not a compartment-pressure measuring device."
         }
       ],
       "correct": 0,
@@ -4130,20 +4130,20 @@
       "stem": "Which description correctly defines osteomyelitis?",
       "choices": [
         {
-          "text": "Infection of bone",
-          "explanation": "It may follow blood spread, nearby infection, or direct entry after trauma."
+          "text": "Infection involving bone",
+          "explanation": "This defines osteomyelitis."
         },
         {
-          "text": "An isolated reduction in bone density",
-          "explanation": "This is not the definition of infection."
+          "text": "Inflammation confined to a joint",
+          "explanation": "This refers to joint involvement rather than bone infection."
         },
         {
-          "text": "A closed compartment-pressure syndrome alone",
-          "explanation": "This is a different mechanism."
+          "text": "Infection confined to superficial skin",
+          "explanation": "Superficial skin infection is not osteomyelitis."
         },
         {
-          "text": "An isolated tendon rupture",
-          "explanation": "This affects a different structure."
+          "text": "Loss of bone mineral density",
+          "explanation": "Reduced density does not define bone infection."
         }
       ],
       "correct": 0,
@@ -4214,23 +4214,23 @@
       "criticalForSafety": false
     },
     {
-      "stem": "Which treatment pattern is compatible with osteomyelitis?",
+      "stem": "Which treatment pattern addresses established osteomyelitis rather than symptoms alone?",
       "choices": [
         {
           "text": "An extended antimicrobial plan with possible debridement",
-          "explanation": "Both medical and surgical treatment may be required."
+          "explanation": "Treatment may require antimicrobial therapy and removal of infected tissue."
         },
         {
-          "text": "A single analgesic dose as complete infection treatment",
-          "explanation": "Pain relief does not eradicate bone infection."
+          "text": "A short analgesic course followed by wound observation",
+          "explanation": "Symptom relief alone does not treat established bone infection."
         },
         {
-          "text": "A routine bronchodilator as complete infection treatment",
-          "explanation": "This does not treat a bone infection."
+          "text": "Surface cleansing alone until the drainage stops",
+          "explanation": "Surface care alone does not address infection within bone."
         },
         {
-          "text": "A vitamin supplement as complete infection treatment",
-          "explanation": "Nutritional support does not replace antimicrobial/surgical care."
+          "text": "Immobilization alone until the pain resolves",
+          "explanation": "Protecting the limb does not itself eradicate the infection."
         }
       ],
       "correct": 0,
@@ -4333,23 +4333,23 @@
   ],
   "ibd2-lesson-03-open-gunshot-fractures": [
     {
-      "stem": "Which finding defines an open fracture?",
+      "stem": "Which finding is required to classify a fracture as open?",
       "choices": [
         {
-          "text": "A wound that communicates with the fracture",
-          "explanation": "Communication with the outside is the defining concept; visible bone is not required."
+          "text": "A wound communicating with the fracture",
+          "explanation": "Communication with the fracture defines an open fracture."
         },
         {
-          "text": "Visible bone protruding through the skin in every case",
-          "explanation": "Bone exposure can occur, but it is not required for an open fracture."
+          "text": "A wound with bone visibly protruding through the skin",
+          "explanation": "Visible bone is not required for a fracture to be open."
         },
         {
-          "text": "Any bruise over a closed fracture",
-          "explanation": "Bruising alone does not establish communication with the fracture."
+          "text": "A skin wound anywhere on the injured extremity",
+          "explanation": "The wound must communicate with the fracture."
         },
         {
-          "text": "Pain severe enough to require an opioid",
-          "explanation": "Pain severity does not determine whether the fracture is open."
+          "text": "A fracture with severe surrounding bruising and swelling",
+          "explanation": "Bruising and swelling alone do not establish communication with the outside."
         }
       ],
       "correct": 0,
@@ -4363,23 +4363,23 @@
       "criticalForSafety": false
     },
     {
-      "stem": "What should the focused bedside check include after an open extremity fracture?",
+      "stem": "Which assessment set most directly checks for immediate limb and systemic complications after an open fracture?",
       "choices": [
         {
-          "text": "Bleeding, wound, distal neurovascular status, pain/swelling and vitals",
-          "explanation": "These findings address immediate limb and systemic risk."
+          "text": "Bleeding, distal perfusion, sensation, movement and vital signs",
+          "explanation": "These identify bleeding, neurovascular change and systemic deterioration."
         },
         {
-          "text": "Only wound size and dressing colour",
-          "explanation": "This misses circulation, nerves and systemic status."
+          "text": "Wound dimensions, dressing type, exudate volume and skin edges",
+          "explanation": "This wound-focused set omits distal function and systemic observations."
         },
         {
-          "text": "Only the distal pulse",
-          "explanation": "A pulse alone does not assess the whole neurovascular picture."
+          "text": "Pain score, sleep quality, appetite and response to reassurance",
+          "explanation": "These do not adequately check perfusion, movement and systemic stability."
         },
         {
-          "text": "Only whether the patient can sleep",
-          "explanation": "Sleep does not establish limb safety."
+          "text": "Joint range, walking distance, muscle bulk and rehabilitation goals",
+          "explanation": "Rehabilitation measures do not replace assessment for immediate complications."
         }
       ],
       "correct": 0,
@@ -4392,23 +4392,23 @@
       "criticalForSafety": true
     },
     {
-      "stem": "Which action best matches nursing care for a fresh open fracture?",
+      "stem": "Which infection-prevention plan fits nursing care for a fresh open fracture?",
       "choices": [
         {
-          "text": "Protect the wound, follow aseptic care, give ordered antibiotics promptly and verify tetanus assessment",
-          "explanation": "These actions reduce contamination risk and support time-sensitive treatment within scope."
+          "text": "Protect aseptically; give ordered antibiotics; verify tetanus assessment",
+          "explanation": "These match the taught plan while preserving authorized prescribing."
         },
         {
-          "text": "Probe the wound to determine its depth",
-          "explanation": "Unnecessary probing can contaminate or injure tissue and is not an intern decision."
+          "text": "Protect aseptically; await visible drainage before ordered antibiotics",
+          "explanation": "The infection-prevention plan should not wait for drainage to appear."
         },
         {
-          "text": "Choose an antibiotic without an order",
-          "explanation": "Antimicrobial selection requires the authorized plan."
+          "text": "Clean the surface; omit antibiotics if bone is not visible",
+          "explanation": "Visible protruding bone is not required for an open fracture."
         },
         {
-          "text": "Delay neurovascular assessment until after dressing care",
-          "explanation": "Limb perfusion and nerve function must not be deferred."
+          "text": "Cover the wound; omit tetanus assessment after starting antibiotics",
+          "explanation": "Antibiotics do not replace tetanus assessment."
         }
       ],
       "correct": 0,
@@ -4485,20 +4485,20 @@
       "stem": "What is the key anatomical difference between BKA and AKA?",
       "choices": [
         {
-          "text": "BKA preserves the knee; AKA removes the limb above the knee",
-          "explanation": "Knee preservation is the main functional distinction."
+          "text": "BKA preserves the knee; AKA removes the limb above it",
+          "explanation": "The knee is retained in BKA but not AKA."
         },
         {
-          "text": "BKA is above the hip and AKA is below it",
-          "explanation": "This reverses and misstates the levels."
+          "text": "BKA removes the knee; AKA preserves the knee joint",
+          "explanation": "This reverses the relationship."
         },
         {
-          "text": "Both remove the knee joint",
-          "explanation": "BKA preserves the knee."
+          "text": "BKA preserves the ankle; AKA removes below the ankle",
+          "explanation": "BKA removes the distal leg and foot, including the ankle."
         },
         {
-          "text": "The terms describe wound dressings rather than amputation levels",
-          "explanation": "They describe the level of lower-limb amputation."
+          "text": "BKA removes above the hip; AKA removes below it",
+          "explanation": "These terms use the knee, not the hip, as the distinction."
         }
       ],
       "correct": 0,
@@ -4540,23 +4540,23 @@
       "criticalForSafety": true
     },
     {
-      "stem": "How should phantom limb pain be understood?",
+      "stem": "Which description defines phantom limb pain?",
       "choices": [
         {
-          "text": "It is real pain perceived in the removed limb and should be assessed and treated",
-          "explanation": "Phantom pain is a recognized neurological phenomenon."
+          "text": "Pain perceived in the part of the limb that was removed",
+          "explanation": "Phantom limb pain is real pain perceived in the missing part."
         },
         {
-          "text": "It proves the patient is imagining symptoms",
-          "explanation": "The pain is not dismissed as imagination."
+          "text": "Pain confined to the skin around the residual-limb incision",
+          "explanation": "This describes residual-limb pain rather than phantom pain."
         },
         {
-          "text": "It means the amputation level was documented incorrectly",
-          "explanation": "Phantom pain does not indicate a documentation error."
+          "text": "A painless sense that the missing limb is still present",
+          "explanation": "This describes phantom sensation without pain."
         },
         {
-          "text": "It is always a sign of wound infection",
-          "explanation": "It can occur without infection."
+          "text": "Pain caused by pressure where a prosthesis contacts the limb",
+          "explanation": "This is pain at the remaining limb’s contact site."
         }
       ],
       "correct": 0,
@@ -4572,20 +4572,20 @@
       "stem": "Why should prolonged flexion of a residual limb be avoided?",
       "choices": [
         {
-          "text": "It can contribute to flexion contracture and loss of range of motion",
-          "explanation": "Prolonged flexed positioning can shorten tissues and impair function."
+          "text": "Risk of flexion contracture and reduced joint range",
+          "explanation": "Prolonged flexion can limit extension and later function."
         },
         {
-          "text": "It prevents all phantom pain",
-          "explanation": "Positioning does not guarantee prevention of phantom pain."
+          "text": "Risk of recurrent phantom pain with each joint extension",
+          "explanation": "Phantom pain is not the reason prolonged flexion is avoided."
         },
         {
-          "text": "It increases blood production",
-          "explanation": "This is unrelated to positioning."
+          "text": "Risk of distal bone infection from extending the joint",
+          "explanation": "This does not explain the positioning precaution."
         },
         {
-          "text": "It guarantees faster wound closure",
-          "explanation": "This is not the purpose of contracture prevention."
+          "text": "Risk of wound bleeding from any return to extension",
+          "explanation": "This is not the contracture-prevention rationale; follow the individual positioning plan."
         }
       ],
       "correct": 0,
@@ -4689,23 +4689,23 @@
       "criticalForSafety": false
     },
     {
-      "stem": "What should be checked after a sedating analgesic is given?",
+      "stem": "After a sedating analgesic, which assessment set best checks both benefit and immediate adverse effects?",
       "choices": [
         {
-          "text": "Pain response, alertness and respiratory status",
-          "explanation": "These show both benefit and important adverse effects."
+          "text": "Pain response, alertness and respiratory pattern",
+          "explanation": "This checks analgesic effect and sedation-related respiratory compromise."
         },
         {
-          "text": "Only the colour of the tablet package",
-          "explanation": "Packaging does not assess patient response."
+          "text": "Pain response, bowel sounds and appetite",
+          "explanation": "These do not adequately assess immediate sedation and breathing."
         },
         {
-          "text": "Only the next scheduled dose time",
-          "explanation": "Reassessment must include clinical effect."
+          "text": "Pain response, wound dimensions and drainage",
+          "explanation": "These wound findings do not establish respiratory safety."
         },
         {
-          "text": "Only the wound dressing label",
-          "explanation": "This does not assess medication safety."
+          "text": "Pain response, joint range and walking distance",
+          "explanation": "Functional measures do not replace checking alertness and breathing."
         }
       ],
       "correct": 0,
@@ -4748,23 +4748,23 @@
       "criticalForSafety": true
     },
     {
-      "stem": "Why are exact routes, contraindications and interaction details kept in the Medication Library rather than memorized from this lesson?",
+      "stem": "Which source should guide a check of a prescribed analgesic’s route and interactions?",
       "choices": [
         {
-          "text": "They are drug- and product-specific and must match the current order and reference",
-          "explanation": "Medication safety details change by product, formulation and patient context."
+          "text": "Current drug/product information matched to the prescription",
+          "explanation": "Administration and interactions depend on the specific drug and product."
         },
         {
-          "text": "They are unimportant to nursing care",
-          "explanation": "They are important but belong in the verified medication entry."
+          "text": "The general pain lesson applied to every analgesic",
+          "explanation": "The general lesson cannot supply every product-specific administration detail."
         },
         {
-          "text": "All analgesics share identical administration rules",
-          "explanation": "They do not."
+          "text": "A previous patient’s regimen for the same pain score",
+          "explanation": "A prior regimen is not a substitute for checking this prescription."
         },
         {
-          "text": "The trade name alone determines safe administration",
-          "explanation": "The exact generic, formulation and order must be verified."
+          "text": "The trade name without checking the active ingredient",
+          "explanation": "The ingredient and formulation must be identified."
         }
       ],
       "correct": 0,
@@ -4782,20 +4782,20 @@
       "stem": "What should be verified before mobilizing an orthopaedic patient?",
       "choices": [
         {
-          "text": "Weight-bearing status, assistive device and required staff help",
-          "explanation": "These determine whether and how mobilization is safe."
+          "text": "Weight-bearing order, mobility aid and required assistance",
+          "explanation": "These establish how the patient can mobilize under the individual plan."
         },
         {
-          "text": "Only whether the patient wants to walk",
-          "explanation": "Preference matters but does not replace safety orders."
+          "text": "Pain score, preferred route and planned walking distance",
+          "explanation": "These do not establish the permitted loading or required support."
         },
         {
-          "text": "Only the room number",
-          "explanation": "This does not establish mobility safety."
+          "text": "Previous activity level, shoe size and exercise preference",
+          "explanation": "Baseline details do not replace current postoperative orders."
         },
         {
-          "text": "The strength of the bed rails alone",
-          "explanation": "This does not determine weight-bearing status."
+          "text": "Frame appearance, patient confidence and available corridor space",
+          "explanation": "Appearance and confidence do not establish a safe authorized mobility plan."
         }
       ],
       "correct": 0,
@@ -4808,23 +4808,23 @@
       "criticalForSafety": true
     },
     {
-      "stem": "Which areas deserve particular pressure-injury attention in an immobile patient?",
+      "stem": "Which pair of pressure areas is particularly important in a patient lying supine for prolonged periods?",
       "choices": [
         {
           "text": "Sacrum and heels",
-          "explanation": "These are common pressure points in bedbound patients."
+          "explanation": "These are major pressure-bearing areas in this position."
         },
         {
-          "text": "Only the fingertips",
-          "explanation": "This misses major weight-bearing pressure areas."
+          "text": "Cheeks and anterior knees",
+          "explanation": "These are more relevant to anterior contact in prone positioning."
         },
         {
-          "text": "Only the scalp",
-          "explanation": "This is not the main routine focus."
+          "text": "Ears and lateral ankles",
+          "explanation": "These are more relevant to lateral contact in side lying."
         },
         {
-          "text": "Only the wound incision",
-          "explanation": "Pressure risk exists beyond the surgical site."
+          "text": "Palms and anterior elbows",
+          "explanation": "These are not the main pressure-bearing areas in supine lying."
         }
       ],
       "correct": 0,
@@ -4840,20 +4840,20 @@
       "stem": "Which new limb pattern most strongly suggests DVT?",
       "choices": [
         {
-          "text": "Unilateral swelling, pain, warmth and redness",
-          "explanation": "This is a classic concerning DVT pattern."
+          "text": "New unilateral calf swelling, tenderness and warmth",
+          "explanation": "This cluster raises concern for DVT and requires assessment."
         },
         {
-          "text": "Symmetric cool feet without pain",
-          "explanation": "This does not fit the taught DVT pattern."
+          "text": "Symmetric ankle swelling after prolonged dependent sitting",
+          "explanation": "This is less specific for a new unilateral venous thrombosis."
         },
         {
-          "text": "Bilateral hand itching after soap",
-          "explanation": "This is unrelated."
+          "text": "Focal redness exactly beneath a tight dressing edge",
+          "explanation": "This suggests local contact pressure rather than the described calf pattern."
         },
         {
-          "text": "Isolated shoulder stiffness",
-          "explanation": "This does not suggest lower-limb DVT."
+          "text": "Chronic knee stiffness that improves after gentle movement",
+          "explanation": "This does not fit the new calf swelling and warmth pattern."
         }
       ],
       "correct": 0,
@@ -4930,20 +4930,20 @@
       "stem": "What does an elevated CRP tell you by itself?",
       "choices": [
         {
-          "text": "Inflammation is present, but the source is not identified",
-          "explanation": "CRP is nonspecific."
+          "text": "An inflammatory response without identifying its cause",
+          "explanation": "CRP is nonspecific; interpret it with the clinical findings."
         },
         {
-          "text": "Osteomyelitis is definitively diagnosed",
-          "explanation": "CRP alone cannot diagnose osteomyelitis."
+          "text": "A bacterial cause rather than a noninfectious inflammatory cause",
+          "explanation": "CRP alone cannot distinguish these causes."
         },
         {
-          "text": "The infecting organism is known",
-          "explanation": "A culture is needed to identify an organism."
+          "text": "Bone involvement rather than infection limited to soft tissue",
+          "explanation": "CRP does not locate the inflammation."
         },
         {
-          "text": "The patient must have a normal WBC count",
-          "explanation": "CRP does not determine the WBC result."
+          "text": "A susceptible organism rather than an antibiotic-resistant organism",
+          "explanation": "CRP does not identify an organism or its susceptibility."
         }
       ],
       "correct": 0,
@@ -4956,23 +4956,23 @@
       "criticalForSafety": false
     },
     {
-      "stem": "Which CBC information is most useful in an infected orthopaedic patient?",
+      "stem": "Which mapping correctly links CBC components with their main assessment context?",
       "choices": [
         {
-          "text": "WBC/neutrophils for infection context, hemoglobin for blood loss/anemia, and platelets for bleeding/clotting context",
-          "explanation": "Each component answers a different bedside question."
+          "text": "WBC: infection; hemoglobin: anemia; platelets: bleeding",
+          "explanation": "These components support these respective assessment contexts."
         },
         {
-          "text": "Only the mean cell volume",
-          "explanation": "This misses the key infection, anemia and platelet information."
+          "text": "WBC: anemia; hemoglobin: bleeding; platelets: infection",
+          "explanation": "This misassigns the main assessment role of WBC and platelets."
         },
         {
-          "text": "Only the platelet count for every clinical question",
-          "explanation": "Platelets do not replace WBC or hemoglobin assessment."
+          "text": "WBC: bleeding; hemoglobin: infection; platelets: anemia",
+          "explanation": "These are not the correct component-to-context relationships."
         },
         {
-          "text": "Only hemoglobin to identify the infecting organism",
-          "explanation": "Hemoglobin does not identify microorganisms."
+          "text": "WBC: infection; hemoglobin: clotting; platelets: anemia",
+          "explanation": "Hemoglobin assesses anemia; platelets relate to bleeding and clotting."
         }
       ],
       "correct": 0,
@@ -4988,20 +4988,20 @@
       "stem": "What is the main purpose of a correctly collected culture?",
       "choices": [
         {
-          "text": "Identify an organism and help guide antimicrobial choice",
-          "explanation": "Culture can support targeted antimicrobial therapy."
+          "text": "Identify an organism to help guide antimicrobial treatment",
+          "explanation": "Culture supports organism identification and treatment selection."
         },
         {
-          "text": "Measure the patient's pain severity",
-          "explanation": "Pain requires clinical assessment."
+          "text": "Measure the inflammatory response to compare with CRP",
+          "explanation": "Culture investigates organisms, not the magnitude of inflammation."
         },
         {
-          "text": "Determine weight-bearing status",
-          "explanation": "That comes from the orthopaedic plan."
+          "text": "Measure circulating white cells to assess infection severity",
+          "explanation": "A CBC measures circulating cells; culture has a different purpose."
         },
         {
-          "text": "Replace wound assessment",
-          "explanation": "Culture results must be interpreted with the patient and wound."
+          "text": "Establish the depth of bone involvement from the specimen alone",
+          "explanation": "Culture alone does not establish anatomical extent."
         }
       ],
       "correct": 0,
@@ -5046,20 +5046,20 @@
       "stem": "CRP and ESR remain elevated, but the wound and patient are clinically improving. What is the best interpretation?",
       "choices": [
         {
-          "text": "Use the trend with the clinical picture; the markers alone do not prove worsening osteomyelitis",
-          "explanation": "Inflammatory markers are supportive rather than diagnostic by themselves."
+          "text": "Interpret marker trends alongside the improving clinical findings",
+          "explanation": "CRP and ESR are nonspecific and must be interpreted with the clinical course."
         },
         {
-          "text": "The high markers prove treatment failure",
-          "explanation": "This overinterprets nonspecific tests."
+          "text": "Interpret persistent elevation as evidence that treatment has failed",
+          "explanation": "An elevated marker alone does not establish treatment failure."
         },
         {
-          "text": "Stop all clinical assessments because labs are available",
-          "explanation": "Bedside findings remain essential."
+          "text": "Interpret clinical improvement as evidence that infection is eradicated",
+          "explanation": "Improvement alone does not prove complete eradication."
         },
         {
-          "text": "Assume the culture result is irrelevant",
-          "explanation": "Microbiology may remain important to treatment decisions."
+          "text": "Interpret the marker values as more decisive than the wound findings",
+          "explanation": "Markers do not replace the overall clinical assessment."
         }
       ],
       "correct": 0,
@@ -5079,20 +5079,20 @@
       "stem": "What does the A in SBAR represent?",
       "choices": [
         {
-          "text": "Assessment: your focused findings and evaluation of the current situation",
-          "explanation": "Assessment communicates what you found and what it means."
+          "text": "Assessment",
+          "explanation": "A contains focused findings and the nurse’s evaluation."
         },
         {
-          "text": "Allergies only",
-          "explanation": "Allergies may be background information but do not define A."
+          "text": "Admission",
+          "explanation": "Admission history belongs in relevant background, not the A heading."
         },
         {
-          "text": "Action performed by the surgeon",
-          "explanation": "This is not the SBAR definition."
+          "text": "Action",
+          "explanation": "Actions may be reported, but the A heading means Assessment."
         },
         {
-          "text": "Admission date only",
-          "explanation": "This belongs in background if relevant."
+          "text": "Allergies",
+          "explanation": "Allergies are relevant background, not the meaning of A."
         }
       ],
       "correct": 0,
@@ -5105,23 +5105,23 @@
       "criticalForSafety": false
     },
     {
-      "stem": "Which documentation best supports continuity after a patient deteriorates?",
+      "stem": "After escalation of deterioration, which chart entry best allows the next nurse to judge the response?",
       "choices": [
         {
-          "text": "Time, objective findings, action, person notified, instructions and reassessment",
-          "explanation": "This records the event and response clearly."
+          "text": "Timed findings, actions, instructions and repeat observations",
+          "explanation": "These link the change and response to the care given."
         },
         {
-          "text": "Doctor informed",
-          "explanation": "This omits what happened and what followed."
+          "text": "Timed findings, actions, instructions and prior medical history",
+          "explanation": "Relevant background does not substitute for observations after the intervention."
         },
         {
-          "text": "Patient bad",
-          "explanation": "This is vague and nonobjective."
+          "text": "Timed findings, actions, instructions and planned appointments",
+          "explanation": "Planned appointments do not show the response to the intervention."
         },
         {
-          "text": "See previous note",
-          "explanation": "This does not document the current change."
+          "text": "Timed findings, actions, instructions and routine medication list",
+          "explanation": "The medication list does not show whether the patient improved."
         }
       ],
       "correct": 0,
@@ -5138,20 +5138,20 @@
       "stem": "Why is read-back used for new verbal or telephone orders?",
       "choices": [
         {
-          "text": "To confirm accuracy before carrying out and documenting the order",
-          "explanation": "Read-back reduces communication error."
+          "text": "Confirm the order matches what the prescriber intended",
+          "explanation": "Read-back detects misheard or misunderstood instructions."
         },
         {
-          "text": "To replace documentation entirely",
-          "explanation": "The communication still needs documentation."
+          "text": "Confirm the treatment produced the intended clinical response",
+          "explanation": "Reassessment, rather than read-back, establishes treatment response."
         },
         {
-          "text": "To avoid identifying the patient",
-          "explanation": "Patient identification remains essential."
+          "text": "Confirm the receiving nurse has completed the intervention",
+          "explanation": "Read-back verifies the message before it is carried out."
         },
         {
-          "text": "To let the nurse change the order wording",
-          "explanation": "The goal is confirmation, not alteration."
+          "text": "Confirm the order matches the previous patient’s regimen",
+          "explanation": "Orders must be checked for this patient, not matched to another patient."
         }
       ],
       "correct": 0,
@@ -5164,23 +5164,23 @@
       "criticalForSafety": false
     },
     {
-      "stem": "A patient with an external fixator develops fever, worse pain and purulent drainage. Which SBAR opening is strongest?",
+      "stem": "A patient with an external fixator develops fever, worse pain and purulent drainage. Which statement belongs in Situation?",
       "choices": [
         {
-          "text": "Situation: new fever, increased pain and purulent drainage in this patient now",
-          "explanation": "It immediately states the current problem."
+          "text": "New fever, increased pain and purulent drainage prompted this call",
+          "explanation": "Situation states the current problem requiring attention."
         },
         {
-          "text": "Background: the hospital opened many years ago",
-          "explanation": "This is irrelevant background."
+          "text": "The external fixator was inserted after an open fracture",
+          "explanation": "This is relevant Background rather than the new problem."
         },
         {
-          "text": "Assessment: the patient has a bed in the ward",
-          "explanation": "This does not describe the clinical change."
+          "text": "I am concerned about an infection involving the pin site",
+          "explanation": "This is the nurse’s Assessment of the problem."
         },
         {
-          "text": "Recommendation: no review is needed because a dressing is present",
-          "explanation": "The findings require review."
+          "text": "Please review the patient and advise on the treatment plan",
+          "explanation": "This states a Recommendation or request."
         }
       ],
       "correct": 0,
@@ -5194,23 +5194,23 @@
       "criticalForSafety": false
     },
     {
-      "stem": "Which note is weakest after escalating a neurovascular change?",
+      "stem": "Which escalation note leaves the response to a new sensory deficit unclear?",
       "choices": [
         {
-          "text": "“Doctor informed” with no time, findings or response",
-          "explanation": "This is insufficient for tracking what changed and what happened next."
+          "text": "New toe numbness at 14:00; doctor notified; review requested",
+          "explanation": "The note lacks instructions received and subsequent reassessment."
         },
         {
-          "text": "Timed neurovascular findings with the person notified and repeat assessment",
-          "explanation": "This supports continuity."
+          "text": "New toe numbness at 14:00; urgent review; instructions and repeat findings recorded",
+          "explanation": "This records the response and follow-up."
         },
         {
-          "text": "Objective description of sensation and movement before and after escalation",
-          "explanation": "This documents the clinical trend."
+          "text": "New toe numbness at 14:00; review completed; plan and subsequent sensation recorded",
+          "explanation": "This allows comparison after the response."
         },
         {
-          "text": "Recorded instructions received and patient response",
-          "explanation": "This completes the communication loop."
+          "text": "New toe numbness at 14:00; team attended; instructions and repeat movement recorded",
+          "explanation": "This includes the received plan and reassessment."
         }
       ],
       "correct": 0,
@@ -5374,20 +5374,20 @@
       "stem": "CRP and ESR are high while the wound and patient are clinically improving. What is the correct interpretation?",
       "choices": [
         {
-          "text": "The markers are nonspecific and must be interpreted with the clinical trend",
-          "explanation": "They support but do not define the diagnosis alone."
+          "text": "Interpret marker trends alongside the improving clinical findings",
+          "explanation": "CRP and ESR are nonspecific and must be interpreted with the clinical course."
         },
         {
-          "text": "The high values prove worsening osteomyelitis",
-          "explanation": "This overinterprets nonspecific markers."
+          "text": "Interpret persistent elevation as evidence that treatment has failed",
+          "explanation": "An elevated marker alone does not establish treatment failure."
         },
         {
-          "text": "The wound examination can now be stopped",
-          "explanation": "Clinical assessment remains necessary."
+          "text": "Interpret clinical improvement as evidence that infection is eradicated",
+          "explanation": "Improvement alone does not prove complete eradication."
         },
         {
-          "text": "Culture results no longer matter",
-          "explanation": "Microbiology can still guide treatment."
+          "text": "Interpret the marker values as more decisive than the wound findings",
+          "explanation": "Markers do not replace the overall clinical assessment."
         }
       ],
       "correct": 0,

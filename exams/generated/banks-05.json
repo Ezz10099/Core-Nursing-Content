@@ -13382,32 +13382,32 @@
           "retestPolicy": "comprehensive memory retest; questions may repeat",
           "questions": [
             {
-              "stem": "Where is the key neurovascular assessment directed after a limb fracture or immobilization?",
+              "point": "Assess distal blood supply and nerve function below an injury/immobilization.",
+              "criticalForSafety": false,
+              "format": "single-best-answer",
+              "stem": "A casted limb becomes more painful. Where should the focused neurovascular check be directed?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Only at the opposite limb without checking the injured side",
-                  "explanation": "Comparison cannot replace assessment of the affected limb."
+                  "text": "Across the cast surface, comparing the contour with the other limb",
+                  "explanation": "Cast appearance does not establish distal neurovascular safety."
                 },
                 {
                   "id": "B",
-                  "text": "Only at the frame’s outer metal surface",
-                  "explanation": "Hardware appearance does not establish tissue perfusion."
+                  "text": "At the painful area, comparing tenderness before and after analgesia",
+                  "explanation": "Pain assessment alone omits distal sensation, movement and perfusion."
                 },
                 {
                   "id": "C",
-                  "text": "Only at the uninjured shoulder",
-                  "explanation": "This does not assess distal tissue at risk."
+                  "text": "Above the injury, comparing swelling with the last dressing check",
+                  "explanation": "This does not assess function and perfusion beyond the injury."
                 },
                 {
                   "id": "D",
-                  "text": "Distal to the injury, compared with the other side when possible",
-                  "explanation": "Tissue below the injury may lose blood flow or nerve function."
+                  "text": "Below the injury, comparing findings with baseline and the other limb",
+                  "explanation": "This checks distal perfusion and neurological function for a new change."
                 }
               ],
-              "format": "single-best-answer",
-              "point": "Assess distal blood supply and nerve function below an injury/immobilization.",
-              "criticalForSafety": false,
               "sourceRefs": [
                 {
                   "file": "content.json",
@@ -13416,6 +13416,14 @@
                   "sectionIndex": 0,
                   "label": "The one question",
                   "textSha256": "1dd8aecddc79ab08f10f706a4331b2e021bbc8121ee7a6afce7da07a72f8209f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-01-fracture-limb-safety",
+                  "sectionIndex": 1,
+                  "label": "Memory sequence",
+                  "textSha256": "08a572b372a0985c09db7fe87d558b570e920550f162ae6c1aa35b84264f08a7"
                 }
               ],
               "id": "ibd2-lesson-01-fracture-limb-safety--7-day--point-4361d515fd95",
@@ -13423,7 +13431,7 @@
               "learningPointIds": [
                 "ibd2-lesson-01-fracture-limb-safety::point-4361d515fd95"
               ],
-              "reusedFromQuestionId": "ibd2-lesson-01-fracture-limb-safety--standard--point-4361d515fd95",
+              "reusedFromQuestionId": "ibd2-lesson-01-fracture-limb-safety--7-day--point-4361d515fd95",
               "answerKey": "D"
             },
             {
@@ -13866,23 +13874,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "An ECG lead system around an injured limb",
-                  "explanation": "This is not a fracture-fixation device."
+                  "text": "A molded cast enclosing the limb without bone-anchored pins",
+                  "explanation": "A cast does not have the defining pin-to-frame connection."
                 },
                 {
                   "id": "B",
-                  "text": "Pins anchored in bone connected to a frame outside the body",
-                  "explanation": "This provides the external stabilization described."
+                  "text": "Bone-anchored pins connected to an external supporting frame",
+                  "explanation": "The frame is outside the body and connected to bone."
                 },
                 {
                   "id": "C",
-                  "text": "A compression stocking that contains no bone connection",
-                  "explanation": "This is not external bone fixation."
+                  "text": "Traction weights connected to the limb without a supporting frame",
+                  "explanation": "This describes a different stabilization arrangement."
                 },
                 {
                   "id": "D",
-                  "text": "A wholly internal plate with no skin-crossing pins",
-                  "explanation": "This describes a different fixation approach."
+                  "text": "A plate and screws placed completely beneath the skin",
+                  "explanation": "This describes internal fixation."
                 }
               ],
               "format": "single-best-answer",
@@ -14348,23 +14356,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "An ECG lead system around an injured limb",
-                  "explanation": "This is not a fracture-fixation device."
+                  "text": "A plate and screws placed completely beneath the skin",
+                  "explanation": "This describes internal fixation."
                 },
                 {
                   "id": "B",
-                  "text": "Pins anchored in bone connected to a frame outside the body",
-                  "explanation": "This provides the external stabilization described."
+                  "text": "Bone-anchored pins connected to an external supporting frame",
+                  "explanation": "The frame is outside the body and connected to bone."
                 },
                 {
                   "id": "C",
-                  "text": "A wholly internal plate with no skin-crossing pins",
-                  "explanation": "This describes a different fixation approach."
+                  "text": "A molded cast enclosing the limb without bone-anchored pins",
+                  "explanation": "A cast does not have the defining pin-to-frame connection."
                 },
                 {
                   "id": "D",
-                  "text": "A compression stocking that contains no bone connection",
-                  "explanation": "This is not external bone fixation."
+                  "text": "Traction weights connected to the limb without a supporting frame",
+                  "explanation": "This describes a different stabilization arrangement."
                 }
               ],
               "format": "single-best-answer",
@@ -14820,23 +14828,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "A circular hexapod external fixation system",
-                  "explanation": "It stabilizes bone and allows planned multidirectional correction."
+                  "text": "A circular external fixator with adjustable struts",
+                  "explanation": "This describes the TSF system."
                 },
                 {
                   "id": "B",
-                  "text": "A wholly internal intramedullary nail",
-                  "explanation": "That is a different fixation method."
+                  "text": "A skeletal traction system with suspended weights",
+                  "explanation": "Traction weights are not the TSF system."
                 },
                 {
                   "id": "C",
-                  "text": "A passive compression bandage",
-                  "explanation": "That is not a hexapod fixation frame."
+                  "text": "A linear external fixator with a single connecting bar",
+                  "explanation": "This lacks the characteristic circular hexapod arrangement."
                 },
                 {
                   "id": "D",
-                  "text": "A cardiac transcutaneous pacing system",
-                  "explanation": "This is not an orthopaedic TSF."
+                  "text": "An internal fixation plate with locking screws",
+                  "explanation": "An internal plate is not an external hexapod frame."
                 }
               ],
               "format": "single-best-answer",
@@ -14933,23 +14941,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Treatment of every fever without an infection assessment",
-                  "explanation": "A frame is not an antimicrobial treatment."
+                  "text": "Measurement of compartment pressure during routine walking",
+                  "explanation": "A TSF is not a compartment-pressure measuring device."
                 },
                 {
                   "id": "B",
-                  "text": "Correction of an ECG conduction delay",
-                  "explanation": "This is an orthopaedic rather than cardiac device."
+                  "text": "Direct removal of infected bone without an operation",
+                  "explanation": "The frame does not itself perform debridement."
                 },
                 {
                   "id": "C",
-                  "text": "Immediate correction of every postoperative pain episode",
-                  "explanation": "Pain requires assessment rather than automatic frame adjustment."
+                  "text": "Permanent replacement of an artificial knee joint",
+                  "explanation": "A TSF is not a joint prosthesis."
                 },
                 {
                   "id": "D",
-                  "text": "Planned deformity correction or limb lengthening",
-                  "explanation": "The system can support gradual individualized bone correction."
+                  "text": "Gradual deformity correction or limb lengthening",
+                  "explanation": "These are taught purposes of the frame."
                 }
               ],
               "format": "single-best-answer",
@@ -15459,23 +15467,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "A circular hexapod external fixation system",
-                  "explanation": "It stabilizes bone and allows planned multidirectional correction."
+                  "text": "A circular external fixator with adjustable struts",
+                  "explanation": "This describes the TSF system."
                 },
                 {
                   "id": "B",
-                  "text": "A wholly internal intramedullary nail",
-                  "explanation": "That is a different fixation method."
+                  "text": "A linear external fixator with a single connecting bar",
+                  "explanation": "This lacks the characteristic circular hexapod arrangement."
                 },
                 {
                   "id": "C",
-                  "text": "A passive compression bandage",
-                  "explanation": "That is not a hexapod fixation frame."
+                  "text": "A skeletal traction system with suspended weights",
+                  "explanation": "Traction weights are not the TSF system."
                 },
                 {
                   "id": "D",
-                  "text": "A cardiac transcutaneous pacing system",
-                  "explanation": "This is not an orthopaedic TSF."
+                  "text": "An internal fixation plate with locking screws",
+                  "explanation": "An internal plate is not an external hexapod frame."
                 }
               ],
               "format": "single-best-answer",
@@ -15575,23 +15583,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Treatment of every fever without an infection assessment",
-                  "explanation": "A frame is not an antimicrobial treatment."
+                  "text": "Measurement of compartment pressure during routine walking",
+                  "explanation": "A TSF is not a compartment-pressure measuring device."
                 },
                 {
                   "id": "B",
-                  "text": "Planned deformity correction or limb lengthening",
-                  "explanation": "The system can support gradual individualized bone correction."
+                  "text": "Gradual deformity correction or limb lengthening",
+                  "explanation": "These are taught purposes of the frame."
                 },
                 {
                   "id": "C",
-                  "text": "Correction of an ECG conduction delay",
-                  "explanation": "This is an orthopaedic rather than cardiac device."
+                  "text": "Direct removal of infected bone without an operation",
+                  "explanation": "The frame does not itself perform debridement."
                 },
                 {
                   "id": "D",
-                  "text": "Immediate correction of every postoperative pain episode",
-                  "explanation": "Pain requires assessment rather than automatic frame adjustment."
+                  "text": "Permanent replacement of an artificial knee joint",
+                  "explanation": "A TSF is not a joint prosthesis."
                 }
               ],
               "format": "single-best-answer",
@@ -16091,23 +16099,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Infection of bone",
-                  "explanation": "It may follow blood spread, nearby infection, or direct entry after trauma."
+                  "text": "Infection involving bone",
+                  "explanation": "This defines osteomyelitis."
                 },
                 {
                   "id": "B",
-                  "text": "An isolated tendon rupture",
-                  "explanation": "This affects a different structure."
+                  "text": "Loss of bone mineral density",
+                  "explanation": "Reduced density does not define bone infection."
                 },
                 {
                   "id": "C",
-                  "text": "An isolated reduction in bone density",
-                  "explanation": "This is not the definition of infection."
+                  "text": "Infection confined to superficial skin",
+                  "explanation": "Superficial skin infection is not osteomyelitis."
                 },
                 {
                   "id": "D",
-                  "text": "A closed compartment-pressure syndrome alone",
-                  "explanation": "This is a different mechanism."
+                  "text": "Inflammation confined to a joint",
+                  "explanation": "This refers to joint involvement rather than bone infection."
                 }
               ],
               "format": "single-best-answer",
@@ -16219,27 +16227,27 @@
               "answerKey": "C"
             },
             {
-              "stem": "Which treatment pattern is compatible with osteomyelitis?",
+              "stem": "Which treatment pattern addresses established osteomyelitis rather than symptoms alone?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A vitamin supplement as complete infection treatment",
-                  "explanation": "Nutritional support does not replace antimicrobial/surgical care."
+                  "text": "A short analgesic course followed by wound observation",
+                  "explanation": "Symptom relief alone does not treat established bone infection."
                 },
                 {
                   "id": "B",
-                  "text": "A single analgesic dose as complete infection treatment",
-                  "explanation": "Pain relief does not eradicate bone infection."
+                  "text": "Immobilization alone until the pain resolves",
+                  "explanation": "Protecting the limb does not itself eradicate the infection."
                 },
                 {
                   "id": "C",
-                  "text": "A routine bronchodilator as complete infection treatment",
-                  "explanation": "This does not treat a bone infection."
+                  "text": "Surface cleansing alone until the drainage stops",
+                  "explanation": "Surface care alone does not address infection within bone."
                 },
                 {
                   "id": "D",
                   "text": "An extended antimicrobial plan with possible debridement",
-                  "explanation": "Both medical and surgical treatment may be required."
+                  "explanation": "Treatment may require antimicrobial therapy and removal of infected tissue."
                 }
               ],
               "format": "single-best-answer",
@@ -16469,23 +16477,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "An isolated reduction in bone density",
-                  "explanation": "This is not the definition of infection."
+                  "text": "Loss of bone mineral density",
+                  "explanation": "Reduced density does not define bone infection."
                 },
                 {
                   "id": "B",
-                  "text": "An isolated tendon rupture",
-                  "explanation": "This affects a different structure."
+                  "text": "Inflammation confined to a joint",
+                  "explanation": "This refers to joint involvement rather than bone infection."
                 },
                 {
                   "id": "C",
-                  "text": "A closed compartment-pressure syndrome alone",
-                  "explanation": "This is a different mechanism."
+                  "text": "Infection confined to superficial skin",
+                  "explanation": "Superficial skin infection is not osteomyelitis."
                 },
                 {
                   "id": "D",
-                  "text": "Infection of bone",
-                  "explanation": "It may follow blood spread, nearby infection, or direct entry after trauma."
+                  "text": "Infection involving bone",
+                  "explanation": "This defines osteomyelitis."
                 }
               ],
               "format": "single-best-answer",
@@ -16600,27 +16608,27 @@
               "answerKey": "C"
             },
             {
-              "stem": "Which treatment pattern is compatible with osteomyelitis?",
+              "stem": "Which treatment pattern addresses established osteomyelitis rather than symptoms alone?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A single analgesic dose as complete infection treatment",
-                  "explanation": "Pain relief does not eradicate bone infection."
+                  "text": "A short analgesic course followed by wound observation",
+                  "explanation": "Symptom relief alone does not treat established bone infection."
                 },
                 {
                   "id": "B",
-                  "text": "A vitamin supplement as complete infection treatment",
-                  "explanation": "Nutritional support does not replace antimicrobial/surgical care."
+                  "text": "Surface cleansing alone until the drainage stops",
+                  "explanation": "Surface care alone does not address infection within bone."
                 },
                 {
                   "id": "C",
-                  "text": "A routine bronchodilator as complete infection treatment",
-                  "explanation": "This does not treat a bone infection."
+                  "text": "Immobilization alone until the pain resolves",
+                  "explanation": "Protecting the limb does not itself eradicate the infection."
                 },
                 {
                   "id": "D",
                   "text": "An extended antimicrobial plan with possible debridement",
-                  "explanation": "Both medical and surgical treatment may be required."
+                  "explanation": "Treatment may require antimicrobial therapy and removal of infected tissue."
                 }
               ],
               "format": "single-best-answer",
@@ -16832,27 +16840,27 @@
           "retestPolicy": "same standard form after required reading",
           "questions": [
             {
-              "stem": "Which finding defines an open fracture?",
+              "stem": "Which finding is required to classify a fracture as open?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Pain severe enough to require an opioid",
-                  "explanation": "Pain severity does not determine whether the fracture is open."
+                  "text": "A skin wound anywhere on the injured extremity",
+                  "explanation": "The wound must communicate with the fracture."
                 },
                 {
                   "id": "B",
-                  "text": "A wound that communicates with the fracture",
-                  "explanation": "Communication with the outside is the defining concept; visible bone is not required."
+                  "text": "A wound communicating with the fracture",
+                  "explanation": "Communication with the fracture defines an open fracture."
                 },
                 {
                   "id": "C",
-                  "text": "Any bruise over a closed fracture",
-                  "explanation": "Bruising alone does not establish communication with the fracture."
+                  "text": "A wound with bone visibly protruding through the skin",
+                  "explanation": "Visible bone is not required for a fracture to be open."
                 },
                 {
                   "id": "D",
-                  "text": "Visible bone protruding through the skin in every case",
-                  "explanation": "Bone exposure can occur, but it is not required for an open fracture."
+                  "text": "A fracture with severe surrounding bruising and swelling",
+                  "explanation": "Bruising and swelling alone do not establish communication with the outside."
                 }
               ],
               "format": "single-best-answer",
@@ -16884,27 +16892,27 @@
               "answerKey": "B"
             },
             {
-              "stem": "What should the focused bedside check include after an open extremity fracture?",
+              "stem": "Which assessment set most directly checks for immediate limb and systemic complications after an open fracture?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Only wound size and dressing colour",
-                  "explanation": "This misses circulation, nerves and systemic status."
+                  "text": "Joint range, walking distance, muscle bulk and rehabilitation goals",
+                  "explanation": "Rehabilitation measures do not replace assessment for immediate complications."
                 },
                 {
                   "id": "B",
-                  "text": "Only the distal pulse",
-                  "explanation": "A pulse alone does not assess the whole neurovascular picture."
+                  "text": "Wound dimensions, dressing type, exudate volume and skin edges",
+                  "explanation": "This wound-focused set omits distal function and systemic observations."
                 },
                 {
                   "id": "C",
-                  "text": "Only whether the patient can sleep",
-                  "explanation": "Sleep does not establish limb safety."
+                  "text": "Pain score, sleep quality, appetite and response to reassurance",
+                  "explanation": "These do not adequately check perfusion, movement and systemic stability."
                 },
                 {
                   "id": "D",
-                  "text": "Bleeding, wound, distal neurovascular status, pain/swelling and vitals",
-                  "explanation": "These findings address immediate limb and systemic risk."
+                  "text": "Bleeding, distal perfusion, sensation, movement and vital signs",
+                  "explanation": "These identify bleeding, neurovascular change and systemic deterioration."
                 }
               ],
               "format": "single-best-answer",
@@ -16928,27 +16936,27 @@
               "answerKey": "D"
             },
             {
-              "stem": "Which action best matches nursing care for a fresh open fracture?",
+              "stem": "Which infection-prevention plan fits nursing care for a fresh open fracture?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Choose an antibiotic without an order",
-                  "explanation": "Antimicrobial selection requires the authorized plan."
+                  "text": "Protect aseptically; await visible drainage before ordered antibiotics",
+                  "explanation": "The infection-prevention plan should not wait for drainage to appear."
                 },
                 {
                   "id": "B",
-                  "text": "Delay neurovascular assessment until after dressing care",
-                  "explanation": "Limb perfusion and nerve function must not be deferred."
+                  "text": "Clean the surface; omit antibiotics if bone is not visible",
+                  "explanation": "Visible protruding bone is not required for an open fracture."
                 },
                 {
                   "id": "C",
-                  "text": "Protect the wound, follow aseptic care, give ordered antibiotics promptly and verify tetanus assessment",
-                  "explanation": "These actions reduce contamination risk and support time-sensitive treatment within scope."
+                  "text": "Protect aseptically; give ordered antibiotics; verify tetanus assessment",
+                  "explanation": "These match the taught plan while preserving authorized prescribing."
                 },
                 {
                   "id": "D",
-                  "text": "Probe the wound to determine its depth",
-                  "explanation": "Unnecessary probing can contaminate or injure tissue and is not an intern decision."
+                  "text": "Cover the wound; omit tetanus assessment after starting antibiotics",
+                  "explanation": "Antibiotics do not replace tetanus assessment."
                 }
               ],
               "format": "single-best-answer",
@@ -17130,27 +17138,27 @@
           "retestPolicy": "comprehensive memory retest; questions may repeat",
           "questions": [
             {
-              "stem": "Which finding defines an open fracture?",
+              "stem": "Which finding is required to classify a fracture as open?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A wound that communicates with the fracture",
-                  "explanation": "Communication with the outside is the defining concept; visible bone is not required."
+                  "text": "A wound communicating with the fracture",
+                  "explanation": "Communication with the fracture defines an open fracture."
                 },
                 {
                   "id": "B",
-                  "text": "Any bruise over a closed fracture",
-                  "explanation": "Bruising alone does not establish communication with the fracture."
+                  "text": "A skin wound anywhere on the injured extremity",
+                  "explanation": "The wound must communicate with the fracture."
                 },
                 {
                   "id": "C",
-                  "text": "Visible bone protruding through the skin in every case",
-                  "explanation": "Bone exposure can occur, but it is not required for an open fracture."
+                  "text": "A fracture with severe surrounding bruising and swelling",
+                  "explanation": "Bruising and swelling alone do not establish communication with the outside."
                 },
                 {
                   "id": "D",
-                  "text": "Pain severe enough to require an opioid",
-                  "explanation": "Pain severity does not determine whether the fracture is open."
+                  "text": "A wound with bone visibly protruding through the skin",
+                  "explanation": "Visible bone is not required for a fracture to be open."
                 }
               ],
               "format": "single-best-answer",
@@ -17183,27 +17191,27 @@
               "answerKey": "A"
             },
             {
-              "stem": "What should the focused bedside check include after an open extremity fracture?",
+              "stem": "Which assessment set most directly checks for immediate limb and systemic complications after an open fracture?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Only the distal pulse",
-                  "explanation": "A pulse alone does not assess the whole neurovascular picture."
+                  "text": "Wound dimensions, dressing type, exudate volume and skin edges",
+                  "explanation": "This wound-focused set omits distal function and systemic observations."
                 },
                 {
                   "id": "B",
-                  "text": "Only whether the patient can sleep",
-                  "explanation": "Sleep does not establish limb safety."
+                  "text": "Pain score, sleep quality, appetite and response to reassurance",
+                  "explanation": "These do not adequately check perfusion, movement and systemic stability."
                 },
                 {
                   "id": "C",
-                  "text": "Bleeding, wound, distal neurovascular status, pain/swelling and vitals",
-                  "explanation": "These findings address immediate limb and systemic risk."
+                  "text": "Bleeding, distal perfusion, sensation, movement and vital signs",
+                  "explanation": "These identify bleeding, neurovascular change and systemic deterioration."
                 },
                 {
                   "id": "D",
-                  "text": "Only wound size and dressing colour",
-                  "explanation": "This misses circulation, nerves and systemic status."
+                  "text": "Joint range, walking distance, muscle bulk and rehabilitation goals",
+                  "explanation": "Rehabilitation measures do not replace assessment for immediate complications."
                 }
               ],
               "format": "single-best-answer",
@@ -17228,27 +17236,27 @@
               "answerKey": "C"
             },
             {
-              "stem": "Which action best matches nursing care for a fresh open fracture?",
+              "stem": "Which infection-prevention plan fits nursing care for a fresh open fracture?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Delay neurovascular assessment until after dressing care",
-                  "explanation": "Limb perfusion and nerve function must not be deferred."
+                  "text": "Protect aseptically; await visible drainage before ordered antibiotics",
+                  "explanation": "The infection-prevention plan should not wait for drainage to appear."
                 },
                 {
                   "id": "B",
-                  "text": "Probe the wound to determine its depth",
-                  "explanation": "Unnecessary probing can contaminate or injure tissue and is not an intern decision."
+                  "text": "Clean the surface; omit antibiotics if bone is not visible",
+                  "explanation": "Visible protruding bone is not required for an open fracture."
                 },
                 {
                   "id": "C",
-                  "text": "Choose an antibiotic without an order",
-                  "explanation": "Antimicrobial selection requires the authorized plan."
+                  "text": "Cover the wound; omit tetanus assessment after starting antibiotics",
+                  "explanation": "Antibiotics do not replace tetanus assessment."
                 },
                 {
                   "id": "D",
-                  "text": "Protect the wound, follow aseptic care, give ordered antibiotics promptly and verify tetanus assessment",
-                  "explanation": "These actions reduce contamination risk and support time-sensitive treatment within scope."
+                  "text": "Protect aseptically; give ordered antibiotics; verify tetanus assessment",
+                  "explanation": "These match the taught plan while preserving authorized prescribing."
                 }
               ],
               "format": "single-best-answer",
