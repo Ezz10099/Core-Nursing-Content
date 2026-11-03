@@ -7100,5 +7100,209 @@
       "format": "single-best-answer"
     },
     "criticalForSafety": true
+  },
+  "tamsulosin_orthostasis": {
+    "point": "Prevent postural hypotension, syncope and falls with alpha-1-blocker therapy.",
+    "anchor": "orthostatic hypotension|fainting|syncope|falls",
+    "criticalForSafety": true,
+    "standard": {
+      "stem": "A patient taking {drug} reports dizziness on standing. What is the priority nursing assessment?",
+      "choices": [
+        {
+          "text": "Sitting and standing BP with symptoms",
+          "explanation": "Alpha-1 blockade may cause orthostatic hypotension; a safe posture and BP/symptom reassessment help identify risk."
+        },
+        {
+          "text": "Blood glucose alone",
+          "explanation": "Glucose does not assess the suspected drug-related positional pressure drop."
+        },
+        {
+          "text": "Respiratory rate at rest only",
+          "explanation": "This does not directly assess orthostatic symptoms."
+        },
+        {
+          "text": "Daily temperature trend",
+          "explanation": "Temperature does not establish postural hemodynamic effects."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "A patient starts {drug} and becomes faint while walking to the bathroom. What should the nurse do first?",
+      "choices": [
+        {
+          "text": "Assist to a safe position and assess BP",
+          "explanation": "Support the patient and assess for symptomatic hypotension before further therapy."
+        },
+        {
+          "text": "Encourage independent walking",
+          "explanation": "Walking unaided risks fall injury with syncope."
+        },
+        {
+          "text": "Give the next dose immediately",
+          "explanation": "The next dose is not the immediate response to faintness."
+        },
+        {
+          "text": "Increase fluid intake without assessment",
+          "explanation": "Fluid may be relevant but cannot replace immediate safety assessment."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    }
+  },
+  "tamsulosin_ifis": {
+    "point": "Notify the eye surgeon about current or previous tamsulosin use before cataract surgery.",
+    "anchor": "floppy iris syndrome|cataract|ophthalmolog",
+    "criticalForSafety": true,
+    "standard": {
+      "stem": "A patient taking {drug} is scheduled for cataract surgery. Which information is important to communicate?",
+      "choices": [
+        {
+          "text": "Current or past tamsulosin exposure",
+          "explanation": "Tamsulosin is linked with intraoperative floppy iris syndrome during cataract surgery."
+        },
+        {
+          "text": "History of seasonal allergies only",
+          "explanation": "This does not address the drug-specific operative issue."
+        },
+        {
+          "text": "Timing of the patient's last meal only",
+          "explanation": "Fasting requirements do not address iris effects."
+        },
+        {
+          "text": "Whether the patient uses paracetamol",
+          "explanation": "This is not the main medication-specific concern."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "A patient stopped {drug} months before planned cataract surgery. What should the nurse still ensure?",
+      "choices": [
+        {
+          "text": "The ophthalmologist knows the prior treatment",
+          "explanation": "Past exposure can remain clinically relevant to cataract surgery planning."
+        },
+        {
+          "text": "No disclosure because treatment ended",
+          "explanation": "IFIS has been reported with prior use."
+        },
+        {
+          "text": "Restarting the alpha blocker now",
+          "explanation": "Restarting treatment does not prevent operative iris problems."
+        },
+        {
+          "text": "Changing to an injectable route",
+          "explanation": "Tamsulosin is an oral drug and this would not address the issue."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    }
+  },
+  "tamsulosin_distal_stone": {
+    "point": "Recognize selected distal ureteric stones as an off-label ED use of tamsulosin.",
+    "anchor": "distal ureteral stones|5–10 mm|OFF-LABEL",
+    "criticalForSafety": false,
+    "standard": {
+      "stem": "Besides benign prostate symptoms, what is a selected emergency-department use of {drug}?",
+      "choices": [
+        {
+          "text": "Helping passage of distal ureteral stones",
+          "explanation": "Medical expulsive therapy is an off-label use for carefully selected distal ureteral stones."
+        },
+        {
+          "text": "Dissolving bladder infection bacteria",
+          "explanation": "Tamsulosin is not an antibiotic."
+        },
+        {
+          "text": "Rapidly relieving pulmonary edema",
+          "explanation": "It is not a diuretic or pulmonary-edema rescue medication."
+        },
+        {
+          "text": "Stopping gastrointestinal hemorrhage",
+          "explanation": "It has no hemostatic action."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "For which ureteral-stone presentation does guidance most support an alpha blocker like {drug}?",
+      "choices": [
+        {
+          "text": "An uncomplicated distal stone of 5–10 mm",
+          "explanation": "EAU 2026 particularly supports alpha blockers for distal ureteral stones 5–10 mm when conservative management is appropriate."
+        },
+        {
+          "text": "Sepsis with obstructed infected kidney",
+          "explanation": "Infected obstruction requires urgent decompression and antibiotics."
+        },
+        {
+          "text": "Uncontrolled pain despite analgesia",
+          "explanation": "Uncontrolled pain requires escalation, not expulsive therapy alone."
+        },
+        {
+          "text": "Bilateral obstruction with renal impairment",
+          "explanation": "Renal impairment with obstruction demands urgent evaluation."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    }
+  },
+  "tamsulosin_infected_obstruction": {
+    "point": "Recognize that infected urinary obstruction is an emergency and not managed by tamsulosin alone.",
+    "anchor": "sepsis|infected obstructed|infected obstruction|fever",
+    "criticalForSafety": true,
+    "standard": {
+      "stem": "A patient prescribed {drug} for a ureteral stone has fever and signs of sepsis. What is the safest nursing response?",
+      "choices": [
+        {
+          "text": "Urgently escalate suspected infected obstruction",
+          "explanation": "Sepsis with an obstructed kidney requires prompt resuscitation, antibiotics and urologic decompression."
+        },
+        {
+          "text": "Rely on stone-expulsive therapy",
+          "explanation": "Alpha blockers do not treat infection or decompress an obstructed system."
+        },
+        {
+          "text": "Wait for the stone to pass before calling",
+          "explanation": "Delay in infected obstruction can cause rapid deterioration."
+        },
+        {
+          "text": "Encourage ambulation as the only intervention",
+          "explanation": "Mobility does not address a urological sepsis emergency."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    },
+    "advanced": {
+      "stem": "A patient with an obstructing ureteral stone receiving {drug} develops anuria and worsening renal function. What changes the plan?",
+      "choices": [
+        {
+          "text": "The need for urgent obstruction evaluation",
+          "explanation": "New anuria and renal deterioration are urgent warning signs, not indications for MET alone."
+        },
+        {
+          "text": "Continuing unchanged home therapy",
+          "explanation": "Worsening obstruction or renal failure requires escalation."
+        },
+        {
+          "text": "Using the medicine as immediate analgesia",
+          "explanation": "Tamsulosin is not a rapid pain-relief agent."
+        },
+        {
+          "text": "Increasing dosage without review",
+          "explanation": "Dose escalation does not resolve dangerous urinary obstruction."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer"
+    }
   }
 }
