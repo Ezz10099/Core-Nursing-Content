@@ -8654,6 +8654,133 @@
       ]
     },
     {
+      "id": "ed-omnic-tamsulosin::principal-action",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Identify the principal pharmacological action taught for this medicine.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--principal-action",
+        "ed-omnic-tamsulosin--7-day--principal-action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::drug-class",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Identify the drug class taught for this medicine.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--drug-class",
+        "ed-omnic-tamsulosin--7-day--drug-class"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::treatment-role",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Identify the main treatment role taught for this medicine.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--treatment-role",
+        "ed-omnic-tamsulosin--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::hypotension",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Recognize symptomatic hypotension during treatment.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--hypotension",
+        "ed-omnic-tamsulosin--advanced--hypotension",
+        "ed-omnic-tamsulosin--7-day--hypotension"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::tamsulosin_orthostasis",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Prevent postural hypotension, syncope and falls with alpha-1-blocker therapy.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--tamsulosin_orthostasis",
+        "ed-omnic-tamsulosin--advanced--tamsulosin_orthostasis",
+        "ed-omnic-tamsulosin--7-day--tamsulosin_orthostasis"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::tamsulosin_ifis",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Notify the eye surgeon about current or previous tamsulosin use before cataract surgery.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--tamsulosin_ifis",
+        "ed-omnic-tamsulosin--advanced--tamsulosin_ifis",
+        "ed-omnic-tamsulosin--7-day--tamsulosin_ifis"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::tamsulosin_distal_stone",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Recognize selected distal ureteric stones as an off-label ED use of tamsulosin.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--tamsulosin_distal_stone",
+        "ed-omnic-tamsulosin--advanced--tamsulosin_distal_stone",
+        "ed-omnic-tamsulosin--7-day--tamsulosin_distal_stone"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::tamsulosin_infected_obstruction",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Recognize that infected urinary obstruction is an emergency and not managed by tamsulosin alone.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--tamsulosin_infected_obstruction",
+        "ed-omnic-tamsulosin--advanced--tamsulosin_infected_obstruction",
+        "ed-omnic-tamsulosin--7-day--tamsulosin_infected_obstruction"
+      ],
+      "stages": [
+        "standard",
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-omnic-tamsulosin::formulation",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--advanced--formulation",
+        "ed-omnic-tamsulosin--7-day--formulation"
+      ],
+      "stages": [
+        "advanced",
+        "7-day"
+      ]
+    },
+    {
       "id": "verified-alteplase-v35::principal-action",
       "itemId": "verified-alteplase-v35",
       "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -16136,6 +16263,81 @@
           "ed-captopril-tablets--standard--hypotension",
           "ed-captopril-tablets--advanced--hypotension",
           "ed-captopril-tablets--7-day--hypotension"
+        ]
+      },
+      "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."
+    },
+    {
+      "itemId": "ed-omnic-tamsulosin",
+      "referencedSourceUnits": {
+        "drugclass": [
+          "ed-omnic-tamsulosin--standard--principal-action",
+          "ed-omnic-tamsulosin--standard--drug-class",
+          "ed-omnic-tamsulosin--7-day--principal-action",
+          "ed-omnic-tamsulosin--7-day--drug-class"
+        ],
+        "mechanism": [
+          "ed-omnic-tamsulosin--standard--principal-action",
+          "ed-omnic-tamsulosin--7-day--principal-action"
+        ],
+        "why": [
+          "ed-omnic-tamsulosin--standard--principal-action",
+          "ed-omnic-tamsulosin--standard--hypotension",
+          "ed-omnic-tamsulosin--standard--tamsulosin_distal_stone",
+          "ed-omnic-tamsulosin--advanced--hypotension",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_distal_stone",
+          "ed-omnic-tamsulosin--7-day--principal-action",
+          "ed-omnic-tamsulosin--7-day--hypotension",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_distal_stone"
+        ],
+        "use": [
+          "ed-omnic-tamsulosin--standard--treatment-role",
+          "ed-omnic-tamsulosin--standard--tamsulosin_distal_stone",
+          "ed-omnic-tamsulosin--standard--tamsulosin_infected_obstruction",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_distal_stone",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_infected_obstruction",
+          "ed-omnic-tamsulosin--7-day--treatment-role",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_distal_stone",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_infected_obstruction"
+        ],
+        "memoryUse": [
+          "ed-omnic-tamsulosin--standard--treatment-role",
+          "ed-omnic-tamsulosin--standard--tamsulosin_distal_stone",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_distal_stone",
+          "ed-omnic-tamsulosin--7-day--treatment-role",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_distal_stone"
+        ],
+        "monitor": [
+          "ed-omnic-tamsulosin--standard--hypotension",
+          "ed-omnic-tamsulosin--standard--tamsulosin_orthostasis",
+          "ed-omnic-tamsulosin--standard--tamsulosin_ifis",
+          "ed-omnic-tamsulosin--standard--tamsulosin_infected_obstruction",
+          "ed-omnic-tamsulosin--advanced--hypotension",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_orthostasis",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_ifis",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_infected_obstruction",
+          "ed-omnic-tamsulosin--7-day--hypotension",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_orthostasis",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_ifis",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_infected_obstruction"
+        ],
+        "memoryDanger": [
+          "ed-omnic-tamsulosin--standard--hypotension",
+          "ed-omnic-tamsulosin--standard--tamsulosin_orthostasis",
+          "ed-omnic-tamsulosin--standard--tamsulosin_ifis",
+          "ed-omnic-tamsulosin--standard--tamsulosin_infected_obstruction",
+          "ed-omnic-tamsulosin--advanced--hypotension",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_orthostasis",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_ifis",
+          "ed-omnic-tamsulosin--advanced--tamsulosin_infected_obstruction",
+          "ed-omnic-tamsulosin--7-day--hypotension",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_orthostasis",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_ifis",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_infected_obstruction"
+        ],
+        "administration": [
+          "ed-omnic-tamsulosin--advanced--formulation",
+          "ed-omnic-tamsulosin--7-day--formulation"
         ]
       },
       "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."

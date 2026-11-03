@@ -2,6 +2,1320 @@
   "schemaVersion": 1,
   "banks": [
     {
+      "itemId": "ed-omnic-tamsulosin",
+      "title": "OMNIC — tamsulosin (oral)",
+      "itemType": "medication",
+      "capabilityRequirement": null,
+      "evidenceIds": [
+        "omnic-product-2026",
+        "dailymed-tamsulosin-2026",
+        "eau-urolithiasis-2026"
+      ],
+      "exams": [
+        {
+          "id": "ed-omnic-tamsulosin--standard",
+          "itemId": "ed-omnic-tamsulosin",
+          "itemType": "medication",
+          "title": "OMNIC — tamsulosin (oral)",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "What is the principal mechanism of action of OMNIC — tamsulosin (oral)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Relaxes prostate and urethral smooth muscle",
+                  "explanation": "Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                },
+                {
+                  "id": "B",
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                },
+                {
+                  "id": "D",
+                  "text": "Increases renal glucose and sodium excretion",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                }
+              ],
+              "point": "Identify the principal pharmacological action taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "drugclass",
+                  "textSha256": "c232b3398f02a2f1e3ca3034018b657aeb238f264a2664f9083edf03449d71e6"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "mechanism",
+                  "textSha256": "d65eb30bce98cd2e63f745be0777d846275ca8cfa80571fb0d5c57bfa592cb78"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--standard--principal-action",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::principal-action"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class does OMNIC — tamsulosin (oral) belong to?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Alpha/beta blocker",
+                  "explanation": "The medicine is classified as: Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                },
+                {
+                  "id": "B",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The medicine is classified as: Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                },
+                {
+                  "id": "C",
+                  "text": "Uroselective alpha-1 blocker",
+                  "explanation": "Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                },
+                {
+                  "id": "D",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "The medicine is classified as: Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "drugclass",
+                  "textSha256": "c232b3398f02a2f1e3ca3034018b657aeb238f264a2664f9083edf03449d71e6"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--standard--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::drug-class"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which is a clinical use of OMNIC — tamsulosin (oral)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Treatment of susceptible bacterial infection",
+                  "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "B",
+                  "text": "Replacement of circulating glucose in severe hypoglycemia",
+                  "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Relief of lower urinary tract symptoms caused by benign prostatic hyperplasia",
+                  "explanation": "This is a clinical use of the medicine: Relieves lower urinary tract symptoms due to benign prostatic hyperplasia (BPH), such as weak urinary stream, hesitancy and incomplete emptying. In an ED, alpha-blockers including tamsulosin may also be prescribed OFF-LABEL as medical expulsive therapy (MET) for selected uncomplicated distal ureteral stones, particularly 5–10 mm, after clinician assessment. Not a treatment for sepsis or an infected obstructed urinary system."
+                },
+                {
+                  "id": "D",
+                  "text": "Acute reversal of opioid respiratory toxicity",
+                  "explanation": "This is a different treatment role."
+                }
+              ],
+              "point": "Identify the main treatment role taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryUse",
+                  "textSha256": "58fc1fdbde4ccf1b6e865982a83b79504602470b885f1c7a7ad33c8b4bd478dd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--standard--treatment-role",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::treatment-role"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "A patient becomes light-headed on standing after OMNIC — tamsulosin (oral). Which paired assessment best checks the suspected adverse effect?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Bowel frequency and abdominal distension",
+                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                },
+                {
+                  "id": "B",
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                },
+                {
+                  "id": "C",
+                  "text": "Visual acuity and accommodation symptoms",
+                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                },
+                {
+                  "id": "D",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--standard--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::hypotension"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A patient taking OMNIC — tamsulosin (oral) reports dizziness on standing. What is the priority nursing assessment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Blood glucose alone",
+                  "explanation": "Glucose does not assess the suspected drug-related positional pressure drop."
+                },
+                {
+                  "id": "B",
+                  "text": "Sitting and standing BP with symptoms",
+                  "explanation": "Alpha-1 blockade may cause orthostatic hypotension; a safe posture and BP/symptom reassessment help identify risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Respiratory rate at rest only",
+                  "explanation": "This does not directly assess orthostatic symptoms."
+                },
+                {
+                  "id": "D",
+                  "text": "Daily temperature trend",
+                  "explanation": "Temperature does not establish postural hemodynamic effects."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Prevent postural hypotension, syncope and falls with alpha-1-blocker therapy.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--standard--tamsulosin_orthostasis",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_orthostasis"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "A patient taking OMNIC — tamsulosin (oral) is scheduled for cataract surgery. Which information is important to communicate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Current or past tamsulosin exposure",
+                  "explanation": "Tamsulosin is linked with intraoperative floppy iris syndrome during cataract surgery."
+                },
+                {
+                  "id": "B",
+                  "text": "Whether the patient uses paracetamol",
+                  "explanation": "This is not the main medication-specific concern."
+                },
+                {
+                  "id": "C",
+                  "text": "Timing of the patient's last meal only",
+                  "explanation": "Fasting requirements do not address iris effects."
+                },
+                {
+                  "id": "D",
+                  "text": "History of seasonal allergies only",
+                  "explanation": "This does not address the drug-specific operative issue."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Notify the eye surgeon about current or previous tamsulosin use before cataract surgery.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--standard--tamsulosin_ifis",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_ifis"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "Besides benign prostate symptoms, what is a selected emergency-department use of OMNIC — tamsulosin (oral)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dissolving bladder infection bacteria",
+                  "explanation": "Tamsulosin is not an antibiotic."
+                },
+                {
+                  "id": "B",
+                  "text": "Stopping gastrointestinal hemorrhage",
+                  "explanation": "It has no hemostatic action."
+                },
+                {
+                  "id": "C",
+                  "text": "Rapidly relieving pulmonary edema",
+                  "explanation": "It is not a diuretic or pulmonary-edema rescue medication."
+                },
+                {
+                  "id": "D",
+                  "text": "Helping passage of distal ureteral stones",
+                  "explanation": "Medical expulsive therapy is an off-label use for carefully selected distal ureteral stones."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize selected distal ureteric stones as an off-label ED use of tamsulosin.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryUse",
+                  "textSha256": "58fc1fdbde4ccf1b6e865982a83b79504602470b885f1c7a7ad33c8b4bd478dd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--standard--tamsulosin_distal_stone",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_distal_stone"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A patient prescribed OMNIC — tamsulosin (oral) for a ureteral stone has fever and signs of sepsis. What is the safest nursing response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Encourage ambulation as the only intervention",
+                  "explanation": "Mobility does not address a urological sepsis emergency."
+                },
+                {
+                  "id": "B",
+                  "text": "Urgently escalate suspected infected obstruction",
+                  "explanation": "Sepsis with an obstructed kidney requires prompt resuscitation, antibiotics and urologic decompression."
+                },
+                {
+                  "id": "C",
+                  "text": "Rely on stone-expulsive therapy",
+                  "explanation": "Alpha blockers do not treat infection or decompress an obstructed system."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait for the stone to pass before calling",
+                  "explanation": "Delay in infected obstruction can cause rapid deterioration."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize that infected urinary obstruction is an emergency and not managed by tamsulosin alone.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--standard--tamsulosin_infected_obstruction",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_infected_obstruction"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 8
+        },
+        {
+          "id": "ed-omnic-tamsulosin--advanced",
+          "itemId": "ed-omnic-tamsulosin",
+          "itemType": "medication",
+          "title": "OMNIC — tamsulosin (oral)",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A patient taking OMNIC — tamsulosin (oral) has poor intake and a new BP fall when standing. Which factor best explains increased sensitivity to treatment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reduced gastrointestinal transit",
+                  "explanation": "Slower transit does not account for the positional hemodynamic change."
+                },
+                {
+                  "id": "B",
+                  "text": "Increased vascular resistance",
+                  "explanation": "This generally supports pressure rather than explaining the described fall."
+                },
+                {
+                  "id": "C",
+                  "text": "Increased circulating volume",
+                  "explanation": "This does not explain the volume-depleted presentation."
+                },
+                {
+                  "id": "D",
+                  "text": "Reduced circulating volume",
+                  "explanation": "Volume depletion can amplify symptomatic hypotension."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--advanced--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::hypotension"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "The prescribed OMNIC — tamsulosin (oral) and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A previously tolerated dose of the original formulation",
+                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
+                },
+                {
+                  "id": "B",
+                  "text": "A similar dosing interval listed on another patient’s chart",
+                  "explanation": "Another regimen cannot establish product interchangeability."
+                },
+                {
+                  "id": "C",
+                  "text": "An identical generic name and nominal milligram strength",
+                  "explanation": "These do not establish the same release, route, or bioavailability."
+                },
+                {
+                  "id": "D",
+                  "text": "Product-specific interchangeability and an authorized order",
+                  "explanation": "Formulation differences require a defensible, authorized substitution."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "administration",
+                  "textSha256": "f4d922269516314d3da992d7330957074146d278c477365b6d8b88d404a1dfb4"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--advanced--formulation",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::formulation"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A patient starts OMNIC — tamsulosin (oral) and becomes faint while walking to the bathroom. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give the next dose immediately",
+                  "explanation": "The next dose is not the immediate response to faintness."
+                },
+                {
+                  "id": "B",
+                  "text": "Increase fluid intake without assessment",
+                  "explanation": "Fluid may be relevant but cannot replace immediate safety assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Assist to a safe position and assess BP",
+                  "explanation": "Support the patient and assess for symptomatic hypotension before further therapy."
+                },
+                {
+                  "id": "D",
+                  "text": "Encourage independent walking",
+                  "explanation": "Walking unaided risks fall injury with syncope."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Prevent postural hypotension, syncope and falls with alpha-1-blocker therapy.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--advanced--tamsulosin_orthostasis",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_orthostasis"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "A patient stopped OMNIC — tamsulosin (oral) months before planned cataract surgery. What should the nurse still ensure?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Restarting the alpha blocker now",
+                  "explanation": "Restarting treatment does not prevent operative iris problems."
+                },
+                {
+                  "id": "B",
+                  "text": "The ophthalmologist knows the prior treatment",
+                  "explanation": "Past exposure can remain clinically relevant to cataract surgery planning."
+                },
+                {
+                  "id": "C",
+                  "text": "Changing to an injectable route",
+                  "explanation": "Tamsulosin is an oral drug and this would not address the issue."
+                },
+                {
+                  "id": "D",
+                  "text": "No disclosure because treatment ended",
+                  "explanation": "IFIS has been reported with prior use."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Notify the eye surgeon about current or previous tamsulosin use before cataract surgery.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--advanced--tamsulosin_ifis",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_ifis"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "For which ureteral-stone presentation does guidance most support an alpha blocker like OMNIC — tamsulosin (oral)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An uncomplicated distal stone of 5–10 mm",
+                  "explanation": "EAU 2026 particularly supports alpha blockers for distal ureteral stones 5–10 mm when conservative management is appropriate."
+                },
+                {
+                  "id": "B",
+                  "text": "Bilateral obstruction with renal impairment",
+                  "explanation": "Renal impairment with obstruction demands urgent evaluation."
+                },
+                {
+                  "id": "C",
+                  "text": "Uncontrolled pain despite analgesia",
+                  "explanation": "Uncontrolled pain requires escalation, not expulsive therapy alone."
+                },
+                {
+                  "id": "D",
+                  "text": "Sepsis with obstructed infected kidney",
+                  "explanation": "Infected obstruction requires urgent decompression and antibiotics."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize selected distal ureteric stones as an off-label ED use of tamsulosin.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryUse",
+                  "textSha256": "58fc1fdbde4ccf1b6e865982a83b79504602470b885f1c7a7ad33c8b4bd478dd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--advanced--tamsulosin_distal_stone",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_distal_stone"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "A patient with an obstructing ureteral stone receiving OMNIC — tamsulosin (oral) develops anuria and worsening renal function. What changes the plan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Using the medicine as immediate analgesia",
+                  "explanation": "Tamsulosin is not a rapid pain-relief agent."
+                },
+                {
+                  "id": "B",
+                  "text": "The need for urgent obstruction evaluation",
+                  "explanation": "New anuria and renal deterioration are urgent warning signs, not indications for MET alone."
+                },
+                {
+                  "id": "C",
+                  "text": "Increasing dosage without review",
+                  "explanation": "Dose escalation does not resolve dangerous urinary obstruction."
+                },
+                {
+                  "id": "D",
+                  "text": "Continuing unchanged home therapy",
+                  "explanation": "Worsening obstruction or renal failure requires escalation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize that infected urinary obstruction is an emergency and not managed by tamsulosin alone.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--advanced--tamsulosin_infected_obstruction",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_infected_obstruction"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 6
+        },
+        {
+          "id": "ed-omnic-tamsulosin--7-day",
+          "itemId": "ed-omnic-tamsulosin",
+          "itemType": "medication",
+          "title": "OMNIC — tamsulosin (oral)",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "comprehensive memory retest; questions may repeat",
+          "questions": [
+            {
+              "format": "single-best-answer",
+              "stem": "What is the principal mechanism of action of OMNIC — tamsulosin (oral)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                },
+                {
+                  "id": "B",
+                  "text": "Relaxes prostate and urethral smooth muscle",
+                  "explanation": "Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                },
+                {
+                  "id": "C",
+                  "text": "Increases renal glucose and sodium excretion",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                },
+                {
+                  "id": "D",
+                  "text": "Reduces vagal bronchoconstriction",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                }
+              ],
+              "point": "Identify the principal pharmacological action taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "drugclass",
+                  "textSha256": "c232b3398f02a2f1e3ca3034018b657aeb238f264a2664f9083edf03449d71e6"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "mechanism",
+                  "textSha256": "d65eb30bce98cd2e63f745be0777d846275ca8cfa80571fb0d5c57bfa592cb78"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--7-day--principal-action",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::principal-action"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--principal-action",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which drug class does OMNIC — tamsulosin (oral) belong to?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The medicine is classified as: Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                },
+                {
+                  "id": "B",
+                  "text": "Alpha/beta blocker",
+                  "explanation": "The medicine is classified as: Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                },
+                {
+                  "id": "C",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "The medicine is classified as: Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                },
+                {
+                  "id": "D",
+                  "text": "Uroselective alpha-1 blocker",
+                  "explanation": "Selective alpha-1A/alpha-1D adrenergic receptor blocker (uroselective alpha-blocker)."
+                }
+              ],
+              "point": "Identify the drug class taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "drugclass",
+                  "textSha256": "c232b3398f02a2f1e3ca3034018b657aeb238f264a2664f9083edf03449d71e6"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--7-day--drug-class",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::drug-class"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--drug-class",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which is a clinical use of OMNIC — tamsulosin (oral)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Treatment of susceptible bacterial infection",
+                  "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "B",
+                  "text": "Replacement of circulating glucose in severe hypoglycemia",
+                  "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Acute reversal of opioid respiratory toxicity",
+                  "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "D",
+                  "text": "Relief of lower urinary tract symptoms caused by benign prostatic hyperplasia",
+                  "explanation": "This is a clinical use of the medicine: Relieves lower urinary tract symptoms due to benign prostatic hyperplasia (BPH), such as weak urinary stream, hesitancy and incomplete emptying. In an ED, alpha-blockers including tamsulosin may also be prescribed OFF-LABEL as medical expulsive therapy (MET) for selected uncomplicated distal ureteral stones, particularly 5–10 mm, after clinician assessment. Not a treatment for sepsis or an infected obstructed urinary system."
+                }
+              ],
+              "point": "Identify the main treatment role taught for this medicine.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryUse",
+                  "textSha256": "58fc1fdbde4ccf1b6e865982a83b79504602470b885f1c7a7ad33c8b4bd478dd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--7-day--treatment-role",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::treatment-role"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--treatment-role",
+              "answerKey": "D"
+            },
+            {
+              "stem": "A patient becomes light-headed on standing after OMNIC — tamsulosin (oral). Which paired assessment best checks the suspected adverse effect?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Bowel frequency and abdominal distension",
+                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                },
+                {
+                  "id": "B",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "C",
+                  "text": "Visual acuity and accommodation symptoms",
+                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                },
+                {
+                  "id": "D",
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize symptomatic hypotension during treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--7-day--hypotension",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::hypotension"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--hypotension",
+              "answerKey": "B"
+            },
+            {
+              "stem": "A patient taking OMNIC — tamsulosin (oral) reports dizziness on standing. What is the priority nursing assessment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Blood glucose alone",
+                  "explanation": "Glucose does not assess the suspected drug-related positional pressure drop."
+                },
+                {
+                  "id": "B",
+                  "text": "Respiratory rate at rest only",
+                  "explanation": "This does not directly assess orthostatic symptoms."
+                },
+                {
+                  "id": "C",
+                  "text": "Sitting and standing BP with symptoms",
+                  "explanation": "Alpha-1 blockade may cause orthostatic hypotension; a safe posture and BP/symptom reassessment help identify risk."
+                },
+                {
+                  "id": "D",
+                  "text": "Daily temperature trend",
+                  "explanation": "Temperature does not establish postural hemodynamic effects."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Prevent postural hypotension, syncope and falls with alpha-1-blocker therapy.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--7-day--tamsulosin_orthostasis",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_orthostasis"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--tamsulosin_orthostasis",
+              "answerKey": "C"
+            },
+            {
+              "stem": "A patient taking OMNIC — tamsulosin (oral) is scheduled for cataract surgery. Which information is important to communicate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Whether the patient uses paracetamol",
+                  "explanation": "This is not the main medication-specific concern."
+                },
+                {
+                  "id": "B",
+                  "text": "History of seasonal allergies only",
+                  "explanation": "This does not address the drug-specific operative issue."
+                },
+                {
+                  "id": "C",
+                  "text": "Timing of the patient's last meal only",
+                  "explanation": "Fasting requirements do not address iris effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Current or past tamsulosin exposure",
+                  "explanation": "Tamsulosin is linked with intraoperative floppy iris syndrome during cataract surgery."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Notify the eye surgeon about current or previous tamsulosin use before cataract surgery.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--7-day--tamsulosin_ifis",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_ifis"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--tamsulosin_ifis",
+              "answerKey": "D"
+            },
+            {
+              "stem": "Besides benign prostate symptoms, what is a selected emergency-department use of OMNIC — tamsulosin (oral)?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Helping passage of distal ureteral stones",
+                  "explanation": "Medical expulsive therapy is an off-label use for carefully selected distal ureteral stones."
+                },
+                {
+                  "id": "B",
+                  "text": "Dissolving bladder infection bacteria",
+                  "explanation": "Tamsulosin is not an antibiotic."
+                },
+                {
+                  "id": "C",
+                  "text": "Stopping gastrointestinal hemorrhage",
+                  "explanation": "It has no hemostatic action."
+                },
+                {
+                  "id": "D",
+                  "text": "Rapidly relieving pulmonary edema",
+                  "explanation": "It is not a diuretic or pulmonary-edema rescue medication."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize selected distal ureteric stones as an off-label ED use of tamsulosin.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "why",
+                  "textSha256": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryUse",
+                  "textSha256": "58fc1fdbde4ccf1b6e865982a83b79504602470b885f1c7a7ad33c8b4bd478dd"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--7-day--tamsulosin_distal_stone",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_distal_stone"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--tamsulosin_distal_stone",
+              "answerKey": "A"
+            },
+            {
+              "stem": "A patient prescribed OMNIC — tamsulosin (oral) for a ureteral stone has fever and signs of sepsis. What is the safest nursing response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Rely on stone-expulsive therapy",
+                  "explanation": "Alpha blockers do not treat infection or decompress an obstructed system."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait for the stone to pass before calling",
+                  "explanation": "Delay in infected obstruction can cause rapid deterioration."
+                },
+                {
+                  "id": "C",
+                  "text": "Urgently escalate suspected infected obstruction",
+                  "explanation": "Sepsis with an obstructed kidney requires prompt resuscitation, antibiotics and urologic decompression."
+                },
+                {
+                  "id": "D",
+                  "text": "Encourage ambulation as the only intervention",
+                  "explanation": "Mobility does not address a urological sepsis emergency."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Recognize that infected urinary obstruction is an emergency and not managed by tamsulosin alone.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "use",
+                  "textSha256": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "monitor",
+                  "textSha256": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "memoryDanger",
+                  "textSha256": "1fd1165242a806848002ddcfd7473c55844d3c9780f0d299ff2b9db124fe3725"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-omnic-tamsulosin--7-day--tamsulosin_infected_obstruction",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_infected_obstruction"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--tamsulosin_infected_obstruction",
+              "answerKey": "C"
+            },
+            {
+              "stem": "The prescribed OMNIC — tamsulosin (oral) and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Product-specific interchangeability and an authorized order",
+                  "explanation": "Formulation differences require a defensible, authorized substitution."
+                },
+                {
+                  "id": "B",
+                  "text": "A previously tolerated dose of the original formulation",
+                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
+                },
+                {
+                  "id": "C",
+                  "text": "A similar dosing interval listed on another patient’s chart",
+                  "explanation": "Another regimen cannot establish product interchangeability."
+                },
+                {
+                  "id": "D",
+                  "text": "An identical generic name and nominal milligram strength",
+                  "explanation": "These do not establish the same release, route, or bioavailability."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "administration",
+                  "textSha256": "f4d922269516314d3da992d7330957074146d278c477365b6d8b88d404a1dfb4"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--7-day--formulation",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::formulation"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--advanced--formulation",
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 9
+        }
+      ]
+    },
+    {
       "itemId": "verified-alteplase-v35",
       "title": "Alteplase (tPA)",
       "itemType": "medication",
@@ -16797,589 +18111,6 @@
             }
           ],
           "questionCount": 7
-        }
-      ]
-    },
-    {
-      "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-      "title": "Open / Gunshot Fractures — Infection & Limb Safety",
-      "itemType": "lesson",
-      "evidenceIds": [
-        "content-v37",
-        "supplied-health-alterations",
-        "aaos-major-extremity-trauma",
-        "cdc-tetanus-2026"
-      ],
-      "exams": [
-        {
-          "id": "ibd2-lesson-03-open-gunshot-fractures--standard",
-          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-          "itemType": "lesson",
-          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
-          "stage": "standard",
-          "reviewStatus": "authoring draft",
-          "passRule": {
-            "operator": ">=",
-            "percent": 90,
-            "roundBeforeComparison": false
-          },
-          "timing": {
-            "timed": false,
-            "secondsPerQuestion": null,
-            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
-          },
-          "scoring": {
-            "correct": 1,
-            "incorrect": 0,
-            "unanswered": 0,
-            "partialCredit": false,
-            "unsureOrGuessed": "review flag only",
-            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
-          },
-          "feedback": "show keys and all option explanations after submission",
-          "retestPolicy": "same standard form after required reading",
-          "questions": [
-            {
-              "stem": "Which finding is required to classify a fracture as open?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "A skin wound anywhere on the injured extremity",
-                  "explanation": "The wound must communicate with the fracture."
-                },
-                {
-                  "id": "B",
-                  "text": "A wound communicating with the fracture",
-                  "explanation": "Communication with the fracture defines an open fracture."
-                },
-                {
-                  "id": "C",
-                  "text": "A wound with bone visibly protruding through the skin",
-                  "explanation": "Visible bone is not required for a fracture to be open."
-                },
-                {
-                  "id": "D",
-                  "text": "A fracture with severe surrounding bruising and swelling",
-                  "explanation": "Bruising and swelling alone do not establish communication with the outside."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "An open fracture communicates with an external wound; visible bone is not required.",
-              "criticalForSafety": false,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 0,
-                  "label": "Meaning",
-                  "textSha256": "c477ed9405b16467212a90b6188c069b2634d7b9c1a2818a69769ffe27f3cf76"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 5,
-                  "label": "Common mistake",
-                  "textSha256": "d3267b3c9ae4f08c41d818f2c6d26521f24a420a69a3e84f68f8cd84aa5a0960"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-4c6113edba15",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-4c6113edba15"
-              ],
-              "answerKey": "B"
-            },
-            {
-              "stem": "Which assessment set most directly checks for immediate limb and systemic complications after an open fracture?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "Joint range, walking distance, muscle bulk and rehabilitation goals",
-                  "explanation": "Rehabilitation measures do not replace assessment for immediate complications."
-                },
-                {
-                  "id": "B",
-                  "text": "Wound dimensions, dressing type, exudate volume and skin edges",
-                  "explanation": "This wound-focused set omits distal function and systemic observations."
-                },
-                {
-                  "id": "C",
-                  "text": "Pain score, sleep quality, appetite and response to reassurance",
-                  "explanation": "These do not adequately check perfusion, movement and systemic stability."
-                },
-                {
-                  "id": "D",
-                  "text": "Bleeding, distal perfusion, sensation, movement and vital signs",
-                  "explanation": "These identify bleeding, neurovascular change and systemic deterioration."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Open-fracture nursing assessment includes bleeding, wound, distal neurovascular status, pain/swelling and vitals.",
-              "criticalForSafety": true,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 1,
-                  "label": "Check",
-                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-dfc6dc14831e",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-dfc6dc14831e"
-              ],
-              "answerKey": "D"
-            },
-            {
-              "stem": "Which infection-prevention plan fits nursing care for a fresh open fracture?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "Protect aseptically; await visible drainage before ordered antibiotics",
-                  "explanation": "The infection-prevention plan should not wait for drainage to appear."
-                },
-                {
-                  "id": "B",
-                  "text": "Clean the surface; omit antibiotics if bone is not visible",
-                  "explanation": "Visible protruding bone is not required for an open fracture."
-                },
-                {
-                  "id": "C",
-                  "text": "Protect aseptically; give ordered antibiotics; verify tetanus assessment",
-                  "explanation": "These match the taught plan while preserving authorized prescribing."
-                },
-                {
-                  "id": "D",
-                  "text": "Cover the wound; omit tetanus assessment after starting antibiotics",
-                  "explanation": "Antibiotics do not replace tetanus assessment."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Protect the wound, follow the ordered antimicrobial plan, verify tetanus assessment and avoid independent wound manipulation.",
-              "criticalForSafety": true,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 2,
-                  "label": "Do",
-                  "textSha256": "9f6c83e9b16e2b4fb27e45861907f2e9b5e7b267b1c63718bd13939ce56447da"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--standard--point-bc700ec5854d",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-bc700ec5854d"
-              ],
-              "answerKey": "C"
-            }
-          ],
-          "questionCount": 3
-        },
-        {
-          "id": "ibd2-lesson-03-open-gunshot-fractures--advanced",
-          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-          "itemType": "lesson",
-          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
-          "stage": "advanced",
-          "reviewStatus": "authoring draft",
-          "passRule": {
-            "operator": ">",
-            "percent": 90,
-            "roundBeforeComparison": false
-          },
-          "timing": {
-            "timed": true,
-            "secondsPerQuestion": 90,
-            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
-          },
-          "scoring": {
-            "correct": 1,
-            "incorrect": 0,
-            "unanswered": 0,
-            "partialCredit": false,
-            "unsureOrGuessed": "review flag only",
-            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
-          },
-          "feedback": "show keys and all option explanations after submission",
-          "retestPolicy": "different from standard",
-          "questions": [
-            {
-              "stem": "An open-fracture wound develops increasing pain, redness, swelling and purulent drainage. What is the best interpretation?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "This pattern proves normal fracture healing",
-                  "explanation": "Purulent drainage and worsening inflammation are not normal healing findings."
-                },
-                {
-                  "id": "B",
-                  "text": "The findings can be ignored if hardware is intact",
-                  "explanation": "Hardware appearance does not exclude infection."
-                },
-                {
-                  "id": "C",
-                  "text": "Only fever can indicate infection",
-                  "explanation": "Local infection can be evident before prominent systemic signs."
-                },
-                {
-                  "id": "D",
-                  "text": "These are infection warning signs that require review",
-                  "explanation": "The pattern is consistent with worsening wound infection."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Increasing pain, redness, swelling, purulent drainage or fever are infection warning signs.",
-              "criticalForSafety": false,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 3,
-                  "label": "Watch for infection",
-                  "textSha256": "8e54d7d424455fa35eaf2d5944e0b89cd3f09dd862f04b820ede072ca5667e5a"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-35eff7fe4031",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-35eff7fe4031"
-              ],
-              "answerKey": "D"
-            },
-            {
-              "stem": "A patient with an open leg fracture develops worsening sensation and movement in the foot. What is the priority?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "Wait for the next routine dressing change",
-                  "explanation": "This delays assessment of possible limb compromise."
-                },
-                {
-                  "id": "B",
-                  "text": "Urgent neurovascular reassessment and escalation",
-                  "explanation": "Deteriorating nerve or perfusion findings can threaten the limb."
-                },
-                {
-                  "id": "C",
-                  "text": "Assume swelling alone explains all neurological changes",
-                  "explanation": "New neurological loss requires urgent review."
-                },
-                {
-                  "id": "D",
-                  "text": "Document the finding without contacting the team",
-                  "explanation": "Documentation does not replace escalation."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Neurovascular deterioration or systemic deterioration after an open fracture requires urgent escalation.",
-              "criticalForSafety": true,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 1,
-                  "label": "Check",
-                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 4,
-                  "label": "Escalate",
-                  "textSha256": "d37a3180ee9cb43936f00d3d3cab3be860adfd9995fa7dec76fd2843c0b84170"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-e66a67a7fc87",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-e66a67a7fc87"
-              ],
-              "answerKey": "B"
-            }
-          ],
-          "questionCount": 2
-        },
-        {
-          "id": "ibd2-lesson-03-open-gunshot-fractures--7-day",
-          "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-          "itemType": "lesson",
-          "title": "Open / Gunshot Fractures — Infection & Limb Safety",
-          "stage": "7-day",
-          "reviewStatus": "authoring draft",
-          "passRule": {
-            "operator": ">",
-            "percent": 90,
-            "roundBeforeComparison": false
-          },
-          "timing": {
-            "timed": false,
-            "secondsPerQuestion": null,
-            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
-          },
-          "scoring": {
-            "correct": 1,
-            "incorrect": 0,
-            "unanswered": 0,
-            "partialCredit": false,
-            "unsureOrGuessed": "review flag only",
-            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
-          },
-          "feedback": "show keys and all option explanations after submission",
-          "retestPolicy": "comprehensive memory retest; questions may repeat",
-          "questions": [
-            {
-              "stem": "Which finding is required to classify a fracture as open?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "A wound communicating with the fracture",
-                  "explanation": "Communication with the fracture defines an open fracture."
-                },
-                {
-                  "id": "B",
-                  "text": "A skin wound anywhere on the injured extremity",
-                  "explanation": "The wound must communicate with the fracture."
-                },
-                {
-                  "id": "C",
-                  "text": "A fracture with severe surrounding bruising and swelling",
-                  "explanation": "Bruising and swelling alone do not establish communication with the outside."
-                },
-                {
-                  "id": "D",
-                  "text": "A wound with bone visibly protruding through the skin",
-                  "explanation": "Visible bone is not required for a fracture to be open."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "An open fracture communicates with an external wound; visible bone is not required.",
-              "criticalForSafety": false,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 0,
-                  "label": "Meaning",
-                  "textSha256": "c477ed9405b16467212a90b6188c069b2634d7b9c1a2818a69769ffe27f3cf76"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 5,
-                  "label": "Common mistake",
-                  "textSha256": "d3267b3c9ae4f08c41d818f2c6d26521f24a420a69a3e84f68f8cd84aa5a0960"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-4c6113edba15",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-4c6113edba15"
-              ],
-              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--standard--point-4c6113edba15",
-              "answerKey": "A"
-            },
-            {
-              "stem": "Which assessment set most directly checks for immediate limb and systemic complications after an open fracture?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "Wound dimensions, dressing type, exudate volume and skin edges",
-                  "explanation": "This wound-focused set omits distal function and systemic observations."
-                },
-                {
-                  "id": "B",
-                  "text": "Pain score, sleep quality, appetite and response to reassurance",
-                  "explanation": "These do not adequately check perfusion, movement and systemic stability."
-                },
-                {
-                  "id": "C",
-                  "text": "Bleeding, distal perfusion, sensation, movement and vital signs",
-                  "explanation": "These identify bleeding, neurovascular change and systemic deterioration."
-                },
-                {
-                  "id": "D",
-                  "text": "Joint range, walking distance, muscle bulk and rehabilitation goals",
-                  "explanation": "Rehabilitation measures do not replace assessment for immediate complications."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Open-fracture nursing assessment includes bleeding, wound, distal neurovascular status, pain/swelling and vitals.",
-              "criticalForSafety": true,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 1,
-                  "label": "Check",
-                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-dfc6dc14831e",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-dfc6dc14831e"
-              ],
-              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--standard--point-dfc6dc14831e",
-              "answerKey": "C"
-            },
-            {
-              "stem": "Which infection-prevention plan fits nursing care for a fresh open fracture?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "Protect aseptically; await visible drainage before ordered antibiotics",
-                  "explanation": "The infection-prevention plan should not wait for drainage to appear."
-                },
-                {
-                  "id": "B",
-                  "text": "Clean the surface; omit antibiotics if bone is not visible",
-                  "explanation": "Visible protruding bone is not required for an open fracture."
-                },
-                {
-                  "id": "C",
-                  "text": "Cover the wound; omit tetanus assessment after starting antibiotics",
-                  "explanation": "Antibiotics do not replace tetanus assessment."
-                },
-                {
-                  "id": "D",
-                  "text": "Protect aseptically; give ordered antibiotics; verify tetanus assessment",
-                  "explanation": "These match the taught plan while preserving authorized prescribing."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Protect the wound, follow the ordered antimicrobial plan, verify tetanus assessment and avoid independent wound manipulation.",
-              "criticalForSafety": true,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 2,
-                  "label": "Do",
-                  "textSha256": "9f6c83e9b16e2b4fb27e45861907f2e9b5e7b267b1c63718bd13939ce56447da"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-bc700ec5854d",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-bc700ec5854d"
-              ],
-              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--standard--point-bc700ec5854d",
-              "answerKey": "D"
-            },
-            {
-              "stem": "An open-fracture wound develops increasing pain, redness, swelling and purulent drainage. What is the best interpretation?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "These are infection warning signs that require review",
-                  "explanation": "The pattern is consistent with worsening wound infection."
-                },
-                {
-                  "id": "B",
-                  "text": "This pattern proves normal fracture healing",
-                  "explanation": "Purulent drainage and worsening inflammation are not normal healing findings."
-                },
-                {
-                  "id": "C",
-                  "text": "The findings can be ignored if hardware is intact",
-                  "explanation": "Hardware appearance does not exclude infection."
-                },
-                {
-                  "id": "D",
-                  "text": "Only fever can indicate infection",
-                  "explanation": "Local infection can be evident before prominent systemic signs."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Increasing pain, redness, swelling, purulent drainage or fever are infection warning signs.",
-              "criticalForSafety": false,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 3,
-                  "label": "Watch for infection",
-                  "textSha256": "8e54d7d424455fa35eaf2d5944e0b89cd3f09dd862f04b820ede072ca5667e5a"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-35eff7fe4031",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-35eff7fe4031"
-              ],
-              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-35eff7fe4031",
-              "answerKey": "A"
-            },
-            {
-              "stem": "A patient with an open leg fracture develops worsening sensation and movement in the foot. What is the priority?",
-              "choices": [
-                {
-                  "id": "A",
-                  "text": "Assume swelling alone explains all neurological changes",
-                  "explanation": "New neurological loss requires urgent review."
-                },
-                {
-                  "id": "B",
-                  "text": "Urgent neurovascular reassessment and escalation",
-                  "explanation": "Deteriorating nerve or perfusion findings can threaten the limb."
-                },
-                {
-                  "id": "C",
-                  "text": "Document the finding without contacting the team",
-                  "explanation": "Documentation does not replace escalation."
-                },
-                {
-                  "id": "D",
-                  "text": "Wait for the next routine dressing change",
-                  "explanation": "This delays assessment of possible limb compromise."
-                }
-              ],
-              "format": "single-best-answer",
-              "point": "Neurovascular deterioration or systemic deterioration after an open fracture requires urgent escalation.",
-              "criticalForSafety": true,
-              "sourceRefs": [
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 1,
-                  "label": "Check",
-                  "textSha256": "c3238a8b7b68ffaaf5ffb9e8358fcd591bcc8bb89584d5621981bfcd78094cf8"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "lessons",
-                  "itemId": "ibd2-lesson-03-open-gunshot-fractures",
-                  "sectionIndex": 4,
-                  "label": "Escalate",
-                  "textSha256": "d37a3180ee9cb43936f00d3d3cab3be860adfd9995fa7dec76fd2843c0b84170"
-                }
-              ],
-              "id": "ibd2-lesson-03-open-gunshot-fractures--7-day--point-e66a67a7fc87",
-              "points": 1,
-              "learningPointIds": [
-                "ibd2-lesson-03-open-gunshot-fractures::point-e66a67a7fc87"
-              ],
-              "reusedFromQuestionId": "ibd2-lesson-03-open-gunshot-fractures--advanced--point-e66a67a7fc87",
-              "answerKey": "B"
-            }
-          ],
-          "questionCount": 5
         }
       ]
     }
