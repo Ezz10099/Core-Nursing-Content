@@ -9,6 +9,7 @@
   const TOKEN_KEY = 'core-nursing-qa-github-token-v1';
   const MAX_ITEMS = 500;
   let busy = false;
+  let verifiedConnection = false;
   const $ = id => document.getElementById(id);
   const escape = x => safe(String(x == null ? '' : x));
   function collection() {
@@ -223,7 +224,7 @@
     if (count) count.textContent = collection().length + ' saved · ' +
       collection().filter(n => !n.answer).length + ' unanswered · ' + list.length + ' showing';
     const cfg = $('noteCloudSetting');
-    if (cfg) cfg.textContent = cloudConfigured() ? 'Connected (private GitHub token stored on this device)' : 'Not connected · questions remain on this phone';
+    if (cfg) cfg.textContent = !cloudConfigured() ? 'Not connected · questions remain on this phone' : verifiedConnection ? 'Private sync verified with GitHub' : 'GitHub token saved on this device · connection not yet verified';
     root.innerHTML = list.map(n => '<article class="note-card">' +
       '<div class="note-card-top"><span class="source-tag">' + escape(n.department.toUpperCase()) +
       '</span><small>' + escape((n.updatedAt||'').slice(0,10)) + '</small></div>' +
@@ -254,7 +255,8 @@
       method,
       headers: {
         'Accept': 'application/vnd.github+json',
-        'X-GitHub-Api-Version': '2022-11-28',
+        // GitHub's CORS preflight allows Authorization and Content-Type,
+        // but not the optional X-GitHub-Api-Version header.
         'Authorization': 'Bearer ' + key,
         ...(body ? {'Content-Type':'application/json'} : {})
       },
@@ -333,9 +335,10 @@
         await upload(n); uploaded++;
       }
       const received=await downloadAnswers();
+      verifiedConnection = true;
       syncMessage('Up to date · ' + uploaded + ' question(s) uploaded, ' + received + ' answer(s) received.');
       render();
-    } catch(e) { syncMessage('Sync not completed: ' + e.message + ' Your local questions are preserved.'); }
+    } catch(e) { syncMessage('Sync not completed: ' + (e instanceof TypeError && /fetch/i.test(e.message) ? 'Network request blocked or unreachable. Try checking api.github.com in Chrome, then retry.' : e.message) + ' Your local questions are preserved.'); render(); }
     finally { busy=false; }
   }
   function connect() {
@@ -343,13 +346,13 @@
     if (!val || !/^(github_pat_|ghp_|ghu_)/.test(val)) {
       syncMessage('Enter a valid GitHub fine-grained personal access token.'); return;
     }
-    try { localStorage.setItem(TOKEN_KEY,val); inp.value=''; }
+    try { localStorage.setItem(TOKEN_KEY,val); inp.value=''; verifiedConnection=false; }
     catch(e) { syncMessage('Device storage unavailable; could not save connection.'); return; }
     render(); sync(true);
   }
   function disconnect() {
     if (!confirm('Disconnect private cloud sync on this phone? Your local questions and backups remain.')) return;
-    try { localStorage.removeItem(TOKEN_KEY); } catch (_) {}
+    try { localStorage.removeItem(TOKEN_KEY); verifiedConnection=false; } catch (_) {}
     render(); syncMessage('Private sync disconnected; questions remain saved offline.');
   }
   document.addEventListener('click', function(e) {
