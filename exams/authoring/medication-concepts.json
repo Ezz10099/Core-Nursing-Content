@@ -210,20 +210,20 @@
       "stem": "A patient receives {drug} and a combination cold product. Which information is needed before assessing the next dose?",
       "choices": [
         {
-          "text": "Acetaminophen contributed by both products",
+          "text": "Total acetaminophen from all products used",
           "explanation": "Total exposure depends on the shared active ingredient."
         },
         {
-          "text": "NSAID contributed by both products",
-          "explanation": "The question concerns overlapping acetaminophen exposure, not assuming both contain an NSAID."
+          "text": "Acetaminophen from the prescription product alone",
+          "explanation": "The cold product may also contribute acetaminophen and must be checked."
         },
         {
-          "text": "The combined volume of fluid swallowed",
-          "explanation": "Fluid volume does not establish acetaminophen exposure."
+          "text": "Acetaminophen from the stronger product alone",
+          "explanation": "A lower-strength preparation still contributes to total exposure."
         },
         {
-          "text": "The combined number of active ingredients",
-          "explanation": "Ingredient count does not quantify the dose of the shared ingredient."
+          "text": "Acetaminophen since the most recent meal alone",
+          "explanation": "A meal does not reset the period used to assess cumulative exposure."
         }
       ],
       "correct": 0,
@@ -826,16 +826,16 @@
           "explanation": "The symptoms fit impaired bowel transit associated with opioid exposure and immobility."
         },
         {
+          "text": "Diarrhea",
+          "explanation": "Reduced stool frequency and straining do not describe diarrhea."
+        },
+        {
+          "text": "Fecal incontinence",
+          "explanation": "The case describes difficult passage rather than involuntary stool loss."
+        },
+        {
           "text": "Upper gastrointestinal bleeding",
-          "explanation": "No bleeding pattern is described."
-        },
-        {
-          "text": "Serotonin toxicity",
-          "explanation": "The case does not describe autonomic and neuromuscular excitation."
-        },
-        {
-          "text": "Acute infusion intolerance",
-          "explanation": "This is not an infusion-related presentation."
+          "explanation": "No bleeding finding is described."
         }
       ],
       "correct": 0,
@@ -849,16 +849,16 @@
           "explanation": "The two factors can act together."
         },
         {
-          "text": "Medication-related bowel acceleration combined with immobility",
-          "explanation": "Opioid effects generally slow rather than accelerate transit."
+          "text": "Medication-related bowel acceleration despite immobility",
+          "explanation": "Opioid-associated constipation reflects slowing, not acceleration, of bowel transit."
         },
         {
-          "text": "Reduced analgesic absorption caused by improved mobility",
-          "explanation": "The case describes immobility and improved analgesia."
+          "text": "Reduced drug effect because bed rest increases bowel transit",
+          "explanation": "Bed rest does not support this explanation of improved analgesia with constipation."
         },
         {
-          "text": "Improved intestinal perfusion caused by pain relief",
-          "explanation": "This does not explain the constipation pattern."
+          "text": "Pain relief reversing the bowel-slowing effect of immobility",
+          "explanation": "The ongoing constipation shows that analgesic benefit has not removed the bowel problem."
         }
       ],
       "correct": 0,
@@ -928,16 +928,16 @@
           "explanation": "This raises concern for severe hypersensitivity, including SJS/TEN."
         },
         {
-          "text": "Dry mouth without a rash",
-          "explanation": "This points toward a different adverse-effect pattern."
+          "text": "Localized redness at an adhesive edge",
+          "explanation": "Localized contact irritation is less suggestive of a severe skin-and-mucosal drug reaction."
         },
         {
-          "text": "Constipation without a rash",
-          "explanation": "This does not identify a severe cutaneous reaction."
+          "text": "Dry intact skin with mild itching",
+          "explanation": "This lacks the mucosal involvement that raises particular concern."
         },
         {
-          "text": "Mild tremor without a rash",
-          "explanation": "This does not establish the skin and mucosal syndrome."
+          "text": "An unchanged rash documented before treatment",
+          "explanation": "An unchanged pre-existing rash is less suggestive of a newly developing severe drug reaction."
         }
       ],
       "correct": 0,
@@ -1081,16 +1081,16 @@
           "explanation": "Sustained abnormal muscle postures are characteristic of a dystonic reaction."
         },
         {
-          "text": "Serotonin toxicity",
-          "explanation": "The case does not describe the broader febrile, hyperreflexic, autonomic pattern."
+          "text": "Akathisia",
+          "explanation": "Akathisia predominantly involves inner restlessness and a need to move, not sustained abnormal postures."
         },
         {
-          "text": "Opioid respiratory toxicity",
-          "explanation": "This does not explain the characteristic sustained postures."
+          "text": "Drug-induced parkinsonism",
+          "explanation": "Slowness and rigidity differ from this acute sustained neck and eye deviation."
         },
         {
-          "text": "Orthostatic hypotension",
-          "explanation": "A postural BP fall does not explain this movement pattern."
+          "text": "Tardive dyskinesia",
+          "explanation": "This typically involves repetitive involuntary movements rather than the described acute sustained postures."
         }
       ],
       "correct": 0,
@@ -1105,15 +1105,15 @@
         },
         {
           "text": "Acute dystonia",
-          "explanation": "Dystonia causes sustained abnormal postures rather than this predominant restlessness."
+          "explanation": "Dystonia involves sustained abnormal muscle postures rather than predominant inner restlessness."
         },
         {
-          "text": "Opioid intoxication",
-          "explanation": "This is more associated with central depression than marked motor restlessness."
+          "text": "Drug-induced parkinsonism",
+          "explanation": "Bradykinesia and rigidity do not best explain repetitive pacing with inner restlessness."
         },
         {
-          "text": "Antibiotic-associated colitis",
-          "explanation": "This does not account for the new movement behavior."
+          "text": "Tardive dyskinesia",
+          "explanation": "Repetitive involuntary movements differ from the subjective need to keep moving."
         }
       ],
       "correct": 0,
@@ -1183,16 +1183,16 @@
           "explanation": "The cluster is characteristic of excessive neurological drug effect."
         },
         {
-          "text": "Serotonin toxicity",
-          "explanation": "The case lacks the characteristic hyperreflexic, febrile autonomic pattern."
+          "text": "A breakthrough generalized seizure",
+          "explanation": "The described ongoing coordination and speech findings are not a generalized seizure."
         },
         {
-          "text": "Opioid-related constipation",
-          "explanation": "This does not explain the ocular and coordination findings."
+          "text": "Isolated orthostatic hypotension",
+          "explanation": "The case is not limited to symptoms during standing or a documented postural BP fall."
         },
         {
-          "text": "Vancomycin infusion intolerance",
-          "explanation": "This is a different treatment and presentation."
+          "text": "An acute dystonic reaction",
+          "explanation": "Sustained abnormal postures differ from this nystagmus, ataxia and dysarthria cluster."
         }
       ],
       "correct": 0,
@@ -1234,16 +1234,16 @@
           "explanation": "The presentation is compatible with an infusion-related reaction."
         },
         {
-          "text": "Delayed marrow suppression",
-          "explanation": "This does not explain the acute timing and flushing."
+          "text": "Infusion-site phlebitis",
+          "explanation": "A localized inflamed vein does not adequately explain generalized flushing, itching and falling BP."
         },
         {
-          "text": "Fluoroquinolone tendinopathy",
-          "explanation": "This has a different exposure and manifestation."
+          "text": "Antibiotic-associated colitis",
+          "explanation": "Colitis has a bowel presentation rather than this infusion-linked skin and circulatory pattern."
         },
         {
-          "text": "Acute dystonic reaction",
-          "explanation": "Sustained abnormal postures are not described."
+          "text": "Delayed drug-related marrow suppression",
+          "explanation": "Cytopenia does not explain this immediate infusion-linked presentation."
         }
       ],
       "correct": 0,
@@ -1257,16 +1257,16 @@
           "explanation": "Rapid administration increases the risk of an infusion reaction."
         },
         {
-          "text": "Insufficient oral drug absorption",
-          "explanation": "The medicine is being administered intravenously."
+          "text": "An extended interval between scheduled doses",
+          "explanation": "The characteristic infusion-linked reaction is related to how the current dose is infused, not a longer interval."
         },
         {
-          "text": "An insufficient antihypertensive effect",
-          "explanation": "This does not explain flushing with an infusion-related BP fall."
+          "text": "A delay before starting the prescribed infusion",
+          "explanation": "A delayed start does not explain the current rate-related flushing and pressure fall."
         },
         {
-          "text": "A missed scheduled antacid dose",
-          "explanation": "This does not account for the administration-linked reaction."
+          "text": "A prior dose given later than scheduled",
+          "explanation": "Previous dose timing does not best explain this reaction during the present infusion."
         }
       ],
       "correct": 0,
@@ -1278,23 +1278,23 @@
     "point": "Fluoroquinolone-associated new tendon pain needs prompt review.",
     "anchor": "tendon|tendinitis|rupture",
     "standard": {
-      "stem": "Which new symptom during {drug} treatment most directly matches an important fluoroquinolone warning?",
+      "stem": "Which new symptom during {drug} treatment most specifically suggests tendon injury?",
       "choices": [
         {
           "text": "Achilles tendon pain",
           "explanation": "New tendon pain can signal tendinopathy and risk of rupture."
         },
         {
-          "text": "Dry mouth after an antimuscarinic",
-          "explanation": "This reflects a different adverse-effect mechanism."
+          "text": "Joint stiffness after prolonged sitting",
+          "explanation": "This does not localize the problem to a tendon."
         },
         {
-          "text": "Metallic taste after a nitroimidazole",
-          "explanation": "This is a different drug-associated effect."
+          "text": "Diffuse muscle aching after exertion",
+          "explanation": "This is less specifically tendon-related than focal Achilles pain."
         },
         {
-          "text": "Flushing during a glycopeptide infusion",
-          "explanation": "This is a different administration-related problem."
+          "text": "Burning and tingling in the toes",
+          "explanation": "These suggest a sensory-nerve problem; they also need assessment but do not identify tendon injury."
         }
       ],
       "correct": 0,
@@ -1308,16 +1308,16 @@
           "explanation": "The warning concerns tendon injury rather than beneficial adaptation."
         },
         {
-          "text": "Progression from constipation to bowel obstruction",
-          "explanation": "That does not explain the new tendon-localized symptoms."
+          "text": "Progression from sensory disturbance to peripheral neuropathy",
+          "explanation": "This is a different tissue injury and does not explain tendon-localized pain."
         },
         {
-          "text": "Progression from oral thrush to systemic candidiasis",
-          "explanation": "The case does not describe a fungal presentation."
+          "text": "Progression from joint stiffness to reduced joint range",
+          "explanation": "The specific warning here is structural tendon injury rather than stiffness alone."
         },
         {
-          "text": "Progression from diuresis to potassium depletion",
-          "explanation": "That is a different medication-related mechanism."
+          "text": "Progression from muscle cramps to generalized weakness",
+          "explanation": "This does not identify the tendon-rupture hazard."
         }
       ],
       "correct": 0,
@@ -1359,16 +1359,16 @@
           "explanation": "Multivalent cations can reduce the amount of antibiotic absorbed."
         },
         {
-          "text": "Aminoglycoside binding at the bacterial 30S subunit",
-          "explanation": "This is a different antibiotic mechanism."
+          "text": "Enzyme induction increases hepatic drug clearance",
+          "explanation": "The tested interaction is binding in the gut, not accelerated hepatic metabolism."
         },
         {
-          "text": "Inhibition of vitamin-K regeneration",
-          "explanation": "This is the mechanism of warfarin, not the gut interaction."
+          "text": "Protein displacement increases the free drug fraction",
+          "explanation": "The interaction reduces absorption rather than displacing absorbed drug from plasma proteins."
         },
         {
-          "text": "Inhibition of renal sodium-glucose cotransport",
-          "explanation": "This is the mechanism of SGLT2 inhibitors."
+          "text": "Reduced renal excretion increases circulating concentrations",
+          "explanation": "This would tend to increase exposure and is not the gut-chelation mechanism."
         }
       ],
       "correct": 0,
@@ -1387,16 +1387,16 @@
           "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
         },
         {
-          "text": "A fixed normal PR interval",
-          "explanation": "This does not identify prolonged ventricular repolarization."
+          "text": "PR prolongation",
+          "explanation": "PR describes atrioventricular conduction rather than ventricular repolarization."
         },
         {
-          "text": "An isolated change in displayed gain",
-          "explanation": "Gain is a display setting rather than the cardiac repolarization interval."
+          "text": "QRS widening",
+          "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
         },
         {
-          "text": "An unchanged regular R-R interval",
-          "explanation": "Current regularity does not measure the QT interval."
+          "text": "ST elevation",
+          "explanation": "ST elevation is not the same measurement as QT prolongation."
         }
       ],
       "correct": 0,
@@ -1410,16 +1410,16 @@
           "explanation": "Drug-related repolarization effects and electrolyte abnormalities can compound risk."
         },
         {
-          "text": "Isolated failure of gastrointestinal absorption",
-          "explanation": "This does not explain the electrical-risk pattern."
+          "text": "Increased susceptibility to complete AV block",
+          "explanation": "The principal pattern described is a ventricular repolarization hazard rather than AV conduction failure."
         },
         {
-          "text": "Isolated reduction in gastric acid production",
-          "explanation": "This does not account for prolonged repolarization with low electrolytes."
+          "text": "Increased susceptibility to isolated sinus arrest",
+          "explanation": "Sinus-node arrest is not the principal risk indicated by QT prolongation."
         },
         {
-          "text": "Increased likelihood of antibiotic-associated colitis",
-          "explanation": "That is not the risk established by these ECG and electrolyte findings."
+          "text": "Increased susceptibility to isolated atrial flutter",
+          "explanation": "The QT-related warning concerns ventricular arrhythmia rather than this atrial rhythm."
         }
       ],
       "correct": 0,
@@ -1634,23 +1634,23 @@
     "point": "Inspect an IV site for treatment-related irritation or phlebitis.",
     "anchor": "IV site|phlebitis|irritat.*vein",
     "standard": {
-      "stem": "An IV site becomes painful and erythematous during {drug}. What local complication should be assessed?",
+      "stem": "During IV {drug}, warmth, redness and tenderness develop along the cannulated vein. Which local complication best fits?",
       "choices": [
         {
           "text": "Infusion-site irritation or phlebitis",
           "explanation": "Pain and erythema along a cannulated vein need local assessment."
         },
         {
-          "text": "A therapeutic increase in tissue exposure",
-          "explanation": "Local pain and redness are not proof of a beneficial drug effect."
+          "text": "Infiltration into the surrounding tissue",
+          "explanation": "The warm, tender vein pattern favors phlebitis over the typical cool, swollen infiltration site."
         },
         {
-          "text": "A systemic electrolyte correction",
-          "explanation": "A local inflamed site does not establish electrolyte response."
+          "text": "Local bruising after cannula insertion",
+          "explanation": "Bruising does not best explain warmth and tenderness tracking along the vein."
         },
         {
-          "text": "An expected sign of infection resolution",
-          "explanation": "Clinical improvement is not established by a new IV-site reaction."
+          "text": "Mechanical catheter occlusion without inflammation",
+          "explanation": "Occlusion alone does not explain the inflammatory signs along the vein."
         }
       ],
       "correct": 0,
@@ -5621,16 +5621,16 @@
           "explanation": "TCA cardiac effects are important in this context."
         },
         {
-          "text": "Its primary action irreversibly blocks platelet P2Y12 receptors",
-          "explanation": "That describes a different drug class."
+          "text": "Antimuscarinic effects can reduce bowel motility",
+          "explanation": "Constipation is relevant to care but does not explain the acute post-MI cardiac concern."
         },
         {
-          "text": "Its primary action supplies beta1-mediated inotropic support",
-          "explanation": "That is not amitriptyline’s role."
+          "text": "Sedative effects can impair alertness during transfers",
+          "explanation": "Sedation matters for safety but does not explain the specific conduction and arrhythmia concern."
         },
         {
-          "text": "Its primary action stabilizes the infarct by dissolving fibrin",
-          "explanation": "Amitriptyline is not a fibrinolytic."
+          "text": "Dry-mouth effects can reduce oral comfort",
+          "explanation": "This is not the cardiac reason for reviewing treatment during acute MI recovery."
         }
       ],
       "correct": 0,
@@ -5737,16 +5737,16 @@
           "explanation": "Multivalent cations can reduce oral fluoroquinolone absorption."
         },
         {
-          "text": "Direct enhancement of antibiotic DNA-gyrase binding",
-          "explanation": "The interaction occurs in absorption rather than improving the bacterial target effect."
+          "text": "Mineral-related acceleration of antibiotic metabolism",
+          "explanation": "The tested interaction is reduced gut absorption, not accelerated metabolism."
         },
         {
-          "text": "Direct inhibition of vitamin-K-dependent factor synthesis",
-          "explanation": "That describes a different drug mechanism."
+          "text": "Mineral-related displacement from plasma proteins",
+          "explanation": "Binding within the gut is different from plasma protein displacement."
         },
         {
-          "text": "Direct conversion of the antibiotic into an NSAID",
-          "explanation": "These products do not interconvert."
+          "text": "Mineral-related inhibition of antibiotic renal clearance",
+          "explanation": "Reduced renal clearance is not the mechanism causing reduced absorbed exposure."
         }
       ],
       "correct": 0,
@@ -6908,16 +6908,16 @@
           "explanation": "Metamizole can rarely cause life-threatening agranulocytosis, sometimes after the medicine has stopped."
         },
         {
+          "text": "Thrombocytopenia",
+          "explanation": "A platelet problem mainly raises bleeding concerns rather than this characteristic neutropenic infection warning."
+        },
+        {
+          "text": "Hemolytic anemia",
+          "explanation": "This would more typically raise concern about red-cell destruction, not the described sore-throat and mucosal-ulcer warning."
+        },
+        {
           "text": "Fluid retention",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
-        },
-        {
-          "text": "Antimuscarinic toxicity",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
-        },
-        {
-          "text": "Drug-induced hyperkalemia",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "explanation": "Fluid retention does not account for the characteristic fever and mouth-ulcer warning."
         }
       ],
       "correct": 0,
@@ -6931,16 +6931,16 @@
           "explanation": "Suspected agranulocytosis warrants discontinuation and urgent blood count; prior tolerance or a prior normal CBC does not rule it out."
         },
         {
-          "text": "Continue until a routine follow-up appointment",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Obtain an urgent blood count; continue until results return",
+          "explanation": "Treatment must be stopped while the suspected agranulocytosis is investigated."
         },
         {
-          "text": "Rely on a normal previous blood count",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Stop the drug; defer the blood count until symptoms persist",
+          "explanation": "The differential blood count is urgent and should not wait for persistence."
         },
         {
-          "text": "Treat only the fever and keep dosing",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Reduce the dose; arrange a routine follow-up blood count",
+          "explanation": "Dose reduction and routine follow-up do not address suspected agranulocytosis promptly."
         }
       ],
       "correct": 0,
@@ -6952,23 +6952,23 @@
     "point": "Recognize that injectable tranexamic acid is IV-only and never neuraxial.",
     "anchor": "intrathecal|epidural|IV ONLY",
     "standard": {
-      "stem": "An injectable {drug} ampoule is brought to a neuraxial procedure. Which medication-administration danger should the nurse recognize?",
+      "stem": "Injectable {drug} is confused with a local anesthetic. Which route would create the specific neuraxial medication error?",
       "choices": [
         {
-          "text": "Accidental intrathecal or epidural administration",
+          "text": "Intrathecal or epidural injection",
           "explanation": "Injectable tranexamic acid is for IV use; neuraxial administration has caused fatal injury."
         },
         {
-          "text": "Oral absorption failure",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Intravenous administration through verified venous access",
+          "explanation": "IV is the intended route for the injectable product; the specific danger is neuraxial administration."
         },
         {
-          "text": "Delayed tablet disintegration",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Oral administration of the prescribed tablet formulation",
+          "explanation": "An oral tablet order is not the neuraxial ampoule mix-up described."
         },
         {
-          "text": "Interference with inhaler delivery",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Intravenous infusion under the authorized prescription",
+          "explanation": "The route-specific warning concerns intrathecal or epidural injection, not authorized IV delivery."
         }
       ],
       "correct": 0,
@@ -6982,16 +6982,16 @@
           "explanation": "No volume reduction or slow injection makes neuraxial TXA safe."
         },
         {
-          "text": "Continue using a smaller volume",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Verify the dose, then use the planned epidural route",
+          "explanation": "A correct dose does not make the neuraxial route acceptable."
         },
         {
-          "text": "Give the solution more slowly via the epidural line",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Verify the patient, then use the planned epidural route",
+          "explanation": "Correct patient identification does not resolve a wrong-route preparation."
         },
         {
-          "text": "Flush the epidural catheter before administration",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Verify the expiry, then use the planned epidural route",
+          "explanation": "An in-date product remains unsafe by the neuraxial route."
         }
       ],
       "correct": 0,
@@ -7010,16 +7010,16 @@
           "explanation": "Parenteral phytonadione can rarely cause severe, even fatal hypersensitivity."
         },
         {
-          "text": "Expected antiplatelet action",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "A vasovagal episode",
+          "explanation": "A vasovagal event does not best explain acute wheeze with flushing after the injection."
         },
         {
-          "text": "Normal delayed correction of INR",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Ongoing blood loss without an infusion reaction",
+          "explanation": "Blood loss may lower BP but does not explain the new injection-linked airway symptoms."
         },
         {
-          "text": "Ordinary tablet intolerance",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "An isolated local infusion-site reaction",
+          "explanation": "A local reaction alone does not explain systemic hypotension and airway involvement."
         }
       ],
       "correct": 0,
@@ -7033,16 +7033,16 @@
           "explanation": "Immediate recognition, cessation and emergency anaphylaxis response take priority."
         },
         {
-          "text": "Continue the remaining dose more slowly",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Pause the drug and reassess before calling the emergency team",
+          "explanation": "Airway symptoms with hypotension require an immediate emergency response."
         },
         {
-          "text": "Wait for a repeat INR result",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Slow the drug and seek routine review after the dose",
+          "explanation": "Slowing an infusion is not an adequate response to suspected severe hypersensitivity."
         },
         {
-          "text": "Switch the remaining dose to a larger syringe",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Complete the drug and obtain an urgent repeat INR",
+          "explanation": "Completing the dose and checking INR delays treatment of the airway and circulatory emergency."
         }
       ],
       "correct": 0,
@@ -7057,20 +7057,20 @@
       "stem": "A patient has life-threatening warfarin-associated bleeding and is prescribed {drug}. Why might four-factor PCC also be ordered?",
       "choices": [
         {
-          "text": "Vitamin K correction of clotting factor activity is not immediate",
+          "text": "Vitamin K requires time; PCC supplies clotting factors promptly",
           "explanation": "Phytonadione takes time; four-factor PCC supplies clotting factors for rapid reversal in indicated cases."
         },
         {
-          "text": "Vitamin K directly reverses all DOACs",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "PCC stimulates vitamin K absorption from the intestine",
+          "explanation": "PCC supplies clotting factors; it does not work by improving intestinal vitamin absorption."
         },
         {
-          "text": "PCC is only for pain relief",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "PCC removes circulating warfarin through renal filtration",
+          "explanation": "PCC does not reverse bleeding by eliminating warfarin through the kidneys."
         },
         {
-          "text": "Vitamin K neutralizes heparin within seconds",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "PCC replaces platelets suppressed by vitamin K treatment",
+          "explanation": "PCC contains coagulation factors, and vitamin K is not acting by platelet suppression."
         }
       ],
       "correct": 0,
@@ -7084,16 +7084,16 @@
           "explanation": "Vitamin K supports synthesis of vitamin-K-dependent factors rather than instant neutralization of circulating warfarin."
         },
         {
-          "text": "The medicine works only through platelet inhibition",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Warfarin must first be neutralized by direct vitamin binding",
+          "explanation": "Vitamin K is not an immediate direct-binding antidote to circulating warfarin."
         },
         {
-          "text": "The medicine is used solely to reduce fibrinolysis",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Platelet production must increase before INR can improve",
+          "explanation": "INR reflects clotting-factor activity, not platelet production."
         },
         {
-          "text": "The drug immediately destroys circulating warfarin",
-          "explanation": "This does not appropriately address the specific clinical finding or safety risk."
+          "text": "Fibrin breakdown must increase before INR can improve",
+          "explanation": "The correction depends on functional clotting-factor activity rather than stimulating fibrinolysis."
         }
       ],
       "correct": 0,

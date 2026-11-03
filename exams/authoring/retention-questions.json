@@ -120,24 +120,24 @@
     },
     "acetaminophen_total": {
       "format": "single-best-answer",
-      "stem": "A patient brings two pain medicines and a cold remedy while prescribed {drug}. What prevents an unintended overdose?",
+      "stem": "A patient receives {drug} and a combination cold product. Which information is needed before assessing the next dose?",
       "correct": 0,
       "choices": [
         {
-          "text": "Add acetaminophen amounts from every product",
-          "explanation": "Different products may contribute the same ingredient."
+          "text": "Total acetaminophen from all products used",
+          "explanation": "Total exposure depends on the shared active ingredient."
         },
         {
-          "text": "Count only the medicine prescribed for pain",
-          "explanation": "A cold remedy may also contain acetaminophen."
+          "text": "Acetaminophen from the prescription product alone",
+          "explanation": "The cold product may also contribute acetaminophen and must be checked."
         },
         {
-          "text": "Calculate each product's daily limit separately",
-          "explanation": "Separate product limits can hide combined overdose."
+          "text": "Acetaminophen from the stronger product alone",
+          "explanation": "A lower-strength preparation still contributes to total exposure."
         },
         {
-          "text": "Count only products taken at the same time",
-          "explanation": "Doses across the full relevant period contribute to exposure."
+          "text": "Acetaminophen since the most recent meal alone",
+          "explanation": "A meal does not reset the period used to assess cumulative exposure."
         }
       ]
     },
@@ -442,24 +442,24 @@
     },
     "constipation": {
       "format": "single-best-answer",
-      "stem": "Pain is controlled with {drug}, but stools have become hard and infrequent. Which response is appropriate?",
+      "stem": "An immobilized patient receiving {drug} develops reduced stool frequency and straining. Which problem best fits?",
       "correct": 0,
       "choices": [
         {
-          "text": "Review bowel pattern and the prescribed prevention plan",
-          "explanation": "Opioid-related reduced motility can need bowel management."
+          "text": "Constipation",
+          "explanation": "The symptoms fit impaired bowel transit associated with opioid exposure and immobility."
         },
         {
-          "text": "Stop checking bowel function once pain improves",
-          "explanation": "Analgesic benefit does not remove bowel adverse effects."
+          "text": "Diarrhea",
+          "explanation": "Reduced stool frequency and straining do not describe diarrhea."
         },
         {
-          "text": "Treat absent stools as proof of drug absorption",
-          "explanation": "Bowel inactivity does not measure absorption."
+          "text": "Fecal incontinence",
+          "explanation": "The case describes difficult passage rather than involuntary stool loss."
         },
         {
-          "text": "Reassure that reduced mobility prevents impaction",
-          "explanation": "Immobility can worsen constipation rather than prevent it."
+          "text": "Upper gastrointestinal bleeding",
+          "explanation": "No bleeding finding is described."
         }
       ]
     },
@@ -488,24 +488,24 @@
     },
     "rash_serious": {
       "format": "single-best-answer",
-      "stem": "A patient on {drug} develops widespread rash, fever and mouth ulcers. What should the nurse do?",
+      "stem": "Which new finding during {drug} therapy most strongly suggests a serious cutaneous drug reaction?",
       "correct": 0,
       "choices": [
         {
-          "text": "Seek urgent assessment for a serious drug reaction",
-          "explanation": "Mucosal involvement and systemic symptoms are red flags."
+          "text": "Rash with mucosal involvement",
+          "explanation": "This raises concern for severe hypersensitivity, including SJS/TEN."
         },
         {
-          "text": "Apply moisturizer and review at the next visit",
-          "explanation": "This delays assessment of a potentially severe reaction."
+          "text": "Localized redness at an adhesive edge",
+          "explanation": "Localized contact irritation is less suggestive of a severe skin-and-mucosal drug reaction."
         },
         {
-          "text": "Give the next dose because seizure control is good",
-          "explanation": "Treatment benefit does not exclude serious hypersensitivity."
+          "text": "Dry intact skin with mild itching",
+          "explanation": "This lacks the mucosal involvement that raises particular concern."
         },
         {
-          "text": "Treat it as simple dry skin without reporting",
-          "explanation": "Fever and mouth ulcers are inconsistent with simple dryness."
+          "text": "An unchanged rash documented before treatment",
+          "explanation": "An unchanged pre-existing rash is less suggestive of a newly developing severe drug reaction."
         }
       ]
     },
@@ -557,24 +557,24 @@
     },
     "eps": {
       "format": "single-best-answer",
-      "stem": "After metoclopramide, a patient's neck twists painfully and the eyes deviate upward. Which adverse reaction is most likely?",
+      "stem": "Soon after {drug}, a patient develops sustained neck twisting and upward eye deviation. Which reaction best fits?",
       "correct": 0,
       "choices": [
         {
           "text": "Acute dystonia",
-          "explanation": "Sustained abnormal contractions can follow dopamine blockade."
+          "explanation": "Sustained abnormal muscle postures are characteristic of a dystonic reaction."
         },
         {
-          "text": "Simple postural dizziness",
-          "explanation": "Dizziness does not explain sustained abnormal postures."
+          "text": "Akathisia",
+          "explanation": "Akathisia predominantly involves inner restlessness and a need to move, not sustained abnormal postures."
         },
         {
-          "text": "Expected relief of gastric stasis",
-          "explanation": "Improved motility does not produce this motor pattern."
+          "text": "Drug-induced parkinsonism",
+          "explanation": "Slowness and rigidity differ from this acute sustained neck and eye deviation."
         },
         {
-          "text": "Isolated antimuscarinic dry mouth",
-          "explanation": "Dry mouth does not explain the movement disorder."
+          "text": "Tardive dyskinesia",
+          "explanation": "This typically involves repetitive involuntary movements rather than the described acute sustained postures."
         }
       ]
     },
@@ -603,24 +603,24 @@
     },
     "phenytoin_toxicity": {
       "format": "single-best-answer",
-      "stem": "A patient on phenytoin develops nystagmus, ataxia and slurred speech. Which interpretation requires review?",
+      "stem": "Nystagmus, ataxia, and slurred speech develop during {drug} therapy. Which explanation best fits?",
       "correct": 0,
       "choices": [
         {
-          "text": "Possible concentration-related neurotoxicity",
-          "explanation": "These neurological findings are compatible with phenytoin toxicity."
+          "text": "Phenytoin neurotoxicity",
+          "explanation": "The cluster is characteristic of excessive neurological drug effect."
         },
         {
-          "text": "Adequate seizure control without adverse effects",
-          "explanation": "Seizure control does not explain new ataxia or dysarthria."
+          "text": "A breakthrough generalized seizure",
+          "explanation": "The described ongoing coordination and speech findings are not a generalized seizure."
         },
         {
-          "text": "Expected uncomplicated constipation",
-          "explanation": "Constipation does not explain these neurological signs."
+          "text": "Isolated orthostatic hypotension",
+          "explanation": "The case is not limited to symptoms during standing or a documented postural BP fall."
         },
         {
-          "text": "A harmless change requiring no medication review",
-          "explanation": "New neurological signs require assessment."
+          "text": "An acute dystonic reaction",
+          "explanation": "Sustained abnormal postures differ from this nystagmus, ataxia and dysarthria cluster."
         }
       ]
     },
@@ -649,93 +649,93 @@
     },
     "vanco_infusion": {
       "format": "single-best-answer",
-      "stem": "A vancomycin infusion was accidentally accelerated and flushing develops. What is most appropriate?",
+      "stem": "Flushing, itching, and a BP fall begin during IV {drug}. Which complication best fits?",
       "correct": 0,
       "choices": [
         {
-          "text": "Pause the infusion and assess airway, BP and symptoms",
-          "explanation": "An infusion reaction needs assessment; severe symptoms also require emergency review."
+          "text": "Vancomycin infusion reaction",
+          "explanation": "The presentation is compatible with an infusion-related reaction."
         },
         {
-          "text": "Finish quickly because the total dose is unchanged",
-          "explanation": "Rate can matter even when the total dose is correct."
+          "text": "Infusion-site phlebitis",
+          "explanation": "A localized inflamed vein does not adequately explain generalized flushing, itching and falling BP."
         },
         {
-          "text": "Record flushing without checking circulation",
-          "explanation": "Hypotension and systemic involvement must be assessed."
+          "text": "Antibiotic-associated colitis",
+          "explanation": "Colitis has a bowel presentation rather than this infusion-linked skin and circulatory pattern."
         },
         {
-          "text": "Give the next infusion faster to shorten exposure",
-          "explanation": "Faster infusion can increase infusion-reaction risk."
+          "text": "Delayed drug-related marrow suppression",
+          "explanation": "Cytopenia does not explain this immediate infusion-linked presentation."
         }
       ]
     },
     "tendon": {
       "format": "single-best-answer",
-      "stem": "A patient taking levofloxacin reports new Achilles pain. What advice is appropriate while obtaining prompt review?",
+      "stem": "Which new symptom during {drug} treatment most specifically suggests tendon injury?",
       "correct": 0,
       "choices": [
         {
-          "text": "Avoid stressing the tendon and report the symptom",
-          "explanation": "Fluoroquinolone-associated tendon injury needs assessment."
+          "text": "Achilles tendon pain",
+          "explanation": "New tendon pain can signal tendinopathy and risk of rupture."
         },
         {
-          "text": "Exercise through the pain to restore strength",
-          "explanation": "Loading may worsen a developing tendon injury."
+          "text": "Joint stiffness after prolonged sitting",
+          "explanation": "This does not localize the problem to a tendon."
         },
         {
-          "text": "Ignore the pain if there is no visible bruising",
-          "explanation": "Tendon injury can present without bruising."
+          "text": "Diffuse muscle aching after exertion",
+          "explanation": "This is less specifically tendon-related than focal Achilles pain."
         },
         {
-          "text": "Double the next dose to treat presumed infection there",
-          "explanation": "Unprescribed dose changes are unsafe and miss the adverse effect."
+          "text": "Burning and tingling in the toes",
+          "explanation": "These suggest a sensory-nerve problem; they also need assessment but do not identify tendon injury."
         }
       ]
     },
     "oral_cations": {
       "format": "single-best-answer",
-      "stem": "Oral levofloxacin and an iron supplement are scheduled together. What should the nurse check?",
+      "stem": "Oral {drug} is swallowed with an iron/zinc supplement. Which process can reduce the antibiotic’s effectiveness?",
       "correct": 0,
       "choices": [
         {
-          "text": "Product-directed separation to reduce chelation",
-          "explanation": "Multivalent cations can reduce oral fluoroquinolone absorption."
+          "text": "Chelation reduces gastrointestinal absorption",
+          "explanation": "Multivalent cations can reduce the amount of antibiotic absorbed."
         },
         {
-          "text": "Whether extra iron improves antibiotic absorption",
-          "explanation": "Iron can bind the antibiotic instead."
+          "text": "Enzyme induction increases hepatic drug clearance",
+          "explanation": "The tested interaction is binding in the gut, not accelerated hepatic metabolism."
         },
         {
-          "text": "Whether both can be crushed into the same mixture",
-          "explanation": "Mixing does not prevent the absorption interaction."
+          "text": "Protein displacement increases the free drug fraction",
+          "explanation": "The interaction reduces absorption rather than displacing absorbed drug from plasma proteins."
         },
         {
-          "text": "Whether IV compatibility guarantees oral compatibility",
-          "explanation": "IV compatibility does not address gastrointestinal chelation."
+          "text": "Reduced renal excretion increases circulating concentrations",
+          "explanation": "This would tend to increase exposure and is not the gut-chelation mechanism."
         }
       ]
     },
     "qt": {
       "format": "single-best-answer",
-      "stem": "A patient receiving {drug} has QT prolongation with low K and Mg. What is the main safety concern?",
+      "stem": "Which ECG change is relevant to the repolarization warning in {drug} therapy?",
       "correct": 0,
       "choices": [
         {
-          "text": "Increased risk of ventricular dysrhythmia",
-          "explanation": "QT prolongation plus electrolyte depletion raises proarrhythmic concern."
+          "text": "QT prolongation",
+          "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
         },
         {
-          "text": "Proof that the medicine has no cardiac effect",
-          "explanation": "QT prolongation is a cardiac safety signal."
+          "text": "PR prolongation",
+          "explanation": "PR describes atrioventricular conduction rather than ventricular repolarization."
         },
         {
-          "text": "A reason to discontinue rhythm observation",
-          "explanation": "The abnormality calls for closer review and monitoring."
+          "text": "QRS widening",
+          "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
         },
         {
-          "text": "A normal expected finding requiring no correction review",
-          "explanation": "Electrolyte abnormalities and QT change need assessment."
+          "text": "ST elevation",
+          "explanation": "ST elevation is not the same measurement as QT prolongation."
         }
       ]
     },
@@ -2857,24 +2857,24 @@
     },
     "tca_cardiac": {
       "format": "single-best-answer",
-      "stem": "Why does recent MI matter when reviewing amitriptyline?",
+      "stem": "A patient in acute MI recovery is prescribed amitriptyline. Which property explains the need for review?",
       "correct": 0,
       "choices": [
         {
-          "text": "TCAs can affect cardiac conduction and are unsuitable in acute MI recovery",
-          "explanation": "This is a clinically important cardiac safety issue."
+          "text": "Conduction and arrhythmia effects can worsen cardiac risk",
+          "explanation": "TCA cardiac effects are important in this context."
         },
         {
-          "text": "TCAs prevent every post-MI dysrhythmia",
-          "explanation": "They can instead worsen conduction and toxicity risks."
+          "text": "Antimuscarinic effects can reduce bowel motility",
+          "explanation": "Constipation is relevant to care but does not explain the acute post-MI cardiac concern."
         },
         {
-          "text": "Amitriptyline has no cardiac effects",
-          "explanation": "Its cardiac effects are important."
+          "text": "Sedative effects can impair alertness during transfers",
+          "explanation": "Sedation matters for safety but does not explain the specific conduction and arrhythmia concern."
         },
         {
-          "text": "Recent MI determines only the tablet's coating",
-          "explanation": "The concern is physiological safety, not coating."
+          "text": "Dry-mouth effects can reduce oral comfort",
+          "explanation": "This is not the cardiac reason for reviewing treatment during acute MI recovery."
         }
       ]
     },
@@ -2949,24 +2949,24 @@
     },
     "multivitamin_absorption": {
       "format": "single-best-answer",
-      "stem": "A mineral-containing supplement is taken with a medicine affected by chelation. What should be checked?",
+      "stem": "A multivitamin contains iron and zinc and is taken with oral levofloxacin. Which issue is most relevant?",
       "correct": 0,
       "choices": [
         {
-          "text": "Check mineral ingredients and product-specific separation advice",
-          "explanation": "Chelation can reduce absorption of susceptible medicines."
+          "text": "Mineral-related reduction in antibiotic absorption",
+          "explanation": "Multivalent cations can reduce oral fluoroquinolone absorption."
         },
         {
-          "text": "Keep the doses together if both are taken with food",
-          "explanation": "Food does not necessarily prevent the interaction."
+          "text": "Mineral-related acceleration of antibiotic metabolism",
+          "explanation": "The tested interaction is reduced gut absorption, not accelerated metabolism."
         },
         {
-          "text": "Use a double antibiotic dose to compensate without an order",
-          "explanation": "Improvised dose changes are unsafe."
+          "text": "Mineral-related displacement from plasma proteins",
+          "explanation": "Binding within the gut is different from plasma protein displacement."
         },
         {
-          "text": "Apply one separation interval to every drug and supplement",
-          "explanation": "Recommendations are medicine- and product-specific."
+          "text": "Mineral-related inhibition of antibiotic renal clearance",
+          "explanation": "Reduced renal clearance is not the mechanism causing reduced absorbed exposure."
         }
       ]
     },
