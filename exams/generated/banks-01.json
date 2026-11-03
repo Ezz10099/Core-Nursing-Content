@@ -1696,23 +1696,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Acetaminophen contributed by both products",
+                  "text": "Total acetaminophen from all products used",
                   "explanation": "Total exposure depends on the shared active ingredient."
                 },
                 {
                   "id": "B",
-                  "text": "The combined volume of fluid swallowed",
-                  "explanation": "Fluid volume does not establish acetaminophen exposure."
+                  "text": "Acetaminophen from the prescription product alone",
+                  "explanation": "The cold product may also contribute acetaminophen and must be checked."
                 },
                 {
                   "id": "C",
-                  "text": "The combined number of active ingredients",
-                  "explanation": "Ingredient count does not quantify the dose of the shared ingredient."
+                  "text": "Acetaminophen from the stronger product alone",
+                  "explanation": "A lower-strength preparation still contributes to total exposure."
                 },
                 {
                   "id": "D",
-                  "text": "NSAID contributed by both products",
-                  "explanation": "The question concerns overlapping acetaminophen exposure, not assuming both contain an NSAID."
+                  "text": "Acetaminophen since the most recent meal alone",
+                  "explanation": "A meal does not reset the period used to assess cumulative exposure."
                 }
               ],
               "format": "single-best-answer",
@@ -2389,23 +2389,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Acetaminophen contributed by both products",
+                  "text": "Total acetaminophen from all products used",
                   "explanation": "Total exposure depends on the shared active ingredient."
                 },
                 {
                   "id": "B",
-                  "text": "NSAID contributed by both products",
-                  "explanation": "The question concerns overlapping acetaminophen exposure, not assuming both contain an NSAID."
+                  "text": "Acetaminophen from the prescription product alone",
+                  "explanation": "The cold product may also contribute acetaminophen and must be checked."
                 },
                 {
                   "id": "C",
-                  "text": "The combined volume of fluid swallowed",
-                  "explanation": "Fluid volume does not establish acetaminophen exposure."
+                  "text": "Acetaminophen since the most recent meal alone",
+                  "explanation": "A meal does not reset the period used to assess cumulative exposure."
                 },
                 {
                   "id": "D",
-                  "text": "The combined number of active ingredients",
-                  "explanation": "Ingredient count does not quantify the dose of the shared ingredient."
+                  "text": "Acetaminophen from the stronger product alone",
+                  "explanation": "A lower-strength preparation still contributes to total exposure."
                 }
               ],
               "format": "single-best-answer",
@@ -4744,17 +4744,17 @@
               "answerKey": "B"
             },
             {
-              "stem": "An IV site becomes painful and erythematous during CEFAZOLIN. What local complication should be assessed?",
+              "stem": "During IV CEFAZOLIN, warmth, redness and tenderness develop along the cannulated vein. Which local complication best fits?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "An expected sign of infection resolution",
-                  "explanation": "Clinical improvement is not established by a new IV-site reaction."
+                  "text": "Local bruising after cannula insertion",
+                  "explanation": "Bruising does not best explain warmth and tenderness tracking along the vein."
                 },
                 {
                   "id": "B",
-                  "text": "A systemic electrolyte correction",
-                  "explanation": "A local inflamed site does not establish electrolyte response."
+                  "text": "Mechanical catheter occlusion without inflammation",
+                  "explanation": "Occlusion alone does not explain the inflammatory signs along the vein."
                 },
                 {
                   "id": "C",
@@ -4763,8 +4763,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "A therapeutic increase in tissue exposure",
-                  "explanation": "Local pain and redness are not proof of a beneficial drug effect."
+                  "text": "Infiltration into the surrounding tissue",
+                  "explanation": "The warm, tender vein pattern favors phlebitis over the typical cool, swollen infiltration site."
                 }
               ],
               "format": "single-best-answer",
@@ -5621,7 +5621,7 @@
               "answerKey": "A"
             },
             {
-              "stem": "An IV site becomes painful and erythematous during CEFAZOLIN. What local complication should be assessed?",
+              "stem": "During IV CEFAZOLIN, warmth, redness and tenderness develop along the cannulated vein. Which local complication best fits?",
               "choices": [
                 {
                   "id": "A",
@@ -5630,18 +5630,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "An expected sign of infection resolution",
-                  "explanation": "Clinical improvement is not established by a new IV-site reaction."
+                  "text": "Local bruising after cannula insertion",
+                  "explanation": "Bruising does not best explain warmth and tenderness tracking along the vein."
                 },
                 {
                   "id": "C",
-                  "text": "A therapeutic increase in tissue exposure",
-                  "explanation": "Local pain and redness are not proof of a beneficial drug effect."
+                  "text": "Mechanical catheter occlusion without inflammation",
+                  "explanation": "Occlusion alone does not explain the inflammatory signs along the vein."
                 },
                 {
                   "id": "D",
-                  "text": "A systemic electrolyte correction",
-                  "explanation": "A local inflamed site does not establish electrolyte response."
+                  "text": "Infiltration into the surrounding tissue",
+                  "explanation": "The warm, tender vein pattern favors phlebitis over the typical cool, swollen infiltration site."
                 }
               ],
               "format": "single-best-answer",
@@ -6227,18 +6227,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The case does not describe autonomic and neuromuscular excitation."
+                  "text": "Fecal incontinence",
+                  "explanation": "The case describes difficult passage rather than involuntary stool loss."
                 },
                 {
                   "id": "C",
-                  "text": "Upper gastrointestinal bleeding",
-                  "explanation": "No bleeding pattern is described."
+                  "text": "Diarrhea",
+                  "explanation": "Reduced stool frequency and straining do not describe diarrhea."
                 },
                 {
                   "id": "D",
-                  "text": "Acute infusion intolerance",
-                  "explanation": "This is not an infusion-related presentation."
+                  "text": "Upper gastrointestinal bleeding",
+                  "explanation": "No bleeding finding is described."
                 }
               ],
               "format": "single-best-answer",
@@ -6710,8 +6710,8 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Medication-related bowel acceleration combined with immobility",
-                  "explanation": "Opioid effects generally slow rather than accelerate transit."
+                  "text": "Pain relief reversing the bowel-slowing effect of immobility",
+                  "explanation": "The ongoing constipation shows that analgesic benefit has not removed the bowel problem."
                 },
                 {
                   "id": "B",
@@ -6720,13 +6720,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Improved intestinal perfusion caused by pain relief",
-                  "explanation": "This does not explain the constipation pattern."
+                  "text": "Reduced drug effect because bed rest increases bowel transit",
+                  "explanation": "Bed rest does not support this explanation of improved analgesia with constipation."
                 },
                 {
                   "id": "D",
-                  "text": "Reduced analgesic absorption caused by improved mobility",
-                  "explanation": "The case describes immobility and improved analgesia."
+                  "text": "Medication-related bowel acceleration despite immobility",
+                  "explanation": "Opioid-associated constipation reflects slowing, not acceleration, of bowel transit."
                 }
               ],
               "format": "single-best-answer",
@@ -7212,18 +7212,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Upper gastrointestinal bleeding",
-                  "explanation": "No bleeding pattern is described."
+                  "text": "Fecal incontinence",
+                  "explanation": "The case describes difficult passage rather than involuntary stool loss."
                 },
                 {
                   "id": "B",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The case does not describe autonomic and neuromuscular excitation."
+                  "text": "Diarrhea",
+                  "explanation": "Reduced stool frequency and straining do not describe diarrhea."
                 },
                 {
                   "id": "C",
-                  "text": "Acute infusion intolerance",
-                  "explanation": "This is not an infusion-related presentation."
+                  "text": "Upper gastrointestinal bleeding",
+                  "explanation": "No bleeding finding is described."
                 },
                 {
                   "id": "D",
@@ -12222,8 +12222,8 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dry mouth without a rash",
-                  "explanation": "This points toward a different adverse-effect pattern."
+                  "text": "Dry intact skin with mild itching",
+                  "explanation": "This lacks the mucosal involvement that raises particular concern."
                 },
                 {
                   "id": "B",
@@ -12232,13 +12232,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Constipation without a rash",
-                  "explanation": "This does not identify a severe cutaneous reaction."
+                  "text": "An unchanged rash documented before treatment",
+                  "explanation": "An unchanged pre-existing rash is less suggestive of a newly developing severe drug reaction."
                 },
                 {
                   "id": "D",
-                  "text": "Mild tremor without a rash",
-                  "explanation": "This does not establish the skin and mucosal syndrome."
+                  "text": "Localized redness at an adhesive edge",
+                  "explanation": "Localized contact irritation is less suggestive of a severe skin-and-mucosal drug reaction."
                 }
               ],
               "format": "single-best-answer",
@@ -13001,8 +13001,8 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dry mouth without a rash",
-                  "explanation": "This points toward a different adverse-effect pattern."
+                  "text": "An unchanged rash documented before treatment",
+                  "explanation": "An unchanged pre-existing rash is less suggestive of a newly developing severe drug reaction."
                 },
                 {
                   "id": "B",
@@ -13011,13 +13011,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Constipation without a rash",
-                  "explanation": "This does not identify a severe cutaneous reaction."
+                  "text": "Localized redness at an adhesive edge",
+                  "explanation": "Localized contact irritation is less suggestive of a severe skin-and-mucosal drug reaction."
                 },
                 {
                   "id": "D",
-                  "text": "Mild tremor without a rash",
-                  "explanation": "This does not establish the skin and mucosal syndrome."
+                  "text": "Dry intact skin with mild itching",
+                  "explanation": "This lacks the mucosal involvement that raises particular concern."
                 }
               ],
               "format": "single-best-answer",
@@ -13551,18 +13551,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The case does not describe the broader febrile, hyperreflexic, autonomic pattern."
+                  "text": "Tardive dyskinesia",
+                  "explanation": "This typically involves repetitive involuntary movements rather than the described acute sustained postures."
                 },
                 {
                   "id": "B",
-                  "text": "Opioid respiratory toxicity",
-                  "explanation": "This does not explain the characteristic sustained postures."
+                  "text": "Akathisia",
+                  "explanation": "Akathisia predominantly involves inner restlessness and a need to move, not sustained abnormal postures."
                 },
                 {
                   "id": "C",
-                  "text": "Orthostatic hypotension",
-                  "explanation": "A postural BP fall does not explain this movement pattern."
+                  "text": "Drug-induced parkinsonism",
+                  "explanation": "Slowness and rigidity differ from this acute sustained neck and eye deviation."
                 },
                 {
                   "id": "D",
@@ -13718,18 +13718,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Antibiotic-associated colitis",
-                  "explanation": "This does not account for the new movement behavior."
+                  "text": "Drug-induced parkinsonism",
+                  "explanation": "Bradykinesia and rigidity do not best explain repetitive pacing with inner restlessness."
                 },
                 {
                   "id": "B",
-                  "text": "Opioid intoxication",
-                  "explanation": "This is more associated with central depression than marked motor restlessness."
+                  "text": "Tardive dyskinesia",
+                  "explanation": "Repetitive involuntary movements differ from the subjective need to keep moving."
                 },
                 {
                   "id": "C",
                   "text": "Acute dystonia",
-                  "explanation": "Dystonia causes sustained abnormal postures rather than this predominant restlessness."
+                  "explanation": "Dystonia involves sustained abnormal muscle postures rather than predominant inner restlessness."
                 },
                 {
                   "id": "D",
@@ -14062,13 +14062,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Orthostatic hypotension",
-                  "explanation": "A postural BP fall does not explain this movement pattern."
+                  "text": "Tardive dyskinesia",
+                  "explanation": "This typically involves repetitive involuntary movements rather than the described acute sustained postures."
                 },
                 {
                   "id": "B",
-                  "text": "Opioid respiratory toxicity",
-                  "explanation": "This does not explain the characteristic sustained postures."
+                  "text": "Drug-induced parkinsonism",
+                  "explanation": "Slowness and rigidity differ from this acute sustained neck and eye deviation."
                 },
                 {
                   "id": "C",
@@ -14077,8 +14077,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The case does not describe the broader febrile, hyperreflexic, autonomic pattern."
+                  "text": "Akathisia",
+                  "explanation": "Akathisia predominantly involves inner restlessness and a need to move, not sustained abnormal postures."
                 }
               ],
               "format": "single-best-answer",
@@ -14475,18 +14475,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Opioid-related constipation",
-                  "explanation": "This does not explain the ocular and coordination findings."
+                  "text": "Isolated orthostatic hypotension",
+                  "explanation": "The case is not limited to symptoms during standing or a documented postural BP fall."
                 },
                 {
                   "id": "C",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The case lacks the characteristic hyperreflexic, febrile autonomic pattern."
+                  "text": "A breakthrough generalized seizure",
+                  "explanation": "The described ongoing coordination and speech findings are not a generalized seizure."
                 },
                 {
                   "id": "D",
-                  "text": "Vancomycin infusion intolerance",
-                  "explanation": "This is a different treatment and presentation."
+                  "text": "An acute dystonic reaction",
+                  "explanation": "Sustained abnormal postures differ from this nystagmus, ataxia and dysarthria cluster."
                 }
               ],
               "format": "single-best-answer",
@@ -14520,13 +14520,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dry mouth without a rash",
-                  "explanation": "This points toward a different adverse-effect pattern."
+                  "text": "Localized redness at an adhesive edge",
+                  "explanation": "Localized contact irritation is less suggestive of a severe skin-and-mucosal drug reaction."
                 },
                 {
                   "id": "B",
-                  "text": "Mild tremor without a rash",
-                  "explanation": "This does not establish the skin and mucosal syndrome."
+                  "text": "An unchanged rash documented before treatment",
+                  "explanation": "An unchanged pre-existing rash is less suggestive of a newly developing severe drug reaction."
                 },
                 {
                   "id": "C",
@@ -14535,8 +14535,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "Constipation without a rash",
-                  "explanation": "This does not identify a severe cutaneous reaction."
+                  "text": "Dry intact skin with mild itching",
+                  "explanation": "This lacks the mucosal involvement that raises particular concern."
                 }
               ],
               "format": "single-best-answer",
@@ -15085,8 +15085,8 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The case lacks the characteristic hyperreflexic, febrile autonomic pattern."
+                  "text": "An acute dystonic reaction",
+                  "explanation": "Sustained abnormal postures differ from this nystagmus, ataxia and dysarthria cluster."
                 },
                 {
                   "id": "B",
@@ -15095,13 +15095,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Opioid-related constipation",
-                  "explanation": "This does not explain the ocular and coordination findings."
+                  "text": "A breakthrough generalized seizure",
+                  "explanation": "The described ongoing coordination and speech findings are not a generalized seizure."
                 },
                 {
                   "id": "D",
-                  "text": "Vancomycin infusion intolerance",
-                  "explanation": "This is a different treatment and presentation."
+                  "text": "Isolated orthostatic hypotension",
+                  "explanation": "The case is not limited to symptoms during standing or a documented postural BP fall."
                 }
               ],
               "format": "single-best-answer",
@@ -15136,18 +15136,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dry mouth without a rash",
-                  "explanation": "This points toward a different adverse-effect pattern."
+                  "text": "Dry intact skin with mild itching",
+                  "explanation": "This lacks the mucosal involvement that raises particular concern."
                 },
                 {
                   "id": "B",
-                  "text": "Mild tremor without a rash",
-                  "explanation": "This does not establish the skin and mucosal syndrome."
+                  "text": "An unchanged rash documented before treatment",
+                  "explanation": "An unchanged pre-existing rash is less suggestive of a newly developing severe drug reaction."
                 },
                 {
                   "id": "C",
-                  "text": "Constipation without a rash",
-                  "explanation": "This does not identify a severe cutaneous reaction."
+                  "text": "Localized redness at an adhesive edge",
+                  "explanation": "Localized contact irritation is less suggestive of a severe skin-and-mucosal drug reaction."
                 },
                 {
                   "id": "D",
@@ -15646,18 +15646,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Fluoroquinolone tendinopathy",
-                  "explanation": "This has a different exposure and manifestation."
+                  "text": "Antibiotic-associated colitis",
+                  "explanation": "Colitis has a bowel presentation rather than this infusion-linked skin and circulatory pattern."
                 },
                 {
                   "id": "C",
-                  "text": "Acute dystonic reaction",
-                  "explanation": "Sustained abnormal postures are not described."
+                  "text": "Delayed drug-related marrow suppression",
+                  "explanation": "Cytopenia does not explain this immediate infusion-linked presentation."
                 },
                 {
                   "id": "D",
-                  "text": "Delayed marrow suppression",
-                  "explanation": "This does not explain the acute timing and flushing."
+                  "text": "Infusion-site phlebitis",
+                  "explanation": "A localized inflamed vein does not adequately explain generalized flushing, itching and falling BP."
                 }
               ],
               "format": "single-best-answer",
@@ -15779,13 +15779,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "An insufficient antihypertensive effect",
-                  "explanation": "This does not explain flushing with an infusion-related BP fall."
+                  "text": "An extended interval between scheduled doses",
+                  "explanation": "The characteristic infusion-linked reaction is related to how the current dose is infused, not a longer interval."
                 },
                 {
                   "id": "B",
-                  "text": "A missed scheduled antacid dose",
-                  "explanation": "This does not account for the administration-linked reaction."
+                  "text": "A delay before starting the prescribed infusion",
+                  "explanation": "A delayed start does not explain the current rate-related flushing and pressure fall."
                 },
                 {
                   "id": "C",
@@ -15794,8 +15794,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "Insufficient oral drug absorption",
-                  "explanation": "The medicine is being administered intravenously."
+                  "text": "A prior dose given later than scheduled",
+                  "explanation": "Previous dose timing does not best explain this reaction during the present infusion."
                 }
               ],
               "format": "single-best-answer",
@@ -16128,8 +16128,8 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Delayed marrow suppression",
-                  "explanation": "This does not explain the acute timing and flushing."
+                  "text": "Antibiotic-associated colitis",
+                  "explanation": "Colitis has a bowel presentation rather than this infusion-linked skin and circulatory pattern."
                 },
                 {
                   "id": "B",
@@ -16138,13 +16138,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Fluoroquinolone tendinopathy",
-                  "explanation": "This has a different exposure and manifestation."
+                  "text": "Delayed drug-related marrow suppression",
+                  "explanation": "Cytopenia does not explain this immediate infusion-linked presentation."
                 },
                 {
                   "id": "D",
-                  "text": "Acute dystonic reaction",
-                  "explanation": "Sustained abnormal postures are not described."
+                  "text": "Infusion-site phlebitis",
+                  "explanation": "A localized inflamed vein does not adequately explain generalized flushing, itching and falling BP."
                 }
               ],
               "format": "single-best-answer",
@@ -16598,7 +16598,7 @@
               "answerKey": "C"
             },
             {
-              "stem": "Which new symptom during LEVOX — levofloxacin treatment most directly matches an important fluoroquinolone warning?",
+              "stem": "Which new symptom during LEVOX — levofloxacin treatment most specifically suggests tendon injury?",
               "choices": [
                 {
                   "id": "A",
@@ -16607,18 +16607,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Flushing during a glycopeptide infusion",
-                  "explanation": "This is a different administration-related problem."
+                  "text": "Diffuse muscle aching after exertion",
+                  "explanation": "This is less specifically tendon-related than focal Achilles pain."
                 },
                 {
                   "id": "C",
-                  "text": "Metallic taste after a nitroimidazole",
-                  "explanation": "This is a different drug-associated effect."
+                  "text": "Burning and tingling in the toes",
+                  "explanation": "These suggest a sensory-nerve problem; they also need assessment but do not identify tendon injury."
                 },
                 {
                   "id": "D",
-                  "text": "Dry mouth after an antimuscarinic",
-                  "explanation": "This reflects a different adverse-effect mechanism."
+                  "text": "Joint stiffness after prolonged sitting",
+                  "explanation": "This does not localize the problem to a tendon."
                 }
               ],
               "format": "single-best-answer",
@@ -16702,18 +16702,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "An isolated change in displayed gain",
-                  "explanation": "Gain is a display setting rather than the cardiac repolarization interval."
+                  "text": "ST elevation",
+                  "explanation": "ST elevation is not the same measurement as QT prolongation."
                 },
                 {
                   "id": "B",
-                  "text": "An unchanged regular R-R interval",
-                  "explanation": "Current regularity does not measure the QT interval."
+                  "text": "PR prolongation",
+                  "explanation": "PR describes atrioventricular conduction rather than ventricular repolarization."
                 },
                 {
                   "id": "C",
-                  "text": "A fixed normal PR interval",
-                  "explanation": "This does not identify prolonged ventricular repolarization."
+                  "text": "QRS widening",
+                  "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
                 },
                 {
                   "id": "D",
@@ -16869,8 +16869,8 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Aminoglycoside binding at the bacterial 30S subunit",
-                  "explanation": "This is a different antibiotic mechanism."
+                  "text": "Reduced renal excretion increases circulating concentrations",
+                  "explanation": "This would tend to increase exposure and is not the gut-chelation mechanism."
                 },
                 {
                   "id": "B",
@@ -16879,13 +16879,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inhibition of renal sodium-glucose cotransport",
-                  "explanation": "This is the mechanism of SGLT2 inhibitors."
+                  "text": "Enzyme induction increases hepatic drug clearance",
+                  "explanation": "The tested interaction is binding in the gut, not accelerated hepatic metabolism."
                 },
                 {
                   "id": "D",
-                  "text": "Inhibition of vitamin-K regeneration",
-                  "explanation": "This is the mechanism of warfarin, not the gut interaction."
+                  "text": "Protein displacement increases the free drug fraction",
+                  "explanation": "The interaction reduces absorption rather than displacing absorbed drug from plasma proteins."
                 }
               ],
               "format": "single-best-answer",
@@ -16990,13 +16990,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Progression from oral thrush to systemic candidiasis",
-                  "explanation": "The case does not describe a fungal presentation."
+                  "text": "Progression from joint stiffness to reduced joint range",
+                  "explanation": "The specific warning here is structural tendon injury rather than stiffness alone."
                 },
                 {
                   "id": "B",
-                  "text": "Progression from constipation to bowel obstruction",
-                  "explanation": "That does not explain the new tendon-localized symptoms."
+                  "text": "Progression from sensory disturbance to peripheral neuropathy",
+                  "explanation": "This is a different tissue injury and does not explain tendon-localized pain."
                 },
                 {
                   "id": "C",
@@ -17005,8 +17005,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "Progression from diuresis to potassium depletion",
-                  "explanation": "That is a different medication-related mechanism."
+                  "text": "Progression from muscle cramps to generalized weakness",
+                  "explanation": "This does not identify the tendon-rupture hazard."
                 }
               ],
               "format": "single-best-answer",
@@ -17045,18 +17045,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Isolated reduction in gastric acid production",
-                  "explanation": "This does not account for prolonged repolarization with low electrolytes."
+                  "text": "Increased susceptibility to isolated sinus arrest",
+                  "explanation": "Sinus-node arrest is not the principal risk indicated by QT prolongation."
                 },
                 {
                   "id": "C",
-                  "text": "Isolated failure of gastrointestinal absorption",
-                  "explanation": "This does not explain the electrical-risk pattern."
+                  "text": "Increased susceptibility to isolated atrial flutter",
+                  "explanation": "The QT-related warning concerns ventricular arrhythmia rather than this atrial rhythm."
                 },
                 {
                   "id": "D",
-                  "text": "Increased likelihood of antibiotic-associated colitis",
-                  "explanation": "That is not the risk established by these ECG and electrolyte findings."
+                  "text": "Increased susceptibility to complete AV block",
+                  "explanation": "The principal pattern described is a ventricular repolarization hazard rather than AV conduction failure."
                 }
               ],
               "format": "single-best-answer",
@@ -17472,17 +17472,17 @@
               "answerKey": "D"
             },
             {
-              "stem": "Which new symptom during LEVOX — levofloxacin treatment most directly matches an important fluoroquinolone warning?",
+              "stem": "Which new symptom during LEVOX — levofloxacin treatment most specifically suggests tendon injury?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dry mouth after an antimuscarinic",
-                  "explanation": "This reflects a different adverse-effect mechanism."
+                  "text": "Joint stiffness after prolonged sitting",
+                  "explanation": "This does not localize the problem to a tendon."
                 },
                 {
                   "id": "B",
-                  "text": "Metallic taste after a nitroimidazole",
-                  "explanation": "This is a different drug-associated effect."
+                  "text": "Diffuse muscle aching after exertion",
+                  "explanation": "This is less specifically tendon-related than focal Achilles pain."
                 },
                 {
                   "id": "C",
@@ -17491,8 +17491,8 @@
                 },
                 {
                   "id": "D",
-                  "text": "Flushing during a glycopeptide infusion",
-                  "explanation": "This is a different administration-related problem."
+                  "text": "Burning and tingling in the toes",
+                  "explanation": "These suggest a sensory-nerve problem; they also need assessment but do not identify tendon injury."
                 }
               ],
               "format": "single-best-answer",
@@ -17578,8 +17578,8 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "An unchanged regular R-R interval",
-                  "explanation": "Current regularity does not measure the QT interval."
+                  "text": "ST elevation",
+                  "explanation": "ST elevation is not the same measurement as QT prolongation."
                 },
                 {
                   "id": "B",
@@ -17588,13 +17588,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "An isolated change in displayed gain",
-                  "explanation": "Gain is a display setting rather than the cardiac repolarization interval."
+                  "text": "PR prolongation",
+                  "explanation": "PR describes atrioventricular conduction rather than ventricular repolarization."
                 },
                 {
                   "id": "D",
-                  "text": "A fixed normal PR interval",
-                  "explanation": "This does not identify prolonged ventricular repolarization."
+                  "text": "QRS widening",
+                  "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
                 }
               ],
               "format": "single-best-answer",
