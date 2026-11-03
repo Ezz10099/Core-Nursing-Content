@@ -248,29 +248,71 @@
     const bytes = Uint8Array.from(decoded, x=>x.charCodeAt(0));
     return new TextDecoder().decode(bytes);
   }
+  const nativeRequests = new Map();
+  let nativeRequestSequence = 0;
+  const nativeInboxAvailable = () => typeof window.CoreNursingAndroid?.privateInboxRequest === 'function';
+  function receiveNativeInbox(raw) {
+    let reply;
+    try {reply = JSON.parse(raw);} catch (_) {return;}
+    const waiting = reply && nativeRequests.get(reply.id);
+    if (!waiting) return;
+    nativeRequests.delete(reply.id);
+    clearTimeout(waiting.timer);
+    if (reply.error || !Number.isInteger(reply.status) || reply.status < 100) {
+      waiting.reject(Error(reply.error || 'Native GitHub request failed'));
+      return;
+    }
+    waiting.resolve({
+      status:reply.status,
+      ok:reply.status >= 200 && reply.status < 300,
+      json:async()=>JSON.parse(reply.body || '{}')
+    });
+  }
+  function nativeInboxRequest(method, path, body, key) {
+    return new Promise((resolve,reject)=>{
+      const id='inbox-'+Date.now().toString(36)+'-'+(++nativeRequestSequence).toString(36);
+      const timer=setTimeout(()=>{
+        nativeRequests.delete(id);
+        reject(Error('Native GitHub request timed out. Check your connection.'));
+      },26000);
+      nativeRequests.set(id,{resolve,reject,timer});
+      try {
+        window.CoreNursingAndroid.privateInboxRequest(
+          id,method,path,body ? JSON.stringify(body) : '',key
+        );
+      } catch (_) {
+        clearTimeout(timer);
+        nativeRequests.delete(id);
+        reject(Error('Native private GitHub connection is unavailable.'));
+      }
+    });
+  }
   async function api(method, path, body, allowNotFound) {
     const key = token();
     if (!key) throw Error('Connect private sync first.');
-    const r = await fetch(API + path + (method === 'GET' ? (path.includes('?') ? '' : '?ref=main') : ''), {
-      method,
-      headers: {
-        'Accept': 'application/vnd.github+json',
-        // GitHub's CORS preflight allows Authorization and Content-Type,
-        // but not the optional X-GitHub-Api-Version header.
-        'Authorization': 'Bearer ' + key,
-        ...(body ? {'Content-Type':'application/json'} : {})
-      },
-      ...(body ? {body:JSON.stringify(body)} : {}),
-      cache:'no-store'
-    });
+    // Android intentionally disables WebView network access. Its native bridge
+    // is limited to the owner's private questions and answers only.
+    const r = nativeInboxAvailable()
+      ? await nativeInboxRequest(method,path,body,key)
+      : await fetch(API + path + (method === 'GET' ? (path.includes('?') ? '' : '?ref=main') : ''), {
+          method,
+          headers: {
+            'Accept': 'application/vnd.github+json',
+            'Authorization': 'Bearer ' + key,
+            ...(body ? {'Content-Type':'application/json'} : {})
+          },
+          ...(body ? {body:JSON.stringify(body)} : {}),
+          cache:'no-store'
+        });
     if (r.status === 404 && allowNotFound) return null;
     if (!r.ok) {
-      if (r.status === 401 || r.status === 403) throw Error('Private GitHub connection rejected (HTTP ' + r.status + '). Check token/repository access.');
-      throw Error('Sync request failed (HTTP ' + r.status + ').');
+      if (r.status === 401 || r.status === 403)
+        throw Error('Private GitHub connection rejected (HTTP '+r.status+'). Check token/repository access.');
+      throw Error('Sync request failed (HTTP '+r.status+').');
     }
     return r.json();
   }
-  function publicQuestion(n) {
+    function publicQuestion(n) {
     return {schemaVersion:1, id:n.id, department:n.department,
       question:n.question, tags:n.tags, sourceType:n.sourceType || '', sourceTitle:n.sourceTitle || '', sourceId:n.sourceId || '', createdAt:n.createdAt, updatedAt:n.updatedAt,
       status:'unanswered'};
@@ -366,6 +408,6 @@
   });
   window.addEventListener('online',()=>sync(false));
   collection();
-  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect,inlinePanel,quickOpen,quickClose,quickSave,quickView};
+  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect,inlinePanel,quickOpen,quickClose,quickSave,quickView,receiveNativeInbox};
   setTimeout(()=>sync(false),3000);
 })();
