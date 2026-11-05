@@ -65,6 +65,7 @@ jobs:
           node tests/exams-ui.cjs
           node tests/updates-ui.cjs
           node tests/quick-questions.cjs
+          node tests/requests.cjs
           node tests/qa-sync.cjs
           node tests/qa-sync-native.cjs
       - name: Basic local runtime load

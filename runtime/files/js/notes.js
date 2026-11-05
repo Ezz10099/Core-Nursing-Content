@@ -17,6 +17,8 @@
     memory.notes = memory.notes.filter(n => n && /^[a-zA-Z0-9_-]{2,90}$/.test(n.id) &&
       typeof n.question === 'string' && typeof n.answer === 'string').slice(0, MAX_ITEMS);
     memory.notes.forEach(n => {
+      if (!['question','request'].includes(n.kind)) n.kind = 'question';
+      if (!['content','app'].includes(n.relatedTo)) n.relatedTo = '';
       if (!Array.isArray(n.tags)) n.tags = [];
       n.tags = n.tags.filter(t => typeof t === 'string').slice(0, 8);
       if (!['ibd2', 'ccu', 'ed', 'general'].includes(n.department)) n.department = 'general';
@@ -31,22 +33,48 @@
   function syncMessage(msg) { const e = $('noteSyncStatus'); if (e) e.textContent = msg; }
   function token() { try { return localStorage.getItem(TOKEN_KEY) || ''; } catch (_) { return ''; } }
   function cloudConfigured() { return Boolean(token()); }
-  function inlinePanel(department, type, id, title) { return '<div class="panel inline-question"><h3>Have a question about this topic?</h3><textarea maxlength="1000" rows="2" placeholder="Write a question to save offline"></textarea><button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save question</button><p class="note inline-feedback" role="status"></p></div>'; }
+  function typeFields(prefix) {
+    return '<label>Type<select data-entry-kind id="'+prefix+'Kind"><option value="question">Question</option><option value="request">Request</option></select></label>'+
+      '<label data-entry-related hidden>Related to (optional)<select id="'+prefix+'Related"><option value="">Choose if useful</option><option value="content">Content</option><option value="app">App</option></select></label>';
+  }
+  function updateType(form) {
+    const kind=form?.querySelector('[data-entry-kind]');
+    const related=form?.querySelector('[data-entry-related]');
+    if(related) related.hidden=kind?.value!=='request';
+  }
+  function suggestType(text) {
+    if (/^(how|why|when|what|should|can|هل|كيف|متى|لماذا)\b/i.test(text.trim())) return 'question';
+    return /\b(delete|remove|unnecessary|useless|waste[ds]?|wasting|bug|broken|crash|redesign|please (add|edit|change|fix)|i (want|need|would like) (you )?to (add|edit|change|fix))\b|احذف|حذف|شيل|غير مفيد|غير ضروري|عد[ّ]?ل|تعديل|أضف|اضف|إضافة|اضافة|مشكلة|خلل|لا يعمل/.test(text.toLowerCase()) ? 'request' : 'question';
+  }
+  function entryMeta(form) {
+    const kind=form?.querySelector('[data-entry-kind]')?.value==='request'?'request':'question';
+    const related=form?.querySelector('[data-entry-related] select')?.value;
+    return {kind,relatedTo:kind==='request' && ['content','app'].includes(related)?related:''};
+  }
+  function inlinePanel(department, type, id, title) { return '<div class="panel inline-question"><h3>Question or request about this topic</h3><textarea maxlength="1000" rows="2" placeholder="Ask a question or describe a change"></textarea>'+typeFields('inline-'+escape(id))+'<button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save</button><p class="note inline-feedback" role="status"></p></div>'; }
+  document.addEventListener('change',e=>{
+    if(e.target.matches('[data-entry-kind]')) {e.target.dataset.manual='true';updateType(e.target.closest('form, .inline-question'));}
+  });
+  document.addEventListener('input',e=>{
+    if(!e.target.matches('#noteQuestion, #quickQuestionText, .inline-question textarea')) return;
+    const form=e.target.closest('form, .inline-question'), kind=form?.querySelector('[data-entry-kind]');
+    if(kind && !kind.dataset.manual) {kind.value=suggestType(e.target.value);updateType(form);}
+  });
   function saveInline(button) {
     const panel=button.closest('.inline-question'), field=panel && panel.querySelector('textarea');
     const question=field && field.value.trim().slice(0,1000), msg=panel && panel.querySelector('.inline-feedback');
-    if(!question){if(msg)msg.textContent='Write a question first.';return;}
+    if(!question){if(msg)msg.textContent='Write your question or request first.';return;}
     if(collection().length>=MAX_ITEMS){if(msg)msg.textContent='Inbox full.';return;}
     const now=new Date().toISOString(), dept=button.getAttribute('data-dept');
     memory.notes.unshift({
       id:'q-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10),
-      question,answer:'',tags:[],department:['ibd2','ccu','ed','general'].includes(dept)?dept:'general',
+      question,answer:'',tags:[],...entryMeta(panel),department:['ibd2','ccu','ed','general'].includes(dept)?dept:'general',
       sourceType:button.getAttribute('data-source-type')||'',
       sourceId:button.getAttribute('data-source-id')||'',
       sourceTitle:button.getAttribute('data-source-title')||'',
       status:'unanswered',syncState:'pending',createdAt:now,updatedAt:now
     });
-    save();field.value='';if(msg)msg.textContent='Saved offline. Continue studying.';
+    save();field.value='';const kind=panel.querySelector('[data-entry-kind]');kind.value='question';delete kind.dataset.manual;panel.querySelector('[data-entry-related] select').value='';updateType(panel);if(msg)msg.textContent='Saved offline. Continue studying.';
     if(cloudConfigured())sync(false);
   }
 
@@ -85,6 +113,7 @@
         };
       }
     }
+    context.sourceType='screen';context.sourceId=tab;context.sourceTitle=({home:'Home',practice:'Exams',progress:'Progress',notes:'Questions & requests',clinical:'Clinical',library:'Medications'})[tab] || tab;
     return context;
   }
   function quickOpen() {
@@ -94,6 +123,7 @@
     // Preserve unfinished draft and its original source when reopening.
     if (!input.value.trim() || !quickContext) quickContext = quickStudyContext();
     const ctx = quickContext;
+    updateType(input.closest('form'));
     put('quickQuestionDept',['ibd2','ccu','ed','general'].includes(ctx.department)?ctx.department:'general');
     const label = $('quickQuestionContext');
     if (label) label.textContent = ctx.sourceTitle ? 'Linked to: '+ctx.sourceTitle : (
@@ -116,12 +146,12 @@
   function quickSave() {
     const input = $('quickQuestionText'), msg = $('quickQuestionMessage');
     const question = (input?.value || '').trim().slice(0,1000);
-    if (!question) {if(msg)msg.textContent='Write your question first.';input?.focus();return;}
+    if (!question) {if(msg)msg.textContent='Write your question or request first.';input?.focus();return;}
     if (collection().length >= MAX_ITEMS) {if(msg)msg.textContent='Question inbox is full (500).';return;}
     const ctx = quickContext || quickStudyContext(), now = new Date().toISOString();
     const n = {
       id:'q-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10),
-      question,answer:'',tags:[],
+      question,answer:'',tags:[],...entryMeta(input.closest('form')),
       department:['ibd2','ccu','ed','general'].includes(value('quickQuestionDept'))?value('quickQuestionDept'):'general',
       sourceType:ctx.sourceType,sourceId:ctx.sourceId,sourceTitle:ctx.sourceTitle,
       status:'unanswered',syncState:'pending',createdAt:now,updatedAt:now
@@ -132,10 +162,10 @@
       if(msg)msg.textContent='Could not save on this device. Keep your text and check available storage.';
       return;
     }
-    input.value = '';quickContext = null;quickClose();
+    input.value = '';quickContext = null;put('quickQuestionKind','question');put('quickQuestionRelated','');delete $('quickQuestionKind').dataset.manual;updateType(input.closest('form'));quickClose();
     const toast = $('quickQuestionToast');
     if (toast) {
-      toast.textContent='Question saved offline · '+collection().filter(x=>!x.answer).length+' unanswered';
+      toast.textContent=(n.kind==='request'?'Request':'Question')+' saved offline · '+collection().filter(x=>!x.answer).length+' unanswered';
       toast.hidden=false;
       if (quickToastTimer) clearTimeout(quickToastTimer);
       quickToastTimer=setTimeout(()=>{toast.hidden=true},3000);
@@ -154,6 +184,10 @@
   }
   function edit(id) {
     const n = id ? item(id) : null;
+    put('noteKind',n ? n.kind : 'question');
+    put('noteRelated',n ? n.relatedTo : '');
+    const kind=$('noteKind');if(kind){if(n)kind.dataset.manual='true';else delete kind.dataset.manual;}
+    updateType($('noteEditor'));
     put('noteId', n ? n.id : '');
     put('noteDept', n ? n.department : 'ibd2');
     put('noteQuestion', n ? n.question : '');
@@ -161,14 +195,14 @@
     put('noteTags', n ? n.tags.join(', ') : '');
     const editor = $('noteEditor');
     if (editor) { editor.hidden = false; editor.scrollIntoView({block: 'start'}); }
-    feedback(n ? 'Edit this question or add your own explanation.' :
-      'Write your question and save it, even offline. An answer is not required.');
+    feedback(n ? 'Edit the text, type or response.' :
+      'Save a question or request offline. A response is not required.');
   }
   function cancel() { const e = $('noteEditor'); if (e) e.hidden = true; }
   function saveEditor() {
     const question = value('noteQuestion').trim().slice(0, 1000);
     const answer = value('noteAnswer').trim().slice(0, 10000);
-    if (!question) { feedback('Please write your question.'); return; }
+    if (!question) { feedback('Please write your question or request.'); return; }
     const old = item(value('noteId'));
     if (!old && collection().length >= MAX_ITEMS) { feedback('Notebook full. Back up and remove old questions.'); return; }
     const now = new Date().toISOString();
@@ -176,11 +210,11 @@
     const n = {
       id: old ? old.id : 'q-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10),
       department: ['ibd2','ccu','ed','general'].includes(value('noteDept')) ? value('noteDept') : 'general',
-      question, answer, tags,
+      question, answer, tags,...entryMeta($('noteEditor')),
       status: answer ? 'answered' : 'unanswered',
       createdAt: old ? old.createdAt : now, updatedAt: now,
       sourceId: old ? old.sourceId || '' : '',
-      syncState: old && old.sourceId ? 'local' : 'pending',
+      syncState: old && old.syncState==='local' ? 'local' : 'pending',
       cloudQuestionSHA: old ? old.cloudQuestionSHA || '' : '',
       cloudAnswerSHA: old ? old.cloudAnswerSHA || '' : '',
       sourceType:old ? old.sourceType || '' : '', sourceTitle:old ? old.sourceTitle || '' : ''
@@ -192,7 +226,7 @@
   }
   function remove(id) {
     const n = item(id);
-    if (!n || !confirm('Delete this local question? If synchronized, its private cloud copy will remain.')) return;
+    if (!n || !confirm('Delete this local question or request? If synchronized, its private cloud copy will remain.')) return;
     memory.notes = collection().filter(x => x.id !== id);
     save(); render(); feedback('Removed from this phone. A cloud copy, if any, was not deleted.');
   }
@@ -216,7 +250,9 @@
   function render() {
     const root = $('noteItems'); if (!root) return;
     const search = value('noteSearch').toLowerCase().trim(), filter = value('noteFilter');
+    const kindFilter=value('noteKindFilter');
     const list = collection().filter(n =>
+      (!kindFilter || kindFilter==='all' || n.kind===kindFilter) &&
       (!filter || filter === 'all' || n.department === filter) &&
       [n.question, n.answer, n.tags.join(' ')].join(' ').toLowerCase().includes(search))
       .slice().sort((a,b) => String(b.updatedAt).localeCompare(String(a.updatedAt)));
@@ -226,16 +262,17 @@
     const cfg = $('noteCloudSetting');
     if (cfg) cfg.textContent = !cloudConfigured() ? 'Not connected · questions remain on this phone' : verifiedConnection ? 'Private sync verified with GitHub' : 'GitHub token saved on this device · connection not yet verified';
     root.innerHTML = list.map(n => '<article class="note-card">' +
-      '<div class="note-card-top"><span class="source-tag">' + escape(n.department.toUpperCase()) +
+      '<div class="note-card-top"><span class="source-tag">' + escape(n.kind==='request'?'Request':'Question') + (n.relatedTo ? ' · '+escape(n.relatedTo==='app'?'App':'Content') : '') + ' · ' + escape(n.department.toUpperCase()) +
       '</span><small>' + escape((n.updatedAt||'').slice(0,10)) + '</small></div>' +
+      (n.sourceTitle ? '<p class="note">Linked to: '+escape(n.sourceTitle)+'</p>' : '') +
       '<h3>' + escape(n.question) + '</h3>' +
-      (n.answer ? '<details><summary>Read answer</summary><div class="note-answer">' + escape(n.answer) + '</div></details>' :
-      '<p class="muted">Awaiting an answer</p>') +
+      (n.answer ? '<details><summary>'+(n.kind==='request'?'Read response':'Read answer')+'</summary><div class="note-answer">' + escape(n.answer) + '</div></details>' :
+      '<p class="muted">'+(n.kind==='request'?'Awaiting review':'Awaiting an answer')+'</p>') +
       '<div class="note-tags">' + n.tags.map(t=>'<span>'+escape(t)+'</span>').join('') + '</div>' +
-      '<div class="tools"><span class="note-state">' + (n.answer ? 'Answered' : n.syncState === 'synced' ? 'Waiting for ChatGPT answer' : 'Saved offline') +
+      '<div class="tools"><span class="note-state">' + (n.answer ? (n.kind==='request'?'Response received':'Answered') : n.syncState === 'synced' ? (n.kind==='request'?'Waiting for review':'Waiting for ChatGPT answer') : 'Saved offline') +
       '</span><button type="button" data-edit-note="'+escape(n.id)+'">Edit</button>' +
       '<button type="button" data-delete-note="'+escape(n.id)+'">Delete</button></div></article>'
-    ).join('') || '<p class="muted">No questions yet. Write one from here or while reading a lesson.</p>';
+    ).join('') || '<p class="muted">No matching questions or requests. Add one here or from any screen.</p>';
   }
   function b64(str) {
     const bytes = new TextEncoder().encode(str);
@@ -313,7 +350,7 @@
     return r.json();
   }
     function publicQuestion(n) {
-    return {schemaVersion:1, id:n.id, department:n.department,
+    return {schemaVersion:1, id:n.id, department:n.department,kind:n.kind,relatedTo:n.relatedTo,
       question:n.question, tags:n.tags, sourceType:n.sourceType || '', sourceTitle:n.sourceTitle || '', sourceId:n.sourceId || '', createdAt:n.createdAt, updatedAt:n.updatedAt,
       status:'unanswered'};
   }
