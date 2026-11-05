@@ -34,13 +34,15 @@
   function token() { try { return localStorage.getItem(TOKEN_KEY) || ''; } catch (_) { return ''; } }
   function cloudConfigured() { return Boolean(token()); }
   function typeFields(prefix) {
-    return '<label>Type<select data-entry-kind id="'+prefix+'Kind"><option value="question">Question</option><option value="request">Request</option></select></label>'+
-      '<label data-entry-related hidden>Related to (optional)<select id="'+prefix+'Related"><option value="">Choose if useful</option><option value="content">Content</option><option value="app">App</option></select></label>';
+    return '<label>Type<select data-entry-kind id="'+prefix+'Kind"><option value="question">Question — I need an explanation</option><option value="request">Request — I want a change</option></select></label>'+
+      '<label data-entry-related hidden>Related to (optional)<select id="'+prefix+'Related"><option value="">Choose if useful</option><option value="content">Study content — lessons or medications</option><option value="app">App — design, navigation or a problem</option></select></label>';
   }
   function updateType(form) {
     const kind=form?.querySelector('[data-entry-kind]');
     const related=form?.querySelector('[data-entry-related]');
     if(related) related.hidden=kind?.value!=='request';
+    const help=form?.querySelector('[data-entry-help]');
+    if(help) help.textContent=kind?.value==='request' ? 'Request: remove unnecessary information, correct content, change the design or report a problem. Example: “Please remove this repeated paragraph.”' : 'Question: ask for an explanation. Example: “Why does this happen?”';
   }
   function suggestType(text) {
     if (/^(how|why|when|what|should|can|هل|كيف|متى|لماذا)\b/i.test(text.trim())) return 'question';
@@ -51,7 +53,7 @@
     const related=form?.querySelector('[data-entry-related] select')?.value;
     return {kind,relatedTo:kind==='request' && ['content','app'].includes(related)?related:''};
   }
-  function inlinePanel(department, type, id, title) { return '<div class="panel inline-question"><h3>Question or request about this topic</h3><textarea maxlength="1000" rows="2" placeholder="Ask a question or describe a change"></textarea>'+typeFields('inline-'+escape(id))+'<button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save</button><p class="note inline-feedback" role="status"></p></div>'; }
+  function inlinePanel(department, type, id, title) { return '<div class="panel inline-question"><h3>Question or request about this topic</h3><textarea maxlength="1000" rows="2" placeholder="Ask a question or describe a change"></textarea>'+typeFields('inline-'+escape(id))+'<p class="note" data-entry-help>Question: ask for an explanation. Choose Request to ask for a change or report a problem.</p><button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save</button><p class="note inline-feedback" role="status"></p></div>'; }
   document.addEventListener('change',e=>{
     if(e.target.matches('[data-entry-kind]')) {e.target.dataset.manual='true';updateType(e.target.closest('form, .inline-question'));}
   });
@@ -247,33 +249,48 @@
     });
     save(); open(); feedback('FAQ saved privately to My Questions.');
   }
+  function filterKind(kind) {
+    put('noteKindFilter',['question','request'].includes(kind)?kind:'all');
+    render();
+  }
   function render() {
     const root = $('noteItems'); if (!root) return;
     const search = value('noteSearch').toLowerCase().trim(), filter = value('noteFilter');
     const kindFilter=value('noteKindFilter');
-    const list = collection().filter(n =>
-      (!kindFilter || kindFilter==='all' || n.kind===kindFilter) &&
+    const matching = collection().filter(n =>
       (!filter || filter === 'all' || n.department === filter) &&
       [n.question, n.answer, n.tags.join(' ')].join(' ').toLowerCase().includes(search))
       .slice().sort((a,b) => String(b.updatedAt).localeCompare(String(a.updatedAt)));
+    const list=matching.filter(n=>!kindFilter || kindFilter==='all' || n.kind===kindFilter);
+    document.querySelectorAll('[data-inbox-type]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.inboxType===(kindFilter||'all'))));
+    document.querySelectorAll('[data-inbox-count]').forEach(el=>el.textContent=matching.filter(n=>el.dataset.inboxCount==='all'||n.kind===el.dataset.inboxCount).length);
     const count = $('notesCount');
     if (count) count.textContent = collection().length + ' saved · ' +
-      collection().filter(n => !n.answer).length + ' unanswered · ' + list.length + ' showing';
+      collection().filter(n => !n.answer).length + ' awaiting response · ' + list.length + ' showing';
     const cfg = $('noteCloudSetting');
     if (cfg) cfg.textContent = !cloudConfigured() ? 'Not connected · questions remain on this phone' : verifiedConnection ? 'Private sync verified with GitHub' : 'GitHub token saved on this device · connection not yet verified';
-    root.innerHTML = list.map(n => '<article class="note-card">' +
-      '<div class="note-card-top"><span class="source-tag">' + escape(n.kind==='request'?'Request':'Question') + (n.relatedTo ? ' · '+escape(n.relatedTo==='app'?'App':'Content') : '') + ' · ' + escape(n.department.toUpperCase()) +
-      '</span><small>' + escape((n.updatedAt||'').slice(0,10)) + '</small></div>' +
-      (n.sourceTitle ? '<p class="note">Linked to: '+escape(n.sourceTitle)+'</p>' : '') +
-      '<h3>' + escape(n.question) + '</h3>' +
-      (n.answer ? '<details><summary>'+(n.kind==='request'?'Read response':'Read answer')+'</summary><div class="note-answer">' + escape(n.answer) + '</div></details>' :
-      '<p class="muted">'+(n.kind==='request'?'Awaiting review':'Awaiting an answer')+'</p>') +
-      '<div class="note-tags">' + n.tags.map(t=>'<span>'+escape(t)+'</span>').join('') + '</div>' +
-      '<div class="tools"><span class="note-state">' + (n.answer ? (n.kind==='request'?'Response received':'Answered') : n.syncState === 'synced' ? (n.kind==='request'?'Waiting for review':'Waiting for ChatGPT answer') : 'Saved offline') +
-      '</span><button type="button" data-edit-note="'+escape(n.id)+'">Edit</button>' +
-      '<button type="button" data-delete-note="'+escape(n.id)+'">Delete</button></div></article>'
-    ).join('') || '<p class="muted">No matching questions or requests. Add one here or from any screen.</p>';
+    function card(n) {
+      const request=n.kind==='request';
+      const dept={ibd2:'Orthopaedics (IBD2)',ed:'Emergency (ED)',ccu:'CCU',general:'General'}[n.department];
+      return '<article class="note-card inbox-card '+(request?'inbox-request':'inbox-question')+'">'+
+        '<div class="note-card-top"><span class="inbox-kind">'+(request?'Request':'Question')+'</span><small>'+escape((n.updatedAt||'').slice(0,10))+'</small></div>'+
+        '<h3>'+escape(n.question)+'</h3>'+
+        '<p class="inbox-context">'+escape(request && n.relatedTo ? (n.relatedTo==='app'?'App · design or problem':'Study content') : dept)+(n.sourceTitle?' · '+escape(n.sourceTitle):'')+'</p>'+
+        (n.answer ? '<details><summary>'+(request?'Read response':'Read answer')+'</summary><div class="note-answer">'+escape(n.answer)+'</div></details>' : '<p class="muted">'+(request?'Awaiting review':'Awaiting an answer')+'</p>')+
+        '<div class="note-tags">'+n.tags.map(t=>'<span>'+escape(t)+'</span>').join('')+'</div>'+
+        '<div class="tools"><span class="note-state">'+(n.answer?(request?'Response received':'Answered'):n.syncState==='synced'?'Synced privately':'Saved on this device')+'</span><button type="button" data-edit-note="'+escape(n.id)+'">Edit / change type</button><button type="button" data-delete-note="'+escape(n.id)+'">Delete</button></div></article>';
+    }
+    root.innerHTML=['question','request'].filter(kind=>!kindFilter||kindFilter==='all'||kindFilter===kind).map(kind=>{
+      const entries=list.filter(n=>n.kind===kind), pending=entries.filter(n=>!n.answer), answered=entries.filter(n=>n.answer);
+      const request=kind==='request';
+      return '<section class="inbox-group" data-inbox-group="'+kind+'" aria-labelledby="inbox-'+kind+'-heading"><div class="inbox-group-heading"><h2 id="inbox-'+kind+'-heading">'+(request?'Requests':'Questions')+' <span>'+entries.length+'</span></h2><p>'+(request?'Changes to study content or the app, and problems you encountered.':'Questions about information you want to understand.')+'</p></div>'+
+        '<h3 class="inbox-status-heading">'+(request?'Awaiting review':'Awaiting an answer')+' · '+pending.length+'</h3>'+
+        (pending.map(card).join('')||'<p class="note inbox-empty">'+(request?'No requests awaiting review.':'No questions awaiting an answer.')+'</p>')+
+        (answered.length?'<details class="inbox-answered"><summary>'+(request?'Responses received':'Answered questions')+' · '+answered.length+'</summary>'+answered.map(card).join('')+'</details>':'')+'</section>';
+    }).join('');
+    if(!list.length && (search||filter!=='all')) root.innerHTML='<p class="note inbox-empty">No matching items. Try another search or department.</p>';
   }
+
   function b64(str) {
     const bytes = new TextEncoder().encode(str);
     let binary = ''; for (let i=0;i<bytes.length;i+=4096)
@@ -445,6 +462,6 @@
   });
   window.addEventListener('online',()=>sync(false));
   collection();
-  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect,inlinePanel,quickOpen,quickClose,quickSave,quickView,receiveNativeInbox};
+  window.CoreNursingNotes={open,edit,cancel,saveEditor,render,fromFaq,sync,connect,disconnect,inlinePanel,quickOpen,quickClose,quickSave,quickView,receiveNativeInbox,filterKind};
   setTimeout(()=>sync(false),3000);
 })();

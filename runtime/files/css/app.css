@@ -115,3 +115,14 @@ main.wrap{padding-bottom:88px}
 @media(min-width:640px){.quick-question-fab{right:max(22px,calc((100vw - 760px)/2 + 20px))}.quick-question-overlay{align-items:center}}
 
 .inline-question label{display:block;font-size:13px;margin:10px 0}.inline-question select{display:block;width:100%;min-height:44px;padding:10px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--text);font:inherit}
+
+/* Personal inbox: two explicit types, with response state kept separate. */
+.inbox-type-tabs{display:grid;grid-template-columns:.65fr 1fr 1fr;gap:8px;margin-bottom:16px}
+.inbox-type-tabs button{padding:12px 8px;text-align:left;line-height:1.35;border:1px solid var(--line);background:var(--surface);color:var(--text);min-width:0;border-radius:12px;font-weight:700;font-size:14px}
+.inbox-type-tabs button[aria-pressed="true"]{border-color:var(--blue);background:var(--blue-bg)}
+.inbox-type-tabs small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:6px}
+.inbox-type-tabs span,.inbox-group-heading h2 span{display:inline-block;font-size:12px;font-weight:500;margin-left:4px;color:var(--muted)}
+.inbox-group{margin:26px 0 32px}.inbox-group-heading{padding-bottom:12px;border-bottom:2px solid var(--line);margin-bottom:16px}.inbox-group-heading h2{margin:0 0 5px;font-size:23px}.inbox-group-heading p{font-size:13px;color:var(--muted);margin:0}
+.inbox-status-heading{font-size:12px;color:var(--muted);font-weight:600;margin:16px 0 10px}.inbox-kind{font-size:12px;font-weight:700;padding:4px 9px;border-radius:7px;background:var(--blue-bg);color:var(--blue)}.inbox-request .inbox-kind{background:var(--warm-bg);color:var(--warm)}
+.inbox-card h3{white-space:pre-wrap;overflow-wrap:anywhere;margin:12px 0 8px;line-height:1.6}.inbox-context{font-size:12px;color:var(--muted);overflow-wrap:anywhere;margin-bottom:12px}.inbox-answered{margin-top:16px}.inbox-answered>summary{font-size:14px;padding:12px 0}.inbox-empty{padding:14px;border:1px dashed var(--line);border-radius:12px}
+@media(min-width:650px){.notes-searchbar{grid-template-columns:1fr 190px}}

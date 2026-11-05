@@ -34,7 +34,16 @@ function state(w) { return JSON.parse(w.localStorage.getItem(KEY)); }
   w.CoreNursingNotes.open();d.querySelector('#noteKindFilter').value='request';w.CoreNursingNotes.render();assert.equal(d.querySelectorAll('.note-card').length,2);
   d.querySelector('#noteKindFilter').value='question';w.CoreNursingNotes.render();assert.equal(d.querySelectorAll('.note-card').length,0);
   w.CoreNursingNotes.quickOpen();field.value='When should I remove a catheter?';field.dispatchEvent(new w.Event('input',{bubbles:true}));assert.equal(kind.value,'question','Clinical question not treated as deletion request');w.CoreNursingNotes.quickSave();
-  const uploaded=[];w.localStorage.setItem(tokenKey,'github_pat_TEST');
+  w.CoreNursingNotes.filterKind('all');
+  assert.equal(d.querySelectorAll('[data-inbox-group]').length,2,'All view groups questions and requests separately');
+  assert.equal(d.querySelector('[data-inbox-group="request"] .note-card .inbox-kind').textContent,'Request');
+  w.CoreNursingNotes.filterKind('request');assert.equal(d.querySelectorAll('[data-inbox-group]').length,1);
+  assert.equal(d.querySelector('[data-inbox-type="request"]').getAttribute('aria-pressed'),'true');
+  assert.equal(d.querySelector('[data-inbox-count="request"]').textContent,'2');
+  w.CoreNursingNotes.edit('q-legacy');d.querySelector('#noteAnswer').value='Reviewed your content change.';w.CoreNursingNotes.saveEditor();
+  assert.equal(d.querySelector('[data-inbox-group="request"] .inbox-answered').open,false,'Responses are collapsed separately from pending requests');
+  assert.equal(d.querySelector('[data-inbox-group="request"] .inbox-answered .note-card .note-state').textContent,'Response received','A response is not labelled implemented');
+    const uploaded=[];w.localStorage.setItem(tokenKey,'github_pat_TEST');
   w.fetch=async(url,opts)=>{if(opts.method==='PUT'){uploaded.push(JSON.parse(Buffer.from(JSON.parse(opts.body).content,'base64').toString()));return {ok:true,status:201,json:async()=>({content:{sha:'test'}})}}return {ok:false,status:404,json:async()=>({})}};
   await w.CoreNursingNotes.sync(true);assert(uploaded.some(x=>x.kind==='request'&&x.relatedTo==='app'));
   const saved=state(w);w.close();w=boot(saved);w.CoreNursingNotes.open();assert.equal(state(w).notes.filter(x=>x.kind==='request').length,2);w.close();
