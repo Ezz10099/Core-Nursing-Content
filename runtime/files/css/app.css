@@ -113,3 +113,5 @@ main.wrap{padding-bottom:88px}
 .quick-question-actions .primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
 .quick-question-toast{position:fixed;bottom:calc(142px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:1050;width:max-content;max-width:calc(100vw - 30px);padding:11px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--text);font-size:13px;box-shadow:0 9px 25px #0007;pointer-events:none;text-align:center}
 @media(min-width:640px){.quick-question-fab{right:max(22px,calc((100vw - 760px)/2 + 20px))}.quick-question-overlay{align-items:center}}
+
+.inline-question label{display:block;font-size:13px;margin:10px 0}.inline-question select{display:block;width:100%;min-height:44px;padding:10px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--text);font:inherit}
