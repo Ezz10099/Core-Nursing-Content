@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "scope": "Remaining 29 medication treatment-role question rewrites",
+  "status": "Staged author-level review; NOT independent clinical validation or empirically calibrated difficulty",
+  "reviewedAndReplacedTotal": 82,
+  "remainingRoleQuestions": 0,
+  "items": [
+    {
+      "itemId": "ccu-propafenone",
+      "learningPointId": "ccu-propafenone::treatment-role",
+      "baselineUse": "Rhythm control in carefully selected patients with arrhythmias such as AF/flutter, PSVT and some ventricular arrhythmias; not appropriate for every AF patient.",
+      "stem": "Which arrhythmia treatment goal best fits propafenone in a properly screened patient?",
+      "correct": "Rhythm control of selected episodic atrial fibrillation without structural heart disease",
+      "alternatives": [
+        "Rate control in atrial fibrillation with decompensated heart failure",
+        "Routine treatment of ventricular fibrillation during pulseless arrest",
+        "Rhythm control in recent MI with significant ventricular dysfunction"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-valzadepine",
+      "learningPointId": "ccu-valzadepine::treatment-role",
+      "baselineUse": "Chronic hypertension treatment when one drug alone is insufficient.",
+      "stem": "Which treatment purpose fits the combination of amlodipine and valsartan in Valzadepine?",
+      "correct": "Chronic hypertension inadequately controlled by one component",
+      "alternatives": [
+        "Immediate blood-pressure restoration in severe shock",
+        "Rapid removal of fluid by loop-diuretic activity",
+        "Acute treatment of an unstable ventricular tachyarrhythmia"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-valzan-hct",
+      "learningPointId": "ccu-valzan-hct::treatment-role",
+      "baselineUse": "Hypertension when monotherapy is insufficient. You observed this combination being used in CCU instead of Valzadepine in some patients; that is a treatment choice, not a dose-for-dose substitution.",
+      "stem": "Which goal best describes treatment with prescribed valsartan plus hydrochlorothiazide?",
+      "correct": "Long-term hypertension control using two complementary components",
+      "alternatives": [
+        "Rapid fluid removal equivalent to IV furosemide in pulmonary edema",
+        "Immediate conversion of an unstable tachycardia",
+        "Acute pressure support when blood pressure is critically low"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-symbicort",
+      "learningPointId": "ccu-symbicort::treatment-role",
+      "baselineUse": "Ongoing asthma or COPD treatment in a CCU patient with chronic respiratory disease; not an IV or nebulized CCU drug.",
+      "stem": "Which ongoing respiratory treatment goal best fits an authorized budesonide/formoterol inhaler regimen?",
+      "correct": "Airway inflammation control with an inhaled long-acting bronchodilator",
+      "alternatives": [
+        "Treating a bacterial pneumonia as an inhaled antibiotic",
+        "Removing pulmonary fluid from acute heart failure",
+        "Correcting severe hypoxemia without respiratory reassessment"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-gentamicin",
+      "learningPointId": "ccu-gentamicin::treatment-role",
+      "baselineUse": "Treatment of serious susceptible bacterial infections, especially Gram-negative infection, when selected by the treating team.",
+      "stem": "Which antimicrobial purpose best matches prescribed gentamicin when susceptibility and dosing permit?",
+      "correct": "Treatment of a serious susceptible aerobic Gram-negative infection",
+      "alternatives": [
+        "Single-agent treatment of an anaerobic intra-abdominal abscess",
+        "Treatment of documented C. difficile infection in the colon",
+        "Treatment of candidemia after positive fungal blood cultures"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-ipratropium",
+      "learningPointId": "ccu-ipratropium::treatment-role",
+      "baselineUse": "Bronchodilation in bronchospasm, especially COPD and some asthma exacerbations.",
+      "stem": "Which respiratory problem fits an appropriate inhaled ipratropium order?",
+      "correct": "Bronchospasm in selected obstructive-airway disease",
+      "alternatives": [
+        "Cardiogenic pulmonary edema without bronchospasm",
+        "Upper-airway stridor from a fixed obstruction",
+        "Pleural effusion with lung compression and no airflow obstruction"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-labetalol",
+      "learningPointId": "ccu-labetalol::treatment-role",
+      "baselineUse": "Controlled BP lowering for selected severe hypertension and other physician-directed cardiovascular indications.",
+      "stem": "Which monitored cardiovascular treatment goal best fits authorized IV labetalol?",
+      "correct": "Controlled BP reduction in selected severe hypertension",
+      "alternatives": [
+        "Immediate BP elevation in hemorrhagic shock",
+        "Treating symptomatic bradycardia with high-grade AV block",
+        "Correcting acute bronchospasm in a patient with severe asthma"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-ketamine",
+      "learningPointId": "ccu-ketamine::treatment-role",
+      "baselineUse": "Physician-directed procedural sedation or anesthetic induction when indicated.",
+      "stem": "Which procedural goal most closely matches monitored, clinician-directed IV ketamine?",
+      "correct": "Induction of anesthesia for an appropriate procedure",
+      "alternatives": [
+        "Producing muscle paralysis without an anesthetic",
+        "Reversing opioid respiratory suppression after overdose",
+        "Treating shock by sustained vasopressor-only infusion"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-pethidine",
+      "learningPointId": "ccu-pethidine::treatment-role",
+      "baselineUse": "Physician-prescribed analgesia for selected severe pain situations; not a routine first-choice treatment for every CCU chest-pain patient.",
+      "stem": "Which prescribing goal most closely fits selected monitored pethidine use?",
+      "correct": "Relief of severe pain when the treating clinician chooses this opioid",
+      "alternatives": [
+        "Routine first-line treatment of all acute coronary chest pain",
+        "Long-term control of neuropathic pain in advanced kidney disease",
+        "Reversal of opioid-related hypoventilation in a sedated patient"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-morphine",
+      "learningPointId": "ccu-morphine::treatment-role",
+      "baselineUse": "Selected severe pain/distress management when prescribed; not automatically indicated for every ACS patient or every case of pulmonary edema.",
+      "stem": "Which clinical treatment goal most closely fits a selected monitored IV morphine order?",
+      "correct": "Analgesia for severe pain after respiratory and circulatory assessment",
+      "alternatives": [
+        "Routine correction of low BP during hypovolemic shock",
+        "Rapid reversal of opioid-associated respiratory depression",
+        "Immediate definitive management of an occluded coronary artery"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-spironolactone",
+      "learningPointId": "trolley-spironolactone::treatment-role",
+      "baselineUse": "Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide.",
+      "stem": "Which longer-term cardiovascular goal most appropriately matches oral spironolactone?",
+      "correct": "Selected HFrEF treatment with potassium and renal monitoring",
+      "alternatives": [
+        "Immediate loop diuresis for acute pulmonary edema",
+        "Emergency correction of severe hyperkalemia with ECG changes",
+        "Immediate termination of a dangerous tachyarrhythmia"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-lidocaine",
+      "learningPointId": "trolley-lidocaine::treatment-role",
+      "baselineUse": "AHA allows lidocaine or amiodarone for shock-refractory VF/pulseless VT; it may also be used for selected ventricular arrhythmias with a pulse.",
+      "stem": "For which arrest rhythm may lidocaine be considered within an adult ALS protocol?",
+      "correct": "VF or pulseless VT persisting despite defibrillation",
+      "alternatives": [
+        "Isolated asystole persisting on rhythm checks",
+        "Pulseless electrical activity without a shockable rhythm",
+        "Sinus bradycardia with hypotension and a pulse"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-sodium-bicarbonate",
+      "learningPointId": "trolley-sodium-bicarbonate::treatment-role",
+      "baselineUse": "Not routine in undifferentiated cardiac arrest. Use mainly for selected reversible causes/special circumstances such as specific toxicologic/metabolic indications.",
+      "stem": "When is IV sodium bicarbonate most appropriately considered during emergency resuscitation?",
+      "correct": "A selected toxicological or metabolic indication under an authorized plan",
+      "alternatives": [
+        "A routine fixed dose for ventricular fibrillation without special indication",
+        "A routine fixed dose in pulseless electrical activity without special indication",
+        "A substitute for ventilation and high-quality compressions during arrest"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-hydralazine",
+      "learningPointId": "trolley-hydralazine::treatment-role",
+      "baselineUse": "Parenteral treatment of severe hypertension when indicated.",
+      "stem": "Which treatment purpose best fits clinician-ordered parenteral hydralazine with repeated BP assessment?",
+      "correct": "Reducing BP in selected severe hypertension",
+      "alternatives": [
+        "Increasing arterial pressure during distributive shock",
+        "Treating rapid supraventricular tachycardia by AV-nodal blockade",
+        "Direct clot lysis during a hypertensive patient's stroke"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-dextrose50",
+      "learningPointId": "trolley-dextrose50::treatment-role",
+      "baselineUse": "Severe symptomatic hypoglycemia when IV glucose is indicated.",
+      "stem": "Which presentation most directly supports an authorized IV D50 dose?",
+      "correct": "Reduced consciousness with documented severe hypoglycemia",
+      "alternatives": [
+        "Reduced consciousness with documented severe hyperglycemia",
+        "New focal weakness with a normal measured blood glucose",
+        "Confusion with normal glucose and suspected opioid toxicity"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-hydrocortisone",
+      "learningPointId": "trolley-hydrocortisone::treatment-role",
+      "baselineUse": "Adrenal crisis and selected severe inflammatory/allergic or shock states when indicated. In anaphylaxis it is an adjunct and must not delay epinephrine.",
+      "stem": "Which emergency condition most directly fits prescribed IV hydrocortisone as a disease-specific treatment?",
+      "correct": "Suspected adrenal crisis with hypotension and systemic illness",
+      "alternatives": [
+        "Anaphylactic shock before epinephrine has been given",
+        "Hypovolemic shock due to uncontrolled acute hemorrhage",
+        "Pulseless ventricular fibrillation before defibrillation"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-diazepam",
+      "learningPointId": "trolley-diazepam::treatment-role",
+      "baselineUse": "Seizure/status epilepticus, severe agitation or selected procedural sedation; not a cardiac antiarrhythmic.",
+      "stem": "Which emergency situation best fits an authorized rapid benzodiazepine treatment such as diazepam?",
+      "correct": "An ongoing prolonged convulsive seizure needing acute termination",
+      "alternatives": [
+        "A brief seizure that ended with complete recovery and no ongoing convulsion",
+        "A patient with isolated stable sinus bradycardia and normal consciousness",
+        "A patient with hypoglycemic confusion and no observed seizure"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-calcium-gluconate",
+      "learningPointId": "trolley-calcium-gluconate::treatment-role",
+      "baselineUse": "Severe symptomatic hypocalcemia and myocardial membrane stabilization in severe hyperkalemia with ECG toxicity when indicated. Calcium does not remove potassium from the body.",
+      "stem": "Which emergency treatment goal most specifically fits an ordered IV calcium gluconate dose?",
+      "correct": "Myocardial stabilization during severe hyperkalemia with ECG toxicity",
+      "alternatives": [
+        "Removal of excess potassium from the body by kidney excretion",
+        "Routine treatment of cardiac arrest without a special indication",
+        "Immediate long-term elimination of hyperkalemia without other treatment"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-magnesium-sulfate",
+      "learningPointId": "trolley-magnesium-sulfate::treatment-role",
+      "baselineUse": "May be considered for recurrent polymorphic VT associated with long-QT syndrome/torsades de pointes; not a generic treatment for every ventricular arrhythmia.",
+      "stem": "Which rhythm problem best matches IV magnesium sulfate use in the adult emergency pathway?",
+      "correct": "Recurrent torsades associated with QT prolongation",
+      "alternatives": [
+        "Monomorphic VT without known magnesium deficiency",
+        "Polymorphic VT with a normal QT interval",
+        "Asystole without a specific electrolyte indication"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-aminophylline",
+      "learningPointId": "trolley-aminophylline::treatment-role",
+      "baselineUse": "Bronchodilator that may still appear on emergency trolleys/local protocols; its narrow therapeutic index and pro-arrhythmic potential are particularly relevant in CCU.",
+      "stem": "Which treatment role may justify an authorized aminophylline order after careful respiratory and cardiac assessment?",
+      "correct": "Selected bronchodilation when the protocol specifically supports it",
+      "alternatives": [
+        "Primary rescue of ventricular tachycardia through conduction suppression",
+        "Routine first-line treatment of every mild wheezing episode",
+        "Correction of hypoxemia due only to pulmonary edema without bronchospasm"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-amitriptyline",
+      "learningPointId": "ibd2-amitriptyline::treatment-role",
+      "baselineUse": "Approved for depressive illness. In orthopaedic/trauma practice it may also be prescribed off-label for neuropathic pain or sleep-related pain symptoms; confirm the actual indication rather than assuming.",
+      "stem": "Which longer-term symptom goal can match low-dose prescribed amitriptyline in an orthopaedic patient?",
+      "correct": "Selected persistent neuropathic pain with sleep disturbance",
+      "alternatives": [
+        "Rapid relief of acute fracture pain by IV opioid action",
+        "Immediate termination of tonic-clonic status epilepticus",
+        "Reversal of sedative-induced respiratory depression"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-prednitab-prednisolone",
+      "learningPointId": "ibd2-prednitab-prednisolone::treatment-role",
+      "baselineUse": "Anti-inflammatory and immunosuppressive corticosteroid used for a range of inflammatory, allergic and autoimmune conditions. Confirm the patient-specific indication.",
+      "stem": "Which prescribed treatment goal best matches oral prednisolone?",
+      "correct": "Controlling inflammation in an appropriate autoimmune or allergic illness",
+      "alternatives": [
+        "Direct bacterial eradication in an untreated invasive infection",
+        "Replacing epinephrine as immediate treatment of anaphylactic shock",
+        "Immediate reversal of a patient taking warfarin with major bleeding"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-clindamycin",
+      "learningPointId": "ibd2-clindamycin::treatment-role",
+      "baselineUse": "Treatment of susceptible bacterial infections, including some skin/soft-tissue and bone/joint infections depending on organism and local antimicrobial plan.",
+      "stem": "Which infection best matches prescribed clindamycin when culture results support its use?",
+      "correct": "A susceptible Gram-positive soft-tissue infection",
+      "alternatives": [
+        "Pseudomonas aeruginosa bacteremia requiring targeted therapy",
+        "Candida bloodstream infection requiring antifungal treatment",
+        "Enterococcus bloodstream infection requiring targeted therapy"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-multivitamin",
+      "learningPointId": "ibd2-multivitamin::treatment-role",
+      "baselineUse": "Nutritional supplementation when prescribed; the exact purpose depends on the patient's nutritional status and the product contents.",
+      "stem": "Which clinical goal best matches an appropriately prescribed multivitamin product?",
+      "correct": "Supplementing identified or anticipated dietary micronutrient gaps",
+      "alternatives": [
+        "Replacing acute IV correction of a severe potassium deficit",
+        "Immediate reversal of hypoglycemia with a measured low glucose",
+        "Treating an infected surgical wound through antibacterial activity"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ed-novalgin-metamizole",
+      "learningPointId": "ed-novalgin-metamizole::treatment-role",
+      "baselineUse": "Selected moderate-to-severe acute pain or fever, depending on local protocols. Not necessarily a first-choice analgesic where safer alternatives are available.",
+      "stem": "Which situation most closely matches selected injectable metamizole use under local guidance?",
+      "correct": "Acute significant pain when an appropriate non-opioid analgesic is prescribed",
+      "alternatives": [
+        "Acute pain during ongoing unexplained hypotensive collapse",
+        "Pain in a patient with prior severe pyrazolone hypersensitivity",
+        "Pain relief through local anesthetic nerve blockade"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ed-decort-dexamethasone",
+      "learningPointId": "ed-decort-dexamethasone::treatment-role",
+      "baselineUse": "Selected acute inflammatory/allergic conditions, cerebral edema in appropriate settings and as an adjunct in particular emergency protocols. Corticosteroids are not a substitute for epinephrine in anaphylaxis.",
+      "stem": "Which condition can fit prescribed dexamethasone after establishing the clinical cause?",
+      "correct": "Vasogenic cerebral edema from an intracranial tumor",
+      "alternatives": [
+        "Emergency replacement of epinephrine in anaphylactic shock",
+        "Reversal of acute bleeding due to vitamin K deficiency",
+        "Routine correction of acute ischemic stroke-related brain swelling"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ed-diclofenac-injection",
+      "learningPointId": "ed-diclofenac-injection::treatment-role",
+      "baselineUse": "Selected acute painful inflammatory conditions such as renal colic, injury-related musculoskeletal pain, or postoperative pain according to clinical assessment.",
+      "stem": "Which presentation best fits selected prescribed injectable diclofenac after safety screening?",
+      "correct": "Acute renal colic pain with acceptable renal function and no NSAID contraindication",
+      "alternatives": [
+        "Severe renal colic in a patient with acute kidney injury and dehydration",
+        "Postoperative pain with active upper GI hemorrhage",
+        "Musculoskeletal pain after a previous severe NSAID-induced bronchospasm"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ed-captopril-tablets",
+      "learningPointId": "ed-captopril-tablets::treatment-role",
+      "baselineUse": "Treatment of hypertension and selected heart-failure or post-MI indications. Oral captopril is not a substitute for controlled IV treatment of hypertensive emergencies with acute organ injury.",
+      "stem": "Which situation most closely matches the purpose of an authorized oral captopril prescription?",
+      "correct": "Hypertension treatment in a clinically assessed patient without acute organ injury",
+      "alternatives": [
+        "Hypertensive encephalopathy requiring titratable IV treatment",
+        "Anaphylactic shock with severe hypotension and airway swelling",
+        "Life-threatening ventricular tachycardia requiring urgent rhythm control"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    },
+    {
+      "itemId": "ed-omnic-tamsulosin",
+      "learningPointId": "ed-omnic-tamsulosin::treatment-role",
+      "baselineUse": "Relieves lower urinary tract symptoms due to benign prostatic hyperplasia (BPH), such as weak urinary stream, hesitancy and incomplete emptying. In an ED, alpha-blockers including tamsulosin may also be prescribed OFF-LABEL as medical expulsive therapy (MET) for selected uncomplicated distal ureteral stones, particularly 5–10 mm, after clinician assessment. Not a treatment for sepsis or an infected obstructed urinary system.",
+      "stem": "Which symptom pattern best matches the primary use of prescribed oral tamsulosin?",
+      "correct": "Hesitancy and weak urinary stream from benign prostatic enlargement",
+      "alternatives": [
+        "Burning urination caused by an active bacterial bladder infection",
+        "Acute urinary obstruction with fever and signs of sepsis",
+        "Severe oliguria due to acute intrinsic renal failure"
+      ],
+      "reviewStatus": "author-level source anchored; independent clinical validation pending"
+    }
+  ],
+  "extraEvidence": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation/",
+    "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=76d6aad3-0515-49da-a6e1-3fe2a1938a24&type=display",
+    "https://www.resus.org.uk/professional-library/faqs/faqs-anaphylaxis",
+    "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=c8ad1f0f-0e95-4868-a2af-e193c1833841"
+  ],
+  "policy": [
+    "Stage until review and signing are independently verified",
+    "One new same-form exam for three stages, no history regrading",
+    "Clinical adequacy and completeness are not established by question count or automated passing"
+  ]
+}
