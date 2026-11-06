@@ -3475,31 +3475,31 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "A patient prescribed modified-release isosorbide mononitrate asks to crush the tablet because swallowing is difficult. What is the relevant concern?",
+        "stem": "A patient taking modified-release isosorbide mononitrate cannot swallow the tablet. Which plan is appropriate?",
         "choices": [
           {
             "id": "A",
-            "text": "Crushing can defeat the prescribed controlled-release delivery",
-            "explanation": "Modified-release oral nitrate tablets must not be treated as freely crushable immediate-release products."
+            "text": "Clarify an alternative formulation and schedule without crushing the modified-release tablet",
+            "explanation": "Modified-release isosorbide mononitrate must be given according to its formulation; request an authorized alternative when unable to swallow."
           },
           {
             "id": "B",
-            "text": "Crushing changes the nitrate into a selective beta blocker",
-            "explanation": "Crushing does not change isosorbide mononitrate into a beta blocker."
+            "text": "Crush the modified-release tablet and administer with water after checking BP",
+            "explanation": "BP checks do not prevent altered release if the modified-release product is crushed."
           },
           {
             "id": "C",
-            "text": "Crushing eliminates the need to monitor blood pressure",
-            "explanation": "Crushing provides no basis for omitting blood-pressure monitoring during nitrate therapy."
+            "text": "Use an immediate-release nitrate tablet once daily at the same milligram strength",
+            "explanation": "Immediate-release and modified-release nitrate schedules must not be interchanged solely by matching milligrams."
           },
           {
             "id": "D",
-            "text": "Crushing converts the formulation into a sublingual rescue tablet",
-            "explanation": "Crushing does not make a modified-release oral nitrate an approved sublingual rescue preparation."
+            "text": "Split and disperse the modified-release tablet to preserve its planned dosing interval",
+            "explanation": "Breaking and dispersing the modified-release tablet is not an authorized conversion and can alter drug delivery."
           }
         ],
         "answerKey": "A",
-        "point": "Identify the controlled-release formulation issue for isosorbide mononitrate.",
+        "point": "Select a safe response when a patient cannot swallow prescribed modified-release isosorbide mononitrate.",
         "criticalForSafety": false
       }
     },
@@ -3510,31 +3510,31 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "A prescription specifies metoprolol tartrate, but the available box contains metoprolol succinate extended-release. Which difference matters before dispensing?",
+        "stem": "An order specifies metoprolol tartrate twice daily, but the supplied box contains metoprolol succinate extended-release. What is the appropriate response?",
         "choices": [
           {
             "id": "A",
-            "text": "The release characteristics and dosing schedule may differ",
-            "explanation": "Metoprolol tartrate and extended-release succinate are not automatically interchangeable on the same regimen."
+            "text": "Clarify the ordered metoprolol formulation and revised dosing schedule before substitution",
+            "explanation": "Metoprolol salts and extended-release products have distinct release characteristics and dosing regimens. An authorized conversion may be appropriate but is not automatic."
           },
           {
             "id": "B",
-            "text": "Metoprolol succinate is an entirely different receptor blocker",
-            "explanation": "Both contain metoprolol and act at beta-adrenergic receptors; the salt does not create a different pharmacologic class."
+            "text": "Administer the succinate extended-release tablets twice daily at the ordered tartrate strength",
+            "explanation": "Simply matching each tartrate dose with extended-release succinate may change total exposure and the intended dosing interval."
           },
           {
             "id": "C",
-            "text": "Metoprolol tartrate is intended only for topical administration",
-            "explanation": "Metoprolol tartrate is an oral preparation (and also has IV forms); this answer does not explain the tartrate/succinate release distinction."
+            "text": "Divide the extended-release daily dose into two doses to retain the original timetable",
+            "explanation": "Changing an extended-release schedule independently does not provide an authorized equivalent conversion."
           },
           {
             "id": "D",
-            "text": "The nominal milligram strength alone establishes an identical regimen",
-            "explanation": "The strength does not by itself justify substituting an extended-release formulation on an immediate-release dosing schedule."
+            "text": "Crush the extended-release tablets so they act like the prescribed immediate-release formulation",
+            "explanation": "Crushing extended-release metoprolol alters its release design; it does not establish safe tartrate equivalence."
           }
         ],
         "answerKey": "A",
-        "point": "Distinguish metoprolol tartrate from extended-release succinate formulations.",
+        "point": "Recognize the need for a formulation-specific authorized conversion between metoprolol tartrate and extended-release succinate.",
         "criticalForSafety": false
       }
     },
@@ -3574,39 +3574,9 @@
       }
     },
     "trolley-hydrocortisone::formulation": {
-      "action": "replace",
-      "sourceFields": [
-        "administration"
-      ],
-      "question": {
-        "format": "single-best-answer",
-        "stem": "For emergency IV hydrocortisone treatment, which hydrocortisone preparation is commonly selected for reconstitution?",
-        "choices": [
-          {
-            "id": "A",
-            "text": "Hydrocortisone sodium succinate powder for injection",
-            "explanation": "The study material identifies hydrocortisone sodium succinate as a common emergency injectable product. Check the actual vial and reconstitution instructions."
-          },
-          {
-            "id": "B",
-            "text": "Hydrocortisone acetate cream for topical application",
-            "explanation": "Hydrocortisone acetate cream is topical and is not a reconstituted intravenous preparation."
-          },
-          {
-            "id": "C",
-            "text": "Hydrocortisone oral tablet for enteral dosing",
-            "explanation": "An oral hydrocortisone tablet is not the injectable emergency hydrocortisone sodium succinate vial."
-          },
-          {
-            "id": "D",
-            "text": "Hydrocortisone butyrate ointment for skin application",
-            "explanation": "A hydrocortisone butyrate topical ointment is not an intravenous hydrocortisone preparation."
-          }
-        ],
-        "answerKey": "A",
-        "point": "Identify a common hydrocortisone emergency IV formulation as sodium succinate injection.",
-        "criticalForSafety": false
-      }
+      "action": "omit",
+      "reason": "The previous IV hydrocortisone salt-choice stem can be solved merely by identifying the only injectable preparation among topical/oral products; the source only supplies a general vial verification instruction. Retain the teaching fact but grant no scoring credit until a clinically discriminating formulation question is grounded.",
+      "unresolvedCoverage": true
     },
     "ed-novalgin-metamizole::formulation": {
       "action": "replace",
@@ -3616,31 +3586,31 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "A patient receiving IV metamizole develops hypotension during the injection. Which administration-related problem is particularly relevant to this drug?",
+        "stem": "A nurse prepares ordered IV metamizole for a patient whose blood pressure is borderline low. Which specific safety precaution matters?",
         "choices": [
           {
             "id": "A",
-            "text": "Excessively rapid IV administration can contribute to marked hypotension",
-            "explanation": "Injectable metamizole requires product-specific slow IV administration and BP monitoring because hypotension and anaphylaxis can occur."
+            "text": "Confirm the product-specific slow IV rate and closely monitor blood pressure",
+            "explanation": "IV metamizole may cause marked hypotension, particularly with rapid administration; verify rate and monitor during administration."
           },
           {
             "id": "B",
-            "text": "A slow IV injection is expected to directly cause severe hyperglycemia",
-            "explanation": "Hyperglycemia is not the route/rate-related concern highlighted for IV metamizole."
+            "text": "Use a faster IV push once the calculated dose and dilution are correct",
+            "explanation": "Correct dose and dilution do not eliminate the rate-related risk of hypotension."
           },
           {
             "id": "C",
-            "text": "The drug loses all analgesic activity when delivered through venous access",
-            "explanation": "IV metamizole remains pharmacologically active; hypotension and hypersensitivity are the relevant risks."
+            "text": "Rely on dilution alone to prevent hypotension during the IV dose",
+            "explanation": "Dilution without attention to infusion rate and patient perfusion does not prevent hypotensive reactions."
           },
           {
             "id": "D",
-            "text": "The IV route routinely prevents hypersensitivity reactions",
-            "explanation": "Severe hypersensitivity can occur with injectable metamizole and is not reliably prevented by choosing IV administration."
+            "text": "Monitor blood pressure only after the entire injection has been completed",
+            "explanation": "Blood pressure and signs of hypersensitivity should be observed during administration so intervention is prompt."
           }
         ],
         "answerKey": "A",
-        "point": "Recognize the route/rate-related hypotension risk during IV metamizole administration.",
+        "point": "Recognize slow IV administration with hemodynamic monitoring as a metamizole-specific safety consideration.",
         "criticalForSafety": true
       }
     },
@@ -3651,31 +3621,31 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "A clinician orders IV diclofenac using the referenced UK Voltarol 75 mg/3 mL ampoule. Which preparation method is supported by that product's instructions?",
+        "stem": "The referenced UK Voltarol 75 mg/3 mL ampoule is prescribed for IV postoperative analgesia. Which preparation follows its SmPC?",
         "choices": [
           {
             "id": "A",
-            "text": "A specifically buffered and diluted IV infusion rather than IV bolus",
-            "explanation": "The cited Voltarol 75 mg/3 mL SmPC prohibits IV bolus; IV infusion requires the specified buffered dilution. Other products require their own insert."
+            "text": "Use the specified sodium-bicarbonate-buffered dilution for IV infusion, not an IV bolus",
+            "explanation": "The referenced Voltarol ampoule requires an appropriately buffered infusion solution and must not be given as an IV bolus."
           },
           {
             "id": "B",
-            "text": "Undiluted IV bolus administration using the full ampoule",
-            "explanation": "The referenced Voltarol product specifically prohibits intravenous bolus injection."
+            "text": "Administer the undiluted ampoule as a slow IV push over several minutes",
+            "explanation": "The SmPC prohibits IV bolus even if given slowly."
           },
           {
             "id": "C",
-            "text": "Subcutaneous injection using the same total dose",
-            "explanation": "The cited product permits deep IM use for appropriate orders, but not a unilateral switch from a prescribed IV route to SC."
+            "text": "Dilute in normal saline for infusion but omit the required bicarbonate buffer",
+            "explanation": "Normal saline is a permitted diluent for this product only with the specified bicarbonate buffering."
           },
           {
             "id": "D",
-            "text": "Direct IV push after warming the undiluted ampoule",
-            "explanation": "Warming the undiluted ampoule does not make an IV push permissible for this Voltarol preparation."
+            "text": "Dilute in 5% glucose for infusion without the required bicarbonate buffer",
+            "explanation": "Five-percent glucose is a permitted diluent only with the specified bicarbonate buffering."
           }
         ],
         "answerKey": "A",
-        "point": "Distinguish the referenced Voltarol IV infusion preparation from prohibited direct IV bolus.",
+        "point": "Recognize that the referenced Voltarol 75 mg/3 mL IV preparation requires buffered infusion rather than unbuffered infusion or IV push.",
         "criticalForSafety": true
       }
     },
@@ -3687,31 +3657,31 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "An anticoagulated adult with a markedly elevated INR has a new IM phytonadione order. Which route-related safety concern should the nurse raise?",
+        "stem": "An adult on warfarin with a markedly raised INR has an IM phytonadione order. What should prompt route clarification?",
         "choices": [
           {
             "id": "A",
-            "text": "IM administration may cause a hematoma and carries parenteral hypersensitivity risk",
-            "explanation": "IM injection in an anticoagulated patient creates bleeding/hematoma concern, and current injectable phytonadione labeling warns of severe IM/IV hypersensitivity. Clarify the ordered route against the product and urgent reversal protocol."
+            "text": "Risk of injection-site hematoma alongside the known IM hypersensitivity warning",
+            "explanation": "An anticoagulated patient can develop a hematoma from IM injection; injectable phytonadione also has a boxed warning for severe reactions via IM and IV routes."
           },
           {
             "id": "B",
-            "text": "IM administration provides immediate reversal of factor Xa inhibitors",
-            "explanation": "Phytonadione reverses vitamin K antagonist effects when indicated, not direct factor Xa inhibitor effects; it is not an instantaneous reversal agent."
+            "text": "IM administration gives predictable rapid correction when the INR is high",
+            "explanation": "IM absorption and reversal are not reliably immediate; urgent warfarin reversal follows an authorized indication-specific protocol."
           },
           {
             "id": "C",
-            "text": "IM administration removes the need for INR reassessment",
-            "explanation": "An INR response must still be monitored regardless of the injection route."
+            "text": "IM delivery removes the need to consider parenteral hypersensitivity reactions",
+            "explanation": "IM phytonadione has its own risk of severe hypersensitivity reactions, including anaphylaxis."
           },
           {
             "id": "D",
-            "text": "IM administration avoids all serious hypersensitivity reactions",
-            "explanation": "Parenteral phytonadione carries a boxed warning for serious hypersensitivity, including IM use."
+            "text": "IM dosing avoids the need to monitor the INR after administration",
+            "explanation": "Response still requires clinically indicated INR reassessment regardless of administration route."
           }
         ],
         "answerKey": "A",
-        "point": "Identify IM hematoma and serious hypersensitivity risks with injectable phytonadione in an anticoagulated patient.",
+        "point": "Recognize why IM phytonadione warrants special review in a patient with anticoagulation-related bleeding risk.",
         "criticalForSafety": true
       }
     },
@@ -3810,7 +3780,7 @@
     "ccu-isosorbide-mononitrate": "formulation-quality-audit-20261106",
     "ccu-metoprolol": "formulation-quality-audit-20261106",
     "ccu-pantoprazole": "formulation-quality-audit-20261106",
-    "trolley-hydrocortisone": "formulation-quality-audit-20261106",
+    "trolley-hydrocortisone": "formulation-quality-audit-20261106-v2",
     "ibd2-tramadol": "formulation-quality-audit-20261106",
     "ibd2-prothiazine": "formulation-quality-audit-20261106",
     "ccu-isosorbide-dinitrate": "formulation-quality-audit-20261106",
