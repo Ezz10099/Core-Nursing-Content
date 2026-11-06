@@ -3729,6 +3729,59 @@
       "action": "omit",
       "reason": "Omnic modified-release capsule vs OCAS meal instructions are already directly assessed; generic authorization prompt duplicates a distinct safety question.",
       "unresolvedCoverage": false
+    },
+    "ccu-heparin-ufh::heparin_samples": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient is receiving a therapeutic IV UFH infusion. Which result is used to assess its anticoagulant effect for titration under the authorized protocol?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "aPTT or a UFH-calibrated anti-factor Xa result, as specified by protocol",
+            "explanation": "Therapeutic unfractionated heparin is commonly monitored with aPTT or UFH-specific anti-Xa measurement under an authorized titration protocol."
+          },
+          {
+            "id": "B",
+            "text": "INR alone, using the warfarin target range",
+            "explanation": "INR is primarily used to monitor vitamin K antagonist treatment, not therapeutic UFH infusion titration."
+          },
+          {
+            "id": "C",
+            "text": "Platelet count alone, even when the measured coagulation effect is unknown",
+            "explanation": "Platelet monitoring detects thrombocytopenia/HIT but does not replace the authorized UFH-effect test."
+          },
+          {
+            "id": "D",
+            "text": "Hemoglobin alone, if the patient has no visible bleeding",
+            "explanation": "Hemoglobin is useful for bleeding assessment but does not quantify the heparin anticoagulant effect."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify appropriate coagulation-effect testing for a UFH infusion, separately from platelet and bleeding surveillance.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-heparin-ufh::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "why"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "Practice calculation only: A prescribed UFH infusion delivers 1,500 units/hour. The prepared bag contains 25,000 units in 250 mL. What pump rate delivers the ordered dose? Enter mL/hour.",
+        "answer": 15,
+        "unit": "mL/hour",
+        "tolerance": 0,
+        "explanation": "25,000 units ÷ 250 mL = 100 units/mL; 1,500 units/hour ÷ 100 units/mL = 15 mL/hour. Verify the real order, preparation and pump independently.",
+        "point": "Calculate an ordered UFH dose in units/hour from the verified bag concentration in units/mL.",
+        "criticalForSafety": true
+      }
     }
   },
   "evidenceChecks": [
@@ -3766,7 +3819,7 @@
     "verified-alteplase-v35": "drug-coverage-20261106",
     "ccu-norepinephrine": "drug-choice-audit-20261106-v2",
     "ibd2-vancomycin": "drug-coverage-20261106",
-    "ccu-heparin-ufh": "drug-coverage-20261106",
+    "ccu-heparin-ufh": "ufh-source-fact-review-20261106",
     "ccu-adenosine": "drug-coverage-20261106",
     "ed-omnic-tamsulosin": "formulation-quality-audit-20261106",
     "ccu-dopamine": "drug-choice-audit-20261106-v2",
