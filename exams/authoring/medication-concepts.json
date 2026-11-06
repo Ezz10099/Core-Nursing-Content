@@ -7737,5 +7737,61 @@
         }
       ]
     }
+  },
+  "heparin_prophylaxis": {
+    "point": "Distinguish prevention of new thrombosis using prescribed SC UFH from thrombolysis or treatment-dose IV infusion.",
+    "anchor": "selected prophylactic uses",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An immobile inpatient without known VTE has a prescribed subcutaneous low-dose unfractionated heparin regimen. What is the primary purpose of this order?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Reduce the risk of new venous thromboembolism",
+          "explanation": "Selected low-dose SC UFH regimens are used to prevent VTE in at-risk patients; they are not fibrinolytic treatment."
+        },
+        {
+          "text": "Directly dissolve an already established pulmonary embolus",
+          "explanation": "UFH prevents thrombin formation and extension of clots, but does not directly dissolve an established embolus."
+        },
+        {
+          "text": "Replace the therapeutic IV infusion used for every acute thrombosis",
+          "explanation": "A prophylactic subcutaneous order cannot automatically replace a distinct therapeutic anticoagulation regimen."
+        },
+        {
+          "text": "Reverse the antiplatelet effect of concurrent aspirin",
+          "explanation": "UFH is an anticoagulant rather than an aspirin reversal agent."
+        }
+      ]
+    }
+  },
+  "heparin_hit_action": {
+    "point": "Recognize suspected HIT and promptly stop heparin and escalate for urgent clinical reassessment and a non-heparin anticoagulation plan under protocol.",
+    "anchor": "Suspect HIT",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "On day 6 of a UFH infusion, platelets fall from 240 to 95 ×10⁹/L and a new thrombus is suspected. What should the nurse do first?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop heparin and urgently escalate suspected HIT under the facility protocol",
+          "explanation": "A substantial platelet fall with thrombosis during heparin exposure is concerning for HIT, which requires prompt heparin cessation, urgent review and consideration of non-heparin anticoagulation."
+        },
+        {
+          "text": "Continue heparin at the same dose until a confirmatory assay returns",
+          "explanation": "Continuing heparin despite a clinically concerning pattern can allow HIT-associated thrombosis to progress."
+        },
+        {
+          "text": "Replace UFH with enoxaparin at the same anticoagulant dose",
+          "explanation": "LMWH is also a heparin-family product; switching empirically is not the appropriate management for suspected HIT."
+        },
+        {
+          "text": "Reduce the UFH rate by half and repeat the platelet count next week",
+          "explanation": "Reducing the dose alone does not remove the causative heparin exposure and delays needed assessment."
+        }
+      ]
+    }
   }
 }
