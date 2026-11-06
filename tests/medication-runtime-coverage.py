@@ -103,3 +103,17 @@ for bank in meds:
     )
     assert q["point"] == "Identify the main treatment role taught for this medicine.", bank["itemId"]
 print(f"Reviewed role-question reconciliation: {len(role_index)} matching source-recorded items; batches={review_counts}.")
+
+# Output a non-gating list of length cues. Source completeness, clinical
+# accuracy and empirical item difficulty cannot be certified by this heuristic.
+length_cues = []
+for bank in meds:
+    role = next(q for q in bank["exams"][0]["questions"]
+                if q["learningPointIds"] == [bank["itemId"] + "::treatment-role"])
+    correct = next(c for c in role["choices"] if c["id"] == role["answerKey"])
+    wrong_lengths = sorted(len(c["text"].split()) for c in role["choices"]
+                           if c["id"] != role["answerKey"])
+    if len(correct["text"].split()) - wrong_lengths[1] >= 5:
+        length_cues.append(bank["itemId"])
+print(f"Non-gating answer-length cue candidates: {len(length_cues)}: {length_cues}")
+
