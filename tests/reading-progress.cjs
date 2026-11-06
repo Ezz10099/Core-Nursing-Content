@@ -17,14 +17,14 @@ function boot(saved){
  assert.match(w.document.querySelector('#reading-med').textContent,/1 \/ \d+ read/);
  w.openMed('heparin');assert.equal(state().reading['med:heparin'],'read');
  w.openMed('norepinephrine');assert.equal(state().reading['med:norepinephrine'],'in-progress');
- const control=w.document.querySelector('#detail .reading-control');w.toggleReading(control);assert.equal(state().reading['med:norepinephrine'],'read');
+ const control=w.document.querySelector('#detail .reader-finish .reading-control');w.toggleReading(control);assert.equal(state().reading['med:norepinephrine'],'read');
  w.openMed('norepinephrine');assert.equal(state().reading['med:norepinephrine'],'read');
  w.setReadingFilter('med','read');assert.equal(w.document.querySelectorAll('#list .item').length,2);
  w.setReadingFilter('med','unread');assert(!w.document.querySelector('#list').textContent.includes('Norepinephrine'));
  w.setReadingFilter('med','all');
  const content=JSON.parse(fs.readFileSync(path.join(root,'content.json'),'utf8'));
  const lesson=content.lessons[0];w.openLesson(lesson.id);assert.equal(state().reading['lesson:'+lesson.id],'in-progress');
- w.toggleReading(w.document.querySelector('#lessonDetail .reading-control'));assert.equal(state().reading['lesson:'+lesson.id],'read');
+ w.toggleReading(w.document.querySelector('#lessonDetail .reader-finish .reading-control'));assert.equal(state().reading['lesson:'+lesson.id],'read');
  w.closeLesson();const faq=w.document.querySelector('[data-reading-faq]');assert(faq);assert.equal(state().reading['faq:'+faq.dataset.readingFaq],undefined);
  faq.open=true;w.faqReadingOpened(faq);assert.equal(state().reading['faq:'+faq.dataset.readingFaq],'in-progress');
  w.toggleReading(faq.querySelector('.reading-control'));assert.equal(state().reading['faq:'+faq.dataset.readingFaq],'read');assert(faq.open);

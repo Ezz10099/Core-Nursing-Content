@@ -1,0 +1,353 @@
+{
+  "platelets": {
+    "correct": "A significant platelet fall",
+    "choices": [
+      [
+        "A progressive neutrophil fall",
+        "Neutropenia warrants assessment, but the heparin-associated blood-count concern is the platelet trend."
+      ],
+      [
+        "A gradual hemoglobin rise",
+        "A rising hemoglobin does not indicate the platelet-related complication."
+      ],
+      [
+        "A rising eosinophil count",
+        "This is not the platelet fall associated with heparin-related complications."
+      ]
+    ]
+  },
+  "procedure_timing": {
+    "correct": "Time and amount of the most recent dose",
+    "choices": [
+      [
+        "Duration of the current anticoagulant course",
+        "The course duration provides context but does not establish the recent anticoagulant exposure before a procedure."
+      ],
+      [
+        "Time of the next planned routine dose",
+        "The next scheduled dose does not establish when the patient last received anticoagulation."
+      ],
+      [
+        "Total number of injections given this admission",
+        "The total number does not replace the timing and amount of the last dose."
+      ]
+    ]
+  },
+  "heparin_infusion": {
+    "correct": "Treatment-vial concentration versus catheter-flush concentration",
+    "choices": [
+      [
+        "Glass ampoule versus plastic vial packaging",
+        "Packaging does not establish the product strength or its suitability for therapeutic infusion."
+      ],
+      [
+        "Single-dose versus multidose container size",
+        "Container size does not distinguish therapeutic heparin from a flush formulation."
+      ],
+      [
+        "Brand-name versus generic-name label layout",
+        "The printed name does not replace verification of strength and intended product use."
+      ]
+    ]
+  },
+  "hit": {
+    "correct": "Heparin-induced thrombocytopenia",
+    "choices": [
+      [
+        "Dose-related suppression of red-cell production",
+        "The sudden platelet fall specifically requires assessment for HIT."
+      ],
+      [
+        "Dilutional thrombocytopenia from a fluid load",
+        "Dilution can affect counts but must not explain away a new substantial fall during heparin therapy."
+      ],
+      [
+        "Platelet consumption attributed to the original illness",
+        "The illness is part of the differential, but heparin exposure requires consideration of HIT."
+      ]
+    ]
+  },
+  "antithrombotic_combination": {
+    "correct": "Bleeding at visible and occult sites",
+    "choices": [
+      [
+        "Progressive slowing of AV conduction",
+        "These treatments do not share AV-node blockade as their principal combined risk."
+      ],
+      [
+        "Rising potassium with falling urine output",
+        "Renal assessment matters, but it is not the shared antithrombotic effect being tested."
+      ],
+      [
+        "New muscle weakness with elevated creatine kinase",
+        "Muscle toxicity is not the shared effect of this antithrombotic combination."
+      ]
+    ]
+  },
+  "duplicate_beta": {
+    "correct": "Whether duplicate beta-blockade is intended",
+    "choices": [
+      [
+        "Whether overlapping administration times explain peak effects",
+        "Timing can contribute, but the presence of two beta-blockers requires clarification of therapeutic duplication."
+      ],
+      [
+        "Whether the patient has missed recent antihypertensive doses",
+        "Missed doses may affect BP but do not explain the two active beta-blockers and slow pulse."
+      ],
+      [
+        "Whether the recorded pulse should be rechecked first",
+        "Rechecking supports assessment but does not resolve the duplicated prescribing issue."
+      ]
+    ],
+    "stem": "A patient already receiving a beta-blocker is prescribed {drug} and develops dizziness with a slow pulse. Which prescribing issue needs clarification?"
+  },
+  "avnode_combination": {
+    "correct": "Additive slowing of AV conduction",
+    "choices": [
+      [
+        "Additive vasodilation with compensatory tachycardia",
+        "Vasodilation does not explain the slow pulse and overlapping AV-node effects."
+      ],
+      [
+        "Increased preload with compensatory bradycardia",
+        "The relevant interaction is conduction slowing, not a primary increase in preload."
+      ],
+      [
+        "Reduced absorption of both cardiac medicines",
+        "Reduced exposure does not explain increased cardiac slowing."
+      ]
+    ]
+  },
+  "tamsulosin_orthostasis": {
+    "correct": "Sitting and standing BP with symptoms",
+    "choices": [
+      [
+        "A resting ECG with rhythm assessment",
+        "Rhythm assessment may be needed, but postural symptoms require checking BP with position."
+      ],
+      [
+        "Capillary glucose with symptom assessment",
+        "Glucose may be relevant to dizziness; the postural pattern specifically directs BP assessment."
+      ],
+      [
+        "Oxygen saturation with respiratory assessment",
+        "Oxygenation assessment does not directly test the suspected orthostatic effect."
+      ]
+    ],
+    "stem": "A patient taking {drug} reports dizziness on standing. Which assessment most directly checks for an orthostatic adverse effect?"
+  },
+  "tamsulosin_ifis": {
+    "correct": "Current or past tamsulosin exposure",
+    "choices": [
+      [
+        "Current or past antiplatelet exposure",
+        "Antiplatelet history is relevant to surgical planning, but the specific tamsulosin-related eye-surgery risk concerns its own exposure history."
+      ],
+      [
+        "Current or past inhaled steroid exposure",
+        "This does not identify the tamsulosin-related iris complication."
+      ],
+      [
+        "Current or past nitrate exposure",
+        "Nitrate use does not identify the tamsulosin-related iris complication."
+      ]
+    ],
+    "stem": "A patient is scheduled for cataract surgery. Which medication history specifically alerts the team to the iris complication associated with {drug}?"
+  },
+  "tamsulosin_distal_stone": {
+    "correct": "Helping passage of distal ureteral stones",
+    "choices": [
+      [
+        "Dissolving uric-acid stones by alkalinizing urine",
+        "Tamsulosin does not work by urinary alkalinization or chemical stone dissolution."
+      ],
+      [
+        "Reducing urine production during acute renal colic",
+        "Its selected stone use is not based on suppressing urine production."
+      ],
+      [
+        "Eradicating urinary infection around an obstructing stone",
+        "Tamsulosin is not an antibacterial treatment for infected obstruction."
+      ]
+    ]
+  },
+  "alteplase_screen": {
+    "correct": "Brain imaging excluding hemorrhage with protocol eligibility review",
+    "choices": [
+      [
+        "A neurological score establishing the severity of deficits",
+        "Severity assessment is needed, but it does not exclude intracranial hemorrhage or establish complete eligibility."
+      ],
+      [
+        "A symptom-onset time within the treatment window",
+        "Timing is needed, but does not replace brain imaging and the full eligibility assessment."
+      ],
+      [
+        "A blood-pressure reading within the protocol limits",
+        "BP is part of screening; an acceptable reading does not exclude hemorrhage or satisfy all eligibility criteria."
+      ]
+    ]
+  },
+  "alteplase_followup": {
+    "correct": "The authorized post-thrombolysis assessment and follow-up imaging plan",
+    "choices": [
+      [
+        "A normal platelet count with no visible bleeding",
+        "These findings do not replace the authorized post-thrombolysis assessment and imaging requirements."
+      ],
+      [
+        "Improvement in the initial neurological deficit",
+        "Clinical improvement does not independently clear the patient for antithrombotic therapy."
+      ],
+      [
+        "Completion of the prescribed alteplase infusion",
+        "Infusion completion is not sufficient clearance for antithrombotic treatment."
+      ]
+    ]
+  },
+  "insulin_route": {
+    "correct": "Correction is generally SC; IV insulin follows a separate controlled protocol",
+    "choices": [
+      [
+        "Correction and IV insulin share the same units-to-volume calculation",
+        "Concentration and delivery differ; one calculation cannot establish equivalence of the protocols."
+      ],
+      [
+        "Correction and IV insulin use the same bedside-glucose dosing table",
+        "An SC correction scale must not be assumed to define an IV infusion protocol."
+      ],
+      [
+        "Correction is generally IV; the SC route is reserved for basal insulin",
+        "Ordinary correction insulin is generally SC, while IV treatment follows a separate protocol."
+      ]
+    ]
+  },
+  "insulin_meals": {
+    "correct": "Current glucose, insulin product, prescribed scale, and NPO status",
+    "choices": [
+      [
+        "Usual home insulin dose and the time of the previous meal",
+        "Home dosing and prior meals do not establish the current prescribed correction decision."
+      ],
+      [
+        "Most recent HbA1c and the planned daily calorie intake",
+        "Longer-term information does not replace current glucose, order, product and NPO assessment."
+      ],
+      [
+        "Yesterday’s glucose trend and the usual inpatient meal schedule",
+        "Yesterday’s pattern does not establish the patient’s current glucose or canceled-meal status."
+      ]
+    ]
+  },
+  "glucose_recheck": {
+    "correct": "Repeat glucose with consciousness and symptoms",
+    "choices": [
+      [
+        "Repeat BP with peripheral perfusion",
+        "Circulation needs reassessment, but BP cannot establish whether the glucose abnormality has corrected."
+      ],
+      [
+        "Repeat respiratory rate with oxygen saturation",
+        "Breathing assessment does not establish the glucose response."
+      ],
+      [
+        "Repeat neurological assessment without glucose measurement",
+        "Symptoms may improve but do not replace an objective glucose recheck."
+      ]
+    ]
+  },
+  "nitrate_pde5": {
+    "correct": "Excessive vasodilation and hypotension",
+    "choices": [
+      [
+        "Reduced nitrate absorption with loss of antianginal effect",
+        "The key interaction concern is enhanced hypotension, not reduced absorption."
+      ],
+      [
+        "Additive platelet inhibition with gastrointestinal bleeding",
+        "The key interaction is not combined antiplatelet activity."
+      ],
+      [
+        "Additive AV-node blockade with severe bradycardia",
+        "These medicines are not combined primarily through AV-node blockade."
+      ]
+    ]
+  },
+  "sl_tablet": {
+    "correct": "Let it dissolve under the tongue",
+    "choices": [
+      [
+        "Swallow it whole with a glass of water",
+        "Swallowing does not follow the intended sublingual route."
+      ],
+      [
+        "Keep it between the cheek and gum until dissolved",
+        "Buccal placement is a different administration site from the prescribed sublingual route."
+      ],
+      [
+        "Chew it thoroughly before swallowing",
+        "Chewing and swallowing do not follow the documented sublingual administration."
+      ]
+    ]
+  },
+  "magnesium_calcium": {
+    "correct": "A calcium salt",
+    "choices": [
+      [
+        "An additional magnesium dose",
+        "Additional magnesium can worsen the suspected toxicity."
+      ],
+      [
+        "A potassium replacement dose",
+        "Potassium is not the emergency antagonist for significant magnesium effects."
+      ],
+      [
+        "A sodium bicarbonate dose",
+        "Bicarbonate is not the specific antagonist being tested."
+      ]
+    ],
+    "stem": "Which treatment may be ordered to counter the neuromuscular and respiratory depression caused by excessive IV magnesium?"
+  },
+  "antimuscarinic_cautions": {
+    "correct": "Narrow-angle glaucoma with urinary-retention risk",
+    "choices": [
+      [
+        "Open-angle glaucoma with a stable bowel pattern",
+        "The particular antimuscarinic concern is narrow-angle glaucoma and urinary retention."
+      ],
+      [
+        "Controlled reflux with a history of iron deficiency",
+        "These are not the specific antimuscarinic cautions being tested."
+      ],
+      [
+        "Recurrent renal colic with normal bladder emptying",
+        "This does not identify the urinary-retention or narrow-angle glaucoma caution."
+      ]
+    ]
+  },
+  "ccu-atropine::anticholinergic": {
+    "stem": "Which pair of adverse effects is consistent with {drug}?"
+  },
+  "ed-vitamin-k-phytonadione::warfarin_reversal": {
+    "stem": "Which antithrombotic treatment has an effect that {drug} can reverse?",
+    "correct": "Warfarin",
+    "choices": [
+      [
+        "Unfractionated heparin",
+        "Heparin reversal is not provided by vitamin K."
+      ],
+      [
+        "Clopidogrel",
+        "Vitamin K does not reverse clopidogrel’s platelet-receptor inhibition."
+      ],
+      [
+        "Apixaban",
+        "Vitamin K does not reverse direct factor-Xa inhibition."
+      ]
+    ]
+  },
+  "ccu-lesson-10-electrolytes::point-73070375f78e": {
+    "stem": "Which electrolyte relationship can explain hypokalemia that remains difficult to correct?"
+  }
+}

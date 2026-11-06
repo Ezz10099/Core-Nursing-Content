@@ -46,9 +46,9 @@ function capture(w,question){
   const two=capture(w,'What should I monitor with this drug?');
   assert.equal(two.sourceType,'med');assert.equal(two.sourceId,med.id);
   assert.equal(d.querySelector('#detail').classList.contains('hidden'),false);
-  const bank=w.CoreNursingExamData.banks.find(b=>b.exams.some(e=>e.stage==='standard'));
-  assert(bank);w.CoreNursingExams.open(bank.itemId);w.CoreNursingExams.start('standard');
-  assert(stored(w).exams.active,'Standard exam must be active for this regression test');
+  const bank=w.CoreNursingExamData.banks.find(b=>b.exams.some(e=>e.stage==='comprehensive'));
+  assert(bank);w.CoreNursingExams.open(bank.itemId);w.CoreNursingExams.start('comprehensive');
+  assert(stored(w).exams.active,'Comprehensive exam must be active for this regression test');
   const before=JSON.stringify(stored(w).exams.active);
   const three=capture(w,'Why is option B not correct?');
   assert.equal(three.sourceType,'exam');assert.equal(three.sourceId,bank.itemId);

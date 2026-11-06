@@ -53,7 +53,7 @@
     const related=form?.querySelector('[data-entry-related] select')?.value;
     return {kind,relatedTo:kind==='request' && ['content','app'].includes(related)?related:''};
   }
-  function inlinePanel(department, type, id, title) { return '<div class="panel inline-question"><h3>Question or request about this topic</h3><textarea maxlength="1000" rows="2" placeholder="Ask a question or describe a change"></textarea>'+typeFields('inline-'+escape(id))+'<p class="note" data-entry-help>Question: ask for an explanation. Choose Request to ask for a change or report a problem.</p><button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save</button><p class="note inline-feedback" role="status"></p></div>'; }
+  function inlinePanel(department, type, id, title) { return '<details class="panel inline-question"><summary>Question or request about this topic</summary><textarea maxlength="1000" rows="2" placeholder="Ask a question or describe a change"></textarea>'+typeFields('inline-'+escape(id))+'<p class="note" data-entry-help>Question: ask for an explanation. Choose Request to ask for a change or report a problem.</p><button type="button" class="primary" data-save-inline="1" data-dept="'+escape(department)+'" data-source-type="'+escape(type)+'" data-source-id="'+escape(id)+'" data-source-title="'+escape(title)+'">Save</button><p class="note inline-feedback" role="status"></p></details>'; }
   document.addEventListener('change',e=>{
     if(e.target.matches('[data-entry-kind]')) {e.target.dataset.manual='true';updateType(e.target.closest('form, .inline-question'));}
   });

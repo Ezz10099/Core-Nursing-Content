@@ -45,7 +45,7 @@ function network(w,runtime,cv,corrupt=false){
  network(w,30,content.contentVersion,true);await w.CoreNursingUpdates.discover();assert(d.querySelector('#updatePopup').hidden);assert(d.querySelector('#syncStatus').textContent.includes('Could not check'));
  network(w,29,content.contentVersion+1);await w.CoreNursingUpdates.discover();assert(!d.querySelector('#updatePopup').hidden);d.querySelector('#popupUpdateNow').click();assert.equal(b.installs(),1);
  w.CoreNursingUpdate.failed('Network error');w.CoreNursingSync.receive(JSON.stringify(content));assert(d.querySelector('#syncStatus').textContent.includes('failed'));assert(!d.querySelector('#updateButton').disabled);w.close();
- b=boot();w=b.w;d=w.document;w.CoreNursingExams.open('heparin');w.CoreNursingExams.start('standard');const before=JSON.stringify(w.localStorage);
+ b=boot();w=b.w;d=w.document;w.CoreNursingExams.open('heparin');w.CoreNursingExams.start('comprehensive');const before=JSON.stringify(w.localStorage);
  network(w,30,content.contentVersion);await w.CoreNursingUpdates.discover();assert(d.querySelector('#updatePopup').hidden,'Never interrupt an active exam with an update popup');assert(!d.querySelector('#updateNotice').hidden);assert.equal(JSON.stringify(w.localStorage),before);w.close();
  console.log('PASS: prominent update control, separate app/content versions, signed discovery, popup/focus/dismissal, explicit installation, failed/offline checks, and no exam interruption');
 })().catch(error=>{console.error(error);process.exit(1)});
