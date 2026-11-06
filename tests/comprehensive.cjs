@@ -55,7 +55,7 @@ console.log('PASS: all '+banks.length+' comprehensive banks, exact error thresho
  restored.active.answers=Object.fromEntries(restored.active.form.questions.map(q=>[q.id,right(q)]));
  C.submit(restored,101);const rec=C.item(restored,bank.itemId),due=clone(rec.due),history=JSON.stringify(rec.attempts);
  C.start(restored,bank,'7-day',due.at);
- assert.equal(restored.active.form.correctionRevision,'drug-dependent-20261106');
+ assert.equal(restored.active.form.correctionRevision,bank.exams[0].correctionRevision);
  assert.equal(JSON.stringify(rec.attempts),history);assert.deepEqual(rec.due,due);
  const rate=restored.active.form.questions.find(q=>q.learningPointIds[0].endsWith('::slow_iv'));
  assert.equal(rate.format,'numeric-entry');assert.equal(rate.answer,2);

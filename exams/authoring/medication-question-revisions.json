@@ -10,12 +10,12 @@
         "administration"
       ],
       "question": {
-        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Continuous ECG and BP monitoring are already arranged. Enter the number in minutes.",
+        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Enter the number in minutes.",
         "format": "numeric-entry",
         "answer": 2,
         "unit": "minutes",
         "tolerance": 0,
-        "explanation": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
+        "explanation": "The referenced initial IV injection is administered over at least 2 minutes in non-elderly adults. This is a minimum administration time, not a dose.",
         "point": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
         "criticalForSafety": true
       }
@@ -3736,34 +3736,35 @@
         "monitor",
         "why"
       ],
+      "reason": "Require both the UFH-response assay and the reason accurate delivery does not guarantee response. Avoid a redundant standalone variability item.",
       "question": {
         "format": "single-best-answer",
-        "stem": "A patient is receiving a therapeutic IV UFH infusion. Which result is used to assess its anticoagulant effect for titration under the authorized protocol?",
+        "stem": "Which test-and-rationale pairing supports monitoring a therapeutic UFH infusion?",
+        "answerKey": "A",
+        "point": "Select the authorized UFH response assay and recognize variability despite accurate dose delivery.",
+        "criticalForSafety": true,
         "choices": [
           {
             "id": "A",
-            "text": "aPTT or a UFH-calibrated anti-factor Xa result, as specified by protocol",
-            "explanation": "Therapeutic unfractionated heparin is commonly monitored with aPTT or UFH-specific anti-Xa measurement under an authorized titration protocol."
+            "text": "aPTT or UFH-calibrated anti-Xa; response can vary despite accurate delivery",
+            "explanation": "The selected assay measures UFH response; pump accuracy does not guarantee an appropriate biological effect."
           },
           {
             "id": "B",
-            "text": "INR alone, using the warfarin target range",
-            "explanation": "INR is primarily used to monitor vitamin K antagonist treatment, not therapeutic UFH infusion titration."
+            "text": "INR; response can vary despite accurate delivery",
+            "explanation": "The rationale is relevant, but INR is not the routine UFH titration assay."
           },
           {
             "id": "C",
-            "text": "Platelet count alone, even when the measured coagulation effect is unknown",
-            "explanation": "Platelet monitoring detects thrombocytopenia/HIT but does not replace the authorized UFH-effect test."
+            "text": "aPTT or UFH-calibrated anti-Xa; response is fixed once delivery is correct",
+            "explanation": "The assay is appropriate, but a correct delivered dose does not establish a fixed anticoagulant response."
           },
           {
             "id": "D",
-            "text": "Hemoglobin alone, if the patient has no visible bleeding",
-            "explanation": "Hemoglobin is useful for bleeding assessment but does not quantify the heparin anticoagulant effect."
+            "text": "INR; response is fixed once delivery is correct",
+            "explanation": "Both the routine titration assay and the fixed-response assumption are incorrect."
           }
-        ],
-        "answerKey": "A",
-        "point": "Identify appropriate coagulation-effect testing for a UFH infusion, separately from platelet and bleeding surveillance.",
-        "criticalForSafety": true
+        ]
       }
     },
     "ccu-heparin-ufh::infusion_precision": {
@@ -3782,6 +3783,186 @@
         "point": "Calculate an ordered UFH dose in units/hour from the verified bag concentration in units/mL.",
         "criticalForSafety": true
       }
+    },
+    "ccu-heparin-ufh::bleeding": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "During a UFH infusion, a patient develops hematemesis and a falling BP. What is the immediate medication-related action?",
+        "choices": [
+          {
+            "text": "Stop UFH and urgently escalate the bleeding and hemodynamic change",
+            "explanation": "Major bleeding requires prompt cessation and urgent assessment; do not wait for a scheduled coagulation result.",
+            "id": "A"
+          },
+          {
+            "text": "Reduce UFH by half and wait for the next scheduled aPTT",
+            "explanation": "An arbitrary rate reduction delays the response to major bleeding.",
+            "id": "B"
+          },
+          {
+            "text": "Maintain UFH until a new aPTT result confirms over-anticoagulation",
+            "explanation": "Major bleeding is an urgent clinical finding even before a new result returns.",
+            "id": "C"
+          },
+          {
+            "text": "Pause UFH and restart after confirming the pump settings",
+            "explanation": "A delivery check does not resolve active major bleeding.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Respond promptly to major bleeding during UFH infusion.",
+        "criticalForSafety": true
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-verapamil::bradycardia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new pattern during IV verapamil most closely matches its important cardiac and circulatory adverse effects?",
+        "choices": [
+          {
+            "text": "Bradycardia, AV block and significant hypotension",
+            "explanation": "Verapamil can depress AV conduction and myocardial activity while lowering BP.",
+            "id": "A"
+          },
+          {
+            "text": "Tachycardia, AV block and significant hypotension",
+            "explanation": "AV block and hypotension fit the risk profile, but bradycardia is the expected cardiac-slowing effect in this comparison.",
+            "id": "B"
+          },
+          {
+            "text": "Bradycardia, accelerated AV conduction and significant hypotension",
+            "explanation": "Verapamil slows AV conduction rather than accelerating it.",
+            "id": "C"
+          },
+          {
+            "text": "Bradycardia, AV block and significant hypertension",
+            "explanation": "The important pressure-lowering adverse effect is hypotension rather than hypertension.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize bradycardia, AV block and significant hypotension as verapamil adverse effects.",
+        "criticalForSafety": true
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-verapamil::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which target and site explain verapamil’s direct effects on cardiac conduction and contractility?",
+        "choices": [
+          {
+            "text": "L-type calcium channels in the AV node and myocardium",
+            "explanation": "Verapamil blocks these calcium channels, slowing AV conduction and myocardial activity.",
+            "id": "A"
+          },
+          {
+            "text": "L-type calcium channels predominantly in arteriolar smooth muscle",
+            "explanation": "This mainly vascular description does not identify the cardiac AV-node/myocardial site needed here.",
+            "id": "B"
+          },
+          {
+            "text": "Fast sodium channels in the AV node and myocardium",
+            "explanation": "Verapamil’s relevant target is the L-type calcium channel rather than the fast sodium channel.",
+            "id": "C"
+          },
+          {
+            "text": "Potassium channels in the AV node and myocardium",
+            "explanation": "Verapamil’s relevant channel target is calcium rather than potassium.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify L-type calcium-channel blockade in the AV node and myocardium.",
+        "criticalForSafety": false
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-furosemide::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which renal target and site match furosemide?",
+        "choices": [
+          {
+            "text": "Na-K-2Cl cotransporter in the thick ascending loop of Henle",
+            "explanation": "Furosemide inhibits this transporter, producing loop diuresis.",
+            "id": "A"
+          },
+          {
+            "text": "Na-K-2Cl cotransporter in the proximal tubule",
+            "explanation": "The transporter is associated with furosemide, but the renal site is the thick ascending limb rather than the proximal tubule.",
+            "id": "B"
+          },
+          {
+            "text": "Na-Cl cotransporter in the thick ascending loop of Henle",
+            "explanation": "The loop site is relevant, but furosemide inhibits Na-K-2Cl rather than the thiazide-sensitive Na-Cl cotransporter.",
+            "id": "C"
+          },
+          {
+            "text": "Mineralocorticoid receptor in the thick ascending loop of Henle",
+            "explanation": "Furosemide acts on the Na-K-2Cl cotransporter, not the mineralocorticoid receptor.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Locate furosemide action at the Na-K-2Cl transporter in the thick ascending loop of Henle.",
+        "criticalForSafety": false
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ed-captopril-tablets::ace_history": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "stem": "Which previous reaction is a contraindication to captopril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Uncomplicated nitrate headache",
+            "explanation": "This does not establish ACE-associated angioedema."
+          },
+          {
+            "id": "B",
+            "text": "Isolated opioid constipation",
+            "explanation": "This is a different adverse effect and mechanism."
+          },
+          {
+            "id": "C",
+            "text": "Isolated metformin stomach upset",
+            "explanation": "This is not the stated ACE-inhibitor contraindication."
+          },
+          {
+            "id": "D",
+            "text": "ACE-inhibitor angioedema",
+            "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
+          }
+        ],
+        "format": "single-best-answer",
+        "point": "Prior ACE-inhibitor angioedema makes repeat ACE exposure unsafe.",
+        "criticalForSafety": false,
+        "answerKey": "D"
+      },
+      "reason": "Correct copied enalapril wording in the captopril exam; preserve the ACE-inhibitor-angioedema answer contract."
     }
   },
   "evidenceChecks": [
@@ -3812,14 +3993,14 @@
     }
   ],
   "coverageRevisions": {
-    "ed-ondansetron-provisional-shelf": "formulation-quality-audit-20261106",
+    "ed-ondansetron-provisional-shelf": "fact-coverage-batch-20261106-r2",
     "ed-decort-dexamethasone": "formulation-quality-audit-20261106",
     "ed-hexakapron-tranexamic": "formulation-quality-audit-20261106",
     "ed-vitamin-k-phytonadione": "formulation-quality-audit-20261106",
     "verified-alteplase-v35": "drug-coverage-20261106",
     "ccu-norepinephrine": "drug-choice-audit-20261106-v2",
     "ibd2-vancomycin": "drug-coverage-20261106",
-    "ccu-heparin-ufh": "ufh-source-fact-review-20261106",
+    "ccu-heparin-ufh": "fact-coverage-batch-20261106-r2",
     "ccu-adenosine": "drug-coverage-20261106",
     "ed-omnic-tamsulosin": "formulation-quality-audit-20261106",
     "ccu-dopamine": "drug-choice-audit-20261106-v2",
@@ -3838,7 +4019,10 @@
     "ibd2-prothiazine": "formulation-quality-audit-20261106",
     "ccu-isosorbide-dinitrate": "formulation-quality-audit-20261106",
     "trolley-amiodarone": "formulation-quality-audit-20261106",
-    "ibd2-clindamycin": "formulation-quality-audit-20261106"
+    "ibd2-clindamycin": "formulation-quality-audit-20261106",
+    "ccu-verapamil": "fact-coverage-batch-20261106-r2",
+    "ccu-furosemide": "fact-coverage-batch-20261106-r2",
+    "ed-captopril-tablets": "fact-coverage-batch-20261106-r2"
   },
   "roleReviewRevision": "drug-role-20261106-batch4"
 }

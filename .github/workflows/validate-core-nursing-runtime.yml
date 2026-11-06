@@ -51,6 +51,7 @@ jobs:
           python scripts/build_exams.py --check
           python tests/exam-banks.py
           python tests/medication-runtime-coverage.py
+          python tests/source-fact-coverage.py
           python scripts/build_runtime_exam_data.py --check
           node tests/exam-core.cjs
           node tests/comprehensive.cjs

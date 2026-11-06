@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "revision": "fact-coverage-batch-20261106-r2",
+  "status": "Staging author revision checked against regenerated runtime; independent clinical review, local product/protocol checks and full 82-medication coverage remain incomplete.",
+  "newQuestions": [
+    {
+      "itemId": "ccu-heparin-ufh",
+      "concept": "heparin_routes",
+      "sourceField": "administration",
+      "sourceExcerpt": "May be SC or IV depending on the order",
+      "point": "Identify IV and SC as UFH administration routes; do not infer regimen interchangeability."
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "concept": "heparin_delivery_monitoring",
+      "sourceField": "administration",
+      "sourceExcerpt": "Therapeutic IV infusion requires a controlled pump",
+      "point": "Recall the device required to control a continuous therapeutic UFH infusion."
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "concept": "heparin_platelet_surveillance",
+      "sourceField": "monitor",
+      "sourceExcerpt": "platelet counts",
+      "point": "Recognize the need for platelet surveillance during UFH even when coagulation response is therapeutic."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "concept": "ondansetron_class_hypersensitivity",
+      "sourceField": "monitor",
+      "sourceExcerpt": "other 5-HT3 antagonists such as granisetron",
+      "point": "Identify prior severe reaction to another 5-HT3 antagonist as a specific hypersensitivity review concern."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "concept": "ondansetron_serotonergic_combination",
+      "sourceField": "monitor",
+      "sourceExcerpt": "serotonergic agents such as tramadol",
+      "point": "Recognize tramadol as a serotonergic co-medication requiring serotonin-syndrome vigilance with ondansetron."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "concept": "ondansetron_bradyarrhythmia",
+      "sourceField": "monitor",
+      "sourceExcerpt": "bradyarrhythmia",
+      "point": "Identify bradyarrhythmia as an ondansetron ECG-monitoring risk independent of other stated factors."
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "concept": "verapamil_iv_monitoring",
+      "sourceField": "administration",
+      "sourceExcerpt": "continuous ECG and BP monitoring",
+      "point": "Recall the required monitoring during IV verapamil rather than receiving it as a stem hint."
+    },
+    {
+      "itemId": "ccu-furosemide",
+      "concept": "furosemide_volume_sodium",
+      "sourceField": "why",
+      "sourceExcerpt": "can deplete electrolytes and volume",
+      "point": "Recognize sodium/water depletion and hypotension as risks of excessive furosemide diuresis."
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "concept": "verapamil_iv_beta",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Do not give IV verapamil close to an IV beta-blocker dose",
+      "point": "Recognize the contraindicated close administration of IV verapamil and an IV beta blocker."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "concept": "ondansetron_qt_comedication",
+      "sourceField": "monitor",
+      "sourceExcerpt": "concomitant QT-prolonging drugs",
+      "point": "Recognize a QT-prolonging co-medication as an independent ondansetron monitoring concern."
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "concept": "verapamil_antianginal",
+      "sourceField": "use",
+      "sourceExcerpt": "antianginal therapy",
+      "point": "Recognize the antianginal role independently from rate control."
+    }
+  ],
+  "revisedQuestions": [
+    {
+      "itemId": "ccu-heparin-ufh",
+      "concept": "bleeding",
+      "point": "Respond promptly to major bleeding during UFH infusion."
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "concept": "bradycardia",
+      "point": "Recognize bradycardia, AV block and significant hypotension as verapamil adverse effects."
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "concept": "principal-action",
+      "point": "Identify L-type calcium-channel blockade in the AV node and myocardium."
+    },
+    {
+      "itemId": "ccu-furosemide",
+      "concept": "principal-action",
+      "point": "Locate furosemide action at the Na-K-2Cl transporter in the thick ascending loop of Henle."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "concept": "ondansetron_cardiac_qt_risk",
+      "point": "Test heart failure independently rather than crediting a combined HF-plus-amiodarone scenario for both facts."
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "concept": "slow_iv",
+      "point": "Remove the ECG/BP answer from the time-question stem so it does not disclose the separate monitoring answer."
+    },
+    {
+      "itemId": "ed-captopril-tablets",
+      "concept": "ace_history",
+      "point": "Correct enalapril name in captopril question; no new clinical conclusion or complete captopril audit is claimed."
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "concept": "heparin_samples",
+      "point": "Require both coagulation-test selection and understanding of variable response in a paired question."
+    }
+  ],
+  "evidence": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c181d7e-aed2-4975-30ac-d39a94cca7ec",
+      "checkedDate": "2026-11-06",
+      "scope": "UFH routes, bleeding, platelet surveillance and variable response"
+    },
+    {
+      "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+      "checkedDate": "2026-11-06",
+      "scope": "Controlled infusion delivery and response monitoring; foreign guideline, not Gaza facility protocol"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a44601b-c31c-4779-a688-28cc4cc75e8b",
+      "checkedDate": "2026-11-06",
+      "scope": "Ondansetron class hypersensitivity, serotonergic medicines and bradyarrhythmia"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7a749d0-4ab3-4fbb-8d7b-e09d68413c41",
+      "checkedDate": "2026-11-06",
+      "scope": "Verapamil monitoring and conduction/BP effects"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddfc41a9-37d4-49c1-bbf3-969a98cd649c",
+      "checkedDate": "2026-11-06",
+      "scope": "Furosemide renal site and sodium/volume loss"
+    }
+  ],
+  "teachingCorrections": [
+    {
+      "itemId": "ccu-verapamil",
+      "field": "monitor",
+      "change": "Replace vague caution with the referenced injection label’s contraindication on close IV beta-blocker exposure."
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "field": "monitor",
+      "change": "Explicit immediate UFH cessation and urgent escalation for major bleeding."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "field": "monitor",
+      "change": "Name granisetron and tramadol as examples of already-taught class hypersensitivity and serotonergic concerns."
+    }
+  ],
+  "authorQuestionReview": {
+    "scope": "Actual scored stems, choices/accepted answers, keys and explanations for this batch",
+    "checks": [
+      "Source fact required to answer rather than merely present in a stem",
+      "Split independent QT risks into separate scored questions",
+      "Parallel alternatives that isolate channel/site or assay/rationale dimensions",
+      "No long-key cue accepted as a quality guarantee",
+      "Remove cross-question monitoring hint from verapamil time question"
+    ],
+    "limits": [
+      "This is an author self-review, not an independent clinician review.",
+      "No empirical difficulty or discrimination measurement.",
+      "Other questions and unresolved source facts remain open."
+    ]
+  }
+}
