@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "revision": "drug-dependent-20261106",
+  "checkedDate": "2026-11-06",
+  "reviewStatus": "Targeted author revision; not independent clinical validation or measured difficulty.",
+  "items": {
+    "ccu-verapamil::slow_iv": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Continuous ECG and BP monitoring are already arranged. Enter the number in minutes.",
+        "format": "numeric-entry",
+        "answer": 2,
+        "unit": "minutes",
+        "tolerance": 0,
+        "explanation": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
+        "point": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-furosemide::slow_iv": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "stem": "For the controlled high-dose IV furosemide infusion described in the material, which rate ceiling applies? Enter the number in mg/min.",
+        "format": "numeric-entry",
+        "answer": 4,
+        "unit": "mg/min",
+        "tolerance": 0,
+        "explanation": "High-dose parenteral therapy should avoid rates above 4 mg/min; this is not a default dose.",
+        "point": "High-dose parenteral therapy should avoid rates above 4 mg/min; this is not a default dose.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-labetalol::slow_iv": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "stem": "The verified labetalol 5 mg/mL injection is ordered as a slow IV injection. Over approximately how long is the referenced injection given? Enter the number in minutes.",
+        "format": "numeric-entry",
+        "answer": 2,
+        "unit": "minutes",
+        "tolerance": 0,
+        "explanation": "The referenced product describes injection over 2 minutes with BP reassessment.",
+        "point": "The referenced product describes injection over 2 minutes with BP reassessment.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-ketamine::slow_iv": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "stem": "For IV anesthetic induction, over approximately how long does the referenced ketamine labeling describe giving the injection? Enter the number in seconds.",
+        "format": "numeric-entry",
+        "answer": 60,
+        "unit": "seconds",
+        "tolerance": 0,
+        "explanation": "Rapid IV ketamine can cause respiratory depression and an excessive pressor response.",
+        "point": "Rapid IV ketamine can cause respiratory depression and an excessive pressor response.",
+        "criticalForSafety": true
+      }
+    },
+    "ed-hexakapron-tranexamic::slow_iv": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "stem": "What maximum rate applies to the undiluted 100 mg/mL IV tranexamic acid product described in the material? Enter the number in mL/min.",
+        "format": "numeric-entry",
+        "answer": 1,
+        "unit": "mL/min",
+        "tolerance": 0,
+        "explanation": "This ceiling reduces rapid-administration hypotension; diluted products have concentration-specific instructions.",
+        "point": "This ceiling reduces rapid-administration hypotension; diluted products have concentration-specific instructions.",
+        "criticalForSafety": true
+      }
+    },
+    "trolley-29::slow_iv": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ibd2-scobutyl-hyoscine-butylbromide::slow_iv": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-propranolol::slow_iv": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-pethidine::slow_iv": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-morphine::slow_iv": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "trolley-hydralazine::slow_iv": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ed-novalgin-metamizole::slow_iv": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "verified-losartan::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-isosorbide-mononitrate::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-isosorbide-dinitrate::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-bisoprolol::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-metoprolol::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-propranolol::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-amlodipine::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-verapamil::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-enalapril::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-furosemide::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-dapagliflozin::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-valzadepine::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-valzan-hct::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-labetalol::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-pethidine::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ccu-morphine::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "trolley-spironolactone::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "trolley-hydralazine::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "trolley-diazepam::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "trolley-amiodarone::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ed-novalgin-metamizole::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ed-captopril-tablets::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    },
+    "ed-omnic-tamsulosin::hypotension": {
+      "action": "omit",
+      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
+      "unresolvedCoverage": true
+    }
+  },
+  "evidenceChecks": [
+    {
+      "checkedDate": "2026-11-06",
+      "scope": "Verapamil: adult non-elderly IV minimum 2 minutes with ECG/BP",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7a749d0-4ab3-4fbb-8d7b-e09d68413c41"
+    },
+    {
+      "checkedDate": "2026-11-06",
+      "scope": "Furosemide: controlled IV infusion not above 4 mg/min",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddfc41a9-37d4-49c1-bbf3-969a98cd649c"
+    },
+    {
+      "checkedDate": "2026-11-06",
+      "scope": "Labetalol: referenced 5 mg/mL product injection over 2 minutes",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b96ddc9-d0c3-488a-a113-66491fd3d899"
+    },
+    {
+      "checkedDate": "2026-11-06",
+      "scope": "Ketamine: IV anesthetic induction slow over 60 seconds",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8b01c77-620d-4734-a771-b8524b65bcca"
+    },
+    {
+      "checkedDate": "2026-11-06",
+      "scope": "Tranexamic acid: undiluted 100 mg/mL not above 1 mL/min",
+      "url": "https://dailymed-us-east-1.awsprod.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28ccedba-99cd-49f3-a782-798df5258524"
+    }
+  ]
+}

@@ -92,7 +92,7 @@
     let form=bank.exams.find(e=>e.stage===stage),formBankVersion=bank.bankVersion;
     if(!form)throw Error('Questions for this exam have not been added yet.');
     if(modern(form)){
-      if(record.comprehensiveForm&&record.comprehensiveSourceKey===sourceKey){
+      if(record.comprehensiveForm&&record.comprehensiveSourceKey===sourceKey&&record.comprehensiveForm.correctionRevision===form.correctionRevision){
         form={...clone(record.comprehensiveForm),stage,id:bank.itemId+'--'+stage};
         formBankVersion=record.comprehensiveBankVersion;
       }else{
@@ -123,6 +123,9 @@
     }
     const followups={};
     for(const q of form.questions.filter(q=>q.criticalForSafety)){
+      // A corrected drug-specific item must not fall back to the superseded
+      // generic template during a safety check.
+      if(q.revision)continue;
       const alternate=[...bank.exams,...(bank.legacyExams||[])].flatMap(e=>e.questions).find(other=>other.id!==q.id&&other.learningPointIds.some(p=>q.learningPointIds.includes(p)));
       if(alternate)followups[q.id]=clone(alternate);
     }
