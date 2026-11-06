@@ -7339,24 +7339,24 @@
     "criticalForSafety": true,
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which abnormal laboratory finding most directly increases QT-related arrhythmia concern before IV ondansetron?",
+      "stem": "Which pair of electrolyte abnormalities should raise concern about QT-related arrhythmias before IV ondansetron?",
       "correct": 0,
       "choices": [
         {
-          "text": "Potassium 2.8 mmol/L",
-          "explanation": "Hypokalemia is a specific ECG-monitoring risk with ondansetron."
+          "text": "Hypokalemia and hypomagnesemia",
+          "explanation": "Low potassium or magnesium increases susceptibility to ondansetron-associated QT prolongation; ECG monitoring and clinical review are indicated."
         },
         {
-          "text": "Sodium 128 mmol/L",
-          "explanation": "Hyponatremia needs assessment but does not identify the specific QT electrolyte warning."
+          "text": "Hypernatremia and hyperchloremia",
+          "explanation": "These abnormalities are not the specific paired QT-risk factors identified in ondansetron labeling."
         },
         {
-          "text": "Hemoglobin 8.5 g/dL",
-          "explanation": "Anemia is important but is not the electrolyte-related QT warning asked about."
+          "text": "Hypoglycemia and hyperphosphatemia",
+          "explanation": "These findings can need assessment but are not the label's characteristic QT-related electrolyte pair."
         },
         {
-          "text": "Glucose 250 mg/dL",
-          "explanation": "Hyperglycemia is not the particular electrolyte risk for ondansetron QT prolongation."
+          "text": "Hyperchloremia and low bicarbonate",
+          "explanation": "This suggests an acid-base concern, not the characteristic ondansetron QT-risk electrolyte pair."
         }
       ]
     }
@@ -7650,6 +7650,90 @@
         {
           "text": "Open the capsule and mix its contents into food",
           "explanation": "The referenced modified-release capsule should be swallowed whole."
+        }
+      ]
+    }
+  },
+  "vitk_inr_followup": {
+    "point": "Use PT/INR as the direct laboratory reassessment of vitamin-K-antagonist effect after indicated phytonadione therapy.",
+    "anchor": "Check PT/INR",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "After phytonadione is administered for excessive warfarin anticoagulation, which laboratory trend directly evaluates the intended reversal response?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "PT/INR over the ordered reassessment interval",
+          "explanation": "INR directly tracks vitamin-K-antagonist anticoagulation; the response to phytonadione develops over hours."
+        },
+        {
+          "text": "aPTT as the only anticoagulation measure",
+          "explanation": "aPTT is commonly used in heparin pathways, but INR is the main warfarin-response measure."
+        },
+        {
+          "text": "Platelet count as the sole reversal marker",
+          "explanation": "Platelet count assesses thrombocytopenia, not restoration of vitamin-K-dependent factor function."
+        },
+        {
+          "text": "D-dimer as the direct measure of corrected INR",
+          "explanation": "D-dimer reflects fibrin turnover and does not replace INR monitoring after warfarin reversal."
+        }
+      ]
+    }
+  },
+  "txa_pph_source_control": {
+    "point": "Identify that TXA cannot replace haemorrhage source control and the other elements of the postpartum-haemorrhage response bundle.",
+    "anchor": "Does not replace source control",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A woman with postpartum haemorrhage receives ordered IV tranexamic acid, but a cervical laceration continues bleeding. Which intervention remains essential?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Urgent examination and control of the laceration alongside ongoing PPH resuscitation",
+          "explanation": "TXA reduces fibrinolysis but cannot repair a bleeding laceration or replace examination, source control, fluids, uterotonics when indicated and escalation."
+        },
+        {
+          "text": "Repeated uterine massage alone because tranexamic acid covers genital-tract trauma",
+          "explanation": "Uterine massage addresses uterine tone; it does not close a cervical laceration."
+        },
+        {
+          "text": "Observing for the full response to TXA before examining the genital tract",
+          "explanation": "PPH treatment requires prompt examination for bleeding causes and timely source control, rather than waiting for TXA alone."
+        },
+        {
+          "text": "Treating the laceration only after a second tranexamic acid course is completed",
+          "explanation": "TXA is an adjunct. Treatment of ongoing traumatic bleeding must not be delayed for repeat dosing."
+        }
+      ]
+    }
+  },
+  "norepi_extravasation_action": {
+    "point": "Stop norepinephrine infusion at a suspected extravasation site and promptly escalate for site management and alternate safe access.",
+    "anchor": "Pain, pallor, swelling, coolness or loss of flow",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "During peripheral norepinephrine infusion, the cannula site becomes painful, pale and swollen. The nurse suspects extravasation. What is the immediate priority?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop infusion through that site, seek alternate access and activate the extravasation protocol",
+          "explanation": "Local tissue ischemia can progress rapidly; stop the affected infusion, avoid flushing, preserve the cannula initially when the protocol calls for aspiration and alert the team."
+        },
+        {
+          "text": "Flush the cannula with saline and then resume the previous pump rate",
+          "explanation": "Flushing can force additional norepinephrine into tissue and worsen the extravasation injury."
+        },
+        {
+          "text": "Increase the infusion rate through the same cannula until the blood pressure improves",
+          "explanation": "Escalating the rate through compromised access can aggravate ischemic tissue exposure."
+        },
+        {
+          "text": "Continue the infusion while reassessing the site at the next routine observation",
+          "explanation": "Pain, pallor and swelling require immediate response, not delayed observation."
         }
       ]
     }
