@@ -3176,6 +3176,226 @@
         "point": "Distinguish phytonadione cofactor replacement from direct factor replacement, anticoagulation, and fibrinolysis.",
         "criticalForSafety": false
       }
+    },
+    "ccu-dopamine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which description correctly classifies dopamine's hemodynamic drug effects?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Catecholamine with dose-dependent inotropic and vasopressor effects",
+            "explanation": "The taught dopamine profile includes dose-dependent dopaminergic and adrenergic activity with both inotropic and vasopressor potential."
+          },
+          {
+            "id": "B",
+            "text": "Non-catecholamine V1-receptor agonist producing isolated vasoconstriction",
+            "explanation": "This describes vasopressin, not dopamine's dose-dependent catecholamine receptor activity."
+          },
+          {
+            "id": "C",
+            "text": "Selective beta-1 blocker used to reduce myocardial contractility",
+            "explanation": "Beta blockers reduce adrenergic stimulation; dopamine is not a beta blocker."
+          },
+          {
+            "id": "D",
+            "text": "Direct smooth-muscle vasodilator used for hypertensive emergencies",
+            "explanation": "Dopamine is not a direct antihypertensive vasodilator."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize dopamine as a catecholamine with dose-dependent inotropic and vasopressor effects.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-dobutamine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which functional drug category best fits dobutamine in a selected low-output state?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Beta-1-predominant positive inotrope supporting cardiac contractility",
+            "explanation": "The study entry describes predominantly beta-1 activity to improve myocardial contraction in selected low-output states."
+          },
+          {
+            "id": "B",
+            "text": "Alpha-1-predominant vasopressor used mainly to raise vascular resistance",
+            "explanation": "This is a vasopressor profile rather than dobutamine's predominant inotropic purpose."
+          },
+          {
+            "id": "C",
+            "text": "Beta-1 adrenergic blocker used to slow cardiac stimulation",
+            "explanation": "A beta-1 blocker inhibits rather than stimulates beta-1 effects."
+          },
+          {
+            "id": "D",
+            "text": "Direct vasodilator used primarily to reduce arterial pressure",
+            "explanation": "This does not describe dobutamine's principal low-output treatment role."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize dobutamine as a predominantly beta-1 positive inotrope rather than a primary vasopressor or blocker.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-diclofenac-injection::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which analgesic class and action best describe injectable diclofenac?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Cyclooxygenase-inhibiting NSAID with analgesic and anti-inflammatory action",
+            "explanation": "Diclofenac is an NSAID that reduces prostaglandin synthesis through cyclooxygenase inhibition."
+          },
+          {
+            "id": "B",
+            "text": "Mu-opioid receptor agonist producing centrally mediated analgesia",
+            "explanation": "This describes an opioid-type analgesic, not diclofenac."
+          },
+          {
+            "id": "C",
+            "text": "Glucocorticoid regulating inflammatory gene transcription",
+            "explanation": "This describes corticosteroids, not a diclofenac NSAID."
+          },
+          {
+            "id": "D",
+            "text": "Pyrazolone-derived non-opioid analgesic with a different risk profile",
+            "explanation": "This describes metamizole's analgesic family, not diclofenac's NSAID classification."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify diclofenac as a cyclooxygenase-inhibiting NSAID rather than an opioid, steroid, or pyrazolone.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-novalgin-metamizole::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which more specific analgesic classification fits metamizole (Novalgin)?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Pyrazolone-derived non-opioid analgesic and antipyretic",
+            "explanation": "The study entry identifies metamizole as a pyrazolone derivative with non-opioid analgesic and antipyretic effects."
+          },
+          {
+            "id": "B",
+            "text": "Propionic-acid NSAID such as ibuprofen",
+            "explanation": "Ibuprofen is a propionic-acid NSAID; metamizole is a pyrazolone derivative."
+          },
+          {
+            "id": "C",
+            "text": "Mu-opioid receptor agonist such as morphine",
+            "explanation": "Metamizole is not classified as an opioid agonist."
+          },
+          {
+            "id": "D",
+            "text": "Glucocorticoid anti-inflammatory agent such as dexamethasone",
+            "explanation": "Metamizole is not a corticosteroid."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish metamizole's pyrazolone non-opioid analgesic class from other common pain medicine families.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-calcium-gluconate::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which parenteral medication category most specifically describes calcium gluconate?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Calcium salt used for calcium replacement and cardiac membrane stabilization",
+            "explanation": "This describes the taught IV calcium gluconate class and its important clinical uses."
+          },
+          {
+            "id": "B",
+            "text": "Magnesium salt used in selected ventricular arrhythmias and deficiency",
+            "explanation": "Magnesium sulfate is a different electrolyte salt."
+          },
+          {
+            "id": "C",
+            "text": "Sodium-based alkalinizing solution used in selected acid-base disorders",
+            "explanation": "Sodium bicarbonate is a different parenteral drug category."
+          },
+          {
+            "id": "D",
+            "text": "Concentrated intravenous glucose used for hypoglycemia treatment",
+            "explanation": "Dextrose is a glucose solution, not a calcium preparation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize IV calcium gluconate as a calcium salt, distinct from magnesium replacement, bicarbonate, and dextrose.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-sodium-bicarbonate::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "When used for a selected metabolic or toxicologic indication, how is IV sodium bicarbonate best classified?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Systemic alkalinizing agent supplying bicarbonate buffer",
+            "explanation": "The source describes sodium bicarbonate as a systemic alkalinizer that changes acid-base chemistry."
+          },
+          {
+            "id": "B",
+            "text": "Parenteral calcium salt stabilizing myocardial membranes",
+            "explanation": "This describes calcium salts, not bicarbonate replacement."
+          },
+          {
+            "id": "C",
+            "text": "Parenteral magnesium salt used in certain arrhythmias",
+            "explanation": "This describes magnesium sulfate, not bicarbonate."
+          },
+          {
+            "id": "D",
+            "text": "Concentrated intravenous glucose correcting hypoglycemia",
+            "explanation": "This describes dextrose, not sodium bicarbonate."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize sodium bicarbonate as a systemic alkalinizing drug rather than a calcium, magnesium, or glucose treatment.",
+        "criticalForSafety": false
+      }
     }
   },
   "evidenceChecks": [
@@ -3215,7 +3435,13 @@
     "ibd2-vancomycin": "drug-coverage-20261106",
     "ccu-heparin-ufh": "drug-coverage-20261106",
     "ccu-adenosine": "drug-coverage-20261106",
-    "ed-omnic-tamsulosin": "drug-coverage-20261106"
+    "ed-omnic-tamsulosin": "drug-coverage-20261106",
+    "ccu-dopamine": "drug-choice-audit-20261106-v2",
+    "ccu-dobutamine": "drug-choice-audit-20261106-v2",
+    "ed-diclofenac-injection": "drug-choice-audit-20261106-v2",
+    "ed-novalgin-metamizole": "drug-choice-audit-20261106-v2",
+    "trolley-calcium-gluconate": "drug-choice-audit-20261106-v2",
+    "trolley-sodium-bicarbonate": "drug-choice-audit-20261106-v2"
   },
   "roleReviewRevision": "drug-role-20261106-batch4"
 }
