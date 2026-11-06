@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "revision": "drug-dependent-20261106",
   "checkedDate": "2026-11-06",
-  "reviewStatus": "Targeted author revision; not independent clinical validation or measured difficulty.",
+  "reviewStatus": "Targeted medication-role question revision with source verification; not independent clinical validation or empirically calibrated difficulty.",
   "items": {
     "ccu-verapamil::slow_iv": {
       "action": "replace",
@@ -233,6 +233,531 @@
       "action": "omit",
       "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
       "unresolvedCoverage": true
+    },
+    "verified-alteplase-v35::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which situation best matches a potential indication for IV alteplase after the required stroke eligibility assessment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "An acute disabling ischemic stroke with brain hemorrhage excluded",
+            "explanation": "Alteplase may be used for eligible acute ischemic stroke after imaging and contraindication screening."
+          },
+          {
+            "id": "B",
+            "text": "A suspected acute stroke before brain imaging",
+            "explanation": "Brain imaging must exclude hemorrhage before stroke thrombolysis."
+          },
+          {
+            "id": "C",
+            "text": "A confirmed acute intracranial hemorrhagic stroke",
+            "explanation": "Alteplase increases bleeding and is not an ischemic stroke treatment when hemorrhage is present."
+          },
+          {
+            "id": "D",
+            "text": "Transient symptoms fully resolved without disabling deficit",
+            "explanation": "Complete resolution without a disabling deficit does not establish a routine IV-thrombolysis indication."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-hexakapron-tranexamic::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which role best describes IV tranexamic acid in a patient with diagnosed postpartum hemorrhage soon after birth?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "An early antifibrinolytic adjunct to standard hemorrhage treatment",
+            "explanation": "TXA is recommended early as part of the postpartum-hemorrhage treatment bundle, not in place of source control."
+          },
+          {
+            "id": "B",
+            "text": "The uterotonic that directly contracts an atonic uterus",
+            "explanation": "Oxytocics treat uterine atony; TXA limits fibrin-clot breakdown rather than contracting the uterus."
+          },
+          {
+            "id": "C",
+            "text": "The blood component used to replace depleted red cells",
+            "explanation": "TXA is not a transfusion product and does not correct anemia."
+          },
+          {
+            "id": "D",
+            "text": "The sole replacement for fluid resuscitation and source control",
+            "explanation": "TXA is an adjunct and does not replace fluids, uterotonics, investigation or escalation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-ondansetron-provisional-shelf::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which symptom-management role is most appropriate for ondansetron?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prevention or relief of postoperative nausea and vomiting",
+            "explanation": "Ondansetron is a 5-HT3 antagonist used for prevention or treatment of nausea and vomiting."
+          },
+          {
+            "id": "B",
+            "text": "Improving delayed gastric emptying in gastroparesis",
+            "explanation": "A prokinetic is used when accelerating gastric motility is the treatment goal."
+          },
+          {
+            "id": "C",
+            "text": "Treating vestibular motion sickness as first-line therapy",
+            "explanation": "Ondansetron is not an established first-line drug for vestibular motion sickness."
+          },
+          {
+            "id": "D",
+            "text": "Suppressing gastric acid in reflux-related symptoms",
+            "explanation": "Proton-pump inhibitors or other acid-suppressants address acid secretion, not ondansetron's action."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-vancomycin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which infection-related situation most specifically supports selecting IV vancomycin after culture and treatment review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Susceptible MRSA infection involving an orthopedic implant",
+            "explanation": "IV vancomycin treats serious susceptible gram-positive infections, including appropriate MRSA infections."
+          },
+          {
+            "id": "B",
+            "text": "Confirmed susceptible Pseudomonas aeruginosa bloodstream infection",
+            "explanation": "Vancomycin does not provide reliable coverage of gram-negative Pseudomonas."
+          },
+          {
+            "id": "C",
+            "text": "Confirmed susceptible Bacteroides fragilis intra-abdominal infection",
+            "explanation": "Anaerobic gram-negative Bacteroides generally requires another active antimicrobial."
+          },
+          {
+            "id": "D",
+            "text": "Confirmed invasive Candida species bloodstream infection",
+            "explanation": "Vancomycin is an antibacterial and does not treat invasive Candida infection."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-meropenem::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which prescribed treatment role most strongly fits IV meropenem?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Treatment of a serious complicated infection caused by susceptible organisms",
+            "explanation": "Meropenem has a role in selected serious susceptible bacterial infections, including complicated intra-abdominal and skin infections."
+          },
+          {
+            "id": "B",
+            "text": "Routine prophylaxis for every uncomplicated elective operation",
+            "explanation": "Broad-spectrum meropenem is not automatically appropriate for routine clean surgical prophylaxis."
+          },
+          {
+            "id": "C",
+            "text": "Targeted treatment of isolated methicillin-resistant S. aureus bacteremia",
+            "explanation": "Meropenem is not an appropriate targeted MRSA bacteremia agent."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of colonization without evidence of bacterial infection",
+            "explanation": "Antimicrobial treatment should be reserved for a supported infection or authorized prophylactic indication."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-cefazolin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical situation is a characteristic use of IV cefazolin?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Perioperative antibacterial prophylaxis for joint replacement",
+            "explanation": "Cefazolin is commonly indicated for perioperative infection prophylaxis, including prosthetic arthroplasty."
+          },
+          {
+            "id": "B",
+            "text": "Targeted monotherapy for proven MRSA bloodstream infection",
+            "explanation": "Cefazolin does not provide reliable treatment for methicillin-resistant Staphylococcus aureus."
+          },
+          {
+            "id": "C",
+            "text": "Targeted treatment of Pseudomonas aeruginosa bloodstream infection",
+            "explanation": "Cefazolin does not provide antipseudomonal coverage."
+          },
+          {
+            "id": "D",
+            "text": "Targeted therapy for ESBL-producing Enterobacterales sepsis",
+            "explanation": "Cefazolin is not reliable therapy for serious ESBL-producing organism infection."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-norepinephrine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which hemodynamic problem most directly matches the primary role of norepinephrine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Persistent vasodilatory shock with inadequate arterial pressure",
+            "explanation": "Norepinephrine primarily raises vascular tone and supports pressure in shock."
+          },
+          {
+            "id": "B",
+            "text": "Low cardiac output with acceptable MAP requiring added contractility",
+            "explanation": "An inotrope may be needed for low-output physiology despite adequate pressure."
+          },
+          {
+            "id": "C",
+            "text": "Stable hypertension requiring gradual oral pressure reduction",
+            "explanation": "Norepinephrine is a vasopressor and would not be used for chronic BP reduction."
+          },
+          {
+            "id": "D",
+            "text": "Tachyarrhythmia-related instability needing urgent cardioversion",
+            "explanation": "The unstable-tachycardia pathway prioritizes appropriate synchronized cardioversion, not norepinephrine as the rhythm treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-dobutamine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient problem most closely matches the inotropic role of dobutamine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Poor perfusion with depressed cardiac pumping despite adequate pressure",
+            "explanation": "Dobutamine can support contractility in selected low-output states after appropriate volume and pressure assessment."
+          },
+          {
+            "id": "B",
+            "text": "Isolated vasodilatory hypotension with preserved cardiac output",
+            "explanation": "A vasopressor rather than an inotrope is generally the priority for isolated vasoplegia."
+          },
+          {
+            "id": "C",
+            "text": "Hemorrhagic hypotension before bleeding and volume are managed",
+            "explanation": "Controlling bleeding and resuscitating volume take priority; dobutamine does not replace them."
+          },
+          {
+            "id": "D",
+            "text": "Rapid atrial fibrillation requiring immediate ventricular-rate slowing",
+            "explanation": "Dobutamine can increase heart rate and does not provide rate control for AF."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-atropine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which rhythm-related clinical problem best matches indicated atropine treatment in the adult emergency pathway?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Symptomatic bradycardia with signs of poor perfusion",
+            "explanation": "Atropine is a reasonable initial medication for adult symptomatic bradycardia with hemodynamic compromise."
+          },
+          {
+            "id": "B",
+            "text": "Asymptomatic sinus bradycardia without poor perfusion",
+            "explanation": "A stable asymptomatic slow rate alone does not routinely call for atropine."
+          },
+          {
+            "id": "C",
+            "text": "Hemodynamically unstable regular narrow-complex tachycardia",
+            "explanation": "The instability pathway primarily calls for synchronized cardioversion."
+          },
+          {
+            "id": "D",
+            "text": "Pulseless ventricular fibrillation during cardiac arrest",
+            "explanation": "VF requires the shockable-arrest pathway, not atropine as an antiarrhythmic."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-adenosine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which monitored adult rhythm most clearly matches an indicated acute adenosine trial?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hemodynamically stable, regular narrow-complex SVT",
+            "explanation": "Adenosine is indicated in the stable regular narrow-complex tachycardia pathway."
+          },
+          {
+            "id": "B",
+            "text": "Irregular wide-complex tachycardia of uncertain mechanism",
+            "explanation": "Adenosine should not be given empirically in irregular wide-complex tachycardia."
+          },
+          {
+            "id": "C",
+            "text": "Sinus tachycardia caused by untreated fever and dehydration",
+            "explanation": "The underlying cause rather than transient AV block needs treatment."
+          },
+          {
+            "id": "D",
+            "text": "Irregular atrial fibrillation without an organized SVT circuit",
+            "explanation": "Adenosine is not the indicated therapy to terminate atrial fibrillation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-amiodarone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which adult cardiac-arrest rhythm is a recognized indication to consider amiodarone during the appropriate ACLS sequence?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "VF or pulseless VT that remains refractory to defibrillation",
+            "explanation": "AHA guidance allows amiodarone or lidocaine for defibrillation-refractory shockable arrest rhythms."
+          },
+          {
+            "id": "B",
+            "text": "Asystole persisting despite appropriate basic resuscitation",
+            "explanation": "Asystole is nonshockable and amiodarone is not routine treatment for this rhythm."
+          },
+          {
+            "id": "C",
+            "text": "Pulseless electrical activity with an organized ECG pattern",
+            "explanation": "PEA requires reversible-cause treatment and nonshockable arrest care, not routine amiodarone."
+          },
+          {
+            "id": "D",
+            "text": "Sinus bradycardia with hypotension and a present pulse",
+            "explanation": "Symptomatic bradycardia follows a different treatment pathway."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-digoxin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which situation most closely matches the selected rhythm-control role of digoxin?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Ventricular-rate control in selected atrial fibrillation patients",
+            "explanation": "Digoxin can slow ventricular conduction in appropriately selected AF patients."
+          },
+          {
+            "id": "B",
+            "text": "Acute pre-excited AF with rapidly conducting accessory pathway",
+            "explanation": "AV-nodal blockers such as digoxin should be avoided in pre-excited AF."
+          },
+          {
+            "id": "C",
+            "text": "Immediate termination of ventricular fibrillation",
+            "explanation": "VF requires emergency defibrillation, not a ventricular-rate controlling glycoside."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of high-grade AV block with very slow ventricular escape",
+            "explanation": "Digoxin slows AV conduction and may worsen dangerous bradyarrhythmia."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-furosemide::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which assessment most closely matches a clinical reason to give prescribed IV furosemide?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Pulmonary congestion with fluid overload in acute heart failure",
+            "explanation": "IV loop diuretic treatment can relieve volume-overload-associated pulmonary congestion."
+          },
+          {
+            "id": "B",
+            "text": "Severe hypotension after dehydration without congestion",
+            "explanation": "Additional diuresis can worsen volume depletion and hypotension."
+          },
+          {
+            "id": "C",
+            "text": "Oliguria due to obstructed urinary outflow without fluid overload",
+            "explanation": "Treat the urinary obstruction; furosemide does not relieve mechanical outflow blockage."
+          },
+          {
+            "id": "D",
+            "text": "Low cardiac output from shock with depleted intravascular volume",
+            "explanation": "Diuresis is not a substitute for restoring volume and perfusion in hypovolemic shock."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-vitamin-k-phytonadione::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which anticoagulant-related problem is a valid target of phytonadione therapy?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Excess warfarin effect with vitamin-K-dependent factor deficiency",
+            "explanation": "Phytonadione helps restore vitamin-K-dependent clotting-factor activity after excessive warfarin anticoagulation."
+          },
+          {
+            "id": "B",
+            "text": "Excess unfractionated-heparin effect requiring neutralization",
+            "explanation": "Heparin anticoagulation is not reversed by vitamin K; protamine is a different agent."
+          },
+          {
+            "id": "C",
+            "text": "Excess apixaban effect requiring direct factor-Xa reversal",
+            "explanation": "Direct oral factor-Xa inhibition is not reversed by vitamin K."
+          },
+          {
+            "id": "D",
+            "text": "Excess dabigatran effect requiring thrombin-inhibitor reversal",
+            "explanation": "Direct thrombin inhibitors are not reversed by vitamin K."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-heparin-ufh::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which anticoagulation goal fits unfractionated heparin administration?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Preventing extension of a diagnosed acute thrombus under an authorized treatment plan",
+            "explanation": "Unfractionated heparin reduces ongoing thrombin and factor Xa activity to prevent thrombus propagation."
+          },
+          {
+            "id": "B",
+            "text": "Directly dissolving a formed clot by activating plasminogen",
+            "explanation": "Fibrinolytic agents, not UFH, directly promote enzymatic clot breakdown."
+          },
+          {
+            "id": "C",
+            "text": "Reversing warfarin-associated vitamin-K factor suppression",
+            "explanation": "Heparin does not restore vitamin-K-dependent clotting factors."
+          },
+          {
+            "id": "D",
+            "text": "Restoring platelet aggregation after an antiplatelet medicine",
+            "explanation": "Heparin is an anticoagulant, not an antiplatelet reversal agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
     }
   },
   "evidenceChecks": [
@@ -273,5 +798,6 @@
     "ccu-heparin-ufh": "drug-coverage-20261106",
     "ccu-adenosine": "drug-coverage-20261106",
     "ed-omnic-tamsulosin": "drug-coverage-20261106"
-  }
+  },
+  "roleReviewRevision": "drug-role-20261106-batch1"
 }
