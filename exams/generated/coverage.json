@@ -8361,6 +8361,32 @@
       ]
     },
     {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_congenital_qt",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Distinguish the ondansetron label's avoidance recommendation in congenital long-QT syndrome from monitoring precautions for other risk factors.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_congenital_qt",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_congenital_qt"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_cardiac_qt_risk",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Recognize heart failure, bradyarrhythmia and QT-prolonging co-medication as ECG-monitoring risk factors with IV ondansetron.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_cardiac_qt_risk",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_cardiac_qt_risk"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ed-ondansetron-provisional-shelf::formulation",
       "itemId": "ed-ondansetron-provisional-shelf",
       "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
@@ -16256,12 +16282,16 @@
           "ed-ondansetron-provisional-shelf--standard--serotonin",
           "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
           "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_congenital_qt",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_cardiac_qt_risk",
           "ed-ondansetron-provisional-shelf--advanced--qt",
           "ed-ondansetron-provisional-shelf--advanced--serotonin",
           "ed-ondansetron-provisional-shelf--7-day--qt",
           "ed-ondansetron-provisional-shelf--7-day--serotonin",
           "ed-ondansetron-provisional-shelf--7-day--ondansetron_apomorphine",
-          "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors"
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_congenital_qt",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_cardiac_qt_risk"
         ],
         "memoryDanger": [
           "ed-ondansetron-provisional-shelf--standard--qt",
