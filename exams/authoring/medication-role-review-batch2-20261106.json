@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "scope": "Additional 14 medication role-question rewrites plus correction to an earlier vitamin K question to avoid duplicated recall.",
+  "status": "Staged targeted author review; not independent clinical validation or measured difficulty",
+  "newlyRewrittenCount": 14,
+  "reviewedAndReplacedTotal": 29,
+  "remainingRoleQuestions": 53,
+  "items": [
+    {
+      "itemId": "verified-losartan",
+      "learningPointId": "verified-losartan::treatment-role",
+      "stem": "For which cardiovascular-renal goal is long-term losartan most appropriate?",
+      "key": "Managing hypertension with selected diabetic kidney disease",
+      "alternatives": [
+        "Rapid reduction of blood pressure during an acute aortic dissection",
+        "Immediate sublingual relief of an acute angina attack",
+        "Rapid diuresis of pulmonary edema caused by fluid overload"
+      ],
+      "rationale": "Contrasts related cardiovascular therapeutic roles.",
+      "evidence": "DailyMed losartan potassium 2026",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-acamol",
+      "learningPointId": "ibd2-acamol::treatment-role",
+      "stem": "Which patient goal best matches the common nursing use of paracetamol?",
+      "key": "Reducing fever and relieving mild-to-moderate pain",
+      "alternatives": [
+        "Strongly suppressing active joint inflammation as an NSAID",
+        "Providing immediate regional anesthesia for fracture reduction",
+        "Reversing analgesic-related respiratory depression"
+      ],
+      "rationale": "All choices address pain, fever, or analgesic-related treatment, not distant specialties.",
+      "evidence": "Taught content.json use/why",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-trufen",
+      "learningPointId": "ibd2-trufen::treatment-role",
+      "stem": "Which patient most closely matches a reasonable prescribed ibuprofen indication?",
+      "key": "Musculoskeletal pain with inflammatory swelling and no major NSAID risk",
+      "alternatives": [
+        "Inflammatory pain with current upper gastrointestinal hemorrhage",
+        "Joint pain during acute severe dehydration and kidney injury",
+        "Pain in a patient with prior aspirin-provoked severe bronchospasm"
+      ],
+      "rationale": "Indication plus safety screening distinguishes patients rather than rote pain category.",
+      "evidence": "Taught content.json use/monitor",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-tramadol",
+      "learningPointId": "ibd2-tramadol::treatment-role",
+      "stem": "Which use most closely matches tramadol's role in a postoperative ward?",
+      "key": "Prescribed treatment of significant pain when opioid analgesia is justified",
+      "alternatives": [
+        "Replacing naloxone during suspected opioid overdose",
+        "Primary reduction of tissue inflammation without opioid exposure",
+        "Immediate muscle paralysis for painful fracture reduction"
+      ],
+      "rationale": "Clinical analgesia versus common action/mechanism misunderstandings.",
+      "evidence": "Taught content.json use/why",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-prothiazine",
+      "learningPointId": "ibd2-prothiazine::treatment-role",
+      "stem": "Which intended therapeutic goal is consistent with prescribed oral promethazine?",
+      "key": "Relieving nausea or selected histamine-mediated allergic symptoms",
+      "alternatives": [
+        "Reversing excessive opioid-induced respiratory depression",
+        "Correcting delayed gastric transit with a prokinetic mechanism",
+        "Rapidly replacing circulating volume in severe shock"
+      ],
+      "rationale": "Same postoperative symptom-management setting, with route and sedation context.",
+      "evidence": "Taught content.json use/monitor",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-gabapentin",
+      "learningPointId": "ibd2-gabapentin::treatment-role",
+      "stem": "Which pain presentation most reasonably supports a prescribed gabapentin trial?",
+      "key": "Persistent burning or shooting neuropathic pain after nerve injury",
+      "alternatives": [
+        "Acute fracture pain needing immediate emergency analgesia",
+        "Localized inflammatory swelling requiring anti-inflammatory action",
+        "Surgical wound pain needing immediate local nerve anesthesia"
+      ],
+      "rationale": "Distinguishes neuropathic from nociceptive, inflammatory, and local procedural pain.",
+      "evidence": "Taught content.json use; current FDA gabapentin indication distinctions",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-avilac",
+      "learningPointId": "ibd2-avilac::treatment-role",
+      "stem": "Which bowel-care need most closely matches lactulose use in the orthopedic ward?",
+      "key": "Constipation during opioid treatment after bowel obstruction is excluded",
+      "alternatives": [
+        "Marked distension and vomiting with suspected intestinal obstruction",
+        "Acute severe bloody diarrhea with possible intestinal inflammation",
+        "New rigid abdomen and severe unexplained abdominal pain"
+      ],
+      "rationale": "Within gastrointestinal symptoms; appropriate clinical selection requires recognition.",
+      "evidence": "Taught content.json use/monitor",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-carbamazepine",
+      "learningPointId": "ibd2-carbamazepine::treatment-role",
+      "stem": "Which ongoing clinical goal best matches oral carbamazepine treatment?",
+      "key": "Maintaining seizure prevention or controlling selected neuralgic pain",
+      "alternatives": [
+        "Immediate first-line termination of ongoing convulsive status",
+        "Rapid sedation before an emergency bedside procedure",
+        "Reversal of opioid-associated loss of consciousness"
+      ],
+      "rationale": "Compares neurologic use, onset, and immediate emergency roles.",
+      "evidence": "Taught content.json use/administration",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "trolley-29",
+      "learningPointId": "trolley-29::treatment-role",
+      "stem": "Which gastrointestinal presentation best matches metoclopramide's therapeutic actions?",
+      "key": "Nausea with a need to improve upper gastrointestinal motility",
+      "alternatives": [
+        "Persistent vomiting with confirmed mechanical bowel obstruction",
+        "Nausea due mainly to untreated intestinal perforation",
+        "Severe hematemesis with ongoing gastrointestinal bleeding"
+      ],
+      "rationale": "All are GI presentations; distinguishes safe prokinetic purpose and contraindications.",
+      "evidence": "DailyMed metoclopramide injection 2026",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-epanutin-phenytoin",
+      "learningPointId": "ibd2-epanutin-phenytoin::treatment-role",
+      "stem": "Which care goal most closely matches continuing prescribed oral phenytoin?",
+      "key": "Maintenance of seizure control in a patient with an established seizure disorder",
+      "alternatives": [
+        "Immediate reversal of active opioid-related respiratory depression",
+        "First-line sedation before emergent fracture manipulation",
+        "Rapid cessation of every ongoing convulsion without rescue therapy"
+      ],
+      "rationale": "Neurologic use versus acute rescue or sedation misconceptions.",
+      "evidence": "Taught content.json use",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-ketrolac-ketorolac",
+      "learningPointId": "ibd2-ketrolac-ketorolac::treatment-role",
+      "stem": "Which analgesic use best matches ketorolac safety restrictions?",
+      "key": "Short-term treatment of moderately severe acute postoperative pain",
+      "alternatives": [
+        "Long-term daily control of chronic osteoarthritis for months",
+        "Pain relief during an active gastrointestinal bleeding episode",
+        "Routine analgesia immediately before planned CABG surgery"
+      ],
+      "rationale": "All analgesic clinical presentations, with duration and safety distinctions.",
+      "evidence": "DailyMed ketorolac and MedlinePlus",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ccu-warfarin-coumadin",
+      "learningPointId": "ccu-warfarin-coumadin::treatment-role",
+      "stem": "Which patient need most characteristically supports a long-term warfarin prescription?",
+      "key": "Thromboembolism prevention in a patient with a mechanical heart valve",
+      "alternatives": [
+        "Immediate treatment of new pulmonary embolism using warfarin alone from the first dose",
+        "Preferred anticoagulation for a newly pregnant patient with acute DVT",
+        "Urgent control of life-threatening active bleeding without reversal"
+      ],
+      "rationale": "All concern anticoagulation decisions; contrasts long-term indication with delayed onset and high-risk states.",
+      "evidence": "DailyMed warfarin 2026",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-fortum-ceftazidime",
+      "learningPointId": "ibd2-fortum-ceftazidime::treatment-role",
+      "stem": "Which organism-related scenario most specifically matches IV ceftazidime therapy when susceptible?",
+      "key": "Serious infection due to susceptible Pseudomonas aeruginosa",
+      "alternatives": [
+        "Confirmed MRSA bloodstream infection requiring targeted therapy",
+        "Invasive Candida bloodstream infection needing an antifungal",
+        "Confirmed vancomycin-resistant Enterococcus bloodstream infection"
+      ],
+      "rationale": "Susceptible organism selection rather than unrelated therapeutic roles.",
+      "evidence": "DailyMed ceftazidime 2026",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ibd2-scobutyl-hyoscine-butylbromide",
+      "learningPointId": "ibd2-scobutyl-hyoscine-butylbromide::treatment-role",
+      "stem": "Which presentation is most consistent with the symptomatic role of hyoscine butylbromide?",
+      "key": "Intermittent biliary or urinary colic caused by smooth-muscle spasm",
+      "alternatives": [
+        "Severe abdominal pain with suspected obstructive ileus",
+        "Rigid abdomen and fever suggesting peritonitis",
+        "Persistent hematemesis from an acute upper GI hemorrhage"
+      ],
+      "rationale": "All abdominal presentations; distinguish symptomatic spasm from urgent pathologies.",
+      "evidence": "Hyoscine butylbromide SmPC",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    },
+    {
+      "itemId": "ed-vitamin-k-phytonadione",
+      "learningPointId": "ed-vitamin-k-phytonadione::treatment-role",
+      "stem": "Which patient condition apart from warfarin use can warrant phytonadione therapy?",
+      "key": "Vitamin K deficiency with impaired clotting-factor synthesis",
+      "alternatives": [
+        "Inherited factor VIII deficiency requiring factor replacement",
+        "Thrombocytopenia from immune platelet destruction",
+        "Anticoagulation caused by direct thrombin inhibitors"
+      ],
+      "rationale": "Separately tests the vitamin deficiency indication rather than duplicating the warfarin-reversal question.",
+      "evidence": "DailyMed phytonadione 2026",
+      "reviewStatus": "author-level; independent clinical validation pending"
+    }
+  ],
+  "duplicateAvoidance": "Vitamin K role question now tests deficiency rather than repeating the separate warfarin-reversal learning point.",
+  "safeguards": [
+    "Keep every source statement and stable item ID.",
+    "No learner scores, active attempt snapshots or due dates changed.",
+    "Same updated form for initial, 7-day, and 21-day stages.",
+    "Release stays on staging until evidence and human question review complete."
+  ],
+  "externalChecks": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=628d0317-b844-42a0-9c27-48e1e23a38f5",
+    "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=632cb507-5675-2392-0460-b09c0dd14650",
+    "https://www.medlineplus.gov/druginfo/meds/a693001.html",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5645a752-8868-4b51-8b59-48bb4276d763",
+    "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7fb4290-ed37-4ed3-ae51-c400191961dc",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=112c5457-8d71-49f5-b531-9761d7d38c93",
+    "https://www.medicines.org.uk/emc/product/13180/smpc"
+  ]
+}

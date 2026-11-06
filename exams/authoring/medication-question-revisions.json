@@ -696,27 +696,27 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "Which anticoagulant-related problem is a valid target of phytonadione therapy?",
+        "stem": "Which patient condition apart from warfarin use can warrant phytonadione therapy?",
         "choices": [
           {
             "id": "A",
-            "text": "Excess warfarin effect with vitamin-K-dependent factor deficiency",
-            "explanation": "Phytonadione helps restore vitamin-K-dependent clotting-factor activity after excessive warfarin anticoagulation."
+            "text": "Vitamin K deficiency with impaired clotting-factor synthesis",
+            "explanation": "Vitamin K replacement corrects coagulopathy caused by inadequate vitamin-K-dependent factor formation."
           },
           {
             "id": "B",
-            "text": "Excess unfractionated-heparin effect requiring neutralization",
-            "explanation": "Heparin anticoagulation is not reversed by vitamin K; protamine is a different agent."
+            "text": "Inherited factor VIII deficiency requiring factor replacement",
+            "explanation": "Hemophilia A involves factor VIII and is not corrected by vitamin K replacement."
           },
           {
             "id": "C",
-            "text": "Excess apixaban effect requiring direct factor-Xa reversal",
-            "explanation": "Direct oral factor-Xa inhibition is not reversed by vitamin K."
+            "text": "Thrombocytopenia from immune platelet destruction",
+            "explanation": "Vitamin K does not restore platelet count in immune thrombocytopenia."
           },
           {
             "id": "D",
-            "text": "Excess dabigatran effect requiring thrombin-inhibitor reversal",
-            "explanation": "Direct thrombin inhibitors are not reversed by vitamin K."
+            "text": "Anticoagulation caused by direct thrombin inhibitors",
+            "explanation": "A direct thrombin inhibitor's anticoagulant effect is not reversed by vitamin K."
           }
         ],
         "answerKey": "A",
@@ -752,6 +752,496 @@
             "id": "D",
             "text": "Restoring platelet aggregation after an antiplatelet medicine",
             "explanation": "Heparin is an anticoagulant, not an antiplatelet reversal agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "verified-losartan::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "For which cardiovascular-renal goal is long-term losartan most appropriate?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Managing hypertension with selected diabetic kidney disease",
+            "explanation": "Losartan can treat hypertension and selected diabetic nephropathy in type 2 diabetes."
+          },
+          {
+            "id": "B",
+            "text": "Rapid reduction of blood pressure during an acute aortic dissection",
+            "explanation": "An acute dissection requires monitored rapid BP control using an appropriate emergency regimen."
+          },
+          {
+            "id": "C",
+            "text": "Immediate sublingual relief of an acute angina attack",
+            "explanation": "Losartan is not a rapid symptomatic nitrate for acute angina."
+          },
+          {
+            "id": "D",
+            "text": "Rapid diuresis of pulmonary edema caused by fluid overload",
+            "explanation": "A loop diuretic addresses urgent fluid removal; losartan is not an immediate diuretic."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-acamol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient goal best matches the common nursing use of paracetamol?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing fever and relieving mild-to-moderate pain",
+            "explanation": "Paracetamol is an antipyretic and non-opioid analgesic for pain and fever."
+          },
+          {
+            "id": "B",
+            "text": "Strongly suppressing active joint inflammation as an NSAID",
+            "explanation": "Paracetamol does not provide typical NSAID anti-inflammatory effects."
+          },
+          {
+            "id": "C",
+            "text": "Providing immediate regional anesthesia for fracture reduction",
+            "explanation": "Paracetamol does not produce local anesthetic nerve blockade."
+          },
+          {
+            "id": "D",
+            "text": "Reversing analgesic-related respiratory depression",
+            "explanation": "Reversal of opioid respiratory depression requires a different treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-trufen::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient most closely matches a reasonable prescribed ibuprofen indication?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Musculoskeletal pain with inflammatory swelling and no major NSAID risk",
+            "explanation": "Ibuprofen has analgesic and anti-inflammatory effects when patient risks are acceptable."
+          },
+          {
+            "id": "B",
+            "text": "Inflammatory pain with current upper gastrointestinal hemorrhage",
+            "explanation": "NSAID-associated bleeding risk makes current GI hemorrhage a major concern."
+          },
+          {
+            "id": "C",
+            "text": "Joint pain during acute severe dehydration and kidney injury",
+            "explanation": "Ibuprofen can worsen renal perfusion and kidney injury."
+          },
+          {
+            "id": "D",
+            "text": "Pain in a patient with prior aspirin-provoked severe bronchospasm",
+            "explanation": "NSAID hypersensitivity or bronchospasm history requires avoidance or specialist review."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-tramadol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which use most closely matches tramadol's role in a postoperative ward?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prescribed treatment of significant pain when opioid analgesia is justified",
+            "explanation": "Tramadol is an opioid/monoamine analgesic used for selected moderate-to-severe pain."
+          },
+          {
+            "id": "B",
+            "text": "Replacing naloxone during suspected opioid overdose",
+            "explanation": "An opioid analgesic is not a reversal medicine for opioid-induced respiratory depression."
+          },
+          {
+            "id": "C",
+            "text": "Primary reduction of tissue inflammation without opioid exposure",
+            "explanation": "Tramadol treats pain but is not an NSAID or local anti-inflammatory drug."
+          },
+          {
+            "id": "D",
+            "text": "Immediate muscle paralysis for painful fracture reduction",
+            "explanation": "Tramadol is not a neuromuscular blocker or anesthetic paralysis medicine."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-prothiazine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which intended therapeutic goal is consistent with prescribed oral promethazine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Relieving nausea or selected histamine-mediated allergic symptoms",
+            "explanation": "Promethazine has antiemetic and antihistamine effects with important sedation risk."
+          },
+          {
+            "id": "B",
+            "text": "Reversing excessive opioid-induced respiratory depression",
+            "explanation": "An H1 antihistamine does not reverse opioid-induced respiratory depression."
+          },
+          {
+            "id": "C",
+            "text": "Correcting delayed gastric transit with a prokinetic mechanism",
+            "explanation": "Promethazine is not a prokinetic therapy for impaired motility."
+          },
+          {
+            "id": "D",
+            "text": "Rapidly replacing circulating volume in severe shock",
+            "explanation": "Promethazine is not a fluid-resuscitation agent and may increase sedation/hypotension."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-gabapentin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pain presentation most reasonably supports a prescribed gabapentin trial?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Persistent burning or shooting neuropathic pain after nerve injury",
+            "explanation": "Gabapentin can be used for selected nerve-related pain conditions rather than immediate nociceptive relief."
+          },
+          {
+            "id": "B",
+            "text": "Acute fracture pain needing immediate emergency analgesia",
+            "explanation": "Gabapentin is not a rapid rescue analgesic for acute nociceptive trauma pain."
+          },
+          {
+            "id": "C",
+            "text": "Localized inflammatory swelling requiring anti-inflammatory action",
+            "explanation": "Gabapentin does not act as an NSAID to reduce prostaglandin-mediated inflammation."
+          },
+          {
+            "id": "D",
+            "text": "Surgical wound pain needing immediate local nerve anesthesia",
+            "explanation": "Gabapentin is not a local anesthetic for procedural nerve blockade."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-avilac::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which bowel-care need most closely matches lactulose use in the orthopedic ward?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Constipation during opioid treatment after bowel obstruction is excluded",
+            "explanation": "Lactulose is an osmotic laxative and can be used for opioid-associated constipation when appropriate."
+          },
+          {
+            "id": "B",
+            "text": "Marked distension and vomiting with suspected intestinal obstruction",
+            "explanation": "Suspected obstruction needs medical assessment rather than routine laxative therapy."
+          },
+          {
+            "id": "C",
+            "text": "Acute severe bloody diarrhea with possible intestinal inflammation",
+            "explanation": "Laxatives are not a treatment for acute bloody diarrhea and may worsen fluid loss."
+          },
+          {
+            "id": "D",
+            "text": "New rigid abdomen and severe unexplained abdominal pain",
+            "explanation": "Possible peritonitis needs urgent assessment rather than symptomatic laxative use."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-carbamazepine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which ongoing clinical goal best matches oral carbamazepine treatment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Maintaining seizure prevention or controlling selected neuralgic pain",
+            "explanation": "Carbamazepine is used for seizure disorders and selected neuropathic pain."
+          },
+          {
+            "id": "B",
+            "text": "Immediate first-line termination of ongoing convulsive status",
+            "explanation": "An acute convulsive emergency needs an emergency seizure algorithm, typically starting with a benzodiazepine."
+          },
+          {
+            "id": "C",
+            "text": "Rapid sedation before an emergency bedside procedure",
+            "explanation": "Carbamazepine is not an immediate procedural sedative."
+          },
+          {
+            "id": "D",
+            "text": "Reversal of opioid-associated loss of consciousness",
+            "explanation": "Carbamazepine is not an opioid antagonist or overdose antidote."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-29::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which gastrointestinal presentation best matches metoclopramide's therapeutic actions?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Nausea with a need to improve upper gastrointestinal motility",
+            "explanation": "Metoclopramide has antiemetic and upper-GI prokinetic properties."
+          },
+          {
+            "id": "B",
+            "text": "Persistent vomiting with confirmed mechanical bowel obstruction",
+            "explanation": "Stimulating motility can be dangerous when mechanical obstruction is present."
+          },
+          {
+            "id": "C",
+            "text": "Nausea due mainly to untreated intestinal perforation",
+            "explanation": "Possible perforation requires urgent management and is a contraindication to prokinetic use."
+          },
+          {
+            "id": "D",
+            "text": "Severe hematemesis with ongoing gastrointestinal bleeding",
+            "explanation": "Active GI hemorrhage needs urgent bleeding care, not motility stimulation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-epanutin-phenytoin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which care goal most closely matches continuing prescribed oral phenytoin?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Maintenance of seizure control in a patient with an established seizure disorder",
+            "explanation": "Phenytoin helps prevent or control selected seizures with an appropriate regimen."
+          },
+          {
+            "id": "B",
+            "text": "Immediate reversal of active opioid-related respiratory depression",
+            "explanation": "Phenytoin is not an opioid reversal medicine."
+          },
+          {
+            "id": "C",
+            "text": "First-line sedation before emergent fracture manipulation",
+            "explanation": "Phenytoin is not a procedural sedative or anesthetic."
+          },
+          {
+            "id": "D",
+            "text": "Rapid cessation of every ongoing convulsion without rescue therapy",
+            "explanation": "Phenytoin is not a substitute for appropriate emergency seizure treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-ketrolac-ketorolac::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which analgesic use best matches ketorolac safety restrictions?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Short-term treatment of moderately severe acute postoperative pain",
+            "explanation": "Ketorolac is indicated for short-term relief of moderately severe acute pain, with limited total duration."
+          },
+          {
+            "id": "B",
+            "text": "Long-term daily control of chronic osteoarthritis for months",
+            "explanation": "Ketorolac is not indicated for chronic long-term analgesia."
+          },
+          {
+            "id": "C",
+            "text": "Pain relief during an active gastrointestinal bleeding episode",
+            "explanation": "Ketorolac increases bleeding and GI injury risk."
+          },
+          {
+            "id": "D",
+            "text": "Routine analgesia immediately before planned CABG surgery",
+            "explanation": "Ketorolac is contraindicated in the perioperative CABG setting."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-warfarin-coumadin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient need most characteristically supports a long-term warfarin prescription?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Thromboembolism prevention in a patient with a mechanical heart valve",
+            "explanation": "Warfarin is an anticoagulation option for mechanical prosthetic valves."
+          },
+          {
+            "id": "B",
+            "text": "Immediate treatment of new pulmonary embolism using warfarin alone from the first dose",
+            "explanation": "Warfarin has delayed anticoagulant effect and usually requires an appropriate initial bridging plan when used for acute thrombosis."
+          },
+          {
+            "id": "C",
+            "text": "Preferred anticoagulation for a newly pregnant patient with acute DVT",
+            "explanation": "Warfarin has important fetal risks and is generally avoided during pregnancy."
+          },
+          {
+            "id": "D",
+            "text": "Urgent control of life-threatening active bleeding without reversal",
+            "explanation": "Active major bleeding calls for emergency management and assessment of anticoagulation reversal."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-fortum-ceftazidime::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which organism-related scenario most specifically matches IV ceftazidime therapy when susceptible?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Serious infection due to susceptible Pseudomonas aeruginosa",
+            "explanation": "Ceftazidime is an antipseudomonal cephalosporin used for susceptible gram-negative infections."
+          },
+          {
+            "id": "B",
+            "text": "Confirmed MRSA bloodstream infection requiring targeted therapy",
+            "explanation": "Ceftazidime lacks reliable coverage of methicillin-resistant Staphylococcus aureus."
+          },
+          {
+            "id": "C",
+            "text": "Invasive Candida bloodstream infection needing an antifungal",
+            "explanation": "An antifungal rather than ceftazidime is required for candidemia."
+          },
+          {
+            "id": "D",
+            "text": "Confirmed vancomycin-resistant Enterococcus bloodstream infection",
+            "explanation": "Ceftazidime does not provide effective targeted coverage of VRE."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-scobutyl-hyoscine-butylbromide::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which presentation is most consistent with the symptomatic role of hyoscine butylbromide?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Intermittent biliary or urinary colic caused by smooth-muscle spasm",
+            "explanation": "Hyoscine butylbromide is an antimuscarinic antispasmodic for selected GI/GU colic."
+          },
+          {
+            "id": "B",
+            "text": "Severe abdominal pain with suspected obstructive ileus",
+            "explanation": "Obstruction requires urgent evaluation and can contraindicate the antimuscarinic antispasmodic."
+          },
+          {
+            "id": "C",
+            "text": "Rigid abdomen and fever suggesting peritonitis",
+            "explanation": "Possible peritonitis is a serious underlying condition requiring urgent investigation."
+          },
+          {
+            "id": "D",
+            "text": "Persistent hematemesis from an acute upper GI hemorrhage",
+            "explanation": "An antispasmodic does not treat active gastrointestinal bleeding."
           }
         ],
         "answerKey": "A",
@@ -799,5 +1289,5 @@
     "ccu-adenosine": "drug-coverage-20261106",
     "ed-omnic-tamsulosin": "drug-coverage-20261106"
   },
-  "roleReviewRevision": "drug-role-20261106-batch1"
+  "roleReviewRevision": "drug-role-20261106-batch2"
 }
