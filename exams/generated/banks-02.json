@@ -1973,23 +1973,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
+                },
+                {
+                  "id": "B",
                   "text": "Suppresses gastric H/K ATPase",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Reduces vagal bronchoconstriction",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Disrupts protein synthesis at the 30S subunit",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
-                },
-                {
-                  "id": "D",
-                  "text": "Enhances antithrombin inhibition of IIa/Xa",
-                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -2022,7 +2022,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -2030,18 +2030,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Therapeutic anticoagulation or selected prophylaxis",
-                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
-                },
-                {
-                  "id": "B",
                   "text": "Suppression of bacterial protein synthesis",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Therapeutic anticoagulation or selected prophylaxis",
+                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
                 },
                 {
                   "id": "D",
@@ -2072,7 +2072,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Before preparing a therapeutic UFH infusion, which product distinction matters most?",
@@ -2164,9 +2164,52 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::lmwh_route"
               ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A UFH infusion has an above-target coagulation result, but no nurse-driven titration protocol is authorized. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ignore the result until the next sample",
+                  "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
+                },
+                {
+                  "id": "B",
+                  "text": "Halve the infusion rate independently",
+                  "explanation": "Independent rate adjustments without authorization are unsafe."
+                },
+                {
+                  "id": "C",
+                  "text": "Copy the previous patient's titration",
+                  "explanation": "A previous patient's dose change cannot guide this prescription."
+                },
+                {
+                  "id": "D",
+                  "text": "Escalate and obtain an authorized dose adjustment",
+                  "explanation": "Changes must follow an order or an approved nursing protocol."
+                }
+              ],
+              "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--standard--heparin_rate_authorization",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_rate_authorization"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-heparin-ufh--advanced",
@@ -2517,18 +2560,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Therapeutic anticoagulation or selected prophylaxis",
+                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
+                },
+                {
+                  "id": "C",
                   "text": "Relief of bronchospasm through airway receptor stimulation",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Suppression of bacterial protein synthesis",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Therapeutic anticoagulation or selected prophylaxis",
-                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -2555,20 +2598,20 @@
                 "ccu-heparin-ufh::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Before preparing a therapeutic UFH infusion, which product distinction matters most?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Tablet coating versus capsule coating",
-                  "explanation": "UFH infusion preparation is not an oral tablet/capsule task."
+                  "text": "Treatment-vial concentration versus catheter-flush concentration",
+                  "explanation": "Confusing them can create a major dosing error."
                 },
                 {
                   "id": "B",
-                  "text": "Treatment-vial concentration versus catheter-flush concentration",
-                  "explanation": "Confusing them can create a major dosing error."
+                  "text": "Tablet coating versus capsule coating",
+                  "explanation": "UFH infusion preparation is not an oral tablet/capsule task."
                 },
                 {
                   "id": "C",
@@ -2620,7 +2663,7 @@
                 "ccu-heparin-ufh::heparin_infusion"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_infusion",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "short-answer",
@@ -2649,6 +2692,50 @@
                 "ccu-heparin-ufh::lmwh_route"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--lmwh_route"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A UFH infusion has an above-target coagulation result, but no nurse-driven titration protocol is authorized. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ignore the result until the next sample",
+                  "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
+                },
+                {
+                  "id": "B",
+                  "text": "Escalate and obtain an authorized dose adjustment",
+                  "explanation": "Changes must follow an order or an approved nursing protocol."
+                },
+                {
+                  "id": "C",
+                  "text": "Halve the infusion rate independently",
+                  "explanation": "Independent rate adjustments without authorization are unsafe."
+                },
+                {
+                  "id": "D",
+                  "text": "Copy the previous patient's titration",
+                  "explanation": "A previous patient's dose change cannot guide this prescription."
+                }
+              ],
+              "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--7-day--heparin_rate_authorization",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_rate_authorization"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_rate_authorization",
+              "answerKey": "B"
             },
             {
               "stem": "During HEPARIN — unfractionated heparin (UFH) therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
@@ -2706,18 +2793,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Heparin-induced thrombocytopenia",
-                  "explanation": "A significant platelet fall during heparin exposure needs prompt review for HIT and other causes."
-                },
-                {
-                  "id": "B",
                   "text": "Opioid-related central depression",
                   "explanation": "This is not a platelet-related complication."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Warfarin-related vitamin-K depletion",
                   "explanation": "This is a different anticoagulant mechanism and does not explain UFH-associated HIT."
+                },
+                {
+                  "id": "C",
+                  "text": "Heparin-induced thrombocytopenia",
+                  "explanation": "A significant platelet fall during heparin exposure needs prompt review for HIT and other causes."
                 },
                 {
                   "id": "D",
@@ -2750,7 +2837,7 @@
                 "ccu-heparin-ufh::hit"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--advanced--hit",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "A UFH infusion has an overdue coagulation sample; the pump is running at its prescribed rate. Which interpretation is valid?",
@@ -2767,13 +2854,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Delivery accuracy does not establish the current anticoagulant response",
-                  "explanation": "Obtain and interpret the ordered laboratory result under the protocol."
+                  "text": "Absence of visible bleeding establishes that the result is therapeutic",
+                  "explanation": "Occult bleeding or inadequate anticoagulation can occur without visible signs."
                 },
                 {
                   "id": "D",
-                  "text": "Absence of visible bleeding establishes that the result is therapeutic",
-                  "explanation": "Occult bleeding or inadequate anticoagulation can occur without visible signs."
+                  "text": "Delivery accuracy does not establish the current anticoagulant response",
+                  "explanation": "Obtain and interpret the ordered laboratory result under the protocol."
                 }
               ],
               "format": "single-best-answer",
@@ -2801,7 +2888,7 @@
                 "ccu-heparin-ufh::heparin_samples"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--advanced--heparin_samples",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
@@ -2876,7 +2963,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -14745,9 +14832,52 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with septic shock needs ordered norepinephrine. A suitable peripheral IV is present, but no central line. What is the safest next step?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for central access despite persistent shock",
+                  "explanation": "Unnecessary delays in restoring perfusion can worsen patient outcomes."
+                },
+                {
+                  "id": "B",
+                  "text": "Increase IV fluid volume indefinitely instead",
+                  "explanation": "Persistent shock needs reassessment and the ordered vasopressor, not indefinite fluid escalation."
+                },
+                {
+                  "id": "C",
+                  "text": "Begin monitored peripheral infusion under protocol",
+                  "explanation": "Current sepsis guidance supports timely peripheral initiation without delaying solely for central access."
+                },
+                {
+                  "id": "D",
+                  "text": "Give the ordered norepinephrine as intermittent boluses",
+                  "explanation": "Norepinephrine requires controlled infusion rather than improvised IV pushes."
+                }
+              ],
+              "point": "Recognize that urgent vasopressors need not wait for central access when suitable monitored peripheral access exists.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepi_peripheral_access",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_peripheral_access"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-norepinephrine--advanced",
@@ -14978,18 +15108,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
-                },
-                {
-                  "id": "B",
                   "text": "Irreversibly inhibits platelet COX-1",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Inhibits protein synthesis at the 50S subunit",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                },
+                {
+                  "id": "C",
+                  "text": "Predominantly alpha1-mediated vasoconstriction",
+                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "D",
@@ -15028,7 +15158,7 @@
                 "ccu-norepinephrine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -15036,13 +15166,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Organic nitrate",
-                  "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Vasopressor",
+                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
                   "id": "B",
-                  "text": "Vasopressor",
-                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Organic nitrate",
+                  "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
                   "id": "C",
@@ -15072,7 +15202,7 @@
                 "ccu-norepinephrine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -15085,18 +15215,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Pressure support in severe hypotension or shock",
+                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
+                },
+                {
+                  "id": "C",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -15123,25 +15253,25 @@
                 "ccu-norepinephrine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Which feature is required for safe IV administration of NOREPINEPHRINE / NORADRENALINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
-                },
-                {
-                  "id": "B",
                   "text": "Undiluted rapid injection based on the ampoule’s full volume",
                   "explanation": "Container content is not a default patient bolus."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Intermittent manual boluses using the last infusion’s mL/hour",
                   "explanation": "An infusion rate cannot define a safe bolus."
+                },
+                {
+                  "id": "C",
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 },
                 {
                   "id": "D",
@@ -15181,20 +15311,64 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--infusion_route",
-              "answerKey": "A"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with septic shock needs ordered norepinephrine. A suitable peripheral IV is present, but no central line. What is the safest next step?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for central access despite persistent shock",
+                  "explanation": "Unnecessary delays in restoring perfusion can worsen patient outcomes."
+                },
+                {
+                  "id": "B",
+                  "text": "Give the ordered norepinephrine as intermittent boluses",
+                  "explanation": "Norepinephrine requires controlled infusion rather than improvised IV pushes."
+                },
+                {
+                  "id": "C",
+                  "text": "Increase IV fluid volume indefinitely instead",
+                  "explanation": "Persistent shock needs reassessment and the ordered vasopressor, not indefinite fluid escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Begin monitored peripheral infusion under protocol",
+                  "explanation": "Current sepsis guidance supports timely peripheral initiation without delaying solely for central access."
+                }
+              ],
+              "point": "Recognize that urgent vasopressors need not wait for central access when suitable monitored peripheral access exists.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepi_peripheral_access",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_peripheral_access"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepi_peripheral_access",
+              "answerKey": "D"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "It becomes four times higher",
-                  "explanation": "This would cause an even larger dosing increase."
+                  "text": "It halves",
+                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
                 },
                 {
                   "id": "B",
-                  "text": "It halves",
-                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
+                  "text": "It becomes four times higher",
+                  "explanation": "This would cause an even larger dosing increase."
                 },
                 {
                   "id": "C",
@@ -15232,7 +15406,7 @@
                 "ccu-norepinephrine::infusion_precision"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--infusion_precision",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "During peripheral NOREPINEPHRINE / NORADRENALINE infusion, the site becomes painful, pale, and cool, and flow is impaired. Which problem best fits?",
@@ -15244,18 +15418,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Extravasation with local ischemic risk",
+                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
+                },
+                {
+                  "id": "C",
                   "text": "Isolated systemic volume expansion",
                   "explanation": "This does not explain the focal cannula-site pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "An expected sign of restored cardiac output",
                   "explanation": "The local findings indicate a complication rather than a beneficial response."
-                },
-                {
-                  "id": "D",
-                  "text": "Extravasation with local ischemic risk",
-                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -15290,7 +15464,7 @@
                 "ccu-norepinephrine::pressor_site"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--pressor_site",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "During NOREPINEPHRINE / NORADRENALINE therapy, BP reaches target, but the patient remains cool and confused with low urine output. Which interpretation is most defensible?",
@@ -15307,13 +15481,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Pressure has improved while organ perfusion remains concerning",
-                  "explanation": "BP is only one component of the response."
+                  "text": "Confusion establishes medication sedation rather than low output",
+                  "explanation": "The combination does not justify dismissing hypoperfusion."
                 },
                 {
                   "id": "D",
-                  "text": "Confusion establishes medication sedation rather than low output",
-                  "explanation": "The combination does not justify dismissing hypoperfusion."
+                  "text": "Pressure has improved while organ perfusion remains concerning",
+                  "explanation": "BP is only one component of the response."
                 }
               ],
               "format": "single-best-answer",
@@ -15348,10 +15522,10 @@
                 "ccu-norepinephrine::perfusion"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--perfusion",
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         }
       ]
     },

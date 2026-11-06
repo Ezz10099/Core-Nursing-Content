@@ -13438,9 +13438,59 @@
                 "ed-decort-dexamethasone::steroid_glucose"
               ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After an antibiotic, the patient develops airway swelling, wheezing and hypotension. Which action takes priority over IV dexamethasone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An oral antihistamine as the initial rescue",
+                  "explanation": "Antihistamines do not replace epinephrine for anaphylactic shock."
+                },
+                {
+                  "id": "B",
+                  "text": "IM epinephrine and emergency response",
+                  "explanation": "Epinephrine is first-line for anaphylaxis; steroids must not delay emergency treatment."
+                },
+                {
+                  "id": "C",
+                  "text": "Dexamethasone before circulatory treatment",
+                  "explanation": "Steroids do not provide the immediate rescue needed for airway and circulation compromise."
+                },
+                {
+                  "id": "D",
+                  "text": "Nebulized bronchodilator without epinephrine",
+                  "explanation": "Bronchodilation alone does not correct anaphylactic circulatory collapse."
+                }
+              ],
+              "point": "Recognize that dexamethasone is not a substitute for prompt epinephrine during anaphylaxis.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-decort-dexamethasone",
+                  "field": "use",
+                  "textSha256": "35c705d241f37fe6a712f68583490261ff52b887d37b72ec472661b9a312c5ab"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-decort-dexamethasone",
+                  "field": "memoryDanger",
+                  "textSha256": "bc028380cd08e772f41658121e6c5bb876f40817948efc67ce58d6d4e89f0afa"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-decort-dexamethasone--standard--dexamethasone_anaphylaxis_rescue",
+              "points": 1,
+              "learningPointIds": [
+                "ed-decort-dexamethasone::dexamethasone_anaphylaxis_rescue"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ed-decort-dexamethasone--advanced",
@@ -13799,6 +13849,57 @@
               "answerKey": "D"
             },
             {
+              "format": "single-best-answer",
+              "stem": "After an antibiotic, the patient develops airway swelling, wheezing and hypotension. Which action takes priority over IV dexamethasone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An oral antihistamine as the initial rescue",
+                  "explanation": "Antihistamines do not replace epinephrine for anaphylactic shock."
+                },
+                {
+                  "id": "B",
+                  "text": "IM epinephrine and emergency response",
+                  "explanation": "Epinephrine is first-line for anaphylaxis; steroids must not delay emergency treatment."
+                },
+                {
+                  "id": "C",
+                  "text": "Nebulized bronchodilator without epinephrine",
+                  "explanation": "Bronchodilation alone does not correct anaphylactic circulatory collapse."
+                },
+                {
+                  "id": "D",
+                  "text": "Dexamethasone before circulatory treatment",
+                  "explanation": "Steroids do not provide the immediate rescue needed for airway and circulation compromise."
+                }
+              ],
+              "point": "Recognize that dexamethasone is not a substitute for prompt epinephrine during anaphylaxis.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-decort-dexamethasone",
+                  "field": "use",
+                  "textSha256": "35c705d241f37fe6a712f68583490261ff52b887d37b72ec472661b9a312c5ab"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-decort-dexamethasone",
+                  "field": "memoryDanger",
+                  "textSha256": "bc028380cd08e772f41658121e6c5bb876f40817948efc67ce58d6d4e89f0afa"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-decort-dexamethasone--7-day--dexamethasone_anaphylaxis_rescue",
+              "points": 1,
+              "learningPointIds": [
+                "ed-decort-dexamethasone::dexamethasone_anaphylaxis_rescue"
+              ],
+              "reusedFromQuestionId": "ed-decort-dexamethasone--standard--dexamethasone_anaphylaxis_rescue",
+              "answerKey": "B"
+            },
+            {
               "stem": "A patient taking systemic DECORT — dexamethasone (sodium phosphate injection) has a worsening wound but little fever. Which issue should influence assessment?",
               "choices": [
                 {
@@ -13894,7 +13995,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         }
       ]
     },
@@ -13953,13 +14054,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Forms metabolites that damage microbial DNA",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
+                  "text": "Blocks serotonin-mediated emesis",
+                  "explanation": "Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
                 },
                 {
                   "id": "D",
-                  "text": "Blocks serotonin-mediated emesis",
-                  "explanation": "Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -13992,7 +14093,7 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -14005,13 +14106,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "5-HT3 antagonist",
-                  "explanation": "5-HT3 receptor antagonist; antiemetic."
+                  "text": "First-generation H1 antagonist",
+                  "explanation": "The medicine is classified as: 5-HT3 receptor antagonist; antiemetic."
                 },
                 {
                   "id": "C",
-                  "text": "First-generation H1 antagonist",
-                  "explanation": "The medicine is classified as: 5-HT3 receptor antagonist; antiemetic."
+                  "text": "5-HT3 antagonist",
+                  "explanation": "5-HT3 receptor antagonist; antiemetic."
                 },
                 {
                   "id": "D",
@@ -14035,7 +14136,7 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -14043,13 +14144,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Suppression of ventricular ectopy by cardiac sodium-channel blockade",
-                  "explanation": "This is a different treatment role."
+                  "text": "Prevention and treatment of nausea or vomiting",
+                  "explanation": "This is a clinical use of the medicine: Prevention and treatment of nausea/vomiting when indicated; specific approvals vary by indication."
                 },
                 {
                   "id": "B",
-                  "text": "Prevention and treatment of nausea or vomiting",
-                  "explanation": "This is a clinical use of the medicine: Prevention and treatment of nausea/vomiting when indicated; specific approvals vary by indication."
+                  "text": "Suppression of ventricular ectopy by cardiac sodium-channel blockade",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
@@ -14085,25 +14186,25 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which ECG change is relevant to the repolarization warning in ONDANSETRON — injectable (ED shelf: Andset) therapy?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "QT prolongation",
+                  "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
+                },
+                {
+                  "id": "B",
                   "text": "ST elevation",
                   "explanation": "ST elevation is not the same measurement as QT prolongation."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "PR prolongation",
                   "explanation": "PR describes atrioventricular conduction rather than ventricular repolarization."
-                },
-                {
-                  "id": "C",
-                  "text": "QT prolongation",
-                  "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
                 },
                 {
                   "id": "D",
@@ -14135,30 +14236,30 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::qt"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "After ONDANSETRON — injectable (ED shelf: Andset), which syndrome best explains agitation, fever, hyperreflexia, and autonomic instability?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The combination of neuromuscular excitation and autonomic changes fits."
-                },
-                {
-                  "id": "B",
                   "text": "Isolated antimuscarinic intolerance",
                   "explanation": "This does not best explain the hyperreflexic serotonergic pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Opioid respiratory toxicity",
                   "explanation": "This more typically produces depressed breathing and consciousness."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Vancomycin infusion intolerance",
                   "explanation": "This is a different administration-related reaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Serotonin toxicity",
+                  "explanation": "The combination of neuromuscular excitation and autonomic changes fits."
                 }
               ],
               "format": "single-best-answer",
@@ -14192,10 +14293,96 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::serotonin"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which medicine is contraindicated with ondansetron injection because of reported profound hypotension and loss of consciousness?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Metoclopramide",
+                  "explanation": "This antiemetic is not the particular named apomorphine contraindication."
+                },
+                {
+                  "id": "B",
+                  "text": "Apomorphine",
+                  "explanation": "Ondansetron with apomorphine is a labeled contraindicated combination."
+                },
+                {
+                  "id": "C",
+                  "text": "Dexamethasone",
+                  "explanation": "A corticosteroid is not the named drug in this interaction warning."
+                },
+                {
+                  "id": "D",
+                  "text": "Prochlorperazine",
+                  "explanation": "This medicine has its own risks but is not the specific named contraindication."
+                }
+              ],
+              "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_apomorphine"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which abnormal laboratory finding most directly increases QT-related arrhythmia concern before IV ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Hemoglobin 8.5 g/dL",
+                  "explanation": "Anemia is important but is not the electrolyte-related QT warning asked about."
+                },
+                {
+                  "id": "B",
+                  "text": "Potassium 2.8 mmol/L",
+                  "explanation": "Hypokalemia is a specific ECG-monitoring risk with ondansetron."
+                },
+                {
+                  "id": "C",
+                  "text": "Glucose 250 mg/dL",
+                  "explanation": "Hyperglycemia is not the particular electrolyte risk for ondansetron QT prolongation."
+                },
+                {
+                  "id": "D",
+                  "text": "Sodium 128 mmol/L",
+                  "explanation": "Hyponatremia needs assessment but does not identify the specific QT electrolyte warning."
+                }
+              ],
+              "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 7
         },
         {
           "id": "ed-ondansetron-provisional-shelf--advanced",
@@ -14487,13 +14674,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "5-HT3 antagonist",
-                  "explanation": "5-HT3 receptor antagonist; antiemetic."
+                  "text": "D2 antagonist/prokinetic",
+                  "explanation": "The medicine is classified as: 5-HT3 receptor antagonist; antiemetic."
                 },
                 {
                   "id": "D",
-                  "text": "D2 antagonist/prokinetic",
-                  "explanation": "The medicine is classified as: 5-HT3 receptor antagonist; antiemetic."
+                  "text": "5-HT3 antagonist",
+                  "explanation": "5-HT3 receptor antagonist; antiemetic."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -14513,7 +14700,7 @@
                 "ed-ondansetron-provisional-shelf::drug-class"
               ],
               "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--drug-class",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -14676,6 +14863,94 @@
               "answerKey": "A"
             },
             {
+              "format": "single-best-answer",
+              "stem": "Which medicine is contraindicated with ondansetron injection because of reported profound hypotension and loss of consciousness?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dexamethasone",
+                  "explanation": "A corticosteroid is not the named drug in this interaction warning."
+                },
+                {
+                  "id": "B",
+                  "text": "Prochlorperazine",
+                  "explanation": "This medicine has its own risks but is not the specific named contraindication."
+                },
+                {
+                  "id": "C",
+                  "text": "Apomorphine",
+                  "explanation": "Ondansetron with apomorphine is a labeled contraindicated combination."
+                },
+                {
+                  "id": "D",
+                  "text": "Metoclopramide",
+                  "explanation": "This antiemetic is not the particular named apomorphine contraindication."
+                }
+              ],
+              "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_apomorphine",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_apomorphine"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which abnormal laboratory finding most directly increases QT-related arrhythmia concern before IV ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Sodium 128 mmol/L",
+                  "explanation": "Hyponatremia needs assessment but does not identify the specific QT electrolyte warning."
+                },
+                {
+                  "id": "B",
+                  "text": "Potassium 2.8 mmol/L",
+                  "explanation": "Hypokalemia is a specific ECG-monitoring risk with ondansetron."
+                },
+                {
+                  "id": "C",
+                  "text": "Hemoglobin 8.5 g/dL",
+                  "explanation": "Anemia is important but is not the electrolyte-related QT warning asked about."
+                },
+                {
+                  "id": "D",
+                  "text": "Glucose 250 mg/dL",
+                  "explanation": "Hyperglycemia is not the particular electrolyte risk for ondansetron QT prolongation."
+                }
+              ],
+              "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+              "answerKey": "B"
+            },
+            {
               "stem": "The prescribed ONDANSETRON — injectable (ED shelf: Andset) and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
               "choices": [
                 {
@@ -14727,7 +15002,7 @@
               "answerKey": "B"
             }
           ],
-          "questionCount": 6
+          "questionCount": 8
         }
       ]
     },
@@ -16196,9 +16471,33 @@
                 "ed-vitamin-k-phytonadione::vitk_delayed_effect"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "numeric-entry",
+              "stem": "For the referenced injectable phytonadione emulsion, what labeled maximum IV rate applies if IV administration is unavoidable? Enter mg/min.",
+              "answer": 1,
+              "unit": "mg/min",
+              "tolerance": 0,
+              "explanation": "The specified phytonadione emulsion product label limits unavoidable IV administration to 1 mg/min; verify the exact product.",
+              "point": "Recall the rate ceiling for IV administration of the specifically referenced phytonadione emulsion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-vitamin-k-phytonadione",
+                  "field": "administration",
+                  "textSha256": "27571aa79e4554fac0c13ca371bf8ad5f1e90cde9bcc836cdf70877aa5cd9998"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-vitamin-k-phytonadione--standard--vitk_iv_max_rate",
+              "points": 1,
+              "learningPointIds": [
+                "ed-vitamin-k-phytonadione::vitk_iv_max_rate"
+              ]
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ed-vitamin-k-phytonadione--advanced",
@@ -16723,6 +17022,31 @@
               "answerKey": "D"
             },
             {
+              "format": "numeric-entry",
+              "stem": "For the referenced injectable phytonadione emulsion, what labeled maximum IV rate applies if IV administration is unavoidable? Enter mg/min.",
+              "answer": 1,
+              "unit": "mg/min",
+              "tolerance": 0,
+              "explanation": "The specified phytonadione emulsion product label limits unavoidable IV administration to 1 mg/min; verify the exact product.",
+              "point": "Recall the rate ceiling for IV administration of the specifically referenced phytonadione emulsion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-vitamin-k-phytonadione",
+                  "field": "administration",
+                  "textSha256": "27571aa79e4554fac0c13ca371bf8ad5f1e90cde9bcc836cdf70877aa5cd9998"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-vitamin-k-phytonadione--7-day--vitk_iv_max_rate",
+              "points": 1,
+              "learningPointIds": [
+                "ed-vitamin-k-phytonadione::vitk_iv_max_rate"
+              ],
+              "reusedFromQuestionId": "ed-vitamin-k-phytonadione--standard--vitk_iv_max_rate"
+            },
+            {
               "stem": "The prescribed VITAMIN K1 — phytonadione (phytomenadione) and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
               "choices": [
                 {
@@ -16767,7 +17091,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         }
       ]
     },
@@ -16873,13 +17197,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "LMWH",
-                  "explanation": "The medicine is classified as: Antifibrinolytic; bleeding-control adjunct."
+                  "text": "Antifibrinolytic",
+                  "explanation": "Antifibrinolytic; bleeding-control adjunct."
                 },
                 {
                   "id": "B",
-                  "text": "Antifibrinolytic",
-                  "explanation": "Antifibrinolytic; bleeding-control adjunct."
+                  "text": "LMWH",
+                  "explanation": "The medicine is classified as: Antifibrinolytic; bleeding-control adjunct."
                 },
                 {
                   "id": "C",
@@ -16908,7 +17232,7 @@
               "learningPointIds": [
                 "ed-hexakapron-tranexamic::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -16921,18 +17245,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Control of selected acute bleeding through antifibrinolysis",
+                  "explanation": "This is a clinical use of the medicine: Selected acute bleeding indications under the appropriate protocol, including some trauma-related hemorrhage and postpartum hemorrhage. Does not replace source control, blood products or resuscitation."
+                },
+                {
+                  "id": "C",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Relief of bronchospasm through airway receptor stimulation",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Control of selected acute bleeding through antifibrinolysis",
-                  "explanation": "This is a clinical use of the medicine: Selected acute bleeding indications under the appropriate protocol, including some trauma-related hemorrhage and postpartum hemorrhage. Does not replace source control, blood products or resuscitation."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -16958,7 +17282,7 @@
               "learningPointIds": [
                 "ed-hexakapron-tranexamic::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for HEXAKAPRON — tranexamic acid (TXA)?",
@@ -17123,9 +17447,95 @@
                 "ed-hexakapron-tranexamic::txa_wrong_route"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which proposed solution should not be mixed with the referenced injectable tranexamic acid product?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Compatible electrolyte solution",
+                  "explanation": "Several electrolyte infusion solutions are permitted by product labeling."
+                },
+                {
+                  "id": "B",
+                  "text": "5% dextrose solution",
+                  "explanation": "This is a compatible diluent for the referenced injection."
+                },
+                {
+                  "id": "C",
+                  "text": "0.9% sodium chloride",
+                  "explanation": "This is a compatible diluent for the referenced injection."
+                },
+                {
+                  "id": "D",
+                  "text": "Transfusion blood",
+                  "explanation": "Current injectable TXA labeling specifies that it should not be mixed with blood."
+                }
+              ],
+              "point": "Recognize that TXA injection must not be mixed into blood products.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-hexakapron-tranexamic",
+                  "field": "monitor",
+                  "textSha256": "71b272023389b16f59f9543ee2fdf7c3567800e71676d3f9b3aac63395a8a9e0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-hexakapron-tranexamic--standard--txa_blood_mixing",
+              "points": 1,
+              "learningPointIds": [
+                "ed-hexakapron-tranexamic::txa_blood_mixing"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair is associated with serious adverse-effect concerns during IV tranexamic acid treatment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Urinary retention and serotonin toxicity",
+                  "explanation": "This pair is not the defined serious TXA adverse-effect concern."
+                },
+                {
+                  "id": "B",
+                  "text": "Marked hypoglycemia and AV block",
+                  "explanation": "These are not the characteristic paired adverse risks of TXA."
+                },
+                {
+                  "id": "C",
+                  "text": "A new seizure and signs of thrombosis",
+                  "explanation": "TXA can be associated with seizures and thromboembolic events."
+                },
+                {
+                  "id": "D",
+                  "text": "Progressive hearing loss and agranulocytosis",
+                  "explanation": "This pair reflects other medication safety profiles."
+                }
+              ],
+              "point": "Recognize seizures and thrombosis as potentially serious TXA adverse effects.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-hexakapron-tranexamic",
+                  "field": "monitor",
+                  "textSha256": "71b272023389b16f59f9543ee2fdf7c3567800e71676d3f9b3aac63395a8a9e0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-hexakapron-tranexamic--standard--txa_thrombosis_seizure",
+              "points": 1,
+              "learningPointIds": [
+                "ed-hexakapron-tranexamic::txa_thrombosis_seizure"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 6
+          "questionCount": 8
         },
         {
           "id": "ed-hexakapron-tranexamic--advanced",
@@ -17342,23 +17752,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Prevents premature breakdown of fibrin clots",
-                  "explanation": "Tranexamic acid interferes with plasminogen binding to fibrin and helps stabilize clots."
-                },
-                {
-                  "id": "B",
                   "text": "Inhibits bacterial DNA gyrase/topoisomerase IV",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Tranexamic acid interferes with plasminogen binding to fibrin and helps stabilize clots."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Stabilizes inactivated voltage-gated sodium channels",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Tranexamic acid interferes with plasminogen binding to fibrin and helps stabilize clots."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Mu agonism and reuptake inhibition",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Tranexamic acid interferes with plasminogen binding to fibrin and helps stabilize clots."
+                },
+                {
+                  "id": "D",
+                  "text": "Prevents premature breakdown of fibrin clots",
+                  "explanation": "Tranexamic acid interferes with plasminogen binding to fibrin and helps stabilize clots."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -17392,7 +17802,7 @@
                 "ed-hexakapron-tranexamic::principal-action"
               ],
               "reusedFromQuestionId": "ed-hexakapron-tranexamic--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -17410,13 +17820,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Fibrinolytic",
-                  "explanation": "The medicine is classified as: Antifibrinolytic; bleeding-control adjunct."
+                  "text": "Antifibrinolytic",
+                  "explanation": "Antifibrinolytic; bleeding-control adjunct."
                 },
                 {
                   "id": "D",
-                  "text": "Antifibrinolytic",
-                  "explanation": "Antifibrinolytic; bleeding-control adjunct."
+                  "text": "Fibrinolytic",
+                  "explanation": "The medicine is classified as: Antifibrinolytic; bleeding-control adjunct."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -17436,7 +17846,7 @@
                 "ed-hexakapron-tranexamic::drug-class"
               ],
               "reusedFromQuestionId": "ed-hexakapron-tranexamic--standard--drug-class",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -17494,18 +17904,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Creatinine trend and estimated GFR",
-                  "explanation": "These inform renal clearance and regimen review."
-                },
-                {
-                  "id": "B",
                   "text": "ALT trend and serum bilirubin",
                   "explanation": "These assess hepatic injury rather than directly estimate renal clearance."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "INR trend and prothrombin time",
                   "explanation": "These assess a coagulation pathway rather than renal clearance."
+                },
+                {
+                  "id": "C",
+                  "text": "Creatinine trend and estimated GFR",
+                  "explanation": "These inform renal clearance and regimen review."
                 },
                 {
                   "id": "D",
@@ -17531,7 +17941,7 @@
                 "ed-hexakapron-tranexamic::renal_dose"
               ],
               "reusedFromQuestionId": "ed-hexakapron-tranexamic--standard--renal_dose",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "A HEXAKAPRON — tranexamic acid (TXA) injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
@@ -17610,13 +18020,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Intravenous infusion under the authorized prescription",
-                  "explanation": "The route-specific warning concerns intrathecal or epidural injection, not authorized IV delivery."
+                  "text": "Intrathecal or epidural injection",
+                  "explanation": "Injectable tranexamic acid is for IV use; neuraxial administration has caused fatal injury."
                 },
                 {
                   "id": "B",
-                  "text": "Intrathecal or epidural injection",
-                  "explanation": "Injectable tranexamic acid is for IV use; neuraxial administration has caused fatal injury."
+                  "text": "Intravenous infusion under the authorized prescription",
+                  "explanation": "The route-specific warning concerns intrathecal or epidural injection, not authorized IV delivery."
                 },
                 {
                   "id": "C",
@@ -17654,7 +18064,95 @@
                 "ed-hexakapron-tranexamic::txa_wrong_route"
               ],
               "reusedFromQuestionId": "ed-hexakapron-tranexamic--standard--txa_wrong_route",
-              "answerKey": "B"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which proposed solution should not be mixed with the referenced injectable tranexamic acid product?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "0.9% sodium chloride",
+                  "explanation": "This is a compatible diluent for the referenced injection."
+                },
+                {
+                  "id": "B",
+                  "text": "Compatible electrolyte solution",
+                  "explanation": "Several electrolyte infusion solutions are permitted by product labeling."
+                },
+                {
+                  "id": "C",
+                  "text": "5% dextrose solution",
+                  "explanation": "This is a compatible diluent for the referenced injection."
+                },
+                {
+                  "id": "D",
+                  "text": "Transfusion blood",
+                  "explanation": "Current injectable TXA labeling specifies that it should not be mixed with blood."
+                }
+              ],
+              "point": "Recognize that TXA injection must not be mixed into blood products.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-hexakapron-tranexamic",
+                  "field": "monitor",
+                  "textSha256": "71b272023389b16f59f9543ee2fdf7c3567800e71676d3f9b3aac63395a8a9e0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-hexakapron-tranexamic--7-day--txa_blood_mixing",
+              "points": 1,
+              "learningPointIds": [
+                "ed-hexakapron-tranexamic::txa_blood_mixing"
+              ],
+              "reusedFromQuestionId": "ed-hexakapron-tranexamic--standard--txa_blood_mixing",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair is associated with serious adverse-effect concerns during IV tranexamic acid treatment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A new seizure and signs of thrombosis",
+                  "explanation": "TXA can be associated with seizures and thromboembolic events."
+                },
+                {
+                  "id": "B",
+                  "text": "Progressive hearing loss and agranulocytosis",
+                  "explanation": "This pair reflects other medication safety profiles."
+                },
+                {
+                  "id": "C",
+                  "text": "Marked hypoglycemia and AV block",
+                  "explanation": "These are not the characteristic paired adverse risks of TXA."
+                },
+                {
+                  "id": "D",
+                  "text": "Urinary retention and serotonin toxicity",
+                  "explanation": "This pair is not the defined serious TXA adverse-effect concern."
+                }
+              ],
+              "point": "Recognize seizures and thrombosis as potentially serious TXA adverse effects.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-hexakapron-tranexamic",
+                  "field": "monitor",
+                  "textSha256": "71b272023389b16f59f9543ee2fdf7c3567800e71676d3f9b3aac63395a8a9e0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-hexakapron-tranexamic--7-day--txa_thrombosis_seizure",
+              "points": 1,
+              "learningPointIds": [
+                "ed-hexakapron-tranexamic::txa_thrombosis_seizure"
+              ],
+              "reusedFromQuestionId": "ed-hexakapron-tranexamic--standard--txa_thrombosis_seizure",
+              "answerKey": "A"
             },
             {
               "stem": "The prescribed HEXAKAPRON — tranexamic acid (TXA) and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
@@ -17666,13 +18164,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "A previously tolerated dose of the original formulation",
-                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
+                  "text": "Product-specific interchangeability and an authorized order",
+                  "explanation": "Formulation differences require a defensible, authorized substitution."
                 },
                 {
                   "id": "C",
-                  "text": "Product-specific interchangeability and an authorized order",
-                  "explanation": "Formulation differences require a defensible, authorized substitution."
+                  "text": "A previously tolerated dose of the original formulation",
+                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
                 },
                 {
                   "id": "D",
@@ -17712,10 +18210,10 @@
                 "ed-hexakapron-tranexamic::formulation"
               ],
               "reusedFromQuestionId": "ed-hexakapron-tranexamic--advanced--formulation",
-              "answerKey": "C"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 7
+          "questionCount": 9
         }
       ]
     },

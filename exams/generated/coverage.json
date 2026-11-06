@@ -1736,6 +1736,19 @@
       ]
     },
     {
+      "id": "ibd2-vancomycin::vancomycin_combined_nephrotoxic",
+      "itemId": "ibd2-vancomycin",
+      "point": "Review cumulative nephrotoxicity when IV vancomycin is combined with nephrotoxic medications.",
+      "questionIds": [
+        "ibd2-vancomycin--standard--vancomycin_combined_nephrotoxic",
+        "ibd2-vancomycin--7-day--vancomycin_combined_nephrotoxic"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ibd2-vancomycin::drug_levels",
       "itemId": "ibd2-vancomycin",
       "point": "Interpret therapeutic drug concentrations with timing and clinical context.",
@@ -2855,6 +2868,19 @@
       "questionIds": [
         "ccu-heparin-ufh--standard--lmwh_route",
         "ccu-heparin-ufh--7-day--lmwh_route"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-heparin-ufh::heparin_rate_authorization",
+      "itemId": "ccu-heparin-ufh",
+      "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
+      "questionIds": [
+        "ccu-heparin-ufh--standard--heparin_rate_authorization",
+        "ccu-heparin-ufh--7-day--heparin_rate_authorization"
       ],
       "stages": [
         "standard",
@@ -4123,6 +4149,19 @@
       "questionIds": [
         "ccu-norepinephrine--standard--infusion_route",
         "ccu-norepinephrine--7-day--infusion_route"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-norepinephrine::norepi_peripheral_access",
+      "itemId": "ccu-norepinephrine",
+      "point": "Recognize that urgent vasopressors need not wait for central access when suitable monitored peripheral access exists.",
+      "questionIds": [
+        "ccu-norepinephrine--standard--norepi_peripheral_access",
+        "ccu-norepinephrine--7-day--norepi_peripheral_access"
       ],
       "stages": [
         "standard",
@@ -5829,6 +5868,19 @@
       "questionIds": [
         "ccu-adenosine--standard--adenosine_first",
         "ccu-adenosine--7-day--adenosine_first"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-adenosine::adenosine_immediate_flush",
+      "itemId": "ccu-adenosine",
+      "point": "Use a rapid adenosine IV push immediately followed by saline flush during indicated rhythm treatment.",
+      "questionIds": [
+        "ccu-adenosine--standard--adenosine_immediate_flush",
+        "ccu-adenosine--7-day--adenosine_immediate_flush"
       ],
       "stages": [
         "standard",
@@ -8136,6 +8188,19 @@
       ]
     },
     {
+      "id": "ed-decort-dexamethasone::dexamethasone_anaphylaxis_rescue",
+      "itemId": "ed-decort-dexamethasone",
+      "point": "Recognize that dexamethasone is not a substitute for prompt epinephrine during anaphylaxis.",
+      "questionIds": [
+        "ed-decort-dexamethasone--standard--dexamethasone_anaphylaxis_rescue",
+        "ed-decort-dexamethasone--7-day--dexamethasone_anaphylaxis_rescue"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ed-decort-dexamethasone::steroid_infection",
       "itemId": "ed-decort-dexamethasone",
       "point": "Systemic corticosteroids can increase infection risk and affect healing.",
@@ -8227,6 +8292,32 @@
       "stages": [
         "standard",
         "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_apomorphine",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_apomorphine"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors"
+      ],
+      "stages": [
+        "standard",
         "7-day"
       ]
     },
@@ -8436,6 +8527,19 @@
       ]
     },
     {
+      "id": "ed-vitamin-k-phytonadione::vitk_iv_max_rate",
+      "itemId": "ed-vitamin-k-phytonadione",
+      "point": "Recall the rate ceiling for IV administration of the specifically referenced phytonadione emulsion.",
+      "questionIds": [
+        "ed-vitamin-k-phytonadione--standard--vitk_iv_max_rate",
+        "ed-vitamin-k-phytonadione--7-day--vitk_iv_max_rate"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ed-vitamin-k-phytonadione::formulation",
       "itemId": "ed-vitamin-k-phytonadione",
       "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
@@ -8527,6 +8631,32 @@
       "stages": [
         "standard",
         "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::txa_blood_mixing",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Recognize that TXA injection must not be mixed into blood products.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--txa_blood_mixing",
+        "ed-hexakapron-tranexamic--7-day--txa_blood_mixing"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-hexakapron-tranexamic::txa_thrombosis_seizure",
+      "itemId": "ed-hexakapron-tranexamic",
+      "point": "Recognize seizures and thrombosis as potentially serious TXA adverse effects.",
+      "questionIds": [
+        "ed-hexakapron-tranexamic--standard--txa_thrombosis_seizure",
+        "ed-hexakapron-tranexamic--7-day--txa_thrombosis_seizure"
+      ],
+      "stages": [
+        "standard",
         "7-day"
       ]
     },
@@ -8768,6 +8898,19 @@
       ]
     },
     {
+      "id": "ed-omnic-tamsulosin::tamsulosin_capsule_meal",
+      "itemId": "ed-omnic-tamsulosin",
+      "point": "Distinguish Omnic modified-release capsule meal instructions from OCAS product instructions.",
+      "questionIds": [
+        "ed-omnic-tamsulosin--standard--tamsulosin_capsule_meal",
+        "ed-omnic-tamsulosin--7-day--tamsulosin_capsule_meal"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ed-omnic-tamsulosin::formulation",
       "itemId": "ed-omnic-tamsulosin",
       "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
@@ -8852,6 +8995,32 @@
       "questionIds": [
         "verified-alteplase-v35--standard--alteplase_duration",
         "verified-alteplase-v35--7-day--alteplase_duration"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "verified-alteplase-v35::alteplase_avoid_im",
+      "itemId": "verified-alteplase-v35",
+      "point": "Avoid routine IM injections during IV alteplase to reduce injection-site bleeding.",
+      "questionIds": [
+        "verified-alteplase-v35--standard--alteplase_avoid_im",
+        "verified-alteplase-v35--7-day--alteplase_avoid_im"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "verified-alteplase-v35::alteplase_no_mixing",
+      "itemId": "verified-alteplase-v35",
+      "point": "Do not add another medicine to the Activase infusion.",
+      "questionIds": [
+        "verified-alteplase-v35--standard--alteplase_no_mixing",
+        "verified-alteplase-v35--7-day--alteplase_no_mixing"
       ],
       "stages": [
         "standard",
@@ -12244,11 +12413,13 @@
           "ibd2-vancomycin--standard--renal_monitor",
           "ibd2-vancomycin--standard--vanco_infusion",
           "ibd2-vancomycin--standard--antimicrobial_response",
+          "ibd2-vancomycin--standard--vancomycin_combined_nephrotoxic",
           "ibd2-vancomycin--advanced--vanco_infusion",
           "ibd2-vancomycin--advanced--drug_levels",
           "ibd2-vancomycin--7-day--renal_monitor",
           "ibd2-vancomycin--7-day--vanco_infusion",
           "ibd2-vancomycin--7-day--antimicrobial_response",
+          "ibd2-vancomycin--7-day--vancomycin_combined_nephrotoxic",
           "ibd2-vancomycin--7-day--drug_levels"
         ],
         "memoryDanger": [
@@ -12877,11 +13048,13 @@
         ],
         "monitor": [
           "ccu-heparin-ufh--standard--heparin_infusion",
+          "ccu-heparin-ufh--standard--heparin_rate_authorization",
           "ccu-heparin-ufh--advanced--bleeding",
           "ccu-heparin-ufh--advanced--hit",
           "ccu-heparin-ufh--advanced--heparin_samples",
           "ccu-heparin-ufh--advanced--infusion_precision",
           "ccu-heparin-ufh--7-day--heparin_infusion",
+          "ccu-heparin-ufh--7-day--heparin_rate_authorization",
           "ccu-heparin-ufh--7-day--bleeding",
           "ccu-heparin-ufh--7-day--hit",
           "ccu-heparin-ufh--7-day--heparin_samples",
@@ -13696,8 +13869,10 @@
         ],
         "administration": [
           "ccu-norepinephrine--standard--infusion_route",
+          "ccu-norepinephrine--standard--norepi_peripheral_access",
           "ccu-norepinephrine--advanced--infusion_precision",
           "ccu-norepinephrine--7-day--infusion_route",
+          "ccu-norepinephrine--7-day--norepi_peripheral_access",
           "ccu-norepinephrine--7-day--infusion_precision"
         ],
         "monitor": [
@@ -14661,8 +14836,10 @@
         ],
         "administration": [
           "ccu-adenosine--standard--adenosine_first",
+          "ccu-adenosine--standard--adenosine_immediate_flush",
           "ccu-adenosine--advanced--adenosine_delivery",
           "ccu-adenosine--7-day--adenosine_first",
+          "ccu-adenosine--7-day--adenosine_immediate_flush",
           "ccu-adenosine--7-day--adenosine_delivery"
         ]
       },
@@ -15943,7 +16120,9 @@
         ],
         "use": [
           "ed-decort-dexamethasone--standard--treatment-role",
-          "ed-decort-dexamethasone--7-day--treatment-role"
+          "ed-decort-dexamethasone--standard--dexamethasone_anaphylaxis_rescue",
+          "ed-decort-dexamethasone--7-day--treatment-role",
+          "ed-decort-dexamethasone--7-day--dexamethasone_anaphylaxis_rescue"
         ],
         "memoryUse": [
           "ed-decort-dexamethasone--standard--treatment-role",
@@ -15956,7 +16135,9 @@
           "ed-decort-dexamethasone--7-day--steroid_infection"
         ],
         "memoryDanger": [
+          "ed-decort-dexamethasone--standard--dexamethasone_anaphylaxis_rescue",
           "ed-decort-dexamethasone--advanced--steroid_infection",
+          "ed-decort-dexamethasone--7-day--dexamethasone_anaphylaxis_rescue",
           "ed-decort-dexamethasone--7-day--steroid_infection"
         ],
         "administration": [
@@ -16000,10 +16181,14 @@
         "monitor": [
           "ed-ondansetron-provisional-shelf--standard--qt",
           "ed-ondansetron-provisional-shelf--standard--serotonin",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
           "ed-ondansetron-provisional-shelf--advanced--qt",
           "ed-ondansetron-provisional-shelf--advanced--serotonin",
           "ed-ondansetron-provisional-shelf--7-day--qt",
-          "ed-ondansetron-provisional-shelf--7-day--serotonin"
+          "ed-ondansetron-provisional-shelf--7-day--serotonin",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_apomorphine",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors"
         ],
         "memoryDanger": [
           "ed-ondansetron-provisional-shelf--standard--qt",
@@ -16120,8 +16305,10 @@
         ],
         "administration": [
           "ed-vitamin-k-phytonadione--standard--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--standard--vitk_iv_max_rate",
           "ed-vitamin-k-phytonadione--advanced--formulation",
           "ed-vitamin-k-phytonadione--7-day--warfarin_reversal",
+          "ed-vitamin-k-phytonadione--7-day--vitk_iv_max_rate",
           "ed-vitamin-k-phytonadione--7-day--formulation"
         ],
         "monitor": [
@@ -16176,10 +16363,14 @@
         "monitor": [
           "ed-hexakapron-tranexamic--standard--renal_dose",
           "ed-hexakapron-tranexamic--standard--slow_iv",
+          "ed-hexakapron-tranexamic--standard--txa_blood_mixing",
+          "ed-hexakapron-tranexamic--standard--txa_thrombosis_seizure",
           "ed-hexakapron-tranexamic--advanced--renal_dose",
           "ed-hexakapron-tranexamic--advanced--formulation",
           "ed-hexakapron-tranexamic--7-day--renal_dose",
           "ed-hexakapron-tranexamic--7-day--slow_iv",
+          "ed-hexakapron-tranexamic--7-day--txa_blood_mixing",
+          "ed-hexakapron-tranexamic--7-day--txa_thrombosis_seizure",
           "ed-hexakapron-tranexamic--7-day--formulation"
         ],
         "administration": [
@@ -16336,7 +16527,9 @@
           "ed-omnic-tamsulosin--7-day--tamsulosin_infected_obstruction"
         ],
         "administration": [
+          "ed-omnic-tamsulosin--standard--tamsulosin_capsule_meal",
           "ed-omnic-tamsulosin--advanced--formulation",
+          "ed-omnic-tamsulosin--7-day--tamsulosin_capsule_meal",
           "ed-omnic-tamsulosin--7-day--formulation"
         ]
       },
@@ -16377,18 +16570,22 @@
           "verified-alteplase-v35--standard--alteplase_regimen",
           "verified-alteplase-v35--standard--alteplase_bolus",
           "verified-alteplase-v35--standard--alteplase_duration",
+          "verified-alteplase-v35--standard--alteplase_no_mixing",
           "verified-alteplase-v35--advanced--alteplase_total",
           "verified-alteplase-v35--7-day--alteplase_regimen",
           "verified-alteplase-v35--7-day--alteplase_bolus",
           "verified-alteplase-v35--7-day--alteplase_duration",
+          "verified-alteplase-v35--7-day--alteplase_no_mixing",
           "verified-alteplase-v35--7-day--alteplase_total"
         ],
         "monitor": [
+          "verified-alteplase-v35--standard--alteplase_avoid_im",
           "verified-alteplase-v35--advanced--bleeding",
           "verified-alteplase-v35--advanced--alteplase_screen",
           "verified-alteplase-v35--advanced--alteplase_neuro",
           "verified-alteplase-v35--advanced--alteplase_bp",
           "verified-alteplase-v35--advanced--alteplase_followup",
+          "verified-alteplase-v35--7-day--alteplase_avoid_im",
           "verified-alteplase-v35--7-day--bleeding",
           "verified-alteplase-v35--7-day--alteplase_screen",
           "verified-alteplase-v35--7-day--alteplase_neuro",
