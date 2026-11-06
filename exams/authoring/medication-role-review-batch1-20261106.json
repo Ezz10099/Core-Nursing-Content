@@ -90,9 +90,9 @@
       "stem": "Which prescribed treatment role most strongly fits IV meropenem?",
       "correct": "Treatment of a serious complicated infection caused by susceptible organisms",
       "alternatives": [
-        "Routine prophylaxis for every uncomplicated elective operation",
+        "Perioperative prophylaxis in a clean elective procedure",
         "Targeted treatment of isolated methicillin-resistant S. aureus bacteremia",
-        "Treatment of colonization without evidence of bacterial infection"
+        "Treatment of incidental bacterial colonization in a stable patient"
       ],
       "clinicalSource": "content.json/use; DailyMed meropenem 2025",
       "distractorDesign": "All options relate to antibiotic selection and stewardship.",
@@ -218,8 +218,8 @@
       "stem": "Which assessment most closely matches a clinical reason to give prescribed IV furosemide?",
       "correct": "Pulmonary congestion with fluid overload in acute heart failure",
       "alternatives": [
-        "Severe hypotension after dehydration without congestion",
-        "Oliguria due to obstructed urinary outflow without fluid overload",
+        "Severe hypotension with dehydration and no pulmonary congestion",
+        "Oliguria caused by a mechanical urinary obstruction",
         "Low cardiac output from shock with depleted intravascular volume"
       ],
       "clinicalSource": "content.json/use; DailyMed furosemide 2026",
@@ -248,7 +248,7 @@
       "pointId": "ccu-heparin-ufh::treatment-role",
       "baselineUse": "Therapeutic anticoagulation and selected prophylactic uses.",
       "stem": "Which anticoagulation goal fits unfractionated heparin administration?",
-      "correct": "Preventing extension of a diagnosed acute thrombus under an authorized treatment plan",
+      "correct": "Preventing propagation of an acute thrombus",
       "alternatives": [
         "Directly dissolving a formed clot by activating plasminogen",
         "Reversing warfarin-associated vitamin-K factor suppression",
