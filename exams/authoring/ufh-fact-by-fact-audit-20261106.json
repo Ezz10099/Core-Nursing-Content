@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-06",
+  "medicationId": "ccu-heparin-ufh",
+  "title": "UFH source-to-scored-question author audit",
+  "status": "Manual source-fact mapping completed for this medicine; not independently clinically certified; selected questions await regenerated-runtime inspection",
+  "factsReviewed": 17,
+  "summary": {
+    "directlyTested": 6,
+    "newOrRevisedScoredStaged": 4,
+    "partiallyTested": 4,
+    "notDirectlyTested": 2,
+    "qualityGaps": 1
+  },
+  "method": "Manually separate important claims in the latest teaching fields, including the explicitly taught no-IM route fact missed by mechanical source-statement splitting. Count coverage only when knowing the source fact is necessary to get the scored answer; a fact printed in a stem or in a distractor gets no coverage credit.",
+  "notes": [
+    "This targeted audit does not change overall 82-medication certification counts.",
+    "Previously repeated concentration-doubling MCQ is replaced by a medication-specific numeric pump-rate calculation; not a recommended clinical dosing regimen.",
+    "The previous generic bleeding-recognition MCQ remains a question-quality gap and is NOT credited here.",
+    "Actual local UFH protocol, bag concentrations, lab monitoring method and authorizations must be checked with the facility before clinical use.",
+    "Independent clinician review of all keys, choices and clinical applicability remains required."
+  ],
+  "facts": [
+    {
+      "fact": "UFH anticoagulant classification",
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Unfractionated heparin anticoagulant.",
+      "assessment": "not_independently_tested",
+      "requiredQuestionIds": [],
+      "rationale": "The medicine label already discloses 'UFH'; a rote class item would be answer-cued. The anticoagulant role and mechanism are tested separately.",
+      "priority": "low",
+      "coverageCredit": false
+    },
+    {
+      "fact": "Antithrombin-mediated IIa/Xa inhibition",
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Binds antithrombin and accelerates inhibition of thrombin and factor Xa.",
+      "assessment": "directly_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::principal-action"
+      ],
+      "rationale": "The principal-action question requires the antithrombin/thrombin/Xa mechanism.",
+      "priority": "routine",
+      "coverageCredit": true
+    },
+    {
+      "fact": "Therapeutic anticoagulation indication",
+      "sourceField": "use",
+      "sourceExcerpt": "Therapeutic anticoagulation",
+      "assessment": "directly_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::treatment-role"
+      ],
+      "rationale": "The treatment-role question asks about prevention of thrombus propagation.",
+      "priority": "routine",
+      "coverageCredit": true
+    },
+    {
+      "fact": "Selected prophylactic role",
+      "sourceField": "use",
+      "sourceExcerpt": "selected prophylactic uses",
+      "assessment": "directly_tested_staged",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::heparin_prophylaxis"
+      ],
+      "rationale": "A new prophylaxis-specific SC UFH question requires identification of VTE prevention.",
+      "priority": "routine",
+      "coverageCredit": true
+    },
+    {
+      "fact": "Subcutaneous route",
+      "sourceField": "administration",
+      "sourceExcerpt": "May be SC",
+      "assessment": "not_directly_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::heparin_prophylaxis"
+      ],
+      "rationale": "SC is stated in a prophylaxis question stem, not required to select its correct answer; do not credit that wording as testing route selection.",
+      "priority": "medium",
+      "coverageCredit": false
+    },
+    {
+      "fact": "Intravenous route",
+      "sourceField": "administration",
+      "sourceExcerpt": "or IV depending on the order",
+      "assessment": "partially_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::infusion_precision"
+      ],
+      "rationale": "The bag/pump scenario involves IV UFH but does not directly ask the route distinction.",
+      "priority": "low",
+      "coverageCredit": false
+    },
+    {
+      "fact": "IM route avoidance",
+      "sourceField": "administration",
+      "sourceExcerpt": "Do not give IM",
+      "assessment": "directly_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::lmwh_route"
+      ],
+      "rationale": "The heparin-route short-answer question requires recall of IM avoidance.",
+      "priority": "high",
+      "coverageCredit": true
+    },
+    {
+      "fact": "Controlled pump for therapeutic infusion",
+      "sourceField": "administration",
+      "sourceExcerpt": "Therapeutic IV infusion requires a controlled pump",
+      "assessment": "partially_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::infusion_precision"
+      ],
+      "rationale": "The infusion question requires pump-rate calculation but the need for a controlled pump is supplied in the stem.",
+      "priority": "medium",
+      "coverageCredit": false
+    },
+    {
+      "fact": "Verify strength and distinguish treatment from catheter-flush heparin",
+      "sourceField": "administration",
+      "sourceExcerpt": "do not confuse a treatment vial with a catheter-flush product",
+      "assessment": "directly_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::heparin_infusion"
+      ],
+      "rationale": "The heparin-infusion MCQ explicitly tests treatment vs flush strength.",
+      "priority": "high",
+      "coverageCredit": true
+    },
+    {
+      "fact": "Heparin-specific major bleeding response",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Inspect for bleeding",
+      "assessment": "question_quality_gap",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::bleeding"
+      ],
+      "rationale": "The existing melena/pallor/hypotension item only asks to identify generic blood loss; the answer is inferable without knowing heparin. A targeted UFH nursing-response rewrite is pending.",
+      "priority": "high",
+      "coverageCredit": false
+    },
+    {
+      "fact": "Coagulation response testing",
+      "sourceField": "monitor",
+      "sourceExcerpt": "aPTT or UFH-calibrated anti-Xa, as specified by local protocol",
+      "assessment": "directly_tested_staged",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::heparin_samples"
+      ],
+      "rationale": "The revised UFH coagulation question directly asks which response test guides authorized titration.",
+      "priority": "high",
+      "coverageCredit": true
+    },
+    {
+      "fact": "Platelet monitoring for HIT",
+      "sourceField": "monitor",
+      "sourceExcerpt": "platelet counts and other safety labs",
+      "assessment": "partially_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::hit"
+      ],
+      "rationale": "HIT recognition is tested after a platelet fall, but the separate practice of scheduled platelet surveillance is not directly tested.",
+      "priority": "medium",
+      "coverageCredit": false
+    },
+    {
+      "fact": "Authorized nurse-driven titration",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Do not independently change an infusion rate unless an authorized nurse-driven protocol applies",
+      "assessment": "directly_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::heparin_rate_authorization"
+      ],
+      "rationale": "The question requires escalation rather than an unsanctioned rate change.",
+      "priority": "high",
+      "coverageCredit": true
+    },
+    {
+      "fact": "HIT recognition",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Suspect HIT with a substantial unexpected platelet fall",
+      "assessment": "directly_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::hit"
+      ],
+      "rationale": "The existing HIT question requires connecting UFH exposure and platelet decline to HIT.",
+      "priority": "high",
+      "coverageCredit": true
+    },
+    {
+      "fact": "First action when HIT strongly suspected",
+      "sourceField": "monitor",
+      "sourceExcerpt": "promptly stop heparin and escalate for urgent assessment",
+      "assessment": "directly_tested_staged",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::heparin_hit_action"
+      ],
+      "rationale": "A new HIT-action question asks for immediate response to a marked platelet decline with new thrombosis.",
+      "priority": "high",
+      "coverageCredit": true
+    },
+    {
+      "fact": "Variability of UFH effect requires laboratory follow-up",
+      "sourceField": "why",
+      "sourceExcerpt": "UFH has a variable anticoagulant effect",
+      "assessment": "partially_tested",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::heparin_samples"
+      ],
+      "rationale": "The revised monitoring question tests response measurements, but not a separate explanation of variability.",
+      "priority": "routine",
+      "coverageCredit": false
+    },
+    {
+      "fact": "Order-versus-concentration infusion calculation",
+      "sourceField": "administration",
+      "sourceExcerpt": "Therapeutic IV infusion requires a controlled pump after dilution",
+      "assessment": "directly_tested_staged",
+      "requiredQuestionIds": [
+        "ccu-heparin-ufh::infusion_precision"
+      ],
+      "rationale": "An updated numeric-entry question requires calculating mL/hour from a hypothetical units/hour order and verified bag strength.",
+      "priority": "high",
+      "coverageCredit": true
+    }
+  ],
+  "verifiedExternalEvidence": [
+    {
+      "issuer": "US DailyMed current heparin injection labeling",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c181d7e-aed2-4975-30ac-d39a94cca7ec",
+      "verifiedPoints": [
+        "SC/IV routes and avoid IM",
+        "treatment vs flush product",
+        "platelet monitoring",
+        "HIT urgency",
+        "bleeding/coagulation monitoring"
+      ]
+    },
+    {
+      "issuer": "NSW Health 2025 intravenous UFH infusion guideline",
+      "url": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2025_009.pdf",
+      "verifiedPoints": [
+        "aPTT versus anti-factor Xa monitored per selected authorized plan",
+        "platelet and hemoglobin surveillance"
+      ]
+    }
+  ],
+  "unresolvedClinicalReview": "Local product/formulation and facility protocol confirmation, clinician key/distractor review, all missing direct questions, independent certification"
+}
