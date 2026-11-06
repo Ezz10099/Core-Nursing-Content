@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "revision": "drug-dependent-20261106",
   "checkedDate": "2026-11-06",
-  "reviewStatus": "Targeted medication-role question revision with source verification; not independent clinical validation or empirically calibrated difficulty.",
+  "reviewStatus": "Medication-role author review + 8 overlapping-class fixes + focused 18-formulation-template audit; clinical validation and full 82-medication fact coverage still pending.",
   "items": {
     "ccu-verapamil::slow_iv": {
       "action": "replace",
@@ -3396,6 +3396,369 @@
         "point": "Recognize sodium bicarbonate as a systemic alkalinizing drug rather than a calcium, magnesium, or glucose treatment.",
         "criticalForSafety": false
       }
+    },
+    "ibd2-carbamazepine::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient taking Tegretol-XR cannot swallow tablets. The planned dose is an extended-release tablet. What should the nurse do?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Request an authorized suitable formulation instead of crushing the XR tablet",
+            "explanation": "Tegretol-XR must not be crushed or chewed. Use an authorized alternative formulation and dosing plan."
+          },
+          {
+            "id": "B",
+            "text": "Crush the XR tablet and mix it with a small volume of water",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "Break the XR tablet into pieces and give it through the feeding tube",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "Substitute regular carbamazepine tablets at the same schedule without review",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize that Tegretol-XR must not be crushed or substituted with immediate-release formulation without review.",
+        "criticalForSafety": true
+      }
+    },
+    "ibd2-epanutin-phenytoin::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A stable patient on oral Epanutin (phenytoin) is switched to another phenytoin formulation because of a supply change. Which issue most directly requires review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Formulation-dependent exposure and need for clinical or drug-level reassessment",
+            "explanation": "Oral phenytoin products are not automatically interchangeable dose-for-dose; changing formulation can require therapeutic monitoring and review."
+          },
+          {
+            "id": "B",
+            "text": "Different packaging despite unchanged pharmacological exposure",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "Expected loss of all anticonvulsant activity after any oral substitution",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "Automatic equivalent exposure whenever the total milligram dose matches",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize potential phenytoin exposure changes with formulation substitution and the need for monitoring.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-isosorbide-mononitrate::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient prescribed modified-release isosorbide mononitrate asks to crush the tablet because swallowing is difficult. What is the relevant concern?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Crushing can defeat the prescribed controlled-release delivery",
+            "explanation": "Modified-release oral nitrate tablets must not be treated as freely crushable immediate-release products."
+          },
+          {
+            "id": "B",
+            "text": "Crushing changes the nitrate into a selective beta blocker",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "Crushing eliminates the need to monitor blood pressure",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "Crushing converts the formulation into a sublingual rescue tablet",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the controlled-release formulation issue for isosorbide mononitrate.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-metoprolol::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A prescription specifies metoprolol tartrate, but the available box contains metoprolol succinate extended-release. Which difference matters before dispensing?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The release characteristics and dosing schedule may differ",
+            "explanation": "Metoprolol tartrate and extended-release succinate are not automatically interchangeable on the same regimen."
+          },
+          {
+            "id": "B",
+            "text": "Metoprolol succinate is an entirely different receptor blocker",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "Metoprolol tartrate is intended only for topical administration",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "The nominal milligram strength alone establishes an identical regimen",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish metoprolol tartrate from extended-release succinate formulations.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-pantoprazole::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "For the referenced pantoprazole 40-mg IV powder vial, which initial reconstitution is specified by the product instructions?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10 mL of 0.9% sodium chloride",
+            "explanation": "The referenced 40-mg pantoprazole IV vial is initially reconstituted with 10 mL of 0.9% NaCl; further dilution and injection/infusion timing depend on the product instructions."
+          },
+          {
+            "id": "B",
+            "text": "10 mL of 5% dextrose as the initial reconstitution",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "10 mL of sterile water as the initial reconstitution",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "10 mL of lidocaine as the initial reconstitution",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall the initial reconstitution for the specific referenced pantoprazole 40-mg IV product, not a universal rule for all brands.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-hydrocortisone::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "For emergency IV hydrocortisone treatment, which hydrocortisone preparation is commonly selected for reconstitution?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hydrocortisone sodium succinate powder for injection",
+            "explanation": "The study material identifies hydrocortisone sodium succinate as a common emergency injectable product. Check the actual vial and reconstitution instructions."
+          },
+          {
+            "id": "B",
+            "text": "Hydrocortisone acetate cream for topical application",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "Hydrocortisone oral tablet for enteral dosing",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "Hydrocortisone butyrate ointment for skin application",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify a common hydrocortisone emergency IV formulation as sodium succinate injection.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-novalgin-metamizole::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient receiving IV metamizole develops hypotension during the injection. Which administration-related problem is particularly relevant to this drug?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Excessively rapid IV administration can contribute to marked hypotension",
+            "explanation": "Injectable metamizole requires product-specific slow IV administration and BP monitoring because hypotension and anaphylaxis can occur."
+          },
+          {
+            "id": "B",
+            "text": "A slow IV injection is expected to directly cause severe hyperglycemia",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "The drug loses all analgesic activity when delivered through venous access",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "The IV route routinely prevents hypersensitivity reactions",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize the route/rate-related hypotension risk during IV metamizole administration.",
+        "criticalForSafety": true
+      }
+    },
+    "ed-diclofenac-injection::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A clinician orders IV diclofenac using the referenced UK Voltarol 75 mg/3 mL ampoule. Which preparation method is supported by that product's instructions?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A specifically buffered and diluted IV infusion rather than IV bolus",
+            "explanation": "The cited Voltarol 75 mg/3 mL SmPC prohibits IV bolus; IV infusion requires the specified buffered dilution. Other products require their own insert."
+          },
+          {
+            "id": "B",
+            "text": "Undiluted IV bolus administration using the full ampoule",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "Subcutaneous injection using the same total dose",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "Direct IV push after warming the undiluted ampoule",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish the referenced Voltarol IV infusion preparation from prohibited direct IV bolus.",
+        "criticalForSafety": true
+      }
+    },
+    "ed-vitamin-k-phytonadione::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An anticoagulated adult with a markedly elevated INR has a new IM phytonadione order. Which route-related safety concern should the nurse raise?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "IM administration may cause a hematoma and carries parenteral hypersensitivity risk",
+            "explanation": "IM injection in an anticoagulated patient creates bleeding/hematoma concern, and current injectable phytonadione labeling warns of severe IM/IV hypersensitivity. Clarify the ordered route against the product and urgent reversal protocol."
+          },
+          {
+            "id": "B",
+            "text": "IM administration provides immediate reversal of factor Xa inhibitors",
+            "explanation": "This does not preserve the product-specific administration requirements or clinical safety distinction."
+          },
+          {
+            "id": "C",
+            "text": "IM administration removes the need for INR reassessment",
+            "explanation": "This does not address the formulation-specific nursing precaution established in the teaching material."
+          },
+          {
+            "id": "D",
+            "text": "IM administration avoids all serious hypersensitivity reactions",
+            "explanation": "This is not justified by the documented route, release characteristics or applicable product instructions."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify IM hematoma and serious hypersensitivity risks with injectable phytonadione in an anticoagulated patient.",
+        "criticalForSafety": true
+      }
+    },
+    "ibd2-tramadol::formulation": {
+      "action": "omit",
+      "reason": "The shared formulation-substitution answer does not test a specific tramadol oral product property; preserve the safety instruction in teaching, but no scored coverage credit.",
+      "unresolvedCoverage": false
+    },
+    "ibd2-prothiazine::formulation": {
+      "action": "omit",
+      "reason": "The generic authorization prompt duplicates the existing promethazine route learning point; no separate formulation score.",
+      "unresolvedCoverage": false
+    },
+    "ccu-isosorbide-dinitrate::formulation": {
+      "action": "omit",
+      "reason": "The documented sublingual administration is already directly tested by the SL-tablet question; avoid repeated generic substitution credit.",
+      "unresolvedCoverage": false
+    },
+    "trolley-amiodarone::formulation": {
+      "action": "omit",
+      "reason": "The infusion and rhythm-specific setup is already assessed by dedicated rhythm-pathway/infusion questions; a generic formulation authorization answer adds no medicine-specific discrimination.",
+      "unresolvedCoverage": false
+    },
+    "ibd2-clindamycin::formulation": {
+      "action": "omit",
+      "reason": "The available source only establishes that route and infusion details depend on the actual product; a generic check-the-label answer is not scored coverage.",
+      "unresolvedCoverage": false
+    },
+    "ed-decort-dexamethasone::formulation": {
+      "action": "omit",
+      "reason": "The shared formulation-check prompt is not a dexamethasone-specific test; injection salt/route may merit a verified targeted question later.",
+      "unresolvedCoverage": false
+    },
+    "ed-ondansetron-provisional-shelf::formulation": {
+      "action": "omit",
+      "reason": "The shelf label does not prove actual product formulation; generic substitution instruction remains source advice but earns no drug-specific score.",
+      "unresolvedCoverage": false
+    },
+    "ed-hexakapron-tranexamic::formulation": {
+      "action": "omit",
+      "reason": "TXA IV-only and serious neuraxial errors are already tested with the dedicated route question; duplicate generic substitution prompt earns no credit.",
+      "unresolvedCoverage": false
+    },
+    "ed-omnic-tamsulosin::formulation": {
+      "action": "omit",
+      "reason": "Omnic modified-release capsule vs OCAS meal instructions are already directly assessed; generic authorization prompt duplicates a distinct safety question.",
+      "unresolvedCoverage": false
     }
   },
   "evidenceChecks": [
@@ -3426,22 +3789,33 @@
     }
   ],
   "coverageRevisions": {
-    "ed-ondansetron-provisional-shelf": "drug-coverage-20261106",
-    "ed-decort-dexamethasone": "drug-coverage-20261106",
-    "ed-hexakapron-tranexamic": "drug-coverage-20261106",
-    "ed-vitamin-k-phytonadione": "drug-choice-audit-20261106-v2",
+    "ed-ondansetron-provisional-shelf": "formulation-quality-audit-20261106",
+    "ed-decort-dexamethasone": "formulation-quality-audit-20261106",
+    "ed-hexakapron-tranexamic": "formulation-quality-audit-20261106",
+    "ed-vitamin-k-phytonadione": "formulation-quality-audit-20261106",
     "verified-alteplase-v35": "drug-coverage-20261106",
     "ccu-norepinephrine": "drug-choice-audit-20261106-v2",
     "ibd2-vancomycin": "drug-coverage-20261106",
     "ccu-heparin-ufh": "drug-coverage-20261106",
     "ccu-adenosine": "drug-coverage-20261106",
-    "ed-omnic-tamsulosin": "drug-coverage-20261106",
+    "ed-omnic-tamsulosin": "formulation-quality-audit-20261106",
     "ccu-dopamine": "drug-choice-audit-20261106-v2",
     "ccu-dobutamine": "drug-choice-audit-20261106-v2",
-    "ed-diclofenac-injection": "drug-choice-audit-20261106-v2",
-    "ed-novalgin-metamizole": "drug-choice-audit-20261106-v2",
+    "ed-diclofenac-injection": "formulation-quality-audit-20261106",
+    "ed-novalgin-metamizole": "formulation-quality-audit-20261106",
     "trolley-calcium-gluconate": "drug-choice-audit-20261106-v2",
-    "trolley-sodium-bicarbonate": "drug-choice-audit-20261106-v2"
+    "trolley-sodium-bicarbonate": "drug-choice-audit-20261106-v2",
+    "ibd2-carbamazepine": "formulation-quality-audit-20261106",
+    "ibd2-epanutin-phenytoin": "formulation-quality-audit-20261106",
+    "ccu-isosorbide-mononitrate": "formulation-quality-audit-20261106",
+    "ccu-metoprolol": "formulation-quality-audit-20261106",
+    "ccu-pantoprazole": "formulation-quality-audit-20261106",
+    "trolley-hydrocortisone": "formulation-quality-audit-20261106",
+    "ibd2-tramadol": "formulation-quality-audit-20261106",
+    "ibd2-prothiazine": "formulation-quality-audit-20261106",
+    "ccu-isosorbide-dinitrate": "formulation-quality-audit-20261106",
+    "trolley-amiodarone": "formulation-quality-audit-20261106",
+    "ibd2-clindamycin": "formulation-quality-audit-20261106"
   },
   "roleReviewRevision": "drug-role-20261106-batch4"
 }
