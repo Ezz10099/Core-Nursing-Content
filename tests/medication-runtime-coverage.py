@@ -62,6 +62,45 @@ for bank in meds:
 assert realized.issubset(authored), "Runtime point absent from authored inventory"
 assert authored == realized | excluded, "Unexplained authored point without scored question"
 assert coverage["sourceReview"]["fullyReviewedItemIds"] == [], "Do not promote incomplete audit"
+
+# Regression guard for the repeated formulation-substitution template that gave
+# away the answer across multiple medication exams. This checks scored runtime
+# output, not clinical/psychometric validity.
+generic_formulation_phrase = "supplied product differ in release type or route"
+generic_formulation_key = "Product-specific interchangeability and an authorized order"
+for bank in meds:
+    questions = bank["exams"][0]["questions"]
+    assert not any(generic_formulation_phrase in q.get("stem", "") for q in questions), (
+        f"Generic formulation template still scored: {bank['itemId']}"
+    )
+    assert not any(
+        choice.get("text") == generic_formulation_key
+        for q in questions if q.get("format") == "single-best-answer"
+        for choice in q["choices"]
+    ), f"Generic formulation answer still scored: {bank['itemId']}"
+formulation_review = {
+    point: spec for point, spec in revisions["items"].items()
+    if point.endswith("::formulation") and spec.get("action") in {"omit", "replace"}
+}
+assert len(formulation_review) >= 18, "Expected review of all 18 recurring formulation questions"
+for point, decision in formulation_review.items():
+    item = point.split("::", 1)[0]
+    b = next(b for b in meds if b["itemId"] == item)
+    qs = [q for q in b["exams"][0]["questions"] if q["learningPointIds"] == [point]]
+    if decision["action"] == "omit":
+        assert not qs and point in excluded, f"Uncredited omission reappeared: {point}"
+        assert "reason" in decision and "unresolvedCoverage" in decision, point
+    else:
+        assert len(qs) == 1 and qs[0].get("revision"), f"Unversioned formulation revision: {point}"
+        assert qs[0]["stem"] == decision["question"]["stem"], f"Wrong formulation question: {point}"
+        assert all(c.get("explanation") for c in qs[0].get("choices", [])), point
+for point in (
+    "ed-vitamin-k-phytonadione::vitk_inr_followup",
+    "ed-hexakapron-tranexamic::txa_pph_source_control",
+    "ccu-norepinephrine::norepi_extravasation_action",
+):
+    assert point in realized, f"Safety learning point missing from scored form: {point}"
+print(f"Formulation-template regression: {len(formulation_review)} review decisions; no generic scored repeats.")
 print(f"Runtime medication audit: {len(meds)} medicines, {len(realized)} scored points, "
       f"{len(excluded)} explicit uncredited exclusions, {critical} safety-critical questions.")
 print("PASS only for structural/runtime reconciliation. Source completeness and clinical validity remain unverified.")
