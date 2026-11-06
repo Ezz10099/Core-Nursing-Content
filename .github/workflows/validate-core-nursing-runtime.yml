@@ -51,6 +51,8 @@ jobs:
           python scripts/build_exams.py --check
           python tests/exam-banks.py
           python scripts/build_runtime_exam_data.py --check
+          python scripts/build_material_readiness.py --check
+          python tests/material-readiness.py
           node tests/exam-core.cjs
           node tests/comprehensive.cjs
       - name: Validate JavaScript syntax
@@ -64,6 +66,7 @@ jobs:
           node tests/study-ui.cjs
           node tests/question-marks.cjs
           node tests/exams-ui.cjs
+          node tests/material-readiness.cjs
           node tests/updates-ui.cjs
           node tests/quick-questions.cjs
           node tests/requests.cjs
