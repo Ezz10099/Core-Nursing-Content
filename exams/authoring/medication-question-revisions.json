@@ -3103,6 +3103,79 @@
         "point": "Identify the main treatment role taught for this medicine.",
         "criticalForSafety": false
       }
+    },
+    "ccu-norepinephrine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "In shock management, which drug class and predominant effect best describe norepinephrine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Catecholamine vasopressor producing predominantly alpha-1 vasoconstriction",
+            "explanation": "Norepinephrine is a catecholamine vasopressor, with predominant alpha-1-mediated vasoconstriction and some beta-1 activity."
+          },
+          {
+            "id": "B",
+            "text": "Non-catecholamine vasopressor acting mainly at vasopressin V1 receptors",
+            "explanation": "This describes vasopressin rather than the catecholamine norepinephrine."
+          },
+          {
+            "id": "C",
+            "text": "Catecholamine inotrope used mainly to increase myocardial contractility",
+            "explanation": "Dobutamine has a principally inotropic role; norepinephrine is used primarily to support vascular tone and pressure."
+          },
+          {
+            "id": "D",
+            "text": "Direct vasodilator that primarily decreases systemic vascular resistance",
+            "explanation": "Reducing systemic vascular resistance is opposite to norepinephrine's principal vasopressor action."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish norepinephrine's catecholamine vasopressor classification from vasopressin, inotropes, and vasodilators.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-vitamin-k-phytonadione::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "In warfarin-associated coagulopathy, how is phytonadione's therapeutic role best classified?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Vitamin cofactor replacement supporting synthesis of functional clotting factors",
+            "explanation": "Phytonadione supplies vitamin K needed for hepatic production of functional vitamin-K-dependent clotting factors; the response is not immediate."
+          },
+          {
+            "id": "B",
+            "text": "Clotting-factor concentrate directly supplying active coagulation proteins",
+            "explanation": "This describes prothrombin complex concentrate, which supplies clotting factors rather than vitamin K cofactor."
+          },
+          {
+            "id": "C",
+            "text": "Direct factor-Xa inhibitor preventing thrombin generation during anticoagulation",
+            "explanation": "This describes a factor-Xa anticoagulant, which does not reverse vitamin K deficiency or warfarin's effects."
+          },
+          {
+            "id": "D",
+            "text": "Fibrinolytic drug activating plasmin to break down existing fibrin",
+            "explanation": "Fibrinolytic drugs promote clot breakdown and do not replenish vitamin-K-dependent clotting factor activity."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish phytonadione cofactor replacement from direct factor replacement, anticoagulation, and fibrinolysis.",
+        "criticalForSafety": false
+      }
     }
   },
   "evidenceChecks": [
@@ -3136,9 +3209,9 @@
     "ed-ondansetron-provisional-shelf": "drug-coverage-20261106",
     "ed-decort-dexamethasone": "drug-coverage-20261106",
     "ed-hexakapron-tranexamic": "drug-coverage-20261106",
-    "ed-vitamin-k-phytonadione": "drug-coverage-20261106",
+    "ed-vitamin-k-phytonadione": "drug-choice-audit-20261106-v2",
     "verified-alteplase-v35": "drug-coverage-20261106",
-    "ccu-norepinephrine": "drug-coverage-20261106",
+    "ccu-norepinephrine": "drug-choice-audit-20261106-v2",
     "ibd2-vancomycin": "drug-coverage-20261106",
     "ccu-heparin-ufh": "drug-coverage-20261106",
     "ccu-adenosine": "drug-coverage-20261106",
