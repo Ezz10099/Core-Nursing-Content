@@ -66,7 +66,7 @@ assert.equal(medicationBanks.length,82);
 assert.equal(medicationBanks.reduce((n,b)=>n+b.scoringExclusions.length,0),30);
 const authoringRevisions=JSON.parse(fs.readFileSync('exams/authoring/medication-question-revisions.json','utf8'));
 const expectedRevisedPointIds=Object.entries(authoringRevisions.items).filter(([,r])=>r.action==='replace').map(([id])=>id).sort();
-const actualRevisedPointIds=medicationBanks.flatMap(b=>b.exams[0].questions).filter(q=>q.revision).map(q=>q.learningPointIds[0]).sort();
+const actualRevisedPointIds=Array.from(medicationBanks.flatMap(b=>b.exams[0].questions).filter(q=>q.revision).map(q=>q.learningPointIds[0])).sort();
 assert.deepEqual(actualRevisedPointIds,expectedRevisedPointIds,'Revised scored questions must match explicit authoring revisions');
 for(const b of medicationBanks){
  assert.equal(b.exams[0].questionCount,b.exams[0].questions.length);
