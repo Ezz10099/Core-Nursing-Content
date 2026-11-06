@@ -7793,5 +7793,61 @@
         }
       ]
     }
+  },
+  "ondansetron_congenital_qt": {
+    "point": "Distinguish the ondansetron label's avoidance recommendation in congenital long-QT syndrome from monitoring precautions for other risk factors.",
+    "anchor": "Avoid ondansetron in known congenital long-QT syndrome",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient with documented congenital long-QT syndrome is prescribed IV ondansetron for nausea. Which response best follows current injection labeling?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Withhold administration and promptly clarify a different antiemetic plan",
+          "explanation": "Current ondansetron labeling advises avoiding use in congenital long-QT syndrome because of torsades risk."
+        },
+        {
+          "text": "Proceed at a reduced dose because congenital QT risk applies only to oral treatment",
+          "explanation": "The congenital long-QT warning also applies to injectable ondansetron, even at lower doses."
+        },
+        {
+          "text": "Proceed if potassium and magnesium are normal without further QT review",
+          "explanation": "Normal electrolytes do not remove the intrinsic congenital long-QT risk."
+        },
+        {
+          "text": "Administer with a slower IV push because rate adjustment removes the congenital risk",
+          "explanation": "Slowing injection does not negate the label's congenital long-QT avoidance recommendation."
+        }
+      ]
+    }
+  },
+  "ondansetron_cardiac_qt_risk": {
+    "point": "Recognize heart failure, bradyarrhythmia and QT-prolonging co-medication as ECG-monitoring risk factors with IV ondansetron.",
+    "anchor": "heart failure, bradyarrhythmia",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Potassium and magnesium are normal in four patients awaiting IV ondansetron. Which patient still has a label-recognized reason for ECG monitoring?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "A patient with heart failure who is taking amiodarone",
+          "explanation": "Heart failure and a QT-prolonging antiarrhythmic add relevant risk even without electrolyte abnormalities."
+        },
+        {
+          "text": "A patient with isolated hypertension taking amlodipine",
+          "explanation": "Uncomplicated hypertension and amlodipine are not the specific label-cited QT-risk combination."
+        },
+        {
+          "text": "A patient with fever taking paracetamol",
+          "explanation": "Neither uncomplicated fever nor paracetamol is the characteristic label-cited QT-risk factor."
+        },
+        {
+          "text": "A patient with reflux taking pantoprazole and normal electrolytes",
+          "explanation": "This scenario does not state the label's cardiac/QT risk factors; potassium and magnesium are stated as normal."
+        }
+      ]
+    }
   }
 }
