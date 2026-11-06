@@ -69,14 +69,17 @@ print("PASS only for structural/runtime reconciliation. Source completeness and 
 # Verify every explicitly revised medication-use question against its staged
 # review record, without treating this structural match as clinical validation.
 role_index = {}
-for report_path in (
-    "exams/authoring/medication-role-review-batch1-20261106.json",
-    "exams/authoring/medication-role-review-batch2-20261106.json",
-):
-    report = load(report_path)
+review_paths = sorted((ROOT / "exams/authoring").glob("medication-role-review-batch*-20261106.json"))
+assert len(review_paths) == 4, f"Expected all four review batches, got {len(review_paths)}"
+review_counts = {}
+for path in review_paths:
+    report = json.loads(path.read_text(encoding="utf-8"))
+    review_counts[path.name] = len(report["items"])
     for row in report["items"]:
         role_index[row["itemId"]] = row
-assert len(role_index) == 29, f"Expected 29 distinct reviewed treatment-role items, got {len(role_index)}"
+assert len(role_index) == len(meds), (
+    f"Expected all {len(meds)} treatment-role items, got {len(role_index)} distinct medication items"
+)
 for bank in meds:
     row = role_index.get(bank["itemId"])
     if not row:
@@ -95,4 +98,8 @@ for bank in meds:
     assert len(distractors) == 3 and set(distractors) == set(row["alternatives"]), (
         f"Wrong distractor set: {bank['itemId']}"
     )
-print(f"Reviewed role-question reconciliation: {len(role_index)} matching source-recorded items.")
+    assert len(set(choice["text"].strip().casefold() for choice in q["choices"])) == 4, (
+        f"Duplicate role choices: {bank['itemId']}"
+    )
+    assert q["point"] == "Identify the main treatment role taught for this medicine.", bank["itemId"]
+print(f"Reviewed role-question reconciliation: {len(role_index)} matching source-recorded items; batches={review_counts}.")
