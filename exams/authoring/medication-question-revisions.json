@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "revision": "drug-dependent-20261106",
   "checkedDate": "2026-11-06",
-  "reviewStatus": "Targeted author revision; not independent clinical validation or measured difficulty.",
+  "reviewStatus": "Medication-role author review + 8 overlapping-class fixes + focused 18-formulation-template audit; clinical validation and full 82-medication fact coverage still pending.",
   "items": {
     "ccu-verapamil::slow_iv": {
       "action": "replace",
@@ -10,12 +10,12 @@
         "administration"
       ],
       "question": {
-        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Continuous ECG and BP monitoring are already arranged. Enter the number in minutes.",
+        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Enter the number in minutes.",
         "format": "numeric-entry",
         "answer": 2,
         "unit": "minutes",
         "tolerance": 0,
-        "explanation": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
+        "explanation": "The referenced initial IV injection is administered over at least 2 minutes in non-elderly adults. This is a minimum administration time, not a dose.",
         "point": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
         "criticalForSafety": true
       }
@@ -233,6 +233,3736 @@
       "action": "omit",
       "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
       "unresolvedCoverage": true
+    },
+    "verified-alteplase-v35::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which situation best matches a potential indication for IV alteplase after the required stroke eligibility assessment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "An acute disabling ischemic stroke with brain hemorrhage excluded",
+            "explanation": "Alteplase may be used for eligible acute ischemic stroke after imaging and contraindication screening."
+          },
+          {
+            "id": "B",
+            "text": "A suspected acute stroke before brain imaging",
+            "explanation": "Brain imaging must exclude hemorrhage before stroke thrombolysis."
+          },
+          {
+            "id": "C",
+            "text": "A confirmed acute intracranial hemorrhagic stroke",
+            "explanation": "Alteplase increases bleeding and is not an ischemic stroke treatment when hemorrhage is present."
+          },
+          {
+            "id": "D",
+            "text": "Transient symptoms fully resolved without disabling deficit",
+            "explanation": "Complete resolution without a disabling deficit does not establish a routine IV-thrombolysis indication."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-hexakapron-tranexamic::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which role best describes IV tranexamic acid in a patient with diagnosed postpartum hemorrhage soon after birth?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "An early antifibrinolytic adjunct to standard hemorrhage treatment",
+            "explanation": "TXA is recommended early as part of the postpartum-hemorrhage treatment bundle, not in place of source control."
+          },
+          {
+            "id": "B",
+            "text": "The uterotonic that directly contracts an atonic uterus",
+            "explanation": "Oxytocics treat uterine atony; TXA limits fibrin-clot breakdown rather than contracting the uterus."
+          },
+          {
+            "id": "C",
+            "text": "The blood component used to replace depleted red cells",
+            "explanation": "TXA is not a transfusion product and does not correct anemia."
+          },
+          {
+            "id": "D",
+            "text": "The sole replacement for fluid resuscitation and source control",
+            "explanation": "TXA is an adjunct and does not replace fluids, uterotonics, investigation or escalation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-ondansetron-provisional-shelf::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which symptom-management role is most appropriate for ondansetron?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prevention or relief of postoperative nausea and vomiting",
+            "explanation": "Ondansetron is a 5-HT3 antagonist used for prevention or treatment of nausea and vomiting."
+          },
+          {
+            "id": "B",
+            "text": "Improving delayed gastric emptying in gastroparesis",
+            "explanation": "A prokinetic is used when accelerating gastric motility is the treatment goal."
+          },
+          {
+            "id": "C",
+            "text": "Treating vestibular motion sickness as first-line therapy",
+            "explanation": "Ondansetron is not an established first-line drug for vestibular motion sickness."
+          },
+          {
+            "id": "D",
+            "text": "Suppressing gastric acid in reflux-related symptoms",
+            "explanation": "Proton-pump inhibitors or other acid-suppressants address acid secretion, not ondansetron's action."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-vancomycin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which infection-related situation most specifically supports selecting IV vancomycin after culture and treatment review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Susceptible MRSA infection involving an orthopedic implant",
+            "explanation": "IV vancomycin treats serious susceptible gram-positive infections, including appropriate MRSA infections."
+          },
+          {
+            "id": "B",
+            "text": "Confirmed susceptible Pseudomonas aeruginosa bloodstream infection",
+            "explanation": "Vancomycin does not provide reliable coverage of gram-negative Pseudomonas."
+          },
+          {
+            "id": "C",
+            "text": "Confirmed susceptible Bacteroides fragilis intra-abdominal infection",
+            "explanation": "Anaerobic gram-negative Bacteroides generally requires another active antimicrobial."
+          },
+          {
+            "id": "D",
+            "text": "Confirmed invasive Candida species bloodstream infection",
+            "explanation": "Vancomycin is an antibacterial and does not treat invasive Candida infection."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-meropenem::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which prescribed treatment role most strongly fits IV meropenem?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Treatment of a serious complicated infection caused by susceptible organisms",
+            "explanation": "Meropenem has a role in selected serious susceptible bacterial infections, including complicated intra-abdominal and skin infections."
+          },
+          {
+            "id": "B",
+            "text": "Perioperative prophylaxis in a clean elective procedure",
+            "explanation": "Broad-spectrum meropenem is not automatically appropriate for routine clean surgical prophylaxis."
+          },
+          {
+            "id": "C",
+            "text": "Targeted treatment of isolated methicillin-resistant S. aureus bacteremia",
+            "explanation": "Meropenem is not an appropriate targeted MRSA bacteremia agent."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of incidental bacterial colonization in a stable patient",
+            "explanation": "Antimicrobial treatment should be reserved for a supported infection or authorized prophylactic indication."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-cefazolin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical situation is a characteristic use of IV cefazolin?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Perioperative antibacterial prophylaxis for joint replacement",
+            "explanation": "Cefazolin is commonly indicated for perioperative infection prophylaxis, including prosthetic arthroplasty."
+          },
+          {
+            "id": "B",
+            "text": "Targeted monotherapy for proven MRSA bloodstream infection",
+            "explanation": "Cefazolin does not provide reliable treatment for methicillin-resistant Staphylococcus aureus."
+          },
+          {
+            "id": "C",
+            "text": "Targeted treatment of Pseudomonas aeruginosa bloodstream infection",
+            "explanation": "Cefazolin does not provide antipseudomonal coverage."
+          },
+          {
+            "id": "D",
+            "text": "Targeted therapy for ESBL-producing Enterobacterales sepsis",
+            "explanation": "Cefazolin is not reliable therapy for serious ESBL-producing organism infection."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-norepinephrine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which hemodynamic problem most directly matches the primary role of norepinephrine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Persistent vasodilatory shock with inadequate arterial pressure",
+            "explanation": "Norepinephrine primarily raises vascular tone and supports pressure in shock."
+          },
+          {
+            "id": "B",
+            "text": "Low cardiac output with acceptable MAP requiring added contractility",
+            "explanation": "An inotrope may be needed for low-output physiology despite adequate pressure."
+          },
+          {
+            "id": "C",
+            "text": "Stable hypertension requiring gradual oral pressure reduction",
+            "explanation": "Norepinephrine is a vasopressor and would not be used for chronic BP reduction."
+          },
+          {
+            "id": "D",
+            "text": "Tachyarrhythmia-related instability needing urgent cardioversion",
+            "explanation": "The unstable-tachycardia pathway prioritizes appropriate synchronized cardioversion, not norepinephrine as the rhythm treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-dobutamine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient problem most closely matches the inotropic role of dobutamine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Poor perfusion with depressed cardiac pumping despite adequate pressure",
+            "explanation": "Dobutamine can support contractility in selected low-output states after appropriate volume and pressure assessment."
+          },
+          {
+            "id": "B",
+            "text": "Isolated vasodilatory hypotension with preserved cardiac output",
+            "explanation": "A vasopressor rather than an inotrope is generally the priority for isolated vasoplegia."
+          },
+          {
+            "id": "C",
+            "text": "Hemorrhagic hypotension before bleeding and volume are managed",
+            "explanation": "Controlling bleeding and resuscitating volume take priority; dobutamine does not replace them."
+          },
+          {
+            "id": "D",
+            "text": "Rapid atrial fibrillation requiring immediate ventricular-rate slowing",
+            "explanation": "Dobutamine can increase heart rate and does not provide rate control for AF."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-atropine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which rhythm-related clinical problem best matches indicated atropine treatment in the adult emergency pathway?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Symptomatic bradycardia with signs of poor perfusion",
+            "explanation": "Atropine is a reasonable initial medication for adult symptomatic bradycardia with hemodynamic compromise."
+          },
+          {
+            "id": "B",
+            "text": "Asymptomatic sinus bradycardia without poor perfusion",
+            "explanation": "A stable asymptomatic slow rate alone does not routinely call for atropine."
+          },
+          {
+            "id": "C",
+            "text": "Hemodynamically unstable regular narrow-complex tachycardia",
+            "explanation": "The instability pathway primarily calls for synchronized cardioversion."
+          },
+          {
+            "id": "D",
+            "text": "Pulseless ventricular fibrillation during cardiac arrest",
+            "explanation": "VF requires the shockable-arrest pathway, not atropine as an antiarrhythmic."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-adenosine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which monitored adult rhythm most clearly matches an indicated acute adenosine trial?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hemodynamically stable, regular narrow-complex SVT",
+            "explanation": "Adenosine is indicated in the stable regular narrow-complex tachycardia pathway."
+          },
+          {
+            "id": "B",
+            "text": "Irregular wide-complex tachycardia of uncertain mechanism",
+            "explanation": "Adenosine should not be given empirically in irregular wide-complex tachycardia."
+          },
+          {
+            "id": "C",
+            "text": "Sinus tachycardia caused by untreated fever and dehydration",
+            "explanation": "The underlying cause rather than transient AV block needs treatment."
+          },
+          {
+            "id": "D",
+            "text": "Irregular atrial fibrillation without an organized SVT circuit",
+            "explanation": "Adenosine is not the indicated therapy to terminate atrial fibrillation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-amiodarone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which adult cardiac-arrest rhythm is a recognized indication to consider amiodarone during the appropriate ACLS sequence?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "VF or pulseless VT that remains refractory to defibrillation",
+            "explanation": "AHA guidance allows amiodarone or lidocaine for defibrillation-refractory shockable arrest rhythms."
+          },
+          {
+            "id": "B",
+            "text": "Asystole persisting despite appropriate basic resuscitation",
+            "explanation": "Asystole is nonshockable and amiodarone is not routine treatment for this rhythm."
+          },
+          {
+            "id": "C",
+            "text": "Pulseless electrical activity with an organized ECG pattern",
+            "explanation": "PEA requires reversible-cause treatment and nonshockable arrest care, not routine amiodarone."
+          },
+          {
+            "id": "D",
+            "text": "Sinus bradycardia with hypotension and a present pulse",
+            "explanation": "Symptomatic bradycardia follows a different treatment pathway."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-digoxin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which situation most closely matches the selected rhythm-control role of digoxin?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Ventricular-rate control in selected atrial fibrillation patients",
+            "explanation": "Digoxin can slow ventricular conduction in appropriately selected AF patients."
+          },
+          {
+            "id": "B",
+            "text": "Acute pre-excited AF with rapidly conducting accessory pathway",
+            "explanation": "AV-nodal blockers such as digoxin should be avoided in pre-excited AF."
+          },
+          {
+            "id": "C",
+            "text": "Immediate termination of ventricular fibrillation",
+            "explanation": "VF requires emergency defibrillation, not a ventricular-rate controlling glycoside."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of high-grade AV block with very slow ventricular escape",
+            "explanation": "Digoxin slows AV conduction and may worsen dangerous bradyarrhythmia."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-furosemide::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which assessment most closely matches a clinical reason to give prescribed IV furosemide?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Pulmonary congestion with fluid overload in acute heart failure",
+            "explanation": "IV loop diuretic treatment can relieve volume-overload-associated pulmonary congestion."
+          },
+          {
+            "id": "B",
+            "text": "Severe hypotension with dehydration and no pulmonary congestion",
+            "explanation": "Additional diuresis can worsen volume depletion and hypotension."
+          },
+          {
+            "id": "C",
+            "text": "Oliguria caused by a mechanical urinary obstruction",
+            "explanation": "Treat the urinary obstruction; furosemide does not relieve mechanical outflow blockage."
+          },
+          {
+            "id": "D",
+            "text": "Low cardiac output from shock with depleted intravascular volume",
+            "explanation": "Diuresis is not a substitute for restoring volume and perfusion in hypovolemic shock."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-vitamin-k-phytonadione::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient condition apart from warfarin use can warrant phytonadione therapy?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Vitamin K deficiency with impaired clotting-factor synthesis",
+            "explanation": "Vitamin K replacement corrects coagulopathy caused by inadequate vitamin-K-dependent factor formation."
+          },
+          {
+            "id": "B",
+            "text": "Inherited factor VIII deficiency requiring factor replacement",
+            "explanation": "Hemophilia A involves factor VIII and is not corrected by vitamin K replacement."
+          },
+          {
+            "id": "C",
+            "text": "Thrombocytopenia from immune platelet destruction",
+            "explanation": "Vitamin K does not restore platelet count in immune thrombocytopenia."
+          },
+          {
+            "id": "D",
+            "text": "Anticoagulation caused by direct thrombin inhibitors",
+            "explanation": "A direct thrombin inhibitor's anticoagulant effect is not reversed by vitamin K."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-heparin-ufh::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which anticoagulation goal fits unfractionated heparin administration?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Preventing propagation of an acute thrombus",
+            "explanation": "Unfractionated heparin reduces ongoing thrombin and factor Xa activity to prevent thrombus propagation."
+          },
+          {
+            "id": "B",
+            "text": "Directly dissolving a formed clot by activating plasminogen",
+            "explanation": "Fibrinolytic agents, not UFH, directly promote enzymatic clot breakdown."
+          },
+          {
+            "id": "C",
+            "text": "Reversing warfarin-associated vitamin-K factor suppression",
+            "explanation": "Heparin does not restore vitamin-K-dependent clotting factors."
+          },
+          {
+            "id": "D",
+            "text": "Restoring platelet aggregation after an antiplatelet medicine",
+            "explanation": "Heparin is an anticoagulant, not an antiplatelet reversal agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "verified-losartan::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "For which cardiovascular-renal goal is long-term losartan most appropriate?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Managing hypertension with selected diabetic kidney disease",
+            "explanation": "Losartan can treat hypertension and selected diabetic nephropathy in type 2 diabetes."
+          },
+          {
+            "id": "B",
+            "text": "Rapid reduction of blood pressure during an acute aortic dissection",
+            "explanation": "An acute dissection requires monitored rapid BP control using an appropriate emergency regimen."
+          },
+          {
+            "id": "C",
+            "text": "Immediate sublingual relief of an acute angina attack",
+            "explanation": "Losartan is not a rapid symptomatic nitrate for acute angina."
+          },
+          {
+            "id": "D",
+            "text": "Rapid diuresis of pulmonary edema caused by fluid overload",
+            "explanation": "A loop diuretic addresses urgent fluid removal; losartan is not an immediate diuretic."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-acamol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient goal best matches the common nursing use of paracetamol?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing fever and relieving mild-to-moderate pain",
+            "explanation": "Paracetamol is an antipyretic and non-opioid analgesic for pain and fever."
+          },
+          {
+            "id": "B",
+            "text": "Strongly suppressing active joint inflammation as an NSAID",
+            "explanation": "Paracetamol does not provide typical NSAID anti-inflammatory effects."
+          },
+          {
+            "id": "C",
+            "text": "Providing immediate regional anesthesia for fracture reduction",
+            "explanation": "Paracetamol does not produce local anesthetic nerve blockade."
+          },
+          {
+            "id": "D",
+            "text": "Reversing analgesic-related respiratory depression",
+            "explanation": "Reversal of opioid respiratory depression requires a different treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-trufen::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient most closely matches a reasonable prescribed ibuprofen indication?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Musculoskeletal pain with inflammatory swelling and no major NSAID risk",
+            "explanation": "Ibuprofen has analgesic and anti-inflammatory effects when patient risks are acceptable."
+          },
+          {
+            "id": "B",
+            "text": "Inflammatory pain with current upper gastrointestinal hemorrhage",
+            "explanation": "NSAID-associated bleeding risk makes current GI hemorrhage a major concern."
+          },
+          {
+            "id": "C",
+            "text": "Joint pain during acute severe dehydration and kidney injury",
+            "explanation": "Ibuprofen can worsen renal perfusion and kidney injury."
+          },
+          {
+            "id": "D",
+            "text": "Pain in a patient with prior aspirin-provoked severe bronchospasm",
+            "explanation": "NSAID hypersensitivity or bronchospasm history requires avoidance or specialist review."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-tramadol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which use most closely matches tramadol's role in a postoperative ward?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prescribed treatment of significant pain when opioid analgesia is justified",
+            "explanation": "Tramadol is an opioid/monoamine analgesic used for selected moderate-to-severe pain."
+          },
+          {
+            "id": "B",
+            "text": "Replacing naloxone during suspected opioid overdose",
+            "explanation": "An opioid analgesic is not a reversal medicine for opioid-induced respiratory depression."
+          },
+          {
+            "id": "C",
+            "text": "Primary reduction of tissue inflammation without opioid exposure",
+            "explanation": "Tramadol treats pain but is not an NSAID or local anti-inflammatory drug."
+          },
+          {
+            "id": "D",
+            "text": "Immediate muscle paralysis for painful fracture reduction",
+            "explanation": "Tramadol is not a neuromuscular blocker or anesthetic paralysis medicine."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-prothiazine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which intended therapeutic goal is consistent with prescribed oral promethazine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Relieving nausea or selected histamine-mediated allergic symptoms",
+            "explanation": "Promethazine has antiemetic and antihistamine effects with important sedation risk."
+          },
+          {
+            "id": "B",
+            "text": "Reversing excessive opioid-induced respiratory depression",
+            "explanation": "An H1 antihistamine does not reverse opioid-induced respiratory depression."
+          },
+          {
+            "id": "C",
+            "text": "Correcting delayed gastric transit with a prokinetic mechanism",
+            "explanation": "Promethazine is not a prokinetic therapy for impaired motility."
+          },
+          {
+            "id": "D",
+            "text": "Rapidly replacing circulating volume in severe shock",
+            "explanation": "Promethazine is not a fluid-resuscitation agent and may increase sedation/hypotension."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-gabapentin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pain presentation most reasonably supports a prescribed gabapentin trial?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Persistent burning or shooting neuropathic pain after nerve injury",
+            "explanation": "Gabapentin can be used for selected nerve-related pain conditions rather than immediate nociceptive relief."
+          },
+          {
+            "id": "B",
+            "text": "Acute fracture pain needing immediate emergency analgesia",
+            "explanation": "Gabapentin is not a rapid rescue analgesic for acute nociceptive trauma pain."
+          },
+          {
+            "id": "C",
+            "text": "Localized inflammatory swelling requiring anti-inflammatory action",
+            "explanation": "Gabapentin does not act as an NSAID to reduce prostaglandin-mediated inflammation."
+          },
+          {
+            "id": "D",
+            "text": "Surgical wound pain needing immediate local nerve anesthesia",
+            "explanation": "Gabapentin is not a local anesthetic for procedural nerve blockade."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-avilac::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which bowel-care need most closely matches lactulose use in the orthopedic ward?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Constipation during opioid treatment after bowel obstruction is excluded",
+            "explanation": "Lactulose is an osmotic laxative and can be used for opioid-associated constipation when appropriate."
+          },
+          {
+            "id": "B",
+            "text": "Marked distension and vomiting with suspected intestinal obstruction",
+            "explanation": "Suspected obstruction needs medical assessment rather than routine laxative therapy."
+          },
+          {
+            "id": "C",
+            "text": "Acute severe bloody diarrhea with possible intestinal inflammation",
+            "explanation": "Laxatives are not a treatment for acute bloody diarrhea and may worsen fluid loss."
+          },
+          {
+            "id": "D",
+            "text": "New rigid abdomen and severe unexplained abdominal pain",
+            "explanation": "Possible peritonitis needs urgent assessment rather than symptomatic laxative use."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-carbamazepine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which ongoing clinical goal best matches oral carbamazepine treatment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Maintaining seizure prevention or controlling selected neuralgic pain",
+            "explanation": "Carbamazepine is used for seizure disorders and selected neuropathic pain."
+          },
+          {
+            "id": "B",
+            "text": "Immediate first-line termination of ongoing convulsive status",
+            "explanation": "An acute convulsive emergency needs an emergency seizure algorithm, typically starting with a benzodiazepine."
+          },
+          {
+            "id": "C",
+            "text": "Rapid sedation before an emergency bedside procedure",
+            "explanation": "Carbamazepine is not an immediate procedural sedative."
+          },
+          {
+            "id": "D",
+            "text": "Reversal of opioid-associated loss of consciousness",
+            "explanation": "Carbamazepine is not an opioid antagonist or overdose antidote."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-29::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which gastrointestinal presentation best matches metoclopramide's therapeutic actions?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Nausea with a need to improve upper gastrointestinal motility",
+            "explanation": "Metoclopramide has antiemetic and upper-GI prokinetic properties."
+          },
+          {
+            "id": "B",
+            "text": "Persistent vomiting with confirmed mechanical bowel obstruction",
+            "explanation": "Stimulating motility can be dangerous when mechanical obstruction is present."
+          },
+          {
+            "id": "C",
+            "text": "Nausea due mainly to untreated intestinal perforation",
+            "explanation": "Possible perforation requires urgent management and is a contraindication to prokinetic use."
+          },
+          {
+            "id": "D",
+            "text": "Severe hematemesis with ongoing gastrointestinal bleeding",
+            "explanation": "Active GI hemorrhage needs urgent bleeding care, not motility stimulation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-epanutin-phenytoin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which care goal most closely matches continuing prescribed oral phenytoin?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Maintaining seizure control in established epilepsy",
+            "explanation": "Phenytoin helps prevent or control selected seizures with an appropriate regimen."
+          },
+          {
+            "id": "B",
+            "text": "Immediate reversal of active opioid-related respiratory depression",
+            "explanation": "Phenytoin is not an opioid reversal medicine."
+          },
+          {
+            "id": "C",
+            "text": "First-line sedation before emergent fracture manipulation",
+            "explanation": "Phenytoin is not a procedural sedative or anesthetic."
+          },
+          {
+            "id": "D",
+            "text": "Rapid cessation of every ongoing convulsion without rescue therapy",
+            "explanation": "Phenytoin is not a substitute for appropriate emergency seizure treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-ketrolac-ketorolac::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which analgesic use best matches ketorolac safety restrictions?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Short-term treatment of moderately severe acute postoperative pain",
+            "explanation": "Ketorolac is indicated for short-term relief of moderately severe acute pain, with limited total duration."
+          },
+          {
+            "id": "B",
+            "text": "Long-term daily control of chronic osteoarthritis for months",
+            "explanation": "Ketorolac is not indicated for chronic long-term analgesia."
+          },
+          {
+            "id": "C",
+            "text": "Pain relief during an active gastrointestinal bleeding episode",
+            "explanation": "Ketorolac increases bleeding and GI injury risk."
+          },
+          {
+            "id": "D",
+            "text": "Routine analgesia immediately before planned CABG surgery",
+            "explanation": "Ketorolac is contraindicated in the perioperative CABG setting."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-warfarin-coumadin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient need most characteristically supports a long-term warfarin prescription?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Thromboembolism prevention in a patient with a mechanical heart valve",
+            "explanation": "Warfarin is an anticoagulation option for mechanical prosthetic valves."
+          },
+          {
+            "id": "B",
+            "text": "Immediate treatment of new pulmonary embolism using warfarin alone from the first dose",
+            "explanation": "Warfarin has delayed anticoagulant effect and usually requires an appropriate initial bridging plan when used for acute thrombosis."
+          },
+          {
+            "id": "C",
+            "text": "Preferred anticoagulation for a newly pregnant patient with acute DVT",
+            "explanation": "Warfarin has important fetal risks and is generally avoided during pregnancy."
+          },
+          {
+            "id": "D",
+            "text": "Urgent control of life-threatening active bleeding without reversal",
+            "explanation": "Active major bleeding calls for emergency management and assessment of anticoagulation reversal."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-fortum-ceftazidime::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which organism-related scenario most specifically matches IV ceftazidime therapy when susceptible?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Serious infection due to susceptible Pseudomonas aeruginosa",
+            "explanation": "Ceftazidime is an antipseudomonal cephalosporin used for susceptible gram-negative infections."
+          },
+          {
+            "id": "B",
+            "text": "Confirmed MRSA bloodstream infection requiring targeted therapy",
+            "explanation": "Ceftazidime lacks reliable coverage of methicillin-resistant Staphylococcus aureus."
+          },
+          {
+            "id": "C",
+            "text": "Invasive Candida bloodstream infection needing an antifungal",
+            "explanation": "An antifungal rather than ceftazidime is required for candidemia."
+          },
+          {
+            "id": "D",
+            "text": "Confirmed vancomycin-resistant Enterococcus bloodstream infection",
+            "explanation": "Ceftazidime does not provide effective targeted coverage of VRE."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-scobutyl-hyoscine-butylbromide::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which presentation is most consistent with the symptomatic role of hyoscine butylbromide?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Intermittent biliary or urinary colic caused by smooth-muscle spasm",
+            "explanation": "Hyoscine butylbromide is an antimuscarinic antispasmodic for selected GI/GU colic."
+          },
+          {
+            "id": "B",
+            "text": "Severe abdominal pain with suspected obstructive ileus",
+            "explanation": "Obstruction requires urgent evaluation and can contraindicate the antimuscarinic antispasmodic."
+          },
+          {
+            "id": "C",
+            "text": "Rigid abdomen and fever suggesting peritonitis",
+            "explanation": "Possible peritonitis is a serious underlying condition requiring urgent investigation."
+          },
+          {
+            "id": "D",
+            "text": "Persistent hematemesis from an acute upper GI hemorrhage",
+            "explanation": "An antispasmodic does not treat active gastrointestinal bleeding."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-levox-levofloxacin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which infection plan best fits a prescribed levofloxacin course when culture susceptibility and local guidance support its use?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Treating a susceptible bacterial kidney infection",
+            "explanation": "Levofloxacin may be used for selected susceptible urinary or kidney infections when clinically indicated."
+          },
+          {
+            "id": "B",
+            "text": "Treatment of incidental bacteriuria in a nonpregnant asymptomatic adult",
+            "explanation": "Asymptomatic bacteriuria generally does not justify antibiotic treatment outside specific exceptions."
+          },
+          {
+            "id": "C",
+            "text": "Treating candidemia documented by a positive blood culture",
+            "explanation": "Candida bloodstream infection requires an appropriate antifungal treatment."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of PCR-confirmed influenza with a viral-only diagnosis",
+            "explanation": "Levofloxacin is antibacterial, not a treatment for influenza virus."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-isosorbide-mononitrate::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which prescribed treatment goal best matches an oral maintenance isosorbide mononitrate formulation?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Preventing recurrent exertional angina over time",
+            "explanation": "Oral maintenance isosorbide mononitrate is used to prevent or control angina episodes."
+          },
+          {
+            "id": "B",
+            "text": "Immediately terminating chest pain during an acute attack",
+            "explanation": "The oral maintenance form is not the rapid-rescue nitrate formulation."
+          },
+          {
+            "id": "C",
+            "text": "Restoring arterial pressure during cardiogenic hypotension",
+            "explanation": "Nitrate vasodilation can worsen low BP and does not provide pressor support."
+          },
+          {
+            "id": "D",
+            "text": "Rapidly restoring coronary flow after an occlusive thrombus",
+            "explanation": "Nitrates do not replace urgent reperfusion management when coronary occlusion is suspected."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-isosorbide-dinitrate::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which situation best matches a prescribed monitored IV isosorbide dinitrate treatment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Severe ischemic chest discomfort with adequate pressure requiring nitrate therapy",
+            "explanation": "An IV nitrate may be used for selected severe angina with appropriate BP monitoring and an authorized order."
+          },
+          {
+            "id": "B",
+            "text": "Chest discomfort with systolic BP 75 mmHg after a PDE-5 inhibitor",
+            "explanation": "Nitrates can worsen profound hypotension and interact dangerously with PDE-5 inhibitors."
+          },
+          {
+            "id": "C",
+            "text": "Pulseless ventricular fibrillation requiring defibrillation",
+            "explanation": "IV nitrates do not treat VF arrest; follow the shockable-arrest pathway."
+          },
+          {
+            "id": "D",
+            "text": "Acute coronary occlusion when nitrate is proposed instead of reperfusion",
+            "explanation": "Nitrates do not substitute for indicated reperfusion treatment of coronary occlusion."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-nadroparin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which statement accurately describes the prescribed role of nadroparin in thromboembolic care?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "It provides anticoagulation without directly dissolving an established clot",
+            "explanation": "Nadroparin is a low-molecular-weight heparin used for selected thromboembolic indications."
+          },
+          {
+            "id": "B",
+            "text": "It produces fibrinolysis to rapidly dissolve an obstructive thrombus",
+            "explanation": "Nadroparin is not a fibrinolytic and does not activate plasmin to dissolve clots."
+          },
+          {
+            "id": "C",
+            "text": "It neutralizes warfarin anticoagulation during major bleeding",
+            "explanation": "Nadroparin does not replenish vitamin-K-dependent clotting factors."
+          },
+          {
+            "id": "D",
+            "text": "It replaces enoxaparin at the same syringe dose without reassessment",
+            "explanation": "Different LMWH products are not automatically interchangeable dose-for-dose."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-enoxaparin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with acute coronary syndrome receives prescribed enoxaparin. Which role best explains its use?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing thrombus propagation as part of an antithrombotic plan",
+            "explanation": "Enoxaparin provides anticoagulant activity in selected ACS and other thromboembolic indications."
+          },
+          {
+            "id": "B",
+            "text": "Rapidly dissolving an existing coronary clot by fibrinolysis",
+            "explanation": "Enoxaparin does not function as a thrombolytic drug."
+          },
+          {
+            "id": "C",
+            "text": "Replacing indicated antiplatelet therapy as the only ACS treatment",
+            "explanation": "Enoxaparin does not simply replace other indicated ACS treatments."
+          },
+          {
+            "id": "D",
+            "text": "Treating chest pain directly by relaxing coronary arteries",
+            "explanation": "Enoxaparin is not a nitrate or direct antianginal vasodilator."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-aspirin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which prescription purpose most specifically matches daily low-dose aspirin after ACS?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Long-term inhibition of platelet aggregation",
+            "explanation": "Low-dose aspirin reduces platelet activation and is used for secondary cardiovascular prevention."
+          },
+          {
+            "id": "B",
+            "text": "Direct inhibition of thrombin during a heparin infusion",
+            "explanation": "Aspirin inhibits platelet COX-1 rather than directly targeting thrombin activity."
+          },
+          {
+            "id": "C",
+            "text": "Replacement of clotting factors during active hemorrhage",
+            "explanation": "Aspirin does not replace clotting factors and can increase bleeding risk."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of an infected coronary stent with an antimicrobial",
+            "explanation": "Aspirin is not an antibiotic and does not treat infection."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-clopidogrel::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient has a recent coronary stent. Which treatment goal most directly explains prescribed clopidogrel?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing stent-associated platelet thrombosis risk",
+            "explanation": "Clopidogrel inhibits P2Y12-mediated platelet activation and can be part of indicated antiplatelet treatment."
+          },
+          {
+            "id": "B",
+            "text": "Directly dissolving a stent thrombus already blocking blood flow",
+            "explanation": "Clopidogrel prevents platelet activation but does not provide rapid fibrinolysis."
+          },
+          {
+            "id": "C",
+            "text": "Treating restenosis by lowering LDL cholesterol",
+            "explanation": "Clopidogrel is not a lipid-lowering agent used to treat high LDL."
+          },
+          {
+            "id": "D",
+            "text": "Providing acute anticoagulation by blocking factor Xa",
+            "explanation": "Clopidogrel is an antiplatelet drug, not a direct factor-Xa anticoagulant."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-bisoprolol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical goal is consistent with oral bisoprolol in an appropriately selected cardiovascular patient?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Controlling heart rate and reducing cardiac workload",
+            "explanation": "Bisoprolol provides selective beta1 blockade for selected rate and BP control and other indicated cardiac treatment."
+          },
+          {
+            "id": "B",
+            "text": "Increasing myocardial contractility during cardiogenic shock",
+            "explanation": "Beta1 blockade decreases cardiac drive rather than serving as an acute inotrope."
+          },
+          {
+            "id": "C",
+            "text": "Rapidly converting pulseless VT to a perfusing rhythm",
+            "explanation": "Pulseless VT requires a shockable-arrest resuscitation pathway."
+          },
+          {
+            "id": "D",
+            "text": "Relaxing bronchial smooth muscle during acute wheezing",
+            "explanation": "Bisoprolol is a beta blocker, not a beta2 bronchodilator."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-metoprolol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment goal best matches prescribed metoprolol when blood pressure and conduction are suitable?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing tachycardia-related myocardial workload",
+            "explanation": "Metoprolol slows cardiac rate and reduces workload in selected cardiovascular patients."
+          },
+          {
+            "id": "B",
+            "text": "Raising systemic vascular resistance in vasodilatory shock",
+            "explanation": "Metoprolol is a beta blocker and is not a vasopressor for shock."
+          },
+          {
+            "id": "C",
+            "text": "Rapidly reversing high-grade AV block with symptomatic bradycardia",
+            "explanation": "Metoprolol further slows AV conduction and is not a bradycardia antidote."
+          },
+          {
+            "id": "D",
+            "text": "Producing direct coronary vasodilation during acute nitrate rescue",
+            "explanation": "Metoprolol has a beta-blocking action rather than acting as a rapid nitrate."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-propranolol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient problem most closely fits an appropriately selected propranolol prescription?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Controlling symptomatic tachycardia without active bronchospasm",
+            "explanation": "Propranolol can reduce rate and adrenergic workload in selected patients; airway risks require review."
+          },
+          {
+            "id": "B",
+            "text": "Treating acute wheeze in a patient with uncontrolled asthma",
+            "explanation": "Nonselective beta blockade can provoke bronchospasm and does not treat wheeze."
+          },
+          {
+            "id": "C",
+            "text": "Increasing cardiac output during profound low-output shock",
+            "explanation": "Nonselective beta blockade is not an inotrope for shock."
+          },
+          {
+            "id": "D",
+            "text": "Terminating ventricular fibrillation in cardiac arrest",
+            "explanation": "VF is managed using defibrillation and the shockable-arrest algorithm."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-amlodipine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical purpose best matches a daily oral amlodipine prescription?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Long-term hypertension or angina control",
+            "explanation": "Amlodipine is a long-acting dihydropyridine calcium-channel blocker used for chronic BP/angina control."
+          },
+          {
+            "id": "B",
+            "text": "Immediate stabilization of a hypertensive emergency with organ injury",
+            "explanation": "Amlodipine is not a rapid titratable IV treatment for hypertensive emergencies."
+          },
+          {
+            "id": "C",
+            "text": "Direct reversal of an acute pulmonary embolism",
+            "explanation": "Amlodipine does not provide anticoagulation or clot dissolution."
+          },
+          {
+            "id": "D",
+            "text": "Acute conversion of unstable ventricular tachycardia",
+            "explanation": "Amlodipine is not used as an emergency antiarrhythmic in unstable VT."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-verapamil::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which cardiovascular problem can fit an authorized verapamil regimen after rhythm and contraindication review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Selected supraventricular rate control with preserved perfusion",
+            "explanation": "Verapamil slows AV conduction and may be used in carefully selected supraventricular arrhythmias."
+          },
+          {
+            "id": "B",
+            "text": "Unstable wide-complex tachycardia needing immediate electrical therapy",
+            "explanation": "Verapamil may cause serious deterioration in ventricular-origin wide-complex tachycardia."
+          },
+          {
+            "id": "C",
+            "text": "Atrial fibrillation with known accessory-pathway pre-excitation",
+            "explanation": "AV-nodal blockade can be dangerous in pre-excited atrial fibrillation."
+          },
+          {
+            "id": "D",
+            "text": "Symptomatic high-grade AV block with a slow escape rhythm",
+            "explanation": "Verapamil may worsen AV block rather than correct it."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-enalapril::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which ongoing treatment goal best matches oral enalapril after patient-specific BP, renal and potassium review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Long-term management of hypertension or selected heart failure",
+            "explanation": "Enalapril is an ACE inhibitor used for chronic BP control and selected heart-failure indications."
+          },
+          {
+            "id": "B",
+            "text": "Immediate pressor support during severe hypotensive shock",
+            "explanation": "Enalapril lowers BP and does not treat shock as a vasopressor."
+          },
+          {
+            "id": "C",
+            "text": "Rapid rhythm conversion during an unstable tachyarrhythmia",
+            "explanation": "ACE inhibition does not serve as an emergency cardioversion method."
+          },
+          {
+            "id": "D",
+            "text": "Acute removal of pulmonary fluid through loop diuresis",
+            "explanation": "Enalapril is not a loop diuretic providing rapid fluid removal."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-atorvastatin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient has recovered from an acute coronary syndrome. Which goal best matches continued atorvastatin treatment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Lowering LDL and reducing future atherosclerotic events",
+            "explanation": "Atorvastatin is used for lipid reduction and secondary cardiovascular prevention."
+          },
+          {
+            "id": "B",
+            "text": "Immediately relieving an episode of ischemic chest pain",
+            "explanation": "A statin does not provide acute antianginal symptom relief."
+          },
+          {
+            "id": "C",
+            "text": "Preventing an imminent clot by direct platelet P2Y12 blockade",
+            "explanation": "Atorvastatin is not a P2Y12 antiplatelet drug."
+          },
+          {
+            "id": "D",
+            "text": "Rapidly dissolving a coronary thrombus during an acute MI",
+            "explanation": "Statins do not provide emergency fibrinolysis or reperfusion."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-dapagliflozin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment goal fits continued dapagliflozin therapy in an appropriately selected stable patient?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing heart-failure or CKD risk even without a glucose-only indication",
+            "explanation": "Dapagliflozin has selected heart-failure and chronic kidney-disease indications beyond diabetes control."
+          },
+          {
+            "id": "B",
+            "text": "Treating diabetic ketoacidosis as an emergency insulin substitute",
+            "explanation": "An SGLT2 inhibitor is not an insulin treatment for acute ketoacidosis."
+          },
+          {
+            "id": "C",
+            "text": "Correcting severe hypoglycemia by rapid oral glucose delivery",
+            "explanation": "Dapagliflozin lowers glucose through urinary excretion and does not treat hypoglycemia."
+          },
+          {
+            "id": "D",
+            "text": "Providing immediate diuretic rescue for flash pulmonary edema",
+            "explanation": "SGLT2 inhibitor therapy does not replace urgent treatment for acute pulmonary edema."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-correction-insulin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment goal describes a prescribed correction-insulin dose in a hospitalized patient?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Addressing measured hyperglycemia according to an active dosing protocol",
+            "explanation": "Correction insulin is used to address elevated glucose according to a defined patient-specific order."
+          },
+          {
+            "id": "B",
+            "text": "Sole insulin treatment for a patient requiring basal coverage",
+            "explanation": "Correction dosing alone may not replace required basal insulin."
+          },
+          {
+            "id": "C",
+            "text": "Treating suspected hypoglycemia before checking bedside glucose",
+            "explanation": "Giving insulin in hypoglycemia can worsen a life-threatening low glucose."
+          },
+          {
+            "id": "D",
+            "text": "Primary insulin regimen for diabetic ketoacidosis",
+            "explanation": "DKA treatment requires an appropriate coordinated protocol, not an improvised correction dose."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-dopamine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which emergency treatment goal can match prescribed dopamine infusion in an adult resuscitation setting?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Support of selected symptomatic bradycardia when protocol alternatives are needed",
+            "explanation": "Dopamine infusion is an option within selected adult symptomatic-bradycardia pathways."
+          },
+          {
+            "id": "B",
+            "text": "Pharmacological conversion of refractory ventricular fibrillation",
+            "explanation": "Dopamine is not an antiarrhythmic shock substitute for VF."
+          },
+          {
+            "id": "C",
+            "text": "Rate control of atrial fibrillation with rapid ventricular response",
+            "explanation": "Dopamine can increase heart rate and is not a rate-control medication."
+          },
+          {
+            "id": "D",
+            "text": "Low-dose infusion for kidney protection during sepsis",
+            "explanation": "Low-dose renal dopamine is not recommended as routine kidney-protective treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-pantoprazole::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which indication best matches prescribed pantoprazole in a hospitalized cardiac patient?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Acid suppression for an indicated ulcer or GI-risk plan",
+            "explanation": "Pantoprazole is a proton-pump inhibitor used for selected acid-related and GI-protection indications."
+          },
+          {
+            "id": "B",
+            "text": "Increasing intestinal motility in gastroparesis",
+            "explanation": "Pantoprazole decreases gastric acid and does not function as a prokinetic."
+          },
+          {
+            "id": "C",
+            "text": "Treating immediate postoperative nausea via a dopamine receptor",
+            "explanation": "Antiemetic receptor blockade is not the primary action of pantoprazole."
+          },
+          {
+            "id": "D",
+            "text": "Neutralizing an active anticoagulant after gastrointestinal bleeding",
+            "explanation": "Pantoprazole does not reverse anticoagulant effects or replace hemorrhage management."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-omeprazole::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical condition is most directly addressed by an appropriate omeprazole prescription?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Gastric-acid suppression for a selected ulcer or reflux indication",
+            "explanation": "Omeprazole inhibits the gastric proton pump and is used for acid-related disorders."
+          },
+          {
+            "id": "B",
+            "text": "Acute vomiting caused by impaired gastric emptying",
+            "explanation": "Omeprazole is not a prokinetic for delayed motility."
+          },
+          {
+            "id": "C",
+            "text": "Severe upper GI bleeding requiring immediate clotting-factor replacement",
+            "explanation": "Omeprazole does not replace necessary blood products or reversal when indicated."
+          },
+          {
+            "id": "D",
+            "text": "Acute medication-induced constipation needing osmotic laxation",
+            "explanation": "Omeprazole does not produce an osmotic laxative effect."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-metronidazole::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which infection best matches a common metronidazole treatment role when prescribed and susceptibility supports it?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A suspected intra-abdominal infection with anaerobic organisms",
+            "explanation": "Metronidazole covers selected anaerobic bacteria and some protozoa as appropriate."
+          },
+          {
+            "id": "B",
+            "text": "A confirmed MRSA bloodstream infection requiring targeted monotherapy",
+            "explanation": "Metronidazole is not an appropriate single agent for MRSA bacteremia."
+          },
+          {
+            "id": "C",
+            "text": "A confirmed Pseudomonas pneumonia needing antipseudomonal therapy",
+            "explanation": "Metronidazole alone does not treat aerobic Pseudomonas infection."
+          },
+          {
+            "id": "D",
+            "text": "A Candida bloodstream infection requiring systemic antifungal therapy",
+            "explanation": "Metronidazole is not an antifungal agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-linezolid::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which microbiological problem best supports selecting prescribed linezolid when an appropriate regimen is needed?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A serious susceptible VRE or MRSA infection",
+            "explanation": "Linezolid may be used for certain serious resistant gram-positive infections."
+          },
+          {
+            "id": "B",
+            "text": "A pure infection due to susceptible Pseudomonas aeruginosa",
+            "explanation": "Linezolid does not provide appropriate antipseudomonal gram-negative coverage."
+          },
+          {
+            "id": "C",
+            "text": "A confirmed Candida bloodstream infection",
+            "explanation": "Linezolid is antibacterial, not a treatment for invasive candidiasis."
+          },
+          {
+            "id": "D",
+            "text": "A confirmed anaerobic gram-negative Bacteroides infection alone",
+            "explanation": "Linezolid does not reliably treat anaerobic gram-negative Bacteroides infection."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-salbutamol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which respiratory presentation most directly supports a prescribed inhaled salbutamol dose?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Acute wheeze with reversible bronchospasm",
+            "explanation": "Salbutamol is a short-acting beta2 bronchodilator used for bronchospasm."
+          },
+          {
+            "id": "B",
+            "text": "Diffuse crackles from cardiogenic pulmonary edema",
+            "explanation": "Bronchodilation does not replace acute heart-failure management without bronchospasm."
+          },
+          {
+            "id": "C",
+            "text": "Acute hypoxemia associated with pulmonary embolism",
+            "explanation": "Salbutamol does not treat the obstructing pulmonary arterial clot."
+          },
+          {
+            "id": "D",
+            "text": "Stridor from an upper-airway foreign body obstruction",
+            "explanation": "A bronchodilator does not remove a foreign body blocking the upper airway."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-nystatin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which presentation most closely matches the role of an oral nystatin preparation?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Superficial oral candidiasis involving the mucosa",
+            "explanation": "Local oral nystatin can treat susceptible superficial oral Candida infection."
+          },
+          {
+            "id": "B",
+            "text": "Candida bloodstream infection requiring systemic treatment",
+            "explanation": "Topical/oral nonabsorbed nystatin is not adequate for candidemia."
+          },
+          {
+            "id": "C",
+            "text": "Confirmed fungal meningitis requiring CNS-active treatment",
+            "explanation": "Local nystatin is not a systemic CNS antifungal therapy."
+          },
+          {
+            "id": "D",
+            "text": "Esophageal candidiasis requiring systemic antifungal therapy",
+            "explanation": "Oral nystatin is not a substitute for systemic therapy for esophageal candidiasis."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-betahistine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which patient complaint most closely matches the symptomatic role of prescribed betahistine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Recurrent vestibular vertigo after an appropriate diagnosis",
+            "explanation": "Betahistine may be used to manage symptoms of selected vestibular vertigo disorders."
+          },
+          {
+            "id": "B",
+            "text": "Sudden vertigo with new unilateral weakness suggesting acute stroke",
+            "explanation": "Focal neurological symptoms demand urgent stroke assessment, not symptomatic vertigo treatment alone."
+          },
+          {
+            "id": "C",
+            "text": "Syncope from a documented slow heart rhythm",
+            "explanation": "A vestibular symptom medicine does not treat symptomatic bradycardia."
+          },
+          {
+            "id": "D",
+            "text": "Dizziness caused by measured severe hypoglycemia",
+            "explanation": "Severe hypoglycemia needs prompt glucose treatment and reassessment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-propafenone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which arrhythmia treatment goal best fits propafenone in a properly screened patient?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Rhythm control of selected episodic atrial fibrillation without structural heart disease",
+            "explanation": "Propafenone is a class Ic antiarrhythmic used for selected rhythm-control indications after clinical and ECG assessment."
+          },
+          {
+            "id": "B",
+            "text": "Rate control in atrial fibrillation with decompensated heart failure",
+            "explanation": "Propafenone may worsen heart failure and is not a routine rate-control medicine."
+          },
+          {
+            "id": "C",
+            "text": "Routine treatment of ventricular fibrillation during pulseless arrest",
+            "explanation": "Propafenone is not a drug in the standard shockable-cardiac-arrest algorithm."
+          },
+          {
+            "id": "D",
+            "text": "Rhythm control in recent MI with significant ventricular dysfunction",
+            "explanation": "Class Ic drugs are unsuitable in important structural ischemic heart disease."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-valzadepine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment purpose fits the combination of amlodipine and valsartan in Valzadepine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Chronic hypertension inadequately controlled by one component",
+            "explanation": "Combining amlodipine and valsartan can improve ongoing BP control when a single agent is insufficient."
+          },
+          {
+            "id": "B",
+            "text": "Immediate blood-pressure restoration in severe shock",
+            "explanation": "Neither component is a vasopressor and the combination can worsen hypotension."
+          },
+          {
+            "id": "C",
+            "text": "Rapid removal of fluid by loop-diuretic activity",
+            "explanation": "Amlodipine and valsartan do not provide loop diuresis."
+          },
+          {
+            "id": "D",
+            "text": "Acute treatment of an unstable ventricular tachyarrhythmia",
+            "explanation": "A chronic antihypertensive combination is not acute VT therapy."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-valzan-hct::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which goal best describes treatment with prescribed valsartan plus hydrochlorothiazide?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Long-term hypertension control using two complementary components",
+            "explanation": "Valsartan blocks AT1 signaling and hydrochlorothiazide adds thiazide diuresis for selected hypertension."
+          },
+          {
+            "id": "B",
+            "text": "Rapid fluid removal equivalent to IV furosemide in pulmonary edema",
+            "explanation": "An oral thiazide combination is not a replacement for urgent IV-loop diuresis."
+          },
+          {
+            "id": "C",
+            "text": "Immediate conversion of an unstable tachycardia",
+            "explanation": "This combination is not an emergency rhythm-control treatment."
+          },
+          {
+            "id": "D",
+            "text": "Acute pressure support when blood pressure is critically low",
+            "explanation": "Both components can lower BP and do not act as vasopressors."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-symbicort::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which ongoing respiratory treatment goal best fits an authorized budesonide/formoterol inhaler regimen?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Airway inflammation control with an inhaled long-acting bronchodilator",
+            "explanation": "Symbicort combines an inhaled corticosteroid with a long-acting beta2 agonist for selected asthma/COPD management."
+          },
+          {
+            "id": "B",
+            "text": "Treating a bacterial pneumonia as an inhaled antibiotic",
+            "explanation": "Neither component has direct antibacterial activity."
+          },
+          {
+            "id": "C",
+            "text": "Removing pulmonary fluid from acute heart failure",
+            "explanation": "An inhaled steroid/bronchodilator does not replace heart-failure diuresis."
+          },
+          {
+            "id": "D",
+            "text": "Correcting severe hypoxemia without respiratory reassessment",
+            "explanation": "An inhaled maintenance regimen does not replace urgent oxygenation and cause assessment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-gentamicin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which antimicrobial purpose best matches prescribed gentamicin when susceptibility and dosing permit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Treatment of a serious susceptible aerobic Gram-negative infection",
+            "explanation": "Gentamicin is an aminoglycoside with important activity against susceptible aerobic Gram-negative organisms."
+          },
+          {
+            "id": "B",
+            "text": "Single-agent treatment of an anaerobic intra-abdominal abscess",
+            "explanation": "Gentamicin alone does not provide reliable anaerobic activity."
+          },
+          {
+            "id": "C",
+            "text": "Treatment of documented C. difficile infection in the colon",
+            "explanation": "Aminoglycosides are not the standard targeted treatment for C. difficile colitis."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of candidemia after positive fungal blood cultures",
+            "explanation": "Candida bloodstream infections need antifungal therapy."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-ipratropium::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which respiratory problem fits an appropriate inhaled ipratropium order?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Bronchospasm in selected obstructive-airway disease",
+            "explanation": "Ipratropium provides inhaled antimuscarinic bronchodilation in COPD and certain acute asthma regimens."
+          },
+          {
+            "id": "B",
+            "text": "Cardiogenic pulmonary edema without bronchospasm",
+            "explanation": "An antimuscarinic bronchodilator does not resolve hydrostatic pulmonary edema."
+          },
+          {
+            "id": "C",
+            "text": "Upper-airway stridor from a fixed obstruction",
+            "explanation": "Ipratropium does not remove a fixed upper-airway obstruction."
+          },
+          {
+            "id": "D",
+            "text": "Pleural effusion with lung compression and no airflow obstruction",
+            "explanation": "Ipratropium cannot directly drain or resolve a pleural effusion."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-labetalol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which monitored cardiovascular treatment goal best fits authorized IV labetalol?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Controlled BP reduction in selected severe hypertension",
+            "explanation": "Labetalol has combined alpha/beta blockade and may be used for selected controlled BP-lowering indications."
+          },
+          {
+            "id": "B",
+            "text": "Immediate BP elevation in hemorrhagic shock",
+            "explanation": "Labetalol lowers BP and is not a pressor in hemorrhagic shock."
+          },
+          {
+            "id": "C",
+            "text": "Treating symptomatic bradycardia with high-grade AV block",
+            "explanation": "Beta blockade may worsen conduction-related bradycardia."
+          },
+          {
+            "id": "D",
+            "text": "Correcting acute bronchospasm in a patient with severe asthma",
+            "explanation": "Nonselective beta blockade may aggravate bronchospasm."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-ketamine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which procedural goal most closely matches monitored, clinician-directed IV ketamine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Induction of anesthesia for an appropriate procedure",
+            "explanation": "Ketamine injection is used for anesthesia induction and selected procedures under trained airway supervision."
+          },
+          {
+            "id": "B",
+            "text": "Isolated skeletal muscle paralysis during a procedure",
+            "explanation": "Ketamine is not a neuromuscular blocker for isolated paralysis."
+          },
+          {
+            "id": "C",
+            "text": "Reversing opioid respiratory suppression after overdose",
+            "explanation": "Ketamine is not an opioid-receptor antagonist antidote."
+          },
+          {
+            "id": "D",
+            "text": "Continuous blood-pressure support during septic shock",
+            "explanation": "Ketamine is not a substitute for ordered vasopressor therapy and shock management."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-pethidine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which prescribing goal most closely fits selected monitored pethidine use?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Relief of severe pain when the treating clinician chooses this opioid",
+            "explanation": "Pethidine (meperidine) is an opioid analgesic reserved for selected pain situations after safety review."
+          },
+          {
+            "id": "B",
+            "text": "Routine first-line treatment of all acute coronary chest pain",
+            "explanation": "Pethidine is not a universal or preferred immediate treatment for every ACS presentation."
+          },
+          {
+            "id": "C",
+            "text": "Long-term control of neuropathic pain in advanced kidney disease",
+            "explanation": "Accumulation of neurotoxic metabolites makes repeated pethidine use problematic in renal impairment."
+          },
+          {
+            "id": "D",
+            "text": "Reversal of opioid-related hypoventilation in a sedated patient",
+            "explanation": "Pethidine itself can suppress respiration and does not reverse opioid toxicity."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-morphine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical treatment goal most closely fits a selected monitored IV morphine order?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Analgesia for severe pain after respiratory and circulatory assessment",
+            "explanation": "Morphine is an opioid analgesic and may be prescribed for selected severe pain with close monitoring."
+          },
+          {
+            "id": "B",
+            "text": "Routine correction of low BP during hypovolemic shock",
+            "explanation": "Morphine can worsen hypotension and does not restore circulating volume."
+          },
+          {
+            "id": "C",
+            "text": "Rapid reversal of opioid-associated respiratory depression",
+            "explanation": "Morphine is an opioid agonist, not an antagonist used for reversal."
+          },
+          {
+            "id": "D",
+            "text": "Immediate definitive management of an occluded coronary artery",
+            "explanation": "Morphine does not replace indicated reperfusion or other ACS treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-spironolactone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which longer-term cardiovascular goal most appropriately matches oral spironolactone?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Selected HFrEF treatment with potassium and renal monitoring",
+            "explanation": "Spironolactone blocks aldosterone and is used in selected HFrEF and resistant-hypertension regimens."
+          },
+          {
+            "id": "B",
+            "text": "Immediate loop diuresis for acute pulmonary edema",
+            "explanation": "Spironolactone does not substitute for prompt IV loop-diuretic treatment when needed."
+          },
+          {
+            "id": "C",
+            "text": "Emergency correction of severe hyperkalemia with ECG changes",
+            "explanation": "Spironolactone can raise potassium and is not a hyperkalemia antidote."
+          },
+          {
+            "id": "D",
+            "text": "Immediate termination of a dangerous tachyarrhythmia",
+            "explanation": "An oral aldosterone antagonist is not a rapid antiarrhythmic rescue medicine."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-lidocaine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "For which arrest rhythm may lidocaine be considered within an adult ALS protocol?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "VF or pulseless VT persisting despite defibrillation",
+            "explanation": "AHA permits amiodarone or lidocaine in selected VF/pVT unresponsive to defibrillation."
+          },
+          {
+            "id": "B",
+            "text": "Isolated asystole persisting on rhythm checks",
+            "explanation": "Lidocaine is not a routine antiarrhythmic for asystole."
+          },
+          {
+            "id": "C",
+            "text": "Pulseless electrical activity without a shockable rhythm",
+            "explanation": "PEA requires nonshockable arrest care and reversible-cause treatment."
+          },
+          {
+            "id": "D",
+            "text": "Sinus bradycardia with hypotension and a pulse",
+            "explanation": "Adult symptomatic bradycardia uses a different pathway and not lidocaine as initial treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-sodium-bicarbonate::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "When is IV sodium bicarbonate most appropriately considered during emergency resuscitation?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A selected toxicological or metabolic indication under an authorized plan",
+            "explanation": "Sodium bicarbonate may have a role in specific toxicologic/metabolic circumstances, not routine undifferentiated arrest."
+          },
+          {
+            "id": "B",
+            "text": "A prolonged ventricular fibrillation arrest despite repeated shocks",
+            "explanation": "The AHA does not recommend sodium bicarbonate routinely during cardiac arrest."
+          },
+          {
+            "id": "C",
+            "text": "A prolonged pulseless electrical activity arrest despite CPR",
+            "explanation": "Routine bicarbonate does not replace standard PEA management and cause investigation."
+          },
+          {
+            "id": "D",
+            "text": "A substitute for ventilation and high-quality compressions during arrest",
+            "explanation": "Bicarbonate cannot replace effective resuscitation or treatment of the underlying cause."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-hydralazine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment purpose best fits clinician-ordered parenteral hydralazine with repeated BP assessment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing BP in selected severe hypertension",
+            "explanation": "Hydralazine is an arterial vasodilator that may be used in selected severe hypertension."
+          },
+          {
+            "id": "B",
+            "text": "Increasing arterial pressure during distributive shock",
+            "explanation": "Vasodilation may worsen shock rather than restore pressure."
+          },
+          {
+            "id": "C",
+            "text": "Treating rapid supraventricular tachycardia by AV-nodal blockade",
+            "explanation": "Hydralazine does not provide AV-nodal rate control."
+          },
+          {
+            "id": "D",
+            "text": "Direct clot lysis during a hypertensive patient's stroke",
+            "explanation": "Hydralazine is not a fibrinolytic and does not treat an intracranial clot."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-dextrose50::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which presentation most directly supports an authorized IV D50 dose?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reduced consciousness with documented severe hypoglycemia",
+            "explanation": "Concentrated IV dextrose can correct severe symptomatic hypoglycemia when IV therapy is needed."
+          },
+          {
+            "id": "B",
+            "text": "Reduced consciousness with documented severe hyperglycemia",
+            "explanation": "More dextrose is not the treatment for hyperglycemic crisis."
+          },
+          {
+            "id": "C",
+            "text": "New focal weakness with a normal measured blood glucose",
+            "explanation": "Glucose should not replace the urgent neurological assessment when glucose is normal."
+          },
+          {
+            "id": "D",
+            "text": "Confusion with normal glucose and suspected opioid toxicity",
+            "explanation": "Correcting opioid respiratory toxicity is not a role of concentrated dextrose in euglycemia."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-hydrocortisone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which emergency condition most directly fits prescribed IV hydrocortisone as a disease-specific treatment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Suspected adrenal crisis with hypotension and systemic illness",
+            "explanation": "Hydrocortisone provides essential glucocorticoid replacement in adrenal crisis with resuscitation."
+          },
+          {
+            "id": "B",
+            "text": "Anaphylactic shock before epinephrine has been given",
+            "explanation": "Hydrocortisone must not delay immediate IM epinephrine for anaphylaxis."
+          },
+          {
+            "id": "C",
+            "text": "Hypovolemic shock due to uncontrolled acute hemorrhage",
+            "explanation": "Corticosteroids do not substitute for controlling bleeding and replacing volume/blood."
+          },
+          {
+            "id": "D",
+            "text": "Pulseless ventricular fibrillation before defibrillation",
+            "explanation": "Hydrocortisone is not the first-line intervention in a shockable arrest."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-diazepam::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which emergency situation best fits an authorized rapid benzodiazepine treatment such as diazepam?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "An ongoing prolonged convulsive seizure needing acute termination",
+            "explanation": "Diazepam can be used in selected seizure emergencies with airway and respiratory monitoring."
+          },
+          {
+            "id": "B",
+            "text": "A brief seizure that ended with complete recovery and no ongoing convulsion",
+            "explanation": "A completed event requires assessment and cause review, not automatically urgent diazepam."
+          },
+          {
+            "id": "C",
+            "text": "A patient with isolated stable sinus bradycardia and normal consciousness",
+            "explanation": "Diazepam does not treat bradycardia and may cause sedation."
+          },
+          {
+            "id": "D",
+            "text": "A patient with hypoglycemic confusion and no observed seizure",
+            "explanation": "Hypoglycemia requires glucose management rather than primary benzodiazepine sedation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-calcium-gluconate::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which emergency treatment goal most specifically fits an ordered IV calcium gluconate dose?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Myocardial stabilization during severe hyperkalemia with ECG toxicity",
+            "explanation": "Calcium can be given for membrane stabilization during hyperkalemic cardiotoxicity under protocol."
+          },
+          {
+            "id": "B",
+            "text": "Removal of excess potassium from the body by kidney excretion",
+            "explanation": "Calcium does not directly lower total-body potassium or cause urinary removal."
+          },
+          {
+            "id": "C",
+            "text": "Persistent asystole with normal electrolyte results",
+            "explanation": "Routine IV calcium during cardiac arrest is not recommended."
+          },
+          {
+            "id": "D",
+            "text": "Total-body potassium elimination through increased renal clearance",
+            "explanation": "Calcium's effect is temporary stabilization and requires definitive potassium management."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-magnesium-sulfate::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which rhythm problem best matches IV magnesium sulfate use in the adult emergency pathway?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Recurrent torsades associated with QT prolongation",
+            "explanation": "Magnesium may be considered for recurrent polymorphic VT with long QT (torsades)."
+          },
+          {
+            "id": "B",
+            "text": "Monomorphic VT with a normal magnesium level",
+            "explanation": "Magnesium is not a routine treatment for all monomorphic VT."
+          },
+          {
+            "id": "C",
+            "text": "Polymorphic VT with a normal QT interval",
+            "explanation": "Routine magnesium has no established benefit when polymorphic VT is not linked to QT prolongation."
+          },
+          {
+            "id": "D",
+            "text": "Asystole with a normal magnesium level",
+            "explanation": "Magnesium is not used routinely for undifferentiated asystolic arrest."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-aminophylline::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment role may justify an authorized aminophylline order after careful respiratory and cardiac assessment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Selected bronchodilation when the protocol specifically supports it",
+            "explanation": "Aminophylline is a methylxanthine bronchodilator with a narrow therapeutic index and significant monitoring requirements."
+          },
+          {
+            "id": "B",
+            "text": "Primary rescue of ventricular tachycardia through conduction suppression",
+            "explanation": "Aminophylline can worsen tachyarrhythmias rather than treating them."
+          },
+          {
+            "id": "C",
+            "text": "First-line treatment for an otherwise stable patient with mild wheeze",
+            "explanation": "Its safety profile makes it unsuitable as routine default bronchodilator therapy."
+          },
+          {
+            "id": "D",
+            "text": "Treatment of hypoxemia caused by pulmonary edema",
+            "explanation": "Aminophylline does not correct fluid-related alveolar flooding."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-amitriptyline::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which longer-term symptom goal can match low-dose prescribed amitriptyline in an orthopaedic patient?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Selected persistent neuropathic pain with sleep disturbance",
+            "explanation": "Amitriptyline is sometimes prescribed off-label for neuropathic pain and may cause sedation."
+          },
+          {
+            "id": "B",
+            "text": "Rapid relief of acute fracture pain by IV opioid action",
+            "explanation": "Amitriptyline is not an immediate opioid analgesic."
+          },
+          {
+            "id": "C",
+            "text": "Immediate termination of tonic-clonic status epilepticus",
+            "explanation": "Amitriptyline is not an acute seizure rescue agent."
+          },
+          {
+            "id": "D",
+            "text": "Reversal of sedative-induced respiratory depression",
+            "explanation": "Amitriptyline has no role as a sedative or opioid antidote."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-prednitab-prednisolone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which prescribed treatment goal best matches oral prednisolone?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Controlling inflammation in an appropriate autoimmune or allergic illness",
+            "explanation": "Prednisolone has systemic anti-inflammatory and immunosuppressive activity."
+          },
+          {
+            "id": "B",
+            "text": "Direct bacterial eradication in an untreated invasive infection",
+            "explanation": "Prednisolone is not an antibiotic and can mask infection signs."
+          },
+          {
+            "id": "C",
+            "text": "Replacing epinephrine as immediate treatment of anaphylactic shock",
+            "explanation": "Systemic steroids do not replace urgent epinephrine in anaphylaxis."
+          },
+          {
+            "id": "D",
+            "text": "Immediate reversal of a patient taking warfarin with major bleeding",
+            "explanation": "Prednisolone is not a vitamin-K-antagonist reversal agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-clindamycin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which infection best matches prescribed clindamycin when culture results support its use?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A susceptible Gram-positive soft-tissue infection",
+            "explanation": "Clindamycin may treat selected susceptible gram-positive and anaerobic infections."
+          },
+          {
+            "id": "B",
+            "text": "Pseudomonas aeruginosa bacteremia requiring targeted therapy",
+            "explanation": "Clindamycin does not provide suitable antipseudomonal coverage."
+          },
+          {
+            "id": "C",
+            "text": "Candida bloodstream infection requiring antifungal treatment",
+            "explanation": "Clindamycin is an antibacterial and not active against Candida."
+          },
+          {
+            "id": "D",
+            "text": "Enterococcus bloodstream infection requiring targeted therapy",
+            "explanation": "Enterococci are intrinsically resistant to clindamycin and require another appropriate agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-multivitamin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical goal best matches an appropriately prescribed multivitamin product?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Supplementing identified or anticipated dietary micronutrient gaps",
+            "explanation": "Multivitamins may provide nutritional supplementation when appropriate for the patient's intake and product composition."
+          },
+          {
+            "id": "B",
+            "text": "Replacing acute IV correction of a severe potassium deficit",
+            "explanation": "A standard multivitamin does not provide controlled therapeutic potassium replacement."
+          },
+          {
+            "id": "C",
+            "text": "Immediate reversal of hypoglycemia with a measured low glucose",
+            "explanation": "Multivitamin products do not provide rapid glucose replacement."
+          },
+          {
+            "id": "D",
+            "text": "Treating an infected surgical wound through antibacterial activity",
+            "explanation": "A nutritional supplement does not substitute for wound care and indicated antibiotics."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-novalgin-metamizole::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which situation most closely matches selected injectable metamizole use under local guidance?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Acute significant pain when an appropriate non-opioid analgesic is prescribed",
+            "explanation": "Metamizole has analgesic and antipyretic actions and may be used for selected acute pain."
+          },
+          {
+            "id": "B",
+            "text": "Acute pain during ongoing unexplained hypotensive collapse",
+            "explanation": "Parenteral metamizole can worsen hypotension and needs circulatory stability review."
+          },
+          {
+            "id": "C",
+            "text": "Pain in a patient with prior severe pyrazolone hypersensitivity",
+            "explanation": "A serious previous reaction requires avoidance rather than routine administration."
+          },
+          {
+            "id": "D",
+            "text": "Pain relief through local anesthetic nerve blockade",
+            "explanation": "Metamizole is not a local anesthetic used to block peripheral nerves."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-decort-dexamethasone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which condition can fit prescribed dexamethasone after establishing the clinical cause?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Vasogenic cerebral edema from an intracranial tumor",
+            "explanation": "Systemic dexamethasone is used for selected inflammatory conditions and tumor-associated cerebral edema."
+          },
+          {
+            "id": "B",
+            "text": "Emergency replacement of epinephrine in anaphylactic shock",
+            "explanation": "Dexamethasone does not provide immediate first-line treatment for anaphylaxis."
+          },
+          {
+            "id": "C",
+            "text": "Reversal of acute bleeding due to vitamin K deficiency",
+            "explanation": "Dexamethasone is not an anticoagulant reversal treatment."
+          },
+          {
+            "id": "D",
+            "text": "Routine correction of acute ischemic stroke-related brain swelling",
+            "explanation": "Systemic corticosteroids are not routine therapy for cerebral edema due to acute ischemic stroke."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-diclofenac-injection::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which presentation best fits selected prescribed injectable diclofenac after safety screening?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Acute renal colic pain with acceptable renal function and no NSAID contraindication",
+            "explanation": "Diclofenac is an NSAID used in selected acute inflammatory or colicky pain conditions."
+          },
+          {
+            "id": "B",
+            "text": "Severe renal colic in a patient with acute kidney injury and dehydration",
+            "explanation": "NSAIDs can worsen renal perfusion and require caution or avoidance in acute kidney injury."
+          },
+          {
+            "id": "C",
+            "text": "Postoperative pain with active upper GI hemorrhage",
+            "explanation": "NSAIDs can aggravate gastrointestinal bleeding."
+          },
+          {
+            "id": "D",
+            "text": "Musculoskeletal pain after a previous severe NSAID-induced bronchospasm",
+            "explanation": "Serious NSAID hypersensitivity is a contraindication to routine diclofenac use."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-captopril-tablets::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which situation most closely matches the purpose of an authorized oral captopril prescription?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hypertension treatment in a clinically assessed patient without acute organ injury",
+            "explanation": "Captopril is an oral ACE inhibitor used for selected hypertension and cardiovascular indications."
+          },
+          {
+            "id": "B",
+            "text": "Hypertensive encephalopathy requiring titratable IV treatment",
+            "explanation": "Acute hypertension with organ injury needs monitored emergency management rather than routine oral substitution."
+          },
+          {
+            "id": "C",
+            "text": "Anaphylactic shock with severe hypotension and airway swelling",
+            "explanation": "ACE inhibition does not treat anaphylaxis or shock and can worsen hypotension."
+          },
+          {
+            "id": "D",
+            "text": "Life-threatening ventricular tachycardia requiring urgent rhythm control",
+            "explanation": "Captopril is not an acute antiarrhythmic or cardioversion agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-omnic-tamsulosin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which symptom pattern best matches the primary use of prescribed oral tamsulosin?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hesitancy and weak urinary stream from benign prostatic enlargement",
+            "explanation": "Tamsulosin relaxes smooth muscle in the prostate and bladder neck to improve symptoms of BPH."
+          },
+          {
+            "id": "B",
+            "text": "Burning urination caused by an active bacterial bladder infection",
+            "explanation": "Tamsulosin does not eradicate bacteria causing cystitis."
+          },
+          {
+            "id": "C",
+            "text": "Acute urinary obstruction with fever and signs of sepsis",
+            "explanation": "An infected obstructed system needs emergency assessment and treatment, not tamsulosin alone."
+          },
+          {
+            "id": "D",
+            "text": "Severe oliguria due to acute intrinsic renal failure",
+            "explanation": "Tamsulosin cannot restore urine production from intrinsic renal injury."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-norepinephrine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "In shock management, which drug class and predominant effect best describe norepinephrine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Catecholamine vasopressor producing predominantly alpha-1 vasoconstriction",
+            "explanation": "Norepinephrine is a catecholamine vasopressor, with predominant alpha-1-mediated vasoconstriction and some beta-1 activity."
+          },
+          {
+            "id": "B",
+            "text": "Non-catecholamine vasopressor acting mainly at vasopressin V1 receptors",
+            "explanation": "This describes vasopressin rather than the catecholamine norepinephrine."
+          },
+          {
+            "id": "C",
+            "text": "Catecholamine inotrope used mainly to increase myocardial contractility",
+            "explanation": "Dobutamine has a principally inotropic role; norepinephrine is used primarily to support vascular tone and pressure."
+          },
+          {
+            "id": "D",
+            "text": "Direct vasodilator that primarily decreases systemic vascular resistance",
+            "explanation": "Reducing systemic vascular resistance is opposite to norepinephrine's principal vasopressor action."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish norepinephrine's catecholamine vasopressor classification from vasopressin, inotropes, and vasodilators.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-vitamin-k-phytonadione::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "In warfarin-associated coagulopathy, how is phytonadione's therapeutic role best classified?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Vitamin cofactor replacement supporting synthesis of functional clotting factors",
+            "explanation": "Phytonadione supplies vitamin K needed for hepatic production of functional vitamin-K-dependent clotting factors; the response is not immediate."
+          },
+          {
+            "id": "B",
+            "text": "Clotting-factor concentrate directly supplying active coagulation proteins",
+            "explanation": "This describes prothrombin complex concentrate, which supplies clotting factors rather than vitamin K cofactor."
+          },
+          {
+            "id": "C",
+            "text": "Direct factor-Xa inhibitor preventing thrombin generation during anticoagulation",
+            "explanation": "This describes a factor-Xa anticoagulant, which does not reverse vitamin K deficiency or warfarin's effects."
+          },
+          {
+            "id": "D",
+            "text": "Fibrinolytic drug activating plasmin to break down existing fibrin",
+            "explanation": "Fibrinolytic drugs promote clot breakdown and do not replenish vitamin-K-dependent clotting factor activity."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish phytonadione cofactor replacement from direct factor replacement, anticoagulation, and fibrinolysis.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-dopamine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which description correctly classifies dopamine's hemodynamic drug effects?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Catecholamine with dose-dependent inotropic and vasopressor effects",
+            "explanation": "The taught dopamine profile includes dose-dependent dopaminergic and adrenergic activity with both inotropic and vasopressor potential."
+          },
+          {
+            "id": "B",
+            "text": "Non-catecholamine V1-receptor agonist producing isolated vasoconstriction",
+            "explanation": "This describes vasopressin, not dopamine's dose-dependent catecholamine receptor activity."
+          },
+          {
+            "id": "C",
+            "text": "Selective beta-1 blocker used to reduce myocardial contractility",
+            "explanation": "Beta blockers reduce adrenergic stimulation; dopamine is not a beta blocker."
+          },
+          {
+            "id": "D",
+            "text": "Direct smooth-muscle vasodilator used for hypertensive emergencies",
+            "explanation": "Dopamine is not a direct antihypertensive vasodilator."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize dopamine as a catecholamine with dose-dependent inotropic and vasopressor effects.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-dobutamine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which functional drug category best fits dobutamine in a selected low-output state?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Beta-1-predominant positive inotrope supporting cardiac contractility",
+            "explanation": "The study entry describes predominantly beta-1 activity to improve myocardial contraction in selected low-output states."
+          },
+          {
+            "id": "B",
+            "text": "Alpha-1-predominant vasopressor used mainly to raise vascular resistance",
+            "explanation": "This is a vasopressor profile rather than dobutamine's predominant inotropic purpose."
+          },
+          {
+            "id": "C",
+            "text": "Beta-1 adrenergic blocker used to slow cardiac stimulation",
+            "explanation": "A beta-1 blocker inhibits rather than stimulates beta-1 effects."
+          },
+          {
+            "id": "D",
+            "text": "Direct vasodilator used primarily to reduce arterial pressure",
+            "explanation": "This does not describe dobutamine's principal low-output treatment role."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize dobutamine as a predominantly beta-1 positive inotrope rather than a primary vasopressor or blocker.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-diclofenac-injection::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which analgesic class and action best describe injectable diclofenac?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Cyclooxygenase-inhibiting NSAID with analgesic and anti-inflammatory action",
+            "explanation": "Diclofenac is an NSAID that reduces prostaglandin synthesis through cyclooxygenase inhibition."
+          },
+          {
+            "id": "B",
+            "text": "Mu-opioid receptor agonist producing centrally mediated analgesia",
+            "explanation": "This describes an opioid-type analgesic, not diclofenac."
+          },
+          {
+            "id": "C",
+            "text": "Glucocorticoid regulating inflammatory gene transcription",
+            "explanation": "This describes corticosteroids, not a diclofenac NSAID."
+          },
+          {
+            "id": "D",
+            "text": "Pyrazolone-derived non-opioid analgesic with a different risk profile",
+            "explanation": "This describes metamizole's analgesic family, not diclofenac's NSAID classification."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify diclofenac as a cyclooxygenase-inhibiting NSAID rather than an opioid, steroid, or pyrazolone.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-novalgin-metamizole::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which more specific analgesic classification fits metamizole (Novalgin)?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Pyrazolone-derived non-opioid analgesic and antipyretic",
+            "explanation": "The study entry identifies metamizole as a pyrazolone derivative with non-opioid analgesic and antipyretic effects."
+          },
+          {
+            "id": "B",
+            "text": "Propionic-acid NSAID such as ibuprofen",
+            "explanation": "Ibuprofen is a propionic-acid NSAID; metamizole is a pyrazolone derivative."
+          },
+          {
+            "id": "C",
+            "text": "Mu-opioid receptor agonist such as morphine",
+            "explanation": "Metamizole is not classified as an opioid agonist."
+          },
+          {
+            "id": "D",
+            "text": "Glucocorticoid anti-inflammatory agent such as dexamethasone",
+            "explanation": "Metamizole is not a corticosteroid."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish metamizole's pyrazolone non-opioid analgesic class from other common pain medicine families.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-calcium-gluconate::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which parenteral medication category most specifically describes calcium gluconate?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Calcium salt used for calcium replacement and cardiac membrane stabilization",
+            "explanation": "This describes the taught IV calcium gluconate class and its important clinical uses."
+          },
+          {
+            "id": "B",
+            "text": "Magnesium salt used in selected ventricular arrhythmias and deficiency",
+            "explanation": "Magnesium sulfate is a different electrolyte salt."
+          },
+          {
+            "id": "C",
+            "text": "Sodium-based alkalinizing solution used in selected acid-base disorders",
+            "explanation": "Sodium bicarbonate is a different parenteral drug category."
+          },
+          {
+            "id": "D",
+            "text": "Concentrated intravenous glucose used for hypoglycemia treatment",
+            "explanation": "Dextrose is a glucose solution, not a calcium preparation."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize IV calcium gluconate as a calcium salt, distinct from magnesium replacement, bicarbonate, and dextrose.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-sodium-bicarbonate::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "mechanism",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "When used for a selected metabolic or toxicologic indication, how is IV sodium bicarbonate best classified?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Systemic alkalinizing agent supplying bicarbonate buffer",
+            "explanation": "The source describes sodium bicarbonate as a systemic alkalinizer that changes acid-base chemistry."
+          },
+          {
+            "id": "B",
+            "text": "Parenteral calcium salt stabilizing myocardial membranes",
+            "explanation": "This describes calcium salts, not bicarbonate replacement."
+          },
+          {
+            "id": "C",
+            "text": "Parenteral magnesium salt used in certain arrhythmias",
+            "explanation": "This describes magnesium sulfate, not bicarbonate."
+          },
+          {
+            "id": "D",
+            "text": "Concentrated intravenous glucose correcting hypoglycemia",
+            "explanation": "This describes dextrose, not sodium bicarbonate."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize sodium bicarbonate as a systemic alkalinizing drug rather than a calcium, magnesium, or glucose treatment.",
+        "criticalForSafety": false
+      }
+    },
+    "ibd2-carbamazepine::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient taking Tegretol-XR cannot swallow tablets. The planned dose is an extended-release tablet. What should the nurse do?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Request an authorized suitable formulation instead of crushing the XR tablet",
+            "explanation": "Tegretol-XR must not be crushed or chewed. Use an authorized alternative formulation and dosing plan."
+          },
+          {
+            "id": "B",
+            "text": "Crush the XR tablet and mix it with a small volume of water",
+            "explanation": "Crushing disrupts the extended-release design and can alter carbamazepine delivery."
+          },
+          {
+            "id": "C",
+            "text": "Break the XR tablet into pieces and give it through the feeding tube",
+            "explanation": "Breaking or dispersing an XR tablet for tube use is not a verified route or formulation substitution."
+          },
+          {
+            "id": "D",
+            "text": "Substitute regular carbamazepine tablets at the same schedule without review",
+            "explanation": "Regular tablets and the suspension have different release characteristics; a revised authorized regimen is required."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize that Tegretol-XR must not be crushed or substituted with immediate-release formulation without review.",
+        "criticalForSafety": true
+      }
+    },
+    "ibd2-epanutin-phenytoin::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A stable patient on oral Epanutin (phenytoin) is switched to another phenytoin formulation because of a supply change. Which issue most directly requires review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Formulation-dependent exposure and need for clinical or drug-level reassessment",
+            "explanation": "Oral phenytoin products are not automatically interchangeable dose-for-dose; changing formulation can require therapeutic monitoring and review."
+          },
+          {
+            "id": "B",
+            "text": "Different packaging despite unchanged pharmacological exposure",
+            "explanation": "Packaging alone is not the question; switching phenytoin products can alter the patient's exposure."
+          },
+          {
+            "id": "C",
+            "text": "Expected loss of all anticonvulsant activity after any oral substitution",
+            "explanation": "A formulation switch does not inherently abolish efficacy, but it can change concentrations."
+          },
+          {
+            "id": "D",
+            "text": "Automatic equivalent exposure whenever the total milligram dose matches",
+            "explanation": "Equal nominal milligrams do not prove equivalent phenytoin exposure across formulations."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize potential phenytoin exposure changes with formulation substitution and the need for monitoring.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-isosorbide-mononitrate::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient taking modified-release isosorbide mononitrate cannot swallow the tablet. Which plan is appropriate?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Clarify an alternative formulation and schedule without crushing the modified-release tablet",
+            "explanation": "Modified-release isosorbide mononitrate must be given according to its formulation; request an authorized alternative when unable to swallow."
+          },
+          {
+            "id": "B",
+            "text": "Crush the modified-release tablet and administer with water after checking BP",
+            "explanation": "BP checks do not prevent altered release if the modified-release product is crushed."
+          },
+          {
+            "id": "C",
+            "text": "Use an immediate-release nitrate tablet once daily at the same milligram strength",
+            "explanation": "Immediate-release and modified-release nitrate schedules must not be interchanged solely by matching milligrams."
+          },
+          {
+            "id": "D",
+            "text": "Split and disperse the modified-release tablet to preserve its planned dosing interval",
+            "explanation": "Breaking and dispersing the modified-release tablet is not an authorized conversion and can alter drug delivery."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Select a safe response when a patient cannot swallow prescribed modified-release isosorbide mononitrate.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-metoprolol::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An order specifies metoprolol tartrate twice daily, but the supplied box contains metoprolol succinate extended-release. What is the appropriate response?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Clarify the ordered metoprolol formulation and revised dosing schedule before substitution",
+            "explanation": "Metoprolol salts and extended-release products have distinct release characteristics and dosing regimens. An authorized conversion may be appropriate but is not automatic."
+          },
+          {
+            "id": "B",
+            "text": "Administer the succinate extended-release tablets twice daily at the ordered tartrate strength",
+            "explanation": "Simply matching each tartrate dose with extended-release succinate may change total exposure and the intended dosing interval."
+          },
+          {
+            "id": "C",
+            "text": "Divide the extended-release daily dose into two doses to retain the original timetable",
+            "explanation": "Changing an extended-release schedule independently does not provide an authorized equivalent conversion."
+          },
+          {
+            "id": "D",
+            "text": "Crush the extended-release tablets so they act like the prescribed immediate-release formulation",
+            "explanation": "Crushing extended-release metoprolol alters its release design; it does not establish safe tartrate equivalence."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize the need for a formulation-specific authorized conversion between metoprolol tartrate and extended-release succinate.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-pantoprazole::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "For the referenced pantoprazole 40-mg IV powder vial, which initial reconstitution is specified by the product instructions?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10 mL of 0.9% sodium chloride",
+            "explanation": "The referenced 40-mg pantoprazole IV vial is initially reconstituted with 10 mL of 0.9% NaCl; further dilution and injection/infusion timing depend on the product instructions."
+          },
+          {
+            "id": "B",
+            "text": "10 mL of 5% dextrose as the initial reconstitution",
+            "explanation": "Five-percent dextrose may be used for further dilution with certain products, but the initial reconstitution here requires 0.9% saline."
+          },
+          {
+            "id": "C",
+            "text": "10 mL of sterile water as the initial reconstitution",
+            "explanation": "The referenced vial's initial reconstitution is specified as 0.9% saline, not water for injection."
+          },
+          {
+            "id": "D",
+            "text": "10 mL of lidocaine as the initial reconstitution",
+            "explanation": "Lidocaine is not the labeled reconstitution fluid for the referenced pantoprazole vial."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall the initial reconstitution for the specific referenced pantoprazole 40-mg IV product, not a universal rule for all brands.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-hydrocortisone::formulation": {
+      "action": "omit",
+      "reason": "The previous IV hydrocortisone salt-choice stem can be solved merely by identifying the only injectable preparation among topical/oral products; the source only supplies a general vial verification instruction. Retain the teaching fact but grant no scoring credit until a clinically discriminating formulation question is grounded.",
+      "unresolvedCoverage": true
+    },
+    "ed-novalgin-metamizole::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A nurse prepares ordered IV metamizole for a patient whose blood pressure is borderline low. Which specific safety precaution matters?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Confirm the product-specific slow IV rate and closely monitor blood pressure",
+            "explanation": "IV metamizole may cause marked hypotension, particularly with rapid administration; verify rate and monitor during administration."
+          },
+          {
+            "id": "B",
+            "text": "Use a faster IV push once the calculated dose and dilution are correct",
+            "explanation": "Correct dose and dilution do not eliminate the rate-related risk of hypotension."
+          },
+          {
+            "id": "C",
+            "text": "Rely on dilution alone to prevent hypotension during the IV dose",
+            "explanation": "Dilution without attention to infusion rate and patient perfusion does not prevent hypotensive reactions."
+          },
+          {
+            "id": "D",
+            "text": "Monitor blood pressure only after the entire injection has been completed",
+            "explanation": "Blood pressure and signs of hypersensitivity should be observed during administration so intervention is prompt."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize slow IV administration with hemodynamic monitoring as a metamizole-specific safety consideration.",
+        "criticalForSafety": true
+      }
+    },
+    "ed-diclofenac-injection::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The referenced UK Voltarol 75 mg/3 mL ampoule is prescribed for IV postoperative analgesia. Which preparation follows its SmPC?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Use the specified sodium-bicarbonate-buffered dilution for IV infusion, not an IV bolus",
+            "explanation": "The referenced Voltarol ampoule requires an appropriately buffered infusion solution and must not be given as an IV bolus."
+          },
+          {
+            "id": "B",
+            "text": "Administer the undiluted ampoule as a slow IV push over several minutes",
+            "explanation": "The SmPC prohibits IV bolus even if given slowly."
+          },
+          {
+            "id": "C",
+            "text": "Dilute in normal saline for infusion but omit the required bicarbonate buffer",
+            "explanation": "Normal saline is a permitted diluent for this product only with the specified bicarbonate buffering."
+          },
+          {
+            "id": "D",
+            "text": "Dilute in 5% glucose for infusion without the required bicarbonate buffer",
+            "explanation": "Five-percent glucose is a permitted diluent only with the specified bicarbonate buffering."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize that the referenced Voltarol 75 mg/3 mL IV preparation requires buffered infusion rather than unbuffered infusion or IV push.",
+        "criticalForSafety": true
+      }
+    },
+    "ed-vitamin-k-phytonadione::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult on warfarin with a markedly raised INR has an IM phytonadione order. What should prompt route clarification?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Risk of injection-site hematoma alongside the known IM hypersensitivity warning",
+            "explanation": "An anticoagulated patient can develop a hematoma from IM injection; injectable phytonadione also has a boxed warning for severe reactions via IM and IV routes."
+          },
+          {
+            "id": "B",
+            "text": "IM administration gives predictable rapid correction when the INR is high",
+            "explanation": "IM absorption and reversal are not reliably immediate; urgent warfarin reversal follows an authorized indication-specific protocol."
+          },
+          {
+            "id": "C",
+            "text": "IM delivery removes the need to consider parenteral hypersensitivity reactions",
+            "explanation": "IM phytonadione has its own risk of severe hypersensitivity reactions, including anaphylaxis."
+          },
+          {
+            "id": "D",
+            "text": "IM dosing avoids the need to monitor the INR after administration",
+            "explanation": "Response still requires clinically indicated INR reassessment regardless of administration route."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize why IM phytonadione warrants special review in a patient with anticoagulation-related bleeding risk.",
+        "criticalForSafety": true
+      }
+    },
+    "ibd2-tramadol::formulation": {
+      "action": "omit",
+      "reason": "The shared formulation-substitution answer does not test a specific tramadol oral product property; preserve the safety instruction in teaching, but no scored coverage credit.",
+      "unresolvedCoverage": true
+    },
+    "ibd2-prothiazine::formulation": {
+      "action": "omit",
+      "reason": "The generic authorization prompt duplicates the existing promethazine route learning point; no separate formulation score.",
+      "unresolvedCoverage": false
+    },
+    "ccu-isosorbide-dinitrate::formulation": {
+      "action": "omit",
+      "reason": "The documented sublingual administration is already directly tested by the SL-tablet question; avoid repeated generic substitution credit.",
+      "unresolvedCoverage": false
+    },
+    "trolley-amiodarone::formulation": {
+      "action": "omit",
+      "reason": "The infusion and rhythm-specific setup is already assessed by dedicated rhythm-pathway/infusion questions; a generic formulation authorization answer adds no medicine-specific discrimination.",
+      "unresolvedCoverage": false
+    },
+    "ibd2-clindamycin::formulation": {
+      "action": "omit",
+      "reason": "The available source only establishes that route and infusion details depend on the actual product; a generic check-the-label answer is not scored coverage.",
+      "unresolvedCoverage": true
+    },
+    "ed-decort-dexamethasone::formulation": {
+      "action": "omit",
+      "reason": "The shared formulation-check prompt is not a dexamethasone-specific test; injection salt/route may merit a verified targeted question later.",
+      "unresolvedCoverage": true
+    },
+    "ed-ondansetron-provisional-shelf::formulation": {
+      "action": "omit",
+      "reason": "The shelf label does not prove actual product formulation; generic substitution instruction remains source advice but earns no drug-specific score.",
+      "unresolvedCoverage": true
+    },
+    "ed-hexakapron-tranexamic::formulation": {
+      "action": "omit",
+      "reason": "TXA IV-only and serious neuraxial errors are already tested with the dedicated route question; duplicate generic substitution prompt earns no credit.",
+      "unresolvedCoverage": false
+    },
+    "ed-omnic-tamsulosin::formulation": {
+      "action": "omit",
+      "reason": "Omnic modified-release capsule vs OCAS meal instructions are already directly assessed; generic authorization prompt duplicates a distinct safety question.",
+      "unresolvedCoverage": false
+    },
+    "ccu-heparin-ufh::heparin_samples": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor",
+        "why"
+      ],
+      "reason": "Require both the UFH-response assay and the reason accurate delivery does not guarantee response. Avoid a redundant standalone variability item.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which test-and-rationale pairing supports monitoring a therapeutic UFH infusion?",
+        "answerKey": "A",
+        "point": "Select the authorized UFH response assay and recognize variability despite accurate dose delivery.",
+        "criticalForSafety": true,
+        "choices": [
+          {
+            "id": "A",
+            "text": "aPTT or UFH-calibrated anti-Xa; response can vary despite accurate delivery",
+            "explanation": "The selected assay measures UFH response; pump accuracy does not guarantee an appropriate biological effect."
+          },
+          {
+            "id": "B",
+            "text": "INR; response can vary despite accurate delivery",
+            "explanation": "The rationale is relevant, but INR is not the routine UFH titration assay."
+          },
+          {
+            "id": "C",
+            "text": "aPTT or UFH-calibrated anti-Xa; response is fixed once delivery is correct",
+            "explanation": "The assay is appropriate, but a correct delivered dose does not establish a fixed anticoagulant response."
+          },
+          {
+            "id": "D",
+            "text": "INR; response is fixed once delivery is correct",
+            "explanation": "Both the routine titration assay and the fixed-response assumption are incorrect."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "why"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "Practice calculation only: A prescribed UFH infusion delivers 1,500 units/hour. The prepared bag contains 25,000 units in 250 mL. What pump rate delivers the ordered dose? Enter mL/hour.",
+        "answer": 15,
+        "unit": "mL/hour",
+        "tolerance": 0,
+        "explanation": "25,000 units ÷ 250 mL = 100 units/mL; 1,500 units/hour ÷ 100 units/mL = 15 mL/hour. Verify the real order, preparation and pump independently.",
+        "point": "Calculate an ordered UFH dose in units/hour from the verified bag concentration in units/mL.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-heparin-ufh::bleeding": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "During a UFH infusion, a patient develops hematemesis and a falling BP. What is the immediate medication-related action?",
+        "choices": [
+          {
+            "text": "Stop UFH and urgently escalate the bleeding and hemodynamic change",
+            "explanation": "Major bleeding requires prompt cessation and urgent assessment; do not wait for a scheduled coagulation result.",
+            "id": "A"
+          },
+          {
+            "text": "Reduce UFH by half and wait for the next scheduled aPTT",
+            "explanation": "An arbitrary rate reduction delays the response to major bleeding.",
+            "id": "B"
+          },
+          {
+            "text": "Maintain UFH until a new aPTT result confirms over-anticoagulation",
+            "explanation": "Major bleeding is an urgent clinical finding even before a new result returns.",
+            "id": "C"
+          },
+          {
+            "text": "Pause UFH and restart after confirming the pump settings",
+            "explanation": "A delivery check does not resolve active major bleeding.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Respond promptly to major bleeding during UFH infusion.",
+        "criticalForSafety": true
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-verapamil::bradycardia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new pattern during IV verapamil most closely matches its important cardiac and circulatory adverse effects?",
+        "choices": [
+          {
+            "text": "Bradycardia, AV block and significant hypotension",
+            "explanation": "Verapamil can depress AV conduction and myocardial activity while lowering BP.",
+            "id": "A"
+          },
+          {
+            "text": "Tachycardia, AV block and significant hypotension",
+            "explanation": "AV block and hypotension fit the risk profile, but bradycardia is the expected cardiac-slowing effect in this comparison.",
+            "id": "B"
+          },
+          {
+            "text": "Bradycardia, accelerated AV conduction and significant hypotension",
+            "explanation": "Verapamil slows AV conduction rather than accelerating it.",
+            "id": "C"
+          },
+          {
+            "text": "Bradycardia, AV block and significant hypertension",
+            "explanation": "The important pressure-lowering adverse effect is hypotension rather than hypertension.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize bradycardia, AV block and significant hypotension as verapamil adverse effects.",
+        "criticalForSafety": true
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-verapamil::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which target and site explain verapamil’s direct effects on cardiac conduction and contractility?",
+        "choices": [
+          {
+            "text": "L-type calcium channels in the AV node and myocardium",
+            "explanation": "Verapamil blocks these calcium channels, slowing AV conduction and myocardial activity.",
+            "id": "A"
+          },
+          {
+            "text": "L-type calcium channels predominantly in arteriolar smooth muscle",
+            "explanation": "This mainly vascular description does not identify the cardiac AV-node/myocardial site needed here.",
+            "id": "B"
+          },
+          {
+            "text": "Fast sodium channels in the AV node and myocardium",
+            "explanation": "Verapamil’s relevant target is the L-type calcium channel rather than the fast sodium channel.",
+            "id": "C"
+          },
+          {
+            "text": "Potassium channels in the AV node and myocardium",
+            "explanation": "Verapamil’s relevant channel target is calcium rather than potassium.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify L-type calcium-channel blockade in the AV node and myocardium.",
+        "criticalForSafety": false
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-furosemide::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which renal target and site match furosemide?",
+        "choices": [
+          {
+            "text": "Na-K-2Cl cotransporter in the thick ascending loop of Henle",
+            "explanation": "Furosemide inhibits this transporter, producing loop diuresis.",
+            "id": "A"
+          },
+          {
+            "text": "Na-K-2Cl cotransporter in the proximal tubule",
+            "explanation": "The transporter is associated with furosemide, but the renal site is the thick ascending limb rather than the proximal tubule.",
+            "id": "B"
+          },
+          {
+            "text": "Na-Cl cotransporter in the thick ascending loop of Henle",
+            "explanation": "The loop site is relevant, but furosemide inhibits Na-K-2Cl rather than the thiazide-sensitive Na-Cl cotransporter.",
+            "id": "C"
+          },
+          {
+            "text": "Mineralocorticoid receptor in the thick ascending loop of Henle",
+            "explanation": "Furosemide acts on the Na-K-2Cl cotransporter, not the mineralocorticoid receptor.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Locate furosemide action at the Na-K-2Cl transporter in the thick ascending loop of Henle.",
+        "criticalForSafety": false
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ed-captopril-tablets::ace_history": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "stem": "Which previous reaction is a contraindication to captopril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Uncomplicated nitrate headache",
+            "explanation": "This does not establish ACE-associated angioedema."
+          },
+          {
+            "id": "B",
+            "text": "Isolated opioid constipation",
+            "explanation": "This is a different adverse effect and mechanism."
+          },
+          {
+            "id": "C",
+            "text": "Isolated metformin stomach upset",
+            "explanation": "This is not the stated ACE-inhibitor contraindication."
+          },
+          {
+            "id": "D",
+            "text": "ACE-inhibitor angioedema",
+            "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
+          }
+        ],
+        "format": "single-best-answer",
+        "point": "Prior ACE-inhibitor angioedema makes repeat ACE exposure unsafe.",
+        "criticalForSafety": false,
+        "answerKey": "D"
+      },
+      "reason": "Correct copied enalapril wording in the captopril exam; preserve the ACE-inhibitor-angioedema answer contract."
     }
   },
   "evidenceChecks": [
@@ -261,5 +3991,38 @@
       "scope": "Tranexamic acid: undiluted 100 mg/mL not above 1 mL/min",
       "url": "https://dailymed-us-east-1.awsprod.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28ccedba-99cd-49f3-a782-798df5258524"
     }
-  ]
+  ],
+  "coverageRevisions": {
+    "ed-ondansetron-provisional-shelf": "fact-coverage-batch-20261106-r2",
+    "ed-decort-dexamethasone": "formulation-quality-audit-20261106",
+    "ed-hexakapron-tranexamic": "formulation-quality-audit-20261106",
+    "ed-vitamin-k-phytonadione": "formulation-quality-audit-20261106",
+    "verified-alteplase-v35": "drug-coverage-20261106",
+    "ccu-norepinephrine": "drug-choice-audit-20261106-v2",
+    "ibd2-vancomycin": "drug-coverage-20261106",
+    "ccu-heparin-ufh": "fact-coverage-batch-20261106-r2",
+    "ccu-adenosine": "drug-coverage-20261106",
+    "ed-omnic-tamsulosin": "formulation-quality-audit-20261106",
+    "ccu-dopamine": "drug-choice-audit-20261106-v2",
+    "ccu-dobutamine": "drug-choice-audit-20261106-v2",
+    "ed-diclofenac-injection": "formulation-quality-audit-20261106",
+    "ed-novalgin-metamizole": "formulation-quality-audit-20261106",
+    "trolley-calcium-gluconate": "drug-choice-audit-20261106-v2",
+    "trolley-sodium-bicarbonate": "drug-choice-audit-20261106-v2",
+    "ibd2-carbamazepine": "formulation-quality-audit-20261106",
+    "ibd2-epanutin-phenytoin": "formulation-quality-audit-20261106",
+    "ccu-isosorbide-mononitrate": "formulation-quality-audit-20261106",
+    "ccu-metoprolol": "formulation-quality-audit-20261106",
+    "ccu-pantoprazole": "formulation-quality-audit-20261106",
+    "trolley-hydrocortisone": "formulation-quality-audit-20261106-v2",
+    "ibd2-tramadol": "formulation-quality-audit-20261106",
+    "ibd2-prothiazine": "formulation-quality-audit-20261106",
+    "ccu-isosorbide-dinitrate": "formulation-quality-audit-20261106",
+    "trolley-amiodarone": "formulation-quality-audit-20261106",
+    "ibd2-clindamycin": "formulation-quality-audit-20261106",
+    "ccu-verapamil": "fact-coverage-batch-20261106-r2",
+    "ccu-furosemide": "fact-coverage-batch-20261106-r2",
+    "ed-captopril-tablets": "fact-coverage-batch-20261106-r2"
+  },
+  "roleReviewRevision": "drug-role-20261106-batch4"
 }

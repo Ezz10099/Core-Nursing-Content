@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-06",
+  "status": "STAGING ONLY; independent clinical review and empirical difficulty calibration pending",
+  "count": 13,
+  "medications": [
+    "ed-ondansetron-provisional-shelf",
+    "ed-decort-dexamethasone",
+    "ed-hexakapron-tranexamic",
+    "ed-vitamin-k-phytonadione",
+    "verified-alteplase-v35",
+    "ccu-norepinephrine",
+    "ibd2-vancomycin",
+    "ccu-heparin-ufh",
+    "ccu-adenosine",
+    "ed-omnic-tamsulosin"
+  ],
+  "questions": [
+    {
+      "id": "ed-ondansetron-provisional-shelf",
+      "key": "ondansetron_apomorphine",
+      "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+      "sourceAnchor": "apomorphine",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf",
+      "key": "ondansetron_qt_risk_factors",
+      "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+      "sourceAnchor": "low K\\+/Mg2\\+",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ed-decort-dexamethasone",
+      "key": "dexamethasone_anaphylaxis_rescue",
+      "point": "Recognize that dexamethasone is not a substitute for prompt epinephrine during anaphylaxis.",
+      "sourceAnchor": "epinephrine",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ed-hexakapron-tranexamic",
+      "key": "txa_blood_mixing",
+      "point": "Recognize that TXA injection must not be mixed into blood products.",
+      "sourceAnchor": "never mix TXA with blood products",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ed-hexakapron-tranexamic",
+      "key": "txa_thrombosis_seizure",
+      "point": "Recognize seizures and thrombosis as potentially serious TXA adverse effects.",
+      "sourceAnchor": "seizure, new thrombotic",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ed-vitamin-k-phytonadione",
+      "key": "vitk_iv_max_rate",
+      "point": "Recall the rate ceiling for IV administration of the specifically referenced phytonadione emulsion.",
+      "sourceAnchor": "not above 1 mg/min",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "verified-alteplase-v35",
+      "key": "alteplase_avoid_im",
+      "point": "Avoid routine IM injections during IV alteplase to reduce injection-site bleeding.",
+      "sourceAnchor": "IM injections",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "verified-alteplase-v35",
+      "key": "alteplase_no_mixing",
+      "point": "Do not add another medicine to the Activase infusion.",
+      "sourceAnchor": "Do not mix other medications",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ccu-norepinephrine",
+      "key": "norepi_peripheral_access",
+      "point": "Recognize that urgent vasopressors need not wait for central access when suitable monitored peripheral access exists.",
+      "sourceAnchor": "suitable proximal peripheral line",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ibd2-vancomycin",
+      "key": "vancomycin_combined_nephrotoxic",
+      "point": "Review cumulative nephrotoxicity when IV vancomycin is combined with nephrotoxic medications.",
+      "sourceAnchor": "other nephrotoxic drugs",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ccu-heparin-ufh",
+      "key": "heparin_rate_authorization",
+      "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
+      "sourceAnchor": "nurse-driven protocol",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ccu-adenosine",
+      "key": "adenosine_immediate_flush",
+      "point": "Use a rapid adenosine IV push immediately followed by saline flush during indicated rhythm treatment.",
+      "sourceAnchor": "rapid saline flush",
+      "critical": true,
+      "review": "pending independent clinical and choice-quality audit"
+    },
+    {
+      "id": "ed-omnic-tamsulosin",
+      "key": "tamsulosin_capsule_meal",
+      "point": "Distinguish Omnic modified-release capsule meal instructions from OCAS product instructions.",
+      "sourceAnchor": "Omnic OCAS",
+      "critical": false,
+      "review": "pending independent clinical and choice-quality audit"
+    }
+  ],
+  "references": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a44601b-c31c-4779-a688-28cc4cc75e8b",
+    "https://www.resus.org.uk/professional-library/faqs/faqs-anaphylaxis",
+    "https://dailymed.awsprod.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0277db2d-7c81-4cd0-ac19-fa12b5721428&type=display",
+    "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d954e3d7-a4d5-4798-887d-7af916ff0181&type=display",
+    "https://www.gene.com/gene/products/information/pdf/activase-prescribing.pdf",
+    "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+  ],
+  "limitations": [
+    "No complete clinical audit of all 82 medications is claimed.",
+    "One revised same-form exam is used for initial, day-7 and day-21 stages.",
+    "Historical scores and active attempt snapshots are unchanged.",
+    "The main signed update channel must not be modified before staging validation."
+  ]
+}

@@ -2079,13 +2079,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Tablet coating versus capsule coating",
-                  "explanation": "UFH infusion preparation is not an oral tablet/capsule task."
+                  "text": "Treatment-vial concentration versus catheter-flush concentration",
+                  "explanation": "Confusing them can create a major dosing error."
                 },
                 {
                   "id": "B",
-                  "text": "Treatment-vial concentration versus catheter-flush concentration",
-                  "explanation": "Confusing them can create a major dosing error."
+                  "text": "Tablet coating versus capsule coating",
+                  "explanation": "UFH infusion preparation is not an oral tablet/capsule task."
                 },
                 {
                   "id": "C",
@@ -2113,7 +2113,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2136,7 +2136,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::heparin_infusion"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "short-answer",
@@ -2156,6 +2156,13 @@
                   "itemId": "ccu-heparin-ufh",
                   "field": "administration",
                   "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 }
               ],
               "criticalForSafety": false,
@@ -2164,9 +2171,257 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::lmwh_route"
               ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A UFH infusion has an above-target coagulation result, but no nurse-driven titration protocol is authorized. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Ignore the result until the next sample",
+                  "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
+                },
+                {
+                  "id": "B",
+                  "text": "Escalate and obtain an authorized dose adjustment",
+                  "explanation": "Changes must follow an order or an approved nursing protocol."
+                },
+                {
+                  "id": "C",
+                  "text": "Halve the infusion rate independently",
+                  "explanation": "Independent rate adjustments without authorization are unsafe."
+                },
+                {
+                  "id": "D",
+                  "text": "Copy the previous patient's titration",
+                  "explanation": "A previous patient's dose change cannot guide this prescription."
+                }
+              ],
+              "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--standard--heparin_rate_authorization",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_rate_authorization"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An immobile inpatient without known VTE has a prescribed subcutaneous low-dose unfractionated heparin regimen. What is the primary purpose of this order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reverse the antiplatelet effect of concurrent aspirin",
+                  "explanation": "UFH is an anticoagulant rather than an aspirin reversal agent."
+                },
+                {
+                  "id": "B",
+                  "text": "Directly dissolve an already established pulmonary embolus",
+                  "explanation": "UFH prevents thrombin formation and extension of clots, but does not directly dissolve an established embolus."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduce the risk of new venous thromboembolism",
+                  "explanation": "Selected low-dose SC UFH regimens are used to prevent VTE in at-risk patients; they are not fibrinolytic treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "Replace the therapeutic IV infusion used for every acute thrombosis",
+                  "explanation": "A prophylactic subcutaneous order cannot automatically replace a distinct therapeutic anticoagulation regimen."
+                }
+              ],
+              "point": "Distinguish prevention of new thrombosis using prescribed SC UFH from thrombolysis or treatment-dose IV infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "use",
+                  "textSha256": "12598d1c7ba42aa166fd47effb78766ca5688dec7e7807338643db49656e8235"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-heparin-ufh--standard--heparin_prophylaxis",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_prophylaxis"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "On day 6 of a UFH infusion, platelets fall from 240 to 95 ×10⁹/L and a new thrombus is suspected. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Continue heparin at the same dose until a confirmatory assay returns",
+                  "explanation": "Continuing heparin despite a clinically concerning pattern can allow HIT-associated thrombosis to progress."
+                },
+                {
+                  "id": "B",
+                  "text": "Reduce the UFH rate by half and repeat the platelet count next week",
+                  "explanation": "Reducing the dose alone does not remove the causative heparin exposure and delays needed assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Replace UFH with enoxaparin at the same anticoagulant dose",
+                  "explanation": "LMWH is also a heparin-family product; switching empirically is not the appropriate management for suspected HIT."
+                },
+                {
+                  "id": "D",
+                  "text": "Stop heparin and urgently escalate suspected HIT under the facility protocol",
+                  "explanation": "A substantial platelet fall with thrombosis during heparin exposure is concerning for HIT, which requires prompt heparin cessation, urgent review and consideration of non-heparin anticoagulation."
+                }
+              ],
+              "point": "Recognize suspected HIT and promptly stop heparin and escalate for urgent clinical reassessment and a non-heparin anticoagulation plan under protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--standard--heparin_hit_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_hit_action"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair of routes can be used for prescribed unfractionated heparin anticoagulation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Intravenous and intramuscular",
+                  "explanation": "IM injection is avoided because of hematoma risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Intravenous and subcutaneous",
+                  "explanation": "UFH may be given IV or SC depending on the prescribed regimen; IM injection is avoided."
+                },
+                {
+                  "id": "C",
+                  "text": "Oral and subcutaneous",
+                  "explanation": "UFH is not an oral anticoagulant."
+                },
+                {
+                  "id": "D",
+                  "text": "Subcutaneous and intramuscular",
+                  "explanation": "SC is a route, but IM injection is avoided."
+                }
+              ],
+              "point": "Identify IV and SC as UFH administration routes; do not infer regimen interchangeability.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "administration",
+                  "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-heparin-ufh--standard--heparin_routes",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_routes"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "short-answer",
+              "stem": "Which device should control a continuous therapeutic IV UFH infusion? Name the device.",
+              "acceptedAnswers": [
+                "infusion pump",
+                "volumetric pump",
+                "volumetric infusion pump",
+                "electronic infusion pump",
+                "syringe pump",
+                "pump",
+                "مضخة تسريب",
+                "مضخة محاليل",
+                "مضخة"
+              ],
+              "normalization": "trim-casefold-collapse-whitespace",
+              "explanation": "A controlled infusion pump is required for therapeutic continuous UFH delivery; a correct calculation alone does not control delivery.",
+              "point": "Recall the device required to control a continuous therapeutic UFH infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "administration",
+                  "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--standard--heparin_delivery_monitoring",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_delivery_monitoring"
+              ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving UFH has a therapeutic aPTT and no bleeding. Which separate laboratory trend is needed to detect possible HIT?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "INR",
+                  "explanation": "INR does not detect the characteristic platelet decline."
+                },
+                {
+                  "id": "B",
+                  "text": "Serum sodium",
+                  "explanation": "Sodium does not detect HIT."
+                },
+                {
+                  "id": "C",
+                  "text": "Platelet count",
+                  "explanation": "An acceptable aPTT does not rule out HIT; platelet surveillance addresses a different adverse effect."
+                },
+                {
+                  "id": "D",
+                  "text": "Serum potassium",
+                  "explanation": "Potassium does not detect HIT."
+                }
+              ],
+              "point": "Recognize the need for platelet surveillance during UFH even when coagulation response is therapeutic.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--standard--heparin_platelet_surveillance",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_platelet_surveillance"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 10
         },
         {
           "id": "ccu-heparin-ufh--advanced",
@@ -2228,7 +2483,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2278,7 +2533,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2335,7 +2590,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 }
               ],
               "criticalForSafety": false,
@@ -2385,7 +2640,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2522,13 +2777,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Suppression of bacterial protein synthesis",
-                  "explanation": "This is a different treatment role."
+                  "text": "Therapeutic anticoagulation or selected prophylaxis",
+                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
                 },
                 {
                   "id": "D",
-                  "text": "Therapeutic anticoagulation or selected prophylaxis",
-                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
+                  "text": "Suppression of bacterial protein synthesis",
+                  "explanation": "This is a different treatment role."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -2555,7 +2810,7 @@
                 "ccu-heparin-ufh::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Before preparing a therapeutic UFH infusion, which product distinction matters most?",
@@ -2567,13 +2822,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Treatment-vial concentration versus catheter-flush concentration",
-                  "explanation": "Confusing them can create a major dosing error."
+                  "text": "Dry-powder inhaler strength versus nebulizer strength",
+                  "explanation": "These are unrelated formulation categories."
                 },
                 {
                   "id": "C",
-                  "text": "Dry-powder inhaler strength versus nebulizer strength",
-                  "explanation": "These are unrelated formulation categories."
+                  "text": "Treatment-vial concentration versus catheter-flush concentration",
+                  "explanation": "Confusing them can create a major dosing error."
                 },
                 {
                   "id": "D",
@@ -2596,7 +2851,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2620,7 +2875,7 @@
                 "ccu-heparin-ufh::heparin_infusion"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_infusion",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "short-answer",
@@ -2640,6 +2895,13 @@
                   "itemId": "ccu-heparin-ufh",
                   "field": "administration",
                   "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 }
               ],
               "criticalForSafety": false,
@@ -2649,6 +2911,260 @@
                 "ccu-heparin-ufh::lmwh_route"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--lmwh_route"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A UFH infusion has an above-target coagulation result, but no nurse-driven titration protocol is authorized. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Escalate and obtain an authorized dose adjustment",
+                  "explanation": "Changes must follow an order or an approved nursing protocol."
+                },
+                {
+                  "id": "B",
+                  "text": "Ignore the result until the next sample",
+                  "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
+                },
+                {
+                  "id": "C",
+                  "text": "Halve the infusion rate independently",
+                  "explanation": "Independent rate adjustments without authorization are unsafe."
+                },
+                {
+                  "id": "D",
+                  "text": "Copy the previous patient's titration",
+                  "explanation": "A previous patient's dose change cannot guide this prescription."
+                }
+              ],
+              "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--7-day--heparin_rate_authorization",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_rate_authorization"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_rate_authorization",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An immobile inpatient without known VTE has a prescribed subcutaneous low-dose unfractionated heparin regimen. What is the primary purpose of this order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reduce the risk of new venous thromboembolism",
+                  "explanation": "Selected low-dose SC UFH regimens are used to prevent VTE in at-risk patients; they are not fibrinolytic treatment."
+                },
+                {
+                  "id": "B",
+                  "text": "Replace the therapeutic IV infusion used for every acute thrombosis",
+                  "explanation": "A prophylactic subcutaneous order cannot automatically replace a distinct therapeutic anticoagulation regimen."
+                },
+                {
+                  "id": "C",
+                  "text": "Reverse the antiplatelet effect of concurrent aspirin",
+                  "explanation": "UFH is an anticoagulant rather than an aspirin reversal agent."
+                },
+                {
+                  "id": "D",
+                  "text": "Directly dissolve an already established pulmonary embolus",
+                  "explanation": "UFH prevents thrombin formation and extension of clots, but does not directly dissolve an established embolus."
+                }
+              ],
+              "point": "Distinguish prevention of new thrombosis using prescribed SC UFH from thrombolysis or treatment-dose IV infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "use",
+                  "textSha256": "12598d1c7ba42aa166fd47effb78766ca5688dec7e7807338643db49656e8235"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-heparin-ufh--7-day--heparin_prophylaxis",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_prophylaxis"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_prophylaxis",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "On day 6 of a UFH infusion, platelets fall from 240 to 95 ×10⁹/L and a new thrombus is suspected. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Replace UFH with enoxaparin at the same anticoagulant dose",
+                  "explanation": "LMWH is also a heparin-family product; switching empirically is not the appropriate management for suspected HIT."
+                },
+                {
+                  "id": "B",
+                  "text": "Stop heparin and urgently escalate suspected HIT under the facility protocol",
+                  "explanation": "A substantial platelet fall with thrombosis during heparin exposure is concerning for HIT, which requires prompt heparin cessation, urgent review and consideration of non-heparin anticoagulation."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduce the UFH rate by half and repeat the platelet count next week",
+                  "explanation": "Reducing the dose alone does not remove the causative heparin exposure and delays needed assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Continue heparin at the same dose until a confirmatory assay returns",
+                  "explanation": "Continuing heparin despite a clinically concerning pattern can allow HIT-associated thrombosis to progress."
+                }
+              ],
+              "point": "Recognize suspected HIT and promptly stop heparin and escalate for urgent clinical reassessment and a non-heparin anticoagulation plan under protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--7-day--heparin_hit_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_hit_action"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_hit_action",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair of routes can be used for prescribed unfractionated heparin anticoagulation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Oral and subcutaneous",
+                  "explanation": "UFH is not an oral anticoagulant."
+                },
+                {
+                  "id": "B",
+                  "text": "Intravenous and intramuscular",
+                  "explanation": "IM injection is avoided because of hematoma risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Subcutaneous and intramuscular",
+                  "explanation": "SC is a route, but IM injection is avoided."
+                },
+                {
+                  "id": "D",
+                  "text": "Intravenous and subcutaneous",
+                  "explanation": "UFH may be given IV or SC depending on the prescribed regimen; IM injection is avoided."
+                }
+              ],
+              "point": "Identify IV and SC as UFH administration routes; do not infer regimen interchangeability.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "administration",
+                  "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-heparin-ufh--7-day--heparin_routes",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_routes"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_routes",
+              "answerKey": "D"
+            },
+            {
+              "format": "short-answer",
+              "stem": "Which device should control a continuous therapeutic IV UFH infusion? Name the device.",
+              "acceptedAnswers": [
+                "infusion pump",
+                "volumetric pump",
+                "volumetric infusion pump",
+                "electronic infusion pump",
+                "syringe pump",
+                "pump",
+                "مضخة تسريب",
+                "مضخة محاليل",
+                "مضخة"
+              ],
+              "normalization": "trim-casefold-collapse-whitespace",
+              "explanation": "A controlled infusion pump is required for therapeutic continuous UFH delivery; a correct calculation alone does not control delivery.",
+              "point": "Recall the device required to control a continuous therapeutic UFH infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "administration",
+                  "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--7-day--heparin_delivery_monitoring",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_delivery_monitoring"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_delivery_monitoring"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving UFH has a therapeutic aPTT and no bleeding. Which separate laboratory trend is needed to detect possible HIT?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Serum sodium",
+                  "explanation": "Sodium does not detect HIT."
+                },
+                {
+                  "id": "B",
+                  "text": "Platelet count",
+                  "explanation": "An acceptable aPTT does not rule out HIT; platelet surveillance addresses a different adverse effect."
+                },
+                {
+                  "id": "C",
+                  "text": "INR",
+                  "explanation": "INR does not detect the characteristic platelet decline."
+                },
+                {
+                  "id": "D",
+                  "text": "Serum potassium",
+                  "explanation": "Potassium does not detect HIT."
+                }
+              ],
+              "point": "Recognize the need for platelet surveillance during UFH even when coagulation response is therapeutic.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--7-day--heparin_platelet_surveillance",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_platelet_surveillance"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_platelet_surveillance",
+              "answerKey": "B"
             },
             {
               "stem": "During HEPARIN — unfractionated heparin (UFH) therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
@@ -2682,7 +3198,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2706,23 +3222,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Heparin-induced thrombocytopenia",
-                  "explanation": "A significant platelet fall during heparin exposure needs prompt review for HIT and other causes."
-                },
-                {
-                  "id": "B",
                   "text": "Opioid-related central depression",
                   "explanation": "This is not a platelet-related complication."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Warfarin-related vitamin-K depletion",
                   "explanation": "This is a different anticoagulant mechanism and does not explain UFH-associated HIT."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Nitrate-related vasodilation",
                   "explanation": "This does not explain a platelet fall."
+                },
+                {
+                  "id": "D",
+                  "text": "Heparin-induced thrombocytopenia",
+                  "explanation": "A significant platelet fall during heparin exposure needs prompt review for HIT and other causes."
                 }
               ],
               "format": "single-best-answer",
@@ -2733,7 +3249,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2750,7 +3266,7 @@
                 "ccu-heparin-ufh::hit"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--advanced--hit",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "A UFH infusion has an overdue coagulation sample; the pump is running at its prescribed rate. Which interpretation is valid?",
@@ -2762,13 +3278,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "The prescribed mL/hour establishes a therapeutic coagulation result",
-                  "explanation": "Drug delivery and measured biological effect are different."
+                  "text": "Delivery accuracy does not establish the current anticoagulant response",
+                  "explanation": "Obtain and interpret the ordered laboratory result under the protocol."
                 },
                 {
                   "id": "C",
-                  "text": "Delivery accuracy does not establish the current anticoagulant response",
-                  "explanation": "Obtain and interpret the ordered laboratory result under the protocol."
+                  "text": "The prescribed mL/hour establishes a therapeutic coagulation result",
+                  "explanation": "Drug delivery and measured biological effect are different."
                 },
                 {
                   "id": "D",
@@ -2791,7 +3307,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 }
               ],
               "criticalForSafety": false,
@@ -2801,7 +3317,7 @@
                 "ccu-heparin-ufh::heparin_samples"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--advanced--heparin_samples",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
@@ -2842,7 +3358,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "3fd47215b02cadca3d2b01c58684f0b4a17a21618615fe99e6c08c172b2d6869"
                 },
                 {
                   "file": "content.json",
@@ -2876,7 +3392,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 8
+          "questionCount": 14
         }
       ]
     },
@@ -8766,13 +9282,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Supplies rapidly available glucose",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Verapamil acts in the AV node and myocardium."
+                  "text": "Slows AV-nodal calcium-dependent conduction",
+                  "explanation": "Verapamil acts in the AV node and myocardium."
                 },
                 {
                   "id": "D",
-                  "text": "Slows AV-nodal calcium-dependent conduction",
-                  "explanation": "Verapamil acts in the AV node and myocardium."
+                  "text": "Supplies rapidly available glucose",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Verapamil acts in the AV node and myocardium."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -8805,7 +9321,7 @@
               "learningPointIds": [
                 "ccu-verapamil::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -8910,13 +9426,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Bowel frequency and abdominal distension",
-                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Bowel frequency and abdominal distension",
+                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
                   "id": "D",
@@ -8939,7 +9455,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 },
                 {
                   "file": "content.json",
@@ -8955,25 +9471,25 @@
               "learningPointIds": [
                 "ccu-verapamil::hypotension"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which new change during IKACOR / IKAKOR — verapamil treatment most directly matches its cardiac slowing risk?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
-                },
-                {
-                  "id": "B",
                   "text": "Dry mouth with an unchanged pulse",
                   "explanation": "This is a different adverse-effect pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Flushing with an unchanged pulse",
                   "explanation": "This does not establish bradycardia or AV block."
+                },
+                {
+                  "id": "C",
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "D",
@@ -8996,7 +9512,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 },
                 {
                   "file": "content.json",
@@ -9026,20 +9542,20 @@
               "learningPointIds": [
                 "ccu-verapamil::bradycardia"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which bowel effect is particularly relevant during oral verapamil treatment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A predictable acceleration of upper-GI motility",
-                  "explanation": "That describes a different pharmacological role."
+                  "text": "Constipation",
+                  "explanation": "It is a recognized adverse effect."
                 },
                 {
                   "id": "B",
-                  "text": "Constipation",
-                  "explanation": "It is a recognized adverse effect."
+                  "text": "A predictable acceleration of upper-GI motility",
+                  "explanation": "That describes a different pharmacological role."
                 },
                 {
                   "id": "C",
@@ -9060,7 +9576,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 }
               ],
               "criticalForSafety": false,
@@ -9069,30 +9585,30 @@
               "learningPointIds": [
                 "ccu-verapamil::verapamil_constipation"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "A IKACOR / IKAKOR — verapamil injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
-                },
-                {
-                  "id": "B",
                   "text": "The instructions for a similar-looking vial on the trolley",
                   "explanation": "Appearance does not establish an equivalent product or rate."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "The IV rate previously used for a different drug class",
                   "explanation": "Another drug’s administration rate is not transferable."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "The instructions for an oral product of the same name",
                   "explanation": "Oral instructions do not establish an IV administration rate."
+                },
+                {
+                  "id": "D",
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 }
               ],
               "format": "single-best-answer",
@@ -9123,6 +9639,13 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
+                  "field": "monitor",
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
                   "field": "why",
                   "textSha256": "93b40cea196f98bdac51eeb5e9041c00d9028ed08c4e60136d97e5acfefc69d1"
                 },
@@ -9140,10 +9663,139 @@
               "learningPointIds": [
                 "ccu-verapamil::slow_iv"
               ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair must be monitored continuously during IV verapamil administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ECG and blood pressure",
+                  "explanation": "IV verapamil can impair AV conduction and lower pressure; both need continuous observation."
+                },
+                {
+                  "id": "B",
+                  "text": "Oxygen saturation and respiratory rate",
+                  "explanation": "These do not replace the ECG/BP monitoring requirement."
+                },
+                {
+                  "id": "C",
+                  "text": "ECG and body temperature",
+                  "explanation": "This omits continuous blood-pressure monitoring."
+                },
+                {
+                  "id": "D",
+                  "text": "Blood pressure and capillary glucose",
+                  "explanation": "This omits the required continuous ECG observation."
+                }
+              ],
+              "point": "Recall the required monitoring during IV verapamil rather than receiving it as a stem hint.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "administration",
+                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--standard--verapamil_iv_monitoring",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_iv_monitoring"
+              ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "IV verapamil is ordered shortly after an IV propranolol dose. What should happen before giving verapamil?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give the dose slowly because the administration rate removes the interaction",
+                  "explanation": "Slowing administration does not remove the contraindicated overlap."
+                },
+                {
+                  "id": "B",
+                  "text": "Give the dose if the current BP is high enough",
+                  "explanation": "A satisfactory current BP does not remove the conduction and contractility risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Give the dose through a second IV line to avoid the interaction",
+                  "explanation": "Separate IV lines do not prevent a systemic pharmacodynamic interaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Withhold the dose and urgently clarify the contraindicated overlap",
+                  "explanation": "Close IV beta-blocker and IV verapamil administration can add myocardial and AV-conduction depression; the referenced injection labeling contraindicates this overlap."
+                }
+              ],
+              "point": "Recognize the contraindicated close administration of IV verapamil and an IV beta blocker.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "monitor",
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--standard--verapamil_iv_beta",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_iv_beta"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient in sinus rhythm is prescribed oral verapamil. Which indication can still fit the order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Vasopressor support in cardiogenic shock",
+                  "explanation": "Verapamil can depress cardiac activity and BP rather than supply vasopressor support."
+                },
+                {
+                  "id": "B",
+                  "text": "Angina symptom control",
+                  "explanation": "Verapamil has an antianginal role as well as selected supraventricular rate-control uses."
+                },
+                {
+                  "id": "C",
+                  "text": "Rapid removal of excess fluid in pulmonary edema",
+                  "explanation": "Verapamil is not a loop diuretic."
+                },
+                {
+                  "id": "D",
+                  "text": "Drug treatment of shock-refractory pulseless VF",
+                  "explanation": "This is not verapamil’s resuscitation role."
+                }
+              ],
+              "point": "Recognize verapamil’s antianginal use separately from supraventricular rate control.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "use",
+                  "textSha256": "7c9300ff2e130805f410dead0055a284b0ce242f681a82562fa83e2f34971517"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-verapamil--standard--verapamil_antianginal",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_antianginal"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 7
+          "questionCount": 10
         },
         {
           "id": "ccu-verapamil--advanced",
@@ -9212,7 +9864,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 },
                 {
                   "file": "content.json",
@@ -9283,7 +9935,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 },
                 {
                   "file": "content.json",
@@ -9422,18 +10074,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Non-dihydropyridine CCB",
-                  "explanation": "Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
-                },
-                {
-                  "id": "C",
                   "text": "Uroselective alpha-1 blocker",
                   "explanation": "The medicine is classified as: Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Dihydropyridine CCB",
                   "explanation": "The medicine is classified as: Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                },
+                {
+                  "id": "D",
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -9453,7 +10105,7 @@
                 "ccu-verapamil::drug-class"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -9461,18 +10113,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Selected supraventricular rate control or angina treatment",
-                  "explanation": "This is a clinical use of the medicine: Selected supraventricular arrhythmias/rate control and antianginal therapy."
-                },
-                {
-                  "id": "B",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Treatment of susceptible bacterial infection",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Selected supraventricular rate control or angina treatment",
+                  "explanation": "This is a clinical use of the medicine: Selected supraventricular arrhythmias/rate control and antianginal therapy."
                 },
                 {
                   "id": "D",
@@ -9504,7 +10156,7 @@
                 "ccu-verapamil::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "A patient becomes light-headed on standing after IKACOR / IKAKOR — verapamil. Which paired assessment best checks the suspected adverse effect?",
@@ -9516,18 +10168,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "C",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
-                },
-                {
-                  "id": "D",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -9545,7 +10197,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 },
                 {
                   "file": "content.json",
@@ -9562,7 +10214,7 @@
                 "ccu-verapamil::hypotension"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--hypotension",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Which new change during IKACOR / IKAKOR — verapamil treatment most directly matches its cardiac slowing risk?",
@@ -9579,13 +10231,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Tremor with an unchanged pulse",
-                  "explanation": "This does not identify the cardiac slowing pattern."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "D",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Tremor with an unchanged pulse",
+                  "explanation": "This does not identify the cardiac slowing pattern."
                 }
               ],
               "format": "single-best-answer",
@@ -9603,7 +10255,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 },
                 {
                   "file": "content.json",
@@ -9634,30 +10286,30 @@
                 "ccu-verapamil::bradycardia"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--bradycardia",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which bowel effect is particularly relevant during oral verapamil treatment?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Constipation",
-                  "explanation": "It is a recognized adverse effect."
-                },
-                {
-                  "id": "B",
                   "text": "Profuse osmotic diarrhea as the intended response",
                   "explanation": "Verapamil is not used as an osmotic laxative."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "A predictable increase in stool bleeding",
                   "explanation": "Bleeding is not its intended gastrointestinal response."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "A predictable acceleration of upper-GI motility",
                   "explanation": "That describes a different pharmacological role."
+                },
+                {
+                  "id": "D",
+                  "text": "Constipation",
+                  "explanation": "It is a recognized adverse effect."
                 }
               ],
               "format": "single-best-answer",
@@ -9668,7 +10320,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 }
               ],
               "criticalForSafety": false,
@@ -9678,7 +10330,7 @@
                 "ccu-verapamil::verapamil_constipation"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_constipation",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "A IKACOR / IKAKOR — verapamil injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
@@ -9732,6 +10384,13 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
+                  "field": "monitor",
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
                   "field": "why",
                   "textSha256": "93b40cea196f98bdac51eeb5e9041c00d9028ed08c4e60136d97e5acfefc69d1"
                 },
@@ -9753,6 +10412,138 @@
               "answerKey": "C"
             },
             {
+              "format": "single-best-answer",
+              "stem": "Which pair must be monitored continuously during IV verapamil administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ECG and blood pressure",
+                  "explanation": "IV verapamil can impair AV conduction and lower pressure; both need continuous observation."
+                },
+                {
+                  "id": "B",
+                  "text": "Oxygen saturation and respiratory rate",
+                  "explanation": "These do not replace the ECG/BP monitoring requirement."
+                },
+                {
+                  "id": "C",
+                  "text": "ECG and body temperature",
+                  "explanation": "This omits continuous blood-pressure monitoring."
+                },
+                {
+                  "id": "D",
+                  "text": "Blood pressure and capillary glucose",
+                  "explanation": "This omits the required continuous ECG observation."
+                }
+              ],
+              "point": "Recall the required monitoring during IV verapamil rather than receiving it as a stem hint.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "administration",
+                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--7-day--verapamil_iv_monitoring",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_iv_monitoring"
+              ],
+              "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_iv_monitoring",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "IV verapamil is ordered shortly after an IV propranolol dose. What should happen before giving verapamil?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Withhold the dose and urgently clarify the contraindicated overlap",
+                  "explanation": "Close IV beta-blocker and IV verapamil administration can add myocardial and AV-conduction depression; the referenced injection labeling contraindicates this overlap."
+                },
+                {
+                  "id": "B",
+                  "text": "Give the dose through a second IV line to avoid the interaction",
+                  "explanation": "Separate IV lines do not prevent a systemic pharmacodynamic interaction."
+                },
+                {
+                  "id": "C",
+                  "text": "Give the dose if the current BP is high enough",
+                  "explanation": "A satisfactory current BP does not remove the conduction and contractility risk."
+                },
+                {
+                  "id": "D",
+                  "text": "Give the dose slowly because the administration rate removes the interaction",
+                  "explanation": "Slowing administration does not remove the contraindicated overlap."
+                }
+              ],
+              "point": "Recognize the contraindicated close administration of IV verapamil and an IV beta blocker.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "monitor",
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--7-day--verapamil_iv_beta",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_iv_beta"
+              ],
+              "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_iv_beta",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient in sinus rhythm is prescribed oral verapamil. Which indication can still fit the order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Angina symptom control",
+                  "explanation": "Verapamil has an antianginal role as well as selected supraventricular rate-control uses."
+                },
+                {
+                  "id": "B",
+                  "text": "Drug treatment of shock-refractory pulseless VF",
+                  "explanation": "This is not verapamil’s resuscitation role."
+                },
+                {
+                  "id": "C",
+                  "text": "Vasopressor support in cardiogenic shock",
+                  "explanation": "Verapamil can depress cardiac activity and BP rather than supply vasopressor support."
+                },
+                {
+                  "id": "D",
+                  "text": "Rapid removal of excess fluid in pulmonary edema",
+                  "explanation": "Verapamil is not a loop diuretic."
+                }
+              ],
+              "point": "Recognize verapamil’s antianginal use separately from supraventricular rate control.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "use",
+                  "textSha256": "7c9300ff2e130805f410dead0055a284b0ce242f681a82562fa83e2f34971517"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-verapamil--7-day--verapamil_antianginal",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_antianginal"
+              ],
+              "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_antianginal",
+              "answerKey": "A"
+            },
+            {
               "stem": "Verapamil and a beta-blocker overlap in a patient who develops dizziness and a slow pulse. Which mechanism best explains the concern?",
               "choices": [
                 {
@@ -9762,13 +10553,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Additive renal glucose excretion",
-                  "explanation": "This is not the mechanism of either treatment combination."
+                  "text": "Additive slowing of AV conduction",
+                  "explanation": "Both can slow conduction and contribute to bradycardia or block."
                 },
                 {
                   "id": "C",
-                  "text": "Additive slowing of AV conduction",
-                  "explanation": "Both can slow conduction and contribute to bradycardia or block."
+                  "text": "Additive renal glucose excretion",
+                  "explanation": "This is not the mechanism of either treatment combination."
                 },
                 {
                   "id": "D",
@@ -9805,7 +10596,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7"
+                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
                 },
                 {
                   "file": "content.json",
@@ -9843,10 +10634,10 @@
                 "ccu-verapamil::avnode_combination"
               ],
               "reusedFromQuestionId": "ccu-verapamil--advanced--avnode_combination",
-              "answerKey": "C"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 8
+          "questionCount": 11
         }
       ]
     },
@@ -11564,18 +12355,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
-                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
-                },
-                {
-                  "id": "C",
                   "text": "Receptor blockade and sodium loss",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Furosemide promotes salt and water loss, reducing congestion."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Inhibits hepatic HMG-CoA reductase",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Furosemide promotes salt and water loss, reducing congestion."
+                },
+                {
+                  "id": "D",
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -11608,7 +12399,7 @@
               "learningPointIds": [
                 "ccu-furosemide::principal-action"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -11621,13 +12412,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Potassium-sparing diuretic",
-                  "explanation": "The medicine is classified as: Loop diuretic."
+                  "text": "Loop diuretic",
+                  "explanation": "Loop diuretic."
                 },
                 {
                   "id": "C",
-                  "text": "Loop diuretic",
-                  "explanation": "Loop diuretic."
+                  "text": "Potassium-sparing diuretic",
+                  "explanation": "The medicine is classified as: Loop diuretic."
                 },
                 {
                   "id": "D",
@@ -11651,7 +12442,7 @@
               "learningPointIds": [
                 "ccu-furosemide::drug-class"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -11659,23 +12450,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Relief of congestion and fluid overload",
+                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
+                },
+                {
+                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Reversal of vitamin-K-antagonist activity",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Suppression of bacterial cell-wall synthesis",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Relief of congestion and fluid overload",
-                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -11701,7 +12492,7 @@
               "learningPointIds": [
                 "ccu-furosemide::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which change best supports a beneficial decongestive response to furosemide?",
@@ -11815,18 +12606,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
-                },
-                {
-                  "id": "B",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
+                },
+                {
+                  "id": "C",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "D",
@@ -11851,7 +12642,7 @@
               "learningPointIds": [
                 "ccu-furosemide::renal_monitor"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which new symptom during LASIX — furosemide therapy specifically warrants review for ototoxicity?",
@@ -11956,13 +12747,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Faster conversion into a potassium-sparing metabolite",
-                  "explanation": "Furosemide does not become a potassium-sparing diuretic."
+                  "text": "Less sleep disruption from nocturia",
+                  "explanation": "The timing reduces inconvenient overnight diuresis."
                 },
                 {
                   "id": "C",
-                  "text": "Less sleep disruption from nocturia",
-                  "explanation": "The timing reduces inconvenient overnight diuresis."
+                  "text": "Faster conversion into a potassium-sparing metabolite",
+                  "explanation": "Furosemide does not become a potassium-sparing diuretic."
                 },
                 {
                   "id": "D",
@@ -11987,10 +12778,53 @@
               "learningPointIds": [
                 "ccu-furosemide::diuretic_timing"
               ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which sodium/water and BP pattern can follow excessive furosemide diuresis?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Sodium/water retention with a fall in BP",
+                  "explanation": "Retention is not the direct excessive-diuresis effect."
+                },
+                {
+                  "id": "B",
+                  "text": "Sodium/water retention with a predictable BP rise",
+                  "explanation": "This does not describe excessive loop diuresis."
+                },
+                {
+                  "id": "C",
+                  "text": "Sodium/water depletion with a fall in BP",
+                  "explanation": "Excessive diuresis can deplete sodium and intravascular volume and produce hypotension."
+                },
+                {
+                  "id": "D",
+                  "text": "Sodium/water depletion with a predictable BP rise",
+                  "explanation": "A BP rise is not the expected volume-depletion response."
+                }
+              ],
+              "point": "Recognize sodium/water depletion and hypotension as risks of excessive furosemide diuresis.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "why",
+                  "textSha256": "5405bfaf14e369f7737cbaf36682d5267ad46c84d76af1604fddd26348734f09"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--standard--furosemide_volume_sodium",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_volume_sodium"
+              ],
               "answerKey": "C"
             }
           ],
-          "questionCount": 9
+          "questionCount": 10
         },
         {
           "id": "ccu-furosemide--advanced",
@@ -12239,13 +13073,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Loop diuretic",
-                  "explanation": "Loop diuretic."
+                  "text": "Potassium-sparing diuretic",
+                  "explanation": "The medicine is classified as: Loop diuretic."
                 },
                 {
                   "id": "D",
-                  "text": "Potassium-sparing diuretic",
-                  "explanation": "The medicine is classified as: Loop diuretic."
+                  "text": "Loop diuretic",
+                  "explanation": "Loop diuretic."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -12265,7 +13099,7 @@
                 "ccu-furosemide::drug-class"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--drug-class",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -12273,18 +13107,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Relief of congestion and fluid overload",
-                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
-                },
-                {
-                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Suppression of bacterial cell-wall synthesis",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Relief of congestion and fluid overload",
+                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
                 },
                 {
                   "id": "D",
@@ -12316,7 +13150,7 @@
                 "ccu-furosemide::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which change best supports a beneficial decongestive response to furosemide?",
@@ -12381,18 +13215,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
-                },
-                {
-                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                },
+                {
+                  "id": "C",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -12425,20 +13259,20 @@
                 "ccu-furosemide::hypotension"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--hypotension",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for LASIX — furosemide?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "INR and puncture-site bleeding trends",
-                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "B",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "INR and puncture-site bleeding trends",
+                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
                   "id": "C",
@@ -12469,7 +13303,7 @@
                 "ccu-furosemide::renal_monitor"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--renal_monitor",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which new symptom during LASIX — furosemide therapy specifically warrants review for ototoxicity?",
@@ -12481,18 +13315,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Tinnitus or hearing change",
+                  "explanation": "These can be auditory toxicity signals."
+                },
+                {
+                  "id": "C",
                   "text": "Ankle soreness or tendon tenderness",
                   "explanation": "These suggest a different medication warning."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Metallic taste or mild dyspepsia",
                   "explanation": "These are a different adverse-effect pattern."
-                },
-                {
-                  "id": "D",
-                  "text": "Tinnitus or hearing change",
-                  "explanation": "These can be auditory toxicity signals."
                 }
               ],
               "format": "single-best-answer",
@@ -12520,7 +13354,7 @@
                 "ccu-furosemide::ototoxicity"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--ototoxicity",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A LASIX — furosemide injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
@@ -12611,6 +13445,50 @@
               "answerKey": "B"
             },
             {
+              "format": "single-best-answer",
+              "stem": "Which sodium/water and BP pattern can follow excessive furosemide diuresis?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Sodium/water depletion with a fall in BP",
+                  "explanation": "Excessive diuresis can deplete sodium and intravascular volume and produce hypotension."
+                },
+                {
+                  "id": "B",
+                  "text": "Sodium/water retention with a predictable BP rise",
+                  "explanation": "This does not describe excessive loop diuresis."
+                },
+                {
+                  "id": "C",
+                  "text": "Sodium/water depletion with a predictable BP rise",
+                  "explanation": "A BP rise is not the expected volume-depletion response."
+                },
+                {
+                  "id": "D",
+                  "text": "Sodium/water retention with a fall in BP",
+                  "explanation": "Retention is not the direct excessive-diuresis effect."
+                }
+              ],
+              "point": "Recognize sodium/water depletion and hypotension as risks of excessive furosemide diuresis.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "why",
+                  "textSha256": "5405bfaf14e369f7737cbaf36682d5267ad46c84d76af1604fddd26348734f09"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--7-day--furosemide_volume_sodium",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_volume_sodium"
+              ],
+              "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_volume_sodium",
+              "answerKey": "A"
+            },
+            {
               "stem": "A patient on furosemide develops new PVCs after substantial diuresis. Which laboratory pair is especially relevant?",
               "choices": [
                 {
@@ -12676,7 +13554,7 @@
               "answerKey": "D"
             }
           ],
-          "questionCount": 10
+          "questionCount": 11
         }
       ]
     },
@@ -14745,9 +15623,95 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with septic shock needs ordered norepinephrine. A suitable peripheral IV is present, but no central line. What is the safest next step?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for central access despite persistent shock",
+                  "explanation": "Unnecessary delays in restoring perfusion can worsen patient outcomes."
+                },
+                {
+                  "id": "B",
+                  "text": "Begin monitored peripheral infusion under protocol",
+                  "explanation": "Current sepsis guidance supports timely peripheral initiation without delaying solely for central access."
+                },
+                {
+                  "id": "C",
+                  "text": "Increase IV fluid volume indefinitely instead",
+                  "explanation": "Persistent shock needs reassessment and the ordered vasopressor, not indefinite fluid escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Give the ordered norepinephrine as intermittent boluses",
+                  "explanation": "Norepinephrine requires controlled infusion rather than improvised IV pushes."
+                }
+              ],
+              "point": "Recognize that urgent vasopressors need not wait for central access when suitable monitored peripheral access exists.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepi_peripheral_access",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_peripheral_access"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During peripheral norepinephrine infusion, the cannula site becomes painful, pale and swollen. The nurse suspects extravasation. What is the immediate priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Increase the infusion rate through the same cannula until the blood pressure improves",
+                  "explanation": "Escalating the rate through compromised access can aggravate ischemic tissue exposure."
+                },
+                {
+                  "id": "B",
+                  "text": "Continue the infusion while reassessing the site at the next routine observation",
+                  "explanation": "Pain, pallor and swelling require immediate response, not delayed observation."
+                },
+                {
+                  "id": "C",
+                  "text": "Stop infusion through that site, seek alternate access and activate the extravasation protocol",
+                  "explanation": "Local tissue ischemia can progress rapidly; stop the affected infusion, avoid flushing, preserve the cannula initially when the protocol calls for aspiration and alert the team."
+                },
+                {
+                  "id": "D",
+                  "text": "Flush the cannula with saline and then resume the previous pump rate",
+                  "explanation": "Flushing can force additional norepinephrine into tissue and worsen the extravasation injury."
+                }
+              ],
+              "point": "Stop norepinephrine infusion at a suspected extravasation site and promptly escalate for site management and alternate safe access.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepi_extravasation_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_extravasation_action"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 6
         },
         {
           "id": "ccu-norepinephrine--advanced",
@@ -14978,23 +15942,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
-                },
-                {
-                  "id": "B",
                   "text": "Irreversibly inhibits platelet COX-1",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Inhibits protein synthesis at the 50S subunit",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Blocks serotonin-mediated emesis",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                },
+                {
+                  "id": "D",
+                  "text": "Predominantly alpha1-mediated vasoconstriction",
+                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -15028,7 +15992,7 @@
                 "ccu-norepinephrine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -15041,13 +16005,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Vasopressor",
-                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Catecholamine",
+                  "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
                   "id": "C",
-                  "text": "Catecholamine",
-                  "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Vasopressor",
+                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
                   "id": "D",
@@ -15072,7 +16036,7 @@
                 "ccu-norepinephrine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -15080,23 +16044,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Pressure support in severe hypotension or shock",
+                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
+                },
+                {
+                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -15123,30 +16087,30 @@
                 "ccu-norepinephrine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which feature is required for safe IV administration of NOREPINEPHRINE / NORADRENALINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
-                },
-                {
-                  "id": "B",
                   "text": "Undiluted rapid injection based on the ampoule’s full volume",
                   "explanation": "Container content is not a default patient bolus."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Intermittent manual boluses using the last infusion’s mL/hour",
                   "explanation": "An infusion rate cannot define a safe bolus."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Gravity flow without accounting for the prepared concentration",
                   "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
+                },
+                {
+                  "id": "D",
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 }
               ],
               "format": "single-best-answer",
@@ -15181,7 +16145,95 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--infusion_route",
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with septic shock needs ordered norepinephrine. A suitable peripheral IV is present, but no central line. What is the safest next step?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for central access despite persistent shock",
+                  "explanation": "Unnecessary delays in restoring perfusion can worsen patient outcomes."
+                },
+                {
+                  "id": "B",
+                  "text": "Give the ordered norepinephrine as intermittent boluses",
+                  "explanation": "Norepinephrine requires controlled infusion rather than improvised IV pushes."
+                },
+                {
+                  "id": "C",
+                  "text": "Increase IV fluid volume indefinitely instead",
+                  "explanation": "Persistent shock needs reassessment and the ordered vasopressor, not indefinite fluid escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Begin monitored peripheral infusion under protocol",
+                  "explanation": "Current sepsis guidance supports timely peripheral initiation without delaying solely for central access."
+                }
+              ],
+              "point": "Recognize that urgent vasopressors need not wait for central access when suitable monitored peripheral access exists.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepi_peripheral_access",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_peripheral_access"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepi_peripheral_access",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During peripheral norepinephrine infusion, the cannula site becomes painful, pale and swollen. The nurse suspects extravasation. What is the immediate priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Continue the infusion while reassessing the site at the next routine observation",
+                  "explanation": "Pain, pallor and swelling require immediate response, not delayed observation."
+                },
+                {
+                  "id": "B",
+                  "text": "Stop infusion through that site, seek alternate access and activate the extravasation protocol",
+                  "explanation": "Local tissue ischemia can progress rapidly; stop the affected infusion, avoid flushing, preserve the cannula initially when the protocol calls for aspiration and alert the team."
+                },
+                {
+                  "id": "C",
+                  "text": "Increase the infusion rate through the same cannula until the blood pressure improves",
+                  "explanation": "Escalating the rate through compromised access can aggravate ischemic tissue exposure."
+                },
+                {
+                  "id": "D",
+                  "text": "Flush the cannula with saline and then resume the previous pump rate",
+                  "explanation": "Flushing can force additional norepinephrine into tissue and worsen the extravasation injury."
+                }
+              ],
+              "point": "Stop norepinephrine infusion at a suspected extravasation site and promptly escalate for site management and alternate safe access.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepi_extravasation_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_extravasation_action"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepi_extravasation_action",
+              "answerKey": "B"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
@@ -15193,13 +16245,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "It halves",
-                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
+                  "text": "It doubles",
+                  "explanation": "That would deliver four times the prior drug amount if concentration also doubled."
                 },
                 {
                   "id": "C",
-                  "text": "It doubles",
-                  "explanation": "That would deliver four times the prior drug amount if concentration also doubled."
+                  "text": "It halves",
+                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
                 },
                 {
                   "id": "D",
@@ -15232,30 +16284,30 @@
                 "ccu-norepinephrine::infusion_precision"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--infusion_precision",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "During peripheral NOREPINEPHRINE / NORADRENALINE infusion, the site becomes painful, pale, and cool, and flow is impaired. Which problem best fits?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Extravasation with local ischemic risk",
+                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
+                },
+                {
+                  "id": "B",
                   "text": "A therapeutic improvement in peripheral circulation",
                   "explanation": "The pain, pallor, and coolness argue against this interpretation."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Isolated systemic volume expansion",
                   "explanation": "This does not explain the focal cannula-site pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "An expected sign of restored cardiac output",
                   "explanation": "The local findings indicate a complication rather than a beneficial response."
-                },
-                {
-                  "id": "D",
-                  "text": "Extravasation with local ischemic risk",
-                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -15290,7 +16342,7 @@
                 "ccu-norepinephrine::pressor_site"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--pressor_site",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "During NOREPINEPHRINE / NORADRENALINE therapy, BP reaches target, but the patient remains cool and confused with low urine output. Which interpretation is most defensible?",
@@ -15302,13 +16354,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Low urine output establishes isolated intrinsic renal disease",
-                  "explanation": "It can reflect continued low perfusion and needs context."
+                  "text": "Pressure has improved while organ perfusion remains concerning",
+                  "explanation": "BP is only one component of the response."
                 },
                 {
                   "id": "C",
-                  "text": "Pressure has improved while organ perfusion remains concerning",
-                  "explanation": "BP is only one component of the response."
+                  "text": "Low urine output establishes isolated intrinsic renal disease",
+                  "explanation": "It can reflect continued low perfusion and needs context."
                 },
                 {
                   "id": "D",
@@ -15348,10 +16400,10 @@
                 "ccu-norepinephrine::perfusion"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--perfusion",
-              "answerKey": "C"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 7
+          "questionCount": 9
         }
       ]
     },

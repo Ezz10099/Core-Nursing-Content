@@ -64,8 +64,8 @@ def build():
             base['questionCount']=len(revised)
             # Explicitly refresh only corrected saved forms at their next start.
             # New content alone must not silently replace a pinned spaced form.
-            if bank['scoringExclusions'] or any(q.get('revision') for q in revised):
-                base['correctionRevision']=revisions['revision']
+            if bank['scoringExclusions'] or any(q.get('revision') for q in revised) or bank['itemId'] in revisions.get('coverageRevisions', {}):
+                base['correctionRevision']=revisions.get('coverageRevisions', {}).get(bank['itemId'], revisions['revision'])
                 bank['bankVersion']+=1
             base['model']='comprehensive-v1'
             base['passRule']={'type':'error-count','allowedErrors':1 if len(base['questions'])<10 else 2}
@@ -83,7 +83,7 @@ def build():
                         for choice,replacement in zip([c for c in q['choices'] if c['id']!=q['answerKey']],edit['choices']):
                             choice['text']=replacement[0]
                             choice['explanation']=replacement[1]
-                if concept=='principal-action':
+                if concept=='principal-action' and not q.get('revision'):
                     profile=profiles['items'][bank['itemId']];family=profile['family'];group=profiles['families'][family]['group']
                     peers={
                         'bp':['ace','arb','beta1','nitrate','tamsulosin'],

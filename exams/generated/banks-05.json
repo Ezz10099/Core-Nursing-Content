@@ -46,13 +46,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Relaxes prostate and urethral smooth muscle",
-                  "explanation": "Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
                 },
                 {
                   "id": "B",
-                  "text": "Inhibits protein synthesis at the 50S subunit",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
+                  "text": "Relaxes prostate and urethral smooth muscle",
+                  "explanation": "Alpha-1A/alpha-1D antagonism reduces bladder-neck and prostatic smooth-muscle tone, easing urinary flow."
                 },
                 {
                   "id": "C",
@@ -95,7 +95,7 @@
               "learningPointIds": [
                 "ed-omnic-tamsulosin::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -146,18 +146,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Relief of lower urinary tract symptoms caused by benign prostatic hyperplasia",
+                  "explanation": "This is a clinical use of the medicine: Relieves lower urinary tract symptoms due to benign prostatic hyperplasia (BPH), such as weak urinary stream, hesitancy and incomplete emptying. In an ED, alpha-blockers including tamsulosin may also be prescribed OFF-LABEL as medical expulsive therapy (MET) for selected uncomplicated distal ureteral stones, particularly 5–10 mm, after clinician assessment. Not a treatment for sepsis or an infected obstructed urinary system."
+                },
+                {
+                  "id": "B",
                   "text": "Treatment of susceptible bacterial infection",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "C",
-                  "text": "Relief of lower urinary tract symptoms caused by benign prostatic hyperplasia",
-                  "explanation": "This is a clinical use of the medicine: Relieves lower urinary tract symptoms due to benign prostatic hyperplasia (BPH), such as weak urinary stream, hesitancy and incomplete emptying. In an ED, alpha-blockers including tamsulosin may also be prescribed OFF-LABEL as medical expulsive therapy (MET) for selected uncomplicated distal ureteral stones, particularly 5–10 mm, after clinician assessment. Not a treatment for sepsis or an infected obstructed urinary system."
                 },
                 {
                   "id": "D",
@@ -188,7 +188,7 @@
               "learningPointIds": [
                 "ed-omnic-tamsulosin::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after OMNIC — tamsulosin (oral). Which paired assessment best checks the suspected adverse effect?",
@@ -205,13 +205,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Visual acuity and accommodation symptoms",
-                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Visual acuity and accommodation symptoms",
+                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 }
               ],
               "format": "single-best-answer",
@@ -245,7 +245,7 @@
               "learningPointIds": [
                 "ed-omnic-tamsulosin::hypotension"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "A patient taking OMNIC — tamsulosin (oral) reports dizziness on standing. What is the priority nursing assessment?",
@@ -257,18 +257,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Sitting and standing BP with symptoms",
-                  "explanation": "Alpha-1 blockade may cause orthostatic hypotension; a safe posture and BP/symptom reassessment help identify risk."
-                },
-                {
-                  "id": "C",
                   "text": "Respiratory rate at rest only",
                   "explanation": "This does not directly assess orthostatic symptoms."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Daily temperature trend",
                   "explanation": "Temperature does not establish postural hemodynamic effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Sitting and standing BP with symptoms",
+                  "explanation": "Alpha-1 blockade may cause orthostatic hypotension; a safe posture and BP/symptom reassessment help identify risk."
                 }
               ],
               "format": "single-best-answer",
@@ -295,7 +295,7 @@
               "learningPointIds": [
                 "ed-omnic-tamsulosin::tamsulosin_orthostasis"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "A patient taking OMNIC — tamsulosin (oral) is scheduled for cataract surgery. Which information is important to communicate?",
@@ -362,13 +362,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Rapidly relieving pulmonary edema",
-                  "explanation": "It is not a diuretic or pulmonary-edema rescue medication."
+                  "text": "Helping passage of distal ureteral stones",
+                  "explanation": "Medical expulsive therapy is an off-label use for carefully selected distal ureteral stones."
                 },
                 {
                   "id": "D",
-                  "text": "Helping passage of distal ureteral stones",
-                  "explanation": "Medical expulsive therapy is an off-label use for carefully selected distal ureteral stones."
+                  "text": "Rapidly relieving pulmonary edema",
+                  "explanation": "It is not a diuretic or pulmonary-edema rescue medication."
                 }
               ],
               "format": "single-best-answer",
@@ -402,7 +402,7 @@
               "learningPointIds": [
                 "ed-omnic-tamsulosin::tamsulosin_distal_stone"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "A patient prescribed OMNIC — tamsulosin (oral) for a ureteral stone has fever and signs of sepsis. What is the safest nursing response?",
@@ -414,18 +414,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Urgently escalate suspected infected obstruction",
-                  "explanation": "Sepsis with an obstructed kidney requires prompt resuscitation, antibiotics and urologic decompression."
-                },
-                {
-                  "id": "C",
                   "text": "Rely on stone-expulsive therapy",
                   "explanation": "Alpha blockers do not treat infection or decompress an obstructed system."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Wait for the stone to pass before calling",
                   "explanation": "Delay in infected obstruction can cause rapid deterioration."
+                },
+                {
+                  "id": "D",
+                  "text": "Urgently escalate suspected infected obstruction",
+                  "explanation": "Sepsis with an obstructed kidney requires prompt resuscitation, antibiotics and urologic decompression."
                 }
               ],
               "format": "single-best-answer",
@@ -459,10 +459,53 @@
               "learningPointIds": [
                 "ed-omnic-tamsulosin::tamsulosin_infected_obstruction"
               ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "What instruction applies to the taught Omnic 0.4-mg modified-release capsule without assuming the same rule for Omnic OCAS tablets?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Chew the capsule before the evening meal",
+                  "explanation": "Chewing can disrupt its modified-release design."
+                },
+                {
+                  "id": "B",
+                  "text": "Take after the first meal, swallowing the capsule whole",
+                  "explanation": "The referenced capsule is taken after breakfast or the first meal and swallowed intact."
+                },
+                {
+                  "id": "C",
+                  "text": "Use OCAS directions without checking the package",
+                  "explanation": "Different tamsulosin product forms can have different administration instructions."
+                },
+                {
+                  "id": "D",
+                  "text": "Open the capsule and mix its contents into food",
+                  "explanation": "The referenced modified-release capsule should be swallowed whole."
+                }
+              ],
+              "point": "Distinguish Omnic modified-release capsule meal instructions from OCAS product instructions.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "administration",
+                  "textSha256": "f4d922269516314d3da992d7330957074146d278c477365b6d8b88d404a1dfb4"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--standard--tamsulosin_capsule_meal",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_capsule_meal"
+              ],
               "answerKey": "B"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         },
         {
           "id": "ed-omnic-tamsulosin--advanced",
@@ -1267,6 +1310,50 @@
               "answerKey": "C"
             },
             {
+              "format": "single-best-answer",
+              "stem": "What instruction applies to the taught Omnic 0.4-mg modified-release capsule without assuming the same rule for Omnic OCAS tablets?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Take after the first meal, swallowing the capsule whole",
+                  "explanation": "The referenced capsule is taken after breakfast or the first meal and swallowed intact."
+                },
+                {
+                  "id": "B",
+                  "text": "Chew the capsule before the evening meal",
+                  "explanation": "Chewing can disrupt its modified-release design."
+                },
+                {
+                  "id": "C",
+                  "text": "Use OCAS directions without checking the package",
+                  "explanation": "Different tamsulosin product forms can have different administration instructions."
+                },
+                {
+                  "id": "D",
+                  "text": "Open the capsule and mix its contents into food",
+                  "explanation": "The referenced modified-release capsule should be swallowed whole."
+                }
+              ],
+              "point": "Distinguish Omnic modified-release capsule meal instructions from OCAS product instructions.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-omnic-tamsulosin",
+                  "field": "administration",
+                  "textSha256": "f4d922269516314d3da992d7330957074146d278c477365b6d8b88d404a1dfb4"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-omnic-tamsulosin--7-day--tamsulosin_capsule_meal",
+              "points": 1,
+              "learningPointIds": [
+                "ed-omnic-tamsulosin::tamsulosin_capsule_meal"
+              ],
+              "reusedFromQuestionId": "ed-omnic-tamsulosin--standard--tamsulosin_capsule_meal",
+              "answerKey": "A"
+            },
+            {
               "stem": "The prescribed OMNIC — tamsulosin (oral) and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
               "choices": [
                 {
@@ -1311,7 +1398,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 9
+          "questionCount": 10
         }
       ]
     },
@@ -1361,13 +1448,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Activates plasminogen to break down fibrin",
-                  "explanation": "Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
+                  "text": "Bronchodilation with a narrow therapeutic index",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
                 },
                 {
                   "id": "B",
-                  "text": "Bronchodilation with a narrow therapeutic index",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
+                  "text": "Activates plasminogen to break down fibrin",
+                  "explanation": "Alteplase promotes fibrin breakdown; it is distinct from preventing new coagulation."
                 },
                 {
                   "id": "C",
@@ -1410,7 +1497,7 @@
               "learningPointIds": [
                 "verified-alteplase-v35::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -1423,13 +1510,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Fibrinolytic",
-                  "explanation": "Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                  "text": "Antiplatelet",
+                  "explanation": "The medicine is classified as: Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
                 },
                 {
                   "id": "C",
-                  "text": "Antiplatelet",
-                  "explanation": "The medicine is classified as: Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
+                  "text": "Fibrinolytic",
+                  "explanation": "Fibrinolytic/thrombolytic; recombinant tissue plasminogen activator (rtPA)."
                 },
                 {
                   "id": "D",
@@ -1453,7 +1540,7 @@
               "learningPointIds": [
                 "verified-alteplase-v35::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -1471,13 +1558,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Suppression of bacterial protein synthesis",
-                  "explanation": "This is a different treatment role."
+                  "text": "Indication-specific emergency thrombolysis in eligible patients",
+                  "explanation": "This is a clinical use of the medicine: Emergency thrombolytic used in eligible acute ischemic stroke; current Activase labeling also includes acute myocardial infarction and acute massive pulmonary embolism. Current 2026 AHA/ASA stroke guidance includes alteplase as an IV thrombolytic option for eligible adults within the 4.5-hour treatment window; selected later/unknown-onset cases require advanced-imaging selection."
                 },
                 {
                   "id": "D",
-                  "text": "Indication-specific emergency thrombolysis in eligible patients",
-                  "explanation": "This is a clinical use of the medicine: Emergency thrombolytic used in eligible acute ischemic stroke; current Activase labeling also includes acute myocardial infarction and acute massive pulmonary embolism. Current 2026 AHA/ASA stroke guidance includes alteplase as an IV thrombolytic option for eligible adults within the 4.5-hour treatment window; selected later/unknown-onset cases require advanced-imaging selection."
+                  "text": "Suppression of bacterial protein synthesis",
+                  "explanation": "This is a different treatment role."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -1503,25 +1590,25 @@
               "learningPointIds": [
                 "verified-alteplase-v35::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Why must an alteplase prescription identify whether the indication is stroke, MI, or PE?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Dose and delivery schedule differ by indication",
+                  "explanation": "The indication-specific regimen must match the authorized order."
+                },
+                {
+                  "id": "B",
                   "text": "The full vial defines the same dose across indications",
                   "explanation": "Container content is not a universal patient dose."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Body weight alone defines the schedule across indications",
                   "explanation": "Weight does not replace the indication-specific regimen."
-                },
-                {
-                  "id": "C",
-                  "text": "Dose and delivery schedule differ by indication",
-                  "explanation": "The indication-specific regimen must match the authorized order."
                 },
                 {
                   "id": "D",
@@ -1546,7 +1633,7 @@
               "learningPointIds": [
                 "verified-alteplase-v35::alteplase_regimen"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "format": "numeric-entry",
@@ -1595,9 +1682,95 @@
               "learningPointIds": [
                 "verified-alteplase-v35::alteplase_duration"
               ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which routine procedure should generally be avoided while IV alteplase is being administered for ischemic stroke?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeated neurological checks",
+                  "explanation": "These are needed for early recognition of neurological deterioration."
+                },
+                {
+                  "id": "B",
+                  "text": "Continuous ECG monitoring",
+                  "explanation": "Noninvasive rhythm monitoring is not the bleeding-prone procedure."
+                },
+                {
+                  "id": "C",
+                  "text": "Noninvasive blood pressure checks",
+                  "explanation": "BP reassessment is vital for treatment safety."
+                },
+                {
+                  "id": "D",
+                  "text": "Intramuscular analgesic injection",
+                  "explanation": "IM injection increases the risk of procedure-related bleeding during thrombolysis."
+                }
+              ],
+              "point": "Avoid routine IM injections during IV alteplase to reduce injection-site bleeding.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "targetedMedications",
+                  "itemId": "verified-alteplase-v35",
+                  "field": "monitor",
+                  "textSha256": "51417f835785cd03d7c999e1a94aea850824f5857cda4454b2e494a9a9d57679"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "verified-alteplase-v35--standard--alteplase_avoid_im",
+              "points": 1,
+              "learningPointIds": [
+                "verified-alteplase-v35::alteplase_avoid_im"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A second IV medicine is ordered while Activase is infusing. Which administration approach complies with Activase guidance?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Mix into Activase after reducing infusion speed",
+                  "explanation": "A slower rate does not make an unapproved admixture safe."
+                },
+                {
+                  "id": "B",
+                  "text": "Add it to Activase after inspecting for particles",
+                  "explanation": "Visual inspection cannot establish compatibility with Activase."
+                },
+                {
+                  "id": "C",
+                  "text": "Give through the line without checking the setup",
+                  "explanation": "Medication line compatibility and the Activase infusion restriction must be respected."
+                },
+                {
+                  "id": "D",
+                  "text": "Administer separately without mixing into Activase",
+                  "explanation": "Other medications should not be added to an Activase infusion."
+                }
+              ],
+              "point": "Do not add another medicine to the Activase infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "targetedMedications",
+                  "itemId": "verified-alteplase-v35",
+                  "field": "administration",
+                  "textSha256": "eb7d74c96393d2a1c3ed89f8d5954f0dc5e0cc92e319e92d4caab44e5f3481c8"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "verified-alteplase-v35--standard--alteplase_no_mixing",
+              "points": 1,
+              "learningPointIds": [
+                "verified-alteplase-v35::alteplase_no_mixing"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 6
+          "questionCount": 8
         },
         {
           "id": "verified-alteplase-v35--advanced",
@@ -2086,13 +2259,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Relief of bronchospasm through airway receptor stimulation",
-                  "explanation": "This is a different treatment role."
+                  "text": "Indication-specific emergency thrombolysis in eligible patients",
+                  "explanation": "This is a clinical use of the medicine: Emergency thrombolytic used in eligible acute ischemic stroke; current Activase labeling also includes acute myocardial infarction and acute massive pulmonary embolism. Current 2026 AHA/ASA stroke guidance includes alteplase as an IV thrombolytic option for eligible adults within the 4.5-hour treatment window; selected later/unknown-onset cases require advanced-imaging selection."
                 },
                 {
                   "id": "D",
-                  "text": "Indication-specific emergency thrombolysis in eligible patients",
-                  "explanation": "This is a clinical use of the medicine: Emergency thrombolytic used in eligible acute ischemic stroke; current Activase labeling also includes acute myocardial infarction and acute massive pulmonary embolism. Current 2026 AHA/ASA stroke guidance includes alteplase as an IV thrombolytic option for eligible adults within the 4.5-hour treatment window; selected later/unknown-onset cases require advanced-imaging selection."
+                  "text": "Relief of bronchospasm through airway receptor stimulation",
+                  "explanation": "This is a different treatment role."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -2119,7 +2292,7 @@
                 "verified-alteplase-v35::treatment-role"
               ],
               "reusedFromQuestionId": "verified-alteplase-v35--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Why must an alteplase prescription identify whether the indication is stroke, MI, or PE?",
@@ -2214,6 +2387,94 @@
                 "verified-alteplase-v35::alteplase_duration"
               ],
               "reusedFromQuestionId": "verified-alteplase-v35--standard--alteplase_duration"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which routine procedure should generally be avoided while IV alteplase is being administered for ischemic stroke?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Noninvasive blood pressure checks",
+                  "explanation": "BP reassessment is vital for treatment safety."
+                },
+                {
+                  "id": "B",
+                  "text": "Intramuscular analgesic injection",
+                  "explanation": "IM injection increases the risk of procedure-related bleeding during thrombolysis."
+                },
+                {
+                  "id": "C",
+                  "text": "Continuous ECG monitoring",
+                  "explanation": "Noninvasive rhythm monitoring is not the bleeding-prone procedure."
+                },
+                {
+                  "id": "D",
+                  "text": "Repeated neurological checks",
+                  "explanation": "These are needed for early recognition of neurological deterioration."
+                }
+              ],
+              "point": "Avoid routine IM injections during IV alteplase to reduce injection-site bleeding.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "targetedMedications",
+                  "itemId": "verified-alteplase-v35",
+                  "field": "monitor",
+                  "textSha256": "51417f835785cd03d7c999e1a94aea850824f5857cda4454b2e494a9a9d57679"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "verified-alteplase-v35--7-day--alteplase_avoid_im",
+              "points": 1,
+              "learningPointIds": [
+                "verified-alteplase-v35::alteplase_avoid_im"
+              ],
+              "reusedFromQuestionId": "verified-alteplase-v35--standard--alteplase_avoid_im",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A second IV medicine is ordered while Activase is infusing. Which administration approach complies with Activase guidance?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Mix into Activase after reducing infusion speed",
+                  "explanation": "A slower rate does not make an unapproved admixture safe."
+                },
+                {
+                  "id": "B",
+                  "text": "Add it to Activase after inspecting for particles",
+                  "explanation": "Visual inspection cannot establish compatibility with Activase."
+                },
+                {
+                  "id": "C",
+                  "text": "Give through the line without checking the setup",
+                  "explanation": "Medication line compatibility and the Activase infusion restriction must be respected."
+                },
+                {
+                  "id": "D",
+                  "text": "Administer separately without mixing into Activase",
+                  "explanation": "Other medications should not be added to an Activase infusion."
+                }
+              ],
+              "point": "Do not add another medicine to the Activase infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "targetedMedications",
+                  "itemId": "verified-alteplase-v35",
+                  "field": "administration",
+                  "textSha256": "eb7d74c96393d2a1c3ed89f8d5954f0dc5e0cc92e319e92d4caab44e5f3481c8"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "verified-alteplase-v35--7-day--alteplase_no_mixing",
+              "points": 1,
+              "learningPointIds": [
+                "verified-alteplase-v35::alteplase_no_mixing"
+              ],
+              "reusedFromQuestionId": "verified-alteplase-v35--standard--alteplase_no_mixing",
+              "answerKey": "D"
             },
             {
               "stem": "During Alteplase (tPA) therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
@@ -2533,7 +2794,7 @@
               "answerKey": "A"
             }
           ],
-          "questionCount": 13
+          "questionCount": 15
         }
       ]
     },

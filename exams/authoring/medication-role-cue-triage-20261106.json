@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-06",
+  "purpose": "Potential answer-format cues across revised medication treatment-role MCQs; heuristic, not measured item difficulty",
+  "scope": "82 medications",
+  "flaggedInitially": 13,
+  "fixesMade": 13,
+  "flags": [
+    "Key answer 5+ words longer than median distractor",
+    ">=2 distractors containing words such as routine, only, every, always, without"
+  ],
+  "limitations": [
+    "Removal of superficial cues does not prove question is hard or clinically valid.",
+    "Some safety distinctions inherently include absence of contraindications and can be phrased clearly without word-trigger giveaways.",
+    "All 82 role questions still require independent item-level clinical and discrimination review."
+  ],
+  "items": [
+    {
+      "id": "ibd2-epanutin-phenytoin",
+      "change": {
+        "key": "Maintaining seizure control in established epilepsy"
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ccu-heparin-ufh",
+      "change": {
+        "key": "Preventing propagation of an acute thrombus"
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ibd2-meropenem",
+      "change": {
+        "wrong": {
+          "0": "Perioperative prophylaxis in a clean elective procedure",
+          "2": "Treatment of incidental bacterial colonization in a stable patient"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ccu-correction-insulin",
+      "change": {
+        "wrong": {
+          "0": "Sole insulin treatment for a patient requiring basal coverage",
+          "2": "Primary insulin regimen for diabetic ketoacidosis"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ccu-dopamine",
+      "change": {
+        "wrong": {
+          "0": "Pharmacological conversion of refractory ventricular fibrillation",
+          "2": "Low-dose infusion for kidney protection during sepsis"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ccu-ketamine",
+      "change": {
+        "wrong": {
+          "0": "Isolated skeletal muscle paralysis during a procedure",
+          "2": "Continuous blood-pressure support during septic shock"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ibd2-levox-levofloxacin",
+      "change": {
+        "wrong": {
+          "0": "Treatment of incidental bacteriuria in a nonpregnant asymptomatic adult",
+          "2": "Treatment of PCR-confirmed influenza with a viral-only diagnosis"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ccu-furosemide",
+      "change": {
+        "wrong": {
+          "0": "Severe hypotension with dehydration and no pulmonary congestion",
+          "1": "Oliguria caused by a mechanical urinary obstruction"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "ccu-salbutamol",
+      "change": {
+        "wrong": {
+          "0": "Diffuse crackles from cardiogenic pulmonary edema",
+          "1": "Acute hypoxemia associated with pulmonary embolism"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "trolley-sodium-bicarbonate",
+      "change": {
+        "wrong": {
+          "0": "A prolonged ventricular fibrillation arrest despite repeated shocks",
+          "1": "A prolonged pulseless electrical activity arrest despite CPR"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "trolley-calcium-gluconate",
+      "change": {
+        "wrong": {
+          "1": "Persistent asystole with normal electrolyte results",
+          "2": "Total-body potassium elimination through increased renal clearance"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "trolley-magnesium-sulfate",
+      "change": {
+        "wrong": {
+          "0": "Monomorphic VT with a normal magnesium level",
+          "2": "Asystole with a normal magnesium level"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    },
+    {
+      "id": "trolley-aminophylline",
+      "change": {
+        "wrong": {
+          "1": "First-line treatment for an otherwise stable patient with mild wheeze",
+          "2": "Treatment of hypoxemia caused by pulmonary edema"
+        }
+      },
+      "status": "authoring revision recorded; retest against runtime required"
+    }
+  ]
+}

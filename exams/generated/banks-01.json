@@ -15497,18 +15497,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Glycopeptide",
-                  "explanation": "Glycopeptide antibacterial."
-                },
-                {
-                  "id": "C",
                   "text": "Polyene antifungal",
                   "explanation": "The medicine is classified as: Glycopeptide antibacterial."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Lincosamide",
                   "explanation": "The medicine is classified as: Glycopeptide antibacterial."
+                },
+                {
+                  "id": "D",
+                  "text": "Glycopeptide",
+                  "explanation": "Glycopeptide antibacterial."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -15527,7 +15527,7 @@
               "learningPointIds": [
                 "ibd2-vancomycin::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -15641,13 +15641,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vancomycin infusion reaction",
-                  "explanation": "The presentation is compatible with an infusion-related reaction."
+                  "text": "Antibiotic-associated colitis",
+                  "explanation": "Colitis has a bowel presentation rather than this infusion-linked skin and circulatory pattern."
                 },
                 {
                   "id": "B",
-                  "text": "Antibiotic-associated colitis",
-                  "explanation": "Colitis has a bowel presentation rather than this infusion-linked skin and circulatory pattern."
+                  "text": "Vancomycin infusion reaction",
+                  "explanation": "The presentation is compatible with an infusion-related reaction."
                 },
                 {
                   "id": "C",
@@ -15691,7 +15691,7 @@
               "learningPointIds": [
                 "ibd2-vancomycin::vanco_infusion"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "A bacterial infection is being treated with VANCOMYCIN. Which paired findings most directly inform whether the antimicrobial plan remains suitable?",
@@ -15742,9 +15742,52 @@
                 "ibd2-vancomycin::antimicrobial_response"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving vancomycin and gentamicin develops rising creatinine. Which interpretation needs prompt medication review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Potential additive nephrotoxicity",
+                  "explanation": "Both medications can contribute to kidney injury and require renal/exposure review."
+                },
+                {
+                  "id": "B",
+                  "text": "A risk limited to vancomycin only",
+                  "explanation": "Gentamicin also contributes to nephrotoxicity risk."
+                },
+                {
+                  "id": "C",
+                  "text": "A predictable marker of antimicrobial response",
+                  "explanation": "A creatinine rise indicates a safety concern rather than efficacy."
+                },
+                {
+                  "id": "D",
+                  "text": "A harmless change during all IV antibiotics",
+                  "explanation": "Renal deterioration during potentially nephrotoxic therapy should not be dismissed."
+                }
+              ],
+              "point": "Review cumulative nephrotoxicity when IV vancomycin is combined with nephrotoxic medications.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-vancomycin",
+                  "field": "monitor",
+                  "textSha256": "93ec863c7b638d0ddb1d29706afd235db60cfd46edefc2581d7967317f54d2ed"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ibd2-vancomycin--standard--vancomycin_combined_nephrotoxic",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-vancomycin::vancomycin_combined_nephrotoxic"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ibd2-vancomycin--advanced",
@@ -15976,23 +16019,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Glycopeptide",
-                  "explanation": "Glycopeptide antibacterial."
-                },
-                {
-                  "id": "B",
                   "text": "First-generation cephalosporin",
                   "explanation": "The medicine is classified as: Glycopeptide antibacterial."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Polyene antifungal",
                   "explanation": "The medicine is classified as: Glycopeptide antibacterial."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Lincosamide",
                   "explanation": "The medicine is classified as: Glycopeptide antibacterial."
+                },
+                {
+                  "id": "D",
+                  "text": "Glycopeptide",
+                  "explanation": "Glycopeptide antibacterial."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -16012,7 +16055,7 @@
                 "ibd2-vancomycin::drug-class"
               ],
               "reusedFromQuestionId": "ibd2-vancomycin--standard--drug-class",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -16030,13 +16073,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Relief of bronchospasm by beta2 stimulation",
-                  "explanation": "This is a different treatment role."
+                  "text": "Systemic treatment of serious susceptible Gram-positive infection",
+                  "explanation": "This is a clinical use of the medicine: Serious susceptible gram-positive infections, including MRSA when appropriate. In orthopaedics it may be used for severe wound, bone/joint or hardware-associated infection depending on cultures, local resistance patterns and the treatment plan."
                 },
                 {
                   "id": "D",
-                  "text": "Systemic treatment of serious susceptible Gram-positive infection",
-                  "explanation": "This is a clinical use of the medicine: Serious susceptible gram-positive infections, including MRSA when appropriate. In orthopaedics it may be used for severe wound, bone/joint or hardware-associated infection depending on cultures, local resistance patterns and the treatment plan."
+                  "text": "Relief of bronchospasm by beta2 stimulation",
+                  "explanation": "This is a different treatment role."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -16063,7 +16106,7 @@
                 "ibd2-vancomycin::treatment-role"
               ],
               "reusedFromQuestionId": "ibd2-vancomycin--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for VANCOMYCIN?",
@@ -16191,13 +16234,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Pain response and analgesic requirement",
-                  "explanation": "These can improve without establishing antimicrobial susceptibility."
+                  "text": "Infection response and culture susceptibility",
+                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
                 },
                 {
                   "id": "C",
-                  "text": "Infection response and culture susceptibility",
-                  "explanation": "Clinical progress and organism susceptibility inform appropriateness."
+                  "text": "Pain response and analgesic requirement",
+                  "explanation": "These can improve without establishing antimicrobial susceptibility."
                 },
                 {
                   "id": "D",
@@ -16230,20 +16273,64 @@
                 "ibd2-vancomycin::antimicrobial_response"
               ],
               "reusedFromQuestionId": "ibd2-vancomycin--standard--antimicrobial_response",
-              "answerKey": "C"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving vancomycin and gentamicin develops rising creatinine. Which interpretation needs prompt medication review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Potential additive nephrotoxicity",
+                  "explanation": "Both medications can contribute to kidney injury and require renal/exposure review."
+                },
+                {
+                  "id": "B",
+                  "text": "A predictable marker of antimicrobial response",
+                  "explanation": "A creatinine rise indicates a safety concern rather than efficacy."
+                },
+                {
+                  "id": "C",
+                  "text": "A risk limited to vancomycin only",
+                  "explanation": "Gentamicin also contributes to nephrotoxicity risk."
+                },
+                {
+                  "id": "D",
+                  "text": "A harmless change during all IV antibiotics",
+                  "explanation": "Renal deterioration during potentially nephrotoxic therapy should not be dismissed."
+                }
+              ],
+              "point": "Review cumulative nephrotoxicity when IV vancomycin is combined with nephrotoxic medications.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-vancomycin",
+                  "field": "monitor",
+                  "textSha256": "93ec863c7b638d0ddb1d29706afd235db60cfd46edefc2581d7967317f54d2ed"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ibd2-vancomycin--7-day--vancomycin_combined_nephrotoxic",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-vancomycin::vancomycin_combined_nephrotoxic"
+              ],
+              "reusedFromQuestionId": "ibd2-vancomycin--standard--vancomycin_combined_nephrotoxic",
+              "answerKey": "A"
             },
             {
               "stem": "A concentration is near the upper laboratory reference limit during VANCOMYCIN therapy. Which information is necessary before interpreting it as clinically acceptable?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "The current symptom score without the level’s sampling context",
-                  "explanation": "Clinical findings matter but cannot correct an unknown sampling time."
+                  "text": "Dose/sample timing, organ function, and toxicity findings",
+                  "explanation": "The result requires both sampling context and clinical interpretation."
                 },
                 {
                   "id": "B",
-                  "text": "Dose/sample timing, organ function, and toxicity findings",
-                  "explanation": "The result requires both sampling context and clinical interpretation."
+                  "text": "The current symptom score without the level’s sampling context",
+                  "explanation": "Clinical findings matter but cannot correct an unknown sampling time."
                 },
                 {
                   "id": "C",
@@ -16281,10 +16368,10 @@
                 "ibd2-vancomycin::drug_levels"
               ],
               "reusedFromQuestionId": "ibd2-vancomycin--advanced--drug_levels",
-              "answerKey": "B"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         }
       ]
     },

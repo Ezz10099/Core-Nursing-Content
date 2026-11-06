@@ -55,7 +55,7 @@ console.log('PASS: all '+banks.length+' comprehensive banks, exact error thresho
  restored.active.answers=Object.fromEntries(restored.active.form.questions.map(q=>[q.id,right(q)]));
  C.submit(restored,101);const rec=C.item(restored,bank.itemId),due=clone(rec.due),history=JSON.stringify(rec.attempts);
  C.start(restored,bank,'7-day',due.at);
- assert.equal(restored.active.form.correctionRevision,'drug-dependent-20261106');
+ assert.equal(restored.active.form.correctionRevision,bank.exams[0].correctionRevision);
  assert.equal(JSON.stringify(rec.attempts),history);assert.deepEqual(rec.due,due);
  const rate=restored.active.form.questions.find(q=>q.learningPointIds[0].endsWith('::slow_iv'));
  assert.equal(rate.format,'numeric-entry');assert.equal(rate.answer,2);
@@ -63,10 +63,16 @@ console.log('PASS: all '+banks.length+' comprehensive banks, exact error thresho
 }
 const medicationBanks=banks.filter(b=>b.itemType==='medication');
 assert.equal(medicationBanks.length,82);
-assert.equal(medicationBanks.reduce((n,b)=>n+b.scoringExclusions.length,0),30);
-assert.equal(medicationBanks.flatMap(b=>b.exams[0].questions).filter(q=>q.revision).length,5);
+const configuredOmissions=Object.entries(JSON.parse(fs.readFileSync('exams/authoring/medication-question-revisions.json','utf8')).items)
+  .filter(([,review])=>review.action==='omit').length;
+const actualOmissions=medicationBanks.reduce((n,b)=>n+b.scoringExclusions.length,0);
+assert.equal(actualOmissions,configuredOmissions,'Every omitted scored point must match an authoring decision');
+const authoringRevisions=JSON.parse(fs.readFileSync('exams/authoring/medication-question-revisions.json','utf8'));
+const expectedRevisedPointIds=Object.entries(authoringRevisions.items).filter(([,r])=>r.action==='replace').map(([id])=>id).sort();
+const actualRevisedPointIds=Array.from(medicationBanks.flatMap(b=>b.exams[0].questions).filter(q=>q.revision).map(q=>q.learningPointIds[0])).sort();
+assert.deepEqual(actualRevisedPointIds,expectedRevisedPointIds,'Revised scored questions must match explicit authoring revisions');
 for(const b of medicationBanks){
  assert.equal(b.exams[0].questionCount,b.exams[0].questions.length);
  assert(!b.exams[0].questions.some(q=>q.stem.includes('becomes light-headed on standing')||q.stem.includes('minimum administration time is unclear')));
 }
-console.log('PASS: 30 generic prompts excluded, 5 drug-specific recall items, preserved history and correction migration');
+console.log('PASS: '+actualOmissions+' uncredited exclusions, '+expectedRevisedPointIds.length+' explicitly revised questions, preserved history and correction migration');

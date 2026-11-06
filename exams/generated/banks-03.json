@@ -11296,13 +11296,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Protocol-directed treatment of selected regular SVT",
-                  "explanation": "This is a clinical use of the medicine: Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment."
+                  "text": "Treatment of a susceptible bacterial infection",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
-                  "text": "Treatment of a susceptible bacterial infection",
-                  "explanation": "This is a different treatment role."
+                  "text": "Protocol-directed treatment of selected regular SVT",
+                  "explanation": "This is a clinical use of the medicine: Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -11328,7 +11328,7 @@
               "learningPointIds": [
                 "ccu-adenosine::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which immediate effect should the team anticipate and monitor during indicated adenosine use?",
@@ -11340,13 +11340,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Brief AV block with transient flushing or chest discomfort",
-                  "explanation": "The short-lived AV-nodal effect can feel frightening and requires monitoring."
+                  "text": "Progressive vitamin-K depletion over several days",
+                  "explanation": "This is not adenosine’s mechanism."
                 },
                 {
                   "id": "C",
-                  "text": "Progressive vitamin-K depletion over several days",
-                  "explanation": "This is not adenosine’s mechanism."
+                  "text": "Brief AV block with transient flushing or chest discomfort",
+                  "explanation": "The short-lived AV-nodal effect can feel frightening and requires monitoring."
                 },
                 {
                   "id": "D",
@@ -11385,30 +11385,30 @@
               "learningPointIds": [
                 "ccu-adenosine::adenosine_transient"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which history most directly changes the respiratory safety review before ADENOSINE?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Active asthma or bronchospasm",
+                  "explanation": "This is a respiratory safety concern."
+                },
+                {
+                  "id": "B",
                   "text": "An old uncomplicated sprained ankle",
                   "explanation": "This is not the respiratory warning being tested."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "A remote healed superficial wound",
                   "explanation": "This does not identify airway susceptibility."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Previously controlled constipation",
                   "explanation": "This does not establish bronchospasm risk."
-                },
-                {
-                  "id": "D",
-                  "text": "Active asthma or bronchospasm",
-                  "explanation": "This is a respiratory safety concern."
                 }
               ],
               "format": "single-best-answer",
@@ -11428,7 +11428,7 @@
               "learningPointIds": [
                 "ccu-adenosine::bronchospasm_risk"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "numeric-entry",
@@ -11453,9 +11453,52 @@
               "learningPointIds": [
                 "ccu-adenosine::adenosine_first"
               ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which delivery sequence is correct for IV adenosine in an adult with stable regular narrow-complex SVT?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Prolonged infusion without a flush or rhythm monitoring",
+                  "explanation": "This is not the delivery method for indicated adenosine."
+                },
+                {
+                  "id": "B",
+                  "text": "Rapid IV push, immediate saline flush, ECG monitoring",
+                  "explanation": "The rapid push and flush support delivery before rapid drug clearance."
+                },
+                {
+                  "id": "C",
+                  "text": "Rapid IV push with the flush delayed for minutes",
+                  "explanation": "Delaying the flush reduces effective delivery of this short-lived medication."
+                },
+                {
+                  "id": "D",
+                  "text": "Slow IV push, delayed saline flush, ECG monitoring",
+                  "explanation": "Slow administration may allow substantial clearance before AV-nodal exposure."
+                }
+              ],
+              "point": "Use a rapid adenosine IV push immediately followed by saline flush during indicated rhythm treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "administration",
+                  "textSha256": "b61c912fe7134c0898a7b121b48c481f3ee36ad93e9340bac83d57f94b7e7c07"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-adenosine--standard--adenosine_immediate_flush",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_immediate_flush"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-adenosine--advanced",
@@ -11682,13 +11725,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Prevents premature breakdown of fibrin clots",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Its very short action requires rapid delivery when used in the indicated rhythm pathway."
+                  "text": "Briefly blocks AV-nodal conduction",
+                  "explanation": "Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 },
                 {
                   "id": "D",
-                  "text": "Briefly blocks AV-nodal conduction",
-                  "explanation": "Its very short action requires rapid delivery when used in the indicated rhythm pathway."
+                  "text": "Prevents premature breakdown of fibrin clots",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -11722,7 +11765,7 @@
                 "ccu-adenosine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-adenosine--standard--principal-action",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -11947,6 +11990,50 @@
               "reusedFromQuestionId": "ccu-adenosine--standard--adenosine_first"
             },
             {
+              "format": "single-best-answer",
+              "stem": "Which delivery sequence is correct for IV adenosine in an adult with stable regular narrow-complex SVT?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Rapid IV push with the flush delayed for minutes",
+                  "explanation": "Delaying the flush reduces effective delivery of this short-lived medication."
+                },
+                {
+                  "id": "B",
+                  "text": "Slow IV push, delayed saline flush, ECG monitoring",
+                  "explanation": "Slow administration may allow substantial clearance before AV-nodal exposure."
+                },
+                {
+                  "id": "C",
+                  "text": "Prolonged infusion without a flush or rhythm monitoring",
+                  "explanation": "This is not the delivery method for indicated adenosine."
+                },
+                {
+                  "id": "D",
+                  "text": "Rapid IV push, immediate saline flush, ECG monitoring",
+                  "explanation": "The rapid push and flush support delivery before rapid drug clearance."
+                }
+              ],
+              "point": "Use a rapid adenosine IV push immediately followed by saline flush during indicated rhythm treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "administration",
+                  "textSha256": "b61c912fe7134c0898a7b121b48c481f3ee36ad93e9340bac83d57f94b7e7c07"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-adenosine--7-day--adenosine_immediate_flush",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_immediate_flush"
+              ],
+              "reusedFromQuestionId": "ccu-adenosine--standard--adenosine_immediate_flush",
+              "answerKey": "D"
+            },
+            {
               "stem": "The ordered adenosine dose is injected slowly through long tubing and has little effect. Which explanation best fits?",
               "choices": [
                 {
@@ -12100,7 +12187,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 9
+          "questionCount": 10
         }
       ]
     },

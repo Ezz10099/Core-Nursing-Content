@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "status": "staged targeted role-choice review (author-level, independent clinical review pending)",
+  "purpose": "Replace superficially easy general treatment-role MCQs with clinically adjacent alternatives.",
+  "medicationRoleInventory": 82,
+  "reviewedAndReplaced": 15,
+  "remainingWithoutThisTargetedReview": 67,
+  "method": "Compare original taught 'use' field, best answer, plausible in-domain alternatives, and safety/indication boundaries; preserve existing source content and stable learning point ID.",
+  "referencesUsed": [
+    "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+    "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2",
+    "https://www.ncbi.nlm.nih.gov/books/NBK619233/",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f3a9248-a354-4c77-bf5b-9eed38f00219",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a2a545e-b336-416a-be73-9e0a7ccf6177",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c757e65b-ca6f-4c00-afe2-025962b43d31",
+    "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71b48f4d-9936-448c-9e3a-33f1182e1039"
+  ],
+  "items": [
+    {
+      "itemId": "verified-alteplase-v35",
+      "pointId": "verified-alteplase-v35::treatment-role",
+      "baselineUse": "Emergency thrombolytic used in eligible acute ischemic stroke; current Activase labeling also includes acute myocardial infarction and acute massive pulmonary embolism. Current 2026 AHA/ASA stroke guidance includes alteplase as an IV thrombolytic option for eligible adults within the 4.5-hour treatment window; selected later/unknown-onset cases require advanced-imaging selection.",
+      "stem": "Which situation best matches a potential indication for IV alteplase after the required stroke eligibility assessment?",
+      "correct": "An acute disabling ischemic stroke with brain hemorrhage excluded",
+      "alternatives": [
+        "A suspected acute stroke before brain imaging",
+        "A confirmed acute intracranial hemorrhagic stroke",
+        "Transient symptoms fully resolved without disabling deficit"
+      ],
+      "clinicalSource": "content.json/use; Activase DailyMed 2026",
+      "distractorDesign": "Same cerebrovascular domain; distinguishes ischemic eligibility from hemorrhage and incomplete screening.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ed-hexakapron-tranexamic",
+      "pointId": "ed-hexakapron-tranexamic::treatment-role",
+      "baselineUse": "Selected acute bleeding indications under the appropriate protocol, including some trauma-related hemorrhage and postpartum hemorrhage. Does not replace source control, blood products or resuscitation.",
+      "stem": "Which role best describes IV tranexamic acid in a patient with diagnosed postpartum hemorrhage soon after birth?",
+      "correct": "An early antifibrinolytic adjunct to standard hemorrhage treatment",
+      "alternatives": [
+        "The uterotonic that directly contracts an atonic uterus",
+        "The blood component used to replace depleted red cells",
+        "The sole replacement for fluid resuscitation and source control"
+      ],
+      "clinicalSource": "content.json/use; WHO–FIGO–ICM PPH guideline 2025",
+      "distractorDesign": "Same PPH treatment bundle context; tests TXA's real role rather than a distant domain.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "pointId": "ed-ondansetron-provisional-shelf::treatment-role",
+      "baselineUse": "Prevention and treatment of nausea/vomiting when indicated; specific approvals vary by indication.",
+      "stem": "Which symptom-management role is most appropriate for ondansetron?",
+      "correct": "Prevention or relief of postoperative nausea and vomiting",
+      "alternatives": [
+        "Improving delayed gastric emptying in gastroparesis",
+        "Treating vestibular motion sickness as first-line therapy",
+        "Suppressing gastric acid in reflux-related symptoms"
+      ],
+      "clinicalSource": "content.json/use; ondansetron injection label",
+      "distractorDesign": "All choices concern gastrointestinal or emetic symptom mechanisms, not random medical specialties.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ibd2-vancomycin",
+      "pointId": "ibd2-vancomycin::treatment-role",
+      "baselineUse": "Serious susceptible gram-positive infections, including MRSA when appropriate. In orthopaedics it may be used for severe wound, bone/joint or hardware-associated infection depending on cultures, local resistance patterns and the treatment plan.",
+      "stem": "Which infection-related situation most specifically supports selecting IV vancomycin after culture and treatment review?",
+      "correct": "Susceptible MRSA infection involving an orthopedic implant",
+      "alternatives": [
+        "Confirmed susceptible Pseudomonas aeruginosa bloodstream infection",
+        "Confirmed susceptible Bacteroides fragilis intra-abdominal infection",
+        "Confirmed invasive Candida species bloodstream infection"
+      ],
+      "clinicalSource": "content.json/use; DailyMed vancomycin injection 2026",
+      "distractorDesign": "Nearby pathogen/infection choices rather than unrelated physiology.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ibd2-meropenem",
+      "pointId": "ibd2-meropenem::treatment-role",
+      "baselineUse": "Serious susceptible bacterial infections. Current labeling includes complicated skin/skin-structure infection; it should not be treated as routine orthopaedic prophylaxis simply because it is broad spectrum.",
+      "stem": "Which prescribed treatment role most strongly fits IV meropenem?",
+      "correct": "Treatment of a serious complicated infection caused by susceptible organisms",
+      "alternatives": [
+        "Perioperative prophylaxis in a clean elective procedure",
+        "Targeted treatment of isolated methicillin-resistant S. aureus bacteremia",
+        "Treatment of incidental bacterial colonization in a stable patient"
+      ],
+      "clinicalSource": "content.json/use; DailyMed meropenem 2025",
+      "distractorDesign": "All options relate to antibiotic selection and stewardship.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ibd2-cefazolin",
+      "pointId": "ibd2-cefazolin::treatment-role",
+      "baselineUse": "Highly relevant to orthopaedics for perioperative antibacterial prophylaxis and for treatment of susceptible bacterial infections when prescribed.",
+      "stem": "Which clinical situation is a characteristic use of IV cefazolin?",
+      "correct": "Perioperative antibacterial prophylaxis for joint replacement",
+      "alternatives": [
+        "Targeted monotherapy for proven MRSA bloodstream infection",
+        "Targeted treatment of Pseudomonas aeruginosa bloodstream infection",
+        "Targeted therapy for ESBL-producing Enterobacterales sepsis"
+      ],
+      "clinicalSource": "content.json/use; DailyMed cefazolin 2026",
+      "distractorDesign": "All four options are plausible antibiotic-related clinical roles, differentiated by spectrum.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ccu-norepinephrine",
+      "pointId": "ccu-norepinephrine::treatment-role",
+      "baselineUse": "Vasopressor support for severe hypotension/shock when clinically indicated.",
+      "stem": "Which hemodynamic problem most directly matches the primary role of norepinephrine?",
+      "correct": "Persistent vasodilatory shock with inadequate arterial pressure",
+      "alternatives": [
+        "Low cardiac output with acceptable MAP requiring added contractility",
+        "Stable hypertension requiring gradual oral pressure reduction",
+        "Tachyarrhythmia-related instability needing urgent cardioversion"
+      ],
+      "clinicalSource": "content.json/use; Surviving Sepsis Campaign 2026",
+      "distractorDesign": "Distinguishes pressure support from inotropy and electrical rhythm management.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ccu-dobutamine",
+      "pointId": "ccu-dobutamine::treatment-role",
+      "baselineUse": "Selected low-cardiac-output states such as severe acute HF/cardiogenic shock when increased contractility is needed.",
+      "stem": "Which patient problem most closely matches the inotropic role of dobutamine?",
+      "correct": "Poor perfusion with depressed cardiac pumping despite adequate pressure",
+      "alternatives": [
+        "Isolated vasodilatory hypotension with preserved cardiac output",
+        "Hemorrhagic hypotension before bleeding and volume are managed",
+        "Rapid atrial fibrillation requiring immediate ventricular-rate slowing"
+      ],
+      "clinicalSource": "content.json/use; Surviving Sepsis Campaign 2026",
+      "distractorDesign": "Contrasts perfusion mechanisms and avoids all-or-nothing generalizations.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ccu-atropine",
+      "pointId": "ccu-atropine::treatment-role",
+      "baselineUse": "Symptomatic bradycardia in the appropriate resuscitation pathway.",
+      "stem": "Which rhythm-related clinical problem best matches indicated atropine treatment in the adult emergency pathway?",
+      "correct": "Symptomatic bradycardia with signs of poor perfusion",
+      "alternatives": [
+        "Asymptomatic sinus bradycardia without poor perfusion",
+        "Hemodynamically unstable regular narrow-complex tachycardia",
+        "Pulseless ventricular fibrillation during cardiac arrest"
+      ],
+      "clinicalSource": "content.json/use; AHA Adult Bradycardia 2025",
+      "distractorDesign": "Within emergency rhythms: appropriate symptomatic bradycardia versus different algorithms.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ccu-adenosine",
+      "pointId": "ccu-adenosine::treatment-role",
+      "baselineUse": "Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment.",
+      "stem": "Which monitored adult rhythm most clearly matches an indicated acute adenosine trial?",
+      "correct": "Hemodynamically stable, regular narrow-complex SVT",
+      "alternatives": [
+        "Irregular wide-complex tachycardia of uncertain mechanism",
+        "Sinus tachycardia caused by untreated fever and dehydration",
+        "Irregular atrial fibrillation without an organized SVT circuit"
+      ],
+      "clinicalSource": "content.json/use; AHA Adult Tachyarrhythmia 2025",
+      "distractorDesign": "Within tachyarrhythmias; must distinguish regularity, stability and underlying rhythm.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "trolley-amiodarone",
+      "pointId": "trolley-amiodarone::treatment-role",
+      "baselineUse": "Selected serious ventricular arrhythmias and shock-refractory VF/pulseless VT; exact regimen depends on whether the patient has a pulse and the rhythm/algorithm.",
+      "stem": "Which adult cardiac-arrest rhythm is a recognized indication to consider amiodarone during the appropriate ACLS sequence?",
+      "correct": "VF or pulseless VT that remains refractory to defibrillation",
+      "alternatives": [
+        "Asystole persisting despite appropriate basic resuscitation",
+        "Pulseless electrical activity with an organized ECG pattern",
+        "Sinus bradycardia with hypotension and a present pulse"
+      ],
+      "clinicalSource": "content.json/use; AHA Adult ALS 2025",
+      "distractorDesign": "All options are acute rhythm situations; requires recognition of shockable-refractory indication.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "trolley-digoxin",
+      "pointId": "trolley-digoxin::treatment-role",
+      "baselineUse": "Option for ventricular rate control in selected AF/flutter patients, but less commonly used for rapid acute rate control because onset is slower. Do not use for pre-excited AF/flutter.",
+      "stem": "Which situation most closely matches the selected rhythm-control role of digoxin?",
+      "correct": "Ventricular-rate control in selected atrial fibrillation patients",
+      "alternatives": [
+        "Acute pre-excited AF with rapidly conducting accessory pathway",
+        "Immediate termination of ventricular fibrillation",
+        "Treatment of high-grade AV block with very slow ventricular escape"
+      ],
+      "clinicalSource": "content.json/use; existing digoxin pre-excited AF safety source",
+      "distractorDesign": "Tests rhythm selection; overlaps some safety content but removes distant noncardiac distractors.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ccu-furosemide",
+      "pointId": "ccu-furosemide::treatment-role",
+      "baselineUse": "Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients.",
+      "stem": "Which assessment most closely matches a clinical reason to give prescribed IV furosemide?",
+      "correct": "Pulmonary congestion with fluid overload in acute heart failure",
+      "alternatives": [
+        "Severe hypotension with dehydration and no pulmonary congestion",
+        "Oliguria caused by a mechanical urinary obstruction",
+        "Low cardiac output from shock with depleted intravascular volume"
+      ],
+      "clinicalSource": "content.json/use; DailyMed furosemide 2026",
+      "distractorDesign": "Distinguishes diuretic indication by volume and hemodynamic assessment.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ed-vitamin-k-phytonadione",
+      "pointId": "ed-vitamin-k-phytonadione::treatment-role",
+      "baselineUse": "Vitamin K deficiency and reversal of warfarin/vitamin-K-antagonist anticoagulation when indicated. Not a reversal agent for heparin or direct oral anticoagulants.",
+      "stem": "Which anticoagulant-related problem is a valid target of phytonadione therapy?",
+      "correct": "Excess warfarin effect with vitamin-K-dependent factor deficiency",
+      "alternatives": [
+        "Excess unfractionated-heparin effect requiring neutralization",
+        "Excess apixaban effect requiring direct factor-Xa reversal",
+        "Excess dabigatran effect requiring thrombin-inhibitor reversal"
+      ],
+      "clinicalSource": "content.json/use; DailyMed phytonadione 2026",
+      "distractorDesign": "All options describe anticoagulant reversal; this is partially redundant with an existing specific safety question.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "pointId": "ccu-heparin-ufh::treatment-role",
+      "baselineUse": "Therapeutic anticoagulation and selected prophylactic uses.",
+      "stem": "Which anticoagulation goal fits unfractionated heparin administration?",
+      "correct": "Preventing propagation of an acute thrombus",
+      "alternatives": [
+        "Directly dissolving a formed clot by activating plasminogen",
+        "Reversing warfarin-associated vitamin-K factor suppression",
+        "Restoring platelet aggregation after an antiplatelet medicine"
+      ],
+      "clinicalSource": "content.json/use; taught UFH mechanism",
+      "distractorDesign": "Nearby coagulation-treatment roles rather than infection or glucose distractors.",
+      "qualityStatus": "author reviewed; independent validation pending",
+      "difficultyStatus": "not empirically measured"
+    }
+  ],
+  "retainedPolicies": [
+    "No changes to question scores, item IDs, exam stage timing, or saved history.",
+    "Initial comprehensive, 7-day and 21-day stages must remain identical.",
+    "New corrected form only at next eligible start; do not interrupt active attempts.",
+    "Do not claim all 82 medications or their facts are fully reviewed."
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-06",
+  "title": "Focused scored-question audit: repeated generic medication formulation template",
+  "purpose": "Identify and address formulation MCQs with the same answer across unrelated medications, without falsely awarding coverage credit.",
+  "scope": "18 source-linked medication ::formulation points; focused question-quality pass, not full drug-content certification",
+  "summary": {
+    "reviewed": 18,
+    "replacedWithDrugSpecific": 8,
+    "excludedWithoutCredit": 10,
+    "excludedAwaitingBetterQuestion": 5
+  },
+  "baselineProblem": {
+    "questionStemPattern": "The prescribed [drug] and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
+    "repeatedCorrectAnswer": "Product-specific interchangeability and an authorized order",
+    "risk": "The learner can answer repeatedly from the option patterns without knowing each medication."
+  },
+  "reviewCriteria": [
+    "Source-specific factual distinction required for credited question",
+    "One most-correct key, plausible drug/route-specific alternatives, explanations per choice",
+    "Generic safety instruction may remain in lesson when not sufficiently distinct for scoring",
+    "Do not claim all medication source facts tested or difficulty calibrated"
+  ],
+  "reviewedItems": [
+    {
+      "itemId": "ibd2-carbamazepine",
+      "pointId": "ibd2-carbamazepine::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Recognize that Tegretol-XR must not be crushed or substituted with immediate-release formulation without review.",
+      "correctAnswer": "Request an authorized suitable formulation instead of crushing the XR tablet"
+    },
+    {
+      "itemId": "ibd2-epanutin-phenytoin",
+      "pointId": "ibd2-epanutin-phenytoin::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Recognize potential phenytoin exposure changes with formulation substitution and the need for monitoring.",
+      "correctAnswer": "Formulation-dependent exposure and need for clinical or drug-level reassessment"
+    },
+    {
+      "itemId": "ccu-isosorbide-mononitrate",
+      "pointId": "ccu-isosorbide-mononitrate::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Select a safe response when a patient cannot swallow prescribed modified-release isosorbide mononitrate.",
+      "correctAnswer": "Clarify an alternative formulation and schedule without crushing the modified-release tablet"
+    },
+    {
+      "itemId": "ccu-metoprolol",
+      "pointId": "ccu-metoprolol::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Recognize the need for a formulation-specific authorized conversion between metoprolol tartrate and extended-release succinate.",
+      "correctAnswer": "Clarify the ordered metoprolol formulation and revised dosing schedule before substitution"
+    },
+    {
+      "itemId": "ccu-pantoprazole",
+      "pointId": "ccu-pantoprazole::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Recall the initial reconstitution for the specific referenced pantoprazole 40-mg IV product, not a universal rule for all brands.",
+      "correctAnswer": "10 mL of 0.9% sodium chloride"
+    },
+    {
+      "itemId": "trolley-hydrocortisone",
+      "pointId": "trolley-hydrocortisone::formulation",
+      "action": "omit",
+      "unresolvedCoverage": true,
+      "decision": "The previous IV hydrocortisone salt-choice stem can be solved merely by identifying the only injectable preparation among topical/oral products; the source only supplies a general vial verification instruction. Retain the teaching fact but grant no scoring credit until a clinically discriminating formulation question is grounded."
+    },
+    {
+      "itemId": "ed-novalgin-metamizole",
+      "pointId": "ed-novalgin-metamizole::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Recognize slow IV administration with hemodynamic monitoring as a metamizole-specific safety consideration.",
+      "correctAnswer": "Confirm the product-specific slow IV rate and closely monitor blood pressure"
+    },
+    {
+      "itemId": "ed-diclofenac-injection",
+      "pointId": "ed-diclofenac-injection::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Recognize that the referenced Voltarol 75 mg/3 mL IV preparation requires buffered infusion rather than unbuffered infusion or IV push.",
+      "correctAnswer": "Use the specified sodium-bicarbonate-buffered dilution for IV infusion, not an IV bolus"
+    },
+    {
+      "itemId": "ed-vitamin-k-phytonadione",
+      "pointId": "ed-vitamin-k-phytonadione::formulation",
+      "action": "replace",
+      "unresolvedCoverage": false,
+      "decision": "Recognize why IM phytonadione warrants special review in a patient with anticoagulation-related bleeding risk.",
+      "correctAnswer": "Risk of injection-site hematoma alongside the known IM hypersensitivity warning"
+    },
+    {
+      "itemId": "ibd2-tramadol",
+      "pointId": "ibd2-tramadol::formulation",
+      "action": "omit",
+      "unresolvedCoverage": true,
+      "decision": "The shared formulation-substitution answer does not test a specific tramadol oral product property; preserve the safety instruction in teaching, but no scored coverage credit."
+    },
+    {
+      "itemId": "ibd2-prothiazine",
+      "pointId": "ibd2-prothiazine::formulation",
+      "action": "omit",
+      "unresolvedCoverage": false,
+      "decision": "The generic authorization prompt duplicates the existing promethazine route learning point; no separate formulation score."
+    },
+    {
+      "itemId": "ccu-isosorbide-dinitrate",
+      "pointId": "ccu-isosorbide-dinitrate::formulation",
+      "action": "omit",
+      "unresolvedCoverage": false,
+      "decision": "The documented sublingual administration is already directly tested by the SL-tablet question; avoid repeated generic substitution credit."
+    },
+    {
+      "itemId": "trolley-amiodarone",
+      "pointId": "trolley-amiodarone::formulation",
+      "action": "omit",
+      "unresolvedCoverage": false,
+      "decision": "The infusion and rhythm-specific setup is already assessed by dedicated rhythm-pathway/infusion questions; a generic formulation authorization answer adds no medicine-specific discrimination."
+    },
+    {
+      "itemId": "ibd2-clindamycin",
+      "pointId": "ibd2-clindamycin::formulation",
+      "action": "omit",
+      "unresolvedCoverage": true,
+      "decision": "The available source only establishes that route and infusion details depend on the actual product; a generic check-the-label answer is not scored coverage."
+    },
+    {
+      "itemId": "ed-decort-dexamethasone",
+      "pointId": "ed-decort-dexamethasone::formulation",
+      "action": "omit",
+      "unresolvedCoverage": true,
+      "decision": "The shared formulation-check prompt is not a dexamethasone-specific test; injection salt/route may merit a verified targeted question later."
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "pointId": "ed-ondansetron-provisional-shelf::formulation",
+      "action": "omit",
+      "unresolvedCoverage": true,
+      "decision": "The shelf label does not prove actual product formulation; generic substitution instruction remains source advice but earns no drug-specific score."
+    },
+    {
+      "itemId": "ed-hexakapron-tranexamic",
+      "pointId": "ed-hexakapron-tranexamic::formulation",
+      "action": "omit",
+      "unresolvedCoverage": false,
+      "decision": "TXA IV-only and serious neuraxial errors are already tested with the dedicated route question; duplicate generic substitution prompt earns no credit."
+    },
+    {
+      "itemId": "ed-omnic-tamsulosin",
+      "pointId": "ed-omnic-tamsulosin::formulation",
+      "action": "omit",
+      "unresolvedCoverage": false,
+      "decision": "Omnic modified-release capsule vs OCAS meal instructions are already directly assessed; generic authorization prompt duplicates a distinct safety question."
+    }
+  ],
+  "addedSafetyLearningPoints": [
+    "ed-vitamin-k-phytonadione::vitk_inr_followup",
+    "ed-hexakapron-tranexamic::txa_pph_source_control",
+    "ccu-norepinephrine::norepi_extravasation_action"
+  ],
+  "revisedLearningPoint": "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors (now tests low K and low Mg together)",
+  "sourceChecks": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8d409411-aa9f-4f3a-a52c-fbcb0c3ec053",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb3f58d4-0c69-4377-be45-c36099c98d33",
+    "https://www.medicines.org.uk/emc/product/1043/smpc",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=226c0a5c-3e04-65a9-01ac-e67aad9a430a",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a44601b-c31c-4779-a688-28cc4cc75e8b",
+    "https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab33/",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+  ],
+  "limitations": [
+    "No full 82-drug source-statement audit completed.",
+    "No independent clinical reviewer has signed off on these questions.",
+    "No learner difficulty, psychometric discrimination or real-world pass-rate testing completed.",
+    "Local medicine packaging and facility-specific administration protocols remain to be checked for product-dependent guidance.",
+    "Staging draft remains unpublished; actual deployed update channel not changed."
+  ]
+}
