@@ -7304,5 +7304,354 @@
       "correct": 0,
       "format": "single-best-answer"
     }
+  },
+  "ondansetron_apomorphine": {
+    "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+    "anchor": "apomorphine",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which medicine is contraindicated with ondansetron injection because of reported profound hypotension and loss of consciousness?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Apomorphine",
+          "explanation": "Ondansetron with apomorphine is a labeled contraindicated combination."
+        },
+        {
+          "text": "Metoclopramide",
+          "explanation": "This antiemetic is not the particular named apomorphine contraindication."
+        },
+        {
+          "text": "Prochlorperazine",
+          "explanation": "This medicine has its own risks but is not the specific named contraindication."
+        },
+        {
+          "text": "Dexamethasone",
+          "explanation": "A corticosteroid is not the named drug in this interaction warning."
+        }
+      ]
+    }
+  },
+  "ondansetron_qt_risk_factors": {
+    "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+    "anchor": "low K\\+/Mg2\\+",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which abnormal laboratory finding most directly increases QT-related arrhythmia concern before IV ondansetron?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Potassium 2.8 mmol/L",
+          "explanation": "Hypokalemia is a specific ECG-monitoring risk with ondansetron."
+        },
+        {
+          "text": "Sodium 128 mmol/L",
+          "explanation": "Hyponatremia needs assessment but does not identify the specific QT electrolyte warning."
+        },
+        {
+          "text": "Hemoglobin 8.5 g/dL",
+          "explanation": "Anemia is important but is not the electrolyte-related QT warning asked about."
+        },
+        {
+          "text": "Glucose 250 mg/dL",
+          "explanation": "Hyperglycemia is not the particular electrolyte risk for ondansetron QT prolongation."
+        }
+      ]
+    }
+  },
+  "dexamethasone_anaphylaxis_rescue": {
+    "point": "Recognize that dexamethasone is not a substitute for prompt epinephrine during anaphylaxis.",
+    "anchor": "epinephrine",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "After an antibiotic, the patient develops airway swelling, wheezing and hypotension. Which action takes priority over IV dexamethasone?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "IM epinephrine and emergency response",
+          "explanation": "Epinephrine is first-line for anaphylaxis; steroids must not delay emergency treatment."
+        },
+        {
+          "text": "Dexamethasone before circulatory treatment",
+          "explanation": "Steroids do not provide the immediate rescue needed for airway and circulation compromise."
+        },
+        {
+          "text": "An oral antihistamine as the initial rescue",
+          "explanation": "Antihistamines do not replace epinephrine for anaphylactic shock."
+        },
+        {
+          "text": "Nebulized bronchodilator without epinephrine",
+          "explanation": "Bronchodilation alone does not correct anaphylactic circulatory collapse."
+        }
+      ]
+    }
+  },
+  "txa_blood_mixing": {
+    "point": "Recognize that TXA injection must not be mixed into blood products.",
+    "anchor": "never mix TXA with blood products",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which proposed solution should not be mixed with the referenced injectable tranexamic acid product?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Transfusion blood",
+          "explanation": "Current injectable TXA labeling specifies that it should not be mixed with blood."
+        },
+        {
+          "text": "0.9% sodium chloride",
+          "explanation": "This is a compatible diluent for the referenced injection."
+        },
+        {
+          "text": "5% dextrose solution",
+          "explanation": "This is a compatible diluent for the referenced injection."
+        },
+        {
+          "text": "Compatible electrolyte solution",
+          "explanation": "Several electrolyte infusion solutions are permitted by product labeling."
+        }
+      ]
+    }
+  },
+  "txa_thrombosis_seizure": {
+    "point": "Recognize seizures and thrombosis as potentially serious TXA adverse effects.",
+    "anchor": "seizure, new thrombotic",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair is associated with serious adverse-effect concerns during IV tranexamic acid treatment?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "A new seizure and signs of thrombosis",
+          "explanation": "TXA can be associated with seizures and thromboembolic events."
+        },
+        {
+          "text": "Marked hypoglycemia and AV block",
+          "explanation": "These are not the characteristic paired adverse risks of TXA."
+        },
+        {
+          "text": "Progressive hearing loss and agranulocytosis",
+          "explanation": "This pair reflects other medication safety profiles."
+        },
+        {
+          "text": "Urinary retention and serotonin toxicity",
+          "explanation": "This pair is not the defined serious TXA adverse-effect concern."
+        }
+      ]
+    }
+  },
+  "vitk_iv_max_rate": {
+    "point": "Recall the rate ceiling for IV administration of the specifically referenced phytonadione emulsion.",
+    "anchor": "not above 1 mg/min",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "numeric-entry",
+      "stem": "For the referenced injectable phytonadione emulsion, what labeled maximum IV rate applies if IV administration is unavoidable? Enter mg/min.",
+      "answer": 1,
+      "unit": "mg/min",
+      "tolerance": 0,
+      "explanation": "The specified phytonadione emulsion product label limits unavoidable IV administration to 1 mg/min; verify the exact product."
+    }
+  },
+  "alteplase_avoid_im": {
+    "point": "Avoid routine IM injections during IV alteplase to reduce injection-site bleeding.",
+    "anchor": "IM injections",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which routine procedure should generally be avoided while IV alteplase is being administered for ischemic stroke?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Intramuscular analgesic injection",
+          "explanation": "IM injection increases the risk of procedure-related bleeding during thrombolysis."
+        },
+        {
+          "text": "Noninvasive blood pressure checks",
+          "explanation": "BP reassessment is vital for treatment safety."
+        },
+        {
+          "text": "Repeated neurological checks",
+          "explanation": "These are needed for early recognition of neurological deterioration."
+        },
+        {
+          "text": "Continuous ECG monitoring",
+          "explanation": "Noninvasive rhythm monitoring is not the bleeding-prone procedure."
+        }
+      ]
+    }
+  },
+  "alteplase_no_mixing": {
+    "point": "Do not add another medicine to the Activase infusion.",
+    "anchor": "Do not mix other medications",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A second IV medicine is ordered while Activase is infusing. Which administration approach complies with Activase guidance?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Administer separately without mixing into Activase",
+          "explanation": "Other medications should not be added to an Activase infusion."
+        },
+        {
+          "text": "Add it to Activase after inspecting for particles",
+          "explanation": "Visual inspection cannot establish compatibility with Activase."
+        },
+        {
+          "text": "Mix into Activase after reducing infusion speed",
+          "explanation": "A slower rate does not make an unapproved admixture safe."
+        },
+        {
+          "text": "Give through the line without checking the setup",
+          "explanation": "Medication line compatibility and the Activase infusion restriction must be respected."
+        }
+      ]
+    }
+  },
+  "norepi_peripheral_access": {
+    "point": "Recognize that urgent vasopressors need not wait for central access when suitable monitored peripheral access exists.",
+    "anchor": "suitable proximal peripheral line",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient with septic shock needs ordered norepinephrine. A suitable peripheral IV is present, but no central line. What is the safest next step?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Begin monitored peripheral infusion under protocol",
+          "explanation": "Current sepsis guidance supports timely peripheral initiation without delaying solely for central access."
+        },
+        {
+          "text": "Wait for central access despite persistent shock",
+          "explanation": "Unnecessary delays in restoring perfusion can worsen patient outcomes."
+        },
+        {
+          "text": "Give the ordered norepinephrine as intermittent boluses",
+          "explanation": "Norepinephrine requires controlled infusion rather than improvised IV pushes."
+        },
+        {
+          "text": "Increase IV fluid volume indefinitely instead",
+          "explanation": "Persistent shock needs reassessment and the ordered vasopressor, not indefinite fluid escalation."
+        }
+      ]
+    }
+  },
+  "vancomycin_combined_nephrotoxic": {
+    "point": "Review cumulative nephrotoxicity when IV vancomycin is combined with nephrotoxic medications.",
+    "anchor": "other nephrotoxic drugs",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving vancomycin and gentamicin develops rising creatinine. Which interpretation needs prompt medication review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Potential additive nephrotoxicity",
+          "explanation": "Both medications can contribute to kidney injury and require renal/exposure review."
+        },
+        {
+          "text": "A predictable marker of antimicrobial response",
+          "explanation": "A creatinine rise indicates a safety concern rather than efficacy."
+        },
+        {
+          "text": "A harmless change during all IV antibiotics",
+          "explanation": "Renal deterioration during potentially nephrotoxic therapy should not be dismissed."
+        },
+        {
+          "text": "A risk limited to vancomycin only",
+          "explanation": "Gentamicin also contributes to nephrotoxicity risk."
+        }
+      ]
+    }
+  },
+  "heparin_rate_authorization": {
+    "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
+    "anchor": "nurse-driven protocol",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A UFH infusion has an above-target coagulation result, but no nurse-driven titration protocol is authorized. What should the nurse do?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Escalate and obtain an authorized dose adjustment",
+          "explanation": "Changes must follow an order or an approved nursing protocol."
+        },
+        {
+          "text": "Halve the infusion rate independently",
+          "explanation": "Independent rate adjustments without authorization are unsafe."
+        },
+        {
+          "text": "Copy the previous patient's titration",
+          "explanation": "A previous patient's dose change cannot guide this prescription."
+        },
+        {
+          "text": "Ignore the result until the next sample",
+          "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
+        }
+      ]
+    }
+  },
+  "adenosine_immediate_flush": {
+    "point": "Use a rapid adenosine IV push immediately followed by saline flush during indicated rhythm treatment.",
+    "anchor": "rapid saline flush",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which delivery sequence is correct for IV adenosine in an adult with stable regular narrow-complex SVT?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Rapid IV push, immediate saline flush, ECG monitoring",
+          "explanation": "The rapid push and flush support delivery before rapid drug clearance."
+        },
+        {
+          "text": "Slow IV push, delayed saline flush, ECG monitoring",
+          "explanation": "Slow administration may allow substantial clearance before AV-nodal exposure."
+        },
+        {
+          "text": "Prolonged infusion without a flush or rhythm monitoring",
+          "explanation": "This is not the delivery method for indicated adenosine."
+        },
+        {
+          "text": "Rapid IV push with the flush delayed for minutes",
+          "explanation": "Delaying the flush reduces effective delivery of this short-lived medication."
+        }
+      ]
+    }
+  },
+  "tamsulosin_capsule_meal": {
+    "point": "Distinguish Omnic modified-release capsule meal instructions from OCAS product instructions.",
+    "anchor": "Omnic OCAS",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "What instruction applies to the taught Omnic 0.4-mg modified-release capsule without assuming the same rule for Omnic OCAS tablets?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Take after the first meal, swallowing the capsule whole",
+          "explanation": "The referenced capsule is taken after breakfast or the first meal and swallowed intact."
+        },
+        {
+          "text": "Chew the capsule before the evening meal",
+          "explanation": "Chewing can disrupt its modified-release design."
+        },
+        {
+          "text": "Use OCAS directions without checking the package",
+          "explanation": "Different tamsulosin product forms can have different administration instructions."
+        },
+        {
+          "text": "Open the capsule and mix its contents into food",
+          "explanation": "The referenced modified-release capsule should be swallowed whole."
+        }
+      ]
+    }
   }
 }

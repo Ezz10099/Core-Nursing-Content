@@ -527,7 +527,8 @@
         "renal_monitor",
         "vanco_infusion",
         "drug_levels",
-        "antimicrobial_response"
+        "antimicrobial_response",
+        "vancomycin_combined_nephrotoxic"
       ]
     },
     "ibd2-levox-levofloxacin": {
@@ -645,7 +646,8 @@
         "heparin_infusion",
         "heparin_samples",
         "infusion_precision",
-        "lmwh_route"
+        "lmwh_route",
+        "heparin_rate_authorization"
       ]
     },
     "ccu-aspirin": {
@@ -780,7 +782,8 @@
         "infusion_precision",
         "pressor_site",
         "perfusion",
-        "infusion_route"
+        "infusion_route",
+        "norepi_peripheral_access"
       ]
     },
     "ccu-dobutamine": {
@@ -961,7 +964,8 @@
         "adenosine_interaction",
         "bronchospasm_risk",
         "tachy_instability",
-        "adenosine_first"
+        "adenosine_first",
+        "adenosine_immediate_flush"
       ]
     },
     "ccu-labetalol": {
@@ -1196,7 +1200,9 @@
         "alteplase_bolus",
         "alteplase_duration",
         "alteplase_bp",
-        "alteplase_followup"
+        "alteplase_followup",
+        "alteplase_avoid_im",
+        "alteplase_no_mixing"
       ]
     },
     "ed-novalgin-metamizole": {
@@ -1216,7 +1222,8 @@
       "concepts": [
         "steroid_glucose",
         "steroid_infection",
-        "formulation"
+        "formulation",
+        "dexamethasone_anaphylaxis_rescue"
       ]
     },
     "ed-ondansetron-provisional-shelf": {
@@ -1225,7 +1232,9 @@
       "concepts": [
         "qt",
         "serotonin",
-        "formulation"
+        "formulation",
+        "ondansetron_apomorphine",
+        "ondansetron_qt_risk_factors"
       ]
     },
     "ed-diclofenac-injection": {
@@ -1246,7 +1255,8 @@
         "warfarin_reversal",
         "formulation",
         "vitk_anaphylaxis",
-        "vitk_delayed_effect"
+        "vitk_delayed_effect",
+        "vitk_iv_max_rate"
       ]
     },
     "ed-hexakapron-tranexamic": {
@@ -1256,7 +1266,9 @@
         "renal_dose",
         "slow_iv",
         "formulation",
-        "txa_wrong_route"
+        "txa_wrong_route",
+        "txa_blood_mixing",
+        "txa_thrombosis_seizure"
       ]
     },
     "ed-captopril-tablets": {
@@ -1279,7 +1291,8 @@
         "tamsulosin_orthostasis",
         "tamsulosin_ifis",
         "tamsulosin_distal_stone",
-        "tamsulosin_infected_obstruction"
+        "tamsulosin_infected_obstruction",
+        "tamsulosin_capsule_meal"
       ]
     }
   }
