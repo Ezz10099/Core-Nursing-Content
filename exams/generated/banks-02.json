@@ -14844,13 +14844,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Increase IV fluid volume indefinitely instead",
-                  "explanation": "Persistent shock needs reassessment and the ordered vasopressor, not indefinite fluid escalation."
+                  "text": "Begin monitored peripheral infusion under protocol",
+                  "explanation": "Current sepsis guidance supports timely peripheral initiation without delaying solely for central access."
                 },
                 {
                   "id": "C",
-                  "text": "Begin monitored peripheral infusion under protocol",
-                  "explanation": "Current sepsis guidance supports timely peripheral initiation without delaying solely for central access."
+                  "text": "Increase IV fluid volume indefinitely instead",
+                  "explanation": "Persistent shock needs reassessment and the ordered vasopressor, not indefinite fluid escalation."
                 },
                 {
                   "id": "D",
@@ -14874,10 +14874,53 @@
               "learningPointIds": [
                 "ccu-norepinephrine::norepi_peripheral_access"
               ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During peripheral norepinephrine infusion, the cannula site becomes painful, pale and swollen. The nurse suspects extravasation. What is the immediate priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Increase the infusion rate through the same cannula until the blood pressure improves",
+                  "explanation": "Escalating the rate through compromised access can aggravate ischemic tissue exposure."
+                },
+                {
+                  "id": "B",
+                  "text": "Continue the infusion while reassessing the site at the next routine observation",
+                  "explanation": "Pain, pallor and swelling require immediate response, not delayed observation."
+                },
+                {
+                  "id": "C",
+                  "text": "Stop infusion through that site, seek alternate access and activate the extravasation protocol",
+                  "explanation": "Local tissue ischemia can progress rapidly; stop the affected infusion, avoid flushing, preserve the cannula initially when the protocol calls for aspiration and alert the team."
+                },
+                {
+                  "id": "D",
+                  "text": "Flush the cannula with saline and then resume the previous pump rate",
+                  "explanation": "Flushing can force additional norepinephrine into tissue and worsen the extravasation injury."
+                }
+              ],
+              "point": "Stop norepinephrine infusion at a suspected extravasation site and promptly escalate for site management and alternate safe access.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepi_extravasation_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_extravasation_action"
+              ],
               "answerKey": "C"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-norepinephrine--advanced",
@@ -15118,13 +15161,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                  "text": "Blocks serotonin-mediated emesis",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "D",
-                  "text": "Blocks serotonin-mediated emesis",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                  "text": "Predominantly alpha1-mediated vasoconstriction",
+                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -15158,7 +15201,7 @@
                 "ccu-norepinephrine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--principal-action",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -15166,18 +15209,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vasopressor",
-                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
-                },
-                {
-                  "id": "B",
                   "text": "Organic nitrate",
                   "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Catecholamine",
                   "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                },
+                {
+                  "id": "C",
+                  "text": "Vasopressor",
+                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
                   "id": "D",
@@ -15202,7 +15245,7 @@
                 "ccu-norepinephrine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--drug-class",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -15210,13 +15253,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Treatment of oral fungal lesions",
-                  "explanation": "This is a different treatment role."
+                  "text": "Pressure support in severe hypotension or shock",
+                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
                 },
                 {
                   "id": "B",
-                  "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
+                  "text": "Treatment of oral fungal lesions",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
@@ -15253,7 +15296,7 @@
                 "ccu-norepinephrine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--treatment-role",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which feature is required for safe IV administration of NOREPINEPHRINE / NORADRENALINE?",
@@ -15270,13 +15313,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
+                  "text": "Gravity flow without accounting for the prepared concentration",
+                  "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
                 },
                 {
                   "id": "D",
-                  "text": "Gravity flow without accounting for the prepared concentration",
-                  "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 }
               ],
               "format": "single-best-answer",
@@ -15311,7 +15354,7 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--infusion_route",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -15358,22 +15401,66 @@
               "answerKey": "D"
             },
             {
+              "format": "single-best-answer",
+              "stem": "During peripheral norepinephrine infusion, the cannula site becomes painful, pale and swollen. The nurse suspects extravasation. What is the immediate priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Continue the infusion while reassessing the site at the next routine observation",
+                  "explanation": "Pain, pallor and swelling require immediate response, not delayed observation."
+                },
+                {
+                  "id": "B",
+                  "text": "Stop infusion through that site, seek alternate access and activate the extravasation protocol",
+                  "explanation": "Local tissue ischemia can progress rapidly; stop the affected infusion, avoid flushing, preserve the cannula initially when the protocol calls for aspiration and alert the team."
+                },
+                {
+                  "id": "C",
+                  "text": "Increase the infusion rate through the same cannula until the blood pressure improves",
+                  "explanation": "Escalating the rate through compromised access can aggravate ischemic tissue exposure."
+                },
+                {
+                  "id": "D",
+                  "text": "Flush the cannula with saline and then resume the previous pump rate",
+                  "explanation": "Flushing can force additional norepinephrine into tissue and worsen the extravasation injury."
+                }
+              ],
+              "point": "Stop norepinephrine infusion at a suspected extravasation site and promptly escalate for site management and alternate safe access.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepi_extravasation_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepi_extravasation_action"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepi_extravasation_action",
+              "answerKey": "B"
+            },
+            {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "It halves",
-                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
-                },
-                {
-                  "id": "B",
                   "text": "It becomes four times higher",
                   "explanation": "This would cause an even larger dosing increase."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "It doubles",
                   "explanation": "That would deliver four times the prior drug amount if concentration also doubled."
+                },
+                {
+                  "id": "C",
+                  "text": "It halves",
+                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
                 },
                 {
                   "id": "D",
@@ -15406,20 +15493,20 @@
                 "ccu-norepinephrine::infusion_precision"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--infusion_precision",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "During peripheral NOREPINEPHRINE / NORADRENALINE infusion, the site becomes painful, pale, and cool, and flow is impaired. Which problem best fits?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A therapeutic improvement in peripheral circulation",
-                  "explanation": "The pain, pallor, and coolness argue against this interpretation."
+                  "text": "Extravasation with local ischemic risk",
+                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
                 },
                 {
                   "id": "B",
-                  "text": "Extravasation with local ischemic risk",
-                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
+                  "text": "A therapeutic improvement in peripheral circulation",
+                  "explanation": "The pain, pallor, and coolness argue against this interpretation."
                 },
                 {
                   "id": "C",
@@ -15464,7 +15551,7 @@
                 "ccu-norepinephrine::pressor_site"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--pressor_site",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "During NOREPINEPHRINE / NORADRENALINE therapy, BP reaches target, but the patient remains cool and confused with low urine output. Which interpretation is most defensible?",
@@ -15476,18 +15563,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Pressure has improved while organ perfusion remains concerning",
+                  "explanation": "BP is only one component of the response."
+                },
+                {
+                  "id": "C",
                   "text": "Low urine output establishes isolated intrinsic renal disease",
                   "explanation": "It can reflect continued low perfusion and needs context."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Confusion establishes medication sedation rather than low output",
                   "explanation": "The combination does not justify dismissing hypoperfusion."
-                },
-                {
-                  "id": "D",
-                  "text": "Pressure has improved while organ perfusion remains concerning",
-                  "explanation": "BP is only one component of the response."
                 }
               ],
               "format": "single-best-answer",
@@ -15522,10 +15609,10 @@
                 "ccu-norepinephrine::perfusion"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--perfusion",
-              "answerKey": "D"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
