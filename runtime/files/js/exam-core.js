@@ -1,7 +1,9 @@
 /* Objective scoring and progression. No DOM, learner marks, or network inputs. */
 (function(root){
   'use strict';
-  const DAY=86400000, stages=['standard','advanced','7-day','21-day'];
+  const DAY=86400000, MODEL='comprehensive-v1', stages=['standard','advanced','comprehensive','7-day','21-day'];
+  const allowedErrors=total=>total<10?1:2;
+  const modern=form=>form.model===MODEL;
   const validId=x=>typeof x==='string'&&/^[a-zA-Z0-9][\w:.-]{0,249}$/.test(x)&&!['constructor','prototype'].includes(x);
   const cleanText=x=>String(x??'').trim().toLocaleLowerCase('en').replace(/\s+/g,' ');
   const finite=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0;
@@ -18,12 +20,13 @@
     for(const [id,old] of Object.entries(input.items)){
       if(!validId(id)||!old||typeof old!=='object')continue;
       const out=item(state,id);
-      out.attempts=(Array.isArray(old.attempts)?old.attempts:[]).filter(a=>a&&validId(a.id)&&stages.includes(a.stage)&&finite(a.finishedAt)&&Number.isInteger(a.correct)&&Number.isInteger(a.total)&&a.total>0&&a.correct>=0&&a.correct<=a.total&&Array.isArray(a.responses)).map(a=>({...clone(a),passed:a.stage==='standard'?a.correct*100>=90*a.total:a.correct*100>90*a.total,completedAt:finite(a.completedAt)?a.completedAt:null,safetyMisses:Array.isArray(a.safetyMisses)?a.safetyMisses.filter(validId):[],shownQuestionIds:Array.isArray(a.shownQuestionIds)?a.shownQuestionIds.filter(validId):[]}));
+      out.attempts=(Array.isArray(old.attempts)?old.attempts:[]).filter(a=>a&&validId(a.id)&&stages.includes(a.stage)&&finite(a.finishedAt)&&Number.isInteger(a.correct)&&Number.isInteger(a.total)&&a.total>0&&a.correct>=0&&a.correct<=a.total&&Array.isArray(a.responses)).map(a=>({...clone(a),passed:typeof a.passed==='boolean'?a.passed:(a.model===MODEL?a.total-a.correct<=allowedErrors(a.total):a.stage==='standard'?a.correct*100>=90*a.total:a.correct*100>90*a.total),completedAt:finite(a.completedAt)?a.completedAt:null,safetyMisses:Array.isArray(a.safetyMisses)?a.safetyMisses.filter(validId):[],shownQuestionIds:Array.isArray(a.shownQuestionIds)?a.shownQuestionIds.filter(validId):[]}));
       out.reads=(Array.isArray(old.reads)?old.reads:[]).filter(r=>r&&validId(r.sectionId)&&finite(r.at)).map(r=>({sectionId:r.sectionId,at:r.at}));
       out.readingAfter=finite(old.readingAfter)?old.readingAfter:null;
       if(old.standardForm?.stage==='standard'&&Array.isArray(old.standardForm.questions)&&old.standardForm.questions.length){out.standardForm=clone(old.standardForm);out.standardSourceKey=String(old.standardSourceKey||'');out.standardBankVersion=old.standardBankVersion}
+      if(old.comprehensiveForm?.model===MODEL&&Array.isArray(old.comprehensiveForm.questions)&&old.comprehensiveForm.questions.length){out.comprehensiveForm=clone(old.comprehensiveForm);out.comprehensiveSourceKey=String(old.comprehensiveSourceKey||'');out.comprehensiveBankVersion=old.comprehensiveBankVersion;}
       out.pendingSafety=(Array.isArray(old.pendingSafety)?old.pendingSafety:[]).filter(p=>p&&validId(p.attemptId)&&p.question&&validId(p.question.id)&&out.attempts.some(a=>a.id===p.attemptId)).map(clone);
-      if(old.due&&['7-day','21-day'].includes(old.due.stage)&&finite(old.due.at))out.due={stage:old.due.stage,at:old.due.at};
+      if(old.due&&['comprehensive','7-day','21-day'].includes(old.due.stage)&&finite(old.due.at))out.due={stage:old.due.stage,at:old.due.at,...(old.due.model===MODEL?{model:MODEL}:{})};
     }
     const a=input.active;
     if(a&&validId(a.itemId)&&a.form&&Array.isArray(a.form.questions)&&a.form.questions.length&&stages.includes(a.form.stage)&&finite(a.startedAt)&&(!a.deadline||finite(a.deadline))){
@@ -50,17 +53,27 @@
       correct:isCorrect(q,answers[q.id]),unsure:!!unsure[q.id],criticalForSafety:!!q.criticalForSafety}));
     const correct=responses.filter(r=>r.correct).length,total=responses.length;
     if(!total)throw Error('Empty exam');
-    return {correct,total,percent:100*correct/total,passed:form.stage==='standard'?correct*100>=90*total:correct*100>90*total,
+    return {correct,total,percent:100*correct/total,passed:modern(form)?total-correct<=allowedErrors(total):form.stage==='standard'?correct*100>=90*total:correct*100>90*total,errors:total-correct,allowedErrors:modern(form)?allowedErrors(total):null,
       below65:correct*100<65*total,responses,safetyMisses:responses.filter(r=>r.criticalForSafety&&!r.correct).map(r=>r.questionId),review:responses.filter(r=>!r.correct||r.unsure).map(r=>r.questionId)};
   }
   function readingRemaining(record,sections){
     if(record.readingAfter===null)return [];
     return sections.filter(s=>!record.reads.some(r=>r.sectionId===s.id&&r.at>record.readingAfter));
   }
-  function eligible(state,id,stage,sections,now){
+  function eligible(state,id,stage,sections,now,model){
     const record=item(state,id);
     if(!stages.includes(stage))return {ok:false,reason:'Unknown exam stage.'};
     if(state.active)return {ok:false,reason:'An exam is already in progress.'};
+    if(model===MODEL||stage==='comprehensive'){
+      if(!['comprehensive','7-day','21-day'].includes(stage))return {ok:false,reason:'Choose the comprehensive exam.'};
+      if(record.pendingSafety.length)return {ok:false,reason:'Complete the separate safety follow-up check first.'};
+      if(record.due){
+        if(record.due.stage!==stage)return {ok:false,reason:'Complete the current scheduled stage first.'};
+        if(now<record.due.at)return {ok:false,reason:'This exam is not due.',unlockAt:record.due.at};
+      }else if(stage!=='comprehensive')return {ok:false,reason:'This exam is not due.'};
+      if(stage==='comprehensive'&&record.attempts.some(a=>a.model===MODEL&&a.stage==='comprehensive'&&a.completedAt)&&!record.due)return {ok:false,reason:'This stage is already completed.'};
+      return {ok:true};
+    }
     if(stage==='advanced'){
       const latest=record.attempts.filter(a=>a.stage==='advanced').at(-1);
       if(latest&&!latest.passed&&now<latest.finishedAt+DAY)return {ok:false,reason:'Advanced exam locked for 24 hours after a failed attempt.',unlockAt:latest.finishedAt+DAY};
@@ -72,11 +85,23 @@
     return {ok:true};
   }
   function start(state,bank,stage,now){
-    const access=eligible(state,bank.itemId,stage,bank.readingSections,now);
+    const candidate=bank.exams.find(e=>e.stage===stage);
+    const access=eligible(state,bank.itemId,stage,bank.readingSections,now,candidate?.model);
     if(!access.ok)throw Error(access.reason);
     const record=item(state,bank.itemId),sourceKey=bank.readingSections.map(s=>s.id).join('|');
     let form=bank.exams.find(e=>e.stage===stage),formBankVersion=bank.bankVersion;
     if(!form)throw Error('Questions for this exam have not been added yet.');
+    if(modern(form)){
+      if(record.comprehensiveForm&&record.comprehensiveSourceKey===sourceKey){
+        form={...clone(record.comprehensiveForm),stage,id:bank.itemId+'--'+stage};
+        formBankVersion=record.comprehensiveBankVersion;
+      }else{
+        const initial=bank.exams.find(e=>e.stage==='comprehensive');
+        if(!initial)throw Error('The comprehensive exam is unavailable.');
+        record.comprehensiveForm=clone(initial);record.comprehensiveSourceKey=sourceKey;record.comprehensiveBankVersion=bank.bankVersion;
+        form={...clone(initial),stage,id:bank.itemId+'--'+stage};
+      }
+    }
     if(stage==='standard'){
       // Adding bank questions must not replace the agreed same-form retest.
       // A changed teaching source still requires a newly bound form.
@@ -98,7 +123,7 @@
     }
     const followups={};
     for(const q of form.questions.filter(q=>q.criticalForSafety)){
-      const alternate=bank.exams.flatMap(e=>e.questions).find(other=>other.id!==q.id&&other.learningPointIds.some(p=>q.learningPointIds.includes(p)));
+      const alternate=[...bank.exams,...(bank.legacyExams||[])].flatMap(e=>e.questions).find(other=>other.id!==q.id&&other.learningPointIds.some(p=>q.learningPointIds.includes(p)));
       if(alternate)followups[q.id]=clone(alternate);
     }
     state.active={itemId:bank.itemId,bankVersion:formBankVersion,form:clone(form),followups,startedAt:now,
@@ -108,6 +133,12 @@
   function complete(record,attempt,now){
     if(!attempt.passed||attempt.completedAt)return;
     attempt.completedAt=now;
+    if(attempt.model===MODEL){
+      if(attempt.stage==='comprehensive')record.due={stage:'7-day',at:now+7*DAY,model:MODEL};
+      else if(attempt.stage==='7-day')record.due={stage:'21-day',at:now+21*DAY,model:MODEL};
+      else record.due=null;
+      return;
+    }
     if(attempt.stage==='advanced'){
       if(!record.attempts.some(a=>a!==attempt&&a.stage==='advanced'&&a.completedAt))record.due={stage:'7-day',at:now+7*DAY};
     }else if(attempt.stage==='7-day')record.due={stage:'21-day',at:now+21*DAY};
@@ -117,11 +148,12 @@
     const active=state.active;if(!active)throw Error('No exam is in progress.');
     const record=item(state,active.itemId),result=grade(active.form,active.answers,active.unsure);
     const attempt={id:active.itemId+'--attempt-'+now+'-'+record.attempts.length,stage:active.form.stage,formId:active.form.id,bankVersion:active.bankVersion,
-      startedAt:active.startedAt,finishedAt:now,expired:!!active.deadline&&now>=active.deadline,correct:result.correct,total:result.total,passed:result.passed,
+      ...(modern(active.form)?{model:MODEL}:{}),startedAt:active.startedAt,finishedAt:now,expired:!!active.deadline&&now>=active.deadline,correct:result.correct,total:result.total,passed:result.passed,
       reviewQuestions:active.form.questions.filter(q=>result.review.includes(q.id)).map(clone),responses:result.responses,shownQuestionIds:active.shown.slice(),safetyMisses:result.safetyMisses,completedAt:null};
     record.attempts.push(attempt);
-    if(result.below65)record.readingAfter=now;
-    if(['7-day','21-day'].includes(attempt.stage)&&!attempt.passed)record.due={stage:attempt.stage,at:now+7*DAY};
+    if(result.below65&&!modern(active.form))record.readingAfter=now;
+    if(modern(active.form)){record.readingAfter=null;if(!attempt.passed)record.due={stage:attempt.stage,at:now+3*DAY,model:MODEL};}
+    if(!modern(active.form)&&['7-day','21-day'].includes(attempt.stage)&&!attempt.passed)record.due={stage:attempt.stage,at:now+7*DAY};
     for(const qid of result.safetyMisses)record.pendingSafety.push({attemptId:attempt.id,question:clone(active.followups?.[qid]||active.form.questions.find(q=>q.id===qid))});
     if(!result.safetyMisses.length)complete(record,attempt,now);
     state.active=null;
@@ -136,7 +168,7 @@
     }
     return checks;
   }
-  const api={DAY,empty,item,normalize,isCorrect,grade,readingRemaining,eligible,start,submit,safetyCheck};
+  const api={DAY,MODEL,allowedErrors,empty,item,normalize,isCorrect,grade,readingRemaining,eligible,start,submit,safetyCheck};
   if(typeof module==='object'&&module.exports)module.exports=api;
   else root.CoreNursingExamCore=api;
 })(typeof window==='object'?window:globalThis);

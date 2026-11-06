@@ -52,6 +52,7 @@ jobs:
           python tests/exam-banks.py
           python scripts/build_runtime_exam_data.py --check
           node tests/exam-core.cjs
+          node tests/comprehensive.cjs
       - name: Validate JavaScript syntax
         run: |
           for file in runtime/files/js/*.js; do node --check "$file"; done
