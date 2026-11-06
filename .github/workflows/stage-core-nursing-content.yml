@@ -29,6 +29,7 @@ jobs:
         run: |
           python scripts/build_exams.py
           python scripts/build_runtime_exam_data.py
+          python tests/medication-runtime-coverage.py
           python scripts/generate_runtime_manifest.py
           python scripts/validate_runtime.py
       - name: Commit generated outputs to staging

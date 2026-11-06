@@ -65,3 +65,34 @@ assert coverage["sourceReview"]["fullyReviewedItemIds"] == [], "Do not promote i
 print(f"Runtime medication audit: {len(meds)} medicines, {len(realized)} scored points, "
       f"{len(excluded)} explicit uncredited exclusions, {critical} safety-critical questions.")
 print("PASS only for structural/runtime reconciliation. Source completeness and clinical validity remain unverified.")
+
+# Verify every explicitly revised medication-use question against its staged
+# review record, without treating this structural match as clinical validation.
+role_index = {}
+for report_path in (
+    "exams/authoring/medication-role-review-batch1-20261106.json",
+    "exams/authoring/medication-role-review-batch2-20261106.json",
+):
+    report = load(report_path)
+    for row in report["items"]:
+        role_index[row["itemId"]] = row
+assert len(role_index) == 29, f"Expected 29 distinct reviewed treatment-role items, got {len(role_index)}"
+for bank in meds:
+    row = role_index.get(bank["itemId"])
+    if not row:
+        continue
+    role_questions = [
+        q for q in bank["exams"][0]["questions"]
+        if q["learningPointIds"] == [bank["itemId"] + "::treatment-role"]
+    ]
+    assert len(role_questions) == 1, bank["itemId"]
+    q = role_questions[0]
+    assert q["stem"] == row["stem"], f"Wrong stem: {bank['itemId']}"
+    assert q.get("revision"), f"Unversioned role correction: {bank['itemId']}"
+    correct = next(choice["text"] for choice in q["choices"] if choice["id"] == q["answerKey"])
+    assert correct == row.get("key", row.get("correct")), f"Wrong answer key: {bank['itemId']}"
+    distractors = [choice["text"] for choice in q["choices"] if choice["id"] != q["answerKey"]]
+    assert len(distractors) == 3 and set(distractors) == set(row["alternatives"]), (
+        f"Wrong distractor set: {bank['itemId']}"
+    )
+print(f"Reviewed role-question reconciliation: {len(role_index)} matching source-recorded items.")
