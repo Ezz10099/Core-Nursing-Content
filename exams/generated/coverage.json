@@ -2888,6 +2888,32 @@
       ]
     },
     {
+      "id": "ccu-heparin-ufh::heparin_prophylaxis",
+      "itemId": "ccu-heparin-ufh",
+      "point": "Distinguish prevention of new thrombosis using prescribed SC UFH from thrombolysis or treatment-dose IV infusion.",
+      "questionIds": [
+        "ccu-heparin-ufh--standard--heparin_prophylaxis",
+        "ccu-heparin-ufh--7-day--heparin_prophylaxis"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-heparin-ufh::heparin_hit_action",
+      "itemId": "ccu-heparin-ufh",
+      "point": "Recognize suspected HIT and promptly stop heparin and escalate for urgent clinical reassessment and a non-heparin anticoagulation plan under protocol.",
+      "questionIds": [
+        "ccu-heparin-ufh--standard--heparin_hit_action",
+        "ccu-heparin-ufh--7-day--heparin_hit_action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-heparin-ufh::bleeding",
       "itemId": "ccu-heparin-ufh",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -13065,8 +13091,10 @@
         ],
         "use": [
           "ccu-heparin-ufh--standard--treatment-role",
+          "ccu-heparin-ufh--standard--heparin_prophylaxis",
           "ccu-heparin-ufh--advanced--heparin_samples",
           "ccu-heparin-ufh--7-day--treatment-role",
+          "ccu-heparin-ufh--7-day--heparin_prophylaxis",
           "ccu-heparin-ufh--7-day--heparin_samples"
         ],
         "memoryUse": [
@@ -13087,13 +13115,17 @@
         ],
         "monitor": [
           "ccu-heparin-ufh--standard--heparin_infusion",
+          "ccu-heparin-ufh--standard--lmwh_route",
           "ccu-heparin-ufh--standard--heparin_rate_authorization",
+          "ccu-heparin-ufh--standard--heparin_hit_action",
           "ccu-heparin-ufh--advanced--bleeding",
           "ccu-heparin-ufh--advanced--hit",
           "ccu-heparin-ufh--advanced--heparin_samples",
           "ccu-heparin-ufh--advanced--infusion_precision",
           "ccu-heparin-ufh--7-day--heparin_infusion",
+          "ccu-heparin-ufh--7-day--lmwh_route",
           "ccu-heparin-ufh--7-day--heparin_rate_authorization",
+          "ccu-heparin-ufh--7-day--heparin_hit_action",
           "ccu-heparin-ufh--7-day--bleeding",
           "ccu-heparin-ufh--7-day--hit",
           "ccu-heparin-ufh--7-day--heparin_samples",

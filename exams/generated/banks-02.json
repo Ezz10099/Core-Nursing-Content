@@ -1973,18 +1973,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Enhances antithrombin inhibition of IIa/Xa",
-                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
-                },
-                {
-                  "id": "B",
                   "text": "Suppresses gastric H/K ATPase",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Reduces vagal bronchoconstriction",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
+                },
+                {
+                  "id": "C",
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
                   "id": "D",
@@ -2022,7 +2022,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -2035,13 +2035,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Replacement of glucose during severe hypoglycemia",
-                  "explanation": "This is a different treatment role."
+                  "text": "Therapeutic anticoagulation or selected prophylaxis",
+                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
                 },
                 {
                   "id": "C",
-                  "text": "Therapeutic anticoagulation or selected prophylaxis",
-                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
+                  "text": "Replacement of glucose during severe hypoglycemia",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
@@ -2072,7 +2072,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Before preparing a therapeutic UFH infusion, which product distinction matters most?",
@@ -2084,18 +2084,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Treatment-vial concentration versus catheter-flush concentration",
-                  "explanation": "Confusing them can create a major dosing error."
-                },
-                {
-                  "id": "C",
                   "text": "Immediate-release tablet versus modified-release tablet",
                   "explanation": "This is not the product distinction for a UFH infusion."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Dry-powder inhaler strength versus nebulizer strength",
                   "explanation": "These are unrelated formulation categories."
+                },
+                {
+                  "id": "D",
+                  "text": "Treatment-vial concentration versus catheter-flush concentration",
+                  "explanation": "Confusing them can create a major dosing error."
                 }
               ],
               "format": "single-best-answer",
@@ -2113,7 +2113,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2136,7 +2136,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::heparin_infusion"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "short-answer",
@@ -2156,6 +2156,13 @@
                   "itemId": "ccu-heparin-ufh",
                   "field": "administration",
                   "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 }
               ],
               "criticalForSafety": false,
@@ -2171,23 +2178,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Escalate and obtain an authorized dose adjustment",
+                  "explanation": "Changes must follow an order or an approved nursing protocol."
+                },
+                {
+                  "id": "B",
                   "text": "Ignore the result until the next sample",
                   "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Halve the infusion rate independently",
                   "explanation": "Independent rate adjustments without authorization are unsafe."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Copy the previous patient's titration",
                   "explanation": "A previous patient's dose change cannot guide this prescription."
-                },
-                {
-                  "id": "D",
-                  "text": "Escalate and obtain an authorized dose adjustment",
-                  "explanation": "Changes must follow an order or an approved nursing protocol."
                 }
               ],
               "point": "Change UFH infusion rates only with an order or formally authorized nurse-driven protocol.",
@@ -2197,7 +2204,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 }
               ],
               "criticalForSafety": true,
@@ -2206,10 +2213,96 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::heparin_rate_authorization"
               ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An immobile inpatient without known VTE has a prescribed subcutaneous low-dose unfractionated heparin regimen. What is the primary purpose of this order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reverse the antiplatelet effect of concurrent aspirin",
+                  "explanation": "UFH is an anticoagulant rather than an aspirin reversal agent."
+                },
+                {
+                  "id": "B",
+                  "text": "Directly dissolve an already established pulmonary embolus",
+                  "explanation": "UFH prevents thrombin formation and extension of clots, but does not directly dissolve an established embolus."
+                },
+                {
+                  "id": "C",
+                  "text": "Replace the therapeutic IV infusion used for every acute thrombosis",
+                  "explanation": "A prophylactic subcutaneous order cannot automatically replace a distinct therapeutic anticoagulation regimen."
+                },
+                {
+                  "id": "D",
+                  "text": "Reduce the risk of new venous thromboembolism",
+                  "explanation": "Selected low-dose SC UFH regimens are used to prevent VTE in at-risk patients; they are not fibrinolytic treatment."
+                }
+              ],
+              "point": "Distinguish prevention of new thrombosis using prescribed SC UFH from thrombolysis or treatment-dose IV infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "use",
+                  "textSha256": "12598d1c7ba42aa166fd47effb78766ca5688dec7e7807338643db49656e8235"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-heparin-ufh--standard--heparin_prophylaxis",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_prophylaxis"
+              ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "On day 6 of a UFH infusion, platelets fall from 240 to 95 ×10⁹/L and a new thrombus is suspected. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Continue heparin at the same dose until a confirmatory assay returns",
+                  "explanation": "Continuing heparin despite a clinically concerning pattern can allow HIT-associated thrombosis to progress."
+                },
+                {
+                  "id": "B",
+                  "text": "Stop heparin and urgently escalate suspected HIT under the facility protocol",
+                  "explanation": "A substantial platelet fall with thrombosis during heparin exposure is concerning for HIT, which requires prompt heparin cessation, urgent review and consideration of non-heparin anticoagulation."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduce the UFH rate by half and repeat the platelet count next week",
+                  "explanation": "Reducing the dose alone does not remove the causative heparin exposure and delays needed assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Replace UFH with enoxaparin at the same anticoagulant dose",
+                  "explanation": "LMWH is also a heparin-family product; switching empirically is not the appropriate management for suspected HIT."
+                }
+              ],
+              "point": "Recognize suspected HIT and promptly stop heparin and escalate for urgent clinical reassessment and a non-heparin anticoagulation plan under protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--standard--heparin_hit_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_hit_action"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 7
         },
         {
           "id": "ccu-heparin-ufh--advanced",
@@ -2271,7 +2364,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2321,7 +2414,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2378,7 +2471,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 }
               ],
               "criticalForSafety": false,
@@ -2428,7 +2521,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2560,13 +2653,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Therapeutic anticoagulation or selected prophylaxis",
-                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
+                  "text": "Relief of bronchospasm through airway receptor stimulation",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
-                  "text": "Relief of bronchospasm through airway receptor stimulation",
-                  "explanation": "This is a different treatment role."
+                  "text": "Therapeutic anticoagulation or selected prophylaxis",
+                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
                 },
                 {
                   "id": "D",
@@ -2598,25 +2691,25 @@
                 "ccu-heparin-ufh::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--treatment-role",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Before preparing a therapeutic UFH infusion, which product distinction matters most?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Treatment-vial concentration versus catheter-flush concentration",
-                  "explanation": "Confusing them can create a major dosing error."
-                },
-                {
-                  "id": "B",
                   "text": "Tablet coating versus capsule coating",
                   "explanation": "UFH infusion preparation is not an oral tablet/capsule task."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Dry-powder inhaler strength versus nebulizer strength",
                   "explanation": "These are unrelated formulation categories."
+                },
+                {
+                  "id": "C",
+                  "text": "Treatment-vial concentration versus catheter-flush concentration",
+                  "explanation": "Confusing them can create a major dosing error."
                 },
                 {
                   "id": "D",
@@ -2639,7 +2732,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2663,7 +2756,7 @@
                 "ccu-heparin-ufh::heparin_infusion"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_infusion",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "short-answer",
@@ -2683,6 +2776,13 @@
                   "itemId": "ccu-heparin-ufh",
                   "field": "administration",
                   "textSha256": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 }
               ],
               "criticalForSafety": false,
@@ -2699,13 +2799,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Ignore the result until the next sample",
-                  "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
+                  "text": "Escalate and obtain an authorized dose adjustment",
+                  "explanation": "Changes must follow an order or an approved nursing protocol."
                 },
                 {
                   "id": "B",
-                  "text": "Escalate and obtain an authorized dose adjustment",
-                  "explanation": "Changes must follow an order or an approved nursing protocol."
+                  "text": "Ignore the result until the next sample",
+                  "explanation": "Abnormal anticoagulation results require timely assessment and reporting."
                 },
                 {
                   "id": "C",
@@ -2725,7 +2825,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 }
               ],
               "criticalForSafety": true,
@@ -2735,6 +2835,94 @@
                 "ccu-heparin-ufh::heparin_rate_authorization"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_rate_authorization",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An immobile inpatient without known VTE has a prescribed subcutaneous low-dose unfractionated heparin regimen. What is the primary purpose of this order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reduce the risk of new venous thromboembolism",
+                  "explanation": "Selected low-dose SC UFH regimens are used to prevent VTE in at-risk patients; they are not fibrinolytic treatment."
+                },
+                {
+                  "id": "B",
+                  "text": "Replace the therapeutic IV infusion used for every acute thrombosis",
+                  "explanation": "A prophylactic subcutaneous order cannot automatically replace a distinct therapeutic anticoagulation regimen."
+                },
+                {
+                  "id": "C",
+                  "text": "Reverse the antiplatelet effect of concurrent aspirin",
+                  "explanation": "UFH is an anticoagulant rather than an aspirin reversal agent."
+                },
+                {
+                  "id": "D",
+                  "text": "Directly dissolve an already established pulmonary embolus",
+                  "explanation": "UFH prevents thrombin formation and extension of clots, but does not directly dissolve an established embolus."
+                }
+              ],
+              "point": "Distinguish prevention of new thrombosis using prescribed SC UFH from thrombolysis or treatment-dose IV infusion.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "use",
+                  "textSha256": "12598d1c7ba42aa166fd47effb78766ca5688dec7e7807338643db49656e8235"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-heparin-ufh--7-day--heparin_prophylaxis",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_prophylaxis"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_prophylaxis",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "On day 6 of a UFH infusion, platelets fall from 240 to 95 ×10⁹/L and a new thrombus is suspected. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Replace UFH with enoxaparin at the same anticoagulant dose",
+                  "explanation": "LMWH is also a heparin-family product; switching empirically is not the appropriate management for suspected HIT."
+                },
+                {
+                  "id": "B",
+                  "text": "Stop heparin and urgently escalate suspected HIT under the facility protocol",
+                  "explanation": "A substantial platelet fall with thrombosis during heparin exposure is concerning for HIT, which requires prompt heparin cessation, urgent review and consideration of non-heparin anticoagulation."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduce the UFH rate by half and repeat the platelet count next week",
+                  "explanation": "Reducing the dose alone does not remove the causative heparin exposure and delays needed assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Continue heparin at the same dose until a confirmatory assay returns",
+                  "explanation": "Continuing heparin despite a clinically concerning pattern can allow HIT-associated thrombosis to progress."
+                }
+              ],
+              "point": "Recognize suspected HIT and promptly stop heparin and escalate for urgent clinical reassessment and a non-heparin anticoagulation plan under protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--7-day--heparin_hit_action",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_hit_action"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_hit_action",
               "answerKey": "B"
             },
             {
@@ -2769,7 +2957,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2803,13 +2991,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Heparin-induced thrombocytopenia",
-                  "explanation": "A significant platelet fall during heparin exposure needs prompt review for HIT and other causes."
+                  "text": "Nitrate-related vasodilation",
+                  "explanation": "This does not explain a platelet fall."
                 },
                 {
                   "id": "D",
-                  "text": "Nitrate-related vasodilation",
-                  "explanation": "This does not explain a platelet fall."
+                  "text": "Heparin-induced thrombocytopenia",
+                  "explanation": "A significant platelet fall during heparin exposure needs prompt review for HIT and other causes."
                 }
               ],
               "format": "single-best-answer",
@@ -2820,7 +3008,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2837,7 +3025,7 @@
                 "ccu-heparin-ufh::hit"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--advanced--hit",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A UFH infusion has an overdue coagulation sample; the pump is running at its prescribed rate. Which interpretation is valid?",
@@ -2849,18 +3037,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Delivery accuracy does not establish the current anticoagulant response",
+                  "explanation": "Obtain and interpret the ordered laboratory result under the protocol."
+                },
+                {
+                  "id": "C",
                   "text": "The prescribed mL/hour establishes a therapeutic coagulation result",
                   "explanation": "Drug delivery and measured biological effect are different."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Absence of visible bleeding establishes that the result is therapeutic",
                   "explanation": "Occult bleeding or inadequate anticoagulation can occur without visible signs."
-                },
-                {
-                  "id": "D",
-                  "text": "Delivery accuracy does not establish the current anticoagulant response",
-                  "explanation": "Obtain and interpret the ordered laboratory result under the protocol."
                 }
               ],
               "format": "single-best-answer",
@@ -2878,7 +3066,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 }
               ],
               "criticalForSafety": false,
@@ -2888,7 +3076,7 @@
                 "ccu-heparin-ufh::heparin_samples"
               ],
               "reusedFromQuestionId": "ccu-heparin-ufh--advanced--heparin_samples",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
@@ -2929,7 +3117,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "881b59ef700fd87db4431932c20ec45df2e7e7117fce5ad573bad5b2dc0a5835"
                 },
                 {
                   "file": "content.json",
@@ -2963,7 +3151,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 9
+          "questionCount": 11
         }
       ]
     },
