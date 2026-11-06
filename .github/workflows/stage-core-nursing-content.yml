@@ -29,11 +29,13 @@ jobs:
         run: |
           python scripts/build_exams.py
           python scripts/build_runtime_exam_data.py
+          python scripts/build_material_readiness.py
+          python tests/material-readiness.py
           python scripts/generate_runtime_manifest.py
           python scripts/validate_runtime.py
       - name: Commit generated outputs to staging
         run: |
-          git add exams/generated runtime/files/js/exam-data*.js runtime/runtime-manifest.json runtime/objects
+          git add exams/generated runtime/files/js/exam-data*.js runtime/files/js/readiness-data.js runtime/runtime-manifest.json runtime/objects
           if git diff --cached --quiet; then
             echo "Staging outputs already current."
             exit 0
