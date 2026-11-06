@@ -12,7 +12,10 @@ for(const n of [7,9,10,11,20]){
 for(const b of banks){
  assert.deepEqual(Array.from(b.exams,e=>e.stage),['comprehensive','7-day','21-day']);
  const expected=new Set(b.legacyExams.flatMap(e=>e.questions).flatMap(q=>q.learningPointIds));
- const actual=new Set(b.exams[0].questions.flatMap(q=>q.learningPointIds));assert.deepEqual([...actual].sort(),[...expected].sort(),'Every mapped point retained');
+ const actual=new Set(b.exams[0].questions.flatMap(q=>q.learningPointIds));
+ const excluded=new Set((b.scoringExclusions||[]).map(e=>e.learningPointId));
+ assert([...excluded].every(id=>!actual.has(id)),'Excluded generic prompts receive no coverage credit');
+ assert.deepEqual([...actual,...excluded].sort(),[...expected].sort(),'Every legacy mapping is retained or explicitly excluded');
  assert.equal(new Set(b.exams[0].questions.map(q=>q.stem)).size,b.exams[0].questions.length,'No duplicate question stems');
  const keys={A:0,B:0,C:0,D:0};for(const q of b.exams[0].questions)if(q.format==='single-best-answer'){assert.equal(new Set(q.choices.map(c=>c.text)).size,4);assert(q.choices.every(c=>c.explanation));keys[q.answerKey]++;}
  assert(Math.max(...Object.values(keys))-Math.min(...Object.values(keys))<=1,'Balanced key positions');
@@ -42,3 +45,28 @@ assert(result.attempt.passed);assert.equal(result.attempt.completedAt,null);asse
 C.safetyCheck(s,b.itemId,Object.fromEntries(r.pendingSafety.map(p=>[p.question.id,right(p.question)])),200);
 assert.equal(result.attempt.completedAt,200);assert.equal(r.due.at,200+7*C.DAY);
 console.log('PASS: all '+banks.length+' comprehensive banks, exact error thresholds, identical pinned forms, retry boundaries, restart and safety gating');
+// Explicit clinical-authoring corrections refresh the next start, preserving
+// active forms, old answers/scores and scheduled dates.
+{
+ const bank=clone(banks.find(b=>b.itemId==='ccu-verapamil')),state=C.empty();
+ const old=clone(bank);old.exams.forEach(e=>{delete e.correctionRevision;e.questions.forEach(q=>delete q.revision)});
+ C.start(state,old,'comprehensive',100);const active=JSON.stringify(state.active);
+ const restored=C.normalize(clone(state));assert.equal(JSON.stringify(restored.active),active);
+ restored.active.answers=Object.fromEntries(restored.active.form.questions.map(q=>[q.id,right(q)]));
+ C.submit(restored,101);const rec=C.item(restored,bank.itemId),due=clone(rec.due),history=JSON.stringify(rec.attempts);
+ C.start(restored,bank,'7-day',due.at);
+ assert.equal(restored.active.form.correctionRevision,'drug-dependent-20261106');
+ assert.equal(JSON.stringify(rec.attempts),history);assert.deepEqual(rec.due,due);
+ const rate=restored.active.form.questions.find(q=>q.learningPointIds[0].endsWith('::slow_iv'));
+ assert.equal(rate.format,'numeric-entry');assert.equal(rate.answer,2);
+ assert.equal(restored.active.followups[rate.id],undefined,'Do not substitute the old generic reference question');
+}
+const medicationBanks=banks.filter(b=>b.itemType==='medication');
+assert.equal(medicationBanks.length,82);
+assert.equal(medicationBanks.reduce((n,b)=>n+b.scoringExclusions.length,0),30);
+assert.equal(medicationBanks.flatMap(b=>b.exams[0].questions).filter(q=>q.revision).length,5);
+for(const b of medicationBanks){
+ assert.equal(b.exams[0].questionCount,b.exams[0].questions.length);
+ assert(!b.exams[0].questions.some(q=>q.stem.includes('becomes light-headed on standing')||q.stem.includes('minimum administration time is unclear')));
+}
+console.log('PASS: 30 generic prompts excluded, 5 drug-specific recall items, preserved history and correction migration');

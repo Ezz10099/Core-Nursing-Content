@@ -19,6 +19,7 @@ def build():
     profiles=json.loads((ROOT/'exams/authoring/medication-profiles.json').read_text())
     banks=[]
     edits=json.loads((ROOT/'exams/authoring/comprehensive-edits.json').read_text())
+    revisions=json.loads((ROOT/'exams/authoring/medication-question-revisions.json').read_text())
     def cue_score(q):
         if q['format']!='single-best-answer':return 0
         key=next(c for c in q['choices'] if c['id']==q['answerKey'])
@@ -49,6 +50,23 @@ def build():
             for old in bank['legacyExams']:
                 for q in old['questions']:candidates.setdefault(q['learningPointIds'][0],[]).append(q)
             base['questions']=[copy.deepcopy(min(candidates[q['learningPointIds'][0]],key=cue_score)) for q in base['questions']]
+            bank['scoringExclusions']=[]
+            revised=[]
+            for q in base['questions']:
+                review=revisions['items'].get(q['learningPointIds'][0]) if bank['itemType']=='medication' else None
+                if review and review['action']=='omit':
+                    bank['scoringExclusions'].append({'learningPointId':q['learningPointIds'][0],**review})
+                    continue
+                if review:
+                    q={**copy.deepcopy(review['question']),'id':q['id'],'points':1,'learningPointIds':q['learningPointIds'],'revision':revisions['revision'],'sourceFields':review['sourceFields']}
+                revised.append(q)
+            base['questions']=revised
+            base['questionCount']=len(revised)
+            # Explicitly refresh only corrected saved forms at their next start.
+            # New content alone must not silently replace a pinned spaced form.
+            if bank['scoringExclusions'] or any(q.get('revision') for q in revised):
+                base['correctionRevision']=revisions['revision']
+                bank['bankVersion']+=1
             base['model']='comprehensive-v1'
             base['passRule']={'type':'error-count','allowedErrors':1 if len(base['questions'])<10 else 2}
             base['timing']={'timed':False,'secondsPerQuestion':None,'timerEnforcement':'untimed'}
@@ -57,7 +75,7 @@ def build():
             for q in base['questions']:
                 concept=q['learningPointIds'][0].split('::',1)[1]
                 edit=edits.get(bank['itemId']+'::'+concept,edits.get(concept))
-                if edit:
+                if edit and not q.get('revision'):
                     if 'stem' in edit:q['stem']=edit['stem'].replace('{drug}',bank['title'])
                     if 'choices' in edit:
                         key=next(c for c in q['choices'] if c['id']==q['answerKey'])

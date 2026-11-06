@@ -1,0 +1,1644 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "scope": "All 82 medications inventoried for the two reported shared templates; this is not an exhaustive fact-to-question coverage review.",
+  "limits": [
+    "Omitted prompts receive no drug-specific coverage credit. Their teaching material remains unchanged.",
+    "Other shared concepts are a review queue, not an automatic finding that each is defective.",
+    "The existing partial seven-medication coverage review is not promoted to complete.",
+    "No empirical difficulty or independent clinical validation is claimed."
+  ],
+  "medications": [
+    {
+      "itemId": "verified-losartan",
+      "sourceFieldSha256": {
+        "drugclass": "3f1fae5eb01a2edd2e9b6529b13941a10b8db7d02d1ad890f7b5704935d01504",
+        "mechanism": "e0590ea2f88e8a84c2829a289e5099c669335322d3388d8d8177fac5b497ea41",
+        "use": "1db6e500cc3a3d2a16d1e03ac99bd955eec76e60c61e19e8bbb3e66a155717ba",
+        "administration": "211952c68f0127a411407346d79224435cd4136304b9c071fda30154f1772e09",
+        "monitor": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185",
+        "why": "72b0d753cedd2338c978812daed58f3e7f7d4adb27914a7b923713b7a4bbe2e5",
+        "availability": "9b22fa9b70cd8914e9b9c11736e76b5ebe08e2b518f3a86ee0bb5b6f7ce3ae21"
+      },
+      "scoredQuestions": 11,
+      "removedGenericPoints": [
+        "verified-losartan::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-acamol",
+      "sourceFieldSha256": {
+        "drugclass": "97aa2c209f83b77da6baca36c44a42844251cdea65d1c19bbf7506cf1a969f16",
+        "mechanism": "d04ecbab35b3e9729e38c5a29cf3fa4e0920434dbf40527c34637ba7df0ec339",
+        "use": "f9a05cb6cb9998f3d7c31b2eb4987615763ed40998442ce61dc2b57839f18c7b",
+        "administration": "0e21f0aac72c941141e3e84be4ac3192a2b0ca0d0b38a1f30f74b3a3bc921a36",
+        "monitor": "8c0b9c7e37b76a71fc3d388934d4f6f89afd742aca9808bf7ab9cb3a1f4a71a8",
+        "why": "83ca2568b731928c51c62e0bde25b53cff839328ef5410f4e8088b56ba44005b",
+        "availability": "ac05d188d458a145bb5064577ef4669b6cfdc1a456fee3284d677c95dfea08a5"
+      },
+      "scoredQuestions": 10,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-acamol::pain_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-trufen",
+      "sourceFieldSha256": {
+        "drugclass": "2159478ee8bb4344c272ac60f2f612a615972c32ca5005a585eb97c1db9e2f01",
+        "mechanism": "f8965b02108ebcdd66392609887bfec36bc99905f6342ee7ceaf9dbe7f948376",
+        "use": "3111790c29d0616db80a46cd938d0c024a8637e09b551c6f6f6d9a79c7b554a4",
+        "administration": "e1faf95123c64e205f6c42e2cbe36583c2507b501f3a3e6e2e91b4337efd6201",
+        "monitor": "f4660c1363af6f79704fe2e94abefe09244982ee46dde3b9d9273e074f1b6929",
+        "why": "04ce5ce3d6ca38cc7d1e007df82defb9c5a155ddea01f4f714a169a954e98569",
+        "availability": "b69d497d36595ecb5b8459c52f6d548d5c5b661efb08ce9824ab23074fba2b48"
+      },
+      "scoredQuestions": 12,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-trufen::pain_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-cefazolin",
+      "sourceFieldSha256": {
+        "drugclass": "f02fbe3a70853711d1a2ae71185cba8d5ddce0e4e18996c11153b9dfd9d752d2",
+        "mechanism": "5ff8fc6a43a3e42cf7bf3cfa3c15b6a4c5a11f11001637f1a26d32a070bc0136",
+        "use": "c769a22cf41316d859dc165c0fdf44551833a8685451f381b01327e06667d48f",
+        "administration": "f71b769025b1696c2504871bcfe4b2f0a0148cbd47ad59606f18078e3e8c1481",
+        "monitor": "7293dc59d973d28297bbe8145fa9fe0bf2322d5ddc340d4a6c06318761342dcc",
+        "why": "7ad5c601afcf221031f91d4f750189d0aa3cadc5e9b1d224bf9f1f546adc992e",
+        "availability": "28cbcb06fbfc8737a961344cc198df2c8e1bdb19189483d270f9564b958d1e25"
+      },
+      "scoredQuestions": 12,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-cefazolin::antimicrobial_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-tramadol",
+      "sourceFieldSha256": {
+        "drugclass": "e8332608edc23353c46909dfdee25abd9d376a09db3b61189b5e471cc1ac368e",
+        "mechanism": "346c86f53770937bc5b976a10a87d1e3b2dda4cde3147031f1ec7dd27d0c38dd",
+        "use": "4e1d69f5e663d5d7da48acd30ca06482d63b1de94a9986cfb59fc3f965442c7f",
+        "administration": "13b0acd2fd96e7762b2c6bd16188cc5c9c1ce3faa7a1e7aa7be9152a4da0c1db",
+        "monitor": "5ca01be119c163f76a734eb556b91a30bdc3fb4e9f16a9295483cab1cf3c0bff",
+        "why": "2a38b5def33cade343f5e82af99b1e5223e508c6b483778b593eaab3fe5c36a5",
+        "availability": "b070a61de672e8568da38abece58ab4b4ef4b657b001948cfd4c4262fae44845"
+      },
+      "scoredQuestions": 13,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-tramadol::sedation_falls",
+        "ibd2-tramadol::pain_response",
+        "ibd2-tramadol::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-meropenem",
+      "sourceFieldSha256": {
+        "drugclass": "172212d9f00e3bc85263d54030f007c473dddbe297835ca88a07fb70dc3bce5d",
+        "mechanism": "a54bcc99c1436284542d14a7438faec6513a0e3790f386e205ceb955943b5c92",
+        "use": "cf20ecce68f2e7c1cdc8ccb2a72bcc184875cfaba835097c3917274fedc1e979",
+        "administration": "3f245b647a1e82a271e3b1d762d9014904150691b22f303d1396799b7ba2b7b6",
+        "monitor": "df161e73a41a1c1d49dd3d25101044fe3aa48ce3221e5814a3f719c2d0433c50",
+        "why": "db38ab732427baf1858b62de0e35b3ac043c98b518ed4f697707a1aa153bed20",
+        "availability": "fa56b9860ce40dee5f9959d0d8f6d87281587cd23579d2a663cb5f795f398e47"
+      },
+      "scoredQuestions": 12,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-meropenem::antimicrobial_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-prothiazine",
+      "sourceFieldSha256": {
+        "drugclass": "c4140951ca2cd25d7969d4af562fa6b5065a5cc520e48a47f152f7a4c196da61",
+        "mechanism": "c54fa33aa0241a45c91e5b394b8cb929fba0faa653268c96c31af6c04d9708cc",
+        "use": "cbe9f5dffa664044d68b2fdc79e18a63e06354770940f6ab52fc8d2d9d408dad",
+        "administration": "06d7b27a0090762027675a116ca9c9501db6d2ec7ee30968b15397e803f085ed",
+        "monitor": "67c8c55eb30b273063a5408ec6b01ba99a061a6694a9a06e85414160767dc571",
+        "why": "8aa06eddf68f60d78e88f54c111a51d9afe1c8f016a4fa4264a31644ec2a63c0",
+        "availability": "752710285c3ffa7d5bebd15ad831f0fe01990e21df501be1de04ba5915e1fdd3"
+      },
+      "scoredQuestions": 10,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-prothiazine::sedation_falls",
+        "ibd2-prothiazine::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-gabapentin",
+      "sourceFieldSha256": {
+        "drugclass": "2c14eaada8e71b96b9298e543935a2a2292ff2325d34af6884ea88d9c13ee427",
+        "mechanism": "cda945c25de391d86b412a41d8c5ee31e96e981b2b2645a7ba765f11925376b4",
+        "use": "26ae2133cce22b3acb8afc1b22edcbfbcb0f0229ea38d650dc36c2f51000d652",
+        "administration": "1ef1e042b30fb08b210bc21adeafa16104c7a8c3cdbdae089062d520571f3955",
+        "monitor": "ec316d039684976b86dd42e8cafd02d276b0fcf9fbf96d5a6639ace684cc74bc",
+        "why": "3f729c3fb9cc0af338dcc1d6c0763d169ea2b006528551d356e19097bd1c46db",
+        "availability": "ceafaeb078d6024fbb4292e5101f79eeb2e9109d900df2538a98c8fcde0f5d1a"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-gabapentin::sedation_falls"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-avilac",
+      "sourceFieldSha256": {
+        "drugclass": "ca2fb913df714f8735b604957844813082b42052eda06e3e8bc52bb84f5b2ac2",
+        "mechanism": "7a28db0307f48c38d56041faaa8e2cf4b5c2820d4acdf56972504b9a5a461a1d",
+        "use": "63202f4b22f5ebba76d07f71392b8688bb15c763aa42138361dd9f355ae0a3d6",
+        "administration": "831ebe707079c4ec4fd36392213b01da7dd0327397f5be0ea9c2c514fb8d3067",
+        "monitor": "56807edf9f13c4ebd3fee6535a69dd029be428fd61b18fd55bc96cb77db5de07",
+        "why": "4e69be39e2c3c991c124085ef845470ee3ba7068db91587ec0f545e0e4609b71",
+        "availability": "b223ea7a780ff181586fc7b350ec90b515a00761e3f73347f0306ce082405b96"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-carbamazepine",
+      "sourceFieldSha256": {
+        "drugclass": "76e209ace2e3af74de2ab35e9e5a0fcbb663c3d61499cb12c20991d35e136fa8",
+        "mechanism": "8d16814724b855485ad7ada0a9f51e174025a147206e1e658b508ae1c86b0698",
+        "use": "3205a531cd580e7efb537c375a006a1c2ea5fc0462c7730e039f2e0be3f0e363",
+        "administration": "918d441b109c44321a82a0a36c86ee39804fd5bd3bfee9f6254d396280bca23a",
+        "monitor": "32aa6f169ac105bfb4bb43e6863a2b94f7cbeb701e07e6bf9b84ba71d60b9233",
+        "why": "d7704539480c8457c9ef2deabddb1b3489c7af17e2145502ae382502105b1457",
+        "availability": "9f4ef573b740b816263c697e0b0cbadc952c94f665d44bc60411f30f6ac80262"
+      },
+      "scoredQuestions": 10,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-carbamazepine::sedation_falls",
+        "ibd2-carbamazepine::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-29",
+      "sourceFieldSha256": {
+        "drugclass": "b20c166e7246ce79186645b7ad32ff276df14358c14dc01659f9f48d434ec4cb",
+        "mechanism": "87a070623629f7461ab693f62dff611daa3fd939a7d8700e7e1103389a31b4a1",
+        "use": "5fe5afe3027c6122643ce6a1a1da996eb482f353188e11d3b758f4e8ffb56df6",
+        "administration": "a30fa3ec44dddd16dd0c9d244406a4609deb1f07b6800ad069f9a23efd515b8b",
+        "monitor": "19ef6d8076dede9e0d47fa2e7d7e3361fe594816f4d7267a724ceeab428aa9b2",
+        "why": "65fa7dfe983df65efa1babbb5f71b84837a5c630adfb2ea9cb00c5b695a09638",
+        "availability": "4436a4738c67600cc94129b0e397fb32f3eb8d8b7d0c8c12dc90a2cabea2eaa2"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "trolley-29::slow_iv"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-epanutin-phenytoin",
+      "sourceFieldSha256": {
+        "drugclass": "20a0a7a13bec37f0fa3d27c5efca6638886acfa5f0a8790c2244681794537d66",
+        "mechanism": "d08888ab1cefd720ef6b19ee63000669dbc985b1a449e3b6bea8d95d59f9bd48",
+        "use": "12822c472f8ee2d4c1c465ef921791cee10d858d1421f01ee918ee083c8933a2",
+        "administration": "3e7ab98ec0e360c82ce542ee545a5a33527902a7e53bcf61795294011ea2a390",
+        "monitor": "00ee47718109fef6b9bb562af4c3c886d1f20d486182944ad809dfbc0d5d3998",
+        "why": "8c727f76dcd28194c0090a7cd1e1c2062233d1a3bf74a2fba787d4f67fe696be",
+        "availability": "10d8061e1a4bd0dc038c02c6fd6aa2a47927d688022414be024698f7883cc504"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-epanutin-phenytoin::formulation",
+        "ibd2-epanutin-phenytoin::drug_levels"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-vancomycin",
+      "sourceFieldSha256": {
+        "drugclass": "555f8b3bf4d48232841b9abdf99619b1e8c96444ef305c8a94e9d11e86cb45ba",
+        "mechanism": "cee32b1638eae9964c893258f3520d0f8b907124bb37f790536ea8ed5ec7b931",
+        "use": "fc3e7decb4bc771e3a11b8e7a9c7621f94819be02a71d6f0eb5ac203b068abcc",
+        "administration": "eb9857dcd10181f3d64439657f12d19e9fb49502169f7e3180ee20a107235e67",
+        "monitor": "93ec863c7b638d0ddb1d29706afd235db60cfd46edefc2581d7967317f54d2ed",
+        "why": "5dffb87f8ff16a9fee68df3b64d530302fd3659cab9548f64074c0bf16d5c3c3",
+        "availability": "2023fa9853d4fa67591ace56b9d8ca5d679af66268e2640afd74cf0d34edf15d"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-vancomycin::antimicrobial_response",
+        "ibd2-vancomycin::drug_levels"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-levox-levofloxacin",
+      "sourceFieldSha256": {
+        "drugclass": "b14861eab9097aed0694b20ae9d10c9f4d2b30a37ed3804d2cefee80c73e7aff",
+        "mechanism": "925f25e9d618d5d48e125cf92530edb64c3cebaeb5102625a4de1ceccecdab0c",
+        "use": "9bc679b584458c7357fa62239dbc0ca022a4267058abd3bdb2ec15a3363d4f24",
+        "administration": "8cfd3d6148b41a14a53f19358ba0129c82bb0457670f5356cbb0112af8662dde",
+        "monitor": "f7ef9e0c992e73e71578082f277ef6189e5480a6f4098b8f62dbb3cc408c5568",
+        "why": "1c007c94a41208c18c319b11169825a07522c3eda5bcbaf559f2ec0cdff4a8c9",
+        "availability": "960708ae601d1c6ddca75bd69de3d215788ece2fffd65fb6b8c32b711193e3c0"
+      },
+      "scoredQuestions": 11,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-levox-levofloxacin::antimicrobial_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-ketrolac-ketorolac",
+      "sourceFieldSha256": {
+        "drugclass": "71667bd9507765ae73804c2fcb2a01c47b26752d7eaba7f40ec35b81d353cc23",
+        "mechanism": "4b79a4654ee2a96b2b8f45dee4c3712d0067839bab39b2ef86da1b8d1e957404",
+        "use": "5cd96b4f56fe6e5bcbe233f39f5217b9a9daae669a16bdba16cdbb3d30e5d8ef",
+        "administration": "b92280363cebd8ac79499544fc8d80ac358b94e4125e4944601d73df12dc4c6f",
+        "monitor": "d1bc956a2a7a398d5d5b0bd33388d494c9efdc3c050f552505534c97dae082b2",
+        "why": "033601651ee6446e36c63219699652e2b5fc61d95bb2df8b2dc9e7dfadec09c8",
+        "availability": "8035a8d20766f80caf664d7acded95b04750a33eb2116a78a1a7b22902c16471"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-ketrolac-ketorolac::pain_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-warfarin-coumadin",
+      "sourceFieldSha256": {
+        "drugclass": "d5ab4019e440ff5620a0cc1895462aee0aff69cb1ec10393322aa85faff93318",
+        "mechanism": "cb2ebc64244cec7520a0d9c0249768fcbff9b1d8e0000556b187ad987ecf61d1",
+        "use": "dffbfeb626e2fda350c69e849e89b7532fe17093a1e5f5e2e06a3d2b1f5223dd",
+        "administration": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02",
+        "monitor": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044",
+        "why": "cff7a468acc5301ca9835f68104c339bcf1a21b055679e2fe1d56d963ccb6779",
+        "availability": "dfaf3276c6fdeff1fe42e639f797b4b023dad648b1299f7c25c630d7fdba8c9d"
+      },
+      "scoredQuestions": 10,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-fortum-ceftazidime",
+      "sourceFieldSha256": {
+        "drugclass": "9011b7c82aef4ccb49aabc38e6ad2cf4078c55aedab2066f4e6e3e13750f1c2c",
+        "mechanism": "0882368cf74cb4ca818bed0ecafdde3cae4099ed173028920cfc117bd61fee05",
+        "use": "62ba4cc6bb72cb82d17a8a1cb6315c83f7e490ad07a4feec7c8f1404df9cb359",
+        "administration": "b9b81a409152eee1d8903595f5f28327b678998d45575a5957db6f2328025ac1",
+        "monitor": "4b622c18c55f2b6dd062983de1de848cce423c707d3c5221c35fcb682145986c",
+        "why": "dc1f6fec86c2e7501c12079b76f2cca32f73577b73a380f084682fa6f08cfd6f",
+        "availability": "4b7222c6e3a45d59285aa475c063052d824a0c02fca184e50afd17388df312a9"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-fortum-ceftazidime::antimicrobial_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-scobutyl-hyoscine-butylbromide",
+      "sourceFieldSha256": {
+        "drugclass": "d9273017864cdab83c0e09799fc48ee6e104fb9a6de25151646434e137bdf2a3",
+        "mechanism": "b2a2d33fdeda47603cf2aa25769d1d4b65611168dcd220f6a8595f7a0a6ecac7",
+        "use": "e4b43e0015b7d8754c025f108e05d56cfa46786411bf0fa43e8c0239aec1ba04",
+        "administration": "9544473b7af2941aae74ff27f3c55d82407115fcb6e2741887c9b11b9463f7a7",
+        "monitor": "eeb99a4b0ad7df71a38b42001f1b7a2b2b704aebab5ec66903ad57200df3c45e",
+        "why": "f518060a773c84bf989ca0635d001918b3832eb202bed3d75d4a6fe4b3b08e91",
+        "availability": "c5f30b40c62c98aa2a04d40a787dd4ba040476bff4d99d592c210c0422c97835"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ibd2-scobutyl-hyoscine-butylbromide::slow_iv"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-isosorbide-mononitrate",
+      "sourceFieldSha256": {
+        "drugclass": "bc31fbae589da4de4ab2adc84d1ab49b7e2f5f2f2cd0fae95a984800bcab75bc",
+        "mechanism": "2355b974941891cf652fa1f7fdbb3c5c3c0f465e011615d9c4bede1eeaeba56c",
+        "use": "ca0c22ea9aeb8b80f23e09538e0927f33ef50dd49833a6410836b4d13c0b8051",
+        "administration": "dd1b771c40d2181eec64979aeeacac0f214dd5c8f0269a8c4ce3206b7d2beecf",
+        "monitor": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5",
+        "why": "38bbcf811933f97d095b84e8fca56fd3ee2d54bd220cbb37a787fd838ef29524",
+        "availability": "a6e08055f4780434f03ec4711c0d1880b9079d429f682443f24e67bf8c9c1b27"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ccu-isosorbide-mononitrate::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-isosorbide-mononitrate::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-isosorbide-dinitrate",
+      "sourceFieldSha256": {
+        "drugclass": "310e3f0d938a9df9f30818e28e62c16043c0af85027d9117632d3a3e4a636667",
+        "mechanism": "0341c50e7e6fd0b251798579046f3992e9d99509a0086023049373c42e565f3d",
+        "use": "0fcbf0ace5b6ed03cac233dd3d010ca4ef99706dfa7ae08764d398b17292f4f0",
+        "administration": "47fb98ee9db5799ec12b205eaac06851668b9f9e579cefb5f8a9eaadb4e5cc77",
+        "monitor": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7",
+        "why": "cfec1ffdf4d2779f0d889d37ba83d892cdbd128bfc635cb3fe581832ea1ff5ab",
+        "availability": "e900d56547a40a95bc4708fa1db328c5abed59cedd78e78d300f0111b925fbd4"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ccu-isosorbide-dinitrate::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-isosorbide-dinitrate::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-nadroparin",
+      "sourceFieldSha256": {
+        "drugclass": "5bd6cd7f5b5a6c330e84ee14e51d59902522bc12da6e1788977a74ca4d699713",
+        "mechanism": "068ce95c72137bbf41d727e38eaf5f92e33dff2b30c0dfd8dfc93d39fed09680",
+        "use": "2fbed5f462c338aaf5071b62e65a0b9779b610297a9381b73beaf36f44b9255f",
+        "administration": "87e041489998b631a64742b367197ae1bdb24f954c407dc8be93732beb3e1e5f",
+        "monitor": "0944b91446a65da2e10a62b90b0746d180bb6ae1be746b6b46e30f3f655b0607",
+        "why": "42989fd8104a21da514aca5ec682ecbfabe883f02350919638f1c6cbfb43e298",
+        "availability": "8e37fd4dc0a871bfabf22b48bccc08710b1b29c3045746ac88f6a5fc11a7f3c7"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-enoxaparin",
+      "sourceFieldSha256": {
+        "drugclass": "5bd6cd7f5b5a6c330e84ee14e51d59902522bc12da6e1788977a74ca4d699713",
+        "mechanism": "dd342ba808e70aeeb5638c751da571103cdd7a75eecf6a982d5a959dcc47b0e9",
+        "use": "e84b7694f2319c2874ce30eef152e52ca890e5ec659647a5293c94484102f225",
+        "administration": "2081fbb5adf307dfd896b8b1cfbdd9775c270e20d70162925e99c2c7ad82aacc",
+        "monitor": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930",
+        "why": "3bd9b5a6d68fa84d243274a5d8cbbcf4762867f8c83913d764bb137c44916e0d",
+        "availability": "47bf26fefe98ed05bf7b60ce1f7967e61e87751e40a2f54aded7f81164445079"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "sourceFieldSha256": {
+        "drugclass": "57e0dd738e4da1cd3af2490ab69d1f9e83ad5aaf2f63e7edbf74bb32f0aa57cd",
+        "mechanism": "8378f484efb66b9a8029ddab7de4376cadaf9231a1c1ed192a5757dabdca9fdd",
+        "use": "12598d1c7ba42aa166fd47effb78766ca5688dec7e7807338643db49656e8235",
+        "administration": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f",
+        "monitor": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c",
+        "why": "3caf01c2f8e42e655385fe177636d57591e54b99ae2017109d415f4b25f70858",
+        "availability": "757685cc466b1cc74e01362adb1b383ec7888e21ef852deeefd9b3df711839f1"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-aspirin",
+      "sourceFieldSha256": {
+        "drugclass": "51adca8a4c95a5775cdfc298adfe5ab4da4bca49da75ff4e8364b76bad7d6da1",
+        "mechanism": "160464c62a96b11cbef295a5fa23a6456a1b778c836e88d7a0ee3ced168087cd",
+        "use": "8e37b22cc1ec18ff1c0a471525ff7a95619c9ecf88eadacded2bcc10d8b8b5e8",
+        "administration": "5835f36d281abf14a7335afabc2fcfcac34affda1e276821d97cf4ffca798e80",
+        "monitor": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac",
+        "why": "f2feb564c5ec8dfd607d698327063ac2c00b985b6aade3fc934f04e0e151b777",
+        "availability": "3daa44c9a46225e4b1cf38e4861500d88d09df98f59b3f08dbee0c0ea3f88afc"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-clopidogrel",
+      "sourceFieldSha256": {
+        "drugclass": "9a71b5d9eb9afb1d9066175c629f86d11573f1bf265ac89253da11d99f7cc7d3",
+        "mechanism": "c8f7c43593cd9bd04dc9066e9cd8375c7965dba2211e3ebbc451c15b69eb0b34",
+        "use": "e4cb180e757cb52fd49b2ddc6189736e665e5d1be0d8898cf636267ed1f71368",
+        "administration": "3117d962186a2745a259afeaefd8cb025b7c2002d0250a503f15c353a37d4beb",
+        "monitor": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea",
+        "why": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51",
+        "availability": "fd266f606282fc52f8fa5af3af4d8e3f64caca120edb723082889623e8fc1144"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-bisoprolol",
+      "sourceFieldSha256": {
+        "drugclass": "64793bac364e6abfe09a7cbd5f523473324d2ed3dbad75e62fefa2a15cb24650",
+        "mechanism": "c087db65e9625e37d59cc13831ec67b60573c089186e96242c9a46bc99ce1863",
+        "use": "48addb409631ec3b6963d0d855207c0f2a469ecc8a59e8aa6e54df78487f907a",
+        "administration": "fc7125326786cafddc18f59008127d6e042861a30fef955a6468610477ea1717",
+        "monitor": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10",
+        "why": "a7fdf92cd5af8de39f9bf46a69da11e1f4965a658e9ab0158b4a9e38f9a3cdbb",
+        "availability": "765e7698814a528f10fe50b505057adfc0511685d8bcacc4f82f35e5d194eb20"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [
+        "ccu-bisoprolol::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-metoprolol",
+      "sourceFieldSha256": {
+        "drugclass": "27223fad4c0d6d67766709008c0e9f66f00d73356d0b3d77a19627d2687aa8e0",
+        "mechanism": "82534663410b7a30171f37c1026ff613c2989672e7223804224e0654e230e4ee",
+        "use": "f9fcd8bf6344676594b47f79261093bae197f2af28cbca40eccd2d781c08a234",
+        "administration": "7a1d2608ca8e5c453a5bb1690a4c82f1ae073ffc2f66244563e9080bef92533b",
+        "monitor": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf",
+        "why": "b52628b25d039078ac014ee1a74bbc53e03c90580faa381419e357a3e38fb64b",
+        "availability": "806a48b3fc7662ebd9420aef2f8bbdc6f4a97f5a42fb7a77cec62d69ed01f213"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ccu-metoprolol::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-metoprolol::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-propranolol",
+      "sourceFieldSha256": {
+        "drugclass": "08593b86956918edbae611deb02744be9ce61ab80354d1a4990e0c0702436067",
+        "mechanism": "ffc06dbd8ab130ca5b190baea306f37df6c22438ade7d05894127bbbe18cda3c",
+        "use": "f0477995cedf9b3c8c7730445bfa7cb51856209876b6e069314d71a29cfae810",
+        "administration": "66cea6090baf5620329af419e550bd82ae4ed7d79f400869eb31c242767f8c3a",
+        "monitor": "abd2acd9675e7db9feddc71d9ecc3563bc195580b936475400fcf97f75090ccc",
+        "why": "a11eca80a5300622f3b4de1c25145b052e0be1b4d0d2ba51ddc973e1fb2c9fb7",
+        "availability": "35a96bca4fb3a592d784bcbad1c5bf38dffa71ddd8c10e224716865542a84c69"
+      },
+      "scoredQuestions": 5,
+      "removedGenericPoints": [
+        "ccu-propranolol::hypotension",
+        "ccu-propranolol::slow_iv"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-amlodipine",
+      "sourceFieldSha256": {
+        "drugclass": "2eebc30e8f2cc13718e08cd8fd27f7bd54fafdd7198af91af285be90efdd28eb",
+        "mechanism": "caa8d0767040d381585cc2d6bb1b1ef89c32e90e39d97c831657ddf2c2e76618",
+        "use": "7070cc2f008b08d7b6714cffa0f202da25c116b58a655c23bf6a3df3a98b9494",
+        "administration": "c8944bd8e44a8921bd959191b38cdeaf65f54dd6276897b3e20699e3d6236f4f",
+        "monitor": "4c366013dd65ac0d624a8fe6b1d1f00729462454d3bd7b3e22a0b9b55715d5e0",
+        "why": "4bda7022d5e466907a1ecbcfc9117fff76f7d0b5f3215ca0e59e1bcf11822270",
+        "availability": "33e577c5152528863c9d365906dcc6437d9e5e3a7d248ae91340f65fe826b3ce"
+      },
+      "scoredQuestions": 5,
+      "removedGenericPoints": [
+        "ccu-amlodipine::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-verapamil",
+      "sourceFieldSha256": {
+        "drugclass": "68df9b3c76e17e4340fbf02884cd37575419e5644d808e509acf373ef8140411",
+        "mechanism": "b3e46f0a632678b128440add1da37e54f4446de125f067e2073ab3abdbfebcb0",
+        "use": "7c9300ff2e130805f410dead0055a284b0ce242f681a82562fa83e2f34971517",
+        "administration": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79",
+        "monitor": "1cccf7096d02ccc2a1ffce82a76be6abb241678c5d754edff978b841f38090e7",
+        "why": "93b40cea196f98bdac51eeb5e9041c00d9028ed08c4e60136d97e5acfefc69d1",
+        "availability": "4c239de702ebd3eaed9770b116d0b8e0c6a85fa2362757ba7a92f44623204f7c"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ccu-verapamil::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [
+        "ccu-verapamil::slow_iv"
+      ],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-enalapril",
+      "sourceFieldSha256": {
+        "drugclass": "7846e2afd591ed022d0d2b32131e069ffb5b15714b43c2e7cc8aa74c126b2dc1",
+        "mechanism": "dd616ffa2862d499f24e26808212fe2ad870509c0327175a2e1922e944983562",
+        "use": "9a4a756f3adcfc463ed8d1c3be150d9c05a29d246cbbb454cc64e4e9c5b29489",
+        "administration": "578f45463b8e9f2a007d08336896b0023fab3b87a5940d9b5e4c04e59d742520",
+        "monitor": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724",
+        "why": "dcd6ccbcb04e0e6a7177eb93a982624a36f6d50c74b54fb80d2c89d255bdab0a",
+        "availability": "6fd3bd84a6df8a32472780dbd549c76ceffdc3b04e4daf513d09a4a3787ece1d"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ccu-enalapril::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-atorvastatin",
+      "sourceFieldSha256": {
+        "drugclass": "9bfb8caffdd9178efd09390f5bc0c5b90d64af863e7ffef1160505c2b0448bba",
+        "mechanism": "55cca63622b13dbb2a1801e99ad55a9e785bbee512170db170e564c153f6eca5",
+        "use": "bc2b8a07017c0cd1e6079eaebf483f5a1492b652347b19319ab9ea7db239a422",
+        "administration": "d995c66e0557f2cb6aa8f1164bc5f473849ba684df7b5f340c964fa18d2d3d41",
+        "monitor": "e5970fd822ffccc84fa2c50d82c531a0b123790794e63e586ea0280703309809",
+        "why": "7505d86d69f80658e7e9ad052c9dbd7a2c0857f6de3d5ca53ff2ce9fd2797e68",
+        "availability": "65335ce62df5cf38ed34aec0a924f8d780be574db6b3808aa981e4744cd8dd0e"
+      },
+      "scoredQuestions": 5,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-atorvastatin::interaction_review"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-furosemide",
+      "sourceFieldSha256": {
+        "drugclass": "adff96e02a802564efa6824dba7314776f32e1641d014dea815f50954f01ec81",
+        "mechanism": "7af6c132904ed973de21b580ff38d2b475813d390d2e80136b51d86f8524b126",
+        "use": "28b0706471221540e0c0be31d71e600c4bc592a2f110e21b4d4a5b17c24fed23",
+        "administration": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf",
+        "monitor": "7bc6c34f9ef4e3efe8e37896dc337e037957050b857e7615fe04e634cfa7821e",
+        "why": "5405bfaf14e369f7737cbaf36682d5267ad46c84d76af1604fddd26348734f09",
+        "availability": "ef8893c12d12d34d973dddce973fb08305fd0ed498c16f5bcce6d5a3bc54e615"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [
+        "ccu-furosemide::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [
+        "ccu-furosemide::slow_iv"
+      ],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-dapagliflozin",
+      "sourceFieldSha256": {
+        "drugclass": "55f658b7a9cc5334f3c5a8f0ad947f47cb911e0fdf9ea3acc73673bb2cd3ffd1",
+        "mechanism": "5da87f375c548da1c72a97577645e3e54800eb36688cee06aef44b7f9dd8f3e1",
+        "use": "e911f9f75115d64b12600e4e8d53f4db41e165c1415c4a6b20ef88332ce9dc95",
+        "administration": "6f7d9814cd5fc11c5cdbcf17405743a9c37126df783c1d03efbed4f606dc9c08",
+        "monitor": "ba755c19cccae675d6dab28f7b38551908001037eb4e602102b956b726a8d2ad",
+        "why": "02cf8e9549053a615eca4e8bb79ea6d0d0d697c887ec231d8ecd432e62795f31",
+        "availability": "17794009244afaafd44fcc8edb5eb55c8e8622579e833e38fe9d88f5172913ea"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [
+        "ccu-dapagliflozin::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-correction-insulin",
+      "sourceFieldSha256": {
+        "drugclass": "ac1f7299b69eb61553ee6685428cb02b7c51d9cb0b90f887ccf635fda777601e",
+        "mechanism": "4c444dc8c84feefa5dbfd89c23b3a744410557f4d4728e074b589ab9919ee313",
+        "use": "806ae424519151e8f2ce572728630eaccf8b876de435b54af8ceddd0f45f2ea5",
+        "administration": "b0dd8eba72ce25fcd81000d5ae758f9921d3dece31dbd94a37f4bdd9105eb9f4",
+        "monitor": "b9291e80ee0fe8b1858888f934aefaec01a28dda9b7aace4092a64fc96d000f7",
+        "why": "b64df2c0d673f281cc678e510d1ecb3e0faf7dc8d04c483c1ed6f821894f9ebb",
+        "availability": "09ff67ed5d552128a01510353fbcdb09bf7016a30d1349853695bc0db24c24fa"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-norepinephrine",
+      "sourceFieldSha256": {
+        "drugclass": "7f7dc2e8353dc150e6a95552e96b1d54e44a9e471b1e828149de942d3a50b4f2",
+        "mechanism": "9276fe6e73ef5ea960583d3a19650fa8dcb4819a8996746a8f51c7a03e21753b",
+        "use": "fc05c506df67c369041ed40ccdf1d4305796ed5e9431338a3807bc2fe2b7a4dd",
+        "administration": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f",
+        "monitor": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d",
+        "why": "8a136b6ee70f7d0eda2d0cb6fcd4176ab86c7c349b1dcb68dcb26a2a4d20cc24",
+        "availability": "76a2354987250503d7327cc2dad100abd462b52e3a82733d22b23c7d99b42aed"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-norepinephrine::infusion_route"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-dobutamine",
+      "sourceFieldSha256": {
+        "drugclass": "754f31f1eb843066ebf55145612d80f2ffe787bc815f703ee51585861d6e557b",
+        "mechanism": "6ebb66b8ec84992875a549b1ffa96bec52306313f87b41e3cb4b2e7faa8e0ec8",
+        "use": "9fcae1eba0876b72306a2190103cf52577a872e9fe0c823dd6063f17855e3a84",
+        "administration": "854f74e073c52090ed0f7eb19ab8a8fc18939c14e1a25fa8531df420622527b2",
+        "monitor": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069",
+        "why": "fca599ff2eaf85edf44d40f29abb12ce7b98bb94c391dd223542d3a19399db56",
+        "availability": "915224f04f278a62e2c08f8d49e6599f166c59e3b3b9cc8a0534072f51a07059"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-dobutamine::infusion_route"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-dopamine",
+      "sourceFieldSha256": {
+        "drugclass": "41d64d1d95301c68a5cbdf42e1bbdab59ac2f5fa932d0e69df0d5ef34ee553f5",
+        "mechanism": "738edd8d7f5594934abd48bf59a58ae4647ba346fb6cd7e2e905b39e3cc1f97f",
+        "use": "cb1106565203bc4af5577938738dec6cfe066141c64f1638b18798e1e359787e",
+        "administration": "89f933ab9860d34a42595e3b6ba5e5875ecdc6b0ffae33c88aabc273fb7dfe9a",
+        "monitor": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26",
+        "why": "c24435714248e7be9ec1bdf20f643b3f008bcaa0858017dafe67522f4843196c",
+        "availability": "0326c121853502ad0c21ad311d3db3f78a4180f65334ff03df5cbd4856d390d9"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-dopamine::infusion_route"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-atropine",
+      "sourceFieldSha256": {
+        "drugclass": "6894df62672ae07d500a09628ae51ca73cda4c640a7dbb12ceb1f7609cf18f57",
+        "mechanism": "08d856571d3adf13db6165d6baf6be137d9593fa6548fba0be85d846c381097c",
+        "use": "7bcfe8b9c4a24c651b2dd000700199ab8050c56413aa9ad66c183d93114d280b",
+        "administration": "a7ac77f2e930619f239a39636467072a55b7d42f7ed1e15ac2aaf3d981f8293e",
+        "monitor": "23b738daf65348afdf6d80ec65bce8cfa62becae53b19c7408d7920efaa79692",
+        "why": "c8dddf7dfe2b56366c7b2ccb76f1742fe8791c5dda7ee82b58342f21e0f12b33",
+        "availability": "1a53549c3ef622aac198662574930f6a8fe5cae6e38c24ec98a3c11517c47cb3"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-pantoprazole",
+      "sourceFieldSha256": {
+        "drugclass": "1f514edaaef066d688daa1dac116fd6de4f3920a1a26657f5ecc28dc37129f4d",
+        "mechanism": "7429e248764745abe6dbf54e9d533e4b50e56938637f59e655c75371de2ee78e",
+        "use": "a635de076c068bd554556ac4625554de62f1ec717d45b7464279ba3674d96ae7",
+        "administration": "47a4ba1ed0fa7c7feb141f574545508e9bf765b30e97b33fe4747719c68b03b8",
+        "monitor": "068df4f9c719147d612f198f63fbcdba0a094f37324ceab58a54bebbc35a16ad",
+        "why": "c96327d1cef7f90a249d729d6ea397a54cdf06368353068f8539be5cfbca3a00",
+        "availability": "f952be35e87a8104c2583dd8cb574330e8279bb21f26d3d9ac6f66f975b766a2"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-pantoprazole::compatibility",
+        "ccu-pantoprazole::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-omeprazole",
+      "sourceFieldSha256": {
+        "drugclass": "1f514edaaef066d688daa1dac116fd6de4f3920a1a26657f5ecc28dc37129f4d",
+        "mechanism": "3574abb04c6b6d6f5c02a29a89a6eb5309a9214e89e6f45c6b69cfbd2b021b2f",
+        "use": "d57bbac8e82ac4e673ebeac1714797433e3e6bb213018e3f9ce2622afae554c1",
+        "administration": "9038df306cd8adafd10fc558fba30025688e205ae5def8613e3f634e31924528",
+        "monitor": "a826a57dc02a9855c399aa583c08a1ca4283c4517b76870327d63492b2e01ae7",
+        "why": "925f398e7fa48f05b698d04a8bd78a804f2aaba186301837027906e0a7bfcf6f",
+        "availability": "7a1880da53cb77642c95120a638df1b521b8220c7e729d7ebed9f1468e593c2f"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-metronidazole",
+      "sourceFieldSha256": {
+        "drugclass": "b4fa40480c5785f8e2e01e453f156c889f863e3b6455ccae48eefff3e575c379",
+        "mechanism": "0887cf81a4ab56fbb2503268a94a54302e3418e976d197e4b0e1650b5bb2d82a",
+        "use": "306dbf14132019667ab71fee48832cb3d0c6073365a2bf29982155f98a3a5635",
+        "administration": "8859098b8381acdd6ddcd1e13807830d37e821d6db9b375fbe419c2cad6640a8",
+        "monitor": "5f247497ab25048788f5774cbc04ca2f683b625d0b2061e0eb1435e76b52cb6a",
+        "why": "26594449714c6d95fcd0bb762ed01c648165fb86c1c06894c5ed8ed822194d3d",
+        "availability": "140f281ca77291b30f99c1c2909e7d1111e34efcd0e02a2a2011eba13c93dafa"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-metronidazole::antimicrobial_response"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-linezolid",
+      "sourceFieldSha256": {
+        "drugclass": "a9913388421c24a33b5e943e44e96edd17a0a69195f475b78f8637fe6a6a6704",
+        "mechanism": "be52490028e78f638146a7b131b1b280291a3f73ab575567f9734c2996d1364b",
+        "use": "0601047560474319a2dade93247552363a2eca295af892b527547d1184ffea55",
+        "administration": "aa7c9af6a11ac6b608d15130d6f29a6f1d57826a64c85eb976dec8994b69cecc",
+        "monitor": "6633cab69d28950a078967208ce9784729f31df368f4bde87c1143d090c7aa8b",
+        "why": "e1751c02e3c631f8800a6a4b0eac4c45fa210fcfa06b25f077b41f52bb8b4244",
+        "availability": "fcce3ec96d441c0d7225e4a30f06494f8e4146f18adbe554e102130032d151a8"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-salbutamol",
+      "sourceFieldSha256": {
+        "drugclass": "319241c8ac56bc7c2c6fd4f9c01df91b5c48f01ae403c82fc95fbffdcc787cd1",
+        "mechanism": "061863b34a856feb1570d93fc3021201b9c845c75837a3e0fccb5f89e19c9c66",
+        "use": "b42f7b7f66c82ef1e9fadba1443d710f6496588485f23e31909e70173f9f2ba7",
+        "administration": "af5f5b4bf75d29a23ef601a46253916364b97b304e1d9052d619feb4eb5e806f",
+        "monitor": "d2aebd07de740f33ad39bf3b9f607edc70e2afa02bf18b31ce018d5a53ff2f17",
+        "why": "27fad59c7bf8f91881779f2112f9c50441da9f4afe84c3586911d0891e047acd",
+        "availability": "4ddb88edaad0ccac08087035cafd1825a214889873a8b4e9e94f7fc6f4d50d4c"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-nystatin",
+      "sourceFieldSha256": {
+        "drugclass": "c93859f8e6d84cbf43a038ea90a2964108bab1caa647bc319c79d1ec7d22e1b3",
+        "mechanism": "1081cd7af872a4102b81dc81c3a27aa358cae1dc079f974b8c6f7263c1655959",
+        "use": "df1457e6212f64da9a805cfe93c76e548c3c81f600e23435faf739fb95c5d099",
+        "administration": "40874456e10e5e98f720d18a56c23ace71d8c08c25d93dea8b7a55cac684fee2",
+        "monitor": "9e0e70756174ca9347faaa8e6b688e2879e601b68f19fb77d02c92c018aa5e9c",
+        "why": "da685651bb24f1cd1ee376c47cca914f83e17e2e28f842da5965685225b4ea72",
+        "availability": "03e3a8885fae5709a4227397a51266a90f543ad7fea581816c9829664b74850c"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-betahistine",
+      "sourceFieldSha256": {
+        "drugclass": "5d20a1d8a5060d1103171c6ee0907d5649188b386b137cc2911367edc41caa2f",
+        "mechanism": "b7c849cfd26541082da157c047ada58198d540014d634a598118eeb4afd429cf",
+        "use": "13d17fe4642073d821964d67abce6db78e63a90152e58840a15695c893168053",
+        "administration": "2e7f3b6e00698d6c7c6d888889dc767abc8454df2f18bf61a9e0acf7913821a7",
+        "monitor": "fc85a5eb7a45842bd5ff8e242c4b36fc9b73496960a7c299eda64f2c796577b1",
+        "why": "133b9b07118382f6810ac060b1402aa8dbed25bdebd5d96fb118fd754e3d5278",
+        "availability": "b83e9cdcdb6db67f53cbc1df68ce7b254fba31a92c58619ca7944804323ee9ca"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-propafenone",
+      "sourceFieldSha256": {
+        "drugclass": "dbad0c0fe9a3a30b56734b7587c9b630e6cd9a06e6ec314c955a82678feeb384",
+        "mechanism": "110cb21469bb109df3060a56724527b5f98ba344681fca6906f5a1402b663186",
+        "use": "21a9fa40f67394d0e736789578f8b8a1cb58a48822fec586d7960f2517ea3a88",
+        "administration": "2b30333b1ed005f3da84571e34de181dda43edae139d97a24aea5c5d1f361132",
+        "monitor": "add0b16d8155a9ffac993a719f140c7350016118db8a48685530103b6771050d",
+        "why": "71058b1138f6bef886d60cae17f4aaf0bc29dc3aca694feb2b4c455cea70158b",
+        "availability": "74ea67f5205ff563618c412051b88b4085bc21eedb998e6209d453764adce4a8"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-valzadepine",
+      "sourceFieldSha256": {
+        "drugclass": "aba84252ade12ed2e2b5634e86fa69a191afe67a24880535cf89b3708c8e2e53",
+        "mechanism": "d44c9bb6177aa9f99cf99d34449aff766b72ddeb6c53b15171aa7585bc550493",
+        "use": "176af56e1ce525ad6c41860cd44ad23bfcee8a4ac92bbf38819f33ac76a966d9",
+        "administration": "a659d8cd3048f3ec764199e20d2309207a49081bd816280074ac403108be66d5",
+        "monitor": "3698470f364c7b5ae2cf9f500f08185a212aa7cdb2ffbf977e7b06abf924ad7d",
+        "why": "84817eb27baff9f1109f1a8232360dd4a6118d08a765746c30c1f5e8e350580e",
+        "availability": "fba1ec20ae4acec350d286be03bc7ad6bb4c574e8d6c4185d5a7f7ca92700972"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [
+        "ccu-valzadepine::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-valzan-hct",
+      "sourceFieldSha256": {
+        "drugclass": "64f5512857c55dc94522912d1e06da01b44eb89b5b1c09f530ec7a8a459480a2",
+        "mechanism": "ba0637fdac742c57892e10c84add2da55ab23f0dc493f474e73ad8578f8e201c",
+        "use": "cb0e382abe518b4963f12c40985b9a6bfa0a8eebec8ef3863754a40a5bc8bbc6",
+        "administration": "f084625682353b8020e1bf61a8d3392de41e32cb5b43a8a108634d4f2c21c752",
+        "monitor": "f0534bebc167052a6ecde0a9dec85356a6b65f6e6fd337752344778802a3e062",
+        "why": "8d0641be166973e02aeda7f88913220c29572266dbd75d70a5af2ede324b8a64",
+        "availability": "a9178f706c3986f55dc153cb79e86a7a51076b5859e990247e90df93cb71fc24"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [
+        "ccu-valzan-hct::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-symbicort",
+      "sourceFieldSha256": {
+        "drugclass": "b2cafa422b871f59ccd2035a19464d0225808aecd9f272c2f6d800382648c450",
+        "mechanism": "6b0fd66dd2cafcf2f1a82551af01a7decc16d15e9e38e36d0e39b26833ec0f87",
+        "use": "72abe31d18aa7d4f7f4445b6cde921943900b08eef57a21ee5574074a852a99f",
+        "administration": "11d566af26061d880ca2f3634721a4e73e442a5f52fe6c951e8419a21bbb9160",
+        "monitor": "1c38ab407607f2c5b5aee47a7902af0db4a5972c0fcb5d0ff54e4414257fc565",
+        "why": "17c7866a1a77c716a7af3adcf91e528a8b527471f2caf2222f454a1d107eaf2a",
+        "availability": "52e5cb522493665d18f2e8991a7c664338f7d364950f9edc5143712ff1f9b985"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-gentamicin",
+      "sourceFieldSha256": {
+        "drugclass": "ab52fa02f07f8039829dd2d18752206d69f4ebb5dec10d1c88d9da9ee312f1f4",
+        "mechanism": "0556f002310b50da450bd49fb7d1b028a990c9cc6afd7247325686b86a809107",
+        "use": "12bd59c49dfc21638e2df1dd269eaf9c5b5a401f8ba4b4af5bcead5f6afd83df",
+        "administration": "47c92e2a0bc1e2aed6d571d9c695b99920e5eb9d5718596035d7868c41796720",
+        "monitor": "971646bc8e590568a8706769b7d4e291ce326be94c5be89f255196915453cbd4",
+        "why": "ab00856ea01107297acf4ef9777253496aa508287d2a80e391caafebf2e98956",
+        "availability": "b9207036e204262b807bdab50cc6a357a787f71842d4afd91fd4d31989e4d464"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-gentamicin::antimicrobial_response",
+        "ccu-gentamicin::drug_levels"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-ipratropium",
+      "sourceFieldSha256": {
+        "drugclass": "c78a36c9d2849e6908db65789d9a7c4a267fafe353eeb9ba7d0202b565cfaeef",
+        "mechanism": "fe79f64d12d303bd3c17f62828d49ecc12980b6f119e25d0d7d1a1324679cf33",
+        "use": "4914e9f9e7a5f138c8b330d3c519fc866c9efc3dde936f78039cbf734f39ee88",
+        "administration": "69b312fca1321137ec05d765462b3880323eb37febac275078f71313b6227c34",
+        "monitor": "2f4278f458024c5d7298ac73022974fe653d6a282017d4f4a70fdce124ae7bf0",
+        "why": "826b1889845d391d5ab7e7052560677b79115f3d0d45cbc8ee969500b8fc1028",
+        "availability": "839a1639a06d327e969f239e5779ea6a594d324f33466f0b5b968a14335af9a3"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-adenosine",
+      "sourceFieldSha256": {
+        "drugclass": "73367a387ad118c3e68a55ae940a02ce0a3f2ebdc4133b4ae0e7b02ae5e9fda7",
+        "mechanism": "70de82d3d8d56f9e5cb528582321d26cbfa0463780091923f730d899528370e2",
+        "use": "22923f572eb36fc6faa522122e09040c396c269ae9546807ce51f7488b73adc1",
+        "administration": "b61c912fe7134c0898a7b121b48c481f3ee36ad93e9340bac83d57f94b7e7c07",
+        "monitor": "acfbf14e34e62b1a82d6f214819376721390bf0f9f1643cccb1e743d2383edca",
+        "why": "77248295b1183ff0c322aff5786c5d94f61ac4ada9af3460ec4f576b2dc8f0cb",
+        "availability": "a1079626957e9fe4d6c786863a7b24fa106790bc4756b01e87c528433a58edf5"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-labetalol",
+      "sourceFieldSha256": {
+        "drugclass": "c09b94d83127b8a7a8178c5759b15bf45df0fb6272c226ad4ea059085834918b",
+        "mechanism": "1ded73f3ae3b84d4c43377ca2df28d0dda729957450a47822eadd9e9679a996f",
+        "use": "34d11275bda03c20f16046eba1719b6ed4abb09b9582e35f1bbf8e13149008f8",
+        "administration": "76d8ded7cfed75197f1265ca41fb9a701958a399cabdab000c89f257c4c8af5e",
+        "monitor": "ddaf0638ea4ec884cc6d4bb358fed98864b1c284a3038fbb9ba3e6e25fe12286",
+        "why": "b4703ac7ee0c5cf1d8bbf24c91baa2088b859943bf7b943aaadc241683b95994",
+        "availability": "b456d642f81d833b6775aa1f6e65355690991f0a67d869c278be947a263ed723"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [
+        "ccu-labetalol::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [
+        "ccu-labetalol::slow_iv"
+      ],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-ketamine",
+      "sourceFieldSha256": {
+        "drugclass": "a874e911dca9467cb2db8a5d344bffb13e2160dd9e9a661c610965d403a37e8f",
+        "mechanism": "f5ab921927e6b2b69fc881c19a138bcb7a59388c246f333af651c6c96fbfcadd",
+        "use": "52ba39416fa5c636dfd7af9317f935cb147acaf3d1cffac3ca7074767ecc16a9",
+        "administration": "12d4ed99da5b772b0056a96493076f018e02c34fb11f2c843bb57d2cd3527d19",
+        "monitor": "37b99164c92a01d32bf3f76ae803edaa21e1b9ecc7a033e7cf85dd9ea0910d27",
+        "why": "1b694d45e5e546c3560471d7c8c937a29bf0576001926c3a673a559afdf19eb5",
+        "availability": "1eba3eedb324f74e763a96622750df446bd4691f81425be9b22d787a4966dac4"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [
+        "ccu-ketamine::slow_iv"
+      ],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-pethidine",
+      "sourceFieldSha256": {
+        "drugclass": "62915714f176daff85fab5b5bd6fa8083b922f9c5ade5af5f59b598d7efb56fd",
+        "mechanism": "3d319036a8e7e47ec8fd9b46265ebb232e4b4413c9356494448a776079402707",
+        "use": "69baf3207533de821af03294cf97241e1065ed20f915cf7e82bdbc65a0d6042a",
+        "administration": "c8c76f72d3be83e16649d1070412eaa50a2260377f36f3b8bed03b9e371d62d1",
+        "monitor": "f01e7119b7088495a8b018ea2461b672b0ad047f534cf0e8daa63dd824039d6d",
+        "why": "a725c84c9bc56f6ae3e146bb1ff92f18bf3ab6c98a5b5aa44f0e19692d687590",
+        "availability": "a08583ee82e79737ba2ea0c705b223718423206373638a381531251dbb5c375e"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ccu-pethidine::hypotension",
+        "ccu-pethidine::slow_iv"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-pethidine::sedation_falls"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ccu-morphine",
+      "sourceFieldSha256": {
+        "drugclass": "d232416c9d3896c83cdd3989bea55c2b60ec7d289b5836bb25ac57442a6c5d11",
+        "mechanism": "39c0da32a519a0b53e26293edbb7c8953977cafcec6886e5834e69e66ef57401",
+        "use": "911ae6fb7347d30ac292da8c4d9243c2c373ad4863911f3a96f9f62658321c8b",
+        "administration": "6d05c9946f059ceb6578a9ccf9cd25b0b81867a45eef55d33d6476fcec1bf212",
+        "monitor": "a898ee6f25ab9d1a159c2f627c16ded7abcb212b7dfc42195d264d346e406b81",
+        "why": "c61364b1f676b4751e6a929564fc3cc417e46895920af2ebbe8c2b8709b87bcf",
+        "availability": "ddb08e53adebd1b79b9f08374d98cc85ac8d8d5d1090a4a8ff30a3b3004453d7"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [
+        "ccu-morphine::hypotension",
+        "ccu-morphine::slow_iv"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ccu-morphine::sedation_falls"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-spironolactone",
+      "sourceFieldSha256": {
+        "drugclass": "59e7c1d1a6e35ebcf2d6491d597ed611b7b6955d52bf2c6b8b4ed1e315e84724",
+        "mechanism": "84af512a96644985f46eaa682693013cd97dcf80a54d1287d33f8e423cbcca4d",
+        "use": "c7a5bcfc60546927c54a1a19d03884c3e231a786bcf0509ddf96c490f07d6f2a",
+        "administration": "6e32e7322eedcdfa0351f573b15f09165d98dbf356b08ea811308ff8ccd909d1",
+        "monitor": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20",
+        "why": "f7de80a749cee4ad2bfbf76a894e4d724303b1964dcce78871b4a5cefa798d84",
+        "availability": "82941a713622bb93e1e77badab5ec8d0da7330ed7efe7430a07ecd2cbd43eebe"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [
+        "trolley-spironolactone::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-lidocaine",
+      "sourceFieldSha256": {
+        "drugclass": "61b33d2320d5f2e289a9f74925e6a968e6adf96d52eaafacae07db779057af6e",
+        "mechanism": "83cffa8459fe598cf85c1a4b67fde1c8a691aeb889631080ed38115094a44855",
+        "use": "522dd7e751d33f698f586848e9ce4cef339520867f94c8ebdbf0f29a85167286",
+        "administration": "fb7f202551760742a751a5e70848d7f66baa69d06f13f91e7a11bf338f4a2aae",
+        "monitor": "88c70a4949cd2aab2467f61cdb7d01081f4febb398d02599a720809b960e4a75",
+        "why": "194ed5f37320d8c23e45b3d07553d9cb3c5beec96cc5f99618d123f5de11dd0e",
+        "availability": "a9f89385e632e01d26c061e29078b0d43320a155114c2c62baa7b5c39854d47e"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-sodium-bicarbonate",
+      "sourceFieldSha256": {
+        "drugclass": "9152353948046f8dbe590ae8837387667466188cb3734a820b5ae093f8efd7fb",
+        "mechanism": "a0f0ac5b732c3d1eb9925e88f76d5269077059eb3299cb220f1ced791aed2976",
+        "use": "58bed618c4760ecd9e1a523ca3da90ad1a3b1e4c69452dc7c0d017765357e34e",
+        "administration": "79560bd5723f47e6a83bd86519d92656098e8ee3980a676968d8cc574c15cc80",
+        "monitor": "9bac17d6925d3d816e7cbeb71f55c817eea31a6e95f25d09dc343d6c3aee8c9d",
+        "why": "d44e60015754c237b57e31cf36e62f2f6e36a29818706fc6a5ab444e2ed5ddbe",
+        "availability": "fa4035325ecfc8e5168c57757b543dfb9e97a6452ae3619124d80b2c91262846"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "trolley-sodium-bicarbonate::compatibility"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-hydralazine",
+      "sourceFieldSha256": {
+        "drugclass": "358078480cd31a1c481960823e2f2914ea481530ebd0f259c663bd5762e4bba9",
+        "mechanism": "98b2a8d4dc12089ca67b8594d6750e47b13cb0175e44560bb9186d7e1d335d43",
+        "use": "2eba77b82699eba7c1c1e18a00d15953cc615b1f3fc59053c784eba5142c6e6b",
+        "administration": "541a0172338c24a9d27fbf4529812032d72b9124f0c283e55df670da263eb990",
+        "monitor": "620ecede422daf73bf921739fb6e0b5c99fd5e7e6aeb00a0bdfc748225cd7194",
+        "why": "29d56b3594ff26c1b1d8f0a3f3da097f4e0e992a8bd4842dcc45cad0b022e757",
+        "availability": "a41c308401a6cfa2d43c7cb83356d0cf67f40d13f354e4709455b3cfe63a982b"
+      },
+      "scoredQuestions": 4,
+      "removedGenericPoints": [
+        "trolley-hydralazine::hypotension",
+        "trolley-hydralazine::slow_iv"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-dextrose50",
+      "sourceFieldSha256": {
+        "drugclass": "342d7b233317e4259bf8550106bcbe3ae816464a217743ad071857f85ffbdf6e",
+        "mechanism": "1b869295e23b0f2ee04fe90d8d8a8d473b21f736b664396ffee1b653a9ad12e8",
+        "use": "6572609d2bdc445d7ad113b77b4eeedad3db14dcaee82ef323fb31500ad5073c",
+        "administration": "39c3a1a489a821759f7aad24e88ead7d23eee2858030825c2881e6c1b572f46f",
+        "monitor": "377cca77ff496a4aa1e4866cde97dc25092cfe1b6b4bac5b560fbc2cead42039",
+        "why": "8f06cbac3752154e3bcd4b46c67b652510f894e73bd79a7e9cab5fff1e8617ab",
+        "availability": "908e20251ef1b0f4e952f31228dce4b1a94b082a970b52c61ddcbe8d4f5b874e"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-hydrocortisone",
+      "sourceFieldSha256": {
+        "drugclass": "ecba3cbc8212c4bf8f8a42fe498447711fc5da4eaf2553da92d74d8be706b63d",
+        "mechanism": "b349349d972babb25c9b3b01c93b9608bdee54f78ed06eb35d356b5be348b15d",
+        "use": "2ac42924cd7cc495d539fdf65841268b9f93d5ac38d8e9e342a9339a043f3ae1",
+        "administration": "d021813574802f064bac5b15f46786cd3cf83ddf0a879fbe8ea8cb4d69bc3d93",
+        "monitor": "c052d00452b6d09ae0f9b85c0adf8889c158c6e6f915c3cd08fd1f743c868eb0",
+        "why": "ea1bd6880eed1b60800c1a6069624fea4803a7885177ba8791a7cc647a89866d",
+        "availability": "132b8cd647de023e1849876752cb1fbf014f83a442431cde6c8495963ee4582d"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "trolley-hydrocortisone::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-diazepam",
+      "sourceFieldSha256": {
+        "drugclass": "b6216a5f1931713c8e0078c602afef67a5b28b7756e040e8da0619668db195e1",
+        "mechanism": "a74a1c696a3cacbcde0f5e7320d44cc0fa35be0be4963fc7aef299ff392a92cd",
+        "use": "87abb922a3476240da1c70bce6269925c5b47886dcca1e10cc3a68dfe87e8a56",
+        "administration": "51a27d7c20be7d1b078772226227f4fcd23ebe9c0d24263e02342b12594ff0cb",
+        "monitor": "02e22b915b9ffcfdf186d85a2f025a4ae1f318845d53aeb55afbcbb58f945365",
+        "why": "e4deed19d265bb3499334d50a204d491ba6410d31b6f5755fac938cc7bae1335",
+        "availability": "a1909819ba0cde334296a7cd5a66dd3affcc053d60862c0750af3deb49574a9a"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "trolley-diazepam::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-amiodarone",
+      "sourceFieldSha256": {
+        "drugclass": "845798b351c9be8279836368a3e33dbb5aded25efaa67fff33c710cc1973c34b",
+        "mechanism": "365cd57d41ea9bb22c5e507b6f0312aeb1559c0a77f0ae8a173bb47aa45ef9b0",
+        "use": "ae4528dde05fbd8caddcde221d7319e7ce0d8f9e628aac14c8d9755462e4f3d5",
+        "administration": "ba27f3ceb52a86824ba9d0db69145807047e7ee0da51f2e96827541a47d20b50",
+        "monitor": "d216d5035ef418c828cbaff44f505536b6db48fd918cd2dad0d4de1673d601b8",
+        "why": "0e49517d9f5465cc280820920811f05cf72ff9b9aa004a71dcd561eca4dba941",
+        "availability": "98d07ad9ee607f30f7058b73271087917bb680f88c96a88a92e2a8d1d8b6db51"
+      },
+      "scoredQuestions": 10,
+      "removedGenericPoints": [
+        "trolley-amiodarone::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "trolley-amiodarone::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-calcium-gluconate",
+      "sourceFieldSha256": {
+        "drugclass": "fcd60e0e0e5261143d2f1174e7f3d6e9063119d83ee3eba977ffd9a3a2fbdc32",
+        "mechanism": "e2f7a5c32809475a53e48b1ffbb25b37d096ad8e8e3f5e8ff131bfc0bfa62820",
+        "use": "6e683b689a9214f6d230d3cb3513653aa1f7bb9df937a2659d6219ce7568a465",
+        "administration": "75af2b83fd6cac85e127613dc4eb05e72679cc407e749cbc2f71110d40f84284",
+        "monitor": "c47d233e2cfd3834532c526686c31cd1ac315fce2194c122d3ee056775eb65bd",
+        "why": "5977d96657b6935839c4bb3f275e187b7a3003fe04704047163ed4080a578dc1",
+        "availability": "c373947fc0d5ba6606a1ce4a549b655375a621b09584d7dc73f886d28203adf7"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-magnesium-sulfate",
+      "sourceFieldSha256": {
+        "drugclass": "b95ae4929a80ec5fa6b308b7eb2496a476099dcf7542bc8d69c7f4e9a98117f8",
+        "mechanism": "43e4d7a6a8159f27b87ee292e110619f3fd61744f9f8f19a8cd4ae851c4e1aec",
+        "use": "ac6e564664b84e3f5a51e0744a043da743bb38890969b78a19a61a872e53d34e",
+        "administration": "5b2ada600177c82b3f135cf66cd698c125575ea8a912ffd57e9bf32240f46586",
+        "monitor": "389203467201efde1426d7736ec8470d65783c9f90783b3718f02e106f933d3d",
+        "why": "fa9877b1ea0cc2b1ea5e56ccdb7a0072f62647235b0a8fd6f64566b1443386f8",
+        "availability": "80d134dfbbb07103d41a3bab6e7bc1c49d745f5adf340595e1f68f8ca28ee9c4"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-digoxin",
+      "sourceFieldSha256": {
+        "drugclass": "f9f7692bddb4624eeff8278c3d72fd86f78c03e021592ab5baeeb1e8c0339028",
+        "mechanism": "0deaf3cc83b2c607a7256daab8f962ec892cdc3baba0738e625c7cce78dd49a6",
+        "use": "d7da721025077f70f0c5536b200b7bd690e30775cefdfb08938a39ad59cc01aa",
+        "administration": "f33c949e0e5ac63d1a9830bf2f81014b164f2bc51cc9aa05a086e98f27d55f27",
+        "monitor": "cafb419544ac71df0cb0a47ff9bdc6d944ee0cd718dad2157db6a841eb4321be",
+        "why": "66106fbfcfef742fab15d2ce52a34d3bc591c92408da6395f20b0de7b26cd624",
+        "availability": "2c0bc20b5b8a09fb9b87f8c959d1a80dab23f10c833af91655838f7fe7de199b"
+      },
+      "scoredQuestions": 9,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "trolley-digoxin::drug_levels"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "trolley-aminophylline",
+      "sourceFieldSha256": {
+        "drugclass": "873c7f490625cb70a0f20381d6924f39c1d9b62866694452373dfe2915f18121",
+        "mechanism": "0b7a21c39147aef327646ce9f81185bc1dfd5da4b2f6afa6a54142306d6a8eb4",
+        "use": "ef08225e3f8f3c04007a22b84fb59745468b2d1b174e885f81423e7ec973dfeb",
+        "administration": "c2e1e07bd036d51e361d0cee2d3a2cbb4538be475fdc4b141d93eaa9645c6b1c",
+        "monitor": "6cfd2739b5a8d189ea71eab1856be7161968360895f26da6650a07344357ccf4",
+        "why": "a13cfa939b6994c04303e76cc24cbe46702833f64f4f567cd752187d6e61d05d",
+        "availability": "a167d1e4831924a6e37364ad6d4c3e4aa34c492aa0dd41b507f9584da22d1a7e"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "trolley-aminophylline::infusion_route",
+        "trolley-aminophylline::drug_levels",
+        "trolley-aminophylline::interaction_review"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-amitriptyline",
+      "sourceFieldSha256": {
+        "drugclass": "47d617add389a278fbc77f664d58262ec5f5abe242361abd7a003182791f543b",
+        "mechanism": "cce2317c93fbe6fae5ce3bdb5157648b51e9f8bde87ec92f88947b3f41766895",
+        "use": "f5b26db5f8429d0cc25ae09c229602a98ac0a75f5ce81a77c5945b09e549c43a",
+        "administration": "14010d2e0497b9fb846720a5ade2fabfa010c61961d71657bf629569c693176e",
+        "monitor": "a0ccf7d13cfd0d3c00f1753004d0b4242394bbe955a5284ab29c28aa514bebd9",
+        "why": "0a5aed4aaff794d718d911096be548510e24eabc7b24c8d8bb77f5f5b547502c",
+        "availability": "ce6ba26db9a8d44aada0d5ed9044a9abffba11eb38d2c1693a3097799c1936e0"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-amitriptyline::sedation_falls"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-prednitab-prednisolone",
+      "sourceFieldSha256": {
+        "drugclass": "bf28de012193a159833367660bddf15080c9b9eb4432052199eb13007f6122ff",
+        "mechanism": "0a6834c311603a891e2d991648c78ba33a9784b63b9d77d985baaea1e26561aa",
+        "use": "eeffde22d4fdc11c7f41248975a24cd3dbe7d2d87d4dcbf1c66b7e893a14662b",
+        "administration": "9cc351d17d1c355f4ddb37024583dc808056e1b913b10cd8474589025d49e748",
+        "monitor": "2da104661ca610007248ad67a688e7a90a9b862117ea81f7ea349ff40eb58956",
+        "why": "cf2f08693f90d20bca90abb7bd9a2930a666589575430faff0f80d05563d1fd9",
+        "availability": "7e6b2549c2c24154f7af2cd9caca4c848861570320baf9463f60ee112bff0523"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-clindamycin",
+      "sourceFieldSha256": {
+        "drugclass": "e66bb2e7316fcc8e232821d0bbd73df57f9e215ccf69c7cc293b88bdff2e4442",
+        "mechanism": "8e72f2ae5ce6cc478efa14fb48aa93a366cabc8cdeb33f6028bc5fecb1700eeb",
+        "use": "981f7bc466c4e010e1277dac1ea8ce9843f9e15e429eead0500808164c7d7a50",
+        "administration": "be397949dd4cbd45e2bcbd00304cd44645c62f37e24bfd76d2ddfcd35caafe80",
+        "monitor": "92053000a936ca5d0575ecca2060578937fdbce0e87a251ab6d5cdef3865b3bf",
+        "why": "4fb9dc6380b080dbb3c9c33fc50554275e9cfba3cdb875558d3734b65d08ee0f",
+        "availability": "34a25c6fa2a28e2be71e378671c1931a7fc63e3a4b64fc033799d9c0e409e7dd"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ibd2-clindamycin::antimicrobial_response",
+        "ibd2-clindamycin::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ibd2-multivitamin",
+      "sourceFieldSha256": {
+        "drugclass": "65f3ff322f19a61f462f75c26a66b154802dfbb42ca51be95e6101abb7dcc257",
+        "mechanism": "04c59f3f15a641255fbb67923ca731ce1f9ab3070244946803876d6c0b339416",
+        "use": "1ecc1dd165be1b02885d4a902c638a566addcb770183024ca48dbfcfb9e5599a",
+        "administration": "2fce739c1a5b66a21235d1983f67f62e9e728e80456c9631982adf90c43632d8",
+        "monitor": "e923056fcc30d8e3a6984efa8e64a5acd741e7964a25f70f13241ecfacdf5124",
+        "why": "4acb453d21221d10ac5ea5336f23e8f0762fe74bbd3ec67dc22afc430cba048a",
+        "availability": "53723afa129d85fe9db8e215faffc790a84dd80ef59e4c66ce0894fc18de9167"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-novalgin-metamizole",
+      "sourceFieldSha256": {
+        "drugclass": "a3d217f9a1713065f66ae7a2d6efd3c3bbca3ac3ef7161ba072931613169d456",
+        "mechanism": "b340548afb954cbc59c2d15c3d8384c69e514761ef7d3be4aebee19b14ba16b3",
+        "use": "f77cccebf6b2c96542f17a00547ef69318fbaefb855596c4a2595412766458e1",
+        "administration": "a9d812224d0f6589b52cf1fbd6b390e9104c3ba8a1111e7fc2bb90c9139d84c3",
+        "monitor": "31e87c69be6eadabe197ce43152ecf81c7702d2aa9d3565aa932314a2edc49a2",
+        "why": "9c1f9fca556620108452cdd3a36e41c7ab795dc1abf032b4a3c49c99c70f3ae7",
+        "availability": "2ff7eb28a6addbc5aee4c5788ecacdb1e00bbcd9f698caf017a7eed64513fd56"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [
+        "ed-novalgin-metamizole::hypotension",
+        "ed-novalgin-metamizole::slow_iv"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ed-novalgin-metamizole::pain_response",
+        "ed-novalgin-metamizole::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-decort-dexamethasone",
+      "sourceFieldSha256": {
+        "drugclass": "8f5b96965fa547716eb2a3ba70e692231c2458c361cc9613c4fdbb956b2c3a0a",
+        "mechanism": "ddebad66f1f916a131c3866918f9f0a17832d5b028f50381f8c5277c1398e3b1",
+        "use": "35c705d241f37fe6a712f68583490261ff52b887d37b72ec472661b9a312c5ab",
+        "administration": "8ddc737f1f431c2ff28aefcc05210863309311d8940978264a0f1f84fb7a8dda",
+        "monitor": "70f8893d8875ebeec3177b9a3f0e7bff00c964923d228cbf925c4dc6ae2e6e7e",
+        "why": "5a885c7df82d99c2a9690f3de765de5f1a70de49e7f3fcc783ef50cc372480b1",
+        "availability": "93a7b4b6a14fb06ca5ab536f3939e832b82c692cf8a2f40be5efbbafa703fea3"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ed-decort-dexamethasone::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "sourceFieldSha256": {
+        "drugclass": "daf2bebb62c1729cd2598305cf6569a88dbf2f58461e5b6492dcf87713e0eca3",
+        "mechanism": "aa8fcc0f077f0e146f6ba7ee1a182a43b49dd76e788c30dfa360d8fe5fb593fb",
+        "use": "4f225fd90f3a6b2d0657ce046ac2b473d4eca6717a9b188b3846b8a2793912b7",
+        "administration": "6b4c24c0d0759bbc3fbdb7c6ac894dcc69c7e9a7f3279ac7bd76e37b54598694",
+        "monitor": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979",
+        "why": "cd5560ccf0b97bafe6f4d431e1fe379bf9b880f2a0626a1603602555be006337",
+        "availability": "385db2203c6bb82cdfd9670cc76ccdbb3bf479cbd3ce49f3c8be1e34061acfd5"
+      },
+      "scoredQuestions": 6,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ed-ondansetron-provisional-shelf::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-diclofenac-injection",
+      "sourceFieldSha256": {
+        "drugclass": "9ca4074a0b3adcfed2d12f76aceee46fd358a09f657ca9527073a01fdafa1462",
+        "mechanism": "0ecb6980ff30ccf416feb5ec577db54eb3307ed19c2c7fedfffd06e49176c741",
+        "use": "f54a7a317acacaaa5c9cd7f42d90629b05d1923f8924959ef02d9a1e2124a4e9",
+        "administration": "8685a96296967359da5975f5e27d1f923f071e350be2cc81b9e781c6a21d40b6",
+        "monitor": "f142e4d363e4fc7cbcc11a4b38525cf6995703c19261697a8ec7a6a02f7e2d72",
+        "why": "9375167c6964807514954823e5a13a8e752df965fd987b6fe93914fca354b416",
+        "availability": "c63097eb8efed7c22b0e08e7bc148364e8b1856a055fb3fd2ad30612868e48dd"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ed-diclofenac-injection::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-vitamin-k-phytonadione",
+      "sourceFieldSha256": {
+        "drugclass": "866de13f23b9e862a8ac52ae264cdf617941923c7faa7e23b365bdfffb392c96",
+        "mechanism": "1bf3057eb7319830f590b9180092cfc48cd3454a96f7ee67d80bdce214cd52e9",
+        "use": "2d3e0a7dc0c5039e79eea5b4a83c8a928d1a273ef786d111c02dcf5a351b8934",
+        "administration": "27571aa79e4554fac0c13ca371bf8ad5f1e90cde9bcc836cdf70877aa5cd9998",
+        "monitor": "f298bb6ca6638853cba6b8ff73819bc31e580916f1365075f281058c334defa9",
+        "why": "30d513e8cb2bb7f5a908f383d7b9a3c59ed010f4a2c6ab13879a9f8623ed5ff5",
+        "availability": "7ff8b5377abd7a9f4c9070ab66f94c88349656f6acf29eb5b20d7fcba0c20de3"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ed-vitamin-k-phytonadione::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-hexakapron-tranexamic",
+      "sourceFieldSha256": {
+        "drugclass": "3eff9e5153fcff3d4a76edc86394027ab31a5a0892f4b5aca49dd5ef6e230d2a",
+        "mechanism": "0c619cc01333e43e74a1c2a12c89895d4bf2baca0f4c45d69fc04cc65a43634f",
+        "use": "25e932ba332bcfc5b426fa562778886d0f7fdb14ecd4571316563482c0a6197d",
+        "administration": "db76cb28ff0564baad1ca3fe9f81590f942a7a24e485183705cfa0807fb85880",
+        "monitor": "71b272023389b16f59f9543ee2fdf7c3567800e71676d3f9b3aac63395a8a9e0",
+        "why": "c64fabc3a28debf991a17a3a9641aaba4b2c2ca8b97db51b23ef9d0b987a6597",
+        "availability": "1f8a4fc1edcff39f2630f2580785211d4607cf5dfaccbf08001423c238c673d9"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [
+        "ed-hexakapron-tranexamic::slow_iv"
+      ],
+      "otherSharedConceptsForReview": [
+        "ed-hexakapron-tranexamic::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-captopril-tablets",
+      "sourceFieldSha256": {
+        "drugclass": "0af2ad3fc09a29f36f7ea7e2038aa90268f3ca145b136004b297af0f99aabf7a",
+        "mechanism": "01489b8a742aac310580cf0bc45a980548b70d02b775480229e846f872879754",
+        "use": "52bb1cff6f5e7bfb6cb4f29592c65dc2ba3d09884299bec78ac8aa7954d6a227",
+        "administration": "d3ed5a615974c82e27d2eba7f1619124548d1106c801a8cfc5ac067b737e3f3c",
+        "monitor": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8",
+        "why": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3",
+        "availability": "7bff0451b3a3b449a1ff1e6fc9760241bdceb25fbf19ad64a8d7e46f992ddf79"
+      },
+      "scoredQuestions": 7,
+      "removedGenericPoints": [
+        "ed-captopril-tablets::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "ed-omnic-tamsulosin",
+      "sourceFieldSha256": {
+        "drugclass": "c232b3398f02a2f1e3ca3034018b657aeb238f264a2664f9083edf03449d71e6",
+        "mechanism": "d65eb30bce98cd2e63f745be0777d846275ca8cfa80571fb0d5c57bfa592cb78",
+        "use": "6465d24f34d85305a40e058905f798c55fd893ff8d20e417e12846952eccb5a2",
+        "administration": "f4d922269516314d3da992d7330957074146d278c477365b6d8b88d404a1dfb4",
+        "monitor": "b63a3223935db8b8e84d69c5a196f4c8bd07afceaad87c382bbcbc708a6ced03",
+        "why": "caf3ed7b380c4f709d05d2a6b63b3496aea1958f543ca2aff658de7d74318f18",
+        "availability": "3788ec8170bd287aac2bc542d1670b3f03d436192af822e5a7aed758e6516039"
+      },
+      "scoredQuestions": 8,
+      "removedGenericPoints": [
+        "ed-omnic-tamsulosin::hypotension"
+      ],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [
+        "ed-omnic-tamsulosin::formulation"
+      ],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    },
+    {
+      "itemId": "verified-alteplase-v35",
+      "sourceFieldSha256": {
+        "drugclass": "ea898a5b5bddf85ce2f1ee0a4ea80c948dd0d3eff736b655bb162109b914baae",
+        "mechanism": "f80b8a34bc5297b9dc61f22fc5fc90d9d3b9c390f1b35635d6cf23e9ec065466",
+        "use": "6f0c6afc0307aefe055d7bc11c6090b0f702dd2ba3940d41ff735ed1de773028",
+        "administration": "eb7d74c96393d2a1c3ed89f8d5954f0dc5e0cc92e319e92d4caab44e5f3481c8",
+        "monitor": "51417f835785cd03d7c999e1a94aea850824f5857cda4454b2e494a9a9d57679",
+        "why": "930a3fafe2c24229a5785cedd37f880a03bda87c7ef1cc93189310bdd43e21e6",
+        "availability": "9fbab64313aa8ea376cdc704cb708c3ee9c0aa22b6ffe6cc1e1bdd050cbddbe7"
+      },
+      "scoredQuestions": 13,
+      "removedGenericPoints": [],
+      "replacedWithDrugSpecificRecall": [],
+      "otherSharedConceptsForReview": [],
+      "coverageStatus": "not certified complete",
+      "clinicalReviewStatus": "not independently validated"
+    }
+  ]
+}
