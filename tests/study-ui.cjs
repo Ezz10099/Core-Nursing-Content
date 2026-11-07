@@ -33,6 +33,8 @@ function boot(saved){
    else assert(node.textContent.includes(s.text));
    if(s.display==='reveal')assert.equal(node.open,false);
   });
+  if(lesson.id==='ibd2-quick-taylor-spatial-frame')assert(d.querySelector('#lessonDetail .tsf-figure svg'),'TSF schematic displayed after parts description');
+  if(lesson.id==='ibd2-lesson-04-osteomyelitis')assert(d.querySelector('#lessonDetail .next-lesson button')?.textContent.includes('BKA / AKA'),'Next lesson points to the next orthopaedic lesson');
  }
  const finalId=content.lessons.at(-1).id;
  const jumpIndex=Math.min(8,content.lessons.at(-1).sections.length-1);

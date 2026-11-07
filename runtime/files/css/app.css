@@ -136,3 +136,20 @@ main.wrap{padding-bottom:88px}
 .readiness-search[hidden]{display:none}.readiness-search input,.readiness-search select{font:inherit;font-size:.85rem;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px;min-height:44px}.readiness-search select{width:135px}.material-readiness .tools button{min-height:44px}
 
 body.reading-view .readiness-shortcut{display:none}
+
+/* Compact, comfortable reading for privately synced answers. */
+.study-answer-details{margin:12px 0 10px;border-top:1px solid var(--line)}
+.study-answer-details>summary{min-height:48px;font-size:14px;list-style-position:inside}
+.study-answer-content{padding:3px 0 8px;font-size:15px;line-height:1.75;overflow-wrap:anywhere}
+.study-answer-paragraph{margin:8px 0 12px}
+.study-answer-paragraph:first-child{font-weight:600;color:var(--text)}
+.study-answer-bullet{display:flex;gap:9px;align-items:flex-start;margin:7px 0;padding-left:2px}
+.study-answer-bullet>span:first-child{flex:none;color:var(--accent);font-weight:700}
+.study-answer-space{height:5px}
+.next-lesson{margin:16px 0 28px}
+.next-lesson button{width:100%;text-align:center;min-height:48px;white-space:normal;line-height:1.45;padding:12px}
+
+/* Taylor Spatial Frame part-identification schematic. */
+.tsf-figure{max-width:520px;margin:14px 0 20px;padding:10px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}
+.tsf-figure svg{width:100%;height:auto;display:block;overflow:visible;color:var(--text)}
+.tsf-figure figcaption{font-size:12px;line-height:1.55;color:var(--muted);padding:4px 6px 7px}

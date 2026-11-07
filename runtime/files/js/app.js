@@ -44,7 +44,45 @@ failed:function(reason){runtimeStatusPrefix='Runtime update failed; the previous
 window.CoreNursingSync={receive:function(raw){try{const c=JSON.parse(raw);if(!validContent(c))throw Error('invalid');const old=syncedContent?syncedContent.contentVersion:0;if(c.contentVersion>=old){localStorage.setItem(CONTENT_KEY,JSON.stringify(c));syncedContent=c;applySyncedContent();renderFaq();renderList();renderAids();renderLessons();if(window.CoreNursingReadiness)CoreNursingReadiness.refresh()}const contentMessage=c.contentVersion>old?'Content updated to version '+c.contentVersion+' and saved for offline use.':'Already up to date · content version '+c.contentVersion+'.';setSyncStatus((runtimeStatusPrefix?runtimeStatusPrefix+' ':'')+contentMessage);setSyncBadge(runtimeUpdateVersion?'RUNTIME v'+runtimeUpdateVersion+' · CONTENT v'+c.contentVersion:'UPDATED v'+c.contentVersion);runtimeUpdateVersion=0;runtimeStatusPrefix=''}catch(e){setSyncStatus((runtimeStatusPrefix?runtimeStatusPrefix+' ':'')+'Content update rejected; saved offline content was kept.');runtimeUpdateVersion=0;runtimeStatusPrefix=''}},failed:function(reason){setSyncStatus((runtimeStatusPrefix?runtimeStatusPrefix+' ':'')+'Content update failed: '+(reason||'unknown network error')+'. Saved offline content is still available.');setSyncBadge('CONTENT READY');runtimeUpdateVersion=0;runtimeStatusPrefix=''}};
 loadContent();const KEY='core-nursing-ccu-prototype-v1';const byId=id=>document.getElementById(id);const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let memory={bookmarks:[],attempts:[],dark:false,reading:{},questionMarks:[],notes:[]};let persistence=true;try{const v=localStorage.getItem(KEY);if(v){const o=JSON.parse(v);if(o&&Array.isArray(o.bookmarks)&&Array.isArray(o.attempts))memory={...memory,...o}}}catch(e){persistence=false}memory.reading=normalizeReading(memory.reading);memory.questionMarks=normalizeQuestionMarks(memory.questionMarks);memory.notes=Array.isArray(memory.notes)?memory.notes:[];if(window.CoreNursingExamCore)memory.exams=CoreNursingExamCore.normalize(memory.exams);if(memory.dark)document.body.classList.add('dark');function save(){try{localStorage.setItem(KEY,JSON.stringify(memory));persistence=true}catch(e){persistence=false}if(tab==='progress')renderProgress()}let tab='home',current=null,qidx=-1,answered=false,medListScrollY=0;function showTab(t){if(!['home','library','clinical','notes','practice','progress'].includes(t))return;tab=t;for(const id of ['home','library','clinical','notes','practice','progress']){byId(id).classList.toggle('hidden',id!==t);const nav=byId('tab-'+id);if(nav)nav.setAttribute('aria-pressed',String(id===(t==='notes'?'clinical':t)))}if(t==='progress')renderProgress();if(t==='notes'&&window.CoreNursingNotes)CoreNursingNotes.render();refreshReading();updateReadingView();if(window.CoreNursingExams){CoreNursingExams.navigation(t==='notes'?'clinical':t);CoreNursingExams.refresh()}scrollStudyTo(0,0)}function searchFromHome(){const term=byId('homeSearch').value;if(catalogFilter==='aids')setCatalogFilter('all');byId('search').value=term;if(!term.trim())return;current=null;byId('detail').classList.add('hidden');byId('search').classList.remove('hidden');byId('list').classList.remove('hidden');showTab('library');renderList()}
 function renderLessons(){const list=byId('lessonList'),detail=byId('lessonDetail'),search=byId('lessonSearch');if(!list||!detail)return;updateClinicalDepartmentUi();const term=(search?search.value:'').toLowerCase().trim();refreshReading();const matches=lessons.filter(l=>readingMatches('lesson',l.id)&&lessonDepartment(l)===clinicalDepartment).slice().sort((a,b)=>a.order-b.order).filter(l=>[l.title,l.kind,...l.sections.flatMap(s=>[s.label,s.text])].join(' ').toLowerCase().includes(term));list.innerHTML=matches.map(l=>'<div class="item lesson-card"><div><div class="lesson-card-top"><span class="source-tag">'+lessonTag(l)+'</span><span class="lesson-number">'+(l.kind==='lesson'?String(l.order).padStart(2,'0'):'↗')+'</span></div><h2>'+safe(l.title)+'</h2><div class="lesson-meta"><span>~'+readingMinutes(l.sections)+' min read</span>'+readingBadge('lesson',l.id)+'</div></div><button onclick="openLesson(\''+l.id+'\')">Study ↗</button></div>').join('')||'<p class="muted">No matching '+clinicalDepartmentName()+' lesson.</p>'}
-function openLesson(id){const l=lessons.find(x=>x.id===id);if(!l)return;recordOpened('lesson',id);clinicalDepartment=lessonDepartment(l);updateClinicalDepartmentUi();byId('lessonList').classList.add('hidden');byId('lessonSearch').classList.add('hidden');const faq=byId('clinicalFaq');if(faq)faq.classList.add('hidden');const d=byId('lessonDetail');d.dataset.readinessItemId=id;d.classList.remove('hidden');d.innerHTML='<button class="back" onclick="closeLesson()">← All '+clinicalDepartmentName()+' lessons</button>'+readerIntro(l.title,lessonTag(l),[l.kind==='lesson'?'Lesson '+l.order:'Quick reference','~'+readingMinutes(l.sections)+' min read'])+readerContents(l.sections.map(s=>s.label))+(l.sourceNote?'<details class="reader-source"><summary>Source notes</summary><p>'+safe(l.sourceNote)+'</p></details>':'')+l.sections.map(lessonSectionHtml).join('')+(window.CoreNursingNotes?CoreNursingNotes.inlinePanel(lessonDepartment(l),'lesson',l.id,l.title):'')+readerFinish('lesson',l.id);prepareQuestionMarking('lesson',id);if(window.CoreNursingExams)CoreNursingExams.decorate('lesson',id,byId('lessonDetail'));updateReadingView();scrollStudyTo(0,0)}
+function tsfPartsIllustration(){
+  return `<figure class="tsf-figure" role="group" aria-label="Simplified Taylor Spatial Frame diagram showing metal rings, wires and pins, and six adjustable struts">
+    <svg viewBox="0 0 380 300" role="img" aria-labelledby="tsf-diagram-title tsf-diagram-desc">
+      <title id="tsf-diagram-title">Taylor Spatial Frame — identify the parts</title>
+      <desc id="tsf-diagram-desc">Two metal rings encircle a bone, connected by six struts; fixation wires or pins connect the rings to the bone. The drawing is simplified, not to scale.</desc>
+      <rect x="0" y="0" width="380" height="300" rx="15" fill="none"/>
+      <path d="M172 22L172 278M190 22L190 278" stroke="#c9b88e" stroke-width="15" stroke-linecap="round" opacity=".4"/>
+      <path d="M172 22L172 278M190 22L190 278" stroke="#dbca9e" stroke-width="4" stroke-linecap="round"/>
+      <g stroke="#7bdcc7" stroke-width="6" stroke-linecap="round">
+        <path d="M115 81L127 209"/><path d="M145 71L184 205"/><path d="M202 71L154 205"/>
+        <path d="M238 81L216 209"/><path d="M114 91L238 219"/><path d="M236 91L115 219"/>
+      </g>
+      <g fill="#93efd8" stroke="#233b44" stroke-width="2">
+        <circle cx="115" cy="81" r="5"/><circle cx="145" cy="71" r="5"/><circle cx="202" cy="71" r="5"/>
+        <circle cx="238" cy="81" r="5"/><circle cx="114" cy="91" r="5"/><circle cx="236" cy="91" r="5"/>
+      </g>
+      <g fill="none" stroke="#becbd3" stroke-width="8">
+        <ellipse cx="180" cy="80" rx="88" ry="25"/>
+        <ellipse cx="180" cy="211" rx="88" ry="25"/>
+      </g>
+      <g stroke="#e6f0f3" stroke-width="3">
+        <path d="M93 80H264"/><path d="M93 211H264"/>
+      </g>
+      <g font-size="14" font-family="system-ui,sans-serif" font-weight="650" fill="currentColor">
+        <path d="M260 56L290 39" stroke="#becbd3" stroke-width="1.5"/><text x="292" y="35">Rings</text>
+        <path d="M241 145L291 145" stroke="#7bdcc7" stroke-width="1.5"/><text x="293" y="150">Struts</text>
+        <path d="M261 211L292 240" stroke="#e6f0f3" stroke-width="1.5"/><text x="291" y="255">Wires</text>
+        <path d="M172 278L137 290" stroke="#dbca9e" stroke-width="1.5"/><text x="55" y="293">Bone</text>
+      </g>
+    </svg>
+    <figcaption>TSF parts (simplified, not to scale). The six adjustable struts join the rings. Never adjust the frame without the prescribed plan.</figcaption>
+  </figure>`;
+}
+function nextLessonButton(lesson){
+  const next=lessons.filter(l=>l.kind==='lesson'&&lessonDepartment(l)===lessonDepartment(lesson)&&l.order>lesson.order)
+    .sort((a,b)=>a.order-b.order)[0];
+  return next?'<div class="next-lesson"><button type="button" class="primary" onclick="openLesson(\''+safe(next.id)+'\')">Next lesson: '+safe(next.title)+' →</button></div>':'';
+}
+function openLesson(id){const l=lessons.find(x=>x.id===id);if(!l)return;recordOpened('lesson',id);clinicalDepartment=lessonDepartment(l);updateClinicalDepartmentUi();byId('lessonList').classList.add('hidden');byId('lessonSearch').classList.add('hidden');const faq=byId('clinicalFaq');if(faq)faq.classList.add('hidden');const d=byId('lessonDetail');d.dataset.readinessItemId=id;d.classList.remove('hidden');d.innerHTML='<button class="back" onclick="closeLesson()">← All '+clinicalDepartmentName()+' lessons</button>'+readerIntro(l.title,lessonTag(l),[l.kind==='lesson'?'Lesson '+l.order:'Quick reference','~'+readingMinutes(l.sections)+' min read'])+readerContents(l.sections.map(s=>s.label))+(l.sourceNote?'<details class="reader-source"><summary>Source notes</summary><p>'+safe(l.sourceNote)+'</p></details>':'')+l.sections.map((section,i)=>lessonSectionHtml(section,i)+(l.id==='ibd2-quick-taylor-spatial-frame'&&section.label==='Recognize the parts'?tsfPartsIllustration():'')).join('')+(window.CoreNursingNotes?CoreNursingNotes.inlinePanel(lessonDepartment(l),'lesson',l.id,l.title):'')+readerFinish('lesson',l.id)+nextLessonButton(l);prepareQuestionMarking('lesson',id);if(window.CoreNursingExams)CoreNursingExams.decorate('lesson',id,byId('lessonDetail'));updateReadingView();scrollStudyTo(0,0)}
 function closeLesson(){byId('lessonDetail').classList.add('hidden');byId('lessonList').classList.remove('hidden');byId('lessonSearch').classList.remove('hidden');const faq=byId('clinicalFaq');if(faq)faq.classList.remove('hidden');renderLessons();renderFaq();updateReadingView();scrollStudyTo(0,0)}
 let catalogFilter='all';
 function setCatalogFilter(s){if(!['all','ccu','trolley','ed','ibd2','aids'].includes(s))return;catalogFilter=s;for(const key of ['all','ccu','trolley','ed','ibd2','aids'])byId('source-'+key).classList.toggle('selected',key===s);current=null;byId('detail').classList.add('hidden');byId('search').classList.remove('hidden');byId('list').classList.remove('hidden');renderList();updateReadingView()}
@@ -67,17 +105,17 @@ function medSection(title,body,asList=false){return '<details class="med-section
 function setAllMedSections(expand){document.querySelectorAll('#detail .med-section').forEach(node=>node.open=expand)}
 function openMed(id){const m=meds.find(x=>x.id===id);if(!m)return;if(catalogFilter==='aids')setCatalogFilter('all');recordOpened('med',id);if(!current&&!byId('list').classList.contains('hidden'))medListScrollY=studyPane().scrollTop;current=id;byId('list').classList.add('hidden');byId('search').classList.add('hidden');const bookmarked=memory.bookmarks.includes(id);byId('detail').classList.remove('hidden');byId('detail').innerHTML=
 '<button class="back" onclick="closeMed()">← All medications</button>'+
-readerIntro(m.name,m.source+' · '+m.pages,[])+readerContents(['Drug class','Mechanism of action','Main use','Form & administration','Nursing considerations','Essential rationale','Palestine availability'])+
+readerIntro(m.name,m.drugclass,[])+readerContents(['Drug class','Mechanism of action','Main use','Form & administration','Nursing considerations','Essential rationale','Palestine availability'])+
 '<div class="memory-cues">'+coreCue(m,'use','REMEMBER · MAIN USE',m.memoryUse)+coreCue(m,'danger-cue','REMEMBER · DANGER / ESCALATION',m.memoryDanger)+'</div>'+
 '<div class="med-tools"><button onclick="toggleBookmark(\''+id+'\')">'+(bookmarked?'★ Bookmarked':'☆ Bookmark')+'</button><button onclick="setAllMedSections(true)">Expand all</button><button onclick="setAllMedSections(false)">Collapse all</button></div>'+
 medSection('Drug class',m.drugclass)+
-medSection('Mechanism of action · MOA',m.mechanism+'\n\n'+m.mechanismBasis)+
+medSection('Mechanism of action · MOA',m.mechanism)+
 medSection('Main use / clinical relevance',m.use)+
 medSection('Form & administration',m.administration)+
 medSection('Nursing considerations',m.monitor,true)+
 medSection('WHY — essential rationale',m.why)+
 medSection('Palestine availability — source statement',m.availability)+
-medicationFaqHtml(id)+(window.CoreNursingNotes?CoreNursingNotes.inlinePanel('general','med',id,m.name):'')+readerFinish('med',id);
+medicationFaqHtml(id)+(window.CoreNursingNotes?CoreNursingNotes.inlinePanel('general','med',id,m.name):'')+'<details class="reader-source"><summary>Sources & reference notes</summary><p>'+safe([m.source,m.pages,m.mechanismBasis].filter(Boolean).join('\n'))+'</p></details>'+readerFinish('med',id);
 byId('detail').querySelectorAll(':scope > .med-section').forEach((node,i)=>{node.dataset.studySection=i;node.classList.add(sectionTone(node.querySelector('summary').textContent)||'tone-neutral');const summary=node.querySelector('summary');summary.innerHTML=numberedLabel(summary.textContent,i)});prepareQuestionMarking('med',id);if(window.CoreNursingExams)CoreNursingExams.decorate('med',id,byId('detail'));updateReadingView();scrollStudyTo(0,0)}
 function closeMed(){current=null;byId('detail').classList.add('hidden');byId('list').classList.remove('hidden');byId('search').classList.remove('hidden');renderList();updateReadingView();requestAnimationFrame(()=>scrollStudyTo(0,medListScrollY))}
 function toggleBookmark(id){memory.bookmarks=memory.bookmarks.includes(id)?memory.bookmarks.filter(x=>x!==id):[...memory.bookmarks,id];save();openMed(id)}
@@ -108,3 +146,5 @@ function downloadOfficialApk(){
   document.getElementById('apkDownloadHelp').hidden=false;
   if(typeof bridge.copyText==='function'){bridge.copyText('Core Nursing',url);alert('تم نسخ رابط التحميل. افتحه في المتصفح.');}
 }
+
+// Q&A study reader staged release — source changes require regenerated signed runtime.
