@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-amlodipine",
+  "reviewDate": "2026-11-07",
+  "status": "Bounded current teaching-entry and scored-form author review complete; not an exhaustive monograph, local stock authentication, independent clinical validation or empirical difficulty calibration.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Dihydropyridine calcium-channel blocker",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--drug-class",
+          "sha256": "d2505ddf964bda17a63235cddce90aff24a8ae07b822156a2a7b3f480db0d6dd"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "L-type calcium channels mainly in vascular smooth muscle",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--principal-action",
+          "sha256": "aef43bf72ff20fb30217816ebe8ddb9fdf5605ca9220e06db65b80a020d5facc"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "causing arterial vasodilation",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--principal-action",
+          "sha256": "aef43bf72ff20fb30217816ebe8ddb9fdf5605ca9220e06db65b80a020d5facc"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "not an emergency BP-rescue drug because onset is gradual",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::amlodipine_onset"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--amlodipine_onset",
+          "sha256": "0a92920d3f97f0d7fa1f4dc7607a89b0c2bfe0f1290a07d6416341006487d79a"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Chronic BP control and antianginal therapy",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--treatment-role",
+          "sha256": "0118fb2441ba4ae43ce6aa83d358031059abe5c1b98c208722288241fbcebde0"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check BP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::amlodipine_bp_edema"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--amlodipine_bp_edema",
+          "sha256": "6934fe464dc720f062cd3b590d6a15997ae85ec5152ba614f3deb0efba3b3838"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "ankle/peripheral edema",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::amlodipine_bp_edema"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--amlodipine_bp_edema",
+          "sha256": "6934fe464dc720f062cd3b590d6a15997ae85ec5152ba614f3deb0efba3b3838"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Hypotension/dizziness",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::amlodipine_bp_edema"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--amlodipine_bp_edema",
+          "sha256": "6934fe464dc720f062cd3b590d6a15997ae85ec5152ba614f3deb0efba3b3838"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Do not automatically interpret amlodipine edema as total-body fluid overload; assess the whole patient",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::edema"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--edema",
+          "sha256": "6d1d1def951caacd3b98246fa938c4c45199c37ce4d8424a06176471f025dd94"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Arteriolar dilation lowers BP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--principal-action",
+          "sha256": "aef43bf72ff20fb30217816ebe8ddb9fdf5605ca9220e06db65b80a020d5facc"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "increase capillary hydrostatic pressure and ankle edema",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-amlodipine::edema"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-amlodipine--comprehensive--edema",
+          "sha256": "6d1d1def951caacd3b98246fa938c4c45199c37ce4d8424a06176471f025dd94"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document 5-mg tablets; AMICOR 5 mg is registered locally. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Stock, shelf and registered-strength observations are contextual and can change; no local-stock authentication or universal dose is claimed."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Gradual-onset antihypertensive/antianginal CCB.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Duplicate memory summary of the core facts already linked above; no extra repeated question is needed."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Hypotension and ankle edema.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Duplicate memory summary of the core facts already linked above; no extra repeated question is needed."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO; no dilution.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Physical oral formulation and prescribed-order/pack-strength checks are retained shared administration safeguards, not scored drug-specific coverage. No stock strength is presented as a universal dose. Drug-specific administration precautions are tested separately."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "availability": "33e577c5152528863c9d365906dcc6437d9e5e3a7d248ae91340f65fe826b3ce",
+    "memoryUse": "78852587ab16c39f52daa12f38f70abf89f20a57220a9c573676d22d6ad4fdf5",
+    "mechanism": "caa8d0767040d381585cc2d6bb1b1ef89c32e90e39d97c831657ddf2c2e76618",
+    "administration": "c8944bd8e44a8921bd959191b38cdeaf65f54dd6276897b3e20699e3d6236f4f",
+    "drugclass": "2eebc30e8f2cc13718e08cd8fd27f7bd54fafdd7198af91af285be90efdd28eb",
+    "memoryDanger": "6a5886b47dba7627c74bbb6c4d088dcc2e4592c009d673f048a7c64387f35e96",
+    "monitor": "4c366013dd65ac0d624a8fe6b1d1f00729462454d3bd7b3e22a0b9b55715d5e0",
+    "why": "4bda7022d5e466907a1ecbcfc9117fff76f7d0b5f3215ca0e59e1bcf11822270",
+    "use": "7070cc2f008b08d7b6714cffa0f202da25c116b58a655c23bf6a3df3a98b9494"
+  },
+  "questionSetSha256": "4951156da0e659b6ca590c9253bfe8d630ed96cbc8d09312e0aae0a5da3f17e1",
+  "questionReview": {
+    "questionsInspected": 6,
+    "checks": [
+      "Actual scored questions, keys and per-choice explanations reviewed.",
+      "Weak distractors replaced with parallel clinically relevant alternatives.",
+      "No generic postural-BP or label-check filler restored.",
+      "Required class-property recall retained; this is distinct from generic questions reusable without knowing the drug."
+    ],
+    "limits": "Author review only; no independent clinician or measured-difficulty claim."
+  },
+  "evidence": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=50204e86-a345-4d2f-b62f-a548787e197f",
+      "checkedDate": "2026-11-07"
+    },
+    {
+      "url": "https://sps.nhs.uk/articles/managing-peripheral-oedema-caused-by-calcium-channel-blockers/",
+      "checkedDate": "2026-11-07"
+    }
+  ]
+}

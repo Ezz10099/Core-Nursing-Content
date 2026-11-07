@@ -8116,5 +8116,173 @@
         }
       ]
     }
+  },
+  "losartan_volume_risk": {
+    "point": "Recognize volume/salt depletion as a hypotension risk.",
+    "anchor": "volume or salt depletion",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pretreatment history increases the risk of symptomatic hypotension when losartan is started?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Recent vomiting with reduced intake and volume depletion",
+          "explanation": "Volume or salt depletion increases the first-dose hypotension risk."
+        },
+        {
+          "text": "Stable ankle edema without reduced intake or fluid loss",
+          "explanation": "This does not identify the volume-depletion risk sought."
+        },
+        {
+          "text": "Stable glucose control without recent illness",
+          "explanation": "This does not identify depletion of fluid or salt."
+        },
+        {
+          "text": "A remote healed fracture without current symptoms",
+          "explanation": "This does not identify volume or salt depletion."
+        }
+      ]
+    }
+  },
+  "losartan_dual_risk": {
+    "point": "Recall the combined risks of dual RAAS blockade.",
+    "anchor": "Other renin-angiotensin system blockers",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which risk cluster can increase when another RAAS blocker is combined with losartan?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Hypotension, hyperkalemia and renal impairment",
+          "explanation": "Dual RAAS blockade can increase all three adverse outcomes."
+        },
+        {
+          "text": "Hypotension, hypokalemia and renal impairment",
+          "explanation": "Dual blockade can raise potassium rather than lower it."
+        },
+        {
+          "text": "Hypertension, hyperkalemia and renal impairment",
+          "explanation": "Additive RAAS blockade increases hypotension rather than hypertension risk."
+        },
+        {
+          "text": "Hypotension, hyperkalemia and improved renal function",
+          "explanation": "Renal impairment is an added risk; improvement is not guaranteed."
+        }
+      ]
+    }
+  },
+  "enalapril_volume_risk": {
+    "point": "Connect volume status with hypotension susceptibility.",
+    "anchor": "volume-depleted",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Before a first enalapril dose in a volume-depleted adult, which adverse effect is of particular concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Symptomatic hypotension",
+          "explanation": "ACE inhibition may produce a greater BP fall when volume is depleted."
+        },
+        {
+          "text": "High-grade AV block",
+          "explanation": "This is not the characteristic first-dose volume-depletion concern with an ACE inhibitor."
+        },
+        {
+          "text": "Marked hypokalemia",
+          "explanation": "Enalapril can increase rather than predictably deplete potassium."
+        },
+        {
+          "text": "Rebound hypertension",
+          "explanation": "This is not the expected initial response to RAAS blockade in volume depletion."
+        }
+      ]
+    }
+  },
+  "enalapril_pregnancy": {
+    "point": "Apply enalapril pregnancy precautions.",
+    "anchor": "fetal-toxicity",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Pregnancy is detected during enalapril treatment. Which risk and response best fit its warning?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Fetal toxicity; discontinue promptly and arrange an alternative",
+          "explanation": "The RAAS-blocking drug carries a fetal-toxicity warning and should be discontinued promptly."
+        },
+        {
+          "text": "Fetal ototoxicity; discontinue promptly and arrange an alternative",
+          "explanation": "The action is appropriate, but ototoxicity is not the warning sought."
+        },
+        {
+          "text": "Fetal toxicity; continue at a lower dose until delivery",
+          "explanation": "Dose reduction does not remove fetal-toxicity risk."
+        },
+        {
+          "text": "Fetal ototoxicity; continue at a lower dose until delivery",
+          "explanation": "Both the named warning and continued-exposure plan are inappropriate."
+        }
+      ]
+    }
+  },
+  "enalapril_sacubitril_interval": {
+    "point": "Recall the 36-hour ACE inhibitor/ARNI separation.",
+    "anchor": "36 hours",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "What minimum washout is required when switching between enalapril and sacubitril/valsartan?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "36 hours",
+          "explanation": "Allow at least 36 hours in either direction to reduce angioedema risk."
+        },
+        {
+          "text": "12 hours",
+          "explanation": "This is shorter than the required washout."
+        },
+        {
+          "text": "24 hours",
+          "explanation": "This is shorter than the required washout."
+        },
+        {
+          "text": "48 hours",
+          "explanation": "A longer interval may occur, but the specified minimum is 36 hours."
+        }
+      ]
+    }
+  },
+  "amlodipine_bp_edema": {
+    "point": "Recognize edema and BP-related adverse effects.",
+    "anchor": "Hypotension/dizziness",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which paired assessment best matches amlodipine’s important adverse-effect profile?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Blood pressure for hypotension and examination for ankle edema",
+          "explanation": "BP lowering can become symptomatic, and ankle edema is a relevant adverse effect."
+        },
+        {
+          "text": "ECG for high-grade AV block and examination for ankle edema",
+          "explanation": "This substitutes the AV-node-blocking profile of other drugs for the needed BP assessment."
+        },
+        {
+          "text": "Blood pressure for hypertension and examination for ankle edema",
+          "explanation": "The edema assessment fits, but the adverse pressure concern is hypotension."
+        },
+        {
+          "text": "Blood pressure for hypotension and testing for marked potassium loss",
+          "explanation": "The BP assessment fits, but marked potassium loss is not the characteristic second effect."
+        }
+      ]
+    }
   }
 }

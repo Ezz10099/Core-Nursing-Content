@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 2,
+  "itemId": "verified-losartan",
+  "reviewDate": "2026-11-07",
+  "status": "Bounded current teaching-entry and scored-form author review complete; not an exhaustive monograph, local stock authentication, independent clinical validation or empirical difficulty calibration.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Angiotensin II receptor blocker",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--drug-class",
+          "sha256": "4e69061fa41364af6e8ebee87d5e33689c4760244c0834b1e04515bac7144c69"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "AT1 receptor",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--principal-action",
+          "sha256": "2414b06d43db638e78e2c96c3ed164227efb99b88b6f6c2fb8906d44da071bb4"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "reducing vasoconstriction and aldosterone effects",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_at1_effects"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_at1_effects",
+          "sha256": "ae0f91656af69f372ac2a2096c75a208abf84c8dcf0876b60b28c68e84b39cd1"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "treatment of hypertension",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--treatment-role",
+          "sha256": "010116e061549e57b7f45195801d704b973190aff2fda24c356c2c069e13cd23"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "hypertensive patients with left ventricular hypertrophy",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_additional_uses"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_additional_uses",
+          "sha256": "5108f8065af14e4fbc895bf4627d578e34a9fa536c7cdadc3dc965ec40a70caa"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "proteinuric diabetic nephropathy in type 2 diabetes with a history of hypertension",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_additional_uses"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_additional_uses",
+          "sha256": "5108f8065af14e4fbc895bf4627d578e34a9fa536c7cdadc3dc965ec40a70caa"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check blood pressure",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--renal_monitor",
+          "sha256": "bed4efaa8f7836e3cb1732895d36ba9831b744d718544d5f7e5eead2965b4e34"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "volume or salt depletion",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_volume_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_volume_risk",
+          "sha256": "e1eeab9b5eba6b4b2e4d2706d82d4a7f41fea78efafde9e166f7703013677b2b"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "creatinine/renal function",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--renal_monitor",
+          "sha256": "bed4efaa8f7836e3cb1732895d36ba9831b744d718544d5f7e5eead2965b4e34"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "serum potassium",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--renal_monitor",
+          "sha256": "bed4efaa8f7836e3cb1732895d36ba9831b744d718544d5f7e5eead2965b4e34"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "hyperkalemia can occur",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::high_k"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--high_k",
+          "sha256": "5d6f425dd23066ce01f368b7825e72ae53d061379369eee586212a3c03e60e1c"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Potassium-raising drugs increase hyperkalemia risk; NSAIDs can worsen renal function",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::raas_interactions"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--raas_interactions",
+          "sha256": "f5750523265b767edba41dcc60019400599f0728cfd35d5d24c9012bdbe09ca4"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Lithium concentrations and toxicity can increase; monitor serum lithium",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_lithium"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_lithium",
+          "sha256": "7bff618b15fdf6bf15dde0a4e91817d1d5c5fdeb6e9283bbce29347fe9f16d02"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Other renin-angiotensin system blockers",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_dual_raas"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_dual_raas",
+          "sha256": "6c089c75f7d2550b11a51ec72880fb6fb3fcdf90d651aa30d7d3abbda3b915f4"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "hypotension, hyperkalemia and renal-impairment risk",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_dual_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_dual_risk",
+          "sha256": "20d200178e327b403e8aacc4d86c907e386504453d3d91e820d7ecf528f366cb"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Pregnancy carries fetal-toxicity risk: discontinue losartan promptly and arrange an alternative prescribing plan",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::pregnancy"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--pregnancy",
+          "sha256": "d40cac681a5c73f2f0c5d7968131fc39b3e4bfac2e4f05fe9a6191c49aa2ec70"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "reduces vasoconstriction and aldosterone-mediated effects, lowering blood pressure",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "verified-losartan::losartan_at1_effects"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "verified-losartan--comprehensive--losartan_at1_effects",
+          "sha256": "ae0f91656af69f372ac2a2096c75a208abf84c8dcf0876b60b28c68e84b39cd1"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Palestinian-system evidence: the Palestinian Essential Medicines List includes losartan 50 mg tablet as an antihypertensive. Current stock/availability at a specific Gaza facility has not been independently confirmed. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Stock, shelf and registered-strength observations are contextual and can change; no local-stock authentication or universal dose is claimed."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "ARB used mainly to lower blood pressure in hypertension.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Duplicate memory summary of the core facts already linked above; no extra repeated question is needed."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Watch K+, renal function and hypotension. Major red flag: pregnancy.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Duplicate memory summary of the core facts already linked above; no extra repeated question is needed."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Oral tablet. The Palestinian Essential Medicines List identifies a 50 mg tablet. Administer only according to the prescribed order; verify the product/strength in hand and current local protocol.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Physical oral formulation and prescribed-order/pack-strength checks are retained shared administration safeguards, not scored drug-specific coverage. No stock strength is presented as a universal dose. Drug-specific administration precautions are tested separately."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "availability": "9b22fa9b70cd8914e9b9c11736e76b5ebe08e2b518f3a86ee0bb5b6f7ce3ae21",
+    "memoryUse": "26cc7b2c11cf12cf55da36115c96cea613f719f518ea79ddf3cb1c4fc9d34a29",
+    "mechanism": "e0590ea2f88e8a84c2829a289e5099c669335322d3388d8d8177fac5b497ea41",
+    "administration": "211952c68f0127a411407346d79224435cd4136304b9c071fda30154f1772e09",
+    "drugclass": "3f1fae5eb01a2edd2e9b6529b13941a10b8db7d02d1ad890f7b5704935d01504",
+    "memoryDanger": "b8cd5dc7645e86f8082c01cf46d29933dac382f8882e7a237984a122ce647827",
+    "monitor": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a",
+    "why": "72b0d753cedd2338c978812daed58f3e7f7d4adb27914a7b923713b7a4bbe2e5",
+    "use": "167d881578a81154eb6b83a8c0ad95a4dcac7d1b07848dbbf75d62ceb53e2edb"
+  },
+  "questionSetSha256": "92e9f5acafada6bffeb15e7e0fe9655f3b989a694bc7a385f31a213f69544d52",
+  "questionReview": {
+    "questionsInspected": 13,
+    "checks": [
+      "Actual scored questions, keys and per-choice explanations reviewed.",
+      "Weak distractors replaced with parallel clinically relevant alternatives.",
+      "No generic postural-BP or label-check filler restored.",
+      "Required class-property recall retained; this is distinct from generic questions reusable without knowing the drug."
+    ],
+    "limits": "Author review only; no independent clinician or measured-difficulty claim."
+  },
+  "evidence": [
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5edb843a-66ed-4950-9ed0-393e6a5d7c99",
+      "checkedDate": "2026-11-07"
+    }
+  ]
+}

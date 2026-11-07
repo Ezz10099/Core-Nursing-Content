@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 43,
-  "sourceContentSha256": "cf8658fab862eebd91e7732d7a4e198fff5d295f2e6e3b05f7d949021b006223",
+  "sourceContentVersion": 44,
+  "sourceContentSha256": "c13fb4dd40a38875fa37e4ed918bbe30c458ac983d547fe0da77735552369519",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 321,
-    "questions": 1879,
-    "single-best-answer": 1849,
+    "questions": 1891,
+    "single-best-answer": 1861,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 107,
     "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 887
+    "mappedLearningPoints": 893
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -43,7 +43,7 @@
         {
           "id": "verified-losartan--standard",
           "stage": "standard",
-          "questionCount": 9
+          "questionCount": 11
         },
         {
           "id": "verified-losartan--advanced",
@@ -53,7 +53,7 @@
         {
           "id": "verified-losartan--7-day",
           "stage": "7-day",
-          "questionCount": 12
+          "questionCount": 14
         }
       ]
     },
@@ -687,7 +687,7 @@
         {
           "id": "ccu-amlodipine--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-amlodipine--advanced",
@@ -697,7 +697,7 @@
         {
           "id": "ccu-amlodipine--7-day",
           "stage": "7-day",
-          "questionCount": 6
+          "questionCount": 7
         }
       ]
     },
@@ -733,7 +733,7 @@
         {
           "id": "ccu-enalapril--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 10
         },
         {
           "id": "ccu-enalapril--advanced",
@@ -743,7 +743,7 @@
         {
           "id": "ccu-enalapril--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 11
         }
       ]
     },
@@ -2499,11 +2499,11 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "ad38d6963cb89a23d17a6928cda80b730fe8c85a9e118951eb8e7f36dd8f2a74"
+      "sha256": "e26579ecf592bf1e6e5f065f6f26080d701c4e7493c03167fce48acde2d2b7ab"
     },
     {
       "path": "banks-02.json",
-      "sha256": "c067212052e80cebb687532ef9a198345bed2a775af0f3bf1e92a83e10faae37"
+      "sha256": "90b29014284a08f60d0fb9becce67d7de6c21868dae64b8cf05d8d6e0f7e86b9"
     },
     {
       "path": "banks-03.json",
@@ -2523,7 +2523,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "695c69a36e9526619909826e1f8dcb179a44900803b61ef7f4689b54b32e3c7c"
+      "sha256": "4b2ac4b39a133a4d051313e09b05f1852a15e044b8cd2f21cbba78144e73e30c"
     }
   ]
 }
