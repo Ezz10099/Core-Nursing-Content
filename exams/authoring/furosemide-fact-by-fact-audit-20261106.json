@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 2,
+  "reviewDate": "2026-11-07",
+  "medicationId": "ccu-furosemide",
+  "revision": "three-medication-author-review-20261107",
+  "status": "Author-reviewed source-fact mapping bound to actual regenerated scored questions; unresolved facts explicitly uncredited. No independent clinical validation or calibrated difficulty.",
+  "factsReviewed": 16,
+  "facts": [
+    {
+      "fact": "Loop-diuretic classification",
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Loop diuretic.",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::drug-class"
+      ],
+      "rationale": "Requires the diuretic class.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::drug-class",
+          "questionId": "ccu-furosemide--comprehensive--drug-class",
+          "sha256": "ca2bd07a885953dee7144e4c9dbccbba0ec659f36d6c724a810c6bcd3d665ef3"
+        }
+      ]
+    },
+    {
+      "fact": "NKCC2 target and thick ascending limb site",
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Na-K-2Cl cotransporter in the thick ascending loop of Henle",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-furosemide::principal-action"
+      ],
+      "rationale": "The rewritten mechanism alternatives contrast specific renal targets/sites.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::principal-action",
+          "questionId": "ccu-furosemide--comprehensive--principal-action",
+          "sha256": "b2dfaa038fe3991b5b20f089e36fcd20d9e91925a4e78147b950f18afb562ce5"
+        }
+      ]
+    },
+    {
+      "fact": "Congestion/fluid-overload indication",
+      "sourceField": "use",
+      "sourceExcerpt": "Pulmonary/peripheral congestion and fluid overload",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::treatment-role"
+      ],
+      "rationale": "Requires identifying fluid-overloaded pulmonary congestion.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::treatment-role",
+          "questionId": "ccu-furosemide--comprehensive--treatment-role",
+          "sha256": "f12c58dcad884da59c6083a02f4b5df17800e96f1337189d4868c82db1c4c2ac"
+        }
+      ]
+    },
+    {
+      "fact": "Oral versus IV routes",
+      "sourceField": "administration",
+      "sourceExcerpt": "PO or slow IV.",
+      "assessment": "not_directly_tested",
+      "learningPointIds": [],
+      "rationale": "The route is supplied in current stems. Do not claim route recall from that context.",
+      "coverageCredit": false,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "Routine IV administration is slow",
+      "sourceField": "administration",
+      "sourceExcerpt": "Routine IV doses are given slowly",
+      "assessment": "product_instruction_pending",
+      "learningPointIds": [],
+      "rationale": "The exact local product/order is needed for a specific routine-dose instruction. The high-dose ceiling question is not credited for every routine IV regimen.",
+      "coverageCredit": false,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "High-dose controlled-infusion rate ceiling",
+      "sourceField": "administration",
+      "sourceExcerpt": "avoid rates faster than about 4 mg/min",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::slow_iv"
+      ],
+      "rationale": "Numeric recall tests the ceiling within its high-dose infusion scope.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::slow_iv",
+          "questionId": "ccu-furosemide--comprehensive--slow_iv",
+          "sha256": "efb76364dcb1a833052ac35ba775c65d2dbd6c2bbbe6c143f3b64f9b6f22197d"
+        }
+      ]
+    },
+    {
+      "fact": "High-dose infusion requires controlled delivery",
+      "sourceField": "administration",
+      "sourceExcerpt": "high-dose parenteral therapy should use controlled infusion",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_controlled_delivery"
+      ],
+      "rationale": "The scored answer requires this specific source fact; the fact is not supplied as a stem hint.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::furosemide_controlled_delivery",
+          "questionId": "ccu-furosemide--comprehensive--furosemide_controlled_delivery",
+          "sha256": "7764104e28f15d378622dae962e6cfa0b037a29972209dd37728a21c3c847646"
+        }
+      ]
+    },
+    {
+      "fact": "Congestion response",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Track urine output and congestion.",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::decongestion"
+      ],
+      "rationale": "The response question requires improved respiratory/congestion findings; renal-monitoring question separately assesses output trends.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::decongestion",
+          "questionId": "ccu-furosemide--comprehensive--decongestion",
+          "sha256": "6b8ca4a5c10892ab1a4de497c857eb4a02581f6e2abe2e683dd80207ead76b34"
+        }
+      ]
+    },
+    {
+      "fact": "BP fall/volume-depletion risk",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check BP.",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_volume_sodium"
+      ],
+      "rationale": "The scored sodium/water-loss and BP pair requires the expected depletion-pressure relationship, not symptom naming.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::furosemide_volume_sodium",
+          "questionId": "ccu-furosemide--comprehensive--furosemide_volume_sodium",
+          "sha256": "dcc65a773c32af16435dc127f8e54524e77baaf61494e072de8fcda82329c09f"
+        }
+      ]
+    },
+    {
+      "fact": "Potassium and magnesium loss concerns",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Follow K+, Mg2+",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::low_k_mg"
+      ],
+      "rationale": "The clinically relevant paired electrolytes must be selected in a post-diuresis arrhythmia scenario.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::low_k_mg",
+          "questionId": "ccu-furosemide--comprehensive--low_k_mg",
+          "sha256": "4e74a9ad5ac0ddb056711b2c089315c0244670fadcd254e184623fc77adbfbfd"
+        }
+      ]
+    },
+    {
+      "fact": "Serum sodium surveillance",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Na+ and renal function",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_sodium_monitor"
+      ],
+      "rationale": "The scored answer requires this specific source fact; the fact is not supplied as a stem hint.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::furosemide_sodium_monitor",
+          "questionId": "ccu-furosemide--comprehensive--furosemide_sodium_monitor",
+          "sha256": "41583ec141aacd2ee8e10a558368b9cad9f17bd65359c2b51d190765c2ad6fe7"
+        }
+      ]
+    },
+    {
+      "fact": "Renal function/urine-output trends",
+      "sourceField": "monitor",
+      "sourceExcerpt": "renal function",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::renal_monitor"
+      ],
+      "rationale": "The scored key selects creatinine and urine-output trends; this is a narrow monitoring point, not proof of all renal safety knowledge.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::renal_monitor",
+          "questionId": "ccu-furosemide--comprehensive--renal_monitor",
+          "sha256": "f33ecdba414a88615f941d1c5d917ab955c4a86fe0cfd7ffd10997f8ff3e950e"
+        }
+      ]
+    },
+    {
+      "fact": "Tinnitus/hearing change as ototoxicity",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Report tinnitus/hearing change",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::ototoxicity"
+      ],
+      "rationale": "Requires connecting the new auditory symptom with ototoxicity.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::ototoxicity",
+          "questionId": "ccu-furosemide--comprehensive--ototoxicity",
+          "sha256": "68c1e81bb27f1095f6fb31616add79a2dc65d3010bc5713132ab10b2d0eab39c"
+        }
+      ]
+    },
+    {
+      "fact": "Ototoxicity risk with large/rapid IV doses",
+      "sourceField": "monitor",
+      "sourceExcerpt": "especially with large/rapid IV doses",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_rapid_ototoxicity"
+      ],
+      "rationale": "The scored answer requires this specific source fact; the fact is not supplied as a stem hint.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::furosemide_rapid_ototoxicity",
+          "questionId": "ccu-furosemide--comprehensive--furosemide_rapid_ototoxicity",
+          "sha256": "d24fff62462ab23cfbf9ec3d5f153ac9b578b190acf5f97b6069dbc075010b95"
+        }
+      ]
+    },
+    {
+      "fact": "Earlier routine oral timing reduces nocturia",
+      "sourceField": "monitor",
+      "sourceExcerpt": "earlier in the day to reduce nocturia",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::diuretic_timing"
+      ],
+      "rationale": "Requires the timing rationale.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::diuretic_timing",
+          "questionId": "ccu-furosemide--comprehensive--diuretic_timing",
+          "sha256": "3ca0f56976435f7d16c02b5e086cf656a3380fd441a7c3244206d520b57e1292"
+        }
+      ]
+    },
+    {
+      "fact": "Rapid sodium/water removal can deplete volume",
+      "sourceField": "why",
+      "sourceExcerpt": "removes sodium/water rapidly but can deplete electrolytes and volume",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_volume_sodium"
+      ],
+      "rationale": "The scored pattern tests sodium/water depletion and pressure fall; no separate serum-sodium credit is inferred.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::furosemide_volume_sodium",
+          "questionId": "ccu-furosemide--comprehensive--furosemide_volume_sodium",
+          "sha256": "dcc65a773c32af16435dc127f8e54524e77baaf61494e072de8fcda82329c09f"
+        }
+      ]
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "adff96e02a802564efa6824dba7314776f32e1641d014dea815f50954f01ec81",
+    "mechanism": "7af6c132904ed973de21b580ff38d2b475813d390d2e80136b51d86f8524b126",
+    "use": "28b0706471221540e0c0be31d71e600c4bc592a2f110e21b4d4a5b17c24fed23",
+    "administration": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf",
+    "monitor": "7bc6c34f9ef4e3efe8e37896dc337e037957050b857e7615fe04e634cfa7821e",
+    "why": "5405bfaf14e369f7737cbaf36682d5267ad46c84d76af1604fddd26348734f09",
+    "memoryUse": "d6feb4fdd7070ea127f860afca5a571d5a67e005f70abd6f9f4585f977a5c245",
+    "memoryDanger": "b3b4ad6edb176e1c4622d6cf0c239f5fd4e886dd1a472b9a61267a847886610b",
+    "availability": "ef8893c12d12d34d973dddce973fb08305fd0ed498c16f5bcce6d5a3bc54e615"
+  },
+  "fieldDispositions": {
+    "memoryUse": "Repetition of core mechanism/use facts: no duplicate question required.",
+    "memoryDanger": "Repetition of adverse-effect/monitoring facts; no separate credit or extra filler question.",
+    "availability": "Stock reports, brand observations and unverified local pack strengths are not a dependable universal dosing instruction. Retained as context; local actual-product verification remains necessary."
+  },
+  "evidence": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddfc41a9-37d4-49c1-bbf3-969a98cd649c",
+      "checkedDate": "2026-11-07",
+      "scope": "IV infusion ceiling and fluid/electrolyte depletion warnings; local formulation not authenticated. Renal mechanism follows the existing teaching source."
+    }
+  ],
+  "certifiedFullCoverage": false,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "exposureOrMasteryInferred": false,
+  "summary": {
+    "directly_tested_staged": 3,
+    "not_directly_tested": 1,
+    "directly_tested": 11,
+    "product_instruction_pending": 1
+  },
+  "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
+  "questionSetSha256": "60b0f4d9b587749025b1a91fbc89085b00ebc8178a39c1d72d0d26e913efde6e",
+  "questionReview": {
+    "questionsInspected": 13,
+    "authorQuestionReviewComplete": false,
+    "checks": [
+      "Actual scored questions inspected for source support and answer cues; selected weak alternatives rewritten.",
+      "No local-product route or rate invented.",
+      "Existing generic omissions retained; no coverage credit from a fact supplied in a stem."
+    ],
+    "remaining": "Remaining required source facts and full acceptance must be resolved before Completed."
+  }
+}

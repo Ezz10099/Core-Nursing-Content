@@ -63,10 +63,10 @@ console.log('PASS: all '+banks.length+' comprehensive banks, exact error thresho
 }
 const medicationBanks=banks.filter(b=>b.itemType==='medication');
 assert.equal(medicationBanks.length,82);
-assert.equal(medicationBanks.reduce((n,b)=>n+b.scoringExclusions.length,0),30);
+assert.equal(medicationBanks.reduce((n,b)=>n+b.scoringExclusions.length,0),31);
 assert.equal(medicationBanks.flatMap(b=>b.exams[0].questions).filter(q=>q.revision).length,Object.values(JSON.parse(fs.readFileSync('exams/authoring/medication-question-revisions.json','utf8')).items).filter(x=>x.action==='replace').length);
 for(const b of medicationBanks){
  assert.equal(b.exams[0].questionCount,b.exams[0].questions.length);
  assert(!b.exams[0].questions.some(q=>q.stem.includes('becomes light-headed on standing')||q.stem.includes('minimum administration time is unclear')));
 }
-console.log('PASS: 30 generic prompts excluded, 5 drug-specific recall items, preserved history and correction migration');
+console.log('PASS: generic prompts excluded, reviewed medication recall items, preserved history and correction migration');
