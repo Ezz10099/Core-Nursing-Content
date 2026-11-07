@@ -40,7 +40,7 @@ w.toggleCompletedLessons();assert(d.querySelector('#completedLessonsLink').getAt
 w.showTab('library');w.setCatalogFilter('complete');
 assert.equal(d.querySelectorAll('#list .item').length,1,'Completed category filters medications, not lessons');
 assert(d.querySelector('#list .item').textContent.includes(med.title));
-d.querySelector('#list .item button').click();assert(!d.querySelector('#detail').classList.contains('hidden'));
+w.eval(d.querySelector('#list .item button').getAttribute('onclick'));assert(!d.querySelector('#detail').classList.contains('hidden'));
 assert.equal(state().reading['med:heparin'],'read');assert.equal(state().exams.items[med.itemId]?.attempts?.length||0,0,'Editorial completion is not an exam pass');
 w.CoreNursingReadiness.open('complete','lesson');assert.equal(d.querySelectorAll('.material-readiness-card').length,1);
 d.querySelector('.material-readiness-card button:last-child').click();assert.equal(state().exams.active.itemId,lesson.itemId,'Exam shortcut starts the real eligible exam');
