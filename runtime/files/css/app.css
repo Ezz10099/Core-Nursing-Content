@@ -148,3 +148,8 @@ body.reading-view .readiness-shortcut{display:none}
 .study-answer-space{height:5px}
 .next-lesson{margin:16px 0 28px}
 .next-lesson button{width:100%;text-align:center;min-height:48px;white-space:normal;line-height:1.45;padding:12px}
+
+/* Taylor Spatial Frame part-identification schematic. */
+.tsf-figure{max-width:520px;margin:14px 0 20px;padding:10px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}
+.tsf-figure svg{width:100%;height:auto;display:block;overflow:visible;color:var(--text)}
+.tsf-figure figcaption{font-size:12px;line-height:1.55;color:var(--muted);padding:4px 6px 7px}
