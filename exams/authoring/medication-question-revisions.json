@@ -233,6 +233,258 @@
       "action": "omit",
       "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
       "unresolvedCoverage": true
+    },
+    "ed-captopril-tablets::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which antihypertensive class contains captopril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "ACE inhibitor",
+            "explanation": "Captopril inhibits angiotensin-converting enzyme."
+          },
+          {
+            "id": "B",
+            "text": "Angiotensin-II receptor blocker",
+            "explanation": "ARBs block AT1 receptors rather than ACE."
+          },
+          {
+            "id": "C",
+            "text": "Dihydropyridine calcium-channel blocker",
+            "explanation": "This is a different antihypertensive mechanism."
+          },
+          {
+            "id": "D",
+            "text": "Beta1-selective blocker",
+            "explanation": "Captopril does not primarily block cardiac beta1 receptors."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify captopril as an ACE inhibitor.",
+        "criticalForSafety": false
+      },
+      "reason": "Medication-specific source and question-author review."
+    },
+    "ed-captopril-tablets::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which paired hormonal change is expected with captopril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Less angiotensin II and less aldosterone",
+            "explanation": "ACE inhibition reduces angiotensin II formation and aldosterone secretion."
+          },
+          {
+            "id": "B",
+            "text": "Less angiotensin II and more aldosterone",
+            "explanation": "The aldosterone direction is incorrect."
+          },
+          {
+            "id": "C",
+            "text": "More angiotensin II and less aldosterone",
+            "explanation": "The angiotensin-II direction is incorrect."
+          },
+          {
+            "id": "D",
+            "text": "More angiotensin II and more aldosterone",
+            "explanation": "Both directions are incorrect."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify reduced angiotensin II and aldosterone secretion.",
+        "criticalForSafety": false
+      },
+      "reason": "Medication-specific source and question-author review."
+    },
+    "ed-captopril-tablets::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment goal fits a prescribed oral captopril regimen?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Control of hypertension",
+            "explanation": "Captopril is an oral antihypertensive."
+          },
+          {
+            "id": "B",
+            "text": "Termination of an AV-node-dependent SVT",
+            "explanation": "This is not captopril’s rhythm-treatment role."
+          },
+          {
+            "id": "C",
+            "text": "Immediate diuresis in pulmonary congestion",
+            "explanation": "Captopril is not a loop diuretic."
+          },
+          {
+            "id": "D",
+            "text": "Rapid reversal of anticoagulation",
+            "explanation": "Captopril is not an anticoagulant reversal medicine."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify hypertension as a captopril indication.",
+        "criticalForSafety": false
+      },
+      "reason": "Medication-specific source and question-author review."
+    },
+    "ed-captopril-tablets::pregnancy": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Pregnancy is confirmed in a patient taking captopril. Which medication plan addresses its fetal-toxicity warning?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Stop captopril and promptly arrange an alternative plan",
+            "explanation": "Current labeling calls for prompt discontinuation when pregnancy is detected."
+          },
+          {
+            "id": "B",
+            "text": "Continue captopril with routine antenatal monitoring",
+            "explanation": "Monitoring alone does not remove fetal toxicity."
+          },
+          {
+            "id": "C",
+            "text": "Continue captopril until the second trimester",
+            "explanation": "The warning calls for prompt action rather than waiting."
+          },
+          {
+            "id": "D",
+            "text": "Replace captopril with another ACE inhibitor",
+            "explanation": "Another ACE inhibitor retains the class-related fetal risk."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Withhold captopril and urgently review pregnancy because of fetal toxicity.",
+        "criticalForSafety": true
+      },
+      "reason": "Medication-specific source and question-author review."
+    },
+    "ed-captopril-tablets::high_k": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which electrolyte change is particularly relevant during captopril treatment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Increasing potassium",
+            "explanation": "ACE inhibition can raise potassium."
+          },
+          {
+            "id": "B",
+            "text": "Decreasing potassium",
+            "explanation": "Potassium wasting is not the characteristic concern."
+          },
+          {
+            "id": "C",
+            "text": "Increasing calcium",
+            "explanation": "This is not the characteristic electrolyte effect."
+          },
+          {
+            "id": "D",
+            "text": "Decreasing phosphate",
+            "explanation": "This is not the characteristic electrolyte effect."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Predict captopril-associated hyperkalemia.",
+        "criticalForSafety": false
+      },
+      "reason": "Medication-specific source and question-author review."
+    },
+    "ed-captopril-tablets::renal_monitor": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which monitoring set directly addresses the principal BP, renal and electrolyte concerns with captopril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "BP, creatinine and potassium",
+            "explanation": "These check blood-pressure tolerance, renal function and hyperkalemia risk."
+          },
+          {
+            "id": "B",
+            "text": "BP, creatinine and calcium",
+            "explanation": "This omits potassium monitoring."
+          },
+          {
+            "id": "C",
+            "text": "BP, ALT and potassium",
+            "explanation": "This substitutes a liver enzyme for the renal-function measure."
+          },
+          {
+            "id": "D",
+            "text": "Temperature, creatinine and potassium",
+            "explanation": "This omits the BP assessment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Select renal-function surveillance during captopril.",
+        "criticalForSafety": false
+      },
+      "reason": "Medication-specific source and question-author review."
+    },
+    "ed-captopril-tablets::ace_history": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which previous reaction requires avoiding captopril and clarifying an alternative?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Tongue swelling during enalapril therapy",
+            "explanation": "Prior ACE-inhibitor angioedema makes repeat ACE exposure unsafe."
+          },
+          {
+            "id": "B",
+            "text": "Ankle edema during amlodipine therapy",
+            "explanation": "This is not the same class-related angioedema history."
+          },
+          {
+            "id": "C",
+            "text": "Cough during a respiratory infection",
+            "explanation": "This does not establish ACE-inhibitor angioedema."
+          },
+          {
+            "id": "D",
+            "text": "Headache during nitrate therapy",
+            "explanation": "This does not establish ACE-inhibitor angioedema."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize prior ACE-inhibitor angioedema as a contraindication.",
+        "criticalForSafety": true
+      },
+      "reason": "Medication-specific source and question-author review."
     }
   },
   "evidenceChecks": [
@@ -261,5 +513,8 @@
       "scope": "Tranexamic acid: undiluted 100 mg/mL not above 1 mL/min",
       "url": "https://dailymed-us-east-1.awsprod.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28ccedba-99cd-49f3-a782-798df5258524"
     }
-  ]
+  ],
+  "coverageRevisions": {
+    "ed-captopril-tablets": "captopril-author-review-20261107"
+  }
 }

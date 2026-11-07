@@ -7304,5 +7304,201 @@
       "correct": 0,
       "format": "single-best-answer"
     }
+  },
+  "cap_additional_uses": {
+    "point": "Recognize selected HF and stable post-MI uses.",
+    "anchor": "selected\\ heart\\-failure\\ or\\ clinically\\ stable\\ post\\-MI\\ indications",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Besides hypertension, which pair can fit selected captopril indications?",
+      "choices": [
+        {
+          "text": "Heart failure and clinically stable post-MI care",
+          "explanation": "Both can be appropriate selected indications."
+        },
+        {
+          "text": "Heart failure and shock-refractory pulseless VF",
+          "explanation": "Pulseless VF is not a captopril indication."
+        },
+        {
+          "text": "Regular SVT and clinically stable post-MI care",
+          "explanation": "Captopril does not terminate regular SVT."
+        },
+        {
+          "text": "Regular SVT and shock-refractory pulseless VF",
+          "explanation": "Neither is the stated captopril role."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "cap_emergency_limit": {
+    "point": "Do not substitute routine oral captopril for an organ-injury emergency pathway.",
+    "anchor": "hypertensive\\ emergencies\\ with\\ acute\\ organ\\ injury",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Severely elevated BP is accompanied by confirmed acute pulmonary edema and new neurological dysfunction. How should a routine oral captopril order affect the emergency response?",
+      "choices": [
+        {
+          "text": "Urgent escalation for monitored, controlled IV treatment",
+          "explanation": "Acute organ injury requires urgent evaluation and controlled treatment; routine oral captopril is not a substitute."
+        },
+        {
+          "text": "Repeat oral doses until the BP normalizes",
+          "explanation": "Repeated unsupervised oral dosing does not replace the emergency pathway."
+        },
+        {
+          "text": "Wait for the next scheduled oral dose",
+          "explanation": "This delays treatment of acute organ injury."
+        },
+        {
+          "text": "Treat the number alone without reassessing organ injury",
+          "explanation": "The acute organ injury determines the urgency and monitoring needs."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "cap_renal_cautions": {
+    "point": "Recognize both important renal-risk histories.",
+    "anchor": "severe\\ renal\\ impairment,\\ suspected\\ renal\\ artery\\ stenosis",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair requires particular renal-safety review before captopril?",
+      "choices": [
+        {
+          "text": "Severe renal impairment and suspected renal artery stenosis",
+          "explanation": "Both are important cautions."
+        },
+        {
+          "text": "Severe renal impairment and uncomplicated reflux",
+          "explanation": "Reflux is not the second renal-risk condition."
+        },
+        {
+          "text": "Normal renal function and suspected renal artery stenosis",
+          "explanation": "Normal renal function alone is not an additional renal-risk condition."
+        },
+        {
+          "text": "Normal renal function and uncomplicated reflux",
+          "explanation": "Neither states the specific renal-risk history sought."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "cap_volume_bp": {
+    "point": "Recognize volume depletion as a hypotension risk and reassess BP.",
+    "anchor": "dehydration",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Before an initial captopril dose, which history most increases concern for symptomatic hypotension?",
+      "choices": [
+        {
+          "text": "Recent vomiting with marked volume depletion",
+          "explanation": "Volume depletion increases the risk of an excessive BP fall; assess BP and clarify the plan."
+        },
+        {
+          "text": "Stable hypertension with adequate hydration",
+          "explanation": "This does not state the volume-depletion risk."
+        },
+        {
+          "text": "Stable post-MI care with adequate hydration",
+          "explanation": "A selected indication does not establish volume depletion."
+        },
+        {
+          "text": "Stable heart failure with normal volume status",
+          "explanation": "This does not state the marked volume-depletion risk."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "cap_potassium_combo": {
+    "point": "Identify potassium-raising co-therapy.",
+    "anchor": "potassium\\-raising\\ drugs\\ such\\ as\\ spironolactone\\ or\\ potassium\\ supplements",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair adds potassium-raising co-therapy that requires review with captopril?",
+      "choices": [
+        {
+          "text": "Spironolactone and potassium supplements",
+          "explanation": "Both can add to potassium elevation and require appropriate review."
+        },
+        {
+          "text": "Spironolactone and iron supplements",
+          "explanation": "Iron is not the additional potassium-raising supplement in this pair."
+        },
+        {
+          "text": "Furosemide and potassium supplements",
+          "explanation": "Furosemide is potassium-wasting rather than potassium-sparing."
+        },
+        {
+          "text": "Furosemide and iron supplements",
+          "explanation": "Neither is the potassium-raising co-therapy sought here."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "cap_angio_action": {
+    "point": "Respond to new angioedema with airway assessment and prompt cessation/escalation.",
+    "anchor": "stop\\ and\\ urgently\\ escalate",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "After captopril, a patient develops new tongue swelling and difficulty swallowing. What should the nurse do?",
+      "choices": [
+        {
+          "text": "Stop captopril and urgently assess/escalate the airway risk",
+          "explanation": "Angioedema can threaten the airway; do not wait for further progression."
+        },
+        {
+          "text": "Continue captopril while awaiting a routine review",
+          "explanation": "This maintains exposure and delays an urgent airway assessment."
+        },
+        {
+          "text": "Give the next dose with food and reassess later",
+          "explanation": "Food does not resolve ACE-inhibitor angioedema."
+        },
+        {
+          "text": "Reduce the next dose and observe until morning",
+          "explanation": "Dose reduction and delayed review do not address the airway threat."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "cap_downstream": {
+    "point": "Connect BP and potassium effects with RAAS inhibition.",
+    "anchor": "lowering\\ vascular\\ resistance\\ but\\ affecting\\ renal\\ perfusion\\ and\\ potassium\\ excretion",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which paired effect helps explain captopril’s BP benefit and potassium-monitoring need?",
+      "choices": [
+        {
+          "text": "Lower vascular resistance and reduced potassium excretion",
+          "explanation": "Less angiotensin-II action lowers resistance; reduced aldosterone can reduce potassium excretion."
+        },
+        {
+          "text": "Lower vascular resistance and increased potassium excretion",
+          "explanation": "The potassium-excretion direction does not explain hyperkalemia risk."
+        },
+        {
+          "text": "Higher vascular resistance and reduced potassium excretion",
+          "explanation": "The vascular-resistance direction does not explain BP lowering."
+        },
+        {
+          "text": "Higher vascular resistance and increased potassium excretion",
+          "explanation": "Both directions are inconsistent with the relationships tested."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

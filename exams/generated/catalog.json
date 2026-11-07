@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 40,
-  "sourceContentSha256": "f83cdce82758806896dcb4d1651657b7a5464ccbe88148ebde5750d09175a771",
+  "sourceContentVersion": 41,
+  "sourceContentSha256": "bb85a18bf6e03e0394c5c186844459a32d930e2b70e6040586cb5f3cdcad4071",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 321,
-    "questions": 1821,
-    "single-best-answer": 1791,
+    "questions": 1835,
+    "single-best-answer": 1805,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 107,
     "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 858
+    "mappedLearningPoints": 865
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -1860,7 +1860,7 @@
         {
           "id": "ed-captopril-tablets--standard",
           "stage": "standard",
-          "questionCount": 8
+          "questionCount": 15
         },
         {
           "id": "ed-captopril-tablets--advanced",
@@ -1870,7 +1870,7 @@
         {
           "id": "ed-captopril-tablets--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 15
         }
       ]
     },
@@ -2511,7 +2511,7 @@
     },
     {
       "path": "banks-04.json",
-      "sha256": "e43c356892f238bb6ee3873bc060188b6d6d42236e07e61fec3d6a1e82ae0610"
+      "sha256": "1930a798bec5c2bbdc04eac036a601d8547643fdd76ed0a075b1cfe1df6dfc6f"
     },
     {
       "path": "banks-05.json",
@@ -2523,7 +2523,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "bbbf9a4e37b7e19b0512c7b755811ee267359ab35ac6281ea8973c12a93a2d4a"
+      "sha256": "d9f9ce87b2ecc4c9ac798ecd8414886abcf4c19558f06c93d194efb604992970"
     }
   ]
 }
