@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ed-captopril-tablets",
+  "reviewDate": "2026-11-07",
+  "status": "Author review complete for the bounded current teaching entry and its scored exam; not an exhaustive drug monograph or independent clinical certification.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "ACE inhibitor",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::drug-class"
+      ],
+      "rationale": "Requires selecting the antihypertensive class among other CV classes.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--drug-class",
+          "sha256": "5e6836e89194f2047e80064fbad98fa1d66201b7d268ab305e667fbfa4338ba3"
+        }
+      ]
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "reducing angiotensin II formation and aldosterone secretion",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::principal-action"
+      ],
+      "rationale": "Hormonal alternatives vary one direction at a time; both changes are needed.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--principal-action",
+          "sha256": "eb9d2b7196318ae0bb24d800949dcf81d4b850a771f9f6be0ebbeccc8121c919"
+        }
+      ]
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Treatment of hypertension",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::treatment-role"
+      ],
+      "rationale": "Tests the antihypertensive role among alternative cardiovascular treatment goals.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--treatment-role",
+          "sha256": "17ffa1e1cb34e38053f3b6c7c041bf01e3fe612f43ff1142a4b5be253b1cc1ac"
+        }
+      ]
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "selected heart-failure",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_additional_uses"
+      ],
+      "rationale": "Paired options require both additional clinical roles.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_additional_uses",
+          "sha256": "8d5e14dc3f57d69d2579a725915231f8164bceb5db2a13fd79918eb421b0a22b"
+        }
+      ]
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "clinically stable post-MI indications",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_additional_uses"
+      ],
+      "rationale": "Paired options change each indication independently.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_additional_uses",
+          "sha256": "8d5e14dc3f57d69d2579a725915231f8164bceb5db2a13fd79918eb421b0a22b"
+        }
+      ]
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "not a substitute for controlled IV treatment of hypertensive emergencies with acute organ injury",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_emergency_limit"
+      ],
+      "rationale": "The answer requires urgent monitored controlled IV treatment rather than routine oral dosing alone.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_emergency_limit",
+          "sha256": "b022a2058fc59f1af5121cd141e87c1d43999a5419dd3780a86b41810ae202e1"
+        }
+      ]
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "monitor for sudden symptomatic hypotension",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_volume_bp"
+      ],
+      "rationale": "Requires the important volume-depletion history; BP surveillance is tested separately.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_volume_bp",
+          "sha256": "71178eafdf56ac0a174f07d278ebee3702f62bc3ececf1e8d535b6a201d4af17"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check BP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::renal_monitor"
+      ],
+      "rationale": "The monitoring alternatives each omit a different component; BP is necessary.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--renal_monitor",
+          "sha256": "f2696c24533974934c6b8b74fe35e0c6caf74d64d8d63249fea87916535bda82"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "renal function (including creatinine trend)",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::renal_monitor"
+      ],
+      "rationale": "The correct set requires the renal measure.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--renal_monitor",
+          "sha256": "f2696c24533974934c6b8b74fe35e0c6caf74d64d8d63249fea87916535bda82"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "serum potassium",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::renal_monitor"
+      ],
+      "rationale": "The correct set requires potassium rather than another electrolyte.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--renal_monitor",
+          "sha256": "f2696c24533974934c6b8b74fe35e0c6caf74d64d8d63249fea87916535bda82"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "serum potassium",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::high_k"
+      ],
+      "rationale": "Separately tests the expected direction: potassium elevation.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--high_k",
+          "sha256": "1b07da7265e29ec4879c8ec2491a33e57bfbeefb98d00b560e06c862270a1db0"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "dehydration",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_volume_bp"
+      ],
+      "rationale": "Requires recognizing volume depletion as a hypotension susceptibility.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_volume_bp",
+          "sha256": "71178eafdf56ac0a174f07d278ebee3702f62bc3ececf1e8d535b6a201d4af17"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "severe renal impairment",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_renal_cautions"
+      ],
+      "rationale": "Paired risk alternatives require both renal impairment and stenosis knowledge.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_renal_cautions",
+          "sha256": "7014756f4334da52dfe5d098d288b7d6a77a12ed42d29446a40e945285be7206"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "suspected renal artery stenosis",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_renal_cautions"
+      ],
+      "rationale": "The second risk is varied independently in the alternatives.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_renal_cautions",
+          "sha256": "7014756f4334da52dfe5d098d288b7d6a77a12ed42d29446a40e945285be7206"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "spironolactone",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_potassium_combo"
+      ],
+      "rationale": "Paired options require recognizing both potassium-raising co-therapies.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_potassium_combo",
+          "sha256": "0d8cfdb3bbbb28f6d0db024bb17b5b17c7c0e5a9c7e37e00f622c4982d8ae3ec"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "potassium supplements",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_potassium_combo"
+      ],
+      "rationale": "Supplement type is varied independently.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_potassium_combo",
+          "sha256": "0d8cfdb3bbbb28f6d0db024bb17b5b17c7c0e5a9c7e37e00f622c4982d8ae3ec"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "history of ACE-inhibitor angioedema",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::ace_history"
+      ],
+      "rationale": "Requires applying class cross-exposure risk from prior enalapril-associated tongue swelling.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--ace_history",
+          "sha256": "51ac10c3415ae604b8b32dc986f79e889b7c983dd34aa5ca0fa866b8ad38b350"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "if lip/tongue swelling or airway symptoms occur, stop and urgently escalate",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_angio_action"
+      ],
+      "rationale": "Tests cessation plus urgent airway response rather than just naming a syndrome.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_angio_action",
+          "sha256": "cb5d5fa763d5dbe335cfa6a9d33585d1216e391c1580f27b168eb6cae9678bb6"
+        }
+      ]
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Do not give in pregnancy",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::pregnancy"
+      ],
+      "rationale": "Tests prompt discontinuation/alternative planning; another ACE inhibitor is not an appropriate substitute.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--pregnancy",
+          "sha256": "2d02384d123aa40dca2f90322cc4045ef5ddb0795d432e4f86fceb90e1364129"
+        }
+      ]
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "lowering vascular resistance",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_downstream"
+      ],
+      "rationale": "The paired alternatives require the vascular and potassium effects.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_downstream",
+          "sha256": "5e54ac66c9c540cfdc51aeb4f00e0456289ec9c305e816f1ab0b2bbb4190cb23"
+        }
+      ]
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "reduced aldosterone can reduce potassium excretion",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ed-captopril-tablets::cap_downstream"
+      ],
+      "rationale": "The potassium-excretion direction is required to distinguish the correct pair.",
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ed-captopril-tablets--comprehensive--cap_downstream",
+          "sha256": "5e54ac66c9c540cfdc51aeb4f00e0456289ec9c305e816f1ab0b2bbb4190cb23"
+        }
+      ]
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Oral tablet only in this entry; not an IV/IM preparation. Check the written order, actual tablet strength and swallowing safety. BP reduction depends on the clinical indication; monitor for sudden symptomatic hypotension.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "The oral-tablet identity is explicit in the material title. Order, actual strength and swallowing verification are retained shared administration checks; no repeated label-check filler or invented IV formulation/dose is credited. BP tolerance is directly assessed above."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Oral ACE inhibitor for selected BP/HF indications.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Repeated summary of the class and indications already tested; no duplicate question required."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Hypotension, hyperkalemia, renal function changes and angioedema; pregnancy contraindication.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Repeated summary of the BP, potassium, renal, angioedema and pregnancy points already tested."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "ED oral drawer labeled Captopril, likely 25 mg, photographed 2 Nov 2026. Exact available strength and present stock must be checked against physical packet.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Unverified shelf strength and changing stock are contextual observations, not a universal clinical dose or a fact to memorize. Verify the actual packet and authorized order."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "0af2ad3fc09a29f36f7ea7e2038aa90268f3ca145b136004b297af0f99aabf7a",
+    "mechanism": "01489b8a742aac310580cf0bc45a980548b70d02b775480229e846f872879754",
+    "use": "a09d4bbdd36c4bf4cd4669b2392c8f0de39af7e0b5f27882b1db18a05acce558",
+    "administration": "d3ed5a615974c82e27d2eba7f1619124548d1106c801a8cfc5ac067b737e3f3c",
+    "monitor": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5",
+    "why": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802",
+    "availability": "7bff0451b3a3b449a1ff1e6fc9760241bdceb25fbf19ad64a8d7e46f992ddf79",
+    "memoryUse": "2e154381c216e7621e322848f45da8e295d23977ce1553c04ea5c13fac563651",
+    "memoryDanger": "d2588496f10458e96c9f1cdd379cf1486e13422efbeb20485a2f6f1b169453a1"
+  },
+  "questionSetSha256": "2ce31b125af9d9019aaa92b144995680145b6e4a5eda24ae399f447576064106",
+  "questionReview": {
+    "questionsInspected": 14,
+    "checks": [
+      "Source-supported most-correct keys and choice explanations",
+      "Parallel alternatives for combined hormonal, risk and monitoring points",
+      "No answer credit from a fact merely printed in the stem",
+      "No numeric local-dose or shelf-strength key invented",
+      "Class, mechanism, indications and safety points reviewed as a set"
+    ],
+    "limits": "Author self-review, not independent clinician or empirical psychometric validation."
+  },
+  "evidence": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65ed6e70-f1ee-437e-965c-d1b1fdadd832",
+      "checkedDate": "2026-11-07"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b789f16-b291-4012-be39-af3beec3ff9a",
+      "checkedDate": "2026-11-07"
+    },
+    {
+      "url": "https://professional.heart.org/en/science-news/management-of-elevated-blood-pressure-in-the-acute-care-setting/top-things-to-know",
+      "checkedDate": "2026-11-07"
+    }
+  ]
+}

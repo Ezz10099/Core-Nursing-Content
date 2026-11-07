@@ -83,7 +83,7 @@ def build():
                         for choice,replacement in zip([c for c in q['choices'] if c['id']!=q['answerKey']],edit['choices']):
                             choice['text']=replacement[0]
                             choice['explanation']=replacement[1]
-                if concept=='principal-action':
+                if concept=='principal-action' and not q.get('revision'):
                     profile=profiles['items'][bank['itemId']];family=profile['family'];group=profiles['families'][family]['group']
                     peers={
                         'bp':['ace','arb','beta1','nitrate','tamsulosin'],

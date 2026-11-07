@@ -3,9 +3,21 @@
   "definition": "Completed means the material and its scored exam have finished the documented author-level source-fact and question review. It does not mean the learner has read, passed or mastered it, nor independent clinical certification.",
   "defaultStatus": "not_reviewed",
   "items": {
-    "ccu-heparin-ufh": {"status": "in_review"},
-    "ed-ondansetron-provisional-shelf": {"status": "in_review"},
-    "ccu-verapamil": {"status": "in_review"},
-    "ccu-furosemide": {"status": "in_review"}
+    "ccu-heparin-ufh": {
+      "status": "in_review"
+    },
+    "ed-ondansetron-provisional-shelf": {
+      "status": "in_review"
+    },
+    "ccu-verapamil": {
+      "status": "in_review"
+    },
+    "ccu-furosemide": {
+      "status": "in_review"
+    },
+    "ed-captopril-tablets": {
+      "status": "complete",
+      "reviewRecord": "exams/authoring/captopril-fact-review-20261107.json"
+    }
   }
 }
