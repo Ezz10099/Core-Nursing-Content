@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "reviewDate": "2026-11-07",
   "medicationId": "ccu-verapamil",
-  "revision": "three-medication-author-review-20261107",
-  "status": "Author-reviewed source-fact mapping bound to actual regenerated scored questions; unresolved facts explicitly uncredited. No independent clinical validation or calibrated difficulty.",
-  "factsReviewed": 14,
+  "revision": "closed-source-review-20261107",
+  "status": "Author review complete for the bounded current teaching entry and actual scored form. Shared safeguards, duplicate summaries and unverified local stock are explicitly uncredited; not an exhaustive drug monograph, local-product authentication or independent clinical certification.",
+  "factsReviewed": 19,
   "facts": [
     {
       "fact": "Non-dihydropyridine calcium-channel blocker",
@@ -21,7 +21,7 @@
         {
           "learningPointId": "ccu-verapamil::drug-class",
           "questionId": "ccu-verapamil--comprehensive--drug-class",
-          "sha256": "7b212b46788f0ccaad44afffc613f473307e970cf6dbac2a72bd36b594af4055"
+          "sha256": "2f7fb78ede9f6c1ec2debaeb7d7190273a8954809db519aa1027ec04598d0fd3"
         }
       ]
     },
@@ -116,7 +116,7 @@
         {
           "learningPointId": "ccu-verapamil::verapamil_iv_monitoring",
           "questionId": "ccu-verapamil--comprehensive--verapamil_iv_monitoring",
-          "sha256": "46b9e3866840397b5fb16ef4750f1ab8af7a7002eb0716ed0045e968b635f412"
+          "sha256": "3d778adf22ab4660eaba72fa68f21a4229fd32d516a7586d0a7ffc5fb4a8bb39"
         }
       ]
     },
@@ -135,19 +135,19 @@
         {
           "learningPointId": "ccu-verapamil::verapamil_iv_monitoring",
           "questionId": "ccu-verapamil--comprehensive--verapamil_iv_monitoring",
-          "sha256": "46b9e3866840397b5fb16ef4750f1ab8af7a7002eb0716ed0045e968b635f412"
+          "sha256": "3d778adf22ab4660eaba72fa68f21a4229fd32d516a7586d0a7ffc5fb4a8bb39"
         }
       ]
     },
     {
       "fact": "Oral and IV products are distinct",
       "sourceField": "administration",
-      "sourceExcerpt": "oral verapamil is a separate formulation",
-      "assessment": "not_directly_tested",
+      "sourceExcerpt": "Oral verapamil is a separate formulation",
+      "assessment": "excluded_shared_formulation_rule",
       "learningPointIds": [],
-      "rationale": "Oral use is supplied in a constipation/use stem; do not credit that context as route/formulation recall.",
+      "rationale": "The physical oral/injection formulation distinction is a retained shared administration safeguard, not drug-specific coverage credit. Oral constipation/antianginal effects and IV time/monitoring are directly assessed; no repeated tablet-versus-injection filler is scored.",
       "coverageCredit": false,
-      "requiredForCoverage": true,
+      "requiredForCoverage": false,
       "observedQuestionEvidence": []
     },
     {
@@ -203,7 +203,7 @@
         {
           "learningPointId": "ccu-verapamil::verapamil_constipation",
           "questionId": "ccu-verapamil--comprehensive--verapamil_constipation",
-          "sha256": "7ab4b8de7f310e4f332a03d8b2555bd043e1f6f16a25c3ba92047665dbd9d62f"
+          "sha256": "675031d12ec60987377ceb2d55970044679c70727d893a12e6e888c937c99c70"
         }
       ]
     },
@@ -222,7 +222,7 @@
         {
           "learningPointId": "ccu-verapamil::verapamil_iv_beta",
           "questionId": "ccu-verapamil--comprehensive--verapamil_iv_beta",
-          "sha256": "f5a4bb2f79e251d7f2d23721a28c1f9940daefd7c194757738d065aa598bea3d"
+          "sha256": "8530681c1f11c8827f5445fe5507fb9f54a5b09a24a8568155fff3829286c350"
         }
       ]
     },
@@ -241,40 +241,111 @@
         {
           "learningPointId": "ccu-verapamil::avnode_combination",
           "questionId": "ccu-verapamil--comprehensive--avnode_combination",
-          "sha256": "86f12f36620586978d4ea3f6ea2b3c5626f54e93049a1d8df13604b19b14f433"
+          "sha256": "6ec63fe5ff53320e7e08fc7bea140f1fe255996f60e478121fac0eaca1a38bb5"
         }
       ]
     },
     {
       "fact": "Review other AV-node-slowing medicines",
       "sourceField": "monitor",
-      "sourceExcerpt": "Review other AV-node-slowing medicines as well.",
-      "assessment": "partially_tested",
+      "sourceExcerpt": "Review other AV-node-slowing medicines, including digoxin.",
+      "assessment": "directly_tested",
       "learningPointIds": [
-        "ccu-verapamil::avnode_combination"
+        "ccu-verapamil::verapamil_digoxin_review"
       ],
-      "rationale": "The exam addresses beta blockade; no additional named interaction is taught or separately tested.",
-      "coverageCredit": false,
+      "rationale": "Selecting the scored answer requires this source fact; it is not supplied in the question stem.",
+      "coverageCredit": true,
       "requiredForCoverage": true,
       "observedQuestionEvidence": [
         {
-          "learningPointId": "ccu-verapamil::avnode_combination",
-          "questionId": "ccu-verapamil--comprehensive--avnode_combination",
-          "sha256": "86f12f36620586978d4ea3f6ea2b3c5626f54e93049a1d8df13604b19b14f433"
+          "learningPointId": "ccu-verapamil::verapamil_digoxin_review",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_digoxin_review",
+          "sha256": "d50374a710567f55d51aa319a417e41e4fe32548aeeea3fa8cf0bf0148482a6b"
         }
       ]
+    },
+    {
+      "fact": "Older-patient slower injection",
+      "sourceField": "administration",
+      "sourceExcerpt": "in older patients administer over at least 3 minutes",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_older_iv_time"
+      ],
+      "assessment": "directly_tested",
+      "rationale": "The scored answer requires the named age-specific time or interaction review.",
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_older_iv_time",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_older_iv_time",
+          "sha256": "4ff91caf022ecc12a648d8ae489389f33bda9419be82872f7b8bd2467b0cff73"
+        }
+      ]
+    },
+    {
+      "fact": "Ongoing oral verapamil raises digoxin concentration",
+      "sourceField": "monitor",
+      "sourceExcerpt": "serum digoxin levels can rise",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_digoxin_review"
+      ],
+      "assessment": "directly_tested",
+      "rationale": "The scored answer requires the named age-specific time or interaction review.",
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_digoxin_review",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_digoxin_review",
+          "sha256": "d50374a710567f55d51aa319a417e41e4fe32548aeeea3fa8cf0bf0148482a6b"
+        }
+      ]
+    },
+    {
+      "fact": "memoryUse disposition",
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "AV-node-slowing CCB used for selected SVTs/rate control.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Repetition of core mechanism/use facts: no duplicate question required.",
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "memoryDanger disposition",
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Bradycardia, AV block and hypotension; beta-blocker overlap can be dangerous.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Repetition of adverse-effect/monitoring facts; no separate credit or extra filler question.",
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "availability disposition",
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document 5-mg ampoules and 40-mg tablets. ED departmental stock confirmed by learner, 2 Nov 2026; verify actual injectable ampoule and ordered route.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Stock reports, brand observations and unverified local pack strengths are not a dependable universal dosing instruction. Retained as context; local actual-product verification remains necessary.",
+      "observedQuestionEvidence": []
     }
   ],
   "reviewedSourceFieldSha256": {
-    "drugclass": "68df9b3c76e17e4340fbf02884cd37575419e5644d808e509acf373ef8140411",
     "mechanism": "b3e46f0a632678b128440add1da37e54f4446de125f067e2073ab3abdbfebcb0",
     "use": "7c9300ff2e130805f410dead0055a284b0ce242f681a82562fa83e2f34971517",
-    "administration": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79",
-    "monitor": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784",
     "why": "93b40cea196f98bdac51eeb5e9041c00d9028ed08c4e60136d97e5acfefc69d1",
-    "memoryUse": "00663123e9efb486af4843d9cebc5d0a611a0faf277ad54c065ca827a68915e1",
+    "monitor": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6",
+    "availability": "4c239de702ebd3eaed9770b116d0b8e0c6a85fa2362757ba7a92f44623204f7c",
     "memoryDanger": "f5a58f1aec45c91989aedb88d5218f0cc6b625baa7e31c12d5ef8b198294959b",
-    "availability": "4c239de702ebd3eaed9770b116d0b8e0c6a85fa2362757ba7a92f44623204f7c"
+    "memoryUse": "00663123e9efb486af4843d9cebc5d0a611a0faf277ad54c065ca827a68915e1",
+    "administration": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931",
+    "drugclass": "68df9b3c76e17e4340fbf02884cd37575419e5644d808e509acf373ef8140411"
   },
   "fieldDispositions": {
     "memoryUse": "Repetition of core mechanism/use facts: no duplicate question required.",
@@ -286,28 +357,35 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7a749d0-4ab3-4fbb-8d7b-e09d68413c41",
       "checkedDate": "2026-11-07",
       "scope": "IV monitoring, administration, conduction/BP risks and close IV beta-blocker contraindication; local product not authenticated."
+    },
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4d29e80-2f6f-475d-b704-f9443aadf3db",
+      "checkedDate": "2026-11-07",
+      "scope": "Oral verapamil interaction with digoxin; not a new universal dosing instruction."
     }
   ],
-  "certifiedFullCoverage": false,
+  "certifiedFullCoverage": true,
   "independentClinicalValidation": false,
   "empiricallyCalibratedDifficulty": false,
   "exposureOrMasteryInferred": false,
   "summary": {
     "directly_tested_staged": 6,
-    "not_directly_tested": 1,
-    "directly_tested": 6,
-    "partially_tested": 1
+    "excluded_shared_formulation_rule": 1,
+    "directly_tested": 9,
+    "excluded_duplicate_or_stock_context": 3
   },
   "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
-  "questionSetSha256": "66d6061aa19415a049926159b0cc900b8ba82595d8c703d619056ee9692b8fb3",
+  "questionSetSha256": "3c336f53b2466775156ee5ff9cfdcd5e329443bfec03b71b7cd4f289493c95c0",
   "questionReview": {
-    "questionsInspected": 11,
-    "authorQuestionReviewComplete": false,
+    "questionsInspected": 13,
+    "authorQuestionReviewComplete": true,
     "checks": [
-      "Actual scored questions inspected for source support and answer cues; selected weak alternatives rewritten.",
-      "No local-product route or rate invented.",
-      "Existing generic omissions retained; no coverage credit from a fact supplied in a stem."
+      "Source-supported keys and explanations reviewed for the actual scored form.",
+      "Drug-dependent knowledge required; shared formulation/order checks excluded without coverage credit.",
+      "Product-specific examples explicitly identified; local stock not authenticated.",
+      "Choices checked for plausible alternatives, paired discrimination and wording clues."
     ],
-    "remaining": "Remaining required source facts and full acceptance must be resolved before Completed."
-  }
+    "limits": "Author review only; no independent clinician review or empirical difficulty calibration."
+  },
+  "authorQuestionReviewComplete": true
 }

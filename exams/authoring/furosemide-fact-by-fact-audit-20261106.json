@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "reviewDate": "2026-11-07",
   "medicationId": "ccu-furosemide",
-  "revision": "three-medication-author-review-20261107",
-  "status": "Author-reviewed source-fact mapping bound to actual regenerated scored questions; unresolved facts explicitly uncredited. No independent clinical validation or calibrated difficulty.",
-  "factsReviewed": 16,
+  "revision": "closed-source-review-20261107",
+  "status": "Author review complete for the bounded current teaching entry and actual scored form. Shared safeguards, duplicate summaries and unverified local stock are explicitly uncredited; not an exhaustive drug monograph, local-product authentication or independent clinical certification.",
+  "factsReviewed": 19,
   "facts": [
     {
       "fact": "Loop-diuretic classification",
@@ -21,7 +21,7 @@
         {
           "learningPointId": "ccu-furosemide::drug-class",
           "questionId": "ccu-furosemide--comprehensive--drug-class",
-          "sha256": "ca2bd07a885953dee7144e4c9dbccbba0ec659f36d6c724a810c6bcd3d665ef3"
+          "sha256": "09688e94055fde57ee093591e95c86c47420eebd268331d7a6b25c53907db35e"
         }
       ]
     },
@@ -67,28 +67,36 @@
       "fact": "Oral versus IV routes",
       "sourceField": "administration",
       "sourceExcerpt": "PO or slow IV.",
-      "assessment": "not_directly_tested",
+      "assessment": "excluded_shared_formulation_rule",
       "learningPointIds": [],
-      "rationale": "The route is supplied in current stems. Do not claim route recall from that context.",
+      "rationale": "Oral-tablet versus injectable-product recognition is retained as shared formulation safety, without drug-specific coverage credit. The actual furosemide-specific routine IV duration and high-dose rate are scored separately; no generic label-check question is added.",
       "coverageCredit": false,
-      "requiredForCoverage": true,
+      "requiredForCoverage": false,
       "observedQuestionEvidence": []
     },
     {
       "fact": "Routine IV administration is slow",
       "sourceField": "administration",
-      "sourceExcerpt": "Routine IV doses are given slowly",
-      "assessment": "product_instruction_pending",
-      "learningPointIds": [],
-      "rationale": "The exact local product/order is needed for a specific routine-dose instruction. The high-dose ceiling question is not credited for every routine IV regimen.",
-      "coverageCredit": false,
+      "sourceExcerpt": "routine adult 20–40-mg IV dose slowly over 1–2 minutes",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_routine_iv_time"
+      ],
+      "rationale": "Selecting the scored answer requires this source fact; it is not supplied in the question stem.",
+      "coverageCredit": true,
       "requiredForCoverage": true,
-      "observedQuestionEvidence": []
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-furosemide::furosemide_routine_iv_time",
+          "questionId": "ccu-furosemide--comprehensive--furosemide_routine_iv_time",
+          "sha256": "f25f6c74d54d004c1c1583caf2e5593b65ea6662e82826c08dd4902c09ce9d82"
+        }
+      ]
     },
     {
       "fact": "High-dose controlled-infusion rate ceiling",
       "sourceField": "administration",
-      "sourceExcerpt": "avoid rates faster than about 4 mg/min",
+      "sourceExcerpt": "avoid rates faster than 4 mg/min",
       "assessment": "directly_tested",
       "learningPointIds": [
         "ccu-furosemide::slow_iv"
@@ -107,7 +115,7 @@
     {
       "fact": "High-dose infusion requires controlled delivery",
       "sourceField": "administration",
-      "sourceExcerpt": "high-dose parenteral therapy should use controlled infusion",
+      "sourceExcerpt": "High-dose parenteral therapy should use controlled infusion",
       "assessment": "directly_tested",
       "learningPointIds": [
         "ccu-furosemide::furosemide_controlled_delivery"
@@ -138,7 +146,7 @@
         {
           "learningPointId": "ccu-furosemide::decongestion",
           "questionId": "ccu-furosemide--comprehensive--decongestion",
-          "sha256": "6b8ca4a5c10892ab1a4de497c857eb4a02581f6e2abe2e683dd80207ead76b34"
+          "sha256": "0ea1c7697af565d10d72636831685fb7a70cdc1059f6f8146e5fc253c188605b"
         }
       ]
     },
@@ -157,7 +165,7 @@
         {
           "learningPointId": "ccu-furosemide::furosemide_volume_sodium",
           "questionId": "ccu-furosemide--comprehensive--furosemide_volume_sodium",
-          "sha256": "dcc65a773c32af16435dc127f8e54524e77baaf61494e072de8fcda82329c09f"
+          "sha256": "ccd5249d2ad9cbaaeb1bd941a3bc7de0a64e9c1092252dc5d7a6ff744d49f6e2"
         }
       ]
     },
@@ -195,7 +203,7 @@
         {
           "learningPointId": "ccu-furosemide::furosemide_sodium_monitor",
           "questionId": "ccu-furosemide--comprehensive--furosemide_sodium_monitor",
-          "sha256": "41583ec141aacd2ee8e10a558368b9cad9f17bd65359c2b51d190765c2ad6fe7"
+          "sha256": "dbdd116e60544f778dfd6e0d806209d1d034574c17a51e61c9f9caa17d523207"
         }
       ]
     },
@@ -214,7 +222,7 @@
         {
           "learningPointId": "ccu-furosemide::renal_monitor",
           "questionId": "ccu-furosemide--comprehensive--renal_monitor",
-          "sha256": "f33ecdba414a88615f941d1c5d917ab955c4a86fe0cfd7ffd10997f8ff3e950e"
+          "sha256": "36ae1215e3cd48f9f473339ce155d3d40c94029e9038b03ec27d40d36c4f5096"
         }
       ]
     },
@@ -233,7 +241,7 @@
         {
           "learningPointId": "ccu-furosemide::ototoxicity",
           "questionId": "ccu-furosemide--comprehensive--ototoxicity",
-          "sha256": "68c1e81bb27f1095f6fb31616add79a2dc65d3010bc5713132ab10b2d0eab39c"
+          "sha256": "0dc1d0de64aa0328a1545386c6c59edab473ad3df51853313702de00513768d9"
         }
       ]
     },
@@ -252,7 +260,7 @@
         {
           "learningPointId": "ccu-furosemide::furosemide_rapid_ototoxicity",
           "questionId": "ccu-furosemide--comprehensive--furosemide_rapid_ototoxicity",
-          "sha256": "d24fff62462ab23cfbf9ec3d5f153ac9b578b190acf5f97b6069dbc075010b95"
+          "sha256": "e2378242c2e58864a4bf6c00249abfaca95e2d6cf953b532e691eba43ab90113"
         }
       ]
     },
@@ -271,7 +279,7 @@
         {
           "learningPointId": "ccu-furosemide::diuretic_timing",
           "questionId": "ccu-furosemide--comprehensive--diuretic_timing",
-          "sha256": "3ca0f56976435f7d16c02b5e086cf656a3380fd441a7c3244206d520b57e1292"
+          "sha256": "5342ab0f31e270b5378fc481c7d1894afa98af36668bcd06d475c20b6248edf3"
         }
       ]
     },
@@ -290,21 +298,54 @@
         {
           "learningPointId": "ccu-furosemide::furosemide_volume_sodium",
           "questionId": "ccu-furosemide--comprehensive--furosemide_volume_sodium",
-          "sha256": "dcc65a773c32af16435dc127f8e54524e77baaf61494e072de8fcda82329c09f"
+          "sha256": "ccd5249d2ad9cbaaeb1bd941a3bc7de0a64e9c1092252dc5d7a6ff744d49f6e2"
         }
       ]
+    },
+    {
+      "fact": "memoryUse disposition",
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Strong loop diuretic for fluid overload/pulmonary congestion.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Repetition of core mechanism/use facts: no duplicate question required.",
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "memoryDanger disposition",
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Hypotension, electrolyte loss and high/rapid-dose ototoxicity.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Repetition of adverse-effect/monitoring facts; no separate credit or extra filler question.",
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "availability disposition",
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document a 20-mg ampoule, 40-mg tablet and a higher-strength injectable presentation. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Stock reports, brand observations and unverified local pack strengths are not a dependable universal dosing instruction. Retained as context; local actual-product verification remains necessary.",
+      "observedQuestionEvidence": []
     }
   ],
   "reviewedSourceFieldSha256": {
-    "drugclass": "adff96e02a802564efa6824dba7314776f32e1641d014dea815f50954f01ec81",
     "mechanism": "7af6c132904ed973de21b580ff38d2b475813d390d2e80136b51d86f8524b126",
     "use": "28b0706471221540e0c0be31d71e600c4bc592a2f110e21b4d4a5b17c24fed23",
-    "administration": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf",
-    "monitor": "7bc6c34f9ef4e3efe8e37896dc337e037957050b857e7615fe04e634cfa7821e",
     "why": "5405bfaf14e369f7737cbaf36682d5267ad46c84d76af1604fddd26348734f09",
-    "memoryUse": "d6feb4fdd7070ea127f860afca5a571d5a67e005f70abd6f9f4585f977a5c245",
+    "monitor": "7bc6c34f9ef4e3efe8e37896dc337e037957050b857e7615fe04e634cfa7821e",
+    "availability": "ef8893c12d12d34d973dddce973fb08305fd0ed498c16f5bcce6d5a3bc54e615",
     "memoryDanger": "b3b4ad6edb176e1c4622d6cf0c239f5fd4e886dd1a472b9a61267a847886610b",
-    "availability": "ef8893c12d12d34d973dddce973fb08305fd0ed498c16f5bcce6d5a3bc54e615"
+    "memoryUse": "d6feb4fdd7070ea127f860afca5a571d5a67e005f70abd6f9f4585f977a5c245",
+    "administration": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661",
+    "drugclass": "adff96e02a802564efa6824dba7314776f32e1641d014dea815f50954f01ec81"
   },
   "fieldDispositions": {
     "memoryUse": "Repetition of core mechanism/use facts: no duplicate question required.",
@@ -318,26 +359,28 @@
       "scope": "IV infusion ceiling and fluid/electrolyte depletion warnings; local formulation not authenticated. Renal mechanism follows the existing teaching source."
     }
   ],
-  "certifiedFullCoverage": false,
+  "certifiedFullCoverage": true,
   "independentClinicalValidation": false,
   "empiricallyCalibratedDifficulty": false,
   "exposureOrMasteryInferred": false,
   "summary": {
     "directly_tested_staged": 3,
-    "not_directly_tested": 1,
-    "directly_tested": 11,
-    "product_instruction_pending": 1
+    "excluded_shared_formulation_rule": 1,
+    "directly_tested": 12,
+    "excluded_duplicate_or_stock_context": 3
   },
   "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
-  "questionSetSha256": "60b0f4d9b587749025b1a91fbc89085b00ebc8178a39c1d72d0d26e913efde6e",
+  "questionSetSha256": "87e5eedb69dbad71dd7186fd685fd2cce35aa615bde298d0ab0f0b1573768bc5",
   "questionReview": {
-    "questionsInspected": 13,
-    "authorQuestionReviewComplete": false,
+    "questionsInspected": 14,
+    "authorQuestionReviewComplete": true,
     "checks": [
-      "Actual scored questions inspected for source support and answer cues; selected weak alternatives rewritten.",
-      "No local-product route or rate invented.",
-      "Existing generic omissions retained; no coverage credit from a fact supplied in a stem."
+      "Source-supported keys and explanations reviewed for the actual scored form.",
+      "Drug-dependent knowledge required; shared formulation/order checks excluded without coverage credit.",
+      "Product-specific examples explicitly identified; local stock not authenticated.",
+      "Choices checked for plausible alternatives, paired discrimination and wording clues."
     ],
-    "remaining": "Remaining required source facts and full acceptance must be resolved before Completed."
-  }
+    "limits": "Author review only; no independent clinician review or empirical difficulty calibration."
+  },
+  "authorQuestionReviewComplete": true
 }
