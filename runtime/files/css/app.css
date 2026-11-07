@@ -153,3 +153,9 @@ body.reading-view .readiness-shortcut{display:none}
 .tsf-figure{max-width:520px;margin:14px 0 20px;padding:10px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}
 .tsf-figure svg{width:100%;height:auto;display:block;overflow:visible;color:var(--text)}
 .tsf-figure figcaption{font-size:12px;line-height:1.55;color:var(--muted);padding:4px 6px 7px}
+
+/* Keep editorial preparation details accessible without crowding Home or the medication catalog. */
+.material-preparation-details{margin:12px 0 16px}
+.material-preparation-details>summary{cursor:pointer;color:var(--muted);font-size:13px;font-weight:650;padding:8px 4px;min-height:40px}
+.material-preparation-details[open]>summary{color:var(--text)}
+.material-preparation-details .material-readiness{margin:8px 0 12px}
