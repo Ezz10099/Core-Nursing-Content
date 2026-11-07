@@ -3576,6 +3576,58 @@
       ]
     },
     {
+      "id": "ccu-verapamil::verapamil_iv_monitoring",
+      "itemId": "ccu-verapamil",
+      "point": "Recall the required monitoring during IV verapamil rather than receiving it as a stem hint.",
+      "questionIds": [
+        "ccu-verapamil--standard--verapamil_iv_monitoring",
+        "ccu-verapamil--7-day--verapamil_iv_monitoring"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-verapamil::verapamil_iv_beta",
+      "itemId": "ccu-verapamil",
+      "point": "Recognize the contraindicated close administration of IV verapamil and an IV beta blocker.",
+      "questionIds": [
+        "ccu-verapamil--standard--verapamil_iv_beta",
+        "ccu-verapamil--7-day--verapamil_iv_beta"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-verapamil::verapamil_antianginal",
+      "itemId": "ccu-verapamil",
+      "point": "Recognize verapamil’s antianginal use separately from supraventricular rate control.",
+      "questionIds": [
+        "ccu-verapamil--standard--verapamil_antianginal",
+        "ccu-verapamil--7-day--verapamil_antianginal"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-verapamil::verapamil_deterioration_action",
+      "itemId": "ccu-verapamil",
+      "point": "Respond promptly to symptomatic cardiac/circulatory deterioration.",
+      "questionIds": [
+        "ccu-verapamil--standard--verapamil_deterioration_action",
+        "ccu-verapamil--7-day--verapamil_deterioration_action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-verapamil::avnode_combination",
       "itemId": "ccu-verapamil",
       "point": "Combining AV-node-slowing drugs can compound bradycardia or block.",
@@ -3874,6 +3926,58 @@
       "questionIds": [
         "ccu-furosemide--standard--diuretic_timing",
         "ccu-furosemide--7-day--diuretic_timing"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-furosemide::furosemide_volume_sodium",
+      "itemId": "ccu-furosemide",
+      "point": "Recognize sodium/water depletion and hypotension as risks of excessive furosemide diuresis.",
+      "questionIds": [
+        "ccu-furosemide--standard--furosemide_volume_sodium",
+        "ccu-furosemide--7-day--furosemide_volume_sodium"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-furosemide::furosemide_sodium_monitor",
+      "itemId": "ccu-furosemide",
+      "point": "Include serum sodium in electrolyte surveillance.",
+      "questionIds": [
+        "ccu-furosemide--standard--furosemide_sodium_monitor",
+        "ccu-furosemide--7-day--furosemide_sodium_monitor"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-furosemide::furosemide_rapid_ototoxicity",
+      "itemId": "ccu-furosemide",
+      "point": "Connect rapid/high-dose IV administration with ototoxicity risk.",
+      "questionIds": [
+        "ccu-furosemide--standard--furosemide_rapid_ototoxicity",
+        "ccu-furosemide--7-day--furosemide_rapid_ototoxicity"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-furosemide::furosemide_controlled_delivery",
+      "itemId": "ccu-furosemide",
+      "point": "Select controlled infusion for high-dose parenteral therapy.",
+      "questionIds": [
+        "ccu-furosemide--standard--furosemide_controlled_delivery",
+        "ccu-furosemide--7-day--furosemide_controlled_delivery"
       ],
       "stages": [
         "standard",
@@ -8227,6 +8331,123 @@
       "stages": [
         "standard",
         "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_apomorphine",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_apomorphine"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_congenital_qt",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Distinguish the ondansetron label's avoidance recommendation in congenital long-QT syndrome from monitoring precautions for other risk factors.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_congenital_qt",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_congenital_qt"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_cardiac_qt_risk",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Recognize heart failure, bradyarrhythmia and QT-prolonging co-medication as ECG-monitoring risk factors with IV ondansetron.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_cardiac_qt_risk",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_cardiac_qt_risk"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_class_hypersensitivity",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify prior severe reaction to another 5-HT3 antagonist as a specific hypersensitivity review concern.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_class_hypersensitivity",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_class_hypersensitivity"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_serotonergic_combination",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Recognize tramadol as a serotonergic co-medication requiring serotonin-syndrome vigilance with ondansetron.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_serotonergic_combination",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_serotonergic_combination"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_bradyarrhythmia",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify bradyarrhythmia as an ondansetron ECG-monitoring risk independent of other stated factors.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_bradyarrhythmia",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_bradyarrhythmia"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_qt_comedication",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Recognize a QT-prolonging co-medication as an independent ondansetron monitoring concern.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_comedication",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_comedication"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-ondansetron-provisional-shelf::ondansetron_prior_allergy",
+      "itemId": "ed-ondansetron-provisional-shelf",
+      "point": "Identify prior ondansetron anaphylaxis as a contraindication.",
+      "questionIds": [
+        "ed-ondansetron-provisional-shelf--standard--ondansetron_prior_allergy",
+        "ed-ondansetron-provisional-shelf--7-day--ondansetron_prior_allergy"
+      ],
+      "stages": [
+        "standard",
         "7-day"
       ]
     },
@@ -13420,9 +13641,11 @@
         "use": [
           "ccu-verapamil--standard--treatment-role",
           "ccu-verapamil--standard--slow_iv",
+          "ccu-verapamil--standard--verapamil_antianginal",
           "ccu-verapamil--advanced--avnode_combination",
           "ccu-verapamil--7-day--treatment-role",
           "ccu-verapamil--7-day--slow_iv",
+          "ccu-verapamil--7-day--verapamil_antianginal",
           "ccu-verapamil--7-day--avnode_combination"
         ],
         "memoryUse": [
@@ -13436,21 +13659,29 @@
         "administration": [
           "ccu-verapamil--standard--hypotension",
           "ccu-verapamil--standard--slow_iv",
+          "ccu-verapamil--standard--verapamil_iv_monitoring",
           "ccu-verapamil--advanced--hypotension",
           "ccu-verapamil--advanced--avnode_combination",
           "ccu-verapamil--7-day--hypotension",
           "ccu-verapamil--7-day--slow_iv",
+          "ccu-verapamil--7-day--verapamil_iv_monitoring",
           "ccu-verapamil--7-day--avnode_combination"
         ],
         "monitor": [
           "ccu-verapamil--standard--hypotension",
           "ccu-verapamil--standard--bradycardia",
           "ccu-verapamil--standard--verapamil_constipation",
+          "ccu-verapamil--standard--slow_iv",
+          "ccu-verapamil--standard--verapamil_iv_beta",
+          "ccu-verapamil--standard--verapamil_deterioration_action",
           "ccu-verapamil--advanced--hypotension",
           "ccu-verapamil--advanced--avnode_combination",
           "ccu-verapamil--7-day--hypotension",
           "ccu-verapamil--7-day--bradycardia",
           "ccu-verapamil--7-day--verapamil_constipation",
+          "ccu-verapamil--7-day--slow_iv",
+          "ccu-verapamil--7-day--verapamil_iv_beta",
+          "ccu-verapamil--7-day--verapamil_deterioration_action",
           "ccu-verapamil--7-day--avnode_combination"
         ],
         "memoryDanger": [
@@ -13584,8 +13815,10 @@
         ],
         "why": [
           "ccu-furosemide--standard--principal-action",
+          "ccu-furosemide--standard--furosemide_volume_sodium",
           "ccu-furosemide--advanced--low_k_mg",
           "ccu-furosemide--7-day--principal-action",
+          "ccu-furosemide--7-day--furosemide_volume_sodium",
           "ccu-furosemide--7-day--low_k_mg"
         ],
         "use": [
@@ -13606,6 +13839,8 @@
           "ccu-furosemide--standard--renal_monitor",
           "ccu-furosemide--standard--ototoxicity",
           "ccu-furosemide--standard--diuretic_timing",
+          "ccu-furosemide--standard--furosemide_sodium_monitor",
+          "ccu-furosemide--standard--furosemide_rapid_ototoxicity",
           "ccu-furosemide--advanced--hypotension",
           "ccu-furosemide--advanced--low_k_mg",
           "ccu-furosemide--7-day--decongestion",
@@ -13613,6 +13848,8 @@
           "ccu-furosemide--7-day--renal_monitor",
           "ccu-furosemide--7-day--ototoxicity",
           "ccu-furosemide--7-day--diuretic_timing",
+          "ccu-furosemide--7-day--furosemide_sodium_monitor",
+          "ccu-furosemide--7-day--furosemide_rapid_ototoxicity",
           "ccu-furosemide--7-day--low_k_mg"
         ],
         "memoryDanger": [
@@ -13626,8 +13863,10 @@
         ],
         "administration": [
           "ccu-furosemide--standard--slow_iv",
+          "ccu-furosemide--standard--furosemide_controlled_delivery",
           "ccu-furosemide--advanced--low_k_mg",
           "ccu-furosemide--7-day--slow_iv",
+          "ccu-furosemide--7-day--furosemide_controlled_delivery",
           "ccu-furosemide--7-day--low_k_mg"
         ]
       },
@@ -16091,10 +16330,28 @@
         "monitor": [
           "ed-ondansetron-provisional-shelf--standard--qt",
           "ed-ondansetron-provisional-shelf--standard--serotonin",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_congenital_qt",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_cardiac_qt_risk",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_class_hypersensitivity",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_serotonergic_combination",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_bradyarrhythmia",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_comedication",
+          "ed-ondansetron-provisional-shelf--standard--ondansetron_prior_allergy",
           "ed-ondansetron-provisional-shelf--advanced--qt",
           "ed-ondansetron-provisional-shelf--advanced--serotonin",
           "ed-ondansetron-provisional-shelf--7-day--qt",
-          "ed-ondansetron-provisional-shelf--7-day--serotonin"
+          "ed-ondansetron-provisional-shelf--7-day--serotonin",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_apomorphine",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_congenital_qt",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_cardiac_qt_risk",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_class_hypersensitivity",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_serotonergic_combination",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_bradyarrhythmia",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_comedication",
+          "ed-ondansetron-provisional-shelf--7-day--ondansetron_prior_allergy"
         ],
         "memoryDanger": [
           "ed-ondansetron-provisional-shelf--standard--qt",
