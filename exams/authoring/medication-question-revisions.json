@@ -878,6 +878,618 @@
         "answerKey": "A",
         "point": "Recall the antianginal role of verapamil."
       }
+    },
+    "verified-losartan::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which treatment goal fits losartan?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Lowering blood pressure in hypertension",
+            "explanation": "Losartan is an antihypertensive ARB."
+          },
+          {
+            "id": "B",
+            "text": "Reducing ventricular rate in atrial fibrillation",
+            "explanation": "This is not losartan’s direct treatment role."
+          },
+          {
+            "id": "C",
+            "text": "Relieving an acute angina episode immediately",
+            "explanation": "Losartan does not act as an immediate antianginal rescue medicine."
+          },
+          {
+            "id": "D",
+            "text": "Removing excess fluid by loop diuresis",
+            "explanation": "Losartan is not a loop diuretic."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall the main hypertension indication.",
+        "criticalForSafety": false
+      }
+    },
+    "verified-losartan::renal_monitor": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which monitoring set is important after starting losartan?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Blood pressure, creatinine and potassium",
+            "explanation": "The RAAS effect can alter pressure, kidney function and potassium."
+          },
+          {
+            "id": "B",
+            "text": "Blood pressure, creatinine and platelet count",
+            "explanation": "Platelet monitoring does not replace potassium surveillance."
+          },
+          {
+            "id": "C",
+            "text": "Blood pressure, potassium and troponin",
+            "explanation": "Troponin does not replace renal-function surveillance."
+          },
+          {
+            "id": "D",
+            "text": "Creatinine, potassium and visual acuity",
+            "explanation": "This omits blood-pressure monitoring."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Select BP, creatinine and potassium surveillance.",
+        "criticalForSafety": false
+      }
+    },
+    "verified-losartan::high_k": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which electrolyte trend is a particular concern after starting losartan?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Rising serum potassium",
+            "explanation": "RAAS blockade can reduce aldosterone-mediated potassium excretion."
+          },
+          {
+            "id": "B",
+            "text": "Falling serum potassium",
+            "explanation": "This reverses the hyperkalemia concern."
+          },
+          {
+            "id": "C",
+            "text": "Rising serum sodium",
+            "explanation": "Sodium elevation is not the characteristic electrolyte risk sought."
+          },
+          {
+            "id": "D",
+            "text": "Falling serum sodium",
+            "explanation": "This does not identify the characteristic potassium risk sought."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize hyperkalemia risk.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-enalapril::renal_monitor": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which monitoring set is important after starting enalapril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Blood pressure, creatinine and potassium",
+            "explanation": "The RAAS effect can alter pressure, kidney function and potassium."
+          },
+          {
+            "id": "B",
+            "text": "Blood pressure, creatinine and platelet count",
+            "explanation": "Platelet monitoring does not replace potassium surveillance."
+          },
+          {
+            "id": "C",
+            "text": "Blood pressure, potassium and troponin",
+            "explanation": "Troponin does not replace renal-function surveillance."
+          },
+          {
+            "id": "D",
+            "text": "Creatinine, potassium and visual acuity",
+            "explanation": "This omits blood-pressure monitoring."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Select BP, creatinine and potassium surveillance.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-enalapril::high_k": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which electrolyte trend is a particular concern after starting enalapril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Rising serum potassium",
+            "explanation": "RAAS blockade can reduce aldosterone-mediated potassium excretion."
+          },
+          {
+            "id": "B",
+            "text": "Falling serum potassium",
+            "explanation": "This reverses the hyperkalemia concern."
+          },
+          {
+            "id": "C",
+            "text": "Rising serum sodium",
+            "explanation": "Sodium elevation is not the characteristic electrolyte risk sought."
+          },
+          {
+            "id": "D",
+            "text": "Falling serum sodium",
+            "explanation": "This does not identify the characteristic potassium risk sought."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize hyperkalemia risk.",
+        "criticalForSafety": false
+      }
+    },
+    "verified-losartan::losartan_additional_uses": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pair fits additional labeled uses of losartan?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hypertension with LVH; proteinuric nephropathy in hypertensive type 2 diabetes",
+            "explanation": "Both are selected labeled populations; this is not a general indication for every patient with diabetes or LVH."
+          },
+          {
+            "id": "B",
+            "text": "Isolated LVH without hypertension; proteinuric nephropathy in hypertensive type 2 diabetes",
+            "explanation": "LVH without hypertension is not the selected labeled population."
+          },
+          {
+            "id": "C",
+            "text": "Hypertension with LVH; isolated hyperglycemia without nephropathy",
+            "explanation": "Hyperglycemia alone does not establish proteinuric diabetic nephropathy."
+          },
+          {
+            "id": "D",
+            "text": "Isolated LVH without hypertension; isolated hyperglycemia without nephropathy",
+            "explanation": "Both proposed populations omit the required hypertension/nephropathy qualifications."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify both additional indication populations.",
+        "criticalForSafety": false
+      }
+    },
+    "verified-losartan::losartan_lithium": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "When lithium is taken with losartan, which concentration change and monitoring plan is appropriate?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Lithium may rise; monitor its serum concentration",
+            "explanation": "Increased serum lithium and lithium toxicity have been reported; monitor levels."
+          },
+          {
+            "id": "B",
+            "text": "Lithium may fall; monitor its serum concentration",
+            "explanation": "Reported interaction can raise, rather than predictably lower, lithium concentrations."
+          },
+          {
+            "id": "C",
+            "text": "Lithium may rise; omit serum lithium monitoring",
+            "explanation": "A possible rise requires serum lithium monitoring."
+          },
+          {
+            "id": "D",
+            "text": "Lithium may fall; omit serum lithium monitoring",
+            "explanation": "This reverses the concentration concern and omits needed monitoring."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall lithium toxicity risk and concentration monitoring.",
+        "criticalForSafety": true
+      }
+    },
+    "verified-losartan::raas_interactions": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient on losartan adds a potassium supplement and an NSAID. Which paired risks need review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hyperkalemia and deterioration of renal function",
+            "explanation": "The supplement can add potassium risk; the NSAID can worsen renal function."
+          },
+          {
+            "id": "B",
+            "text": "Hypokalemia and deterioration of renal function",
+            "explanation": "Potassium supplements add hyperkalemia, not hypokalemia, risk."
+          },
+          {
+            "id": "C",
+            "text": "Hyperkalemia and isolated hepatic injury",
+            "explanation": "NSAID interaction concern is renal deterioration rather than isolated hepatic injury."
+          },
+          {
+            "id": "D",
+            "text": "Hypokalemia and isolated hepatic injury",
+            "explanation": "Both the potassium direction and organ-specific interaction are incorrect."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Associate potassium-raising drugs and NSAIDs with their specific risks.",
+        "criticalForSafety": true
+      }
+    },
+    "verified-losartan::pregnancy": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Pregnancy is detected during losartan treatment. Which risk and response best fit its warning?",
+        "choices": [
+          {
+            "text": "Fetal toxicity; discontinue promptly and arrange an alternative",
+            "explanation": "The RAAS-blocking drug carries a fetal-toxicity warning and should be discontinued promptly.",
+            "id": "A"
+          },
+          {
+            "text": "Fetal ototoxicity; discontinue promptly and arrange an alternative",
+            "explanation": "The action is appropriate, but ototoxicity is not the warning sought.",
+            "id": "B"
+          },
+          {
+            "text": "Fetal toxicity; continue at a lower dose until delivery",
+            "explanation": "Dose reduction does not remove fetal-toxicity risk.",
+            "id": "C"
+          },
+          {
+            "text": "Fetal ototoxicity; continue at a lower dose until delivery",
+            "explanation": "Both the named warning and continued-exposure plan are inappropriate.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Respond appropriately to losartan fetal toxicity.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-enalapril::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which paired hormonal change follows ACE inhibition by enalapril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reduced angiotensin II and reduced aldosterone",
+            "explanation": "ACE inhibition reduces angiotensin II formation and its aldosterone stimulation."
+          },
+          {
+            "id": "B",
+            "text": "Reduced angiotensin II and increased aldosterone",
+            "explanation": "Reduced angiotensin II reduces, rather than stimulates, aldosterone."
+          },
+          {
+            "id": "C",
+            "text": "Increased angiotensin II and reduced aldosterone",
+            "explanation": "ACE inhibition reduces angiotensin II formation."
+          },
+          {
+            "id": "D",
+            "text": "Increased angiotensin II and increased aldosterone",
+            "explanation": "Both proposed hormonal increases are opposite to ACE inhibition."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall both hormonal effects of enalapril.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-enalapril::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pair of clinical roles fits enalapril?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hypertension treatment and selected heart-failure therapy",
+            "explanation": "Enalapril is an ACE inhibitor used in selected hypertension and heart-failure regimens."
+          },
+          {
+            "id": "B",
+            "text": "Hypertension treatment and coronary thrombolysis",
+            "explanation": "Enalapril does not dissolve coronary thrombi."
+          },
+          {
+            "id": "C",
+            "text": "AV-node rate control and selected heart-failure therapy",
+            "explanation": "Enalapril is not a direct AV-node rate-control agent."
+          },
+          {
+            "id": "D",
+            "text": "AV-node rate control and coronary thrombolysis",
+            "explanation": "Neither AV-node rate control nor coronary thrombolysis is its direct role."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall hypertension and heart-failure roles.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-enalapril::ace_history": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which previous drug-associated angioedema history specifically contraindicates enalapril through the ACE-inhibitor class warning?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Angioedema after lisinopril",
+            "explanation": "Lisinopril is an ACE inhibitor; prior ACE-inhibitor angioedema contraindicates enalapril."
+          },
+          {
+            "id": "B",
+            "text": "Angioedema after amoxicillin",
+            "explanation": "This is serious allergy history but does not identify prior ACE-inhibitor exposure."
+          },
+          {
+            "id": "C",
+            "text": "Angioedema after ibuprofen",
+            "explanation": "This does not establish the prior ACE-inhibitor reaction asked for."
+          },
+          {
+            "id": "D",
+            "text": "Angioedema after ondansetron",
+            "explanation": "This does not establish the prior ACE-inhibitor reaction asked for."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Apply the ACE-inhibitor angioedema contraindication across named drugs.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-enalapril::angioedema": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "New tongue swelling and dysphagia develop during enalapril treatment. What is the best immediate response?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Stop enalapril and urgently escalate for airway assessment/support",
+            "explanation": "Possible ACE-inhibitor angioedema requires stopping exposure and urgent airway-focused care."
+          },
+          {
+            "id": "B",
+            "text": "Complete the next dose and then seek urgent airway assessment",
+            "explanation": "Continuing exposure is inappropriate during suspected angioedema."
+          },
+          {
+            "id": "C",
+            "text": "Reduce the next dose and wait for the swelling to settle",
+            "explanation": "Dose reduction and delay are inadequate for a possible airway emergency."
+          },
+          {
+            "id": "D",
+            "text": "Continue enalapril while treating the swelling as simple ankle edema",
+            "explanation": "Lip/tongue swelling is not routine dependent peripheral edema."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Respond promptly to ACE-inhibitor angioedema.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-amlodipine::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which target and predominant site explain amlodipine’s antihypertensive effect?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "L-type calcium channels in vascular smooth muscle",
+            "explanation": "Predominant vascular calcium-channel blockade causes arterial dilation."
+          },
+          {
+            "id": "B",
+            "text": "L-type calcium channels predominantly in the AV node",
+            "explanation": "This better describes the cardiac conduction emphasis of non-DHP agents."
+          },
+          {
+            "id": "C",
+            "text": "Angiotensin II AT1 receptors in vascular tissue",
+            "explanation": "This describes an ARB."
+          },
+          {
+            "id": "D",
+            "text": "Fast sodium channels in cardiac conduction tissue",
+            "explanation": "This is not amlodipine’s principal mechanism."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the channel target and vascular site.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-amlodipine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pair of treatment goals fits amlodipine?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Chronic blood-pressure control and angina symptom control",
+            "explanation": "Amlodipine is used for chronic hypertension and antianginal therapy."
+          },
+          {
+            "id": "B",
+            "text": "Chronic blood-pressure control and coronary thrombolysis",
+            "explanation": "Amlodipine is antianginal but does not dissolve a coronary clot."
+          },
+          {
+            "id": "C",
+            "text": "AV-node rate control and angina symptom control",
+            "explanation": "Vascular DHP blockade is not used as direct AV-node rate control."
+          },
+          {
+            "id": "D",
+            "text": "AV-node rate control and coronary thrombolysis",
+            "explanation": "Neither AV-node rate control nor coronary thrombolysis is its direct role."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall both chronic hypertension and antianginal roles.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-amlodipine::edema": {
+      "action": "replace",
+      "sourceFields": [
+        "why"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Amlodipine is followed by isolated ankle edema, with stable weight, clear lungs and no new orthopnea. Which explanation best fits its characteristic edema?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Arteriolar dilation increasing capillary hydrostatic pressure",
+            "explanation": "This can shift fluid into dependent tissues without proving total-body fluid overload."
+          },
+          {
+            "id": "B",
+            "text": "Primary sodium retention causing generalized volume expansion",
+            "explanation": "This does not describe the characteristic capillary-pressure mechanism."
+          },
+          {
+            "id": "C",
+            "text": "Reduced capillary hydrostatic pressure drawing fluid into tissues",
+            "explanation": "The pressure direction is incorrect."
+          },
+          {
+            "id": "D",
+            "text": "Direct suppression of albumin synthesis lowering oncotic pressure",
+            "explanation": "This is not the characteristic amlodipine mechanism."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Explain ankle edema and avoid automatically diagnosing fluid overload.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-amlodipine::amlodipine_onset": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "reason": "Individual source-fact and question-quality author review; replace generic or weak alternatives.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Why is oral amlodipine unsuitable as the sole rapid BP-rescue treatment in an acute emergency?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Its gradual onset limits immediate BP control",
+            "explanation": "Amlodipine is not an immediately titratable rescue drug."
+          },
+          {
+            "id": "B",
+            "text": "Its very brief action requires continuous IV delivery",
+            "explanation": "Amlodipine is long acting, not a brief continuous-infusion agent."
+          },
+          {
+            "id": "C",
+            "text": "Its rapid reversible action produces immediate BP swings",
+            "explanation": "This is the opposite of its gradual onset."
+          },
+          {
+            "id": "D",
+            "text": "Its primary AV-node block prevents arterial dilation",
+            "explanation": "Its predominant effect is vascular dilation, not AV-node blockade."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish gradual chronic treatment from rapid BP rescue.",
+        "criticalForSafety": true
+      }
     }
   },
   "evidenceChecks": [
@@ -911,11 +1523,17 @@
     "ed-captopril-tablets": "captopril-author-review-20261107",
     "ccu-furosemide": "closed-source-review-20261107",
     "ccu-verapamil": "closed-source-review-20261107",
-    "ed-ondansetron-provisional-shelf": "closed-source-review-20261107"
+    "ed-ondansetron-provisional-shelf": "closed-source-review-20261107",
+    "verified-losartan": "bp-author-review-20261107",
+    "ccu-enalapril": "bp-author-review-20261107",
+    "ccu-amlodipine": "bp-author-review-20261107"
   },
   "correctionRevisions": {
     "ccu-verapamil": "closed-source-review-20261107",
     "ccu-furosemide": "closed-source-review-20261107",
-    "ed-ondansetron-provisional-shelf": "closed-source-review-20261107"
+    "ed-ondansetron-provisional-shelf": "closed-source-review-20261107",
+    "verified-losartan": "bp-author-review-20261107",
+    "ccu-enalapril": "bp-author-review-20261107",
+    "ccu-amlodipine": "bp-author-review-20261107"
   }
 }

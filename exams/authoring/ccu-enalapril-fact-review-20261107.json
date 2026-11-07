@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-enalapril",
+  "reviewDate": "2026-11-07",
+  "status": "Bounded current teaching-entry and scored-form author review complete; not an exhaustive monograph, local stock authentication, independent clinical validation or empirical difficulty calibration.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "ACE inhibitor",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--drug-class",
+          "sha256": "f3014e29a21c32c9a16ddafd27d30fcf65f75aa648af86f2e4f497d4edc3eb83"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "reducing angiotensin II and aldosterone",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--principal-action",
+          "sha256": "0e0d3e56c021deebb4ab25b61c35a99d401a52fbd5112e72db01b19bfda18eee"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "hypertension and heart-failure patients",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--treatment-role",
+          "sha256": "0cc063e2b26f55051e79cb59e9a4c6b03ad696aa43547ee0c086c45845013e1d"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Check current BP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--renal_monitor",
+          "sha256": "de4f2d2e64550f6191ffce2fdb82c73455baf06a87bfa59a84dfca0a3c54add4"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "volume-depleted",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::enalapril_volume_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--enalapril_volume_risk",
+          "sha256": "7e98f993fb982386ba3c89876c13d1239c67c3231af6c5bb600d3d82714b4182"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor BP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--renal_monitor",
+          "sha256": "de4f2d2e64550f6191ffce2fdb82c73455baf06a87bfa59a84dfca0a3c54add4"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "potassium and creatinine/renal function",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--renal_monitor",
+          "sha256": "de4f2d2e64550f6191ffce2fdb82c73455baf06a87bfa59a84dfca0a3c54add4"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "stop enalapril and urgently escalate for airway assessment/support",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::angioedema"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--angioedema",
+          "sha256": "2ea9d6685e37b9010008444f8af29e7cc586e17592a532824a2731960a7c1eb2"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Previous ACE-inhibitor angioedema is a contraindication",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::ace_history"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--ace_history",
+          "sha256": "4f4b3a4db68fef9cf505c529ff96868533b9b2097e544262c13510be79c0c594"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Pregnancy carries fetal-toxicity risk: discontinue promptly and arrange an alternative prescribing plan",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::enalapril_pregnancy"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--enalapril_pregnancy",
+          "sha256": "ae03e5f7656a441ac00cd37c168f6122fb8c915699d15eaf92cc7b50bcc75e7d"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Do not combine enalapril with sacubitril/valsartan; allow at least 36 hours when switching in either direction",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::enalapril_sacubitril_interval"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--enalapril_sacubitril_interval",
+          "sha256": "9a679b05d173156ab0e79d55fc75d096fb75e61d96afc6c1b92f8177b62b8eab"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "can raise potassium",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::high_k"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--high_k",
+          "sha256": "95b0e3e2cc4a5b1f00cc9690bcd23504a4899eda978e40fb2e261f24bc99f83b"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "alter kidney function",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--renal_monitor",
+          "sha256": "de4f2d2e64550f6191ffce2fdb82c73455baf06a87bfa59a84dfca0a3c54add4"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "lowers angiotensin II/aldosterone",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enalapril::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enalapril--comprehensive--principal-action",
+          "sha256": "0e0d3e56c021deebb4ab25b61c35a99d401a52fbd5112e72db01b19bfda18eee"
+        }
+      ],
+      "rationale": "The scored answer requires the named drug effect, role, precaution or clinical monitoring relationship."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document 5- and 20-mg tablets. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Stock, shelf and registered-strength observations are contextual and can change; no local-stock authentication or universal dose is claimed."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "ACE inhibitor for selected HTN/HF patients.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Duplicate memory summary of the core facts already linked above; no extra repeated question is needed."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Angioedema is an airway emergency; also monitor K+ and renal function.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Duplicate memory summary of the core facts already linked above; no extra repeated question is needed."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "rationale": "Physical oral formulation and prescribed-order/pack-strength checks are retained shared administration safeguards, not scored drug-specific coverage. No stock strength is presented as a universal dose. Drug-specific administration precautions are tested separately."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "availability": "6fd3bd84a6df8a32472780dbd549c76ceffdc3b04e4daf513d09a4a3787ece1d",
+    "memoryUse": "1cca13bbb27ae3f9cf138a20d7c33394281444e76f83fbcc514386077dbcfd09",
+    "mechanism": "dd616ffa2862d499f24e26808212fe2ad870509c0327175a2e1922e944983562",
+    "administration": "578f45463b8e9f2a007d08336896b0023fab3b87a5940d9b5e4c04e59d742520",
+    "drugclass": "7846e2afd591ed022d0d2b32131e069ffb5b15714b43c2e7cc8aa74c126b2dc1",
+    "memoryDanger": "ef996ac4c50bb31f196ced4b6c86f88414b6a80e5496717bda7bb51ef85a3899",
+    "monitor": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29",
+    "why": "dcd6ccbcb04e0e6a7177eb93a982624a36f6d50c74b54fb80d2c89d255bdab0a",
+    "use": "9a4a756f3adcfc463ed8d1c3be150d9c05a29d246cbbb454cc64e4e9c5b29489"
+  },
+  "questionSetSha256": "c25c10b0bde99785ddb5cffdc498d2f9dd5b8cddf1e2219ff5f40bf3f3ca61bb",
+  "questionReview": {
+    "questionsInspected": 10,
+    "checks": [
+      "Actual scored questions, keys and per-choice explanations reviewed.",
+      "Weak distractors replaced with parallel clinically relevant alternatives.",
+      "No generic postural-BP or label-check filler restored.",
+      "Required class-property recall retained; this is distinct from generic questions reusable without knowing the drug."
+    ],
+    "limits": "Author review only; no independent clinician or measured-difficulty claim."
+  },
+  "evidence": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=898b36d6-320f-4d6c-9734-0be8363dc3d7",
+      "checkedDate": "2026-11-07"
+    }
+  ]
+}
