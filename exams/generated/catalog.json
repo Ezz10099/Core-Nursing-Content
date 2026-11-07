@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 42,
-  "sourceContentSha256": "deba848e6f657acf1648a00541d91fed4287e6fff50ff02574c7b7a69630ca78",
+  "sourceContentVersion": 43,
+  "sourceContentSha256": "cf8658fab862eebd91e7732d7a4e198fff5d295f2e6e3b05f7d949021b006223",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 321,
-    "questions": 1869,
-    "single-best-answer": 1839,
+    "questions": 1879,
+    "single-best-answer": 1849,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 107,
     "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 882
+    "mappedLearningPoints": 887
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -710,7 +710,7 @@
         {
           "id": "ccu-verapamil--standard",
           "stage": "standard",
-          "questionCount": 11
+          "questionCount": 13
         },
         {
           "id": "ccu-verapamil--advanced",
@@ -720,7 +720,7 @@
         {
           "id": "ccu-verapamil--7-day",
           "stage": "7-day",
-          "questionCount": 12
+          "questionCount": 14
         }
       ]
     },
@@ -779,7 +779,7 @@
         {
           "id": "ccu-furosemide--standard",
           "stage": "standard",
-          "questionCount": 13
+          "questionCount": 14
         },
         {
           "id": "ccu-furosemide--advanced",
@@ -789,7 +789,7 @@
         {
           "id": "ccu-furosemide--7-day",
           "stage": "7-day",
-          "questionCount": 14
+          "questionCount": 15
         }
       ]
     },
@@ -1768,7 +1768,7 @@
         {
           "id": "ed-ondansetron-provisional-shelf--standard",
           "stage": "standard",
-          "questionCount": 14
+          "questionCount": 16
         },
         {
           "id": "ed-ondansetron-provisional-shelf--advanced",
@@ -1778,7 +1778,7 @@
         {
           "id": "ed-ondansetron-provisional-shelf--7-day",
           "stage": "7-day",
-          "questionCount": 15
+          "questionCount": 17
         }
       ]
     },
@@ -2503,7 +2503,7 @@
     },
     {
       "path": "banks-02.json",
-      "sha256": "210e091a6ab89ed6f9b403844068ad18bc3ea2d0f359f7476a1eed6dee10061e"
+      "sha256": "c067212052e80cebb687532ef9a198345bed2a775af0f3bf1e92a83e10faae37"
     },
     {
       "path": "banks-03.json",
@@ -2511,7 +2511,7 @@
     },
     {
       "path": "banks-04.json",
-      "sha256": "3afaaf507a9f4c868e612a00ec1fa468ddd2cb2b1bbe4bb44a43413a246a7ae0"
+      "sha256": "c53aab43933cab7fe2a87f81f485d441a1e0df42f893b6acd635cc6f76c41f72"
     },
     {
       "path": "banks-05.json",
@@ -2523,7 +2523,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "323fa4531d9748f3913eaf4e1d40fb43951f0fd2e0fc3a2465b499e4b19d76bb"
+      "sha256": "695c69a36e9526619909826e1f8dcb179a44900803b61ef7f4689b54b32e3c7c"
     }
   ]
 }
