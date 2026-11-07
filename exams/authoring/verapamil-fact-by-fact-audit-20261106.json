@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 2,
+  "reviewDate": "2026-11-07",
+  "medicationId": "ccu-verapamil",
+  "revision": "three-medication-author-review-20261107",
+  "status": "Author-reviewed source-fact mapping bound to actual regenerated scored questions; unresolved facts explicitly uncredited. No independent clinical validation or calibrated difficulty.",
+  "factsReviewed": 14,
+  "facts": [
+    {
+      "fact": "Non-dihydropyridine calcium-channel blocker",
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Non-dihydropyridine calcium-channel blocker",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-verapamil::drug-class"
+      ],
+      "rationale": "Requires the relevant drug class.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::drug-class",
+          "questionId": "ccu-verapamil--comprehensive--drug-class",
+          "sha256": "7b212b46788f0ccaad44afffc613f473307e970cf6dbac2a72bd36b594af4055"
+        }
+      ]
+    },
+    {
+      "fact": "L-type channel target and cardiac site",
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Blocks L-type calcium channels in the AV node and myocardium.",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-verapamil::principal-action"
+      ],
+      "rationale": "The revised key requires channel type and site; these are not merely in an explanation.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::principal-action",
+          "questionId": "ccu-verapamil--comprehensive--principal-action",
+          "sha256": "7387b68b054121f2bbc02f06bf21300a4d7fd3d343f43580c44eeb0c0f4e9513"
+        }
+      ]
+    },
+    {
+      "fact": "Selected supraventricular rate-control role",
+      "sourceField": "use",
+      "sourceExcerpt": "Selected supraventricular arrhythmias/rate control",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-verapamil::treatment-role"
+      ],
+      "rationale": "The role question requires selected supraventricular rate control.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::treatment-role",
+          "questionId": "ccu-verapamil--comprehensive--treatment-role",
+          "sha256": "32b255b8cdfbdf6da5ea54bc559dc9b6027598f0bb68f1b05985cc130a079095"
+        }
+      ]
+    },
+    {
+      "fact": "Antianginal role",
+      "sourceField": "use",
+      "sourceExcerpt": "antianginal therapy",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_antianginal"
+      ],
+      "rationale": "Separate scenario has sinus rhythm; identifying an antianginal use is necessary.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_antianginal",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_antianginal",
+          "sha256": "a2b399e4519d4fc26632a921dfa2aee4d6a3ad49e33c7d7c16ee789cc872e6df"
+        }
+      ]
+    },
+    {
+      "fact": "Initial non-elderly adult IV minimum time",
+      "sourceField": "administration",
+      "sourceExcerpt": "at least 2 minutes",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-verapamil::slow_iv"
+      ],
+      "rationale": "Numeric recall requires the minimum. The question is explicitly non-elderly; product/patient-specific exceptions are not generalized.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::slow_iv",
+          "questionId": "ccu-verapamil--comprehensive--slow_iv",
+          "sha256": "ffac20bb764679467cff57917970b619e3b9fd47bfa819d4f313d12264dc6b9c"
+        }
+      ]
+    },
+    {
+      "fact": "Continuous ECG monitoring",
+      "sourceField": "administration",
+      "sourceExcerpt": "continuous ECG and BP monitoring",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_iv_monitoring"
+      ],
+      "rationale": "The ECG/BP pair is the scored answer, removed from the rate-question hint.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_iv_monitoring",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_iv_monitoring",
+          "sha256": "46b9e3866840397b5fb16ef4750f1ab8af7a7002eb0716ed0045e968b635f412"
+        }
+      ]
+    },
+    {
+      "fact": "Continuous BP monitoring",
+      "sourceField": "administration",
+      "sourceExcerpt": "continuous ECG and BP monitoring",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_iv_monitoring"
+      ],
+      "rationale": "The alternative pairs each omit ECG or BP; both are required.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_iv_monitoring",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_iv_monitoring",
+          "sha256": "46b9e3866840397b5fb16ef4750f1ab8af7a7002eb0716ed0045e968b635f412"
+        }
+      ]
+    },
+    {
+      "fact": "Oral and IV products are distinct",
+      "sourceField": "administration",
+      "sourceExcerpt": "oral verapamil is a separate formulation",
+      "assessment": "not_directly_tested",
+      "learningPointIds": [],
+      "rationale": "Oral use is supplied in a constipation/use stem; do not credit that context as route/formulation recall.",
+      "coverageCredit": false,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "Bradycardia, AV block and hypotension recognition",
+      "sourceField": "monitor",
+      "sourceExcerpt": "bradycardia, AV block or significant hypotension",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-verapamil::bradycardia"
+      ],
+      "rationale": "Revised options distinguish rate, AV conduction and BP effects.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::bradycardia",
+          "questionId": "ccu-verapamil--comprehensive--bradycardia",
+          "sha256": "8802f31a2f116df7ddc8acb461146d05323cc7bb37f5aa2e7ffe3a7cbf589fb8"
+        }
+      ]
+    },
+    {
+      "fact": "Report clinically important cardiac/circulatory deterioration",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Report bradycardia, AV block or significant hypotension",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_deterioration_action"
+      ],
+      "rationale": "The scored answer requires this specific source fact; the fact is not supplied as a stem hint.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_deterioration_action",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_deterioration_action",
+          "sha256": "753dd3f7c76dd97c3728739c00f1119c6ad21536c55add60ce2fb1a4fa59eb90"
+        }
+      ]
+    },
+    {
+      "fact": "Oral constipation adverse effect",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Constipation is common with oral therapy.",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_constipation"
+      ],
+      "rationale": "Requires recall of the bowel effect.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_constipation",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_constipation",
+          "sha256": "7ab4b8de7f310e4f332a03d8b2555bd043e1f6f16a25c3ba92047665dbd9d62f"
+        }
+      ]
+    },
+    {
+      "fact": "Close IV beta-blocker overlap is contraindicated",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Do not give IV verapamil close to an IV beta-blocker dose",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ccu-verapamil::verapamil_iv_beta"
+      ],
+      "rationale": "Requires withholding and clarification despite suggestions to alter rate, line or rely on current BP.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::verapamil_iv_beta",
+          "questionId": "ccu-verapamil--comprehensive--verapamil_iv_beta",
+          "sha256": "f5a4bb2f79e251d7f2d23721a28c1f9940daefd7c194757738d065aa598bea3d"
+        }
+      ]
+    },
+    {
+      "fact": "Additive AV-node depression with beta blockade",
+      "sourceField": "why",
+      "sourceExcerpt": "combining AV-node blockers can cause excessive depression",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ccu-verapamil::avnode_combination"
+      ],
+      "rationale": "Requires the pharmacodynamic explanation.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::avnode_combination",
+          "questionId": "ccu-verapamil--comprehensive--avnode_combination",
+          "sha256": "86f12f36620586978d4ea3f6ea2b3c5626f54e93049a1d8df13604b19b14f433"
+        }
+      ]
+    },
+    {
+      "fact": "Review other AV-node-slowing medicines",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Review other AV-node-slowing medicines as well.",
+      "assessment": "partially_tested",
+      "learningPointIds": [
+        "ccu-verapamil::avnode_combination"
+      ],
+      "rationale": "The exam addresses beta blockade; no additional named interaction is taught or separately tested.",
+      "coverageCredit": false,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ccu-verapamil::avnode_combination",
+          "questionId": "ccu-verapamil--comprehensive--avnode_combination",
+          "sha256": "86f12f36620586978d4ea3f6ea2b3c5626f54e93049a1d8df13604b19b14f433"
+        }
+      ]
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "68df9b3c76e17e4340fbf02884cd37575419e5644d808e509acf373ef8140411",
+    "mechanism": "b3e46f0a632678b128440add1da37e54f4446de125f067e2073ab3abdbfebcb0",
+    "use": "7c9300ff2e130805f410dead0055a284b0ce242f681a82562fa83e2f34971517",
+    "administration": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79",
+    "monitor": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784",
+    "why": "93b40cea196f98bdac51eeb5e9041c00d9028ed08c4e60136d97e5acfefc69d1",
+    "memoryUse": "00663123e9efb486af4843d9cebc5d0a611a0faf277ad54c065ca827a68915e1",
+    "memoryDanger": "f5a58f1aec45c91989aedb88d5218f0cc6b625baa7e31c12d5ef8b198294959b",
+    "availability": "4c239de702ebd3eaed9770b116d0b8e0c6a85fa2362757ba7a92f44623204f7c"
+  },
+  "fieldDispositions": {
+    "memoryUse": "Repetition of core mechanism/use facts: no duplicate question required.",
+    "memoryDanger": "Repetition of adverse-effect/monitoring facts; no separate credit or extra filler question.",
+    "availability": "Stock reports, brand observations and unverified local pack strengths are not a dependable universal dosing instruction. Retained as context; local actual-product verification remains necessary."
+  },
+  "evidence": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7a749d0-4ab3-4fbb-8d7b-e09d68413c41",
+      "checkedDate": "2026-11-07",
+      "scope": "IV monitoring, administration, conduction/BP risks and close IV beta-blocker contraindication; local product not authenticated."
+    }
+  ],
+  "certifiedFullCoverage": false,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "exposureOrMasteryInferred": false,
+  "summary": {
+    "directly_tested_staged": 6,
+    "not_directly_tested": 1,
+    "directly_tested": 6,
+    "partially_tested": 1
+  },
+  "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
+  "questionSetSha256": "66d6061aa19415a049926159b0cc900b8ba82595d8c703d619056ee9692b8fb3",
+  "questionReview": {
+    "questionsInspected": 11,
+    "authorQuestionReviewComplete": false,
+    "checks": [
+      "Actual scored questions inspected for source support and answer cues; selected weak alternatives rewritten.",
+      "No local-product route or rate invented.",
+      "Existing generic omissions retained; no coverage credit from a fact supplied in a stem."
+    ],
+    "remaining": "Remaining required source facts and full acceptance must be resolved before Completed."
+  }
+}

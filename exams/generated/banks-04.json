@@ -14048,13 +14048,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Prevention and treatment of nausea or vomiting",
-                  "explanation": "This is a clinical use of the medicine: Prevention and treatment of nausea/vomiting when indicated; specific approvals vary by indication."
+                  "text": "Prevention of valve-related thromboembolism",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
-                  "text": "Prevention of valve-related thromboembolism",
-                  "explanation": "This is a different treatment role."
+                  "text": "Prevention and treatment of nausea or vomiting",
+                  "explanation": "This is a clinical use of the medicine: Prevention and treatment of nausea/vomiting when indicated; specific approvals vary by indication."
                 },
                 {
                   "id": "D",
@@ -14085,7 +14085,7 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which ECG change is relevant to the repolarization warning in ONDANSETRON — injectable (ED shelf: Andset) therapy?",
@@ -14102,13 +14102,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "QT prolongation",
-                  "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
+                  "text": "QRS widening",
+                  "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
                 },
                 {
                   "id": "D",
-                  "text": "QRS widening",
-                  "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
+                  "text": "QT prolongation",
+                  "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
                 }
               ],
               "format": "single-best-answer",
@@ -14119,7 +14119,7 @@
                   "collection": "medications",
                   "itemId": "ed-ondansetron-provisional-shelf",
                   "field": "monitor",
-                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
                 },
                 {
                   "file": "content.json",
@@ -14135,20 +14135,20 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::qt"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "After ONDANSETRON — injectable (ED shelf: Andset), which syndrome best explains agitation, fever, hyperreflexia, and autonomic instability?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The combination of neuromuscular excitation and autonomic changes fits."
+                  "text": "Isolated antimuscarinic intolerance",
+                  "explanation": "This does not best explain the hyperreflexic serotonergic pattern."
                 },
                 {
                   "id": "B",
-                  "text": "Isolated antimuscarinic intolerance",
-                  "explanation": "This does not best explain the hyperreflexic serotonergic pattern."
+                  "text": "Serotonin toxicity",
+                  "explanation": "The combination of neuromuscular excitation and autonomic changes fits."
                 },
                 {
                   "id": "C",
@@ -14169,7 +14169,7 @@
                   "collection": "medications",
                   "itemId": "ed-ondansetron-provisional-shelf",
                   "field": "monitor",
-                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
                 },
                 {
                   "file": "content.json",
@@ -14192,10 +14192,397 @@
               "learningPointIds": [
                 "ed-ondansetron-provisional-shelf::serotonin"
               ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which medicine is contraindicated with ondansetron injection because of reported profound hypotension and loss of consciousness?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Apomorphine",
+                  "explanation": "Ondansetron with apomorphine is a labeled contraindicated combination."
+                },
+                {
+                  "id": "B",
+                  "text": "Metoclopramide",
+                  "explanation": "This antiemetic is not the particular named apomorphine contraindication."
+                },
+                {
+                  "id": "C",
+                  "text": "Dexamethasone",
+                  "explanation": "A corticosteroid is not the named drug in this interaction warning."
+                },
+                {
+                  "id": "D",
+                  "text": "Prochlorperazine",
+                  "explanation": "This medicine has its own risks but is not the specific named contraindication."
+                }
+              ],
+              "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_apomorphine"
+              ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair of electrolyte abnormalities should raise concern about QT-related arrhythmias before IV ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Hypernatremia and hyperchloremia",
+                  "explanation": "These abnormalities are not the specific paired QT-risk factors identified in ondansetron labeling."
+                },
+                {
+                  "id": "B",
+                  "text": "Hyperchloremia and low bicarbonate",
+                  "explanation": "This suggests an acid-base concern, not the characteristic ondansetron QT-risk electrolyte pair."
+                },
+                {
+                  "id": "C",
+                  "text": "Hypoglycemia and hyperphosphatemia",
+                  "explanation": "These findings can need assessment but are not the label's characteristic QT-related electrolyte pair."
+                },
+                {
+                  "id": "D",
+                  "text": "Hypokalemia and hypomagnesemia",
+                  "explanation": "Low potassium or magnesium increases susceptibility to ondansetron-associated QT prolongation; ECG monitoring and clinical review are indicated."
+                }
+              ],
+              "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with documented congenital long-QT syndrome is prescribed IV ondansetron for nausea. Which response best follows current injection labeling?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Proceed at a reduced dose because congenital QT risk applies only to oral treatment",
+                  "explanation": "The congenital long-QT warning also applies to injectable ondansetron, even at lower doses."
+                },
+                {
+                  "id": "B",
+                  "text": "Withhold administration and promptly clarify a different antiemetic plan",
+                  "explanation": "Current ondansetron labeling advises avoiding use in congenital long-QT syndrome because of torsades risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Proceed if potassium and magnesium are normal without further QT review",
+                  "explanation": "Normal electrolytes do not remove the intrinsic congenital long-QT risk."
+                },
+                {
+                  "id": "D",
+                  "text": "Administer with a slower IV push because rate adjustment removes the congenital risk",
+                  "explanation": "Slowing injection does not negate the label's congenital long-QT avoidance recommendation."
+                }
+              ],
+              "point": "Distinguish the ondansetron label's avoidance recommendation in congenital long-QT syndrome from monitoring precautions for other risk factors.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_congenital_qt",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_congenital_qt"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Potassium and magnesium are normal in four adults awaiting ondansetron. None has congenital long-QT syndrome, bradyarrhythmia or a QT-prolonging co-medication. Which patient still has a labeled reason for ECG monitoring?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A patient with established congestive heart failure",
+                  "explanation": "Congestive heart failure is a labeled ECG-monitoring risk factor even when the other stated risks are absent."
+                },
+                {
+                  "id": "B",
+                  "text": "A patient with reflux taking pantoprazole and normal electrolytes",
+                  "explanation": "This scenario does not state the label's cardiac/QT risk factors; potassium and magnesium are stated as normal."
+                },
+                {
+                  "id": "C",
+                  "text": "A patient with fever taking paracetamol",
+                  "explanation": "Neither uncomplicated fever nor paracetamol is the characteristic label-cited QT-risk factor."
+                },
+                {
+                  "id": "D",
+                  "text": "A patient with isolated hypertension taking amlodipine",
+                  "explanation": "Uncomplicated hypertension and amlodipine are not the specific label-cited QT-risk combination."
+                }
+              ],
+              "point": "Recognize heart failure, bradyarrhythmia and QT-prolonging co-medication as ECG-monitoring risk factors with IV ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_cardiac_qt_risk",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_cardiac_qt_risk"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which history most specifically prompts a 5-HT3 cross-sensitivity review before ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Anaphylaxis after ibuprofen",
+                  "explanation": "This is not prior exposure to another 5-HT3 antagonist."
+                },
+                {
+                  "id": "B",
+                  "text": "Anaphylaxis after granisetron",
+                  "explanation": "Granisetron is another 5-HT3 antagonist; reported class-related hypersensitivity requires review."
+                },
+                {
+                  "id": "C",
+                  "text": "Anaphylaxis after amoxicillin",
+                  "explanation": "This allergy matters to medication care, but amoxicillin is not a 5-HT3 antagonist."
+                },
+                {
+                  "id": "D",
+                  "text": "Anaphylaxis after nystatin",
+                  "explanation": "This is not prior exposure to another 5-HT3 antagonist."
+                }
+              ],
+              "point": "Identify prior severe reaction to another 5-HT3 antagonist as a specific hypersensitivity review concern.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_class_hypersensitivity",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_class_hypersensitivity"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which concurrent medicine adds a serotonin-syndrome monitoring concern when ondansetron is prescribed?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Tramadol",
+                  "explanation": "Tramadol has serotonergic effects and is among the labeled co-medications associated with increased monitoring concern."
+                },
+                {
+                  "id": "B",
+                  "text": "Diclofenac",
+                  "explanation": "Its principal safety concerns are different from serotonergic interaction."
+                },
+                {
+                  "id": "C",
+                  "text": "Paracetamol",
+                  "explanation": "This is not the serotonergic analgesic in these options."
+                },
+                {
+                  "id": "D",
+                  "text": "Ibuprofen",
+                  "explanation": "Its principal safety concerns are different from serotonergic interaction."
+                }
+              ],
+              "point": "Recognize tramadol as a serotonergic co-medication requiring serotonin-syndrome vigilance with ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_serotonergic_combination",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_serotonergic_combination"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult has normal potassium and magnesium, no congenital long-QT syndrome and no QT-prolonging co-medication. Which history still supports ECG monitoring with ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A healed peptic ulcer without bleeding",
+                  "explanation": "This is not the specified rhythm-related risk factor."
+                },
+                {
+                  "id": "B",
+                  "text": "Chronic constipation without obstruction",
+                  "explanation": "This is not the specified rhythm-related risk factor."
+                },
+                {
+                  "id": "C",
+                  "text": "An established bradyarrhythmia",
+                  "explanation": "Bradyarrhythmia is a labeled ECG-monitoring risk factor even when the other listed risks are absent."
+                },
+                {
+                  "id": "D",
+                  "text": "Well-controlled uncomplicated hypertension",
+                  "explanation": "This alone is not the specified rhythm-related risk factor."
+                }
+              ],
+              "point": "Identify bradyarrhythmia as an ondansetron ECG-monitoring risk independent of other stated factors.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_bradyarrhythmia",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_bradyarrhythmia"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult awaiting ondansetron has normal electrolytes and no heart failure or bradyarrhythmia. Which concurrent medicine adds a direct QT-prolongation monitoring concern?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Enalapril",
+                  "explanation": "Enalapril is not the direct QT-prolonging medicine among these options."
+                },
+                {
+                  "id": "B",
+                  "text": "Amlodipine",
+                  "explanation": "Amlodipine is not the direct QT-prolonging medicine among these options."
+                },
+                {
+                  "id": "C",
+                  "text": "Amiodarone",
+                  "explanation": "Amiodarone can prolong QT; combining QT-prolonging drugs warrants risk review and ECG monitoring."
+                },
+                {
+                  "id": "D",
+                  "text": "Clopidogrel",
+                  "explanation": "Clopidogrel is not the direct QT-prolonging medicine among these options."
+                }
+              ],
+              "point": "Recognize a QT-prolonging co-medication as an independent ondansetron monitoring concern.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_comedication",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_qt_comedication"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair of findings contraindicates ondansetron administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Prior ondansetron headache and current apomorphine therapy",
+                  "explanation": "Apomorphine is contraindicated, but isolated headache does not establish hypersensitivity."
+                },
+                {
+                  "id": "B",
+                  "text": "Prior ondansetron headache and current dexamethasone therapy",
+                  "explanation": "Neither isolated headache nor dexamethasone is the contraindication pair sought."
+                },
+                {
+                  "id": "C",
+                  "text": "Prior ondansetron anaphylaxis and current apomorphine therapy",
+                  "explanation": "Both known hypersensitivity and concomitant apomorphine contraindicate ondansetron."
+                },
+                {
+                  "id": "D",
+                  "text": "Prior ondansetron anaphylaxis and current dexamethasone therapy",
+                  "explanation": "Known hypersensitivity contraindicates ondansetron; dexamethasone is not the named contraindicated combination."
+                }
+              ],
+              "point": "Distinguish contraindicating ondansetron hypersensitivity and apomorphine from intolerance and a noncontraindicated antiemetic adjunct.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--standard--ondansetron_prior_allergy",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_prior_allergy"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 5
+          "questionCount": 14
         },
         {
           "id": "ed-ondansetron-provisional-shelf--advanced",
@@ -14257,7 +14644,7 @@
                   "collection": "medications",
                   "itemId": "ed-ondansetron-provisional-shelf",
                   "field": "monitor",
-                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
                 },
                 {
                   "file": "content.json",
@@ -14307,7 +14694,7 @@
                   "collection": "medications",
                   "itemId": "ed-ondansetron-provisional-shelf",
                   "field": "monitor",
-                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
                 },
                 {
                   "file": "content.json",
@@ -14419,13 +14806,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Blocks serotonin-mediated emesis",
-                  "explanation": "Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
                 },
                 {
                   "id": "B",
-                  "text": "Forms metabolites that damage microbial DNA",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
+                  "text": "Blocks serotonin-mediated emesis",
+                  "explanation": "Ondansetron blocks peripheral and central 5-HT3 pathways involved in vomiting."
                 },
                 {
                   "id": "C",
@@ -14469,7 +14856,7 @@
                 "ed-ondansetron-provisional-shelf::principal-action"
               ],
               "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -14482,13 +14869,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "First-generation H1 antagonist",
-                  "explanation": "The medicine is classified as: 5-HT3 receptor antagonist; antiemetic."
+                  "text": "5-HT3 antagonist",
+                  "explanation": "5-HT3 receptor antagonist; antiemetic."
                 },
                 {
                   "id": "C",
-                  "text": "5-HT3 antagonist",
-                  "explanation": "5-HT3 receptor antagonist; antiemetic."
+                  "text": "First-generation H1 antagonist",
+                  "explanation": "The medicine is classified as: 5-HT3 receptor antagonist; antiemetic."
                 },
                 {
                   "id": "D",
@@ -14513,7 +14900,7 @@
                 "ed-ondansetron-provisional-shelf::drug-class"
               ],
               "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--drug-class",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -14531,13 +14918,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Prevention and treatment of nausea or vomiting",
-                  "explanation": "This is a clinical use of the medicine: Prevention and treatment of nausea/vomiting when indicated; specific approvals vary by indication."
+                  "text": "Replacement of glucose during severe hypoglycemia",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
-                  "text": "Replacement of glucose during severe hypoglycemia",
-                  "explanation": "This is a different treatment role."
+                  "text": "Prevention and treatment of nausea or vomiting",
+                  "explanation": "This is a clinical use of the medicine: Prevention and treatment of nausea/vomiting when indicated; specific approvals vary by indication."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -14564,7 +14951,7 @@
                 "ed-ondansetron-provisional-shelf::treatment-role"
               ],
               "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--treatment-role",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which ECG change is relevant to the repolarization warning in ONDANSETRON — injectable (ED shelf: Andset) therapy?",
@@ -14581,13 +14968,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "QRS widening",
-                  "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
+                  "text": "QT prolongation",
+                  "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
                 },
                 {
                   "id": "D",
-                  "text": "QT prolongation",
-                  "explanation": "Prolonged ventricular repolarization can increase risk of torsades in a susceptible setting."
+                  "text": "QRS widening",
+                  "explanation": "QRS duration primarily reflects ventricular depolarization rather than the QT repolarization warning."
                 }
               ],
               "format": "single-best-answer",
@@ -14598,7 +14985,7 @@
                   "collection": "medications",
                   "itemId": "ed-ondansetron-provisional-shelf",
                   "field": "monitor",
-                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
                 },
                 {
                   "file": "content.json",
@@ -14615,30 +15002,30 @@
                 "ed-ondansetron-provisional-shelf::qt"
               ],
               "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--qt",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "After ONDANSETRON — injectable (ED shelf: Andset), which syndrome best explains agitation, fever, hyperreflexia, and autonomic instability?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Serotonin toxicity",
-                  "explanation": "The combination of neuromuscular excitation and autonomic changes fits."
-                },
-                {
-                  "id": "B",
                   "text": "Vancomycin infusion intolerance",
                   "explanation": "This is a different administration-related reaction."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Opioid respiratory toxicity",
                   "explanation": "This more typically produces depressed breathing and consciousness."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Isolated antimuscarinic intolerance",
                   "explanation": "This does not best explain the hyperreflexic serotonergic pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Serotonin toxicity",
+                  "explanation": "The combination of neuromuscular excitation and autonomic changes fits."
                 }
               ],
               "format": "single-best-answer",
@@ -14649,7 +15036,7 @@
                   "collection": "medications",
                   "itemId": "ed-ondansetron-provisional-shelf",
                   "field": "monitor",
-                  "textSha256": "68bde0aeab63b78b9cb693b6ea432ad650c1a57ff174b652e89a1125cde0f979"
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
                 },
                 {
                   "file": "content.json",
@@ -14673,20 +15060,416 @@
                 "ed-ondansetron-provisional-shelf::serotonin"
               ],
               "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--serotonin",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which medicine is contraindicated with ondansetron injection because of reported profound hypotension and loss of consciousness?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Apomorphine",
+                  "explanation": "Ondansetron with apomorphine is a labeled contraindicated combination."
+                },
+                {
+                  "id": "B",
+                  "text": "Dexamethasone",
+                  "explanation": "A corticosteroid is not the named drug in this interaction warning."
+                },
+                {
+                  "id": "C",
+                  "text": "Prochlorperazine",
+                  "explanation": "This medicine has its own risks but is not the specific named contraindication."
+                },
+                {
+                  "id": "D",
+                  "text": "Metoclopramide",
+                  "explanation": "This antiemetic is not the particular named apomorphine contraindication."
+                }
+              ],
+              "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_apomorphine",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_apomorphine"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_apomorphine",
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair of electrolyte abnormalities should raise concern about QT-related arrhythmias before IV ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Hypernatremia and hyperchloremia",
+                  "explanation": "These abnormalities are not the specific paired QT-risk factors identified in ondansetron labeling."
+                },
+                {
+                  "id": "B",
+                  "text": "Hypoglycemia and hyperphosphatemia",
+                  "explanation": "These findings can need assessment but are not the label's characteristic QT-related electrolyte pair."
+                },
+                {
+                  "id": "C",
+                  "text": "Hypokalemia and hypomagnesemia",
+                  "explanation": "Low potassium or magnesium increases susceptibility to ondansetron-associated QT prolongation; ECG monitoring and clinical review are indicated."
+                },
+                {
+                  "id": "D",
+                  "text": "Hyperchloremia and low bicarbonate",
+                  "explanation": "This suggests an acid-base concern, not the characteristic ondansetron QT-risk electrolyte pair."
+                }
+              ],
+              "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_risk_factors",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_risk_factors",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with documented congenital long-QT syndrome is prescribed IV ondansetron for nausea. Which response best follows current injection labeling?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Withhold administration and promptly clarify a different antiemetic plan",
+                  "explanation": "Current ondansetron labeling advises avoiding use in congenital long-QT syndrome because of torsades risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Proceed if potassium and magnesium are normal without further QT review",
+                  "explanation": "Normal electrolytes do not remove the intrinsic congenital long-QT risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Proceed at a reduced dose because congenital QT risk applies only to oral treatment",
+                  "explanation": "The congenital long-QT warning also applies to injectable ondansetron, even at lower doses."
+                },
+                {
+                  "id": "D",
+                  "text": "Administer with a slower IV push because rate adjustment removes the congenital risk",
+                  "explanation": "Slowing injection does not negate the label's congenital long-QT avoidance recommendation."
+                }
+              ],
+              "point": "Distinguish the ondansetron label's avoidance recommendation in congenital long-QT syndrome from monitoring precautions for other risk factors.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_congenital_qt",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_congenital_qt"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_congenital_qt",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Potassium and magnesium are normal in four adults awaiting ondansetron. None has congenital long-QT syndrome, bradyarrhythmia or a QT-prolonging co-medication. Which patient still has a labeled reason for ECG monitoring?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A patient with reflux taking pantoprazole and normal electrolytes",
+                  "explanation": "This scenario does not state the label's cardiac/QT risk factors; potassium and magnesium are stated as normal."
+                },
+                {
+                  "id": "B",
+                  "text": "A patient with established congestive heart failure",
+                  "explanation": "Congestive heart failure is a labeled ECG-monitoring risk factor even when the other stated risks are absent."
+                },
+                {
+                  "id": "C",
+                  "text": "A patient with fever taking paracetamol",
+                  "explanation": "Neither uncomplicated fever nor paracetamol is the characteristic label-cited QT-risk factor."
+                },
+                {
+                  "id": "D",
+                  "text": "A patient with isolated hypertension taking amlodipine",
+                  "explanation": "Uncomplicated hypertension and amlodipine are not the specific label-cited QT-risk combination."
+                }
+              ],
+              "point": "Recognize heart failure, bradyarrhythmia and QT-prolonging co-medication as ECG-monitoring risk factors with IV ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_cardiac_qt_risk",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_cardiac_qt_risk"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_cardiac_qt_risk",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which history most specifically prompts a 5-HT3 cross-sensitivity review before ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Anaphylaxis after ibuprofen",
+                  "explanation": "This is not prior exposure to another 5-HT3 antagonist."
+                },
+                {
+                  "id": "B",
+                  "text": "Anaphylaxis after granisetron",
+                  "explanation": "Granisetron is another 5-HT3 antagonist; reported class-related hypersensitivity requires review."
+                },
+                {
+                  "id": "C",
+                  "text": "Anaphylaxis after amoxicillin",
+                  "explanation": "This allergy matters to medication care, but amoxicillin is not a 5-HT3 antagonist."
+                },
+                {
+                  "id": "D",
+                  "text": "Anaphylaxis after nystatin",
+                  "explanation": "This is not prior exposure to another 5-HT3 antagonist."
+                }
+              ],
+              "point": "Identify prior severe reaction to another 5-HT3 antagonist as a specific hypersensitivity review concern.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_class_hypersensitivity",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_class_hypersensitivity"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_class_hypersensitivity",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which concurrent medicine adds a serotonin-syndrome monitoring concern when ondansetron is prescribed?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Diclofenac",
+                  "explanation": "Its principal safety concerns are different from serotonergic interaction."
+                },
+                {
+                  "id": "B",
+                  "text": "Ibuprofen",
+                  "explanation": "Its principal safety concerns are different from serotonergic interaction."
+                },
+                {
+                  "id": "C",
+                  "text": "Tramadol",
+                  "explanation": "Tramadol has serotonergic effects and is among the labeled co-medications associated with increased monitoring concern."
+                },
+                {
+                  "id": "D",
+                  "text": "Paracetamol",
+                  "explanation": "This is not the serotonergic analgesic in these options."
+                }
+              ],
+              "point": "Recognize tramadol as a serotonergic co-medication requiring serotonin-syndrome vigilance with ondansetron.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_serotonergic_combination",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_serotonergic_combination"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_serotonergic_combination",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult has normal potassium and magnesium, no congenital long-QT syndrome and no QT-prolonging co-medication. Which history still supports ECG monitoring with ondansetron?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A healed peptic ulcer without bleeding",
+                  "explanation": "This is not the specified rhythm-related risk factor."
+                },
+                {
+                  "id": "B",
+                  "text": "Chronic constipation without obstruction",
+                  "explanation": "This is not the specified rhythm-related risk factor."
+                },
+                {
+                  "id": "C",
+                  "text": "Well-controlled uncomplicated hypertension",
+                  "explanation": "This alone is not the specified rhythm-related risk factor."
+                },
+                {
+                  "id": "D",
+                  "text": "An established bradyarrhythmia",
+                  "explanation": "Bradyarrhythmia is a labeled ECG-monitoring risk factor even when the other listed risks are absent."
+                }
+              ],
+              "point": "Identify bradyarrhythmia as an ondansetron ECG-monitoring risk independent of other stated factors.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_bradyarrhythmia",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_bradyarrhythmia"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_bradyarrhythmia",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult awaiting ondansetron has normal electrolytes and no heart failure or bradyarrhythmia. Which concurrent medicine adds a direct QT-prolongation monitoring concern?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Amiodarone",
+                  "explanation": "Amiodarone can prolong QT; combining QT-prolonging drugs warrants risk review and ECG monitoring."
+                },
+                {
+                  "id": "B",
+                  "text": "Amlodipine",
+                  "explanation": "Amlodipine is not the direct QT-prolonging medicine among these options."
+                },
+                {
+                  "id": "C",
+                  "text": "Enalapril",
+                  "explanation": "Enalapril is not the direct QT-prolonging medicine among these options."
+                },
+                {
+                  "id": "D",
+                  "text": "Clopidogrel",
+                  "explanation": "Clopidogrel is not the direct QT-prolonging medicine among these options."
+                }
+              ],
+              "point": "Recognize a QT-prolonging co-medication as an independent ondansetron monitoring concern.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_qt_comedication",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_qt_comedication"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_qt_comedication",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair of findings contraindicates ondansetron administration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Prior ondansetron headache and current apomorphine therapy",
+                  "explanation": "Apomorphine is contraindicated, but isolated headache does not establish hypersensitivity."
+                },
+                {
+                  "id": "B",
+                  "text": "Prior ondansetron headache and current dexamethasone therapy",
+                  "explanation": "Neither isolated headache nor dexamethasone is the contraindication pair sought."
+                },
+                {
+                  "id": "C",
+                  "text": "Prior ondansetron anaphylaxis and current apomorphine therapy",
+                  "explanation": "Both known hypersensitivity and concomitant apomorphine contraindicate ondansetron."
+                },
+                {
+                  "id": "D",
+                  "text": "Prior ondansetron anaphylaxis and current dexamethasone therapy",
+                  "explanation": "Known hypersensitivity contraindicates ondansetron; dexamethasone is not the named contraindicated combination."
+                }
+              ],
+              "point": "Distinguish contraindicating ondansetron hypersensitivity and apomorphine from intolerance and a noncontraindicated antiemetic adjunct.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-ondansetron-provisional-shelf",
+                  "field": "monitor",
+                  "textSha256": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-ondansetron-provisional-shelf--7-day--ondansetron_prior_allergy",
+              "points": 1,
+              "learningPointIds": [
+                "ed-ondansetron-provisional-shelf::ondansetron_prior_allergy"
+              ],
+              "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--standard--ondansetron_prior_allergy",
+              "answerKey": "C"
             },
             {
               "stem": "The prescribed ONDANSETRON — injectable (ED shelf: Andset) and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A previously tolerated dose of the original formulation",
-                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
+                  "text": "Product-specific interchangeability and an authorized order",
+                  "explanation": "Formulation differences require a defensible, authorized substitution."
                 },
                 {
                   "id": "B",
-                  "text": "Product-specific interchangeability and an authorized order",
-                  "explanation": "Formulation differences require a defensible, authorized substitution."
+                  "text": "A previously tolerated dose of the original formulation",
+                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
                 },
                 {
                   "id": "C",
@@ -14724,10 +15507,10 @@
                 "ed-ondansetron-provisional-shelf::formulation"
               ],
               "reusedFromQuestionId": "ed-ondansetron-provisional-shelf--advanced--formulation",
-              "answerKey": "B"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 6
+          "questionCount": 15
         }
       ]
     },

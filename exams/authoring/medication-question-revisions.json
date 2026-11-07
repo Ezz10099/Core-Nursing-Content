@@ -10,12 +10,12 @@
         "administration"
       ],
       "question": {
-        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Continuous ECG and BP monitoring are already arranged. Enter the number in minutes.",
+        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Enter the number in minutes.",
         "format": "numeric-entry",
         "answer": 2,
         "unit": "minutes",
         "tolerance": 0,
-        "explanation": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
+        "explanation": "The referenced initial IV injection is administered over at least 2 minutes in non-elderly adults. This is a minimum administration time, not a dose.",
         "point": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
         "criticalForSafety": true
       }
@@ -26,7 +26,7 @@
         "administration"
       ],
       "question": {
-        "stem": "For the controlled high-dose IV furosemide infusion described in the material, which rate ceiling applies? Enter the number in mg/min.",
+        "stem": "For a controlled high-dose IV furosemide infusion in an adult, what is the referenced maximum rate? Enter the number in mg/min.",
         "format": "numeric-entry",
         "answer": 4,
         "unit": "mg/min",
@@ -485,6 +485,399 @@
         "criticalForSafety": true
       },
       "reason": "Medication-specific source and question-author review."
+    },
+    "ccu-furosemide::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which assessment most closely matches a clinical reason to give prescribed IV furosemide?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Pulmonary congestion with fluid overload in acute heart failure",
+            "explanation": "IV loop diuretic treatment can relieve volume-overload-associated pulmonary congestion."
+          },
+          {
+            "id": "B",
+            "text": "Severe hypotension with dehydration and no pulmonary congestion",
+            "explanation": "Additional diuresis can worsen volume depletion and hypotension."
+          },
+          {
+            "id": "C",
+            "text": "Oliguria caused by a mechanical urinary obstruction",
+            "explanation": "Treat the urinary obstruction; furosemide does not relieve mechanical outflow blockage."
+          },
+          {
+            "id": "D",
+            "text": "Low cardiac output from shock with depleted intravascular volume",
+            "explanation": "Diuresis is not a substitute for restoring volume and perfusion in hypovolemic shock."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-furosemide::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which renal target and site match furosemide?",
+        "choices": [
+          {
+            "text": "Na-K-2Cl cotransporter in the thick ascending loop of Henle",
+            "explanation": "Furosemide inhibits this transporter, producing loop diuresis.",
+            "id": "A"
+          },
+          {
+            "text": "Na-K-2Cl cotransporter in the proximal tubule",
+            "explanation": "The transporter is associated with furosemide, but the renal site is the thick ascending limb rather than the proximal tubule.",
+            "id": "B"
+          },
+          {
+            "text": "Na-Cl cotransporter in the thick ascending loop of Henle",
+            "explanation": "The loop site is relevant, but furosemide inhibits Na-K-2Cl rather than the thiazide-sensitive Na-Cl cotransporter.",
+            "id": "C"
+          },
+          {
+            "text": "Mineralocorticoid receptor in the thick ascending loop of Henle",
+            "explanation": "Furosemide acts on the Na-K-2Cl cotransporter, not the mineralocorticoid receptor.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Locate furosemide action at the Na-K-2Cl transporter in the thick ascending loop of Henle.",
+        "criticalForSafety": false
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-verapamil::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which cardiovascular problem can fit an authorized verapamil regimen after rhythm and contraindication review?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Selected supraventricular rate control with preserved perfusion",
+            "explanation": "Verapamil slows AV conduction and may be used in carefully selected supraventricular arrhythmias."
+          },
+          {
+            "id": "B",
+            "text": "Unstable wide-complex tachycardia needing immediate electrical therapy",
+            "explanation": "Verapamil may cause serious deterioration in ventricular-origin wide-complex tachycardia."
+          },
+          {
+            "id": "C",
+            "text": "Atrial fibrillation with known accessory-pathway pre-excitation",
+            "explanation": "AV-nodal blockade can be dangerous in pre-excited atrial fibrillation."
+          },
+          {
+            "id": "D",
+            "text": "Symptomatic high-grade AV block with a slow escape rhythm",
+            "explanation": "Verapamil may worsen AV block rather than correct it."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-verapamil::bradycardia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new pattern during IV verapamil most closely matches its important cardiac and circulatory adverse effects?",
+        "choices": [
+          {
+            "text": "Bradycardia, AV block and significant hypotension",
+            "explanation": "Verapamil can depress AV conduction and myocardial activity while lowering BP.",
+            "id": "A"
+          },
+          {
+            "text": "Tachycardia, AV block and significant hypotension",
+            "explanation": "AV block and hypotension fit the risk profile, but bradycardia is the expected cardiac-slowing effect in this comparison.",
+            "id": "B"
+          },
+          {
+            "text": "Bradycardia, accelerated AV conduction and significant hypotension",
+            "explanation": "Verapamil slows AV conduction rather than accelerating it.",
+            "id": "C"
+          },
+          {
+            "text": "Bradycardia, AV block and significant hypertension",
+            "explanation": "The important pressure-lowering adverse effect is hypotension rather than hypertension.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize bradycardia, AV block and significant hypotension as verapamil adverse effects.",
+        "criticalForSafety": true
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ccu-verapamil::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which target and site explain verapamil’s direct effects on cardiac conduction and contractility?",
+        "choices": [
+          {
+            "text": "L-type calcium channels in the AV node and myocardium",
+            "explanation": "Verapamil blocks these calcium channels, slowing AV conduction and myocardial activity.",
+            "id": "A"
+          },
+          {
+            "text": "L-type calcium channels predominantly in arteriolar smooth muscle",
+            "explanation": "This mainly vascular description does not identify the cardiac AV-node/myocardial site needed here.",
+            "id": "B"
+          },
+          {
+            "text": "Fast sodium channels in the AV node and myocardium",
+            "explanation": "Verapamil’s relevant target is the L-type calcium channel rather than the fast sodium channel.",
+            "id": "C"
+          },
+          {
+            "text": "Potassium channels in the AV node and myocardium",
+            "explanation": "Verapamil’s relevant channel target is calcium rather than potassium.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify L-type calcium-channel blockade in the AV node and myocardium.",
+        "criticalForSafety": false
+      },
+      "reason": "Fact-level review: replace incomplete or symptom-cued assessment with a medication-dependent scored target."
+    },
+    "ed-ondansetron-provisional-shelf::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which symptom-management role is most appropriate for ondansetron?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prevention or relief of postoperative nausea and vomiting",
+            "explanation": "Ondansetron is a 5-HT3 antagonist used for prevention or treatment of nausea and vomiting."
+          },
+          {
+            "id": "B",
+            "text": "Improving delayed gastric emptying in gastroparesis",
+            "explanation": "A prokinetic is used when accelerating gastric motility is the treatment goal."
+          },
+          {
+            "id": "C",
+            "text": "Treating vestibular motion sickness as first-line therapy",
+            "explanation": "Ondansetron is not an established first-line drug for vestibular motion sickness."
+          },
+          {
+            "id": "D",
+            "text": "Suppressing gastric acid in reflux-related symptoms",
+            "explanation": "Proton-pump inhibitors or other acid-suppressants address acid secretion, not ondansetron's action."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the main treatment role taught for this medicine.",
+        "criticalForSafety": false
+      }
+    },
+    "ed-ondansetron-provisional-shelf::formulation": {
+      "action": "omit",
+      "reason": "The shelf label does not prove actual product formulation; generic substitution instruction remains source advice but earns no drug-specific score.",
+      "unresolvedCoverage": true
+    },
+    "ccu-furosemide::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "reason": "Author review: comparable clinically plausible alternatives without symptom or wording giveaways.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which diuretic class does furosemide belong to?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Loop diuretic",
+            "explanation": "Furosemide is a loop diuretic."
+          },
+          {
+            "id": "B",
+            "text": "Thiazide diuretic",
+            "explanation": "Thiazides act at a different nephron target."
+          },
+          {
+            "id": "C",
+            "text": "Potassium-sparing diuretic",
+            "explanation": "Furosemide can increase potassium loss."
+          },
+          {
+            "id": "D",
+            "text": "Osmotic diuretic",
+            "explanation": "Furosemide blocks tubular salt transport rather than acting as an osmotic agent."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall furosemide classification."
+      }
+    },
+    "ccu-furosemide::low_k_mg": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Author review: comparable clinically plausible alternatives without symptom or wording giveaways.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient on furosemide develops new PVCs after substantial diuresis. Which electrolyte pair is especially important to check?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Potassium and magnesium",
+            "explanation": "Loss of either may contribute to arrhythmia during diuresis."
+          },
+          {
+            "id": "B",
+            "text": "Potassium and phosphate",
+            "explanation": "Potassium matters, but magnesium is the second key electrolyte in this comparison."
+          },
+          {
+            "id": "C",
+            "text": "Magnesium and phosphate",
+            "explanation": "Magnesium matters, but this omits potassium."
+          },
+          {
+            "id": "D",
+            "text": "Sodium and chloride",
+            "explanation": "Both can change during diuresis, but this pair omits the potassium/magnesium arrhythmia concern."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify both potassium and magnesium monitoring for post-diuresis arrhythmia."
+      }
+    },
+    "ccu-furosemide::renal_monitor": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Author review: comparable clinically plausible alternatives without symptom or wording giveaways.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pair best follows renal function during furosemide treatment?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Creatinine trend and urine-output trend",
+            "explanation": "Together these follow renal function and output."
+          },
+          {
+            "id": "B",
+            "text": "Creatinine trend and stool-frequency trend",
+            "explanation": "Stool frequency does not replace urine-output assessment."
+          },
+          {
+            "id": "C",
+            "text": "Urine-output trend and hemoglobin trend",
+            "explanation": "Hemoglobin does not replace the renal-function measurement."
+          },
+          {
+            "id": "D",
+            "text": "Daily weight and serum-potassium trend",
+            "explanation": "Both are useful during diuresis but do not replace this renal-function/output pair."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Follow creatinine and urine-output trends."
+      }
+    },
+    "ccu-verapamil::verapamil_constipation": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Author review: comparable clinically plausible alternatives without symptom or wording giveaways.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which bowel change is a common adverse effect of oral verapamil?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hard stools with reduced bowel frequency",
+            "explanation": "Constipation is a common oral verapamil effect."
+          },
+          {
+            "id": "B",
+            "text": "Watery stools with increased bowel frequency",
+            "explanation": "Diarrhea is not the characteristic effect sought."
+          },
+          {
+            "id": "C",
+            "text": "Bloody stools with unchanged bowel frequency",
+            "explanation": "Bleeding needs assessment and is not routine verapamil constipation."
+          },
+          {
+            "id": "D",
+            "text": "Pale stools with unchanged bowel frequency",
+            "explanation": "Pale stool is not the characteristic motility effect sought."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize oral verapamil constipation."
+      }
+    },
+    "ccu-verapamil::verapamil_antianginal": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "reason": "Author review: comparable clinically plausible alternatives without symptom or wording giveaways.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient in sinus rhythm is prescribed oral verapamil. Which additional therapeutic role can explain the order?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reducing angina symptoms",
+            "explanation": "Oral verapamil has an antianginal role independent of a current arrhythmia."
+          },
+          {
+            "id": "B",
+            "text": "Dissolving a coronary thrombus",
+            "explanation": "Verapamil is not a thrombolytic."
+          },
+          {
+            "id": "C",
+            "text": "Preventing platelet aggregation",
+            "explanation": "Verapamil does not substitute for antiplatelet therapy."
+          },
+          {
+            "id": "D",
+            "text": "Removing excess extracellular fluid",
+            "explanation": "Verapamil is not a diuretic."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall the antianginal role of verapamil."
+      }
     }
   },
   "evidenceChecks": [
@@ -515,6 +908,14 @@
     }
   ],
   "coverageRevisions": {
-    "ed-captopril-tablets": "captopril-author-review-20261107"
+    "ed-captopril-tablets": "captopril-author-review-20261107",
+    "ccu-furosemide": "three-medication-author-review-20261107",
+    "ccu-verapamil": "three-medication-author-review-20261107",
+    "ed-ondansetron-provisional-shelf": "three-medication-author-review-20261107"
+  },
+  "correctionRevisions": {
+    "ccu-verapamil": "three-medication-author-review-20261107",
+    "ccu-furosemide": "three-medication-author-review-20261107",
+    "ed-ondansetron-provisional-shelf": "three-medication-author-review-20261107"
   }
 }

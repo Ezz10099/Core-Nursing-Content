@@ -7500,5 +7500,481 @@
       ],
       "correct": 0
     }
+  },
+  "furosemide_volume_sodium": {
+    "point": "Recognize sodium/water depletion and hypotension as risks of excessive furosemide diuresis.",
+    "anchor": "can deplete electrolytes and volume",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which sodium/water and BP pattern can follow excessive furosemide diuresis?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Sodium/water depletion with a fall in BP",
+          "explanation": "Excessive diuresis can deplete sodium and intravascular volume and produce hypotension."
+        },
+        {
+          "text": "Sodium/water retention with a fall in BP",
+          "explanation": "Retention is not the direct excessive-diuresis effect."
+        },
+        {
+          "text": "Sodium/water depletion with a predictable BP rise",
+          "explanation": "A BP rise is not the expected volume-depletion response."
+        },
+        {
+          "text": "Sodium/water retention with a predictable BP rise",
+          "explanation": "This does not describe excessive loop diuresis."
+        }
+      ]
+    }
+  },
+  "verapamil_iv_monitoring": {
+    "point": "Recall the required monitoring during IV verapamil rather than receiving it as a stem hint.",
+    "anchor": "continuous ECG and BP monitoring",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair must be monitored continuously during IV verapamil administration?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "ECG and blood pressure",
+          "explanation": "IV verapamil can impair AV conduction and lower pressure; both need continuous observation."
+        },
+        {
+          "text": "Blood pressure and capillary glucose",
+          "explanation": "This omits the required continuous ECG observation."
+        },
+        {
+          "text": "ECG and body temperature",
+          "explanation": "This omits continuous blood-pressure monitoring."
+        },
+        {
+          "text": "Oxygen saturation and respiratory rate",
+          "explanation": "These do not replace the ECG/BP monitoring requirement."
+        }
+      ]
+    }
+  },
+  "verapamil_iv_beta": {
+    "point": "Recognize the contraindicated close administration of IV verapamil and an IV beta blocker.",
+    "anchor": "Do not give IV verapamil close to an IV beta-blocker dose",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "IV verapamil is ordered shortly after an IV propranolol dose. What should happen before giving verapamil?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Withhold the dose and urgently clarify the contraindicated overlap",
+          "explanation": "Close IV beta-blocker and IV verapamil administration can add myocardial and AV-conduction depression; the referenced injection labeling contraindicates this overlap."
+        },
+        {
+          "text": "Give the dose slowly because the administration rate removes the interaction",
+          "explanation": "Slowing administration does not remove the contraindicated overlap."
+        },
+        {
+          "text": "Give the dose if the current BP is high enough",
+          "explanation": "A satisfactory current BP does not remove the conduction and contractility risk."
+        },
+        {
+          "text": "Give the dose through a second IV line to avoid the interaction",
+          "explanation": "Separate IV lines do not prevent a systemic pharmacodynamic interaction."
+        }
+      ]
+    }
+  },
+  "verapamil_antianginal": {
+    "point": "Recognize verapamil’s antianginal use separately from supraventricular rate control.",
+    "anchor": "antianginal therapy",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient in sinus rhythm is prescribed oral verapamil. Which indication can still fit the order?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Angina symptom control",
+          "explanation": "Verapamil has an antianginal role as well as selected supraventricular rate-control uses."
+        },
+        {
+          "text": "Vasopressor support in cardiogenic shock",
+          "explanation": "Verapamil can depress cardiac activity and BP rather than supply vasopressor support."
+        },
+        {
+          "text": "Rapid removal of excess fluid in pulmonary edema",
+          "explanation": "Verapamil is not a loop diuretic."
+        },
+        {
+          "text": "Drug treatment of shock-refractory pulseless VF",
+          "explanation": "This is not verapamil’s resuscitation role."
+        }
+      ]
+    }
+  },
+  "ondansetron_apomorphine": {
+    "point": "Identify apomorphine as a contraindicated concurrent medicine with IV ondansetron.",
+    "anchor": "apomorphine",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which medicine is contraindicated with ondansetron injection because of reported profound hypotension and loss of consciousness?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Apomorphine",
+          "explanation": "Ondansetron with apomorphine is a labeled contraindicated combination."
+        },
+        {
+          "text": "Metoclopramide",
+          "explanation": "This antiemetic is not the particular named apomorphine contraindication."
+        },
+        {
+          "text": "Prochlorperazine",
+          "explanation": "This medicine has its own risks but is not the specific named contraindication."
+        },
+        {
+          "text": "Dexamethasone",
+          "explanation": "A corticosteroid is not the named drug in this interaction warning."
+        }
+      ]
+    }
+  },
+  "ondansetron_qt_risk_factors": {
+    "point": "Identify hypokalemia and hypomagnesemia as risk factors for ondansetron-related QT arrhythmia.",
+    "anchor": "low K\\+/Mg2\\+",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair of electrolyte abnormalities should raise concern about QT-related arrhythmias before IV ondansetron?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Hypokalemia and hypomagnesemia",
+          "explanation": "Low potassium or magnesium increases susceptibility to ondansetron-associated QT prolongation; ECG monitoring and clinical review are indicated."
+        },
+        {
+          "text": "Hypernatremia and hyperchloremia",
+          "explanation": "These abnormalities are not the specific paired QT-risk factors identified in ondansetron labeling."
+        },
+        {
+          "text": "Hypoglycemia and hyperphosphatemia",
+          "explanation": "These findings can need assessment but are not the label's characteristic QT-related electrolyte pair."
+        },
+        {
+          "text": "Hyperchloremia and low bicarbonate",
+          "explanation": "This suggests an acid-base concern, not the characteristic ondansetron QT-risk electrolyte pair."
+        }
+      ]
+    }
+  },
+  "ondansetron_congenital_qt": {
+    "point": "Distinguish the ondansetron label's avoidance recommendation in congenital long-QT syndrome from monitoring precautions for other risk factors.",
+    "anchor": "Avoid ondansetron in known congenital long-QT syndrome",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient with documented congenital long-QT syndrome is prescribed IV ondansetron for nausea. Which response best follows current injection labeling?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Withhold administration and promptly clarify a different antiemetic plan",
+          "explanation": "Current ondansetron labeling advises avoiding use in congenital long-QT syndrome because of torsades risk."
+        },
+        {
+          "text": "Proceed at a reduced dose because congenital QT risk applies only to oral treatment",
+          "explanation": "The congenital long-QT warning also applies to injectable ondansetron, even at lower doses."
+        },
+        {
+          "text": "Proceed if potassium and magnesium are normal without further QT review",
+          "explanation": "Normal electrolytes do not remove the intrinsic congenital long-QT risk."
+        },
+        {
+          "text": "Administer with a slower IV push because rate adjustment removes the congenital risk",
+          "explanation": "Slowing injection does not negate the label's congenital long-QT avoidance recommendation."
+        }
+      ]
+    }
+  },
+  "ondansetron_cardiac_qt_risk": {
+    "point": "Recognize heart failure, bradyarrhythmia and QT-prolonging co-medication as ECG-monitoring risk factors with IV ondansetron.",
+    "anchor": "heart failure, bradyarrhythmia",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Potassium and magnesium are normal in four adults awaiting ondansetron. None has congenital long-QT syndrome, bradyarrhythmia or a QT-prolonging co-medication. Which patient still has a labeled reason for ECG monitoring?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "A patient with established congestive heart failure",
+          "explanation": "Congestive heart failure is a labeled ECG-monitoring risk factor even when the other stated risks are absent."
+        },
+        {
+          "text": "A patient with isolated hypertension taking amlodipine",
+          "explanation": "Uncomplicated hypertension and amlodipine are not the specific label-cited QT-risk combination."
+        },
+        {
+          "text": "A patient with fever taking paracetamol",
+          "explanation": "Neither uncomplicated fever nor paracetamol is the characteristic label-cited QT-risk factor."
+        },
+        {
+          "text": "A patient with reflux taking pantoprazole and normal electrolytes",
+          "explanation": "This scenario does not state the label's cardiac/QT risk factors; potassium and magnesium are stated as normal."
+        }
+      ]
+    }
+  },
+  "ondansetron_class_hypersensitivity": {
+    "point": "Identify prior severe reaction to another 5-HT3 antagonist as a specific hypersensitivity review concern.",
+    "anchor": "other 5-HT3 antagonists such as granisetron",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which history most specifically prompts a 5-HT3 cross-sensitivity review before ondansetron?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Anaphylaxis after granisetron",
+          "explanation": "Granisetron is another 5-HT3 antagonist; reported class-related hypersensitivity requires review."
+        },
+        {
+          "text": "Anaphylaxis after amoxicillin",
+          "explanation": "This allergy matters to medication care, but amoxicillin is not a 5-HT3 antagonist."
+        },
+        {
+          "text": "Anaphylaxis after ibuprofen",
+          "explanation": "This is not prior exposure to another 5-HT3 antagonist."
+        },
+        {
+          "text": "Anaphylaxis after nystatin",
+          "explanation": "This is not prior exposure to another 5-HT3 antagonist."
+        }
+      ]
+    }
+  },
+  "ondansetron_serotonergic_combination": {
+    "point": "Recognize tramadol as a serotonergic co-medication requiring serotonin-syndrome vigilance with ondansetron.",
+    "anchor": "serotonergic agents such as tramadol",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which concurrent medicine adds a serotonin-syndrome monitoring concern when ondansetron is prescribed?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Tramadol",
+          "explanation": "Tramadol has serotonergic effects and is among the labeled co-medications associated with increased monitoring concern."
+        },
+        {
+          "text": "Paracetamol",
+          "explanation": "This is not the serotonergic analgesic in these options."
+        },
+        {
+          "text": "Ibuprofen",
+          "explanation": "Its principal safety concerns are different from serotonergic interaction."
+        },
+        {
+          "text": "Diclofenac",
+          "explanation": "Its principal safety concerns are different from serotonergic interaction."
+        }
+      ]
+    }
+  },
+  "ondansetron_bradyarrhythmia": {
+    "point": "Identify bradyarrhythmia as an ondansetron ECG-monitoring risk independent of other stated factors.",
+    "anchor": "bradyarrhythmia",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An adult has normal potassium and magnesium, no congenital long-QT syndrome and no QT-prolonging co-medication. Which history still supports ECG monitoring with ondansetron?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "An established bradyarrhythmia",
+          "explanation": "Bradyarrhythmia is a labeled ECG-monitoring risk factor even when the other listed risks are absent."
+        },
+        {
+          "text": "Well-controlled uncomplicated hypertension",
+          "explanation": "This alone is not the specified rhythm-related risk factor."
+        },
+        {
+          "text": "A healed peptic ulcer without bleeding",
+          "explanation": "This is not the specified rhythm-related risk factor."
+        },
+        {
+          "text": "Chronic constipation without obstruction",
+          "explanation": "This is not the specified rhythm-related risk factor."
+        }
+      ]
+    }
+  },
+  "ondansetron_qt_comedication": {
+    "point": "Recognize a QT-prolonging co-medication as an independent ondansetron monitoring concern.",
+    "anchor": "concomitant QT-prolonging drugs",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An adult awaiting ondansetron has normal electrolytes and no heart failure or bradyarrhythmia. Which concurrent medicine adds a direct QT-prolongation monitoring concern?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Amiodarone",
+          "explanation": "Amiodarone can prolong QT; combining QT-prolonging drugs warrants risk review and ECG monitoring."
+        },
+        {
+          "text": "Enalapril",
+          "explanation": "Enalapril is not the direct QT-prolonging medicine among these options."
+        },
+        {
+          "text": "Amlodipine",
+          "explanation": "Amlodipine is not the direct QT-prolonging medicine among these options."
+        },
+        {
+          "text": "Clopidogrel",
+          "explanation": "Clopidogrel is not the direct QT-prolonging medicine among these options."
+        }
+      ]
+    }
+  },
+  "ondansetron_prior_allergy": {
+    "point": "Distinguish contraindicating ondansetron hypersensitivity and apomorphine from intolerance and a noncontraindicated antiemetic adjunct.",
+    "anchor": "hypersensitivity",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair of findings contraindicates ondansetron administration?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Prior ondansetron anaphylaxis and current apomorphine therapy",
+          "explanation": "Both known hypersensitivity and concomitant apomorphine contraindicate ondansetron."
+        },
+        {
+          "text": "Prior ondansetron headache and current apomorphine therapy",
+          "explanation": "Apomorphine is contraindicated, but isolated headache does not establish hypersensitivity."
+        },
+        {
+          "text": "Prior ondansetron anaphylaxis and current dexamethasone therapy",
+          "explanation": "Known hypersensitivity contraindicates ondansetron; dexamethasone is not the named contraindicated combination."
+        },
+        {
+          "text": "Prior ondansetron headache and current dexamethasone therapy",
+          "explanation": "Neither isolated headache nor dexamethasone is the contraindication pair sought."
+        }
+      ]
+    }
+  },
+  "verapamil_deterioration_action": {
+    "point": "Respond promptly to symptomatic cardiac/circulatory deterioration.",
+    "anchor": "Report bradycardia",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "During IV verapamil, a patient develops new symptomatic bradycardia with marked hypotension. What is the best immediate nursing response?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Stop administration and urgently escalate while supporting circulation",
+          "explanation": "This clinically important deterioration requires stopping further exposure and urgent assessment/support."
+        },
+        {
+          "text": "Finish administration and then seek urgent assessment",
+          "explanation": "Completing the dose adds exposure despite clinically important deterioration."
+        },
+        {
+          "text": "Continue at half the rate and reassess after completion",
+          "explanation": "Reducing the rate does not justify continuing during symptomatic bradycardia and hypotension."
+        },
+        {
+          "text": "Pause until the next routine observation, then decide whether to report",
+          "explanation": "Waiting for routine observations delays necessary escalation."
+        }
+      ]
+    }
+  },
+  "furosemide_sodium_monitor": {
+    "point": "Include serum sodium in electrolyte surveillance.",
+    "anchor": "Na\\+",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving repeated furosemide doses has potassium, magnesium and creatinine scheduled. Which additional electrolyte measurement completes the recommended panel?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Serum sodium",
+          "explanation": "Sodium is part of the required electrolyte surveillance during diuresis."
+        },
+        {
+          "text": "Serum phosphate",
+          "explanation": "Phosphate does not replace the missing sodium measurement."
+        },
+        {
+          "text": "Serum ionized calcium",
+          "explanation": "Calcium assessment does not replace the missing sodium measurement."
+        },
+        {
+          "text": "Serum bicarbonate alone",
+          "explanation": "Bicarbonate does not replace direct sodium measurement."
+        }
+      ]
+    }
+  },
+  "furosemide_rapid_ototoxicity": {
+    "point": "Connect rapid/high-dose IV administration with ototoxicity risk.",
+    "anchor": "large/rapid IV doses",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which change in furosemide administration increases the risk of ototoxicity?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Giving a large IV dose more rapidly",
+          "explanation": "Large doses and rapid injection increase the risk of ototoxicity."
+        },
+        {
+          "text": "Giving a routine oral dose earlier in the day",
+          "explanation": "Earlier oral timing helps limit nocturia and is not the administration risk sought."
+        },
+        {
+          "text": "Using the prescribed controlled IV infusion rate",
+          "explanation": "Controlled delivery avoids unnecessary rapid exposure."
+        },
+        {
+          "text": "Maintaining the ordered dose with slower IV delivery",
+          "explanation": "Slower delivery does not create the rapid-injection risk sought."
+        }
+      ]
+    }
+  },
+  "furosemide_controlled_delivery": {
+    "point": "Select controlled infusion for high-dose parenteral therapy.",
+    "anchor": "controlled infusion",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which delivery method is appropriate for prescribed high-dose parenteral furosemide?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Controlled infusion within the prescribed rate limit",
+          "explanation": "High-dose parenteral therapy requires controlled delivery within the authorized rate."
+        },
+        {
+          "text": "A rapid IV push followed by a slow saline flush",
+          "explanation": "A slow flush does not make the preceding rapid drug injection a controlled infusion."
+        },
+        {
+          "text": "Intermittent rapid pushes separated by observation pauses",
+          "explanation": "Pauses do not control the rate of each rapid injection."
+        },
+        {
+          "text": "A free-flow infusion adjusted only when symptoms occur",
+          "explanation": "Symptom-triggered adjustment does not provide the required rate control."
+        }
+      ]
+    }
   }
 }

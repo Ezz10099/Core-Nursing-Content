@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 2,
+  "reviewDate": "2026-11-07",
+  "medicationId": "ed-ondansetron-provisional-shelf",
+  "revision": "three-medication-author-review-20261107",
+  "status": "Author-reviewed source-fact mapping bound to actual regenerated scored questions; unresolved facts explicitly uncredited. No independent clinical validation or calibrated difficulty.",
+  "factsReviewed": 19,
+  "facts": [
+    {
+      "fact": "5-HT3 receptor antagonist",
+      "sourceField": "drugclass",
+      "sourceExcerpt": "5-HT3 receptor antagonist; antiemetic.",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::drug-class"
+      ],
+      "rationale": "The question requires knowledge of ondansetron's 5-HT3 class.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::drug-class",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--drug-class",
+          "sha256": "8aad3c004ee37023061b375751ea8bc7dfacf88bdf9e38189b697a2c4ffa6b64"
+        }
+      ]
+    },
+    {
+      "fact": "Serotonin-mediated emesis mechanism",
+      "sourceField": "mechanism",
+      "sourceExcerpt": "5-HT3 receptor antagonism reduces vagal/central serotonin-mediated nausea pathways.",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::principal-action"
+      ],
+      "rationale": "Mechanism cannot be selected without identifying serotonin pathway blockade.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::principal-action",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--principal-action",
+          "sha256": "c211ce120b4881888dc3e17364cd13a4029be317dfeb60595e11cce02f04bd3f"
+        }
+      ]
+    },
+    {
+      "fact": "Nausea/vomiting treatment role",
+      "sourceField": "use",
+      "sourceExcerpt": "Prevention and treatment of nausea/vomiting when indicated",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::treatment-role"
+      ],
+      "rationale": "The treatment-role item asks for appropriate nausea/vomiting indications.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::treatment-role",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--treatment-role",
+          "sha256": "a0997f6a26cd552fb6a95a6c91791d81d791b113a6dfa3deb47af749066d14ff"
+        }
+      ]
+    },
+    {
+      "fact": "Approvals are indication-specific",
+      "sourceField": "use",
+      "sourceExcerpt": "specific approvals vary by indication",
+      "assessment": "excluded_unspecified_detail",
+      "learningPointIds": [],
+      "rationale": "The source gives no particular product-specific approval distinction to test. Retain the qualification without inventing indications or creating a generic label-check filler item.",
+      "coverageCredit": false,
+      "requiredForCoverage": false,
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "IV versus IM routes vary by product",
+      "sourceField": "administration",
+      "sourceExcerpt": "Certain ondansetron injection products permit IV or IM use.",
+      "assessment": "local_product_pending",
+      "learningPointIds": [],
+      "rationale": "The generic formulation prompt was excluded; no current scored question asks route selection based on a verified actual vial.",
+      "coverageCredit": false,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "IV dose/rate/dilution depend on product and indication",
+      "sourceField": "administration",
+      "sourceExcerpt": "IV dose, rate and dilution are indication- and product-specific.",
+      "assessment": "local_product_pending",
+      "learningPointIds": [],
+      "rationale": "Do not invent a universal rate or assign scoring credit pending locally verified product information.",
+      "coverageCredit": false,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "Verify actual container and order, not shelf label",
+      "sourceField": "administration",
+      "sourceExcerpt": "Verify the actual container and physician order; never infer route or strength from a shelf label.",
+      "assessment": "excluded_shared_safety_rule",
+      "learningPointIds": [],
+      "rationale": "Important safety instruction retained, but identical generic check-the-label questions across medicines were deliberately excluded.",
+      "coverageCredit": false,
+      "requiredForCoverage": false,
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "Prior severe allergy to ondansetron itself",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check previous severe hypersensitivity",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_prior_allergy"
+      ],
+      "rationale": "The scored answer requires this specific source fact; the fact is not supplied as a stem hint.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_prior_allergy",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_prior_allergy",
+          "sha256": "d962d0b07ac38e639dfa55b17989264d07b8289b8d833849e145b0d731f51220"
+        }
+      ]
+    },
+    {
+      "fact": "Class-related prior severe hypersensitivity",
+      "sourceField": "monitor",
+      "sourceExcerpt": "other 5-HT3 antagonists such as granisetron",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_class_hypersensitivity"
+      ],
+      "rationale": "All four histories involve anaphylaxis; identifying the relevant class relation requires knowing granisetron.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_class_hypersensitivity",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_class_hypersensitivity",
+          "sha256": "ba7c0a8cb8f1f6267a0dd6b18526a9e1a10208ccb3fab5818667e6a96485d547"
+        }
+      ]
+    },
+    {
+      "fact": "Avoid in congenital long-QT syndrome",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Avoid ondansetron in known congenital long-QT syndrome under current injection labeling.",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_congenital_qt"
+      ],
+      "rationale": "New clinical scenario tests the avoid-versus-monitor distinction.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_congenital_qt",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_congenital_qt",
+          "sha256": "6b945f013d4485b74e0be258b0d903913feddaed3c9062448b502ec23405e959"
+        }
+      ]
+    },
+    {
+      "fact": "Heart failure independently raises ECG-monitoring concern",
+      "sourceField": "monitor",
+      "sourceExcerpt": "heart failure",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_cardiac_qt_risk"
+      ],
+      "rationale": "The revised scenario excludes bradyarrhythmia, QT drugs and electrolyte abnormalities; heart failure must be selected independently.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_cardiac_qt_risk",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_cardiac_qt_risk",
+          "sha256": "26b2a0326642a04872a571ae241ff6bc857a5a5d9d0c508f4085d4443cdcb3f5"
+        }
+      ]
+    },
+    {
+      "fact": "Bradyarrhythmia independently raises ECG-monitoring concern",
+      "sourceField": "monitor",
+      "sourceExcerpt": "bradyarrhythmia",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_bradyarrhythmia"
+      ],
+      "rationale": "The isolated rhythm risk must be selected.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_bradyarrhythmia",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_bradyarrhythmia",
+          "sha256": "3494862819d8829984d818786131b714b7396225329967dd2d940c12e4426825"
+        }
+      ]
+    },
+    {
+      "fact": "QT-prolonging co-medication independently raises concern",
+      "sourceField": "monitor",
+      "sourceExcerpt": "concomitant QT-prolonging drugs",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_qt_comedication"
+      ],
+      "rationale": "The separate question requires identifying amiodarone as a direct QT-prolonging co-medication.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_qt_comedication",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_qt_comedication",
+          "sha256": "20bf0e0aea0f010a21e0c708f7ef7d843f7c5d33356a07f554fc0a3d22e5a972"
+        }
+      ]
+    },
+    {
+      "fact": "Low potassium and magnesium contribute to QT risk",
+      "sourceField": "monitor",
+      "sourceExcerpt": "low K+/Mg2+",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors"
+      ],
+      "rationale": "Revised question asks for the actual paired electrolyte risks.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_qt_risk_factors",
+          "sha256": "7eebfbe18e26c5b74c46e1fb912ba945e2898109af4c5939c22e08673cabaab7"
+        }
+      ]
+    },
+    {
+      "fact": "ECG QT prolongation",
+      "sourceField": "why",
+      "sourceExcerpt": "can prolong cardiac repolarization in susceptible patients",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::qt"
+      ],
+      "rationale": "The QT item asks which ECG interval is affected.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::qt",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--qt",
+          "sha256": "ce5039763c23865ddd59680cb07ac58ffe1cfb1cfa7aeafebe3c7bf06fd18479"
+        }
+      ]
+    },
+    {
+      "fact": "Recognize serotonin syndrome symptoms",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor for serotonin syndrome",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::serotonin"
+      ],
+      "rationale": "The scored scenario asks for serotonin syndrome based on clinical signs.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::serotonin",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--serotonin",
+          "sha256": "7f913fcf122809439424a0a2dda552c85d80ebe40fc4fb4a4903c4e87c13683f"
+        }
+      ]
+    },
+    {
+      "fact": "Serotonergic co-medications increase need for monitoring",
+      "sourceField": "monitor",
+      "sourceExcerpt": "serotonergic agents such as tramadol",
+      "assessment": "directly_tested_staged",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_serotonergic_combination"
+      ],
+      "rationale": "The learner must identify tramadol among other analgesics; signs are not supplied as the answer.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_serotonergic_combination",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_serotonergic_combination",
+          "sha256": "4257896620d9b96ec50e7e82e5388c81496b77c392599da64fff721090fd4522"
+        }
+      ]
+    },
+    {
+      "fact": "Apomorphine interaction contraindication",
+      "sourceField": "monitor",
+      "sourceExcerpt": "Do not combine with apomorphine.",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_apomorphine"
+      ],
+      "rationale": "Requires recalling the named contraindicated medicine.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_apomorphine",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_apomorphine",
+          "sha256": "7877094c463e22dad1f55a73fd4d66382bef3cf5d1aa759a41988f921481123a"
+        }
+      ]
+    },
+    {
+      "fact": "Receptor blockade explains antiemesis",
+      "sourceField": "why",
+      "sourceExcerpt": "Blocks serotonin 5-HT3 receptors to reduce emetic signaling",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::principal-action"
+      ],
+      "rationale": "Mechanism overlaps the taught mechanism field; no duplicate question necessary.",
+      "coverageCredit": true,
+      "requiredForCoverage": true,
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::principal-action",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--principal-action",
+          "sha256": "c211ce120b4881888dc3e17364cd13a4029be317dfeb60595e11cce02f04bd3f"
+        }
+      ]
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "daf2bebb62c1729cd2598305cf6569a88dbf2f58461e5b6492dcf87713e0eca3",
+    "mechanism": "aa8fcc0f077f0e146f6ba7ee1a182a43b49dd76e788c30dfa360d8fe5fb593fb",
+    "use": "4f225fd90f3a6b2d0657ce046ac2b473d4eca6717a9b188b3846b8a2793912b7",
+    "administration": "6b4c24c0d0759bbc3fbdb7c6ac894dcc69c7e9a7f3279ac7bd76e37b54598694",
+    "monitor": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a",
+    "why": "cd5560ccf0b97bafe6f4d431e1fe379bf9b880f2a0626a1603602555be006337",
+    "memoryUse": "0c0e8b1ed953100a8621497dabe73bdcb22dc511718bc67084bfd2107d21a397",
+    "memoryDanger": "6f1b9f271e114524ea5e6a37f41dc20ef632774e1a193247287fe84444fcbe52",
+    "availability": "385db2203c6bb82cdfd9670cc76ccdbb3bf479cbd3ce49f3c8be1e34061acfd5"
+  },
+  "fieldDispositions": {
+    "memoryUse": "Repetition of core mechanism/use facts: no duplicate question required.",
+    "memoryDanger": "Repetition of adverse-effect/monitoring facts; no separate credit or extra filler question.",
+    "availability": "Stock reports, brand observations and unverified local pack strengths are not a dependable universal dosing instruction. Retained as context; local actual-product verification remains necessary."
+  },
+  "evidence": [
+    {
+      "authority": "DailyMed, ondansetron injection updated 2026",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a44601b-c31c-4779-a688-28cc4cc75e8b",
+      "relevance": "Contraindications, apomorphine, QT, allergy and serotonin-syndrome warnings",
+      "checkedDate": "2026-11-07"
+    },
+    {
+      "authority": "DailyMed, ondansetron injection updated 2025",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0862c02-781f-4b10-ae50-9c9c4ca26f6d",
+      "relevance": "Congenital QT avoidance and electrolyte, cardiac, medication and allergy risk factors",
+      "checkedDate": "2026-11-07"
+    },
+    {
+      "authority": "DailyMed granisetron injection label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=783e9d68-2371-4fd4-8d7a-a5e36f8718d0",
+      "checkedDate": "2026-11-07",
+      "scope": "Confirm granisetron is a selective 5-HT3 antagonist used as the named class-hypersensitivity example; no new dosing advice."
+    }
+  ],
+  "certifiedFullCoverage": false,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "exposureOrMasteryInferred": false,
+  "notes": [
+    "Composite heart-failure/bradyarrhythmia/QT-drug credit is split into three source facts and three actual scored questions.",
+    "An exact local vial and indication remain unverified; no universal IV route/dose/rate key has been invented."
+  ],
+  "summary": {
+    "excluded_shared_safety_rule": 1,
+    "directly_tested": 9,
+    "local_product_pending": 2,
+    "excluded_unspecified_detail": 1,
+    "directly_tested_staged": 6
+  },
+  "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
+  "questionSetSha256": "d678753b7fb0f2145a438f78efc6480b2851a659c53276a6cb859010a619b95a",
+  "questionReview": {
+    "questionsInspected": 14,
+    "authorQuestionReviewComplete": false,
+    "checks": [
+      "Actual scored questions inspected for source support and answer cues; selected weak alternatives rewritten.",
+      "No local-product route or rate invented.",
+      "Existing generic omissions retained; no coverage credit from a fact supplied in a stem.",
+      "The contraindication-pair alternatives vary hypersensitivity and apomorphine independently, requiring ondansetron-specific interaction knowledge."
+    ],
+    "remaining": "Remaining required source facts and full acceptance must be resolved before Completed."
+  }
+}
