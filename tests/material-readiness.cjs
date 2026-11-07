@@ -33,6 +33,11 @@ assert(!d.querySelector('#library').classList.contains('hidden'),'The review pan
 assert.equal(d.querySelector('#materialPreparationDetails').open,true,'Review details expand when explicitly requested');
 w.setCatalogFilter('complete');assert(d.querySelector('#source-complete').classList.contains('selected'));
 assert.equal(d.querySelector('#source-complete').textContent,'Completed (1)');
+w.showTab('clinical');w.toggleCompletedLessons();
+assert(d.querySelector('#completedLessonsLink').getAttribute('aria-pressed')==='true','Completed lessons are filtered in Clinical');
+assert.equal(d.querySelectorAll('#lessonList .item').length,1,'Completed clinical filter shows only approved lessons');
+w.toggleCompletedLessons();assert(d.querySelector('#completedLessonsLink').getAttribute('aria-pressed')==='false');
+w.showTab('library');w.setCatalogFilter('complete');
 assert.equal(d.querySelectorAll('#list .item').length,1,'Completed category filters medications, not lessons');
 assert(d.querySelector('#list .item').textContent.includes(med.title));
 d.querySelector('#list .item button').click();assert(!d.querySelector('#detail').classList.contains('hidden'));
