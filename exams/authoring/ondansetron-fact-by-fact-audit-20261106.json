@@ -89,7 +89,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_injection_routes",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_injection_routes",
-          "sha256": "76ef4263ad19949863e38aa80ced57fdfc5c167a39a29428c00f63a677c5955e"
+          "sha256": "4e3b573b5db24552461921640db7d2f60cf1f034b7f33e8b40c4423a769371fe"
         }
       ]
     },
@@ -397,15 +397,15 @@
     }
   ],
   "reviewedSourceFieldSha256": {
-    "mechanism": "aa8fcc0f077f0e146f6ba7ee1a182a43b49dd76e788c30dfa360d8fe5fb593fb",
-    "use": "4f225fd90f3a6b2d0657ce046ac2b473d4eca6717a9b188b3846b8a2793912b7",
-    "why": "cd5560ccf0b97bafe6f4d431e1fe379bf9b880f2a0626a1603602555be006337",
-    "monitor": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a",
-    "availability": "385db2203c6bb82cdfd9670cc76ccdbb3bf479cbd3ce49f3c8be1e34061acfd5",
-    "memoryDanger": "6f1b9f271e114524ea5e6a37f41dc20ef632774e1a193247287fe84444fcbe52",
+    "drugclass": "daf2bebb62c1729cd2598305cf6569a88dbf2f58461e5b6492dcf87713e0eca3",
     "memoryUse": "0c0e8b1ed953100a8621497dabe73bdcb22dc511718bc67084bfd2107d21a397",
-    "administration": "93d3b2c5dd52221853ed1c47b9b208b9b8eeae940d6276debbf1623647f56ec3",
-    "drugclass": "daf2bebb62c1729cd2598305cf6569a88dbf2f58461e5b6492dcf87713e0eca3"
+    "memoryDanger": "6f1b9f271e114524ea5e6a37f41dc20ef632774e1a193247287fe84444fcbe52",
+    "monitor": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a",
+    "mechanism": "aa8fcc0f077f0e146f6ba7ee1a182a43b49dd76e788c30dfa360d8fe5fb593fb",
+    "why": "cd5560ccf0b97bafe6f4d431e1fe379bf9b880f2a0626a1603602555be006337",
+    "use": "4f225fd90f3a6b2d0657ce046ac2b473d4eca6717a9b188b3846b8a2793912b7",
+    "availability": "385db2203c6bb82cdfd9670cc76ccdbb3bf479cbd3ce49f3c8be1e34061acfd5",
+    "administration": "93d3b2c5dd52221853ed1c47b9b208b9b8eeae940d6276debbf1623647f56ec3"
   },
   "fieldDispositions": {
     "memoryUse": "Repetition of core mechanism/use facts: no duplicate question required.",
@@ -441,15 +441,15 @@
     "An exact local vial and indication remain unverified; no universal IV route/dose/rate key has been invented."
   ],
   "summary": {
-    "excluded_shared_safety_rule": 1,
+    "excluded_duplicate_or_stock_context": 3,
     "excluded_shared_order_safeguard": 1,
     "directly_tested_staged": 6,
     "directly_tested": 11,
-    "excluded_duplicate_or_stock_context": 3,
+    "excluded_shared_safety_rule": 1,
     "excluded_unspecified_detail": 1
   },
   "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
-  "questionSetSha256": "ccfbb9653800e053b8e6632bb7759973ce3f9d2c88f2b7ce11a81fc499b0ef60",
+  "questionSetSha256": "3c55eae337cefaee35dc13b88021c26f96560aa8ee272cfa96d7a065487ca46a",
   "questionReview": {
     "questionsInspected": 16,
     "authorQuestionReviewComplete": true,
