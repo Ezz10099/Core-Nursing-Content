@@ -28,7 +28,7 @@
 </div>
 <p class="note" id="clinicalDepartmentNote">Coronary Care Unit · cardiovascular internship lessons and confirmed clinical Q&amp;A.</p>
 <div class="sectionlabel" id="clinicalLessonHeading">CCU Lessons</div>
-<button type="button" id="completedLessonsLink" class="readiness-shortcut" onclick="CoreNursingReadiness.open('complete','lesson')">مكتمل</button><input id="lessonSearch" class="search" type="search" placeholder="Search CCU lessons…" aria-label="Search clinical lessons" oninput="renderLessons()" autocomplete="off">
+<button type="button" id="completedLessonsLink" class="readiness-shortcut" onclick="toggleCompletedLessons()" aria-pressed="false">Completed lessons</button><input id="lessonSearch" class="search" type="search" placeholder="Search CCU lessons…" aria-label="Search clinical lessons" oninput="renderLessons()" autocomplete="off">
 <div id="reading-lesson"></div><div id="lessonList"></div><div id="lessonDetail" class="hidden"></div>
 <div id="clinicalFaq" class="panel"><h2 id="clinicalFaqTitle">CCU FAQ</h2><p class="note" id="clinicalFaqNote">Clinical questions from this department that are not tied to one specific medication.</p><div id="reading-faq"></div><div id="clinicalFaqItems"></div></div>
 </section>
