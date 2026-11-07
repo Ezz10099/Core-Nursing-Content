@@ -58,10 +58,10 @@
       card.append(type,title,actions);list.append(card);
     }
     const more=host.querySelector('[data-readiness-more]');more.hidden=matches.length<=limit;more.textContent='عرض المزيد ('+Math.max(0,matches.length-limit)+')';
-    for(const [id,type] of [['completedMedsLink','medication'],['completedLessonsLink','lesson']]){const button=document.getElementById(id);if(button)button.textContent='مكتمل ('+all.filter(b=>b.itemType===type&&status(b.itemId)==='complete').length+')';}
+    const completedTab=document.getElementById('source-complete');if(completedTab)completedTab.textContent='Completed ('+all.filter(b=>b.itemType==='medication'&&status(b.itemId)==='complete').length+')';
   }
   function select(value){if(!Object.hasOwn(labels,value))return;filter=value;limit=6;render();}
-  function open(value='complete',type='all'){kind=['all','medication','lesson'].includes(type)?type:'all';filter=Object.hasOwn(labels,value)?value:'complete';term='';limit=6;const host=document.getElementById('materialReadiness');host.querySelector('input').value='';host.querySelector('select').value=kind;showTab('home');render();requestAnimationFrame(()=>{const pane=studyPane();scrollStudyTo(0,pane.scrollTop+host.getBoundingClientRect().top-pane.getBoundingClientRect().top-12);host.focus({preventScroll:true});});}
+  function open(value='complete',type='all'){kind=['all','medication','lesson'].includes(type)?type:'all';filter=Object.hasOwn(labels,value)?value:'complete';term='';limit=6;const host=document.getElementById('materialReadiness');host.querySelector('input').value='';host.querySelector('select').value=kind;showTab('library');host.closest('#materialPreparationDetails')?.setAttribute('open','');render();requestAnimationFrame(()=>{const pane=studyPane();scrollStudyTo(0,pane.scrollTop+host.getBoundingClientRect().top-pane.getBoundingClientRect().top-12);host.focus({preventScroll:true});});}
   const host=document.getElementById('materialReadiness');if(!host)return;
   host.querySelector('input').addEventListener('input',event=>{term=event.target.value.trim().toLocaleLowerCase();limit=6;render();});
   host.querySelector('select').addEventListener('change',event=>{kind=event.target.value;limit=6;render();});
