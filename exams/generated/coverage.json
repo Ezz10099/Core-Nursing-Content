@@ -8654,6 +8654,97 @@
       ]
     },
     {
+      "id": "ed-captopril-tablets::cap_additional_uses",
+      "itemId": "ed-captopril-tablets",
+      "point": "Recognize selected HF and stable post-MI uses.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--cap_additional_uses",
+        "ed-captopril-tablets--7-day--cap_additional_uses"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::cap_emergency_limit",
+      "itemId": "ed-captopril-tablets",
+      "point": "Do not substitute routine oral captopril for an organ-injury emergency pathway.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--cap_emergency_limit",
+        "ed-captopril-tablets--7-day--cap_emergency_limit"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::cap_renal_cautions",
+      "itemId": "ed-captopril-tablets",
+      "point": "Recognize both important renal-risk histories.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--cap_renal_cautions",
+        "ed-captopril-tablets--7-day--cap_renal_cautions"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::cap_volume_bp",
+      "itemId": "ed-captopril-tablets",
+      "point": "Recognize volume depletion as a hypotension risk and reassess BP.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--cap_volume_bp",
+        "ed-captopril-tablets--7-day--cap_volume_bp"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::cap_potassium_combo",
+      "itemId": "ed-captopril-tablets",
+      "point": "Identify potassium-raising co-therapy.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--cap_potassium_combo",
+        "ed-captopril-tablets--7-day--cap_potassium_combo"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::cap_angio_action",
+      "itemId": "ed-captopril-tablets",
+      "point": "Respond to new angioedema with airway assessment and prompt cessation/escalation.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--cap_angio_action",
+        "ed-captopril-tablets--7-day--cap_angio_action"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ed-captopril-tablets::cap_downstream",
+      "itemId": "ed-captopril-tablets",
+      "point": "Connect BP and potassium effects with RAAS inhibition.",
+      "questionIds": [
+        "ed-captopril-tablets--standard--cap_downstream",
+        "ed-captopril-tablets--7-day--cap_downstream"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ed-omnic-tamsulosin::principal-action",
       "itemId": "ed-omnic-tamsulosin",
       "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -16218,14 +16309,20 @@
           "ed-captopril-tablets--standard--principal-action",
           "ed-captopril-tablets--standard--high_k",
           "ed-captopril-tablets--standard--renal_monitor",
+          "ed-captopril-tablets--standard--cap_downstream",
           "ed-captopril-tablets--advanced--high_k",
           "ed-captopril-tablets--7-day--principal-action",
           "ed-captopril-tablets--7-day--high_k",
-          "ed-captopril-tablets--7-day--renal_monitor"
+          "ed-captopril-tablets--7-day--renal_monitor",
+          "ed-captopril-tablets--7-day--cap_downstream"
         ],
         "use": [
           "ed-captopril-tablets--standard--treatment-role",
-          "ed-captopril-tablets--7-day--treatment-role"
+          "ed-captopril-tablets--standard--cap_additional_uses",
+          "ed-captopril-tablets--standard--cap_emergency_limit",
+          "ed-captopril-tablets--7-day--treatment-role",
+          "ed-captopril-tablets--7-day--cap_additional_uses",
+          "ed-captopril-tablets--7-day--cap_emergency_limit"
         ],
         "memoryUse": [
           "ed-captopril-tablets--standard--treatment-role",
@@ -16240,6 +16337,10 @@
           "ed-captopril-tablets--standard--hypotension",
           "ed-captopril-tablets--standard--renal_monitor",
           "ed-captopril-tablets--standard--ace_history",
+          "ed-captopril-tablets--standard--cap_renal_cautions",
+          "ed-captopril-tablets--standard--cap_volume_bp",
+          "ed-captopril-tablets--standard--cap_potassium_combo",
+          "ed-captopril-tablets--standard--cap_angio_action",
           "ed-captopril-tablets--advanced--pregnancy",
           "ed-captopril-tablets--advanced--high_k",
           "ed-captopril-tablets--advanced--hypotension",
@@ -16247,7 +16348,11 @@
           "ed-captopril-tablets--7-day--high_k",
           "ed-captopril-tablets--7-day--hypotension",
           "ed-captopril-tablets--7-day--renal_monitor",
-          "ed-captopril-tablets--7-day--ace_history"
+          "ed-captopril-tablets--7-day--ace_history",
+          "ed-captopril-tablets--7-day--cap_renal_cautions",
+          "ed-captopril-tablets--7-day--cap_volume_bp",
+          "ed-captopril-tablets--7-day--cap_potassium_combo",
+          "ed-captopril-tablets--7-day--cap_angio_action"
         ],
         "memoryDanger": [
           "ed-captopril-tablets--standard--pregnancy",
@@ -17359,7 +17464,7 @@
   },
   "sourceReview": {
     "status": "partial source review; exhaustive inventory pending",
-    "scope": "Identified additional required points in seven medication entries. Other taught points remain subject to review. This file does not certify complete coverage of any material.",
+    "scope": "Historical partial additional-point review of seven medication entries only. Later per-material completed author reviews are tracked separately in material-readiness.json.",
     "partiallyReviewedItemIds": [
       "verified-losartan",
       "ibd2-acamol",

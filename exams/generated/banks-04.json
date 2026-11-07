@@ -17804,7 +17804,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "why",
-                  "textSha256": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3"
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
                 }
               ],
               "criticalForSafety": false,
@@ -17826,18 +17826,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "ACE inhibitor",
+                  "explanation": "ACE inhibitor; antihypertensive."
+                },
+                {
+                  "id": "C",
                   "text": "Alpha/beta blocker",
                   "explanation": "The medicine is classified as: ACE inhibitor; antihypertensive."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Dihydropyridine CCB",
                   "explanation": "The medicine is classified as: ACE inhibitor; antihypertensive."
-                },
-                {
-                  "id": "D",
-                  "text": "ACE inhibitor",
-                  "explanation": "ACE inhibitor; antihypertensive."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -17856,7 +17856,7 @@
               "learningPointIds": [
                 "ed-captopril-tablets::drug-class"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -17880,7 +17880,7 @@
                 {
                   "id": "D",
                   "text": "Oral antihypertensive treatment for selected indications",
-                  "explanation": "This is a clinical use of the medicine: Treatment of hypertension and selected heart-failure or post-MI indications. Oral captopril is not a substitute for controlled IV treatment of hypertensive emergencies with acute organ injury."
+                  "explanation": "This is a clinical use of the medicine: Treatment of hypertension and selected heart-failure or clinically stable post-MI indications. Oral captopril is not a substitute for controlled IV treatment of hypertensive emergencies with acute organ injury."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -17890,7 +17890,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "use",
-                  "textSha256": "52bb1cff6f5e7bfb6cb4f29592c65dc2ba3d09884299bec78ac8aa7954d6a227"
+                  "textSha256": "a09d4bbdd36c4bf4cd4669b2392c8f0de39af7e0b5f27882b1db18a05acce558"
                 },
                 {
                   "file": "content.json",
@@ -17913,18 +17913,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Fetal toxicity",
+                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
+                },
+                {
+                  "id": "B",
                   "text": "Maternal ototoxicity",
                   "explanation": "Hearing injury is not the pregnancy warning being tested."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Maternal hypoglycemia",
                   "explanation": "This is not the characteristic pregnancy-specific concern for this treatment."
-                },
-                {
-                  "id": "C",
-                  "text": "Fetal toxicity",
-                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
                 },
                 {
                   "id": "D",
@@ -17940,7 +17940,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
@@ -17956,25 +17956,25 @@
               "learningPointIds": [
                 "ed-captopril-tablets::pregnancy"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting CAPTOPRIL — oral tablets?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Rising serum potassium",
+                  "explanation": "The treatment can increase potassium or reduce its loss."
+                },
+                {
+                  "id": "B",
                   "text": "Rising serum calcium",
                   "explanation": "Calcium elevation is not the principal effect being tested."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Falling serum potassium",
                   "explanation": "This is the opposite of the characteristic potassium-raising concern."
-                },
-                {
-                  "id": "C",
-                  "text": "Rising serum potassium",
-                  "explanation": "The treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "D",
@@ -17990,14 +17990,14 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "why",
-                  "textSha256": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3"
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
                 }
               ],
               "criticalForSafety": false,
@@ -18006,30 +18006,30 @@
               "learningPointIds": [
                 "ed-captopril-tablets::high_k"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after CAPTOPRIL — oral tablets. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
-                },
-                {
-                  "id": "B",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                },
+                {
+                  "id": "D",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -18047,7 +18047,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
@@ -18070,7 +18070,7 @@
               "learningPointIds": [
                 "ed-captopril-tablets::hypotension"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for CAPTOPRIL — oral tablets?",
@@ -18082,18 +18082,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
-                },
-                {
-                  "id": "C",
                   "text": "INR and puncture-site bleeding trends",
                   "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
+                },
+                {
+                  "id": "D",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 }
               ],
               "format": "single-best-answer",
@@ -18104,14 +18104,14 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "why",
-                  "textSha256": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3"
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
                 },
                 {
                   "file": "content.json",
@@ -18127,25 +18127,25 @@
               "learningPointIds": [
                 "ed-captopril-tablets::renal_monitor"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Which previous reaction is a contraindication to enalapril?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "ACE-inhibitor angioedema",
-                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
-                },
-                {
-                  "id": "B",
                   "text": "Uncomplicated nitrate headache",
                   "explanation": "This does not establish ACE-associated angioedema."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Isolated opioid constipation",
                   "explanation": "This is a different adverse effect and mechanism."
+                },
+                {
+                  "id": "C",
+                  "text": "ACE-inhibitor angioedema",
+                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
                 },
                 {
                   "id": "D",
@@ -18161,7 +18161,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 }
               ],
               "criticalForSafety": false,
@@ -18170,10 +18170,311 @@
               "learningPointIds": [
                 "ed-captopril-tablets::ace_history"
               ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Besides hypertension, which pair can fit selected captopril indications?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Regular SVT and shock-refractory pulseless VF",
+                  "explanation": "Neither is the stated captopril role."
+                },
+                {
+                  "id": "B",
+                  "text": "Regular SVT and clinically stable post-MI care",
+                  "explanation": "Captopril does not terminate regular SVT."
+                },
+                {
+                  "id": "C",
+                  "text": "Heart failure and clinically stable post-MI care",
+                  "explanation": "Both can be appropriate selected indications."
+                },
+                {
+                  "id": "D",
+                  "text": "Heart failure and shock-refractory pulseless VF",
+                  "explanation": "Pulseless VF is not a captopril indication."
+                }
+              ],
+              "point": "Recognize selected HF and stable post-MI uses.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "use",
+                  "textSha256": "a09d4bbdd36c4bf4cd4669b2392c8f0de39af7e0b5f27882b1db18a05acce558"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-captopril-tablets--standard--cap_additional_uses",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_additional_uses"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Severely elevated BP is accompanied by confirmed acute pulmonary edema and new neurological dysfunction. How should a routine oral captopril order affect the emergency response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeat oral doses until the BP normalizes",
+                  "explanation": "Repeated unsupervised oral dosing does not replace the emergency pathway."
+                },
+                {
+                  "id": "B",
+                  "text": "Treat the number alone without reassessing organ injury",
+                  "explanation": "The acute organ injury determines the urgency and monitoring needs."
+                },
+                {
+                  "id": "C",
+                  "text": "Urgent escalation for monitored, controlled IV treatment",
+                  "explanation": "Acute organ injury requires urgent evaluation and controlled treatment; routine oral captopril is not a substitute."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait for the next scheduled oral dose",
+                  "explanation": "This delays treatment of acute organ injury."
+                }
+              ],
+              "point": "Do not substitute routine oral captopril for an organ-injury emergency pathway.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "use",
+                  "textSha256": "a09d4bbdd36c4bf4cd4669b2392c8f0de39af7e0b5f27882b1db18a05acce558"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--standard--cap_emergency_limit",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_emergency_limit"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair requires particular renal-safety review before captopril?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Severe renal impairment and suspected renal artery stenosis",
+                  "explanation": "Both are important cautions."
+                },
+                {
+                  "id": "B",
+                  "text": "Severe renal impairment and uncomplicated reflux",
+                  "explanation": "Reflux is not the second renal-risk condition."
+                },
+                {
+                  "id": "C",
+                  "text": "Normal renal function and suspected renal artery stenosis",
+                  "explanation": "Normal renal function alone is not an additional renal-risk condition."
+                },
+                {
+                  "id": "D",
+                  "text": "Normal renal function and uncomplicated reflux",
+                  "explanation": "Neither states the specific renal-risk history sought."
+                }
+              ],
+              "point": "Recognize both important renal-risk histories.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--standard--cap_renal_cautions",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_renal_cautions"
+              ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Before an initial captopril dose, which history most increases concern for symptomatic hypotension?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stable post-MI care with adequate hydration",
+                  "explanation": "A selected indication does not establish volume depletion."
+                },
+                {
+                  "id": "B",
+                  "text": "Stable heart failure with normal volume status",
+                  "explanation": "This does not state the marked volume-depletion risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Recent vomiting with marked volume depletion",
+                  "explanation": "Volume depletion increases the risk of an excessive BP fall; assess BP and clarify the plan."
+                },
+                {
+                  "id": "D",
+                  "text": "Stable hypertension with adequate hydration",
+                  "explanation": "This does not state the volume-depletion risk."
+                }
+              ],
+              "point": "Recognize volume depletion as a hypotension risk and reassess BP.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--standard--cap_volume_bp",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_volume_bp"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair adds potassium-raising co-therapy that requires review with captopril?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Furosemide and potassium supplements",
+                  "explanation": "Furosemide is potassium-wasting rather than potassium-sparing."
+                },
+                {
+                  "id": "B",
+                  "text": "Spironolactone and iron supplements",
+                  "explanation": "Iron is not the additional potassium-raising supplement in this pair."
+                },
+                {
+                  "id": "C",
+                  "text": "Furosemide and iron supplements",
+                  "explanation": "Neither is the potassium-raising co-therapy sought here."
+                },
+                {
+                  "id": "D",
+                  "text": "Spironolactone and potassium supplements",
+                  "explanation": "Both can add to potassium elevation and require appropriate review."
+                }
+              ],
+              "point": "Identify potassium-raising co-therapy.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--standard--cap_potassium_combo",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_potassium_combo"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After captopril, a patient develops new tongue swelling and difficulty swallowing. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give the next dose with food and reassess later",
+                  "explanation": "Food does not resolve ACE-inhibitor angioedema."
+                },
+                {
+                  "id": "B",
+                  "text": "Stop captopril and urgently assess/escalate the airway risk",
+                  "explanation": "Angioedema can threaten the airway; do not wait for further progression."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduce the next dose and observe until morning",
+                  "explanation": "Dose reduction and delayed review do not address the airway threat."
+                },
+                {
+                  "id": "D",
+                  "text": "Continue captopril while awaiting a routine review",
+                  "explanation": "This maintains exposure and delays an urgent airway assessment."
+                }
+              ],
+              "point": "Respond to new angioedema with airway assessment and prompt cessation/escalation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--standard--cap_angio_action",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_angio_action"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired effect helps explain captopril’s BP benefit and potassium-monitoring need?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Higher vascular resistance and reduced potassium excretion",
+                  "explanation": "The vascular-resistance direction does not explain BP lowering."
+                },
+                {
+                  "id": "B",
+                  "text": "Lower vascular resistance and reduced potassium excretion",
+                  "explanation": "Less angiotensin-II action lowers resistance; reduced aldosterone can reduce potassium excretion."
+                },
+                {
+                  "id": "C",
+                  "text": "Higher vascular resistance and increased potassium excretion",
+                  "explanation": "Both directions are inconsistent with the relationships tested."
+                },
+                {
+                  "id": "D",
+                  "text": "Lower vascular resistance and increased potassium excretion",
+                  "explanation": "The potassium-excretion direction does not explain hyperkalemia risk."
+                }
+              ],
+              "point": "Connect BP and potassium effects with RAAS inhibition.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "why",
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-captopril-tablets--standard--cap_downstream",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_downstream"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 8
+          "questionCount": 15
         },
         {
           "id": "ed-captopril-tablets--advanced",
@@ -18235,7 +18536,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
@@ -18285,14 +18586,14 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "why",
-                  "textSha256": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3"
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
                 }
               ],
               "criticalForSafety": false,
@@ -18342,7 +18643,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
@@ -18409,13 +18710,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Reduces angiotensin-II formation",
-                  "explanation": "ACE inhibition reduces angiotensin II and aldosterone."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: ACE inhibition reduces angiotensin II and aldosterone."
                 },
                 {
                   "id": "C",
-                  "text": "Inhibits hepatic HMG-CoA reductase",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: ACE inhibition reduces angiotensin II and aldosterone."
+                  "text": "Reduces angiotensin-II formation",
+                  "explanation": "ACE inhibition reduces angiotensin II and aldosterone."
                 },
                 {
                   "id": "D",
@@ -18444,7 +18745,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "why",
-                  "textSha256": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3"
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
                 }
               ],
               "criticalForSafety": false,
@@ -18454,7 +18755,7 @@
                 "ed-captopril-tablets::principal-action"
               ],
               "reusedFromQuestionId": "ed-captopril-tablets--standard--principal-action",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -18522,7 +18823,7 @@
                 {
                   "id": "D",
                   "text": "Oral antihypertensive treatment for selected indications",
-                  "explanation": "This is a clinical use of the medicine: Treatment of hypertension and selected heart-failure or post-MI indications. Oral captopril is not a substitute for controlled IV treatment of hypertensive emergencies with acute organ injury."
+                  "explanation": "This is a clinical use of the medicine: Treatment of hypertension and selected heart-failure or clinically stable post-MI indications. Oral captopril is not a substitute for controlled IV treatment of hypertensive emergencies with acute organ injury."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -18532,7 +18833,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "use",
-                  "textSha256": "52bb1cff6f5e7bfb6cb4f29592c65dc2ba3d09884299bec78ac8aa7954d6a227"
+                  "textSha256": "a09d4bbdd36c4bf4cd4669b2392c8f0de39af7e0b5f27882b1db18a05acce558"
                 },
                 {
                   "file": "content.json",
@@ -18561,18 +18862,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Fetal toxicity",
-                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
-                },
-                {
-                  "id": "C",
                   "text": "Maternal hypoglycemia",
                   "explanation": "This is not the characteristic pregnancy-specific concern for this treatment."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Fetal opioid withdrawal",
                   "explanation": "This treatment is not an opioid."
+                },
+                {
+                  "id": "D",
+                  "text": "Fetal toxicity",
+                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
                 }
               ],
               "format": "single-best-answer",
@@ -18583,7 +18884,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
@@ -18600,7 +18901,7 @@
                 "ed-captopril-tablets::pregnancy"
               ],
               "reusedFromQuestionId": "ed-captopril-tablets--standard--pregnancy",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting CAPTOPRIL — oral tablets?",
@@ -18617,13 +18918,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Falling serum phosphate",
-                  "explanation": "Phosphate depletion is not the principal effect being tested."
+                  "text": "Rising serum potassium",
+                  "explanation": "The treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "D",
-                  "text": "Rising serum potassium",
-                  "explanation": "The treatment can increase potassium or reduce its loss."
+                  "text": "Falling serum phosphate",
+                  "explanation": "Phosphate depletion is not the principal effect being tested."
                 }
               ],
               "format": "single-best-answer",
@@ -18634,14 +18935,14 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "why",
-                  "textSha256": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3"
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
                 }
               ],
               "criticalForSafety": false,
@@ -18651,25 +18952,25 @@
                 "ed-captopril-tablets::high_k"
               ],
               "reusedFromQuestionId": "ed-captopril-tablets--standard--high_k",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "A patient becomes light-headed on standing after CAPTOPRIL — oral tablets. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "B",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
-                },
-                {
-                  "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -18692,7 +18993,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
@@ -18716,7 +19017,7 @@
                 "ed-captopril-tablets::hypotension"
               ],
               "reusedFromQuestionId": "ed-captopril-tablets--standard--hypotension",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for CAPTOPRIL — oral tablets?",
@@ -18750,14 +19051,14 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "why",
-                  "textSha256": "92341c89b4a47b335fc6d1fbd7e30e2c6d88258671e11a0677ebe62ca127e7f3"
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
                 },
                 {
                   "file": "content.json",
@@ -18808,7 +19109,7 @@
                   "collection": "medications",
                   "itemId": "ed-captopril-tablets",
                   "field": "monitor",
-                  "textSha256": "992ec4a1e5b27a196d33acb9cc57657aa1d5085216df3e15f53d54b2ff3eefa8"
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
                 }
               ],
               "criticalForSafety": false,
@@ -18819,9 +19120,317 @@
               ],
               "reusedFromQuestionId": "ed-captopril-tablets--standard--ace_history",
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Besides hypertension, which pair can fit selected captopril indications?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Regular SVT and clinically stable post-MI care",
+                  "explanation": "Captopril does not terminate regular SVT."
+                },
+                {
+                  "id": "B",
+                  "text": "Heart failure and shock-refractory pulseless VF",
+                  "explanation": "Pulseless VF is not a captopril indication."
+                },
+                {
+                  "id": "C",
+                  "text": "Regular SVT and shock-refractory pulseless VF",
+                  "explanation": "Neither is the stated captopril role."
+                },
+                {
+                  "id": "D",
+                  "text": "Heart failure and clinically stable post-MI care",
+                  "explanation": "Both can be appropriate selected indications."
+                }
+              ],
+              "point": "Recognize selected HF and stable post-MI uses.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "use",
+                  "textSha256": "a09d4bbdd36c4bf4cd4669b2392c8f0de39af7e0b5f27882b1db18a05acce558"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-captopril-tablets--7-day--cap_additional_uses",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_additional_uses"
+              ],
+              "reusedFromQuestionId": "ed-captopril-tablets--standard--cap_additional_uses",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Severely elevated BP is accompanied by confirmed acute pulmonary edema and new neurological dysfunction. How should a routine oral captopril order affect the emergency response?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeat oral doses until the BP normalizes",
+                  "explanation": "Repeated unsupervised oral dosing does not replace the emergency pathway."
+                },
+                {
+                  "id": "B",
+                  "text": "Urgent escalation for monitored, controlled IV treatment",
+                  "explanation": "Acute organ injury requires urgent evaluation and controlled treatment; routine oral captopril is not a substitute."
+                },
+                {
+                  "id": "C",
+                  "text": "Treat the number alone without reassessing organ injury",
+                  "explanation": "The acute organ injury determines the urgency and monitoring needs."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait for the next scheduled oral dose",
+                  "explanation": "This delays treatment of acute organ injury."
+                }
+              ],
+              "point": "Do not substitute routine oral captopril for an organ-injury emergency pathway.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "use",
+                  "textSha256": "a09d4bbdd36c4bf4cd4669b2392c8f0de39af7e0b5f27882b1db18a05acce558"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--7-day--cap_emergency_limit",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_emergency_limit"
+              ],
+              "reusedFromQuestionId": "ed-captopril-tablets--standard--cap_emergency_limit",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair requires particular renal-safety review before captopril?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Severe renal impairment and uncomplicated reflux",
+                  "explanation": "Reflux is not the second renal-risk condition."
+                },
+                {
+                  "id": "B",
+                  "text": "Normal renal function and uncomplicated reflux",
+                  "explanation": "Neither states the specific renal-risk history sought."
+                },
+                {
+                  "id": "C",
+                  "text": "Normal renal function and suspected renal artery stenosis",
+                  "explanation": "Normal renal function alone is not an additional renal-risk condition."
+                },
+                {
+                  "id": "D",
+                  "text": "Severe renal impairment and suspected renal artery stenosis",
+                  "explanation": "Both are important cautions."
+                }
+              ],
+              "point": "Recognize both important renal-risk histories.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--7-day--cap_renal_cautions",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_renal_cautions"
+              ],
+              "reusedFromQuestionId": "ed-captopril-tablets--standard--cap_renal_cautions",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Before an initial captopril dose, which history most increases concern for symptomatic hypotension?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stable heart failure with normal volume status",
+                  "explanation": "This does not state the marked volume-depletion risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Recent vomiting with marked volume depletion",
+                  "explanation": "Volume depletion increases the risk of an excessive BP fall; assess BP and clarify the plan."
+                },
+                {
+                  "id": "C",
+                  "text": "Stable post-MI care with adequate hydration",
+                  "explanation": "A selected indication does not establish volume depletion."
+                },
+                {
+                  "id": "D",
+                  "text": "Stable hypertension with adequate hydration",
+                  "explanation": "This does not state the volume-depletion risk."
+                }
+              ],
+              "point": "Recognize volume depletion as a hypotension risk and reassess BP.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--7-day--cap_volume_bp",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_volume_bp"
+              ],
+              "reusedFromQuestionId": "ed-captopril-tablets--standard--cap_volume_bp",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair adds potassium-raising co-therapy that requires review with captopril?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Furosemide and potassium supplements",
+                  "explanation": "Furosemide is potassium-wasting rather than potassium-sparing."
+                },
+                {
+                  "id": "B",
+                  "text": "Spironolactone and potassium supplements",
+                  "explanation": "Both can add to potassium elevation and require appropriate review."
+                },
+                {
+                  "id": "C",
+                  "text": "Spironolactone and iron supplements",
+                  "explanation": "Iron is not the additional potassium-raising supplement in this pair."
+                },
+                {
+                  "id": "D",
+                  "text": "Furosemide and iron supplements",
+                  "explanation": "Neither is the potassium-raising co-therapy sought here."
+                }
+              ],
+              "point": "Identify potassium-raising co-therapy.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--7-day--cap_potassium_combo",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_potassium_combo"
+              ],
+              "reusedFromQuestionId": "ed-captopril-tablets--standard--cap_potassium_combo",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After captopril, a patient develops new tongue swelling and difficulty swallowing. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give the next dose with food and reassess later",
+                  "explanation": "Food does not resolve ACE-inhibitor angioedema."
+                },
+                {
+                  "id": "B",
+                  "text": "Continue captopril while awaiting a routine review",
+                  "explanation": "This maintains exposure and delays an urgent airway assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Stop captopril and urgently assess/escalate the airway risk",
+                  "explanation": "Angioedema can threaten the airway; do not wait for further progression."
+                },
+                {
+                  "id": "D",
+                  "text": "Reduce the next dose and observe until morning",
+                  "explanation": "Dose reduction and delayed review do not address the airway threat."
+                }
+              ],
+              "point": "Respond to new angioedema with airway assessment and prompt cessation/escalation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "monitor",
+                  "textSha256": "4789bd62d0585b5a8109a3c23f32a5c6944697f32d40520baf3718c00d9071e5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ed-captopril-tablets--7-day--cap_angio_action",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_angio_action"
+              ],
+              "reusedFromQuestionId": "ed-captopril-tablets--standard--cap_angio_action",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired effect helps explain captopril’s BP benefit and potassium-monitoring need?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Lower vascular resistance and reduced potassium excretion",
+                  "explanation": "Less angiotensin-II action lowers resistance; reduced aldosterone can reduce potassium excretion."
+                },
+                {
+                  "id": "B",
+                  "text": "Lower vascular resistance and increased potassium excretion",
+                  "explanation": "The potassium-excretion direction does not explain hyperkalemia risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Higher vascular resistance and reduced potassium excretion",
+                  "explanation": "The vascular-resistance direction does not explain BP lowering."
+                },
+                {
+                  "id": "D",
+                  "text": "Higher vascular resistance and increased potassium excretion",
+                  "explanation": "Both directions are inconsistent with the relationships tested."
+                }
+              ],
+              "point": "Connect BP and potassium effects with RAAS inhibition.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ed-captopril-tablets",
+                  "field": "why",
+                  "textSha256": "370fbc7778ab85e41a98586580be74f9ac40ffdd1fa1a9efd87dc7e0d9010802"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ed-captopril-tablets--7-day--cap_downstream",
+              "points": 1,
+              "learningPointIds": [
+                "ed-captopril-tablets::cap_downstream"
+              ],
+              "reusedFromQuestionId": "ed-captopril-tablets--standard--cap_downstream",
+              "answerKey": "A"
             }
           ],
-          "questionCount": 8
+          "questionCount": 15
         }
       ]
     }
