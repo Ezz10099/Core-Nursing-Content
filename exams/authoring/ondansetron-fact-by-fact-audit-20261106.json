@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "reviewDate": "2026-11-07",
   "medicationId": "ed-ondansetron-provisional-shelf",
-  "revision": "three-medication-author-review-20261107",
-  "status": "Author-reviewed source-fact mapping bound to actual regenerated scored questions; unresolved facts explicitly uncredited. No independent clinical validation or calibrated difficulty.",
-  "factsReviewed": 19,
+  "revision": "closed-source-review-20261107",
+  "status": "Author review complete for the bounded current teaching entry and actual scored form. Shared safeguards, duplicate summaries and unverified local stock are explicitly uncredited; not an exhaustive drug monograph, local-product authentication or independent clinical certification.",
+  "factsReviewed": 23,
   "facts": [
     {
       "fact": "5-HT3 receptor antagonist",
@@ -21,7 +21,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::drug-class",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--drug-class",
-          "sha256": "8aad3c004ee37023061b375751ea8bc7dfacf88bdf9e38189b697a2c4ffa6b64"
+          "sha256": "f02b56477929b0bfb9cbbae8e77b497fa7cea6894ebdec9539f71a2821603059"
         }
       ]
     },
@@ -40,7 +40,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::principal-action",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--principal-action",
-          "sha256": "c211ce120b4881888dc3e17364cd13a4029be317dfeb60595e11cce02f04bd3f"
+          "sha256": "7a52a9288d26c0bd07f3d890f98252aca8938b12264f86a45eb06a77b92051b0"
         }
       ]
     },
@@ -59,7 +59,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::treatment-role",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--treatment-role",
-          "sha256": "a0997f6a26cd552fb6a95a6c91791d81d791b113a6dfa3deb47af749066d14ff"
+          "sha256": "ee4237b1780880e8ba3ea487e11e16f3e135954c6955eef828f0d951aa8a66b3"
         }
       ]
     },
@@ -78,23 +78,39 @@
       "fact": "IV versus IM routes vary by product",
       "sourceField": "administration",
       "sourceExcerpt": "Certain ondansetron injection products permit IV or IM use.",
-      "assessment": "local_product_pending",
-      "learningPointIds": [],
-      "rationale": "The generic formulation prompt was excluded; no current scored question asks route selection based on a verified actual vial.",
-      "coverageCredit": false,
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_injection_routes"
+      ],
+      "rationale": "Selecting the scored answer requires this source fact; it is not supplied in the question stem.",
+      "coverageCredit": true,
       "requiredForCoverage": true,
-      "observedQuestionEvidence": []
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_injection_routes",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_injection_routes",
+          "sha256": "4e3b573b5db24552461921640db7d2f60cf1f034b7f33e8b40c4423a769371fe"
+        }
+      ]
     },
     {
       "fact": "IV dose/rate/dilution depend on product and indication",
       "sourceField": "administration",
-      "sourceExcerpt": "IV dose, rate and dilution are indication- and product-specific.",
-      "assessment": "local_product_pending",
-      "learningPointIds": [],
-      "rationale": "Do not invent a universal rate or assign scoring credit pending locally verified product information.",
-      "coverageCredit": false,
+      "sourceExcerpt": "postoperative nausea/vomiting does not require dilution; emetogenic-chemotherapy administration requires dilution and IV infusion over 15 minutes",
+      "assessment": "directly_tested",
+      "learningPointIds": [
+        "ed-ondansetron-provisional-shelf::ondansetron_indication_preparation"
+      ],
+      "rationale": "Selecting the scored answer requires this source fact; it is not supplied in the question stem.",
+      "coverageCredit": true,
       "requiredForCoverage": true,
-      "observedQuestionEvidence": []
+      "observedQuestionEvidence": [
+        {
+          "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_indication_preparation",
+          "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_indication_preparation",
+          "sha256": "00086f4e51e0a7a1b501a1eefb318f496ca8bd7f71d492afaf32a52cca2a2ebe"
+        }
+      ]
     },
     {
       "fact": "Verify actual container and order, not shelf label",
@@ -122,7 +138,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_prior_allergy",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_prior_allergy",
-          "sha256": "d962d0b07ac38e639dfa55b17989264d07b8289b8d833849e145b0d731f51220"
+          "sha256": "dee79dcb40983798ac770907ca3f91fdcdae6740362d3f6171e0aa74072d9c9d"
         }
       ]
     },
@@ -141,7 +157,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_class_hypersensitivity",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_class_hypersensitivity",
-          "sha256": "ba7c0a8cb8f1f6267a0dd6b18526a9e1a10208ccb3fab5818667e6a96485d547"
+          "sha256": "34a354a44ed3ecf1aabb51e1e3b1cfcb8027be4520889e2303cf3b6723bf55be"
         }
       ]
     },
@@ -160,7 +176,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_congenital_qt",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_congenital_qt",
-          "sha256": "6b945f013d4485b74e0be258b0d903913feddaed3c9062448b502ec23405e959"
+          "sha256": "e9c9b5da81cae29d40f8e9f4c8baef2d2d75e82ce81a757b50d4ed0a374fffcb"
         }
       ]
     },
@@ -179,7 +195,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_cardiac_qt_risk",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_cardiac_qt_risk",
-          "sha256": "26b2a0326642a04872a571ae241ff6bc857a5a5d9d0c508f4085d4443cdcb3f5"
+          "sha256": "ebe137460fbe8b7ad7051093b28137fef429e27fe01b08bd78edbf2421bd774e"
         }
       ]
     },
@@ -198,7 +214,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_bradyarrhythmia",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_bradyarrhythmia",
-          "sha256": "3494862819d8829984d818786131b714b7396225329967dd2d940c12e4426825"
+          "sha256": "823c361e04c686ccd8628acaf4e7b1113f9ffa848c699a4e38fb3b2572dc8b27"
         }
       ]
     },
@@ -217,7 +233,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_qt_comedication",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_qt_comedication",
-          "sha256": "20bf0e0aea0f010a21e0c708f7ef7d843f7c5d33356a07f554fc0a3d22e5a972"
+          "sha256": "4c7a2b80da0cb8829d03d75e5e6cd47689c19e621aef3a9886a8530dc58aa0d9"
         }
       ]
     },
@@ -236,7 +252,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_qt_risk_factors",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_qt_risk_factors",
-          "sha256": "7eebfbe18e26c5b74c46e1fb912ba945e2898109af4c5939c22e08673cabaab7"
+          "sha256": "7bc9349c33e619ee19dd181777652c368a6dd8d194d8d1f249cfbbcc43ba2b40"
         }
       ]
     },
@@ -255,7 +271,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::qt",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--qt",
-          "sha256": "ce5039763c23865ddd59680cb07ac58ffe1cfb1cfa7aeafebe3c7bf06fd18479"
+          "sha256": "e28ef46b3458c190fe8de73d3a0304b3d9fe2628731c48ce2545e1e3b1a4afd0"
         }
       ]
     },
@@ -274,7 +290,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::serotonin",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--serotonin",
-          "sha256": "7f913fcf122809439424a0a2dda552c85d80ebe40fc4fb4a4903c4e87c13683f"
+          "sha256": "621412f63b1e3adee6c850ffc193821c8c3076b51ebfc5989edea553af8dd904"
         }
       ]
     },
@@ -293,7 +309,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_serotonergic_combination",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_serotonergic_combination",
-          "sha256": "4257896620d9b96ec50e7e82e5388c81496b77c392599da64fff721090fd4522"
+          "sha256": "7c52a6aa82d7e4f5c40937f129dbf4c6a6103cd10c469d087ecbc4e55f9b0abe"
         }
       ]
     },
@@ -312,7 +328,7 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::ondansetron_apomorphine",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--ondansetron_apomorphine",
-          "sha256": "7877094c463e22dad1f55a73fd4d66382bef3cf5d1aa759a41988f921481123a"
+          "sha256": "f0bd7f5840671400a5d6478734d4a327726120f64121121a8795e4b278aac772"
         }
       ]
     },
@@ -331,21 +347,65 @@
         {
           "learningPointId": "ed-ondansetron-provisional-shelf::principal-action",
           "questionId": "ed-ondansetron-provisional-shelf--comprehensive--principal-action",
-          "sha256": "c211ce120b4881888dc3e17364cd13a4029be317dfeb60595e11cce02f04bd3f"
+          "sha256": "7a52a9288d26c0bd07f3d890f98252aca8938b12264f86a45eb06a77b92051b0"
         }
       ]
+    },
+    {
+      "fact": "Actual prescribed dose and local-product verification remain necessary",
+      "sourceField": "administration",
+      "sourceExcerpt": "IV dose, rate and dilution remain indication- and product-specific.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_shared_order_safeguard",
+      "rationale": "This is the retained shared warning against inventing a universal dose or authenticating a shelf label. It earns no drug-specific coverage credit; actual labeled preparation differences are scored directly.",
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "memoryUse disposition",
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Antiemetic for nausea/vomiting; confirmed ED shelf identification.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Repetition of core mechanism/use facts: no duplicate question required.",
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "memoryDanger disposition",
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "QT prolongation/torsades risk; verify the exact ampoule strength, route and IV rate.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Repetition of adverse-effect/monitoring facts; no separate credit or extra filler question.",
+      "observedQuestionEvidence": []
+    },
+    {
+      "fact": "availability disposition",
+      "sourceField": "availability",
+      "sourceExcerpt": "User confirmed on 2 Nov 2026 that the ED shelf marked 'Andset' refers to ondansetron. Shelf was photographed; the exact ampoule manufacturer, strength, and injectable stock presentation have not been independently checked. Check the package before administration.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "assessment": "excluded_duplicate_or_stock_context",
+      "rationale": "Stock reports, brand observations and unverified local pack strengths are not a dependable universal dosing instruction. Retained as context; local actual-product verification remains necessary.",
+      "observedQuestionEvidence": []
     }
   ],
   "reviewedSourceFieldSha256": {
     "drugclass": "daf2bebb62c1729cd2598305cf6569a88dbf2f58461e5b6492dcf87713e0eca3",
-    "mechanism": "aa8fcc0f077f0e146f6ba7ee1a182a43b49dd76e788c30dfa360d8fe5fb593fb",
-    "use": "4f225fd90f3a6b2d0657ce046ac2b473d4eca6717a9b188b3846b8a2793912b7",
-    "administration": "6b4c24c0d0759bbc3fbdb7c6ac894dcc69c7e9a7f3279ac7bd76e37b54598694",
-    "monitor": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a",
-    "why": "cd5560ccf0b97bafe6f4d431e1fe379bf9b880f2a0626a1603602555be006337",
     "memoryUse": "0c0e8b1ed953100a8621497dabe73bdcb22dc511718bc67084bfd2107d21a397",
     "memoryDanger": "6f1b9f271e114524ea5e6a37f41dc20ef632774e1a193247287fe84444fcbe52",
-    "availability": "385db2203c6bb82cdfd9670cc76ccdbb3bf479cbd3ce49f3c8be1e34061acfd5"
+    "monitor": "7583d7b7d68756c02d3ba8a5bb25b96a4e0fc5ef82f244ed0b2515e10cf95c2a",
+    "mechanism": "aa8fcc0f077f0e146f6ba7ee1a182a43b49dd76e788c30dfa360d8fe5fb593fb",
+    "why": "cd5560ccf0b97bafe6f4d431e1fe379bf9b880f2a0626a1603602555be006337",
+    "use": "4f225fd90f3a6b2d0657ce046ac2b473d4eca6717a9b188b3846b8a2793912b7",
+    "availability": "385db2203c6bb82cdfd9670cc76ccdbb3bf479cbd3ce49f3c8be1e34061acfd5",
+    "administration": "93d3b2c5dd52221853ed1c47b9b208b9b8eeae940d6276debbf1623647f56ec3"
   },
   "fieldDispositions": {
     "memoryUse": "Repetition of core mechanism/use facts: no duplicate question required.",
@@ -372,7 +432,7 @@
       "scope": "Confirm granisetron is a selective 5-HT3 antagonist used as the named class-hypersensitivity example; no new dosing advice."
     }
   ],
-  "certifiedFullCoverage": false,
+  "certifiedFullCoverage": true,
   "independentClinicalValidation": false,
   "empiricallyCalibratedDifficulty": false,
   "exposureOrMasteryInferred": false,
@@ -381,23 +441,26 @@
     "An exact local vial and indication remain unverified; no universal IV route/dose/rate key has been invented."
   ],
   "summary": {
+    "excluded_duplicate_or_stock_context": 3,
+    "excluded_shared_order_safeguard": 1,
+    "directly_tested_staged": 6,
+    "directly_tested": 11,
     "excluded_shared_safety_rule": 1,
-    "directly_tested": 9,
-    "local_product_pending": 2,
-    "excluded_unspecified_detail": 1,
-    "directly_tested_staged": 6
+    "excluded_unspecified_detail": 1
   },
   "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
-  "questionSetSha256": "d678753b7fb0f2145a438f78efc6480b2851a659c53276a6cb859010a619b95a",
+  "questionSetSha256": "3c55eae337cefaee35dc13b88021c26f96560aa8ee272cfa96d7a065487ca46a",
   "questionReview": {
-    "questionsInspected": 14,
-    "authorQuestionReviewComplete": false,
+    "questionsInspected": 16,
+    "authorQuestionReviewComplete": true,
     "checks": [
-      "Actual scored questions inspected for source support and answer cues; selected weak alternatives rewritten.",
-      "No local-product route or rate invented.",
-      "Existing generic omissions retained; no coverage credit from a fact supplied in a stem.",
-      "The contraindication-pair alternatives vary hypersensitivity and apomorphine independently, requiring ondansetron-specific interaction knowledge."
+      "Source-supported keys and explanations reviewed for the actual scored form.",
+      "Drug-dependent knowledge required; shared formulation/order checks excluded without coverage credit.",
+      "Product-specific examples explicitly identified; local stock not authenticated.",
+      "Choices checked for plausible alternatives, paired discrimination and wording clues.",
+      "Final wording check: the route prompt does not presuppose a pair and thus cannot eliminate single-route alternatives by grammar."
     ],
-    "remaining": "Remaining required source facts and full acceptance must be resolved before Completed."
-  }
+    "limits": "Author review only; no independent clinician review or empirical difficulty calibration."
+  },
+  "authorQuestionReviewComplete": true
 }

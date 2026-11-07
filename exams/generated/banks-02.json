@@ -8756,23 +8756,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Slows AV-nodal calcium-dependent conduction",
-                  "explanation": "Verapamil acts in the AV node and myocardium."
-                },
-                {
-                  "id": "B",
                   "text": "Forms metabolites that damage microbial DNA",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Verapamil acts in the AV node and myocardium."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Enhances antithrombin activity, predominantly against Xa",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Verapamil acts in the AV node and myocardium."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Supplies rapidly available glucose",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Verapamil acts in the AV node and myocardium."
+                },
+                {
+                  "id": "D",
+                  "text": "Slows AV-nodal calcium-dependent conduction",
+                  "explanation": "Verapamil acts in the AV node and myocardium."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -8805,7 +8805,7 @@
               "learningPointIds": [
                 "ccu-verapamil::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -8905,18 +8905,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "B",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
-                },
-                {
-                  "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -8932,14 +8932,14 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -8955,30 +8955,30 @@
               "learningPointIds": [
                 "ccu-verapamil::hypotension"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which new change during IKACOR / IKAKOR — verapamil treatment most directly matches its cardiac slowing risk?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
-                },
-                {
-                  "id": "B",
                   "text": "Dry mouth with an unchanged pulse",
                   "explanation": "This is a different adverse-effect pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Flushing with an unchanged pulse",
                   "explanation": "This does not establish bradycardia or AV block."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Tremor with an unchanged pulse",
                   "explanation": "This does not identify the cardiac slowing pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 }
               ],
               "format": "single-best-answer",
@@ -8996,7 +8996,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -9026,7 +9026,7 @@
               "learningPointIds": [
                 "ccu-verapamil::bradycardia"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which bowel effect is particularly relevant during oral verapamil treatment?",
@@ -9038,18 +9038,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Constipation",
+                  "explanation": "It is a recognized adverse effect."
+                },
+                {
+                  "id": "C",
                   "text": "Profuse osmotic diarrhea as the intended response",
                   "explanation": "Verapamil is not used as an osmotic laxative."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "A predictable increase in stool bleeding",
                   "explanation": "Bleeding is not its intended gastrointestinal response."
-                },
-                {
-                  "id": "D",
-                  "text": "Constipation",
-                  "explanation": "It is a recognized adverse effect."
                 }
               ],
               "format": "single-best-answer",
@@ -9060,7 +9060,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 }
               ],
               "criticalForSafety": false,
@@ -9069,7 +9069,7 @@
               "learningPointIds": [
                 "ccu-verapamil::verapamil_constipation"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A IKACOR / IKAKOR — verapamil injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
@@ -9117,14 +9117,14 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -9181,7 +9181,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 }
               ],
               "criticalForSafety": true,
@@ -9203,13 +9203,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Withhold the dose and urgently clarify the contraindicated overlap",
-                  "explanation": "Close IV beta-blocker and IV verapamil administration can add myocardial and AV-conduction depression; the referenced injection labeling contraindicates this overlap."
+                  "text": "Give the dose if the current BP is high enough",
+                  "explanation": "A satisfactory current BP does not remove the conduction and contractility risk."
                 },
                 {
                   "id": "C",
-                  "text": "Give the dose if the current BP is high enough",
-                  "explanation": "A satisfactory current BP does not remove the conduction and contractility risk."
+                  "text": "Withhold the dose and urgently clarify the contraindicated overlap",
+                  "explanation": "Close IV beta-blocker and IV verapamil administration can add myocardial and AV-conduction depression; the referenced injection labeling contraindicates this overlap."
                 },
                 {
                   "id": "D",
@@ -9224,7 +9224,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 }
               ],
               "criticalForSafety": true,
@@ -9233,7 +9233,7 @@
               "learningPointIds": [
                 "ccu-verapamil::verapamil_iv_beta"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -9310,7 +9310,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 }
               ],
               "criticalForSafety": true,
@@ -9320,9 +9320,95 @@
                 "ccu-verapamil::verapamil_deterioration_action"
               ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "What minimum duration does current US verapamil injection labeling specify for an older patient?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "3 minutes",
+                  "explanation": "The label specifies at least 3 minutes for older patients."
+                },
+                {
+                  "id": "B",
+                  "text": "5 minutes",
+                  "explanation": "A longer duration may be ordered, but the labeled minimum asked for is 3 minutes."
+                },
+                {
+                  "id": "C",
+                  "text": "1 minute",
+                  "explanation": "This is too rapid for the older-patient instruction."
+                },
+                {
+                  "id": "D",
+                  "text": "2 minutes",
+                  "explanation": "This is the general initial adult minimum, not the slower older-patient instruction."
+                }
+              ],
+              "point": "Recall the slower minimum IV time in older patients.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "administration",
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--standard--verapamil_older_iv_time",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_older_iv_time"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During ongoing oral verapamil treatment with digoxin, which concentration change and monitoring approach best fits their interaction?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Digoxin may rise; follow blood pressure without drug-level review",
+                  "explanation": "The expected direction fits, but blood-pressure observation alone omits digoxin concentration and conduction review."
+                },
+                {
+                  "id": "B",
+                  "text": "Digoxin may rise; review its serum level and AV conduction",
+                  "explanation": "Verapamil can increase digoxin exposure; serum concentrations and cardiac conduction need review."
+                },
+                {
+                  "id": "C",
+                  "text": "Digoxin may fall; follow blood pressure without drug-level review",
+                  "explanation": "This reverses the expected concentration effect and omits the relevant monitoring."
+                },
+                {
+                  "id": "D",
+                  "text": "Digoxin may fall; review its serum level and AV conduction",
+                  "explanation": "Monitoring is relevant, but verapamil can increase rather than predictably lower digoxin exposure."
+                }
+              ],
+              "point": "Identify the AV-node and concentration interaction requiring digoxin review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "monitor",
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--standard--verapamil_digoxin_review",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_digoxin_review"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 11
+          "questionCount": 13
         },
         {
           "id": "ccu-verapamil--advanced",
@@ -9384,14 +9470,14 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -9455,14 +9541,14 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -9538,13 +9624,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Forms metabolites that damage microbial DNA",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Verapamil acts in the AV node and myocardium."
+                  "text": "Slows AV-nodal calcium-dependent conduction",
+                  "explanation": "Verapamil acts in the AV node and myocardium."
                 },
                 {
                   "id": "B",
-                  "text": "Slows AV-nodal calcium-dependent conduction",
-                  "explanation": "Verapamil acts in the AV node and myocardium."
+                  "text": "Forms metabolites that damage microbial DNA",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Verapamil acts in the AV node and myocardium."
                 },
                 {
                   "id": "C",
@@ -9588,7 +9674,7 @@
                 "ccu-verapamil::principal-action"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--principal-action",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -9601,13 +9687,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Uroselective alpha-1 blocker",
-                  "explanation": "The medicine is classified as: Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                  "text": "Non-dihydropyridine CCB",
+                  "explanation": "Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
                 },
                 {
                   "id": "C",
-                  "text": "Non-dihydropyridine CCB",
-                  "explanation": "Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
+                  "text": "Uroselective alpha-1 blocker",
+                  "explanation": "The medicine is classified as: Non-dihydropyridine calcium-channel blocker; AV-node-slowing antiarrhythmic/antianginal."
                 },
                 {
                   "id": "D",
@@ -9632,7 +9718,7 @@
                 "ccu-verapamil::drug-class"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--drug-class",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -9640,13 +9726,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Acute reversal of opioid respiratory toxicity",
-                  "explanation": "This is a different treatment role."
+                  "text": "Selected supraventricular rate control or angina treatment",
+                  "explanation": "This is a clinical use of the medicine: Selected supraventricular arrhythmias/rate control and antianginal therapy."
                 },
                 {
                   "id": "B",
-                  "text": "Selected supraventricular rate control or angina treatment",
-                  "explanation": "This is a clinical use of the medicine: Selected supraventricular arrhythmias/rate control and antianginal therapy."
+                  "text": "Acute reversal of opioid respiratory toxicity",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
@@ -9683,30 +9769,30 @@
                 "ccu-verapamil::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--treatment-role",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after IKACOR / IKAKOR — verapamil. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
-                },
-                {
-                  "id": "B",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                },
+                {
+                  "id": "D",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -9717,14 +9803,14 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -9741,7 +9827,7 @@
                 "ccu-verapamil::hypotension"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--hypotension",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which new change during IKACOR / IKAKOR — verapamil treatment most directly matches its cardiac slowing risk?",
@@ -9753,13 +9839,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Flushing with an unchanged pulse",
-                  "explanation": "This does not establish bradycardia or AV block."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "C",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Flushing with an unchanged pulse",
+                  "explanation": "This does not establish bradycardia or AV block."
                 },
                 {
                   "id": "D",
@@ -9782,7 +9868,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -9813,7 +9899,7 @@
                 "ccu-verapamil::bradycardia"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--bradycardia",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which bowel effect is particularly relevant during oral verapamil treatment?",
@@ -9830,13 +9916,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "A predictable acceleration of upper-GI motility",
-                  "explanation": "That describes a different pharmacological role."
+                  "text": "Constipation",
+                  "explanation": "It is a recognized adverse effect."
                 },
                 {
                   "id": "D",
-                  "text": "Constipation",
-                  "explanation": "It is a recognized adverse effect."
+                  "text": "A predictable acceleration of upper-GI motility",
+                  "explanation": "That describes a different pharmacological role."
                 }
               ],
               "format": "single-best-answer",
@@ -9847,7 +9933,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 }
               ],
               "criticalForSafety": false,
@@ -9857,7 +9943,7 @@
                 "ccu-verapamil::verapamil_constipation"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_constipation",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "A IKACOR / IKAKOR — verapamil injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
@@ -9869,13 +9955,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "The IV rate previously used for a different drug class",
-                  "explanation": "Another drug’s administration rate is not transferable."
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 },
                 {
                   "id": "C",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
+                  "text": "The IV rate previously used for a different drug class",
+                  "explanation": "Another drug’s administration rate is not transferable."
                 },
                 {
                   "id": "D",
@@ -9905,14 +9991,14 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -9936,7 +10022,7 @@
                 "ccu-verapamil::slow_iv"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--slow_iv",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -9954,13 +10040,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Blood pressure and capillary glucose",
-                  "explanation": "This omits the required continuous ECG observation."
+                  "text": "ECG and blood pressure",
+                  "explanation": "IV verapamil can impair AV conduction and lower pressure; both need continuous observation."
                 },
                 {
                   "id": "D",
-                  "text": "ECG and blood pressure",
-                  "explanation": "IV verapamil can impair AV conduction and lower pressure; both need continuous observation."
+                  "text": "Blood pressure and capillary glucose",
+                  "explanation": "This omits the required continuous ECG observation."
                 }
               ],
               "point": "Recall the required monitoring during IV verapamil rather than receiving it as a stem hint.",
@@ -9970,7 +10056,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 }
               ],
               "criticalForSafety": true,
@@ -9980,7 +10066,7 @@
                 "ccu-verapamil::verapamil_iv_monitoring"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_iv_monitoring",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -9988,23 +10074,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Withhold the dose and urgently clarify the contraindicated overlap",
-                  "explanation": "Close IV beta-blocker and IV verapamil administration can add myocardial and AV-conduction depression; the referenced injection labeling contraindicates this overlap."
-                },
-                {
-                  "id": "B",
                   "text": "Give the dose through a second IV line to avoid the interaction",
                   "explanation": "Separate IV lines do not prevent a systemic pharmacodynamic interaction."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Give the dose if the current BP is high enough",
                   "explanation": "A satisfactory current BP does not remove the conduction and contractility risk."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Give the dose slowly because the administration rate removes the interaction",
                   "explanation": "Slowing administration does not remove the contraindicated overlap."
+                },
+                {
+                  "id": "D",
+                  "text": "Withhold the dose and urgently clarify the contraindicated overlap",
+                  "explanation": "Close IV beta-blocker and IV verapamil administration can add myocardial and AV-conduction depression; the referenced injection labeling contraindicates this overlap."
                 }
               ],
               "point": "Recognize the contraindicated close administration of IV verapamil and an IV beta blocker.",
@@ -10014,7 +10100,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 }
               ],
               "criticalForSafety": true,
@@ -10024,7 +10110,7 @@
                 "ccu-verapamil::verapamil_iv_beta"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_iv_beta",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -10042,13 +10128,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Rapid removal of excess fluid in pulmonary edema",
-                  "explanation": "Verapamil is not a loop diuretic."
+                  "text": "Angina symptom control",
+                  "explanation": "Verapamil has an antianginal role as well as selected supraventricular rate-control uses."
                 },
                 {
                   "id": "D",
-                  "text": "Angina symptom control",
-                  "explanation": "Verapamil has an antianginal role as well as selected supraventricular rate-control uses."
+                  "text": "Rapid removal of excess fluid in pulmonary edema",
+                  "explanation": "Verapamil is not a loop diuretic."
                 }
               ],
               "point": "Recognize verapamil’s antianginal use separately from supraventricular rate control.",
@@ -10068,7 +10154,7 @@
                 "ccu-verapamil::verapamil_antianginal"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_antianginal",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -10076,13 +10162,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Continue at half the rate and reassess after completion",
-                  "explanation": "Reducing the rate does not justify continuing during symptomatic bradycardia and hypotension."
+                  "text": "Stop administration and urgently escalate while supporting circulation",
+                  "explanation": "This clinically important deterioration requires stopping further exposure and urgent assessment/support."
                 },
                 {
                   "id": "B",
-                  "text": "Stop administration and urgently escalate while supporting circulation",
-                  "explanation": "This clinically important deterioration requires stopping further exposure and urgent assessment/support."
+                  "text": "Continue at half the rate and reassess after completion",
+                  "explanation": "Reducing the rate does not justify continuing during symptomatic bradycardia and hypotension."
                 },
                 {
                   "id": "C",
@@ -10102,7 +10188,7 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 }
               ],
               "criticalForSafety": true,
@@ -10112,6 +10198,94 @@
                 "ccu-verapamil::verapamil_deterioration_action"
               ],
               "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_deterioration_action",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "What minimum duration does current US verapamil injection labeling specify for an older patient?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "1 minute",
+                  "explanation": "This is too rapid for the older-patient instruction."
+                },
+                {
+                  "id": "B",
+                  "text": "5 minutes",
+                  "explanation": "A longer duration may be ordered, but the labeled minimum asked for is 3 minutes."
+                },
+                {
+                  "id": "C",
+                  "text": "3 minutes",
+                  "explanation": "The label specifies at least 3 minutes for older patients."
+                },
+                {
+                  "id": "D",
+                  "text": "2 minutes",
+                  "explanation": "This is the general initial adult minimum, not the slower older-patient instruction."
+                }
+              ],
+              "point": "Recall the slower minimum IV time in older patients.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "administration",
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--7-day--verapamil_older_iv_time",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_older_iv_time"
+              ],
+              "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_older_iv_time",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During ongoing oral verapamil treatment with digoxin, which concentration change and monitoring approach best fits their interaction?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Digoxin may rise; follow blood pressure without drug-level review",
+                  "explanation": "The expected direction fits, but blood-pressure observation alone omits digoxin concentration and conduction review."
+                },
+                {
+                  "id": "B",
+                  "text": "Digoxin may rise; review its serum level and AV conduction",
+                  "explanation": "Verapamil can increase digoxin exposure; serum concentrations and cardiac conduction need review."
+                },
+                {
+                  "id": "C",
+                  "text": "Digoxin may fall; review its serum level and AV conduction",
+                  "explanation": "Monitoring is relevant, but verapamil can increase rather than predictably lower digoxin exposure."
+                },
+                {
+                  "id": "D",
+                  "text": "Digoxin may fall; follow blood pressure without drug-level review",
+                  "explanation": "This reverses the expected concentration effect and omits the relevant monitoring."
+                }
+              ],
+              "point": "Identify the AV-node and concentration interaction requiring digoxin review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-verapamil",
+                  "field": "monitor",
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-verapamil--7-day--verapamil_digoxin_review",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-verapamil::verapamil_digoxin_review"
+              ],
+              "reusedFromQuestionId": "ccu-verapamil--standard--verapamil_digoxin_review",
               "answerKey": "B"
             },
             {
@@ -10119,23 +10293,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Additive slowing of AV conduction",
-                  "explanation": "Both can slow conduction and contribute to bradycardia or block."
-                },
-                {
-                  "id": "B",
                   "text": "Additive platelet P2Y12 inhibition",
                   "explanation": "These are not P2Y12 antiplatelet drugs."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Additive renal glucose excretion",
                   "explanation": "This is not the mechanism of either treatment combination."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Additive activation of beta2 receptors",
                   "explanation": "Beta-blockade does not activate beta2 receptors."
+                },
+                {
+                  "id": "D",
+                  "text": "Additive slowing of AV conduction",
+                  "explanation": "Both can slow conduction and contribute to bradycardia or block."
                 }
               ],
               "format": "single-best-answer",
@@ -10160,14 +10334,14 @@
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "administration",
-                  "textSha256": "822e276f3bf229e6384ea05bc00f9353f8134f4aad230b4ab0d516730b45ea79"
+                  "textSha256": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-verapamil",
                   "field": "monitor",
-                  "textSha256": "6836155cea52a4d7c47bf595a64907b85b9be717d523fc5fdf961bdd30f5e784"
+                  "textSha256": "52daa7d19b24f9fd97dc8697fa6fab3d8c9fbd212d6c15dc03bce04c34db3db6"
                 },
                 {
                   "file": "content.json",
@@ -10205,10 +10379,10 @@
                 "ccu-verapamil::avnode_combination"
               ],
               "reusedFromQuestionId": "ccu-verapamil--advanced--avnode_combination",
-              "answerKey": "A"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 12
+          "questionCount": 14
         }
       ]
     },
@@ -12177,18 +12351,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
-                },
-                {
-                  "id": "B",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
+                },
+                {
+                  "id": "C",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "D",
@@ -12213,7 +12387,7 @@
               "learningPointIds": [
                 "ccu-furosemide::renal_monitor"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which new symptom during LASIX — furosemide therapy specifically warrants review for ototoxicity?",
@@ -12297,7 +12471,7 @@
                   "collection": "medications",
                   "itemId": "ccu-furosemide",
                   "field": "administration",
-                  "textSha256": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf"
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
                 }
               ],
               "criticalForSafety": false,
@@ -12318,13 +12492,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Faster conversion into a potassium-sparing metabolite",
-                  "explanation": "Furosemide does not become a potassium-sparing diuretic."
+                  "text": "Less sleep disruption from nocturia",
+                  "explanation": "The timing reduces inconvenient overnight diuresis."
                 },
                 {
                   "id": "C",
-                  "text": "Less sleep disruption from nocturia",
-                  "explanation": "The timing reduces inconvenient overnight diuresis."
+                  "text": "Faster conversion into a potassium-sparing metabolite",
+                  "explanation": "Furosemide does not become a potassium-sparing diuretic."
                 },
                 {
                   "id": "D",
@@ -12349,7 +12523,7 @@
               "learningPointIds": [
                 "ccu-furosemide::diuretic_timing"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -12512,7 +12686,7 @@
                   "collection": "medications",
                   "itemId": "ccu-furosemide",
                   "field": "administration",
-                  "textSha256": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf"
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
                 }
               ],
               "criticalForSafety": true,
@@ -12522,9 +12696,52 @@
                 "ccu-furosemide::furosemide_controlled_delivery"
               ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "For a routine adult 20–40-mg IV dose of Hikma furosemide 10 mg/mL, which injection duration follows its US labeling?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "1–2 minutes",
+                  "explanation": "This is the routine adult IV duration specified by the identified label."
+                },
+                {
+                  "id": "B",
+                  "text": "5–10 seconds",
+                  "explanation": "This is substantially faster than the labeled routine injection."
+                },
+                {
+                  "id": "C",
+                  "text": "15–30 minutes",
+                  "explanation": "A longer infusion may be separately prescribed, but it is not the routine injection duration asked for here."
+                },
+                {
+                  "id": "D",
+                  "text": "15–30 seconds",
+                  "explanation": "This is faster than the labeled 1–2-minute routine injection."
+                }
+              ],
+              "point": "Recall the specified routine adult IV time for the identified product.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "administration",
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--standard--furosemide_routine_iv_time",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_routine_iv_time"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 13
+          "questionCount": 14
         },
         {
           "id": "ccu-furosemide--advanced",
@@ -12636,7 +12853,7 @@
                   "collection": "medications",
                   "itemId": "ccu-furosemide",
                   "field": "administration",
-                  "textSha256": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf"
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
                 },
                 {
                   "file": "content.json",
@@ -12715,13 +12932,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
-                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Furosemide promotes salt and water loss, reducing congestion."
                 },
                 {
                   "id": "D",
-                  "text": "Inhibits hepatic HMG-CoA reductase",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Furosemide promotes salt and water loss, reducing congestion."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -12755,7 +12972,7 @@
                 "ccu-furosemide::principal-action"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--principal-action",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -12763,18 +12980,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Loop diuretic",
-                  "explanation": "Loop diuretic."
-                },
-                {
-                  "id": "B",
                   "text": "SGLT2 inhibitor",
                   "explanation": "The medicine is classified as: Loop diuretic."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Insulin",
                   "explanation": "The medicine is classified as: Loop diuretic."
+                },
+                {
+                  "id": "C",
+                  "text": "Loop diuretic",
+                  "explanation": "Loop diuretic."
                 },
                 {
                   "id": "D",
@@ -12799,7 +13016,7 @@
                 "ccu-furosemide::drug-class"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--drug-class",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -12807,18 +13024,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Relief of congestion and fluid overload",
-                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
-                },
-                {
-                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Suppression of bacterial cell-wall synthesis",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Relief of congestion and fluid overload",
+                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
                 },
                 {
                   "id": "D",
@@ -12850,20 +13067,20 @@
                 "ccu-furosemide::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which change best supports a beneficial decongestive response to furosemide?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Less urine with increasing edema",
-                  "explanation": "This does not support the intended decongestive response."
+                  "text": "Easier breathing with fewer crackles and less edema",
+                  "explanation": "Improvement should include the clinical overload picture, not urine alone."
                 },
                 {
                   "id": "B",
-                  "text": "Easier breathing with fewer crackles and less edema",
-                  "explanation": "Improvement should include the clinical overload picture, not urine alone."
+                  "text": "Less urine with increasing edema",
+                  "explanation": "This does not support the intended decongestive response."
                 },
                 {
                   "id": "C",
@@ -12908,20 +13125,20 @@
                 "ccu-furosemide::decongestion"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--decongestion",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after LASIX — furosemide. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Resting temperature and infection symptoms",
-                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "B",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
                   "id": "C",
@@ -12959,20 +13176,20 @@
                 "ccu-furosemide::hypotension"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--hypotension",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for LASIX — furosemide?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "INR and puncture-site bleeding trends",
-                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "B",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "INR and puncture-site bleeding trends",
+                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
                   "id": "C",
@@ -13003,7 +13220,7 @@
                 "ccu-furosemide::renal_monitor"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--renal_monitor",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which new symptom during LASIX — furosemide therapy specifically warrants review for ototoxicity?",
@@ -13020,13 +13237,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Tinnitus or hearing change",
-                  "explanation": "These can be auditory toxicity signals."
+                  "text": "Metallic taste or mild dyspepsia",
+                  "explanation": "These are a different adverse-effect pattern."
                 },
                 {
                   "id": "D",
-                  "text": "Metallic taste or mild dyspepsia",
-                  "explanation": "These are a different adverse-effect pattern."
+                  "text": "Tinnitus or hearing change",
+                  "explanation": "These can be auditory toxicity signals."
                 }
               ],
               "format": "single-best-answer",
@@ -13054,7 +13271,7 @@
                 "ccu-furosemide::ototoxicity"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--ototoxicity",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A LASIX — furosemide injection order is valid, but the minimum administration time is unclear. Which source should resolve preparation and rate?",
@@ -13066,18 +13283,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "The exact product instructions and authorized local protocol",
+                  "explanation": "Concentration, formulation, and indication can change administration requirements."
+                },
+                {
+                  "id": "C",
                   "text": "The IV rate previously used for a different drug class",
                   "explanation": "Another drug’s administration rate is not transferable."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "The instructions for an oral product of the same name",
                   "explanation": "Oral instructions do not establish an IV administration rate."
-                },
-                {
-                  "id": "D",
-                  "text": "The exact product instructions and authorized local protocol",
-                  "explanation": "Concentration, formulation, and indication can change administration requirements."
                 }
               ],
               "format": "single-best-answer",
@@ -13088,7 +13305,7 @@
                   "collection": "medications",
                   "itemId": "ccu-furosemide",
                   "field": "administration",
-                  "textSha256": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf"
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
                 }
               ],
               "criticalForSafety": false,
@@ -13098,25 +13315,25 @@
                 "ccu-furosemide::slow_iv"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--slow_iv",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Why may an authorized routine oral furosemide schedule favor earlier daytime doses?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Less sleep disruption from nocturia",
-                  "explanation": "The timing reduces inconvenient overnight diuresis."
-                },
-                {
-                  "id": "B",
                   "text": "Less potassium loss at an identical total dose",
                   "explanation": "Time of day does not remove the need to monitor potassium."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Greater platelet inhibition during daylight",
                   "explanation": "Furosemide is not an antiplatelet drug."
+                },
+                {
+                  "id": "C",
+                  "text": "Less sleep disruption from nocturia",
+                  "explanation": "The timing reduces inconvenient overnight diuresis."
                 },
                 {
                   "id": "D",
@@ -13142,7 +13359,7 @@
                 "ccu-furosemide::diuretic_timing"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--diuretic_timing",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -13155,18 +13372,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Sodium/water depletion with a fall in BP",
+                  "explanation": "Excessive diuresis can deplete sodium and intravascular volume and produce hypotension."
+                },
+                {
+                  "id": "C",
                   "text": "Sodium/water depletion with a predictable BP rise",
                   "explanation": "A BP rise is not the expected volume-depletion response."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Sodium/water retention with a fall in BP",
                   "explanation": "Retention is not the direct excessive-diuresis effect."
-                },
-                {
-                  "id": "D",
-                  "text": "Sodium/water depletion with a fall in BP",
-                  "explanation": "Excessive diuresis can deplete sodium and intravascular volume and produce hypotension."
                 }
               ],
               "point": "Recognize sodium/water depletion and hypotension as risks of excessive furosemide diuresis.",
@@ -13186,7 +13403,7 @@
                 "ccu-furosemide::furosemide_volume_sodium"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_volume_sodium",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -13194,13 +13411,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Serum ionized calcium",
-                  "explanation": "Calcium assessment does not replace the missing sodium measurement."
+                  "text": "Serum sodium",
+                  "explanation": "Sodium is part of the required electrolyte surveillance during diuresis."
                 },
                 {
                   "id": "B",
-                  "text": "Serum sodium",
-                  "explanation": "Sodium is part of the required electrolyte surveillance during diuresis."
+                  "text": "Serum ionized calcium",
+                  "explanation": "Calcium assessment does not replace the missing sodium measurement."
                 },
                 {
                   "id": "C",
@@ -13230,7 +13447,7 @@
                 "ccu-furosemide::furosemide_sodium_monitor"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_sodium_monitor",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -13248,13 +13465,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Giving a large IV dose more rapidly",
-                  "explanation": "Large doses and rapid injection increase the risk of ototoxicity."
+                  "text": "Maintaining the ordered dose with slower IV delivery",
+                  "explanation": "Slower delivery does not create the rapid-injection risk sought."
                 },
                 {
                   "id": "D",
-                  "text": "Maintaining the ordered dose with slower IV delivery",
-                  "explanation": "Slower delivery does not create the rapid-injection risk sought."
+                  "text": "Giving a large IV dose more rapidly",
+                  "explanation": "Large doses and rapid injection increase the risk of ototoxicity."
                 }
               ],
               "point": "Connect rapid/high-dose IV administration with ototoxicity risk.",
@@ -13274,7 +13491,7 @@
                 "ccu-furosemide::furosemide_rapid_ototoxicity"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_rapid_ototoxicity",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -13287,18 +13504,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Controlled infusion within the prescribed rate limit",
+                  "explanation": "High-dose parenteral therapy requires controlled delivery within the authorized rate."
+                },
+                {
+                  "id": "C",
                   "text": "A free-flow infusion adjusted only when symptoms occur",
                   "explanation": "Symptom-triggered adjustment does not provide the required rate control."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Intermittent rapid pushes separated by observation pauses",
                   "explanation": "Pauses do not control the rate of each rapid injection."
-                },
-                {
-                  "id": "D",
-                  "text": "Controlled infusion within the prescribed rate limit",
-                  "explanation": "High-dose parenteral therapy requires controlled delivery within the authorized rate."
                 }
               ],
               "point": "Select controlled infusion for high-dose parenteral therapy.",
@@ -13308,7 +13525,7 @@
                   "collection": "medications",
                   "itemId": "ccu-furosemide",
                   "field": "administration",
-                  "textSha256": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf"
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
                 }
               ],
               "criticalForSafety": true,
@@ -13318,25 +13535,69 @@
                 "ccu-furosemide::furosemide_controlled_delivery"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_controlled_delivery",
-              "answerKey": "D"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "For a routine adult 20–40-mg IV dose of Hikma furosemide 10 mg/mL, which injection duration follows its US labeling?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "15–30 minutes",
+                  "explanation": "A longer infusion may be separately prescribed, but it is not the routine injection duration asked for here."
+                },
+                {
+                  "id": "B",
+                  "text": "1–2 minutes",
+                  "explanation": "This is the routine adult IV duration specified by the identified label."
+                },
+                {
+                  "id": "C",
+                  "text": "5–10 seconds",
+                  "explanation": "This is substantially faster than the labeled routine injection."
+                },
+                {
+                  "id": "D",
+                  "text": "15–30 seconds",
+                  "explanation": "This is faster than the labeled 1–2-minute routine injection."
+                }
+              ],
+              "point": "Recall the specified routine adult IV time for the identified product.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "administration",
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--7-day--furosemide_routine_iv_time",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_routine_iv_time"
+              ],
+              "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_routine_iv_time",
+              "answerKey": "B"
             },
             {
               "stem": "A patient on furosemide develops new PVCs after substantial diuresis. Which laboratory pair is especially relevant?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Potassium and magnesium",
-                  "explanation": "Low levels can contribute to ventricular irritability after diuresis."
-                },
-                {
-                  "id": "B",
                   "text": "TSH and free thyroxine",
                   "explanation": "Thyroid status can affect rhythm but does not best match the immediate diuretic-loss context."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Albumin and bilirubin",
                   "explanation": "These do not directly address the electrolyte-related rhythm concern."
+                },
+                {
+                  "id": "C",
+                  "text": "Potassium and magnesium",
+                  "explanation": "Low levels can contribute to ventricular irritability after diuresis."
                 },
                 {
                   "id": "D",
@@ -13352,7 +13613,7 @@
                   "collection": "medications",
                   "itemId": "ccu-furosemide",
                   "field": "administration",
-                  "textSha256": "9e73e51e4f3c4e3bb0ce48d18768bbb743a089a33262da585a62c9d2cbae7bdf"
+                  "textSha256": "1fd2eecff6d54b44ac097d143129a218f598efc038bfc3cb89aba53e9df86661"
                 },
                 {
                   "file": "content.json",
@@ -13383,10 +13644,10 @@
                 "ccu-furosemide::low_k_mg"
               ],
               "reusedFromQuestionId": "ccu-furosemide--advanced--low_k_mg",
-              "answerKey": "A"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 14
+          "questionCount": 15
         }
       ]
     },

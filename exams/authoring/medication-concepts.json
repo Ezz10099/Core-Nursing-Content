@@ -7976,5 +7976,145 @@
         }
       ]
     }
+  },
+  "ondansetron_injection_routes": {
+    "point": "Recall IV/IM routes permitted for the identified US ondansetron injection.",
+    "anchor": "IV or IM",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which route options are authorized for the US Apotex/Qilu ondansetron 2-mg/mL injection used for adult postoperative nausea/vomiting?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Intravenous or intramuscular",
+          "explanation": "Both routes are authorized for the identified product."
+        },
+        {
+          "text": "Intravenous only",
+          "explanation": "This unnecessarily excludes the authorized intramuscular option."
+        },
+        {
+          "text": "Intramuscular only",
+          "explanation": "This unnecessarily excludes the authorized intravenous option."
+        },
+        {
+          "text": "Intravenous or subcutaneous",
+          "explanation": "Subcutaneous administration is not authorized for this product."
+        }
+      ]
+    }
+  },
+  "ondansetron_indication_preparation": {
+    "point": "Distinguish postoperative and chemotherapy preparation instructions.",
+    "anchor": "15 minutes",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "For US Apotex/Qilu ondansetron injection in adults, which preparation pairing matches postoperative versus emetogenic-chemotherapy use?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Postoperative: dilution not required; chemotherapy: dilute and infuse over 15 minutes",
+          "explanation": "The two indications have different preparation instructions; chemotherapy uses diluted IV infusion."
+        },
+        {
+          "text": "Postoperative: dilution required; chemotherapy: dilute and infuse over 15 minutes",
+          "explanation": "The chemotherapy part fits, but routine postoperative dilution is not required by this label."
+        },
+        {
+          "text": "Postoperative: dilution not required; chemotherapy: give undiluted as a rapid push",
+          "explanation": "The postoperative part fits; chemotherapy requires diluted IV infusion."
+        },
+        {
+          "text": "Postoperative: dilution required; chemotherapy: give undiluted as a rapid push",
+          "explanation": "Both preparation claims conflict with the identified labeling."
+        }
+      ]
+    }
+  },
+  "furosemide_routine_iv_time": {
+    "point": "Recall the specified routine adult IV time for the identified product.",
+    "anchor": "1–2 minutes",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "For a routine adult 20–40-mg IV dose of Hikma furosemide 10 mg/mL, which injection duration follows its US labeling?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "1–2 minutes",
+          "explanation": "This is the routine adult IV duration specified by the identified label."
+        },
+        {
+          "text": "5–10 seconds",
+          "explanation": "This is substantially faster than the labeled routine injection."
+        },
+        {
+          "text": "15–30 seconds",
+          "explanation": "This is faster than the labeled 1–2-minute routine injection."
+        },
+        {
+          "text": "15–30 minutes",
+          "explanation": "A longer infusion may be separately prescribed, but it is not the routine injection duration asked for here."
+        }
+      ]
+    }
+  },
+  "verapamil_older_iv_time": {
+    "point": "Recall the slower minimum IV time in older patients.",
+    "anchor": "at least 3 minutes",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "What minimum duration does current US verapamil injection labeling specify for an older patient?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "3 minutes",
+          "explanation": "The label specifies at least 3 minutes for older patients."
+        },
+        {
+          "text": "1 minute",
+          "explanation": "This is too rapid for the older-patient instruction."
+        },
+        {
+          "text": "2 minutes",
+          "explanation": "This is the general initial adult minimum, not the slower older-patient instruction."
+        },
+        {
+          "text": "5 minutes",
+          "explanation": "A longer duration may be ordered, but the labeled minimum asked for is 3 minutes."
+        }
+      ]
+    }
+  },
+  "verapamil_digoxin_review": {
+    "point": "Identify the AV-node and concentration interaction requiring digoxin review.",
+    "anchor": "digoxin",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "During ongoing oral verapamil treatment with digoxin, which concentration change and monitoring approach best fits their interaction?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Digoxin may rise; review its serum level and AV conduction",
+          "explanation": "Verapamil can increase digoxin exposure; serum concentrations and cardiac conduction need review."
+        },
+        {
+          "text": "Digoxin may fall; review its serum level and AV conduction",
+          "explanation": "Monitoring is relevant, but verapamil can increase rather than predictably lower digoxin exposure."
+        },
+        {
+          "text": "Digoxin may rise; follow blood pressure without drug-level review",
+          "explanation": "The expected direction fits, but blood-pressure observation alone omits digoxin concentration and conduction review."
+        },
+        {
+          "text": "Digoxin may fall; follow blood pressure without drug-level review",
+          "explanation": "This reverses the expected concentration effect and omits the relevant monitoring."
+        }
+      ]
+    }
   }
 }
