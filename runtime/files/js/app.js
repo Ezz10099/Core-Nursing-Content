@@ -146,3 +146,5 @@ function downloadOfficialApk(){
   document.getElementById('apkDownloadHelp').hidden=false;
   if(typeof bridge.copyText==='function'){bridge.copyText('Core Nursing',url);alert('تم نسخ رابط التحميل. افتحه في المتصفح.');}
 }
+
+// Q&A study reader staged release — source changes require regenerated signed runtime.
