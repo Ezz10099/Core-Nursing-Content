@@ -253,6 +253,15 @@
     put('noteKindFilter',['question','request'].includes(kind)?kind:'all');
     render();
   }
+  // Render synced answers as compact, readable study notes without altering their clinical text.
+  function studyAnswerHtml(answer) {
+    const lines=String(answer||'').split(/\r?\n/).map(s=>s.trim());
+    return '<div class="study-answer-content">'+lines.map(line=>{
+      if(!line)return '<div class="study-answer-space" aria-hidden="true"></div>';
+      if(/^[-•]\s*/.test(line))return '<p class="study-answer-bullet"><span aria-hidden="true">•</span><span>'+escape(line.replace(/^[-•]\s*/,''))+'</span></p>';
+      return '<p class="study-answer-paragraph">'+escape(line)+'</p>';
+    }).join('')+'</div>';
+  }
   function render() {
     const root = $('noteItems'); if (!root) return;
     const search = value('noteSearch').toLowerCase().trim(), filter = value('noteFilter');
@@ -276,7 +285,7 @@
         '<div class="note-card-top"><span class="inbox-kind">'+(request?'Request':'Question')+'</span><small>'+escape((n.updatedAt||'').slice(0,10))+'</small></div>'+
         '<h3>'+escape(n.question)+'</h3>'+
         '<p class="inbox-context">'+escape(request && n.relatedTo ? (n.relatedTo==='app'?'App · design or problem':'Study content') : dept)+(n.sourceTitle?' · '+escape(n.sourceTitle):'')+'</p>'+
-        (n.answer ? '<details><summary>'+(request?'Read response':'Read answer')+'</summary><div class="note-answer">'+escape(n.answer)+'</div></details>' : '<p class="muted">'+(request?'Awaiting review':'Awaiting an answer')+'</p>')+
+        (n.answer ? '<details class="study-answer-details"><summary>'+(request?'Read response':'Study answer')+'</summary>'+studyAnswerHtml(n.answer)+'</details>' : '<p class="muted">'+(request?'Awaiting review':'Awaiting an answer')+'</p>')+
         '<div class="note-tags">'+n.tags.map(t=>'<span>'+escape(t)+'</span>').join('')+'</div>'+
         '<div class="tools"><span class="note-state">'+(n.answer?(request?'Response received':'Answered'):n.syncState==='synced'?'Synced privately':'Saved on this device')+'</span><button type="button" data-edit-note="'+escape(n.id)+'">Edit / change type</button><button type="button" data-delete-note="'+escape(n.id)+'">Delete</button></div></article>';
     }
