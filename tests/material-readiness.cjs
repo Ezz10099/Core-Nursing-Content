@@ -9,6 +9,10 @@ function boot(saved){
 }
 let w=boot(JSON.stringify({reading:{'med:heparin':'read'},bookmarks:['heparin'],attempts:[{id:'heparin',correct:true}]})),d=w.document;
 const state=()=>JSON.parse(w.localStorage.getItem(KEY)),before=w.localStorage.getItem(KEY);
+assert(!d.querySelector('#home #materialReadiness'),'Home no longer contains the long preparation-status panel');
+assert(d.querySelector('#library #materialReadiness'),'Detailed preparation status remains on the Medications page');
+assert(d.querySelector('#source-complete'),'Medications has its own Completed classification');
+assert.equal(d.querySelector('#materialPreparationDetails').open,false,'Detailed preparation status stays collapsed by default');
 const available=w.CoreNursingExamData.banks.filter(b=>!b.capabilityRequirement||w.nativeHasCapability(b.capabilityRequirement));
 const expected=key=>available.filter(b=>w.CoreNursingReadinessData.items[b.itemId].status===key).length;
 assert.equal(d.querySelector('#materialReadiness button[data-status=complete]').textContent,'مكتمل ('+expected('complete')+')');
@@ -25,8 +29,13 @@ assert.equal(w.CoreNursingReadiness.status('heparin'),'in_review','Aliases share
 const med=w.CoreNursingExamData.banks.find(b=>b.itemId==='ccu-omeprazole'),lesson=w.CoreNursingExamData.banks.find(b=>b.itemType==='lesson');
 for(const b of [med,lesson])w.CoreNursingReadinessData.items[b.itemId].status='complete';
 w.CoreNursingReadiness.open('complete');assert.equal(d.querySelectorAll('.material-readiness-card').length,2);assert.equal(w.localStorage.getItem(KEY),before);
-w.eval(d.querySelector('#completedMedsLink').getAttribute('onclick'));assert.equal(d.querySelectorAll('.material-readiness-card').length,1);assert.equal(d.querySelector('.material-readiness-card').dataset.itemId,med.itemId);
-d.querySelector('.material-readiness-card button').click();assert(!d.querySelector('#detail').classList.contains('hidden'));
+assert(!d.querySelector('#library').classList.contains('hidden'),'The review panel opens in Medications, not Home');
+assert.equal(d.querySelector('#materialPreparationDetails').open,true,'Review details expand when explicitly requested');
+w.setCatalogFilter('complete');assert(d.querySelector('#source-complete').classList.contains('selected'));
+assert.equal(d.querySelector('#source-complete').textContent,'Completed (1)');
+assert.equal(d.querySelectorAll('#list .item').length,1,'Completed category filters medications, not lessons');
+assert(d.querySelector('#list .item').textContent.includes(med.title));
+d.querySelector('#list .item button').click();assert(!d.querySelector('#detail').classList.contains('hidden'));
 assert.equal(state().reading['med:heparin'],'read');assert.equal(state().exams.items[med.itemId]?.attempts?.length||0,0,'Editorial completion is not an exam pass');
 w.CoreNursingReadiness.open('complete','lesson');assert.equal(d.querySelectorAll('.material-readiness-card').length,1);
 d.querySelector('.material-readiness-card button:last-child').click();assert.equal(state().exams.active.itemId,lesson.itemId,'Exam shortcut starts the real eligible exam');
@@ -39,4 +48,4 @@ const saved=w.localStorage.getItem(KEY);w.close();w=boot(saved);d=w.document;
 assert.equal(w.CoreNursingReadiness.status(med.itemId),w.CoreNursingReadinessData.items[med.itemId].status,'A UI fixture cannot persist completion into learner backups');
 assert.equal(JSON.stringify(JSON.parse(w.localStorage.getItem(KEY)).exams.active),active);
 assert.equal(JSON.parse(w.localStorage.getItem(KEY)).reading['med:heparin'],'read');
-w.close();console.log('PASS: accurate empty completed category, partial-status aliases, both material types, study/exam navigation, stale-source downgrade and preserved learner progress/active attempts.');
+w.close();console.log('PASS: uncrowded Home, dedicated Completed medication filter, preserved editorial details/lesson statuses, study/exam navigation, stale-source downgrade and preserved learner progress/active attempts.');
