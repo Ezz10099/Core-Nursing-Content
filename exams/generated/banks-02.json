@@ -7966,13 +7966,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dihydropyridine CCB",
-                  "explanation": "Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                  "text": "Alpha/beta blocker",
+                  "explanation": "The medicine is classified as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
                 },
                 {
                   "id": "C",
-                  "text": "Alpha/beta blocker",
-                  "explanation": "The medicine is classified as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "Dihydropyridine calcium-channel blocker; arterial vasodilator."
                 },
                 {
                   "id": "D",
@@ -7996,7 +7996,7 @@
               "learningPointIds": [
                 "ccu-amlodipine::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -8118,9 +8118,52 @@
                 "ccu-amlodipine::hypotension"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired assessment best matches amlodipine’s important adverse-effect profile?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ECG for high-grade AV block and examination for ankle edema",
+                  "explanation": "This substitutes the AV-node-blocking profile of other drugs for the needed BP assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Blood pressure for hypotension and examination for ankle edema",
+                  "explanation": "BP lowering can become symptomatic, and ankle edema is a relevant adverse effect."
+                },
+                {
+                  "id": "C",
+                  "text": "Blood pressure for hypertension and examination for ankle edema",
+                  "explanation": "The edema assessment fits, but the adverse pressure concern is hypotension."
+                },
+                {
+                  "id": "D",
+                  "text": "Blood pressure for hypotension and testing for marked potassium loss",
+                  "explanation": "The BP assessment fits, but marked potassium loss is not the characteristic second effect."
+                }
+              ],
+              "point": "Recognize edema and BP-related adverse effects.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-amlodipine",
+                  "field": "monitor",
+                  "textSha256": "4c366013dd65ac0d624a8fe6b1d1f00729462454d3bd7b3e22a0b9b55715d5e0"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-amlodipine--standard--amlodipine_bp_edema",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-amlodipine::amlodipine_bp_edema"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-amlodipine--advanced",
@@ -8372,13 +8415,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Relaxes arterial smooth muscle",
-                  "explanation": "Vascular L-type calcium-channel blockade produces arterial vasodilation."
+                  "text": "Enhances GABA-A receptor activity",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Vascular L-type calcium-channel blockade produces arterial vasodilation."
                 },
                 {
                   "id": "B",
-                  "text": "Enhances GABA-A receptor activity",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Vascular L-type calcium-channel blockade produces arterial vasodilation."
+                  "text": "Relaxes arterial smooth muscle",
+                  "explanation": "Vascular L-type calcium-channel blockade produces arterial vasodilation."
                 },
                 {
                   "id": "C",
@@ -8422,7 +8465,7 @@
                 "ccu-amlodipine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-amlodipine--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -8430,23 +8473,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "Dihydropyridine calcium-channel blocker; arterial vasodilator."
+                },
+                {
+                  "id": "B",
                   "text": "Beta1 blocker",
                   "explanation": "The medicine is classified as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Alpha/beta blocker",
                   "explanation": "The medicine is classified as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Non-dihydropyridine CCB",
                   "explanation": "The medicine is classified as: Dihydropyridine calcium-channel blocker; arterial vasodilator."
-                },
-                {
-                  "id": "D",
-                  "text": "Dihydropyridine CCB",
-                  "explanation": "Dihydropyridine calcium-channel blocker; arterial vasodilator."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -8466,7 +8509,7 @@
                 "ccu-amlodipine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-amlodipine--standard--drug-class",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -8474,23 +8517,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Chronic hypertension or angina treatment",
+                  "explanation": "This is a clinical use of the medicine: Chronic BP control and antianginal therapy."
+                },
+                {
+                  "id": "B",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Treatment of susceptible bacterial infection",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Chronic hypertension or angina treatment",
-                  "explanation": "This is a clinical use of the medicine: Chronic BP control and antianginal therapy."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -8517,7 +8560,7 @@
                 "ccu-amlodipine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-amlodipine--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after AMICORE / AMICOR — amlodipine. Which paired assessment best checks the suspected adverse effect?",
@@ -8534,13 +8577,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Bowel frequency and abdominal distension",
+                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
                   "id": "D",
-                  "text": "Bowel frequency and abdominal distension",
-                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -8589,6 +8632,50 @@
                 "ccu-amlodipine::hypotension"
               ],
               "reusedFromQuestionId": "ccu-amlodipine--standard--hypotension",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired assessment best matches amlodipine’s important adverse-effect profile?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Blood pressure for hypotension and testing for marked potassium loss",
+                  "explanation": "The BP assessment fits, but marked potassium loss is not the characteristic second effect."
+                },
+                {
+                  "id": "B",
+                  "text": "ECG for high-grade AV block and examination for ankle edema",
+                  "explanation": "This substitutes the AV-node-blocking profile of other drugs for the needed BP assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Blood pressure for hypotension and examination for ankle edema",
+                  "explanation": "BP lowering can become symptomatic, and ankle edema is a relevant adverse effect."
+                },
+                {
+                  "id": "D",
+                  "text": "Blood pressure for hypertension and examination for ankle edema",
+                  "explanation": "The edema assessment fits, but the adverse pressure concern is hypotension."
+                }
+              ],
+              "point": "Recognize edema and BP-related adverse effects.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-amlodipine",
+                  "field": "monitor",
+                  "textSha256": "4c366013dd65ac0d624a8fe6b1d1f00729462454d3bd7b3e22a0b9b55715d5e0"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-amlodipine--7-day--amlodipine_bp_edema",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-amlodipine::amlodipine_bp_edema"
+              ],
+              "reusedFromQuestionId": "ccu-amlodipine--standard--amlodipine_bp_edema",
               "answerKey": "C"
             },
             {
@@ -8601,13 +8688,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "New orthopnea with weight gain and crackles",
-                  "explanation": "The cardiopulmonary and fluid trend supports congestion beyond ankle appearance."
+                  "text": "Edema beginning after a medication change with stable breathing",
+                  "explanation": "The timing supports a possible drug contribution without establishing HF."
                 },
                 {
                   "id": "C",
-                  "text": "Edema beginning after a medication change with stable breathing",
-                  "explanation": "The timing supports a possible drug contribution without establishing HF."
+                  "text": "New orthopnea with weight gain and crackles",
+                  "explanation": "The cardiopulmonary and fluid trend supports congestion beyond ankle appearance."
                 },
                 {
                   "id": "D",
@@ -8647,7 +8734,7 @@
                 "ccu-amlodipine::edema"
               ],
               "reusedFromQuestionId": "ccu-amlodipine--advanced--edema",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Amlodipine is prescribed for chronic hypertension. How should a high acute BP reading be interpreted in relation to this medicine?",
@@ -8664,13 +8751,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Acute assessment and the authorized emergency plan remain necessary",
-                  "explanation": "A gradual maintenance drug does not substitute for indicated acute management."
+                  "text": "The oral tablet is equivalent to an immediately titrated IV vasodilator",
+                  "explanation": "Its onset and formulation differ."
                 },
                 {
                   "id": "D",
-                  "text": "The oral tablet is equivalent to an immediately titrated IV vasodilator",
-                  "explanation": "Its onset and formulation differ."
+                  "text": "Acute assessment and the authorized emergency plan remain necessary",
+                  "explanation": "A gradual maintenance drug does not substitute for indicated acute management."
                 }
               ],
               "format": "single-best-answer",
@@ -8705,10 +8792,10 @@
                 "ccu-amlodipine::amlodipine_onset"
               ],
               "reusedFromQuestionId": "ccu-amlodipine--advanced--amlodipine_onset",
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         }
       ]
     },
@@ -10497,13 +10584,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "ACE inhibitor",
-                  "explanation": "ACE inhibitor; RAAS blocker."
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The medicine is classified as: ACE inhibitor; RAAS blocker."
                 },
                 {
                   "id": "D",
-                  "text": "Dihydropyridine CCB",
-                  "explanation": "The medicine is classified as: ACE inhibitor; RAAS blocker."
+                  "text": "ACE inhibitor",
+                  "explanation": "ACE inhibitor; RAAS blocker."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -10522,7 +10609,7 @@
               "learningPointIds": [
                 "ccu-enalapril::drug-class"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -10535,13 +10622,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Selected chronic hypertension or heart-failure treatment",
-                  "explanation": "This is a clinical use of the medicine: Chronic cardiovascular therapy for selected hypertension and heart-failure patients."
+                  "text": "Treatment of susceptible bacterial infection",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
-                  "text": "Treatment of susceptible bacterial infection",
-                  "explanation": "This is a different treatment role."
+                  "text": "Selected chronic hypertension or heart-failure treatment",
+                  "explanation": "This is a clinical use of the medicine: Chronic cardiovascular therapy for selected hypertension and heart-failure patients."
                 },
                 {
                   "id": "D",
@@ -10572,7 +10659,7 @@
               "learningPointIds": [
                 "ccu-enalapril::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "A patient becomes light-headed on standing after ENALAPRIL. Which paired assessment best checks the suspected adverse effect?",
@@ -10584,13 +10671,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
                   "id": "C",
-                  "text": "Resting temperature and infection symptoms",
-                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -10613,7 +10700,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -10629,7 +10716,7 @@
               "learningPointIds": [
                 "ccu-enalapril::hypotension"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting ENALAPRIL?",
@@ -10641,13 +10728,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Rising serum calcium",
-                  "explanation": "Calcium elevation is not the principal effect being tested."
+                  "text": "Rising serum potassium",
+                  "explanation": "The treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "C",
-                  "text": "Rising serum potassium",
-                  "explanation": "The treatment can increase potassium or reduce its loss."
+                  "text": "Rising serum calcium",
+                  "explanation": "Calcium elevation is not the principal effect being tested."
                 },
                 {
                   "id": "D",
@@ -10663,7 +10750,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -10686,20 +10773,20 @@
               "learningPointIds": [
                 "ccu-enalapril::high_k"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for ENALAPRIL?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "INR and puncture-site bleeding trends",
+                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
                   "id": "B",
-                  "text": "INR and puncture-site bleeding trends",
-                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "C",
@@ -10720,7 +10807,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -10743,30 +10830,30 @@
               "learningPointIds": [
                 "ccu-enalapril::renal_monitor"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which previous reaction is a contraindication to enalapril?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "ACE-inhibitor angioedema",
+                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
+                },
+                {
+                  "id": "B",
                   "text": "Isolated metformin stomach upset",
                   "explanation": "This is not the stated ACE-inhibitor contraindication."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Isolated opioid constipation",
                   "explanation": "This is a different adverse effect and mechanism."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Uncomplicated nitrate headache",
                   "explanation": "This does not establish ACE-associated angioedema."
-                },
-                {
-                  "id": "D",
-                  "text": "ACE-inhibitor angioedema",
-                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
                 }
               ],
               "format": "single-best-answer",
@@ -10777,7 +10864,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 }
               ],
               "criticalForSafety": false,
@@ -10786,10 +10873,139 @@
               "learningPointIds": [
                 "ccu-enalapril::ace_history"
               ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Before a first enalapril dose in a volume-depleted adult, which adverse effect is of particular concern?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Marked hypokalemia",
+                  "explanation": "Enalapril can increase rather than predictably deplete potassium."
+                },
+                {
+                  "id": "B",
+                  "text": "High-grade AV block",
+                  "explanation": "This is not the characteristic first-dose volume-depletion concern with an ACE inhibitor."
+                },
+                {
+                  "id": "C",
+                  "text": "Rebound hypertension",
+                  "explanation": "This is not the expected initial response to RAAS blockade in volume depletion."
+                },
+                {
+                  "id": "D",
+                  "text": "Symptomatic hypotension",
+                  "explanation": "ACE inhibition may produce a greater BP fall when volume is depleted."
+                }
+              ],
+              "point": "Connect volume status with hypotension susceptibility.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enalapril",
+                  "field": "administration",
+                  "textSha256": "578f45463b8e9f2a007d08336896b0023fab3b87a5940d9b5e4c04e59d742520"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-enalapril--standard--enalapril_volume_risk",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enalapril::enalapril_volume_risk"
+              ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Pregnancy is detected during enalapril treatment. Which risk and response best fit its warning?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Fetal toxicity; discontinue promptly and arrange an alternative",
+                  "explanation": "The RAAS-blocking drug carries a fetal-toxicity warning and should be discontinued promptly."
+                },
+                {
+                  "id": "B",
+                  "text": "Fetal ototoxicity; discontinue promptly and arrange an alternative",
+                  "explanation": "The action is appropriate, but ototoxicity is not the warning sought."
+                },
+                {
+                  "id": "C",
+                  "text": "Fetal ototoxicity; continue at a lower dose until delivery",
+                  "explanation": "Both the named warning and continued-exposure plan are inappropriate."
+                },
+                {
+                  "id": "D",
+                  "text": "Fetal toxicity; continue at a lower dose until delivery",
+                  "explanation": "Dose reduction does not remove fetal-toxicity risk."
+                }
+              ],
+              "point": "Apply enalapril pregnancy precautions.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enalapril",
+                  "field": "monitor",
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enalapril--standard--enalapril_pregnancy",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enalapril::enalapril_pregnancy"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "What minimum washout is required when switching between enalapril and sacubitril/valsartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "12 hours",
+                  "explanation": "This is shorter than the required washout."
+                },
+                {
+                  "id": "B",
+                  "text": "36 hours",
+                  "explanation": "Allow at least 36 hours in either direction to reduce angioedema risk."
+                },
+                {
+                  "id": "C",
+                  "text": "48 hours",
+                  "explanation": "A longer interval may occur, but the specified minimum is 36 hours."
+                },
+                {
+                  "id": "D",
+                  "text": "24 hours",
+                  "explanation": "This is shorter than the required washout."
+                }
+              ],
+              "point": "Recall the 36-hour ACE inhibitor/ARNI separation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enalapril",
+                  "field": "monitor",
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enalapril--standard--enalapril_sacubitril_interval",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enalapril::enalapril_sacubitril_interval"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 7
+          "questionCount": 10
         },
         {
           "id": "ccu-enalapril--advanced",
@@ -10858,7 +11074,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -10908,7 +11124,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -10965,7 +11181,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -11025,13 +11241,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Disrupts sterol-containing fungal membranes",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: ACE inhibition reduces angiotensin II and aldosterone."
+                  "text": "Reduces angiotensin-II formation",
+                  "explanation": "ACE inhibition reduces angiotensin II and aldosterone."
                 },
                 {
                   "id": "C",
-                  "text": "Reduces angiotensin-II formation",
-                  "explanation": "ACE inhibition reduces angiotensin II and aldosterone."
+                  "text": "Disrupts sterol-containing fungal membranes",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: ACE inhibition reduces angiotensin II and aldosterone."
                 },
                 {
                   "id": "D",
@@ -11070,7 +11286,7 @@
                 "ccu-enalapril::principal-action"
               ],
               "reusedFromQuestionId": "ccu-enalapril--standard--principal-action",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -11078,23 +11294,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "ACE inhibitor",
+                  "explanation": "ACE inhibitor; RAAS blocker."
+                },
+                {
+                  "id": "B",
                   "text": "Dihydropyridine CCB",
                   "explanation": "The medicine is classified as: ACE inhibitor; RAAS blocker."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Non-dihydropyridine CCB",
                   "explanation": "The medicine is classified as: ACE inhibitor; RAAS blocker."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Nonselective beta blocker",
                   "explanation": "The medicine is classified as: ACE inhibitor; RAAS blocker."
-                },
-                {
-                  "id": "D",
-                  "text": "ACE inhibitor",
-                  "explanation": "ACE inhibitor; RAAS blocker."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -11114,7 +11330,7 @@
                 "ccu-enalapril::drug-class"
               ],
               "reusedFromQuestionId": "ccu-enalapril--standard--drug-class",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -11127,13 +11343,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Replacement of circulating glucose in severe hypoglycemia",
-                  "explanation": "This is a different treatment role."
+                  "text": "Selected chronic hypertension or heart-failure treatment",
+                  "explanation": "This is a clinical use of the medicine: Chronic cardiovascular therapy for selected hypertension and heart-failure patients."
                 },
                 {
                   "id": "C",
-                  "text": "Selected chronic hypertension or heart-failure treatment",
-                  "explanation": "This is a clinical use of the medicine: Chronic cardiovascular therapy for selected hypertension and heart-failure patients."
+                  "text": "Replacement of circulating glucose in severe hypoglycemia",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
@@ -11165,7 +11381,7 @@
                 "ccu-enalapril::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-enalapril--standard--treatment-role",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "A patient becomes light-headed on standing after ENALAPRIL. Which paired assessment best checks the suspected adverse effect?",
@@ -11177,13 +11393,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Bowel frequency and abdominal distension",
+                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
                   "id": "C",
-                  "text": "Bowel frequency and abdominal distension",
-                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -11206,7 +11422,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -11223,30 +11439,30 @@
                 "ccu-enalapril::hypotension"
               ],
               "reusedFromQuestionId": "ccu-enalapril--standard--hypotension",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting ENALAPRIL?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Rising serum potassium",
-                  "explanation": "The treatment can increase potassium or reduce its loss."
-                },
-                {
-                  "id": "B",
                   "text": "Falling serum phosphate",
                   "explanation": "Phosphate depletion is not the principal effect being tested."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Rising serum calcium",
                   "explanation": "Calcium elevation is not the principal effect being tested."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Falling serum potassium",
                   "explanation": "This is the opposite of the characteristic potassium-raising concern."
+                },
+                {
+                  "id": "D",
+                  "text": "Rising serum potassium",
+                  "explanation": "The treatment can increase potassium or reduce its loss."
                 }
               ],
               "format": "single-best-answer",
@@ -11257,7 +11473,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -11281,7 +11497,7 @@
                 "ccu-enalapril::high_k"
               ],
               "reusedFromQuestionId": "ccu-enalapril--standard--high_k",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for ENALAPRIL?",
@@ -11315,7 +11531,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -11346,23 +11562,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "ACE-inhibitor angioedema",
-                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
-                },
-                {
-                  "id": "B",
                   "text": "Isolated metformin stomach upset",
                   "explanation": "This is not the stated ACE-inhibitor contraindication."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Uncomplicated nitrate headache",
                   "explanation": "This does not establish ACE-associated angioedema."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Isolated opioid constipation",
                   "explanation": "This is a different adverse effect and mechanism."
+                },
+                {
+                  "id": "D",
+                  "text": "ACE-inhibitor angioedema",
+                  "explanation": "A previous ACE-associated angioedema reaction is a contraindication."
                 }
               ],
               "format": "single-best-answer",
@@ -11373,7 +11589,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 }
               ],
               "criticalForSafety": false,
@@ -11383,6 +11599,138 @@
                 "ccu-enalapril::ace_history"
               ],
               "reusedFromQuestionId": "ccu-enalapril--standard--ace_history",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Before a first enalapril dose in a volume-depleted adult, which adverse effect is of particular concern?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Symptomatic hypotension",
+                  "explanation": "ACE inhibition may produce a greater BP fall when volume is depleted."
+                },
+                {
+                  "id": "B",
+                  "text": "Marked hypokalemia",
+                  "explanation": "Enalapril can increase rather than predictably deplete potassium."
+                },
+                {
+                  "id": "C",
+                  "text": "High-grade AV block",
+                  "explanation": "This is not the characteristic first-dose volume-depletion concern with an ACE inhibitor."
+                },
+                {
+                  "id": "D",
+                  "text": "Rebound hypertension",
+                  "explanation": "This is not the expected initial response to RAAS blockade in volume depletion."
+                }
+              ],
+              "point": "Connect volume status with hypotension susceptibility.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enalapril",
+                  "field": "administration",
+                  "textSha256": "578f45463b8e9f2a007d08336896b0023fab3b87a5940d9b5e4c04e59d742520"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-enalapril--7-day--enalapril_volume_risk",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enalapril::enalapril_volume_risk"
+              ],
+              "reusedFromQuestionId": "ccu-enalapril--standard--enalapril_volume_risk",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Pregnancy is detected during enalapril treatment. Which risk and response best fit its warning?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Fetal ototoxicity; continue at a lower dose until delivery",
+                  "explanation": "Both the named warning and continued-exposure plan are inappropriate."
+                },
+                {
+                  "id": "B",
+                  "text": "Fetal ototoxicity; discontinue promptly and arrange an alternative",
+                  "explanation": "The action is appropriate, but ototoxicity is not the warning sought."
+                },
+                {
+                  "id": "C",
+                  "text": "Fetal toxicity; discontinue promptly and arrange an alternative",
+                  "explanation": "The RAAS-blocking drug carries a fetal-toxicity warning and should be discontinued promptly."
+                },
+                {
+                  "id": "D",
+                  "text": "Fetal toxicity; continue at a lower dose until delivery",
+                  "explanation": "Dose reduction does not remove fetal-toxicity risk."
+                }
+              ],
+              "point": "Apply enalapril pregnancy precautions.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enalapril",
+                  "field": "monitor",
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enalapril--7-day--enalapril_pregnancy",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enalapril::enalapril_pregnancy"
+              ],
+              "reusedFromQuestionId": "ccu-enalapril--standard--enalapril_pregnancy",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "What minimum washout is required when switching between enalapril and sacubitril/valsartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "36 hours",
+                  "explanation": "Allow at least 36 hours in either direction to reduce angioedema risk."
+                },
+                {
+                  "id": "B",
+                  "text": "24 hours",
+                  "explanation": "This is shorter than the required washout."
+                },
+                {
+                  "id": "C",
+                  "text": "12 hours",
+                  "explanation": "This is shorter than the required washout."
+                },
+                {
+                  "id": "D",
+                  "text": "48 hours",
+                  "explanation": "A longer interval may occur, but the specified minimum is 36 hours."
+                }
+              ],
+              "point": "Recall the 36-hour ACE inhibitor/ARNI separation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enalapril",
+                  "field": "monitor",
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enalapril--7-day--enalapril_sacubitril_interval",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enalapril::enalapril_sacubitril_interval"
+              ],
+              "reusedFromQuestionId": "ccu-enalapril--standard--enalapril_sacubitril_interval",
               "answerKey": "A"
             },
             {
@@ -11400,13 +11748,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Dependent peripheral edema",
-                  "explanation": "Tongue and lip swelling is not the usual dependent-ankle pattern."
+                  "text": "Angioedema with potential airway compromise",
+                  "explanation": "This requires urgent escalation and airway assessment."
                 },
                 {
                   "id": "D",
-                  "text": "Angioedema with potential airway compromise",
-                  "explanation": "This requires urgent escalation and airway assessment."
+                  "text": "Dependent peripheral edema",
+                  "explanation": "Tongue and lip swelling is not the usual dependent-ankle pattern."
                 }
               ],
               "format": "single-best-answer",
@@ -11417,7 +11765,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enalapril",
                   "field": "monitor",
-                  "textSha256": "13e56b2466f3391e62b913583fb94bd2a49f264e1f22af3dc312482b8b9b3724"
+                  "textSha256": "b5a7c8dccfd318e51cbe6d6ac30eed2d8dd9af11513aed6b7d5daf7b2391de29"
                 },
                 {
                   "file": "content.json",
@@ -11434,10 +11782,10 @@
                 "ccu-enalapril::angioedema"
               ],
               "reusedFromQuestionId": "ccu-enalapril--advanced--angioedema",
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 8
+          "questionCount": 11
         }
       ]
     },

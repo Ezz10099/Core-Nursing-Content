@@ -127,6 +127,32 @@
       ]
     },
     {
+      "id": "verified-losartan::losartan_volume_risk",
+      "itemId": "verified-losartan",
+      "point": "Recognize volume/salt depletion as a hypotension risk.",
+      "questionIds": [
+        "verified-losartan--standard--losartan_volume_risk",
+        "verified-losartan--7-day--losartan_volume_risk"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "verified-losartan::losartan_dual_risk",
+      "itemId": "verified-losartan",
+      "point": "Recall the combined risks of dual RAAS blockade.",
+      "questionIds": [
+        "verified-losartan--standard--losartan_dual_risk",
+        "verified-losartan--7-day--losartan_dual_risk"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "verified-losartan::raas_interactions",
       "itemId": "verified-losartan",
       "point": "Review potassium-raising medicines and NSAIDs with the potassium and renal-function checks tested in this question.",
@@ -3457,6 +3483,19 @@
       ]
     },
     {
+      "id": "ccu-amlodipine::amlodipine_bp_edema",
+      "itemId": "ccu-amlodipine",
+      "point": "Recognize edema and BP-related adverse effects.",
+      "questionIds": [
+        "ccu-amlodipine--standard--amlodipine_bp_edema",
+        "ccu-amlodipine--7-day--amlodipine_bp_edema"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-amlodipine::edema",
       "itemId": "ccu-amlodipine",
       "point": "Peripheral edema needs clinical interpretation rather than automatic attribution to volume overload.",
@@ -3755,6 +3794,45 @@
       "questionIds": [
         "ccu-enalapril--standard--ace_history",
         "ccu-enalapril--7-day--ace_history"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-enalapril::enalapril_volume_risk",
+      "itemId": "ccu-enalapril",
+      "point": "Connect volume status with hypotension susceptibility.",
+      "questionIds": [
+        "ccu-enalapril--standard--enalapril_volume_risk",
+        "ccu-enalapril--7-day--enalapril_volume_risk"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-enalapril::enalapril_pregnancy",
+      "itemId": "ccu-enalapril",
+      "point": "Apply enalapril pregnancy precautions.",
+      "questionIds": [
+        "ccu-enalapril--standard--enalapril_pregnancy",
+        "ccu-enalapril--7-day--enalapril_pregnancy"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-enalapril::enalapril_sacubitril_interval",
+      "itemId": "ccu-enalapril",
+      "point": "Recall the 36-hour ACE inhibitor/ARNI separation.",
+      "questionIds": [
+        "ccu-enalapril--standard--enalapril_sacubitril_interval",
+        "ccu-enalapril--7-day--enalapril_sacubitril_interval"
       ],
       "stages": [
         "standard",
@@ -11796,6 +11874,8 @@
           "verified-losartan--standard--high_k",
           "verified-losartan--standard--pregnancy",
           "verified-losartan--standard--losartan_lithium",
+          "verified-losartan--standard--losartan_volume_risk",
+          "verified-losartan--standard--losartan_dual_risk",
           "verified-losartan--advanced--hypotension",
           "verified-losartan--advanced--high_k",
           "verified-losartan--advanced--pregnancy",
@@ -11806,6 +11886,8 @@
           "verified-losartan--7-day--high_k",
           "verified-losartan--7-day--pregnancy",
           "verified-losartan--7-day--losartan_lithium",
+          "verified-losartan--7-day--losartan_volume_risk",
+          "verified-losartan--7-day--losartan_dual_risk",
           "verified-losartan--7-day--raas_interactions",
           "verified-losartan--7-day--losartan_dual_raas"
         ],
@@ -13655,9 +13737,11 @@
         ],
         "monitor": [
           "ccu-amlodipine--standard--hypotension",
+          "ccu-amlodipine--standard--amlodipine_bp_edema",
           "ccu-amlodipine--advanced--hypotension",
           "ccu-amlodipine--advanced--edema",
           "ccu-amlodipine--7-day--hypotension",
+          "ccu-amlodipine--7-day--amlodipine_bp_edema",
           "ccu-amlodipine--7-day--edema"
         ],
         "memoryDanger": [
@@ -13800,14 +13884,18 @@
         ],
         "administration": [
           "ccu-enalapril--standard--hypotension",
+          "ccu-enalapril--standard--enalapril_volume_risk",
           "ccu-enalapril--advanced--hypotension",
-          "ccu-enalapril--7-day--hypotension"
+          "ccu-enalapril--7-day--hypotension",
+          "ccu-enalapril--7-day--enalapril_volume_risk"
         ],
         "monitor": [
           "ccu-enalapril--standard--hypotension",
           "ccu-enalapril--standard--high_k",
           "ccu-enalapril--standard--renal_monitor",
           "ccu-enalapril--standard--ace_history",
+          "ccu-enalapril--standard--enalapril_pregnancy",
+          "ccu-enalapril--standard--enalapril_sacubitril_interval",
           "ccu-enalapril--advanced--hypotension",
           "ccu-enalapril--advanced--high_k",
           "ccu-enalapril--advanced--angioedema",
@@ -13815,6 +13903,8 @@
           "ccu-enalapril--7-day--high_k",
           "ccu-enalapril--7-day--renal_monitor",
           "ccu-enalapril--7-day--ace_history",
+          "ccu-enalapril--7-day--enalapril_pregnancy",
+          "ccu-enalapril--7-day--enalapril_sacubitril_interval",
           "ccu-enalapril--7-day--angioedema"
         ],
         "memoryDanger": [

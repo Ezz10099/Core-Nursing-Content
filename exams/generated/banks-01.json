@@ -45,13 +45,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Blocks angiotensin-II AT1 receptors",
-                  "explanation": "AT1 blockade reduces vasoconstriction and aldosterone effects."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: AT1 blockade reduces vasoconstriction and aldosterone effects."
                 },
                 {
                   "id": "B",
-                  "text": "Inhibits hepatic HMG-CoA reductase",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: AT1 blockade reduces vasoconstriction and aldosterone effects."
+                  "text": "Blocks angiotensin-II AT1 receptors",
+                  "explanation": "AT1 blockade reduces vasoconstriction and aldosterone effects."
                 },
                 {
                   "id": "C",
@@ -94,7 +94,7 @@
               "learningPointIds": [
                 "verified-losartan::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -102,18 +102,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "ARB",
+                  "explanation": "Angiotensin II receptor blocker (ARB)."
+                },
+                {
+                  "id": "B",
                   "text": "Dihydropyridine CCB",
                   "explanation": "The medicine is classified as: Angiotensin II receptor blocker (ARB)."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Beta1 blocker",
                   "explanation": "The medicine is classified as: Angiotensin II receptor blocker (ARB)."
-                },
-                {
-                  "id": "C",
-                  "text": "ARB",
-                  "explanation": "Angiotensin II receptor blocker (ARB)."
                 },
                 {
                   "id": "D",
@@ -137,7 +137,7 @@
               "learningPointIds": [
                 "verified-losartan::drug-class"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -145,23 +145,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Treatment of hypertension",
+                  "explanation": "This is a clinical use of the medicine: Main use: treatment of hypertension. Current labeling also includes selected hypertensive patients with left ventricular hypertrophy and proteinuric diabetic nephropathy in type 2 diabetes with a history of hypertension."
+                },
+                {
+                  "id": "B",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Treatment of susceptible bacterial infection",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Treatment of hypertension",
-                  "explanation": "This is a clinical use of the medicine: Main use: treatment of hypertension. Current labeling also includes selected hypertensive patients with left ventricular hypertrophy and diabetic nephropathy in type 2 diabetes."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -171,7 +171,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "use",
-                  "textSha256": "1db6e500cc3a3d2a16d1e03ac99bd955eec76e60c61e19e8bbb3e66a155717ba"
+                  "textSha256": "167d881578a81154eb6b83a8c0ad95a4dcac7d1b07848dbbf75d62ceb53e2edb"
                 },
                 {
                   "file": "content.json",
@@ -187,7 +187,7 @@
               "learningPointIds": [
                 "verified-losartan::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "A patient becomes light-headed on standing after LOSARTAN. Which paired assessment best checks the suspected adverse effect?",
@@ -221,7 +221,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -258,13 +258,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "Temperature and neutrophil-count trends",
+                  "explanation": "These primarily assess infection or blood-cell changes."
                 },
                 {
                   "id": "B",
-                  "text": "Temperature and neutrophil-count trends",
-                  "explanation": "These primarily assess infection or blood-cell changes."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "C",
@@ -285,7 +285,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -308,7 +308,7 @@
               "learningPointIds": [
                 "verified-losartan::renal_monitor"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting LOSARTAN?",
@@ -320,13 +320,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Rising serum potassium",
-                  "explanation": "The treatment can increase potassium or reduce its loss."
+                  "text": "Falling serum phosphate",
+                  "explanation": "Phosphate depletion is not the principal effect being tested."
                 },
                 {
                   "id": "C",
-                  "text": "Falling serum phosphate",
-                  "explanation": "Phosphate depletion is not the principal effect being tested."
+                  "text": "Rising serum potassium",
+                  "explanation": "The treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "D",
@@ -342,7 +342,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -365,7 +365,7 @@
               "learningPointIds": [
                 "verified-losartan::high_k"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "A patient taking LOSARTAN reports pregnancy. Which risk is the main reason to review the prescription promptly?",
@@ -382,13 +382,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Fetal toxicity",
-                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
+                  "text": "Maternal hypoglycemia",
+                  "explanation": "This is not the characteristic pregnancy-specific concern for this treatment."
                 },
                 {
                   "id": "D",
-                  "text": "Maternal hypoglycemia",
-                  "explanation": "This is not the characteristic pregnancy-specific concern for this treatment."
+                  "text": "Fetal toxicity",
+                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
                 }
               ],
               "format": "single-best-answer",
@@ -399,7 +399,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -415,7 +415,7 @@
               "learningPointIds": [
                 "verified-losartan::pregnancy"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -423,23 +423,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Hypertension with LVH; nephropathy in type 2 diabetes",
+                  "explanation": "Losartan may be indicated in selected hypertensive patients with LVH or nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
+                },
+                {
+                  "id": "B",
                   "text": "Symptomatic bradycardia; complete heart block",
                   "explanation": "These are conduction problems, not the additional uses associated with losartan."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Ventricular tachycardia; atrial fibrillation",
                   "explanation": "Losartan is not used as an antiarrhythmic for these rhythms."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Acute MI chest pain; acute cardiogenic shock",
                   "explanation": "These are acute syndromes requiring their own treatment; they are not the additional uses applicable here."
-                },
-                {
-                  "id": "D",
-                  "text": "Hypertension with LVH; nephropathy in type 2 diabetes",
-                  "explanation": "Losartan may be indicated in selected hypertensive patients with LVH or nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
                 }
               ],
               "point": "Recognize the selected LVH and type 2 diabetic nephropathy uses taught in addition to hypertension.",
@@ -449,7 +449,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "use",
-                  "textSha256": "1db6e500cc3a3d2a16d1e03ac99bd955eec76e60c61e19e8bbb3e66a155717ba"
+                  "textSha256": "167d881578a81154eb6b83a8c0ad95a4dcac7d1b07848dbbf75d62ceb53e2edb"
                 }
               ],
               "criticalForSafety": false,
@@ -458,7 +458,7 @@
               "learningPointIds": [
                 "verified-losartan::losartan_additional_uses"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -471,13 +471,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Lithium",
-                  "explanation": "Lithium is explicitly listed for interaction review; the product label describes increased lithium exposure/toxicity."
+                  "text": "Lactulose",
+                  "explanation": "Lactulose is not the separately named interaction."
                 },
                 {
                   "id": "C",
-                  "text": "Lactulose",
-                  "explanation": "Lactulose is not the separately named interaction."
+                  "text": "Lithium",
+                  "explanation": "Lithium is explicitly listed for interaction review; the product label describes increased lithium exposure/toxicity."
                 },
                 {
                   "id": "D",
@@ -492,7 +492,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 }
               ],
               "criticalForSafety": false,
@@ -501,10 +501,96 @@
               "learningPointIds": [
                 "verified-losartan::losartan_lithium"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pretreatment history increases the risk of symptomatic hypotension when losartan is started?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A remote healed fracture without current symptoms",
+                  "explanation": "This does not identify volume or salt depletion."
+                },
+                {
+                  "id": "B",
+                  "text": "Stable ankle edema without reduced intake or fluid loss",
+                  "explanation": "This does not identify the volume-depletion risk sought."
+                },
+                {
+                  "id": "C",
+                  "text": "Stable glucose control without recent illness",
+                  "explanation": "This does not identify depletion of fluid or salt."
+                },
+                {
+                  "id": "D",
+                  "text": "Recent vomiting with reduced intake and volume depletion",
+                  "explanation": "Volume or salt depletion increases the first-dose hypotension risk."
+                }
+              ],
+              "point": "Recognize volume/salt depletion as a hypotension risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "monitor",
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "verified-losartan--standard--losartan_volume_risk",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_volume_risk"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which risk cluster can increase when another RAAS blocker is combined with losartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Hypotension, hyperkalemia and improved renal function",
+                  "explanation": "Renal impairment is an added risk; improvement is not guaranteed."
+                },
+                {
+                  "id": "B",
+                  "text": "Hypertension, hyperkalemia and renal impairment",
+                  "explanation": "Additive RAAS blockade increases hypotension rather than hypertension risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Hypotension, hypokalemia and renal impairment",
+                  "explanation": "Dual blockade can raise potassium rather than lower it."
+                },
+                {
+                  "id": "D",
+                  "text": "Hypotension, hyperkalemia and renal impairment",
+                  "explanation": "Dual RAAS blockade can increase all three adverse outcomes."
+                }
+              ],
+              "point": "Recall the combined risks of dual RAAS blockade.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "monitor",
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "verified-losartan--standard--losartan_dual_risk",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_dual_risk"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 9
+          "questionCount": 11
         },
         {
           "id": "verified-losartan--advanced",
@@ -566,7 +652,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -630,7 +716,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -687,7 +773,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -737,7 +823,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -787,7 +873,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 }
               ],
               "criticalForSafety": false,
@@ -987,13 +1073,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Treatment of hypertension",
-                  "explanation": "This is a clinical use of the medicine: Main use: treatment of hypertension. Current labeling also includes selected hypertensive patients with left ventricular hypertrophy and diabetic nephropathy in type 2 diabetes."
+                  "text": "Treatment of susceptible bacterial infection",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "B",
-                  "text": "Treatment of susceptible bacterial infection",
-                  "explanation": "This is a different treatment role."
+                  "text": "Treatment of hypertension",
+                  "explanation": "This is a clinical use of the medicine: Main use: treatment of hypertension. Current labeling also includes selected hypertensive patients with left ventricular hypertrophy and proteinuric diabetic nephropathy in type 2 diabetes with a history of hypertension."
                 },
                 {
                   "id": "C",
@@ -1013,7 +1099,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "use",
-                  "textSha256": "1db6e500cc3a3d2a16d1e03ac99bd955eec76e60c61e19e8bbb3e66a155717ba"
+                  "textSha256": "167d881578a81154eb6b83a8c0ad95a4dcac7d1b07848dbbf75d62ceb53e2edb"
                 },
                 {
                   "file": "content.json",
@@ -1030,7 +1116,7 @@
                 "verified-losartan::treatment-role"
               ],
               "reusedFromQuestionId": "verified-losartan--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "A patient becomes light-headed on standing after LOSARTAN. Which paired assessment best checks the suspected adverse effect?",
@@ -1047,13 +1133,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Visual acuity and accommodation symptoms",
+                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
                   "id": "D",
-                  "text": "Visual acuity and accommodation symptoms",
-                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -1064,7 +1150,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -1095,20 +1181,20 @@
                 "verified-losartan::hypotension"
               ],
               "reusedFromQuestionId": "verified-losartan--standard--hypotension",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for LOSARTAN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Temperature and neutrophil-count trends",
-                  "explanation": "These primarily assess infection or blood-cell changes."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "B",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "Temperature and neutrophil-count trends",
+                  "explanation": "These primarily assess infection or blood-cell changes."
                 },
                 {
                   "id": "C",
@@ -1129,7 +1215,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -1153,20 +1239,20 @@
                 "verified-losartan::renal_monitor"
               ],
               "reusedFromQuestionId": "verified-losartan--standard--renal_monitor",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting LOSARTAN?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Falling serum potassium",
-                  "explanation": "This is the opposite of the characteristic potassium-raising concern."
+                  "text": "Rising serum potassium",
+                  "explanation": "The treatment can increase potassium or reduce its loss."
                 },
                 {
                   "id": "B",
-                  "text": "Rising serum potassium",
-                  "explanation": "The treatment can increase potassium or reduce its loss."
+                  "text": "Falling serum potassium",
+                  "explanation": "This is the opposite of the characteristic potassium-raising concern."
                 },
                 {
                   "id": "C",
@@ -1187,7 +1273,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -1211,7 +1297,7 @@
                 "verified-losartan::high_k"
               ],
               "reusedFromQuestionId": "verified-losartan--standard--high_k",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "A patient taking LOSARTAN reports pregnancy. Which risk is the main reason to review the prescription promptly?",
@@ -1228,13 +1314,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Fetal toxicity",
-                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
+                  "text": "Fetal opioid withdrawal",
+                  "explanation": "This treatment is not an opioid."
                 },
                 {
                   "id": "D",
-                  "text": "Fetal opioid withdrawal",
-                  "explanation": "This treatment is not an opioid."
+                  "text": "Fetal toxicity",
+                  "explanation": "Pregnancy is a major warning for the RAAS-blocking treatment."
                 }
               ],
               "format": "single-best-answer",
@@ -1245,7 +1331,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -1262,7 +1348,7 @@
                 "verified-losartan::pregnancy"
               ],
               "reusedFromQuestionId": "verified-losartan--standard--pregnancy",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -1270,13 +1356,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Hypertension with LVH; nephropathy in type 2 diabetes",
-                  "explanation": "Losartan may be indicated in selected hypertensive patients with LVH or nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
+                  "text": "Symptomatic bradycardia; complete heart block",
+                  "explanation": "These are conduction problems, not the additional uses associated with losartan."
                 },
                 {
                   "id": "B",
-                  "text": "Symptomatic bradycardia; complete heart block",
-                  "explanation": "These are conduction problems, not the additional uses associated with losartan."
+                  "text": "Hypertension with LVH; nephropathy in type 2 diabetes",
+                  "explanation": "Losartan may be indicated in selected hypertensive patients with LVH or nephropathy in type 2 diabetes; these are not universal indications for everyone with diabetes or LVH."
                 },
                 {
                   "id": "C",
@@ -1296,7 +1382,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "use",
-                  "textSha256": "1db6e500cc3a3d2a16d1e03ac99bd955eec76e60c61e19e8bbb3e66a155717ba"
+                  "textSha256": "167d881578a81154eb6b83a8c0ad95a4dcac7d1b07848dbbf75d62ceb53e2edb"
                 }
               ],
               "criticalForSafety": false,
@@ -1306,7 +1392,7 @@
                 "verified-losartan::losartan_additional_uses"
               ],
               "reusedFromQuestionId": "verified-losartan--standard--losartan_additional_uses",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -1324,13 +1410,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Lactulose",
-                  "explanation": "Lactulose is not the separately named interaction."
+                  "text": "Lithium",
+                  "explanation": "Lithium is explicitly listed for interaction review; the product label describes increased lithium exposure/toxicity."
                 },
                 {
                   "id": "D",
-                  "text": "Lithium",
-                  "explanation": "Lithium is explicitly listed for interaction review; the product label describes increased lithium exposure/toxicity."
+                  "text": "Lactulose",
+                  "explanation": "Lactulose is not the separately named interaction."
                 }
               ],
               "point": "Recognize lithium as a medicine requiring interaction review with losartan.",
@@ -1340,7 +1426,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 }
               ],
               "criticalForSafety": false,
@@ -1350,7 +1436,95 @@
                 "verified-losartan::losartan_lithium"
               ],
               "reusedFromQuestionId": "verified-losartan--standard--losartan_lithium",
-              "answerKey": "D"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pretreatment history increases the risk of symptomatic hypotension when losartan is started?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stable glucose control without recent illness",
+                  "explanation": "This does not identify depletion of fluid or salt."
+                },
+                {
+                  "id": "B",
+                  "text": "Recent vomiting with reduced intake and volume depletion",
+                  "explanation": "Volume or salt depletion increases the first-dose hypotension risk."
+                },
+                {
+                  "id": "C",
+                  "text": "Stable ankle edema without reduced intake or fluid loss",
+                  "explanation": "This does not identify the volume-depletion risk sought."
+                },
+                {
+                  "id": "D",
+                  "text": "A remote healed fracture without current symptoms",
+                  "explanation": "This does not identify volume or salt depletion."
+                }
+              ],
+              "point": "Recognize volume/salt depletion as a hypotension risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "monitor",
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "verified-losartan--7-day--losartan_volume_risk",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_volume_risk"
+              ],
+              "reusedFromQuestionId": "verified-losartan--standard--losartan_volume_risk",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which risk cluster can increase when another RAAS blocker is combined with losartan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Hypotension, hyperkalemia and renal impairment",
+                  "explanation": "Dual RAAS blockade can increase all three adverse outcomes."
+                },
+                {
+                  "id": "B",
+                  "text": "Hypotension, hypokalemia and renal impairment",
+                  "explanation": "Dual blockade can raise potassium rather than lower it."
+                },
+                {
+                  "id": "C",
+                  "text": "Hypotension, hyperkalemia and improved renal function",
+                  "explanation": "Renal impairment is an added risk; improvement is not guaranteed."
+                },
+                {
+                  "id": "D",
+                  "text": "Hypertension, hyperkalemia and renal impairment",
+                  "explanation": "Additive RAAS blockade increases hypotension rather than hypertension risk."
+                }
+              ],
+              "point": "Recall the combined risks of dual RAAS blockade.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "verified-losartan",
+                  "field": "monitor",
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "verified-losartan--7-day--losartan_dual_risk",
+              "points": 1,
+              "learningPointIds": [
+                "verified-losartan::losartan_dual_risk"
+              ],
+              "reusedFromQuestionId": "verified-losartan--standard--losartan_dual_risk",
+              "answerKey": "A"
             },
             {
               "stem": "A patient on LOSARTAN has newly added potassium supplements and an NSAID. Which review best addresses the interaction risks?",
@@ -1384,7 +1558,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 },
                 {
                   "file": "content.json",
@@ -1414,18 +1588,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Enalapril",
-                  "explanation": "Enalapril is an ACE inhibitor and also acts on the renin–angiotensin system; this combination needs review."
-                },
-                {
-                  "id": "C",
                   "text": "Bisoprolol",
                   "explanation": "Bisoprolol is a beta blocker, not another renin–angiotensin system blocker."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Amlodipine",
                   "explanation": "Amlodipine is a calcium-channel blocker, not another renin–angiotensin system blocker."
+                },
+                {
+                  "id": "D",
+                  "text": "Enalapril",
+                  "explanation": "Enalapril is an ACE inhibitor and also acts on the renin–angiotensin system; this combination needs review."
                 }
               ],
               "point": "Recognize the need to review concurrent renin-angiotensin system blockers.",
@@ -1435,7 +1609,7 @@
                   "collection": "medications",
                   "itemId": "verified-losartan",
                   "field": "monitor",
-                  "textSha256": "6bd9051d3ecc6c685fb38916d1892aa5167d193abeb74ecc02498f76a07ac185"
+                  "textSha256": "61e1dd646efdb6b3128d9a223ef9e9d4e133274c49017182b54847352f31571a"
                 }
               ],
               "criticalForSafety": false,
@@ -1445,7 +1619,7 @@
                 "verified-losartan::losartan_dual_raas"
               ],
               "reusedFromQuestionId": "verified-losartan--advanced--losartan_dual_raas",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -1463,13 +1637,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "More vasoconstriction and more aldosterone effect",
-                  "explanation": "Both directions oppose the consequences of AT1 blockade."
+                  "text": "Less vasoconstriction and less aldosterone effect",
+                  "explanation": "Both are downstream effects of blocking angiotensin II at AT1 receptors."
                 },
                 {
                   "id": "D",
-                  "text": "Less vasoconstriction and less aldosterone effect",
-                  "explanation": "Both are downstream effects of blocking angiotensin II at AT1 receptors."
+                  "text": "More vasoconstriction and more aldosterone effect",
+                  "explanation": "Both directions oppose the consequences of AT1 blockade."
                 }
               ],
               "point": "Relate AT1 blockade to reduced vasoconstriction and aldosterone effects.",
@@ -1496,10 +1670,10 @@
                 "verified-losartan::losartan_at1_effects"
               ],
               "reusedFromQuestionId": "verified-losartan--advanced--losartan_at1_effects",
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 12
+          "questionCount": 14
         }
       ]
     },
