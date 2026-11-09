@@ -265,7 +265,7 @@
     if(index<0)return null;
     return list.slice(index+1).find(item=>{
       const candidate=bankFor(item.id);
-      return candidate&&candidate.itemType===bank.itemType&&candidate.itemId!==bank.itemId&&allowed(candidate)&&window.CoreNursingReadiness?.status(item.id)==='complete';
+      return candidate&&candidate.itemType===bank.itemType&&candidate.itemId!==bank.itemId&&allowed(candidate)&&record(candidate.itemId).attempts.length===0&&['start','resume'].includes(action(candidate).kind)&&window.CoreNursingReadiness?.status(item.id)==='complete';
     })||null;
   }
   function nextCompleted(id){
@@ -274,7 +274,7 @@
   }
   function nextCompletedHtml(bank){
     const next=nextCompletedMaterial(bank),kind=bank.itemType==='lesson'?'lesson':'medication';
-    return next?'<div class="exam-next-material"><button type="button" class="primary" onclick="CoreNursingExams.nextCompleted(\''+bank.itemId+'\')">Next completed '+kind+' →</button><p class="note">'+safe(next.title||next.name)+'</p></div>':'<p class="note">No more preparation-complete '+(kind==='lesson'?'lessons':'medications')+' after this material.</p>';
+    return next?'<div class="exam-next-material"><button type="button" class="primary" onclick="CoreNursingExams.nextCompleted(\''+bank.itemId+'\')">Next completed '+kind+' →</button><p class="note">'+safe(next.title||next.name)+'</p></div>':'<p class="note">No more preparation-complete '+(kind==='lesson'?'lessons':'medications')+' needing a first exam after this material.</p>';
   }
   function renderResult(container,bank){
     const {attempt,form,result}=resultView,modern=attempt.model===Core.MODEL;
