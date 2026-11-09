@@ -6,7 +6,7 @@ function boot(saved){
  const dom=new JSDOM(fs.readFileSync(path.join(base,'index.html'),'utf8'),{url:'https://test.local',runScripts:'outside-only',pretendToBeVisual:true}),w=dom.window;
  w.HTMLElement.prototype.scrollIntoView=function(){};w.alert=()=>{};w.confirm=()=>true;
  if(saved)w.localStorage.setItem(KEY,saved);
- for(const file of ['study-ui','reading','question-marks','exam-core','exam-data','exam-data-01','exam-data-02','exam-data-03','exam-data-04','exam-data-05','exam-data-06','app','exams'])vm.runInContext(fs.readFileSync(path.join(base,'js',file+'.js'),'utf8'),dom.getInternalVMContext());
+ for(const file of ['study-ui','reading','question-marks','exam-core','exam-data','exam-data-01','exam-data-02','exam-data-03','exam-data-04','exam-data-05','exam-data-06','app','exams','readiness-data','material-readiness'])vm.runInContext(fs.readFileSync(path.join(base,'js',file+'.js'),'utf8'),dom.getInternalVMContext());
  w.CoreNursingSync.receive(JSON.stringify(content));return w;
 }
 const state=w=>JSON.parse(w.localStorage.getItem(KEY));
@@ -17,6 +17,42 @@ function answerAll(w,correct=true){
   w.CoreNursingExams.answer(q.id,correct?(q.answerKey??q.answer??q.acceptedAnswers?.[0]):'wrong');
   if(i<active.form.questions.length-1)w.CoreNursingExams.move(1);
  }
+}
+// Result navigation uses authoring completion, never reading or exam passing.
+for(const type of ['medication','lesson']){
+ const w=boot(),d=w.document,data=w.CoreNursingExamData;
+ for(const row of Object.values(w.CoreNursingReadinessData.items))row.status='complete';
+ const list=w.eval(type==='lesson'?'lessons':'meds');
+ const canonical=id=>data.aliases[id]||id;
+ const candidates=list.filter(x=>w.CoreNursingReadiness.status(x.id)==='complete');
+ assert(candidates.length>=3,'Need real matching source fixtures');
+ const [first,skip,next]=candidates;
+ for(const row of Object.values(w.CoreNursingReadinessData.items))row.status='not_reviewed';
+ w.CoreNursingReadinessData.items[canonical(next.id)].status='complete';
+ w.CoreNursingExams.launch(first.id);assert(state(w).exams.active);
+ answerAll(w,type==='medication');w.CoreNursingExams.submit();
+ const button=d.querySelector('.exam-next-material button');
+ assert(button,'Passed and failed results both offer a next material');
+ assert(button.textContent.includes('Next completed '+type));
+ const before=JSON.stringify(state(w).exams);
+ w.eval(button.getAttribute('onclick'));
+ if(type==='medication')assert.equal(w.eval('current'),next.id);
+ else assert.equal(d.querySelector('#lessonDetail').dataset.readinessItemId,next.id);
+ assert.equal(JSON.stringify(state(w).exams),before,'Moving on preserves score, safety checks and schedule');
+ // Completion changed since results were rendered: navigation must recheck.
+ w.CoreNursingReadinessData.items[canonical(next.id)].status='in_review';
+ const current=w.eval('tab');w.CoreNursingExams.nextCompleted(first.id);
+ assert.equal(w.eval('tab'),current,'No stale completed link opens an in-review material');
+ w.close();
+}
+// No completed successor means no fabricated navigation target.
+{
+ const w=boot(),d=w.document;
+ for(const row of Object.values(w.CoreNursingReadinessData.items))row.status='not_reviewed';
+ w.CoreNursingExams.launch('heparin');answerAll(w);w.CoreNursingExams.submit();
+ assert(!d.querySelector('.exam-next-material button'));
+ assert(d.querySelector('#examSession').textContent.includes('No more preparation-complete medications'));
+ w.close();
 }
 // Whole-material completion reveals the existing eligible exam action, without starting it.
 {
