@@ -159,3 +159,6 @@ body.reading-view .readiness-shortcut{display:none}
 .material-preparation-details>summary{cursor:pointer;color:var(--muted);font-size:13px;font-weight:650;padding:8px 4px;min-height:40px}
 .material-preparation-details[open]>summary{color:var(--text)}
 .material-preparation-details .material-readiness{margin:8px 0 12px}
+
+/* Compact home navigation; study and exam records remain independent. */
+.home-library-links{display:grid;gap:8px;margin:16px 0}.home-library-links button{display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:14px 16px;gap:5px;width:100%}.home-library-links small{color:var(--muted);font-size:12px}.home-more{margin:16px 0}.home-more summary{padding:12px 0;cursor:pointer}.home-more .home-search{margin-top:10px}#home .next-actions{margin-top:8px}#home .next-actions h1{font-size:22px}#home #dueExamsHome{padding:8px 0;background:transparent;border:0}#home #dueExamsHome button{width:100%}#home .continue-item{min-height:48px}#home .footnote{margin-top:14px}

@@ -93,7 +93,10 @@
   }
   function homeActions(due){
     const home=byId('nextActionsHome'),a=state().active;if(!home)return;
-    home.innerHTML='<h1>What’s next?</h1>'+(a?'<p>'+safe(banks.get(a.itemId)?.title||a.itemId)+' · '+safe(label(a.form.stage))+'</p><button class="primary" onclick="CoreNursingExams.resume()">Continue exam</button>':due.length?'<button class="primary" onclick="CoreNursingExams.launch(\''+due[0].itemId+'\')">'+safe(action(due[0]).text)+' · '+safe(due[0].title)+'</button>':'<button class="primary" onclick="showTab(\'practice\')">Find an exam</button>')+'<div class="next-links"><button onclick="CoreNursingExams.review()">Review answers · '+reviewRows().length+'</button><button onclick="showTab(\'clinical\')">Read a lesson</button></div>';
+    const unfinished=readingCatalog().find(x=>readingState(x.type,x.id)==='in-progress');
+    const flagged=reviewRows().length;
+    const study=unfinished?'<p>'+safe(unfinished.title)+'</p><button class="primary" data-reading-type="'+unfinished.type+'" data-reading-id="'+safe(unfinished.id)+'" onclick="openReadingItem(this)">Continue studying →</button>':'<p>Choose a medication or clinical lesson.</p><button class="primary" onclick="showTab(\'library\');setCatalogFilter(\'complete\')">Browse completed medications →</button>';
+    home.innerHTML='<h1>Your next step</h1>'+(a?'<p>'+safe(banks.get(a.itemId)?.title||a.itemId)+' · '+safe(label(a.form.stage))+'</p><button class="primary" onclick="CoreNursingExams.resume()">Continue exam</button>':due.length?'<button class="primary" onclick="CoreNursingExams.launch(\''+due[0].itemId+'\')">'+safe(action(due[0]).text)+' · '+safe(due[0].title)+'</button>':study)+(flagged?'<div class="next-links"><button onclick="CoreNursingExams.review()">Review saved answers · '+flagged+'</button></div>':'');
   }
   function practiceOverview(){
     const node=byId('practiceExamOverview');if(!node)return;const a=state().active;
@@ -117,6 +120,7 @@
     const due=Array.from(banks.values()).filter(b=>allowed(b)&&record(b.itemId).due&&record(b.itemId).due.at<=now());
     for(const id of ['dueExamsHome','dueExamsProgress']){
       const node=byId(id);if(!node)continue;
+      if(id==='dueExamsHome'){node.hidden=!due.length;node.innerHTML=due.length?'<button type="button" onclick="CoreNursingExams.showDue()">All due exams · '+due.length+' →</button>':'';continue;}
       node.hidden=!due.length;
       node.innerHTML=due.length?'<h2>Due exams · '+due.length+'</h2>'+due.slice(0,id==='dueExamsHome'?3:due.length).map(b=>'<div class="due-row"><strong>'+safe(b.title)+'</strong><small>'+safe(label(record(b.itemId).due.stage))+' · '+safe(date(record(b.itemId).due.at))+'</small><button onclick="CoreNursingExams.launch(\''+b.itemId+'\')">'+safe(action(b).text)+'</button></div>').join('')+(id==='dueExamsHome'&&due.length>3?'<button onclick="CoreNursingExams.showDue()">View all due exams</button>':''):'';
 
