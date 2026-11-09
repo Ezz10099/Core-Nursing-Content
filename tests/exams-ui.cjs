@@ -18,10 +18,44 @@ function answerAll(w,correct=true){
   if(i<active.form.questions.length-1)w.CoreNursingExams.move(1);
  }
 }
+// Whole-material completion reveals the existing eligible exam action, without starting it.
+{
+ const w=boot(),d=w.document;
+ const lesson=w.CoreNursingExamData.banks.find(b=>b.itemType==='lesson'&&w.eval('lessons').some(l=>l.id===b.itemId));
+ for(const [type,id,tab,detail] of [['med','heparin','library','detail'],['lesson',lesson.itemId,'clinical','lessonDetail']]){
+  w.showTab(tab);if(type==='med')w.openMed(id);else w.openLesson(id);
+  const host=d.getElementById(detail),entry=host.querySelector('.exam-entry');
+  assert(entry.hidden,'Exam prompt stays hidden before whole-material completion');
+  const control=host.querySelector('.reader-finish .reading-control');
+  w.toggleReading(control);
+  assert(!entry.hidden,'Mark as read immediately reveals exam prompt');
+  assert.equal(entry.querySelector('button').textContent,'Take exam →');
+  assert.equal(state(w).exams.active,null,'Reading never starts an exam automatically');
+  w.toggleReading(control);assert(entry.hidden,'Marking unread hides reader prompt again');
+  w.toggleReading(control);
+ }
+ const saved=state(w);w.close();
+ const restored=boot(JSON.stringify(saved));restored.showTab('library');restored.openMed('heparin');
+ assert(!restored.document.querySelector('#detail .exam-entry').hidden,'Read state survives restart');
+ restored.CoreNursingExams.launch('heparin');
+ const active=JSON.stringify(state(restored).exams.active);
+ restored.showTab('library');restored.openMed('heparin');
+ assert.equal(restored.document.querySelector('#detail .exam-entry button').textContent,'Continue exam →');
+ assert.equal(JSON.stringify(state(restored).exams.active),active,'Reader preserves active answers and position');
+ restored.close();
+ const due=Date.now()+86400000;
+ saved.exams.items['ccu-heparin-ufh']={attempts:[],reads:[],readingAfter:null,pendingSafety:[],due:{stage:'7-day',at:due}};
+ const scheduled=boot(JSON.stringify(saved));scheduled.showTab('library');scheduled.openMed('heparin');
+ const entry=scheduled.document.querySelector('#detail .exam-entry');
+ assert(!entry.hidden);assert.equal(entry.querySelector('button').textContent,'View exam schedule');
+ scheduled.CoreNursingExams.launch('heparin');assert.equal(state(scheduled).exams.active,null);
+ assert.equal(state(scheduled).exams.items['ccu-heparin-ufh'].due.at,due,'Reading does not change review timing');
+ scheduled.close();
+}
 let w=boot(JSON.stringify({bookmarks:['heparin'],attempts:[{id:'heparin',correct:true}],reading:{'med:heparin':'read'}})),d=w.document;
 w.showTab('library');w.openMed('heparin');
 assert.equal(d.querySelector('#detail').lastElementChild.className,'panel exam-entry','Exam entry is at the bottom');
-assert.equal(d.querySelector('#detail .exam-entry button').textContent,'Open exam');
+assert.equal(d.querySelector('#detail .exam-entry button').textContent,'Take exam →');
 assert(d.querySelector('#detail .exam-entry button').getAttribute('onclick').includes('launch'));w.CoreNursingExams.launch('heparin');
 assert(state(w).exams.active,'One click opens the actual exam');
 assert.equal(state(w).exams.active.form.stage,'comprehensive');assert.equal(state(w).exams.active.deadline,null);
