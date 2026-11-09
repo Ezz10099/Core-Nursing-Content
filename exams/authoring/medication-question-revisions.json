@@ -10,12 +10,12 @@
         "administration"
       ],
       "question": {
-        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the labeled minimum injection time? Enter the number in minutes.",
+        "stem": "For a non-elderly adult receiving the initial IV verapamil dose, what is the minimum injection time? Enter the number in minutes.",
         "format": "numeric-entry",
         "answer": 2,
         "unit": "minutes",
         "tolerance": 0,
-        "explanation": "The referenced initial IV injection is administered over at least 2 minutes in non-elderly adults. This is a minimum administration time, not a dose.",
+        "explanation": "Give the initial IV injection over at least 2 minutes in non-elderly adults, with continuous ECG/BP monitoring. Gaza MOH’s injectable guide and current injection labeling agree. This is an administration time, not a dose.",
         "point": "The taught IV administration minimum is 2 minutes; this is not an oral-product instruction.",
         "criticalForSafety": true
       }
@@ -1522,14 +1522,14 @@
   "coverageRevisions": {
     "ed-captopril-tablets": "captopril-author-review-20261107",
     "ccu-furosemide": "closed-source-review-20261107",
-    "ccu-verapamil": "closed-source-review-20261107",
+    "ccu-verapamil": "gaza-administration-reference-20261109",
     "ed-ondansetron-provisional-shelf": "closed-source-review-20261107",
     "verified-losartan": "bp-author-review-20261107",
     "ccu-enalapril": "bp-author-review-20261107",
     "ccu-amlodipine": "bp-author-review-20261107"
   },
   "correctionRevisions": {
-    "ccu-verapamil": "closed-source-review-20261107",
+    "ccu-verapamil": "gaza-administration-reference-20261109",
     "ccu-furosemide": "closed-source-review-20261107",
     "ed-ondansetron-provisional-shelf": "closed-source-review-20261107",
     "verified-losartan": "bp-author-review-20261107",
