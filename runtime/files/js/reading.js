@@ -23,6 +23,11 @@ function toggleReading(node){
   if(readingState(type,id)==='read')delete memory.reading[key];
   else memory.reading[key]='read';
   save();refreshReading();
+  if(window.CoreNursingExams){
+    CoreNursingExams.refreshReaderEntries();
+    const entry=node.closest('.reader-finish')?.parentElement.querySelector('.exam-entry');
+    if(entry&&!entry.hidden)requestAnimationFrame(()=>entry.scrollIntoView({block:'nearest',behavior:'smooth'}));
+  }
 }
 function faqReadingOpened(node){if(node.open)recordOpened('faq',node.dataset.readingFaq)}
 function readingMatches(type,id){const filter=readingFilters[type],state=readingState(type,id);return filter==='all'||(filter==='unread'?state!=='read':state===filter)}
