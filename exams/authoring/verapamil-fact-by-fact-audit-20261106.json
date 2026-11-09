@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "reviewDate": "2026-11-07",
+  "reviewDate": "2026-11-09",
   "medicationId": "ccu-verapamil",
-  "revision": "closed-source-review-20261107",
+  "revision": "gaza-administration-reference-20261109",
   "status": "Author review complete for the bounded current teaching entry and actual scored form. Shared safeguards, duplicate summaries and unverified local stock are explicitly uncredited; not an exhaustive drug monograph, local-product authentication or independent clinical certification.",
   "factsReviewed": 19,
   "facts": [
@@ -97,7 +97,7 @@
         {
           "learningPointId": "ccu-verapamil::slow_iv",
           "questionId": "ccu-verapamil--comprehensive--slow_iv",
-          "sha256": "ffac20bb764679467cff57917970b619e3b9fd47bfa819d4f313d12264dc6b9c"
+          "sha256": "8afc13afa8bd21f0ef03400340023e42f2211ec91f4d35cf024fcb5d89e2c349"
         }
       ]
     },
@@ -279,7 +279,7 @@
         {
           "learningPointId": "ccu-verapamil::verapamil_older_iv_time",
           "questionId": "ccu-verapamil--comprehensive--verapamil_older_iv_time",
-          "sha256": "4ff91caf022ecc12a648d8ae489389f33bda9419be82872f7b8bd2467b0cff73"
+          "sha256": "257b3066b94ff084b26c1c20af4013f38ca3b88badcbaa3ed402d3ca5f794a6c"
         }
       ]
     },
@@ -344,7 +344,7 @@
     "availability": "4c239de702ebd3eaed9770b116d0b8e0c6a85fa2362757ba7a92f44623204f7c",
     "memoryDanger": "f5a58f1aec45c91989aedb88d5218f0cc6b625baa7e31c12d5ef8b198294959b",
     "memoryUse": "00663123e9efb486af4843d9cebc5d0a611a0faf277ad54c065ca827a68915e1",
-    "administration": "a0ee7fe962d1c31f1ffa6cf4fe6953466cc9f83774c7188b7e4a646bb055f931",
+    "administration": "33632c00936acc73ba2ceac15df0050b230f2662fc768247e7f1c1d0cb5ac8b1",
     "drugclass": "68df9b3c76e17e4340fbf02884cd37575419e5644d808e509acf373ef8140411"
   },
   "fieldDispositions": {
@@ -353,6 +353,11 @@
     "availability": "Stock reports, brand observations and unverified local pack strengths are not a dependable universal dosing instruction. Retained as context; local actual-product verification remains necessary."
   },
   "evidence": [
+    {
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf",
+      "checkedDate": "2026-11-09",
+      "scope": "Gaza MOH January 2018, printed p.103 (PDF p.114): initial injection time and ECG/BP monitoring. These points cross-checked against current injection labeling; repeat-dose schedules were not imported. Not proof of current facility adoption."
+    },
     {
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7a749d0-4ab3-4fbb-8d7b-e09d68413c41",
       "checkedDate": "2026-11-07",
@@ -375,7 +380,7 @@
     "excluded_duplicate_or_stock_context": 3
   },
   "runtimeQuestionInspection": "Actual stems, choices/accepted answers and keys inspected for this authoring batch. Question fingerprints bind the record to these exact scored questions.",
-  "questionSetSha256": "3c336f53b2466775156ee5ff9cfdcd5e329443bfec03b71b7cd4f289493c95c0",
+  "questionSetSha256": "82ad80e4912bfc033ae26394f6588ddfb4608c6dec31db5732be82f5c9bea1af",
   "questionReview": {
     "questionsInspected": 13,
     "authorQuestionReviewComplete": true,
@@ -383,7 +388,8 @@
       "Source-supported keys and explanations reviewed for the actual scored form.",
       "Drug-dependent knowledge required; shared formulation/order checks excluded without coverage credit.",
       "Product-specific examples explicitly identified; local stock not authenticated.",
-      "Choices checked for plausible alternatives, paired discrimination and wording clues."
+      "Choices checked for plausible alternatives, paired discrimination and wording clues.",
+      "9 Nov 2026: local administration reference rechecked; all 13 questions retain the same scored answers, choices, formats and critical-safety flags. Only two reference-framing wordings/explanations changed. All other material banks remain identical."
     ],
     "limits": "Author review only; no independent clinician review or empirical difficulty calibration."
   },
