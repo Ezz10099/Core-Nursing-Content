@@ -1,0 +1,39 @@
+{
+  "itemId": "trolley-spironolactone",
+  "reviewDate": "2026-11-09",
+  "status": "Targeted question revision complete; full preparation audit remains open",
+  "certifiedFullCoverage": false,
+  "authorQuestionReviewComplete": false,
+  "revisedPoints": [
+    "trolley-spironolactone::hypotension",
+    "trolley-spironolactone::principal-action",
+    "trolley-spironolactone::drug-class",
+    "trolley-spironolactone::treatment-role",
+    "trolley-spironolactone::high_k",
+    "trolley-spironolactone::renal_monitor",
+    "trolley-spironolactone::spirono_not_loop"
+  ],
+  "evidence": [
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/spironolactone-oral-16684660.html",
+      "scope": "MSF general guidance; not proof of Gaza facility adoption"
+    },
+    {
+      "url": "https://www.pfizermedical.com/aldactone/warnings",
+      "scope": "Current product warnings; potassium, renal function, volume and BP"
+    }
+  ],
+  "remainingCoverage": [
+    "Separate scored coverage of potassium supplements and potassium-containing salt substitutes",
+    "Explicit oral-tablet/no-routine-IV formulation coverage beyond distractor mentions",
+    "Full source-fact inventory including resistant hypertension and aldosterone-related retention"
+  ],
+  "preservation": "Corrected form applies at the next exam start; preserve active snapshots, historical answers and due dates.",
+  "reviewChecks": [
+    "Choices-hidden stem review",
+    "Question-hidden key-cue review",
+    "Source-field alignment and option-specific explanations"
+  ],
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false
+}
