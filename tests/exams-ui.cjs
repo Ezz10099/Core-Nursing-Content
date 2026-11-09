@@ -18,6 +18,35 @@ function answerAll(w,correct=true){
   if(i<active.form.questions.length-1)w.CoreNursingExams.move(1);
  }
 }
+// Available ready intersects current preparation completion with exam eligibility.
+{
+ const w=boot(),d=w.document,data=w.CoreNursingExamData;
+ for(const row of Object.values(w.CoreNursingReadinessData.items))row.status='complete';
+ const fixtures=data.banks.filter(b=>w.CoreNursingReadiness.status(b.itemId)==='complete');
+ const med=fixtures.find(b=>b.itemType==='medication'),lesson=fixtures.find(b=>b.itemType==='lesson');
+ assert(med&&lesson);
+ for(const row of Object.values(w.CoreNursingReadinessData.items))row.status='not_reviewed';
+ for(const b of [med,lesson])w.CoreNursingReadinessData.items[b.itemId].status='complete';
+ w.showTab('practice');const before=w.localStorage.getItem(KEY);
+ w.CoreNursingExams.listFilter('ready');
+ assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,2);
+ assert(d.querySelector('#examFilters').textContent.includes('Available ready · 2'));
+ w.CoreNursingExams.filter(med.title.toLowerCase());assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,1);
+ w.CoreNursingExams.filter('');
+ assert.equal(w.localStorage.getItem(KEY),before,'Filtering never changes learner progress');
+ const due=Date.now()+86400000;
+ w.eval('memory.exams.items['+JSON.stringify(lesson.itemId)+']={attempts:[],reads:[],pendingSafety:[],readingAfter:null,due:{stage:"7-day",at:'+due+'}}');
+ w.CoreNursingExams.listFilter('ready');assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,1,'Future reviews remain Upcoming');
+ w.CoreNursingReadinessData.items[med.itemId].status='in_review';
+ w.CoreNursingExams.listFilter('ready');assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,0,'Partial revision is excluded');
+ assert(d.querySelector('#examCatalog').textContent.includes('No revision-complete'));
+ w.CoreNursingExams.listFilter('available');assert(d.querySelectorAll('#examCatalog .exam-card').length>0,'All other available exams remain accessible');
+ // Due reviews join Available ready once their material revision is complete.
+ w.CoreNursingReadinessData.items[lesson.itemId].status='complete';
+ w.eval('memory.exams.items['+JSON.stringify(lesson.itemId)+'].due.at=Date.now()-1000');
+ w.CoreNursingExams.listFilter('ready');assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,1);
+ w.close();
+}
 // Result navigation uses authoring completion, never reading or exam passing.
 for(const type of ['medication','lesson']){
  const w=boot(),d=w.document,data=w.CoreNursingExamData;

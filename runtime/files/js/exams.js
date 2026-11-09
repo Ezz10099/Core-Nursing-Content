@@ -85,11 +85,13 @@
     const node=byId('examCatalog');if(!node)return;
     const all=Array.from(banks.values()).filter(allowed),groups={due:[],available:[],upcoming:[],passed:[]};
     for(const b of all)groups[action(b).group].push(b);
+    const ready=all.filter(b=>window.CoreNursingReadiness?.status(b.itemId)==='complete'&&['start','resume'].includes(action(b).kind));
+    groups.ready=ready;
     if(!examListFilter)examListFilter=groups.due.length?'due':'available';
     const passed=all.filter(b=>record(b.itemId).attempts.some(a=>a.completedAt));
-    byId('examFilters').innerHTML=['due','available','upcoming','passed'].map(key=>'<button aria-pressed="'+(key===examListFilter)+'" onclick="CoreNursingExams.listFilter(\''+key+'\')">'+key[0].toUpperCase()+key.slice(1)+' · '+(key==='passed'?passed.length:groups[key].length)+'</button>').join('');
+    byId('examFilters').innerHTML=['due','available','ready','upcoming','passed'].map(key=>'<button aria-pressed="'+(key===examListFilter)+'" onclick="CoreNursingExams.listFilter(\''+key+'\')">'+(key==='ready'?'Available ready':key[0].toUpperCase()+key.slice(1))+' · '+(key==='passed'?passed.length:groups[key].length)+'</button>').join('');
     const rows=(examListFilter==='passed'?passed:groups[examListFilter]).filter(b=>b.title.toLowerCase().includes(examSearch));
-    node.innerHTML=rows.length?rows.map(examCard).join(''):'<p class="muted">No exams '+(examSearch?'match this search.':'in this section.')+'</p>';
+    node.innerHTML=(examListFilter==='ready'?'<p class="note">Revision complete · exam available now.</p>':'')+(rows.length?rows.map(examCard).join(''):'<p class="muted">'+(examSearch?'No exams match this search.':examListFilter==='ready'?'No revision-complete materials have an exam available now.':'No exams in this section.')+'</p>');
   }
   function homeActions(due){
     const home=byId('nextActionsHome'),a=state().active;if(!home)return;
@@ -295,7 +297,7 @@
     const checks=Core.safetyCheck(state(),selected,safetyAnswers,now());saveState();safetyMode=false;render();alert(checks.every(x=>x.correct)?'Safety follow-up check completed. Original exam score unchanged.':'Some safety points still require a follow-up check. Original exam score unchanged.');
   }
   function restore(){memory.exams=Core.normalize(memory.exams);selected=null;resultView=null;safetyMode=false;viewingExam=false;refreshDashboards();render();tick()}
-  window.CoreNursingExams={nextCompleted,refreshReaderEntries,requiredReading,launch,review,material,reviewRows,nextAction:action,showDue:()=>{examListFilter='due';showTab('practice')},reviewFilter:value=>{if(['all','unsure','incorrect'].includes(value)){reviewFilter=value;render()}},listFilter:value=>{if(['due','available','upcoming','passed'].includes(value)){examListFilter=value;renderCatalog()}},open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
+  window.CoreNursingExams={nextCompleted,refreshReaderEntries,requiredReading,launch,review,material,reviewRows,nextAction:action,showDue:()=>{examListFilter='due';showTab('practice')},reviewFilter:value=>{if(['all','unsure','incorrect'].includes(value)){reviewFilter=value;render()}},listFilter:value=>{if(['due','available','ready','upcoming','passed'].includes(value)){examListFilter=value;renderCatalog()}},open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
     followupAnswer:(qid,value)=>{safetyAnswers[qid]=String(value).slice(0,500)},
     filter:text=>{examSearch=text.toLowerCase();renderCatalog()},
     catalog:()=>{reviewing=false;viewingExam=false;selected=null;resultView=null;safetyMode=false;render();scrollStudyTo(0,0)},reviewItem:()=>{resultView=null;safetyMode=false;render();scrollStudyTo(0,0)}};
