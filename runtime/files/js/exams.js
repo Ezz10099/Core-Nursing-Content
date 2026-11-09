@@ -257,11 +257,28 @@
     const options=q.format==='single-best-answer'?'<details class="exam-option-explanations"><summary>All choices explained</summary>'+q.choices.map(c=>'<p><strong>'+safe(c.id)+(c.id===q.answerKey?' · Correct':'')+'</strong> '+safe(c.text)+'<br>'+safe(c.explanation)+'</p>').join('')+'</details>':'';
     return '<details class="exam-feedback" open><summary>'+(response?.correct?'Correct · unsure / guessed · ':empty?'Unanswered · ':'Incorrect · ')+safe(q.stem)+'</summary><p class="review-your-answer"><strong>Your answer:</strong> '+safe(empty?'Unanswered':describe(answer))+(response?.unsure?' · Unsure / guessed':'')+'</p><p class="review-correct-answer"><strong>Correct answer:</strong> '+safe(correct)+'</p><p>'+safe(reason)+'</p>'+(wrongReason&&wrongReason!==reason?'<p><strong>Why your choice does not fit:</strong> '+safe(wrongReason)+'</p>':'')+options+'</details>';
   }
+  function nextCompletedMaterial(bank){
+    const list=bank.itemType==='lesson'?lessons:meds;
+    const index=list.findIndex(item=>canonical(item.id)===bank.itemId);
+    if(index<0)return null;
+    return list.slice(index+1).find(item=>{
+      const candidate=bankFor(item.id);
+      return candidate&&candidate.itemType===bank.itemType&&candidate.itemId!==bank.itemId&&allowed(candidate)&&window.CoreNursingReadiness?.status(item.id)==='complete';
+    })||null;
+  }
+  function nextCompleted(id){
+    const bank=bankFor(id);if(!bank)return;
+    const next=nextCompletedMaterial(bank);if(next)material(next.id);
+  }
+  function nextCompletedHtml(bank){
+    const next=nextCompletedMaterial(bank),kind=bank.itemType==='lesson'?'lesson':'medication';
+    return next?'<div class="exam-next-material"><button type="button" class="primary" onclick="CoreNursingExams.nextCompleted(\''+bank.itemId+'\')">Next completed '+kind+' →</button><p class="note">'+safe(next.title||next.name)+'</p></div>':'<p class="note">No more preparation-complete '+(kind==='lesson'?'lessons':'medications')+' after this material.</p>';
+  }
   function renderResult(container,bank){
     const {attempt,form,result}=resultView,modern=attempt.model===Core.MODEL;
     const flagged=form.questions.map((q,i)=>({q,response:result.responses[i]})).filter(x=>!x.response.correct||x.response.unsure);
     const due=record(bank.itemId).due;
-    container.innerHTML='<div class="panel"><h2>'+safe(label(attempt.stage))+' result</h2><p class="exam-score">'+result.correct+'/'+result.total+' · '+result.percent.toFixed(1)+'%</p><p>'+(result.passed?(attempt.completedAt?'Passed':'Score passed · safety check required'):'Retry required')+'</p>'+(modern?'<p>'+(result.total-result.correct)+' incorrect · '+Core.allowedErrors(result.total)+' allowed</p>':'<p class="note">Previous exam rules retained for this saved attempt.</p>')+(due?'<p>Next: '+safe(label(due.stage))+' · '+safe(date(due.at))+'</p>':'')+(attempt.expired?'<p>The saved exam timer expired.</p>':'')+'<button onclick="CoreNursingExams.reviewItem()">Exam schedule</button></div><div class="panel"><h3>Corrections &amp; unsure answers · '+flagged.length+'</h3>'+(flagged.map(({q,response})=>feedback(q,response)).join('')||'<p>No incorrect or unsure answers.</p>')+'</div>';
+    container.innerHTML='<div class="panel"><h2>'+safe(label(attempt.stage))+' result</h2><p class="exam-score">'+result.correct+'/'+result.total+' · '+result.percent.toFixed(1)+'%</p><p>'+(result.passed?(attempt.completedAt?'Passed':'Score passed · safety check required'):'Retry required')+'</p>'+(modern?'<p>'+(result.total-result.correct)+' incorrect · '+Core.allowedErrors(result.total)+' allowed</p>':'<p class="note">Previous exam rules retained for this saved attempt.</p>')+(due?'<p>Next: '+safe(label(due.stage))+' · '+safe(date(due.at))+'</p>':'')+(attempt.expired?'<p>The saved exam timer expired.</p>':'')+'<button onclick="CoreNursingExams.reviewItem()">Exam schedule</button>'+nextCompletedHtml(bank)+'</div><div class="panel"><h3>Corrections &amp; unsure answers · '+flagged.length+'</h3>'+(flagged.map(({q,response})=>feedback(q,response)).join('')||'<p>No incorrect or unsure answers.</p>')+'</div>';
   }
   function renderSafety(container,bank){
     const pending=record(bank.itemId).pendingSafety;
@@ -278,7 +295,7 @@
     const checks=Core.safetyCheck(state(),selected,safetyAnswers,now());saveState();safetyMode=false;render();alert(checks.every(x=>x.correct)?'Safety follow-up check completed. Original exam score unchanged.':'Some safety points still require a follow-up check. Original exam score unchanged.');
   }
   function restore(){memory.exams=Core.normalize(memory.exams);selected=null;resultView=null;safetyMode=false;viewingExam=false;refreshDashboards();render();tick()}
-  window.CoreNursingExams={refreshReaderEntries,requiredReading,launch,review,material,reviewRows,nextAction:action,showDue:()=>{examListFilter='due';showTab('practice')},reviewFilter:value=>{if(['all','unsure','incorrect'].includes(value)){reviewFilter=value;render()}},listFilter:value=>{if(['due','available','upcoming','passed'].includes(value)){examListFilter=value;renderCatalog()}},open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
+  window.CoreNursingExams={nextCompleted,refreshReaderEntries,requiredReading,launch,review,material,reviewRows,nextAction:action,showDue:()=>{examListFilter='due';showTab('practice')},reviewFilter:value=>{if(['all','unsure','incorrect'].includes(value)){reviewFilter=value;render()}},listFilter:value=>{if(['due','available','upcoming','passed'].includes(value)){examListFilter=value;renderCatalog()}},open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,safety,submitSafety,
     followupAnswer:(qid,value)=>{safetyAnswers[qid]=String(value).slice(0,500)},
     filter:text=>{examSearch=text.toLowerCase();renderCatalog()},
     catalog:()=>{reviewing=false;viewingExam=false;selected=null;resultView=null;safetyMode=false;render();scrollStudyTo(0,0)},reviewItem:()=>{resultView=null;safetyMode=false;render();scrollStudyTo(0,0)}};
