@@ -200,9 +200,39 @@
       "unresolvedCoverage": true
     },
     "trolley-spironolactone::hypotension": {
-      "action": "omit",
-      "reason": "Context-free shared template: the answer is supplied by the symptom or asks for a general product-reference rule. Omit from drug-specific scoring; do not credit this as coverage of the underlying drug-specific administration or BP fact.",
-      "unresolvedCoverage": true
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Spironolactone is prescribed with another diuretic and an ACE inhibitor. Which combined adverse-effect pattern should nursing surveillance address?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Volume depletion, hypotension and worsening renal function",
+            "explanation": "Combined diuretic/RAAS effects can produce dehydration, hypotension and worsening renal function."
+          },
+          {
+            "id": "B",
+            "text": "Fluid retention, hypertension and increased potassium excretion",
+            "explanation": "This reverses the fluid/BP effects and the potassium-sparing concern."
+          },
+          {
+            "id": "C",
+            "text": "Sodium retention, hypertension and reduced diuretic effect",
+            "explanation": "This is not the expected combined diuretic/RAAS adverse-effect pattern."
+          },
+          {
+            "id": "D",
+            "text": "Volume expansion, hypotension and increased potassium excretion",
+            "explanation": "Volume expansion and increased potassium excretion do not describe the taught risk pattern."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize combined-diuretic/RAAS dehydration and hypotension risk.",
+        "criticalForSafety": false
+      }
     },
     "trolley-hydralazine::hypotension": {
       "action": "omit",
@@ -1490,6 +1520,223 @@
         "point": "Distinguish gradual chronic treatment from rapid BP rescue.",
         "criticalForSafety": true
       }
+    },
+    "trolley-spironolactone::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which action explains the potassium-sparing effect of spironolactone?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Blocking aldosterone at mineralocorticoid receptors",
+            "explanation": "Aldosterone blockade reduces sodium retention and potassium loss."
+          },
+          {
+            "id": "B",
+            "text": "Blocking angiotensin II at AT1 receptors",
+            "explanation": "This is ARB action; spironolactone blocks the mineralocorticoid receptor."
+          },
+          {
+            "id": "C",
+            "text": "Inhibiting sodium-potassium-chloride transport in the loop",
+            "explanation": "This describes loop diuretics, which tend to increase potassium loss."
+          },
+          {
+            "id": "D",
+            "text": "Inhibiting angiotensin-converting enzyme activity",
+            "explanation": "This is ACE-inhibitor action, rather than direct aldosterone-receptor blockade."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Relate aldosterone-receptor blockade to reduced sodium retention and potassium loss.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-spironolactone::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which description correctly classifies spironolactone and its usual potassium effect?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Aldosterone antagonist that reduces urinary potassium loss",
+            "explanation": "Spironolactone is a potassium-sparing mineralocorticoid-receptor antagonist."
+          },
+          {
+            "id": "B",
+            "text": "Loop diuretic that increases urinary potassium loss",
+            "explanation": "This describes furosemide rather than spironolactone."
+          },
+          {
+            "id": "C",
+            "text": "Thiazide diuretic that increases urinary potassium loss",
+            "explanation": "Spironolactone does not belong to the thiazide class."
+          },
+          {
+            "id": "D",
+            "text": "Osmotic diuretic that increases filtered solute load",
+            "explanation": "Spironolactone acts through aldosterone antagonism, not an osmotic load."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify the potassium-sparing class without confusing it with loop or thiazide agents.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-spironolactone::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use",
+        "memoryUse"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Spironolactone is added to a stable patient’s long-term HFrEF regimen. What is its intended role?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Aldosterone blockade as part of chronic heart-failure therapy",
+            "explanation": "The entry teaches chronic/subacute HFrEF and aldosterone-driven fluid-retention uses."
+          },
+          {
+            "id": "B",
+            "text": "Rapid loop diuresis during acute pulmonary oedema",
+            "explanation": "Oral spironolactone is not a rapid IV loop-diuretic substitute."
+          },
+          {
+            "id": "C",
+            "text": "Immediate potassium removal during severe hyperkalaemia",
+            "explanation": "Spironolactone retains potassium and can worsen hyperkalaemia."
+          },
+          {
+            "id": "D",
+            "text": "Short-acting venodilation during an acute angina episode",
+            "explanation": "This is not the therapeutic role of spironolactone."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize the chronic HFrEF/aldosterone-blocking treatment role.",
+        "criticalForSafety": false
+      }
+    },
+    "trolley-spironolactone::high_k": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor",
+        "memoryDanger"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which additional treatment most directly increases spironolactone’s characteristic electrolyte risk?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "An ACE inhibitor for heart failure",
+            "explanation": "Both reduce aldosterone effects; combined use increases hyperkalaemia risk and requires potassium/renal monitoring."
+          },
+          {
+            "id": "B",
+            "text": "A nitrate for angina symptoms",
+            "explanation": "Nitrates may lower BP but do not share this direct potassium-retaining interaction."
+          },
+          {
+            "id": "C",
+            "text": "A statin for cardiovascular risk reduction",
+            "explanation": "A statin does not directly share the aldosterone-related potassium-retaining effect."
+          },
+          {
+            "id": "D",
+            "text": "An oral iron preparation for iron deficiency",
+            "explanation": "Iron replacement is not a potassium-retaining RAAS treatment."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize increased hyperkalaemia risk when spironolactone is combined with RAAS-blocking treatment.",
+        "criticalForSafety": true
+      }
+    },
+    "trolley-spironolactone::renal_monitor": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor",
+        "memoryDanger"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Why does worsening renal function make spironolactone therapy more hazardous?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Potassium excretion falls while the drug reduces potassium loss",
+            "explanation": "Renal impairment adds to the medicine’s potassium-retaining effect; potassium and renal function need review."
+          },
+          {
+            "id": "B",
+            "text": "Potassium excretion rises while the drug increases potassium loss",
+            "explanation": "Both directions are incorrect for the principal spironolactone safety concern."
+          },
+          {
+            "id": "C",
+            "text": "Renal impairment converts aldosterone blockade into loop diuresis",
+            "explanation": "Renal impairment does not change the drug into a loop diuretic."
+          },
+          {
+            "id": "D",
+            "text": "Reduced filtration prevents spironolactone-related electrolyte effects",
+            "explanation": "Renal impairment increases, rather than removes, hyperkalaemia risk."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Explain why potassium and renal function must be assessed together.",
+        "criticalForSafety": true
+      }
+    },
+    "trolley-spironolactone::spirono_not_loop": {
+      "action": "replace",
+      "sourceFields": [
+        "use",
+        "administration",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Why is oral spironolactone unsuitable as a direct replacement for IV furosemide when rapid diuresis is required?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Its aldosterone-blocking effect is slower than IV loop diuresis",
+            "explanation": "The entry distinguishes chronic aldosterone antagonism from rapid IV furosemide decongestion."
+          },
+          {
+            "id": "B",
+            "text": "Its loop-transporter blockade needs a higher oral loading dose",
+            "explanation": "Spironolactone does not block the loop transporter; increasing its dose does not make it an IV loop substitute."
+          },
+          {
+            "id": "C",
+            "text": "Its potassium-wasting effect requires correction before IV use",
+            "explanation": "It is potassium-sparing, and this entry has no routine IV spironolactone formulation."
+          },
+          {
+            "id": "D",
+            "text": "Its oral formulation provides the same immediate diuretic effect",
+            "explanation": "The route, onset and pharmacological class do not provide equivalent rapid diuresis."
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish chronic oral spironolactone from rapid IV furosemide therapy.",
+        "criticalForSafety": true
+      }
     }
   },
   "evidenceChecks": [
@@ -1534,6 +1781,7 @@
     "ed-ondansetron-provisional-shelf": "closed-source-review-20261107",
     "verified-losartan": "bp-author-review-20261107",
     "ccu-enalapril": "bp-author-review-20261107",
-    "ccu-amlodipine": "bp-author-review-20261107"
+    "ccu-amlodipine": "bp-author-review-20261107",
+    "trolley-spironolactone": "spironolactone-taught-material-20261109"
   }
 }
