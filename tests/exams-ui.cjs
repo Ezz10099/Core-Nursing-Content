@@ -47,7 +47,7 @@ function answerAll(w,correct=true){
  w.CoreNursingExams.listFilter('ready');assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,1);
  w.close();
 }
-// Result navigation uses authoring completion, never reading or exam passing.
+// Result navigation skips submitted exams while retaining read-only materials.
 for(const type of ['medication','lesson']){
  const w=boot(),d=w.document,data=w.CoreNursingExamData;
  for(const row of Object.values(w.CoreNursingReadinessData.items))row.status='complete';
@@ -58,6 +58,13 @@ for(const type of ['medication','lesson']){
  const [first,skip,next]=candidates;
  for(const row of Object.values(w.CoreNursingReadinessData.items))row.status='not_reviewed';
  w.CoreNursingReadinessData.items[canonical(next.id)].status='complete';
+ w.CoreNursingReadinessData.items[canonical(skip.id)].status='complete';
+ // A reviewed material whose exam was already submitted must be skipped, pass or fail.
+ w.CoreNursingExams.launch(skip.id);answerAll(w,type==='medication');w.CoreNursingExams.submit();
+ const completed=JSON.stringify(state(w).exams.items[canonical(skip.id)]);
+ w.eval('memory.reading['+JSON.stringify((type==='lesson'?'lesson:':'med:')+skip.id)+']="read"');
+ // Reading alone must not skip a material that still needs its first exam.
+ w.eval('memory.reading['+JSON.stringify((type==='lesson'?'lesson:':'med:')+next.id)+']="read"');
  w.CoreNursingExams.launch(first.id);assert(state(w).exams.active);
  answerAll(w,type==='medication');w.CoreNursingExams.submit();
  const button=d.querySelector('.exam-next-material button');
@@ -68,6 +75,7 @@ for(const type of ['medication','lesson']){
  if(type==='medication')assert.equal(w.eval('current'),next.id);
  else assert.equal(d.querySelector('#lessonDetail').dataset.readinessItemId,next.id);
  assert.equal(JSON.stringify(state(w).exams),before,'Moving on preserves score, safety checks and schedule');
+ assert.equal(JSON.stringify(state(w).exams.items[canonical(skip.id)]),completed,'Skipped pass/failure, safety checks and due dates remain intact');
  // Completion changed since results were rendered: navigation must recheck.
  w.CoreNursingReadinessData.items[canonical(next.id)].status='in_review';
  const current=w.eval('tab');w.CoreNursingExams.nextCompleted(first.id);
