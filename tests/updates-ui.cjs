@@ -27,7 +27,7 @@ function network(w,runtime,cv,corrupt=false){
  let b=boot(),w=b.w,d=w.document;
  assert.equal(d.querySelector('#home').firstElementChild.id,'homeUpdateNotice');
  assert(d.querySelector('#homeUpdateNotice').hidden);assert(!d.querySelector('#updatePanel').open);
- assert(d.querySelector('#updatePanel').compareDocumentPosition(d.querySelector('#home .grid'))&w.Node.DOCUMENT_POSITION_PRECEDING);
+ assert(d.querySelector('#updatePanel').compareDocumentPosition(d.querySelector('#home .home-library-links'))&w.Node.DOCUMENT_POSITION_PRECEDING);
  assert.equal(d.querySelector('#updateButton').textContent,'Check for app & content updates');
  w.CoreNursingSync.receive(JSON.stringify(content));
  assert(!d.querySelector('#syncStatus').textContent.includes('Already up to date'));
