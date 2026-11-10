@@ -1737,6 +1737,402 @@
         "point": "Distinguish chronic oral spironolactone from rapid IV furosemide therapy.",
         "criticalForSafety": true
       }
+    },
+    "ccu-bisoprolol::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which receptor/effect pairing best describes bisoprolol?",
+        "choices": [
+          {
+            "text": "Cardiac beta1 blockade with reduced heart rate and contractility",
+            "explanation": "Cardiac beta1 blockade reduces chronotropic and inotropic stimulation.",
+            "id": "A"
+          },
+          {
+            "text": "Cardiac beta1 stimulation with reduced heart rate and contractility",
+            "explanation": "Stimulation reverses the receptor action.",
+            "id": "B"
+          },
+          {
+            "text": "Cardiac beta1 blockade with increased heart rate and contractility",
+            "explanation": "This reverses the expected cardiac effects.",
+            "id": "C"
+          },
+          {
+            "text": "AT1-receptor blockade with reduced heart rate and contractility",
+            "explanation": "AT1 blockade is an ARB mechanism rather than beta blockade.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall the receptor target and cardiac effects.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-bisoprolol::bradycardia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pattern during bisoprolol treatment needs prompt review as a cardiac/blood-pressure adverse effect?",
+        "choices": [
+          {
+            "text": "Symptomatic bradycardia with hypotension or a new conduction disturbance",
+            "explanation": "Beta blockade may slow the heart and conduction while lowering BP.",
+            "id": "A"
+          },
+          {
+            "text": "Symptomatic tachycardia with hypotension or a new conduction disturbance",
+            "explanation": "This reverses the characteristic cardiac-slowing effect.",
+            "id": "B"
+          },
+          {
+            "text": "Symptomatic bradycardia with hypertension as its characteristic pressure effect",
+            "explanation": "The important excessive-pressure effect is hypotension.",
+            "id": "C"
+          },
+          {
+            "text": "Symptomatic tachycardia with hypertension as its characteristic pressure effect",
+            "explanation": "Both directions differ from the beta-blocking risk profile.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize cardiac slowing and clinically important BP/conduction deterioration.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-bisoprolol::duplicate_beta": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new prescription most directly duplicates bisoprolol's beta-blocking effect?",
+        "choices": [
+          {
+            "text": "Metoprolol",
+            "explanation": "Both medicines block cardiac beta receptors; clarify whether overlapping therapy is intended.",
+            "id": "A"
+          },
+          {
+            "text": "Amlodipine",
+            "explanation": "This is a vascular calcium-channel blocker rather than another beta blocker.",
+            "id": "B"
+          },
+          {
+            "text": "Losartan",
+            "explanation": "This is an ARB rather than another beta blocker.",
+            "id": "C"
+          },
+          {
+            "text": "Isosorbide mononitrate",
+            "explanation": "This is a nitrate rather than another beta blocker.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify a named duplicate beta blocker.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-metoprolol::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which receptor/effect pairing best describes metoprolol?",
+        "choices": [
+          {
+            "text": "Cardiac beta1 blockade with reduced heart rate and contractility",
+            "explanation": "Cardiac beta1 blockade reduces chronotropic and inotropic stimulation.",
+            "id": "A"
+          },
+          {
+            "text": "Cardiac beta1 stimulation with reduced heart rate and contractility",
+            "explanation": "Stimulation reverses the receptor action.",
+            "id": "B"
+          },
+          {
+            "text": "Cardiac beta1 blockade with increased heart rate and contractility",
+            "explanation": "This reverses the expected cardiac effects.",
+            "id": "C"
+          },
+          {
+            "text": "AT1-receptor blockade with reduced heart rate and contractility",
+            "explanation": "AT1 blockade is an ARB mechanism rather than beta blockade.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall the receptor target and cardiac effects.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-metoprolol::bradycardia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pattern during metoprolol treatment needs prompt review as a cardiac/blood-pressure adverse effect?",
+        "choices": [
+          {
+            "text": "Symptomatic bradycardia with hypotension or a new conduction disturbance",
+            "explanation": "Beta blockade may slow the heart and conduction while lowering BP.",
+            "id": "A"
+          },
+          {
+            "text": "Symptomatic tachycardia with hypotension or a new conduction disturbance",
+            "explanation": "This reverses the characteristic cardiac-slowing effect.",
+            "id": "B"
+          },
+          {
+            "text": "Symptomatic bradycardia with hypertension as its characteristic pressure effect",
+            "explanation": "The important excessive-pressure effect is hypotension.",
+            "id": "C"
+          },
+          {
+            "text": "Symptomatic tachycardia with hypertension as its characteristic pressure effect",
+            "explanation": "Both directions differ from the beta-blocking risk profile.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recognize cardiac slowing and clinically important BP/conduction deterioration.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-metoprolol::duplicate_beta": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new prescription most directly duplicates metoprolol's beta-blocking effect?",
+        "choices": [
+          {
+            "text": "Bisoprolol",
+            "explanation": "Both medicines block cardiac beta receptors; clarify whether overlapping therapy is intended.",
+            "id": "A"
+          },
+          {
+            "text": "Amlodipine",
+            "explanation": "This is a vascular calcium-channel blocker rather than another beta blocker.",
+            "id": "B"
+          },
+          {
+            "text": "Losartan",
+            "explanation": "This is an ARB rather than another beta blocker.",
+            "id": "C"
+          },
+          {
+            "text": "Isosorbide mononitrate",
+            "explanation": "This is a nitrate rather than another beta blocker.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Identify a named duplicate beta blocker.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-bisoprolol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which clinical-role combination fits bisoprolol under an individualized treatment plan?",
+        "choices": [
+          {
+            "text": "Hypertension, stable angina and stable chronic heart failure",
+            "explanation": "These are supported roles in MSF guidance; titration and stability matter.",
+            "id": "A"
+          },
+          {
+            "text": "Hypertension, coronary thrombolysis and stable chronic heart failure",
+            "explanation": "Bisoprolol does not dissolve coronary thrombi.",
+            "id": "B"
+          },
+          {
+            "text": "Hypertension, stable angina and acute decompensation rescue",
+            "explanation": "It is not acute heart-failure rescue treatment.",
+            "id": "C"
+          },
+          {
+            "text": "Vasopressor support, stable angina and stable chronic heart failure",
+            "explanation": "It does not provide vasopressor support.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish stable chronic cardiovascular roles from rescue treatment.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-bisoprolol::beta_rebound": {
+      "action": "replace",
+      "sourceFields": [
+        "why"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Why can abrupt interruption of established bisoprolol treatment cause renewed cardiac symptoms?",
+        "choices": [
+          {
+            "text": "Sympathetic rebound can increase heart rate and cardiac workload",
+            "explanation": "Withdrawal of established blockade can exacerbate cardiac symptoms.",
+            "id": "A"
+          },
+          {
+            "text": "Persisting beta blockade progressively slows the heart further",
+            "explanation": "This does not explain rebound symptoms after withdrawal.",
+            "id": "B"
+          },
+          {
+            "text": "Parasympathetic rebound predictably reduces cardiac workload",
+            "explanation": "This reverses the concern for increased adrenergic activity.",
+            "id": "C"
+          },
+          {
+            "text": "Stopping tablets increases the administered beta-blocker dose",
+            "explanation": "Missing doses does not itself increase the administered dose.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Understand the rationale for supervised withdrawal.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-metoprolol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which goal fits prescribed metoprolol in a selected cardiovascular patient?",
+        "choices": [
+          {
+            "text": "Reducing heart rate/BP and myocardial workload",
+            "explanation": "Beta1 blockade reduces cardiac adrenergic stimulation.",
+            "id": "A"
+          },
+          {
+            "text": "Increasing heart rate and myocardial oxygen demand",
+            "explanation": "This reverses its main cardiac effects.",
+            "id": "B"
+          },
+          {
+            "text": "Dissolving an acute coronary thrombus directly",
+            "explanation": "Metoprolol is not a thrombolytic.",
+            "id": "C"
+          },
+          {
+            "text": "Replacing rapid loop diuresis in pulmonary edema",
+            "explanation": "It is not a loop diuretic.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Recall the selected rate/BP and workload role.",
+        "criticalForSafety": false
+      }
+    },
+    "ccu-metoprolol::avnode_combination": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Why does metoprolol with verapamil require particular cardiac review?",
+        "choices": [
+          {
+            "text": "Additive AV-conduction slowing can cause bradycardia or block",
+            "explanation": "Both medicines can depress cardiac conduction.",
+            "id": "A"
+          },
+          {
+            "text": "Opposing AV-node effects reliably cancel each other",
+            "explanation": "Their cardiac-slowing effects may add rather than cancel.",
+            "id": "B"
+          },
+          {
+            "text": "Combined vasodilation predictably protects against bradycardia",
+            "explanation": "Vasodilation does not remove additive conduction risk.",
+            "id": "C"
+          },
+          {
+            "text": "Increased beta1 stimulation accelerates AV conduction",
+            "explanation": "This reverses metoprolol's beta-blocking effect.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Explain additive AV-node slowing with verapamil.",
+        "criticalForSafety": true
+      }
+    },
+    "ccu-metoprolol::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pairing describes common immediate-release and extended-release metoprolol oral products?",
+        "choices": [
+          {
+            "text": "Tartrate: immediate release; succinate: extended release",
+            "explanation": "Identify the actual product and authorized schedule; this does not authenticate the ward brand.",
+            "id": "A"
+          },
+          {
+            "text": "Tartrate: extended release; succinate: immediate release",
+            "explanation": "This reverses the common products described.",
+            "id": "B"
+          },
+          {
+            "text": "Tartrate and succinate: both necessarily immediate release",
+            "explanation": "Succinate extended-release tablets are a distinct product.",
+            "id": "C"
+          },
+          {
+            "text": "Tartrate and succinate: both necessarily extended release",
+            "explanation": "Conventional tartrate tablets are not automatically extended release.",
+            "id": "D"
+          }
+        ],
+        "answerKey": "A",
+        "point": "Distinguish common salt/release forms without automatic substitution.",
+        "criticalForSafety": true
+      }
     }
   },
   "evidenceChecks": [
@@ -1773,7 +2169,10 @@
     "ed-ondansetron-provisional-shelf": "closed-source-review-20261107",
     "verified-losartan": "bp-author-review-20261107",
     "ccu-enalapril": "bp-author-review-20261107",
-    "ccu-amlodipine": "bp-author-review-20261107"
+    "ccu-amlodipine": "bp-author-review-20261107",
+    "ccu-bisoprolol": "beta-spirono-draft-20261110",
+    "ccu-metoprolol": "beta-spirono-draft-20261110",
+    "trolley-spironolactone": "beta-spirono-draft-20261110"
   },
   "correctionRevisions": {
     "ccu-verapamil": "gaza-administration-reference-20261109",
@@ -1782,6 +2181,8 @@
     "verified-losartan": "bp-author-review-20261107",
     "ccu-enalapril": "bp-author-review-20261107",
     "ccu-amlodipine": "bp-author-review-20261107",
-    "trolley-spironolactone": "spironolactone-taught-material-20261109"
+    "trolley-spironolactone": "beta-spirono-draft-20261110",
+    "ccu-bisoprolol": "beta-spirono-draft-20261110",
+    "ccu-metoprolol": "beta-spirono-draft-20261110"
   }
 }

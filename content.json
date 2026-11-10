@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 46,
-  "updatedAt": "2026-11-09",
+  "contentVersion": 47,
+  "updatedAt": "2026-11-10",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -1378,10 +1378,10 @@
       "drugclass": "Relatively beta1-selective beta-blocker.",
       "availability": "YES. Palestinian essential-medicine data document a 5-mg tablet; Concor 5 mg is registered in Palestine. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
       "administration": "PO; no special preparation.",
-      "use": "Rate/BP control and reduction of cardiac workload in selected cardiovascular patients.",
-      "monitor": "• Check HR and BP before the dose. • Report symptomatic bradycardia, significant hypotension or new conduction problems. • Do not abruptly stop chronic therapy without an order. • Check for duplicate beta-blockade.",
+      "use": "Selected rate/BP control, chronic stable angina, and stable chronic heart failure under an individualized prescribing/titration plan; not rescue treatment for acutely decompensated heart failure.",
+      "monitor": "• Check HR and BP before the dose. • Report symptomatic bradycardia, significant hypotension or new conduction problems. • During heart-failure titration, review new worsening dyspnea or congestion. • Do not abruptly stop chronic therapy without a prescribing plan; withdrawal can cause sympathetic rebound and renewed cardiac symptoms. • Check for duplicate beta-blockade. • Relative beta1 selectivity does not eliminate bronchospasm risk: asthma/bronchospastic disease requires prescriber review rather than assuming respiratory safety.",
       "why": "Beta1 blockade slows HR and lowers cardiac workload/BP; abrupt withdrawal can cause sympathetic rebound.",
-      "source": "Routine CCU meds · approved bedside format Sep 2026 · ED shelf photograph (2026-11-02)",
+      "source": "MSF Essential Drugs and chronic heart-failure guidance; current bisoprolol product information for safety cross-check.",
       "pages": "CCU internship medication reference · Sep 2026",
       "category": "ccu",
       "categories": [
@@ -1390,7 +1390,7 @@
       "memoryUse": "Heart-selective beta-blocker for selected rate/BP/HF indications.",
       "memoryDanger": "Bradycardia and hypotension; avoid abrupt withdrawal.",
       "mechanism": "Blocks cardiac beta1 receptors, reducing HR and contractility.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority.",
+      "mechanismBasis": "MSF guidance is an NGO reference, not confirmation of a current Gaza hospital protocol. https://medicalguidelines.msf.org/en/viewport/EssDr/english/bisoprolol-oral-16685382.html\nhttps://medicalguidelines.msf.org/en/viewport/CG/english/chronic-heart-failure-35654120.html\nhttps://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6566dcbe-3e25-4828-9c10-3d041000bc77",
       "departments": [
         "ed"
       ]
@@ -1401,11 +1401,11 @@
       "header": "METCARDIUM — metoprolol",
       "drugclass": "Beta1-selective beta-blocker.",
       "availability": "WARD-REPORTED for this trade name/form. The exact salt/strength was not confirmed in the public Palestinian list used by the reference.",
-      "administration": "Administer exactly as labeled. Check whether the package says metoprolol tartrate or succinate; tablet formulations and modified-release products are not automatically interchangeable.",
+      "administration": "Identify the exact salt and release form. Common oral products include immediate-release metoprolol tartrate and extended-release metoprolol succinate; schedules and authorized conversion plans must be checked rather than substituting individual doses automatically. Do not crush or chew extended-release succinate tablets; split only when the specific product permits. The local METCARDIUM salt/release type remains unverified.",
       "use": "Selected rate/BP control and reduction of myocardial workload.",
-      "monitor": "• Check HR and BP. • Report marked bradycardia/hypotension. • Be cautious with verapamil because both slow AV conduction. • Check for duplicate beta-blocker therapy.",
+      "monitor": "• Check HR and BP. • Report marked bradycardia/hypotension. • Be cautious with verapamil because both slow AV conduction. • Check for duplicate beta-blocker therapy. • Do not abruptly stop chronic therapy without a prescribing plan because myocardial ischemia can worsen.",
       "why": "Metoprolol slows the heart through beta1 blockade; combining AV-node-slowing drugs can produce excessive bradycardia/block.",
-      "source": "Routine CCU meds · approved bedside format Sep 2026",
+      "source": "Current metoprolol product information: formulation, withdrawal and interaction precautions. Local trade-name formulation remains unverified.",
       "pages": "CCU internship medication reference · Sep 2026",
       "category": "ccu",
       "categories": [
@@ -1413,8 +1413,8 @@
       ],
       "memoryUse": "Beta1-selective blocker; verify tartrate vs succinate.",
       "memoryDanger": "Bradycardia/hypotension; additive AV-node slowing with verapamil.",
-      "mechanism": "Blocks cardiac beta1 receptors.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanism": "Blocks cardiac beta1 receptors, reducing heart rate and contractility.",
+      "mechanismBasis": "No verified current Gaza-specific metoprolol administration protocol was found in this review. Product-information fallback: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b798601e-a369-4c8b-8235-08900e1b751d"
     },
     {
       "id": "ccu-propranolol",
@@ -2074,9 +2074,9 @@
       "availability": "YES. Palestine-wide records show spironolactone 25- and 100-mg tablets; exact brand may differ.",
       "administration": "PO tablets. No routine IV emergency formulation, reconstitution, IV line or pump.",
       "use": "Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide.",
-      "monitor": "• Check potassium and renal function. • Escalate significant hyperkalemia or worsening renal function before routine administration. • Watch hypotension, dizziness and dehydration with other diuretics/RAAS blockers. • Do not casually add potassium supplements or potassium-containing salt substitutes.",
+      "monitor": "• Check potassium and renal function. • Escalate significant hyperkalemia or worsening renal function before routine administration. • Watch hypotension, dizziness and dehydration with other diuretics/RAAS blockers. • Do not casually add potassium supplements or potassium-containing salt substitutes. • After starting or changing the dose, arrange early potassium monitoring within one week under the prescribing plan, with closer monitoring when renal function or interacting drugs increase risk.",
       "why": "Spironolactone saves potassium and blocks aldosterone; furosemide provides stronger, faster diuresis and tends to waste potassium.",
-      "source": "CCU emergency trolley meds · Deep Research Sep 2026",
+      "source": "MSF Essential Drugs: spironolactone; current Aldactone prescribing information for indications and early monitoring.",
       "pages": "CCU internship medication reference · Sep 2026",
       "category": "trolley",
       "categories": [
@@ -2086,7 +2086,7 @@
       "memoryUse": "Aldosterone-blocking, potassium-sparing diuretic; especially useful in HFrEF/aldosterone-driven states.",
       "memoryDanger": "Hyperkalemia is the key danger, especially with renal impairment.",
       "mechanism": "Blocks mineralocorticoid receptors, reducing aldosterone-mediated sodium retention and potassium loss.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "MSF guidance is not proof of current local facility adoption. https://medicalguidelines.msf.org/en/viewport/EssDr/english/spironolactone-oral-16684660.html\nCurrent product cross-check: https://labeling.pfizer.com/showlabeling.aspx?id=520"
     },
     {
       "id": "trolley-lidocaine",

@@ -1194,6 +1194,33 @@
       "checkedDate": "2026-11-09",
       "reviewScope": "Verapamil slow IV injection time and continuous ECG/BP monitoring only. These points agree with current injection labeling. This is a published historical guide, not proof of current facility adoption.",
       "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "msf-bisoprolol-20261110",
+      "title": "MSF Essential Drugs: bisoprolol oral",
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/bisoprolol-oral-16685382.html",
+      "type": "clinical authoring reference",
+      "checkedDate": "2026-11-10",
+      "reviewScope": "Selected study-entry mechanisms, roles, monitoring and safety review. Not proof of current local facility adoption or local stock.",
+      "retrievalStatus": "Search text and official MSF Essential Drugs PDF reviewed; HTML fetch restricted"
+    },
+    {
+      "id": "msf-spironolactone-20261110",
+      "title": "MSF Essential Drugs: spironolactone oral",
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/spironolactone-oral-16684660.html",
+      "type": "clinical authoring reference",
+      "checkedDate": "2026-11-10",
+      "reviewScope": "Selected study-entry mechanisms, roles, monitoring and safety review. Not proof of current local facility adoption or local stock.",
+      "retrievalStatus": "Search text and official MSF Essential Drugs PDF reviewed; HTML fetch restricted"
+    },
+    {
+      "id": "metoprolol-succinate-label-20261110",
+      "title": "Metoprolol succinate ER prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b798601e-a369-4c8b-8235-08900e1b751d",
+      "type": "clinical authoring reference",
+      "checkedDate": "2026-11-10",
+      "reviewScope": "Selected study-entry mechanisms, roles, monitoring and safety review. Not proof of current local facility adoption or local stock.",
+      "retrievalStatus": "retrieved"
     }
   ],
   "itemEvidence": {
@@ -1299,11 +1326,13 @@
     ],
     "ccu-bisoprolol": [
       "content-v35",
-      "label-ccu-bisoprolol"
+      "label-ccu-bisoprolol",
+      "msf-bisoprolol-20261110"
     ],
     "ccu-metoprolol": [
       "content-v35",
-      "label-ccu-metoprolol"
+      "label-ccu-metoprolol",
+      "metoprolol-succinate-label-20261110"
     ],
     "ccu-propranolol": [
       "content-v35",
@@ -1432,7 +1461,8 @@
     ],
     "trolley-spironolactone": [
       "content-v35",
-      "label-trolley-spironolactone"
+      "label-trolley-spironolactone",
+      "msf-spironolactone-20261110"
     ],
     "trolley-lidocaine": [
       "content-v35",

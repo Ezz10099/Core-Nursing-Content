@@ -8284,5 +8284,313 @@
         }
       ]
     }
+  },
+  "bisoprolol_hr_bp_review": {
+    "point": "Select HR and BP surveillance.",
+    "anchor": "Check HR and BP|Check HR",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which paired observations are essential before a routine bisoprolol dose?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Heart rate and blood pressure",
+          "explanation": "Both cardiac slowing and excessive BP lowering matter."
+        },
+        {
+          "text": "Heart rate and body temperature",
+          "explanation": "Temperature does not replace BP assessment."
+        },
+        {
+          "text": "Blood pressure and body temperature",
+          "explanation": "This omits assessment of the pulse/heart rate."
+        },
+        {
+          "text": "Serum sodium and body temperature",
+          "explanation": "These do not replace the immediate HR/BP assessment."
+        }
+      ]
+    }
+  },
+  "metoprolol_hr_bp_review": {
+    "point": "Select HR and BP surveillance.",
+    "anchor": "Check HR and BP|Check HR",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which paired observations are essential before a routine metoprolol dose?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Heart rate and blood pressure",
+          "explanation": "Both cardiac slowing and excessive BP lowering matter."
+        },
+        {
+          "text": "Heart rate and body temperature",
+          "explanation": "Temperature does not replace BP assessment."
+        },
+        {
+          "text": "Blood pressure and body temperature",
+          "explanation": "This omits assessment of the pulse/heart rate."
+        },
+        {
+          "text": "Serum sodium and body temperature",
+          "explanation": "These do not replace the immediate HR/BP assessment."
+        }
+      ]
+    }
+  },
+  "bisoprolol_selectivity_limit": {
+    "point": "Avoid assuming absolute respiratory safety from cardioselectivity.",
+    "anchor": "beta1 selectivity does not eliminate bronchospasm",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "What does relative beta1 selectivity mean when bisoprolol is considered in a patient with asthma?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Bronchospasm risk remains; obtain prescriber review",
+          "explanation": "Cardioselectivity is not absolute, and MSF guidance advises against routine use in asthma."
+        },
+        {
+          "text": "Bronchospasm risk is eliminated at every oral dose",
+          "explanation": "Relative selectivity does not guarantee respiratory safety."
+        },
+        {
+          "text": "The medicine directly stimulates bronchial beta2 receptors",
+          "explanation": "Bisoprolol is a beta blocker, not a beta2 agonist."
+        },
+        {
+          "text": "Respiratory risk can be excluded by a normal resting pulse",
+          "explanation": "Pulse alone does not exclude bronchospasm susceptibility."
+        }
+      ]
+    }
+  },
+  "bisoprolol_hf_titration": {
+    "point": "Recognize worsening heart failure during titration.",
+    "anchor": "worsening dyspnea or congestion",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "During bisoprolol titration for stable chronic heart failure, which new finding calls for prompt treatment-plan review?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Increasing breathlessness with worsening congestion",
+          "explanation": "Worsening HF during titration requires reassessment before further increase."
+        },
+        {
+          "text": "Improved exercise tolerance without new symptoms",
+          "explanation": "This does not identify new HF deterioration."
+        },
+        {
+          "text": "Stable weight with improved breathing",
+          "explanation": "This does not identify worsening congestion."
+        },
+        {
+          "text": "Unchanged symptoms with stable BP and pulse",
+          "explanation": "These findings do not identify new deterioration."
+        }
+      ]
+    }
+  },
+  "metoprolol_er_handling": {
+    "point": "Preserve extended-release delivery.",
+    "anchor": "Do not crush or chew",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which handling plan fits a metoprolol succinate extended-release tablet?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Do not crush or chew; split only if its product permits",
+          "explanation": "The referenced scored ER tablet permits division but not crushing/chewing; follow the actual product."
+        },
+        {
+          "text": "Crush if swallowed with food; split if scored",
+          "explanation": "Food does not make ER crushing appropriate."
+        },
+        {
+          "text": "Chew the whole tablet; avoid splitting even when authorized",
+          "explanation": "Chewing can disrupt release and is not allowed by the cited label."
+        },
+        {
+          "text": "Crush each half after dividing along the score",
+          "explanation": "Scoring does not authorize crushing an ER half."
+        }
+      ]
+    }
+  },
+  "metoprolol_withdrawal": {
+    "point": "Recognize the hazard of abrupt beta-blocker withdrawal.",
+    "anchor": "Do not abruptly stop",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Why should chronic metoprolol not be abruptly discontinued without a prescribing plan?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Myocardial ischemia may worsen after sudden withdrawal",
+          "explanation": "Abrupt cessation can exacerbate ischemic symptoms."
+        },
+        {
+          "text": "Withdrawal produces sustained additional beta1 blockade",
+          "explanation": "Stopping treatment does not itself increase receptor blockade."
+        },
+        {
+          "text": "Stopping converts the drug into a coronary vasodilator",
+          "explanation": "Withdrawal does not create a new drug class."
+        },
+        {
+          "text": "Missed doses directly prolong the tablet's release mechanism",
+          "explanation": "Missing doses does not extend release of tablets not taken."
+        }
+      ]
+    }
+  },
+  "spirono_labs": {
+    "point": "Select potassium and renal surveillance.",
+    "anchor": "Check potassium and renal function",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which laboratory pair is central to spironolactone monitoring?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Serum potassium and creatinine/renal function",
+          "explanation": "Potassium retention becomes more hazardous with renal impairment."
+        },
+        {
+          "text": "Serum sodium and creatinine alone",
+          "explanation": "This omits the key potassium measurement."
+        },
+        {
+          "text": "Serum potassium and troponin alone",
+          "explanation": "Troponin does not replace renal-function surveillance."
+        },
+        {
+          "text": "Serum sodium and troponin alone",
+          "explanation": "This omits both key monitoring domains."
+        }
+      ]
+    }
+  },
+  "spirono_supplements": {
+    "point": "Recognize two potassium sources requiring review.",
+    "anchor": "potassium supplements or potassium-containing salt substitutes",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which added pair most directly increases spironolactone-related hyperkalemia risk?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Potassium supplements and potassium-containing salt substitutes",
+          "explanation": "Both add potassium to a potassium-sparing treatment."
+        },
+        {
+          "text": "Potassium supplements and ordinary sodium-chloride salt",
+          "explanation": "Only the first adds the named potassium exposure."
+        },
+        {
+          "text": "Oral iron and potassium-containing salt substitutes",
+          "explanation": "The potassium salt substitute matters; iron is not the second potassium exposure."
+        },
+        {
+          "text": "Oral iron and ordinary sodium-chloride salt",
+          "explanation": "This pair does not identify the two potassium additions sought."
+        }
+      ]
+    }
+  },
+  "spirono_lab_escalation": {
+    "point": "Escalate unsafe potassium/renal findings before routine dosing.",
+    "anchor": "Escalate significant hyperkalemia",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Significant hyperkalemia and worsening renal function are found before a scheduled spironolactone dose. Which response addresses the drug's mechanism?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Withhold routine administration and promptly escalate the findings",
+          "explanation": "Additional potassium-sparing therapy can worsen the risk; obtain an urgent prescribing/clinical plan."
+        },
+        {
+          "text": "Give the dose to increase urinary potassium loss",
+          "explanation": "Spironolactone reduces rather than increases potassium loss."
+        },
+        {
+          "text": "Give the dose because renal impairment removes the electrolyte risk",
+          "explanation": "Renal impairment can increase potassium-related risk."
+        },
+        {
+          "text": "Add a potassium supplement to balance the diuretic dose",
+          "explanation": "This can worsen hyperkalemia."
+        }
+      ]
+    }
+  },
+  "spirono_additional_roles": {
+    "point": "Recall additional aldosterone-related treatment roles.",
+    "anchor": "resistant hypertension and aldosterone-mediated fluid retention",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which pair fits additional chronic/subacute roles for spironolactone?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Resistant hypertension and aldosterone-mediated fluid retention",
+          "explanation": "Its aldosterone antagonism supports these selected roles."
+        },
+        {
+          "text": "Resistant hypertension and immediate potassium removal",
+          "explanation": "It is not a potassium-removing emergency treatment."
+        },
+        {
+          "text": "Rapid BP-rescue treatment and aldosterone-mediated fluid retention",
+          "explanation": "Its role is not rapid BP rescue."
+        },
+        {
+          "text": "Rapid BP-rescue treatment and immediate potassium removal",
+          "explanation": "Neither is its intended rescue role."
+        }
+      ]
+    }
+  },
+  "spirono_early_k": {
+    "point": "Arrange early potassium surveillance after initiation/titration.",
+    "anchor": "within one week",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "After spironolactone is initiated or titrated, when should the early potassium check be arranged under the prescribing plan?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Within one week, with more frequent checks when risk requires",
+          "explanation": "The current label calls for a check within one week and regularly thereafter."
+        },
+        {
+          "text": "After one month even when renal risk is high",
+          "explanation": "This postpones the early monitoring specified."
+        },
+        {
+          "text": "Only if symptoms of hyperkalemia become obvious",
+          "explanation": "Hyperkalemia may be clinically silent."
+        },
+        {
+          "text": "Only after the drug has been discontinued",
+          "explanation": "Monitoring is needed during treatment."
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-10",
+  "status": "Clinical/source and question-authoring draft; generated-form acceptance, complete fact mapping and release verification pending.",
+  "certifiedFullCoverage": false,
+  "authorQuestionReviewComplete": false,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "items": [
+    {
+      "itemId": "ccu-bisoprolol",
+      "status": "in_review",
+      "newLearningPoints": [
+        "bisoprolol_hr_bp_review",
+        "bisoprolol_selectivity_limit",
+        "bisoprolol_hf_titration"
+      ],
+      "revisedLearningPoints": [
+        "ccu-bisoprolol::hypotension",
+        "ccu-bisoprolol::principal-action",
+        "ccu-bisoprolol::bradycardia",
+        "ccu-bisoprolol::duplicate_beta",
+        "ccu-bisoprolol::treatment-role",
+        "ccu-bisoprolol::beta_rebound"
+      ],
+      "remaining": [
+        "Review every regenerated scored question and all important source facts before completion.",
+        "Bind accepted facts to the actual scored question revision.",
+        "Verify the complete signed runtime package before publication."
+      ]
+    },
+    {
+      "itemId": "ccu-metoprolol",
+      "status": "in_review",
+      "newLearningPoints": [
+        "metoprolol_hr_bp_review",
+        "metoprolol_er_handling",
+        "metoprolol_withdrawal"
+      ],
+      "revisedLearningPoints": [
+        "ccu-metoprolol::hypotension",
+        "ccu-metoprolol::principal-action",
+        "ccu-metoprolol::bradycardia",
+        "ccu-metoprolol::duplicate_beta",
+        "ccu-metoprolol::treatment-role",
+        "ccu-metoprolol::avnode_combination",
+        "ccu-metoprolol::formulation"
+      ],
+      "remaining": [
+        "Review every regenerated scored question and all important source facts before completion.",
+        "Bind accepted facts to the actual scored question revision.",
+        "Verify the complete signed runtime package before publication."
+      ]
+    },
+    {
+      "itemId": "trolley-spironolactone",
+      "status": "in_review",
+      "newLearningPoints": [
+        "spirono_labs",
+        "spirono_supplements",
+        "spirono_lab_escalation",
+        "spirono_additional_roles",
+        "spirono_early_k"
+      ],
+      "revisedLearningPoints": [
+        "trolley-spironolactone::hypotension",
+        "trolley-spironolactone::principal-action",
+        "trolley-spironolactone::drug-class",
+        "trolley-spironolactone::treatment-role",
+        "trolley-spironolactone::high_k",
+        "trolley-spironolactone::renal_monitor",
+        "trolley-spironolactone::spirono_not_loop"
+      ],
+      "remaining": [
+        "Review every regenerated scored question and all important source facts before completion.",
+        "Bind accepted facts to the actual scored question revision.",
+        "Verify the complete signed runtime package before publication."
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "url": "https://medicalguidelines.msf.org/sites/default/files/pdf/guideline-339-en.pdf",
+      "scope": "Bisoprolol pp.63–65 and spironolactone pp.300–301; NGO guidance, not proof of Gaza facility adoption."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6566dcbe-3e25-4828-9c10-3d041000bc77",
+      "scope": "Bisoprolol selectivity, withdrawal and cardiac/respiratory safety."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b798601e-a369-4c8b-8235-08900e1b751d",
+      "scope": "Succinate ER handling, supervised conversion and interactions."
+    },
+    {
+      "url": "https://labeling.pfizer.com/showlabeling.aspx?id=520",
+      "scope": "Spironolactone indications and early potassium monitoring."
+    }
+  ],
+  "conflictsAndLimits": [
+    "MSF advises against bisoprolol in asthma; the US label describes narrowly selected cautious use. This draft requires prescriber review and does not claim absolute respiratory safety.",
+    "MSF's general duration remark was not transferred as a blanket instruction to stop long-term HFrEF treatment.",
+    "The METCARDIUM salt/release form and current ward stock remain unverified.",
+    "Execution environment unavailable; no local build or cryptographic release validation was performed. Existing GitHub Actions must regenerate and test this branch; no Completed label is granted."
+  ]
+}
