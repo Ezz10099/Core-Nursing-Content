@@ -4816,7 +4816,8 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-bisoprolol"
+        "label-ccu-bisoprolol",
+        "msf-bisoprolol-20261110"
       ],
       "exams": [
         {
@@ -4910,13 +4911,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Dihydropyridine CCB",
-                  "explanation": "The medicine is classified as: Relatively beta1-selective beta-blocker."
+                  "text": "Beta1 blocker",
+                  "explanation": "Relatively beta1-selective beta-blocker."
                 },
                 {
                   "id": "B",
-                  "text": "Beta1 blocker",
-                  "explanation": "Relatively beta1-selective beta-blocker."
+                  "text": "Dihydropyridine CCB",
+                  "explanation": "The medicine is classified as: Relatively beta1-selective beta-blocker."
                 },
                 {
                   "id": "C",
@@ -4945,7 +4946,7 @@
               "learningPointIds": [
                 "ccu-bisoprolol::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -4958,18 +4959,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Selected rate or BP control",
+                  "explanation": "This is a clinical use of the medicine: Selected rate/BP control, chronic stable angina, and stable chronic heart failure under an individualized prescribing/titration plan; not rescue treatment for acutely decompensated heart failure."
+                },
+                {
+                  "id": "C",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Selected rate or BP control",
-                  "explanation": "This is a clinical use of the medicine: Rate/BP control and reduction of cardiac workload in selected cardiovascular patients."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -4979,7 +4980,7 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "use",
-                  "textSha256": "48addb409631ec3b6963d0d855207c0f2a469ecc8a59e8aa6e54df78487f907a"
+                  "textSha256": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df"
                 },
                 {
                   "file": "content.json",
@@ -4995,30 +4996,30 @@
               "learningPointIds": [
                 "ccu-bisoprolol::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A patient becomes light-headed on standing after CONCOR / CONCORE — bisoprolol. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
-                },
-                {
-                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                },
+                {
+                  "id": "D",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -5029,14 +5030,14 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "use",
-                  "textSha256": "48addb409631ec3b6963d0d855207c0f2a469ecc8a59e8aa6e54df78487f907a"
+                  "textSha256": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5066,7 +5067,7 @@
               "learningPointIds": [
                 "ccu-bisoprolol::hypotension"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which new change during CONCOR / CONCORE — bisoprolol treatment most directly matches its cardiac slowing risk?",
@@ -5078,13 +5079,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dry mouth with an unchanged pulse",
-                  "explanation": "This is a different adverse-effect pattern."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "C",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Dry mouth with an unchanged pulse",
+                  "explanation": "This is a different adverse-effect pattern."
                 },
                 {
                   "id": "D",
@@ -5106,8 +5107,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
+                  "field": "use",
+                  "textSha256": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5144,10 +5152,139 @@
               "learningPointIds": [
                 "ccu-bisoprolol::bradycardia"
               ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired observations are essential before a routine bisoprolol dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Heart rate and body temperature",
+                  "explanation": "Temperature does not replace BP assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Serum sodium and body temperature",
+                  "explanation": "These do not replace the immediate HR/BP assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Heart rate and blood pressure",
+                  "explanation": "Both cardiac slowing and excessive BP lowering matter."
+                },
+                {
+                  "id": "D",
+                  "text": "Blood pressure and body temperature",
+                  "explanation": "This omits assessment of the pulse/heart rate."
+                }
+              ],
+              "point": "Select HR and BP surveillance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
+                  "field": "monitor",
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-bisoprolol--standard--bisoprolol_hr_bp_review",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-bisoprolol::bisoprolol_hr_bp_review"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "What does relative beta1 selectivity mean when bisoprolol is considered in a patient with asthma?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Bronchospasm risk remains; obtain prescriber review",
+                  "explanation": "Cardioselectivity is not absolute, and MSF guidance advises against routine use in asthma."
+                },
+                {
+                  "id": "B",
+                  "text": "Bronchospasm risk is eliminated at every oral dose",
+                  "explanation": "Relative selectivity does not guarantee respiratory safety."
+                },
+                {
+                  "id": "C",
+                  "text": "Respiratory risk can be excluded by a normal resting pulse",
+                  "explanation": "Pulse alone does not exclude bronchospasm susceptibility."
+                },
+                {
+                  "id": "D",
+                  "text": "The medicine directly stimulates bronchial beta2 receptors",
+                  "explanation": "Bisoprolol is a beta blocker, not a beta2 agonist."
+                }
+              ],
+              "point": "Avoid assuming absolute respiratory safety from cardioselectivity.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
+                  "field": "monitor",
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-bisoprolol--standard--bisoprolol_selectivity_limit",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-bisoprolol::bisoprolol_selectivity_limit"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During bisoprolol titration for stable chronic heart failure, which new finding calls for prompt treatment-plan review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Improved exercise tolerance without new symptoms",
+                  "explanation": "This does not identify new HF deterioration."
+                },
+                {
+                  "id": "B",
+                  "text": "Stable weight with improved breathing",
+                  "explanation": "This does not identify worsening congestion."
+                },
+                {
+                  "id": "C",
+                  "text": "Increasing breathlessness with worsening congestion",
+                  "explanation": "Worsening HF during titration requires reassessment before further increase."
+                },
+                {
+                  "id": "D",
+                  "text": "Unchanged symptoms with stable BP and pulse",
+                  "explanation": "These findings do not identify new deterioration."
+                }
+              ],
+              "point": "Recognize worsening heart failure during titration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
+                  "field": "monitor",
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-bisoprolol--standard--bisoprolol_hf_titration",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-bisoprolol::bisoprolol_hf_titration"
+              ],
               "answerKey": "C"
             }
           ],
-          "questionCount": 5
+          "questionCount": 8
         },
         {
           "id": "ccu-bisoprolol--advanced",
@@ -5209,14 +5346,14 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "use",
-                  "textSha256": "48addb409631ec3b6963d0d855207c0f2a469ecc8a59e8aa6e54df78487f907a"
+                  "textSha256": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5287,7 +5424,7 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5337,7 +5474,7 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5404,18 +5541,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Reduces cardiac adrenergic stimulation",
+                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
+                },
+                {
+                  "id": "C",
                   "text": "Inhibits bacterial cell-wall synthesis",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Irreversibly inhibits platelet COX-1",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
-                },
-                {
-                  "id": "D",
-                  "text": "Reduces cardiac adrenergic stimulation",
-                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -5449,7 +5586,7 @@
                 "ccu-bisoprolol::principal-action"
               ],
               "reusedFromQuestionId": "ccu-bisoprolol--standard--principal-action",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -5501,13 +5638,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Selected rate or BP control",
-                  "explanation": "This is a clinical use of the medicine: Rate/BP control and reduction of cardiac workload in selected cardiovascular patients."
+                  "text": "Acute reversal of opioid respiratory toxicity",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "B",
-                  "text": "Acute reversal of opioid respiratory toxicity",
-                  "explanation": "This is a different treatment role."
+                  "text": "Selected rate or BP control",
+                  "explanation": "This is a clinical use of the medicine: Selected rate/BP control, chronic stable angina, and stable chronic heart failure under an individualized prescribing/titration plan; not rescue treatment for acutely decompensated heart failure."
                 },
                 {
                   "id": "C",
@@ -5527,7 +5664,7 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "use",
-                  "textSha256": "48addb409631ec3b6963d0d855207c0f2a469ecc8a59e8aa6e54df78487f907a"
+                  "textSha256": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df"
                 },
                 {
                   "file": "content.json",
@@ -5544,7 +5681,7 @@
                 "ccu-bisoprolol::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-bisoprolol--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "A patient becomes light-headed on standing after CONCOR / CONCORE — bisoprolol. Which paired assessment best checks the suspected adverse effect?",
@@ -5561,13 +5698,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Bowel frequency and abdominal distension",
+                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
                   "id": "D",
-                  "text": "Bowel frequency and abdominal distension",
-                  "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -5578,14 +5715,14 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "use",
-                  "textSha256": "48addb409631ec3b6963d0d855207c0f2a469ecc8a59e8aa6e54df78487f907a"
+                  "textSha256": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5616,7 +5753,7 @@
                 "ccu-bisoprolol::hypotension"
               ],
               "reusedFromQuestionId": "ccu-bisoprolol--standard--hypotension",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which new change during CONCOR / CONCORE — bisoprolol treatment most directly matches its cardiac slowing risk?",
@@ -5656,8 +5793,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
+                  "field": "use",
+                  "textSha256": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5698,6 +5842,138 @@
               "answerKey": "A"
             },
             {
+              "format": "single-best-answer",
+              "stem": "Which paired observations are essential before a routine bisoprolol dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Heart rate and blood pressure",
+                  "explanation": "Both cardiac slowing and excessive BP lowering matter."
+                },
+                {
+                  "id": "B",
+                  "text": "Serum sodium and body temperature",
+                  "explanation": "These do not replace the immediate HR/BP assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Blood pressure and body temperature",
+                  "explanation": "This omits assessment of the pulse/heart rate."
+                },
+                {
+                  "id": "D",
+                  "text": "Heart rate and body temperature",
+                  "explanation": "Temperature does not replace BP assessment."
+                }
+              ],
+              "point": "Select HR and BP surveillance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
+                  "field": "monitor",
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-bisoprolol--7-day--bisoprolol_hr_bp_review",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-bisoprolol::bisoprolol_hr_bp_review"
+              ],
+              "reusedFromQuestionId": "ccu-bisoprolol--standard--bisoprolol_hr_bp_review",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "What does relative beta1 selectivity mean when bisoprolol is considered in a patient with asthma?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The medicine directly stimulates bronchial beta2 receptors",
+                  "explanation": "Bisoprolol is a beta blocker, not a beta2 agonist."
+                },
+                {
+                  "id": "B",
+                  "text": "Bronchospasm risk is eliminated at every oral dose",
+                  "explanation": "Relative selectivity does not guarantee respiratory safety."
+                },
+                {
+                  "id": "C",
+                  "text": "Bronchospasm risk remains; obtain prescriber review",
+                  "explanation": "Cardioselectivity is not absolute, and MSF guidance advises against routine use in asthma."
+                },
+                {
+                  "id": "D",
+                  "text": "Respiratory risk can be excluded by a normal resting pulse",
+                  "explanation": "Pulse alone does not exclude bronchospasm susceptibility."
+                }
+              ],
+              "point": "Avoid assuming absolute respiratory safety from cardioselectivity.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
+                  "field": "monitor",
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-bisoprolol--7-day--bisoprolol_selectivity_limit",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-bisoprolol::bisoprolol_selectivity_limit"
+              ],
+              "reusedFromQuestionId": "ccu-bisoprolol--standard--bisoprolol_selectivity_limit",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During bisoprolol titration for stable chronic heart failure, which new finding calls for prompt treatment-plan review?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stable weight with improved breathing",
+                  "explanation": "This does not identify worsening congestion."
+                },
+                {
+                  "id": "B",
+                  "text": "Unchanged symptoms with stable BP and pulse",
+                  "explanation": "These findings do not identify new deterioration."
+                },
+                {
+                  "id": "C",
+                  "text": "Improved exercise tolerance without new symptoms",
+                  "explanation": "This does not identify new HF deterioration."
+                },
+                {
+                  "id": "D",
+                  "text": "Increasing breathlessness with worsening congestion",
+                  "explanation": "Worsening HF during titration requires reassessment before further increase."
+                }
+              ],
+              "point": "Recognize worsening heart failure during titration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-bisoprolol",
+                  "field": "monitor",
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-bisoprolol--7-day--bisoprolol_hf_titration",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-bisoprolol::bisoprolol_hf_titration"
+              ],
+              "reusedFromQuestionId": "ccu-bisoprolol--standard--bisoprolol_hf_titration",
+              "answerKey": "D"
+            },
+            {
               "stem": "A chart contains two beta-blockers and the patient has a lower HR and dizziness. Which prescribing issue should be clarified?",
               "choices": [
                 {
@@ -5736,7 +6012,7 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5765,13 +6041,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Sympathetic rebound after interruption of established beta-blockade",
-                  "explanation": "An authorized plan is needed rather than abrupt self-discontinuation."
+                  "text": "A new irreversible block of platelet COX-1",
+                  "explanation": "This is not the withdrawal mechanism."
                 },
                 {
                   "id": "C",
-                  "text": "A new irreversible block of platelet COX-1",
-                  "explanation": "This is not the withdrawal mechanism."
+                  "text": "Sympathetic rebound after interruption of established beta-blockade",
+                  "explanation": "An authorized plan is needed rather than abrupt self-discontinuation."
                 },
                 {
                   "id": "D",
@@ -5787,7 +6063,7 @@
                   "collection": "medications",
                   "itemId": "ccu-bisoprolol",
                   "field": "monitor",
-                  "textSha256": "0f9544e5a8cd74611aad674a71ca55a7e946e1d25f211aff98f4a36e0566fb10"
+                  "textSha256": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7"
                 },
                 {
                   "file": "content.json",
@@ -5811,10 +6087,10 @@
                 "ccu-bisoprolol::beta_rebound"
               ],
               "reusedFromQuestionId": "ccu-bisoprolol--advanced--beta_rebound",
-              "answerKey": "B"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 7
+          "questionCount": 10
         }
       ]
     },
@@ -5825,7 +6101,8 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-metoprolol"
+        "label-ccu-metoprolol",
+        "metoprolol-succinate-label-20261110"
       ],
       "exams": [
         {
@@ -5862,23 +6139,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Reduces cardiac adrenergic stimulation",
+                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
+                },
+                {
+                  "id": "B",
                   "text": "Receptor blockade and sodium loss",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Forms metabolites that damage microbial DNA",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Changes inflammatory/stress-response gene transcription",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
-                },
-                {
-                  "id": "D",
-                  "text": "Reduces cardiac adrenergic stimulation",
-                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -5895,7 +6172,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "mechanism",
-                  "textSha256": "82534663410b7a30171f37c1026ff613c2989672e7223804224e0654e230e4ee"
+                  "textSha256": "321f8af040b18f38291b5ee0b25ba4236f9234c1b31c45af24e4093b3d010c5b"
                 },
                 {
                   "file": "content.json",
@@ -5911,7 +6188,7 @@
               "learningPointIds": [
                 "ccu-metoprolol::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -5919,18 +6196,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Beta1 blocker",
+                  "explanation": "Beta1-selective beta-blocker."
+                },
+                {
+                  "id": "B",
                   "text": "Uroselective alpha-1 blocker",
                   "explanation": "The medicine is classified as: Beta1-selective beta-blocker."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Direct vasodilator",
                   "explanation": "The medicine is classified as: Beta1-selective beta-blocker."
-                },
-                {
-                  "id": "C",
-                  "text": "Beta1 blocker",
-                  "explanation": "Beta1-selective beta-blocker."
                 },
                 {
                   "id": "D",
@@ -5954,7 +6231,7 @@
               "learningPointIds": [
                 "ccu-metoprolol::drug-class"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -5962,23 +6239,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Selected rate or BP control",
-                  "explanation": "This is a clinical use of the medicine: Selected rate/BP control and reduction of myocardial workload."
-                },
-                {
-                  "id": "B",
                   "text": "Treatment of susceptible bacterial infection",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "D",
+                  "text": "Selected rate or BP control",
+                  "explanation": "This is a clinical use of the medicine: Selected rate/BP control and reduction of myocardial workload."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -6004,7 +6281,7 @@
               "learningPointIds": [
                 "ccu-metoprolol::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after METCARDIUM — metoprolol. Which paired assessment best checks the suspected adverse effect?",
@@ -6016,13 +6293,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Resting temperature and infection symptoms",
-                  "explanation": "These investigate infection rather than the suspected pressure effect."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Resting temperature and infection symptoms",
+                  "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
                   "id": "D",
@@ -6045,7 +6322,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 },
                 {
                   "file": "content.json",
@@ -6061,7 +6338,7 @@
               "learningPointIds": [
                 "ccu-metoprolol::hypotension"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which new change during METCARDIUM — metoprolol treatment most directly matches its cardiac slowing risk?",
@@ -6073,13 +6350,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Tremor with an unchanged pulse",
+                  "explanation": "This does not identify the cardiac slowing pattern."
                 },
                 {
                   "id": "C",
-                  "text": "Tremor with an unchanged pulse",
-                  "explanation": "This does not identify the cardiac slowing pattern."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "D",
@@ -6102,7 +6379,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 },
                 {
                   "file": "content.json",
@@ -6116,7 +6393,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "mechanism",
-                  "textSha256": "82534663410b7a30171f37c1026ff613c2989672e7223804224e0654e230e4ee"
+                  "textSha256": "321f8af040b18f38291b5ee0b25ba4236f9234c1b31c45af24e4093b3d010c5b"
                 },
                 {
                   "file": "content.json",
@@ -6139,10 +6416,139 @@
               "learningPointIds": [
                 "ccu-metoprolol::bradycardia"
               ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired observations are essential before a routine metoprolol dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Heart rate and body temperature",
+                  "explanation": "Temperature does not replace BP assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Blood pressure and body temperature",
+                  "explanation": "This omits assessment of the pulse/heart rate."
+                },
+                {
+                  "id": "C",
+                  "text": "Heart rate and blood pressure",
+                  "explanation": "Both cardiac slowing and excessive BP lowering matter."
+                },
+                {
+                  "id": "D",
+                  "text": "Serum sodium and body temperature",
+                  "explanation": "These do not replace the immediate HR/BP assessment."
+                }
+              ],
+              "point": "Select HR and BP surveillance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metoprolol",
+                  "field": "monitor",
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-metoprolol--standard--metoprolol_hr_bp_review",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metoprolol::metoprolol_hr_bp_review"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which handling plan fits a metoprolol succinate extended-release tablet?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Crush if swallowed with food; split if scored",
+                  "explanation": "Food does not make ER crushing appropriate."
+                },
+                {
+                  "id": "B",
+                  "text": "Do not crush or chew; split only if its product permits",
+                  "explanation": "The referenced scored ER tablet permits division but not crushing/chewing; follow the actual product."
+                },
+                {
+                  "id": "C",
+                  "text": "Chew the whole tablet; avoid splitting even when authorized",
+                  "explanation": "Chewing can disrupt release and is not allowed by the cited label."
+                },
+                {
+                  "id": "D",
+                  "text": "Crush each half after dividing along the score",
+                  "explanation": "Scoring does not authorize crushing an ER half."
+                }
+              ],
+              "point": "Preserve extended-release delivery.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metoprolol",
+                  "field": "administration",
+                  "textSha256": "15e45175330822ebb8803dc4d8fcbc9a9b997a0bbccb4531b912e8e3f1fe2cb1"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-metoprolol--standard--metoprolol_er_handling",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metoprolol::metoprolol_er_handling"
+              ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why should chronic metoprolol not be abruptly discontinued without a prescribing plan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Withdrawal produces sustained additional beta1 blockade",
+                  "explanation": "Stopping treatment does not itself increase receptor blockade."
+                },
+                {
+                  "id": "B",
+                  "text": "Stopping converts the drug into a coronary vasodilator",
+                  "explanation": "Withdrawal does not create a new drug class."
+                },
+                {
+                  "id": "C",
+                  "text": "Missed doses directly prolong the tablet's release mechanism",
+                  "explanation": "Missing doses does not extend release of tablets not taken."
+                },
+                {
+                  "id": "D",
+                  "text": "Myocardial ischemia may worsen after sudden withdrawal",
+                  "explanation": "Abrupt cessation can exacerbate ischemic symptoms."
+                }
+              ],
+              "point": "Recognize the hazard of abrupt beta-blocker withdrawal.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metoprolol",
+                  "field": "monitor",
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-metoprolol--standard--metoprolol_withdrawal",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metoprolol::metoprolol_withdrawal"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 5
+          "questionCount": 8
         },
         {
           "id": "ccu-metoprolol--advanced",
@@ -6211,7 +6617,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 },
                 {
                   "file": "content.json",
@@ -6268,7 +6674,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 }
               ],
               "criticalForSafety": false,
@@ -6318,7 +6724,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 },
                 {
                   "file": "content.json",
@@ -6375,7 +6781,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "administration",
-                  "textSha256": "7a1d2608ca8e5c453a5bb1690a4c82f1ae073ffc2f66244563e9080bef92533b"
+                  "textSha256": "15e45175330822ebb8803dc4d8fcbc9a9b997a0bbccb4531b912e8e3f1fe2cb1"
                 }
               ],
               "criticalForSafety": false,
@@ -6433,13 +6839,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Receptor blockade and sodium loss",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
+                  "text": "Reduces cardiac adrenergic stimulation",
+                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
                 },
                 {
                   "id": "D",
-                  "text": "Reduces cardiac adrenergic stimulation",
-                  "explanation": "Cardiac beta1 blockade reduces heart rate and contractile workload."
+                  "text": "Receptor blockade and sodium loss",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Cardiac beta1 blockade reduces heart rate and contractile workload."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -6456,7 +6862,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "mechanism",
-                  "textSha256": "82534663410b7a30171f37c1026ff613c2989672e7223804224e0654e230e4ee"
+                  "textSha256": "321f8af040b18f38291b5ee0b25ba4236f9234c1b31c45af24e4093b3d010c5b"
                 },
                 {
                   "file": "content.json",
@@ -6473,7 +6879,7 @@
                 "ccu-metoprolol::principal-action"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--standard--principal-action",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -6481,23 +6887,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Beta1 blocker",
-                  "explanation": "Beta1-selective beta-blocker."
-                },
-                {
-                  "id": "B",
                   "text": "ACE inhibitor",
                   "explanation": "The medicine is classified as: Beta1-selective beta-blocker."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Uroselective alpha-1 blocker",
                   "explanation": "The medicine is classified as: Beta1-selective beta-blocker."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Direct vasodilator",
                   "explanation": "The medicine is classified as: Beta1-selective beta-blocker."
+                },
+                {
+                  "id": "D",
+                  "text": "Beta1 blocker",
+                  "explanation": "Beta1-selective beta-blocker."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -6517,7 +6923,7 @@
                 "ccu-metoprolol::drug-class"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--standard--drug-class",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -6525,23 +6931,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Selected rate or BP control",
-                  "explanation": "This is a clinical use of the medicine: Selected rate/BP control and reduction of myocardial workload."
-                },
-                {
-                  "id": "B",
                   "text": "Treatment of susceptible bacterial infection",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Acute reversal of opioid respiratory toxicity",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Replacement of circulating glucose in severe hypoglycemia",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "D",
+                  "text": "Selected rate or BP control",
+                  "explanation": "This is a clinical use of the medicine: Selected rate/BP control and reduction of myocardial workload."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -6568,25 +6974,25 @@
                 "ccu-metoprolol::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after METCARDIUM — metoprolol. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "B",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
-                },
-                {
-                  "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -6609,7 +7015,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 },
                 {
                   "file": "content.json",
@@ -6626,7 +7032,7 @@
                 "ccu-metoprolol::hypotension"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--standard--hypotension",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which new change during METCARDIUM — metoprolol treatment most directly matches its cardiac slowing risk?",
@@ -6638,13 +7044,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dizziness with a markedly slow pulse",
-                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
+                  "text": "Flushing with an unchanged pulse",
+                  "explanation": "This does not establish bradycardia or AV block."
                 },
                 {
                   "id": "C",
-                  "text": "Flushing with an unchanged pulse",
-                  "explanation": "This does not establish bradycardia or AV block."
+                  "text": "Dizziness with a markedly slow pulse",
+                  "explanation": "Symptomatic bradycardia can reflect excessive slowing or impaired conduction."
                 },
                 {
                   "id": "D",
@@ -6667,7 +7073,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 },
                 {
                   "file": "content.json",
@@ -6681,7 +7087,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "mechanism",
-                  "textSha256": "82534663410b7a30171f37c1026ff613c2989672e7223804224e0654e230e4ee"
+                  "textSha256": "321f8af040b18f38291b5ee0b25ba4236f9234c1b31c45af24e4093b3d010c5b"
                 },
                 {
                   "file": "content.json",
@@ -6705,7 +7111,139 @@
                 "ccu-metoprolol::bradycardia"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--standard--bradycardia",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which paired observations are essential before a routine metoprolol dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Blood pressure and body temperature",
+                  "explanation": "This omits assessment of the pulse/heart rate."
+                },
+                {
+                  "id": "B",
+                  "text": "Serum sodium and body temperature",
+                  "explanation": "These do not replace the immediate HR/BP assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Heart rate and body temperature",
+                  "explanation": "Temperature does not replace BP assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Heart rate and blood pressure",
+                  "explanation": "Both cardiac slowing and excessive BP lowering matter."
+                }
+              ],
+              "point": "Select HR and BP surveillance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metoprolol",
+                  "field": "monitor",
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-metoprolol--7-day--metoprolol_hr_bp_review",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metoprolol::metoprolol_hr_bp_review"
+              ],
+              "reusedFromQuestionId": "ccu-metoprolol--standard--metoprolol_hr_bp_review",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which handling plan fits a metoprolol succinate extended-release tablet?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Crush if swallowed with food; split if scored",
+                  "explanation": "Food does not make ER crushing appropriate."
+                },
+                {
+                  "id": "B",
+                  "text": "Do not crush or chew; split only if its product permits",
+                  "explanation": "The referenced scored ER tablet permits division but not crushing/chewing; follow the actual product."
+                },
+                {
+                  "id": "C",
+                  "text": "Crush each half after dividing along the score",
+                  "explanation": "Scoring does not authorize crushing an ER half."
+                },
+                {
+                  "id": "D",
+                  "text": "Chew the whole tablet; avoid splitting even when authorized",
+                  "explanation": "Chewing can disrupt release and is not allowed by the cited label."
+                }
+              ],
+              "point": "Preserve extended-release delivery.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metoprolol",
+                  "field": "administration",
+                  "textSha256": "15e45175330822ebb8803dc4d8fcbc9a9b997a0bbccb4531b912e8e3f1fe2cb1"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-metoprolol--7-day--metoprolol_er_handling",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metoprolol::metoprolol_er_handling"
+              ],
+              "reusedFromQuestionId": "ccu-metoprolol--standard--metoprolol_er_handling",
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Why should chronic metoprolol not be abruptly discontinued without a prescribing plan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Myocardial ischemia may worsen after sudden withdrawal",
+                  "explanation": "Abrupt cessation can exacerbate ischemic symptoms."
+                },
+                {
+                  "id": "B",
+                  "text": "Stopping converts the drug into a coronary vasodilator",
+                  "explanation": "Withdrawal does not create a new drug class."
+                },
+                {
+                  "id": "C",
+                  "text": "Missed doses directly prolong the tablet's release mechanism",
+                  "explanation": "Missing doses does not extend release of tablets not taken."
+                },
+                {
+                  "id": "D",
+                  "text": "Withdrawal produces sustained additional beta1 blockade",
+                  "explanation": "Stopping treatment does not itself increase receptor blockade."
+                }
+              ],
+              "point": "Recognize the hazard of abrupt beta-blocker withdrawal.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-metoprolol",
+                  "field": "monitor",
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-metoprolol--7-day--metoprolol_withdrawal",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-metoprolol::metoprolol_withdrawal"
+              ],
+              "reusedFromQuestionId": "ccu-metoprolol--standard--metoprolol_withdrawal",
+              "answerKey": "A"
             },
             {
               "stem": "A chart contains two beta-blockers and the patient has a lower HR and dizziness. Which prescribing issue should be clarified?",
@@ -6717,13 +7255,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Whether duplicate beta-blockade is intended",
-                  "explanation": "Overlapping drugs can compound cardiac slowing."
+                  "text": "Whether dual antiplatelet therapy is intended",
+                  "explanation": "These medicines are not antiplatelets."
                 },
                 {
                   "id": "C",
-                  "text": "Whether dual antiplatelet therapy is intended",
-                  "explanation": "These medicines are not antiplatelets."
+                  "text": "Whether duplicate beta-blockade is intended",
+                  "explanation": "Overlapping drugs can compound cardiac slowing."
                 },
                 {
                   "id": "D",
@@ -6746,7 +7284,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 }
               ],
               "criticalForSafety": false,
@@ -6756,7 +7294,7 @@
                 "ccu-metoprolol::duplicate_beta"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--advanced--duplicate_beta",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Verapamil and a beta-blocker overlap in a patient who develops dizziness and a slow pulse. Which mechanism best explains the concern?",
@@ -6768,18 +7306,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Additive slowing of AV conduction",
+                  "explanation": "Both can slow conduction and contribute to bradycardia or block."
+                },
+                {
+                  "id": "C",
                   "text": "Additive activation of beta2 receptors",
                   "explanation": "Beta-blockade does not activate beta2 receptors."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Additive platelet P2Y12 inhibition",
                   "explanation": "These are not P2Y12 antiplatelet drugs."
-                },
-                {
-                  "id": "D",
-                  "text": "Additive slowing of AV conduction",
-                  "explanation": "Both can slow conduction and contribute to bradycardia or block."
                 }
               ],
               "format": "single-best-answer",
@@ -6797,7 +7335,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "monitor",
-                  "textSha256": "9854fbc9a14de0bd3dfb0a952f6111bf3f325342a5eba55249641e6ae3c6afcf"
+                  "textSha256": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08"
                 },
                 {
                   "file": "content.json",
@@ -6821,25 +7359,25 @@
                 "ccu-metoprolol::avnode_combination"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--advanced--avnode_combination",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "The prescribed METCARDIUM — metoprolol and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Product-specific interchangeability and an authorized order",
+                  "explanation": "Formulation differences require a defensible, authorized substitution."
+                },
+                {
+                  "id": "B",
                   "text": "An identical generic name and nominal milligram strength",
                   "explanation": "These do not establish the same release, route, or bioavailability."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "A previously tolerated dose of the original formulation",
                   "explanation": "Prior tolerance does not establish equivalence of the new formulation."
-                },
-                {
-                  "id": "C",
-                  "text": "Product-specific interchangeability and an authorized order",
-                  "explanation": "Formulation differences require a defensible, authorized substitution."
                 },
                 {
                   "id": "D",
@@ -6855,7 +7393,7 @@
                   "collection": "medications",
                   "itemId": "ccu-metoprolol",
                   "field": "administration",
-                  "textSha256": "7a1d2608ca8e5c453a5bb1690a4c82f1ae073ffc2f66244563e9080bef92533b"
+                  "textSha256": "15e45175330822ebb8803dc4d8fcbc9a9b997a0bbccb4531b912e8e3f1fe2cb1"
                 }
               ],
               "criticalForSafety": false,
@@ -6865,10 +7403,10 @@
                 "ccu-metoprolol::formulation"
               ],
               "reusedFromQuestionId": "ccu-metoprolol--advanced--formulation",
-              "answerKey": "C"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 8
+          "questionCount": 11
         }
       ]
     },
