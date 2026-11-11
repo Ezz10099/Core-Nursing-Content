@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 50,
-  "sourceContentSha256": "ed997d1300c0a3aa18041112b708a138e50b20f76a7d9716d0459bc09b76d3cf",
+  "sourceContentVersion": 51,
+  "sourceContentSha256": "6f2336282dd9476b016387f91ab879d2669e4ba47a1bfefa83cac347703e7ebd",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 321,
-    "questions": 1941,
-    "single-best-answer": 1911,
+    "questions": 1947,
+    "single-best-answer": 1917,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 107,
     "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 918
+    "mappedLearningPoints": 921
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -457,7 +457,7 @@
         {
           "id": "ccu-isosorbide-mononitrate--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-isosorbide-mononitrate--advanced",
@@ -467,7 +467,7 @@
         {
           "id": "ccu-isosorbide-mononitrate--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -480,7 +480,7 @@
         {
           "id": "ccu-isosorbide-dinitrate--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-isosorbide-dinitrate--advanced",
@@ -490,7 +490,7 @@
         {
           "id": "ccu-isosorbide-dinitrate--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -572,7 +572,7 @@
         {
           "id": "ccu-aspirin--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-aspirin--advanced",
@@ -582,7 +582,7 @@
         {
           "id": "ccu-aspirin--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -2499,11 +2499,11 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "502dfeb094853d8a22887721f0632a6d45f30a778b85bd7b31b49d5ee9ac7df7"
+      "sha256": "ea3cc740df88fff7e4fa87d8f74f12de57f14653dd25e6061c9f416aafc4c90d"
     },
     {
       "path": "banks-02.json",
-      "sha256": "f2e2104a440501d51c683ef26b4478d367fb26a1d9977a9c1dbaadbadc85f36c"
+      "sha256": "37ca796c8993bc5455318e5ae5aeca57398d0280e5ef2647cbeb11a00cf2806e"
     },
     {
       "path": "banks-03.json",
@@ -2523,7 +2523,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "e069c1fabc9d3cea318a53a45121129c0434efc432e4fcf3ed211cf2536935e2"
+      "sha256": "77461e5e45ae6f8471823687dd651cde3358cf59a39efefdb6a112fe6c0df13f"
     }
   ]
 }

@@ -1391,6 +1391,46 @@
       "type": "primary prescribing information",
       "checkedDate": "2026-11-11",
       "reviewScope": "Activation, oral loading and maintenance, drug interactions and interruption risk."
+    },
+    {
+      "id": "moh-dinitrate-monograph",
+      "title": "Palestinian MOH isosorbide dinitrate monograph",
+      "url": "https://www.pharmacy.moh.ps/Content/PDF/VInzIA6ItPgYKz9i2BjRtvLv_sC4Tn7Bxg572BtRfmmOJm7lC.pdf",
+      "type": "reference",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Sublingual route. Current chest-pain escalation follows the facility protocol."
+    },
+    {
+      "id": "label-isordil-sublingual",
+      "title": "Pfizer Isordil sublingual and oral labeling",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=12816",
+      "type": "reference",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Sublingual versus swallowed oral formulations and clinically significant interactions."
+    },
+    {
+      "id": "label-mononitrate-er-review",
+      "title": "DailyMed isosorbide mononitrate extended release",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0e3c4461-2e04-481f-a9e5-29f21cc71ec5",
+      "type": "reference",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Morning dosing, no crushing, contraindicated interactions and preventive role."
+    },
+    {
+      "id": "label-mononitrate-ir-review",
+      "title": "DailyMed isosorbide mononitrate immediate release",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d739bf3-0672-4504-9064-b39d6b200b47",
+      "type": "reference",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Seven-hour spacing and tolerance."
+    },
+    {
+      "id": "label-riociguat-nitrates",
+      "title": "DailyMed Adempas (riociguat)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+      "type": "primary prescribing information",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Nitrate coadministration contraindication."
     }
   ],
   "itemEvidence": {
@@ -1471,11 +1511,19 @@
     ],
     "ccu-isosorbide-mononitrate": [
       "content-v35",
-      "label-ccu-isosorbide-mononitrate"
+      "label-ccu-isosorbide-mononitrate",
+      "palestinian-eml-2024-antithrombotics",
+      "label-mononitrate-er-review",
+      "label-mononitrate-ir-review",
+      "label-riociguat-nitrates"
     ],
     "ccu-isosorbide-dinitrate": [
       "content-v35",
-      "label-ccu-isosorbide-dinitrate"
+      "label-ccu-isosorbide-dinitrate",
+      "palestinian-eml-2024-antithrombotics",
+      "moh-dinitrate-monograph",
+      "label-isordil-sublingual",
+      "label-riociguat-nitrates"
     ],
     "ccu-nadroparin": [
       "content-v35",
@@ -1496,7 +1544,9 @@
     ],
     "ccu-aspirin": [
       "content-v35",
-      "label-ccu-aspirin"
+      "label-ccu-aspirin",
+      "aha-acc-acs-2025-antiplatelets",
+      "palestinian-eml-2024-antithrombotics"
     ],
     "ccu-clopidogrel": [
       "content-v35",

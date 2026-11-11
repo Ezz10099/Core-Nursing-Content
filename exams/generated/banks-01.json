@@ -22586,7 +22586,11 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-isosorbide-mononitrate"
+        "label-ccu-isosorbide-mononitrate",
+        "palestinian-eml-2024-antithrombotics",
+        "label-mononitrate-er-review",
+        "label-mononitrate-ir-review",
+        "label-riociguat-nitrates"
       ],
       "exams": [
         {
@@ -22685,18 +22689,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Organic nitrate",
+                  "explanation": "Organic nitrate; long-acting antianginal."
+                },
+                {
+                  "id": "C",
                   "text": "Catecholamine",
                   "explanation": "The medicine is classified as: Organic nitrate; long-acting antianginal."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Inotrope",
                   "explanation": "The medicine is classified as: Organic nitrate; long-acting antianginal."
-                },
-                {
-                  "id": "D",
-                  "text": "Organic nitrate",
-                  "explanation": "Organic nitrate; long-acting antianginal."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -22715,7 +22719,7 @@
               "learningPointIds": [
                 "ccu-isosorbide-mononitrate::drug-class"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -22723,18 +22727,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Prevention and control of angina",
-                  "explanation": "This is a clinical use of the medicine: Prevention/control of angina; not the rapid-rescue formulation for an acute angina attack."
-                },
-                {
-                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Prevention and control of angina",
+                  "explanation": "This is a clinical use of the medicine: Prevention/control of angina; not the rapid-rescue formulation for an acute angina attack."
                 },
                 {
                   "id": "D",
@@ -22765,7 +22769,7 @@
               "learningPointIds": [
                 "ccu-isosorbide-mononitrate::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "A patient becomes light-headed on standing after VASOCORE — isosorbide mononitrate. Which paired assessment best checks the suspected adverse effect?",
@@ -22799,7 +22803,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "32257b263a6fa951237ec6903cd2a629e547910302bf3cfe96166b2f82943129"
                 },
                 {
                   "file": "content.json",
@@ -22839,13 +22843,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Headache with flushing or dizziness",
-                  "explanation": "These are recognized nitrate effects; severity and BP still need assessment."
+                  "text": "Mucosal rash with blistering",
+                  "explanation": "This raises a different serious reaction concern."
                 },
                 {
                   "id": "D",
-                  "text": "Mucosal rash with blistering",
-                  "explanation": "This raises a different serious reaction concern."
+                  "text": "Headache with flushing or dizziness",
+                  "explanation": "These are recognized nitrate effects; severity and BP still need assessment."
                 }
               ],
               "format": "single-best-answer",
@@ -22856,7 +22860,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "32257b263a6fa951237ec6903cd2a629e547910302bf3cfe96166b2f82943129"
                 }
               ],
               "criticalForSafety": false,
@@ -22865,10 +22869,53 @@
               "learningPointIds": [
                 "ccu-isosorbide-mononitrate::nitrate_headache"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A twice-daily immediate-release mononitrate order is scheduled for 08:00 and 15:00. Why should the nurse preserve the ordered times?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The longer overnight low-nitrate interval helps limit tolerance.",
+                  "explanation": "Seven hours between daytime doses leaves a longer low-exposure period overnight."
+                },
+                {
+                  "id": "B",
+                  "text": "The afternoon dose provides rapid rescue for any evening chest pain.",
+                  "explanation": "This oral drug is used for prevention."
+                },
+                {
+                  "id": "C",
+                  "text": "The afternoon dose prevents a nitrate–PDE-5 inhibitor interaction overnight.",
+                  "explanation": "Changing the dosing interval does not make that combination safe."
+                },
+                {
+                  "id": "D",
+                  "text": "The shorter daytime interval maintains continuous nitrate levels overnight.",
+                  "explanation": "Continuous exposure encourages tolerance."
+                }
+              ],
+              "point": "Preserve the ordered asymmetric immediate-release schedule to limit nitrate tolerance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-isosorbide-mononitrate",
+                  "field": "administration",
+                  "textSha256": "951af1ae4eba81312a96a92253e6a73c2079e5a4edb55da7dea6e7deceec2a45"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-isosorbide-mononitrate--standard--mononitrate_ir_timing",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-isosorbide-mononitrate::mononitrate_ir_timing"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-isosorbide-mononitrate--advanced",
@@ -22930,7 +22977,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "32257b263a6fa951237ec6903cd2a629e547910302bf3cfe96166b2f82943129"
                 },
                 {
                   "file": "content.json",
@@ -22987,7 +23034,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "32257b263a6fa951237ec6903cd2a629e547910302bf3cfe96166b2f82943129"
                 },
                 {
                   "file": "content.json",
@@ -23087,14 +23134,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "administration",
-                  "textSha256": "dd1b771c40d2181eec64979aeeacac0f214dd5c8f0269a8c4ce3206b7d2beecf"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "medications",
-                  "itemId": "ccu-isosorbide-mononitrate",
-                  "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "951af1ae4eba81312a96a92253e6a73c2079e5a4edb55da7dea6e7deceec2a45"
                 }
               ],
               "criticalForSafety": false,
@@ -23152,13 +23192,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Bronchodilation with a narrow therapeutic index",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Nitrates relax vascular smooth muscle and reduce cardiac workload."
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "Nitrates relax vascular smooth muscle and reduce cardiac workload."
                 },
                 {
                   "id": "D",
-                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
-                  "explanation": "Nitrates relax vascular smooth muscle and reduce cardiac workload."
+                  "text": "Bronchodilation with a narrow therapeutic index",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Nitrates relax vascular smooth muscle and reduce cardiac workload."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -23192,7 +23232,7 @@
                 "ccu-isosorbide-mononitrate::principal-action"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--standard--principal-action",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -23210,13 +23250,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inotrope",
-                  "explanation": "The medicine is classified as: Organic nitrate; long-acting antianginal."
+                  "text": "Organic nitrate",
+                  "explanation": "Organic nitrate; long-acting antianginal."
                 },
                 {
                   "id": "D",
-                  "text": "Organic nitrate",
-                  "explanation": "Organic nitrate; long-acting antianginal."
+                  "text": "Inotrope",
+                  "explanation": "The medicine is classified as: Organic nitrate; long-acting antianginal."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -23236,7 +23276,7 @@
                 "ccu-isosorbide-mononitrate::drug-class"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--standard--drug-class",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -23244,13 +23284,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Prevention and control of angina",
-                  "explanation": "This is a clinical use of the medicine: Prevention/control of angina; not the rapid-rescue formulation for an acute angina attack."
+                  "text": "Treatment of oral fungal lesions",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "B",
-                  "text": "Treatment of oral fungal lesions",
-                  "explanation": "This is a different treatment role."
+                  "text": "Prevention and control of angina",
+                  "explanation": "This is a clinical use of the medicine: Prevention/control of angina; not the rapid-rescue formulation for an acute angina attack."
                 },
                 {
                   "id": "C",
@@ -23287,25 +23327,25 @@
                 "ccu-isosorbide-mononitrate::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "A patient becomes light-headed on standing after VASOCORE — isosorbide mononitrate. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "B",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
-                },
-                {
-                  "id": "C",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "D",
@@ -23321,7 +23361,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "32257b263a6fa951237ec6903cd2a629e547910302bf3cfe96166b2f82943129"
                 },
                 {
                   "file": "content.json",
@@ -23345,25 +23385,25 @@
                 "ccu-isosorbide-mononitrate::hypotension"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--standard--hypotension",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which symptom pattern is compatible with nitrate vasodilation during VASOCORE — isosorbide mononitrate therapy?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Headache with flushing or dizziness",
+                  "explanation": "These are recognized nitrate effects; severity and BP still need assessment."
+                },
+                {
+                  "id": "B",
                   "text": "Mucosal rash with blistering",
                   "explanation": "This raises a different serious reaction concern."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Tendon pain with ankle swelling",
                   "explanation": "This points toward a different adverse-effect warning."
-                },
-                {
-                  "id": "C",
-                  "text": "Headache with flushing or dizziness",
-                  "explanation": "These are recognized nitrate effects; severity and BP still need assessment."
                 },
                 {
                   "id": "D",
@@ -23379,7 +23419,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "32257b263a6fa951237ec6903cd2a629e547910302bf3cfe96166b2f82943129"
                 }
               ],
               "criticalForSafety": false,
@@ -23389,6 +23429,50 @@
                 "ccu-isosorbide-mononitrate::nitrate_headache"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--standard--nitrate_headache",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A twice-daily immediate-release mononitrate order is scheduled for 08:00 and 15:00. Why should the nurse preserve the ordered times?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The shorter daytime interval maintains continuous nitrate levels overnight.",
+                  "explanation": "Continuous exposure encourages tolerance."
+                },
+                {
+                  "id": "B",
+                  "text": "The afternoon dose provides rapid rescue for any evening chest pain.",
+                  "explanation": "This oral drug is used for prevention."
+                },
+                {
+                  "id": "C",
+                  "text": "The longer overnight low-nitrate interval helps limit tolerance.",
+                  "explanation": "Seven hours between daytime doses leaves a longer low-exposure period overnight."
+                },
+                {
+                  "id": "D",
+                  "text": "The afternoon dose prevents a nitrate–PDE-5 inhibitor interaction overnight.",
+                  "explanation": "Changing the dosing interval does not make that combination safe."
+                }
+              ],
+              "point": "Preserve the ordered asymmetric immediate-release schedule to limit nitrate tolerance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-isosorbide-mononitrate",
+                  "field": "administration",
+                  "textSha256": "951af1ae4eba81312a96a92253e6a73c2079e5a4edb55da7dea6e7deceec2a45"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-isosorbide-mononitrate--7-day--mononitrate_ir_timing",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-isosorbide-mononitrate::mononitrate_ir_timing"
+              ],
+              "reusedFromQuestionId": "ccu-isosorbide-mononitrate--standard--mononitrate_ir_timing",
               "answerKey": "C"
             },
             {
@@ -23401,18 +23485,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Excessive vasodilation and hypotension",
-                  "explanation": "The combination can produce a dangerous pressure fall."
-                },
-                {
-                  "id": "C",
                   "text": "Excessive clotting-factor synthesis",
                   "explanation": "These drugs do not combine through vitamin-K-dependent coagulation."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Excessive gastric acid secretion",
                   "explanation": "This is not the clinically important interaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Excessive vasodilation and hypotension",
+                  "explanation": "The combination can produce a dangerous pressure fall."
                 }
               ],
               "format": "single-best-answer",
@@ -23423,7 +23507,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "32257b263a6fa951237ec6903cd2a629e547910302bf3cfe96166b2f82943129"
                 },
                 {
                   "file": "content.json",
@@ -23440,7 +23524,7 @@
                 "ccu-isosorbide-mononitrate::nitrate_pde5"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--advanced--nitrate_pde5",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -23453,18 +23537,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Long-acting prevention versus the authorized acute chest-pain plan",
-                  "explanation": "Maintenance oral mononitrate is not a rapid-rescue formulation."
-                },
-                {
-                  "id": "C",
                   "text": "The trade name alone rather than its formulation and intended role",
                   "explanation": "The formulation and indication are essential; a familiar name does not establish rapid rescue."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "The tablet’s total milligrams establishing the speed of relief",
                   "explanation": "Dose size alone does not establish an appropriate rescue onset."
+                },
+                {
+                  "id": "D",
+                  "text": "Long-acting prevention versus the authorized acute chest-pain plan",
+                  "explanation": "Maintenance oral mononitrate is not a rapid-rescue formulation."
                 }
               ],
               "point": "Oral long-acting isosorbide mononitrate is preventive, not rapid rescue.",
@@ -23484,20 +23568,20 @@
                 "ccu-isosorbide-mononitrate::nitrate_rescue"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--advanced--nitrate_rescue",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "The prescribed VASOCORE — isosorbide mononitrate and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Product-specific interchangeability and an authorized order",
-                  "explanation": "Formulation differences require a defensible, authorized substitution."
+                  "text": "A previously tolerated dose of the original formulation",
+                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
                 },
                 {
                   "id": "B",
-                  "text": "A previously tolerated dose of the original formulation",
-                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
+                  "text": "Product-specific interchangeability and an authorized order",
+                  "explanation": "Formulation differences require a defensible, authorized substitution."
                 },
                 {
                   "id": "C",
@@ -23525,14 +23609,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-mononitrate",
                   "field": "administration",
-                  "textSha256": "dd1b771c40d2181eec64979aeeacac0f214dd5c8f0269a8c4ce3206b7d2beecf"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "medications",
-                  "itemId": "ccu-isosorbide-mononitrate",
-                  "field": "monitor",
-                  "textSha256": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5"
+                  "textSha256": "951af1ae4eba81312a96a92253e6a73c2079e5a4edb55da7dea6e7deceec2a45"
                 }
               ],
               "criticalForSafety": false,
@@ -23542,10 +23619,10 @@
                 "ccu-isosorbide-mononitrate::formulation"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-mononitrate--advanced--formulation",
-              "answerKey": "A"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -23556,7 +23633,11 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-isosorbide-dinitrate"
+        "label-ccu-isosorbide-dinitrate",
+        "palestinian-eml-2024-antithrombotics",
+        "moh-dinitrate-monograph",
+        "label-isordil-sublingual",
+        "label-riociguat-nitrates"
       ],
       "exams": [
         {
@@ -23603,13 +23684,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inhibits protein synthesis at the 50S subunit",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Nitrates relax vascular smooth muscle and reduce cardiac workload."
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "Nitrates relax vascular smooth muscle and reduce cardiac workload."
                 },
                 {
                   "id": "D",
-                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
-                  "explanation": "Nitrates relax vascular smooth muscle and reduce cardiac workload."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Nitrates relax vascular smooth muscle and reduce cardiac workload."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -23642,7 +23723,7 @@
               "learningPointIds": [
                 "ccu-isosorbide-dinitrate::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -23698,13 +23779,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Treatment of oral fungal lesions",
-                  "explanation": "This is a different treatment role."
+                  "text": "Relief of angina using the prescribed nitrate formulation",
+                  "explanation": "This is a clinical use of the medicine: The sublingual form can relieve angina when prescribed. Swallowed oral tablets are used for prevention. New or persistent ischemic chest pain requires urgent assessment and escalation per the chest-pain protocol."
                 },
                 {
                   "id": "C",
-                  "text": "Relief of angina using the prescribed nitrate formulation",
-                  "explanation": "This is a clinical use of the medicine: Faster nitrate relief than long-acting oral isosorbide mononitrate; IV nitrate therapy may be used for severe/unstable angina or refractory LV failure when specifically ordered."
+                  "text": "Treatment of oral fungal lesions",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
@@ -23719,7 +23800,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "use",
-                  "textSha256": "0fcbf0ace5b6ed03cac233dd3d010ca4ef99706dfa7ae08764d398b17292f4f0"
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
                 },
                 {
                   "file": "content.json",
@@ -23735,20 +23816,20 @@
               "learningPointIds": [
                 "ccu-isosorbide-dinitrate::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "A patient becomes light-headed on standing after CORDIL — isosorbide dinitrate. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Visual acuity and accommodation symptoms",
-                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 },
                 {
                   "id": "B",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
+                  "text": "Visual acuity and accommodation symptoms",
+                  "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
                   "id": "C",
@@ -23769,7 +23850,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "textSha256": "4e4482653c2b1d315ab90a2a3865e9063764de1edb38ff3d4cfa195c0f85a1d7"
                 },
                 {
                   "file": "content.json",
@@ -23792,7 +23873,7 @@
               "learningPointIds": [
                 "ccu-isosorbide-dinitrate::hypotension"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which symptom pattern is compatible with nitrate vasodilation during CORDIL — isosorbide dinitrate therapy?",
@@ -23826,7 +23907,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "textSha256": "4e4482653c2b1d315ab90a2a3865e9063764de1edb38ff3d4cfa195c0f85a1d7"
                 }
               ],
               "criticalForSafety": false,
@@ -23842,23 +23923,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Let it dissolve under the tongue",
-                  "explanation": "This uses the supplied sublingual formulation as intended."
-                },
-                {
-                  "id": "B",
                   "text": "Crush it into a nebulizer chamber",
                   "explanation": "This is not an inhaled formulation."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Dissolve it for a controlled IV infusion",
                   "explanation": "A sublingual tablet is not an IV product."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Swallow it as a modified-release maintenance tablet",
                   "explanation": "That assumes a different formulation and absorption route."
+                },
+                {
+                  "id": "D",
+                  "text": "Let it dissolve under the tongue",
+                  "explanation": "This uses the supplied sublingual formulation as intended."
                 }
               ],
               "format": "single-best-answer",
@@ -23868,8 +23949,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
+                  "field": "use",
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-isosorbide-dinitrate",
                   "field": "administration",
-                  "textSha256": "47fb98ee9db5799ec12b205eaac06851668b9f9e579cefb5f8a9eaadb4e5cc77"
+                  "textSha256": "9951bdd6b782401c011f6791e20ba832986c61ababbe46976082663689ec12e5"
                 },
                 {
                   "file": "content.json",
@@ -23885,10 +23973,53 @@
               "learningPointIds": [
                 "ccu-isosorbide-dinitrate::sl_tablet"
               ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with suspected ACS still has ischemic chest pain after an ordered sublingual dinitrate dose. Which step should the nurse prioritize?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reassess vitals and symptoms and escalate through the chest-pain pathway.",
+                  "explanation": "Persistent ischemic pain needs urgent reassessment. Relief or lack of relief is not diagnostic on its own."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait for a scheduled oral nitrate before notifying the team.",
+                  "explanation": "Oral prophylaxis does not address the need for urgent assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Switch to a swallowed dose and reassess at the next routine observation.",
+                  "explanation": "Changing route can delay urgent evaluation and requires its own order."
+                },
+                {
+                  "id": "D",
+                  "text": "Use the next pain response to decide whether ECG review is needed.",
+                  "explanation": "Nitrate response does not reliably determine whether the pain is ischemic."
+                }
+              ],
+              "point": "Persistent possible ischemic pain calls for urgent reassessment and escalation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-isosorbide-dinitrate",
+                  "field": "use",
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-isosorbide-dinitrate--standard--dinitrate_persistent_pain",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-isosorbide-dinitrate::dinitrate_persistent_pain"
+              ],
               "answerKey": "A"
             }
           ],
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-isosorbide-dinitrate--advanced",
@@ -23950,7 +24081,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "textSha256": "4e4482653c2b1d315ab90a2a3865e9063764de1edb38ff3d4cfa195c0f85a1d7"
                 },
                 {
                   "file": "content.json",
@@ -24007,7 +24138,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "textSha256": "4e4482653c2b1d315ab90a2a3865e9063764de1edb38ff3d4cfa195c0f85a1d7"
                 },
                 {
                   "file": "content.json",
@@ -24056,15 +24187,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
-                  "field": "administration",
-                  "textSha256": "47fb98ee9db5799ec12b205eaac06851668b9f9e579cefb5f8a9eaadb4e5cc77"
+                  "field": "use",
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
-                  "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "field": "administration",
+                  "textSha256": "9951bdd6b782401c011f6791e20ba832986c61ababbe46976082663689ec12e5"
                 },
                 {
                   "file": "content.json",
@@ -24126,18 +24257,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "Nitrates relax vascular smooth muscle and reduce cardiac workload."
+                },
+                {
+                  "id": "B",
                   "text": "Inhibits protein synthesis at the 50S subunit",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Nitrates relax vascular smooth muscle and reduce cardiac workload."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Antagonizes NMDA receptors",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Nitrates relax vascular smooth muscle and reduce cardiac workload."
-                },
-                {
-                  "id": "C",
-                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
-                  "explanation": "Nitrates relax vascular smooth muscle and reduce cardiac workload."
                 },
                 {
                   "id": "D",
@@ -24176,7 +24307,7 @@
                 "ccu-isosorbide-dinitrate::principal-action"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-dinitrate--standard--principal-action",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -24239,7 +24370,7 @@
                 {
                   "id": "C",
                   "text": "Relief of angina using the prescribed nitrate formulation",
-                  "explanation": "This is a clinical use of the medicine: Faster nitrate relief than long-acting oral isosorbide mononitrate; IV nitrate therapy may be used for severe/unstable angina or refractory LV failure when specifically ordered."
+                  "explanation": "This is a clinical use of the medicine: The sublingual form can relieve angina when prescribed. Swallowed oral tablets are used for prevention. New or persistent ischemic chest pain requires urgent assessment and escalation per the chest-pain protocol."
                 },
                 {
                   "id": "D",
@@ -24254,7 +24385,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "use",
-                  "textSha256": "0fcbf0ace5b6ed03cac233dd3d010ca4ef99706dfa7ae08764d398b17292f4f0"
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
                 },
                 {
                   "file": "content.json",
@@ -24305,7 +24436,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "textSha256": "4e4482653c2b1d315ab90a2a3865e9063764de1edb38ff3d4cfa195c0f85a1d7"
                 },
                 {
                   "file": "content.json",
@@ -24363,7 +24494,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "textSha256": "4e4482653c2b1d315ab90a2a3865e9063764de1edb38ff3d4cfa195c0f85a1d7"
                 }
               ],
               "criticalForSafety": false,
@@ -24380,13 +24511,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Let it dissolve under the tongue",
-                  "explanation": "This uses the supplied sublingual formulation as intended."
+                  "text": "Swallow it as a modified-release maintenance tablet",
+                  "explanation": "That assumes a different formulation and absorption route."
                 },
                 {
                   "id": "B",
-                  "text": "Swallow it as a modified-release maintenance tablet",
-                  "explanation": "That assumes a different formulation and absorption route."
+                  "text": "Let it dissolve under the tongue",
+                  "explanation": "This uses the supplied sublingual formulation as intended."
                 },
                 {
                   "id": "C",
@@ -24406,8 +24537,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
+                  "field": "use",
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-isosorbide-dinitrate",
                   "field": "administration",
-                  "textSha256": "47fb98ee9db5799ec12b205eaac06851668b9f9e579cefb5f8a9eaadb4e5cc77"
+                  "textSha256": "9951bdd6b782401c011f6791e20ba832986c61ababbe46976082663689ec12e5"
                 },
                 {
                   "file": "content.json",
@@ -24424,7 +24562,51 @@
                 "ccu-isosorbide-dinitrate::sl_tablet"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-dinitrate--standard--sl_tablet",
-              "answerKey": "A"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient with suspected ACS still has ischemic chest pain after an ordered sublingual dinitrate dose. Which step should the nurse prioritize?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Switch to a swallowed dose and reassess at the next routine observation.",
+                  "explanation": "Changing route can delay urgent evaluation and requires its own order."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait for a scheduled oral nitrate before notifying the team.",
+                  "explanation": "Oral prophylaxis does not address the need for urgent assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Use the next pain response to decide whether ECG review is needed.",
+                  "explanation": "Nitrate response does not reliably determine whether the pain is ischemic."
+                },
+                {
+                  "id": "D",
+                  "text": "Reassess vitals and symptoms and escalate through the chest-pain pathway.",
+                  "explanation": "Persistent ischemic pain needs urgent reassessment. Relief or lack of relief is not diagnostic on its own."
+                }
+              ],
+              "point": "Persistent possible ischemic pain calls for urgent reassessment and escalation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-isosorbide-dinitrate",
+                  "field": "use",
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-isosorbide-dinitrate--7-day--dinitrate_persistent_pain",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-isosorbide-dinitrate::dinitrate_persistent_pain"
+              ],
+              "reusedFromQuestionId": "ccu-isosorbide-dinitrate--standard--dinitrate_persistent_pain",
+              "answerKey": "D"
             },
             {
               "stem": "A patient due to receive CORDIL — isosorbide dinitrate reports recent sildenafil use. What is the principal interaction concern?",
@@ -24458,7 +24640,7 @@
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
                   "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "textSha256": "4e4482653c2b1d315ab90a2a3865e9063764de1edb38ff3d4cfa195c0f85a1d7"
                 },
                 {
                   "file": "content.json",
@@ -24492,13 +24674,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "A previously tolerated dose of the original formulation",
-                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
+                  "text": "Product-specific interchangeability and an authorized order",
+                  "explanation": "Formulation differences require a defensible, authorized substitution."
                 },
                 {
                   "id": "D",
-                  "text": "Product-specific interchangeability and an authorized order",
-                  "explanation": "Formulation differences require a defensible, authorized substitution."
+                  "text": "A previously tolerated dose of the original formulation",
+                  "explanation": "Prior tolerance does not establish equivalence of the new formulation."
                 }
               ],
               "format": "single-best-answer",
@@ -24508,15 +24690,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
-                  "field": "administration",
-                  "textSha256": "47fb98ee9db5799ec12b205eaac06851668b9f9e579cefb5f8a9eaadb4e5cc77"
+                  "field": "use",
+                  "textSha256": "bf131637aea2adde2523acb3faeb404acab0f5bef0003dedef24a8ab06ef63ed"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-isosorbide-dinitrate",
-                  "field": "monitor",
-                  "textSha256": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7"
+                  "field": "administration",
+                  "textSha256": "9951bdd6b782401c011f6791e20ba832986c61ababbe46976082663689ec12e5"
                 },
                 {
                   "file": "content.json",
@@ -24540,10 +24722,10 @@
                 "ccu-isosorbide-dinitrate::formulation"
               ],
               "reusedFromQuestionId": "ccu-isosorbide-dinitrate--advanced--formulation",
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     }

@@ -2728,6 +2728,216 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-aspirin::aspirin_loading": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult with ACS can chew and swallow safely. A 300-mg aspirin loading dose is ordered. Which available formulation and method give the intended rapid effect?",
+        "choices": [
+          {
+            "text": "Chew nonenteric-coated aspirin totaling 300 mg.",
+            "explanation": "Chewing nonenteric-coated aspirin speeds the onset of platelet inhibition.",
+            "id": "A"
+          },
+          {
+            "text": "Swallow enteric-coated aspirin totaling 300 mg.",
+            "explanation": "Enteric coating delays absorption.",
+            "id": "B"
+          },
+          {
+            "text": "Swallow extended-release aspirin totaling 300 mg.",
+            "explanation": "Extended release is unsuitable for rapid loading.",
+            "id": "C"
+          },
+          {
+            "text": "Swallow nonenteric-coated aspirin totaling 300 mg whole.",
+            "explanation": "This delivers the dose, but chewing is preferred when possible for faster onset.",
+            "id": "D"
+          }
+        ],
+        "point": "Use chewable nonenteric-coated aspirin when possible for adult ACS loading.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::nsaid_allergy": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "During medication reconciliation before ACS aspirin loading, the patient reports wheezing shortly after ibuprofen. What should the nurse do with that history?",
+        "choices": [
+          {
+            "text": "Clarify possible NSAID hypersensitivity with the team before giving aspirin.",
+            "explanation": "Respiratory reactions after an NSAID may signal cross-reactivity with aspirin.",
+            "id": "A"
+          },
+          {
+            "text": "Give aspirin if there was no accompanying rash.",
+            "explanation": "A respiratory reaction can occur without a rash.",
+            "id": "B"
+          },
+          {
+            "text": "Use enteric-coated aspirin to avoid triggering the same reaction.",
+            "explanation": "Enteric coating does not prevent hypersensitivity.",
+            "id": "C"
+          },
+          {
+            "text": "Give a lower aspirin loading dose as a bedside test.",
+            "explanation": "An improvised test dose can trigger a reaction and is not a substitute for clinical review.",
+            "id": "D"
+          }
+        ],
+        "point": "A history of wheezing after aspirin or another NSAID requires review before dosing.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient has difficulty swallowing an ordered extended-release isosorbide mononitrate tablet. What should the nurse do?",
+        "choices": [
+          {
+            "text": "Ask pharmacy or the prescriber for a suitable formulation and schedule.",
+            "explanation": "The referenced extended-release tablet should not be crushed or chewed. Any switch needs a reviewed schedule.",
+            "id": "A"
+          },
+          {
+            "text": "Crush the tablet into soft food and retain the same schedule.",
+            "explanation": "Crushing can alter extended release.",
+            "id": "B"
+          },
+          {
+            "text": "Replace it with immediate-release tablets at the same dose and timing.",
+            "explanation": "The release forms have different dosing schedules and are not automatically interchangeable.",
+            "id": "C"
+          },
+          {
+            "text": "Replace it with a sublingual dinitrate tablet at the next scheduled time.",
+            "explanation": "A different nitrate and route require their own order.",
+            "id": "D"
+          }
+        ],
+        "point": "Do not crush an extended-release mononitrate tablet.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::nitrate_pde5": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult on riociguat has a new order for oral isosorbide mononitrate. What should the nurse do before the first dose?",
+        "choices": [
+          {
+            "text": "Pause administration and clarify the order because of additive hypotension.",
+            "explanation": "Riociguat and organic nitrates can produce severe hypotension together.",
+            "id": "A"
+          },
+          {
+            "text": "Give the mononitrate if the baseline BP is within the target range.",
+            "explanation": "Normal baseline pressure does not eliminate the interaction.",
+            "id": "B"
+          },
+          {
+            "text": "Give the dose at the opposite end of the day from riociguat.",
+            "explanation": "Simply separating administration times is not a safe workaround.",
+            "id": "C"
+          },
+          {
+            "text": "Use the immediate-release nitrate instead of the extended-release product.",
+            "explanation": "Changing the release formulation does not resolve the interaction.",
+            "id": "D"
+          }
+        ],
+        "point": "Riociguat with isosorbide mononitrate can cause severe hypotension.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::sl_tablet": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "How should the nurse give a verified 5-mg isosorbide dinitrate tablet ordered by the sublingual route?",
+        "choices": [
+          {
+            "text": "Let the tablet dissolve under the tongue.",
+            "explanation": "That is the labeled route for this formulation.",
+            "id": "A"
+          },
+          {
+            "text": "Place the tablet between cheek and gum.",
+            "explanation": "Buccal placement differs from the prescribed sublingual route.",
+            "id": "B"
+          },
+          {
+            "text": "Swallow the tablet whole with water.",
+            "explanation": "Swallowing does not follow the prescribed sublingual route.",
+            "id": "C"
+          },
+          {
+            "text": "Chew the tablet and then swallow it.",
+            "explanation": "Chewing and swallowing do not deliver the tablet as prescribed.",
+            "id": "D"
+          }
+        ],
+        "point": "Allow the prescribed sublingual dinitrate tablet to dissolve under the tongue.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::nitrate_pde5": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Before sublingual dinitrate for chest pain, a patient reports taking tadalafil this morning. Which action fits the nitrate safety check?",
+        "choices": [
+          {
+            "text": "Withhold the nitrate and escalate promptly through the chest-pain pathway.",
+            "explanation": "Recent tadalafil can dangerously amplify nitrate-related hypotension. Continue urgent assessment.",
+            "id": "A"
+          },
+          {
+            "text": "Give the nitrate if the patient remains supine and BP is initially normal.",
+            "explanation": "Position and normal baseline BP do not prevent the interaction.",
+            "id": "B"
+          },
+          {
+            "text": "Give a smaller sublingual dose and monitor BP more often.",
+            "explanation": "Reducing the nitrate dose does not make recent tadalafil exposure safe.",
+            "id": "C"
+          },
+          {
+            "text": "Switch to swallowed dinitrate and reassess the pain.",
+            "explanation": "The interaction applies to systemic nitrates across routes.",
+            "id": "D"
+          }
+        ],
+        "point": "Withhold the nitrate and escalate if the patient reports recent PDE-5 inhibitor exposure.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -2776,7 +2986,10 @@
     "ccu-dopamine": "vasoactive-coverage-20261111",
     "ccu-warfarin-coumadin": "antithrombotic-coverage-20261111",
     "ccu-enoxaparin": "antithrombotic-coverage-20261111",
-    "ccu-clopidogrel": "antithrombotic-coverage-20261111"
+    "ccu-clopidogrel": "antithrombotic-coverage-20261111",
+    "ccu-aspirin": "aspirin-nitrates-coverage-20261111",
+    "ccu-isosorbide-mononitrate": "aspirin-nitrates-coverage-20261111",
+    "ccu-isosorbide-dinitrate": "aspirin-nitrates-coverage-20261111"
   },
   "correctionRevisions": {
     "ccu-verapamil": "gaza-administration-reference-20261109",
@@ -2796,6 +3009,9 @@
     "ccu-dopamine": "vasoactive-infusion-20261111",
     "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
     "ccu-enoxaparin": "antithrombotic-clinical-20261111",
-    "ccu-clopidogrel": "antithrombotic-clinical-20261111"
+    "ccu-clopidogrel": "antithrombotic-clinical-20261111",
+    "ccu-aspirin": "aspirin-nitrates-clinical-20261111",
+    "ccu-isosorbide-mononitrate": "aspirin-nitrates-clinical-20261111",
+    "ccu-isosorbide-dinitrate": "aspirin-nitrates-clinical-20261111"
   }
 }

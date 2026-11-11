@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "status": "Targeted source and question review",
+  "certifiedFullCoverage": false,
+  "independentClinicalValidation": false,
+  "items": [
+    {
+      "itemId": "ccu-aspirin",
+      "status": "in_review",
+      "newLearningPoints": [
+        "aspirin_acs_dose"
+      ],
+      "revisedLearningPoints": [
+        "ccu-aspirin::aspirin_loading",
+        "ccu-aspirin::nsaid_allergy"
+      ],
+      "remaining": [
+        "Complete fact-to-question mapping and review all retained questions."
+      ]
+    },
+    {
+      "itemId": "ccu-isosorbide-mononitrate",
+      "status": "in_review",
+      "newLearningPoints": [
+        "mononitrate_ir_timing"
+      ],
+      "revisedLearningPoints": [
+        "ccu-isosorbide-mononitrate::formulation",
+        "ccu-isosorbide-mononitrate::nitrate_pde5"
+      ],
+      "remaining": [
+        "Complete fact-to-question mapping and review all retained questions."
+      ]
+    },
+    {
+      "itemId": "ccu-isosorbide-dinitrate",
+      "status": "in_review",
+      "newLearningPoints": [
+        "dinitrate_persistent_pain"
+      ],
+      "revisedLearningPoints": [
+        "ccu-isosorbide-dinitrate::sl_tablet",
+        "ccu-isosorbide-dinitrate::nitrate_pde5"
+      ],
+      "remaining": [
+        "Complete fact-to-question mapping and review all retained questions."
+      ]
+    }
+  ]
+}

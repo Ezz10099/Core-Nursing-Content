@@ -2492,6 +2492,19 @@
       ]
     },
     {
+      "id": "ccu-isosorbide-mononitrate::mononitrate_ir_timing",
+      "itemId": "ccu-isosorbide-mononitrate",
+      "point": "Preserve the ordered asymmetric immediate-release schedule to limit nitrate tolerance.",
+      "questionIds": [
+        "ccu-isosorbide-mononitrate--standard--mononitrate_ir_timing",
+        "ccu-isosorbide-mononitrate--7-day--mononitrate_ir_timing"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-isosorbide-mononitrate::nitrate_pde5",
       "itemId": "ccu-isosorbide-mononitrate",
       "point": "PDE5 inhibitors and nitrates can cause profound hypotension.",
@@ -2604,6 +2617,19 @@
       "questionIds": [
         "ccu-isosorbide-dinitrate--standard--sl_tablet",
         "ccu-isosorbide-dinitrate--7-day--sl_tablet"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-isosorbide-dinitrate::dinitrate_persistent_pain",
+      "itemId": "ccu-isosorbide-dinitrate",
+      "point": "Persistent possible ischemic pain calls for urgent reassessment and escalation.",
+      "questionIds": [
+        "ccu-isosorbide-dinitrate--standard--dinitrate_persistent_pain",
+        "ccu-isosorbide-dinitrate--7-day--dinitrate_persistent_pain"
       ],
       "stages": [
         "standard",
@@ -3055,6 +3081,19 @@
       "stages": [
         "standard",
         "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-aspirin::aspirin_acs_dose",
+      "itemId": "ccu-aspirin",
+      "point": "Distinguish the adult ACS loading range from maintenance.",
+      "questionIds": [
+        "ccu-aspirin--standard--aspirin_acs_dose",
+        "ccu-aspirin--7-day--aspirin_acs_dose"
+      ],
+      "stages": [
+        "standard",
         "7-day"
       ]
     },
@@ -13428,11 +13467,9 @@
           "ccu-isosorbide-mononitrate--standard--nitrate_headache",
           "ccu-isosorbide-mononitrate--advanced--hypotension",
           "ccu-isosorbide-mononitrate--advanced--nitrate_pde5",
-          "ccu-isosorbide-mononitrate--advanced--formulation",
           "ccu-isosorbide-mononitrate--7-day--hypotension",
           "ccu-isosorbide-mononitrate--7-day--nitrate_headache",
-          "ccu-isosorbide-mononitrate--7-day--nitrate_pde5",
-          "ccu-isosorbide-mononitrate--7-day--formulation"
+          "ccu-isosorbide-mononitrate--7-day--nitrate_pde5"
         ],
         "memoryDanger": [
           "ccu-isosorbide-mononitrate--standard--hypotension",
@@ -13442,7 +13479,9 @@
           "ccu-isosorbide-mononitrate--7-day--nitrate_pde5"
         ],
         "administration": [
+          "ccu-isosorbide-mononitrate--standard--mononitrate_ir_timing",
           "ccu-isosorbide-mononitrate--advanced--formulation",
+          "ccu-isosorbide-mononitrate--7-day--mononitrate_ir_timing",
           "ccu-isosorbide-mononitrate--7-day--formulation"
         ]
       },
@@ -13472,7 +13511,13 @@
         ],
         "use": [
           "ccu-isosorbide-dinitrate--standard--treatment-role",
-          "ccu-isosorbide-dinitrate--7-day--treatment-role"
+          "ccu-isosorbide-dinitrate--standard--sl_tablet",
+          "ccu-isosorbide-dinitrate--standard--dinitrate_persistent_pain",
+          "ccu-isosorbide-dinitrate--advanced--formulation",
+          "ccu-isosorbide-dinitrate--7-day--treatment-role",
+          "ccu-isosorbide-dinitrate--7-day--sl_tablet",
+          "ccu-isosorbide-dinitrate--7-day--dinitrate_persistent_pain",
+          "ccu-isosorbide-dinitrate--7-day--formulation"
         ],
         "memoryUse": [
           "ccu-isosorbide-dinitrate--standard--treatment-role",
@@ -13487,11 +13532,9 @@
           "ccu-isosorbide-dinitrate--standard--nitrate_headache",
           "ccu-isosorbide-dinitrate--advanced--hypotension",
           "ccu-isosorbide-dinitrate--advanced--nitrate_pde5",
-          "ccu-isosorbide-dinitrate--advanced--formulation",
           "ccu-isosorbide-dinitrate--7-day--hypotension",
           "ccu-isosorbide-dinitrate--7-day--nitrate_headache",
-          "ccu-isosorbide-dinitrate--7-day--nitrate_pde5",
-          "ccu-isosorbide-dinitrate--7-day--formulation"
+          "ccu-isosorbide-dinitrate--7-day--nitrate_pde5"
         ],
         "memoryDanger": [
           "ccu-isosorbide-dinitrate--standard--hypotension",
@@ -13756,8 +13799,15 @@
           "ccu-aspirin--7-day--antithrombotic_combination"
         ],
         "administration": [
+          "ccu-aspirin--standard--nsaid_allergy",
+          "ccu-aspirin--standard--aspirin_acs_dose",
           "ccu-aspirin--advanced--aspirin_loading",
-          "ccu-aspirin--7-day--aspirin_loading"
+          "ccu-aspirin--advanced--nsaid_allergy",
+          "ccu-aspirin--advanced--antithrombotic_combination",
+          "ccu-aspirin--7-day--nsaid_allergy",
+          "ccu-aspirin--7-day--aspirin_acs_dose",
+          "ccu-aspirin--7-day--aspirin_loading",
+          "ccu-aspirin--7-day--antithrombotic_combination"
         ]
       },
       "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."

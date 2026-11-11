@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 50,
+  "contentVersion": 51,
   "updatedAt": "2026-11-11",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -1217,9 +1217,9 @@
       "header": "VASOCORE — isosorbide mononitrate",
       "drugclass": "Organic nitrate; long-acting antianginal.",
       "availability": "YES for the generic/form. Palestinian essential-medicine data document isosorbide mononitrate 20-mg tablets. Vasocore is the ward-reported trade spelling and should be matched to the package.",
-      "administration": "PO. No dilution, IV line or pump. Give the exact ordered formulation and schedule; do not assume immediate-release and modified-release products are interchangeable.",
+      "administration": "Give orally according to the ordered release formulation. For the referenced once-daily extended-release product, give on arising and do not crush or chew. For the referenced twice-daily immediate-release product, the doses are 7 hours apart. Preserve the ordered timing because continuous nitrate exposure promotes tolerance.",
       "use": "Prevention/control of angina; not the rapid-rescue formulation for an acute angina attack.",
-      "monitor": "• Check BP and dizziness before/after the dose. • Headache is common. • Never combine with sildenafil, tadalafil or vardenafil because profound hypotension/syncope can occur. • Verify whether the local tablet is immediate- or modified-release.",
+      "monitor": "• Check BP and ask about dizziness, particularly on standing. Headache is common. • Concurrent PDE-5 inhibitors (such as sildenafil or tadalafil) or riociguat can cause severe hypotension. Verify current or recent use before administration.",
       "why": "Nitrate vasodilation lowers preload/BP; this oral long-acting form is mainly preventive.",
       "source": "Routine CCU meds · approved bedside format Sep 2026",
       "pages": "CCU internship medication reference · Sep 2026",
@@ -1230,17 +1230,17 @@
       "memoryUse": "Long-acting nitrate used mainly to prevent/control angina.",
       "memoryDanger": "Major danger: hypotension, especially with PDE-5 inhibitors.",
       "mechanism": "Releases nitric oxide → increases cGMP → vascular smooth-muscle relaxation.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "The Palestinian Essential Medicine List (2024) lists a 20-mg tablet without specifying release type. Check the actual product. Example schedules come from formulation-specific DailyMed labeling."
     },
     {
       "id": "ccu-isosorbide-dinitrate",
       "name": "CORDIL — isosorbide dinitrate",
       "header": "CORDIL — isosorbide dinitrate",
       "drugclass": "Organic nitrate vasodilator/antianginal.",
-      "availability": "YES for the Palestinian 5-mg sublingual form. A Palestinian IV isosorbide-dinitrate product was not publicly confirmed in the trolley research; Palestine separately lists IV nitroglycerin. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use. User confirmed on 2 Nov 2026 that Cordil is isosorbide in their ED. Existing reference identifies CORDIL 5 mg as sublingual isosorbide dinitrate; user did not specify the mono-/dinitrate salt or release form, so check the physical product before using formulation-specific advice.",
-      "administration": "For the documented SL product, place under the tongue and let dissolve. Do not treat an SL tablet as an IV product. IV ISDN exists internationally as a controlled infusion, so any IV vial must be verified from the exact product before use.",
-      "use": "Faster nitrate relief than long-acting oral isosorbide mononitrate; IV nitrate therapy may be used for severe/unstable angina or refractory LV failure when specifically ordered.",
-      "monitor": "• Check BP before and after use. • Headache, flushing and dizziness are common. • Check for PDE-5 inhibitor exposure. • If an IV nitrate is ordered, verify the exact product, concentration, tubing and infusion method.",
+      "availability": "The Palestinian Essential Medicine List (2024) includes isosorbide dinitrate 5-mg sublingual tablets. Cordil was reported in the ED and its drawer label was photographed on 2 Nov 2026. Confirm the package, formulation and current stock.",
+      "administration": "For a prescribed sublingual tablet, let it dissolve under the tongue. Swallowed oral tablets and IV infusions use separate formulations and orders.",
+      "use": "The sublingual form can relieve angina when prescribed. Swallowed oral tablets are used for prevention. New or persistent ischemic chest pain requires urgent assessment and escalation per the chest-pain protocol.",
+      "monitor": "• Check BP and symptoms before and after use. Headache, flushing and dizziness may occur. • Check for recent PDE-5 inhibitor use or current riociguat. The combination can cause severe hypotension. If recent use is disclosed, withhold the nitrate and escalate per protocol.",
       "why": "Route determines onset and delivery; nitrate vasodilation can rapidly lower BP.",
       "source": "CCU emergency trolley meds · Deep Research Sep 2026 · ED shelf photograph (2026-11-02)",
       "pages": "CCU internship medication reference · Sep 2026",
@@ -1252,7 +1252,7 @@
       "memoryUse": "Sublingual ISDN is a faster nitrate; IV nitrate formulations are separate products.",
       "memoryDanger": "PDE-5 inhibitor + nitrate can cause severe hypotension.",
       "mechanism": "Nitric-oxide/cGMP-mediated vasodilation.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority.",
+      "mechanismBasis": "Palestinian MOH dinitrate monograph and 2024 essential medicines list support the sublingual formulation. Use the actual product instructions and current facility chest-pain protocol for dosing and escalation.",
       "departments": [
         "ed"
       ]
@@ -1329,9 +1329,9 @@
       "header": "ASA / ASPIRIN — aspirin",
       "drugclass": "Antiplatelet; irreversible platelet COX-1 inhibitor.",
       "availability": "YES. Palestinian MoH currently lists antiplatelet aspirin 100-mg tablets; 81-mg low-dose products are common in some other markets. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
-      "administration": "PO. When an ACS loading dose is specifically ordered, a rapid-release formulation is chewed for faster absorption; an extended-release product is not appropriate for rapid loading.",
+      "administration": "For adult ACS, the ACC/AHA oral loading dose is 162–325 mg when ordered and appropriate. Use nonenteric-coated aspirin and chew it when possible for faster antiplatelet onset. Usual ACS maintenance is 75–100 mg daily. Verify the actual tablet strength and formulation.",
       "use": "Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product.",
-      "monitor": "• 'Baby aspirin' is NOT a different drug and does not mean it is intended for babies; it is colloquial shorthand for low-dose aspirin. • Check the exact tablet strength and indication. • Check active bleeding, GI-bleeding history and aspirin hypersensitivity. • Inspect stool, urine and puncture sites when combined with other antithrombotics. • Aspirin + clopidogrel + heparin/LMWH increases bleeding tendency.",
+      "monitor": "• Check for active bleeding, a history of GI bleeding and aspirin hypersensitivity. Wheezing after aspirin or another NSAID warrants review before a dose. • Check for bleeding when aspirin is combined with other antithrombotics. • “Baby aspirin” is shorthand for low-dose aspirin.",
       "why": "Irreversible platelet inhibition helps prevent thrombosis but increases bleeding risk.",
       "source": "Routine CCU meds · approved bedside format Sep 2026 · ED shelf photograph (2026-11-02)",
       "pages": "CCU internship medication reference · Sep 2026",
