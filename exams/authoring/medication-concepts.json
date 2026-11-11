@@ -8984,5 +8984,89 @@
       ],
       "correct": 0
     }
+  },
+  "aspirin_acs_dose": {
+    "point": "Distinguish the adult ACS loading range from maintenance.",
+    "anchor": "162–325 mg",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which oral aspirin dose pair matches adult ACS guidance when both loading and maintenance are indicated?",
+      "choices": [
+        {
+          "text": "162–325 mg loading, then 75–100 mg daily.",
+          "explanation": "These are the guideline loading and maintenance ranges."
+        },
+        {
+          "text": "75–100 mg loading, then 75–100 mg daily.",
+          "explanation": "This uses a maintenance amount for loading."
+        },
+        {
+          "text": "162–325 mg loading, then 162–325 mg daily.",
+          "explanation": "This repeats the loading range during maintenance."
+        },
+        {
+          "text": "75–100 mg loading, then 162–325 mg daily.",
+          "explanation": "This reverses the intended dose ranges."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "mononitrate_ir_timing": {
+    "point": "Preserve the ordered asymmetric immediate-release schedule to limit nitrate tolerance.",
+    "anchor": "7 hours apart",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A twice-daily immediate-release mononitrate order is scheduled for 08:00 and 15:00. Why should the nurse preserve the ordered times?",
+      "choices": [
+        {
+          "text": "The longer overnight low-nitrate interval helps limit tolerance.",
+          "explanation": "Seven hours between daytime doses leaves a longer low-exposure period overnight."
+        },
+        {
+          "text": "The shorter daytime interval maintains continuous nitrate levels overnight.",
+          "explanation": "Continuous exposure encourages tolerance."
+        },
+        {
+          "text": "The afternoon dose provides rapid rescue for any evening chest pain.",
+          "explanation": "This oral drug is used for prevention."
+        },
+        {
+          "text": "The afternoon dose prevents a nitrate–PDE-5 inhibitor interaction overnight.",
+          "explanation": "Changing the dosing interval does not make that combination safe."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "dinitrate_persistent_pain": {
+    "point": "Persistent possible ischemic pain calls for urgent reassessment and escalation.",
+    "anchor": "persistent ischemic chest pain",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient with suspected ACS still has ischemic chest pain after an ordered sublingual dinitrate dose. Which step should the nurse prioritize?",
+      "choices": [
+        {
+          "text": "Reassess vitals and symptoms and escalate through the chest-pain pathway.",
+          "explanation": "Persistent ischemic pain needs urgent reassessment. Relief or lack of relief is not diagnostic on its own."
+        },
+        {
+          "text": "Wait for a scheduled oral nitrate before notifying the team.",
+          "explanation": "Oral prophylaxis does not address the need for urgent assessment."
+        },
+        {
+          "text": "Use the next pain response to decide whether ECG review is needed.",
+          "explanation": "Nitrate response does not reliably determine whether the pain is ischemic."
+        },
+        {
+          "text": "Switch to a swallowed dose and reassess at the next routine observation.",
+          "explanation": "Changing route can delay urgent evaluation and requires its own order."
+        }
+      ],
+      "correct": 0
+    }
   }
 }
