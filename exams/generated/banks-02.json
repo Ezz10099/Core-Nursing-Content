@@ -3080,7 +3080,9 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-aspirin"
+        "label-ccu-aspirin",
+        "aha-acc-acs-2025-antiplatelets",
+        "palestinian-eml-2024-antithrombotics"
       ],
       "exams": [
         {
@@ -3217,23 +3219,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Antiplatelet treatment when indicated",
+                  "explanation": "This is a clinical use of the medicine: Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product."
+                },
+                {
+                  "id": "B",
                   "text": "Suppression of bacterial protein synthesis",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Relief of bronchospasm through airway receptor stimulation",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Antiplatelet treatment when indicated",
-                  "explanation": "This is a clinical use of the medicine: Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -3259,7 +3261,7 @@
               "learningPointIds": [
                 "ccu-aspirin::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "What does the term baby aspirin mean?",
@@ -3300,7 +3302,7 @@
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -3363,8 +3365,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
+                  "field": "administration",
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -3388,9 +3397,52 @@
                 "ccu-aspirin::nsaid_allergy"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which oral aspirin dose pair matches adult ACS guidance when both loading and maintenance are indicated?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "75–100 mg loading, then 75–100 mg daily.",
+                  "explanation": "This uses a maintenance amount for loading."
+                },
+                {
+                  "id": "B",
+                  "text": "162–325 mg loading, then 162–325 mg daily.",
+                  "explanation": "This repeats the loading range during maintenance."
+                },
+                {
+                  "id": "C",
+                  "text": "75–100 mg loading, then 162–325 mg daily.",
+                  "explanation": "This reverses the intended dose ranges."
+                },
+                {
+                  "id": "D",
+                  "text": "162–325 mg loading, then 75–100 mg daily.",
+                  "explanation": "These are the guideline loading and maintenance ranges."
+                }
+              ],
+              "point": "Distinguish the adult ACS loading range from maintenance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
+                  "field": "administration",
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-aspirin--standard--aspirin_acs_dose",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-aspirin::aspirin_acs_dose"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-aspirin--advanced",
@@ -3452,7 +3504,7 @@
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -3509,7 +3561,7 @@
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
                   "field": "administration",
-                  "textSha256": "5835f36d281abf14a7335afabc2fcfcac34affda1e276821d97cf4ffca798e80"
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
                 }
               ],
               "criticalForSafety": false,
@@ -3558,8 +3610,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
+                  "field": "administration",
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -3622,8 +3681,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
+                  "field": "administration",
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -3692,23 +3758,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Irreversibly inhibits platelet COX-1",
-                  "explanation": "Reduced thromboxane A2 synthesis impairs platelet aggregation."
-                },
-                {
-                  "id": "B",
                   "text": "Slows AV-nodal calcium-dependent conduction",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Inhibits bacterial cell-wall synthesis",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Stabilizes inactivated voltage-gated sodium channels",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
+                },
+                {
+                  "id": "D",
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -3742,7 +3808,7 @@
                 "ccu-aspirin::principal-action"
               ],
               "reusedFromQuestionId": "ccu-aspirin--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -3750,18 +3816,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Antiplatelet",
+                  "explanation": "Antiplatelet; irreversible platelet COX-1 inhibitor."
+                },
+                {
+                  "id": "B",
                   "text": "Fibrinolytic",
                   "explanation": "The medicine is classified as: Antiplatelet; irreversible platelet COX-1 inhibitor."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Antifibrinolytic",
                   "explanation": "The medicine is classified as: Antiplatelet; irreversible platelet COX-1 inhibitor."
-                },
-                {
-                  "id": "C",
-                  "text": "Antiplatelet",
-                  "explanation": "Antiplatelet; irreversible platelet COX-1 inhibitor."
                 },
                 {
                   "id": "D",
@@ -3786,7 +3852,7 @@
                 "ccu-aspirin::drug-class"
               ],
               "reusedFromQuestionId": "ccu-aspirin--standard--drug-class",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -3878,7 +3944,7 @@
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -3914,13 +3980,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Bronchospasm after aspirin",
-                  "explanation": "This may indicate a significant reaction relevant to another NSAID."
+                  "text": "Dry cough during an ACE inhibitor",
+                  "explanation": "This is a different treatment-related effect."
                 },
                 {
                   "id": "C",
-                  "text": "Dry cough during an ACE inhibitor",
-                  "explanation": "This is a different treatment-related effect."
+                  "text": "Bronchospasm after aspirin",
+                  "explanation": "This may indicate a significant reaction relevant to another NSAID."
                 },
                 {
                   "id": "D",
@@ -3942,8 +4008,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
+                  "field": "administration",
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -3967,30 +4040,74 @@
                 "ccu-aspirin::nsaid_allergy"
               ],
               "reusedFromQuestionId": "ccu-aspirin--standard--nsaid_allergy",
-              "answerKey": "B"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which oral aspirin dose pair matches adult ACS guidance when both loading and maintenance are indicated?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "162–325 mg loading, then 75–100 mg daily.",
+                  "explanation": "These are the guideline loading and maintenance ranges."
+                },
+                {
+                  "id": "B",
+                  "text": "75–100 mg loading, then 75–100 mg daily.",
+                  "explanation": "This uses a maintenance amount for loading."
+                },
+                {
+                  "id": "C",
+                  "text": "75–100 mg loading, then 162–325 mg daily.",
+                  "explanation": "This reverses the intended dose ranges."
+                },
+                {
+                  "id": "D",
+                  "text": "162–325 mg loading, then 162–325 mg daily.",
+                  "explanation": "This repeats the loading range during maintenance."
+                }
+              ],
+              "point": "Distinguish the adult ACS loading range from maintenance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
+                  "field": "administration",
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-aspirin--7-day--aspirin_acs_dose",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-aspirin::aspirin_acs_dose"
+              ],
+              "reusedFromQuestionId": "ccu-aspirin--standard--aspirin_acs_dose",
+              "answerKey": "A"
             },
             {
               "stem": "During ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”) therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Clinically important blood loss",
-                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
-                },
-                {
-                  "id": "B",
                   "text": "Isolated vasodilator headache",
                   "explanation": "This does not explain melena and the systemic blood-loss pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "A therapeutic reduction in coagulation alone",
                   "explanation": "Bleeding with circulatory symptoms is more than evidence of the intended drug action."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Uncomplicated postural intolerance",
                   "explanation": "This does not account for the new evidence of GI bleeding."
+                },
+                {
+                  "id": "D",
+                  "text": "Clinically important blood loss",
+                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -4001,7 +4118,7 @@
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -4025,7 +4142,7 @@
                 "ccu-aspirin::bleeding"
               ],
               "reusedFromQuestionId": "ccu-aspirin--advanced--bleeding",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "An ACS aspirin loading dose is ordered. Why is the exact formulation important?",
@@ -4037,18 +4154,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Rapid-release chewing can provide faster absorption than delayed-release swallowing",
+                  "explanation": "The loading aim differs from routine maintenance administration."
+                },
+                {
+                  "id": "C",
                   "text": "Modified-release swallowing provides the same immediate absorption target",
                   "explanation": "Release characteristics can delay absorption."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Aspirin needs parenteral dilution to inhibit platelets",
                   "explanation": "The prescribed oral loading formulation does not require IV preparation."
-                },
-                {
-                  "id": "D",
-                  "text": "Rapid-release chewing can provide faster absorption than delayed-release swallowing",
-                  "explanation": "The loading aim differs from routine maintenance administration."
                 }
               ],
               "format": "single-best-answer",
@@ -4059,7 +4176,7 @@
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
                   "field": "administration",
-                  "textSha256": "5835f36d281abf14a7335afabc2fcfcac34affda1e276821d97cf4ffca798e80"
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
                 }
               ],
               "criticalForSafety": false,
@@ -4069,7 +4186,7 @@
                 "ccu-aspirin::aspirin_loading"
               ],
               "reusedFromQuestionId": "ccu-aspirin--advanced--aspirin_loading",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A patient receives aspirin, clopidogrel, and an ordered heparin-family treatment. Which shared monitoring concern becomes especially important?",
@@ -4081,18 +4198,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Bleeding at visible and occult sites",
+                  "explanation": "Different antithrombotic mechanisms can add to bleeding tendency."
+                },
+                {
+                  "id": "C",
                   "text": "Reduced glucose from a shared insulin-like mechanism",
                   "explanation": "These drugs do not share that primary action."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Sedation from a shared GABA-A effect",
                   "explanation": "This is not their common pharmacological concern."
-                },
-                {
-                  "id": "D",
-                  "text": "Bleeding at visible and occult sites",
-                  "explanation": "Different antithrombotic mechanisms can add to bleeding tendency."
                 }
               ],
               "format": "single-best-answer",
@@ -4109,8 +4226,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-aspirin",
+                  "field": "administration",
+                  "textSha256": "3416afecf61b39907ac54172567b68acee6114bbd9ed2b67da2df83b6af0eb6f"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
                   "field": "monitor",
-                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                  "textSha256": "215d1882e27b2ba6a2671f78e49fde20b2fb3a61c29027c97c600b351c731bd1"
                 },
                 {
                   "file": "content.json",
@@ -4141,10 +4265,10 @@
                 "ccu-aspirin::antithrombotic_combination"
               ],
               "reusedFromQuestionId": "ccu-aspirin--advanced--antithrombotic_combination",
-              "answerKey": "D"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
