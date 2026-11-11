@@ -8592,5 +8592,117 @@
         }
       ]
     }
+  },
+  "adenosine_second_dose": {
+    "point": "The standard second adult AHA dose is 12 mg rapid IV with a saline flush.",
+    "anchor": "12 mg",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An adult remains stable in regular narrow-complex SVT after a correctly delivered 6 mg adenosine bolus. What is the standard second AHA dose if indicated?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "12 mg",
+          "explanation": "The standard second dose is 12 mg rapid IV with an immediate saline flush."
+        },
+        {
+          "text": "6 mg",
+          "explanation": "This is the standard first dose."
+        },
+        {
+          "text": "9 mg",
+          "explanation": "The standard AHA sequence does not use 9 mg."
+        },
+        {
+          "text": "18 mg",
+          "explanation": "18 mg is the cumulative amount after both standard doses."
+        }
+      ]
+    }
+  },
+  "adenosine_dipyridamole": {
+    "point": "Dipyridamole may potentiate adenosine, while methylxanthines may reduce its effect.",
+    "anchor": "dipyridamole",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "The medication list shows dipyridamole before planned adenosine. What effect should the nurse flag to the team?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Dipyridamole can increase the response to adenosine.",
+          "explanation": "Dipyridamole potentiates adenosine. Flag it before administration so the team can account for the interaction."
+        },
+        {
+          "text": "Dipyridamole can reduce the response to adenosine.",
+          "explanation": "Theophylline and aminophylline can reduce the response. Dipyridamole has the opposite effect."
+        },
+        {
+          "text": "Dipyridamole changes the response only if a saline flush is omitted.",
+          "explanation": "The interaction can matter even with a correctly delivered dose."
+        },
+        {
+          "text": "Dipyridamole changes the response only with the second bolus.",
+          "explanation": "The interaction can matter with the first dose as well."
+        }
+      ]
+    }
+  },
+  "atropine_repeat_limit": {
+    "point": "Repeat atropine every 3–5 minutes if indicated, with a 3 mg maximum cumulative dose.",
+    "anchor": "up to a total of 3 mg",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which repeat-dose order matches the AHA adult bradycardia pathway after the initial atropine bolus?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Every 3–5 minutes as indicated, maximum total 3 mg",
+          "explanation": "Count the initial bolus toward the 3 mg maximum."
+        },
+        {
+          "text": "Every 3–5 minutes as indicated, maximum total 5 mg",
+          "explanation": "The interval fits, but 5 mg exceeds the maximum."
+        },
+        {
+          "text": "Every 5–10 minutes as indicated, maximum total 3 mg",
+          "explanation": "The maximum fits, but the repeat interval is 3–5 minutes."
+        },
+        {
+          "text": "Every 5–10 minutes as indicated, maximum total 5 mg",
+          "explanation": "Both the interval and maximum differ from the adult pathway."
+        }
+      ]
+    }
+  },
+  "heparin_protamine": {
+    "point": "Protamine sulfate reverses UFH when ordered.",
+    "anchor": "protamine sulfate",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient develops major bleeding during a UFH infusion. Which reversal agent should the nurse anticipate the team may order?",
+      "correct": 0,
+      "choices": [
+        {
+          "text": "Protamine sulfate",
+          "explanation": "Protamine neutralizes UFH."
+        },
+        {
+          "text": "Phytonadione",
+          "explanation": "Vitamin K is used for warfarin reversal."
+        },
+        {
+          "text": "Idarucizumab",
+          "explanation": "Idarucizumab reverses dabigatran."
+        },
+        {
+          "text": "Andexanet alfa",
+          "explanation": "This agent targets selected direct factor Xa inhibitors."
+        }
+      ]
+    }
   }
 }

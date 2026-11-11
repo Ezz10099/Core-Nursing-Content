@@ -647,7 +647,8 @@
         "heparin_infusion",
         "heparin_samples",
         "infusion_precision",
-        "lmwh_route"
+        "lmwh_route",
+        "heparin_protamine"
       ]
     },
     "ccu-aspirin": {
@@ -835,7 +836,8 @@
         "anticholinergic",
         "atropine_failure",
         "atropine_route",
-        "rhythm_response"
+        "rhythm_response",
+        "atropine_repeat_limit"
       ]
     },
     "ccu-pantoprazole": {
@@ -984,7 +986,9 @@
         "adenosine_interaction",
         "bronchospasm_risk",
         "tachy_instability",
-        "adenosine_first"
+        "adenosine_first",
+        "adenosine_second_dose",
+        "adenosine_dipyridamole"
       ]
     },
     "ccu-labetalol": {

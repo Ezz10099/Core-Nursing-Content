@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "status": "Targeted author review of three CCU medications",
+  "certifiedFullCoverage": false,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "items": [
+    {
+      "itemId": "ccu-adenosine",
+      "status": "in_review",
+      "newLearningPoints": [
+        "adenosine_second_dose",
+        "adenosine_dipyridamole"
+      ],
+      "revisedLearningPoints": [
+        "ccu-adenosine::treatment-role"
+      ],
+      "localSource": "gaza-moh-injectables-2018-adenosine",
+      "remaining": [
+        "Map all important taught facts to the final scored questions.",
+        "Review the remaining scored choices and confirm current facility protocol where available."
+      ]
+    },
+    {
+      "itemId": "ccu-atropine",
+      "status": "in_review",
+      "newLearningPoints": [
+        "atropine_repeat_limit"
+      ],
+      "revisedLearningPoints": [
+        "ccu-atropine::atropine_route",
+        "ccu-atropine::atropine_failure"
+      ],
+      "localSource": "gaza-moh-injectables-2018-atropine",
+      "remaining": [
+        "Map all important taught facts to the final scored questions.",
+        "Review the remaining scored choices and confirm current facility protocol where available."
+      ]
+    },
+    {
+      "itemId": "ccu-heparin-ufh",
+      "status": "in_review",
+      "newLearningPoints": [
+        "heparin_protamine"
+      ],
+      "revisedLearningPoints": [
+        "ccu-heparin-ufh::heparin_samples",
+        "ccu-heparin-ufh::hit"
+      ],
+      "localSource": "gaza-moh-injectables-2018-heparin-ufh",
+      "remaining": [
+        "Map all important taught facts to the final scored questions.",
+        "Review the remaining scored choices and confirm current facility protocol where available."
+      ]
+    }
+  ]
+}
