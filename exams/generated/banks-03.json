@@ -16834,7 +16834,8 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-trolley-spironolactone"
+        "label-trolley-spironolactone",
+        "msf-spironolactone-20261110"
       ],
       "exams": [
         {
@@ -16976,18 +16977,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Selected chronic HFrEF, hypertension, or aldosterone-related retention",
+                  "explanation": "This is a clinical use of the medicine: Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide."
+                },
+                {
+                  "id": "C",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Suppression of bacterial cell-wall synthesis",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Selected chronic HFrEF, hypertension, or aldosterone-related retention",
-                  "explanation": "This is a clinical use of the medicine: Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -17013,7 +17014,7 @@
               "learningPointIds": [
                 "trolley-spironolactone::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting SPIRONOLACTONE — Aldactone?",
@@ -17054,7 +17055,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 },
                 {
                   "file": "content.json",
@@ -17118,7 +17119,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 },
                 {
                   "file": "content.json",
@@ -17146,18 +17147,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
-                },
-                {
-                  "id": "C",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
+                },
+                {
+                  "id": "D",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -17168,7 +17169,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 }
               ],
               "criticalForSafety": false,
@@ -17177,10 +17178,225 @@
               "learningPointIds": [
                 "trolley-spironolactone::hypotension"
               ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which laboratory pair is central to spironolactone monitoring?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Serum sodium and troponin alone",
+                  "explanation": "This omits both key monitoring domains."
+                },
+                {
+                  "id": "B",
+                  "text": "Serum sodium and creatinine alone",
+                  "explanation": "This omits the key potassium measurement."
+                },
+                {
+                  "id": "C",
+                  "text": "Serum potassium and creatinine/renal function",
+                  "explanation": "Potassium retention becomes more hazardous with renal impairment."
+                },
+                {
+                  "id": "D",
+                  "text": "Serum potassium and troponin alone",
+                  "explanation": "Troponin does not replace renal-function surveillance."
+                }
+              ],
+              "point": "Select potassium and renal surveillance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--standard--spirono_labs",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_labs"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which added pair most directly increases spironolactone-related hyperkalemia risk?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Potassium supplements and ordinary sodium-chloride salt",
+                  "explanation": "Only the first adds the named potassium exposure."
+                },
+                {
+                  "id": "B",
+                  "text": "Oral iron and potassium-containing salt substitutes",
+                  "explanation": "The potassium salt substitute matters; iron is not the second potassium exposure."
+                },
+                {
+                  "id": "C",
+                  "text": "Oral iron and ordinary sodium-chloride salt",
+                  "explanation": "This pair does not identify the two potassium additions sought."
+                },
+                {
+                  "id": "D",
+                  "text": "Potassium supplements and potassium-containing salt substitutes",
+                  "explanation": "Both add potassium to a potassium-sparing treatment."
+                }
+              ],
+              "point": "Recognize two potassium sources requiring review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--standard--spirono_supplements",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_supplements"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Significant hyperkalemia and worsening renal function are found before a scheduled spironolactone dose. Which response addresses the drug's mechanism?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give the dose because renal impairment removes the electrolyte risk",
+                  "explanation": "Renal impairment can increase potassium-related risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Give the dose to increase urinary potassium loss",
+                  "explanation": "Spironolactone reduces rather than increases potassium loss."
+                },
+                {
+                  "id": "C",
+                  "text": "Withhold routine administration and promptly escalate the findings",
+                  "explanation": "Additional potassium-sparing therapy can worsen the risk; obtain an urgent prescribing/clinical plan."
+                },
+                {
+                  "id": "D",
+                  "text": "Add a potassium supplement to balance the diuretic dose",
+                  "explanation": "This can worsen hyperkalemia."
+                }
+              ],
+              "point": "Escalate unsafe potassium/renal findings before routine dosing.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--standard--spirono_lab_escalation",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_lab_escalation"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair fits additional chronic/subacute roles for spironolactone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Rapid BP-rescue treatment and aldosterone-mediated fluid retention",
+                  "explanation": "Its role is not rapid BP rescue."
+                },
+                {
+                  "id": "B",
+                  "text": "Resistant hypertension and aldosterone-mediated fluid retention",
+                  "explanation": "Its aldosterone antagonism supports these selected roles."
+                },
+                {
+                  "id": "C",
+                  "text": "Resistant hypertension and immediate potassium removal",
+                  "explanation": "It is not a potassium-removing emergency treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "Rapid BP-rescue treatment and immediate potassium removal",
+                  "explanation": "Neither is its intended rescue role."
+                }
+              ],
+              "point": "Recall additional aldosterone-related treatment roles.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "use",
+                  "textSha256": "c7a5bcfc60546927c54a1a19d03884c3e231a786bcf0509ddf96c490f07d6f2a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-spironolactone--standard--spirono_additional_roles",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_additional_roles"
+              ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After spironolactone is initiated or titrated, when should the early potassium check be arranged under the prescribing plan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Within one week, with more frequent checks when risk requires",
+                  "explanation": "The current label calls for a check within one week and regularly thereafter."
+                },
+                {
+                  "id": "B",
+                  "text": "After one month even when renal risk is high",
+                  "explanation": "This postpones the early monitoring specified."
+                },
+                {
+                  "id": "C",
+                  "text": "Only if symptoms of hyperkalemia become obvious",
+                  "explanation": "Hyperkalemia may be clinically silent."
+                },
+                {
+                  "id": "D",
+                  "text": "Only after the drug has been discontinued",
+                  "explanation": "Monitoring is needed during treatment."
+                }
+              ],
+              "point": "Arrange early potassium surveillance after initiation/titration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--standard--spirono_early_k",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_early_k"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 6
+          "questionCount": 11
         },
         {
           "id": "trolley-spironolactone--advanced",
@@ -17249,7 +17465,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 },
                 {
                   "file": "content.json",
@@ -17313,7 +17529,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 }
               ],
               "criticalForSafety": false,
@@ -17411,13 +17627,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Blocks mineralocorticoid receptors",
-                  "explanation": "Aldosterone antagonism reduces sodium retention and potassium loss."
+                  "text": "Inhibits bacterial cell-wall synthesis",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Aldosterone antagonism reduces sodium retention and potassium loss."
                 },
                 {
                   "id": "B",
-                  "text": "Inhibits bacterial cell-wall synthesis",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Aldosterone antagonism reduces sodium retention and potassium loss."
+                  "text": "Blocks mineralocorticoid receptors",
+                  "explanation": "Aldosterone antagonism reduces sodium retention and potassium loss."
                 },
                 {
                   "id": "C",
@@ -17461,7 +17677,7 @@
                 "trolley-spironolactone::principal-action"
               ],
               "reusedFromQuestionId": "trolley-spironolactone--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -17513,18 +17729,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Selected chronic HFrEF, hypertension, or aldosterone-related retention",
+                  "explanation": "This is a clinical use of the medicine: Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide."
+                },
+                {
+                  "id": "B",
                   "text": "Reversal of vitamin-K-antagonist activity",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Suppression of bacterial cell-wall synthesis",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "C",
-                  "text": "Selected chronic HFrEF, hypertension, or aldosterone-related retention",
-                  "explanation": "This is a clinical use of the medicine: Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide."
                 },
                 {
                   "id": "D",
@@ -17556,7 +17772,7 @@
                 "trolley-spironolactone::treatment-role"
               ],
               "reusedFromQuestionId": "trolley-spironolactone--standard--treatment-role",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which electrolyte trend is a particular concern after starting SPIRONOLACTONE — Aldactone?",
@@ -17597,7 +17813,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 },
                 {
                   "file": "content.json",
@@ -17635,23 +17851,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
-                },
-                {
-                  "id": "B",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "INR and puncture-site bleeding trends",
                   "explanation": "These assess anticoagulation and bleeding rather than renal function."
+                },
+                {
+                  "id": "D",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 }
               ],
               "format": "single-best-answer",
@@ -17662,7 +17878,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 },
                 {
                   "file": "content.json",
@@ -17679,7 +17895,7 @@
                 "trolley-spironolactone::renal_monitor"
               ],
               "reusedFromQuestionId": "trolley-spironolactone--standard--renal_monitor",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after SPIRONOLACTONE — Aldactone. Which paired assessment best checks the suspected adverse effect?",
@@ -17713,7 +17929,7 @@
                   "collection": "medications",
                   "itemId": "trolley-spironolactone",
                   "field": "monitor",
-                  "textSha256": "acba8f2faccfaaff64ec3ad89153756bfcddba29a6dd9f8eda7baad2455bbb20"
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
                 }
               ],
               "criticalForSafety": false,
@@ -17724,6 +17940,226 @@
               ],
               "reusedFromQuestionId": "trolley-spironolactone--standard--hypotension",
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which laboratory pair is central to spironolactone monitoring?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Serum potassium and creatinine/renal function",
+                  "explanation": "Potassium retention becomes more hazardous with renal impairment."
+                },
+                {
+                  "id": "B",
+                  "text": "Serum sodium and troponin alone",
+                  "explanation": "This omits both key monitoring domains."
+                },
+                {
+                  "id": "C",
+                  "text": "Serum potassium and troponin alone",
+                  "explanation": "Troponin does not replace renal-function surveillance."
+                },
+                {
+                  "id": "D",
+                  "text": "Serum sodium and creatinine alone",
+                  "explanation": "This omits the key potassium measurement."
+                }
+              ],
+              "point": "Select potassium and renal surveillance.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--7-day--spirono_labs",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_labs"
+              ],
+              "reusedFromQuestionId": "trolley-spironolactone--standard--spirono_labs",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which added pair most directly increases spironolactone-related hyperkalemia risk?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Oral iron and ordinary sodium-chloride salt",
+                  "explanation": "This pair does not identify the two potassium additions sought."
+                },
+                {
+                  "id": "B",
+                  "text": "Oral iron and potassium-containing salt substitutes",
+                  "explanation": "The potassium salt substitute matters; iron is not the second potassium exposure."
+                },
+                {
+                  "id": "C",
+                  "text": "Potassium supplements and potassium-containing salt substitutes",
+                  "explanation": "Both add potassium to a potassium-sparing treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "Potassium supplements and ordinary sodium-chloride salt",
+                  "explanation": "Only the first adds the named potassium exposure."
+                }
+              ],
+              "point": "Recognize two potassium sources requiring review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--7-day--spirono_supplements",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_supplements"
+              ],
+              "reusedFromQuestionId": "trolley-spironolactone--standard--spirono_supplements",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Significant hyperkalemia and worsening renal function are found before a scheduled spironolactone dose. Which response addresses the drug's mechanism?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give the dose because renal impairment removes the electrolyte risk",
+                  "explanation": "Renal impairment can increase potassium-related risk."
+                },
+                {
+                  "id": "B",
+                  "text": "Withhold routine administration and promptly escalate the findings",
+                  "explanation": "Additional potassium-sparing therapy can worsen the risk; obtain an urgent prescribing/clinical plan."
+                },
+                {
+                  "id": "C",
+                  "text": "Add a potassium supplement to balance the diuretic dose",
+                  "explanation": "This can worsen hyperkalemia."
+                },
+                {
+                  "id": "D",
+                  "text": "Give the dose to increase urinary potassium loss",
+                  "explanation": "Spironolactone reduces rather than increases potassium loss."
+                }
+              ],
+              "point": "Escalate unsafe potassium/renal findings before routine dosing.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--7-day--spirono_lab_escalation",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_lab_escalation"
+              ],
+              "reusedFromQuestionId": "trolley-spironolactone--standard--spirono_lab_escalation",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which pair fits additional chronic/subacute roles for spironolactone?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Rapid BP-rescue treatment and aldosterone-mediated fluid retention",
+                  "explanation": "Its role is not rapid BP rescue."
+                },
+                {
+                  "id": "B",
+                  "text": "Resistant hypertension and immediate potassium removal",
+                  "explanation": "It is not a potassium-removing emergency treatment."
+                },
+                {
+                  "id": "C",
+                  "text": "Rapid BP-rescue treatment and immediate potassium removal",
+                  "explanation": "Neither is its intended rescue role."
+                },
+                {
+                  "id": "D",
+                  "text": "Resistant hypertension and aldosterone-mediated fluid retention",
+                  "explanation": "Its aldosterone antagonism supports these selected roles."
+                }
+              ],
+              "point": "Recall additional aldosterone-related treatment roles.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "use",
+                  "textSha256": "c7a5bcfc60546927c54a1a19d03884c3e231a786bcf0509ddf96c490f07d6f2a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "trolley-spironolactone--7-day--spirono_additional_roles",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_additional_roles"
+              ],
+              "reusedFromQuestionId": "trolley-spironolactone--standard--spirono_additional_roles",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After spironolactone is initiated or titrated, when should the early potassium check be arranged under the prescribing plan?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Within one week, with more frequent checks when risk requires",
+                  "explanation": "The current label calls for a check within one week and regularly thereafter."
+                },
+                {
+                  "id": "B",
+                  "text": "Only after the drug has been discontinued",
+                  "explanation": "Monitoring is needed during treatment."
+                },
+                {
+                  "id": "C",
+                  "text": "After one month even when renal risk is high",
+                  "explanation": "This postpones the early monitoring specified."
+                },
+                {
+                  "id": "D",
+                  "text": "Only if symptoms of hyperkalemia become obvious",
+                  "explanation": "Hyperkalemia may be clinically silent."
+                }
+              ],
+              "point": "Arrange early potassium surveillance after initiation/titration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "trolley-spironolactone",
+                  "field": "monitor",
+                  "textSha256": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "trolley-spironolactone--7-day--spirono_early_k",
+              "points": 1,
+              "learningPointIds": [
+                "trolley-spironolactone::spirono_early_k"
+              ],
+              "reusedFromQuestionId": "trolley-spironolactone--standard--spirono_early_k",
+              "answerKey": "A"
             },
             {
               "stem": "Why should oral spironolactone not be treated as interchangeable with IV furosemide in an acute decongestion plan?",
@@ -17740,13 +18176,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Both are the same active drug at different strengths",
-                  "explanation": "They are different medicines."
+                  "text": "The class, route, onset, and therapeutic roles differ",
+                  "explanation": "Chronic aldosterone antagonism is not the same as rapid IV loop diuresis."
                 },
                 {
                   "id": "D",
-                  "text": "The class, route, onset, and therapeutic roles differ",
-                  "explanation": "Chronic aldosterone antagonism is not the same as rapid IV loop diuresis."
+                  "text": "Both are the same active drug at different strengths",
+                  "explanation": "They are different medicines."
                 }
               ],
               "format": "single-best-answer",
@@ -17774,10 +18210,10 @@
                 "trolley-spironolactone::spirono_not_loop"
               ],
               "reusedFromQuestionId": "trolley-spironolactone--advanced--spirono_not_loop",
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 7
+          "questionCount": 12
         }
       ]
     },

@@ -3204,6 +3204,45 @@
       ]
     },
     {
+      "id": "ccu-bisoprolol::bisoprolol_hr_bp_review",
+      "itemId": "ccu-bisoprolol",
+      "point": "Select HR and BP surveillance.",
+      "questionIds": [
+        "ccu-bisoprolol--standard--bisoprolol_hr_bp_review",
+        "ccu-bisoprolol--7-day--bisoprolol_hr_bp_review"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-bisoprolol::bisoprolol_selectivity_limit",
+      "itemId": "ccu-bisoprolol",
+      "point": "Avoid assuming absolute respiratory safety from cardioselectivity.",
+      "questionIds": [
+        "ccu-bisoprolol--standard--bisoprolol_selectivity_limit",
+        "ccu-bisoprolol--7-day--bisoprolol_selectivity_limit"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-bisoprolol::bisoprolol_hf_titration",
+      "itemId": "ccu-bisoprolol",
+      "point": "Recognize worsening heart failure during titration.",
+      "questionIds": [
+        "ccu-bisoprolol--standard--bisoprolol_hf_titration",
+        "ccu-bisoprolol--7-day--bisoprolol_hf_titration"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-bisoprolol::duplicate_beta",
       "itemId": "ccu-bisoprolol",
       "point": "Check for unintended duplicate beta-blockade.",
@@ -3290,6 +3329,45 @@
       "questionIds": [
         "ccu-metoprolol--standard--bradycardia",
         "ccu-metoprolol--7-day--bradycardia"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-metoprolol::metoprolol_hr_bp_review",
+      "itemId": "ccu-metoprolol",
+      "point": "Select HR and BP surveillance.",
+      "questionIds": [
+        "ccu-metoprolol--standard--metoprolol_hr_bp_review",
+        "ccu-metoprolol--7-day--metoprolol_hr_bp_review"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-metoprolol::metoprolol_er_handling",
+      "itemId": "ccu-metoprolol",
+      "point": "Preserve extended-release delivery.",
+      "questionIds": [
+        "ccu-metoprolol--standard--metoprolol_er_handling",
+        "ccu-metoprolol--7-day--metoprolol_er_handling"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-metoprolol::metoprolol_withdrawal",
+      "itemId": "ccu-metoprolol",
+      "point": "Recognize the hazard of abrupt beta-blocker withdrawal.",
+      "questionIds": [
+        "ccu-metoprolol--standard--metoprolol_withdrawal",
+        "ccu-metoprolol--7-day--metoprolol_withdrawal"
       ],
       "stages": [
         "standard",
@@ -6660,6 +6738,71 @@
       "stages": [
         "standard",
         "advanced",
+        "7-day"
+      ]
+    },
+    {
+      "id": "trolley-spironolactone::spirono_labs",
+      "itemId": "trolley-spironolactone",
+      "point": "Select potassium and renal surveillance.",
+      "questionIds": [
+        "trolley-spironolactone--standard--spirono_labs",
+        "trolley-spironolactone--7-day--spirono_labs"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "trolley-spironolactone::spirono_supplements",
+      "itemId": "trolley-spironolactone",
+      "point": "Recognize two potassium sources requiring review.",
+      "questionIds": [
+        "trolley-spironolactone--standard--spirono_supplements",
+        "trolley-spironolactone--7-day--spirono_supplements"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "trolley-spironolactone::spirono_lab_escalation",
+      "itemId": "trolley-spironolactone",
+      "point": "Escalate unsafe potassium/renal findings before routine dosing.",
+      "questionIds": [
+        "trolley-spironolactone--standard--spirono_lab_escalation",
+        "trolley-spironolactone--7-day--spirono_lab_escalation"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "trolley-spironolactone::spirono_additional_roles",
+      "itemId": "trolley-spironolactone",
+      "point": "Recall additional aldosterone-related treatment roles.",
+      "questionIds": [
+        "trolley-spironolactone--standard--spirono_additional_roles",
+        "trolley-spironolactone--7-day--spirono_additional_roles"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "trolley-spironolactone::spirono_early_k",
+      "itemId": "trolley-spironolactone",
+      "point": "Arrange early potassium surveillance after initiation/titration.",
+      "questionIds": [
+        "trolley-spironolactone--standard--spirono_early_k",
+        "trolley-spironolactone--7-day--spirono_early_k"
+      ],
+      "stages": [
+        "standard",
         "7-day"
       ]
     },
@@ -13514,9 +13657,11 @@
         "use": [
           "ccu-bisoprolol--standard--treatment-role",
           "ccu-bisoprolol--standard--hypotension",
+          "ccu-bisoprolol--standard--bradycardia",
           "ccu-bisoprolol--advanced--hypotension",
           "ccu-bisoprolol--7-day--treatment-role",
-          "ccu-bisoprolol--7-day--hypotension"
+          "ccu-bisoprolol--7-day--hypotension",
+          "ccu-bisoprolol--7-day--bradycardia"
         ],
         "memoryUse": [
           "ccu-bisoprolol--standard--treatment-role",
@@ -13532,11 +13677,17 @@
         "monitor": [
           "ccu-bisoprolol--standard--hypotension",
           "ccu-bisoprolol--standard--bradycardia",
+          "ccu-bisoprolol--standard--bisoprolol_hr_bp_review",
+          "ccu-bisoprolol--standard--bisoprolol_selectivity_limit",
+          "ccu-bisoprolol--standard--bisoprolol_hf_titration",
           "ccu-bisoprolol--advanced--hypotension",
           "ccu-bisoprolol--advanced--duplicate_beta",
           "ccu-bisoprolol--advanced--beta_rebound",
           "ccu-bisoprolol--7-day--hypotension",
           "ccu-bisoprolol--7-day--bradycardia",
+          "ccu-bisoprolol--7-day--bisoprolol_hr_bp_review",
+          "ccu-bisoprolol--7-day--bisoprolol_selectivity_limit",
+          "ccu-bisoprolol--7-day--bisoprolol_hf_titration",
           "ccu-bisoprolol--7-day--duplicate_beta",
           "ccu-bisoprolol--7-day--beta_rebound"
         ],
@@ -13597,11 +13748,15 @@
         "monitor": [
           "ccu-metoprolol--standard--hypotension",
           "ccu-metoprolol--standard--bradycardia",
+          "ccu-metoprolol--standard--metoprolol_hr_bp_review",
+          "ccu-metoprolol--standard--metoprolol_withdrawal",
           "ccu-metoprolol--advanced--hypotension",
           "ccu-metoprolol--advanced--duplicate_beta",
           "ccu-metoprolol--advanced--avnode_combination",
           "ccu-metoprolol--7-day--hypotension",
           "ccu-metoprolol--7-day--bradycardia",
+          "ccu-metoprolol--7-day--metoprolol_hr_bp_review",
+          "ccu-metoprolol--7-day--metoprolol_withdrawal",
           "ccu-metoprolol--7-day--duplicate_beta",
           "ccu-metoprolol--7-day--avnode_combination"
         ],
@@ -13615,7 +13770,9 @@
           "ccu-metoprolol--7-day--avnode_combination"
         ],
         "administration": [
+          "ccu-metoprolol--standard--metoprolol_er_handling",
           "ccu-metoprolol--advanced--formulation",
+          "ccu-metoprolol--7-day--metoprolol_er_handling",
           "ccu-metoprolol--7-day--formulation"
         ]
       },
@@ -15470,8 +15627,10 @@
         ],
         "use": [
           "trolley-spironolactone--standard--treatment-role",
+          "trolley-spironolactone--standard--spirono_additional_roles",
           "trolley-spironolactone--advanced--spirono_not_loop",
           "trolley-spironolactone--7-day--treatment-role",
+          "trolley-spironolactone--7-day--spirono_additional_roles",
           "trolley-spironolactone--7-day--spirono_not_loop"
         ],
         "memoryUse": [
@@ -15485,11 +15644,19 @@
           "trolley-spironolactone--standard--high_k",
           "trolley-spironolactone--standard--renal_monitor",
           "trolley-spironolactone--standard--hypotension",
+          "trolley-spironolactone--standard--spirono_labs",
+          "trolley-spironolactone--standard--spirono_supplements",
+          "trolley-spironolactone--standard--spirono_lab_escalation",
+          "trolley-spironolactone--standard--spirono_early_k",
           "trolley-spironolactone--advanced--high_k",
           "trolley-spironolactone--advanced--hypotension",
           "trolley-spironolactone--7-day--high_k",
           "trolley-spironolactone--7-day--renal_monitor",
-          "trolley-spironolactone--7-day--hypotension"
+          "trolley-spironolactone--7-day--hypotension",
+          "trolley-spironolactone--7-day--spirono_labs",
+          "trolley-spironolactone--7-day--spirono_supplements",
+          "trolley-spironolactone--7-day--spirono_lab_escalation",
+          "trolley-spironolactone--7-day--spirono_early_k"
         ],
         "memoryDanger": [
           "trolley-spironolactone--standard--renal_monitor",

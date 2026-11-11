@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 46,
-  "sourceContentSha256": "bed240676c4a0ec2378c085b5eeecd7029c9d951132813513b7a1141149cdba2",
+  "sourceContentVersion": 47,
+  "sourceContentSha256": "8b87d910d6d33ea421ec496fc2ecbdddabebf39d6be8ffadad05b1b8d52f2130",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 321,
-    "questions": 1891,
-    "single-best-answer": 1861,
+    "questions": 1913,
+    "single-best-answer": 1883,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 107,
     "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 893
+    "mappedLearningPoints": 904
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -618,7 +618,7 @@
         {
           "id": "ccu-bisoprolol--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 8
         },
         {
           "id": "ccu-bisoprolol--advanced",
@@ -628,7 +628,7 @@
         {
           "id": "ccu-bisoprolol--7-day",
           "stage": "7-day",
-          "questionCount": 7
+          "questionCount": 10
         }
       ]
     },
@@ -641,7 +641,7 @@
         {
           "id": "ccu-metoprolol--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 8
         },
         {
           "id": "ccu-metoprolol--advanced",
@@ -651,7 +651,7 @@
         {
           "id": "ccu-metoprolol--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 11
         }
       ]
     },
@@ -1354,7 +1354,7 @@
         {
           "id": "trolley-spironolactone--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 11
         },
         {
           "id": "trolley-spironolactone--advanced",
@@ -1364,7 +1364,7 @@
         {
           "id": "trolley-spironolactone--7-day",
           "stage": "7-day",
-          "questionCount": 7
+          "questionCount": 12
         }
       ]
     },
@@ -2503,11 +2503,11 @@
     },
     {
       "path": "banks-02.json",
-      "sha256": "16054dd2f2388ce39f436a7585d937868cc1bb98b0bf14835b4e7cd8bf138562"
+      "sha256": "5e5b0f42fa76d464748a6c4ce282d9611f1206da68a97c243e5bdbf3d23d206e"
     },
     {
       "path": "banks-03.json",
-      "sha256": "63c0ebb288ac15decd3cd120eeb768a20a8b5daefdfd733ee8ab110f9cda2883"
+      "sha256": "f5dafd4406d0b7958cf003acf135ce14a0082d2db1de105551146b1c8fcd4cac"
     },
     {
       "path": "banks-04.json",
@@ -2523,7 +2523,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "4b2ac4b39a133a4d051313e09b05f1852a15e044b8cd2f21cbba78144e73e30c"
+      "sha256": "e455ee472ac2a0982038e9ddb40371010db4c67c4e0ca384997f98e3b0ad3621"
     }
   ]
 }
