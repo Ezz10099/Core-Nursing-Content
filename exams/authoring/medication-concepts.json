@@ -8872,5 +8872,117 @@
       ],
       "correct": 0
     }
+  },
+  "warfarin_bridge_stop": {
+    "point": "After mechanical-valve implantation, ESC/EACTS uses two consecutive days of therapeutic INR before ending the heparin bridge.",
+    "anchor": "two consecutive days",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Warfarin and therapeutic heparin were started after mechanical-valve implantation. Today is the first day the INR reaches its prescribed range. Which finding supports stopping the bridge under the ESC/EACTS pathway?",
+      "choices": [
+        {
+          "text": "INR remains in the prescribed range on a second consecutive day.",
+          "explanation": "ESC/EACTS describes two consecutive days of therapeutic INR before stopping the bridge."
+        },
+        {
+          "text": "INR reaches the lower edge of its range on the first day.",
+          "explanation": "One in-range day does not meet this criterion."
+        },
+        {
+          "text": "The aPTT reaches the heparin goal on two consecutive days.",
+          "explanation": "aPTT can reflect UFH effect, but does not establish sustained therapeutic VKA effect."
+        },
+        {
+          "text": "Two oral warfarin doses have been given and the INR is still rising.",
+          "explanation": "Number of doses and direction of change do not establish two days of therapeutic INR."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "warfarin_vitamin_k_consistency": {
+    "point": "Keep dietary vitamin K consistent on warfarin.",
+    "anchor": "vitamin K intake consistent",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient stable on warfarin plans to eat more leafy greens for health. What advice best supports stable anticoagulation?",
+      "choices": [
+        {
+          "text": "Keep vitamin K intake consistent and discuss the planned change with the anticoagulation team.",
+          "explanation": "A stable intake supports stable INR. The team can advise on follow-up if intake changes."
+        },
+        {
+          "text": "Avoid leafy greens on every day that warfarin is scheduled.",
+          "explanation": "Routine avoidance is unnecessary. Consistency matters."
+        },
+        {
+          "text": "Offset extra leafy greens by taking an extra warfarin dose that evening.",
+          "explanation": "Self-adjusting warfarin to individual meals risks unstable anticoagulation."
+        },
+        {
+          "text": "Move leafy greens to the morning and take warfarin at night to avoid the effect.",
+          "explanation": "Separating the times does not remove the effect of vitamin K intake on INR."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "enoxaparin_neuraxial_red_flag": {
+    "point": "New neurological symptoms after a neuraxial procedure warrant emergency evaluation for spinal hematoma.",
+    "anchor": "possible spinal hematoma",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving enoxaparin develops new midline back pain and progressive leg weakness after epidural catheter removal. What should the nurse urgently raise with the team?",
+      "choices": [
+        {
+          "text": "Possible spinal or epidural hematoma.",
+          "explanation": "New back pain with progressive motor deficit requires immediate evaluation for neuraxial bleeding."
+        },
+        {
+          "text": "Expected residual epidural effect.",
+          "explanation": "Progressive weakness with new back pain should not be attributed to residual anesthesia."
+        },
+        {
+          "text": "Local SC injection-site hematoma.",
+          "explanation": "A local abdominal injection reaction does not explain this neurological pattern."
+        },
+        {
+          "text": "Post-dural puncture headache.",
+          "explanation": "This usually presents as headache and does not explain progressive leg weakness."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "clopidogrel_loading_order": {
+    "point": "A clopidogrel loading dose requires a distinct order or authorized protocol.",
+    "anchor": "loading doses",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An ACS patient’s chart has a scheduled clopidogrel maintenance order, but the handoff says a loading dose is still pending. What should the nurse verify before giving the first dose?",
+      "choices": [
+        {
+          "text": "Whether the loading dose was already given and whether a separate loading order applies.",
+          "explanation": "Reconciling the record and authorized order avoids both a missed load and duplicate dosing."
+        },
+        {
+          "text": "Whether to give the maintenance dose twice to approximate the loading dose.",
+          "explanation": "Do not construct a loading dose from the maintenance schedule."
+        },
+        {
+          "text": "Whether to treat the scheduled maintenance dose as the documented loading dose.",
+          "explanation": "Maintenance and loading are separate regimens."
+        },
+        {
+          "text": "Whether the next scheduled maintenance dose can be advanced to replace the loading order.",
+          "explanation": "Moving a maintenance dose does not establish the intended loading regimen."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

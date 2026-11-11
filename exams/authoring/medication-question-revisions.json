@@ -2448,6 +2448,286 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-warfarin-coumadin::warfarin_inr": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with a mechanical valve receives both warfarin and an IV UFH bridge. Which result tracks the effect of warfarin for eventual transition to oral therapy?",
+        "choices": [
+          {
+            "text": "INR",
+            "explanation": "INR measures warfarin effect and is compared with the prescribed valve target.",
+            "id": "A"
+          },
+          {
+            "text": "aPTT",
+            "explanation": "aPTT is used in some protocols for UFH, not to assess warfarin intensity.",
+            "id": "B"
+          },
+          {
+            "text": "Platelet count",
+            "explanation": "Platelets can help detect complications but do not measure warfarin intensity.",
+            "id": "C"
+          },
+          {
+            "text": "Hemoglobin",
+            "explanation": "Hemoglobin can help assess blood loss but does not measure warfarin intensity.",
+            "id": "D"
+          }
+        ],
+        "point": "Use INR to assess the intensity of warfarin anticoagulation.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-enoxaparin::renal_dose": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient receives therapeutic enoxaparin. Creatinine clearance falls to 24 mL/min and the order has not changed. What should the nurse clarify before the next dose?",
+        "choices": [
+          {
+            "text": "Whether the dose and interval need adjustment for increased exposure.",
+            "explanation": "Below 30 mL/min, enoxaparin exposure rises and the regimen needs review.",
+            "id": "A"
+          },
+          {
+            "text": "Whether the dose needs to rise because renal clearance has slowed.",
+            "explanation": "Slower clearance can increase exposure at the same dose.",
+            "id": "B"
+          },
+          {
+            "text": "Whether an INR in range confirms the current dose can continue.",
+            "explanation": "INR is not used to guide routine enoxaparin dosing.",
+            "id": "C"
+          },
+          {
+            "text": "Whether a stable platelet count confirms the current dose can continue.",
+            "explanation": "Platelet counts do not establish that the renal regimen is appropriate.",
+            "id": "D"
+          }
+        ],
+        "point": "CrCl below 30 mL/min increases exposure and requires review of the prescribed enoxaparin regimen.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-enoxaparin::enoxaparin_syringe": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The full contents of the manufacturer’s enoxaparin prefilled syringe match the prescribed abdominal SC dose. Which technique is appropriate?",
+        "choices": [
+          {
+            "text": "Leave the air bubble in place and avoid rubbing after injection.",
+            "explanation": "This follows the instructions for the full prefilled dose and reduces bruising.",
+            "id": "A"
+          },
+          {
+            "text": "Leave the air bubble in place and massage gently after injection.",
+            "explanation": "Rubbing can increase bruising.",
+            "id": "B"
+          },
+          {
+            "text": "Expel the air bubble and avoid rubbing after injection.",
+            "explanation": "Expelling the bubble from a full-dose syringe can waste some medication.",
+            "id": "C"
+          },
+          {
+            "text": "Expel the air bubble and massage gently after injection.",
+            "explanation": "This can waste medication and increase bruising.",
+            "id": "D"
+          }
+        ],
+        "point": "For a full prescribed SC dose from a prefilled syringe, retain its air bubble and avoid rubbing.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-clopidogrel::ppi_clopidogrel": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A post-PCI patient taking clopidogrel needs a PPI. Omeprazole is ordered 12 hours apart from clopidogrel. What change should the nurse discuss with the prescriber?",
+        "choices": [
+          {
+            "text": "Use a suitable alternative such as pantoprazole instead of relying on the separation.",
+            "explanation": "Clopidogrel’s activity can be reduced even when omeprazole is taken 12 hours apart.",
+            "id": "A"
+          },
+          {
+            "text": "Continue omeprazole at the separated time to preserve clopidogrel activation.",
+            "explanation": "Twelve-hour separation does not prevent the interaction.",
+            "id": "B"
+          },
+          {
+            "text": "Use esomeprazole at the separated time to preserve clopidogrel activation.",
+            "explanation": "Esomeprazole also reduces clopidogrel activation.",
+            "id": "C"
+          },
+          {
+            "text": "Continue omeprazole and request an INR to measure clopidogrel response.",
+            "explanation": "INR does not measure clopidogrel’s antiplatelet effect.",
+            "id": "D"
+          }
+        ],
+        "point": "Spacing omeprazole does not reliably prevent the interaction. Review a less interacting PPI if indicated.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-clopidogrel::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which effect accounts for clopidogrel reducing platelet activation after a coronary stent?",
+        "choices": [
+          {
+            "text": "Its active metabolite irreversibly inhibits platelet P2Y12 receptors.",
+            "explanation": "P2Y12 inhibition reduces ADP-mediated platelet activation.",
+            "id": "A"
+          },
+          {
+            "text": "Its active metabolite irreversibly inhibits platelet COX-1.",
+            "explanation": "That is the mechanism of aspirin.",
+            "id": "B"
+          },
+          {
+            "text": "It directly and reversibly inhibits platelet P2Y12 receptors.",
+            "explanation": "Clopidogrel needs activation and its effect on the receptor is irreversible.",
+            "id": "C"
+          },
+          {
+            "text": "It reversibly blocks platelet glycoprotein IIb/IIIa receptors.",
+            "explanation": "That is a distinct antiplatelet target.",
+            "id": "D"
+          }
+        ],
+        "point": "The active metabolite irreversibly inhibits platelet P2Y12 receptors.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::bleeding": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient on warfarin develops a sudden severe headache and new arm weakness. Yesterday’s INR was in range. Which response is appropriate?",
+        "choices": [
+          {
+            "text": "Activate the urgent stroke pathway and report warfarin exposure and the last INR.",
+            "explanation": "Intracranial bleeding is possible despite an INR in range. New focal findings need immediate evaluation.",
+            "id": "A"
+          },
+          {
+            "text": "Request a repeat INR and wait for the result before activating the stroke pathway.",
+            "explanation": "An INR result cannot establish the cause or safely delay assessment.",
+            "id": "B"
+          },
+          {
+            "text": "Use yesterday’s INR to prioritize an ischemic diagnosis and defer bleeding evaluation.",
+            "explanation": "A therapeutic INR does not exclude intracranial bleeding.",
+            "id": "C"
+          },
+          {
+            "text": "Request vitamin K based on headache alone before assessing the neurological deficit.",
+            "explanation": "Immediate stroke assessment helps establish the cause and guide reversal if indicated.",
+            "id": "D"
+          }
+        ],
+        "point": "New focal neurological signs on warfarin require emergency evaluation even with a recent INR in range.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-enoxaparin::bleeding": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After starting therapeutic enoxaparin, a patient develops new hypotension and a falling hemoglobin without visible bleeding. Which concern should be raised promptly?",
+        "choices": [
+          {
+            "text": "Occult bleeding during anticoagulation.",
+            "explanation": "Bleeding may be internal, and the combination of hypotension and falling hemoglobin requires prompt assessment.",
+            "id": "A"
+          },
+          {
+            "text": "Reduced enoxaparin absorption through the injection site.",
+            "explanation": "Reduced absorption does not explain falling hemoglobin and new hypotension.",
+            "id": "B"
+          },
+          {
+            "text": "Platelet suppression as the expected therapeutic effect.",
+            "explanation": "Enoxaparin acts through antithrombin. Falling hemoglobin is not an intended effect.",
+            "id": "C"
+          },
+          {
+            "text": "Expected hemodilution from the SC injection volume.",
+            "explanation": "The SC dose volume does not explain clinically important hemodilution.",
+            "id": "D"
+          }
+        ],
+        "point": "Monitor for bleeding on enoxaparin and flag unexplained hypotension with a falling hemoglobin.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-clopidogrel::bleeding": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Ten days after coronary stenting, a patient taking clopidogrel reports a black tarry stool and feels faint. What is the priority?",
+        "choices": [
+          {
+            "text": "Assess hemodynamic status urgently and alert the team about possible GI bleeding and recent PCI.",
+            "explanation": "Both the potential bleeding and recent stent affect urgent management and the antiplatelet plan.",
+            "id": "A"
+          },
+          {
+            "text": "Withhold clopidogrel for a week and discuss the plan at the next routine review.",
+            "explanation": "Potential bleeding requires immediate assessment. Prolonged interruption after recent stenting also carries thrombotic risk.",
+            "id": "B"
+          },
+          {
+            "text": "Measure INR and escalate if it is above the therapeutic range.",
+            "explanation": "INR does not measure clopidogrel activity, and concerning symptoms require prompt assessment.",
+            "id": "C"
+          },
+          {
+            "text": "Replace clopidogrel with aspirin and reassess the stool the next day.",
+            "explanation": "Unilateral substitution is not a safe response to possible significant bleeding or a recent stent.",
+            "id": "D"
+          }
+        ],
+        "point": "Assess possible bleeding on clopidogrel and coordinate any interruption after recent PCI.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -2493,7 +2773,10 @@
     "ccu-heparin-ufh": "acute-med-coverage-draft-20261111",
     "ccu-norepinephrine": "vasoactive-coverage-20261111",
     "ccu-dobutamine": "vasoactive-coverage-20261111",
-    "ccu-dopamine": "vasoactive-coverage-20261111"
+    "ccu-dopamine": "vasoactive-coverage-20261111",
+    "ccu-warfarin-coumadin": "antithrombotic-coverage-20261111",
+    "ccu-enoxaparin": "antithrombotic-coverage-20261111",
+    "ccu-clopidogrel": "antithrombotic-coverage-20261111"
   },
   "correctionRevisions": {
     "ccu-verapamil": "gaza-administration-reference-20261109",
@@ -2510,6 +2793,9 @@
     "ccu-heparin-ufh": "acute-med-clinical-20261111",
     "ccu-norepinephrine": "vasoactive-infusion-20261111",
     "ccu-dobutamine": "vasoactive-infusion-20261111",
-    "ccu-dopamine": "vasoactive-infusion-20261111"
+    "ccu-dopamine": "vasoactive-infusion-20261111",
+    "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
+    "ccu-enoxaparin": "antithrombotic-clinical-20261111",
+    "ccu-clopidogrel": "antithrombotic-clinical-20261111"
   }
 }

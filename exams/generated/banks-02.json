@@ -925,7 +925,10 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-enoxaparin"
+        "label-ccu-enoxaparin",
+        "gaza-moh-injectables-2018-enoxaparin",
+        "palestinian-eml-2024-antithrombotics",
+        "review-label-ccu-enoxaparin"
       ],
       "exams": [
         {
@@ -1019,23 +1022,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "LMWH",
+                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
+                },
+                {
+                  "id": "B",
                   "text": "Antiplatelet",
                   "explanation": "The medicine is classified as: Low-molecular-weight heparin (LMWH) anticoagulant."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Fibrinolytic",
                   "explanation": "The medicine is classified as: Low-molecular-weight heparin (LMWH) anticoagulant."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Vitamin-K antagonist",
                   "explanation": "The medicine is classified as: Low-molecular-weight heparin (LMWH) anticoagulant."
-                },
-                {
-                  "id": "D",
-                  "text": "LMWH",
-                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -1054,7 +1057,7 @@
               "learningPointIds": [
                 "ccu-enoxaparin::drug-class"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -1073,7 +1076,7 @@
                 {
                   "id": "C",
                   "text": "Prescribed anticoagulation in ACS or thromboembolic disease",
-                  "explanation": "This is a clinical use of the medicine: Anticoagulation in ACS and other thromboembolic indications according to the written order/protocol."
+                  "explanation": "This is a clinical use of the medicine: Prevention or treatment of venous thromboembolism and anticoagulation in selected ACS regimens. Follow the indication-specific order and protocol. Some STEMI regimens include an ordered initial IV bolus."
                 },
                 {
                   "id": "D",
@@ -1088,7 +1091,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "use",
-                  "textSha256": "e84b7694f2319c2874ce30eef152e52ca890e5ec659647a5293c94484102f225"
+                  "textSha256": "2ee1807d531a2fcea7eca5287b0dba3434ca7a0acef454413e1e9875d7c71532"
                 },
                 {
                   "file": "content.json",
@@ -1138,7 +1141,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 }
               ],
               "criticalForSafety": false,
@@ -1181,7 +1184,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 },
                 {
                   "file": "content.json",
@@ -1238,7 +1241,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "administration",
-                  "textSha256": "2081fbb5adf307dfd896b8b1cfbdd9775c270e20d70162925e99c2c7ad82aacc"
+                  "textSha256": "0dcf11b3931ec87529b14cad7bd7e69052cb49e592d994cb7d2d2f75a7cb4a98"
                 }
               ],
               "criticalForSafety": false,
@@ -1266,7 +1269,14 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "administration",
-                  "textSha256": "2081fbb5adf307dfd896b8b1cfbdd9775c270e20d70162925e99c2c7ad82aacc"
+                  "textSha256": "0dcf11b3931ec87529b14cad7bd7e69052cb49e592d994cb7d2d2f75a7cb4a98"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "monitor",
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 }
               ],
               "criticalForSafety": false,
@@ -1275,9 +1285,52 @@
               "learningPointIds": [
                 "ccu-enoxaparin::lmwh_route"
               ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving enoxaparin develops new midline back pain and progressive leg weakness after epidural catheter removal. What should the nurse urgently raise with the team?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Expected residual epidural effect.",
+                  "explanation": "Progressive weakness with new back pain should not be attributed to residual anesthesia."
+                },
+                {
+                  "id": "B",
+                  "text": "Post-dural puncture headache.",
+                  "explanation": "This usually presents as headache and does not explain progressive leg weakness."
+                },
+                {
+                  "id": "C",
+                  "text": "Local SC injection-site hematoma.",
+                  "explanation": "A local abdominal injection reaction does not explain this neurological pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Possible spinal or epidural hematoma.",
+                  "explanation": "New back pain with progressive motor deficit requires immediate evaluation for neuraxial bleeding."
+                }
+              ],
+              "point": "New neurological symptoms after a neuraxial procedure warrant emergency evaluation for spinal hematoma.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "monitor",
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enoxaparin--standard--enoxaparin_neuraxial_red_flag",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enoxaparin::enoxaparin_neuraxial_red_flag"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-enoxaparin--advanced",
@@ -1339,7 +1392,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 },
                 {
                   "file": "content.json",
@@ -1396,7 +1449,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 },
                 {
                   "file": "content.json",
@@ -1453,7 +1506,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 }
               ],
               "criticalForSafety": false,
@@ -1501,18 +1554,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Enhances antithrombin activity, predominantly against Xa",
-                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
-                },
-                {
-                  "id": "B",
                   "text": "Bronchodilation with a narrow therapeutic index",
                   "explanation": "This is a different pharmacological action. The drug’s action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Activates mu receptors",
                   "explanation": "This is a different pharmacological action. The drug’s action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
+                },
+                {
+                  "id": "C",
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "D",
@@ -1551,7 +1604,7 @@
                 "ccu-enoxaparin::principal-action"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -1559,13 +1612,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vitamin-K antagonist",
-                  "explanation": "The medicine is classified as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "LMWH",
+                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
                 },
                 {
                   "id": "B",
-                  "text": "LMWH",
-                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Vitamin-K antagonist",
+                  "explanation": "The medicine is classified as: Low-molecular-weight heparin (LMWH) anticoagulant."
                 },
                 {
                   "id": "C",
@@ -1595,7 +1648,7 @@
                 "ccu-enoxaparin::drug-class"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -1608,18 +1661,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Prescribed anticoagulation in ACS or thromboembolic disease",
+                  "explanation": "This is a clinical use of the medicine: Prevention or treatment of venous thromboembolism and anticoagulation in selected ACS regimens. Follow the indication-specific order and protocol. Some STEMI regimens include an ordered initial IV bolus."
+                },
+                {
+                  "id": "C",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Suppression of bacterial protein synthesis",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Prescribed anticoagulation in ACS or thromboembolic disease",
-                  "explanation": "This is a clinical use of the medicine: Anticoagulation in ACS and other thromboembolic indications according to the written order/protocol."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -1629,7 +1682,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "use",
-                  "textSha256": "e84b7694f2319c2874ce30eef152e52ca890e5ec659647a5293c94484102f225"
+                  "textSha256": "2ee1807d531a2fcea7eca5287b0dba3434ca7a0acef454413e1e9875d7c71532"
                 },
                 {
                   "file": "content.json",
@@ -1646,25 +1699,25 @@
                 "ccu-enoxaparin::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "During CLEXANE / CLEXAN — enoxaparin therapy, which blood-count change requires particular review?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A significant platelet fall",
-                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
-                },
-                {
-                  "id": "B",
                   "text": "An isolated normal red-cell index",
                   "explanation": "Red-cell size does not establish platelet safety."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "An unchanged normal neutrophil count",
                   "explanation": "This does not assess the heparin-related platelet change."
+                },
+                {
+                  "id": "C",
+                  "text": "A significant platelet fall",
+                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
                 },
                 {
                   "id": "D",
@@ -1680,7 +1733,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 }
               ],
               "criticalForSafety": false,
@@ -1690,7 +1743,7 @@
                 "ccu-enoxaparin::platelets"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--standard--platelets",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for CLEXANE / CLEXAN — enoxaparin?",
@@ -1707,13 +1760,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Creatinine trend and estimated GFR",
-                  "explanation": "These inform renal clearance and regimen review."
+                  "text": "TSH trend and free thyroxine",
+                  "explanation": "These assess thyroid function rather than renal elimination."
                 },
                 {
                   "id": "D",
-                  "text": "TSH trend and free thyroxine",
-                  "explanation": "These assess thyroid function rather than renal elimination."
+                  "text": "Creatinine trend and estimated GFR",
+                  "explanation": "These inform renal clearance and regimen review."
                 }
               ],
               "format": "single-best-answer",
@@ -1724,7 +1777,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 },
                 {
                   "file": "content.json",
@@ -1748,7 +1801,7 @@
                 "ccu-enoxaparin::renal_dose"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--standard--renal_dose",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which technique is appropriate for a standard manufacturer prefilled enoxaparin syringe?",
@@ -1782,7 +1835,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "administration",
-                  "textSha256": "2081fbb5adf307dfd896b8b1cfbdd9775c270e20d70162925e99c2c7ad82aacc"
+                  "textSha256": "0dcf11b3931ec87529b14cad7bd7e69052cb49e592d994cb7d2d2f75a7cb4a98"
                 }
               ],
               "criticalForSafety": false,
@@ -1811,7 +1864,14 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "administration",
-                  "textSha256": "2081fbb5adf307dfd896b8b1cfbdd9775c270e20d70162925e99c2c7ad82aacc"
+                  "textSha256": "0dcf11b3931ec87529b14cad7bd7e69052cb49e592d994cb7d2d2f75a7cb4a98"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "monitor",
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 }
               ],
               "criticalForSafety": false,
@@ -1821,6 +1881,50 @@
                 "ccu-enoxaparin::lmwh_route"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--standard--lmwh_route"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving enoxaparin develops new midline back pain and progressive leg weakness after epidural catheter removal. What should the nurse urgently raise with the team?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Post-dural puncture headache.",
+                  "explanation": "This usually presents as headache and does not explain progressive leg weakness."
+                },
+                {
+                  "id": "B",
+                  "text": "Possible spinal or epidural hematoma.",
+                  "explanation": "New back pain with progressive motor deficit requires immediate evaluation for neuraxial bleeding."
+                },
+                {
+                  "id": "C",
+                  "text": "Local SC injection-site hematoma.",
+                  "explanation": "A local abdominal injection reaction does not explain this neurological pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Expected residual epidural effect.",
+                  "explanation": "Progressive weakness with new back pain should not be attributed to residual anesthesia."
+                }
+              ],
+              "point": "New neurological symptoms after a neuraxial procedure warrant emergency evaluation for spinal hematoma.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "monitor",
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enoxaparin--7-day--enoxaparin_neuraxial_red_flag",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enoxaparin::enoxaparin_neuraxial_red_flag"
+              ],
+              "reusedFromQuestionId": "ccu-enoxaparin--standard--enoxaparin_neuraxial_red_flag",
+              "answerKey": "B"
             },
             {
               "stem": "During CLEXANE / CLEXAN — enoxaparin therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
@@ -1837,13 +1941,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Clinically important blood loss",
-                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
+                  "text": "Isolated vasodilator headache",
+                  "explanation": "This does not explain melena and the systemic blood-loss pattern."
                 },
                 {
                   "id": "D",
-                  "text": "Isolated vasodilator headache",
-                  "explanation": "This does not explain melena and the systemic blood-loss pattern."
+                  "text": "Clinically important blood loss",
+                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -1854,7 +1958,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 },
                 {
                   "file": "content.json",
@@ -1878,20 +1982,20 @@
                 "ccu-enoxaparin::bleeding"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--advanced--bleeding",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A patient receiving enoxaparin is being prepared for an invasive procedure. Which medication detail is especially important to communicate?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Time and route of an old discontinued antibiotic",
-                  "explanation": "That does not establish current anticoagulant-related bleeding risk."
+                  "text": "Time and amount of the most recent dose",
+                  "explanation": "The team needs recent anticoagulant exposure when planning procedural bleeding safety."
                 },
                 {
                   "id": "B",
-                  "text": "Time and amount of the most recent dose",
-                  "explanation": "The team needs recent anticoagulant exposure when planning procedural bleeding safety."
+                  "text": "Time and route of an old discontinued antibiotic",
+                  "explanation": "That does not establish current anticoagulant-related bleeding risk."
                 },
                 {
                   "id": "C",
@@ -1912,7 +2016,7 @@
                   "collection": "medications",
                   "itemId": "ccu-enoxaparin",
                   "field": "monitor",
-                  "textSha256": "f2c4f578e8f317e6643b2de7f00204e29fce4cd11dad2ed49688dc0e66d18930"
+                  "textSha256": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60"
                 }
               ],
               "criticalForSafety": false,
@@ -1922,10 +2026,10 @@
                 "ccu-enoxaparin::procedure_timing"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--advanced--procedure_timing",
-              "answerKey": "B"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 9
+          "questionCount": 10
         }
       ]
     },
@@ -4051,7 +4155,10 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-clopidogrel"
+        "label-ccu-clopidogrel",
+        "palestinian-eml-2024-antithrombotics",
+        "aha-acc-acs-2025-antiplatelets",
+        "review-label-ccu-clopidogrel"
       ],
       "exams": [
         {
@@ -4128,7 +4235,7 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 }
               ],
               "criticalForSafety": false,
@@ -4231,9 +4338,52 @@
                 "ccu-clopidogrel::treatment-role"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An ACS patient’s chart has a scheduled clopidogrel maintenance order, but the handoff says a loading dose is still pending. What should the nurse verify before giving the first dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Whether the loading dose was already given and whether a separate loading order applies.",
+                  "explanation": "Reconciling the record and authorized order avoids both a missed load and duplicate dosing."
+                },
+                {
+                  "id": "B",
+                  "text": "Whether to give the maintenance dose twice to approximate the loading dose.",
+                  "explanation": "Do not construct a loading dose from the maintenance schedule."
+                },
+                {
+                  "id": "C",
+                  "text": "Whether to treat the scheduled maintenance dose as the documented loading dose.",
+                  "explanation": "Maintenance and loading are separate regimens."
+                },
+                {
+                  "id": "D",
+                  "text": "Whether the next scheduled maintenance dose can be advanced to replace the loading order.",
+                  "explanation": "Moving a maintenance dose does not establish the intended loading regimen."
+                }
+              ],
+              "point": "A clopidogrel loading dose requires a distinct order or authorized protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-clopidogrel",
+                  "field": "administration",
+                  "textSha256": "3117d962186a2745a259afeaefd8cb025b7c2002d0250a503f15c353a37d4beb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-clopidogrel--standard--clopidogrel_loading_order",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-clopidogrel::clopidogrel_loading_order"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-clopidogrel--advanced",
@@ -4295,7 +4445,7 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
@@ -4352,14 +4502,14 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 },
                 {
                   "file": "content.json",
@@ -4409,14 +4559,14 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 }
               ],
               "criticalForSafety": false,
@@ -4459,14 +4609,14 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 },
                 {
                   "file": "content.json",
@@ -4526,18 +4676,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
+                  "explanation": "Its active metabolite inhibits ADP-mediated platelet activation."
+                },
+                {
+                  "id": "C",
                   "text": "Airway anti-inflammatory and bronchodilator effects",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Its active metabolite inhibits ADP-mediated platelet activation."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Inhibits bacterial cell-wall synthesis",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Its active metabolite inhibits ADP-mediated platelet activation."
-                },
-                {
-                  "id": "D",
-                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
-                  "explanation": "Its active metabolite inhibits ADP-mediated platelet activation."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -4561,7 +4711,7 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 }
               ],
               "criticalForSafety": false,
@@ -4571,7 +4721,7 @@
                 "ccu-clopidogrel::principal-action"
               ],
               "reusedFromQuestionId": "ccu-clopidogrel--standard--principal-action",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -4584,13 +4734,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Antiplatelet",
-                  "explanation": "P2Y12 antiplatelet."
+                  "text": "Unfractionated heparin",
+                  "explanation": "The medicine is classified as: P2Y12 antiplatelet."
                 },
                 {
                   "id": "C",
-                  "text": "Unfractionated heparin",
-                  "explanation": "The medicine is classified as: P2Y12 antiplatelet."
+                  "text": "Antiplatelet",
+                  "explanation": "P2Y12 antiplatelet."
                 },
                 {
                   "id": "D",
@@ -4615,7 +4765,7 @@
                 "ccu-clopidogrel::drug-class"
               ],
               "reusedFromQuestionId": "ccu-clopidogrel--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -4669,6 +4819,50 @@
               "answerKey": "C"
             },
             {
+              "format": "single-best-answer",
+              "stem": "An ACS patient’s chart has a scheduled clopidogrel maintenance order, but the handoff says a loading dose is still pending. What should the nurse verify before giving the first dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Whether the loading dose was already given and whether a separate loading order applies.",
+                  "explanation": "Reconciling the record and authorized order avoids both a missed load and duplicate dosing."
+                },
+                {
+                  "id": "B",
+                  "text": "Whether the next scheduled maintenance dose can be advanced to replace the loading order.",
+                  "explanation": "Moving a maintenance dose does not establish the intended loading regimen."
+                },
+                {
+                  "id": "C",
+                  "text": "Whether to give the maintenance dose twice to approximate the loading dose.",
+                  "explanation": "Do not construct a loading dose from the maintenance schedule."
+                },
+                {
+                  "id": "D",
+                  "text": "Whether to treat the scheduled maintenance dose as the documented loading dose.",
+                  "explanation": "Maintenance and loading are separate regimens."
+                }
+              ],
+              "point": "A clopidogrel loading dose requires a distinct order or authorized protocol.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-clopidogrel",
+                  "field": "administration",
+                  "textSha256": "3117d962186a2745a259afeaefd8cb025b7c2002d0250a503f15c353a37d4beb"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-clopidogrel--7-day--clopidogrel_loading_order",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-clopidogrel::clopidogrel_loading_order"
+              ],
+              "reusedFromQuestionId": "ccu-clopidogrel--standard--clopidogrel_loading_order",
+              "answerKey": "A"
+            },
+            {
               "stem": "During PLAVIX — clopidogrel therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
               "choices": [
                 {
@@ -4700,7 +4894,7 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
@@ -4758,14 +4952,14 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 },
                 {
                   "file": "content.json",
@@ -4816,14 +5010,14 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 }
               ],
               "criticalForSafety": false,
@@ -4840,23 +5034,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Bleeding at visible and occult sites",
-                  "explanation": "Different antithrombotic mechanisms can add to bleeding tendency."
-                },
-                {
-                  "id": "B",
                   "text": "Reduced glucose from a shared insulin-like mechanism",
                   "explanation": "These drugs do not share that primary action."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Sedation from a shared GABA-A effect",
                   "explanation": "This is not their common pharmacological concern."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Bronchodilation from a shared beta2 effect",
                   "explanation": "They do not act as a bronchodilator combination."
+                },
+                {
+                  "id": "D",
+                  "text": "Bleeding at visible and occult sites",
+                  "explanation": "Different antithrombotic mechanisms can add to bleeding tendency."
                 }
               ],
               "format": "single-best-answer",
@@ -4867,14 +5061,14 @@
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "monitor",
-                  "textSha256": "3063eb54f1ce68808822851b3b49abfa84cf839d224a3edcdbfb34e723729dea"
+                  "textSha256": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-clopidogrel",
                   "field": "why",
-                  "textSha256": "b0fc4593a449138dff9d5cc8334aa8de004ee95a20b8f6b206e591a9120a3f51"
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
                 },
                 {
                   "file": "content.json",
@@ -4891,10 +5085,10 @@
                 "ccu-clopidogrel::antithrombotic_combination"
               ],
               "reusedFromQuestionId": "ccu-clopidogrel--advanced--antithrombotic_combination",
-              "answerKey": "A"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         }
       ]
     },
