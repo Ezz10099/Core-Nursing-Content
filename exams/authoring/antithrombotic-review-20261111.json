@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "status": "Targeted source and question review",
+  "certifiedFullCoverage": false,
+  "independentClinicalValidation": false,
+  "items": [
+    {
+      "itemId": "ccu-warfarin-coumadin",
+      "status": "in_review",
+      "newLearningPoints": [
+        "warfarin_bridge_stop",
+        "warfarin_vitamin_k_consistency"
+      ],
+      "revisedLearningPoints": [
+        "ccu-warfarin-coumadin::warfarin_inr",
+        "ccu-warfarin-coumadin::bleeding"
+      ],
+      "remaining": [
+        "Complete fact-to-question mapping and review of retained scored questions."
+      ]
+    },
+    {
+      "itemId": "ccu-enoxaparin",
+      "status": "in_review",
+      "newLearningPoints": [
+        "enoxaparin_neuraxial_red_flag"
+      ],
+      "revisedLearningPoints": [
+        "ccu-enoxaparin::renal_dose",
+        "ccu-enoxaparin::enoxaparin_syringe",
+        "ccu-enoxaparin::bleeding"
+      ],
+      "remaining": [
+        "Complete fact-to-question mapping and review of retained scored questions."
+      ]
+    },
+    {
+      "itemId": "ccu-clopidogrel",
+      "status": "in_review",
+      "newLearningPoints": [
+        "clopidogrel_loading_order"
+      ],
+      "revisedLearningPoints": [
+        "ccu-clopidogrel::ppi_clopidogrel",
+        "ccu-clopidogrel::principal-action",
+        "ccu-clopidogrel::bleeding"
+      ],
+      "remaining": [
+        "Complete fact-to-question mapping and review of retained scored questions."
+      ]
+    }
+  ]
+}

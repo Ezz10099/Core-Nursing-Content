@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 49,
+  "contentVersion": 50,
   "updatedAt": "2026-11-11",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -1149,10 +1149,10 @@
       "name": "COUMADIN — warfarin",
       "header": "COUMADIN — warfarin",
       "drugclass": "Vitamin K antagonist (VKA) oral anticoagulant.",
-      "availability": "WARD-REPORTED in the CCU at Nasser Medical Complex as Coumadin/warfarin. Exact tablet strength and current stock should be verified from the package/Kardex before administration.",
+      "availability": "The Palestinian Essential Medicine List (2024) includes 5-mg warfarin tablets. Coumadin/warfarin was reported in Nasser Medical Complex CCU. Confirm the actual tablet strength and current stock.",
       "use": "Long-term oral anticoagulation for selected thromboembolic indications. A key CCU example is a patient with a mechanical prosthetic heart valve, including mechanical aortic valve replacement.",
-      "administration": "PO exactly as ordered, with dosing adjusted according to INR and the prescribed therapeutic target. Do not treat a single universal INR target as correct for every mechanical valve; the target depends on valve type/position and patient thromboembolic risk. After mechanical-valve implantation, current ESC/EACTS guidance recommends starting UFH or LMWH bridging together with a VKA as soon as considered safe.",
-      "monitor": "• Check INR and the prescribed target range. • Assess for bleeding: gums, urine, stool, bruising, puncture sites, neurological symptoms or unexplained hypotension. • Review new medicines, antibiotics, diet changes and illness because they can change the INR. • Warfarin effect begins within about 24 hours, but peak anticoagulant effect is delayed about 72–96 hours; reaching a stable therapeutic INR can take longer. • Vitamin K is used to reverse warfarin effect in appropriate clinical situations according to severity/protocol.",
+      "administration": "Give orally as ordered. Compare INR with the individual target, which depends on valve type, position and thromboembolic risk. After mechanical-valve implantation, ESC/EACTS recommends starting therapeutic UFH or LMWH together with a VKA within 24 hours or as soon as considered safe. The team can stop the bridge after two consecutive days of INR in range.",
+      "monitor": "• Check INR and the prescribed target. • Assess for bleeding, including blood in urine or stool, new neurological symptoms and unexplained hypotension. • Check new medicines, including antibiotics, and report illness or major diet changes that may alter INR. Keep dietary vitamin K intake consistent. • Effect generally starts within 24 hours, with peak effect delayed 72–96 hours. Stable therapeutic INR can take longer. • Vitamin K can be used for reversal, with treatment determined by bleeding severity, INR and protocol.",
       "why": "Warfarin inhibits vitamin-K recycling, reducing synthesis of vitamin-K-dependent clotting factors II, VII, IX and X. Mechanical valves are thrombogenic because blood contacts an artificial non-endothelial surface and experiences disturbed flow, promoting thrombus formation; anticoagulation reduces valve thrombosis and systemic embolic risk.",
       "source": "Used in CCU · ward report + 2025 ESC/EACTS mechanical-valve guidance + current DailyMed warfarin labeling",
       "pages": "Nasser CCU recall · updated 5 Oct 2026",
@@ -1284,9 +1284,9 @@
       "header": "CLEXANE / CLEXAN — enoxaparin",
       "drugclass": "Low-molecular-weight heparin (LMWH) anticoagulant.",
       "availability": "YES. Palestinian essential-medicine data document prefilled 20-, 40-, 60- and 80-mg syringes. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
-      "administration": "Deep SC in alternating abdominal sites. With a standard manufacturer prefilled syringe, do not expel the air bubble and do not rub afterward. Never IM.",
-      "use": "Anticoagulation in ACS and other thromboembolic indications according to the written order/protocol.",
-      "monitor": "• Watch gums, urine, stool, puncture sites and bruises for bleeding. • Check platelet and renal information when ordered. • Tell the team the most recent dose before invasive procedures/line removal when relevant. • Verify the exact syringe strength.",
+      "administration": "For a prescribed SC dose, give deep SC at alternating abdominal sites. For a full dose from a manufacturer prefilled syringe, follow the product instructions, including leaving the air bubble in place and avoiding rubbing afterward. Never give IM.",
+      "use": "Prevention or treatment of venous thromboembolism and anticoagulation in selected ACS regimens. Follow the indication-specific order and protocol. Some STEMI regimens include an ordered initial IV bolus.",
+      "monitor": "• Verify syringe strength and the ordered dose. Assess for bleeding and check platelets and renal function as ordered. • Severe renal impairment (CrCl below 30 mL/min) requires regimen review because enoxaparin exposure increases. • Report the dose and time of the last injection before an invasive procedure or neuraxial catheter placement/removal. • New midline back pain, leg weakness or numbness, or bowel/bladder dysfunction after a neuraxial procedure requires immediate escalation for possible spinal hematoma.",
       "why": "Bleeding risk, renal clearance and timing make the exact syringe and dose important.",
       "source": "Routine CCU meds · approved bedside format Sep 2026 · ED shelf photograph (2026-11-02)",
       "pages": "CCU internship medication reference · Sep 2026",
@@ -1297,7 +1297,7 @@
       "memoryUse": "Clexane = enoxaparin = LMWH.",
       "memoryDanger": "Main danger: bleeding; renal impairment can increase exposure.",
       "mechanism": "LMWH potentiates antithrombin, predominantly reducing factor Xa activity.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority.",
+      "mechanismBasis": "Gaza MOH injectable guide (2018), p. 41, supports deep SC technique and avoiding rubbing. Follow the current instructions for the actual syringe and any dose adjustment.",
       "departments": [
         "ed"
       ]
@@ -1355,8 +1355,8 @@
       "availability": "YES. Palestinian essential-medicine and registry data document 75-mg tablets. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
       "administration": "PO. Routine maintenance needs no special preparation; loading doses are separate physician/protocol orders.",
       "use": "Commonly part of dual antiplatelet therapy after ACS/PCI and coronary stenting.",
-      "monitor": "• Assess for bleeding. • Do not casually omit/discontinue it in a patient with a recent coronary stent; clarify unexpected omissions. • Avoid routine omeprazole with clopidogrel when a suitable alternative PPI is available. • Pantoprazole is generally the less problematic practical PPI choice.",
-      "why": "Premature interruption after stenting can increase thrombosis risk; omeprazole can reduce clopidogrel activation.",
+      "monitor": "• Assess for bleeding. Clarify unexpected omissions after recent coronary stenting promptly because premature interruption raises thrombotic risk. • Avoid coadministration with omeprazole or esomeprazole. Separating omeprazole by 12 hours does not prevent the interaction. Pantoprazole has less effect on clopidogrel’s antiplatelet activity and may be suitable if a PPI is indicated.",
+      "why": "Clopidogrel requires metabolic activation, in part by CYP2C19. Omeprazole and esomeprazole can inhibit this step. Interrupting therapy after stenting can raise the risk of thrombosis.",
       "source": "Routine CCU meds · approved bedside format Sep 2026 · ED shelf photograph (2026-11-02)",
       "pages": "CCU internship medication reference · Sep 2026",
       "category": "ccu",
@@ -1366,7 +1366,7 @@
       "memoryUse": "P2Y12 antiplatelet used after ACS/PCI.",
       "memoryDanger": "Bleeding; avoid casual interruption after recent coronary stenting.",
       "mechanism": "Prodrug whose active metabolite irreversibly inhibits platelet P2Y12 receptors.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority.",
+      "mechanismBasis": "The Palestinian Essential Medicine List (2024) records the 75-mg tablet. Clinical use and interaction details come from current product labeling and the 2025 ACC/AHA ACS guideline.",
       "departments": [
         "ed"
       ]

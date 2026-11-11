@@ -1335,6 +1335,62 @@
       "type": "primary prescribing information",
       "checkedDate": "2026-11-11",
       "reviewScope": "Tissue ischemia, arrhythmia and same-set incompatibility."
+    },
+    {
+      "id": "gaza-moh-injectables-2018-enoxaparin",
+      "title": "Gaza MOH injectable medication guide (January 2018), p. 41",
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf#page=52",
+      "type": "Palestinian MOH Gaza administration guide",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Deep SC administration, air bubble instructions for the described syringes and no rubbing. Current labeling governs product-specific use."
+    },
+    {
+      "id": "palestinian-eml-2024-antithrombotics",
+      "title": "Palestinian Essential Medicine List (2024)",
+      "url": "https://pharmacy.moh.ps/Content/Laws/Vuoci8KjRC8YZF8ICukjbSxQ_72NDdGOxPdwXuKgw68HDsmzo.pdf",
+      "type": "Palestinian MOH formulary",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Listed products and strengths. Does not establish current facility stock or local administration protocols."
+    },
+    {
+      "id": "esc-eacts-vhd-2025-anticoagulation",
+      "title": "2025 ESC/EACTS valvular heart disease guideline",
+      "url": "https://academic.oup.com/ejcts/article/67/8/ezaf276/8242828",
+      "type": "primary guidance",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Mechanical-valve INR targets and bridging after implantation."
+    },
+    {
+      "id": "aha-acc-acs-2025-antiplatelets",
+      "title": "2025 ACC/AHA acute coronary syndromes guideline",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009",
+      "type": "primary guidance",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Context for ACS antiplatelet and gastroprotection plans."
+    },
+    {
+      "id": "review-label-ccu-warfarin-coumadin",
+      "title": "DailyMed Warfarin sodium",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1bd0d02-eccb-4449-82b9-9b552835029e",
+      "type": "primary prescribing information",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "INR, pharmacodynamics, dietary vitamin K and reversal."
+    },
+    {
+      "id": "review-label-ccu-enoxaparin",
+      "title": "DailyMed Lovenox (enoxaparin)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5017a927-2a24-4f27-89f9-27c805bf7d59",
+      "type": "primary prescribing information",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Severe renal impairment, neuraxial hematoma, indication-specific routes and prefilled syringe technique."
+    },
+    {
+      "id": "review-label-ccu-clopidogrel",
+      "title": "DailyMed Plavix (clopidogrel)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de8b0b67-eb25-4684-83b5-7ad785314227",
+      "type": "primary prescribing information",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Activation, oral loading and maintenance, drug interactions and interruption risk."
     }
   ],
   "itemEvidence": {
@@ -1400,7 +1456,10 @@
     ],
     "ccu-warfarin-coumadin": [
       "content-v35",
-      "label-ccu-warfarin-coumadin"
+      "label-ccu-warfarin-coumadin",
+      "palestinian-eml-2024-antithrombotics",
+      "esc-eacts-vhd-2025-anticoagulation",
+      "review-label-ccu-warfarin-coumadin"
     ],
     "ibd2-fortum-ceftazidime": [
       "content-v35",
@@ -1424,7 +1483,10 @@
     ],
     "ccu-enoxaparin": [
       "content-v35",
-      "label-ccu-enoxaparin"
+      "label-ccu-enoxaparin",
+      "gaza-moh-injectables-2018-enoxaparin",
+      "palestinian-eml-2024-antithrombotics",
+      "review-label-ccu-enoxaparin"
     ],
     "ccu-heparin-ufh": [
       "content-v35",
@@ -1438,7 +1500,10 @@
     ],
     "ccu-clopidogrel": [
       "content-v35",
-      "label-ccu-clopidogrel"
+      "label-ccu-clopidogrel",
+      "palestinian-eml-2024-antithrombotics",
+      "aha-acc-acs-2025-antiplatelets",
+      "review-label-ccu-clopidogrel"
     ],
     "ccu-bisoprolol": [
       "content-v35",
