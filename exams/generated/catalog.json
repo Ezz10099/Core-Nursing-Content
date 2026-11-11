@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 49,
-  "sourceContentSha256": "3c3d316f8b63fe5185629a941f94ebbea3592eff07d80cdea688de80b304dcd3",
+  "sourceContentVersion": 50,
+  "sourceContentSha256": "ed997d1300c0a3aa18041112b708a138e50b20f76a7d9716d0459bc09b76d3cf",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 321,
-    "questions": 1933,
-    "single-best-answer": 1903,
+    "questions": 1941,
+    "single-best-answer": 1911,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 107,
     "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 914
+    "mappedLearningPoints": 918
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -388,7 +388,7 @@
         {
           "id": "ccu-warfarin-coumadin--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 7
         },
         {
           "id": "ccu-warfarin-coumadin--advanced",
@@ -398,7 +398,7 @@
         {
           "id": "ccu-warfarin-coumadin--7-day",
           "stage": "7-day",
-          "questionCount": 10
+          "questionCount": 12
         }
       ]
     },
@@ -526,7 +526,7 @@
         {
           "id": "ccu-enoxaparin--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 8
         },
         {
           "id": "ccu-enoxaparin--advanced",
@@ -536,7 +536,7 @@
         {
           "id": "ccu-enoxaparin--7-day",
           "stage": "7-day",
-          "questionCount": 9
+          "questionCount": 10
         }
       ]
     },
@@ -595,7 +595,7 @@
         {
           "id": "ccu-clopidogrel--standard",
           "stage": "standard",
-          "questionCount": 3
+          "questionCount": 4
         },
         {
           "id": "ccu-clopidogrel--advanced",
@@ -605,7 +605,7 @@
         {
           "id": "ccu-clopidogrel--7-day",
           "stage": "7-day",
-          "questionCount": 7
+          "questionCount": 8
         }
       ]
     },
@@ -2499,11 +2499,11 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "e26579ecf592bf1e6e5f065f6f26080d701c4e7493c03167fce48acde2d2b7ab"
+      "sha256": "502dfeb094853d8a22887721f0632a6d45f30a778b85bd7b31b49d5ee9ac7df7"
     },
     {
       "path": "banks-02.json",
-      "sha256": "c6849d61875ccc56b0ea333b7b4c9933448d8b17712e6bee9da5e022e5f3bce1"
+      "sha256": "f2e2104a440501d51c683ef26b4478d367fb26a1d9977a9c1dbaadbadc85f36c"
     },
     {
       "path": "banks-03.json",
@@ -2523,7 +2523,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "7ccdca610e02ca4c3012d8d3aefde05f78d584579bf1eb8a942f3caec09dd41a"
+      "sha256": "e069c1fabc9d3cea318a53a45121129c0434efc432e4fcf3ed211cf2536935e2"
     }
   ]
 }

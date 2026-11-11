@@ -19134,7 +19134,10 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-warfarin-coumadin"
+        "label-ccu-warfarin-coumadin",
+        "palestinian-eml-2024-antithrombotics",
+        "esc-eacts-vhd-2025-anticoagulation",
+        "review-label-ccu-warfarin-coumadin"
       ],
       "exams": [
         {
@@ -19233,18 +19236,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Vitamin-K antagonist",
+                  "explanation": "Vitamin K antagonist (VKA) oral anticoagulant."
+                },
+                {
+                  "id": "C",
                   "text": "Antiplatelet",
                   "explanation": "The medicine is classified as: Vitamin K antagonist (VKA) oral anticoagulant."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Fibrinolytic",
                   "explanation": "The medicine is classified as: Vitamin K antagonist (VKA) oral anticoagulant."
-                },
-                {
-                  "id": "D",
-                  "text": "Vitamin-K antagonist",
-                  "explanation": "Vitamin K antagonist (VKA) oral anticoagulant."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -19263,7 +19266,7 @@
               "learningPointIds": [
                 "ccu-warfarin-coumadin::drug-class"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -19271,18 +19274,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Long-term anticoagulation for selected indications",
+                  "explanation": "This is a clinical use of the medicine: Long-term oral anticoagulation for selected thromboembolic indications. A key CCU example is a patient with a mechanical prosthetic heart valve, including mechanical aortic valve replacement."
+                },
+                {
+                  "id": "B",
                   "text": "Suppression of bacterial protein synthesis",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Relief of bronchospasm through airway receptor stimulation",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "C",
-                  "text": "Long-term anticoagulation for selected indications",
-                  "explanation": "This is a clinical use of the medicine: Long-term oral anticoagulation for selected thromboembolic indications. A key CCU example is a patient with a mechanical prosthetic heart valve, including mechanical aortic valve replacement."
                 },
                 {
                   "id": "D",
@@ -19313,7 +19316,7 @@
               "learningPointIds": [
                 "ccu-warfarin-coumadin::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which result is used to adjust warfarin against the prescribed therapeutic target?",
@@ -19347,14 +19350,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -19377,23 +19380,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vitamin K",
-                  "explanation": "It supports restoration of vitamin-K-dependent factor synthesis; the full reversal plan depends on severity."
-                },
-                {
-                  "id": "B",
                   "text": "Naloxone",
                   "explanation": "It reverses opioid effects, not vitamin-K antagonism."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Adenosine",
                   "explanation": "It transiently blocks AV-nodal conduction rather than reversing warfarin."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Atropine",
                   "explanation": "It treats selected bradycardia through muscarinic blockade."
+                },
+                {
+                  "id": "D",
+                  "text": "Vitamin K",
+                  "explanation": "It supports restoration of vitamin-K-dependent factor synthesis; the full reversal plan depends on severity."
                 }
               ],
               "format": "single-best-answer",
@@ -19411,7 +19414,7 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -19427,10 +19430,96 @@
               "learningPointIds": [
                 "ccu-warfarin-coumadin::warfarin_reversal"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Warfarin and therapeutic heparin were started after mechanical-valve implantation. Today is the first day the INR reaches its prescribed range. Which finding supports stopping the bridge under the ESC/EACTS pathway?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "INR reaches the lower edge of its range on the first day.",
+                  "explanation": "One in-range day does not meet this criterion."
+                },
+                {
+                  "id": "B",
+                  "text": "Two oral warfarin doses have been given and the INR is still rising.",
+                  "explanation": "Number of doses and direction of change do not establish two days of therapeutic INR."
+                },
+                {
+                  "id": "C",
+                  "text": "INR remains in the prescribed range on a second consecutive day.",
+                  "explanation": "ESC/EACTS describes two consecutive days of therapeutic INR before stopping the bridge."
+                },
+                {
+                  "id": "D",
+                  "text": "The aPTT reaches the heparin goal on two consecutive days.",
+                  "explanation": "aPTT can reflect UFH effect, but does not establish sustained therapeutic VKA effect."
+                }
+              ],
+              "point": "After mechanical-valve implantation, ESC/EACTS uses two consecutive days of therapeutic INR before ending the heparin bridge.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-warfarin-coumadin",
+                  "field": "administration",
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-warfarin-coumadin--standard--warfarin_bridge_stop",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-warfarin-coumadin::warfarin_bridge_stop"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient stable on warfarin plans to eat more leafy greens for health. What advice best supports stable anticoagulation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Offset extra leafy greens by taking an extra warfarin dose that evening.",
+                  "explanation": "Self-adjusting warfarin to individual meals risks unstable anticoagulation."
+                },
+                {
+                  "id": "B",
+                  "text": "Avoid leafy greens on every day that warfarin is scheduled.",
+                  "explanation": "Routine avoidance is unnecessary. Consistency matters."
+                },
+                {
+                  "id": "C",
+                  "text": "Keep vitamin K intake consistent and discuss the planned change with the anticoagulation team.",
+                  "explanation": "A stable intake supports stable INR. The team can advise on follow-up if intake changes."
+                },
+                {
+                  "id": "D",
+                  "text": "Move leafy greens to the morning and take warfarin at night to avoid the effect.",
+                  "explanation": "Separating the times does not remove the effect of vitamin K intake on INR."
+                }
+              ],
+              "point": "Keep dietary vitamin K consistent on warfarin.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-warfarin-coumadin",
+                  "field": "monitor",
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-warfarin-coumadin--standard--warfarin_vitamin_k_consistency",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-warfarin-coumadin::warfarin_vitamin_k_consistency"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 5
+          "questionCount": 7
         },
         {
           "id": "ccu-warfarin-coumadin--advanced",
@@ -19492,7 +19581,7 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -19542,14 +19631,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 }
               ],
               "criticalForSafety": false,
@@ -19592,14 +19681,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -19670,14 +19759,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -19896,13 +19985,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Relief of bronchospasm through airway receptor stimulation",
-                  "explanation": "This is a different treatment role."
+                  "text": "Long-term anticoagulation for selected indications",
+                  "explanation": "This is a clinical use of the medicine: Long-term oral anticoagulation for selected thromboembolic indications. A key CCU example is a patient with a mechanical prosthetic heart valve, including mechanical aortic valve replacement."
                 },
                 {
                   "id": "C",
-                  "text": "Long-term anticoagulation for selected indications",
-                  "explanation": "This is a clinical use of the medicine: Long-term oral anticoagulation for selected thromboembolic indications. A key CCU example is a patient with a mechanical prosthetic heart valve, including mechanical aortic valve replacement."
+                  "text": "Relief of bronchospasm through airway receptor stimulation",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
@@ -19934,7 +20023,7 @@
                 "ccu-warfarin-coumadin::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-warfarin-coumadin--standard--treatment-role",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which result is used to adjust warfarin against the prescribed therapeutic target?",
@@ -19968,14 +20057,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -20009,13 +20098,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Adenosine",
-                  "explanation": "It transiently blocks AV-nodal conduction rather than reversing warfarin."
+                  "text": "Vitamin K",
+                  "explanation": "It supports restoration of vitamin-K-dependent factor synthesis; the full reversal plan depends on severity."
                 },
                 {
                   "id": "D",
-                  "text": "Vitamin K",
-                  "explanation": "It supports restoration of vitamin-K-dependent factor synthesis; the full reversal plan depends on severity."
+                  "text": "Adenosine",
+                  "explanation": "It transiently blocks AV-nodal conduction rather than reversing warfarin."
                 }
               ],
               "format": "single-best-answer",
@@ -20033,7 +20122,7 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -20050,7 +20139,95 @@
                 "ccu-warfarin-coumadin::warfarin_reversal"
               ],
               "reusedFromQuestionId": "ccu-warfarin-coumadin--standard--warfarin_reversal",
-              "answerKey": "D"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Warfarin and therapeutic heparin were started after mechanical-valve implantation. Today is the first day the INR reaches its prescribed range. Which finding supports stopping the bridge under the ESC/EACTS pathway?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "INR remains in the prescribed range on a second consecutive day.",
+                  "explanation": "ESC/EACTS describes two consecutive days of therapeutic INR before stopping the bridge."
+                },
+                {
+                  "id": "B",
+                  "text": "The aPTT reaches the heparin goal on two consecutive days.",
+                  "explanation": "aPTT can reflect UFH effect, but does not establish sustained therapeutic VKA effect."
+                },
+                {
+                  "id": "C",
+                  "text": "Two oral warfarin doses have been given and the INR is still rising.",
+                  "explanation": "Number of doses and direction of change do not establish two days of therapeutic INR."
+                },
+                {
+                  "id": "D",
+                  "text": "INR reaches the lower edge of its range on the first day.",
+                  "explanation": "One in-range day does not meet this criterion."
+                }
+              ],
+              "point": "After mechanical-valve implantation, ESC/EACTS uses two consecutive days of therapeutic INR before ending the heparin bridge.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-warfarin-coumadin",
+                  "field": "administration",
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-warfarin-coumadin--7-day--warfarin_bridge_stop",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-warfarin-coumadin::warfarin_bridge_stop"
+              ],
+              "reusedFromQuestionId": "ccu-warfarin-coumadin--standard--warfarin_bridge_stop",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient stable on warfarin plans to eat more leafy greens for health. What advice best supports stable anticoagulation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Move leafy greens to the morning and take warfarin at night to avoid the effect.",
+                  "explanation": "Separating the times does not remove the effect of vitamin K intake on INR."
+                },
+                {
+                  "id": "B",
+                  "text": "Avoid leafy greens on every day that warfarin is scheduled.",
+                  "explanation": "Routine avoidance is unnecessary. Consistency matters."
+                },
+                {
+                  "id": "C",
+                  "text": "Keep vitamin K intake consistent and discuss the planned change with the anticoagulation team.",
+                  "explanation": "A stable intake supports stable INR. The team can advise on follow-up if intake changes."
+                },
+                {
+                  "id": "D",
+                  "text": "Offset extra leafy greens by taking an extra warfarin dose that evening.",
+                  "explanation": "Self-adjusting warfarin to individual meals risks unstable anticoagulation."
+                }
+              ],
+              "point": "Keep dietary vitamin K consistent on warfarin.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-warfarin-coumadin",
+                  "field": "monitor",
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-warfarin-coumadin--7-day--warfarin_vitamin_k_consistency",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-warfarin-coumadin::warfarin_vitamin_k_consistency"
+              ],
+              "reusedFromQuestionId": "ccu-warfarin-coumadin--standard--warfarin_vitamin_k_consistency",
+              "answerKey": "C"
             },
             {
               "stem": "During COUMADIN — warfarin therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
@@ -20067,13 +20244,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Clinically important blood loss",
-                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
+                  "text": "Isolated vasodilator headache",
+                  "explanation": "This does not explain melena and the systemic blood-loss pattern."
                 },
                 {
                   "id": "D",
-                  "text": "Isolated vasodilator headache",
-                  "explanation": "This does not explain melena and the systemic blood-loss pattern."
+                  "text": "Clinically important blood loss",
+                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -20084,7 +20261,7 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -20101,7 +20278,7 @@
                 "ccu-warfarin-coumadin::bleeding"
               ],
               "reusedFromQuestionId": "ccu-warfarin-coumadin--advanced--bleeding",
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "A mechanical-valve patient is prescribed parenteral bridging while warfarin is established. Which pharmacodynamic distinction explains the overlap?",
@@ -20135,14 +20312,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 }
               ],
               "criticalForSafety": false,
@@ -20164,18 +20341,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "INR trend and bleeding assessment",
-                  "explanation": "Interaction or illness can alter warfarin response and bleeding risk."
-                },
-                {
-                  "id": "C",
                   "text": "SpO2 trend and inhaler technique",
                   "explanation": "These do not quantify the anticoagulant response."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Pain score and joint movement",
                   "explanation": "These do not establish changed anticoagulation intensity."
+                },
+                {
+                  "id": "D",
+                  "text": "INR trend and bleeding assessment",
+                  "explanation": "Interaction or illness can alter warfarin response and bleeding risk."
                 }
               ],
               "format": "single-best-answer",
@@ -20186,14 +20363,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -20224,20 +20401,20 @@
                 "ccu-warfarin-coumadin::warfarin_interactions"
               ],
               "reusedFromQuestionId": "ccu-warfarin-coumadin--advanced--warfarin_interactions",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Two mechanical-valve patients have different prescribed INR targets. Which difference can justify this?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Presence versus absence of a pre-dose meal",
-                  "explanation": "Meal timing is not the basis of the valve-specific target."
+                  "text": "Valve type or position and patient thromboembolic risk",
+                  "explanation": "These inform the patient-specific target."
                 },
                 {
                   "id": "B",
-                  "text": "Valve type or position and patient thromboembolic risk",
-                  "explanation": "These inform the patient-specific target."
+                  "text": "Presence versus absence of a pre-dose meal",
+                  "explanation": "Meal timing is not the basis of the valve-specific target."
                 },
                 {
                   "id": "C",
@@ -20265,14 +20442,14 @@
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "administration",
-                  "textSha256": "8ea7fb5a1642f5177e235997abd3e7eeafd9a4c46468a6ff907f58ad524ccd02"
+                  "textSha256": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-warfarin-coumadin",
                   "field": "monitor",
-                  "textSha256": "5ac94bb30e8b3a3a850c314ffcc943799dbf5527534e49f7a3ee53474d08f044"
+                  "textSha256": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b"
                 },
                 {
                   "file": "content.json",
@@ -20303,20 +20480,20 @@
                 "ccu-warfarin-coumadin::mechanical_valve"
               ],
               "reusedFromQuestionId": "ccu-warfarin-coumadin--advanced--mechanical_valve",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Why does a mechanical valve create a continuing indication for prescribed anticoagulation?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Artificial non-endothelial surfaces and disturbed flow promote thrombus formation",
-                  "explanation": "Anticoagulation reduces valve thrombosis and embolic risk."
+                  "text": "The prosthesis requires routine dissolution of its structural material",
+                  "explanation": "Anticoagulation does not dissolve the valve itself."
                 },
                 {
                   "id": "B",
-                  "text": "The prosthesis requires routine dissolution of its structural material",
-                  "explanation": "Anticoagulation does not dissolve the valve itself."
+                  "text": "Artificial non-endothelial surfaces and disturbed flow promote thrombus formation",
+                  "explanation": "Anticoagulation reduces valve thrombosis and embolic risk."
                 },
                 {
                   "id": "C",
@@ -20347,10 +20524,10 @@
                 "ccu-warfarin-coumadin::valve_thrombosis"
               ],
               "reusedFromQuestionId": "ccu-warfarin-coumadin--advanced--valve_thrombosis",
-              "answerKey": "A"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 10
+          "questionCount": 12
         }
       ]
     },

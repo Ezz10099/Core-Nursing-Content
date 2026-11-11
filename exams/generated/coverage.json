@@ -2116,6 +2116,32 @@
       ]
     },
     {
+      "id": "ccu-warfarin-coumadin::warfarin_bridge_stop",
+      "itemId": "ccu-warfarin-coumadin",
+      "point": "After mechanical-valve implantation, ESC/EACTS uses two consecutive days of therapeutic INR before ending the heparin bridge.",
+      "questionIds": [
+        "ccu-warfarin-coumadin--standard--warfarin_bridge_stop",
+        "ccu-warfarin-coumadin--7-day--warfarin_bridge_stop"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-warfarin-coumadin::warfarin_vitamin_k_consistency",
+      "itemId": "ccu-warfarin-coumadin",
+      "point": "Keep dietary vitamin K consistent on warfarin.",
+      "questionIds": [
+        "ccu-warfarin-coumadin--standard--warfarin_vitamin_k_consistency",
+        "ccu-warfarin-coumadin--7-day--warfarin_vitamin_k_consistency"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-warfarin-coumadin::bleeding",
       "itemId": "ccu-warfarin-coumadin",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -2810,6 +2836,19 @@
       ]
     },
     {
+      "id": "ccu-enoxaparin::enoxaparin_neuraxial_red_flag",
+      "itemId": "ccu-enoxaparin",
+      "point": "New neurological symptoms after a neuraxial procedure warrant emergency evaluation for spinal hematoma.",
+      "questionIds": [
+        "ccu-enoxaparin--standard--enoxaparin_neuraxial_red_flag",
+        "ccu-enoxaparin--7-day--enoxaparin_neuraxial_red_flag"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-enoxaparin::bleeding",
       "itemId": "ccu-enoxaparin",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -3091,6 +3130,19 @@
       "questionIds": [
         "ccu-clopidogrel--standard--treatment-role",
         "ccu-clopidogrel--7-day--treatment-role"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-clopidogrel::clopidogrel_loading_order",
+      "itemId": "ccu-clopidogrel",
+      "point": "A clopidogrel loading dose requires a distinct order or authorized protocol.",
+      "questionIds": [
+        "ccu-clopidogrel--standard--clopidogrel_loading_order",
+        "ccu-clopidogrel--7-day--clopidogrel_loading_order"
       ],
       "stages": [
         "standard",
@@ -13186,10 +13238,12 @@
         ],
         "administration": [
           "ccu-warfarin-coumadin--standard--warfarin_inr",
+          "ccu-warfarin-coumadin--standard--warfarin_bridge_stop",
           "ccu-warfarin-coumadin--advanced--warfarin_delay",
           "ccu-warfarin-coumadin--advanced--warfarin_interactions",
           "ccu-warfarin-coumadin--advanced--mechanical_valve",
           "ccu-warfarin-coumadin--7-day--warfarin_inr",
+          "ccu-warfarin-coumadin--7-day--warfarin_bridge_stop",
           "ccu-warfarin-coumadin--7-day--warfarin_delay",
           "ccu-warfarin-coumadin--7-day--warfarin_interactions",
           "ccu-warfarin-coumadin--7-day--mechanical_valve"
@@ -13197,12 +13251,14 @@
         "monitor": [
           "ccu-warfarin-coumadin--standard--warfarin_inr",
           "ccu-warfarin-coumadin--standard--warfarin_reversal",
+          "ccu-warfarin-coumadin--standard--warfarin_vitamin_k_consistency",
           "ccu-warfarin-coumadin--advanced--bleeding",
           "ccu-warfarin-coumadin--advanced--warfarin_delay",
           "ccu-warfarin-coumadin--advanced--warfarin_interactions",
           "ccu-warfarin-coumadin--advanced--mechanical_valve",
           "ccu-warfarin-coumadin--7-day--warfarin_inr",
           "ccu-warfarin-coumadin--7-day--warfarin_reversal",
+          "ccu-warfarin-coumadin--7-day--warfarin_vitamin_k_consistency",
           "ccu-warfarin-coumadin--7-day--bleeding",
           "ccu-warfarin-coumadin--7-day--warfarin_delay",
           "ccu-warfarin-coumadin--7-day--warfarin_interactions",
@@ -13540,11 +13596,15 @@
         "monitor": [
           "ccu-enoxaparin--standard--platelets",
           "ccu-enoxaparin--standard--renal_dose",
+          "ccu-enoxaparin--standard--lmwh_route",
+          "ccu-enoxaparin--standard--enoxaparin_neuraxial_red_flag",
           "ccu-enoxaparin--advanced--bleeding",
           "ccu-enoxaparin--advanced--renal_dose",
           "ccu-enoxaparin--advanced--procedure_timing",
           "ccu-enoxaparin--7-day--platelets",
           "ccu-enoxaparin--7-day--renal_dose",
+          "ccu-enoxaparin--7-day--lmwh_route",
+          "ccu-enoxaparin--7-day--enoxaparin_neuraxial_red_flag",
           "ccu-enoxaparin--7-day--bleeding",
           "ccu-enoxaparin--7-day--procedure_timing"
         ],
@@ -13734,6 +13794,10 @@
         "memoryUse": [
           "ccu-clopidogrel--standard--treatment-role",
           "ccu-clopidogrel--7-day--treatment-role"
+        ],
+        "administration": [
+          "ccu-clopidogrel--standard--clopidogrel_loading_order",
+          "ccu-clopidogrel--7-day--clopidogrel_loading_order"
         ],
         "monitor": [
           "ccu-clopidogrel--advanced--bleeding",
