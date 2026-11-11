@@ -8704,5 +8704,173 @@
         }
       ]
     }
+  },
+  "norepinephrine_peripheral_start": {
+    "point": "A suitable peripheral IV can be used for urgent initiation when central access would delay treatment.",
+    "anchor": "suitable peripheral IV",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An adult with septic shock needs urgent norepinephrine. Central access is being arranged, and a peripheral IV meets the unit’s vasopressor criteria. How should the nurse prepare to start the order?",
+      "choices": [
+        {
+          "text": "Use the suitable peripheral IV now and follow the site-monitoring protocol.",
+          "explanation": "A suitable peripheral IV allows prompt treatment while access needs are reassessed."
+        },
+        {
+          "text": "Prepare the pump now and wait to start until central access is confirmed.",
+          "explanation": "Waiting would delay urgent treatment despite a suitable peripheral IV."
+        },
+        {
+          "text": "Use the peripheral IV for fluids and substitute dobutamine until central access is ready.",
+          "explanation": "Dobutamine does not replace needed vasopressor support."
+        },
+        {
+          "text": "Give a peripheral loading bolus while the continuous infusion is prepared.",
+          "explanation": "The shock order calls for a controlled continuous infusion."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "norepinephrine_taper": {
+    "point": "Taper norepinephrine as ordered because abrupt withdrawal can cause hypotension.",
+    "anchor": "Abrupt withdrawal",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "The patient’s pressure has stabilized on norepinephrine and the team orders weaning. Which plan addresses the main immediate risk of abrupt withdrawal?",
+      "choices": [
+        {
+          "text": "Reduce the rate in ordered steps and reassess blood pressure at each step.",
+          "explanation": "Abrupt withdrawal can cause marked hypotension."
+        },
+        {
+          "text": "Stop the infusion and use urine output to decide whether to restart.",
+          "explanation": "Urine output responds too slowly to detect immediate hypotension."
+        },
+        {
+          "text": "Stop the infusion and continue ECG monitoring at the previous frequency.",
+          "explanation": "ECG monitoring cannot detect an abrupt fall in arterial pressure."
+        },
+        {
+          "text": "Continue the same dose until the current bag is empty, then discontinue.",
+          "explanation": "Running the bag empty still stops support abruptly."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "dobutamine_reassessment": {
+    "point": "New ventricular ectopy and falling BP on dobutamine require prompt reassessment.",
+    "anchor": "New ventricular ectopy",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "After a dobutamine dose increase, a low-output patient develops frequent new PVCs and a falling BP. Which bedside response is most appropriate?",
+      "choices": [
+        {
+          "text": "Reassess perfusion and rhythm promptly, report the change and follow ordered titration parameters.",
+          "explanation": "Dobutamine can provoke ventricular ectopy and hypotension. Both findings warrant prompt reassessment."
+        },
+        {
+          "text": "Increase the dose further and reassess whether the PVCs resolve as cardiac output improves.",
+          "explanation": "A further increase can worsen dose-related adverse effects."
+        },
+        {
+          "text": "Maintain the higher dose and reassess once the next hourly urine output is recorded.",
+          "explanation": "Falling BP and new ectopy require action before the next hourly trend."
+        },
+        {
+          "text": "Repeat a blood pressure after the next scheduled dose change without checking the rhythm strip.",
+          "explanation": "The new rhythm finding and perfusion change should be evaluated together."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "dobutamine_alkaline_line": {
+    "point": "Avoid mixing dobutamine with sodium bicarbonate or strongly alkaline solutions.",
+    "anchor": "sodium bicarbonate",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient receiving dobutamine now needs IV sodium bicarbonate. How should the nurse plan access for the bicarbonate?",
+      "choices": [
+        {
+          "text": "Use separate compatible access while continuing the dobutamine infusion.",
+          "explanation": "Dobutamine is incompatible with strongly alkaline solutions such as sodium bicarbonate."
+        },
+        {
+          "text": "Use the dobutamine Y-site after reducing both infusion rates.",
+          "explanation": "Slowing both infusions does not establish compatibility."
+        },
+        {
+          "text": "Add bicarbonate to the dobutamine bag to avoid a transient change in delivery.",
+          "explanation": "Mixing in the bag exposes dobutamine directly to the incompatible solution."
+        },
+        {
+          "text": "Use the dobutamine Y-site if both medications were prepared with dextrose.",
+          "explanation": "Using the same base diluent does not remove the bicarbonate incompatibility."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "dopamine_bradycardia_units": {
+    "point": "The usual adult AHA dopamine range is 5–20 mcg/kg/min for this bradycardia pathway.",
+    "anchor": "5–20 mcg/kg/min",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "For dopamine in the AHA adult bradycardia pathway, which usual infusion range should the nurse recognize when checking the order?",
+      "choices": [
+        {
+          "text": "5–20 mcg/kg/min",
+          "explanation": "This is the usual weight-based range for this AHA pathway."
+        },
+        {
+          "text": "5–20 mcg/min",
+          "explanation": "Omitting weight changes the dose substantially."
+        },
+        {
+          "text": "5–20 mcg/kg/hour",
+          "explanation": "The dose is per minute rather than per hour."
+        },
+        {
+          "text": "2–10 mcg/min",
+          "explanation": "This is the epinephrine range in the same pathway."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "dopamine_distal_ischemia": {
+    "point": "Dopamine can contribute to distal ischemia away from a patent infusion site.",
+    "anchor": "distal coolness",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "During dopamine infusion, toes become cold and mottled. The arm IV is painless and patent. Which interpretation should guide escalation?",
+      "choices": [
+        {
+          "text": "Systemic vasoconstriction may be compromising distal perfusion despite a patent IV.",
+          "explanation": "Dopamine can contribute to peripheral ischemia. Reassess the limbs and overall perfusion and escalate promptly."
+        },
+        {
+          "text": "The toe changes indicate dopamine extravasation at the arm IV.",
+          "explanation": "Extravasation typically produces changes near the leaking IV site."
+        },
+        {
+          "text": "The toe changes show increased cardiac output and adequate limb perfusion.",
+          "explanation": "Cool mottled toes are concerning for impaired perfusion."
+        },
+        {
+          "text": "A patent IV makes a dopamine-related perfusion problem unlikely.",
+          "explanation": "A patent IV does not exclude a systemic adverse effect."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

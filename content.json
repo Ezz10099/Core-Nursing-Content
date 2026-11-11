@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 48,
+  "contentVersion": 49,
   "updatedAt": "2026-11-11",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
@@ -1602,9 +1602,9 @@
       "header": "NOREPINEPHRINE / NORADRENALINE",
       "drugclass": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity.",
       "availability": "YES. Palestinian essential-medicine data document 4-mg ampoules.",
-      "administration": "Dilute to the hospital-standard concentration and run as a continuous infusion on an infusion pump; never IV push. Central access is preferred for ongoing/concentrated therapy, but a suitable proximal peripheral line may be used short-term when urgent therapy should not be delayed.",
-      "use": "Vasopressor support for severe hypotension/shock when clinically indicated.",
-      "monitor": "• Continuous/very frequent BP and perfusion assessment. • Inspect any peripheral IV frequently. • Pain, pallor, swelling, coolness or loss of flow at the site requires immediate action/escalation. • Pump precision matters because small rate changes can materially change BP.",
+      "administration": "For shock, infuse IV continuously on a pump. Verify the exact product, compatible diluent and standard concentration. A suitable peripheral IV can be used to start urgent treatment when central access would delay it. Follow the facility protocol for site checks and transition to central access.",
+      "use": "Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor. Cardiac dysfunction may change the choice.",
+      "monitor": "• Follow BP and perfusion closely during titration. • Inspect a peripheral IV frequently for pain, pallor, swelling, coolness or impaired flow. For suspected extravasation, stop the infusion through that IV, leave the catheter in place and avoid flushing. Escalate immediately for aspiration and treatment per protocol, and coordinate safe alternate access if pressure support is still needed. • Taper as ordered when discontinuing. Abrupt withdrawal can cause marked hypotension.",
       "why": "Strong vasoconstriction raises systemic vascular resistance/MAP; extravasation can cause local ischemia.",
       "source": "Routine CCU meds · approved bedside format Sep 2026",
       "pages": "CCU internship medication reference · Sep 2026",
@@ -1613,9 +1613,9 @@
         "ccu"
       ],
       "memoryUse": "PRESSURE drug: vasopressor for severe hypotension/shock.",
-      "memoryDanger": "Never IV push; monitor BP/perfusion and peripheral-site extravasation closely.",
+      "memoryDanger": "Check BP, perfusion and the infusion site. Respond immediately to suspected extravasation.",
       "mechanism": "Alpha1-mediated vasoconstriction with some beta1 cardiac stimulation.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "Administration reference: Gaza MOH injectable medication guide (2018), p. 78. Confirm the current facility protocol and exact product. Apply the exact product label for dilution. The guide’s D5W direction is specific to the concentrate described there."
     },
     {
       "id": "ccu-dobutamine",
@@ -1623,10 +1623,10 @@
       "header": "DOBUTAMINE",
       "drugclass": "Predominantly beta1 inotrope.",
       "availability": "YES. Palestinian essential-medicine data document 250-mg ampoules.",
-      "administration": "The concentrate must be diluted and given by continuous infusion pump; never IV push. Use the local standardized concentration rather than memorizing one bag volume.",
-      "use": "Selected low-cardiac-output states such as severe acute HF/cardiogenic shock when increased contractility is needed.",
-      "monitor": "• Continuous ECG/HR and BP. • Follow urine output and peripheral perfusion. • Watch for tachycardia, ectopy and BP changes. • Peripheral administration may be used with close site monitoring; central access is preferable for concentrated/prolonged therapy.",
-      "why": "Dobutamine increases cardiac contractility/output — think PUMP — but can provoke tachyarrhythmia.",
+      "administration": "Dilute the concentrate with a compatible fluid to the facility standard and use a continuous IV infusion pump. Avoid mixing with sodium bicarbonate or other strongly alkaline solutions. If using a peripheral IV under local protocol, monitor the site closely.",
+      "use": "Short-term inotropic support for selected low-output states. In adult septic shock with cardiac dysfunction and persistent hypoperfusion despite adequate volume and arterial pressure, one option is adding dobutamine to norepinephrine.",
+      "monitor": "• Monitor ECG, heart rate and BP continuously. • Follow urine output and peripheral perfusion. • New ventricular ectopy, tachycardia or falling BP warrants prompt reassessment, even if perfusion initially improved.",
+      "why": "Increasing contractility can improve cardiac output. Dobutamine can also increase heart rate and provoke ectopy.",
       "source": "Routine CCU meds · approved bedside format Sep 2026",
       "pages": "CCU internship medication reference · Sep 2026",
       "category": "ccu",
@@ -1636,7 +1636,7 @@
       "memoryUse": "PUMP drug: inotrope that increases contractility/output.",
       "memoryDanger": "Tachyarrhythmia and hemodynamic changes; use a controlled infusion.",
       "mechanism": "Predominantly beta1 agonism increases myocardial contractility.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "Administration reference: Gaza MOH injectable medication guide (2018), p. 39. Confirm the current facility protocol and exact product."
     },
     {
       "id": "ccu-dopamine",
@@ -1644,9 +1644,9 @@
       "header": "DOPAMINE",
       "drugclass": "Catecholamine inotrope/vasopressor with dose-dependent effects.",
       "availability": "YES. Palestinian essential-medicine data document 200-mg ampoules.",
-      "administration": "Must be diluted and given continuously through an infusion pump; never IV push. Avoid mixing directly with strongly alkaline solutions such as sodium bicarbonate.",
-      "use": "Selected hemodynamic support and some bradycardia pathways depending on protocol.",
-      "monitor": "• Continuous HR/rhythm/BP. • Check urine output/peripheral perfusion. • Watch for tachyarrhythmia, excessive vasoconstriction and extravasation. • A large peripheral vein may be used initially with frequent inspection; central access is preferred for prolonged/concentrated infusion.",
+      "administration": "Dilute the concentrate and infuse continuously IV by pump through a large vein as directed by local protocol. Avoid simultaneous administration with sodium bicarbonate or other alkaline solutions through the same infusion set.",
+      "use": "Selected hemodynamic support. In the AHA adult bradycardia pathway, dopamine infusion is one option if atropine is ineffective. The usual IV infusion range in that pathway is 5–20 mcg/kg/min, titrated to response with a gradual taper.",
+      "monitor": "• Monitor HR, rhythm and BP continuously. • Follow urine output and peripheral perfusion. • Assess for new tachyarrhythmia and ischemia, including distal coolness or discoloration away from the infusion site. • Inspect the IV frequently for extravasation and escalate promptly if suspected.",
       "why": "Effects change with dose; excessive exposure can become pro-arrhythmic or strongly vasoconstrictive.",
       "source": "Routine CCU meds · approved bedside format Sep 2026",
       "pages": "CCU internship medication reference · Sep 2026",
@@ -1655,9 +1655,9 @@
         "ccu"
       ],
       "memoryUse": "Dose-dependent catecholamine for selected hemodynamic/bradycardia support.",
-      "memoryDanger": "Never IV push; tachyarrhythmia, vasoconstriction and extravasation are key hazards.",
+      "memoryDanger": "Watch for tachyarrhythmia, peripheral ischemia and extravasation during continuous infusion.",
       "mechanism": "Stimulates dopaminergic and adrenergic receptors in a dose-dependent pattern.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "Administration reference: Gaza MOH injectable medication guide (2018), p. 40. Confirm the current facility protocol and exact product."
     },
     {
       "id": "ccu-atropine",

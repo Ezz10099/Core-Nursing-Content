@@ -16455,7 +16455,11 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-norepinephrine"
+        "label-ccu-norepinephrine",
+        "gaza-moh-injectables-2018-norepinephrine",
+        "ssc-2026-adults",
+        "uab-vasopressor-extravasation-2026",
+        "review-label-ccu-norepinephrine"
       ],
       "exams": [
         {
@@ -16593,7 +16597,7 @@
                 {
                   "id": "A",
                   "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
+                  "explanation": "This is a clinical use of the medicine: Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor. Cardiac dysfunction may change the choice."
                 },
                 {
                   "id": "B",
@@ -16618,7 +16622,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "use",
-                  "textSha256": "fc05c506df67c369041ed40ccdf1d4305796ed5e9431338a3807bc2fe2b7a4dd"
+                  "textSha256": "0ee8d62f096251af7ae3e89e8e2aecdefafa816e66151261ef2f098c05eafd4a"
                 },
                 {
                   "file": "content.json",
@@ -16668,21 +16672,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "administration",
-                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "medications",
-                  "itemId": "ccu-norepinephrine",
-                  "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "medications",
-                  "itemId": "ccu-norepinephrine",
-                  "field": "memoryDanger",
-                  "textSha256": "16c2e95d4bfaec87c2de6b5f402999eac6d162f74ce12ea7ac970004b3142563"
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
                 }
               ],
               "criticalForSafety": true,
@@ -16692,9 +16682,95 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult with septic shock needs urgent norepinephrine. Central access is being arranged, and a peripheral IV meets the unit’s vasopressor criteria. How should the nurse prepare to start the order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Prepare the pump now and wait to start until central access is confirmed.",
+                  "explanation": "Waiting would delay urgent treatment despite a suitable peripheral IV."
+                },
+                {
+                  "id": "B",
+                  "text": "Use the suitable peripheral IV now and follow the site-monitoring protocol.",
+                  "explanation": "A suitable peripheral IV allows prompt treatment while access needs are reassessed."
+                },
+                {
+                  "id": "C",
+                  "text": "Use the peripheral IV for fluids and substitute dobutamine until central access is ready.",
+                  "explanation": "Dobutamine does not replace needed vasopressor support."
+                },
+                {
+                  "id": "D",
+                  "text": "Give a peripheral loading bolus while the continuous infusion is prepared.",
+                  "explanation": "The shock order calls for a controlled continuous infusion."
+                }
+              ],
+              "point": "A suitable peripheral IV can be used for urgent initiation when central access would delay treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepinephrine_peripheral_start",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_peripheral_start"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "The patient’s pressure has stabilized on norepinephrine and the team orders weaning. Which plan addresses the main immediate risk of abrupt withdrawal?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stop the infusion and use urine output to decide whether to restart.",
+                  "explanation": "Urine output responds too slowly to detect immediate hypotension."
+                },
+                {
+                  "id": "B",
+                  "text": "Continue the same dose until the current bag is empty, then discontinue.",
+                  "explanation": "Running the bag empty still stops support abruptly."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduce the rate in ordered steps and reassess blood pressure at each step.",
+                  "explanation": "Abrupt withdrawal can cause marked hypotension."
+                },
+                {
+                  "id": "D",
+                  "text": "Stop the infusion and continue ECG monitoring at the previous frequency.",
+                  "explanation": "ECG monitoring cannot detect an abrupt fall in arterial pressure."
+                }
+              ],
+              "point": "Taper norepinephrine as ordered because abrupt withdrawal can cause hypotension.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepinephrine_taper",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_taper"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 6
         },
         {
           "id": "ccu-norepinephrine--advanced",
@@ -16756,14 +16832,21 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "administration",
-                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "memoryDanger",
+                  "textSha256": "87f6fdb733fada3dcb9878c9f61126b89236b82acbde4df484ab3e52c08e38be"
                 }
               ],
               "criticalForSafety": true,
@@ -16805,8 +16888,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
                   "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
                 },
                 {
                   "file": "content.json",
@@ -16820,7 +16910,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "memoryDanger",
-                  "textSha256": "16c2e95d4bfaec87c2de6b5f402999eac6d162f74ce12ea7ac970004b3142563"
+                  "textSha256": "87f6fdb733fada3dcb9878c9f61126b89236b82acbde4df484ab3e52c08e38be"
                 }
               ],
               "criticalForSafety": true,
@@ -16863,7 +16953,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
                 },
                 {
                   "file": "content.json",
@@ -16877,7 +16967,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "memoryDanger",
-                  "textSha256": "16c2e95d4bfaec87c2de6b5f402999eac6d162f74ce12ea7ac970004b3142563"
+                  "textSha256": "87f6fdb733fada3dcb9878c9f61126b89236b82acbde4df484ab3e52c08e38be"
                 }
               ],
               "criticalForSafety": false,
@@ -16925,18 +17015,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
-                },
-                {
-                  "id": "B",
                   "text": "Irreversibly inhibits platelet COX-1",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Inhibits protein synthesis at the 50S subunit",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                },
+                {
+                  "id": "C",
+                  "text": "Predominantly alpha1-mediated vasoconstriction",
+                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "D",
@@ -16975,7 +17065,7 @@
                 "ccu-norepinephrine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -16983,13 +17073,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Organic nitrate",
-                  "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Vasopressor",
+                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
                   "id": "B",
-                  "text": "Vasopressor",
-                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                  "text": "Organic nitrate",
+                  "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
                   "id": "C",
@@ -17019,7 +17109,7 @@
                 "ccu-norepinephrine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -17027,23 +17117,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Pressure support in severe hypotension or shock",
+                  "explanation": "This is a clinical use of the medicine: Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor. Cardiac dysfunction may change the choice."
+                },
+                {
+                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is a clinical use of the medicine: Vasopressor support for severe hypotension/shock when clinically indicated."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -17053,7 +17143,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "use",
-                  "textSha256": "fc05c506df67c369041ed40ccdf1d4305796ed5e9431338a3807bc2fe2b7a4dd"
+                  "textSha256": "0ee8d62f096251af7ae3e89e8e2aecdefafa816e66151261ef2f098c05eafd4a"
                 },
                 {
                   "file": "content.json",
@@ -17070,30 +17160,30 @@
                 "ccu-norepinephrine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--treatment-role",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which feature is required for safe IV administration of NOREPINEPHRINE / NORADRENALINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
-                },
-                {
-                  "id": "B",
                   "text": "Undiluted rapid injection based on the ampoule’s full volume",
                   "explanation": "Container content is not a default patient bolus."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Intermittent manual boluses using the last infusion’s mL/hour",
                   "explanation": "An infusion rate cannot define a safe bolus."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Gravity flow without accounting for the prepared concentration",
                   "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
+                },
+                {
+                  "id": "D",
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 }
               ],
               "format": "single-best-answer",
@@ -17104,21 +17194,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "administration",
-                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "medications",
-                  "itemId": "ccu-norepinephrine",
-                  "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
-                },
-                {
-                  "file": "content.json",
-                  "collection": "medications",
-                  "itemId": "ccu-norepinephrine",
-                  "field": "memoryDanger",
-                  "textSha256": "16c2e95d4bfaec87c2de6b5f402999eac6d162f74ce12ea7ac970004b3142563"
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
                 }
               ],
               "criticalForSafety": true,
@@ -17128,7 +17204,95 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--infusion_route",
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult with septic shock needs urgent norepinephrine. Central access is being arranged, and a peripheral IV meets the unit’s vasopressor criteria. How should the nurse prepare to start the order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Give a peripheral loading bolus while the continuous infusion is prepared.",
+                  "explanation": "The shock order calls for a controlled continuous infusion."
+                },
+                {
+                  "id": "B",
+                  "text": "Use the suitable peripheral IV now and follow the site-monitoring protocol.",
+                  "explanation": "A suitable peripheral IV allows prompt treatment while access needs are reassessed."
+                },
+                {
+                  "id": "C",
+                  "text": "Use the peripheral IV for fluids and substitute dobutamine until central access is ready.",
+                  "explanation": "Dobutamine does not replace needed vasopressor support."
+                },
+                {
+                  "id": "D",
+                  "text": "Prepare the pump now and wait to start until central access is confirmed.",
+                  "explanation": "Waiting would delay urgent treatment despite a suitable peripheral IV."
+                }
+              ],
+              "point": "A suitable peripheral IV can be used for urgent initiation when central access would delay treatment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepinephrine_peripheral_start",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_peripheral_start"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepinephrine_peripheral_start",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "The patient’s pressure has stabilized on norepinephrine and the team orders weaning. Which plan addresses the main immediate risk of abrupt withdrawal?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Stop the infusion and use urine output to decide whether to restart.",
+                  "explanation": "Urine output responds too slowly to detect immediate hypotension."
+                },
+                {
+                  "id": "B",
+                  "text": "Continue the same dose until the current bag is empty, then discontinue.",
+                  "explanation": "Running the bag empty still stops support abruptly."
+                },
+                {
+                  "id": "C",
+                  "text": "Stop the infusion and continue ECG monitoring at the previous frequency.",
+                  "explanation": "ECG monitoring cannot detect an abrupt fall in arterial pressure."
+                },
+                {
+                  "id": "D",
+                  "text": "Reduce the rate in ordered steps and reassess blood pressure at each step.",
+                  "explanation": "Abrupt withdrawal can cause marked hypotension."
+                }
+              ],
+              "point": "Taper norepinephrine as ordered because abrupt withdrawal can cause hypotension.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepinephrine_taper",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_taper"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepinephrine_taper",
+              "answerKey": "D"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
@@ -17140,13 +17304,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "It halves",
-                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
+                  "text": "It doubles",
+                  "explanation": "That would deliver four times the prior drug amount if concentration also doubled."
                 },
                 {
                   "id": "C",
-                  "text": "It doubles",
-                  "explanation": "That would deliver four times the prior drug amount if concentration also doubled."
+                  "text": "It halves",
+                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
                 },
                 {
                   "id": "D",
@@ -17162,14 +17326,21 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "administration",
-                  "textSha256": "41a393058a49c20c1b7c695d3e5c1868523dc2427d42ca711582ea8f05d9055f"
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "memoryDanger",
+                  "textSha256": "87f6fdb733fada3dcb9878c9f61126b89236b82acbde4df484ab3e52c08e38be"
                 }
               ],
               "criticalForSafety": true,
@@ -17179,7 +17350,7 @@
                 "ccu-norepinephrine::infusion_precision"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--infusion_precision",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "During peripheral NOREPINEPHRINE / NORADRENALINE infusion, the site becomes painful, pale, and cool, and flow is impaired. Which problem best fits?",
@@ -17191,18 +17362,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Extravasation with local ischemic risk",
+                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
+                },
+                {
+                  "id": "C",
                   "text": "Isolated systemic volume expansion",
                   "explanation": "This does not explain the focal cannula-site pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "An expected sign of restored cardiac output",
                   "explanation": "The local findings indicate a complication rather than a beneficial response."
-                },
-                {
-                  "id": "D",
-                  "text": "Extravasation with local ischemic risk",
-                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -17212,8 +17383,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
+                  "field": "administration",
+                  "textSha256": "cd4205ba8e932b27b07de12ed31fa4177f9e82a3aef883f4cb8d70780b514d50"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
                   "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
                 },
                 {
                   "file": "content.json",
@@ -17227,7 +17405,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "memoryDanger",
-                  "textSha256": "16c2e95d4bfaec87c2de6b5f402999eac6d162f74ce12ea7ac970004b3142563"
+                  "textSha256": "87f6fdb733fada3dcb9878c9f61126b89236b82acbde4df484ab3e52c08e38be"
                 }
               ],
               "criticalForSafety": true,
@@ -17237,7 +17415,7 @@
                 "ccu-norepinephrine::pressor_site"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--pressor_site",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "During NOREPINEPHRINE / NORADRENALINE therapy, BP reaches target, but the patient remains cool and confused with low urine output. Which interpretation is most defensible?",
@@ -17254,13 +17432,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Pressure has improved while organ perfusion remains concerning",
-                  "explanation": "BP is only one component of the response."
+                  "text": "Confusion establishes medication sedation rather than low output",
+                  "explanation": "The combination does not justify dismissing hypoperfusion."
                 },
                 {
                   "id": "D",
-                  "text": "Confusion establishes medication sedation rather than low output",
-                  "explanation": "The combination does not justify dismissing hypoperfusion."
+                  "text": "Pressure has improved while organ perfusion remains concerning",
+                  "explanation": "BP is only one component of the response."
                 }
               ],
               "format": "single-best-answer",
@@ -17271,7 +17449,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "monitor",
-                  "textSha256": "08203533ed9b6a14fda5540a831e7706169565eae0b3b0942175ee888a72948d"
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
                 },
                 {
                   "file": "content.json",
@@ -17285,7 +17463,7 @@
                   "collection": "medications",
                   "itemId": "ccu-norepinephrine",
                   "field": "memoryDanger",
-                  "textSha256": "16c2e95d4bfaec87c2de6b5f402999eac6d162f74ce12ea7ac970004b3142563"
+                  "textSha256": "87f6fdb733fada3dcb9878c9f61126b89236b82acbde4df484ab3e52c08e38be"
                 }
               ],
               "criticalForSafety": false,
@@ -17295,10 +17473,10 @@
                 "ccu-norepinephrine::perfusion"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--perfusion",
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 7
+          "questionCount": 9
         }
       ]
     },
@@ -17309,7 +17487,10 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-dobutamine"
+        "label-ccu-dobutamine",
+        "gaza-moh-injectables-2018-dobutamine",
+        "ssc-2026-adults",
+        "review-label-ccu-dobutamine"
       ],
       "exams": [
         {
@@ -17386,7 +17567,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "why",
-                  "textSha256": "fca599ff2eaf85edf44d40f29abb12ce7b98bb94c391dd223542d3a19399db56"
+                  "textSha256": "453eee02f14803dcb3a2c4fe77e3a013958acc7cbca059802c515604ad5fd3b9"
                 }
               ],
               "criticalForSafety": false,
@@ -17451,13 +17632,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Treatment of oral fungal lesions",
-                  "explanation": "This is a different treatment role."
+                  "text": "Pump support in selected low-output states",
+                  "explanation": "This is a clinical use of the medicine: Short-term inotropic support for selected low-output states. In adult septic shock with cardiac dysfunction and persistent hypoperfusion despite adequate volume and arterial pressure, one option is adding dobutamine to norepinephrine."
                 },
                 {
                   "id": "C",
-                  "text": "Pump support in selected low-output states",
-                  "explanation": "This is a clinical use of the medicine: Selected low-cardiac-output states such as severe acute HF/cardiogenic shock when increased contractility is needed."
+                  "text": "Treatment of oral fungal lesions",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
@@ -17472,7 +17653,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "use",
-                  "textSha256": "9fcae1eba0876b72306a2190103cf52577a872e9fe0c823dd6063f17855e3a84"
+                  "textSha256": "0016b84924fcdc1851f58e5014cf0d8731b94a658728ae6667c28ebe609191f3"
                 },
                 {
                   "file": "content.json",
@@ -17488,7 +17669,7 @@
               "learningPointIds": [
                 "ccu-dobutamine::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which new change during DOBUTAMINE infusion is a relevant cardiac adverse-effect warning?",
@@ -17522,14 +17703,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "why",
-                  "textSha256": "fca599ff2eaf85edf44d40f29abb12ce7b98bb94c391dd223542d3a19399db56"
+                  "textSha256": "453eee02f14803dcb3a2c4fe77e3a013958acc7cbca059802c515604ad5fd3b9"
                 },
                 {
                   "file": "content.json",
@@ -17579,14 +17760,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "administration",
-                  "textSha256": "854f74e073c52090ed0f7eb19ab8a8fc18939c14e1a25fa8531df420622527b2"
+                  "textSha256": "1097d26070a2c784bd60e068a96c64bf2ec231079da5239e8563488fb62006c0"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 }
               ],
               "criticalForSafety": true,
@@ -17596,9 +17777,95 @@
                 "ccu-dobutamine::infusion_route"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After a dobutamine dose increase, a low-output patient develops frequent new PVCs and a falling BP. Which bedside response is most appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeat a blood pressure after the next scheduled dose change without checking the rhythm strip.",
+                  "explanation": "The new rhythm finding and perfusion change should be evaluated together."
+                },
+                {
+                  "id": "B",
+                  "text": "Increase the dose further and reassess whether the PVCs resolve as cardiac output improves.",
+                  "explanation": "A further increase can worsen dose-related adverse effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Maintain the higher dose and reassess once the next hourly urine output is recorded.",
+                  "explanation": "Falling BP and new ectopy require action before the next hourly trend."
+                },
+                {
+                  "id": "D",
+                  "text": "Reassess perfusion and rhythm promptly, report the change and follow ordered titration parameters.",
+                  "explanation": "Dobutamine can provoke ventricular ectopy and hypotension. Both findings warrant prompt reassessment."
+                }
+              ],
+              "point": "New ventricular ectopy and falling BP on dobutamine require prompt reassessment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dobutamine",
+                  "field": "monitor",
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dobutamine--standard--dobutamine_reassessment",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dobutamine::dobutamine_reassessment"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving dobutamine now needs IV sodium bicarbonate. How should the nurse plan access for the bicarbonate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Use the dobutamine Y-site after reducing both infusion rates.",
+                  "explanation": "Slowing both infusions does not establish compatibility."
+                },
+                {
+                  "id": "B",
+                  "text": "Use the dobutamine Y-site if both medications were prepared with dextrose.",
+                  "explanation": "Using the same base diluent does not remove the bicarbonate incompatibility."
+                },
+                {
+                  "id": "C",
+                  "text": "Use separate compatible access while continuing the dobutamine infusion.",
+                  "explanation": "Dobutamine is incompatible with strongly alkaline solutions such as sodium bicarbonate."
+                },
+                {
+                  "id": "D",
+                  "text": "Add bicarbonate to the dobutamine bag to avoid a transient change in delivery.",
+                  "explanation": "Mixing in the bag exposes dobutamine directly to the incompatible solution."
+                }
+              ],
+              "point": "Avoid mixing dobutamine with sodium bicarbonate or strongly alkaline solutions.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dobutamine",
+                  "field": "administration",
+                  "textSha256": "1097d26070a2c784bd60e068a96c64bf2ec231079da5239e8563488fb62006c0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dobutamine--standard--dobutamine_alkaline_line",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dobutamine::dobutamine_alkaline_line"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 5
+          "questionCount": 7
         },
         {
           "id": "ccu-dobutamine--advanced",
@@ -17660,21 +17927,21 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "administration",
-                  "textSha256": "854f74e073c52090ed0f7eb19ab8a8fc18939c14e1a25fa8531df420622527b2"
+                  "textSha256": "1097d26070a2c784bd60e068a96c64bf2ec231079da5239e8563488fb62006c0"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "why",
-                  "textSha256": "fca599ff2eaf85edf44d40f29abb12ce7b98bb94c391dd223542d3a19399db56"
+                  "textSha256": "453eee02f14803dcb3a2c4fe77e3a013958acc7cbca059802c515604ad5fd3b9"
                 },
                 {
                   "file": "content.json",
@@ -17730,8 +17997,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
+                  "field": "use",
+                  "textSha256": "0016b84924fcdc1851f58e5014cf0d8731b94a658728ae6667c28ebe609191f3"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 }
               ],
               "criticalForSafety": false,
@@ -17779,18 +18053,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Predominantly beta1-mediated increased contractility",
-                  "explanation": "Dobutamine primarily supports cardiac pumping and output."
-                },
-                {
-                  "id": "B",
                   "text": "Effects depend on the ingredients",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Dobutamine primarily supports cardiac pumping and output."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Inhibits serotonin/norepinephrine reuptake",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Dobutamine primarily supports cardiac pumping and output."
+                },
+                {
+                  "id": "C",
+                  "text": "Predominantly beta1-mediated increased contractility",
+                  "explanation": "Dobutamine primarily supports cardiac pumping and output."
                 },
                 {
                   "id": "D",
@@ -17819,7 +18093,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "why",
-                  "textSha256": "fca599ff2eaf85edf44d40f29abb12ce7b98bb94c391dd223542d3a19399db56"
+                  "textSha256": "453eee02f14803dcb3a2c4fe77e3a013958acc7cbca059802c515604ad5fd3b9"
                 }
               ],
               "criticalForSafety": false,
@@ -17829,7 +18103,7 @@
                 "ccu-dobutamine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-dobutamine--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -17837,13 +18111,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Organic nitrate",
-                  "explanation": "The medicine is classified as: Predominantly beta1 inotrope."
+                  "text": "Inotrope",
+                  "explanation": "Predominantly beta1 inotrope."
                 },
                 {
                   "id": "B",
-                  "text": "Inotrope",
-                  "explanation": "Predominantly beta1 inotrope."
+                  "text": "Organic nitrate",
+                  "explanation": "The medicine is classified as: Predominantly beta1 inotrope."
                 },
                 {
                   "id": "C",
@@ -17873,7 +18147,7 @@
                 "ccu-dobutamine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-dobutamine--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -17881,23 +18155,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Pump support in selected low-output states",
-                  "explanation": "This is a clinical use of the medicine: Selected low-cardiac-output states such as severe acute HF/cardiogenic shock when increased contractility is needed."
-                },
-                {
-                  "id": "B",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "D",
+                  "text": "Pump support in selected low-output states",
+                  "explanation": "This is a clinical use of the medicine: Short-term inotropic support for selected low-output states. In adult septic shock with cardiac dysfunction and persistent hypoperfusion despite adequate volume and arterial pressure, one option is adding dobutamine to norepinephrine."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -17907,7 +18181,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "use",
-                  "textSha256": "9fcae1eba0876b72306a2190103cf52577a872e9fe0c823dd6063f17855e3a84"
+                  "textSha256": "0016b84924fcdc1851f58e5014cf0d8731b94a658728ae6667c28ebe609191f3"
                 },
                 {
                   "file": "content.json",
@@ -17924,20 +18198,20 @@
                 "ccu-dobutamine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-dobutamine--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which new change during DOBUTAMINE infusion is a relevant cardiac adverse-effect warning?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Improving urine output without rhythm change",
-                  "explanation": "This may support improved perfusion rather than identify arrhythmia."
+                  "text": "New tachycardia or ventricular ectopy",
+                  "explanation": "Catecholamine effects can increase rhythm instability."
                 },
                 {
                   "id": "B",
-                  "text": "New tachycardia or ventricular ectopy",
-                  "explanation": "Catecholamine effects can increase rhythm instability."
+                  "text": "Improving urine output without rhythm change",
+                  "explanation": "This may support improved perfusion rather than identify arrhythmia."
                 },
                 {
                   "id": "C",
@@ -17958,14 +18232,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "why",
-                  "textSha256": "fca599ff2eaf85edf44d40f29abb12ce7b98bb94c391dd223542d3a19399db56"
+                  "textSha256": "453eee02f14803dcb3a2c4fe77e3a013958acc7cbca059802c515604ad5fd3b9"
                 },
                 {
                   "file": "content.json",
@@ -17982,7 +18256,7 @@
                 "ccu-dobutamine::tachyarrhythmia"
               ],
               "reusedFromQuestionId": "ccu-dobutamine--standard--tachyarrhythmia",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which feature is required for safe IV administration of DOBUTAMINE?",
@@ -17994,13 +18268,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Intermittent manual boluses using the last infusion’s mL/hour",
-                  "explanation": "An infusion rate cannot define a safe bolus."
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 },
                 {
                   "id": "C",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
+                  "text": "Intermittent manual boluses using the last infusion’s mL/hour",
+                  "explanation": "An infusion rate cannot define a safe bolus."
                 },
                 {
                   "id": "D",
@@ -18016,14 +18290,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "administration",
-                  "textSha256": "854f74e073c52090ed0f7eb19ab8a8fc18939c14e1a25fa8531df420622527b2"
+                  "textSha256": "1097d26070a2c784bd60e068a96c64bf2ec231079da5239e8563488fb62006c0"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 }
               ],
               "criticalForSafety": true,
@@ -18033,6 +18307,94 @@
                 "ccu-dobutamine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-dobutamine--standard--infusion_route",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "After a dobutamine dose increase, a low-output patient develops frequent new PVCs and a falling BP. Which bedside response is most appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeat a blood pressure after the next scheduled dose change without checking the rhythm strip.",
+                  "explanation": "The new rhythm finding and perfusion change should be evaluated together."
+                },
+                {
+                  "id": "B",
+                  "text": "Increase the dose further and reassess whether the PVCs resolve as cardiac output improves.",
+                  "explanation": "A further increase can worsen dose-related adverse effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Maintain the higher dose and reassess once the next hourly urine output is recorded.",
+                  "explanation": "Falling BP and new ectopy require action before the next hourly trend."
+                },
+                {
+                  "id": "D",
+                  "text": "Reassess perfusion and rhythm promptly, report the change and follow ordered titration parameters.",
+                  "explanation": "Dobutamine can provoke ventricular ectopy and hypotension. Both findings warrant prompt reassessment."
+                }
+              ],
+              "point": "New ventricular ectopy and falling BP on dobutamine require prompt reassessment.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dobutamine",
+                  "field": "monitor",
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dobutamine--7-day--dobutamine_reassessment",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dobutamine::dobutamine_reassessment"
+              ],
+              "reusedFromQuestionId": "ccu-dobutamine--standard--dobutamine_reassessment",
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient receiving dobutamine now needs IV sodium bicarbonate. How should the nurse plan access for the bicarbonate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Use the dobutamine Y-site if both medications were prepared with dextrose.",
+                  "explanation": "Using the same base diluent does not remove the bicarbonate incompatibility."
+                },
+                {
+                  "id": "B",
+                  "text": "Use the dobutamine Y-site after reducing both infusion rates.",
+                  "explanation": "Slowing both infusions does not establish compatibility."
+                },
+                {
+                  "id": "C",
+                  "text": "Use separate compatible access while continuing the dobutamine infusion.",
+                  "explanation": "Dobutamine is incompatible with strongly alkaline solutions such as sodium bicarbonate."
+                },
+                {
+                  "id": "D",
+                  "text": "Add bicarbonate to the dobutamine bag to avoid a transient change in delivery.",
+                  "explanation": "Mixing in the bag exposes dobutamine directly to the incompatible solution."
+                }
+              ],
+              "point": "Avoid mixing dobutamine with sodium bicarbonate or strongly alkaline solutions.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dobutamine",
+                  "field": "administration",
+                  "textSha256": "1097d26070a2c784bd60e068a96c64bf2ec231079da5239e8563488fb62006c0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dobutamine--7-day--dobutamine_alkaline_line",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dobutamine::dobutamine_alkaline_line"
+              ],
+              "reusedFromQuestionId": "ccu-dobutamine--standard--dobutamine_alkaline_line",
               "answerKey": "C"
             },
             {
@@ -18045,13 +18407,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "It stays the same",
-                  "explanation": "The same volume at double concentration would double the delivered drug dose."
+                  "text": "It halves",
+                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
                 },
                 {
                   "id": "C",
-                  "text": "It halves",
-                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
+                  "text": "It stays the same",
+                  "explanation": "The same volume at double concentration would double the delivered drug dose."
                 },
                 {
                   "id": "D",
@@ -18067,21 +18429,21 @@
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "administration",
-                  "textSha256": "854f74e073c52090ed0f7eb19ab8a8fc18939c14e1a25fa8531df420622527b2"
+                  "textSha256": "1097d26070a2c784bd60e068a96c64bf2ec231079da5239e8563488fb62006c0"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
                   "field": "why",
-                  "textSha256": "fca599ff2eaf85edf44d40f29abb12ce7b98bb94c391dd223542d3a19399db56"
+                  "textSha256": "453eee02f14803dcb3a2c4fe77e3a013958acc7cbca059802c515604ad5fd3b9"
                 },
                 {
                   "file": "content.json",
@@ -18105,7 +18467,7 @@
                 "ccu-dobutamine::infusion_precision"
               ],
               "reusedFromQuestionId": "ccu-dobutamine--advanced--infusion_precision",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "During DOBUTAMINE therapy, BP reaches target, but the patient remains cool and confused with low urine output. Which interpretation is most defensible?",
@@ -18122,13 +18484,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Pressure improvement establishes recovery despite the other findings",
-                  "explanation": "The ongoing signs can still represent hypoperfusion."
+                  "text": "Pressure has improved while organ perfusion remains concerning",
+                  "explanation": "BP is only one component of the response."
                 },
                 {
                   "id": "D",
-                  "text": "Pressure has improved while organ perfusion remains concerning",
-                  "explanation": "BP is only one component of the response."
+                  "text": "Pressure improvement establishes recovery despite the other findings",
+                  "explanation": "The ongoing signs can still represent hypoperfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -18138,8 +18500,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dobutamine",
+                  "field": "use",
+                  "textSha256": "0016b84924fcdc1851f58e5014cf0d8731b94a658728ae6667c28ebe609191f3"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dobutamine",
                   "field": "monitor",
-                  "textSha256": "bbca6f089e637f7cc18463e0343dffff7a6f9f249a2570642a225640b389e069"
+                  "textSha256": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3"
                 }
               ],
               "criticalForSafety": false,
@@ -18149,10 +18518,10 @@
                 "ccu-dobutamine::perfusion"
               ],
               "reusedFromQuestionId": "ccu-dobutamine--advanced--perfusion",
-              "answerKey": "D"
+              "answerKey": "C"
             }
           ],
-          "questionCount": 7
+          "questionCount": 9
         }
       ]
     },
@@ -18163,7 +18532,10 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-dopamine"
+        "label-ccu-dopamine",
+        "gaza-moh-injectables-2018-dopamine",
+        "review-label-ccu-dopamine",
+        "aha-bradycardia-2025"
       ],
       "exams": [
         {
@@ -18316,7 +18688,7 @@
                 {
                   "id": "D",
                   "text": "Selected hemodynamic or bradycardia support",
-                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support and some bradycardia pathways depending on protocol."
+                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support. In the AHA adult bradycardia pathway, dopamine infusion is one option if atropine is ineffective. The usual IV infusion range in that pathway is 5–20 mcg/kg/min, titrated to response with a gradual taper."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -18326,7 +18698,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "use",
-                  "textSha256": "cb1106565203bc4af5577938738dec6cfe066141c64f1638b18798e1e359787e"
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
                 },
                 {
                   "file": "content.json",
@@ -18376,14 +18748,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "memoryDanger",
-                  "textSha256": "5a2c84329fcea1b755b6854fc25ab6332aaec471b33fb5aed207917d56363b26"
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": false,
@@ -18409,13 +18781,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "5% dextrose in 0.9% sodium chloride",
-                  "explanation": "This is a compatible dopamine diluent for referenced products, subject to the actual label."
+                  "text": "Sodium bicarbonate",
+                  "explanation": "Strong alkalinity can inactivate dopamine."
                 },
                 {
                   "id": "D",
-                  "text": "Sodium bicarbonate",
-                  "explanation": "Strong alkalinity can inactivate dopamine."
+                  "text": "5% dextrose in 0.9% sodium chloride",
+                  "explanation": "This is a compatible dopamine diluent for referenced products, subject to the actual label."
                 }
               ],
               "format": "single-best-answer",
@@ -18426,7 +18798,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "administration",
-                  "textSha256": "89f933ab9860d34a42595e3b6ba5e5875ecdc6b0ffae33c88aabc273fb7dfe9a"
+                  "textSha256": "8c8f67c67f228a15ab71ce51005e6761a91dca71952b652690c17f1d6fb7aa25"
                 }
               ],
               "criticalForSafety": false,
@@ -18435,7 +18807,7 @@
               "learningPointIds": [
                 "ccu-dopamine::dopamine_bicarbonate"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which feature is required for safe IV administration of DOPAMINE?",
@@ -18469,21 +18841,21 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "administration",
-                  "textSha256": "89f933ab9860d34a42595e3b6ba5e5875ecdc6b0ffae33c88aabc273fb7dfe9a"
+                  "textSha256": "8c8f67c67f228a15ab71ce51005e6761a91dca71952b652690c17f1d6fb7aa25"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "memoryDanger",
-                  "textSha256": "5a2c84329fcea1b755b6854fc25ab6332aaec471b33fb5aed207917d56363b26"
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": true,
@@ -18493,9 +18865,95 @@
                 "ccu-dopamine::infusion_route"
               ],
               "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "For dopamine in the AHA adult bradycardia pathway, which usual infusion range should the nurse recognize when checking the order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "5–20 mcg/kg/min",
+                  "explanation": "This is the usual weight-based range for this AHA pathway."
+                },
+                {
+                  "id": "B",
+                  "text": "5–20 mcg/kg/hour",
+                  "explanation": "The dose is per minute rather than per hour."
+                },
+                {
+                  "id": "C",
+                  "text": "5–20 mcg/min",
+                  "explanation": "Omitting weight changes the dose substantially."
+                },
+                {
+                  "id": "D",
+                  "text": "2–10 mcg/min",
+                  "explanation": "This is the epinephrine range in the same pathway."
+                }
+              ],
+              "point": "The usual adult AHA dopamine range is 5–20 mcg/kg/min for this bradycardia pathway.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "use",
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--standard--dopamine_bradycardia_units",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_bradycardia_units"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During dopamine infusion, toes become cold and mottled. The arm IV is painless and patent. Which interpretation should guide escalation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A patent IV makes a dopamine-related perfusion problem unlikely.",
+                  "explanation": "A patent IV does not exclude a systemic adverse effect."
+                },
+                {
+                  "id": "B",
+                  "text": "The toe changes show increased cardiac output and adequate limb perfusion.",
+                  "explanation": "Cool mottled toes are concerning for impaired perfusion."
+                },
+                {
+                  "id": "C",
+                  "text": "The toe changes indicate dopamine extravasation at the arm IV.",
+                  "explanation": "Extravasation typically produces changes near the leaking IV site."
+                },
+                {
+                  "id": "D",
+                  "text": "Systemic vasoconstriction may be compromising distal perfusion despite a patent IV.",
+                  "explanation": "Dopamine can contribute to peripheral ischemia. Reassess the limbs and overall perfusion and escalate promptly."
+                }
+              ],
+              "point": "Dopamine can contribute to distal ischemia away from a patent infusion site.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "monitor",
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--standard--dopamine_distal_ischemia",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_distal_ischemia"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 6
+          "questionCount": 8
         },
         {
           "id": "ccu-dopamine--advanced",
@@ -18556,15 +19014,29 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
+                  "field": "use",
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
                   "field": "administration",
-                  "textSha256": "89f933ab9860d34a42595e3b6ba5e5875ecdc6b0ffae33c88aabc273fb7dfe9a"
+                  "textSha256": "8c8f67c67f228a15ab71ce51005e6761a91dca71952b652690c17f1d6fb7aa25"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "memoryDanger",
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": true,
@@ -18607,7 +19079,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 }
               ],
               "criticalForSafety": false,
@@ -18650,14 +19122,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "memoryDanger",
-                  "textSha256": "5a2c84329fcea1b755b6854fc25ab6332aaec471b33fb5aed207917d56363b26"
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": true,
@@ -18763,23 +19235,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Catecholamine",
+                  "explanation": "Catecholamine inotrope/vasopressor with dose-dependent effects."
+                },
+                {
+                  "id": "B",
                   "text": "Vasopressor",
                   "explanation": "The medicine is classified as: Catecholamine inotrope/vasopressor with dose-dependent effects."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Inotrope",
                   "explanation": "The medicine is classified as: Catecholamine inotrope/vasopressor with dose-dependent effects."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Organic nitrate",
                   "explanation": "The medicine is classified as: Catecholamine inotrope/vasopressor with dose-dependent effects."
-                },
-                {
-                  "id": "D",
-                  "text": "Catecholamine",
-                  "explanation": "Catecholamine inotrope/vasopressor with dose-dependent effects."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -18799,7 +19271,7 @@
                 "ccu-dopamine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--drug-class",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -18808,7 +19280,7 @@
                 {
                   "id": "A",
                   "text": "Selected hemodynamic or bradycardia support",
-                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support and some bradycardia pathways depending on protocol."
+                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support. In the AHA adult bradycardia pathway, dopamine infusion is one option if atropine is ineffective. The usual IV infusion range in that pathway is 5–20 mcg/kg/min, titrated to response with a gradual taper."
                 },
                 {
                   "id": "B",
@@ -18833,7 +19305,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "use",
-                  "textSha256": "cb1106565203bc4af5577938738dec6cfe066141c64f1638b18798e1e359787e"
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
                 },
                 {
                   "file": "content.json",
@@ -18862,13 +19334,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "New tachycardia or ventricular ectopy",
-                  "explanation": "Catecholamine effects can increase rhythm instability."
+                  "text": "Improving urine output without rhythm change",
+                  "explanation": "This may support improved perfusion rather than identify arrhythmia."
                 },
                 {
                   "id": "C",
-                  "text": "Improving urine output without rhythm change",
-                  "explanation": "This may support improved perfusion rather than identify arrhythmia."
+                  "text": "New tachycardia or ventricular ectopy",
+                  "explanation": "Catecholamine effects can increase rhythm instability."
                 },
                 {
                   "id": "D",
@@ -18884,14 +19356,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "memoryDanger",
-                  "textSha256": "5a2c84329fcea1b755b6854fc25ab6332aaec471b33fb5aed207917d56363b26"
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": false,
@@ -18901,7 +19373,7 @@
                 "ccu-dopamine::tachyarrhythmia"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--tachyarrhythmia",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which solution should not be directly mixed with dopamine because of alkaline inactivation?",
@@ -18935,7 +19407,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "administration",
-                  "textSha256": "89f933ab9860d34a42595e3b6ba5e5875ecdc6b0ffae33c88aabc273fb7dfe9a"
+                  "textSha256": "8c8f67c67f228a15ab71ce51005e6761a91dca71952b652690c17f1d6fb7aa25"
                 }
               ],
               "criticalForSafety": false,
@@ -18952,13 +19424,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
+                  "text": "Intermittent manual boluses using the last infusion’s mL/hour",
+                  "explanation": "An infusion rate cannot define a safe bolus."
                 },
                 {
                   "id": "B",
-                  "text": "Intermittent manual boluses using the last infusion’s mL/hour",
-                  "explanation": "An infusion rate cannot define a safe bolus."
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 },
                 {
                   "id": "C",
@@ -18979,21 +19451,21 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "administration",
-                  "textSha256": "89f933ab9860d34a42595e3b6ba5e5875ecdc6b0ffae33c88aabc273fb7dfe9a"
+                  "textSha256": "8c8f67c67f228a15ab71ce51005e6761a91dca71952b652690c17f1d6fb7aa25"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "memoryDanger",
-                  "textSha256": "5a2c84329fcea1b755b6854fc25ab6332aaec471b33fb5aed207917d56363b26"
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": true,
@@ -19003,7 +19475,95 @@
                 "ccu-dopamine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--infusion_route",
-              "answerKey": "A"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "For dopamine in the AHA adult bradycardia pathway, which usual infusion range should the nurse recognize when checking the order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "5–20 mcg/kg/hour",
+                  "explanation": "The dose is per minute rather than per hour."
+                },
+                {
+                  "id": "B",
+                  "text": "5–20 mcg/kg/min",
+                  "explanation": "This is the usual weight-based range for this AHA pathway."
+                },
+                {
+                  "id": "C",
+                  "text": "2–10 mcg/min",
+                  "explanation": "This is the epinephrine range in the same pathway."
+                },
+                {
+                  "id": "D",
+                  "text": "5–20 mcg/min",
+                  "explanation": "Omitting weight changes the dose substantially."
+                }
+              ],
+              "point": "The usual adult AHA dopamine range is 5–20 mcg/kg/min for this bradycardia pathway.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "use",
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--7-day--dopamine_bradycardia_units",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_bradycardia_units"
+              ],
+              "reusedFromQuestionId": "ccu-dopamine--standard--dopamine_bradycardia_units",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During dopamine infusion, toes become cold and mottled. The arm IV is painless and patent. Which interpretation should guide escalation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A patent IV makes a dopamine-related perfusion problem unlikely.",
+                  "explanation": "A patent IV does not exclude a systemic adverse effect."
+                },
+                {
+                  "id": "B",
+                  "text": "The toe changes show increased cardiac output and adequate limb perfusion.",
+                  "explanation": "Cool mottled toes are concerning for impaired perfusion."
+                },
+                {
+                  "id": "C",
+                  "text": "Systemic vasoconstriction may be compromising distal perfusion despite a patent IV.",
+                  "explanation": "Dopamine can contribute to peripheral ischemia. Reassess the limbs and overall perfusion and escalate promptly."
+                },
+                {
+                  "id": "D",
+                  "text": "The toe changes indicate dopamine extravasation at the arm IV.",
+                  "explanation": "Extravasation typically produces changes near the leaking IV site."
+                }
+              ],
+              "point": "Dopamine can contribute to distal ischemia away from a patent infusion site.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "monitor",
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--7-day--dopamine_distal_ischemia",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_distal_ischemia"
+              ],
+              "reusedFromQuestionId": "ccu-dopamine--standard--dopamine_distal_ischemia",
+              "answerKey": "C"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
@@ -19036,15 +19596,29 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
+                  "field": "use",
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
                   "field": "administration",
-                  "textSha256": "89f933ab9860d34a42595e3b6ba5e5875ecdc6b0ffae33c88aabc273fb7dfe9a"
+                  "textSha256": "8c8f67c67f228a15ab71ce51005e6761a91dca71952b652690c17f1d6fb7aa25"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "memoryDanger",
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": true,
@@ -19088,7 +19662,7 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 }
               ],
               "criticalForSafety": false,
@@ -19115,13 +19689,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Extravasation with local ischemic risk",
-                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
+                  "text": "Isolated systemic volume expansion",
+                  "explanation": "This does not explain the focal cannula-site pattern."
                 },
                 {
                   "id": "D",
-                  "text": "Isolated systemic volume expansion",
-                  "explanation": "This does not explain the focal cannula-site pattern."
+                  "text": "Extravasation with local ischemic risk",
+                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -19132,14 +19706,14 @@
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "monitor",
-                  "textSha256": "55fec7fa2d2f9a9ee03ac414e83966bda22b40de6f408df173fb61688cf05c26"
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
                 },
                 {
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-dopamine",
                   "field": "memoryDanger",
-                  "textSha256": "5a2c84329fcea1b755b6854fc25ab6332aaec471b33fb5aed207917d56363b26"
+                  "textSha256": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
                 }
               ],
               "criticalForSafety": true,
@@ -19149,10 +19723,10 @@
                 "ccu-dopamine::pressor_site"
               ],
               "reusedFromQuestionId": "ccu-dopamine--advanced--pressor_site",
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 9
+          "questionCount": 11
         }
       ]
     },

@@ -4442,6 +4442,32 @@
       ]
     },
     {
+      "id": "ccu-norepinephrine::norepinephrine_peripheral_start",
+      "itemId": "ccu-norepinephrine",
+      "point": "A suitable peripheral IV can be used for urgent initiation when central access would delay treatment.",
+      "questionIds": [
+        "ccu-norepinephrine--standard--norepinephrine_peripheral_start",
+        "ccu-norepinephrine--7-day--norepinephrine_peripheral_start"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-norepinephrine::norepinephrine_taper",
+      "itemId": "ccu-norepinephrine",
+      "point": "Taper norepinephrine as ordered because abrupt withdrawal can cause hypotension.",
+      "questionIds": [
+        "ccu-norepinephrine--standard--norepinephrine_taper",
+        "ccu-norepinephrine--7-day--norepinephrine_taper"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-norepinephrine::infusion_precision",
       "itemId": "ccu-norepinephrine",
       "point": "Infusion delivery depends on ordered dose and prepared concentration.",
@@ -4546,6 +4572,32 @@
       ]
     },
     {
+      "id": "ccu-dobutamine::dobutamine_reassessment",
+      "itemId": "ccu-dobutamine",
+      "point": "New ventricular ectopy and falling BP on dobutamine require prompt reassessment.",
+      "questionIds": [
+        "ccu-dobutamine--standard--dobutamine_reassessment",
+        "ccu-dobutamine--7-day--dobutamine_reassessment"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-dobutamine::dobutamine_alkaline_line",
+      "itemId": "ccu-dobutamine",
+      "point": "Avoid mixing dobutamine with sodium bicarbonate or strongly alkaline solutions.",
+      "questionIds": [
+        "ccu-dobutamine--standard--dobutamine_alkaline_line",
+        "ccu-dobutamine--7-day--dobutamine_alkaline_line"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-dobutamine::infusion_precision",
       "itemId": "ccu-dobutamine",
       "point": "Infusion delivery depends on ordered dose and prepared concentration.",
@@ -4643,6 +4695,32 @@
       "questionIds": [
         "ccu-dopamine--standard--infusion_route",
         "ccu-dopamine--7-day--infusion_route"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-dopamine::dopamine_bradycardia_units",
+      "itemId": "ccu-dopamine",
+      "point": "The usual adult AHA dopamine range is 5–20 mcg/kg/min for this bradycardia pathway.",
+      "questionIds": [
+        "ccu-dopamine--standard--dopamine_bradycardia_units",
+        "ccu-dopamine--7-day--dopamine_bradycardia_units"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-dopamine::dopamine_distal_ischemia",
+      "itemId": "ccu-dopamine",
+      "point": "Dopamine can contribute to distal ischemia away from a patent infusion site.",
+      "questionIds": [
+        "ccu-dopamine--standard--dopamine_distal_ischemia",
+        "ccu-dopamine--7-day--dopamine_distal_ischemia"
       ],
       "stages": [
         "standard",
@@ -14398,25 +14476,29 @@
         ],
         "administration": [
           "ccu-norepinephrine--standard--infusion_route",
+          "ccu-norepinephrine--standard--norepinephrine_peripheral_start",
           "ccu-norepinephrine--advanced--infusion_precision",
+          "ccu-norepinephrine--advanced--pressor_site",
           "ccu-norepinephrine--7-day--infusion_route",
-          "ccu-norepinephrine--7-day--infusion_precision"
+          "ccu-norepinephrine--7-day--norepinephrine_peripheral_start",
+          "ccu-norepinephrine--7-day--infusion_precision",
+          "ccu-norepinephrine--7-day--pressor_site"
         ],
         "monitor": [
-          "ccu-norepinephrine--standard--infusion_route",
+          "ccu-norepinephrine--standard--norepinephrine_taper",
           "ccu-norepinephrine--advanced--infusion_precision",
           "ccu-norepinephrine--advanced--pressor_site",
           "ccu-norepinephrine--advanced--perfusion",
-          "ccu-norepinephrine--7-day--infusion_route",
+          "ccu-norepinephrine--7-day--norepinephrine_taper",
           "ccu-norepinephrine--7-day--infusion_precision",
           "ccu-norepinephrine--7-day--pressor_site",
           "ccu-norepinephrine--7-day--perfusion"
         ],
         "memoryDanger": [
-          "ccu-norepinephrine--standard--infusion_route",
+          "ccu-norepinephrine--advanced--infusion_precision",
           "ccu-norepinephrine--advanced--pressor_site",
           "ccu-norepinephrine--advanced--perfusion",
-          "ccu-norepinephrine--7-day--infusion_route",
+          "ccu-norepinephrine--7-day--infusion_precision",
           "ccu-norepinephrine--7-day--pressor_site",
           "ccu-norepinephrine--7-day--perfusion"
         ]
@@ -14446,7 +14528,9 @@
         ],
         "use": [
           "ccu-dobutamine--standard--treatment-role",
-          "ccu-dobutamine--7-day--treatment-role"
+          "ccu-dobutamine--advanced--perfusion",
+          "ccu-dobutamine--7-day--treatment-role",
+          "ccu-dobutamine--7-day--perfusion"
         ],
         "memoryUse": [
           "ccu-dobutamine--standard--treatment-role",
@@ -14457,10 +14541,12 @@
         "monitor": [
           "ccu-dobutamine--standard--tachyarrhythmia",
           "ccu-dobutamine--standard--infusion_route",
+          "ccu-dobutamine--standard--dobutamine_reassessment",
           "ccu-dobutamine--advanced--infusion_precision",
           "ccu-dobutamine--advanced--perfusion",
           "ccu-dobutamine--7-day--tachyarrhythmia",
           "ccu-dobutamine--7-day--infusion_route",
+          "ccu-dobutamine--7-day--dobutamine_reassessment",
           "ccu-dobutamine--7-day--infusion_precision",
           "ccu-dobutamine--7-day--perfusion"
         ],
@@ -14472,8 +14558,10 @@
         ],
         "administration": [
           "ccu-dobutamine--standard--infusion_route",
+          "ccu-dobutamine--standard--dobutamine_alkaline_line",
           "ccu-dobutamine--advanced--infusion_precision",
           "ccu-dobutamine--7-day--infusion_route",
+          "ccu-dobutamine--7-day--dobutamine_alkaline_line",
           "ccu-dobutamine--7-day--infusion_precision"
         ]
       },
@@ -14498,7 +14586,11 @@
         ],
         "use": [
           "ccu-dopamine--standard--treatment-role",
-          "ccu-dopamine--7-day--treatment-role"
+          "ccu-dopamine--standard--dopamine_bradycardia_units",
+          "ccu-dopamine--advanced--infusion_precision",
+          "ccu-dopamine--7-day--treatment-role",
+          "ccu-dopamine--7-day--dopamine_bradycardia_units",
+          "ccu-dopamine--7-day--infusion_precision"
         ],
         "memoryUse": [
           "ccu-dopamine--standard--treatment-role",
@@ -14507,11 +14599,13 @@
         "monitor": [
           "ccu-dopamine--standard--tachyarrhythmia",
           "ccu-dopamine--standard--infusion_route",
+          "ccu-dopamine--standard--dopamine_distal_ischemia",
           "ccu-dopamine--advanced--infusion_precision",
           "ccu-dopamine--advanced--perfusion",
           "ccu-dopamine--advanced--pressor_site",
           "ccu-dopamine--7-day--tachyarrhythmia",
           "ccu-dopamine--7-day--infusion_route",
+          "ccu-dopamine--7-day--dopamine_distal_ischemia",
           "ccu-dopamine--7-day--infusion_precision",
           "ccu-dopamine--7-day--perfusion",
           "ccu-dopamine--7-day--pressor_site"
@@ -14519,9 +14613,11 @@
         "memoryDanger": [
           "ccu-dopamine--standard--tachyarrhythmia",
           "ccu-dopamine--standard--infusion_route",
+          "ccu-dopamine--advanced--infusion_precision",
           "ccu-dopamine--advanced--pressor_site",
           "ccu-dopamine--7-day--tachyarrhythmia",
           "ccu-dopamine--7-day--infusion_route",
+          "ccu-dopamine--7-day--infusion_precision",
           "ccu-dopamine--7-day--pressor_site"
         ],
         "administration": [
