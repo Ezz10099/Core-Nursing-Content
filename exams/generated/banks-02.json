@@ -1936,7 +1936,9 @@
       "capabilityRequirement": null,
       "evidenceIds": [
         "content-v35",
-        "label-ccu-heparin-ufh"
+        "label-ccu-heparin-ufh",
+        "gaza-moh-injectables-2018-heparin-ufh",
+        "ash-hit-guideline"
       ],
       "exams": [
         {
@@ -1973,23 +1975,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Enhances antithrombin inhibition of IIa/Xa",
+                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
+                },
+                {
+                  "id": "B",
                   "text": "Suppresses gastric H/K ATPase",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Reduces vagal bronchoconstriction",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Disrupts protein synthesis at the 30S subunit",
                   "explanation": "This is a different pharmacological action. The drug’s action is: UFH accelerates inhibition of thrombin and activated factor X."
-                },
-                {
-                  "id": "D",
-                  "text": "Enhances antithrombin inhibition of IIa/Xa",
-                  "explanation": "UFH accelerates inhibition of thrombin and activated factor X."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -2022,7 +2024,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -2030,18 +2032,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Therapeutic anticoagulation or selected prophylaxis",
-                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
-                },
-                {
-                  "id": "B",
                   "text": "Suppression of bacterial protein synthesis",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Therapeutic anticoagulation or selected prophylaxis",
+                  "explanation": "This is a clinical use of the medicine: Therapeutic anticoagulation and selected prophylactic uses."
                 },
                 {
                   "id": "D",
@@ -2072,7 +2074,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Before preparing a therapeutic UFH infusion, which product distinction matters most?",
@@ -2084,18 +2086,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Treatment-vial concentration versus catheter-flush concentration",
-                  "explanation": "Confusing them can create a major dosing error."
-                },
-                {
-                  "id": "C",
                   "text": "Immediate-release tablet versus modified-release tablet",
                   "explanation": "This is not the product distinction for a UFH infusion."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Dry-powder inhaler strength versus nebulizer strength",
                   "explanation": "These are unrelated formulation categories."
+                },
+                {
+                  "id": "D",
+                  "text": "Treatment-vial concentration versus catheter-flush concentration",
+                  "explanation": "Confusing them can create a major dosing error."
                 }
               ],
               "format": "single-best-answer",
@@ -2113,7 +2115,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2136,7 +2138,7 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::heparin_infusion"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "short-answer",
@@ -2164,9 +2166,52 @@
               "learningPointIds": [
                 "ccu-heparin-ufh::lmwh_route"
               ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient develops major bleeding during a UFH infusion. Which reversal agent should the nurse anticipate the team may order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Phytonadione",
+                  "explanation": "Vitamin K is used for warfarin reversal."
+                },
+                {
+                  "id": "B",
+                  "text": "Protamine sulfate",
+                  "explanation": "Protamine neutralizes UFH."
+                },
+                {
+                  "id": "C",
+                  "text": "Andexanet alfa",
+                  "explanation": "This agent targets selected direct factor Xa inhibitors."
+                },
+                {
+                  "id": "D",
+                  "text": "Idarucizumab",
+                  "explanation": "Idarucizumab reverses dabigatran."
+                }
+              ],
+              "point": "Protamine sulfate reverses UFH when ordered.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--standard--heparin_protamine",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_protamine"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-heparin-ufh--advanced",
@@ -2228,7 +2273,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2278,7 +2323,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2335,7 +2380,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 }
               ],
               "criticalForSafety": false,
@@ -2385,7 +2430,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2596,7 +2641,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2651,6 +2696,50 @@
               "reusedFromQuestionId": "ccu-heparin-ufh--standard--lmwh_route"
             },
             {
+              "format": "single-best-answer",
+              "stem": "A patient develops major bleeding during a UFH infusion. Which reversal agent should the nurse anticipate the team may order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Andexanet alfa",
+                  "explanation": "This agent targets selected direct factor Xa inhibitors."
+                },
+                {
+                  "id": "B",
+                  "text": "Protamine sulfate",
+                  "explanation": "Protamine neutralizes UFH."
+                },
+                {
+                  "id": "C",
+                  "text": "Phytonadione",
+                  "explanation": "Vitamin K is used for warfarin reversal."
+                },
+                {
+                  "id": "D",
+                  "text": "Idarucizumab",
+                  "explanation": "Idarucizumab reverses dabigatran."
+                }
+              ],
+              "point": "Protamine sulfate reverses UFH when ordered.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-heparin-ufh",
+                  "field": "monitor",
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-heparin-ufh--7-day--heparin_protamine",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-heparin-ufh::heparin_protamine"
+              ],
+              "reusedFromQuestionId": "ccu-heparin-ufh--standard--heparin_protamine",
+              "answerKey": "B"
+            },
+            {
               "stem": "During HEPARIN — unfractionated heparin (UFH) therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
               "choices": [
                 {
@@ -2682,7 +2771,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2733,7 +2822,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2791,7 +2880,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 }
               ],
               "criticalForSafety": false,
@@ -2842,7 +2931,7 @@
                   "collection": "medications",
                   "itemId": "ccu-heparin-ufh",
                   "field": "monitor",
-                  "textSha256": "a98034a83da4627e08244a28d340ba43c0d0c7895aa027004430786a216c230c"
+                  "textSha256": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048"
                 },
                 {
                   "file": "content.json",
@@ -2876,7 +2965,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -19075,7 +19164,8 @@
       "evidenceIds": [
         "content-v35",
         "label-ccu-atropine",
-        "aha-bradycardia-2025"
+        "aha-bradycardia-2025",
+        "gaza-moh-injectables-2018-atropine"
       ],
       "exams": [
         {
@@ -19152,7 +19242,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "why",
-                  "textSha256": "c8dddf7dfe2b56366c7b2ccb76f1742fe8791c5dda7ee82b58342f21e0f12b33"
+                  "textSha256": "d1c920882e0f2b4577da4d94f55c206b417dcd38fe0817a3b7c498b1df20a3d6"
                 }
               ],
               "criticalForSafety": false,
@@ -19295,7 +19385,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "monitor",
-                  "textSha256": "23b738daf65348afdf6d80ec65bce8cfa62becae53b19c7408d7920efaa79692"
+                  "textSha256": "dd9f849bf2ae75ed812f3d2673148651d29c4af0d50c55b76eae3f386ea100c5"
                 }
               ],
               "criticalForSafety": false,
@@ -19338,7 +19428,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "administration",
-                  "textSha256": "a7ac77f2e930619f239a39636467072a55b7d42f7ed1e15ac2aaf3d981f8293e"
+                  "textSha256": "cf596357d404d5adb436c8651a3eac6b47f611da9a8210438b36214f01ab1b6b"
                 }
               ],
               "criticalForSafety": false,
@@ -19348,9 +19438,52 @@
                 "ccu-atropine::atropine_route"
               ],
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which repeat-dose order matches the AHA adult bradycardia pathway after the initial atropine bolus?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Every 5–10 minutes as indicated, maximum total 5 mg",
+                  "explanation": "Both the interval and maximum differ from the adult pathway."
+                },
+                {
+                  "id": "B",
+                  "text": "Every 3–5 minutes as indicated, maximum total 3 mg",
+                  "explanation": "Count the initial bolus toward the 3 mg maximum."
+                },
+                {
+                  "id": "C",
+                  "text": "Every 3–5 minutes as indicated, maximum total 5 mg",
+                  "explanation": "The interval fits, but 5 mg exceeds the maximum."
+                },
+                {
+                  "id": "D",
+                  "text": "Every 5–10 minutes as indicated, maximum total 3 mg",
+                  "explanation": "The maximum fits, but the repeat interval is 3–5 minutes."
+                }
+              ],
+              "point": "Repeat atropine every 3–5 minutes if indicated, with a 3 mg maximum cumulative dose.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-atropine",
+                  "field": "administration",
+                  "textSha256": "cf596357d404d5adb436c8651a3eac6b47f611da9a8210438b36214f01ab1b6b"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-atropine--standard--atropine_repeat_limit",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-atropine::atropine_repeat_limit"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-atropine--advanced",
@@ -19411,8 +19544,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-atropine",
+                  "field": "administration",
+                  "textSha256": "cf596357d404d5adb436c8651a3eac6b47f611da9a8210438b36214f01ab1b6b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-atropine",
                   "field": "monitor",
-                  "textSha256": "23b738daf65348afdf6d80ec65bce8cfa62becae53b19c7408d7920efaa79692"
+                  "textSha256": "dd9f849bf2ae75ed812f3d2673148651d29c4af0d50c55b76eae3f386ea100c5"
                 },
                 {
                   "file": "content.json",
@@ -19469,7 +19609,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "monitor",
-                  "textSha256": "23b738daf65348afdf6d80ec65bce8cfa62becae53b19c7408d7920efaa79692"
+                  "textSha256": "dd9f849bf2ae75ed812f3d2673148651d29c4af0d50c55b76eae3f386ea100c5"
                 }
               ],
               "criticalForSafety": false,
@@ -19557,7 +19697,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "why",
-                  "textSha256": "c8dddf7dfe2b56366c7b2ccb76f1742fe8791c5dda7ee82b58342f21e0f12b33"
+                  "textSha256": "d1c920882e0f2b4577da4d94f55c206b417dcd38fe0817a3b7c498b1df20a3d6"
                 }
               ],
               "criticalForSafety": false,
@@ -19674,18 +19814,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Dry mouth and urinary retention",
+                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
+                },
+                {
+                  "id": "C",
                   "text": "Miosis and bronchial secretions",
                   "explanation": "These do not fit the principal antimuscarinic pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Salivation and urinary urgency",
                   "explanation": "These are opposite to the characteristic antimuscarinic effects."
-                },
-                {
-                  "id": "D",
-                  "text": "Dry mouth and urinary retention",
-                  "explanation": "Muscarinic blockade can reduce secretions and impair bladder emptying."
                 }
               ],
               "format": "single-best-answer",
@@ -19703,7 +19843,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "monitor",
-                  "textSha256": "23b738daf65348afdf6d80ec65bce8cfa62becae53b19c7408d7920efaa79692"
+                  "textSha256": "dd9f849bf2ae75ed812f3d2673148651d29c4af0d50c55b76eae3f386ea100c5"
                 }
               ],
               "criticalForSafety": false,
@@ -19713,7 +19853,7 @@
                 "ccu-atropine::anticholinergic"
               ],
               "reusedFromQuestionId": "ccu-atropine--standard--anticholinergic",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "How is atropine administered for symptomatic bradycardia?",
@@ -19747,7 +19887,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "administration",
-                  "textSha256": "a7ac77f2e930619f239a39636467072a55b7d42f7ed1e15ac2aaf3d981f8293e"
+                  "textSha256": "cf596357d404d5adb436c8651a3eac6b47f611da9a8210438b36214f01ab1b6b"
                 }
               ],
               "criticalForSafety": false,
@@ -19758,6 +19898,50 @@
               ],
               "reusedFromQuestionId": "ccu-atropine--standard--atropine_route",
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which repeat-dose order matches the AHA adult bradycardia pathway after the initial atropine bolus?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Every 5–10 minutes as indicated, maximum total 3 mg",
+                  "explanation": "The maximum fits, but the repeat interval is 3–5 minutes."
+                },
+                {
+                  "id": "B",
+                  "text": "Every 3–5 minutes as indicated, maximum total 5 mg",
+                  "explanation": "The interval fits, but 5 mg exceeds the maximum."
+                },
+                {
+                  "id": "C",
+                  "text": "Every 3–5 minutes as indicated, maximum total 3 mg",
+                  "explanation": "Count the initial bolus toward the 3 mg maximum."
+                },
+                {
+                  "id": "D",
+                  "text": "Every 5–10 minutes as indicated, maximum total 5 mg",
+                  "explanation": "Both the interval and maximum differ from the adult pathway."
+                }
+              ],
+              "point": "Repeat atropine every 3–5 minutes if indicated, with a 3 mg maximum cumulative dose.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-atropine",
+                  "field": "administration",
+                  "textSha256": "cf596357d404d5adb436c8651a3eac6b47f611da9a8210438b36214f01ab1b6b"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-atropine--7-day--atropine_repeat_limit",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-atropine::atropine_repeat_limit"
+              ],
+              "reusedFromQuestionId": "ccu-atropine--standard--atropine_repeat_limit",
+              "answerKey": "C"
             },
             {
               "stem": "After atropine, a patient remains hypotensive and confused with severe bradycardia. Which treatment category should the team prepare for along the bradycardia pathway?",
@@ -19790,8 +19974,15 @@
                   "file": "content.json",
                   "collection": "medications",
                   "itemId": "ccu-atropine",
+                  "field": "administration",
+                  "textSha256": "cf596357d404d5adb436c8651a3eac6b47f611da9a8210438b36214f01ab1b6b"
+                },
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-atropine",
                   "field": "monitor",
-                  "textSha256": "23b738daf65348afdf6d80ec65bce8cfa62becae53b19c7408d7920efaa79692"
+                  "textSha256": "dd9f849bf2ae75ed812f3d2673148651d29c4af0d50c55b76eae3f386ea100c5"
                 },
                 {
                   "file": "content.json",
@@ -19832,13 +20023,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Pulse, BP, and clinical perfusion alongside the ECG",
-                  "explanation": "Electrical changes need correlation with effective circulation."
+                  "text": "The drug dose without rhythm reassessment",
+                  "explanation": "Dose administration does not establish response."
                 },
                 {
                   "id": "D",
-                  "text": "The drug dose without rhythm reassessment",
-                  "explanation": "Dose administration does not establish response."
+                  "text": "Pulse, BP, and clinical perfusion alongside the ECG",
+                  "explanation": "Electrical changes need correlation with effective circulation."
                 }
               ],
               "format": "single-best-answer",
@@ -19849,7 +20040,7 @@
                   "collection": "medications",
                   "itemId": "ccu-atropine",
                   "field": "monitor",
-                  "textSha256": "23b738daf65348afdf6d80ec65bce8cfa62becae53b19c7408d7920efaa79692"
+                  "textSha256": "dd9f849bf2ae75ed812f3d2673148651d29c4af0d50c55b76eae3f386ea100c5"
                 }
               ],
               "criticalForSafety": false,
@@ -19859,10 +20050,10 @@
                 "ccu-atropine::rhythm_response"
               ],
               "reusedFromQuestionId": "ccu-atropine--advanced--rhythm_response",
-              "answerKey": "C"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 7
+          "questionCount": 8
         }
       ]
     },

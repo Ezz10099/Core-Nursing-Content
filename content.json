@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 47,
-  "updatedAt": "2026-11-10",
+  "contentVersion": 48,
+  "updatedAt": "2026-11-11",
   "publisher": "Mostafa Fayez Siam — Core Nursing",
   "rightsNotice": "© 2026 Mostafa Fayez Siam — Core Nursing. Rights reserved in original contributions to the extent owned by the creator. Unmodified official APK sharing is permitted free of charge for personal educational use by nursing students. Selling, rebranding, removing creator attribution, or distributing modified versions requires written permission, except where applicable law or third-party licences permit. Third-party material retains its original rights, credits and licences.",
   "faq": [
@@ -1310,7 +1310,7 @@
       "availability": "YES. Palestinian essential-medicine data document heparin 5,000 IU/mL in a 5-mL vial.",
       "administration": "May be SC or IV depending on the order. Therapeutic IV infusion requires a controlled pump after dilution to the hospital-standard concentration. Do not give IM; do not confuse a treatment vial with a catheter-flush product.",
       "use": "Therapeutic anticoagulation and selected prophylactic uses.",
-      "monitor": "• Inspect for bleeding. • Ensure ordered coagulation/platelet samples are drawn and abnormalities reported. • Do not independently change an infusion rate unless an authorized nurse-driven protocol applies. • Recognize HIT when platelets fall unexpectedly.",
+      "monitor": "• Assess for bleeding and report suspected major bleeding promptly. Protamine sulfate reverses UFH when ordered. • For therapeutic IV UFH, obtain coagulation samples at the times specified by the authorized protocol. Follow platelet trends separately to detect possible HIT. • Report an unexpected platelet fall or new thrombosis promptly for HIT assessment. • Adjust the infusion only under an authorized protocol or order.",
       "why": "UFH has a variable anticoagulant effect, so therapeutic infusions commonly need controlled delivery and lab follow-up.",
       "source": "Routine CCU meds · approved bedside format Sep 2026",
       "pages": "CCU internship medication reference · Sep 2026",
@@ -1321,7 +1321,7 @@
       "memoryUse": "UFH anticoagulant; commonly used as a titrated IV infusion.",
       "memoryDanger": "Bleeding and HIT are major safety concerns.",
       "mechanism": "Binds antithrombin and accelerates inhibition of thrombin and factor Xa.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "Administration reference: Gaza MOH injectable medication guide (2018), p. 53. Use the facility UFH infusion and monitoring protocol. The published guide does not establish current facility adoption."
     },
     {
       "id": "ccu-aspirin",
@@ -1665,10 +1665,10 @@
       "header": "ATROPINE",
       "drugclass": "Anticholinergic; specifically antimuscarinic.",
       "availability": "YES. Palestinian essential-medicine data document 1-mg ampoules.",
-      "administration": "For symptomatic bradycardia, given as an IV/IO bolus according to the current resuscitation protocol; not normally a continuous infusion.",
+      "administration": "In the AHA adult symptomatic bradycardia pathway, give 1 mg by IV bolus. Repeat every 3–5 minutes if indicated, up to a total of 3 mg.",
       "use": "Symptomatic bradycardia in the appropriate resuscitation pathway.",
-      "monitor": "• Watch HR/rhythm immediately. • Dry mouth, reduced secretions, urinary retention and confusion can occur. • If instability persists, escalate along the bradycardia pathway rather than repeatedly relying on atropine alone.",
-      "why": "Atropine does not press the beta1 accelerator; it removes the parasympathetic/vagal brake.",
+      "monitor": "• Recheck heart rate, rhythm, blood pressure and perfusion after administration. • Dry mouth, reduced secretions, urinary retention and confusion can occur. • If atropine is ineffective and poor perfusion persists, escalate promptly for transcutaneous pacing and/or a dopamine or epinephrine infusion according to the bradycardia pathway.",
+      "why": "Blocking muscarinic receptors reduces vagal slowing of the heart.",
       "source": "Routine CCU meds · approved bedside format Sep 2026",
       "pages": "CCU internship medication reference · Sep 2026",
       "category": "ccu",
@@ -1678,7 +1678,7 @@
       "memoryUse": "Antimuscarinic used in symptomatic bradycardia pathways.",
       "memoryDanger": "Persistent instability needs escalation beyond atropine.",
       "mechanism": "Blocks muscarinic acetylcholine receptors, reducing vagal slowing of the heart.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "Administration reference: Gaza MOH injectable medication guide (2018), p. 17. Current adult bradycardia pathway: AHA 2025. The published guide does not establish current facility adoption."
     },
     {
       "id": "ccu-pantoprazole",
@@ -1966,7 +1966,7 @@
       "drugclass": "Ultra-short-acting AV-nodal blocking antiarrhythmic.",
       "availability": "YES. Palestinian essential-medicine data document adenosine 6-mg ampoules.",
       "administration": "Rapid IV push followed immediately by a rapid saline flush with continuous ECG monitoring. Use a port as close to the patient as practical. The source reference uses the current AHA adult sequence of 6 mg rapid IV, then 12 mg if required. Do not give it slowly through long tubing.",
-      "use": "Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment.",
+      "use": "Stable regular narrow-complex SVT. In stable wide-complex tachycardia, consider adenosine only when the rhythm is regular and monomorphic. If tachyarrhythmia is causing instability, follow the urgent electrical treatment pathway for that rhythm. In regular narrow-complex tachycardia, adenosine may be considered if it does not delay synchronized cardioversion.",
       "monitor": "• Continuous ECG/rhythm monitoring. • Warn conscious patients about brief flushing, chest pressure, breathlessness or a frightening pause sensation. • Be prepared for transient AV block/very brief asystole. • Bronchospasm/asthma is an important safety concern. • Theophylline/aminophylline can reduce effect; dipyridamole can increase it.",
       "why": "Adenosine is cleared within seconds; rapid push + immediate flush gets enough drug to the AV node before it is metabolized.",
       "source": "CCU emergency trolley meds · Deep Research Sep 2026",
@@ -1979,7 +1979,7 @@
       "memoryUse": "Rapid AV-node blocker for stable regular SVT.",
       "memoryDanger": "Technique is critical; monitor ECG and be ready for transient AV block/asystole.",
       "mechanism": "Activates adenosine A1 receptors in the AV node, causing transient conduction block.",
-      "mechanismBasis": "Source-derived from the approved CCU medication references in this project; exact product/container instructions and current local protocol still take priority."
+      "mechanismBasis": "Administration reference: Gaza MOH injectable medication guide (2018), p. 5. Current rhythm pathway: AHA 2025 adult tachyarrhythmia algorithm. The published guide does not establish current facility adoption."
     },
     {
       "id": "ccu-labetalol",

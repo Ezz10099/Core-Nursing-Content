@@ -1221,6 +1221,47 @@
       "checkedDate": "2026-11-10",
       "reviewScope": "Selected study-entry mechanisms, roles, monitoring and safety review. Not proof of current local facility adoption or local stock.",
       "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "gaza-moh-injectables-2018-adenosine",
+      "type": "Palestinian MOH Gaza administration guide",
+      "title": "Gaza MOH injectable medication guide (January 2018), p. 5",
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf#page=16",
+      "publicationPage": "https://www.moh.gov.ps/portal/دليل-اعطاء-الادوية-الوريدية-في-المستش/",
+      "publishedDate": "January 2018; official web posting 23 January 2019",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Rapid IV delivery and immediate saline flush for bolus treatment. Use the current AHA algorithm for rhythm selection and adult dose sequence. The published guide does not establish current facility adoption.",
+      "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "gaza-moh-injectables-2018-atropine",
+      "type": "Palestinian MOH Gaza administration guide",
+      "title": "Gaza MOH injectable medication guide (January 2018), p. 17",
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf#page=28",
+      "publicationPage": "https://www.moh.gov.ps/portal/دليل-اعطاء-الادوية-الوريدية-في-المستش/",
+      "publishedDate": "January 2018; official web posting 23 January 2019",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "IV bolus administration. The current AHA adult bradycardia algorithm supplies the scoped dose, route, and escalation sequence. The published guide does not establish current facility adoption.",
+      "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "gaza-moh-injectables-2018-heparin-ufh",
+      "type": "Palestinian MOH Gaza administration guide",
+      "title": "Gaza MOH injectable medication guide (January 2018), p. 53",
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf#page=64",
+      "publicationPage": "https://www.moh.gov.ps/portal/دليل-اعطاء-الادوية-الوريدية-في-المستش/",
+      "publishedDate": "January 2018; official web posting 23 January 2019",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Subcutaneous and IV routes, IV infusion, and protamine reversal. The treating facility protocol specifies infusion concentration and monitoring. The published guide does not establish current facility adoption.",
+      "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "ash-hit-guideline",
+      "type": "primary guidance",
+      "title": "American Society of Hematology guideline on heparin-induced thrombocytopenia",
+      "url": "https://www.hematology.org/resources/clinical-practice-guidelines/venous-thromboembolism-guidelines/heparin-induced-thrombocytopenia",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Platelet fall and new thrombosis as signals in the 4Ts assessment."
     }
   ],
   "itemEvidence": {
@@ -1314,7 +1355,9 @@
     ],
     "ccu-heparin-ufh": [
       "content-v35",
-      "label-ccu-heparin-ufh"
+      "label-ccu-heparin-ufh",
+      "gaza-moh-injectables-2018-heparin-ufh",
+      "ash-hit-guideline"
     ],
     "ccu-aspirin": [
       "content-v35",
@@ -1382,7 +1425,8 @@
     "ccu-atropine": [
       "content-v35",
       "label-ccu-atropine",
-      "aha-bradycardia-2025"
+      "aha-bradycardia-2025",
+      "gaza-moh-injectables-2018-atropine"
     ],
     "ccu-pantoprazole": [
       "content-v35",
@@ -1441,7 +1485,8 @@
       "content-v35",
       "label-ccu-adenosine",
       "aha-arrest-2025",
-      "aha-tachycardia-2025"
+      "aha-tachycardia-2025",
+      "gaza-moh-injectables-2018-adenosine"
     ],
     "ccu-labetalol": [
       "content-v35",

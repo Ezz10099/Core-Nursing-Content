@@ -2133,6 +2133,181 @@
         "point": "Distinguish common salt/release forms without automatic substitution.",
         "criticalForSafety": true
       }
+    },
+    "ccu-adenosine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which stable wide-complex rhythm meets the AHA rhythm criteria for considering adenosine?",
+        "point": "Consider adenosine in stable wide-complex tachycardia only if regular and monomorphic.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Regular rhythm with uniform QRS morphology",
+            "explanation": "For stable wide-complex tachycardia, adenosine is considered only when the rhythm is regular and monomorphic."
+          },
+          {
+            "id": "B",
+            "text": "Irregular rhythm with uniform QRS morphology",
+            "explanation": "Uniform QRS morphology alone is insufficient. The rhythm must also be regular."
+          },
+          {
+            "id": "C",
+            "text": "Regular rhythm with varying QRS morphology",
+            "explanation": "Regularity alone is insufficient. The rhythm must also be monomorphic."
+          },
+          {
+            "id": "D",
+            "text": "Irregular rhythm with varying QRS morphology",
+            "explanation": "This rhythm meets neither criterion for adenosine in wide-complex tachycardia."
+          }
+        ]
+      }
+    },
+    "ccu-atropine::atropine_route": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult with bradycardia and poor perfusion has patent IV access. Which initial atropine order matches the AHA adult pathway?",
+        "point": "The AHA adult bradycardia pathway specifies atropine 1 mg by IV bolus.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "1 mg IV bolus",
+            "explanation": "The AHA adult bradycardia algorithm starts with 1 mg IV bolus."
+          },
+          {
+            "id": "B",
+            "text": "0.5 mg IV bolus",
+            "explanation": "The current AHA adult algorithm specifies 1 mg."
+          },
+          {
+            "id": "C",
+            "text": "1 mg IV infusion over 10 minutes",
+            "explanation": "This pathway uses an IV bolus."
+          },
+          {
+            "id": "D",
+            "text": "3 mg IV bolus",
+            "explanation": "3 mg is the maximum cumulative dose in this pathway."
+          }
+        ]
+      }
+    },
+    "ccu-atropine::atropine_failure": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult remains hypotensive and confused after atropine, with persistent severe bradycardia. What should the nurse prepare while the team reassesses?",
+        "point": "Persistent poor perfusion despite atropine calls for prompt escalation to pacing and/or a vasoactive infusion.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Transcutaneous pacing and/or a dopamine or epinephrine infusion",
+            "explanation": "These are the next AHA options when atropine is ineffective. Escalation need not wait for the maximum atropine dose."
+          },
+          {
+            "id": "B",
+            "text": "Transcutaneous pacing only after all atropine doses have been given",
+            "explanation": "Waiting for the maximum cumulative dose can delay treatment of poor perfusion."
+          },
+          {
+            "id": "C",
+            "text": "A continuous atropine infusion while deferring pacing",
+            "explanation": "The AHA escalation uses pacing and/or a dopamine or epinephrine infusion."
+          },
+          {
+            "id": "D",
+            "text": "Synchronized cardioversion while deferring pacing",
+            "explanation": "Synchronized cardioversion addresses selected tachyarrhythmias. This patient requires escalation for bradycardia."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::heparin_samples": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient is on a therapeutic UFH infusion. Which plan checks both anticoagulant effect and an early signal of HIT?",
+        "point": "Protocol-specified coagulation monitoring and platelet surveillance answer different safety questions.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Draw protocol-timed coagulation samples and trend the platelet count.",
+            "explanation": "Coagulation testing guides authorized titration. Platelet trends help flag possible HIT."
+          },
+          {
+            "id": "B",
+            "text": "Use platelet counts for titration and reserve coagulation samples for overt bleeding.",
+            "explanation": "Platelet counts do not measure the anticoagulant effect of the infusion."
+          },
+          {
+            "id": "C",
+            "text": "Use coagulation results for both titration and HIT surveillance.",
+            "explanation": "Coagulation results cannot replace platelet surveillance for suspected HIT."
+          },
+          {
+            "id": "D",
+            "text": "Use hemoglobin trends for titration and platelet counts for HIT surveillance.",
+            "explanation": "Hemoglobin can help assess bleeding, but it does not replace protocol-specified coagulation testing."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::hit": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Several days into UFH therapy, the platelet count has fallen substantially and the patient has a new confirmed DVT. Which concern should be escalated promptly?",
+        "point": "An unexpected platelet fall with new thrombosis requires prompt evaluation for HIT.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Heparin-induced thrombocytopenia with thrombosis",
+            "explanation": "A substantial fall in platelets plus new thrombosis during UFH exposure should trigger prompt HIT assessment."
+          },
+          {
+            "id": "B",
+            "text": "Bleeding from excessive anticoagulation",
+            "explanation": "Bleeding requires assessment, but the new clot plus platelet fall specifically raises concern for HIT."
+          },
+          {
+            "id": "C",
+            "text": "Subtherapeutic anticoagulation alone",
+            "explanation": "A new DVT may suggest insufficient anticoagulation, but it does not explain away the platelet fall."
+          },
+          {
+            "id": "D",
+            "text": "A benign platelet decline during UFH therapy",
+            "explanation": "The accompanying new thrombosis makes a benign explanation unsafe to assume."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -2172,7 +2347,10 @@
     "ccu-amlodipine": "bp-author-review-20261107",
     "ccu-bisoprolol": "beta-spirono-draft-20261110",
     "ccu-metoprolol": "beta-spirono-draft-20261110",
-    "trolley-spironolactone": "beta-spirono-draft-20261110"
+    "trolley-spironolactone": "beta-spirono-draft-20261110",
+    "ccu-adenosine": "acute-med-coverage-draft-20261111",
+    "ccu-atropine": "acute-med-coverage-draft-20261111",
+    "ccu-heparin-ufh": "acute-med-coverage-draft-20261111"
   },
   "correctionRevisions": {
     "ccu-verapamil": "gaza-administration-reference-20261109",
@@ -2183,6 +2361,9 @@
     "ccu-amlodipine": "bp-author-review-20261107",
     "trolley-spironolactone": "beta-spirono-draft-20261110",
     "ccu-bisoprolol": "beta-spirono-draft-20261110",
-    "ccu-metoprolol": "beta-spirono-draft-20261110"
+    "ccu-metoprolol": "beta-spirono-draft-20261110",
+    "ccu-adenosine": "acute-med-clinical-20261111",
+    "ccu-atropine": "acute-med-clinical-20261111",
+    "ccu-heparin-ufh": "acute-med-clinical-20261111"
   }
 }

@@ -2888,6 +2888,19 @@
       ]
     },
     {
+      "id": "ccu-heparin-ufh::heparin_protamine",
+      "itemId": "ccu-heparin-ufh",
+      "point": "Protamine sulfate reverses UFH when ordered.",
+      "questionIds": [
+        "ccu-heparin-ufh--standard--heparin_protamine",
+        "ccu-heparin-ufh--7-day--heparin_protamine"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-heparin-ufh::bleeding",
       "itemId": "ccu-heparin-ufh",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -4741,6 +4754,19 @@
       ]
     },
     {
+      "id": "ccu-atropine::atropine_repeat_limit",
+      "itemId": "ccu-atropine",
+      "point": "Repeat atropine every 3–5 minutes if indicated, with a 3 mg maximum cumulative dose.",
+      "questionIds": [
+        "ccu-atropine--standard--atropine_repeat_limit",
+        "ccu-atropine--7-day--atropine_repeat_limit"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-atropine::atropine_failure",
       "itemId": "ccu-atropine",
       "point": "Persistent unstable bradycardia needs escalation and possible pacing.",
@@ -6128,6 +6154,32 @@
       "questionIds": [
         "ccu-adenosine--standard--adenosine_first",
         "ccu-adenosine--7-day--adenosine_first"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-adenosine::adenosine_second_dose",
+      "itemId": "ccu-adenosine",
+      "point": "The standard second adult AHA dose is 12 mg rapid IV with a saline flush.",
+      "questionIds": [
+        "ccu-adenosine--standard--adenosine_second_dose",
+        "ccu-adenosine--7-day--adenosine_second_dose"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-adenosine::adenosine_dipyridamole",
+      "itemId": "ccu-adenosine",
+      "point": "Dipyridamole may potentiate adenosine, while methylxanthines may reduce its effect.",
+      "questionIds": [
+        "ccu-adenosine--standard--adenosine_dipyridamole",
+        "ccu-adenosine--7-day--adenosine_dipyridamole"
       ],
       "stages": [
         "standard",
@@ -13479,11 +13531,13 @@
         ],
         "monitor": [
           "ccu-heparin-ufh--standard--heparin_infusion",
+          "ccu-heparin-ufh--standard--heparin_protamine",
           "ccu-heparin-ufh--advanced--bleeding",
           "ccu-heparin-ufh--advanced--hit",
           "ccu-heparin-ufh--advanced--heparin_samples",
           "ccu-heparin-ufh--advanced--infusion_precision",
           "ccu-heparin-ufh--7-day--heparin_infusion",
+          "ccu-heparin-ufh--7-day--heparin_protamine",
           "ccu-heparin-ufh--7-day--bleeding",
           "ccu-heparin-ufh--7-day--hit",
           "ccu-heparin-ufh--7-day--heparin_samples",
@@ -14520,7 +14574,11 @@
         ],
         "administration": [
           "ccu-atropine--standard--atropine_route",
-          "ccu-atropine--7-day--atropine_route"
+          "ccu-atropine--standard--atropine_repeat_limit",
+          "ccu-atropine--advanced--atropine_failure",
+          "ccu-atropine--7-day--atropine_route",
+          "ccu-atropine--7-day--atropine_repeat_limit",
+          "ccu-atropine--7-day--atropine_failure"
         ],
         "memoryDanger": [
           "ccu-atropine--advanced--atropine_failure",
@@ -15296,10 +15354,12 @@
         "monitor": [
           "ccu-adenosine--standard--adenosine_transient",
           "ccu-adenosine--standard--bronchospasm_risk",
+          "ccu-adenosine--standard--adenosine_dipyridamole",
           "ccu-adenosine--advanced--adenosine_delivery",
           "ccu-adenosine--advanced--adenosine_interaction",
           "ccu-adenosine--7-day--adenosine_transient",
           "ccu-adenosine--7-day--bronchospasm_risk",
+          "ccu-adenosine--7-day--adenosine_dipyridamole",
           "ccu-adenosine--7-day--adenosine_delivery",
           "ccu-adenosine--7-day--adenosine_interaction"
         ],
@@ -15309,8 +15369,10 @@
         ],
         "administration": [
           "ccu-adenosine--standard--adenosine_first",
+          "ccu-adenosine--standard--adenosine_second_dose",
           "ccu-adenosine--advanced--adenosine_delivery",
           "ccu-adenosine--7-day--adenosine_first",
+          "ccu-adenosine--7-day--adenosine_second_dose",
           "ccu-adenosine--7-day--adenosine_delivery"
         ]
       },
