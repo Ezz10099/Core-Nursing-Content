@@ -2308,6 +2308,146 @@
           }
         ]
       }
+    },
+    "ccu-norepinephrine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult in septic shock remains hypotensive after initial fluid resuscitation. There is no evidence of concomitant cardiac dysfunction. Which infusion is the usual first-line vasopressor?",
+        "choices": [
+          {
+            "text": "Norepinephrine",
+            "explanation": "Norepinephrine is the usual first-line vasopressor in this setting.",
+            "id": "A"
+          },
+          {
+            "text": "Epinephrine",
+            "explanation": "Epinephrine can be used in selected situations, such as inadequate MAP despite initial vasopressors.",
+            "id": "B"
+          },
+          {
+            "text": "Vasopressin",
+            "explanation": "Vasopressin is typically added as norepinephrine requirements rise.",
+            "id": "C"
+          },
+          {
+            "text": "Dopamine",
+            "explanation": "Dopamine has selected uses but is not the usual first-line vasopressor in adult septic shock.",
+            "id": "D"
+          }
+        ],
+        "point": "Norepinephrine is the usual first-line vasopressor in adult septic shock.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-norepinephrine::pressor_site": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A peripheral norepinephrine site becomes painful, cool and pale. What should the nurse do first at that IV?",
+        "choices": [
+          {
+            "text": "Stop the infusion and leave the IV in place without flushing.",
+            "explanation": "Stop delivery into the tissue, preserve the catheter for aspiration and urgently escalate for treatment and alternate access.",
+            "id": "A"
+          },
+          {
+            "text": "Stop the infusion and remove the IV before notifying the team.",
+            "explanation": "Removing the catheter immediately loses the opportunity to aspirate through it.",
+            "id": "B"
+          },
+          {
+            "text": "Pause the infusion and gently flush the IV to check patency.",
+            "explanation": "Flushing can push more drug into the tissue.",
+            "id": "C"
+          },
+          {
+            "text": "Reduce the infusion rate and recheck the site after moving the limb.",
+            "explanation": "Continued delivery into a suspected extravasation site risks further ischemia.",
+            "id": "D"
+          }
+        ],
+        "point": "Stop norepinephrine through a suspected extravasated IV and preserve access for aspiration.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dobutamine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult in septic shock has adequate volume status and target MAP on norepinephrine. The team finds reduced cardiac contractility and ongoing hypoperfusion. Which change adds inotropic support while maintaining the current vasopressor?",
+        "choices": [
+          {
+            "text": "Add dobutamine while continuing norepinephrine.",
+            "explanation": "Dobutamine can support cardiac output while norepinephrine maintains arterial pressure.",
+            "id": "A"
+          },
+          {
+            "text": "Replace norepinephrine with dobutamine.",
+            "explanation": "Removing current vasopressor support may jeopardize MAP.",
+            "id": "B"
+          },
+          {
+            "text": "Add vasopressin while continuing norepinephrine.",
+            "explanation": "Vasopressin adds vasopressor effect and does not directly provide the inotropic support requested.",
+            "id": "C"
+          },
+          {
+            "text": "Increase norepinephrine and defer inotropic support.",
+            "explanation": "MAP is already adequate. The unresolved problem is low output with hypoperfusion.",
+            "id": "D"
+          }
+        ],
+        "point": "Dobutamine can be added to norepinephrine for persistent hypoperfusion with cardiac dysfunction despite adequate fluids and BP.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult has a pulse and persistent bradycardia with hypotension after atropine. The team is preparing transcutaneous pacing and chooses a medication infusion. Which drug is an AHA option in this pathway?",
+        "choices": [
+          {
+            "text": "Dopamine",
+            "explanation": "Dopamine or epinephrine infusion may be used after atropine is ineffective.",
+            "id": "A"
+          },
+          {
+            "text": "Dobutamine",
+            "explanation": "Dobutamine is used in selected low-output states but is not one of the listed infusions in this pathway.",
+            "id": "B"
+          },
+          {
+            "text": "Norepinephrine",
+            "explanation": "Norepinephrine supports pressure in selected shock states but is not one of the listed infusions in this pathway.",
+            "id": "C"
+          },
+          {
+            "text": "Isoproterenol",
+            "explanation": "Isoproterenol has selected specialist uses but is not one of the listed infusions in the AHA adult algorithm.",
+            "id": "D"
+          }
+        ],
+        "point": "Dopamine infusion is an option in adult bradycardia with compromise after ineffective atropine.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -2350,7 +2490,10 @@
     "trolley-spironolactone": "beta-spirono-draft-20261110",
     "ccu-adenosine": "acute-med-coverage-draft-20261111",
     "ccu-atropine": "acute-med-coverage-draft-20261111",
-    "ccu-heparin-ufh": "acute-med-coverage-draft-20261111"
+    "ccu-heparin-ufh": "acute-med-coverage-draft-20261111",
+    "ccu-norepinephrine": "vasoactive-coverage-20261111",
+    "ccu-dobutamine": "vasoactive-coverage-20261111",
+    "ccu-dopamine": "vasoactive-coverage-20261111"
   },
   "correctionRevisions": {
     "ccu-verapamil": "gaza-administration-reference-20261109",
@@ -2364,6 +2507,9 @@
     "ccu-metoprolol": "beta-spirono-draft-20261110",
     "ccu-adenosine": "acute-med-clinical-20261111",
     "ccu-atropine": "acute-med-clinical-20261111",
-    "ccu-heparin-ufh": "acute-med-clinical-20261111"
+    "ccu-heparin-ufh": "acute-med-clinical-20261111",
+    "ccu-norepinephrine": "vasoactive-infusion-20261111",
+    "ccu-dobutamine": "vasoactive-infusion-20261111",
+    "ccu-dopamine": "vasoactive-infusion-20261111"
   }
 }

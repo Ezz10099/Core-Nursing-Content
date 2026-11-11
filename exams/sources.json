@@ -1262,6 +1262,79 @@
       "url": "https://www.hematology.org/resources/clinical-practice-guidelines/venous-thromboembolism-guidelines/heparin-induced-thrombocytopenia",
       "checkedDate": "2026-11-11",
       "reviewScope": "Platelet fall and new thrombosis as signals in the 4Ts assessment."
+    },
+    {
+      "id": "gaza-moh-injectables-2018-norepinephrine",
+      "type": "Palestinian MOH Gaza administration guide",
+      "title": "Gaza MOH injectable medication guide (January 2018), p. 78",
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf#page=89",
+      "publicationPage": "https://www.moh.gov.ps/portal/دليل-اعطاء-الادوية-الوريدية-في-المستش/",
+      "publishedDate": "January 2018; official web posting 23 January 2019",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Continuous controlled IV infusion and preparation of the described concentrate. Check the actual product for diluent compatibility. This historical guide does not establish current facility adoption.",
+      "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "gaza-moh-injectables-2018-dobutamine",
+      "type": "Palestinian MOH Gaza administration guide",
+      "title": "Gaza MOH injectable medication guide (January 2018), p. 39",
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf#page=50",
+      "publicationPage": "https://www.moh.gov.ps/portal/دليل-اعطاء-الادوية-الوريدية-في-المستش/",
+      "publishedDate": "January 2018; official web posting 23 January 2019",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Continuous IV pump infusion, venous access and alkaline incompatibility. This historical guide does not establish current facility adoption.",
+      "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "gaza-moh-injectables-2018-dopamine",
+      "type": "Palestinian MOH Gaza administration guide",
+      "title": "Gaza MOH injectable medication guide (January 2018), p. 40",
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/دليل-اعطاء-الادوية-الوريدية-في-المستشفيات-5.pdf#page=51",
+      "publicationPage": "https://www.moh.gov.ps/portal/دليل-اعطاء-الادوية-الوريدية-في-المستش/",
+      "publishedDate": "January 2018; official web posting 23 January 2019",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Dilution, continuous controlled IV infusion, large vein and alkaline incompatibility. This historical guide does not establish current facility adoption.",
+      "retrievalStatus": "retrieved"
+    },
+    {
+      "id": "ssc-2026-adults",
+      "title": "Surviving Sepsis Campaign adult guidelines (2026)",
+      "url": "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "type": "primary guidance",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Initial vasopressor selection, peripheral initiation and inotropic support with cardiac dysfunction."
+    },
+    {
+      "id": "uab-vasopressor-extravasation-2026",
+      "title": "UAB adult peripheral vasopressor and extravasation protocol (2026)",
+      "url": "https://www.uab.edu/medicine/surgery/images/Trauma_and_Acute_Care_Surgery/Protocols/uab-guideline-for-peripheral-iv-vasopressor-use.final.march-2026.pdf",
+      "type": "primary guidance",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Immediate actions after suspected extravasation. External facility protocol."
+    },
+    {
+      "id": "review-label-ccu-norepinephrine",
+      "title": "DailyMed Norepinephrine bitartrate injection",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fbd0e3b-703b-412e-8b71-bd0a0dbf4500",
+      "type": "primary prescribing information",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Concentrate preparation, BP monitoring, extravasation, withdrawal."
+    },
+    {
+      "id": "review-label-ccu-dobutamine",
+      "title": "DailyMed Dobutamine injection",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74ba9408-17d3-48ac-be0b-a4fee9e7a1a5",
+      "type": "primary prescribing information",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "ECG and BP monitoring, ectopy, hypotension and incompatibility."
+    },
+    {
+      "id": "review-label-ccu-dopamine",
+      "title": "DailyMed Dopamine hydrochloride injection",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=460906f7-b532-4ddb-a799-ad7b50488143",
+      "type": "primary prescribing information",
+      "checkedDate": "2026-11-11",
+      "reviewScope": "Tissue ischemia, arrhythmia and same-set incompatibility."
     }
   ],
   "itemEvidence": {
@@ -1412,15 +1485,25 @@
     ],
     "ccu-norepinephrine": [
       "content-v35",
-      "label-ccu-norepinephrine"
+      "label-ccu-norepinephrine",
+      "gaza-moh-injectables-2018-norepinephrine",
+      "ssc-2026-adults",
+      "uab-vasopressor-extravasation-2026",
+      "review-label-ccu-norepinephrine"
     ],
     "ccu-dobutamine": [
       "content-v35",
-      "label-ccu-dobutamine"
+      "label-ccu-dobutamine",
+      "gaza-moh-injectables-2018-dobutamine",
+      "ssc-2026-adults",
+      "review-label-ccu-dobutamine"
     ],
     "ccu-dopamine": [
       "content-v35",
-      "label-ccu-dopamine"
+      "label-ccu-dopamine",
+      "gaza-moh-injectables-2018-dopamine",
+      "review-label-ccu-dopamine",
+      "aha-bradycardia-2025"
     ],
     "ccu-atropine": [
       "content-v35",
