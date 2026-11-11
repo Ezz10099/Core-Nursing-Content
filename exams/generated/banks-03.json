@@ -11149,7 +11149,8 @@
         "content-v35",
         "label-ccu-adenosine",
         "aha-arrest-2025",
-        "aha-tachycardia-2025"
+        "aha-tachycardia-2025",
+        "gaza-moh-injectables-2018-adenosine"
       ],
       "exams": [
         {
@@ -11286,18 +11287,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Protocol-directed treatment of selected regular SVT",
+                  "explanation": "This is a clinical use of the medicine: Stable regular narrow-complex SVT. In stable wide-complex tachycardia, consider adenosine only when the rhythm is regular and monomorphic. If tachyarrhythmia is causing instability, follow the urgent electrical treatment pathway for that rhythm. In regular narrow-complex tachycardia, adenosine may be considered if it does not delay synchronized cardioversion."
+                },
+                {
+                  "id": "B",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Correction of a nutritional micronutrient deficiency",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "C",
-                  "text": "Protocol-directed treatment of selected regular SVT",
-                  "explanation": "This is a clinical use of the medicine: Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment."
                 },
                 {
                   "id": "D",
@@ -11312,7 +11313,7 @@
                   "collection": "medications",
                   "itemId": "ccu-adenosine",
                   "field": "use",
-                  "textSha256": "22923f572eb36fc6faa522122e09040c396c269ae9546807ce51f7488b73adc1"
+                  "textSha256": "50ce0b21bcd9b2c6df9473d8cea47710cef7a9bdabce66db0ea3a8c67c24da99"
                 },
                 {
                   "file": "content.json",
@@ -11328,7 +11329,7 @@
               "learningPointIds": [
                 "ccu-adenosine::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which immediate effect should the team anticipate and monitor during indicated adenosine use?",
@@ -11340,18 +11341,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Brief AV block with transient flushing or chest discomfort",
-                  "explanation": "The short-lived AV-nodal effect can feel frightening and requires monitoring."
-                },
-                {
-                  "id": "C",
                   "text": "Progressive vitamin-K depletion over several days",
                   "explanation": "This is not adenosine’s mechanism."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Prolonged corticosteroid immunosuppression",
                   "explanation": "Adenosine is not a maintenance glucocorticoid."
+                },
+                {
+                  "id": "D",
+                  "text": "Brief AV block with transient flushing or chest discomfort",
+                  "explanation": "The short-lived AV-nodal effect can feel frightening and requires monitoring."
                 }
               ],
               "format": "single-best-answer",
@@ -11385,7 +11386,7 @@
               "learningPointIds": [
                 "ccu-adenosine::adenosine_transient"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "Which history most directly changes the respiratory safety review before ADENOSINE?",
@@ -11397,18 +11398,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Active asthma or bronchospasm",
+                  "explanation": "This is a respiratory safety concern."
+                },
+                {
+                  "id": "C",
                   "text": "A remote healed superficial wound",
                   "explanation": "This does not identify airway susceptibility."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Previously controlled constipation",
                   "explanation": "This does not establish bronchospasm risk."
-                },
-                {
-                  "id": "D",
-                  "text": "Active asthma or bronchospasm",
-                  "explanation": "This is a respiratory safety concern."
                 }
               ],
               "format": "single-best-answer",
@@ -11428,7 +11429,7 @@
               "learningPointIds": [
                 "ccu-adenosine::bronchospasm_risk"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "numeric-entry",
@@ -11453,9 +11454,95 @@
               "learningPointIds": [
                 "ccu-adenosine::adenosine_first"
               ]
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult remains stable in regular narrow-complex SVT after a correctly delivered 6 mg adenosine bolus. What is the standard second AHA dose if indicated?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "6 mg",
+                  "explanation": "This is the standard first dose."
+                },
+                {
+                  "id": "B",
+                  "text": "12 mg",
+                  "explanation": "The standard second dose is 12 mg rapid IV with an immediate saline flush."
+                },
+                {
+                  "id": "C",
+                  "text": "9 mg",
+                  "explanation": "The standard AHA sequence does not use 9 mg."
+                },
+                {
+                  "id": "D",
+                  "text": "18 mg",
+                  "explanation": "18 mg is the cumulative amount after both standard doses."
+                }
+              ],
+              "point": "The standard second adult AHA dose is 12 mg rapid IV with a saline flush.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "administration",
+                  "textSha256": "b61c912fe7134c0898a7b121b48c481f3ee36ad93e9340bac83d57f94b7e7c07"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-adenosine--standard--adenosine_second_dose",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_second_dose"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "The medication list shows dipyridamole before planned adenosine. What effect should the nurse flag to the team?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dipyridamole changes the response only with the second bolus.",
+                  "explanation": "The interaction can matter with the first dose as well."
+                },
+                {
+                  "id": "B",
+                  "text": "Dipyridamole changes the response only if a saline flush is omitted.",
+                  "explanation": "The interaction can matter even with a correctly delivered dose."
+                },
+                {
+                  "id": "C",
+                  "text": "Dipyridamole can increase the response to adenosine.",
+                  "explanation": "Dipyridamole potentiates adenosine. Flag it before administration so the team can account for the interaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Dipyridamole can reduce the response to adenosine.",
+                  "explanation": "Theophylline and aminophylline can reduce the response. Dipyridamole has the opposite effect."
+                }
+              ],
+              "point": "Dipyridamole may potentiate adenosine, while methylxanthines may reduce its effect.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "monitor",
+                  "textSha256": "acfbf14e34e62b1a82d6f214819376721390bf0f9f1643cccb1e743d2383edca"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-adenosine--standard--adenosine_dipyridamole",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_dipyridamole"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 6
+          "questionCount": 8
         },
         {
           "id": "ccu-adenosine--advanced",
@@ -11624,7 +11711,7 @@
                   "collection": "medications",
                   "itemId": "ccu-adenosine",
                   "field": "use",
-                  "textSha256": "22923f572eb36fc6faa522122e09040c396c269ae9546807ce51f7488b73adc1"
+                  "textSha256": "50ce0b21bcd9b2c6df9473d8cea47710cef7a9bdabce66db0ea3a8c67c24da99"
                 }
               ],
               "criticalForSafety": true,
@@ -11677,18 +11764,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Briefly blocks AV-nodal conduction",
+                  "explanation": "Its very short action requires rapid delivery when used in the indicated rhythm pathway."
+                },
+                {
+                  "id": "C",
                   "text": "Suppresses gastric H/K ATPase",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Prevents premature breakdown of fibrin clots",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Its very short action requires rapid delivery when used in the indicated rhythm pathway."
-                },
-                {
-                  "id": "D",
-                  "text": "Briefly blocks AV-nodal conduction",
-                  "explanation": "Its very short action requires rapid delivery when used in the indicated rhythm pathway."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -11722,7 +11809,7 @@
                 "ccu-adenosine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-adenosine--standard--principal-action",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -11730,13 +11817,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Class Ic antiarrhythmic",
-                  "explanation": "The medicine is classified as: Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                  "text": "A1-receptor agonist",
+                  "explanation": "Ultra-short-acting AV-nodal blocking antiarrhythmic."
                 },
                 {
                   "id": "B",
-                  "text": "A1-receptor agonist",
-                  "explanation": "Ultra-short-acting AV-nodal blocking antiarrhythmic."
+                  "text": "Class Ic antiarrhythmic",
+                  "explanation": "The medicine is classified as: Ultra-short-acting AV-nodal blocking antiarrhythmic."
                 },
                 {
                   "id": "C",
@@ -11766,7 +11853,7 @@
                 "ccu-adenosine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-adenosine--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -11774,23 +11861,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Protocol-directed treatment of selected regular SVT",
-                  "explanation": "This is a clinical use of the medicine: Stable regular narrow-complex SVT; may also be considered in selected stable regular monomorphic wide-complex tachycardia. Unstable tachyarrhythmia requires the instability pathway/synchronized cardioversion rather than delaying definitive treatment."
-                },
-                {
-                  "id": "B",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Treatment of a susceptible bacterial infection",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Correction of a nutritional micronutrient deficiency",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "D",
+                  "text": "Protocol-directed treatment of selected regular SVT",
+                  "explanation": "This is a clinical use of the medicine: Stable regular narrow-complex SVT. In stable wide-complex tachycardia, consider adenosine only when the rhythm is regular and monomorphic. If tachyarrhythmia is causing instability, follow the urgent electrical treatment pathway for that rhythm. In regular narrow-complex tachycardia, adenosine may be considered if it does not delay synchronized cardioversion."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -11800,7 +11887,7 @@
                   "collection": "medications",
                   "itemId": "ccu-adenosine",
                   "field": "use",
-                  "textSha256": "22923f572eb36fc6faa522122e09040c396c269ae9546807ce51f7488b73adc1"
+                  "textSha256": "50ce0b21bcd9b2c6df9473d8cea47710cef7a9bdabce66db0ea3a8c67c24da99"
                 },
                 {
                   "file": "content.json",
@@ -11817,7 +11904,7 @@
                 "ccu-adenosine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-adenosine--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Which immediate effect should the team anticipate and monitor during indicated adenosine use?",
@@ -11945,6 +12032,94 @@
                 "ccu-adenosine::adenosine_first"
               ],
               "reusedFromQuestionId": "ccu-adenosine--standard--adenosine_first"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult remains stable in regular narrow-complex SVT after a correctly delivered 6 mg adenosine bolus. What is the standard second AHA dose if indicated?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "9 mg",
+                  "explanation": "The standard AHA sequence does not use 9 mg."
+                },
+                {
+                  "id": "B",
+                  "text": "12 mg",
+                  "explanation": "The standard second dose is 12 mg rapid IV with an immediate saline flush."
+                },
+                {
+                  "id": "C",
+                  "text": "6 mg",
+                  "explanation": "This is the standard first dose."
+                },
+                {
+                  "id": "D",
+                  "text": "18 mg",
+                  "explanation": "18 mg is the cumulative amount after both standard doses."
+                }
+              ],
+              "point": "The standard second adult AHA dose is 12 mg rapid IV with a saline flush.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "administration",
+                  "textSha256": "b61c912fe7134c0898a7b121b48c481f3ee36ad93e9340bac83d57f94b7e7c07"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-adenosine--7-day--adenosine_second_dose",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_second_dose"
+              ],
+              "reusedFromQuestionId": "ccu-adenosine--standard--adenosine_second_dose",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "The medication list shows dipyridamole before planned adenosine. What effect should the nurse flag to the team?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Dipyridamole changes the response only if a saline flush is omitted.",
+                  "explanation": "The interaction can matter even with a correctly delivered dose."
+                },
+                {
+                  "id": "B",
+                  "text": "Dipyridamole changes the response only with the second bolus.",
+                  "explanation": "The interaction can matter with the first dose as well."
+                },
+                {
+                  "id": "C",
+                  "text": "Dipyridamole can increase the response to adenosine.",
+                  "explanation": "Dipyridamole potentiates adenosine. Flag it before administration so the team can account for the interaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Dipyridamole can reduce the response to adenosine.",
+                  "explanation": "Theophylline and aminophylline can reduce the response. Dipyridamole has the opposite effect."
+                }
+              ],
+              "point": "Dipyridamole may potentiate adenosine, while methylxanthines may reduce its effect.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-adenosine",
+                  "field": "monitor",
+                  "textSha256": "acfbf14e34e62b1a82d6f214819376721390bf0f9f1643cccb1e743d2383edca"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-adenosine--7-day--adenosine_dipyridamole",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-adenosine::adenosine_dipyridamole"
+              ],
+              "reusedFromQuestionId": "ccu-adenosine--standard--adenosine_dipyridamole",
+              "answerKey": "C"
             },
             {
               "stem": "The ordered adenosine dose is injected slowly through long tubing and has little effect. Which explanation best fits?",
@@ -12087,7 +12262,7 @@
                   "collection": "medications",
                   "itemId": "ccu-adenosine",
                   "field": "use",
-                  "textSha256": "22923f572eb36fc6faa522122e09040c396c269ae9546807ce51f7488b73adc1"
+                  "textSha256": "50ce0b21bcd9b2c6df9473d8cea47710cef7a9bdabce66db0ea3a8c67c24da99"
                 }
               ],
               "criticalForSafety": true,
@@ -12100,7 +12275,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 9
+          "questionCount": 11
         }
       ]
     },

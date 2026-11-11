@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 47,
-  "sourceContentSha256": "8b87d910d6d33ea421ec496fc2ecbdddabebf39d6be8ffadad05b1b8d52f2130",
+  "sourceContentVersion": 48,
+  "sourceContentSha256": "22d3b0220e9b848cdc25f13bfbef51a4fb4d3e6c4a3718dff915a3e46c040ea0",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 321,
-    "questions": 1913,
-    "single-best-answer": 1883,
+    "questions": 1921,
+    "single-best-answer": 1891,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 107,
     "medications": 82,
     "lessons": 25,
-    "mappedLearningPoints": 904
+    "mappedLearningPoints": 908
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -549,7 +549,7 @@
         {
           "id": "ccu-heparin-ufh--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-heparin-ufh--advanced",
@@ -559,7 +559,7 @@
         {
           "id": "ccu-heparin-ufh--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -917,7 +917,7 @@
         {
           "id": "ccu-atropine--standard",
           "stage": "standard",
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-atropine--advanced",
@@ -927,7 +927,7 @@
         {
           "id": "ccu-atropine--7-day",
           "stage": "7-day",
-          "questionCount": 7
+          "questionCount": 8
         }
       ]
     },
@@ -1239,7 +1239,7 @@
         {
           "id": "ccu-adenosine--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 8
         },
         {
           "id": "ccu-adenosine--advanced",
@@ -1249,7 +1249,7 @@
         {
           "id": "ccu-adenosine--7-day",
           "stage": "7-day",
-          "questionCount": 9
+          "questionCount": 11
         }
       ]
     },
@@ -2503,11 +2503,11 @@
     },
     {
       "path": "banks-02.json",
-      "sha256": "5e5b0f42fa76d464748a6c4ce282d9611f1206da68a97c243e5bdbf3d23d206e"
+      "sha256": "b5b60d26237ec70e1bd38a3272ca9bfc21c68a2b2c6a035a201ed6c6f5ae1fe3"
     },
     {
       "path": "banks-03.json",
-      "sha256": "f5dafd4406d0b7958cf003acf135ce14a0082d2db1de105551146b1c8fcd4cac"
+      "sha256": "e45deac261c16357fd48558bc96e1f8f5400ee51e9c6ac811f874cee41220c79"
     },
     {
       "path": "banks-04.json",
@@ -2523,7 +2523,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "e455ee472ac2a0982038e9ddb40371010db4c67c4e0ca384997f98e3b0ad3621"
+      "sha256": "3bc0053332e6498dbafa7bf622e70a657bb3af96f1ff573317f57e3b7d766400"
     }
   ]
 }
