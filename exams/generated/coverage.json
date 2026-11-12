@@ -4154,19 +4154,6 @@
       ]
     },
     {
-      "id": "ccu-furosemide::slow_iv",
-      "itemId": "ccu-furosemide",
-      "point": "IV administration speed follows the exact product and indication.",
-      "questionIds": [
-        "ccu-furosemide--standard--slow_iv",
-        "ccu-furosemide--7-day--slow_iv"
-      ],
-      "stages": [
-        "standard",
-        "7-day"
-      ]
-    },
-    {
       "id": "ccu-furosemide::diuretic_timing",
       "itemId": "ccu-furosemide",
       "point": "Routine oral diuretic timing can reduce nocturia.",
@@ -4225,19 +4212,6 @@
       "questionIds": [
         "ccu-furosemide--standard--furosemide_controlled_delivery",
         "ccu-furosemide--7-day--furosemide_controlled_delivery"
-      ],
-      "stages": [
-        "standard",
-        "7-day"
-      ]
-    },
-    {
-      "id": "ccu-furosemide::furosemide_routine_iv_time",
-      "itemId": "ccu-furosemide",
-      "point": "Recall the specified routine adult IV time for the identified product.",
-      "questionIds": [
-        "ccu-furosemide--standard--furosemide_routine_iv_time",
-        "ccu-furosemide--7-day--furosemide_routine_iv_time"
       ],
       "stages": [
         "standard",
@@ -14374,13 +14348,9 @@
           "ccu-furosemide--7-day--low_k_mg"
         ],
         "administration": [
-          "ccu-furosemide--standard--slow_iv",
           "ccu-furosemide--standard--furosemide_controlled_delivery",
-          "ccu-furosemide--standard--furosemide_routine_iv_time",
           "ccu-furosemide--advanced--low_k_mg",
-          "ccu-furosemide--7-day--slow_iv",
           "ccu-furosemide--7-day--furosemide_controlled_delivery",
-          "ccu-furosemide--7-day--furosemide_routine_iv_time",
           "ccu-furosemide--7-day--low_k_mg"
         ]
       },
