@@ -111,4 +111,7 @@
   window.addEventListener('online',discover);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)discover()});
   setInterval(()=>{if(!document.hidden){notify();discover()}},5*60*1000);
+  // Confirm after all startup scripts have executed, without waiting for a paint frame.
+  // Android's recovery watchdog rolls back a candidate if the frame is delayed.
+  if(typeof window.confirmRuntimeStartup==='function')window.confirmRuntimeStartup();
 })();
