@@ -143,7 +143,7 @@ let saved=state(w),r=saved.exams.items['ccu-heparin-ufh'];assert(r.attempts[0].p
 assert.equal(r.due.at-r.attempts[0].completedAt,7*86400000);assert.equal(r.attempts[0].reviewQuestions.length,1);
 assert.equal(d.querySelectorAll('.exam-feedback').length,1,'Only flagged answers in result');
 assert(d.querySelector('.review-correct-answer'));assert(d.querySelector('.exam-feedback').open);
-assert.equal(saved.attempts.length,1);assert.deepEqual(saved.reading,{'med:heparin':'read'});
+assert.equal(saved.attempts.length,1);assert.deepEqual(saved.reading,{'med:ccu-heparin-ufh':'read'});
 const original=JSON.stringify(r.comprehensiveForm.questions);
 w.CoreNursingExams.reviewItem();assert(d.querySelector('.exam-completed').textContent.includes('Comprehensive exam'));
 assert(!d.querySelector('#examSession').textContent.includes('Start advanced'));
@@ -178,4 +178,19 @@ const old={id:'old-1',stage:'standard',formId:'ccu-heparin-ufh--standard',bankVe
 w=boot(JSON.stringify({bookmarks:[],attempts:[],exams:{version:1,items:{'ccu-heparin-ufh':{attempts:[old],reads:[],pendingSafety:[],readingAfter:null,due:null}},active:null}}));
 w.CoreNursingExams.open('heparin');assert.equal(state(w).exams.items['ccu-heparin-ufh'].attempts[0].passed,false);
 w.CoreNursingExams.launch('heparin');assert.equal(state(w).exams.active.form.stage,'comprehensive');w.close();
+// One canonical medication card replaces a bundled legacy card after content sync.
+{
+ const mark={itemType:'med',itemId:'ccu-46',itemTitle:'LASIX',sectionKey:'section:monitor',text:'Check potassium',sectionText:'Check potassium'};
+ const saved={bookmarks:['ccu-46'],attempts:[],reading:{'med:ccu-46':'in-progress','med:ed-captopril-tablets':'in-progress'},questionMarks:[mark]};
+ const app=boot(JSON.stringify(saved)),page=app.document,items=app.eval('meds');
+ assert.equal(items.filter(x=>x.name.includes('LASIX — furosemide')).length,1,'Bundled and live Lasix cards must not duplicate');
+ assert.equal(items.filter(x=>x.name==='CAPTOPRIL — oral tablets').length,1,'The live captopril card is unique');
+ assert(app.eval('memory.bookmarks').includes('ccu-furosemide'),'Legacy bookmark follows the canonical card');
+ assert.equal(app.eval('memory.reading["med:ccu-furosemide"]'),'in-progress','Legacy reading follows the canonical card');
+ assert.equal(app.eval('memory.questionMarks[0].itemId'),'ccu-furosemide','Legacy marks follow the canonical card');
+ app.showTab('home');
+ assert.equal(page.querySelector('#nextActionsHome [data-reading-id]')?.dataset.readingId,'ed-captopril-tablets','Continue studying chooses a preparation-complete unfinished item');
+ app.openMed('ccu-46');assert.equal(app.eval('current'),'ccu-furosemide','Legacy links open the canonical medication');
+ app.close();
+}
 console.log('PASS: bottom direct exam entry, identical three-stage forms, three-day retries, filtered visible correction, saved flags, history and backups');

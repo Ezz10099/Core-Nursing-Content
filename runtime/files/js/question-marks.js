@@ -7,10 +7,11 @@ function normalizeQuestionMarks(value){
   for(const mark of value.slice(0,5000)){
     if(!mark||!['med','lesson'].includes(mark.itemType)||typeof mark.itemId!=='string'||!mark.itemId||mark.itemId.length>160)continue;
     if(typeof mark.text!=='string'||!mark.text.trim()||mark.text.length>16000||typeof mark.sectionKey!=='string'||!mark.sectionKey||mark.sectionKey.length>240)continue;
-    const text=mark.text.trim(),key=JSON.stringify([mark.itemType,mark.itemId,mark.sectionKey,text]);
+    const itemId=mark.itemType==='med'?(window.CoreNursingExamData?.aliases?.[mark.itemId]||mark.itemId):mark.itemId;
+    const text=mark.text.trim(),key=JSON.stringify([mark.itemType,itemId,mark.sectionKey,text]);
     if(seen.has(key))continue;seen.add(key);
     const field=(name,max)=>typeof mark[name]==='string'?mark[name].slice(0,max):'';
-    result.push({itemType:mark.itemType,itemId:mark.itemId,itemTitle:field('itemTitle',512),sectionKey:mark.sectionKey,sectionTitle:field('sectionTitle',512),text,sectionText:field('sectionText',40000),contentVersion:Number.isSafeInteger(mark.contentVersion)&&mark.contentVersion>=0?mark.contentVersion:0,createdAt:typeof mark.createdAt==='string'&&Number.isFinite(Date.parse(mark.createdAt))?new Date(mark.createdAt).toISOString():''});
+    result.push({itemType:mark.itemType,itemId,itemTitle:field('itemTitle',512),sectionKey:mark.sectionKey,sectionTitle:field('sectionTitle',512),text,sectionText:field('sectionText',40000),contentVersion:Number.isSafeInteger(mark.contentVersion)&&mark.contentVersion>=0?mark.contentVersion:0,createdAt:typeof mark.createdAt==='string'&&Number.isFinite(Date.parse(mark.createdAt))?new Date(mark.createdAt).toISOString():''});
   }
   return result;
 }

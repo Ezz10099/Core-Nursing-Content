@@ -4,9 +4,13 @@ const readingFilters={med:'all',lesson:'all',faq:'all'};
 function normalizeReading(value){
   const result={};
   if(!value||typeof value!=='object'||Array.isArray(value))return result;
+  const aliases=window.CoreNursingExamData?.aliases||{};
   for(const [key,entry] of Object.entries(value)){
     if(!/^(med|lesson|faq):.+$/.test(key)||!entry||!['in-progress','read'].includes(entry))continue;
-    result[key]=entry;
+    const split=key.indexOf(':'),type=key.slice(0,split),id=key.slice(split+1);
+    const canonical=type==='med'?'med:'+(aliases[id]||id):key;
+    // Keep the strongest recorded reading state when old and canonical IDs coexist.
+    if(result[canonical]!=='read')result[canonical]=entry;
   }
   return result;
 }
@@ -47,7 +51,8 @@ function openReadingItem(button){
     const q=allRemoteFaqs().find(x=>x.id===id);if(!q)return;
     readingFilters.faq='all';
     if(q.placement==='medication'){
-      const medId=(q.relatedMeds||[]).find(id=>meds.some(m=>m.id===id));if(!medId)return;
+      const aliases=window.CoreNursingExamData?.aliases||{};
+      const medId=(q.relatedMeds||[]).map(id=>aliases[id]||id).find(id=>meds.some(m=>m.id===id));if(!medId)return;
       showTab('library');openMed(medId);
     }else{showTab('clinical');setClinicalDepartment(faqDepartment(q))}
     const container=byId(q.placement==='medication'?'detail':'clinicalFaqItems');

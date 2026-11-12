@@ -95,7 +95,7 @@
   }
   function homeActions(due){
     const home=byId('nextActionsHome'),a=state().active;if(!home)return;
-    const unfinished=readingCatalog().find(x=>readingState(x.type,x.id)==='in-progress');
+    const unfinished=readingCatalog().find(x=>['med','lesson'].includes(x.type)&&readingState(x.type,x.id)==='in-progress'&&window.CoreNursingReadiness?.status(x.id)==='complete');
     const flagged=reviewRows().length;
     const study=unfinished?'<p>'+safe(unfinished.title)+'</p><button class="primary" data-reading-type="'+unfinished.type+'" data-reading-id="'+safe(unfinished.id)+'" onclick="openReadingItem(this)">Continue studying →</button>':'<p>Choose a medication or clinical lesson.</p><button class="primary" onclick="showTab(\'library\');setCatalogFilter(\'complete\')">Browse completed medications →</button>';
     home.innerHTML='<h1>Your next step</h1>'+(a?'<p>'+safe(banks.get(a.itemId)?.title||a.itemId)+' · '+safe(label(a.form.stage))+'</p><button class="primary" onclick="CoreNursingExams.resume()">Continue exam</button>':due.length?'<button class="primary" onclick="CoreNursingExams.launch(\''+due[0].itemId+'\')">'+safe(action(due[0]).text)+' · '+safe(due[0].title)+'</button>':study)+(flagged?'<div class="next-links"><button onclick="CoreNursingExams.review()">Review saved answers · '+flagged+'</button></div>':'');
