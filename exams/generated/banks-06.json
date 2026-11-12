@@ -5769,6 +5769,826 @@
           "questionCount": 5
         }
       ]
+    },
+    {
+      "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+      "title": "Klebsiella, Acinetobacter, MRSA & MDR — Orthopaedic Infection",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "supplied-health-alterations",
+        "cdc-klebsiella-2025",
+        "cdc-acinetobacter-2025",
+        "cdc-mrsa-2025",
+        "cdc-sepsis-2026",
+        "who-gaza-amr-2025"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-14-orthopaedic-resistant-infections--standard",
+          "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+          "itemType": "lesson",
+          "title": "Klebsiella, Acinetobacter, MRSA & MDR — Orthopaedic Infection",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "Which classification correctly matches organisms encountered in orthopaedic infection?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "MRSA is a resistance gene rather than a bacterium",
+                  "explanation": "MRSA names methicillin-resistant S. aureus."
+                },
+                {
+                  "id": "B",
+                  "text": "All three are Gram-negative organisms",
+                  "explanation": "MRSA is S. aureus, a Gram-positive organism."
+                },
+                {
+                  "id": "C",
+                  "text": "Klebsiella and Acinetobacter are Gram-negative; MRSA is Gram-positive",
+                  "explanation": "Correct distinction of the two Gram-negative genera and resistant S. aureus."
+                },
+                {
+                  "id": "D",
+                  "text": "Klebsiella is Gram-positive; the others are Gram-negative",
+                  "explanation": "Klebsiella is Gram-negative and MRSA is Gram-positive."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Klebsiella and Acinetobacter are Gram-negative; MRSA is resistant Gram-positive S. aureus.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 1,
+                  "label": "The three names",
+                  "textSha256": "1e39c0ee45058c0b57fabc9f544c32c3fb75191d6e82937d34996d49440e1126"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-9475c28cbddf",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-9475c28cbddf"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "A chart says “Acinetobacter” without susceptibility results. What can you conclude?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It is resistant to every antibiotic",
+                  "explanation": "The organism name does not establish resistance to every agent."
+                },
+                {
+                  "id": "B",
+                  "text": "The actual susceptibility report is needed",
+                  "explanation": "Correct: resistance is isolate-specific and requires laboratory interpretation."
+                },
+                {
+                  "id": "C",
+                  "text": "It requires the same regimen as MRSA",
+                  "explanation": "These are different organisms and a regimen cannot be assumed."
+                },
+                {
+                  "id": "D",
+                  "text": "It is susceptible to standard antibiotics",
+                  "explanation": "Susceptibility cannot be inferred from the name."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "MDR refers to resistance across multiple antimicrobial classes; organism name alone does not determine susceptibility.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 2,
+                  "label": "MDR and the lab report",
+                  "textSha256": "36c631bbee5ffc6ea2ba3a09b8f0f396063f94d956c18ef26c552eb48d92ca3f"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-396be218155e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-396be218155e"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "A wound swab grows Klebsiella, but the wound looks unchanged and the patient is stable. What is the sound interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The finding needs clinical and specimen-context review",
+                  "explanation": "Correct: distinguish colonization, superficial infection and deeper disease."
+                },
+                {
+                  "id": "B",
+                  "text": "The swab alone proves osteomyelitis",
+                  "explanation": "A surface swab does not prove a bone infection."
+                },
+                {
+                  "id": "C",
+                  "text": "The patient has sepsis from Klebsiella",
+                  "explanation": "Sepsis cannot be diagnosed from a swab alone."
+                },
+                {
+                  "id": "D",
+                  "text": "The culture has no infection-control relevance",
+                  "explanation": "Carriage can matter for precautions and transmission."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A positive wound swab alone does not establish active deep infection.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 3,
+                  "label": "Colonization versus infection",
+                  "textSha256": "60e2d5695cbdf3bbcb1c9ab26851fd1bae26145937e6b1c17400adaa469ea9cc"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-7f3319f130b9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-7f3319f130b9"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "How would you explain “systemic infection” to a family?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Any fever proves bacteria are in the blood",
+                  "explanation": "Fever does not establish bacteremia or sepsis."
+                },
+                {
+                  "id": "B",
+                  "text": "The bone is infected in every case",
+                  "explanation": "Systemic illness does not prove bone infection."
+                },
+                {
+                  "id": "C",
+                  "text": "The wound has bacteria but the person is unaffected",
+                  "explanation": "That describes possible carriage rather than systemic illness."
+                },
+                {
+                  "id": "D",
+                  "text": "The infection is affecting the body beyond the wound",
+                  "explanation": "Correct plain-language explanation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Systemic infection affects the patient beyond the wound; sepsis requires concerning organ dysfunction, not fever alone.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 4,
+                  "label": "Local versus systemic",
+                  "textSha256": "ef982b6f19ecc0d930276ef40635e86c345d3f346a4296360366519454066371"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-0415e6ab03d2",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-0415e6ab03d2"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced",
+          "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+          "itemType": "lesson",
+          "title": "Klebsiella, Acinetobacter, MRSA & MDR — Orthopaedic Infection",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A patient with a draining fixation wound becomes confused, hypotensive and tachypneic. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait for final susceptibility before reporting",
+                  "explanation": "Deterioration needs immediate assessment and escalation."
+                },
+                {
+                  "id": "B",
+                  "text": "Document the wound and continue the round",
+                  "explanation": "Documentation alone delays urgent response."
+                },
+                {
+                  "id": "C",
+                  "text": "Urgently escalate and assess airway, breathing and circulation",
+                  "explanation": "Correct: recognize potential systemic deterioration and activate urgent care."
+                },
+                {
+                  "id": "D",
+                  "text": "Perform routine dressing care, then reassess tomorrow",
+                  "explanation": "Routine care does not address possible sepsis."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "New confusion and hypotension with suspected infection require urgent sepsis assessment.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 5,
+                  "label": "Nursing action and escalation",
+                  "textSha256": "5954b99f2ac55e1abaa2fcda3c09165d5b703681e4781e315ad0868c3f655b3b"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-9e9257256d49",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-9e9257256d49"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "The team suspects sepsis, but a wound specimen has not yet been collected. The patient is unstable. What is the safe priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Escalate immediately; obtain ordered specimens if feasible without delaying care",
+                  "explanation": "Correct: sampling must not obstruct emergency treatment."
+                },
+                {
+                  "id": "B",
+                  "text": "Delay all treatment until the wound culture returns",
+                  "explanation": "An unstable patient needs prompt treatment."
+                },
+                {
+                  "id": "C",
+                  "text": "Choose an antibiotic from the organism name alone",
+                  "explanation": "Therapy selection requires a clinical order and evidence."
+                },
+                {
+                  "id": "D",
+                  "text": "Treat only if the swab proves bloodstream infection",
+                  "explanation": "A wound swab cannot rule in or out sepsis."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Cultures guide care but should not delay urgent treatment of an unstable patient.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 6,
+                  "label": "Prevent spread and treat safely",
+                  "textSha256": "c8d61e8433d4f51b4e70eb1d82e18a4b870af3c41f431fc07e7350386894f4d1"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-88ff966401ae",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-88ff966401ae"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "After caring for a patient on contact precautions for MRSA, what prevents transmission to the next patient?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Rely on antibiotics to prevent contact spread",
+                  "explanation": "Antibiotics do not replace infection prevention."
+                },
+                {
+                  "id": "B",
+                  "text": "Use hand hygiene and clean shared equipment according to the IPC plan",
+                  "explanation": "Correct: break transmission through hands and surfaces."
+                },
+                {
+                  "id": "C",
+                  "text": "Keep the same gloves for both dressing changes",
+                  "explanation": "Gloves can transfer organisms and must be changed."
+                },
+                {
+                  "id": "D",
+                  "text": "Avoid touching the patient but reuse the same equipment",
+                  "explanation": "Contaminated equipment can transfer organisms."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Hand hygiene, equipment cleaning and ordered precautions reduce MDRO spread.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 6,
+                  "label": "Prevent spread and treat safely",
+                  "textSha256": "c8d61e8433d4f51b4e70eb1d82e18a4b870af3c41f431fc07e7350386894f4d1"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-f534b6f055ca",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-f534b6f055ca"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "A report lists Klebsiella without an ESBL or carbapenem result. Which handover statement is defensible?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "MRSA precautions prove its drug susceptibility",
+                  "explanation": "Another organism’s precautions do not determine susceptibility."
+                },
+                {
+                  "id": "B",
+                  "text": "All Klebsiella isolates are ESBL producers",
+                  "explanation": "The phenotype is isolate-specific."
+                },
+                {
+                  "id": "C",
+                  "text": "This isolate is necessarily carbapenem resistant",
+                  "explanation": "Resistance cannot be assumed without testing."
+                },
+                {
+                  "id": "D",
+                  "text": "Review this isolate’s full susceptibility report",
+                  "explanation": "Correct: verify the actual organism and drug results."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "ESBL and carbapenem resistance are specific patterns, not synonyms for any Klebsiella or Acinetobacter.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 2,
+                  "label": "MDR and the lab report",
+                  "textSha256": "36c631bbee5ffc6ea2ba3a09b8f0f396063f94d956c18ef26c552eb48d92ca3f"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-58626ac4bbe0",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-58626ac4bbe0"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day",
+          "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+          "itemType": "lesson",
+          "title": "Klebsiella, Acinetobacter, MRSA & MDR — Orthopaedic Infection",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "comprehensive memory retest; questions may repeat",
+          "questions": [
+            {
+              "stem": "Which classification correctly matches organisms encountered in orthopaedic infection?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Klebsiella is Gram-positive; the others are Gram-negative",
+                  "explanation": "Klebsiella is Gram-negative and MRSA is Gram-positive."
+                },
+                {
+                  "id": "B",
+                  "text": "All three are Gram-negative organisms",
+                  "explanation": "MRSA is S. aureus, a Gram-positive organism."
+                },
+                {
+                  "id": "C",
+                  "text": "Klebsiella and Acinetobacter are Gram-negative; MRSA is Gram-positive",
+                  "explanation": "Correct distinction of the two Gram-negative genera and resistant S. aureus."
+                },
+                {
+                  "id": "D",
+                  "text": "MRSA is a resistance gene rather than a bacterium",
+                  "explanation": "MRSA names methicillin-resistant S. aureus."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Klebsiella and Acinetobacter are Gram-negative; MRSA is resistant Gram-positive S. aureus.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 1,
+                  "label": "The three names",
+                  "textSha256": "1e39c0ee45058c0b57fabc9f544c32c3fb75191d6e82937d34996d49440e1126"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-9475c28cbddf",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-9475c28cbddf"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-9475c28cbddf",
+              "answerKey": "C"
+            },
+            {
+              "stem": "A chart says “Acinetobacter” without susceptibility results. What can you conclude?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It is susceptible to standard antibiotics",
+                  "explanation": "Susceptibility cannot be inferred from the name."
+                },
+                {
+                  "id": "B",
+                  "text": "It requires the same regimen as MRSA",
+                  "explanation": "These are different organisms and a regimen cannot be assumed."
+                },
+                {
+                  "id": "C",
+                  "text": "It is resistant to every antibiotic",
+                  "explanation": "The organism name does not establish resistance to every agent."
+                },
+                {
+                  "id": "D",
+                  "text": "The actual susceptibility report is needed",
+                  "explanation": "Correct: resistance is isolate-specific and requires laboratory interpretation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "MDR refers to resistance across multiple antimicrobial classes; organism name alone does not determine susceptibility.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 2,
+                  "label": "MDR and the lab report",
+                  "textSha256": "36c631bbee5ffc6ea2ba3a09b8f0f396063f94d956c18ef26c552eb48d92ca3f"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-396be218155e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-396be218155e"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-396be218155e",
+              "answerKey": "D"
+            },
+            {
+              "stem": "A wound swab grows Klebsiella, but the wound looks unchanged and the patient is stable. What is the sound interpretation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The patient has sepsis from Klebsiella",
+                  "explanation": "Sepsis cannot be diagnosed from a swab alone."
+                },
+                {
+                  "id": "B",
+                  "text": "The culture has no infection-control relevance",
+                  "explanation": "Carriage can matter for precautions and transmission."
+                },
+                {
+                  "id": "C",
+                  "text": "The finding needs clinical and specimen-context review",
+                  "explanation": "Correct: distinguish colonization, superficial infection and deeper disease."
+                },
+                {
+                  "id": "D",
+                  "text": "The swab alone proves osteomyelitis",
+                  "explanation": "A surface swab does not prove a bone infection."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A positive wound swab alone does not establish active deep infection.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 3,
+                  "label": "Colonization versus infection",
+                  "textSha256": "60e2d5695cbdf3bbcb1c9ab26851fd1bae26145937e6b1c17400adaa469ea9cc"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-7f3319f130b9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-7f3319f130b9"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-7f3319f130b9",
+              "answerKey": "C"
+            },
+            {
+              "stem": "How would you explain “systemic infection” to a family?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The infection is affecting the body beyond the wound",
+                  "explanation": "Correct plain-language explanation."
+                },
+                {
+                  "id": "B",
+                  "text": "The bone is infected in every case",
+                  "explanation": "Systemic illness does not prove bone infection."
+                },
+                {
+                  "id": "C",
+                  "text": "Any fever proves bacteria are in the blood",
+                  "explanation": "Fever does not establish bacteremia or sepsis."
+                },
+                {
+                  "id": "D",
+                  "text": "The wound has bacteria but the person is unaffected",
+                  "explanation": "That describes possible carriage rather than systemic illness."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Systemic infection affects the patient beyond the wound; sepsis requires concerning organ dysfunction, not fever alone.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 4,
+                  "label": "Local versus systemic",
+                  "textSha256": "ef982b6f19ecc0d930276ef40635e86c345d3f346a4296360366519454066371"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-0415e6ab03d2",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-0415e6ab03d2"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--standard--point-0415e6ab03d2",
+              "answerKey": "A"
+            },
+            {
+              "stem": "A patient with a draining fixation wound becomes confused, hypotensive and tachypneic. What should the nurse do first?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Document the wound and continue the round",
+                  "explanation": "Documentation alone delays urgent response."
+                },
+                {
+                  "id": "B",
+                  "text": "Urgently escalate and assess airway, breathing and circulation",
+                  "explanation": "Correct: recognize potential systemic deterioration and activate urgent care."
+                },
+                {
+                  "id": "C",
+                  "text": "Wait for final susceptibility before reporting",
+                  "explanation": "Deterioration needs immediate assessment and escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Perform routine dressing care, then reassess tomorrow",
+                  "explanation": "Routine care does not address possible sepsis."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "New confusion and hypotension with suspected infection require urgent sepsis assessment.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 5,
+                  "label": "Nursing action and escalation",
+                  "textSha256": "5954b99f2ac55e1abaa2fcda3c09165d5b703681e4781e315ad0868c3f655b3b"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-9e9257256d49",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-9e9257256d49"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-9e9257256d49",
+              "answerKey": "B"
+            },
+            {
+              "stem": "The team suspects sepsis, but a wound specimen has not yet been collected. The patient is unstable. What is the safe priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Choose an antibiotic from the organism name alone",
+                  "explanation": "Therapy selection requires a clinical order and evidence."
+                },
+                {
+                  "id": "B",
+                  "text": "Treat only if the swab proves bloodstream infection",
+                  "explanation": "A wound swab cannot rule in or out sepsis."
+                },
+                {
+                  "id": "C",
+                  "text": "Delay all treatment until the wound culture returns",
+                  "explanation": "An unstable patient needs prompt treatment."
+                },
+                {
+                  "id": "D",
+                  "text": "Escalate immediately; obtain ordered specimens if feasible without delaying care",
+                  "explanation": "Correct: sampling must not obstruct emergency treatment."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Cultures guide care but should not delay urgent treatment of an unstable patient.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 6,
+                  "label": "Prevent spread and treat safely",
+                  "textSha256": "c8d61e8433d4f51b4e70eb1d82e18a4b870af3c41f431fc07e7350386894f4d1"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-88ff966401ae",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-88ff966401ae"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-88ff966401ae",
+              "answerKey": "D"
+            },
+            {
+              "stem": "After caring for a patient on contact precautions for MRSA, what prevents transmission to the next patient?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Keep the same gloves for both dressing changes",
+                  "explanation": "Gloves can transfer organisms and must be changed."
+                },
+                {
+                  "id": "B",
+                  "text": "Use hand hygiene and clean shared equipment according to the IPC plan",
+                  "explanation": "Correct: break transmission through hands and surfaces."
+                },
+                {
+                  "id": "C",
+                  "text": "Avoid touching the patient but reuse the same equipment",
+                  "explanation": "Contaminated equipment can transfer organisms."
+                },
+                {
+                  "id": "D",
+                  "text": "Rely on antibiotics to prevent contact spread",
+                  "explanation": "Antibiotics do not replace infection prevention."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Hand hygiene, equipment cleaning and ordered precautions reduce MDRO spread.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 6,
+                  "label": "Prevent spread and treat safely",
+                  "textSha256": "c8d61e8433d4f51b4e70eb1d82e18a4b870af3c41f431fc07e7350386894f4d1"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-f534b6f055ca",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-f534b6f055ca"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-f534b6f055ca",
+              "answerKey": "B"
+            },
+            {
+              "stem": "A report lists Klebsiella without an ESBL or carbapenem result. Which handover statement is defensible?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Review this isolate’s full susceptibility report",
+                  "explanation": "Correct: verify the actual organism and drug results."
+                },
+                {
+                  "id": "B",
+                  "text": "This isolate is necessarily carbapenem resistant",
+                  "explanation": "Resistance cannot be assumed without testing."
+                },
+                {
+                  "id": "C",
+                  "text": "MRSA precautions prove its drug susceptibility",
+                  "explanation": "Another organism’s precautions do not determine susceptibility."
+                },
+                {
+                  "id": "D",
+                  "text": "All Klebsiella isolates are ESBL producers",
+                  "explanation": "The phenotype is isolate-specific."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "ESBL and carbapenem resistance are specific patterns, not synonyms for any Klebsiella or Acinetobacter.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+                  "sectionIndex": 2,
+                  "label": "MDR and the lab report",
+                  "textSha256": "36c631bbee5ffc6ea2ba3a09b8f0f396063f94d956c18ef26c552eb48d92ca3f"
+                }
+              ],
+              "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day--point-58626ac4bbe0",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-14-orthopaedic-resistant-infections::point-58626ac4bbe0"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced--point-58626ac4bbe0",
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 8
+        }
+      ]
     }
   ]
 }

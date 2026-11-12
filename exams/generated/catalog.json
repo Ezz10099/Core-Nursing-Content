@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 53,
-  "sourceContentSha256": "3d3a5615388a96cb603aa87b3e865073ad6f31928ddb81770137869866e1382d",
+  "sourceContentVersion": 54,
+  "sourceContentSha256": "7ecef3f2cff98d8542bbacd14b0db7f2404b8421114325f696e6ef3a8c46339e",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -15,15 +15,15 @@
     "exams/sources.json"
   ],
   "counts": {
-    "exams": 330,
-    "questions": 1967,
-    "single-best-answer": 1937,
+    "exams": 333,
+    "questions": 1983,
+    "single-best-answer": 1953,
     "numeric-entry": 22,
     "short-answer": 8,
-    "materials": 110,
+    "materials": 111,
     "medications": 82,
-    "lessons": 28,
-    "mappedLearningPoints": 931
+    "lessons": 29,
+    "mappedLearningPoints": 939
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -2563,6 +2563,29 @@
           "questionCount": 5
         }
       ]
+    },
+    {
+      "itemId": "ibd2-lesson-14-orthopaedic-resistant-infections",
+      "title": "Klebsiella, Acinetobacter, MRSA & MDR — Orthopaedic Infection",
+      "itemType": "lesson",
+      "file": "banks-06.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-14-orthopaedic-resistant-infections--standard",
+          "stage": "standard",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-lesson-14-orthopaedic-resistant-infections--advanced",
+          "stage": "advanced",
+          "questionCount": 4
+        },
+        {
+          "id": "ibd2-lesson-14-orthopaedic-resistant-infections--7-day",
+          "stage": "7-day",
+          "questionCount": 8
+        }
+      ]
     }
   ],
   "files": [
@@ -2588,11 +2611,11 @@
     },
     {
       "path": "banks-06.json",
-      "sha256": "9e878ddcc89595d25796be87d1f65dab6c93f77bb4c6de9c4a60a62f0915f763"
+      "sha256": "30780902b7088d7d4fe26a505f32ea8af21091265e2a980e3f228c99937629cd"
     },
     {
       "path": "coverage.json",
-      "sha256": "a647b19d1e82d92d230a514b72a3b0949ae45793620b206061c370f1236eb732"
+      "sha256": "dea47588bf59427f35acb466e10f0d57c24b9ccae50d5eab76482289d1ab7397"
     }
   ]
 }

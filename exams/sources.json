@@ -1391,6 +1391,46 @@
       "type": "primary prescribing information",
       "checkedDate": "2026-11-11",
       "reviewScope": "Activation, oral loading and maintenance, drug interactions and interruption risk."
+    },
+    {
+      "id": "cdc-klebsiella-2025",
+      "type": "official clinical overview",
+      "title": "CDC About Klebsiella",
+      "url": "https://www.cdc.gov/klebsiella/about/",
+      "checkedDate": "2026-11-12",
+      "reviewScope": "Wound infection, contact transmission and resistance testing."
+    },
+    {
+      "id": "cdc-acinetobacter-2025",
+      "type": "official clinical overview",
+      "title": "CDC About Acinetobacter",
+      "url": "https://www.cdc.gov/acinetobacter/about/",
+      "checkedDate": "2026-11-12",
+      "reviewScope": "Wound infection, carriage and susceptibility testing."
+    },
+    {
+      "id": "cdc-mrsa-2025",
+      "type": "official clinical overview",
+      "title": "CDC MRSA healthcare overview and infection control",
+      "url": "https://www.cdc.gov/mrsa/hcp/clinical-overview/index.html",
+      "checkedDate": "2026-11-12",
+      "reviewScope": "Colonization, infection and prevention."
+    },
+    {
+      "id": "cdc-sepsis-2026",
+      "type": "official clinical overview",
+      "title": "CDC About Sepsis",
+      "url": "https://www.cdc.gov/sepsis/about/",
+      "checkedDate": "2026-11-12",
+      "reviewScope": "Systemic deterioration and urgent recognition."
+    },
+    {
+      "id": "who-gaza-amr-2025",
+      "type": "local-context official account",
+      "title": "WHO EMRO: antimicrobial resistance and diagnostics in Gaza",
+      "url": "https://www.emro.who.int/media/news/tackling-antimicrobial-resistance-and-the-collapse-of-microbiology-diagnostics-in-gaza.html",
+      "checkedDate": "2026-11-12",
+      "reviewScope": "Gaza AMR context, not a current facility antibiogram."
     }
   ],
   "itemEvidence": {
@@ -1886,6 +1926,14 @@
     "ibd2-lesson-13-internal-external-fixation": [
       "supplied-health-alterations",
       "aaos-major-extremity-trauma"
+    ],
+    "ibd2-lesson-14-orthopaedic-resistant-infections": [
+      "supplied-health-alterations",
+      "cdc-klebsiella-2025",
+      "cdc-acinetobacter-2025",
+      "cdc-mrsa-2025",
+      "cdc-sepsis-2026",
+      "who-gaza-amr-2025"
     ]
   },
   "selectedChecks": [

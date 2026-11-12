@@ -5840,5 +5840,239 @@
       "stage": "advanced",
       "criticalForSafety": true
     }
+  ],
+  "ibd2-lesson-14-orthopaedic-resistant-infections": [
+    {
+      "stem": "Which classification correctly matches organisms encountered in orthopaedic infection?",
+      "choices": [
+        {
+          "text": "Klebsiella and Acinetobacter are Gram-negative; MRSA is Gram-positive",
+          "explanation": "Correct distinction of the two Gram-negative genera and resistant S. aureus."
+        },
+        {
+          "text": "All three are Gram-negative organisms",
+          "explanation": "MRSA is S. aureus, a Gram-positive organism."
+        },
+        {
+          "text": "Klebsiella is Gram-positive; the others are Gram-negative",
+          "explanation": "Klebsiella is Gram-negative and MRSA is Gram-positive."
+        },
+        {
+          "text": "MRSA is a resistance gene rather than a bacterium",
+          "explanation": "MRSA names methicillin-resistant S. aureus."
+        }
+      ],
+      "correct": 0,
+      "format": "single-best-answer",
+      "sections": [
+        1
+      ],
+      "point": "Klebsiella and Acinetobacter are Gram-negative; MRSA is resistant Gram-positive S. aureus.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A chart says “Acinetobacter” without susceptibility results. What can you conclude?",
+      "choices": [
+        {
+          "text": "It is resistant to every antibiotic",
+          "explanation": "The organism name does not establish resistance to every agent."
+        },
+        {
+          "text": "It is susceptible to standard antibiotics",
+          "explanation": "Susceptibility cannot be inferred from the name."
+        },
+        {
+          "text": "The actual susceptibility report is needed",
+          "explanation": "Correct: resistance is isolate-specific and requires laboratory interpretation."
+        },
+        {
+          "text": "It requires the same regimen as MRSA",
+          "explanation": "These are different organisms and a regimen cannot be assumed."
+        }
+      ],
+      "correct": 2,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "MDR refers to resistance across multiple antimicrobial classes; organism name alone does not determine susceptibility.",
+      "stage": "standard",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A wound swab grows Klebsiella, but the wound looks unchanged and the patient is stable. What is the sound interpretation?",
+      "choices": [
+        {
+          "text": "The swab alone proves osteomyelitis",
+          "explanation": "A surface swab does not prove a bone infection."
+        },
+        {
+          "text": "The finding needs clinical and specimen-context review",
+          "explanation": "Correct: distinguish colonization, superficial infection and deeper disease."
+        },
+        {
+          "text": "The culture has no infection-control relevance",
+          "explanation": "Carriage can matter for precautions and transmission."
+        },
+        {
+          "text": "The patient has sepsis from Klebsiella",
+          "explanation": "Sepsis cannot be diagnosed from a swab alone."
+        }
+      ],
+      "correct": 1,
+      "format": "single-best-answer",
+      "sections": [
+        3
+      ],
+      "point": "A positive wound swab alone does not establish active deep infection.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "How would you explain “systemic infection” to a family?",
+      "choices": [
+        {
+          "text": "The wound has bacteria but the person is unaffected",
+          "explanation": "That describes possible carriage rather than systemic illness."
+        },
+        {
+          "text": "The bone is infected in every case",
+          "explanation": "Systemic illness does not prove bone infection."
+        },
+        {
+          "text": "The infection is affecting the body beyond the wound",
+          "explanation": "Correct plain-language explanation."
+        },
+        {
+          "text": "Any fever proves bacteria are in the blood",
+          "explanation": "Fever does not establish bacteremia or sepsis."
+        }
+      ],
+      "correct": 2,
+      "format": "single-best-answer",
+      "sections": [
+        4
+      ],
+      "point": "Systemic infection affects the patient beyond the wound; sepsis requires concerning organ dysfunction, not fever alone.",
+      "stage": "standard",
+      "criticalForSafety": false
+    },
+    {
+      "stem": "A patient with a draining fixation wound becomes confused, hypotensive and tachypneic. What should the nurse do first?",
+      "choices": [
+        {
+          "text": "Wait for final susceptibility before reporting",
+          "explanation": "Deterioration needs immediate assessment and escalation."
+        },
+        {
+          "text": "Perform routine dressing care, then reassess tomorrow",
+          "explanation": "Routine care does not address possible sepsis."
+        },
+        {
+          "text": "Document the wound and continue the round",
+          "explanation": "Documentation alone delays urgent response."
+        },
+        {
+          "text": "Urgently escalate and assess airway, breathing and circulation",
+          "explanation": "Correct: recognize potential systemic deterioration and activate urgent care."
+        }
+      ],
+      "correct": 3,
+      "format": "single-best-answer",
+      "sections": [
+        5
+      ],
+      "point": "New confusion and hypotension with suspected infection require urgent sepsis assessment.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "The team suspects sepsis, but a wound specimen has not yet been collected. The patient is unstable. What is the safe priority?",
+      "choices": [
+        {
+          "text": "Delay all treatment until the wound culture returns",
+          "explanation": "An unstable patient needs prompt treatment."
+        },
+        {
+          "text": "Escalate immediately; obtain ordered specimens if feasible without delaying care",
+          "explanation": "Correct: sampling must not obstruct emergency treatment."
+        },
+        {
+          "text": "Choose an antibiotic from the organism name alone",
+          "explanation": "Therapy selection requires a clinical order and evidence."
+        },
+        {
+          "text": "Treat only if the swab proves bloodstream infection",
+          "explanation": "A wound swab cannot rule in or out sepsis."
+        }
+      ],
+      "correct": 1,
+      "format": "single-best-answer",
+      "sections": [
+        6
+      ],
+      "point": "Cultures guide care but should not delay urgent treatment of an unstable patient.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "After caring for a patient on contact precautions for MRSA, what prevents transmission to the next patient?",
+      "choices": [
+        {
+          "text": "Keep the same gloves for both dressing changes",
+          "explanation": "Gloves can transfer organisms and must be changed."
+        },
+        {
+          "text": "Use hand hygiene and clean shared equipment according to the IPC plan",
+          "explanation": "Correct: break transmission through hands and surfaces."
+        },
+        {
+          "text": "Rely on antibiotics to prevent contact spread",
+          "explanation": "Antibiotics do not replace infection prevention."
+        },
+        {
+          "text": "Avoid touching the patient but reuse the same equipment",
+          "explanation": "Contaminated equipment can transfer organisms."
+        }
+      ],
+      "correct": 1,
+      "format": "single-best-answer",
+      "sections": [
+        6
+      ],
+      "point": "Hand hygiene, equipment cleaning and ordered precautions reduce MDRO spread.",
+      "stage": "advanced",
+      "criticalForSafety": true
+    },
+    {
+      "stem": "A report lists Klebsiella without an ESBL or carbapenem result. Which handover statement is defensible?",
+      "choices": [
+        {
+          "text": "This isolate is necessarily carbapenem resistant",
+          "explanation": "Resistance cannot be assumed without testing."
+        },
+        {
+          "text": "All Klebsiella isolates are ESBL producers",
+          "explanation": "The phenotype is isolate-specific."
+        },
+        {
+          "text": "MRSA precautions prove its drug susceptibility",
+          "explanation": "Another organism’s precautions do not determine susceptibility."
+        },
+        {
+          "text": "Review this isolate’s full susceptibility report",
+          "explanation": "Correct: verify the actual organism and drug results."
+        }
+      ],
+      "correct": 3,
+      "format": "single-best-answer",
+      "sections": [
+        2
+      ],
+      "point": "ESBL and carbapenem resistance are specific patterns, not synonyms for any Klebsiella or Acinetobacter.",
+      "stage": "advanced",
+      "criticalForSafety": false
+    }
   ]
 }
