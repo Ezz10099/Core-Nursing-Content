@@ -4121,6 +4121,1654 @@
           "questionCount": 6
         }
       ]
+    },
+    {
+      "itemId": "ibd2-lesson-11-fracture-types",
+      "title": "Fracture Types — What Changes Bedside Care",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "supplied-health-alterations",
+        "aaos-major-extremity-trauma"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-11-fracture-types--standard",
+          "itemId": "ibd2-lesson-11-fracture-types",
+          "itemType": "lesson",
+          "title": "Fracture Types — What Changes Bedside Care",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "A fracture has a small wound near the break and no exposed bone. What concern changes the initial pathway?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The line may be oblique",
+                  "explanation": "Incorrect: An open fracture communicates with a skin wound even without visible bone."
+                },
+                {
+                  "id": "B",
+                  "text": "The wound may communicate with bone",
+                  "explanation": "Correct: An open fracture communicates with a skin wound even without visible bone."
+                },
+                {
+                  "id": "C",
+                  "text": "The swelling may conceal bruising",
+                  "explanation": "Incorrect: An open fracture communicates with a skin wound even without visible bone."
+                },
+                {
+                  "id": "D",
+                  "text": "The break may be incomplete",
+                  "explanation": "Incorrect: An open fracture communicates with a skin wound even without visible bone."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "An open fracture communicates with a skin wound even without visible bone.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 1,
+                  "label": "Open versus closed",
+                  "textSha256": "e9b881af5bbe1db7ed5e72554d5c806188edd4eadb7b6734dbde05e1abad92e6"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--standard--point-5711452c24f9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-5711452c24f9"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "Which term describes a fracture with several bone fragments?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Transverse",
+                  "explanation": "Incorrect: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                },
+                {
+                  "id": "B",
+                  "text": "Oblique",
+                  "explanation": "Incorrect: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                },
+                {
+                  "id": "C",
+                  "text": "Spiral",
+                  "explanation": "Incorrect: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Comminuted",
+                  "explanation": "Correct: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Transverse, oblique, spiral and comminuted describe fracture pattern.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 2,
+                  "label": "Pattern and completeness",
+                  "textSha256": "9a7b79f3c03a802e74d6b996513b92634b75a76883bfee8e416d1ed3261068eb"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--standard--point-ce85be3f159e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-ce85be3f159e"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "Which description fits an incomplete fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The bone has multiple fragments",
+                  "explanation": "Incorrect: Complete and incomplete describe whether bone breaks fully."
+                },
+                {
+                  "id": "B",
+                  "text": "The skin communicates with bone",
+                  "explanation": "Incorrect: Complete and incomplete describe whether bone breaks fully."
+                },
+                {
+                  "id": "C",
+                  "text": "The bone cracks without fully separating",
+                  "explanation": "Correct: Complete and incomplete describe whether bone breaks fully."
+                },
+                {
+                  "id": "D",
+                  "text": "The bone line runs diagonally",
+                  "explanation": "Incorrect: Complete and incomplete describe whether bone breaks fully."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Complete and incomplete describe whether bone breaks fully.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 2,
+                  "label": "Pattern and completeness",
+                  "textSha256": "9a7b79f3c03a802e74d6b996513b92634b75a76883bfee8e416d1ed3261068eb"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--standard--point-e6dd820060f9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-e6dd820060f9"
+              ],
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-11-fracture-types--advanced",
+          "itemId": "ibd2-lesson-11-fracture-types",
+          "itemType": "lesson",
+          "title": "Fracture Types — What Changes Bedside Care",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "After a splint is applied, which comparison most directly detects a new limb problem?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeat only temperature and breathing rate",
+                  "explanation": "Incorrect: A fracture assessment includes serial distal neurovascular findings."
+                },
+                {
+                  "id": "B",
+                  "text": "Repeat only the pain score and X-ray pattern",
+                  "explanation": "Incorrect: A fracture assessment includes serial distal neurovascular findings."
+                },
+                {
+                  "id": "C",
+                  "text": "Repeat only wound dimensions and dressing type",
+                  "explanation": "Incorrect: A fracture assessment includes serial distal neurovascular findings."
+                },
+                {
+                  "id": "D",
+                  "text": "Repeat distal perfusion, sensation and movement",
+                  "explanation": "Correct: A fracture assessment includes serial distal neurovascular findings."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A fracture assessment includes serial distal neurovascular findings.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 3,
+                  "label": "What to check",
+                  "textSha256": "72181931de30c9bdb5ce826b120a8562b74e0a6f38369056ece59e14c9e0cef2"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--advanced--point-5a128779ac61",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-5a128779ac61"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A fractured leg becomes increasingly painful and tense with new toe tingling. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reassess the limb and urgently escalate",
+                  "explanation": "Correct: New distal deficit or tense worsening pain requires urgent escalation."
+                },
+                {
+                  "id": "B",
+                  "text": "Record the symptoms after analgesia",
+                  "explanation": "Incorrect: New distal deficit or tense worsening pain requires urgent escalation."
+                },
+                {
+                  "id": "C",
+                  "text": "Ask the patient to walk to test function",
+                  "explanation": "Incorrect: New distal deficit or tense worsening pain requires urgent escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait until the next routine wound round",
+                  "explanation": "Incorrect: New distal deficit or tense worsening pain requires urgent escalation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "New distal deficit or tense worsening pain requires urgent escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "b1af00ab162775dc195f8ce247c7906f9337d732ab496d205317f70eb647315c"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--advanced--point-bc9b71250ac6",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-bc9b71250ac6"
+              ],
+              "answerKey": "A"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-11-fracture-types--7-day",
+          "itemId": "ibd2-lesson-11-fracture-types",
+          "itemType": "lesson",
+          "title": "Fracture Types — What Changes Bedside Care",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "comprehensive memory retest; questions may repeat",
+          "questions": [
+            {
+              "stem": "A fracture has a small wound near the break and no exposed bone. What concern changes the initial pathway?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The swelling may conceal bruising",
+                  "explanation": "Incorrect: An open fracture communicates with a skin wound even without visible bone."
+                },
+                {
+                  "id": "B",
+                  "text": "The line may be oblique",
+                  "explanation": "Incorrect: An open fracture communicates with a skin wound even without visible bone."
+                },
+                {
+                  "id": "C",
+                  "text": "The wound may communicate with bone",
+                  "explanation": "Correct: An open fracture communicates with a skin wound even without visible bone."
+                },
+                {
+                  "id": "D",
+                  "text": "The break may be incomplete",
+                  "explanation": "Incorrect: An open fracture communicates with a skin wound even without visible bone."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "An open fracture communicates with a skin wound even without visible bone.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 1,
+                  "label": "Open versus closed",
+                  "textSha256": "e9b881af5bbe1db7ed5e72554d5c806188edd4eadb7b6734dbde05e1abad92e6"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--7-day--point-5711452c24f9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-5711452c24f9"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-11-fracture-types--standard--point-5711452c24f9",
+              "answerKey": "C"
+            },
+            {
+              "stem": "Which term describes a fracture with several bone fragments?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Comminuted",
+                  "explanation": "Correct: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                },
+                {
+                  "id": "B",
+                  "text": "Oblique",
+                  "explanation": "Incorrect: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                },
+                {
+                  "id": "C",
+                  "text": "Transverse",
+                  "explanation": "Incorrect: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Spiral",
+                  "explanation": "Incorrect: Transverse, oblique, spiral and comminuted describe fracture pattern."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Transverse, oblique, spiral and comminuted describe fracture pattern.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 2,
+                  "label": "Pattern and completeness",
+                  "textSha256": "9a7b79f3c03a802e74d6b996513b92634b75a76883bfee8e416d1ed3261068eb"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--7-day--point-ce85be3f159e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-ce85be3f159e"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-11-fracture-types--standard--point-ce85be3f159e",
+              "answerKey": "A"
+            },
+            {
+              "stem": "Which description fits an incomplete fracture?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The bone has multiple fragments",
+                  "explanation": "Incorrect: Complete and incomplete describe whether bone breaks fully."
+                },
+                {
+                  "id": "B",
+                  "text": "The bone cracks without fully separating",
+                  "explanation": "Correct: Complete and incomplete describe whether bone breaks fully."
+                },
+                {
+                  "id": "C",
+                  "text": "The bone line runs diagonally",
+                  "explanation": "Incorrect: Complete and incomplete describe whether bone breaks fully."
+                },
+                {
+                  "id": "D",
+                  "text": "The skin communicates with bone",
+                  "explanation": "Incorrect: Complete and incomplete describe whether bone breaks fully."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Complete and incomplete describe whether bone breaks fully.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 2,
+                  "label": "Pattern and completeness",
+                  "textSha256": "9a7b79f3c03a802e74d6b996513b92634b75a76883bfee8e416d1ed3261068eb"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--7-day--point-e6dd820060f9",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-e6dd820060f9"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-11-fracture-types--standard--point-e6dd820060f9",
+              "answerKey": "B"
+            },
+            {
+              "stem": "After a splint is applied, which comparison most directly detects a new limb problem?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Repeat distal perfusion, sensation and movement",
+                  "explanation": "Correct: A fracture assessment includes serial distal neurovascular findings."
+                },
+                {
+                  "id": "B",
+                  "text": "Repeat only the pain score and X-ray pattern",
+                  "explanation": "Incorrect: A fracture assessment includes serial distal neurovascular findings."
+                },
+                {
+                  "id": "C",
+                  "text": "Repeat only wound dimensions and dressing type",
+                  "explanation": "Incorrect: A fracture assessment includes serial distal neurovascular findings."
+                },
+                {
+                  "id": "D",
+                  "text": "Repeat only temperature and breathing rate",
+                  "explanation": "Incorrect: A fracture assessment includes serial distal neurovascular findings."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A fracture assessment includes serial distal neurovascular findings.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 3,
+                  "label": "What to check",
+                  "textSha256": "72181931de30c9bdb5ce826b120a8562b74e0a6f38369056ece59e14c9e0cef2"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--7-day--point-5a128779ac61",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-5a128779ac61"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-11-fracture-types--advanced--point-5a128779ac61",
+              "answerKey": "A"
+            },
+            {
+              "stem": "A fractured leg becomes increasingly painful and tense with new toe tingling. What is the priority?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Wait until the next routine wound round",
+                  "explanation": "Incorrect: New distal deficit or tense worsening pain requires urgent escalation."
+                },
+                {
+                  "id": "B",
+                  "text": "Record the symptoms after analgesia",
+                  "explanation": "Incorrect: New distal deficit or tense worsening pain requires urgent escalation."
+                },
+                {
+                  "id": "C",
+                  "text": "Ask the patient to walk to test function",
+                  "explanation": "Incorrect: New distal deficit or tense worsening pain requires urgent escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Reassess the limb and urgently escalate",
+                  "explanation": "Correct: New distal deficit or tense worsening pain requires urgent escalation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "New distal deficit or tense worsening pain requires urgent escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-11-fracture-types",
+                  "sectionIndex": 4,
+                  "label": "Escalate",
+                  "textSha256": "b1af00ab162775dc195f8ce247c7906f9337d732ab496d205317f70eb647315c"
+                }
+              ],
+              "id": "ibd2-lesson-11-fracture-types--7-day--point-bc9b71250ac6",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-11-fracture-types::point-bc9b71250ac6"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-11-fracture-types--advanced--point-bc9b71250ac6",
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-12-wound-management",
+      "title": "Orthopaedic Wounds — Assessment and Safe Care",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "supplied-health-alterations",
+        "aaos-major-extremity-trauma",
+        "cdc-tetanus-2026"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-12-wound-management--standard",
+          "itemId": "ibd2-lesson-12-wound-management",
+          "itemType": "lesson",
+          "title": "Orthopaedic Wounds — Assessment and Safe Care",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "Which wound report best supports comparison at the next dressing change?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Site, drainage amount/color, edges and surrounding skin",
+                  "explanation": "Correct: Wound assessment includes drainage and surrounding tissue trends."
+                },
+                {
+                  "id": "B",
+                  "text": "Only whether the patient reports a bad smell",
+                  "explanation": "Incorrect: Wound assessment includes drainage and surrounding tissue trends."
+                },
+                {
+                  "id": "C",
+                  "text": "Only whether the previous dressing was dry",
+                  "explanation": "Incorrect: Wound assessment includes drainage and surrounding tissue trends."
+                },
+                {
+                  "id": "D",
+                  "text": "Only the dressing brand and scheduled change time",
+                  "explanation": "Incorrect: Wound assessment includes drainage and surrounding tissue trends."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Wound assessment includes drainage and surrounding tissue trends.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 1,
+                  "label": "Assess first",
+                  "textSha256": "b0a206e0ba4487f53ef4261fff29ed9e57c4e69626befece6175c6d3cd34c595"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--standard--point-2d1632052aea",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-2d1632052aea"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "An open-fracture dressing is being prepared before surgical review. Which action fits initial care?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Probe the tract to estimate its depth",
+                  "explanation": "Incorrect: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                },
+                {
+                  "id": "B",
+                  "text": "Protect and cover with limited handling",
+                  "explanation": "Correct: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                },
+                {
+                  "id": "C",
+                  "text": "Perform a bedside mini-washout",
+                  "explanation": "Incorrect: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                },
+                {
+                  "id": "D",
+                  "text": "Scrub exposed bone until visibly clean",
+                  "explanation": "Incorrect: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A suspected open-fracture wound should be protected and minimally handled pending surgery.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 2,
+                  "label": "Protect and carry out the plan",
+                  "textSha256": "fd0373c8590410a700dadee2ecfa79784001247bdae00c8a0387315ff171a9b4"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--standard--point-f2e865be98cb",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-f2e865be98cb"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "An open fracture is contaminated and vaccination history is unknown. What should the nurse ensure?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Antibiotics alone cover tetanus prevention",
+                  "explanation": "Incorrect: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Immune globulin is never relevant in adults",
+                  "explanation": "Incorrect: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Tetanus assessment waits until wound closure",
+                  "explanation": "Incorrect: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "The wound history and tetanus assessment reach the clinician",
+                  "explanation": "Correct: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Dirty or major wounds require tetanus history and prophylaxis assessment.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 4,
+                  "label": "Tetanus check",
+                  "textSha256": "40b4f55fb89251f22764b515aef558b80fa2b5317e8772dfa3455aa69e70132d"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--standard--point-9cf7a036996c",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-9cf7a036996c"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-12-wound-management--advanced",
+          "itemId": "ibd2-lesson-12-wound-management",
+          "itemType": "lesson",
+          "title": "Orthopaedic Wounds — Assessment and Safe Care",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A wound develops more pain, purulent drainage and fever. What is the next nursing step?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Remove all fixation hardware to inspect bone",
+                  "explanation": "Incorrect: Systemic or local deterioration requires reassessment and escalation."
+                },
+                {
+                  "id": "B",
+                  "text": "Assess vitals and limb, then promptly report",
+                  "explanation": "Correct: Systemic or local deterioration requires reassessment and escalation."
+                },
+                {
+                  "id": "C",
+                  "text": "Assume drainage alone confirms osteomyelitis",
+                  "explanation": "Incorrect: Systemic or local deterioration requires reassessment and escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Continue the old dressing plan without reporting",
+                  "explanation": "Incorrect: Systemic or local deterioration requires reassessment and escalation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Systemic or local deterioration requires reassessment and escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 3,
+                  "label": "Recognize deterioration",
+                  "textSha256": "9beb2e2a66dfb06a6579eac28a3ebe922d9d2f3ad25d2731f169141f10258367"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--advanced--point-8a0e1b8f1d71",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-8a0e1b8f1d71"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "stem": "A patient with a newly recognized open fracture has an antibiotic order. Which action is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Replace debridement with repeated bedside irrigation",
+                  "explanation": "Incorrect: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                },
+                {
+                  "id": "B",
+                  "text": "Delay it until a pin-site culture is available",
+                  "explanation": "Incorrect: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                },
+                {
+                  "id": "C",
+                  "text": "Use it instead of evaluating tetanus risk",
+                  "explanation": "Incorrect: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                },
+                {
+                  "id": "D",
+                  "text": "Give it promptly and prepare for surgical review",
+                  "explanation": "Correct: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Ordered antibiotics and debridement are distinct parts of open-fracture care.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 2,
+                  "label": "Protect and carry out the plan",
+                  "textSha256": "fd0373c8590410a700dadee2ecfa79784001247bdae00c8a0387315ff171a9b4"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--advanced--point-6edb98b0ccf2",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-6edb98b0ccf2"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-12-wound-management--7-day",
+          "itemId": "ibd2-lesson-12-wound-management",
+          "itemType": "lesson",
+          "title": "Orthopaedic Wounds — Assessment and Safe Care",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "comprehensive memory retest; questions may repeat",
+          "questions": [
+            {
+              "stem": "Which wound report best supports comparison at the next dressing change?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Only whether the previous dressing was dry",
+                  "explanation": "Incorrect: Wound assessment includes drainage and surrounding tissue trends."
+                },
+                {
+                  "id": "B",
+                  "text": "Only the dressing brand and scheduled change time",
+                  "explanation": "Incorrect: Wound assessment includes drainage and surrounding tissue trends."
+                },
+                {
+                  "id": "C",
+                  "text": "Only whether the patient reports a bad smell",
+                  "explanation": "Incorrect: Wound assessment includes drainage and surrounding tissue trends."
+                },
+                {
+                  "id": "D",
+                  "text": "Site, drainage amount/color, edges and surrounding skin",
+                  "explanation": "Correct: Wound assessment includes drainage and surrounding tissue trends."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Wound assessment includes drainage and surrounding tissue trends.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 1,
+                  "label": "Assess first",
+                  "textSha256": "b0a206e0ba4487f53ef4261fff29ed9e57c4e69626befece6175c6d3cd34c595"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--7-day--point-2d1632052aea",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-2d1632052aea"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-12-wound-management--standard--point-2d1632052aea",
+              "answerKey": "D"
+            },
+            {
+              "stem": "An open-fracture dressing is being prepared before surgical review. Which action fits initial care?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Probe the tract to estimate its depth",
+                  "explanation": "Incorrect: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                },
+                {
+                  "id": "B",
+                  "text": "Protect and cover with limited handling",
+                  "explanation": "Correct: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                },
+                {
+                  "id": "C",
+                  "text": "Perform a bedside mini-washout",
+                  "explanation": "Incorrect: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                },
+                {
+                  "id": "D",
+                  "text": "Scrub exposed bone until visibly clean",
+                  "explanation": "Incorrect: A suspected open-fracture wound should be protected and minimally handled pending surgery."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "A suspected open-fracture wound should be protected and minimally handled pending surgery.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 2,
+                  "label": "Protect and carry out the plan",
+                  "textSha256": "fd0373c8590410a700dadee2ecfa79784001247bdae00c8a0387315ff171a9b4"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--7-day--point-f2e865be98cb",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-f2e865be98cb"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-12-wound-management--standard--point-f2e865be98cb",
+              "answerKey": "B"
+            },
+            {
+              "stem": "An open fracture is contaminated and vaccination history is unknown. What should the nurse ensure?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "The wound history and tetanus assessment reach the clinician",
+                  "explanation": "Correct: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Tetanus assessment waits until wound closure",
+                  "explanation": "Incorrect: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Immune globulin is never relevant in adults",
+                  "explanation": "Incorrect: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Antibiotics alone cover tetanus prevention",
+                  "explanation": "Incorrect: Dirty or major wounds require tetanus history and prophylaxis assessment."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Dirty or major wounds require tetanus history and prophylaxis assessment.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 4,
+                  "label": "Tetanus check",
+                  "textSha256": "40b4f55fb89251f22764b515aef558b80fa2b5317e8772dfa3455aa69e70132d"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--7-day--point-9cf7a036996c",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-9cf7a036996c"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-12-wound-management--standard--point-9cf7a036996c",
+              "answerKey": "A"
+            },
+            {
+              "stem": "A wound develops more pain, purulent drainage and fever. What is the next nursing step?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Assess vitals and limb, then promptly report",
+                  "explanation": "Correct: Systemic or local deterioration requires reassessment and escalation."
+                },
+                {
+                  "id": "B",
+                  "text": "Assume drainage alone confirms osteomyelitis",
+                  "explanation": "Incorrect: Systemic or local deterioration requires reassessment and escalation."
+                },
+                {
+                  "id": "C",
+                  "text": "Remove all fixation hardware to inspect bone",
+                  "explanation": "Incorrect: Systemic or local deterioration requires reassessment and escalation."
+                },
+                {
+                  "id": "D",
+                  "text": "Continue the old dressing plan without reporting",
+                  "explanation": "Incorrect: Systemic or local deterioration requires reassessment and escalation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Systemic or local deterioration requires reassessment and escalation.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 3,
+                  "label": "Recognize deterioration",
+                  "textSha256": "9beb2e2a66dfb06a6579eac28a3ebe922d9d2f3ad25d2731f169141f10258367"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--7-day--point-8a0e1b8f1d71",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-8a0e1b8f1d71"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-12-wound-management--advanced--point-8a0e1b8f1d71",
+              "answerKey": "A"
+            },
+            {
+              "stem": "A patient with a newly recognized open fracture has an antibiotic order. Which action is appropriate?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Replace debridement with repeated bedside irrigation",
+                  "explanation": "Incorrect: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                },
+                {
+                  "id": "B",
+                  "text": "Delay it until a pin-site culture is available",
+                  "explanation": "Incorrect: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                },
+                {
+                  "id": "C",
+                  "text": "Give it promptly and prepare for surgical review",
+                  "explanation": "Correct: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                },
+                {
+                  "id": "D",
+                  "text": "Use it instead of evaluating tetanus risk",
+                  "explanation": "Incorrect: Ordered antibiotics and debridement are distinct parts of open-fracture care."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Ordered antibiotics and debridement are distinct parts of open-fracture care.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-12-wound-management",
+                  "sectionIndex": 2,
+                  "label": "Protect and carry out the plan",
+                  "textSha256": "fd0373c8590410a700dadee2ecfa79784001247bdae00c8a0387315ff171a9b4"
+                }
+              ],
+              "id": "ibd2-lesson-12-wound-management--7-day--point-6edb98b0ccf2",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-12-wound-management::point-6edb98b0ccf2"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-12-wound-management--advanced--point-6edb98b0ccf2",
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-13-internal-external-fixation",
+      "title": "Internal vs External Fixation — Bedside Comparison",
+      "itemType": "lesson",
+      "evidenceIds": [
+        "supplied-health-alterations",
+        "aaos-major-extremity-trauma"
+      ],
+      "exams": [
+        {
+          "id": "ibd2-lesson-13-internal-external-fixation--standard",
+          "itemId": "ibd2-lesson-13-internal-external-fixation",
+          "itemType": "lesson",
+          "title": "Internal vs External Fixation — Bedside Comparison",
+          "stage": "standard",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">=",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "same standard form after required reading",
+          "questions": [
+            {
+              "stem": "Which statement correctly distinguishes ORIF from external fixation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ORIF uses internal hardware after open reduction",
+                  "explanation": "Correct: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                },
+                {
+                  "id": "B",
+                  "text": "External fixation uses no bone pins",
+                  "explanation": "Incorrect: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                },
+                {
+                  "id": "C",
+                  "text": "ORIF uses only an outside frame",
+                  "explanation": "Incorrect: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                },
+                {
+                  "id": "D",
+                  "text": "External fixation requires no surgery",
+                  "explanation": "Incorrect: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "d1a8edcb3e66b6a99efaa4ddcaf03f418016bc81179d09bf9589a06e7109a8aa"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--standard--point-d07ca3aae074",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-d07ca3aae074"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "A severe open fracture has extensive soft-tissue swelling. Why might a surgeon choose an external frame initially?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It always prevents wound infection",
+                  "explanation": "Incorrect: Severe open injury or swelling may favor initial external fixation."
+                },
+                {
+                  "id": "B",
+                  "text": "It makes distal limb checks unnecessary",
+                  "explanation": "Incorrect: Severe open injury or swelling may favor initial external fixation."
+                },
+                {
+                  "id": "C",
+                  "text": "It stabilizes bone while soft tissue is managed",
+                  "explanation": "Correct: Severe open injury or swelling may favor initial external fixation."
+                },
+                {
+                  "id": "D",
+                  "text": "It eliminates all future wound care",
+                  "explanation": "Incorrect: Severe open injury or swelling may favor initial external fixation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Severe open injury or swelling may favor initial external fixation.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 1,
+                  "label": "Why the choice differs",
+                  "textSha256": "6061b4c0cf98010c1f86c35f2fe9f44fd7bb734a2f72fb6901ad7138a491b1fc"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--standard--point-c47081904afe",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-c47081904afe"
+              ],
+              "answerKey": "C"
+            },
+            {
+              "stem": "Which check is specific to the external fixation setup?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Postoperative vital signs and fever",
+                  "explanation": "Incorrect: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                },
+                {
+                  "id": "B",
+                  "text": "Distal capillary refill and sensation",
+                  "explanation": "Incorrect: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                },
+                {
+                  "id": "C",
+                  "text": "New disproportionate limb pain",
+                  "explanation": "Incorrect: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                },
+                {
+                  "id": "D",
+                  "text": "Pin-site drainage and frame integrity",
+                  "explanation": "Correct: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 3,
+                  "label": "Distinct bedside checks",
+                  "textSha256": "2fa52a96473ee03ed295ece45a1b44bac94a8d965db686fae26d9acfb649c306"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--standard--point-d4b704028d9e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-d4b704028d9e"
+              ],
+              "answerKey": "D"
+            }
+          ],
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-13-internal-external-fixation--advanced",
+          "itemId": "ibd2-lesson-13-internal-external-fixation",
+          "itemType": "lesson",
+          "title": "Internal vs External Fixation — Bedside Comparison",
+          "stage": "advanced",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": true,
+            "secondsPerQuestion": 90,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "different from standard",
+          "questions": [
+            {
+              "stem": "A frame looks intact but the toes become cool and numb. What matters most now?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Mobilize the patient to improve circulation",
+                  "explanation": "Incorrect: Both fixation types require repeated neurovascular assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Wait because the hardware appears stable",
+                  "explanation": "Incorrect: Both fixation types require repeated neurovascular assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Tighten the frame to restore perfusion",
+                  "explanation": "Incorrect: Both fixation types require repeated neurovascular assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Reassess distal findings and urgently escalate",
+                  "explanation": "Correct: Both fixation types require repeated neurovascular assessment."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Both fixation types require repeated neurovascular assessment.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 2,
+                  "label": "Both: check the limb",
+                  "textSha256": "65b3b59a36fbcc692ff75af8907bfc7bc2bcc7b1433f1e0e8876ea2180b44112"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--advanced--point-1faa61b9d04b",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-1faa61b9d04b"
+              ],
+              "answerKey": "D"
+            },
+            {
+              "stem": "A fixator strut appears shifted before transfer. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Remove the displaced strut",
+                  "explanation": "Incorrect: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                },
+                {
+                  "id": "B",
+                  "text": "Support the limb and report the change",
+                  "explanation": "Correct: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                },
+                {
+                  "id": "C",
+                  "text": "Proceed with unrestricted walking",
+                  "explanation": "Incorrect: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                },
+                {
+                  "id": "D",
+                  "text": "Tighten the strut independently",
+                  "explanation": "Incorrect: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 4,
+                  "label": "Protect and mobilize",
+                  "textSha256": "ae405e621984f71415cf33cbe77fdab37e55f0362550334d538c11cd46447f45"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--advanced--point-c89e526d7f9a",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-c89e526d7f9a"
+              ],
+              "answerKey": "B"
+            }
+          ],
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-13-internal-external-fixation--7-day",
+          "itemId": "ibd2-lesson-13-internal-external-fixation",
+          "itemType": "lesson",
+          "title": "Internal vs External Fixation — Bedside Comparison",
+          "stage": "7-day",
+          "reviewStatus": "authoring draft",
+          "passRule": {
+            "operator": ">",
+            "percent": 90,
+            "roundBeforeComparison": false
+          },
+          "timing": {
+            "timed": false,
+            "secondsPerQuestion": null,
+            "timerEnforcement": "persisted total deadline: 90 seconds multiplied by question count"
+          },
+          "scoring": {
+            "correct": 1,
+            "incorrect": 0,
+            "unanswered": 0,
+            "partialCredit": false,
+            "unsureOrGuessed": "review flag only",
+            "criticalSafetyMiss": "separate follow-up required; original numeric score unchanged"
+          },
+          "feedback": "show keys and all option explanations after submission",
+          "retestPolicy": "comprehensive memory retest; questions may repeat",
+          "questions": [
+            {
+              "stem": "Which statement correctly distinguishes ORIF from external fixation?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ORIF uses internal hardware after open reduction",
+                  "explanation": "Correct: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                },
+                {
+                  "id": "B",
+                  "text": "ORIF uses only an outside frame",
+                  "explanation": "Incorrect: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                },
+                {
+                  "id": "C",
+                  "text": "External fixation requires no surgery",
+                  "explanation": "Incorrect: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                },
+                {
+                  "id": "D",
+                  "text": "External fixation uses no bone pins",
+                  "explanation": "Incorrect: ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "ORIF places stabilizing hardware inside after surgical alignment; external fixation connects bone pins to an outside frame.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 0,
+                  "label": "Meaning",
+                  "textSha256": "d1a8edcb3e66b6a99efaa4ddcaf03f418016bc81179d09bf9589a06e7109a8aa"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--7-day--point-d07ca3aae074",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-d07ca3aae074"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-13-internal-external-fixation--standard--point-d07ca3aae074",
+              "answerKey": "A"
+            },
+            {
+              "stem": "A severe open fracture has extensive soft-tissue swelling. Why might a surgeon choose an external frame initially?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "It always prevents wound infection",
+                  "explanation": "Incorrect: Severe open injury or swelling may favor initial external fixation."
+                },
+                {
+                  "id": "B",
+                  "text": "It makes distal limb checks unnecessary",
+                  "explanation": "Incorrect: Severe open injury or swelling may favor initial external fixation."
+                },
+                {
+                  "id": "C",
+                  "text": "It stabilizes bone while soft tissue is managed",
+                  "explanation": "Correct: Severe open injury or swelling may favor initial external fixation."
+                },
+                {
+                  "id": "D",
+                  "text": "It eliminates all future wound care",
+                  "explanation": "Incorrect: Severe open injury or swelling may favor initial external fixation."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Severe open injury or swelling may favor initial external fixation.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 1,
+                  "label": "Why the choice differs",
+                  "textSha256": "6061b4c0cf98010c1f86c35f2fe9f44fd7bb734a2f72fb6901ad7138a491b1fc"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--7-day--point-c47081904afe",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-c47081904afe"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-13-internal-external-fixation--standard--point-c47081904afe",
+              "answerKey": "C"
+            },
+            {
+              "stem": "Which check is specific to the external fixation setup?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "New disproportionate limb pain",
+                  "explanation": "Incorrect: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                },
+                {
+                  "id": "B",
+                  "text": "Postoperative vital signs and fever",
+                  "explanation": "Incorrect: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                },
+                {
+                  "id": "C",
+                  "text": "Distal capillary refill and sensation",
+                  "explanation": "Incorrect: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                },
+                {
+                  "id": "D",
+                  "text": "Pin-site drainage and frame integrity",
+                  "explanation": "Correct: External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "External fixation requires pin-site and frame surveillance; internal fixation requires incision surveillance.",
+              "criticalForSafety": false,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 3,
+                  "label": "Distinct bedside checks",
+                  "textSha256": "2fa52a96473ee03ed295ece45a1b44bac94a8d965db686fae26d9acfb649c306"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--7-day--point-d4b704028d9e",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-d4b704028d9e"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-13-internal-external-fixation--standard--point-d4b704028d9e",
+              "answerKey": "D"
+            },
+            {
+              "stem": "A frame looks intact but the toes become cool and numb. What matters most now?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Mobilize the patient to improve circulation",
+                  "explanation": "Incorrect: Both fixation types require repeated neurovascular assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Reassess distal findings and urgently escalate",
+                  "explanation": "Correct: Both fixation types require repeated neurovascular assessment."
+                },
+                {
+                  "id": "C",
+                  "text": "Tighten the frame to restore perfusion",
+                  "explanation": "Incorrect: Both fixation types require repeated neurovascular assessment."
+                },
+                {
+                  "id": "D",
+                  "text": "Wait because the hardware appears stable",
+                  "explanation": "Incorrect: Both fixation types require repeated neurovascular assessment."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Both fixation types require repeated neurovascular assessment.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 2,
+                  "label": "Both: check the limb",
+                  "textSha256": "65b3b59a36fbcc692ff75af8907bfc7bc2bcc7b1433f1e0e8876ea2180b44112"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--7-day--point-1faa61b9d04b",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-1faa61b9d04b"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-13-internal-external-fixation--advanced--point-1faa61b9d04b",
+              "answerKey": "B"
+            },
+            {
+              "stem": "A fixator strut appears shifted before transfer. What should the nurse do?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Remove the displaced strut",
+                  "explanation": "Incorrect: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                },
+                {
+                  "id": "B",
+                  "text": "Tighten the strut independently",
+                  "explanation": "Incorrect: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                },
+                {
+                  "id": "C",
+                  "text": "Support the limb and report the change",
+                  "explanation": "Correct: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                },
+                {
+                  "id": "D",
+                  "text": "Proceed with unrestricted walking",
+                  "explanation": "Incorrect: Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing."
+                }
+              ],
+              "format": "single-best-answer",
+              "point": "Only the authorized team adjusts frame hardware; nurses follow ordered weight bearing.",
+              "criticalForSafety": true,
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "lessons",
+                  "itemId": "ibd2-lesson-13-internal-external-fixation",
+                  "sectionIndex": 4,
+                  "label": "Protect and mobilize",
+                  "textSha256": "ae405e621984f71415cf33cbe77fdab37e55f0362550334d538c11cd46447f45"
+                }
+              ],
+              "id": "ibd2-lesson-13-internal-external-fixation--7-day--point-c89e526d7f9a",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-lesson-13-internal-external-fixation::point-c89e526d7f9a"
+              ],
+              "reusedFromQuestionId": "ibd2-lesson-13-internal-external-fixation--advanced--point-c89e526d7f9a",
+              "answerKey": "C"
+            }
+          ],
+          "questionCount": 5
+        }
+      ]
     }
   ]
 }

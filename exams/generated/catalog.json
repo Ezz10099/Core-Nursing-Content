@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 52,
-  "sourceContentSha256": "5a3bec6302588d6b8fa056a3a81a830288bf2287be0abe2f0aab6514c4a41646",
+  "sourceContentVersion": 53,
+  "sourceContentSha256": "3d3a5615388a96cb603aa87b3e865073ad6f31928ddb81770137869866e1382d",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -15,15 +15,15 @@
     "exams/sources.json"
   ],
   "counts": {
-    "exams": 321,
-    "questions": 1937,
-    "single-best-answer": 1907,
+    "exams": 330,
+    "questions": 1967,
+    "single-best-answer": 1937,
     "numeric-entry": 22,
     "short-answer": 8,
-    "materials": 107,
+    "materials": 110,
     "medications": 82,
-    "lessons": 25,
-    "mappedLearningPoints": 916
+    "lessons": 28,
+    "mappedLearningPoints": 931
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -2494,6 +2494,75 @@
           "questionCount": 6
         }
       ]
+    },
+    {
+      "itemId": "ibd2-lesson-11-fracture-types",
+      "title": "Fracture Types — What Changes Bedside Care",
+      "itemType": "lesson",
+      "file": "banks-06.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-11-fracture-types--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-11-fracture-types--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-11-fracture-types--7-day",
+          "stage": "7-day",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-12-wound-management",
+      "title": "Orthopaedic Wounds — Assessment and Safe Care",
+      "itemType": "lesson",
+      "file": "banks-06.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-12-wound-management--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-12-wound-management--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-12-wound-management--7-day",
+          "stage": "7-day",
+          "questionCount": 5
+        }
+      ]
+    },
+    {
+      "itemId": "ibd2-lesson-13-internal-external-fixation",
+      "title": "Internal vs External Fixation — Bedside Comparison",
+      "itemType": "lesson",
+      "file": "banks-06.json",
+      "forms": [
+        {
+          "id": "ibd2-lesson-13-internal-external-fixation--standard",
+          "stage": "standard",
+          "questionCount": 3
+        },
+        {
+          "id": "ibd2-lesson-13-internal-external-fixation--advanced",
+          "stage": "advanced",
+          "questionCount": 2
+        },
+        {
+          "id": "ibd2-lesson-13-internal-external-fixation--7-day",
+          "stage": "7-day",
+          "questionCount": 5
+        }
+      ]
     }
   ],
   "files": [
@@ -2519,11 +2588,11 @@
     },
     {
       "path": "banks-06.json",
-      "sha256": "3538b284159dad8e65f234c6146552748a17f7aa688390c4b5ff300400384542"
+      "sha256": "9e878ddcc89595d25796be87d1f65dab6c93f77bb4c6de9c4a60a62f0915f763"
     },
     {
       "path": "coverage.json",
-      "sha256": "91f387af122b8bde81c587fd318602d85453be8a5f4a5c0e57f199e1801f789e"
+      "sha256": "a647b19d1e82d92d230a514b72a3b0949ae45793620b206061c370f1236eb732"
     }
   ]
 }
