@@ -2369,32 +2369,32 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "An adult in septic shock has adequate volume status and target MAP on norepinephrine. The team finds reduced cardiac contractility and ongoing hypoperfusion. Which change adds inotropic support while maintaining the current vasopressor?",
+        "stem": "An adult with septic shock remains hypoperfused because of cardiac dysfunction despite adequate fluid resuscitation and target MAP on norepinephrine. Which addition specifically provides inotropic support for this scenario?",
+        "point": "Select dobutamine for persistent hypoperfusion with cardiac dysfunction after adequate volume and pressure.",
+        "criticalForSafety": false,
+        "answerKey": "A",
         "choices": [
           {
-            "text": "Add dobutamine while continuing norepinephrine.",
-            "explanation": "Dobutamine can support cardiac output while norepinephrine maintains arterial pressure.",
-            "id": "A"
+            "id": "A",
+            "text": "Add dobutamine while maintaining norepinephrine as needed",
+            "explanation": "Dobutamine can increase cardiac output while norepinephrine maintains the pressure target."
           },
           {
-            "text": "Replace norepinephrine with dobutamine.",
-            "explanation": "Removing current vasopressor support may jeopardize MAP.",
-            "id": "B"
+            "id": "B",
+            "text": "Add vasopressin while maintaining norepinephrine as needed",
+            "explanation": "Vasopressin can support pressure but does not provide the requested direct inotropic support."
           },
           {
-            "text": "Add vasopressin while continuing norepinephrine.",
-            "explanation": "Vasopressin adds vasopressor effect and does not directly provide the inotropic support requested.",
-            "id": "C"
+            "id": "C",
+            "text": "Add phenylephrine while maintaining norepinephrine as needed",
+            "explanation": "Phenylephrine mainly increases vascular resistance and does not address the inotropic goal."
           },
           {
-            "text": "Increase norepinephrine and defer inotropic support.",
-            "explanation": "MAP is already adequate. The unresolved problem is low output with hypoperfusion.",
-            "id": "D"
+            "id": "D",
+            "text": "Add angiotensin II while maintaining norepinephrine as needed",
+            "explanation": "Angiotensin II is a vasopressor rather than the inotrope used here."
           }
-        ],
-        "point": "Dobutamine can be added to norepinephrine for persistent hypoperfusion with cardiac dysfunction despite adequate fluids and BP.",
-        "criticalForSafety": true,
-        "answerKey": "A"
+        ]
       }
     },
     "ccu-dopamine::treatment-role": {
@@ -3385,6 +3385,251 @@
         "point": "Recall the MSF dose threshold for IV infusion.",
         "criticalForSafety": true
       }
+    },
+    "ccu-dobutamine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pharmacologic classification best describes dobutamine at usual therapeutic infusion rates?",
+        "point": "Distinguish a predominantly beta1 inotrope from other vasoactive classes.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Predominantly beta1 inotrope",
+            "explanation": "Its main intended action is positive inotropy through beta1 activity."
+          },
+          {
+            "id": "B",
+            "text": "Predominantly alpha1 vasopressor",
+            "explanation": "This describes a drug primarily selected to raise vascular resistance."
+          },
+          {
+            "id": "C",
+            "text": "Predominantly beta2 bronchodilator",
+            "explanation": "This describes a drug primarily selected to relax bronchial smooth muscle."
+          },
+          {
+            "id": "D",
+            "text": "Predominantly V1 vasopressor",
+            "explanation": "This describes vasopressin-type vasoconstriction."
+          }
+        ]
+      }
+    },
+    "ccu-dobutamine::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which receptor effect principally explains the rise in cardiac output during effective dobutamine treatment?",
+        "point": "Connect beta1 stimulation with increased myocardial contractile force.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Beta1 stimulation increases myocardial contractile force",
+            "explanation": "Increased contractile force can increase stroke volume and cardiac output."
+          },
+          {
+            "id": "B",
+            "text": "Alpha1 stimulation raises systemic vascular resistance",
+            "explanation": "Vascular constriction raises afterload and does not explain the intended inotropic response."
+          },
+          {
+            "id": "C",
+            "text": "Beta2 stimulation reduces peripheral vascular resistance",
+            "explanation": "Vasodilation can occur but does not explain the primary direct myocardial effect."
+          },
+          {
+            "id": "D",
+            "text": "Muscarinic blockade increases sinoatrial firing",
+            "explanation": "This describes a vagolytic chronotropic mechanism, such as atropine."
+          }
+        ]
+      }
+    },
+    "ccu-dobutamine::tachyarrhythmia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new ECG pattern after a dobutamine dose increase is characteristic of a dose-related adverse response?",
+        "point": "Recognize dobutamine-associated tachycardia and ventricular ectopy.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Faster sinus rate with more premature ventricular beats",
+            "explanation": "Dobutamine can accelerate heart rate and provoke ventricular ectopy."
+          },
+          {
+            "id": "B",
+            "text": "Slower sinus rate with new sinus pauses",
+            "explanation": "This is not the characteristic dose-related chronotropic response."
+          },
+          {
+            "id": "C",
+            "text": "Slower sinus rate with new second-degree AV block",
+            "explanation": "A new AV block requires assessment but is not the characteristic response."
+          },
+          {
+            "id": "D",
+            "text": "Stable sinus rate with progressive PR prolongation",
+            "explanation": "Progressive AV nodal slowing is not the typical dose-related effect."
+          }
+        ]
+      }
+    },
+    "ccu-dobutamine::infusion_route": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The available dobutamine product is a concentrate. Which preparation and administration plan matches this product for sustained inotropic support?",
+        "point": "Choose compatible dilution followed by continuous pump delivery.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Dilute to the approved final concentration and infuse continuously by pump",
+            "explanation": "This is how dobutamine concentrate is prepared and delivered for controlled inotropic support."
+          },
+          {
+            "id": "B",
+            "text": "Dilute to the approved final concentration and give as intermittent IV doses",
+            "explanation": "Dilution is required but intermittent dosing does not provide the intended controlled support."
+          },
+          {
+            "id": "C",
+            "text": "Use the supplied concentrate directly and infuse continuously by pump",
+            "explanation": "The infusion mode fits, but this concentrate requires dilution."
+          },
+          {
+            "id": "D",
+            "text": "Use the supplied concentrate directly and give as intermittent IV doses",
+            "explanation": "Both the concentration and the administration mode are incorrect for this product."
+          }
+        ]
+      }
+    },
+    "ccu-dobutamine::dobutamine_reassessment": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "During dobutamine titration, an adult’s extremities initially warm. After the next increase, the monitor shows new frequent PVCs and BP falls. Which interpretation should guide immediate reassessment of the ordered titration?",
+        "point": "Recognize rhythm instability and hypotension as potential adverse treatment effects despite an earlier response.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Possible dose-related intolerance despite earlier improvement",
+            "explanation": "Dobutamine can provoke ventricular ectopy and hypotension. Promptly reassess rhythm and perfusion and use the ordered escalation and titration plan."
+          },
+          {
+            "id": "B",
+            "text": "Persistent low output is established by the PVCs and fall in BP",
+            "explanation": "These changes may reflect drug intolerance as well as other causes. They do not establish underdosing."
+          },
+          {
+            "id": "C",
+            "text": "The findings are expected markers of successful inotropic titration",
+            "explanation": "The initial warming may indicate improved perfusion. New ectopy and falling pressure warrant prompt review."
+          },
+          {
+            "id": "D",
+            "text": "Isolated loss of vasopressor support explains both findings",
+            "explanation": "The timing and new ectopy warrant review of dobutamine as well as vascular tone and other causes."
+          }
+        ]
+      }
+    },
+    "ccu-dobutamine::dobutamine_alkaline_line": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient on continuous dobutamine has several new IV orders. Which drug is specifically incompatible because of strong alkalinity and should use separate compatible access?",
+        "point": "Identify sodium bicarbonate as an alkaline incompatibility with dobutamine.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Sodium bicarbonate",
+            "explanation": "Do not mix dobutamine with sodium bicarbonate or other strongly alkaline solutions."
+          },
+          {
+            "id": "B",
+            "text": "Potassium chloride",
+            "explanation": "The card’s strong-alkali incompatibility does not identify potassium chloride. Check the exact preparations before any co-administration."
+          },
+          {
+            "id": "C",
+            "text": "Magnesium sulfate",
+            "explanation": "The strong-alkali warning does not identify magnesium sulfate. Check the actual admixture separately."
+          },
+          {
+            "id": "D",
+            "text": "Calcium gluconate",
+            "explanation": "The strong-alkali warning does not identify calcium gluconate. Formulation-specific compatibility still needs checking."
+          }
+        ]
+      }
+    },
+    "ccu-dobutamine::perfusion": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Blood pressure is stable during dobutamine titration for low output. Which additional trend best supports improved perfusion?",
+        "point": "Assess urine output and peripheral perfusion independently of BP.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Urine output rises and capillary refill shortens",
+            "explanation": "Together these support improved renal and peripheral perfusion despite the stable BP."
+          },
+          {
+            "id": "B",
+            "text": "Urine output rises and capillary refill lengthens",
+            "explanation": "The renal trend improves but the peripheral trend does not."
+          },
+          {
+            "id": "C",
+            "text": "Urine output falls and capillary refill shortens",
+            "explanation": "The peripheral trend improves but the falling output warrants assessment."
+          },
+          {
+            "id": "D",
+            "text": "Urine output falls and capillary refill lengthens",
+            "explanation": "Both trends remain concerning for hypoperfusion."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -3451,7 +3696,7 @@
     "ccu-atropine": "acute-completed-20261115",
     "ccu-heparin-ufh": "infusion-calculations-20261115",
     "ccu-norepinephrine": "infusion-calculations-20261115",
-    "ccu-dobutamine": "infusion-calculations-20261115",
+    "ccu-dobutamine": "dobutamine-source-review-20261115",
     "ccu-dopamine": "infusion-calculations-20261115",
     "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
     "ccu-enoxaparin": "antithrombotic-clinical-20261111",

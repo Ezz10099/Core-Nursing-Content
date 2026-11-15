@@ -9040,5 +9040,61 @@
       ],
       "correct": 0
     }
+  },
+  "dobutamine_continuous_monitor": {
+    "point": "Identify continuous rhythm, heart rate, and pressure monitoring.",
+    "anchor": "Monitor ECG, heart rate and BP continuously",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which combination requires continuous monitoring during dobutamine titration?",
+      "choices": [
+        {
+          "text": "ECG-derived rhythm and heart rate, plus BP",
+          "explanation": "Continuous ECG and BP detect rhythm and hemodynamic changes during delivery."
+        },
+        {
+          "text": "ECG-derived rhythm and heart rate, plus urine output",
+          "explanation": "Urine output helps assess perfusion but does not replace continuous BP."
+        },
+        {
+          "text": "Pulse oximetry and BP, plus urine output",
+          "explanation": "This does not continuously assess cardiac rhythm or characterize ectopy."
+        },
+        {
+          "text": "Pulse oximetry and pulse rate, plus BP",
+          "explanation": "An oximetry pulse rate does not replace continuous ECG for rhythm assessment."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "dobutamine_peripheral_site": {
+    "point": "Distinguish a peripheral infusion-site complication from systemic effects.",
+    "anchor": "monitor the site closely",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient receives dobutamine through a peripheral IV authorized by facility protocol. Which new finding most specifically suggests a local infusion complication?",
+      "choices": [
+        {
+          "text": "New swelling and tenderness around the cannula",
+          "explanation": "Local swelling or tenderness can occur with infiltration or phlebitis and warrants immediate site assessment."
+        },
+        {
+          "text": "New ventricular ectopy with an unchanged cannula site",
+          "explanation": "This is a potential systemic effect and warrants rhythm assessment."
+        },
+        {
+          "text": "New coolness in both feet with an unchanged cannula site",
+          "explanation": "Bilateral distal coolness is a perfusion finding, not specific to the IV site."
+        },
+        {
+          "text": "New BP drop with an unchanged cannula site",
+          "explanation": "This is a hemodynamic change rather than a specific sign of local infiltration."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

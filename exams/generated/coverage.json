@@ -4650,6 +4650,32 @@
       ]
     },
     {
+      "id": "ccu-dobutamine::dobutamine_continuous_monitor",
+      "itemId": "ccu-dobutamine",
+      "point": "Identify continuous rhythm, heart rate, and pressure monitoring.",
+      "questionIds": [
+        "ccu-dobutamine--standard--dobutamine_continuous_monitor",
+        "ccu-dobutamine--7-day--dobutamine_continuous_monitor"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-dobutamine::dobutamine_peripheral_site",
+      "itemId": "ccu-dobutamine",
+      "point": "Distinguish a peripheral infusion-site complication from systemic effects.",
+      "questionIds": [
+        "ccu-dobutamine--standard--dobutamine_peripheral_site",
+        "ccu-dobutamine--7-day--dobutamine_peripheral_site"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-dobutamine::infusion_precision",
       "itemId": "ccu-dobutamine",
       "point": "Infusion delivery depends on ordered dose and prepared concentration.",
@@ -14905,11 +14931,13 @@
           "ccu-dobutamine--standard--tachyarrhythmia",
           "ccu-dobutamine--standard--infusion_route",
           "ccu-dobutamine--standard--dobutamine_reassessment",
+          "ccu-dobutamine--standard--dobutamine_continuous_monitor",
           "ccu-dobutamine--advanced--infusion_precision",
           "ccu-dobutamine--advanced--perfusion",
           "ccu-dobutamine--7-day--tachyarrhythmia",
           "ccu-dobutamine--7-day--infusion_route",
           "ccu-dobutamine--7-day--dobutamine_reassessment",
+          "ccu-dobutamine--7-day--dobutamine_continuous_monitor",
           "ccu-dobutamine--7-day--infusion_precision",
           "ccu-dobutamine--7-day--perfusion"
         ],
@@ -14922,9 +14950,11 @@
         "administration": [
           "ccu-dobutamine--standard--infusion_route",
           "ccu-dobutamine--standard--dobutamine_alkaline_line",
+          "ccu-dobutamine--standard--dobutamine_peripheral_site",
           "ccu-dobutamine--advanced--infusion_precision",
           "ccu-dobutamine--7-day--infusion_route",
           "ccu-dobutamine--7-day--dobutamine_alkaline_line",
+          "ccu-dobutamine--7-day--dobutamine_peripheral_site",
           "ccu-dobutamine--7-day--infusion_precision"
         ]
       },

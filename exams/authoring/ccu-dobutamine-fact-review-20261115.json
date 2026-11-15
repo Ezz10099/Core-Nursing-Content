@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-dobutamine",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and its scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://pharmacy.moh.ps/service/getDrugs",
+      "section": "M-125-0010",
+      "scope": "Palestinian MOH lists a 250-mg ampoule. This is formulation evidence only."
+    },
+    {
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D8%B9%D8%B7%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA-5.pdf",
+      "section": "2018 Gaza MOH injectable medicines guide, p. 39, dobutamine",
+      "scope": "Concentrate dilution, continuous syringe-pump delivery, central or large peripheral vein, and strong-alkali incompatibility. Fixed product preparation and dosing details remain protocol-dependent."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ee09a55f-9992-48bb-b8d6-1184bd548536&version=4",
+      "section": "Clinical pharmacology, Indications, Precautions, Adverse reactions, and Dosage and administration",
+      "scope": "Current primary labeling: direct beta-mediated inotropy and short-term low-output support, dilution and bicarbonate incompatibility, rhythm and BP surveillance, urine flow response, ectopy, hypotension, and local infiltration injury. Product-specific details are not universal."
+    },
+    {
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "section": "Conditional inotropes",
+      "scope": "Conditional recommendation with very low certainty: add dobutamine to norepinephrine or use epinephrine alone when adult septic shock has cardiac dysfunction and persistent hypoperfusion despite adequate resuscitation and pressure. The question asks what to add in a specified norepinephrine scenario."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Predominantly beta1 inotrope.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--drug-class",
+          "sha256": "0f64dc04dda69e358de131f9db090ba10ef1a83861b6bfc4ce9ae5033882b371"
+        }
+      ],
+      "rationale": "Select the pharmacologic role and predominant receptor class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Predominantly beta1 agonism increases myocardial contractility.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--principal-action",
+          "sha256": "57419524fab8b8815d289506355ec7798c815447d016c3b463cc230bbb28245c"
+        }
+      ],
+      "rationale": "Identify the receptor effect that raises contractile force and output."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Short-term inotropic support for selected low-output states.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--treatment-role",
+          "sha256": "0a2f64fc01df97440c2e8f33e5bd7844042623af53bd44fae39279d1a1fc5252"
+        }
+      ],
+      "rationale": "Choose inotropic support when cardiac dysfunction limits perfusion. The clinical setting is acute, with ongoing hemodynamic reassessment."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "In adult septic shock with cardiac dysfunction and persistent hypoperfusion despite adequate volume and arterial pressure, one option is adding dobutamine to norepinephrine.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--treatment-role",
+          "sha256": "0a2f64fc01df97440c2e8f33e5bd7844042623af53bd44fae39279d1a1fc5252"
+        }
+      ],
+      "rationale": "Choose the inotrope to add under the specified hemodynamic conditions."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Dilute the concentrate with a compatible fluid to the facility standard and use a continuous IV infusion pump.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::infusion_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--infusion_route",
+          "sha256": "4d51f0fe20f0350f8d6474b28e6d55ad9021e27a2426724b5a11c7eee48d954c"
+        }
+      ],
+      "rationale": "The options vary dilution and delivery independently. A correct response requires both. Exact diluent, concentration and pump settings depend on product and local protocol."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Avoid mixing with sodium bicarbonate or other strongly alkaline solutions.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::dobutamine_alkaline_line"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--dobutamine_alkaline_line",
+          "sha256": "fb054cc199d7870a5bb21e9b84b7cc1c0e4df57ef180eefc2316b7e6615606b2"
+        }
+      ],
+      "rationale": "Identify the specific common alkaline incompatibility. The item does not imply compatibility with other listed drugs."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "If using a peripheral IV under local protocol, monitor the site closely.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::dobutamine_peripheral_site"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--dobutamine_peripheral_site",
+          "sha256": "7a09385c44d0c65160241317d08afafacb9f2c0f69389b0f1f89a20ac72d9b19"
+        }
+      ],
+      "rationale": "Distinguish signs of a local peripheral complication from systemic effects. Authorization depends on facility protocol."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Delivered amount per hour = concentration × mL/hour.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::infusion_precision"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--infusion_precision",
+          "sha256": "fdbd11c7c400b40c93edaf0e8e37eb6aba3c472c11266f32285321d06fedca52"
+        }
+      ],
+      "rationale": "Calculate the delivered hourly mass from the verified concentration and flow."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor ECG, heart rate and BP continuously.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::dobutamine_continuous_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--dobutamine_continuous_monitor",
+          "sha256": "3d9d59af2e607ec22510389846321f2b9dae13dd864ed471249e8f0ec67db661"
+        }
+      ],
+      "rationale": "Require both ECG-derived rhythm/rate and continuous BP."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Follow urine output and peripheral perfusion.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::perfusion"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--perfusion",
+          "sha256": "cb1be20178d723e83bfbf2271bde12cc72f106e01f9cc2e106565460e85580af"
+        }
+      ],
+      "rationale": "Compare discordant and concordant organ perfusion trends despite stable pressure."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "New ventricular ectopy, tachycardia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::tachyarrhythmia"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--tachyarrhythmia",
+          "sha256": "484ce98ee40a7b1b4b3e4ed7f58f32163cac77295388dd0b04ebde6582e3a6bd"
+        }
+      ],
+      "rationale": "Differentiate the characteristic dose-related rhythm pattern from nodal slowing."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "falling BP warrants prompt reassessment, even if perfusion initially improved.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::dobutamine_reassessment"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--dobutamine_reassessment",
+          "sha256": "1a5961a33bc01ca0d031d752657df4b35f266b5964e9170279142fa5967d7f5f"
+        }
+      ],
+      "rationale": "Recognize possible infusion intolerance despite preceding improvement and promptly reassess under the ordered plan."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Increasing contractility can improve cardiac output.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dobutamine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dobutamine--comprehensive--principal-action",
+          "sha256": "57419524fab8b8815d289506355ec7798c815447d016c3b463cc230bbb28245c"
+        }
+      ],
+      "rationale": "Identify the direct myocardial effect underlying increased output."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Dobutamine can also increase heart rate and provoke ectopy.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates the rhythm objective already covered by tachyarrhythmia."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Palestinian essential-medicine data document 250-mg ampoules.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Catalogue formulation only. No current facility stock or package is verified."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "PUMP drug: inotrope that increases contractility/output.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates class and mechanism."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Tachyarrhythmia and hemodynamic changes; use a controlled infusion.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates rhythm, hemodynamic, and infusion administration objectives."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "754f31f1eb843066ebf55145612d80f2ffe787bc815f703ee51585861d6e557b",
+    "mechanism": "6ebb66b8ec84992875a549b1ffa96bec52306313f87b41e3cb4b2e7faa8e0ec8",
+    "use": "0016b84924fcdc1851f58e5014cf0d8731b94a658728ae6667c28ebe609191f3",
+    "administration": "78db432c033c9bc4d38ddd3b1fc566b6a030f4406831864d9811480ad5f74fbc",
+    "monitor": "1e385864526c2cfce45f5bdb36252860d2efe826ffc90a025d9a84900fdc8bb3",
+    "why": "453eee02f14803dcb3a2c4fe77e3a013958acc7cbca059802c515604ad5fd3b9",
+    "availability": "915224f04f278a62e2c08f8d49e6599f166c59e3b3b9cc8a0534072f51a07059",
+    "memoryUse": "817338878a17f85f4dbae1e31421b14275458886660e74cbf9b7f149d5d2ea15",
+    "memoryDanger": "0b01c2324f2f9b0763bceaa734fbc805624d1d77d1e149b7b11233f509f5aa9d"
+  },
+  "questionSetSha256": "6d7a9daf71433c153bc20631589ebbfc8d52ef34a9b3fe73475b52a155793a4e",
+  "questionReview": {
+    "ccu-dobutamine--comprehensive--principal-action": "Identify the receptor effect that raises contractile force and output.",
+    "ccu-dobutamine--comprehensive--drug-class": "Select the pharmacologic role and predominant receptor class.",
+    "ccu-dobutamine--comprehensive--treatment-role": "Choose inotropic support when cardiac dysfunction limits perfusion. The clinical setting is acute, with ongoing hemodynamic reassessment.",
+    "ccu-dobutamine--comprehensive--tachyarrhythmia": "Differentiate the characteristic dose-related rhythm pattern from nodal slowing.",
+    "ccu-dobutamine--comprehensive--infusion_route": "The options vary dilution and delivery independently. A correct response requires both. Exact diluent, concentration and pump settings depend on product and local protocol.",
+    "ccu-dobutamine--comprehensive--dobutamine_reassessment": "Recognize possible infusion intolerance despite preceding improvement and promptly reassess under the ordered plan.",
+    "ccu-dobutamine--comprehensive--dobutamine_alkaline_line": "Identify the specific common alkaline incompatibility. The item does not imply compatibility with other listed drugs.",
+    "ccu-dobutamine--comprehensive--dobutamine_continuous_monitor": "Require both ECG-derived rhythm/rate and continuous BP.",
+    "ccu-dobutamine--comprehensive--dobutamine_peripheral_site": "Distinguish signs of a local peripheral complication from systemic effects. Authorization depends on facility protocol.",
+    "ccu-dobutamine--comprehensive--infusion_precision": "Calculate the delivered hourly mass from the verified concentration and flow.",
+    "ccu-dobutamine--comprehensive--perfusion": "Compare discordant and concordant organ perfusion trends despite stable pressure."
+  }
+}
