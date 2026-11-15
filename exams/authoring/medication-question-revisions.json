@@ -2087,35 +2087,34 @@
       "sourceFields": [
         "administration"
       ],
-      "reason": "Drug-specific author draft: replace answer cues and weak alternatives; full acceptance pending generated-form review.",
       "question": {
         "format": "single-best-answer",
-        "stem": "Which pairing describes common immediate-release and extended-release metoprolol oral products?",
+        "stem": "A transfer order lists metoprolol succinate ER once daily. The ward has immediate-release tartrate. Which action is appropriate before giving the first dose?",
+        "point": "Verify salt, release, schedule and conversion before substituting.",
+        "criticalForSafety": true,
+        "answerKey": "A",
         "choices": [
           {
-            "text": "Tartrate: immediate release; succinate: extended release",
-            "explanation": "Identify the actual product and authorized schedule; this does not authenticate the ward brand.",
-            "id": "A"
+            "id": "A",
+            "text": "Verify the salt and schedule and obtain an authorized conversion plan.",
+            "explanation": "Immediate-release and extended-release products have different administration schedules."
           },
           {
-            "text": "Tartrate: extended release; succinate: immediate release",
-            "explanation": "This reverses the common products described.",
-            "id": "B"
+            "id": "B",
+            "text": "Give the same individual dose of tartrate on the once-daily schedule.",
+            "explanation": "Matching the individual dose does not authorize changing the release form."
           },
           {
-            "text": "Tartrate and succinate: both necessarily immediate release",
-            "explanation": "Succinate extended-release tablets are a distinct product.",
-            "id": "C"
+            "id": "C",
+            "text": "Use half the scheduled dose of tartrate twice daily without clarification.",
+            "explanation": "Even a plausible schedule requires a confirmed order."
           },
           {
-            "text": "Tartrate and succinate: both necessarily extended release",
-            "explanation": "Conventional tartrate tablets are not automatically extended release.",
-            "id": "D"
+            "id": "D",
+            "text": "Use a tartrate tablet only if it has a score line.",
+            "explanation": "Scoring does not establish an equivalent formulation or schedule."
           }
-        ],
-        "answerKey": "A",
-        "point": "Distinguish common salt/release forms without automatic substitution.",
-        "criticalForSafety": true
+        ]
       }
     },
     "ccu-adenosine::treatment-role": {
@@ -3136,6 +3135,41 @@
           }
         ]
       }
+    },
+    "ccu-bisoprolol::bisoprolol_hr_bp_review": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Before a scheduled bisoprolol dose, which pair would most directly help decide whether to clarify the order?",
+        "point": "Assess HR and BP before the dose.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Heart rate and blood pressure",
+            "explanation": "Bisoprolol can slow heart rate and lower blood pressure."
+          },
+          {
+            "id": "B",
+            "text": "Oxygen saturation and respiratory rate",
+            "explanation": "These can assess breathing, but do not measure the primary haemodynamic effects."
+          },
+          {
+            "id": "C",
+            "text": "Temperature and oxygen saturation",
+            "explanation": "Neither measures rate slowing or hypotension."
+          },
+          {
+            "id": "D",
+            "text": "Urine output and respiratory rate",
+            "explanation": "These may inform other assessments, but do not directly measure the immediate effects."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -3173,9 +3207,9 @@
     "verified-losartan": "bp-author-review-20261107",
     "ccu-enalapril": "bp-author-review-20261107",
     "ccu-amlodipine": "bp-author-review-20261107",
-    "ccu-bisoprolol": "beta-spirono-draft-20261110",
-    "ccu-metoprolol": "beta-spirono-draft-20261110",
-    "trolley-spironolactone": "beta-spirono-draft-20261110",
+    "ccu-bisoprolol": "beta-mra-review-20261115",
+    "ccu-metoprolol": "beta-mra-review-20261115",
+    "trolley-spironolactone": "beta-mra-review-20261115",
     "ccu-adenosine": "acute-completed-20261115",
     "ccu-atropine": "acute-completed-20261115",
     "ccu-heparin-ufh": "acute-completed-20261115",
@@ -3194,8 +3228,8 @@
     "ccu-enalapril": "bp-author-review-20261107",
     "ccu-amlodipine": "bp-author-review-20261107",
     "trolley-spironolactone": "beta-spirono-draft-20261110",
-    "ccu-bisoprolol": "beta-spirono-draft-20261110",
-    "ccu-metoprolol": "beta-spirono-draft-20261110",
+    "ccu-bisoprolol": "beta-mra-review-20261115",
+    "ccu-metoprolol": "beta-mra-review-20261115",
     "ccu-adenosine": "acute-completed-20261115",
     "ccu-atropine": "acute-completed-20261115",
     "ccu-heparin-ufh": "acute-completed-20261115",

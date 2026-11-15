@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "itemId": "trolley-spironolactone",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the bedside card and scored exam.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "evidenceIds": [
+    "content-v35",
+    "label-trolley-spironolactone",
+    "msf-spironolactone-20261110"
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Potassium-sparing diuretic; mineralocorticoid-receptor antagonist.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "trolley-spironolactone::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "trolley-spironolactone--comprehensive--drug-class",
+          "sha256": "15ce85bf9320a3f5f0255a6341b3f5447c74695ac1c1587b57648ea98ae52982"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Blocks mineralocorticoid receptors, reducing aldosterone-mediated sodium retention and potassium loss.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "trolley-spironolactone::principal-action",
+        "trolley-spironolactone::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "trolley-spironolactone--comprehensive--principal-action",
+          "sha256": "55b4d50dd5053d2da3c05c828a7e7da9fd39110a425c1996cf294f08c4f94665"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--drug-class",
+          "sha256": "15ce85bf9320a3f5f0255a6341b3f5447c74695ac1c1587b57648ea98ae52982"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Mainly chronic/subacute therapy in HFrEF, resistant hypertension and aldosterone-mediated fluid retention; not the rapid-diuresis rescue role of IV furosemide.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "trolley-spironolactone::treatment-role",
+        "trolley-spironolactone::spirono_additional_roles",
+        "trolley-spironolactone::spirono_not_loop"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "trolley-spironolactone--comprehensive--treatment-role",
+          "sha256": "1a9cb9acb6b324fd6bf9dde43c52aab1224c34096e55f26465ccbc4f3e56913c"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_additional_roles",
+          "sha256": "979f284f087e832784d07ee482cb45756d72dd053b7296dfeb3d18d46a1f25c7"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_not_loop",
+          "sha256": "032d14fa271e7287cf1df05a39685d5dd6a736d48eef1cab16b7388afd6927bb"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO tablets",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "trolley-spironolactone::spirono_not_loop"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_not_loop",
+          "sha256": "032d14fa271e7287cf1df05a39685d5dd6a736d48eef1cab16b7388afd6927bb"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "• Check potassium and renal function. • Escalate significant hyperkalemia or worsening renal function before routine administration. • Watch hypotension, dizziness and dehydration with other diuretics/RAAS blockers. • Do not casually add potassium supplements or potassium-containing salt substitutes. • After starting or changing the dose, arrange early potassium monitoring within one week under the prescribing plan, with closer monitoring when renal function or interacting drugs increase risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "trolley-spironolactone::spirono_labs",
+        "trolley-spironolactone::spirono_lab_escalation",
+        "trolley-spironolactone::hypotension",
+        "trolley-spironolactone::spirono_supplements",
+        "trolley-spironolactone::spirono_early_k",
+        "trolley-spironolactone::high_k",
+        "trolley-spironolactone::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_labs",
+          "sha256": "e933dbf00292d11fee498a6e7051f6a37472b00ef51b608b71d2e9d8258f7acc"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_lab_escalation",
+          "sha256": "13927f0aea87c21aca3a595942fa2ec2f6840c1de68e92f961b743b6978afff5"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--hypotension",
+          "sha256": "bd2d88010080160270e34f81edcbdc0fb95544b0a83ed3b01e7aad1874c3ff15"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_supplements",
+          "sha256": "8dcc7f0309f0386ee90d6fc53b2b6411845c730037b5f30c628658732c10a203"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_early_k",
+          "sha256": "c799c3b641e4ae302fdf87e3e8b876e354557a23c282fee672e85e4519c9f77c"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--high_k",
+          "sha256": "670d268788d5f1712ccc3b061d49b71ab0b25fa7bcf6ef6aabb58757c6578f25"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--renal_monitor",
+          "sha256": "fc5f4782f9df12a2b02d9aa5758da3704b17547f418647149c0c8210e48cce4a"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Spironolactone saves potassium and blocks aldosterone; furosemide provides stronger, faster diuresis and tends to waste potassium.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "trolley-spironolactone::principal-action",
+        "trolley-spironolactone::spirono_not_loop"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "trolley-spironolactone--comprehensive--principal-action",
+          "sha256": "55b4d50dd5053d2da3c05c828a7e7da9fd39110a425c1996cf294f08c4f94665"
+        },
+        {
+          "questionId": "trolley-spironolactone--comprehensive--spirono_not_loop",
+          "sha256": "032d14fa271e7287cf1df05a39685d5dd6a736d48eef1cab16b7388afd6927bb"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestine-wide records show spironolactone 25- and 100-mg tablets; exact brand may differ.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Aldosterone-blocking, potassium-sparing diuretic; especially useful in HFrEF/aldosterone-driven states.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Hyperkalemia is the key danger, especially with renal impairment.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "administration": "6e32e7322eedcdfa0351f573b15f09165d98dbf356b08ea811308ff8ccd909d1",
+    "availability": "82941a713622bb93e1e77badab5ec8d0da7330ed7efe7430a07ecd2cbd43eebe",
+    "drugclass": "59e7c1d1a6e35ebcf2d6491d597ed611b7b6955d52bf2c6b8b4ed1e315e84724",
+    "mechanism": "84af512a96644985f46eaa682693013cd97dcf80a54d1287d33f8e423cbcca4d",
+    "memoryDanger": "f20d1466533b7a131ee890bc50e0611584764eda5d583b29c9798c6305e3232b",
+    "memoryUse": "06d3487f4d880c1f9ebee745542702ec691e38a29ed1768f3618b357b93a0f49",
+    "monitor": "e831314ca15aefc82fd9883ba96d3170af45322fc9acb121bcfa031bd42aa4eb",
+    "use": "c7a5bcfc60546927c54a1a19d03884c3e231a786bcf0509ddf96c490f07d6f2a",
+    "why": "f7de80a749cee4ad2bfbf76a894e4d724303b1964dcce78871b4a5cefa798d84"
+  },
+  "questionSetSha256": "20580723ace6c7f846ae9e17cffe5871c28fc14951fa1b828074b352cf19d02b"
+}

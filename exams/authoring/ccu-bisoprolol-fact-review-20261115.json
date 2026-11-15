@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-bisoprolol",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the bedside card and scored exam.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "evidenceIds": [
+    "content-v35",
+    "label-ccu-bisoprolol",
+    "msf-bisoprolol-20261110"
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Relatively beta1-selective beta-blocker.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-bisoprolol::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--drug-class",
+          "sha256": "16c5b6d30ba93c2b14655dfa2ca85bf7dbee3ebfa4bca9e08f0be770d52996ca"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Blocks cardiac beta1 receptors, reducing HR and contractility.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-bisoprolol::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--principal-action",
+          "sha256": "5adc8648e032cfcb7dcba62b8edb8ecb0d645a364a7b3ad349734ae94e2e056c"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Selected rate/BP control, chronic stable angina, and stable chronic heart failure under an individualized prescribing/titration plan; not rescue treatment for acutely decompensated heart failure.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-bisoprolol::treatment-role",
+        "ccu-bisoprolol::bisoprolol_hf_titration",
+        "ccu-bisoprolol::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--treatment-role",
+          "sha256": "df06c665fc7e890e9b9501ece4e1ff50d01e8901303ad1d8b51e44b479418b3c"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--bisoprolol_hf_titration",
+          "sha256": "4c088efc8b908b4691b108643c442a57128604066016d1060228126cfa8b5e66"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--principal-action",
+          "sha256": "5adc8648e032cfcb7dcba62b8edb8ecb0d645a364a7b3ad349734ae94e2e056c"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "• Check HR and BP before the dose. • Report symptomatic bradycardia, significant hypotension or new conduction problems. • During heart-failure titration, review new worsening dyspnea or congestion. • Do not abruptly stop chronic therapy without a prescribing plan; withdrawal can cause sympathetic rebound and renewed cardiac symptoms. • Check for duplicate beta-blockade. • Relative beta1 selectivity does not eliminate bronchospasm risk: asthma/bronchospastic disease requires prescriber review rather than assuming respiratory safety.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-bisoprolol::bisoprolol_hr_bp_review",
+        "ccu-bisoprolol::bradycardia",
+        "ccu-bisoprolol::bisoprolol_hf_titration",
+        "ccu-bisoprolol::beta_rebound",
+        "ccu-bisoprolol::duplicate_beta",
+        "ccu-bisoprolol::bisoprolol_selectivity_limit"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--bisoprolol_hr_bp_review",
+          "sha256": "d2a8f17ec7a9c1bf9372c5a6d3ea41c51f42e846711fe03bd7beef2a4cde6afd"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--bradycardia",
+          "sha256": "1ebca30fa9a5573c3bcfb5391ab2902c33a32480bbb3d34c7396595d9aa786ed"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--bisoprolol_hf_titration",
+          "sha256": "4c088efc8b908b4691b108643c442a57128604066016d1060228126cfa8b5e66"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--beta_rebound",
+          "sha256": "0031be7a04ed88454e2c52314e721a1bed3f555e9282c6595090935f1ee305b8"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--duplicate_beta",
+          "sha256": "6caa0f2a7eb0259fcef8625f0dc6cb64aa347c8fccedb8158845f8d742f502f1"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--bisoprolol_selectivity_limit",
+          "sha256": "f6fda34c3a254fb90931c0d0a0bcfe2139faeab6faa48ff164bfd5f80859682f"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Beta1 blockade slows HR and lowers cardiac workload/BP; abrupt withdrawal can cause sympathetic rebound.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-bisoprolol::principal-action",
+        "ccu-bisoprolol::beta_rebound"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--principal-action",
+          "sha256": "5adc8648e032cfcb7dcba62b8edb8ecb0d645a364a7b3ad349734ae94e2e056c"
+        },
+        {
+          "questionId": "ccu-bisoprolol--comprehensive--beta_rebound",
+          "sha256": "0031be7a04ed88454e2c52314e721a1bed3f555e9282c6595090935f1ee305b8"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document a 5-mg tablet; Concor 5 mg is registered in Palestine. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Heart-selective beta-blocker for selected rate/BP/HF indications.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Bradycardia and hypotension; avoid abrupt withdrawal.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO; no special preparation.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Routine oral tablet preparation. No special route or preparation decision in this card."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "administration": "fc7125326786cafddc18f59008127d6e042861a30fef955a6468610477ea1717",
+    "availability": "765e7698814a528f10fe50b505057adfc0511685d8bcacc4f82f35e5d194eb20",
+    "drugclass": "64793bac364e6abfe09a7cbd5f523473324d2ed3dbad75e62fefa2a15cb24650",
+    "mechanism": "c087db65e9625e37d59cc13831ec67b60573c089186e96242c9a46bc99ce1863",
+    "memoryDanger": "bc355ed96e6639dfbb6b34b96fce77e9d31d19b5e44f5400518fac4eaaffa148",
+    "memoryUse": "c49c46bf9b3dff2be3d15b285c5c74ac7b6240217666191885dfd6e5902d4a52",
+    "monitor": "217e75c793abdd81afa68c830bcf976a22e5dd34ce722c477ef26285c1163cf7",
+    "use": "fe6594e78450cb9af1a0b4c5644d6be58beaa7647ae91b27b15097e5c986b1df",
+    "why": "a7fdf92cd5af8de39f9bf46a69da11e1f4965a658e9ab0158b4a9e38f9a3cdbb"
+  },
+  "questionSetSha256": "a2ce54cc84152189aecee0b1bd0d7346cbf86c8232e65261a7920c79c98fc344"
+}

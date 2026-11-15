@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-metoprolol",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the bedside card and scored exam.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "evidenceIds": [
+    "content-v35",
+    "label-ccu-metoprolol",
+    "metoprolol-succinate-label-20261110"
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Beta1-selective beta-blocker.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-metoprolol::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-metoprolol--comprehensive--drug-class",
+          "sha256": "354a00a6d64ed9911dd7c7c3c03ccb6da13d2a20bc907f7d16002af4e2a49e21"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Blocks cardiac beta1 receptors, reducing heart rate and contractility.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-metoprolol::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-metoprolol--comprehensive--principal-action",
+          "sha256": "f7b56f83306b962f59d29eba066d4bc5db13fa4f645c5a14d85a844bacc05e92"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Selected rate/BP control and reduction of myocardial workload.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-metoprolol::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-metoprolol--comprehensive--treatment-role",
+          "sha256": "a1ac213c8f743e612ea76319f05bbc7409dc35e7cf106903b1bdd01e44a5d8c2"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Identify the exact salt and release form. Common oral products include immediate-release metoprolol tartrate and extended-release metoprolol succinate; schedules and authorized conversion plans must be checked rather than substituting individual doses automatically. Do not crush or chew extended-release succinate tablets; split only when the specific product permits.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-metoprolol::formulation",
+        "ccu-metoprolol::metoprolol_er_handling"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-metoprolol--comprehensive--formulation",
+          "sha256": "e10ad5fdbff8193c51ca37cc48dcc63cbccba617a7aa2965b67a133dfea0fa76"
+        },
+        {
+          "questionId": "ccu-metoprolol--comprehensive--metoprolol_er_handling",
+          "sha256": "8c230b22ea824a74f8dedbd0f07234490102fb51d1768baa85ebcf74fe48d7f3"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "• Check HR and BP. • Report marked bradycardia/hypotension. • Be cautious with verapamil because both slow AV conduction. • Check for duplicate beta-blocker therapy. • Do not abruptly stop chronic therapy without a prescribing plan because myocardial ischemia can worsen.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-metoprolol::metoprolol_hr_bp_review",
+        "ccu-metoprolol::bradycardia",
+        "ccu-metoprolol::avnode_combination",
+        "ccu-metoprolol::duplicate_beta",
+        "ccu-metoprolol::metoprolol_withdrawal"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-metoprolol--comprehensive--metoprolol_hr_bp_review",
+          "sha256": "ad436c7aaf5d17be4067b25ca2819ff9b7b6abdb7d72741fda72928b1947fc6b"
+        },
+        {
+          "questionId": "ccu-metoprolol--comprehensive--bradycardia",
+          "sha256": "5a50ed8656d34a02299eb68adb613d50d2273f32fdab0c0efff5c9af08e67408"
+        },
+        {
+          "questionId": "ccu-metoprolol--comprehensive--avnode_combination",
+          "sha256": "aa06d1bbc5c2e1645f4afa1ad79dea018f4f42da56d2fd0759f0bcda7ad238ce"
+        },
+        {
+          "questionId": "ccu-metoprolol--comprehensive--duplicate_beta",
+          "sha256": "276ae1fdfd5c195530d3aaf74c24b096aa59acd9e6f73272df21f2d5f93dc065"
+        },
+        {
+          "questionId": "ccu-metoprolol--comprehensive--metoprolol_withdrawal",
+          "sha256": "b53b8188ccc81945988045746a5f5680bf7dddd6ea3462e9869dec2fa269301c"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Metoprolol slows the heart through beta1 blockade; combining AV-node-slowing drugs can produce excessive bradycardia/block.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-metoprolol::principal-action",
+        "ccu-metoprolol::avnode_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-metoprolol--comprehensive--principal-action",
+          "sha256": "f7b56f83306b962f59d29eba066d4bc5db13fa4f645c5a14d85a844bacc05e92"
+        },
+        {
+          "questionId": "ccu-metoprolol--comprehensive--avnode_combination",
+          "sha256": "aa06d1bbc5c2e1645f4afa1ad79dea018f4f42da56d2fd0759f0bcda7ad238ce"
+        }
+      ],
+      "rationale": "The mapped scored questions test the bedside decision or pharmacologic relationship in this field."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "WARD-REPORTED for this trade name/form. The exact salt/strength was not confirmed in the public Palestinian list used by the reference.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Beta1-selective blocker; verify tartrate vs succinate.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Bradycardia/hypotension; additive AV-node slowing with verapamil.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Formulary or ward inventory note, or recap of tested learning points."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "administration": "15e45175330822ebb8803dc4d8fcbc9a9b997a0bbccb4531b912e8e3f1fe2cb1",
+    "availability": "806a48b3fc7662ebd9420aef2f8bbdc6f4a97f5a42fb7a77cec62d69ed01f213",
+    "drugclass": "27223fad4c0d6d67766709008c0e9f66f00d73356d0b3d77a19627d2687aa8e0",
+    "mechanism": "321f8af040b18f38291b5ee0b25ba4236f9234c1b31c45af24e4093b3d010c5b",
+    "memoryDanger": "06d72721f0a4f57efd52f40b3bb23eaa044be6731a19cb76712b53924b1865c1",
+    "memoryUse": "e3f8f57dfe27264330ae45ae4fd4d06f265151766050a73ab908d9c00e1272c4",
+    "monitor": "2e0fdba286e8997b4ea5d2b76ad1a860f54c449221ccad44f20ffae4acea0d08",
+    "use": "f9fcd8bf6344676594b47f79261093bae197f2af28cbca40eccd2d781c08a234",
+    "why": "b52628b25d039078ac014ee1a74bbc53e03c90580faa381419e357a3e38fb64b"
+  },
+  "questionSetSha256": "c87d873987acd0fac2fb1b321ccbb961c78de6b1e9b89a02f63ea4e8a0f46a05"
+}
