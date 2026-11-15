@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-adenosine",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the current bedside teaching scope.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "scope": "Adult AHA tachyarrhythmia use and bolus technique. The Gaza MOH injectable guide supports local technique, and labels support adverse effects and interactions. Exact ward protocol and stock are unconfirmed.",
+  "evidenceIds": [
+    "content-v35",
+    "label-ccu-adenosine",
+    "aha-arrest-2025",
+    "aha-tachycardia-2025",
+    "gaza-moh-injectables-2018-adenosine"
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "adenosine A1-receptor agonist",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--drug-class",
+          "sha256": "55b4b74dbe404d6ba2ddc021f5eab1d0c49b1798efc24c658d0bfcc2019a87d2"
+        }
+      ],
+      "rationale": "Distinguishes receptor class among rhythm drugs."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "causing transient conduction block",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--principal-action",
+          "sha256": "7aad42b684427159ce4faf689a294e919861c72228087d310dc9ed268cc9d3fb"
+        }
+      ],
+      "rationale": "Selects the brief AV conduction effect."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Stable regular narrow-complex SVT",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_first"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_first",
+          "sha256": "6d957cce8ff5f37684a5676fbb94fae5c5d3479497ace7bd5171b9382f3209fc"
+        }
+      ],
+      "rationale": "Selects indication-specific initial drug and dose."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "regular and monomorphic",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--treatment-role",
+          "sha256": "178b46e35a880c5977dd1f36d6c6462f48880c63cf7ccba99943634e68278c95"
+        }
+      ],
+      "rationale": "Distinguishes eligible stable wide rhythms."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "if it does not delay synchronized cardioversion",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::tachy_instability"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--tachy_instability",
+          "sha256": "df9b638a8f4abbee827059aa8575af8d9cf0d807cd4de84c1916378510f0dd9c"
+        }
+      ],
+      "rationale": "Prioritizes cardioversion when unstable."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "6 mg rapid IV",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_first"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_first",
+          "sha256": "6d957cce8ff5f37684a5676fbb94fae5c5d3479497ace7bd5171b9382f3209fc"
+        }
+      ],
+      "rationale": "Distinguishes first from repeat dose."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "12 mg if required",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_second_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_second_dose",
+          "sha256": "b25c64855dcc5111cb04d361df7298d62e5f8dcc0c98e5ec4a63a1295733b420"
+        }
+      ],
+      "rationale": "Recalls second dose without initial amount supplied."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Use a port as close to the patient as practical",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_delivery"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_delivery",
+          "sha256": "c7731d61fcd869cbc8c8974dac0efca1d8631a9e7bdd9f20276f36e31bceb143"
+        }
+      ],
+      "rationale": "Distinguishes proximal rapid push, rapid flush and ECG from incorrect alternatives."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Adenosine is cleared within seconds",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_delivery"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_delivery",
+          "sha256": "c7731d61fcd869cbc8c8974dac0efca1d8631a9e7bdd9f20276f36e31bceb143"
+        }
+      ],
+      "rationale": "The setup applies rapid clearance to bolus delivery."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor ECG continuously",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_delivery"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_delivery",
+          "sha256": "c7731d61fcd869cbc8c8974dac0efca1d8631a9e7bdd9f20276f36e31bceb143"
+        }
+      ],
+      "rationale": "Separates continuous from intermittent ECG."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "brief AV block, flushing or chest pressure",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_transient"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_transient",
+          "sha256": "291f6c139c44daeb707e22e0bbd039498b2259d1c2148bffc9cf97dd32e23e80"
+        }
+      ],
+      "rationale": "Distinguishes expected effects from persistent instability or wheeze."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Avoid use in patients with asthma or active bronchospasm",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::bronchospasm_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--bronchospasm_risk",
+          "sha256": "89a159a76fdc2883a40fde4844be28dee40f6b45ec69b61c9597250c13faa20b"
+        }
+      ],
+      "rationale": "Requires recognizing the respiratory contraindication."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Theophylline and aminophylline reduce the effect",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_interaction"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_interaction",
+          "sha256": "562bcc39929f70a6a26dcf1532faa1ed6f28f1b4dcd828a80cef8bcd3f284c5e"
+        }
+      ],
+      "rationale": "Tests methylxanthine antagonism."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Dipyridamole can increase it",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-adenosine::adenosine_dipyridamole"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-adenosine--comprehensive--adenosine_dipyridamole",
+          "sha256": "e5c00393e779b1c641d88f1709fd84b24fcc4f73a1234b2fbfdd4d4b5003d3de"
+        }
+      ],
+      "rationale": "Tests direction of interaction."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document adenosine 6-mg ampoules.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Local reference strength/availability is not a treatment target."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Rapid AV-node blocker for stable regular SVT.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Recap of the main teaching fields."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Technique is critical; monitor ECG and be ready for transient AV block/asystole.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Recap of the main teaching fields."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "administration": "b61c912fe7134c0898a7b121b48c481f3ee36ad93e9340bac83d57f94b7e7c07",
+    "availability": "a1079626957e9fe4d6c786863a7b24fa106790bc4756b01e87c528433a58edf5",
+    "drugclass": "8bba3ab64288f170ca861b9fe1dee018b5596a8f30349f3783e55d109e4fe5c3",
+    "mechanism": "70de82d3d8d56f9e5cb528582321d26cbfa0463780091923f730d899528370e2",
+    "memoryDanger": "04d155db96c4e1811d4f0b1e4f3d3b86e66bf35c6112f1d8bde34e37372ade2e",
+    "memoryUse": "1b9121fc6e47b1d4ed84d6f8e792c71798d48172a0782e421bf2c3240c2fabfa",
+    "monitor": "b4ebcb972fda4bfaa9a103b98008c99cb976278fc1673e1c57c2d738cc110da0",
+    "use": "50ce0b21bcd9b2c6df9473d8cea47710cef7a9bdabce66db0ea3a8c67c24da99",
+    "why": "77248295b1183ff0c322aff5786c5d94f61ac4ada9af3460ec4f576b2dc8f0cb"
+  },
+  "questionSetSha256": "db6dd684e59fd90088786f9672fa3c722bfdee1aad090087f1fda1cf6fe3bfae"
+}

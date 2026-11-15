@@ -20,22 +20,6 @@
         "criticalForSafety": true
       }
     },
-    "ccu-furosemide::slow_iv": {
-      "action": "replace",
-      "sourceFields": [
-        "administration"
-      ],
-      "question": {
-        "stem": "For a controlled high-dose IV furosemide infusion in an adult, what is the referenced maximum rate? Enter the number in mg/min.",
-        "format": "numeric-entry",
-        "answer": 4,
-        "unit": "mg/min",
-        "tolerance": 0,
-        "explanation": "High-dose parenteral therapy should avoid rates above 4 mg/min; this is not a default dose.",
-        "point": "High-dose parenteral therapy should avoid rates above 4 mg/min; this is not a default dose.",
-        "criticalForSafety": true
-      }
-    },
     "ccu-labetalol::slow_iv": {
       "action": "replace",
       "sourceFields": [
@@ -2728,6 +2712,430 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-adenosine::adenosine_delivery": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which setup best supports reliable delivery and monitoring of a prescribed adenosine bolus?",
+        "point": "Give a rapid IV push through a proximal port with an immediate rapid saline flush and continuous ECG.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Rapid push through a proximal port, immediate rapid saline flush, continuous ECG.",
+            "explanation": "Rapid proximal delivery and an immediate flush counter rapid clearance. Continuous ECG captures transient rhythm changes."
+          },
+          {
+            "id": "B",
+            "text": "Rapid push through a distal port, delayed saline flush, continuous ECG.",
+            "explanation": "Long tubing and delayed flushing can reduce effective delivery."
+          },
+          {
+            "id": "C",
+            "text": "Slow push through a proximal port, immediate rapid saline flush, continuous ECG.",
+            "explanation": "Slow push can reduce effective exposure despite correct flushing."
+          },
+          {
+            "id": "D",
+            "text": "Rapid push through a proximal port, immediate rapid saline flush, intermittent ECG.",
+            "explanation": "Intermittent ECG can miss brief AV block and rhythm conversion."
+          }
+        ]
+      }
+    },
+    "ccu-adenosine::tachy_instability": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A regular narrow-complex tachycardia is causing hypotension and acute confusion. Which plan should the team prioritize?",
+        "point": "Prepare synchronized cardioversion in unstable regular narrow-complex tachycardia without delaying it for adenosine.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prepare synchronized cardioversion now. Consider adenosine only if it will not delay cardioversion.",
+            "explanation": "Signs of poor perfusion warrant prompt synchronized cardioversion."
+          },
+          {
+            "id": "B",
+            "text": "Complete both adenosine doses before preparing synchronized cardioversion.",
+            "explanation": "This can delay urgent cardioversion."
+          },
+          {
+            "id": "C",
+            "text": "Repeat vagal maneuvers before preparing synchronized cardioversion.",
+            "explanation": "The patient is unstable and needs the urgent electrical pathway."
+          },
+          {
+            "id": "D",
+            "text": "Observe with serial ECGs before preparing synchronized cardioversion.",
+            "explanation": "Observation delays treatment of hemodynamic compromise."
+          }
+        ]
+      }
+    },
+    "ccu-adenosine::bronchospasm_risk": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with stable regular narrow-complex SVT has active wheezing from asthma. What should the nurse do with the proposed adenosine order?",
+        "point": "Avoid adenosine in asthma or active bronchospasm.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Flag the bronchospasm risk and clarify an alternative before giving it.",
+            "explanation": "Adenosine can cause severe bronchospasm in this setting."
+          },
+          {
+            "id": "B",
+            "text": "Give it after confirming normal oxygen saturation.",
+            "explanation": "Normal saturation does not remove the respiratory risk."
+          },
+          {
+            "id": "C",
+            "text": "Give it after a low test dose while monitoring the rhythm.",
+            "explanation": "A test dose does not make administration safe in active bronchospasm."
+          },
+          {
+            "id": "D",
+            "text": "Give it more slowly while monitoring for wheezing.",
+            "explanation": "Slower administration does not address the contraindication."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "monitor",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "When a prepared therapeutic UFH bag has a different concentration from the previous one, which plan safely maintains the prescribed units/hour?",
+        "point": "Therapeutic IV UFH uses a pump and standard concentration with protocol-based titration.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Verify the standard concentration and recalculate the pump rate under the order or protocol.",
+            "explanation": "Pump mL/hour must match the verified concentration and authorized units/hour."
+          },
+          {
+            "id": "B",
+            "text": "Keep the previous pump rate and reassess the next coagulation result.",
+            "explanation": "The unchanged rate delivers a different dose if concentration changes."
+          },
+          {
+            "id": "C",
+            "text": "Keep the previous pump rate and adjust according to the platelet trend.",
+            "explanation": "Platelets do not guide therapeutic titration."
+          },
+          {
+            "id": "D",
+            "text": "Change the pump rate based on visible bleeding without checking the order.",
+            "explanation": "Escalate bleeding and follow authorized instructions rather than improvising a rate."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::lmwh_route": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which route pair fits low-dose injection for VTE prophylaxis and a continuous therapeutic UFH infusion, respectively?",
+        "point": "UFH may be given SC or IV per order. Avoid IM.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Subcutaneous, then intravenous.",
+            "explanation": "SC prophylaxis and therapeutic IV infusion are established uses."
+          },
+          {
+            "id": "B",
+            "text": "Intramuscular, then intravenous.",
+            "explanation": "Avoid intramuscular UFH due to hematoma risk."
+          },
+          {
+            "id": "C",
+            "text": "Subcutaneous, then intramuscular.",
+            "explanation": "The therapeutic infusion is intravenous."
+          },
+          {
+            "id": "D",
+            "text": "Intravenous, then subcutaneous.",
+            "explanation": "This reverses the standard routes for the two specified regimens."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::bleeding": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient on therapeutic UFH has new flank pain, falling hemoglobin and hypotension without visible bleeding. What is the priority?",
+        "point": "Recognize and promptly escalate suspected major bleeding on therapeutic UFH.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Escalate for suspected internal bleeding and follow the emergency anticoagulation protocol.",
+            "explanation": "The findings suggest potentially major concealed blood loss."
+          },
+          {
+            "id": "B",
+            "text": "Wait for the next scheduled coagulation result before alerting the team.",
+            "explanation": "The signs of instability require immediate assessment."
+          },
+          {
+            "id": "C",
+            "text": "Check platelet counts first and report only if they are falling.",
+            "explanation": "A platelet trend is not required to recognize possible hemorrhage."
+          },
+          {
+            "id": "D",
+            "text": "Treat the pain and reassess at the next scheduled observation.",
+            "explanation": "This delays assessment of possible major bleeding."
+          }
+        ]
+      }
+    },
+    "ccu-atropine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which adult presentation fits the AHA indication for considering atropine?",
+        "point": "Atropine is used for bradycardia with cardiopulmonary compromise.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Sinus bradycardia with new hypotension and confusion.",
+            "explanation": "Bradycardia with compromised perfusion fits the pathway."
+          },
+          {
+            "id": "B",
+            "text": "Sinus bradycardia during sleep with stable perfusion.",
+            "explanation": "A low rate without compromise does not itself require atropine."
+          },
+          {
+            "id": "C",
+            "text": "Sinus tachycardia with hypotension and confusion.",
+            "explanation": "Atropine would not treat this tachycardia."
+          },
+          {
+            "id": "D",
+            "text": "Sinus rhythm with isolated premature ventricular beats.",
+            "explanation": "Atropine is not indicated for isolated ectopy."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pair illustrates two appropriate roles for UFH when ordered?",
+        "point": "UFH can be ordered for treatment or prophylaxis depending on indication.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Treat an acute DVT and prevent VTE in selected inpatients.",
+            "explanation": "Both are established anticoagulation roles."
+          },
+          {
+            "id": "B",
+            "text": "Dissolve an acute DVT and reverse vitamin K antagonism.",
+            "explanation": "UFH inhibits further coagulation and does not dissolve established clot or reverse warfarin."
+          },
+          {
+            "id": "C",
+            "text": "Replace P2Y12 blockade after coronary stenting and reverse a factor Xa inhibitor.",
+            "explanation": "UFH provides neither antiplatelet blockade nor reversal."
+          },
+          {
+            "id": "D",
+            "text": "Correct thrombocytopenia and treat acute HIT.",
+            "explanation": "UFH is not a platelet replacement and can cause HIT."
+          }
+        ]
+      }
+    },
+    "ccu-heparin-ufh::heparin_infusion": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The supply tray contains therapeutic heparin vials and heparin catheter-flush syringes. Which check prevents selecting the wrong product for an ordered infusion?",
+        "point": "Verify therapeutic heparin vial identity and concentration instead of substituting flush product.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Match the therapeutic product and labeled units/mL to the preparation order.",
+            "explanation": "The flush presentation and concentration are distinct."
+          },
+          {
+            "id": "B",
+            "text": "Match the heparin name and the container volume to the order.",
+            "explanation": "Name and volume do not verify intended use or concentration."
+          },
+          {
+            "id": "C",
+            "text": "Pick the smaller container and verify total volume at the pump.",
+            "explanation": "Container size and volume alone do not establish the dose."
+          },
+          {
+            "id": "D",
+            "text": "Match the route and select either product if the total fluid volume fits.",
+            "explanation": "Shared IV use does not make the products interchangeable."
+          }
+        ]
+      }
+    },
+    "ccu-adenosine::adenosine_transient": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Immediately after a monitored adenosine bolus, which paired finding is an expected transient drug effect?",
+        "point": "Anticipate transient AV block and brief flushing or chest pressure.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A brief AV conduction pause with flushing or chest pressure.",
+            "explanation": "Adenosine briefly slows AV conduction, and short-lived flushing or chest pressure can occur."
+          },
+          {
+            "id": "B",
+            "text": "A sustained AV block with persistent hypotension.",
+            "explanation": "Persistent block and hypotension warrant urgent assessment."
+          },
+          {
+            "id": "C",
+            "text": "A brief AV conduction pause with worsening wheeze.",
+            "explanation": "A brief pause may occur, but worsening wheeze suggests bronchospasm."
+          },
+          {
+            "id": "D",
+            "text": "A sustained wide-complex tachycardia with flushing.",
+            "explanation": "Flushing can occur, but sustained wide-complex tachycardia requires assessment."
+          }
+        ]
+      }
+    },
+    "ccu-adenosine::adenosine_second_dose": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Stable regular narrow-complex SVT persists after the initial correctly delivered adenosine dose. What is the standard second AHA dose if indicated?",
+        "point": "Use 12 mg as the second adult AHA dose when indicated.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "12 mg",
+            "explanation": "The algorithm uses 12 mg for the second dose."
+          },
+          {
+            "id": "B",
+            "text": "6 mg",
+            "explanation": "This is the standard initial dose."
+          },
+          {
+            "id": "C",
+            "text": "9 mg",
+            "explanation": "This is not the second dose in the adult algorithm."
+          },
+          {
+            "id": "D",
+            "text": "18 mg",
+            "explanation": "This is the cumulative amount after both standard doses."
+          }
+        ]
+      }
+    },
+    "ccu-adenosine::adenosine_first": {
+      "action": "replace",
+      "sourceFields": [
+        "use",
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Vagal maneuvers did not terminate stable regular narrow-complex SVT in an adult without contraindications. Which initial medication order fits the AHA pathway?",
+        "point": "Select adenosine for stable regular narrow-complex SVT and recall the initial 6 mg dose.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Adenosine 6 mg rapid IV.",
+            "explanation": "This is the initial adult adenosine dose in the AHA pathway."
+          },
+          {
+            "id": "B",
+            "text": "Adenosine 12 mg rapid IV.",
+            "explanation": "This is the second dose if needed."
+          },
+          {
+            "id": "C",
+            "text": "Atropine 1 mg IV bolus.",
+            "explanation": "Atropine is used for bradycardia with compromise."
+          },
+          {
+            "id": "D",
+            "text": "Amiodarone 150 mg over 10 minutes.",
+            "explanation": "The AHA algorithm lists this regimen for selected stable wide-complex tachycardia."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -2768,9 +3176,9 @@
     "ccu-bisoprolol": "beta-spirono-draft-20261110",
     "ccu-metoprolol": "beta-spirono-draft-20261110",
     "trolley-spironolactone": "beta-spirono-draft-20261110",
-    "ccu-adenosine": "acute-med-coverage-draft-20261111",
-    "ccu-atropine": "acute-med-coverage-draft-20261111",
-    "ccu-heparin-ufh": "acute-med-coverage-draft-20261111",
+    "ccu-adenosine": "acute-completed-20261115",
+    "ccu-atropine": "acute-completed-20261115",
+    "ccu-heparin-ufh": "acute-completed-20261115",
     "ccu-norepinephrine": "vasoactive-coverage-20261111",
     "ccu-dobutamine": "vasoactive-coverage-20261111",
     "ccu-dopamine": "vasoactive-coverage-20261111",
@@ -2788,9 +3196,9 @@
     "trolley-spironolactone": "beta-spirono-draft-20261110",
     "ccu-bisoprolol": "beta-spirono-draft-20261110",
     "ccu-metoprolol": "beta-spirono-draft-20261110",
-    "ccu-adenosine": "acute-med-clinical-20261111",
-    "ccu-atropine": "acute-med-clinical-20261111",
-    "ccu-heparin-ufh": "acute-med-clinical-20261111",
+    "ccu-adenosine": "acute-completed-20261115",
+    "ccu-atropine": "acute-completed-20261115",
+    "ccu-heparin-ufh": "acute-completed-20261115",
     "ccu-norepinephrine": "vasoactive-infusion-20261111",
     "ccu-dobutamine": "vasoactive-infusion-20261111",
     "ccu-dopamine": "vasoactive-infusion-20261111",
