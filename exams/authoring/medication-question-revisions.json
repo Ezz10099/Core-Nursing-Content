@@ -2821,38 +2821,17 @@
     "ccu-heparin-ufh::infusion_precision": {
       "action": "replace",
       "sourceFields": [
-        "administration",
-        "monitor",
-        "why"
+        "administration"
       ],
       "question": {
-        "format": "single-best-answer",
-        "stem": "When a prepared therapeutic UFH bag has a different concentration from the previous one, which plan safely maintains the prescribed units/hour?",
-        "point": "Therapeutic IV UFH uses a pump and standard concentration with protocol-based titration.",
+        "format": "numeric-entry",
+        "stem": "The authorized UFH dose is 1,200 units/hour. Pharmacy replaces a 50 units/mL bag with a confirmed 100 units/mL bag. What pump rate delivers the unchanged dose from the replacement bag? Enter mL/hour.",
+        "answer": 12,
+        "unit": "mL/hour",
+        "tolerance": 0,
         "criticalForSafety": true,
-        "answerKey": "A",
-        "choices": [
-          {
-            "id": "A",
-            "text": "Verify the standard concentration and recalculate the pump rate under the order or protocol.",
-            "explanation": "Pump mL/hour must match the verified concentration and authorized units/hour."
-          },
-          {
-            "id": "B",
-            "text": "Keep the previous pump rate and reassess the next coagulation result.",
-            "explanation": "The unchanged rate delivers a different dose if concentration changes."
-          },
-          {
-            "id": "C",
-            "text": "Keep the previous pump rate and adjust according to the platelet trend.",
-            "explanation": "Platelets do not guide therapeutic titration."
-          },
-          {
-            "id": "D",
-            "text": "Change the pump rate based on visible bleeding without checking the order.",
-            "explanation": "Escalate bleeding and follow authorized instructions rather than improvising a rate."
-          }
-        ]
+        "point": "Calculate infusion delivery from the verified preparation and prescribed rate or duration.",
+        "explanation": "1,200 units/hour ÷ 100 units/mL = 12 mL/hour. The old rate of 24 mL/hour would deliver twice the intended dose from the new bag."
       }
     },
     "ccu-heparin-ufh::lmwh_route": {
@@ -3170,6 +3149,86 @@
           }
         ]
       }
+    },
+    "ccu-norepinephrine::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "Training case: An authorized norepinephrine infusion supplies 6 micrograms/min. The verified bag concentration is 16 micrograms/mL. What pump rate delivers the order? Enter mL/hour.",
+        "answer": 22.5,
+        "unit": "mL/hour",
+        "tolerance": 0,
+        "criticalForSafety": true,
+        "point": "Calculate infusion delivery from the verified preparation and prescribed rate or duration.",
+        "explanation": "6 × 60 = 360 micrograms/hour. Divide 360 by 16 micrograms/mL."
+      }
+    },
+    "ccu-dobutamine::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "Training case: A dobutamine pump runs at 18 mL/hour from a verified bag containing 2 mg/mL. How many milligrams per hour is the pump delivering?",
+        "answer": 36,
+        "unit": "mg/hour",
+        "tolerance": 0,
+        "criticalForSafety": true,
+        "point": "Calculate infusion delivery from the verified preparation and prescribed rate or duration.",
+        "explanation": "18 mL/hour × 2 mg/mL = 36 mg/hour. This is the delivered amount, not a recommended dose."
+      }
+    },
+    "ccu-dopamine::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "Training case: The authorized dopamine dose is 5 micrograms/kg/min for a 64 kg patient. The verified bag contains 1,600 micrograms/mL. What pump rate delivers the order? Enter mL/hour.",
+        "answer": 12,
+        "unit": "mL/hour",
+        "tolerance": 0,
+        "criticalForSafety": true,
+        "point": "Calculate infusion delivery from the verified preparation and prescribed rate or duration.",
+        "explanation": "5 × 64 × 60 = 19,200 micrograms/hour. Divide by 1,600 micrograms/mL."
+      }
+    },
+    "trolley-amiodarone::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "Training case: A clinician orders amiodarone 1 mg/min for a perfusing rhythm. The prepared bag contains 1.8 mg/mL. How many milligrams should the patient receive in 30 minutes if the rate is maintained?",
+        "answer": 30,
+        "unit": "mg",
+        "tolerance": 0,
+        "criticalForSafety": true,
+        "point": "Calculate infusion delivery from the verified preparation and prescribed rate or duration.",
+        "explanation": "1 mg/min × 30 min = 30 mg. The bag concentration is used for the pump setting, not for calculating a timed dose once mg/min is known."
+      }
+    },
+    "trolley-magnesium-sulfate::infusion_precision": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "Training case: The ordered IV magnesium sulfate replacement is 2 g in a final volume of 100 mL over 2 hours. What pump rate delivers that final bag over the ordered time?",
+        "answer": 50,
+        "unit": "mL/hour",
+        "tolerance": 0,
+        "criticalForSafety": true,
+        "point": "Calculate infusion delivery from the verified preparation and prescribed rate or duration.",
+        "explanation": "100 mL ÷ 2 hours = 50 mL/hour. Use the final diluted volume and the prescribed duration."
+      }
     }
   },
   "evidenceChecks": [
@@ -3212,13 +3271,15 @@
     "trolley-spironolactone": "beta-mra-review-20261115",
     "ccu-adenosine": "acute-completed-20261115",
     "ccu-atropine": "acute-completed-20261115",
-    "ccu-heparin-ufh": "ufh-preparation-calculation-20261115",
-    "ccu-norepinephrine": "vasoactive-coverage-20261111",
-    "ccu-dobutamine": "vasoactive-coverage-20261111",
-    "ccu-dopamine": "vasoactive-coverage-20261111",
+    "ccu-heparin-ufh": "infusion-calculations-20261115",
+    "ccu-norepinephrine": "infusion-calculations-20261115",
+    "ccu-dobutamine": "infusion-calculations-20261115",
+    "ccu-dopamine": "infusion-calculations-20261115",
     "ccu-warfarin-coumadin": "antithrombotic-coverage-20261111",
     "ccu-enoxaparin": "antithrombotic-coverage-20261111",
-    "ccu-clopidogrel": "antithrombotic-coverage-20261111"
+    "ccu-clopidogrel": "antithrombotic-coverage-20261111",
+    "trolley-amiodarone": "infusion-calculations-20261115",
+    "trolley-magnesium-sulfate": "infusion-calculations-20261115"
   },
   "correctionRevisions": {
     "ccu-verapamil": "gaza-administration-reference-20261109",
@@ -3232,12 +3293,14 @@
     "ccu-metoprolol": "beta-mra-review-20261115",
     "ccu-adenosine": "acute-completed-20261115",
     "ccu-atropine": "acute-completed-20261115",
-    "ccu-heparin-ufh": "ufh-preparation-calculation-20261115",
-    "ccu-norepinephrine": "vasoactive-infusion-20261111",
-    "ccu-dobutamine": "vasoactive-infusion-20261111",
-    "ccu-dopamine": "vasoactive-infusion-20261111",
+    "ccu-heparin-ufh": "infusion-calculations-20261115",
+    "ccu-norepinephrine": "infusion-calculations-20261115",
+    "ccu-dobutamine": "infusion-calculations-20261115",
+    "ccu-dopamine": "infusion-calculations-20261115",
     "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
     "ccu-enoxaparin": "antithrombotic-clinical-20261111",
-    "ccu-clopidogrel": "antithrombotic-clinical-20261111"
+    "ccu-clopidogrel": "antithrombotic-clinical-20261111",
+    "trolley-amiodarone": "infusion-calculations-20261115",
+    "trolley-magnesium-sulfate": "infusion-calculations-20261115"
   }
 }
