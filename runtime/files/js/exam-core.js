@@ -11,7 +11,7 @@
   function empty(){return {version:1,items:{},active:null}}
   function item(state,id){
     if(!validId(id))throw Error('Invalid material ID');
-    if(!Object.prototype.hasOwnProperty.call(state.items,id))state.items[id]={attempts:[],reads:[],readingAfter:null,pendingSafety:[],due:null};
+    if(!Object.prototype.hasOwnProperty.call(state.items,id))state.items[id]={attempts:[],reads:[],readingAfter:null,due:null};
     return state.items[id];
   }
   function normalize(input){
@@ -25,12 +25,19 @@
       out.readingAfter=finite(old.readingAfter)?old.readingAfter:null;
       if(old.standardForm?.stage==='standard'&&Array.isArray(old.standardForm.questions)&&old.standardForm.questions.length){out.standardForm=clone(old.standardForm);out.standardSourceKey=String(old.standardSourceKey||'');out.standardBankVersion=old.standardBankVersion}
       if(old.comprehensiveForm?.model===MODEL&&Array.isArray(old.comprehensiveForm.questions)&&old.comprehensiveForm.questions.length){out.comprehensiveForm=clone(old.comprehensiveForm);out.comprehensiveSourceKey=String(old.comprehensiveSourceKey||'');out.comprehensiveBankVersion=old.comprehensiveBankVersion;}
-      out.pendingSafety=(Array.isArray(old.pendingSafety)?old.pendingSafety:[]).filter(p=>p&&validId(p.attemptId)&&p.question&&validId(p.question.id)&&out.attempts.some(a=>a.id===p.attemptId)).map(clone);
       if(old.due&&['comprehensive','7-day','21-day'].includes(old.due.stage)&&finite(old.due.at))out.due={stage:old.due.stage,at:old.due.at,...(old.due.model===MODEL?{model:MODEL}:{})};
+      // Older saves could record a passing score while withholding completion.
+      // Backdate completion to submission and preserve any newer stage schedule.
+      const latest=out.attempts.at(-1);
+      for(const attempt of out.attempts){
+        if(!attempt.passed||attempt.completedAt!==null)continue;
+        if(attempt===latest&&(!out.due||out.due.stage===attempt.stage))complete(out,attempt,attempt.finishedAt);
+        else attempt.completedAt=attempt.finishedAt;
+      }
     }
     const a=input.active;
     if(a&&validId(a.itemId)&&a.form&&Array.isArray(a.form.questions)&&a.form.questions.length&&stages.includes(a.form.stage)&&finite(a.startedAt)&&(!a.deadline||finite(a.deadline))){
-      state.active=clone(a);state.active.answers=a.answers&&typeof a.answers==='object'?clone(a.answers):{};
+      state.active=clone(a);delete state.active.followups;state.active.answers=a.answers&&typeof a.answers==='object'?clone(a.answers):{};
       state.active.unsure=a.unsure&&typeof a.unsure==='object'?clone(a.unsure):{};
       state.active.shown=Array.isArray(a.shown)?a.shown.filter(validId):[];
       state.active.index=Math.max(0,Math.min(a.form.questions.length-1,Number.isInteger(a.index)?a.index:0));
@@ -66,7 +73,6 @@
     if(state.active)return {ok:false,reason:'An exam is already in progress.'};
     if(model===MODEL||stage==='comprehensive'){
       if(!['comprehensive','7-day','21-day'].includes(stage))return {ok:false,reason:'Choose the comprehensive exam.'};
-      if(record.pendingSafety.length)return {ok:false,reason:'Complete the separate safety follow-up check first.'};
       if(record.due){
         if(record.due.stage!==stage)return {ok:false,reason:'Complete the current scheduled stage first.'};
         if(now<record.due.at)return {ok:false,reason:'This exam is not due.',unlockAt:record.due.at};
@@ -79,7 +85,6 @@
       if(latest&&!latest.passed&&now<latest.finishedAt+DAY)return {ok:false,reason:'Advanced exam locked for 24 hours after a failed attempt.',unlockAt:latest.finishedAt+DAY};
     }
     if(readingRemaining(record,sections).length)return {ok:false,reason:'Mark every section as read again before another attempt.'};
-    if(record.pendingSafety.length)return {ok:false,reason:'Complete the separate safety follow-up check first.'};
     if(stage==='advanced'&&!record.attempts.some(a=>a.stage==='standard'&&a.passed&&a.completedAt))return {ok:false,reason:'Pass the standard exam with at least 90% first.'};
     if(['7-day','21-day'].includes(stage)&&(!record.due||record.due.stage!==stage||record.due.at>now))return {ok:false,reason:'This exam is not due.'};
     return {ok:true};
@@ -121,20 +126,12 @@
       }
       else{record.standardForm=clone(form);record.standardSourceKey=sourceKey;record.standardBankVersion=bank.bankVersion}
     }
-    const followups={};
-    for(const q of form.questions.filter(q=>q.criticalForSafety)){
-      // A corrected drug-specific item must not fall back to the superseded
-      // generic template during a safety check.
-      if(q.revision)continue;
-      const alternate=[...bank.exams,...(bank.legacyExams||[])].flatMap(e=>e.questions).find(other=>other.id!==q.id&&other.learningPointIds.some(p=>q.learningPointIds.includes(p)));
-      if(alternate)followups[q.id]=clone(alternate);
-    }
-    state.active={itemId:bank.itemId,bankVersion:formBankVersion,form:clone(form),followups,startedAt:now,
+    state.active={itemId:bank.itemId,bankVersion:formBankVersion,form:clone(form),startedAt:now,
       deadline:stage==='advanced'?now+form.questions.length*90000:null,answers:{},unsure:{},shown:[],index:0};
     return state.active;
   }
   function complete(record,attempt,now){
-    if(!attempt.passed||attempt.completedAt)return;
+    if(!attempt.passed||attempt.completedAt!==null)return;
     attempt.completedAt=now;
     if(attempt.model===MODEL){
       if(attempt.stage==='comprehensive')record.due={stage:'7-day',at:now+7*DAY,model:MODEL};
@@ -157,21 +154,11 @@
     if(result.below65&&!modern(active.form))record.readingAfter=now;
     if(modern(active.form)){record.readingAfter=null;if(!attempt.passed)record.due={stage:attempt.stage,at:now+3*DAY,model:MODEL};}
     if(!modern(active.form)&&['7-day','21-day'].includes(attempt.stage)&&!attempt.passed)record.due={stage:attempt.stage,at:now+7*DAY};
-    for(const qid of result.safetyMisses)record.pendingSafety.push({attemptId:attempt.id,question:clone(active.followups?.[qid]||active.form.questions.find(q=>q.id===qid))});
-    if(!result.safetyMisses.length)complete(record,attempt,now);
+    complete(record,attempt,now);
     state.active=null;
     return {attempt,form:active.form,result};
   }
-  function safetyCheck(state,id,answers,now){
-    const record=item(state,id),checks=record.pendingSafety.map(p=>({questionId:p.question.id,correct:isCorrect(p.question,answers[p.question.id])}));
-    const passed=new Set(checks.filter(r=>r.correct).map(r=>r.questionId));
-    record.pendingSafety=record.pendingSafety.filter(p=>!passed.has(p.question.id));
-    for(const attempt of record.attempts){
-      if(!record.pendingSafety.some(p=>p.attemptId===attempt.id)&&attempt.safetyMisses.length&&!attempt.safetyCheckedAt){attempt.safetyCheckedAt=now;complete(record,attempt,now)}
-    }
-    return checks;
-  }
-  const api={DAY,MODEL,allowedErrors,empty,item,normalize,isCorrect,grade,readingRemaining,eligible,start,submit,safetyCheck};
+  const api={DAY,MODEL,allowedErrors,empty,item,normalize,isCorrect,grade,readingRemaining,eligible,start,submit};
   if(typeof module==='object'&&module.exports)module.exports=api;
   else root.CoreNursingExamCore=api;
 })(typeof window==='object'?window:globalThis);

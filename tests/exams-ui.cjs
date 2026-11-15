@@ -163,11 +163,10 @@ for(const stage of ['7-day','21-day']){
  if(stage==='7-day'){assert.equal(r.due.stage,'21-day');assert.equal(r.due.at-r.attempts.at(-1).completedAt,21*86400000)}else assert.equal(r.due,null);
  w.close();
 }
-// Failed attempt is a three-day retry and never forces re-reading; safety checks remain separate.
+// Failed attempt is a three-day retry and never forces re-reading.
 w=boot();d=w.document;w.CoreNursingExams.launch('heparin');answerAll(w,false);w.CoreNursingExams.submit();saved=state(w);r=saved.exams.items['ccu-heparin-ufh'];
 assert(!r.attempts[0].passed);assert.equal(r.due.stage,'comprehensive');assert.equal(r.due.at-r.attempts[0].finishedAt,3*86400000);assert.equal(r.readingAfter,null);
 assert.equal(d.querySelectorAll('.exam-feedback').length,r.attempts[0].total);
-w.CoreNursingExams.safety();for(const p of r.pendingSafety){const q=p.question;w.CoreNursingExams.followupAnswer(q.id,q.answerKey??q.answer??q.acceptedAnswers?.[0])}w.CoreNursingExams.submitSafety();
 w.CoreNursingExams.start('comprehensive');assert.equal(state(w).exams.active,null,'Retry locked until due');
 // Backups and old results are preserved without conversion into comprehensive passes.
 let exported;w.CoreNursingAndroid={saveBackup:s=>exported=s};w.exportProgress();
