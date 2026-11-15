@@ -2544,30 +2544,30 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "A post-PCI patient taking clopidogrel needs a PPI. Omeprazole is ordered 12 hours apart from clopidogrel. What change should the nurse discuss with the prescriber?",
+        "stem": "A post-PCI patient taking clopidogrel needs a PPI. Omeprazole is proposed 12 hours after clopidogrel. Which plan preserves the PPI indication while minimizing this interaction?",
         "choices": [
           {
-            "text": "Use a suitable alternative such as pantoprazole instead of relying on the separation.",
-            "explanation": "Clopidogrel’s activity can be reduced even when omeprazole is taken 12 hours apart.",
+            "text": "Discuss pantoprazole instead of the staggered omeprazole",
+            "explanation": "Pantoprazole has less effect on clopidogrel’s antiplatelet activity than omeprazole or esomeprazole.",
             "id": "A"
           },
           {
-            "text": "Continue omeprazole at the separated time to preserve clopidogrel activation.",
-            "explanation": "Twelve-hour separation does not prevent the interaction.",
+            "text": "Keep omeprazole and retain the 12-hour separation",
+            "explanation": "The label reports an interaction even when omeprazole is separated by 12 hours.",
             "id": "B"
           },
           {
-            "text": "Use esomeprazole at the separated time to preserve clopidogrel activation.",
-            "explanation": "Esomeprazole also reduces clopidogrel activation.",
+            "text": "Use esomeprazole and retain the 12-hour separation",
+            "explanation": "Esomeprazole also reduces antiplatelet activity and should be avoided with clopidogrel.",
             "id": "C"
           },
           {
-            "text": "Continue omeprazole and request an INR to measure clopidogrel response.",
-            "explanation": "INR does not measure clopidogrel’s antiplatelet effect.",
+            "text": "Keep omeprazole and move it to the same time as clopidogrel",
+            "explanation": "Taking them together does not avoid the interaction.",
             "id": "D"
           }
         ],
-        "point": "Spacing omeprazole does not reliably prevent the interaction. Review a less interacting PPI if indicated.",
+        "point": "Distinguish pantoprazole from omeprazole or esomeprazole, including staggered dosing.",
         "criticalForSafety": true,
         "answerKey": "A"
       }
@@ -2684,30 +2684,30 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "Ten days after coronary stenting, a patient taking clopidogrel reports a black tarry stool and feels faint. What is the priority?",
+        "stem": "Ten days after coronary stenting, a patient taking clopidogrel has a new black tarry stool, presyncope and a falling blood pressure. Which assessment should be escalated first?",
         "choices": [
           {
-            "text": "Assess hemodynamic status urgently and alert the team about possible GI bleeding and recent PCI.",
-            "explanation": "Both the potential bleeding and recent stent affect urgent management and the antiplatelet plan.",
+            "text": "Possible gastrointestinal bleeding with circulatory compromise after recent PCI",
+            "explanation": "Melena with presyncope and falling BP needs urgent evaluation. Report the recent PCI and antiplatelet treatment so the team can manage competing bleeding and thrombotic risks.",
             "id": "A"
           },
           {
-            "text": "Withhold clopidogrel for a week and discuss the plan at the next routine review.",
-            "explanation": "Potential bleeding requires immediate assessment. Prolonged interruption after recent stenting also carries thrombotic risk.",
+            "text": "Stent thrombosis is established by the fall in blood pressure",
+            "explanation": "Stent thrombosis can cause instability, but it does not explain melena. The bleeding pattern needs immediate assessment.",
             "id": "B"
           },
           {
-            "text": "Measure INR and escalate if it is above the therapeutic range.",
-            "explanation": "INR does not measure clopidogrel activity, and concerning symptoms require prompt assessment.",
+            "text": "Benign darkening of the stool with unrelated postural symptoms",
+            "explanation": "Tarry stool with new instability may reflect blood loss. Do not assume benign discoloration.",
             "id": "C"
           },
           {
-            "text": "Replace clopidogrel with aspirin and reassess the stool the next day.",
-            "explanation": "Unilateral substitution is not a safe response to possible significant bleeding or a recent stent.",
+            "text": "Excess antiplatelet activity confirmed by a prolonged INR",
+            "explanation": "INR does not quantify clopidogrel activity, and stabilization and escalation should not depend on INR.",
             "id": "D"
           }
         ],
-        "point": "Assess possible bleeding on clopidogrel and coordinate any interruption after recent PCI.",
+        "point": "Recognize a possible hemodynamically significant gastrointestinal bleed with recent PCI.",
         "criticalForSafety": true,
         "answerKey": "A"
       }
@@ -4120,6 +4120,181 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-clopidogrel::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which antithrombotic class is clopidogrel?",
+        "choices": [
+          {
+            "text": "P2Y12 antiplatelet",
+            "explanation": "Clopidogrel acts on platelet P2Y12 receptors.",
+            "id": "A"
+          },
+          {
+            "text": "COX-1 antiplatelet",
+            "explanation": "Aspirin inhibits platelet COX-1.",
+            "id": "B"
+          },
+          {
+            "text": "Direct factor Xa inhibitor",
+            "explanation": "This is the class of agents such as apixaban.",
+            "id": "C"
+          },
+          {
+            "text": "Vitamin K antagonist",
+            "explanation": "This describes warfarin.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish P2Y12 inhibition from other antithrombotic classes.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-clopidogrel::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After PCI for acute coronary syndrome, the cardiology team selects clopidogrel for dual antiplatelet therapy. Which medication completes this regimen?",
+        "choices": [
+          {
+            "text": "Aspirin",
+            "explanation": "Aspirin and an oral P2Y12 inhibitor are the two components of this regimen.",
+            "id": "A"
+          },
+          {
+            "text": "Ticagrelor",
+            "explanation": "Ticagrelor is a P2Y12 alternative, rather than the other component alongside clopidogrel.",
+            "id": "B"
+          },
+          {
+            "text": "Enoxaparin",
+            "explanation": "Enoxaparin is an anticoagulant and does not supply the second antiplatelet component.",
+            "id": "C"
+          },
+          {
+            "text": "Apixaban",
+            "explanation": "Apixaban is an anticoagulant and does not supply the second antiplatelet component.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify aspirin plus clopidogrel as a DAPT regimen.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-clopidogrel::clopidogrel_loading_order": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After PCI, the medication record confirms that the one-time clopidogrel loading dose was given in the catheterization lab. Which entry correctly continues the prescribed regimen on the ward?",
+        "choices": [
+          {
+            "text": "Give the scheduled oral maintenance dose when due",
+            "explanation": "The documented load is complete. Continue maintenance using the ordered schedule.",
+            "id": "A"
+          },
+          {
+            "text": "Give the oral loading dose again when the first ward dose is due",
+            "explanation": "A move to the ward does not reset a completed loading regimen.",
+            "id": "B"
+          },
+          {
+            "text": "Give the scheduled maintenance dose intravenously when due",
+            "explanation": "Clopidogrel maintenance is given orally. The completed loading dose does not change the route.",
+            "id": "C"
+          },
+          {
+            "text": "Give another loading dose intravenously when the first ward dose is due",
+            "explanation": "Clopidogrel is an oral drug, and the documented loading dose does not need to be repeated.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish the one-time load from ongoing oral maintenance across care transitions.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-clopidogrel::stent_omission": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Five days after drug-eluting coronary stent placement, clopidogrel is absent from the ward orders, with aspirin continued. The patient has no bleeding or chest pain. Which risk makes an unplanned interruption time-sensitive?",
+        "choices": [
+          {
+            "text": "Thrombosis within the recently placed coronary stent",
+            "explanation": "Aspirin supplies a different antiplatelet action and does not automatically replace the prescribed P2Y12 inhibitor. Clarify the omission promptly.",
+            "id": "A"
+          },
+          {
+            "text": "Immediate restenosis from neointimal proliferation",
+            "explanation": "Restenosis is a different, typically later process. The concern after unplanned interruption is acute thrombosis.",
+            "id": "B"
+          },
+          {
+            "text": "Coronary vasospasm caused by withdrawal of a nitrate effect",
+            "explanation": "Clopidogrel does not act as a nitrate vasodilator.",
+            "id": "C"
+          },
+          {
+            "text": "Thrombosis in the leg veins from loss of anticoagulation",
+            "explanation": "The reason for clopidogrel in this scenario is platelet-related coronary protection.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize stent thrombosis risk despite aspirin continuation and absence of symptoms.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-clopidogrel::antithrombotic_combination": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient has orders for aspirin, clopidogrel and heparin after PCI. Which observation pattern most specifically suggests the combined pharmacologic risk requiring prompt assessment?",
+        "choices": [
+          {
+            "text": "Expanding access-site bruising with falling hemoglobin",
+            "explanation": "Antiplatelet and anticoagulant effects can combine and increase the risk of bleeding.",
+            "id": "A"
+          },
+          {
+            "text": "New focal calf swelling with stable hemoglobin",
+            "explanation": "This can suggest a venous problem but is not the pattern of additive bleeding sought here.",
+            "id": "B"
+          },
+          {
+            "text": "New chest discomfort with dynamic ST changes",
+            "explanation": "This may indicate ischemia and needs urgent review, but it does not specifically suggest additive bleeding.",
+            "id": "C"
+          },
+          {
+            "text": "Increasing creatinine with a stable access site and hemoglobin",
+            "explanation": "Renal function matters but this does not specifically indicate bleeding from combined antithrombotic therapy.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize additive bleeding risk across antithrombotic classes.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -4190,7 +4365,7 @@
     "ccu-dopamine": "dopamine-source-review-20261115",
     "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
     "ccu-enoxaparin": "antithrombotic-clinical-20261111",
-    "ccu-clopidogrel": "antithrombotic-clinical-20261111",
+    "ccu-clopidogrel": "clopidogrel-source-review-20261115",
     "trolley-amiodarone": "infusion-calculations-20261115",
     "trolley-magnesium-sulfate": "infusion-calculations-20261115"
   }
