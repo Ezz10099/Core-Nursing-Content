@@ -9320,5 +9320,61 @@
       ],
       "correct": 0
     }
+  },
+  "warfarin_bridge_start": {
+    "point": "Start a VKA with therapeutic UFH or LMWH within 24 hours or as soon as safe.",
+    "anchor": "within 24 hours or as soon as considered safe",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "After mechanical-valve implantation, the team considers postoperative hemostasis adequate for anticoagulation at 18 hours. Which initiation plan matches the ESC/EACTS pathway?",
+      "choices": [
+        {
+          "text": "Begin the VKA together with therapeutic UFH or LMWH now",
+          "explanation": "The pathway recommends both within 24 hours or as soon as considered safe."
+        },
+        {
+          "text": "Begin the VKA now and add therapeutic heparin only once INR is in range",
+          "explanation": "The bridge covers the interval before a stable therapeutic INR. Waiting defeats that purpose."
+        },
+        {
+          "text": "Begin the VKA and prophylactic-dose heparin now",
+          "explanation": "The mechanical-valve bridge uses therapeutic anticoagulation when safe."
+        },
+        {
+          "text": "Begin therapeutic heparin now and postpone the VKA for a fixed week",
+          "explanation": "Postpone only if clinically needed. The pathway starts the VKA with the bridge within the safe window."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "warfarin_occult_bleeding": {
+    "point": "Recognize urinary or gastrointestinal blood as a red flag with hypotension.",
+    "anchor": "blood in urine or stool",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient taking warfarin has a new drop in blood pressure. Which additional finding most directly supports bleeding as a contributor?",
+      "choices": [
+        {
+          "text": "New melena or red urine",
+          "explanation": "These can reflect gastrointestinal or urinary bleeding. New hypotension increases urgency."
+        },
+        {
+          "text": "New polyuria with clear urine",
+          "explanation": "A fluid loss may contribute to hypotension, but clear polyuria does not specifically point to hemorrhage."
+        },
+        {
+          "text": "New fever and rigors without a change in stool or urine",
+          "explanation": "This pattern may point toward infection rather than specifically toward bleeding."
+        },
+        {
+          "text": "New slow pulse after an AV-nodal blocker without a change in stool or urine",
+          "explanation": "This could support a medication-related hemodynamic effect. It does not specifically support bleeding."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

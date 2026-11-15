@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-warfarin-coumadin",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.who.int/publications/m/item/occupied-palestinian-territory--essential-medicine-list-2024-(english)",
+      "section": "Palestinian EML 2024 M-112-1010",
+      "scope": "Lists the 5-mg tablet."
+    },
+    {
+      "url": "https://academic.oup.com/eurheartj/article/46/44/4635/8234488",
+      "section": "2025 ESC/EACTS valvular heart disease guideline, mechanical heart valves",
+      "scope": "Lifelong VKA, target individualization, postoperative therapeutic heparin with VKA, and two consecutive therapeutic INR days. Distinguish implantation from elective interruption and other bridging indications."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b227c9e-02e9-4ec9-8b11-3ab6fe5093e5",
+      "section": "Warfarin label §§1, 2, 5, 7, 10, 12 and Medication Guide",
+      "scope": "Oral use, INR, bleeding, dietary and medication interaction, vitamin K reversal, VKORC1-dependent factors, proteins C/S, and usual onset and peak."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16532615/",
+      "section": "Primary mechanical heart valve flow model",
+      "scope": "Shows coagulation activation and thrombus formation at certain simulated mechanical-valve leakage geometries."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Vitamin K antagonist",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--drug-class",
+          "sha256": "6bba131ecf284d602f106de15a67de60c570ce3d13f8f4d64d9711000cf6eba1"
+        }
+      ],
+      "rationale": "Identify the anticoagulant class."
+    },
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "oral anticoagulant",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--treatment-role",
+          "sha256": "27362e8263d70233bc37a728fa679c03c6908a4d553b4f402d7a9905081a04d3"
+        }
+      ],
+      "rationale": "Choose the oral anticoagulant appropriate for mechanical-valve maintenance."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Inhibits VKORC1, reducing regeneration of vitamin K and therefore synthesis of vitamin-K-dependent clotting factors II, VII, IX and X (and proteins C and S).",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--principal-action",
+          "sha256": "e265c4e30ad37c8da59b708fc4a90378bd75c360d76cac85ece4731a83bd08c2"
+        }
+      ],
+      "rationale": "Recall the affected factors and proteins C and S following VKORC1 inhibition."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Long-term oral anticoagulation for selected thromboembolic indications. A key CCU example is a patient with a mechanical prosthetic heart valve, including mechanical aortic valve replacement.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--treatment-role",
+          "sha256": "27362e8263d70233bc37a728fa679c03c6908a4d553b4f402d7a9905081a04d3"
+        }
+      ],
+      "rationale": "Select long-term oral VKA anticoagulation for a mechanical aortic prosthesis."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Give orally as ordered.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--treatment-role",
+          "sha256": "27362e8263d70233bc37a728fa679c03c6908a4d553b4f402d7a9905081a04d3"
+        }
+      ],
+      "rationale": "Select prescribed oral VKA maintenance rather than injectable anticoagulant substitution."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Compare INR with the individual target",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_inr"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_inr",
+          "sha256": "d742028c966539dd076bd0ef0b890fd7603abaa03641d1c695cbc266dd5980df"
+        }
+      ],
+      "rationale": "Identify INR as the measure of warfarin effect during transition from UFH."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "which depends on valve type, position and thromboembolic risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::mechanical_valve"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--mechanical_valve",
+          "sha256": "fd6721f79f06ff5f92d18344e3cf1b7898e9f6d6e191b90f264a241f773896b2"
+        }
+      ],
+      "rationale": "Identify all three determinants of the target."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "starting therapeutic UFH or LMWH together with a VKA within 24 hours or as soon as considered safe",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_bridge_start"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_bridge_start",
+          "sha256": "ccfb19f7f54267fade74e04f48e271b1aac46049ccf9ef139e82bcc8e9541fb5"
+        }
+      ],
+      "rationale": "Choose the recommended postoperative timing and therapeutic bridge."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "stop the bridge after two consecutive days of INR in range",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_bridge_stop"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_bridge_stop",
+          "sha256": "54c852b187058e2fa698180f347c77eb0d62d7f62c5ee5e9acacb61623aed41c"
+        }
+      ],
+      "rationale": "Identify two consecutive therapeutic INR days as the ESC/EACTS stopping criterion."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check INR and the prescribed target.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_inr"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_inr",
+          "sha256": "d742028c966539dd076bd0ef0b890fd7603abaa03641d1c695cbc266dd5980df"
+        }
+      ],
+      "rationale": "Use INR, rather than heparin or bleeding markers, to follow warfarin intensity."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "blood in urine or stool",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_occult_bleeding"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_occult_bleeding",
+          "sha256": "18ab6669a9e50cf6d9586b88c5143b3c461e08f1b4427e410c3a340845324b2b"
+        }
+      ],
+      "rationale": "Identify hematuria or melena accompanying otherwise unexplained hypotension."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "new neurological symptoms",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::bleeding"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--bleeding",
+          "sha256": "ec55499bbe38a92b87292405883ca657a26aea800aac92e441560b62eb66867e"
+        }
+      ],
+      "rationale": "Activate urgent stroke assessment and communicate anticoagulation despite a previously therapeutic INR."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check new medicines, including antibiotics, and report illness or major diet changes that may alter INR.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_interactions"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_interactions",
+          "sha256": "81322e4b7828c9a5c7ac64aedd9db9d5bb318bbc10ba2123ee79e7374fd4f069"
+        }
+      ],
+      "rationale": "Connect an antibiotic and acute illness with earlier INR and bleeding assessment. The diet-change decision is scored separately."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Keep dietary vitamin K intake consistent.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_vitamin_k_consistency"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_vitamin_k_consistency",
+          "sha256": "d922d6e48cc2dfc7c753988ff3b67277aed505b3641184ebcfc747897a9a4c5c"
+        }
+      ],
+      "rationale": "Choose consistent intake and coordinate major changes."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Effect generally starts within 24 hours, with peak effect delayed 72–96 hours. Stable therapeutic INR can take longer.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_delay"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_delay",
+          "sha256": "026c46824b61cf80ba6327ccc3513318e56106fd681557ee3775c2595b6a6c5d"
+        }
+      ],
+      "rationale": "Distinguish usual onset and single-dose peak. Sustained therapeutic INR is separately assessed by the bridge-stop question."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Vitamin K can be used for reversal, with treatment determined by bleeding severity, INR and protocol.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::warfarin_reversal"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--warfarin_reversal",
+          "sha256": "a46b7f26339ded38b97aeb667a7019bb1ed8e981f4a21685165a7f69ade39283"
+        }
+      ],
+      "rationale": "Select vitamin K’s role in hepatic factor production and distinguish it from immediate factor replacement. The specific emergency regimen depends on indication and protocol."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Mechanical valves are thrombogenic because blood contacts an artificial non-endothelial surface and experiences disturbed flow",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-warfarin-coumadin::valve_thrombosis"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-warfarin-coumadin--comprehensive--valve_thrombosis",
+          "sha256": "fbd9aeb0ffeffa0e415412cafe76596d33ec530f097570f900ccd48f1e72e8bf"
+        }
+      ],
+      "rationale": "Connect both surface and flow characteristics with thrombus and embolic risk."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Warfarin inhibits vitamin-K recycling, reducing synthesis of vitamin-K-dependent clotting factors II, VII, IX and X.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats the mechanism question."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "The Palestinian Essential Medicine List (2024) includes 5-mg warfarin tablets. Coumadin/warfarin was reported in Nasser Medical Complex CCU. Confirm the actual tablet strength and current stock.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Palestinian formulary and local ward report do not verify current stock."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Coumadin = warfarin = VKA; long-term anticoagulation for mechanical valves and other selected indications.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats class and treatment role."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Main danger = bleeding. Monitor INR and never assume one INR target fits every mechanical valve.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats bleeding, monitoring and individualized INR targets."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "d5ab4019e440ff5620a0cc1895462aee0aff69cb1ec10393322aa85faff93318",
+    "mechanism": "cb2ebc64244cec7520a0d9c0249768fcbff9b1d8e0000556b187ad987ecf61d1",
+    "use": "dffbfeb626e2fda350c69e849e89b7532fe17093a1e5f5e2e06a3d2b1f5223dd",
+    "administration": "981ecb165ad4569d47faf3d371f249d8b9a41a6d1a6f231a1b4df4f6bacd23e8",
+    "monitor": "304364309666ffab4d66cd15154e905ad83ee11ab54eb763f78da38732b7499b",
+    "why": "cff7a468acc5301ca9835f68104c339bcf1a21b055679e2fe1d56d963ccb6779",
+    "availability": "75cad278edf9f60942b8a1912624fb12ef9ed3a2edf9ead6ed96a42d807cf33e",
+    "memoryUse": "40169d0d9ee267135c67a58394f677f992bfc003c2bb81c0061b065b23086849",
+    "memoryDanger": "8049d0f9d244e0e04786deb98a9b9cdd89eaecbae7100cb81df7651f0183e546"
+  },
+  "questionSetSha256": "559c7584a00b733bba47c828a912895a7bdaf8e266820bbeeb65d67450162de5",
+  "questionReview": {
+    "ccu-warfarin-coumadin--comprehensive--principal-action": "Recall the affected factors and proteins C and S following VKORC1 inhibition.",
+    "ccu-warfarin-coumadin--comprehensive--drug-class": "Identify the anticoagulant class.",
+    "ccu-warfarin-coumadin--comprehensive--treatment-role": "Choose the oral anticoagulant appropriate for mechanical-valve maintenance.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_inr": "Identify INR as the measure of warfarin effect during transition from UFH.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_reversal": "Select vitamin K’s role in hepatic factor production and distinguish it from immediate factor replacement. The specific emergency regimen depends on indication and protocol.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_bridge_stop": "Identify two consecutive therapeutic INR days as the ESC/EACTS stopping criterion.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_vitamin_k_consistency": "Choose consistent intake and coordinate major changes.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_bridge_start": "Choose the recommended postoperative timing and therapeutic bridge.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_occult_bleeding": "Identify hematuria or melena accompanying otherwise unexplained hypotension.",
+    "ccu-warfarin-coumadin--comprehensive--bleeding": "Activate urgent stroke assessment and communicate anticoagulation despite a previously therapeutic INR.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_delay": "Distinguish usual onset and single-dose peak. Sustained therapeutic INR is separately assessed by the bridge-stop question.",
+    "ccu-warfarin-coumadin--comprehensive--warfarin_interactions": "Connect an antibiotic and acute illness with earlier INR and bleeding assessment. The diet-change decision is scored separately.",
+    "ccu-warfarin-coumadin--comprehensive--mechanical_valve": "Identify all three determinants of the target.",
+    "ccu-warfarin-coumadin--comprehensive--valve_thrombosis": "Connect both surface and flow characteristics with thrombus and embolic risk."
+  }
+}
