@@ -4750,6 +4750,286 @@
         "criticalForSafety": false,
         "answerKey": "A"
       }
+    },
+    "ccu-aspirin::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which paired platelet effect explains low-dose aspirin’s action?",
+        "choices": [
+          {
+            "text": "Irreversible COX-1 inhibition reduces thromboxane A2",
+            "explanation": "Aspirin acetylates platelet COX-1 and reduces thromboxane-mediated aggregation.",
+            "id": "A"
+          },
+          {
+            "text": "Reversible COX-1 inhibition reduces thromboxane A2",
+            "explanation": "Aspirin irreversibly acetylates the platelet enzyme.",
+            "id": "B"
+          },
+          {
+            "text": "Irreversible P2Y12 inhibition blocks ADP-mediated activation",
+            "explanation": "This describes thienopyridines such as clopidogrel.",
+            "id": "C"
+          },
+          {
+            "text": "Reversible P2Y12 inhibition blocks ADP-mediated activation",
+            "explanation": "This describes an agent such as ticagrelor.",
+            "id": "D"
+          }
+        ],
+        "point": "Link irreversible platelet COX-1 inhibition to reduced thromboxane A2.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "In secondary coronary prevention, what is the treatment class of low-dose aspirin?",
+        "choices": [
+          {
+            "text": "Antiplatelet",
+            "explanation": "It reduces platelet aggregation.",
+            "id": "A"
+          },
+          {
+            "text": "Indirect factor Xa anticoagulant",
+            "explanation": "LMWH enhances antithrombin-mediated inhibition. Aspirin acts on platelets.",
+            "id": "B"
+          },
+          {
+            "text": "Vitamin K antagonist",
+            "explanation": "Warfarin reduces formation of functional vitamin K-dependent clotting factors.",
+            "id": "C"
+          },
+          {
+            "text": "Fibrinolytic",
+            "explanation": "Fibrinolytics break down fibrin. Aspirin does not lyse an existing thrombus.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize low-dose aspirin as an antiplatelet.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult takes low-dose aspirin for secondary coronary prevention. Which expectation correctly distinguishes this dosing from higher-dose aspirin products?",
+        "choices": [
+          {
+            "text": "The low dose targets platelets; higher doses may be used for pain, fever or inflammation",
+            "explanation": "The active drug is the same. Indication and product determine the dose.",
+            "id": "A"
+          },
+          {
+            "text": "The low dose is intended for pain or fever; platelet inhibition requires a higher dose",
+            "explanation": "Low-dose aspirin is effective for antiplatelet treatment.",
+            "id": "B"
+          },
+          {
+            "text": "The low dose is intended to reduce systemic inflammation; higher doses are used only for platelet inhibition",
+            "explanation": "Systemic anti-inflammatory treatment requires a different dosage approach.",
+            "id": "C"
+          },
+          {
+            "text": "The low dose is intended to break down coronary clots; higher doses replace anticoagulants",
+            "explanation": "Aspirin inhibits platelets. It is neither a fibrinolytic nor a replacement for indicated anticoagulation.",
+            "id": "D"
+          }
+        ],
+        "point": "Compare antiplatelet use with product-specific analgesic, antipyretic and anti-inflammatory uses.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::aspirin_identity": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult’s long-term medication history lists “baby aspirin” with no strength recorded. What dosage description is the patient most likely referring to?",
+        "choices": [
+          {
+            "text": "Standard aspirin in a low-dose tablet, typically 75–100 mg",
+            "explanation": "The nickname describes low-dose aspirin, not a pediatric indication. Verify the actual label and order.",
+            "id": "A"
+          },
+          {
+            "text": "Standard aspirin in a 150–200 mg tablet intended for routine maintenance",
+            "explanation": "This is above the usual low-dose range taught here.",
+            "id": "B"
+          },
+          {
+            "text": "Standard aspirin in a 300–325 mg tablet intended for routine maintenance",
+            "explanation": "This is a higher-strength product and is not what the nickname usually means.",
+            "id": "C"
+          },
+          {
+            "text": "A weight-based pediatric aspirin formulation with no usual tablet strength",
+            "explanation": "The nickname refers to a low-dose adult product rather than establishing a pediatric indication.",
+            "id": "D"
+          }
+        ],
+        "point": "Interpret the colloquial name and recall the typical antiplatelet dose range.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::nsaid_allergy": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which reported reaction most strongly suggests aspirin hypersensitivity requiring review before another dose?",
+        "choices": [
+          {
+            "text": "Wheezing and nasal congestion soon after aspirin",
+            "explanation": "Acute respiratory symptoms after aspirin can indicate aspirin hypersensitivity, including aspirin-exacerbated respiratory disease.",
+            "id": "A"
+          },
+          {
+            "text": "Burning epigastric discomfort after aspirin",
+            "explanation": "Dyspepsia is relevant to tolerability and GI assessment, but does not specifically suggest hypersensitivity.",
+            "id": "B"
+          },
+          {
+            "text": "Black tarry stool during aspirin therapy",
+            "explanation": "This is a possible bleeding sign and requires evaluation, but it is not the hypersensitivity pattern asked for.",
+            "id": "C"
+          },
+          {
+            "text": "Tinnitus after several high doses of aspirin",
+            "explanation": "This can indicate salicylate toxicity, a different mechanism from hypersensitivity.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish a respiratory hypersensitivity pattern from other aspirin adverse effects.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::aspirin_loading": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An oral aspirin loading dose is ordered for adult ACS. The unit has immediate-release nonenteric-coated tablets and extended-release tablets. Which administration plan best meets the rapid loading objective?",
+        "choices": [
+          {
+            "text": "Chew the nonenteric-coated immediate-release tablets",
+            "explanation": "Chewing suitable nonenteric-coated aspirin helps achieve faster onset.",
+            "id": "A"
+          },
+          {
+            "text": "Swallow the nonenteric-coated immediate-release tablets intact when chewing is feasible",
+            "explanation": "Immediate release is suitable, but chewing can speed absorption and platelet inhibition.",
+            "id": "B"
+          },
+          {
+            "text": "Swallow the extended-release tablets intact",
+            "explanation": "Extended release does not serve the rapid loading goal.",
+            "id": "C"
+          },
+          {
+            "text": "Chew the extended-release tablets",
+            "explanation": "Do not substitute an extended-release product for the intended rapid-release loading formulation.",
+            "id": "D"
+          }
+        ],
+        "point": "Choose a suitable rapid-release oral product and chew it when possible.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::bleeding": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An aspirin-treated patient has new black tarry stools, presyncope and a sustained BP fall. Which interpretation best accounts for the combined findings?",
+        "choices": [
+          {
+            "text": "Possible GI hemorrhage with circulatory compromise",
+            "explanation": "The stool appearance and unstable hemodynamics warrant urgent evaluation for blood loss.",
+            "id": "A"
+          },
+          {
+            "text": "Aspirin-related dyspepsia without hemorrhage",
+            "explanation": "Dyspepsia does not adequately explain tarry stool and sustained hypotension.",
+            "id": "B"
+          },
+          {
+            "text": "Benign medication-related stool darkening with isolated orthostasis",
+            "explanation": "Do not assume benign stool discoloration when the patient is becoming hemodynamically unstable.",
+            "id": "C"
+          },
+          {
+            "text": "Salicylate toxicity without hemorrhage",
+            "explanation": "Toxicity can cause other systemic findings, but this combination points more specifically toward blood loss.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize clinically significant GI bleeding rather than isolated intolerance or benign dark stools.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-aspirin::antithrombotic_combination": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient receives aspirin, clopidogrel and heparin after ACS. Which surveillance plan addresses their main additive risk?",
+        "choices": [
+          {
+            "text": "Inspect stool, urine and puncture sites and follow hemoglobin as ordered",
+            "explanation": "Combined platelet inhibition and anticoagulation increase the risk of bleeding at these sites.",
+            "id": "A"
+          },
+          {
+            "text": "Inspect puncture sites and follow platelet count as the only check for occult bleeding",
+            "explanation": "Platelet count does not measure occult blood loss. Check urinary and GI signs as well.",
+            "id": "B"
+          },
+          {
+            "text": "Follow aPTT and inspect skin, using target aPTT to exclude GI bleeding",
+            "explanation": "A therapeutic heparin result does not exclude bleeding or measure aspirin’s effect.",
+            "id": "C"
+          },
+          {
+            "text": "Follow INR as the main measure of the combined aspirin and heparin effect",
+            "explanation": "INR does not quantify the combined effect and cannot substitute for clinical bleeding surveillance.",
+            "id": "D"
+          }
+        ],
+        "point": "Select bleeding surveillance across visible and occult sites for combined antithrombotic therapy.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -4822,6 +5102,7 @@
     "ccu-enoxaparin": "enoxaparin-source-review-20261115",
     "ccu-clopidogrel": "clopidogrel-source-review-20261115",
     "trolley-amiodarone": "infusion-calculations-20261115",
-    "trolley-magnesium-sulfate": "infusion-calculations-20261115"
+    "trolley-magnesium-sulfate": "infusion-calculations-20261115",
+    "ccu-aspirin": "aspirin-source-review-20261115"
   }
 }

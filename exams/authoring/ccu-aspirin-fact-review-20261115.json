@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-aspirin",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.who.int/publications/m/item/occupied-palestinian-territory--essential-medicine-list-2024-(english)",
+      "section": "Palestinian EML 2024 M-129-1005",
+      "scope": "Lists 100-mg tablets in the antiplatelet section."
+    },
+    {
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309",
+      "section": "2025 ACC/AHA multisociety ACS guideline, antiplatelet therapy",
+      "scope": "Nonenteric-coated aspirin chewed when possible for rapid oral loading. Low-dose maintenance is 75–100 mg daily. No fixed loading dose is introduced in this exam."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=503868bb-48e0-b718-e063-6394a90a9c5b&version=1",
+      "section": "Aspirin 325 mg Drug Facts",
+      "scope": "Pain and fever indications, GI bleeding and hypersensitivity warning, and heightened risk with anticoagulants."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7045161/",
+      "section": "Primary platelet thromboxane study",
+      "scope": "Dose dependence and cumulative inhibition of platelet thromboxane after oral aspirin."
+    },
+    {
+      "url": "https://www.medicines.org.uk/emc/product/8627/smpc",
+      "section": "Aspirin 300 SmPC §§4.1, 4.2, and 5.1",
+      "scope": "Product-label evidence for higher-dose analgesic, antipyretic and anti-inflammatory effects. The named product is discontinued and is not an availability claim."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Antiplatelet",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--drug-class",
+          "sha256": "7d7ba578632a753bba7efee73eb8356459a6ca575eb012a3dd9e4953bcaacb9d"
+        }
+      ],
+      "rationale": "Select the pharmacologic role at low dose."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Irreversibly acetylates platelet COX-1, reducing thromboxane A2 and platelet aggregation.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--principal-action",
+          "sha256": "2d3de0ec7fd3e6cb3facb8def6f6c81c7974c32d8f40afe6947e70737a094915"
+        }
+      ],
+      "rationale": "Distinguish irreversible COX-1 inhibition and thromboxane suppression from P2Y12 effects."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "rapid-release formulation is chewed for faster absorption; an extended-release product is not appropriate for rapid loading.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::aspirin_loading"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--aspirin_loading",
+          "sha256": "eed3a0a85be72f144053ba64c4e1c2e5e5a174610b79c748ce1d387fcb3af7fd"
+        }
+      ],
+      "rationale": "Select rapid-release oral aspirin and chew when feasible."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Routine oral preparation is implied by the tablet loading administration question. No distinct route decision is taught outside this context."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::aspirin_identity"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--aspirin_identity",
+          "sha256": "fdbec6551f848c9f87e9f12be6c95126a0a2c141f59027eb5d898a3a023302ea"
+        }
+      ],
+      "rationale": "Recall the adult low-dose range and distinguish the nickname from pediatric instructions."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--treatment-role",
+          "sha256": "1bc908459e6b3cba55189895782401b88f70cb0d8d1d83999bc7d70de080f1ab"
+        }
+      ],
+      "rationale": "Separate low-dose antiplatelet use from higher-dose product-specific indications."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "'Baby aspirin' is NOT a different drug and does not mean it is intended for babies",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::aspirin_identity"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--aspirin_identity",
+          "sha256": "fdbec6551f848c9f87e9f12be6c95126a0a2c141f59027eb5d898a3a023302ea"
+        }
+      ],
+      "rationale": "Identify the same adult drug at a lower dose."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check the exact tablet strength and indication.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Shared medication verification. The formulation and indication distinctions are assessed separately."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check active bleeding, GI-bleeding history",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::aspirin_gi_history"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--aspirin_gi_history",
+          "sha256": "ec781c8bd5dcd60e27379649771e60e6ca23dd65b65baab548082d19f0fcdcd2"
+        }
+      ],
+      "rationale": "Distinguish active and prior GI bleeding from other GI histories."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "aspirin hypersensitivity",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::nsaid_allergy"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--nsaid_allergy",
+          "sha256": "951bccd0f9a1493f79e1da0cd24861e62f32caf2ad04eda8d9cca3bc42cce61d"
+        }
+      ],
+      "rationale": "Identify a respiratory reaction attributable to aspirin."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Inspect stool, urine and puncture sites when combined with other antithrombotics.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::antithrombotic_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--antithrombotic_combination",
+          "sha256": "de08bf3491bce42a7d7444f71ed00af96ab862f571cfa270bf9d17b65fd0f18c"
+        }
+      ],
+      "rationale": "Choose the surveillance plan for combined antithrombotic use."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Aspirin + clopidogrel + heparin/LMWH increases bleeding tendency.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::antithrombotic_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--antithrombotic_combination",
+          "sha256": "de08bf3491bce42a7d7444f71ed00af96ab862f571cfa270bf9d17b65fd0f18c"
+        }
+      ],
+      "rationale": "Recognize the additive hemorrhagic risk and appropriate monitoring."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "increases bleeding risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-aspirin::bleeding"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-aspirin--comprehensive--bleeding",
+          "sha256": "2a9679704774c009f473ee76c8183f8dacab79d22a42640436ec69438237af01"
+        }
+      ],
+      "rationale": "Recognize a clinically significant manifestation of the bleeding risk."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Irreversible platelet inhibition helps prevent thrombosis",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats the mechanism and coronary treatment role."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian MoH currently lists antiplatelet aspirin 100-mg tablets; 81-mg low-dose products are common in some other markets. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Formulary and dated compartment label are provenance. Current product and inventory require verification."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Aspirin = ASA. 'Baby aspirin' = low-dose aspirin, commonly 75–100 mg; same drug, lower dose, mainly antiplatelet.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats dose identity and treatment role."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Do not confuse 'baby aspirin' with pediatric use; check dose/indication and bleeding risk.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats dose identity, safety checks and bleeding."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "51adca8a4c95a5775cdfc298adfe5ab4da4bca49da75ff4e8364b76bad7d6da1",
+    "mechanism": "160464c62a96b11cbef295a5fa23a6456a1b778c836e88d7a0ee3ced168087cd",
+    "use": "8e37b22cc1ec18ff1c0a471525ff7a95619c9ecf88eadacded2bcc10d8b8b5e8",
+    "administration": "5835f36d281abf14a7335afabc2fcfcac34affda1e276821d97cf4ffca798e80",
+    "monitor": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac",
+    "why": "f2feb564c5ec8dfd607d698327063ac2c00b985b6aade3fc934f04e0e151b777",
+    "availability": "3daa44c9a46225e4b1cf38e4861500d88d09df98f59b3f08dbee0c0ea3f88afc",
+    "memoryUse": "c3e0a5c1670a26b25cc0b968b82d8f8f4e598d56b5ba2afe2c8757a5edffe8ce",
+    "memoryDanger": "552106e14eee0ba8cee4f0896122f74c00e3be7cb4856321537607320632e065"
+  },
+  "questionSetSha256": "d72d334a44bd331dbfc6ff319cee9469e8cce638560951c4228cf7acb722d624",
+  "questionReview": {
+    "ccu-aspirin--comprehensive--principal-action": "Distinguish irreversible COX-1 inhibition and thromboxane suppression from P2Y12 effects.",
+    "ccu-aspirin--comprehensive--drug-class": "Select the pharmacologic role at low dose.",
+    "ccu-aspirin--comprehensive--treatment-role": "Separate low-dose antiplatelet use from higher-dose product-specific indications.",
+    "ccu-aspirin--comprehensive--aspirin_identity": "Recall the adult low-dose range and distinguish the nickname from pediatric instructions.",
+    "ccu-aspirin--comprehensive--nsaid_allergy": "Identify a respiratory reaction attributable to aspirin.",
+    "ccu-aspirin--comprehensive--aspirin_gi_history": "Distinguish active and prior GI bleeding from other GI histories.",
+    "ccu-aspirin--comprehensive--bleeding": "Recognize a clinically significant manifestation of the bleeding risk.",
+    "ccu-aspirin--comprehensive--aspirin_loading": "Select rapid-release oral aspirin and chew when feasible.",
+    "ccu-aspirin--comprehensive--antithrombotic_combination": "Choose the surveillance plan for combined antithrombotic use."
+  }
+}
