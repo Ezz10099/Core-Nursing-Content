@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-norepinephrine",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and its scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://site.moh.ps/Content/app/durg.pdf",
+      "section": "Palestinian Essential Medicines List 2022, M-125-0022",
+      "scope": "4-mg ampoule formulary listing."
+    },
+    {
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D8%B9%D8%B7%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA-5.pdf",
+      "section": "Gaza MOH injectable medicines guide, p. 78",
+      "scope": "Continuous IV pump administration. D5W dilution applies to the listed concentrate."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fbd0e3b-703b-412e-8b71-bd0a0dbf4500",
+      "section": "Sections 1, 2, 5.1–5.2 and 12, revised August 2026",
+      "scope": "Indication, product-specific preparation, BP and organ perfusion, extravasation ischemia, taper, alpha and beta actions."
+    },
+    {
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "section": "Vasopressors and peripheral initiation",
+      "scope": "Usual first-line norepinephrine. Either norepinephrine or epinephrine may be considered with concomitant cardiac dysfunction. Conditional initial peripheral use when needed to avoid delay."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/node/1861",
+      "section": "Forms, dosage and precautions",
+      "scope": "Continuous pump infusion, site surveillance and taper. MSF expresses the specific preparation and dosage in tartrate units. Its diluents and salt-based dosing must not be transferred to a different product."
+    },
+    {
+      "url": "https://guidelines.fhft.nhs.uk/Intensive_Care-Cardiovascular-Peripheral_Noradrenaline",
+      "section": "Peripheral noradrenaline extravasation",
+      "scope": "Stop infusion, retain cannula for aspiration, avoid flushing, escalate and consider alternate access. Corroborating reference without evidence of local adoption."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Catecholamine vasopressor",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--drug-class",
+          "sha256": "d9670f9a56620552f08b42eb71755870d69d648f21a47f2af9b19c99676819f7"
+        }
+      ],
+      "rationale": "Identify both the pharmacologic class and primary clinical role."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Alpha1-mediated vasoconstriction with some beta1 cardiac stimulation.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--principal-action",
+          "sha256": "986e6b12b64a97a97748e374f0e09f103b1b304f3984b5b98f27dff9f63a8a25"
+        }
+      ],
+      "rationale": "Distinguish alpha1 vascular effects from beta1 cardiac effects."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Strong vasoconstriction raises systemic vascular resistance/MAP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--principal-action",
+          "sha256": "986e6b12b64a97a97748e374f0e09f103b1b304f3984b5b98f27dff9f63a8a25"
+        }
+      ],
+      "rationale": "Connect vasoconstriction with raised vascular resistance and pressure."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "For shock, infuse IV continuously on a pump. Verify the exact product, compatible diluent and standard concentration.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::infusion_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--infusion_route",
+          "sha256": "1243a759de89c8332aa4f580f160e93da390c810c5eb1045d71dcb63bd659470"
+        }
+      ],
+      "rationale": "Select compatible dilution of the concentrate and continuous IV pump delivery."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "A suitable peripheral IV can be used to start urgent treatment when central access would delay it. Follow the facility protocol for site checks and transition to central access.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::norepinephrine_peripheral_start"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--norepinephrine_peripheral_start",
+          "sha256": "7986e49c1c74470e6a6fd4ac2243a15f7c13efbb14ac4f9ce234000b76d627b3"
+        }
+      ],
+      "rationale": "Choose prompt peripheral initiation with frequent checks and reassessment of central access under protocol."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "For an order in micrograms/min, multiply by 60 and divide by concentration in micrograms/mL to obtain mL/hour.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::infusion_precision"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--infusion_precision",
+          "sha256": "f2eea9ede99ea26373e99b9b4b88399482248c14e862144b07324f533f8c1a25"
+        }
+      ],
+      "rationale": "Convert dose per minute and verified concentration on the same norepinephrine basis into mL/hour."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--treatment-role",
+          "sha256": "c242f526fe60009032e1c76b1d1b3e25154dc81281dd2c2e96b139c9f8f2dd15"
+        }
+      ],
+      "rationale": "Select the initial agent in a hypotensive adult with septic shock without cardiac dysfunction."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Cardiac dysfunction may change the choice.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::norepinephrine_cardiac_context"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--norepinephrine_cardiac_context",
+          "sha256": "47e32cf221bc08df9583970fb27b728c0cf89688bb95bfb266dea2b9362ef036"
+        }
+      ],
+      "rationale": "Identify myocardial dysfunction as a specific modifier of first-line selection."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Follow BP and perfusion closely during titration.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::perfusion"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--perfusion",
+          "sha256": "fc5d1b321ef43302a662081691d0398e9a0697fe59dbd6915b53dc53488b1291"
+        }
+      ],
+      "rationale": "Distinguish target arterial pressure from restoration of peripheral and organ perfusion."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Inspect a peripheral IV frequently for pain, pallor, swelling, coolness or impaired flow.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::norepinephrine_extravasation_ischemia"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--norepinephrine_extravasation_ischemia",
+          "sha256": "3518797c6998f1b5f953949e47035749de46e3bda3818d4ee0fc82f7477b1967"
+        }
+      ],
+      "rationale": "Recognize a focal site pattern that warrants assessment for extravasation and identify the risk mechanism."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "For suspected extravasation, stop the infusion through that IV, leave the catheter in place and avoid flushing.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::pressor_site"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--pressor_site",
+          "sha256": "40db18ce1c095552fe4c44c9615e978a1e8d2af54ae9d8067c78a2b452dc20b4"
+        }
+      ],
+      "rationale": "Select all three immediate IV actions based on the local findings."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Escalate immediately for aspiration and treatment per protocol, and coordinate safe alternate access if pressure support is still needed.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::norepinephrine_extravasation_continuity"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--norepinephrine_extravasation_continuity",
+          "sha256": "66fe0c60d9027c152ca7a4f5e2548f84a9036962c9c7006ef4d0babf9d82afe7"
+        }
+      ],
+      "rationale": "Keep the original line for aspiration and promptly restore pressure support through alternate access under protocol."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Taper as ordered when discontinuing. Abrupt withdrawal can cause marked hypotension.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::norepinephrine_taper"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--norepinephrine_taper",
+          "sha256": "de285773efcf64a1b6e3a783c65ebc377c6d03cca138a1ff7779fb3541491ff6"
+        }
+      ],
+      "rationale": "Identify immediate hypotension as the reason to taper and reassess BP."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "extravasation can cause local ischemia.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-norepinephrine::norepinephrine_extravasation_ischemia"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-norepinephrine--comprehensive--norepinephrine_extravasation_ischemia",
+          "sha256": "3518797c6998f1b5f953949e47035749de46e3bda3818d4ee0fc82f7477b1967"
+        }
+      ],
+      "rationale": "Explain how local norepinephrine exposure can cause ischemia."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Palestinian essential-medicine data document 4-mg ampoules.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "A formulary listing documents availability on the list. Current facility stock and product-specific base or salt expression require verification."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "PRESSURE drug: vasopressor for severe hypotension/shock.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates the therapeutic role."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Check BP, perfusion and the infusion site. Respond immediately to suspected extravasation.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates pressure, perfusion and extravasation objectives."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "7f7dc2e8353dc150e6a95552e96b1d54e44a9e471b1e828149de942d3a50b4f2",
+    "mechanism": "9276fe6e73ef5ea960583d3a19650fa8dcb4819a8996746a8f51c7a03e21753b",
+    "use": "0ee8d62f096251af7ae3e89e8e2aecdefafa816e66151261ef2f098c05eafd4a",
+    "administration": "52c902c564aabdaed7d7326602a08e8ee7a3371e37ca993e406dbd4bdca976d3",
+    "monitor": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc",
+    "why": "8a136b6ee70f7d0eda2d0cb6fcd4176ab86c7c349b1dcb68dcb26a2a4d20cc24",
+    "availability": "76a2354987250503d7327cc2dad100abd462b52e3a82733d22b23c7d99b42aed",
+    "memoryUse": "a47e915b5d6dac7bff22f7768b0039970accc839de966c4081eb0ad7f6f3270e",
+    "memoryDanger": "87f6fdb733fada3dcb9878c9f61126b89236b82acbde4df484ab3e52c08e38be"
+  },
+  "questionSetSha256": "8691f77181bee709d4efb63ce0f40bc722590a2731341c8ec28b81c7af360f51",
+  "questionReview": {
+    "ccu-norepinephrine--comprehensive--principal-action": "Distinguish alpha1 vascular effects from beta1 cardiac effects.",
+    "ccu-norepinephrine--comprehensive--drug-class": "Identify both the pharmacologic class and primary clinical role.",
+    "ccu-norepinephrine--comprehensive--treatment-role": "Select the initial agent in a hypotensive adult with septic shock without cardiac dysfunction.",
+    "ccu-norepinephrine--comprehensive--infusion_route": "Select compatible dilution of the concentrate and continuous IV pump delivery.",
+    "ccu-norepinephrine--comprehensive--norepinephrine_peripheral_start": "Choose prompt peripheral initiation with frequent checks and reassessment of central access under protocol.",
+    "ccu-norepinephrine--comprehensive--norepinephrine_taper": "Identify immediate hypotension as the reason to taper and reassess BP.",
+    "ccu-norepinephrine--comprehensive--norepinephrine_cardiac_context": "Identify myocardial dysfunction as a specific modifier of first-line selection.",
+    "ccu-norepinephrine--comprehensive--norepinephrine_extravasation_ischemia": "Recognize a focal site pattern that warrants assessment for extravasation and identify the risk mechanism.",
+    "ccu-norepinephrine--comprehensive--norepinephrine_extravasation_continuity": "Keep the original line for aspiration and promptly restore pressure support through alternate access under protocol.",
+    "ccu-norepinephrine--comprehensive--infusion_precision": "Convert dose per minute and verified concentration on the same norepinephrine basis into mL/hour.",
+    "ccu-norepinephrine--comprehensive--pressor_site": "Select all three immediate IV actions based on the local findings.",
+    "ccu-norepinephrine--comprehensive--perfusion": "Distinguish target arterial pressure from restoration of peripheral and organ perfusion."
+  }
+}

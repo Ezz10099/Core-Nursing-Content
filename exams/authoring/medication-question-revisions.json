@@ -3630,6 +3630,216 @@
           }
         ]
       }
+    },
+    "ccu-norepinephrine::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which paired effect explains norepinephrine’s immediate hemodynamic action?",
+        "choices": [
+          {
+            "text": "Alpha1 raises vascular resistance, and beta1 stimulates the myocardium",
+            "explanation": "Alpha1-mediated vasoconstriction raises systemic vascular resistance and MAP. Beta1 can stimulate the myocardium.",
+            "id": "A"
+          },
+          {
+            "text": "Alpha1 lowers vascular resistance, and beta1 stimulates the myocardium",
+            "explanation": "Alpha1 activation raises vascular tone rather than lowering it.",
+            "id": "B"
+          },
+          {
+            "text": "Alpha1 raises vascular resistance, and beta1 inhibits the myocardium",
+            "explanation": "Beta1 stimulation can increase contractility. Reflex slowing of the heart rate does not indicate direct beta1 inhibition.",
+            "id": "C"
+          },
+          {
+            "text": "Alpha1 lowers vascular resistance, and beta1 inhibits the myocardium",
+            "explanation": "The direct vascular and cardiac effects go in the opposite directions.",
+            "id": "D"
+          }
+        ],
+        "point": "Link alpha1 to vasoconstriction and beta1 to cardiac stimulation.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-norepinephrine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pharmacologic grouping best fits norepinephrine in intensive care?",
+        "choices": [
+          {
+            "text": "Catecholamine vasopressor",
+            "explanation": "It is a catecholamine used primarily to raise arterial pressure.",
+            "id": "A"
+          },
+          {
+            "text": "Noncatecholamine vasopressor",
+            "explanation": "This grouping includes vasopressin, which is a peptide.",
+            "id": "B"
+          },
+          {
+            "text": "Catecholamine with a primary inotropic role",
+            "explanation": "This role more closely describes dobutamine, which is selected to support contractility.",
+            "id": "C"
+          },
+          {
+            "text": "Noncatecholamine with a primary inotropic role",
+            "explanation": "This grouping includes milrinone, a phosphodiesterase inhibitor.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify norepinephrine as a catecholamine used primarily as a vasopressor.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-norepinephrine::infusion_route": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The unit stocks both a vial of norepinephrine concentrate and a ready-to-administer infusion. An adult in shock has an order for a continuous norepinephrine infusion, and only the vial is available. Which setup matches the ordered treatment?",
+        "choices": [
+          {
+            "text": "Prepare the concentrate at the approved dilution and deliver it by pump",
+            "explanation": "Use a compatible diluent and the facility concentration for controlled continuous infusion.",
+            "id": "A"
+          },
+          {
+            "text": "Connect the concentrate directly to a pump set at the usual bag rate",
+            "explanation": "The vial concentration differs from the prepared bag and requires dilution.",
+            "id": "B"
+          },
+          {
+            "text": "Prepare the concentrate at the approved dilution and use gravity flow",
+            "explanation": "Correct concentration does not replace a pump for controlled titration.",
+            "id": "C"
+          },
+          {
+            "text": "Prepare the concentrate at the approved dilution and give intermittent IV doses",
+            "explanation": "Intermittent doses do not deliver the ordered continuous infusion.",
+            "id": "D"
+          }
+        ],
+        "point": "Select approved preparation and continuous IV pump delivery for a concentrate.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-norepinephrine::norepinephrine_peripheral_start": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult with septic shock remains hypotensive while central access is arranged. A peripheral IV meets the unit’s criteria for vasopressors, and frequent reassessment is available. Which access plan fits initial norepinephrine treatment?",
+        "choices": [
+          {
+            "text": "Start peripherally with site checks and reassess the need for central access",
+            "explanation": "A suitable peripheral IV can prevent treatment delay when staff can monitor it and follow the transition protocol.",
+            "id": "A"
+          },
+          {
+            "text": "Wait for central access even if hypotension persists during placement",
+            "explanation": "Delaying initial support is unnecessary when suitable peripheral access and monitoring are available.",
+            "id": "B"
+          },
+          {
+            "text": "Use the peripheral IV with site checks deferred until the first bag change",
+            "explanation": "Peripheral use requires frequent site checks from the start.",
+            "id": "C"
+          },
+          {
+            "text": "Start peripherally and plan transition only when the IV stops working",
+            "explanation": "Transition depends on the facility protocol and the patient’s needs, not only catheter failure.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish protocol-guided urgent peripheral initiation from waiting for central access.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-norepinephrine::norepinephrine_taper": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult’s MAP is stable on a low norepinephrine rate. The team is considering stopping the infusion. Which early change is the main reason to reduce the rate in ordered steps instead?",
+        "choices": [
+          {
+            "text": "A rapid fall in arterial pressure",
+            "explanation": "The pressor effect wears off quickly. Taper as ordered and reassess pressure at each step.",
+            "id": "A"
+          },
+          {
+            "text": "A rebound rise in arterial pressure",
+            "explanation": "Withdrawal removes vasopressor support and may produce the opposite response.",
+            "id": "B"
+          },
+          {
+            "text": "A rapid fall in oxygen saturation at stable pressure",
+            "explanation": "Oxygenation can change for other reasons, but this is not the characteristic immediate withdrawal risk.",
+            "id": "C"
+          },
+          {
+            "text": "A rebound rise in heart rate at stable pressure",
+            "explanation": "Heart rate may change with hemodynamics, but marked hypotension is the immediate risk targeted by tapering.",
+            "id": "D"
+          }
+        ],
+        "point": "Connect tapering with prevention and recognition of immediate hypotension.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-norepinephrine::perfusion": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After titration to target MAP on norepinephrine, which paired assessment most strongly indicates that tissue perfusion still needs reassessment?",
+        "choices": [
+          {
+            "text": "Capillary refill remains prolonged and urine output remains low",
+            "explanation": "Both findings remain concerning for tissue hypoperfusion despite target MAP.",
+            "id": "A"
+          },
+          {
+            "text": "Capillary refill shortens and urine output rises",
+            "explanation": "Both are favorable perfusion trends.",
+            "id": "B"
+          },
+          {
+            "text": "Capillary refill shortens and urine output remains low",
+            "explanation": "Urine output still needs reassessment, but the peripheral perfusion trend has improved.",
+            "id": "C"
+          },
+          {
+            "text": "Capillary refill remains prolonged and urine output rises",
+            "explanation": "Peripheral perfusion still needs reassessment, but the urine output trend has improved.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish improved arterial pressure from restored organ perfusion.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -3695,7 +3905,7 @@
     "ccu-adenosine": "acute-completed-20261115",
     "ccu-atropine": "acute-completed-20261115",
     "ccu-heparin-ufh": "infusion-calculations-20261115",
-    "ccu-norepinephrine": "infusion-calculations-20261115",
+    "ccu-norepinephrine": "norepinephrine-source-review-20261115",
     "ccu-dobutamine": "dobutamine-source-review-20261115",
     "ccu-dopamine": "infusion-calculations-20261115",
     "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",

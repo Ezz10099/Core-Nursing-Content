@@ -16752,18 +16752,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Vasopressor",
-                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
-                },
-                {
-                  "id": "C",
                   "text": "Organic nitrate",
                   "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Inotrope",
                   "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                },
+                {
+                  "id": "D",
+                  "text": "Vasopressor",
+                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -16782,7 +16782,7 @@
               "learningPointIds": [
                 "ccu-norepinephrine::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -16790,18 +16790,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is a clinical use of the medicine: Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor. Cardiac dysfunction may change the choice."
-                },
-                {
-                  "id": "B",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Pressure support in severe hypotension or shock",
+                  "explanation": "This is a clinical use of the medicine: Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor. Cardiac dysfunction may change the choice."
                 },
                 {
                   "id": "D",
@@ -16832,30 +16832,30 @@
               "learningPointIds": [
                 "ccu-norepinephrine::treatment-role"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which feature is required for safe IV administration of NOREPINEPHRINE / NORADRENALINE?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
+                },
+                {
+                  "id": "B",
                   "text": "Gravity flow without accounting for the prepared concentration",
                   "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Undiluted rapid injection based on the ampoule’s full volume",
                   "explanation": "Container content is not a default patient bolus."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Intermittent manual boluses using the last infusion’s mL/hour",
                   "explanation": "An infusion rate cannot define a safe bolus."
-                },
-                {
-                  "id": "D",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 }
               ],
               "format": "single-best-answer",
@@ -16875,7 +16875,7 @@
               "learningPointIds": [
                 "ccu-norepinephrine::infusion_route"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -16888,13 +16888,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Use the suitable peripheral IV now and follow the site-monitoring protocol.",
-                  "explanation": "A suitable peripheral IV allows prompt treatment while access needs are reassessed."
+                  "text": "Use the peripheral IV for fluids and substitute dobutamine until central access is ready.",
+                  "explanation": "Dobutamine does not replace needed vasopressor support."
                 },
                 {
                   "id": "C",
-                  "text": "Use the peripheral IV for fluids and substitute dobutamine until central access is ready.",
-                  "explanation": "Dobutamine does not replace needed vasopressor support."
+                  "text": "Use the suitable peripheral IV now and follow the site-monitoring protocol.",
+                  "explanation": "A suitable peripheral IV allows prompt treatment while access needs are reassessed."
                 },
                 {
                   "id": "D",
@@ -16918,7 +16918,7 @@
               "learningPointIds": [
                 "ccu-norepinephrine::norepinephrine_peripheral_start"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -16936,13 +16936,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Reduce the rate in ordered steps and reassess blood pressure at each step.",
-                  "explanation": "Abrupt withdrawal can cause marked hypotension."
+                  "text": "Stop the infusion and continue ECG monitoring at the previous frequency.",
+                  "explanation": "ECG monitoring cannot detect an abrupt fall in arterial pressure."
                 },
                 {
                   "id": "D",
-                  "text": "Stop the infusion and continue ECG monitoring at the previous frequency.",
-                  "explanation": "ECG monitoring cannot detect an abrupt fall in arterial pressure."
+                  "text": "Reduce the rate in ordered steps and reassess blood pressure at each step.",
+                  "explanation": "Abrupt withdrawal can cause marked hypotension."
                 }
               ],
               "point": "Taper norepinephrine as ordered because abrupt withdrawal can cause hypotension.",
@@ -16961,10 +16961,139 @@
               "learningPointIds": [
                 "ccu-norepinephrine::norepinephrine_taper"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult with septic shock needs a first-line vasopressor. Which additional finding can change the range of agents considered first-line under adult septic shock guidance?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A confirmed urinary source",
+                  "explanation": "Infection source guides treatment of the infection but does not invoke this cardiac-specific recommendation."
+                },
+                {
+                  "id": "B",
+                  "text": "New myocardial dysfunction on bedside echocardiography",
+                  "explanation": "For septic shock with cardiac dysfunction, the guideline conditionally allows either norepinephrine or epinephrine first-line."
+                },
+                {
+                  "id": "C",
+                  "text": "A rising temperature",
+                  "explanation": "Fever does not invoke the cardiac dysfunction recommendation."
+                },
+                {
+                  "id": "D",
+                  "text": "An isolated rise in creatinine",
+                  "explanation": "Kidney dysfunction requires assessment but does not invoke this cardiac-specific recommendation."
+                }
+              ],
+              "point": "Recognize concomitant cardiac dysfunction as a modifier of first-line vasopressor selection.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "use",
+                  "textSha256": "0ee8d62f096251af7ae3e89e8e2aecdefafa816e66151261ef2f098c05eafd4a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-norepinephrine--standard--norepinephrine_cardiac_context",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_cardiac_context"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During a peripheral norepinephrine infusion, the nurse finds new blanching, coolness and swelling confined to the tissue around the cannula. Which mechanism explains the risk of tissue injury?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Norepinephrine in surrounding tissue constricts local vessels",
+                  "explanation": "Extravasated norepinephrine can reduce local blood supply and cause ischemic injury."
+                },
+                {
+                  "id": "B",
+                  "text": "Systemic loss of vascular tone reduces perfusion at the cannula first",
+                  "explanation": "The changes are focal, and the leaked vasopressor itself threatens local perfusion."
+                },
+                {
+                  "id": "C",
+                  "text": "Norepinephrine in surrounding tissue dilates local vessels",
+                  "explanation": "The principal local action is vasoconstriction, consistent with blanching and coolness."
+                },
+                {
+                  "id": "D",
+                  "text": "Systemic beta1 blockade reduces perfusion at the cannula first",
+                  "explanation": "Norepinephrine does not block beta1 receptors. The focal findings point to a local tissue problem."
+                }
+              ],
+              "point": "Infer local alpha-mediated ischemia from focal changes suggesting extravasation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "why",
+                  "textSha256": "8a136b6ee70f7d0eda2d0cb6fcd4176ab86c7c349b1dcb68dcb26a2a4d20cc24"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepinephrine_extravasation_ischemia",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_extravasation_ischemia"
+              ],
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient still requires norepinephrine after suspected extravasation. The affected line is already stopped and left in place. Which access plan preserves both systemic pressure support and the opportunity for aspiration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Keep the affected catheter in place and wait for local treatment to finish before arranging alternate access",
+                  "explanation": "Pressure support may be needed during local treatment. Arrange prompt alternate delivery under the emergency plan."
+                },
+                {
+                  "id": "B",
+                  "text": "Restart via verified alternate access and reserve the affected catheter for aspiration",
+                  "explanation": "This maintains appropriate pressure support and preserves access to aspirate drug from the affected site under protocol."
+                },
+                {
+                  "id": "C",
+                  "text": "Restart via verified alternate access and remove the affected catheter before aspiration",
+                  "explanation": "Alternate access is appropriate but immediate removal loses the route for aspiration."
+                },
+                {
+                  "id": "D",
+                  "text": "Restart via verified alternate access and flush the affected catheter before aspiration",
+                  "explanation": "Flushing risks pushing more drug into the tissue."
+                }
+              ],
+              "point": "Coordinate continued therapy through safe alternate access while preserving the affected catheter for aspiration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--standard--norepinephrine_extravasation_continuity",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_extravasation_continuity"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 6
+          "questionCount": 9
         },
         {
           "id": "ccu-norepinephrine--advanced",
@@ -17214,13 +17343,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Inhibits protein synthesis at the 50S subunit",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                  "text": "Predominantly alpha1-mediated vasoconstriction",
+                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "C",
-                  "text": "Predominantly alpha1-mediated vasoconstriction",
-                  "explanation": "Norepinephrine supports vascular tone and pressure, with some beta1 activity."
+                  "text": "Inhibits protein synthesis at the 50S subunit",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Norepinephrine supports vascular tone and pressure, with some beta1 activity."
                 },
                 {
                   "id": "D",
@@ -17259,7 +17388,7 @@
                 "ccu-norepinephrine::principal-action"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--principal-action",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -17267,23 +17396,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Vasopressor",
-                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
-                },
-                {
-                  "id": "B",
                   "text": "Organic nitrate",
                   "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Catecholamine",
                   "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Inotrope",
                   "explanation": "The medicine is classified as: Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
+                },
+                {
+                  "id": "D",
+                  "text": "Vasopressor",
+                  "explanation": "Catecholamine vasopressor; predominantly alpha1 with beta1 activity."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -17303,7 +17432,7 @@
                 "ccu-norepinephrine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--drug-class",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -17311,13 +17440,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Pressure support in severe hypotension or shock",
-                  "explanation": "This is a clinical use of the medicine: Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor. Cardiac dysfunction may change the choice."
+                  "text": "Treatment of oral fungal lesions",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "B",
-                  "text": "Treatment of oral fungal lesions",
-                  "explanation": "This is a different treatment role."
+                  "text": "Pressure support in severe hypotension or shock",
+                  "explanation": "This is a clinical use of the medicine: Vasopressor for severe hypotension. In adult septic shock, norepinephrine is the usual first-line vasopressor. Cardiac dysfunction may change the choice."
                 },
                 {
                   "id": "C",
@@ -17354,7 +17483,7 @@
                 "ccu-norepinephrine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which feature is required for safe IV administration of NOREPINEPHRINE / NORADRENALINE?",
@@ -17371,13 +17500,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Gravity flow without accounting for the prepared concentration",
-                  "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 },
                 {
                   "id": "D",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
+                  "text": "Gravity flow without accounting for the prepared concentration",
+                  "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
                 }
               ],
               "format": "single-best-answer",
@@ -17398,7 +17527,7 @@
                 "ccu-norepinephrine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--infusion_route",
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -17411,18 +17540,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Use the suitable peripheral IV now and follow the site-monitoring protocol.",
-                  "explanation": "A suitable peripheral IV allows prompt treatment while access needs are reassessed."
-                },
-                {
-                  "id": "C",
                   "text": "Use the peripheral IV for fluids and substitute dobutamine until central access is ready.",
                   "explanation": "Dobutamine does not replace needed vasopressor support."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Prepare the pump now and wait to start until central access is confirmed.",
                   "explanation": "Waiting would delay urgent treatment despite a suitable peripheral IV."
+                },
+                {
+                  "id": "D",
+                  "text": "Use the suitable peripheral IV now and follow the site-monitoring protocol.",
+                  "explanation": "A suitable peripheral IV allows prompt treatment while access needs are reassessed."
                 }
               ],
               "point": "A suitable peripheral IV can be used for urgent initiation when central access would delay treatment.",
@@ -17442,7 +17571,7 @@
                 "ccu-norepinephrine::norepinephrine_peripheral_start"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--norepinephrine_peripheral_start",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -17455,18 +17584,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Reduce the rate in ordered steps and reassess blood pressure at each step.",
+                  "explanation": "Abrupt withdrawal can cause marked hypotension."
+                },
+                {
+                  "id": "C",
                   "text": "Continue the same dose until the current bag is empty, then discontinue.",
                   "explanation": "Running the bag empty still stops support abruptly."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Stop the infusion and continue ECG monitoring at the previous frequency.",
                   "explanation": "ECG monitoring cannot detect an abrupt fall in arterial pressure."
-                },
-                {
-                  "id": "D",
-                  "text": "Reduce the rate in ordered steps and reassess blood pressure at each step.",
-                  "explanation": "Abrupt withdrawal can cause marked hypotension."
                 }
               ],
               "point": "Taper norepinephrine as ordered because abrupt withdrawal can cause hypotension.",
@@ -17486,25 +17615,157 @@
                 "ccu-norepinephrine::norepinephrine_taper"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--standard--norepinephrine_taper",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult with septic shock needs a first-line vasopressor. Which additional finding can change the range of agents considered first-line under adult septic shock guidance?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A confirmed urinary source",
+                  "explanation": "Infection source guides treatment of the infection but does not invoke this cardiac-specific recommendation."
+                },
+                {
+                  "id": "B",
+                  "text": "A rising temperature",
+                  "explanation": "Fever does not invoke the cardiac dysfunction recommendation."
+                },
+                {
+                  "id": "C",
+                  "text": "An isolated rise in creatinine",
+                  "explanation": "Kidney dysfunction requires assessment but does not invoke this cardiac-specific recommendation."
+                },
+                {
+                  "id": "D",
+                  "text": "New myocardial dysfunction on bedside echocardiography",
+                  "explanation": "For septic shock with cardiac dysfunction, the guideline conditionally allows either norepinephrine or epinephrine first-line."
+                }
+              ],
+              "point": "Recognize concomitant cardiac dysfunction as a modifier of first-line vasopressor selection.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "use",
+                  "textSha256": "0ee8d62f096251af7ae3e89e8e2aecdefafa816e66151261ef2f098c05eafd4a"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-norepinephrine--7-day--norepinephrine_cardiac_context",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_cardiac_context"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepinephrine_cardiac_context",
               "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During a peripheral norepinephrine infusion, the nurse finds new blanching, coolness and swelling confined to the tissue around the cannula. Which mechanism explains the risk of tissue injury?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Norepinephrine in surrounding tissue dilates local vessels",
+                  "explanation": "The principal local action is vasoconstriction, consistent with blanching and coolness."
+                },
+                {
+                  "id": "B",
+                  "text": "Systemic loss of vascular tone reduces perfusion at the cannula first",
+                  "explanation": "The changes are focal, and the leaked vasopressor itself threatens local perfusion."
+                },
+                {
+                  "id": "C",
+                  "text": "Norepinephrine in surrounding tissue constricts local vessels",
+                  "explanation": "Extravasated norepinephrine can reduce local blood supply and cause ischemic injury."
+                },
+                {
+                  "id": "D",
+                  "text": "Systemic beta1 blockade reduces perfusion at the cannula first",
+                  "explanation": "Norepinephrine does not block beta1 receptors. The focal findings point to a local tissue problem."
+                }
+              ],
+              "point": "Infer local alpha-mediated ischemia from focal changes suggesting extravasation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "why",
+                  "textSha256": "8a136b6ee70f7d0eda2d0cb6fcd4176ab86c7c349b1dcb68dcb26a2a4d20cc24"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepinephrine_extravasation_ischemia",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_extravasation_ischemia"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepinephrine_extravasation_ischemia",
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient still requires norepinephrine after suspected extravasation. The affected line is already stopped and left in place. Which access plan preserves both systemic pressure support and the opportunity for aspiration?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Keep the affected catheter in place and wait for local treatment to finish before arranging alternate access",
+                  "explanation": "Pressure support may be needed during local treatment. Arrange prompt alternate delivery under the emergency plan."
+                },
+                {
+                  "id": "B",
+                  "text": "Restart via verified alternate access and flush the affected catheter before aspiration",
+                  "explanation": "Flushing risks pushing more drug into the tissue."
+                },
+                {
+                  "id": "C",
+                  "text": "Restart via verified alternate access and reserve the affected catheter for aspiration",
+                  "explanation": "This maintains appropriate pressure support and preserves access to aspirate drug from the affected site under protocol."
+                },
+                {
+                  "id": "D",
+                  "text": "Restart via verified alternate access and remove the affected catheter before aspiration",
+                  "explanation": "Alternate access is appropriate but immediate removal loses the route for aspiration."
+                }
+              ],
+              "point": "Coordinate continued therapy through safe alternate access while preserving the affected catheter for aspiration.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-norepinephrine",
+                  "field": "monitor",
+                  "textSha256": "1ac0240d14656dda7e065295142a5621be7f85e716a3e723f03e7fb72f8237dc"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-norepinephrine--7-day--norepinephrine_extravasation_continuity",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-norepinephrine::norepinephrine_extravasation_continuity"
+              ],
+              "reusedFromQuestionId": "ccu-norepinephrine--standard--norepinephrine_extravasation_continuity",
+              "answerKey": "C"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "It halves",
+                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
+                },
+                {
+                  "id": "B",
                   "text": "It becomes four times higher",
                   "explanation": "This would cause an even larger dosing increase."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "It doubles",
                   "explanation": "That would deliver four times the prior drug amount if concentration also doubled."
-                },
-                {
-                  "id": "C",
-                  "text": "It halves",
-                  "explanation": "The same drug amount is delivered in half the volume when concentration doubles."
                 },
                 {
                   "id": "D",
@@ -17544,20 +17805,20 @@
                 "ccu-norepinephrine::infusion_precision"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--infusion_precision",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "During peripheral NOREPINEPHRINE / NORADRENALINE infusion, the site becomes painful, pale, and cool, and flow is impaired. Which problem best fits?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A therapeutic improvement in peripheral circulation",
-                  "explanation": "The pain, pallor, and coolness argue against this interpretation."
+                  "text": "Extravasation with local ischemic risk",
+                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
                 },
                 {
                   "id": "B",
-                  "text": "Extravasation with local ischemic risk",
-                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
+                  "text": "A therapeutic improvement in peripheral circulation",
+                  "explanation": "The pain, pallor, and coolness argue against this interpretation."
                 },
                 {
                   "id": "C",
@@ -17609,30 +17870,30 @@
                 "ccu-norepinephrine::pressor_site"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--pressor_site",
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "During NOREPINEPHRINE / NORADRENALINE therapy, BP reaches target, but the patient remains cool and confused with low urine output. Which interpretation is most defensible?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Pressure has improved while organ perfusion remains concerning",
+                  "explanation": "BP is only one component of the response."
+                },
+                {
+                  "id": "B",
                   "text": "Pressure improvement establishes recovery despite the other findings",
                   "explanation": "The ongoing signs can still represent hypoperfusion."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Low urine output establishes isolated intrinsic renal disease",
                   "explanation": "It can reflect continued low perfusion and needs context."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Confusion establishes medication sedation rather than low output",
                   "explanation": "The combination does not justify dismissing hypoperfusion."
-                },
-                {
-                  "id": "D",
-                  "text": "Pressure has improved while organ perfusion remains concerning",
-                  "explanation": "BP is only one component of the response."
                 }
               ],
               "format": "single-best-answer",
@@ -17667,10 +17928,10 @@
                 "ccu-norepinephrine::perfusion"
               ],
               "reusedFromQuestionId": "ccu-norepinephrine--advanced--perfusion",
-              "answerKey": "D"
+              "answerKey": "A"
             }
           ],
-          "questionCount": 9
+          "questionCount": 12
         }
       ]
     },

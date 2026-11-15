@@ -4520,6 +4520,45 @@
       ]
     },
     {
+      "id": "ccu-norepinephrine::norepinephrine_cardiac_context",
+      "itemId": "ccu-norepinephrine",
+      "point": "Recognize concomitant cardiac dysfunction as a modifier of first-line vasopressor selection.",
+      "questionIds": [
+        "ccu-norepinephrine--standard--norepinephrine_cardiac_context",
+        "ccu-norepinephrine--7-day--norepinephrine_cardiac_context"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-norepinephrine::norepinephrine_extravasation_ischemia",
+      "itemId": "ccu-norepinephrine",
+      "point": "Infer local alpha-mediated ischemia from focal changes suggesting extravasation.",
+      "questionIds": [
+        "ccu-norepinephrine--standard--norepinephrine_extravasation_ischemia",
+        "ccu-norepinephrine--7-day--norepinephrine_extravasation_ischemia"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-norepinephrine::norepinephrine_extravasation_continuity",
+      "itemId": "ccu-norepinephrine",
+      "point": "Coordinate continued therapy through safe alternate access while preserving the affected catheter for aspiration.",
+      "questionIds": [
+        "ccu-norepinephrine--standard--norepinephrine_extravasation_continuity",
+        "ccu-norepinephrine--7-day--norepinephrine_extravasation_continuity"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-norepinephrine::infusion_precision",
       "itemId": "ccu-norepinephrine",
       "point": "Infusion delivery depends on ordered dose and prepared concentration.",
@@ -14849,15 +14888,19 @@
         ],
         "why": [
           "ccu-norepinephrine--standard--principal-action",
+          "ccu-norepinephrine--standard--norepinephrine_extravasation_ischemia",
           "ccu-norepinephrine--advanced--pressor_site",
           "ccu-norepinephrine--advanced--perfusion",
           "ccu-norepinephrine--7-day--principal-action",
+          "ccu-norepinephrine--7-day--norepinephrine_extravasation_ischemia",
           "ccu-norepinephrine--7-day--pressor_site",
           "ccu-norepinephrine--7-day--perfusion"
         ],
         "use": [
           "ccu-norepinephrine--standard--treatment-role",
-          "ccu-norepinephrine--7-day--treatment-role"
+          "ccu-norepinephrine--standard--norepinephrine_cardiac_context",
+          "ccu-norepinephrine--7-day--treatment-role",
+          "ccu-norepinephrine--7-day--norepinephrine_cardiac_context"
         ],
         "memoryUse": [
           "ccu-norepinephrine--standard--treatment-role",
@@ -14875,10 +14918,12 @@
         ],
         "monitor": [
           "ccu-norepinephrine--standard--norepinephrine_taper",
+          "ccu-norepinephrine--standard--norepinephrine_extravasation_continuity",
           "ccu-norepinephrine--advanced--infusion_precision",
           "ccu-norepinephrine--advanced--pressor_site",
           "ccu-norepinephrine--advanced--perfusion",
           "ccu-norepinephrine--7-day--norepinephrine_taper",
+          "ccu-norepinephrine--7-day--norepinephrine_extravasation_continuity",
           "ccu-norepinephrine--7-day--infusion_precision",
           "ccu-norepinephrine--7-day--pressor_site",
           "ccu-norepinephrine--7-day--perfusion"
