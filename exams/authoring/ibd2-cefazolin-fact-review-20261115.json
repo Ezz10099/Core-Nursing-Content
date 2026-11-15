@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-cefazolin",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of adult cefazolin card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://pharmacy.moh.ps/index/MorePrice/DrugsId/1955",
+      "section": "Palestinian MOH cefazolin listing",
+      "scope": "Documents a 1-g vial in the national registry, not verification of the product at Nasser."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1dc9de56-e259-4546-a1db-23119a8a088e",
+      "section": "2026 cefazolin for injection powder label",
+      "scope": "Covers susceptible infection, perioperative prophylaxis, formulation-specific preparation, renal adjustment, hypersensitivity and C. difficile."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=4f3a9248-a354-4c77-bf5b-9eed38f00219&version=6",
+      "section": "Cefazolin 2-g and 3-g product label, preparation and perioperative use",
+      "scope": "Different IV route and preparation permissions by presentation; tissue levels at incision. Do not transfer these instructions to an unknown local vial."
+    },
+    {
+      "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Drug-Allergy-PP-9-2022.pdf",
+      "section": "AAAAI/ACAAI practice parameter, section on beta-lactams",
+      "scope": "Distinguishes a prior reaction to cefazolin from an undifferentiated penicillin label. The assessment does not treat all penicillin allergies as automatic contraindications."
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789241550475",
+      "section": "WHO global surgical site infection prevention guidelines",
+      "scope": "Supports surgical antimicrobial prophylaxis before incision and contextual selection of timing and agent. Current facility orders govern delivery."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "First-generation cephalosporin antibacterial.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--drug-class",
+          "sha256": "1810bbf0b95e2a72e8228544b4f00d7cc875437a032154314f09abeb05f4b8d8"
+        }
+      ],
+      "rationale": "Distinguish the generation and beta-lactam subgroup."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "binds penicillin-binding proteins",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::cefazolin_pbp"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--cefazolin_pbp",
+          "sha256": "3a3580a3a6416c16fde4e861839d7bc3d96819c62c7f00c60b5375b25532b33c"
+        }
+      ],
+      "rationale": "Identify the bacterial molecular target."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "inhibits bacterial cell-wall synthesis",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--principal-action",
+          "sha256": "6140ea079fe8c056576bff7fbf51fd31e3407bec0a6766d715ef6641da4c2839"
+        }
+      ],
+      "rationale": "Identify the bacterial process impaired by cefazolin."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Highly relevant to orthopaedics for perioperative antibacterial prophylaxis and for treatment of susceptible bacterial infections when prescribed.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--treatment-role",
+          "sha256": "1ced7a94f551c946d9448665b21a8b1b260e3ebe27531ac1b45b2758d84dcb9f"
+        }
+      ],
+      "rationale": "Distinguish orthopaedic surgical prophylaxis from treatment of a susceptible infection."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Parenteral product; preparation and IV administration depend on the exact vial/product and order.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::cefazolin_product_preparation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--cefazolin_product_preparation",
+          "sha256": "c9a69370cd94b8ed6a3f1e78fe7c9806dd9c6db61232d6839455f6250d4ee879"
+        }
+      ],
+      "rationale": "Use the supplied parenteral presentation’s specific dilution and administration method."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Do not memorize one dilution or rate across all cefazolin products.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::cefazolin_product_preparation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--cefazolin_product_preparation",
+          "sha256": "c9a69370cd94b8ed6a3f1e78fe7c9806dd9c6db61232d6839455f6250d4ee879"
+        }
+      ],
+      "rationale": "Reject transferring old preparation or bolus instructions to a replacement product."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Adjusted dosing may be needed with renal impairment.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::renal_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--renal_dose",
+          "sha256": "109a070751de80860c0961b743b346f2e37ae587899d3a7b22ab655df8ec2591"
+        }
+      ],
+      "rationale": "Identify the need to review dose or interval with worsening renal clearance."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Verify beta-lactam allergy history and watch for hypersensitivity/anaphylaxis.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::betalactam_allergy"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--betalactam_allergy",
+          "sha256": "288961ac10fcb8a324b418b74cb1ee0aa1b491cc46b7e26025049aa322ca562a"
+        }
+      ],
+      "rationale": "Distinguish a reported immediate cefazolin reaction and systemic findings from non-allergic intolerance."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Review renal function and ordered dose/interval.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::renal_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--renal_dose",
+          "sha256": "109a070751de80860c0961b743b346f2e37ae587899d3a7b22ab655df8ec2591"
+        }
+      ],
+      "rationale": "Use falling renal clearance to identify accumulation risk and regimen review."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor IV site",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::iv_site"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--iv_site",
+          "sha256": "cb40ca820fa4e8dccdc9b6022205dbec50b66ad4020b4808e35486a4b660ac64"
+        }
+      ],
+      "rationale": "Distinguish phlebitis from other IV-site findings."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "clinical response.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::antimicrobial_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--antimicrobial_response",
+          "sha256": "964cf5e7a39863b7a05ee603fea910edcf64224b47ab3102b7d67e25a09b45a8"
+        }
+      ],
+      "rationale": "Pair clinical infection findings with culture susceptibility."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Watch for significant antibiotic-associated diarrhea/C. difficile features.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::antibiotic_diarrhea"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--antibiotic_diarrhea",
+          "sha256": "ccc5c9133226e547bda96ea6314449f16575480a21e99d2e86a457d09fb8e45d"
+        }
+      ],
+      "rationale": "Identify persistent watery diarrhea during antibiotic exposure."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "timing relative to surgery matters",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::prophylaxis_timing"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--prophylaxis_timing",
+          "sha256": "321bd2af8e03857db13644f722566656b8b2cc076ac71c5f863d8d9c9460ee78"
+        }
+      ],
+      "rationale": "Recalculate timing from planned incision after a theatre schedule change."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "adequate tissue levels at the time of incision help reduce surgical-site infection risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-cefazolin::cefazolin_tissue_timing"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-cefazolin--comprehensive--cefazolin_tissue_timing",
+          "sha256": "934c7c3804abcc82fecc1c347fdec5eec2ef2e958a148081be3e078d8f418e04"
+        }
+      ],
+      "rationale": "Identify tissue antibiotic exposure during contamination risk as the pharmacologic purpose."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Exact vial strength/formulation in the ward was not recorded; verify the vial, diluent, route and local order.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Ward observation is provenance; the exact product is unknown."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Orthopaedic perioperative prophylaxis and susceptible bacterial infection.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Check allergy + renal function; preparation/timing are product- and protocol-specific.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "f02fbe3a70853711d1a2ae71185cba8d5ddce0e4e18996c11153b9dfd9d752d2",
+    "mechanism": "5ff8fc6a43a3e42cf7bf3cfa3c15b6a4c5a11f11001637f1a26d32a070bc0136",
+    "use": "c769a22cf41316d859dc165c0fdf44551833a8685451f381b01327e06667d48f",
+    "administration": "f71b769025b1696c2504871bcfe4b2f0a0148cbd47ad59606f18078e3e8c1481",
+    "monitor": "7293dc59d973d28297bbe8145fa9fe0bf2322d5ddc340d4a6c06318761342dcc",
+    "why": "7ad5c601afcf221031f91d4f750189d0aa3cadc5e9b1d224bf9f1f546adc992e",
+    "availability": "28cbcb06fbfc8737a961344cc198df2c8e1bdb19189483d270f9564b958d1e25",
+    "memoryUse": "3e3cee2b5898f86b8abcca441ec5206e910fbb1f0b602bf7dafca711c928116f",
+    "memoryDanger": "4b6ef2fdd54f60adbfac8acbb9df37af20e511493c8e718420712ee6d27003de"
+  },
+  "questionSetSha256": "182fd800bfc0f6fc510a537956d716bf684cf3196f3bb43900bebf46121847b1",
+  "questionReview": {
+    "ibd2-cefazolin--comprehensive--principal-action": "Identify the bacterial process impaired by cefazolin.",
+    "ibd2-cefazolin--comprehensive--drug-class": "Distinguish the generation and beta-lactam subgroup.",
+    "ibd2-cefazolin--comprehensive--treatment-role": "Distinguish orthopaedic surgical prophylaxis from treatment of a susceptible infection.",
+    "ibd2-cefazolin--comprehensive--betalactam_allergy": "Distinguish a reported immediate cefazolin reaction and systemic findings from non-allergic intolerance.",
+    "ibd2-cefazolin--comprehensive--renal_dose": "Identify the need to review dose or interval with worsening renal clearance.",
+    "ibd2-cefazolin--comprehensive--antibiotic_diarrhea": "Identify persistent watery diarrhea during antibiotic exposure.",
+    "ibd2-cefazolin--comprehensive--prophylaxis_timing": "Recalculate timing from planned incision after a theatre schedule change.",
+    "ibd2-cefazolin--comprehensive--antimicrobial_response": "Pair clinical infection findings with culture susceptibility.",
+    "ibd2-cefazolin--comprehensive--iv_site": "Distinguish phlebitis from other IV-site findings.",
+    "ibd2-cefazolin--comprehensive--cefazolin_pbp": "Identify the bacterial molecular target.",
+    "ibd2-cefazolin--comprehensive--cefazolin_product_preparation": "Use the supplied parenteral presentation’s specific dilution and administration method.",
+    "ibd2-cefazolin--comprehensive--cefazolin_tissue_timing": "Identify tissue antibiotic exposure during contamination risk as the pharmacologic purpose."
+  }
+}

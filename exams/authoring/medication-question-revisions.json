@@ -6272,6 +6272,426 @@
           }
         ]
       }
+    },
+    "ibd2-cefazolin::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which beta-lactam subgroup contains cefazolin?",
+        "point": "Distinguish the first-generation cephalosporin from nearby beta-lactam classes.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "First-generation cephalosporin",
+            "explanation": "Cefazolin is a parenteral first-generation cephalosporin."
+          },
+          {
+            "id": "B",
+            "text": "Second-generation cephalosporin",
+            "explanation": "Cefuroxime is an example in this group. Cefazolin is first generation."
+          },
+          {
+            "id": "C",
+            "text": "Third-generation cephalosporin",
+            "explanation": "Ceftriaxone is an example in this group. Cefazolin has a different classification."
+          },
+          {
+            "id": "D",
+            "text": "Antistaphylococcal penicillin",
+            "explanation": "Some clinical uses overlap, but cefazolin belongs to the cephalosporins."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "What bacterial process is directly impaired by cefazolin at its target?",
+        "point": "Distinguish impaired cell-wall cross-linking from other antibacterial actions.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Peptidoglycan cross-linking in the bacterial cell wall",
+            "explanation": "Binding to penicillin-binding proteins interferes with cell-wall synthesis."
+          },
+          {
+            "id": "B",
+            "text": "Translation of bacterial mRNA at the 50S ribosomal subunit",
+            "explanation": "This is the target of protein-synthesis inhibitors, rather than cefazolin."
+          },
+          {
+            "id": "C",
+            "text": "DNA supercoiling by bacterial gyrase",
+            "explanation": "Gyrase inhibition is characteristic of fluoroquinolones rather than cefazolin."
+          },
+          {
+            "id": "D",
+            "text": "Folate synthesis at dihydropteroate synthase",
+            "explanation": "This is a sulfonamide target rather than a cephalosporin action."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::cefazolin_pbp": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which bacterial binding target explains cefazolin’s action as a beta-lactam?",
+        "point": "Identify penicillin-binding proteins as the target.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Penicillin-binding proteins",
+            "explanation": "Cefazolin binds PBPs, including those that catalyze cell-wall cross-linking."
+          },
+          {
+            "id": "B",
+            "text": "Dihydrofolate reductase",
+            "explanation": "This belongs to the folate pathway and is not the beta-lactam target."
+          },
+          {
+            "id": "C",
+            "text": "DNA gyrase",
+            "explanation": "This is a fluoroquinolone target."
+          },
+          {
+            "id": "D",
+            "text": "The 30S ribosomal subunit",
+            "explanation": "This is a target of some protein-synthesis inhibitors, such as aminoglycosides."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pair of orthopaedic scenarios can each justify cefazolin under a separate indication-specific order?",
+        "point": "Distinguish surgical prophylaxis from treatment of a susceptible bacterial infection.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Perioperative prophylaxis for indicated prosthetic joint surgery and treatment of a susceptible bacterial bone infection",
+            "explanation": "The surgical indication is preventive. Treatment of an established infection depends on its susceptibility and the prescribed plan."
+          },
+          {
+            "id": "B",
+            "text": "Perioperative prophylaxis for indicated prosthetic joint surgery and targeted treatment of a fungal bone infection",
+            "explanation": "Cefazolin can be used for surgical prophylaxis but is not an antifungal."
+          },
+          {
+            "id": "C",
+            "text": "Treatment of a susceptible bacterial bone infection and routine prophylaxis whenever a peripheral cannula is placed",
+            "explanation": "Cefazolin may treat a susceptible infection, but ordinary peripheral cannulation is not a routine indication for systemic antibiotics."
+          },
+          {
+            "id": "D",
+            "text": "Targeted treatment of a fungal bone infection and routine prophylaxis whenever a peripheral cannula is placed",
+            "explanation": "Neither scenario fits the cefazolin indications taught in the card."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::betalactam_allergy": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which documented history and new findings most strongly support immediate cefazolin hypersensitivity rather than a local infusion reaction?",
+        "point": "Recognize a relevant allergy history and a systemic immediate reaction.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prior immediate hives after cefazolin, then wheeze, facial swelling and hypotension within minutes of exposure",
+            "explanation": "This is consistent with possible anaphylaxis. Stop the exposure and activate the emergency response per protocol."
+          },
+          {
+            "id": "B",
+            "text": "Prior nausea after amoxicillin, then tenderness limited to the cannulated vein with stable vital signs",
+            "explanation": "Nausea alone does not establish beta-lactam allergy, and the new signs suggest a local reaction."
+          },
+          {
+            "id": "C",
+            "text": "Prior nonspecific rash in childhood, then new watery diarrhea after several days of treatment",
+            "explanation": "Diarrhea during treatment requires evaluation, but the pattern is not that of immediate anaphylaxis."
+          },
+          {
+            "id": "D",
+            "text": "Prior cefazolin tolerance, then focal IV-site swelling without wheeze or vital sign changes",
+            "explanation": "Focal site changes require review but do not match the immediate systemic pattern."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::renal_dose": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "While a patient receives repeated IV cefazolin for a susceptible infection, estimated creatinine clearance falls substantially. Which change should the nurse anticipate reviewing with the prescribing team?",
+        "point": "Apply reduced renal clearance to the maintenance dose and interval.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Whether the maintenance dose or interval needs adjustment to prevent accumulation",
+            "explanation": "Cefazolin is predominantly renally cleared. Apply the appropriate product and indication-specific regimen."
+          },
+          {
+            "id": "B",
+            "text": "Whether the maintenance dose needs to increase because slower clearance reduces exposure",
+            "explanation": "Reduced clearance may increase exposure, not reduce it."
+          },
+          {
+            "id": "C",
+            "text": "Whether the maintenance regimen can continue unchanged because liver enzymes are unchanged",
+            "explanation": "Stable liver enzymes do not establish adequate renal clearance."
+          },
+          {
+            "id": "D",
+            "text": "Whether only IV dilution needs adjustment while exposure remains unchanged",
+            "explanation": "Dilution does not address reduced renal elimination or the systemic dose schedule."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::antibiotic_diarrhea": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new course after several days of cefazolin most strongly supports escalation for possible antibiotic-associated colitis?",
+        "point": "Recognize persistent watery diarrhea with inflammatory features during antibiotic exposure.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Repeated watery stools with new lower abdominal cramping",
+            "explanation": "This pattern warrants assessment for C. difficile and other causes of antibiotic-associated diarrhea."
+          },
+          {
+            "id": "B",
+            "text": "One soft stool after a prescribed laxative with no recurrence",
+            "explanation": "A single transient stool change is less suggestive than persistent watery diarrhea."
+          },
+          {
+            "id": "C",
+            "text": "Hard stools and cramping relieved by defecation",
+            "explanation": "This pattern suggests constipation rather than typical antibiotic-associated diarrhea."
+          },
+          {
+            "id": "D",
+            "text": "Intermittent nausea around meals without a stool change",
+            "explanation": "Nausea may occur without colitis. It is not the bowel pattern asked for."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::prophylaxis_timing": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The operating room moves a case earlier. Which event in the revised schedule should determine when the cefazolin prophylaxis dose is given?",
+        "point": "Anchor prophylaxis to the anticipated incision time.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The revised time of surgical incision",
+            "explanation": "Coordinate timing with the surgical protocol so protective exposure is present at incision."
+          },
+          {
+            "id": "B",
+            "text": "The revised time of anaesthesia assessment",
+            "explanation": "Anaesthesia assessment may move independently of incision and does not replace the incision timing reference."
+          },
+          {
+            "id": "C",
+            "text": "The revised time of patient transfer to the operating room",
+            "explanation": "Transfer is a workflow step and does not establish the interval before incision."
+          },
+          {
+            "id": "D",
+            "text": "The revised time of postoperative handover",
+            "explanation": "This falls after the operative contamination risk that prophylaxis addresses."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::antimicrobial_response": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient treated with cefazolin for an established infection reports less pain after analgesia, but fever persists and the microbiology report is now available. Which pair most directly supports reassessing the cefazolin plan?",
+        "point": "Use clinical infection response and culture susceptibility together.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The trend in infection findings and the isolate’s susceptibility to cefazolin",
+            "explanation": "Less pain alone is not an antibacterial endpoint. Susceptibility and clinical response inform regimen review."
+          },
+          {
+            "id": "B",
+            "text": "The trend in pain scores and the isolate’s susceptibility to a different drug only",
+            "explanation": "This does not assess cefazolin susceptibility or the clinical infection trend."
+          },
+          {
+            "id": "C",
+            "text": "The trend in bowel frequency and the time of the last cefazolin dose",
+            "explanation": "These help evaluate tolerance and administration rather than microbiological suitability."
+          },
+          {
+            "id": "D",
+            "text": "The creatinine trend and the dilution used for the last dose",
+            "explanation": "These inform safety and preparation rather than clinical infection response and susceptibility."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::iv_site": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "During IV cefazolin, the cannulated vein becomes warm, red and tender along its course. Which local pattern best fits?",
+        "point": "Distinguish phlebitis from infiltration and mechanical obstruction.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Infusion-site phlebitis",
+            "explanation": "Warmth, linear erythema and tenderness along a cannulated vein support phlebitis and require site assessment."
+          },
+          {
+            "id": "B",
+            "text": "Infiltration marked mainly by cool, diffuse swelling around the cannula",
+            "explanation": "This is not the characteristic pattern described."
+          },
+          {
+            "id": "C",
+            "text": "Positional flow obstruction without venous inflammation",
+            "explanation": "A mechanical obstruction alone does not explain warmth, pain and linear redness."
+          },
+          {
+            "id": "D",
+            "text": "Insertion-site bruising without vein tenderness",
+            "explanation": "Bruising does not account for the inflammatory pattern tracking along the vein."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::cefazolin_product_preparation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The chart specifies IV cefazolin infusion. Pharmacy replaces the previous cefazolin vial with a different presentation whose instructions specify a different final dilution. Which plan best follows the ordered administration?",
+        "point": "Apply the replacement product’s own dilution and infusion instructions.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Use the replacement product’s labeled dilution and infusion instructions for the ordered dose",
+            "explanation": "Preparation and administration requirements depend on the exact cefazolin product."
+          },
+          {
+            "id": "B",
+            "text": "Use the old final dilution and only change the reconstitution step",
+            "explanation": "Product differences can extend to final dilution and administration as well as reconstitution."
+          },
+          {
+            "id": "C",
+            "text": "Use the replacement dilution but administer as the IV bolus permitted for the previous product",
+            "explanation": "The order specifies infusion, and the previous product’s route instructions do not transfer."
+          },
+          {
+            "id": "D",
+            "text": "Use the old product’s reconstitution and final dilution at the new product’s infusion rate",
+            "explanation": "The old preparation cannot automatically be substituted for the supplied presentation."
+          }
+        ]
+      }
+    },
+    "ibd2-cefazolin::cefazolin_tissue_timing": {
+      "action": "replace",
+      "sourceFields": [
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pharmacologic goal explains why cefazolin is given before incision for surgical prophylaxis?",
+        "point": "Require effective antibiotic exposure in the tissue during the operative contamination window.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Provide adequate antibacterial concentrations in tissue when contamination can first occur",
+            "explanation": "Cefazolin prophylaxis depends on tissue exposure at incision and during the relevant operative period."
+          },
+          {
+            "id": "B",
+            "text": "Allow tissue levels to peak only after closure to protect the postoperative wound",
+            "explanation": "Starting exposure after closure misses the operative risk period."
+          },
+          {
+            "id": "C",
+            "text": "Obtain a pre-incision serum level even if tissue penetration occurs after incision",
+            "explanation": "The objective is effective tissue exposure during possible contamination."
+          },
+          {
+            "id": "D",
+            "text": "Delay antibacterial activity until an operative culture identifies infection",
+            "explanation": "Prophylaxis aims to prevent infection and is given before an established infection is demonstrated."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -6349,6 +6769,7 @@
     "ccu-isosorbide-mononitrate": "isosorbide-formulation-review-20261115",
     "ccu-isosorbide-dinitrate": "isosorbide-formulation-review-20261115",
     "ibd2-acamol": "paracetamol-source-review-20261115",
-    "ibd2-trufen": "ibuprofen-source-review-20261115"
+    "ibd2-trufen": "ibuprofen-source-review-20261115",
+    "ibd2-cefazolin": "cefazolin-source-review-20261115"
   }
 }
