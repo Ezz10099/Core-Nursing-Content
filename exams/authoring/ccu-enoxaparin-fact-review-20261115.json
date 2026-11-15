@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-enoxaparin",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and its scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.who.int/publications/m/item/occupied-palestinian-territory--essential-medicine-list-2024-(english)",
+      "section": "Palestinian Essential Medicines List 2024 M-112-0006 to M-112-0009",
+      "scope": "Lists the 20-, 40-, 60- and 80-mg prefilled strengths."
+    },
+    {
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D8%B9%D8%B7%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA-5.pdf",
+      "section": "Gaza MOH injectable guide p. 41",
+      "scope": "Corroborates deep SC, avoiding IM, prefilled technique and avoiding rubbing. Current product instructions govern the actual device and dose."
+    },
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d263380-4f44-4fd8-aa2a-e69702ab258f",
+      "section": "Lovenox label updated April 27, 2026, boxed warning, §§1, 2, 5, 8.7, 12 and IFU",
+      "scope": "Uses, selected STEMI IV plus SC treatment, CrCl below 30, full prefilled syringe technique, tissue-site rotation, bleeding and platelet monitoring, neuraxial red flags and timing. Exact interval depends on dose and renal function."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Low-molecular-weight heparin (LMWH) anticoagulant.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--drug-class",
+          "sha256": "4128b31cf4e1e6e5ca5ac46c5c91f7f51358945965ba950de5277ba0bc138057"
+        }
+      ],
+      "rationale": "Identify the LMWH class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "LMWH potentiates antithrombin, predominantly reducing factor Xa activity.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--principal-action",
+          "sha256": "d1946138d1dbd838e0a15c984ee40fad6e96fee5a920545b2921bcae3faa5955"
+        }
+      ],
+      "rationale": "Distinguish antithrombin-dependent predominant Xa inhibition."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Prevention or treatment of venous thromboembolism",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--treatment-role",
+          "sha256": "0b5ef78392455869f42849d3928df2aeef1acc100de53bf0ed887d56407fbc1a"
+        }
+      ],
+      "rationale": "Identify prevention and treatment as separate enoxaparin uses."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "anticoagulation in selected ACS regimens",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::enoxaparin_stemi_iv"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--enoxaparin_stemi_iv",
+          "sha256": "d634a5cac8ccc7686b7e7283376681888aaac1fafb6e57a2f27dd7bdc17e1612"
+        }
+      ],
+      "rationale": "Distinguish STEMI from routine SC contexts."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Some STEMI regimens include an ordered initial IV bolus.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::enoxaparin_stemi_iv"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--enoxaparin_stemi_iv",
+          "sha256": "d634a5cac8ccc7686b7e7283376681888aaac1fafb6e57a2f27dd7bdc17e1612"
+        }
+      ],
+      "rationale": "Recognize the indication-specific IV exception."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Follow the indication-specific order and protocol.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "General order and protocol verification remains a bedside safeguard. The indication-specific distinctions are assessed separately."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "give deep SC at alternating abdominal sites",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::enoxaparin_abdominal_strength"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--enoxaparin_abdominal_strength",
+          "sha256": "d601526b5434e9d864163e8db93c9fd6f79583b7b344c8aacd46a2111d5013ff"
+        }
+      ],
+      "rationale": "Select deep SC and rotate abdominal sites."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "leaving the air bubble in place and avoiding rubbing afterward",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::enoxaparin_syringe"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--enoxaparin_syringe",
+          "sha256": "342f3b4f2a7bbcb6c95830a8ea13c0b001e4a14948edf22d7560387afdb60919"
+        }
+      ],
+      "rationale": "Select both manufacturer-specific actions for a full prefilled dose."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Never give IM.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::lmwh_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--lmwh_route",
+          "sha256": "132cd08499bdeb10861ee574430864fbcf228a495850262fcb9dc49426bd0386"
+        }
+      ],
+      "rationale": "Recall the expressly prohibited injection route."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Verify syringe strength and the ordered dose.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::enoxaparin_abdominal_strength"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--enoxaparin_abdominal_strength",
+          "sha256": "d601526b5434e9d864163e8db93c9fd6f79583b7b344c8aacd46a2111d5013ff"
+        }
+      ],
+      "rationale": "Distinguish a full syringe with the exact prescribed strength from an underdose."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess for bleeding",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::bleeding"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--bleeding",
+          "sha256": "bfb2c7a3bb476f34986a3cc7a7fe244c0fdc2394640573aeed4ec93ee388042b"
+        }
+      ],
+      "rationale": "Recognize concealed blood loss even without external bleeding."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "check platelets",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::platelets"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--platelets",
+          "sha256": "4dca0a17b2ee99a7b90c30ec64ff26f933e879f8a84fcf71dd62b553c4d0ef59"
+        }
+      ],
+      "rationale": "Recognize a substantial platelet fall that warrants HIT evaluation."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Severe renal impairment (CrCl below 30 mL/min) requires regimen review because enoxaparin exposure increases.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::renal_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--renal_dose",
+          "sha256": "2a633d3a4d74fa5aea5fdbd76d9903bb3d2d6d3e10573cfc9b5a22a1860f111e"
+        }
+      ],
+      "rationale": "Identify the CrCl cutoff that triggers an indication-specific review."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "check platelets and renal function as ordered",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::renal_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--renal_dose",
+          "sha256": "2a633d3a4d74fa5aea5fdbd76d9903bb3d2d6d3e10573cfc9b5a22a1860f111e"
+        }
+      ],
+      "rationale": "Use measured renal function to identify the severe-impairment threshold."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Report the dose and time of the last injection before an invasive procedure or neuraxial catheter placement/removal.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::procedure_timing"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--procedure_timing",
+          "sha256": "02f6ff3aa7309a3142e95d0fc3e24b904fb919641f270260f100678e497e05b7"
+        }
+      ],
+      "rationale": "Identify both last-dose amount and actual administration time as critical procedural information."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "New midline back pain, leg weakness or numbness, or bowel/bladder dysfunction after a neuraxial procedure requires immediate escalation for possible spinal hematoma.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-enoxaparin::enoxaparin_neuraxial_red_flag"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-enoxaparin--comprehensive--enoxaparin_neuraxial_red_flag",
+          "sha256": "7228e09e2e8c653a6de28cbde0b3d7a8c5bfa249cdc135fb793e9269c3b79e57"
+        }
+      ],
+      "rationale": "Recognize and immediately escalate possible compressive spinal or epidural bleeding."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Bleeding risk, renal clearance and timing make the exact syringe and dose important.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates bleeding, renal function, dose/strength and timing objectives."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document prefilled 20-, 40-, 60- and 80-mg syringes. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Palestinian formulary and dated shelf-label provenance do not establish current stock."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Clexane = enoxaparin = LMWH.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates the LMWH class."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Main danger: bleeding; renal impairment can increase exposure.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates bleeding and impaired renal clearance objectives."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "5bd6cd7f5b5a6c330e84ee14e51d59902522bc12da6e1788977a74ca4d699713",
+    "mechanism": "dd342ba808e70aeeb5638c751da571103cdd7a75eecf6a982d5a959dcc47b0e9",
+    "use": "2ee1807d531a2fcea7eca5287b0dba3434ca7a0acef454413e1e9875d7c71532",
+    "administration": "0dcf11b3931ec87529b14cad7bd7e69052cb49e592d994cb7d2d2f75a7cb4a98",
+    "monitor": "9a87021953e8ef2ea830427967eb22d9b456e444549bdde1d3e37eb4fff9ee60",
+    "why": "3bd9b5a6d68fa84d243274a5d8cbbcf4762867f8c83913d764bb137c44916e0d",
+    "availability": "47bf26fefe98ed05bf7b60ce1f7967e61e87751e40a2f54aded7f81164445079",
+    "memoryUse": "57cad92cf6d2858ec673deda0446653120e8d639ba9e29ca67e5854c86afdec4",
+    "memoryDanger": "fc42e4feedc6227f73f7be3fc66fa355e4840b04c544f05d2dd67ecb0140f535"
+  },
+  "questionSetSha256": "6556ce4c54933e88b5a9f035c4eba6ad292b2efa5e552a15c0824c5f024c81ef",
+  "questionReview": {
+    "ccu-enoxaparin--comprehensive--principal-action": "Distinguish antithrombin-dependent predominant Xa inhibition.",
+    "ccu-enoxaparin--comprehensive--drug-class": "Identify the LMWH class.",
+    "ccu-enoxaparin--comprehensive--treatment-role": "Identify prevention and treatment as separate enoxaparin uses.",
+    "ccu-enoxaparin--comprehensive--platelets": "Recognize a substantial platelet fall that warrants HIT evaluation.",
+    "ccu-enoxaparin--comprehensive--renal_dose": "Identify the CrCl cutoff that triggers an indication-specific review.",
+    "ccu-enoxaparin--comprehensive--enoxaparin_syringe": "Select both manufacturer-specific actions for a full prefilled dose.",
+    "ccu-enoxaparin--comprehensive--lmwh_route": "Recall the expressly prohibited injection route.",
+    "ccu-enoxaparin--comprehensive--enoxaparin_neuraxial_red_flag": "Recognize and immediately escalate possible compressive spinal or epidural bleeding.",
+    "ccu-enoxaparin--comprehensive--enoxaparin_abdominal_strength": "Select deep SC and rotate abdominal sites.",
+    "ccu-enoxaparin--comprehensive--enoxaparin_stemi_iv": "Distinguish STEMI from routine SC contexts.",
+    "ccu-enoxaparin--comprehensive--bleeding": "Recognize concealed blood loss even without external bleeding.",
+    "ccu-enoxaparin--comprehensive--procedure_timing": "Identify both last-dose amount and actual administration time as critical procedural information."
+  }
+}

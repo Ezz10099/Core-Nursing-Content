@@ -2474,30 +2474,30 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "A patient receives therapeutic enoxaparin. Creatinine clearance falls to 24 mL/min and the order has not changed. What should the nurse clarify before the next dose?",
+        "stem": "Which estimated creatinine clearance falls below the enoxaparin threshold requiring a severe-renal-impairment regimen review before the next dose?",
         "choices": [
           {
-            "text": "Whether the dose and interval need adjustment for increased exposure.",
-            "explanation": "Below 30 mL/min, enoxaparin exposure rises and the regimen needs review.",
+            "text": "24 mL/min",
+            "explanation": "This is below 30 mL/min. Reduced renal clearance can increase exposure, so verify the indication-specific regimen.",
             "id": "A"
           },
           {
-            "text": "Whether the dose needs to rise because renal clearance has slowed.",
-            "explanation": "Slower clearance can increase exposure at the same dose.",
+            "text": "30 mL/min",
+            "explanation": "This is at the cutoff, rather than below it. Renal status and bleeding still require surveillance.",
             "id": "B"
           },
           {
-            "text": "Whether an INR in range confirms the current dose can continue.",
-            "explanation": "INR is not used to guide routine enoxaparin dosing.",
+            "text": "35 mL/min",
+            "explanation": "This does not meet the specified severe-impairment threshold.",
             "id": "C"
           },
           {
-            "text": "Whether a stable platelet count confirms the current dose can continue.",
-            "explanation": "Platelet counts do not establish that the renal regimen is appropriate.",
+            "text": "45 mL/min",
+            "explanation": "This does not meet the specified severe-impairment threshold.",
             "id": "D"
           }
         ],
-        "point": "CrCl below 30 mL/min increases exposure and requires review of the prescribed enoxaparin regimen.",
+        "point": "Recall CrCl below 30 mL/min and increased drug exposure.",
         "criticalForSafety": true,
         "answerKey": "A"
       }
@@ -2649,30 +2649,30 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "After starting therapeutic enoxaparin, a patient develops new hypotension and a falling hemoglobin without visible bleeding. Which concern should be raised promptly?",
+        "stem": "Which paired trend after starting therapeutic enoxaparin most strongly suggests concealed blood loss in a patient without external bleeding?",
         "choices": [
           {
-            "text": "Occult bleeding during anticoagulation.",
-            "explanation": "Bleeding may be internal, and the combination of hypotension and falling hemoglobin requires prompt assessment.",
+            "text": "Falling hemoglobin with a sustained fall in BP",
+            "explanation": "A drop in hemoglobin and pressure can reflect concealed bleeding. Evaluate urgently.",
             "id": "A"
           },
           {
-            "text": "Reduced enoxaparin absorption through the injection site.",
-            "explanation": "Reduced absorption does not explain falling hemoglobin and new hypotension.",
+            "text": "Falling platelets with stable hemoglobin and BP",
+            "explanation": "This warrants assessment for thrombocytopenia but does not specifically establish blood loss.",
             "id": "B"
           },
           {
-            "text": "Platelet suppression as the expected therapeutic effect.",
-            "explanation": "Enoxaparin acts through antithrombin. Falling hemoglobin is not an intended effect.",
+            "text": "Rising creatinine with stable hemoglobin and BP",
+            "explanation": "Renal decline may increase exposure but is not in itself evidence of current hemorrhage.",
             "id": "C"
           },
           {
-            "text": "Expected hemodilution from the SC injection volume.",
-            "explanation": "The SC dose volume does not explain clinically important hemodilution.",
+            "text": "Increasing access-site tenderness with stable hemoglobin and BP",
+            "explanation": "A local finding requires assessment but is less specific for clinically significant concealed loss.",
             "id": "D"
           }
         ],
-        "point": "Monitor for bleeding on enoxaparin and flag unexplained hypotension with a falling hemoglobin.",
+        "point": "Distinguish occult hemorrhage from platelet and renal complications.",
         "criticalForSafety": true,
         "answerKey": "A"
       }
@@ -4295,6 +4295,181 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-enoxaparin::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which anticoagulant class contains enoxaparin?",
+        "choices": [
+          {
+            "text": "Low-molecular-weight heparin",
+            "explanation": "Enoxaparin is an LMWH.",
+            "id": "A"
+          },
+          {
+            "text": "Unfractionated heparin",
+            "explanation": "Enoxaparin is a low-molecular-weight derivative, distinct from UFH.",
+            "id": "B"
+          },
+          {
+            "text": "Direct factor Xa inhibitor",
+            "explanation": "Enoxaparin acts via antithrombin, rather than directly inhibiting Xa.",
+            "id": "C"
+          },
+          {
+            "text": "Direct thrombin inhibitor",
+            "explanation": "Enoxaparin is not a direct thrombin inhibitor.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish LMWH from related injectable or oral anticoagulants.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-enoxaparin::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which mechanism explains enoxaparin’s predominant anticoagulant effect?",
+        "choices": [
+          {
+            "text": "Enhances antithrombin activity predominantly against factor Xa",
+            "explanation": "Enoxaparin acts through antithrombin and has greater anti-Xa than anti-IIa activity.",
+            "id": "A"
+          },
+          {
+            "text": "Enhances antithrombin activity predominantly against factor IIa",
+            "explanation": "The predominant anti-Xa effect distinguishes enoxaparin’s activity profile.",
+            "id": "B"
+          },
+          {
+            "text": "Directly inhibits factor Xa independently of antithrombin",
+            "explanation": "Direct Xa inhibitors do not require antithrombin. Enoxaparin does.",
+            "id": "C"
+          },
+          {
+            "text": "Directly inhibits factor IIa independently of antithrombin",
+            "explanation": "That mechanism describes direct thrombin inhibitors rather than enoxaparin.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish antithrombin-mediated Xa inhibition from direct inhibition and a thrombin-dominant effect.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-enoxaparin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pair of adult indications can both be managed with indication-specific enoxaparin regimens?",
+        "choices": [
+          {
+            "text": "Postoperative VTE prevention and treatment of acute DVT",
+            "explanation": "DVT prophylaxis and acute treatment are distinct uses with different dosing.",
+            "id": "A"
+          },
+          {
+            "text": "Postoperative VTE prevention and long-term antiplatelet therapy after PCI",
+            "explanation": "Enoxaparin does not replace an antiplatelet regimen after PCI.",
+            "id": "B"
+          },
+          {
+            "text": "Treatment of acute DVT and thrombolysis for ischemic stroke",
+            "explanation": "Enoxaparin can treat DVT but is not a thrombolytic.",
+            "id": "C"
+          },
+          {
+            "text": "Thrombolysis for ischemic stroke and long-term antiplatelet therapy after PCI",
+            "explanation": "Neither is a role for enoxaparin as the agent named here.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish VTE prevention and treatment from antiplatelet or thrombolytic roles.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-enoxaparin::platelets": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "While receiving enoxaparin, which laboratory trend most specifically raises concern for an immune complication of a heparin-family medication?",
+        "choices": [
+          {
+            "text": "Platelets fall from 270 to 120 × 10⁹/L, with stable hemoglobin",
+            "explanation": "A substantial platelet fall warrants immediate assessment for causes including HIT.",
+            "id": "A"
+          },
+          {
+            "text": "Hemoglobin falls with stable platelets",
+            "explanation": "This raises concern for blood loss rather than the platelet complication asked about.",
+            "id": "B"
+          },
+          {
+            "text": "Creatinine rises with stable platelets",
+            "explanation": "Renal decline can increase enoxaparin exposure but does not itself indicate HIT.",
+            "id": "C"
+          },
+          {
+            "text": "Neutrophils fall with stable platelets",
+            "explanation": "This does not demonstrate the platelet trend of a heparin-associated platelet complication.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize a significant relative platelet fall on LMWH.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-enoxaparin::enoxaparin_neuraxial_red_flag": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult receives enoxaparin around an epidural procedure. After catheter removal, which new finding combination most specifically points to a complication requiring immediate neurological escalation?",
+        "choices": [
+          {
+            "text": "Midline back pain with progressive bilateral leg weakness and new urinary retention",
+            "explanation": "This combination suggests possible spinal or epidural hematoma and requires immediate escalation.",
+            "id": "A"
+          },
+          {
+            "text": "Positional headache with stable leg strength and bladder function",
+            "explanation": "This can occur with dural puncture but does not have the focal neurologic pattern sought.",
+            "id": "B"
+          },
+          {
+            "text": "A tender abdominal injection-site bruise with stable leg strength and bladder function",
+            "explanation": "A bruise warrants assessment but does not point to spinal compression.",
+            "id": "C"
+          },
+          {
+            "text": "Transient symmetric numbness that continues to improve as the block resolves",
+            "explanation": "Progressive deficits, rather than resolving sensory changes, should raise concern for compressive bleeding.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify midline pain with progressive neurologic and sphincter changes as possible spinal hematoma.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -4364,7 +4539,7 @@
     "ccu-dobutamine": "dobutamine-source-review-20261115",
     "ccu-dopamine": "dopamine-source-review-20261115",
     "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
-    "ccu-enoxaparin": "antithrombotic-clinical-20261111",
+    "ccu-enoxaparin": "enoxaparin-source-review-20261115",
     "ccu-clopidogrel": "clopidogrel-source-review-20261115",
     "trolley-amiodarone": "infusion-calculations-20261115",
     "trolley-magnesium-sulfate": "infusion-calculations-20261115"
