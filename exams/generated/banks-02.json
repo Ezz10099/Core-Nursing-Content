@@ -3391,23 +3391,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Antiplatelet treatment when indicated",
+                  "explanation": "This is a clinical use of the medicine: Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product."
+                },
+                {
+                  "id": "B",
                   "text": "Suppression of bacterial protein synthesis",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Relief of bronchospasm through airway receptor stimulation",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Replacement of glucose during severe hypoglycemia",
                   "explanation": "This is a different treatment role."
-                },
-                {
-                  "id": "D",
-                  "text": "Antiplatelet treatment when indicated",
-                  "explanation": "This is a clinical use of the medicine: Same drug at different doses. Low-dose aspirin ('baby aspirin') usually means about 75–100 mg daily and is used mainly for antiplatelet effect when indicated. Higher aspirin doses are used for analgesic/antipyretic or anti-inflammatory effects depending on the indication and product."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -3433,7 +3433,7 @@
               "learningPointIds": [
                 "ccu-aspirin::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "What does the term baby aspirin mean?",
@@ -3562,9 +3562,52 @@
                 "ccu-aspirin::nsaid_allergy"
               ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult is being assessed before an aspirin dose. Which pair most directly changes assessment of GI bleeding risk?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Current nausea without bleeding or a previous episode of viral gastroenteritis",
+                  "explanation": "Neither by itself establishes the bleeding risk described here."
+                },
+                {
+                  "id": "B",
+                  "text": "Current constipation or a previous uncomplicated appendectomy",
+                  "explanation": "Neither specifically identifies current or prior GI bleeding."
+                },
+                {
+                  "id": "C",
+                  "text": "Current reflux without bleeding or a previous uncomplicated hiatal hernia",
+                  "explanation": "These do not carry the same implications as active bleeding or a prior hemorrhage."
+                },
+                {
+                  "id": "D",
+                  "text": "Current melena or a documented previous bleeding ulcer",
+                  "explanation": "Current possible bleeding needs immediate review. A history of a bleeding ulcer also changes GI risk assessment."
+                }
+              ],
+              "point": "Identify both active bleeding and prior GI bleeding as actionable risk information.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
+                  "field": "monitor",
+                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-aspirin--standard--aspirin_gi_history",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-aspirin::aspirin_gi_history"
+              ],
+              "answerKey": "D"
             }
           ],
-          "questionCount": 5
+          "questionCount": 6
         },
         {
           "id": "ccu-aspirin--advanced",
@@ -3866,23 +3909,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Irreversibly inhibits platelet COX-1",
-                  "explanation": "Reduced thromboxane A2 synthesis impairs platelet aggregation."
-                },
-                {
-                  "id": "B",
                   "text": "Slows AV-nodal calcium-dependent conduction",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Inhibits bacterial cell-wall synthesis",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Stabilizes inactivated voltage-gated sodium channels",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Reduced thromboxane A2 synthesis impairs platelet aggregation."
+                },
+                {
+                  "id": "D",
+                  "text": "Irreversibly inhibits platelet COX-1",
+                  "explanation": "Reduced thromboxane A2 synthesis impairs platelet aggregation."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -3916,7 +3959,7 @@
                 "ccu-aspirin::principal-action"
               ],
               "reusedFromQuestionId": "ccu-aspirin--standard--principal-action",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -3924,18 +3967,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Antiplatelet",
+                  "explanation": "Antiplatelet; irreversible platelet COX-1 inhibitor."
+                },
+                {
+                  "id": "B",
                   "text": "Fibrinolytic",
                   "explanation": "The medicine is classified as: Antiplatelet; irreversible platelet COX-1 inhibitor."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Antifibrinolytic",
                   "explanation": "The medicine is classified as: Antiplatelet; irreversible platelet COX-1 inhibitor."
-                },
-                {
-                  "id": "C",
-                  "text": "Antiplatelet",
-                  "explanation": "Antiplatelet; irreversible platelet COX-1 inhibitor."
                 },
                 {
                   "id": "D",
@@ -3960,7 +4003,7 @@
                 "ccu-aspirin::drug-class"
               ],
               "reusedFromQuestionId": "ccu-aspirin--standard--drug-class",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -4088,13 +4131,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Bronchospasm after aspirin",
-                  "explanation": "This may indicate a significant reaction relevant to another NSAID."
+                  "text": "Dry cough during an ACE inhibitor",
+                  "explanation": "This is a different treatment-related effect."
                 },
                 {
                   "id": "C",
-                  "text": "Dry cough during an ACE inhibitor",
-                  "explanation": "This is a different treatment-related effect."
+                  "text": "Bronchospasm after aspirin",
+                  "explanation": "This may indicate a significant reaction relevant to another NSAID."
                 },
                 {
                   "id": "D",
@@ -4141,30 +4184,74 @@
                 "ccu-aspirin::nsaid_allergy"
               ],
               "reusedFromQuestionId": "ccu-aspirin--standard--nsaid_allergy",
-              "answerKey": "B"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult is being assessed before an aspirin dose. Which pair most directly changes assessment of GI bleeding risk?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Current melena or a documented previous bleeding ulcer",
+                  "explanation": "Current possible bleeding needs immediate review. A history of a bleeding ulcer also changes GI risk assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "Current reflux without bleeding or a previous uncomplicated hiatal hernia",
+                  "explanation": "These do not carry the same implications as active bleeding or a prior hemorrhage."
+                },
+                {
+                  "id": "C",
+                  "text": "Current constipation or a previous uncomplicated appendectomy",
+                  "explanation": "Neither specifically identifies current or prior GI bleeding."
+                },
+                {
+                  "id": "D",
+                  "text": "Current nausea without bleeding or a previous episode of viral gastroenteritis",
+                  "explanation": "Neither by itself establishes the bleeding risk described here."
+                }
+              ],
+              "point": "Identify both active bleeding and prior GI bleeding as actionable risk information.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-aspirin",
+                  "field": "monitor",
+                  "textSha256": "b43a535a200b53d345d694dc66c2a4c6fc40dfd02866a261655a6dc705ff9eac"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-aspirin--7-day--aspirin_gi_history",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-aspirin::aspirin_gi_history"
+              ],
+              "reusedFromQuestionId": "ccu-aspirin--standard--aspirin_gi_history",
+              "answerKey": "A"
             },
             {
               "stem": "During ASA / ASPIRIN — aspirin (including low-dose / “baby aspirin”) therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Clinically important blood loss",
-                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
-                },
-                {
-                  "id": "B",
                   "text": "Isolated vasodilator headache",
                   "explanation": "This does not explain melena and the systemic blood-loss pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "A therapeutic reduction in coagulation alone",
                   "explanation": "Bleeding with circulatory symptoms is more than evidence of the intended drug action."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Uncomplicated postural intolerance",
                   "explanation": "This does not account for the new evidence of GI bleeding."
+                },
+                {
+                  "id": "D",
+                  "text": "Clinically important blood loss",
+                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -4199,7 +4286,7 @@
                 "ccu-aspirin::bleeding"
               ],
               "reusedFromQuestionId": "ccu-aspirin--advanced--bleeding",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "An ACS aspirin loading dose is ordered. Why is the exact formulation important?",
@@ -4211,18 +4298,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Rapid-release chewing can provide faster absorption than delayed-release swallowing",
+                  "explanation": "The loading aim differs from routine maintenance administration."
+                },
+                {
+                  "id": "C",
                   "text": "Modified-release swallowing provides the same immediate absorption target",
                   "explanation": "Release characteristics can delay absorption."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Aspirin needs parenteral dilution to inhibit platelets",
                   "explanation": "The prescribed oral loading formulation does not require IV preparation."
-                },
-                {
-                  "id": "D",
-                  "text": "Rapid-release chewing can provide faster absorption than delayed-release swallowing",
-                  "explanation": "The loading aim differs from routine maintenance administration."
                 }
               ],
               "format": "single-best-answer",
@@ -4243,7 +4330,7 @@
                 "ccu-aspirin::aspirin_loading"
               ],
               "reusedFromQuestionId": "ccu-aspirin--advanced--aspirin_loading",
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A patient receives aspirin, clopidogrel, and an ordered heparin-family treatment. Which shared monitoring concern becomes especially important?",
@@ -4255,18 +4342,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Bleeding at visible and occult sites",
+                  "explanation": "Different antithrombotic mechanisms can add to bleeding tendency."
+                },
+                {
+                  "id": "C",
                   "text": "Reduced glucose from a shared insulin-like mechanism",
                   "explanation": "These drugs do not share that primary action."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Sedation from a shared GABA-A effect",
                   "explanation": "This is not their common pharmacological concern."
-                },
-                {
-                  "id": "D",
-                  "text": "Bleeding at visible and occult sites",
-                  "explanation": "Different antithrombotic mechanisms can add to bleeding tendency."
                 }
               ],
               "format": "single-best-answer",
@@ -4315,10 +4402,10 @@
                 "ccu-aspirin::antithrombotic_combination"
               ],
               "reusedFromQuestionId": "ccu-aspirin--advanced--antithrombotic_combination",
-              "answerKey": "D"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },

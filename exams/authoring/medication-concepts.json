@@ -9376,5 +9376,33 @@
       ],
       "correct": 0
     }
+  },
+  "aspirin_gi_history": {
+    "point": "Identify both active bleeding and prior GI bleeding as actionable risk information.",
+    "anchor": "Check active bleeding, GI-bleeding history and aspirin hypersensitivity",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An adult is being assessed before an aspirin dose. Which pair most directly changes assessment of GI bleeding risk?",
+      "choices": [
+        {
+          "text": "Current melena or a documented previous bleeding ulcer",
+          "explanation": "Current possible bleeding needs immediate review. A history of a bleeding ulcer also changes GI risk assessment."
+        },
+        {
+          "text": "Current reflux without bleeding or a previous uncomplicated hiatal hernia",
+          "explanation": "These do not carry the same implications as active bleeding or a prior hemorrhage."
+        },
+        {
+          "text": "Current constipation or a previous uncomplicated appendectomy",
+          "explanation": "Neither specifically identifies current or prior GI bleeding."
+        },
+        {
+          "text": "Current nausea without bleeding or a previous episode of viral gastroenteritis",
+          "explanation": "Neither by itself establishes the bleeding risk described here."
+        }
+      ],
+      "correct": 0
+    }
   }
 }
