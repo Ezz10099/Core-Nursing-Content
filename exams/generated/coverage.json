@@ -820,6 +820,19 @@
       ]
     },
     {
+      "id": "ibd2-tramadol::tramadol_organ_review",
+      "itemId": "ibd2-tramadol",
+      "point": "Recognize accumulation risk and need for formulation- and patient-specific dose or interval review.",
+      "questionIds": [
+        "ibd2-tramadol--standard--tramadol_organ_review",
+        "ibd2-tramadol--7-day--tramadol_organ_review"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ibd2-tramadol::formulation",
       "itemId": "ibd2-tramadol",
       "point": "Verify product-specific interchangeability and authorization when route or release type differs.",
@@ -13023,7 +13036,9 @@
           "ibd2-tramadol--7-day--sedation_falls"
         ],
         "administration": [
+          "ibd2-tramadol--standard--tramadol_organ_review",
           "ibd2-tramadol--advanced--formulation",
+          "ibd2-tramadol--7-day--tramadol_organ_review",
           "ibd2-tramadol--7-day--formulation"
         ]
       },

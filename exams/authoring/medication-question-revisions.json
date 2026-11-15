@@ -6692,6 +6692,461 @@
           }
         ]
       }
+    },
+    "ibd2-tramadol::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "What is the direction of tramadol’s direct effect at the mu-opioid receptor?",
+        "point": "Identify weak agonism, distinct from antagonism or indirect effects.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Weak agonism",
+            "explanation": "Tramadol has weak mu-opioid agonism, and its active metabolite contributes to opioid analgesia."
+          },
+          {
+            "id": "B",
+            "text": "Competitive antagonism",
+            "explanation": "This would inhibit rather than contribute to opioid analgesia."
+          },
+          {
+            "id": "C",
+            "text": "Irreversible antagonism",
+            "explanation": "Tramadol does not block the mu receptor in this way."
+          },
+          {
+            "id": "D",
+            "text": "No mu activity, with opioid effects limited to kappa antagonism",
+            "explanation": "The analgesic mechanism includes mu activity."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which therapeutic grouping determines how oral tramadol should be treated in an analgesic safety review?",
+        "point": "Classify tramadol as an opioid with additional monoamine effects.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Opioid analgesic with monoamine reuptake effects",
+            "explanation": "The additional mechanism does not remove the opioid classification or safety risks."
+          },
+          {
+            "id": "B",
+            "text": "Non-opioid monoamine analgesic",
+            "explanation": "Tramadol has clinically important opioid activity as well as monoamine effects."
+          },
+          {
+            "id": "C",
+            "text": "Non-opioid anti-inflammatory analgesic",
+            "explanation": "Tramadol does not act primarily as an NSAID."
+          },
+          {
+            "id": "D",
+            "text": "Opioid antagonist analgesic",
+            "explanation": "Tramadol provides opioid analgesia through agonist activity."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After fracture fixation, ordered non-opioid measures do not adequately control moderate-to-severe acute pain. The prescriber selects oral tramadol. Which role is intended?",
+        "point": "Recognize prescribed opioid analgesia when other pain measures are inadequate.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Treat the acute pain as a prescribed opioid component",
+            "explanation": "Use is guided by pain severity, adequacy of alternatives and the individual order."
+          },
+          {
+            "id": "B",
+            "text": "Treat fracture swelling as the primary anti-inflammatory component",
+            "explanation": "Tramadol is an analgesic rather than an anti-inflammatory drug."
+          },
+          {
+            "id": "C",
+            "text": "Replace operative local anaesthesia through direct nerve blockade",
+            "explanation": "Its oral opioid and reuptake effects do not provide local nerve blockade."
+          },
+          {
+            "id": "D",
+            "text": "Treat muscle spasm as the primary skeletal muscle relaxant",
+            "explanation": "Tramadol can change pain perception but is not a skeletal muscle relaxant."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::opioid_respiration": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After tramadol, a postoperative patient is hard to wake and has slow, shallow breaths. Which interpretation should guide escalation even if oxygen saturation is preserved on supplemental oxygen?",
+        "point": "Detect impaired ventilation and reduced responsiveness despite apparently adequate saturations.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Possible opioid-induced ventilatory depression requiring immediate assessment",
+            "explanation": "Supplemental oxygen can preserve SpO2 even while ventilation is inadequate. Escalate and support airway and breathing per protocol."
+          },
+          {
+            "id": "B",
+            "text": "Expected sedation with adequate ventilation, as shown by preserved SpO2",
+            "explanation": "SpO2 does not establish the adequacy of ventilation or consciousness."
+          },
+          {
+            "id": "C",
+            "text": "Likely serotonin toxicity based on reduced respiratory drive alone",
+            "explanation": "Serotonin toxicity typically includes neuromuscular excitation and autonomic signs."
+          },
+          {
+            "id": "D",
+            "text": "Likely orthostatic intolerance even while supine and hypoventilating",
+            "explanation": "This does not account for difficult arousal and depressed respiratory effort."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::serotonin": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After tramadol is added to a regimen containing an SSRI, an adult has agitation, diaphoresis, tremor and inducible clonus. Which interpretation best fits?",
+        "point": "Distinguish serotonergic neuromuscular excitation from competing toxidromes.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Serotonin toxicity from additive serotonergic effects",
+            "explanation": "Clonus and tremor with autonomic changes fit serotonin toxicity. Escalate promptly."
+          },
+          {
+            "id": "B",
+            "text": "Isolated opioid-related sedation and respiratory depression",
+            "explanation": "This more often presents with reduced arousal and ventilatory drive rather than clonus and agitation."
+          },
+          {
+            "id": "C",
+            "text": "Anticholinergic toxicity from the opioid component",
+            "explanation": "Clonus and sweating are not the typical dry anticholinergic pattern."
+          },
+          {
+            "id": "D",
+            "text": "Uncomplicated postoperative pain with an adrenergic response",
+            "explanation": "Pain can cause sweating and agitation but does not explain the new clonus."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::seizure_risk": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which history specifically increases concern about tramadol-associated convulsions even when it is given as prescribed?",
+        "point": "Identify a seizure-risk factor and recognize that risk is not limited to overdose.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Epilepsy or a history of seizures",
+            "explanation": "Tramadol can provoke seizures at recommended doses. Prior seizures increase concern and warrant review."
+          },
+          {
+            "id": "B",
+            "text": "Remote uncomplicated peptic ulcer disease",
+            "explanation": "This matters for NSAID selection but does not in itself identify tramadol-associated seizure risk."
+          },
+          {
+            "id": "C",
+            "text": "Stable chronic constipation with no seizure history",
+            "explanation": "Constipation needs separate management but does not identify this neurologic susceptibility."
+          },
+          {
+            "id": "D",
+            "text": "A prior episode of opioid-related nausea without convulsions",
+            "explanation": "This informs tolerability rather than specifically increasing seizure susceptibility."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::sedation_falls": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient due for a first assisted mobilization becomes dizzy and more drowsy after oral tramadol, with breathing unchanged. Which interpretation best fits the drug effect?",
+        "point": "Link dizziness and sedative impairment to fall risk even without respiratory depression.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Tramadol-related dizziness and sedation can impair safe transfer even with stable breathing",
+            "explanation": "Reassess alertness, balance and mobility assistance before the transfer."
+          },
+          {
+            "id": "B",
+            "text": "The stable respiratory rate excludes medication-related impairment of mobility",
+            "explanation": "Fall risk can rise without measurable respiratory depression."
+          },
+          {
+            "id": "C",
+            "text": "The new symptoms indicate adequate analgesia for independent transfer",
+            "explanation": "Analgesic benefit does not establish safe coordination or alertness."
+          },
+          {
+            "id": "D",
+            "text": "The symptoms establish serotonin toxicity without a neuromuscular or autonomic change",
+            "explanation": "Dizziness and drowsiness alone are more consistent with sedation than a serotonergic syndrome."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::constipation": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which bowel trend is most consistent with an opioid effect after several days of tramadol in an immobilized patient?",
+        "point": "Recognize slowed transit as a common opioid effect.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reduced stool frequency with hard stools and straining",
+            "explanation": "Opioids can slow intestinal transit, and immobility may contribute."
+          },
+          {
+            "id": "B",
+            "text": "New frequent watery stools after a course of antibiotics",
+            "explanation": "This pattern suggests diarrhea and warrants a separate assessment."
+          },
+          {
+            "id": "C",
+            "text": "Black tarry stool with new postural symptoms",
+            "explanation": "This suggests possible bleeding rather than an uncomplicated opioid bowel effect."
+          },
+          {
+            "id": "D",
+            "text": "Frequent loose stools with cramping after a laxative dose",
+            "explanation": "This is less characteristic of opioid-related slowing."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::pain_response": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Pain on transfer was 7/10 before tramadol. Which follow-up documents analgesic benefit and separately checks a key opioid hazard?",
+        "point": "Pair comparable movement pain with sedation and respiratory surveillance.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Pain on the same transfer falls to 4/10, with respiratory effort and alertness reassessed",
+            "explanation": "A comparable activity measures analgesia. Separate checks assess opioid-related harm."
+          },
+          {
+            "id": "B",
+            "text": "Rest pain is 4/10, and a normal BP is used to infer safe ventilation",
+            "explanation": "Rest and movement pain are not directly comparable, and BP does not establish ventilation."
+          },
+          {
+            "id": "C",
+            "text": "Transfer pain stays at 7/10, but drowsiness is used as evidence of pain relief",
+            "explanation": "Sedation does not establish analgesic benefit."
+          },
+          {
+            "id": "D",
+            "text": "No transfer is attempted, and lower stool frequency is treated as evidence of analgesia",
+            "explanation": "Bowel slowing can be an adverse effect, not an indicator of pain relief."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::tramadol_monoamines": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which neurotransmitter reuptake pair contributes to tramadol’s analgesic and interaction profile?",
+        "point": "Identify serotonin and norepinephrine together.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Serotonin and norepinephrine",
+            "explanation": "Both reuptake pathways are involved."
+          },
+          {
+            "id": "B",
+            "text": "Serotonin and dopamine",
+            "explanation": "Serotonin fits but dopamine is not the other named pathway."
+          },
+          {
+            "id": "C",
+            "text": "Norepinephrine and dopamine",
+            "explanation": "Norepinephrine fits but dopamine is not the other relevant pathway."
+          },
+          {
+            "id": "D",
+            "text": "Norepinephrine and acetylcholine",
+            "explanation": "Acetylcholine is not the other reuptake target."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::tramadol_named_sedatives": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which two co-medications each increase concern about respiratory depression when added to tramadol?",
+        "point": "Recognize gabapentin and sedating promethazine as additive CNS depressants.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Gabapentin and promethazine",
+            "explanation": "Both can enhance sedation when combined with an opioid and increase respiratory risk."
+          },
+          {
+            "id": "B",
+            "text": "Gabapentin and paracetamol",
+            "explanation": "Gabapentin raises the concern. Paracetamol does not ordinarily add this CNS depressant effect."
+          },
+          {
+            "id": "C",
+            "text": "Promethazine and ibuprofen",
+            "explanation": "Promethazine raises the concern. Ibuprofen does not ordinarily add CNS depressant activity."
+          },
+          {
+            "id": "D",
+            "text": "Paracetamol and ibuprofen",
+            "explanation": "These non-opioids do not produce the named additive CNS depressant effect at usual doses."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::tramadol_nausea": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Soon after the first oral tramadol dose, a patient reports nausea and mild dizziness without clonus, abnormal ventilation, or rash. What interpretation best fits this pattern?",
+        "point": "Recognize common tramadol adverse effects and distinguish them from severe syndromes.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Common early adverse effects that still warrant symptom and safety reassessment",
+            "explanation": "Nausea and dizziness can occur without indicating a serious toxidrome."
+          },
+          {
+            "id": "B",
+            "text": "Established serotonin toxicity based on gastrointestinal symptoms alone",
+            "explanation": "Serotonin toxicity requires assessment of additional characteristic features."
+          },
+          {
+            "id": "C",
+            "text": "Established opioid ventilatory depression without breathing or alertness changes",
+            "explanation": "Nausea alone does not establish compromised ventilation."
+          },
+          {
+            "id": "D",
+            "text": "Established immediate hypersensitivity without skin, airway, or circulatory findings",
+            "explanation": "The findings are more compatible with known nonallergic adverse effects."
+          }
+        ]
+      }
+    },
+    "ibd2-tramadol::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The oral tramadol capsule ordered for a fracture patient is temporarily unavailable. Stock includes a parenteral tramadol product of the same nominal milligram strength. Which principle applies?",
+        "point": "Distinguish the oral capsule from a parenteral formulation and reject an unverified conversion.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Use the oral order with the matching capsule or obtain a verified replacement regimen",
+            "explanation": "The same milligrams do not establish interchangeability between oral and parenteral products."
+          },
+          {
+            "id": "B",
+            "text": "Inject the parenteral product on the oral schedule because the labeled milligrams match",
+            "explanation": "A change of route calls for an authorized and verified regimen."
+          },
+          {
+            "id": "C",
+            "text": "Give the parenteral product orally using the capsule directions",
+            "explanation": "A parenteral formulation is not automatically appropriate for oral administration."
+          },
+          {
+            "id": "D",
+            "text": "Change routes and copy the dosing interval from another patient",
+            "explanation": "Another order does not establish the route conversion or dose for this patient."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -6770,6 +7225,7 @@
     "ccu-isosorbide-dinitrate": "isosorbide-formulation-review-20261115",
     "ibd2-acamol": "paracetamol-source-review-20261115",
     "ibd2-trufen": "ibuprofen-source-review-20261115",
-    "ibd2-cefazolin": "cefazolin-source-review-20261115"
+    "ibd2-cefazolin": "cefazolin-source-review-20261115",
+    "ibd2-tramadol": "tramadol-source-review-20261115"
   }
 }

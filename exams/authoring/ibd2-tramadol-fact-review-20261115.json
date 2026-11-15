@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-tramadol",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of adult oral tramadol card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://pharmacy.moh.ps/index/DangerousProducts/Language/en",
+      "section": "Palestinian MOH controlled medicines list",
+      "scope": "Tramadol appears in the local regulatory list. Exact capsule, stock and regimen are not established by this list."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/tramadol-oral-16684726.html",
+      "section": "MSF Essential Drugs, tramadol oral",
+      "scope": "Moderate pain, oral formulations, adverse effects, caution and dose reduction in organ impairment. No MSF numeric schedule is imported."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54d74939-301b-e603-e063-6394a90a3b03",
+      "section": "Tramadol oral prescribing information §§1, 2, 5, 6, 7, 8 and 12",
+      "scope": "Indication restricted to pain requiring an opioid when alternatives are inadequate, organ impairment, respiratory depression, seizures, serotonin toxicity, adverse effects and mechanism. This is a corroborating oral tablet label rather than confirmation of a ward capsule."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=561f00e5-f69c-4369-ae4d-5eff86c4499f",
+      "section": "Tramadol label CNS-depressant warning",
+      "scope": "Warns about additive sedation and respiratory depression including with gabapentinoids."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0ba50da-9f70-4531-a9de-3dd3f8aa1f5d",
+      "section": "FDA promethazine label, CNS depression",
+      "scope": "Sedation and CNS-depressant interaction warnings support caution with opioid coadministration."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Opioid analgesic with additional serotonin/norepinephrine reuptake effects.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--drug-class",
+          "sha256": "f9435ddee0fd162480de453a31c6a8a3519cbde7380bb9b021c68844f6809ecb"
+        }
+      ],
+      "rationale": "Distinguish opioid classification despite additional monoamine effects."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Weak mu-opioid receptor agonism",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--principal-action",
+          "sha256": "56294bea4c88b357c2c57d7cc22d0802383a70df9b4a374bc21c0c1b672823d0"
+        }
+      ],
+      "rationale": "Identify weak agonism rather than antagonism."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "inhibition of serotonin and norepinephrine reuptake",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::tramadol_monoamines"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--tramadol_monoamines",
+          "sha256": "1e97d688f7d25a2b25789f73cc07b3c0401b191262a9179f768f4578cfcf3307"
+        }
+      ],
+      "rationale": "Identify both affected transport systems."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Moderate-to-severe pain when an opioid analgesic is prescribed; common relevance after fractures, major trauma or surgery.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--treatment-role",
+          "sha256": "496f4648e3f93ad317ec22c492a20c6736e47fe95c9a0c129a4ef214be8c6231"
+        }
+      ],
+      "rationale": "Choose prescribed opioid analgesia for moderate-to-severe acute fracture pain with inadequate alternatives."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "For the oral capsule, give PO exactly as ordered and confirm formulation/strength.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--formulation",
+          "sha256": "1e7576aafc7a720a9d4916d8bb6f2750ee1dc89e5e04a995faeece26638eccd1"
+        }
+      ],
+      "rationale": "Select a matching oral capsule or an authorized replacement plan."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Do not assume oral and parenteral products are interchangeable. Avoid unverified route conversion.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--formulation",
+          "sha256": "1e7576aafc7a720a9d4916d8bb6f2750ee1dc89e5e04a995faeece26638eccd1"
+        }
+      ],
+      "rationale": "Reject a nominal milligram-for-milligram route substitution."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Dose selection can require adjustment for renal/hepatic impairment",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::tramadol_organ_review"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--tramadol_organ_review",
+          "sha256": "3a5a137fd9d51013ae7ae749b101611bfe081b8a5c39e4d019ecab9f01693fd1"
+        }
+      ],
+      "rationale": "Recognize accumulation risk and individualized regimen review."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "interacting medicines.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::tramadol_named_sedatives"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--tramadol_named_sedatives",
+          "sha256": "4ffe5ddbfa4dc5fa99b700cfc180e8d6e2050c87734d3231690417dd37f66f30"
+        }
+      ],
+      "rationale": "Verify CNS depressant co-exposure with implications for the prescribing and monitoring plan."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess pain, respiratory rate/effort, sedation/level of consciousness and fall risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::pain_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--pain_response",
+          "sha256": "c9847cb9bbb9db181a8cf8f3d3b190947c3191a6d46902457e29a556d3ecca79"
+        }
+      ],
+      "rationale": "Compare pain during the same activity and assess opioid safety separately. Falls are tested in their own question."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Serious respiratory depression can occur, especially with other CNS depressants.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::opioid_respiration"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--opioid_respiration",
+          "sha256": "d81fac7e32583f0fccae6b3d693ad69bb5c0be91c4734b21db557720e3d10b23"
+        }
+      ],
+      "rationale": "Recognize opioid ventilation failure despite reassuring saturation. Concurrent depressants are tested separately."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Tramadol can cause seizures",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::seizure_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--seizure_risk",
+          "sha256": "221444de0c796cc56193703f84de37eedbd7fdcb22fcce34e4e7315e97f1c53a"
+        }
+      ],
+      "rationale": "Identify risk in susceptible patients at prescribed doses."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "serotonin syndrome.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::serotonin"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--serotonin",
+          "sha256": "59e910602df77290b6198c0ed2fdd4a38ceee2112b8f446b337c9b4f7b5126c2"
+        }
+      ],
+      "rationale": "Differentiate serotonin toxicity from competing effects."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Watch for nausea, dizziness and constipation.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::tramadol_nausea"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--tramadol_nausea",
+          "sha256": "6da9024fdf38304eb29eb9ce385b80be35c53fe013cde1cec798b841146a8aa0"
+        }
+      ],
+      "rationale": "Recognize nausea and dizziness in the absence of severe syndrome findings."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "constipation.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::constipation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--constipation",
+          "sha256": "69fdb74ea09f34313ce5825dc985611a588a5042b27b2ab20983d633c1a417e8"
+        }
+      ],
+      "rationale": "Recognize reduced transit and hard stool as opioid effects."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "fall risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::sedation_falls"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--sedation_falls",
+          "sha256": "dd5344dc9198b2390f9ed41bb5e103aa476dc3c04597488eea8b14439023d7fe"
+        }
+      ],
+      "rationale": "Identify mobility risk despite stable breathing."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Combining with gabapentin or sedating promethazine can increase sedation/respiratory risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::tramadol_named_sedatives"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--tramadol_named_sedatives",
+          "sha256": "4ffe5ddbfa4dc5fa99b700cfc180e8d6e2050c87734d3231690417dd37f66f30"
+        }
+      ],
+      "rationale": "Identify both named sedating medicines."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Escalate excessive sedation, slow/shallow breathing or reduced responsiveness.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-tramadol::opioid_respiration"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-tramadol--comprehensive--opioid_respiration",
+          "sha256": "d81fac7e32583f0fccae6b3d693ad69bb5c0be91c4734b21db557720e3d10b23"
+        }
+      ],
+      "rationale": "Escalate impaired ventilation and difficult arousal."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Opioid activity provides analgesia, while monoamine effects contribute to both analgesia and interaction risks such as serotonin syndrome and seizures.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats opioid and monoamine mechanisms and associated complications."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026, including an oral capsule. Other ward formulations may differ; verify the exact product, strength and route before administration.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Dated observation does not verify the exact current package."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Stronger analgesia for moderate-to-severe acute pain.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Sedation/respiratory depression; also seizures and serotonin syndrome.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "e8332608edc23353c46909dfdee25abd9d376a09db3b61189b5e471cc1ac368e",
+    "mechanism": "346c86f53770937bc5b976a10a87d1e3b2dda4cde3147031f1ec7dd27d0c38dd",
+    "use": "4e1d69f5e663d5d7da48acd30ca06482d63b1de94a9986cfb59fc3f965442c7f",
+    "administration": "13b0acd2fd96e7762b2c6bd16188cc5c9c1ce3faa7a1e7aa7be9152a4da0c1db",
+    "monitor": "5ca01be119c163f76a734eb556b91a30bdc3fb4e9f16a9295483cab1cf3c0bff",
+    "why": "2a38b5def33cade343f5e82af99b1e5223e508c6b483778b593eaab3fe5c36a5",
+    "availability": "b070a61de672e8568da38abece58ab4b4ef4b657b001948cfd4c4262fae44845",
+    "memoryUse": "293d275ae9e5c0470b27aee77537e65dca12d22069cfaaa386022f10b63f30ff",
+    "memoryDanger": "0166486f99b4fef73ef3be81b2ad1f106826401751d914ab4bd48365d12e66fc"
+  },
+  "questionSetSha256": "6b9ad9a5552ae3ff912c8f130fd99c73d8fce20af7cbc55db9bdb82fa8392b50",
+  "questionReview": {
+    "ibd2-tramadol--comprehensive--principal-action": "Identify weak agonism rather than antagonism.",
+    "ibd2-tramadol--comprehensive--drug-class": "Distinguish opioid classification despite additional monoamine effects.",
+    "ibd2-tramadol--comprehensive--treatment-role": "Choose prescribed opioid analgesia for moderate-to-severe acute fracture pain with inadequate alternatives.",
+    "ibd2-tramadol--comprehensive--opioid_respiration": "Recognize opioid ventilation failure despite reassuring saturation. Concurrent depressants are tested separately.",
+    "ibd2-tramadol--comprehensive--serotonin": "Differentiate serotonin toxicity from competing effects.",
+    "ibd2-tramadol--comprehensive--seizure_risk": "Identify risk in susceptible patients at prescribed doses.",
+    "ibd2-tramadol--comprehensive--sedation_falls": "Identify mobility risk despite stable breathing.",
+    "ibd2-tramadol--comprehensive--constipation": "Recognize reduced transit and hard stool as opioid effects.",
+    "ibd2-tramadol--comprehensive--pain_response": "Compare pain during the same activity and assess opioid safety separately. Falls are tested in their own question.",
+    "ibd2-tramadol--comprehensive--tramadol_monoamines": "Identify both affected transport systems.",
+    "ibd2-tramadol--comprehensive--tramadol_named_sedatives": "Verify CNS depressant co-exposure with implications for the prescribing and monitoring plan.",
+    "ibd2-tramadol--comprehensive--tramadol_nausea": "Recognize nausea and dizziness in the absence of severe syndrome findings.",
+    "ibd2-tramadol--comprehensive--tramadol_organ_review": "Recognize accumulation risk and individualized regimen review.",
+    "ibd2-tramadol--comprehensive--formulation": "Select a matching oral capsule or an authorized replacement plan."
+  }
+}

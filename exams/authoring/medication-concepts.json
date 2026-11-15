@@ -9432,5 +9432,33 @@
       ],
       "correct": 0
     }
+  },
+  "tramadol_organ_review": {
+    "point": "Recognize accumulation risk and need for formulation- and patient-specific dose or interval review.",
+    "anchor": "Dose selection can require adjustment for renal/hepatic impairment",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient has worsening renal function and chronic hepatic impairment while receiving oral tramadol. Which issue should the nurse raise before the next scheduled dose?",
+      "choices": [
+        {
+          "text": "Whether accumulation warrants a lower dose, longer interval or a different analgesic plan",
+          "explanation": "Renal and hepatic impairment can affect tramadol and its active metabolite, and interactions can further change exposure."
+        },
+        {
+          "text": "Whether declining clearance requires an earlier repeat dose to maintain a stable level",
+          "explanation": "Slower clearance can increase exposure rather than requiring more frequent dosing."
+        },
+        {
+          "text": "Whether switching to parenteral tramadol removes the need for impairment review",
+          "explanation": "Changing route does not remove systemic metabolism or elimination concerns."
+        },
+        {
+          "text": "Whether a therapeutic pain response rules out accumulation risk",
+          "explanation": "Symptom relief does not establish that repeated exposure is safe."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

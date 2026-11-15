@@ -6019,23 +6019,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Mu agonism and reuptake inhibition",
-                  "explanation": "Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
-                },
-                {
-                  "id": "B",
                   "text": "Reduces angiotensin-II formation",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Retains water in the colon",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Predominantly beta1-mediated increased contractility",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Mu agonism and reuptake inhibition",
+                  "explanation": "Tramadol combines weak mu activity with serotonin/norepinephrine reuptake effects."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -6068,7 +6068,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::principal-action"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -6076,23 +6076,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Opioid/monoamine analgesic",
-                  "explanation": "Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
-                },
-                {
-                  "id": "B",
                   "text": "Non-opioid analgesic",
                   "explanation": "The medicine is classified as: Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Pyrazolone analgesic",
                   "explanation": "The medicine is classified as: Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "NSAID",
                   "explanation": "The medicine is classified as: Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
+                },
+                {
+                  "id": "D",
+                  "text": "Opioid/monoamine analgesic",
+                  "explanation": "Opioid analgesic with additional serotonin/norepinephrine reuptake effects."
                 }
               ],
               "point": "Identify the drug class taught for this medicine.",
@@ -6111,7 +6111,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::drug-class"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -6173,13 +6173,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "New reduced responsiveness and shallow breathing",
-                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
+                  "text": "New constipation and abdominal discomfort",
+                  "explanation": "These matter but do not outrank the described ventilatory threat."
                 },
                 {
                   "id": "C",
-                  "text": "New constipation and abdominal discomfort",
-                  "explanation": "These matter but do not outrank the described ventilatory threat."
+                  "text": "New reduced responsiveness and shallow breathing",
+                  "explanation": "This suggests a threat to ventilation from opioid toxicity."
                 },
                 {
                   "id": "D",
@@ -6211,7 +6211,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::opioid_respiration"
               ],
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "After TRAMADOL — oral capsule / ward formulation, which syndrome best explains agitation, fever, hyperreflexia, and autonomic instability?",
@@ -6294,18 +6294,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "A new generalized seizure",
+                  "explanation": "This is a potentially serious neurological adverse effect or another emergency."
+                },
+                {
+                  "id": "C",
                   "text": "Improving original symptoms",
                   "explanation": "Therapeutic improvement does not itself identify neurotoxicity."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Mild unchanged nausea",
                   "explanation": "This is less urgent than a new seizure."
-                },
-                {
-                  "id": "D",
-                  "text": "A new generalized seizure",
-                  "explanation": "This is a potentially serious neurological adverse effect or another emergency."
                 }
               ],
               "format": "single-best-answer",
@@ -6339,25 +6339,25 @@
               "learningPointIds": [
                 "ibd2-tramadol::seizure_risk"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "stem": "A patient taking TRAMADOL — oral capsule / ward formulation is newly drowsy and ataxic but has stable vital signs. Which activity most directly requires additional assistance?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Standing and transferring to the bathroom",
+                  "explanation": "Impaired alertness and coordination increase fall risk."
+                },
+                {
+                  "id": "B",
                   "text": "Using the call bell while seated with support",
                   "explanation": "This does not require the impaired balance involved in standing."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Choosing a meal while seated with support",
                   "explanation": "This does not carry the same immediate fall exposure."
-                },
-                {
-                  "id": "C",
-                  "text": "Standing and transferring to the bathroom",
-                  "explanation": "Impaired alertness and coordination increase fall risk."
                 },
                 {
                   "id": "D",
@@ -6389,7 +6389,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::sedation_falls"
               ],
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "An immobilized patient receiving TRAMADOL — oral capsule / ward formulation develops reduced stool frequency and straining. Which problem best fits?",
@@ -6545,18 +6545,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Gabapentin and promethazine",
+                  "explanation": "Both are specifically named as potentially increasing CNS/respiratory depression with tramadol."
+                },
+                {
+                  "id": "C",
                   "text": "Losartan and paracetamol",
                   "explanation": "These are not the highlighted sedating pair."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Paracetamol and cefazolin",
                   "explanation": "These are not the sedating pair highlighted."
-                },
-                {
-                  "id": "D",
-                  "text": "Gabapentin and promethazine",
-                  "explanation": "Both are specifically named as potentially increasing CNS/respiratory depression with tramadol."
                 }
               ],
               "point": "Recognize additive sedation/respiratory risk with gabapentin or promethazine.",
@@ -6575,7 +6575,7 @@
               "learningPointIds": [
                 "ibd2-tramadol::tramadol_named_sedatives"
               ],
-              "answerKey": "D"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -6619,9 +6619,52 @@
                 "ibd2-tramadol::tramadol_nausea"
               ],
               "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient has worsening renal function and chronic hepatic impairment while receiving oral tramadol. Which issue should the nurse raise before the next scheduled dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Whether accumulation warrants a lower dose, longer interval or a different analgesic plan",
+                  "explanation": "Renal and hepatic impairment can affect tramadol and its active metabolite, and interactions can further change exposure."
+                },
+                {
+                  "id": "B",
+                  "text": "Whether declining clearance requires an earlier repeat dose to maintain a stable level",
+                  "explanation": "Slower clearance can increase exposure rather than requiring more frequent dosing."
+                },
+                {
+                  "id": "C",
+                  "text": "Whether a therapeutic pain response rules out accumulation risk",
+                  "explanation": "Symptom relief does not establish that repeated exposure is safe."
+                },
+                {
+                  "id": "D",
+                  "text": "Whether switching to parenteral tramadol removes the need for impairment review",
+                  "explanation": "Changing route does not remove systemic metabolism or elimination concerns."
+                }
+              ],
+              "point": "Recognize accumulation risk and need for formulation- and patient-specific dose or interval review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-tramadol",
+                  "field": "administration",
+                  "textSha256": "13b0acd2fd96e7762b2c6bd16188cc5c9c1ce3faa7a1e7aa7be9152a4da0c1db"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ibd2-tramadol--standard--tramadol_organ_review",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-tramadol::tramadol_organ_review"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 12
+          "questionCount": 13
         },
         {
           "id": "ibd2-tramadol--advanced",
@@ -7616,6 +7659,50 @@
               "answerKey": "C"
             },
             {
+              "format": "single-best-answer",
+              "stem": "A patient has worsening renal function and chronic hepatic impairment while receiving oral tramadol. Which issue should the nurse raise before the next scheduled dose?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Whether a therapeutic pain response rules out accumulation risk",
+                  "explanation": "Symptom relief does not establish that repeated exposure is safe."
+                },
+                {
+                  "id": "B",
+                  "text": "Whether declining clearance requires an earlier repeat dose to maintain a stable level",
+                  "explanation": "Slower clearance can increase exposure rather than requiring more frequent dosing."
+                },
+                {
+                  "id": "C",
+                  "text": "Whether accumulation warrants a lower dose, longer interval or a different analgesic plan",
+                  "explanation": "Renal and hepatic impairment can affect tramadol and its active metabolite, and interactions can further change exposure."
+                },
+                {
+                  "id": "D",
+                  "text": "Whether switching to parenteral tramadol removes the need for impairment review",
+                  "explanation": "Changing route does not remove systemic metabolism or elimination concerns."
+                }
+              ],
+              "point": "Recognize accumulation risk and need for formulation- and patient-specific dose or interval review.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ibd2-tramadol",
+                  "field": "administration",
+                  "textSha256": "13b0acd2fd96e7762b2c6bd16188cc5c9c1ce3faa7a1e7aa7be9152a4da0c1db"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ibd2-tramadol--7-day--tramadol_organ_review",
+              "points": 1,
+              "learningPointIds": [
+                "ibd2-tramadol::tramadol_organ_review"
+              ],
+              "reusedFromQuestionId": "ibd2-tramadol--standard--tramadol_organ_review",
+              "answerKey": "C"
+            },
+            {
               "stem": "The prescribed TRAMADOL — oral capsule / ward formulation and the supplied product differ in release type or route. What establishes whether substitution is acceptable?",
               "choices": [
                 {
@@ -7660,7 +7747,7 @@
               "answerKey": "C"
             }
           ],
-          "questionCount": 13
+          "questionCount": 14
         }
       ]
     },
