@@ -3111,6 +3111,19 @@
       ]
     },
     {
+      "id": "ccu-aspirin::aspirin_gi_history",
+      "itemId": "ccu-aspirin",
+      "point": "Identify both active bleeding and prior GI bleeding as actionable risk information.",
+      "questionIds": [
+        "ccu-aspirin--standard--aspirin_gi_history",
+        "ccu-aspirin--7-day--aspirin_gi_history"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-aspirin::bleeding",
       "itemId": "ccu-aspirin",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -14199,11 +14212,13 @@
         "monitor": [
           "ccu-aspirin--standard--aspirin_identity",
           "ccu-aspirin--standard--nsaid_allergy",
+          "ccu-aspirin--standard--aspirin_gi_history",
           "ccu-aspirin--advanced--bleeding",
           "ccu-aspirin--advanced--nsaid_allergy",
           "ccu-aspirin--advanced--antithrombotic_combination",
           "ccu-aspirin--7-day--aspirin_identity",
           "ccu-aspirin--7-day--nsaid_allergy",
+          "ccu-aspirin--7-day--aspirin_gi_history",
           "ccu-aspirin--7-day--bleeding",
           "ccu-aspirin--7-day--antithrombotic_combination"
         ],
