@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-meropenem",
+  "reviewDate": "2026-11-16",
+  "status": "Completed author review of adult meropenem card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.pharmacy.moh.ps/service/getDrugs",
+      "section": "Palestinian MOH formulary M-081-0079",
+      "scope": "Lists a 1-g meropenem vial. The registry does not establish current stock or formulation in IBD2."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=58e165b7-e230-4459-abf9-06d5ca1dd7b2&type=display",
+      "section": "Meropenem prescribing information §§1, 2, 5, 7, 12",
+      "scope": "Indications, reconstitution and administration, renal adjustment, hypersensitivity, seizures, C. difficile, decreased valproate and cell-wall mechanism."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11916454/",
+      "section": "Primary retrospective carbapenem–valproate study",
+      "scope": "Corroborates substantial serum valproate decrease in meropenem-exposed patients."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Carbapenem (penem) broad-spectrum beta-lactam antibacterial.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--drug-class",
+          "sha256": "55e993da4e0327710034ed5dadae50fc1c69a26545ea7f37b51d5d0b44d2f0fc"
+        }
+      ],
+      "rationale": "Identify the carbapenem subgroup."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Carbapenem beta-lactam that binds penicillin-binding proteins and inhibits bacterial cell-wall synthesis.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--principal-action",
+          "sha256": "1b37ef52570ae237607d7597a632de0118ceafdc499e80c0437eea78f5f8c4bc"
+        }
+      ],
+      "rationale": "Connect PBP binding to cell-wall synthesis inhibition."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Serious susceptible bacterial infections. Current labeling includes complicated skin/skin-structure infection",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--treatment-role",
+          "sha256": "4103c795f1aa0f0e9aaf787364ed0961c70df8bebb3c208627d4dc60efc167a0"
+        }
+      ],
+      "rationale": "Choose a labeled complicated skin or soft-tissue treatment scenario."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "it should not be treated as routine orthopaedic prophylaxis simply because it is broad spectrum.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::meropenem_not_prophylaxis"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--meropenem_not_prophylaxis",
+          "sha256": "5e54251c9063cd14d71065938acb231eb1bd00c22f2f7fd66b79051a2216b0ad"
+        }
+      ],
+      "rationale": "Choose procedure-specific prophylaxis without unnecessary carbapenem exposure."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "IV. Reconstitution, dilution, infusion method and dose depend on the exact product, indication and renal function.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::meropenem_iv_preparation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--meropenem_iv_preparation",
+          "sha256": "4d34fbf385445fcd911ac7da23ece5f02bd67e9be142e7430ee9f7edb687257f"
+        }
+      ],
+      "rationale": "Choose supplied product requirements and the verified infusion order. Indication is tested separately in the treatment question."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Current labeling requires dose adjustment when renal function is reduced.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::renal_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--renal_dose",
+          "sha256": "ef0394ed319e3b485fce2718c5fa032d3117af6c424e4a140e084bc35f7c9041"
+        }
+      ],
+      "rationale": "Identify that impaired clearance can require dose or interval adjustment."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check beta-lactam allergy history and monitor for hypersensitivity.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::betalactam_allergy"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--betalactam_allergy",
+          "sha256": "7d730fd4ef447bd69f3464b9fa9d283bd5bfda01375c40a06e7aa6cdfe279aff"
+        }
+      ],
+      "rationale": "Identify relevant immediate carbapenem reaction and multisystem symptoms."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Review renal function because accumulation increases adverse-effect risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::renal_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--renal_dose",
+          "sha256": "ef0394ed319e3b485fce2718c5fa032d3117af6c424e4a140e084bc35f7c9041"
+        }
+      ],
+      "rationale": "Identify the renal basis of accumulation and regimen review."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Watch for seizures/neurologic changes, particularly with renal impairment",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::seizure_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--seizure_risk",
+          "sha256": "e7b10a6dc09e7f72e3124a6fbbe79ff2f7d2f6d4ef77a7208abb4143b14fe7bd"
+        }
+      ],
+      "rationale": "Identify myoclonus and confusion in renal decline and escalate possible seizure risk."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "CNS disease.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::meropenem_cns_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--meropenem_cns_risk",
+          "sha256": "31a89e967acd6d302237d5a121bd45b3b33f87cab4fbff71d05e83fd21e122b3"
+        }
+      ],
+      "rationale": "Recognize pre-existing seizure disorder despite normal clearance."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor for significant diarrhea/C. difficile.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::antibiotic_diarrhea"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--antibiotic_diarrhea",
+          "sha256": "3d0d7d2f21892fa9cb02fc3e8034359088983069f0a529aa856d4b75f7a3e070"
+        }
+      ],
+      "rationale": "Recognize significant watery diarrhea and cramping during antibiotic exposure."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "meropenem can markedly lower valproic acid/divalproex concentrations and trigger breakthrough seizures.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::valproate"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--valproate",
+          "sha256": "2fa8120995a4c246dff15f859ca40ba51fbcc9d7fe0d961b9672d5cee703ab15"
+        }
+      ],
+      "rationale": "Identify the direction of the interaction and seizure consequence."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "broad coverage does not replace culture-guided therapy and antimicrobial stewardship.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-meropenem::antimicrobial_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-meropenem--comprehensive--antimicrobial_response",
+          "sha256": "5501b69ef1a2a16d3e5366cca9c8f5bb855c7f2b2a7e94079408d8960df04d6f"
+        }
+      ],
+      "rationale": "Apply susceptibility and clinical response to reassess broader coverage."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "WARD-OBSERVED repeatedly in IBD2 at Nasser Medical Complex in Oct 2026. Exact vial strength was not recorded; verify the vial and order.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Dated ward observation, with no verified current product."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Broad-spectrum IV antibiotic for serious susceptible infection.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Renal adjustment + seizure risk; major interaction with valproic acid/divalproex.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "172212d9f00e3bc85263d54030f007c473dddbe297835ca88a07fb70dc3bce5d",
+    "mechanism": "a54bcc99c1436284542d14a7438faec6513a0e3790f386e205ceb955943b5c92",
+    "use": "cf20ecce68f2e7c1cdc8ccb2a72bcc184875cfaba835097c3917274fedc1e979",
+    "administration": "3f245b647a1e82a271e3b1d762d9014904150691b22f303d1396799b7ba2b7b6",
+    "monitor": "df161e73a41a1c1d49dd3d25101044fe3aa48ce3221e5814a3f719c2d0433c50",
+    "why": "db38ab732427baf1858b62de0e35b3ac043c98b518ed4f697707a1aa153bed20",
+    "availability": "fa56b9860ce40dee5f9959d0d8f6d87281587cd23579d2a663cb5f795f398e47",
+    "memoryUse": "0653d33fda1735f59d0025239f27717686ac62ab5c5ba1f4661d42ad4626b8c6",
+    "memoryDanger": "597417ba17ce82d2d65d98aebf91ef0a09dd9816794331cdbbf2823b73243e98"
+  },
+  "questionSetSha256": "120b267e1cfef3ce7350dc09b7c4311028ba158653fc1de1376306c586f45268",
+  "questionReview": {
+    "ibd2-meropenem--comprehensive--principal-action": "Connect PBP binding to cell-wall synthesis inhibition.",
+    "ibd2-meropenem--comprehensive--drug-class": "Identify the carbapenem subgroup.",
+    "ibd2-meropenem--comprehensive--treatment-role": "Choose a labeled complicated skin or soft-tissue treatment scenario.",
+    "ibd2-meropenem--comprehensive--betalactam_allergy": "Identify relevant immediate carbapenem reaction and multisystem symptoms.",
+    "ibd2-meropenem--comprehensive--renal_dose": "Identify that impaired clearance can require dose or interval adjustment.",
+    "ibd2-meropenem--comprehensive--antibiotic_diarrhea": "Recognize significant watery diarrhea and cramping during antibiotic exposure.",
+    "ibd2-meropenem--comprehensive--seizure_risk": "Identify myoclonus and confusion in renal decline and escalate possible seizure risk.",
+    "ibd2-meropenem--comprehensive--antimicrobial_response": "Apply susceptibility and clinical response to reassess broader coverage.",
+    "ibd2-meropenem--comprehensive--meropenem_iv_preparation": "Choose supplied product requirements and the verified infusion order. Indication is tested separately in the treatment question.",
+    "ibd2-meropenem--comprehensive--valproate": "Identify the direction of the interaction and seizure consequence.",
+    "ibd2-meropenem--comprehensive--meropenem_not_prophylaxis": "Choose procedure-specific prophylaxis without unnecessary carbapenem exposure.",
+    "ibd2-meropenem--comprehensive--meropenem_cns_risk": "Recognize pre-existing seizure disorder despite normal clearance."
+  }
+}

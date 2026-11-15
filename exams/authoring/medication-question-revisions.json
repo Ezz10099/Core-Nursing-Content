@@ -7147,6 +7147,426 @@
           }
         ]
       }
+    },
+    "ibd2-meropenem::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which target and downstream action match meropenem?",
+        "point": "Distinguish PBP binding and interruption of peptidoglycan synthesis.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Penicillin-binding proteins, impairing cell-wall synthesis",
+            "explanation": "Meropenem binds bacterial PBPs and disrupts peptidoglycan synthesis."
+          },
+          {
+            "id": "B",
+            "text": "Penicillin-binding proteins, impairing ribosomal translation",
+            "explanation": "The target is correct, but the affected pathway is the cell wall."
+          },
+          {
+            "id": "C",
+            "text": "The 30S ribosomal subunit, impairing bacterial protein synthesis",
+            "explanation": "This is the mechanism of aminoglycosides rather than meropenem."
+          },
+          {
+            "id": "D",
+            "text": "DNA gyrase, impairing DNA supercoiling",
+            "explanation": "That is a fluoroquinolone target."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which specific beta-lactam subgroup contains meropenem?",
+        "point": "Classify meropenem as a carbapenem.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Carbapenems",
+            "explanation": "Meropenem belongs to this broad-spectrum beta-lactam subgroup."
+          },
+          {
+            "id": "B",
+            "text": "Cephalosporins",
+            "explanation": "Cephalosporins are a distinct beta-lactam subgroup."
+          },
+          {
+            "id": "C",
+            "text": "Penicillins",
+            "explanation": "Meropenem shares the beta-lactam ring but is not a penicillin."
+          },
+          {
+            "id": "D",
+            "text": "Monobactams",
+            "explanation": "Aztreonam is an example of this separate subgroup."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which adult orthopaedic ward scenario fits the labeled treatment role of meropenem?",
+        "point": "Select treatment of a serious susceptible complicated skin or soft-tissue infection.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A documented susceptible organism in a serious complicated skin and soft-tissue infection",
+            "explanation": "Meropenem can treat selected complicated skin or skin-structure infections caused by susceptible organisms."
+          },
+          {
+            "id": "B",
+            "text": "A localized superficial fungal infection with no bacterial evidence",
+            "explanation": "Meropenem is an antibacterial, and the scenario does not establish a susceptible bacterial infection."
+          },
+          {
+            "id": "C",
+            "text": "Routine pre-incision prophylaxis for uncomplicated elective orthopaedic surgery",
+            "explanation": "Selection of prophylaxis depends on the procedure and protocol. Broad spectrum alone does not justify meropenem."
+          },
+          {
+            "id": "D",
+            "text": "Persistent inflammation after a closed injury without evidence of infection",
+            "explanation": "Meropenem does not treat noninfectious inflammation."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::betalactam_allergy": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which history and new response most strongly support immediate hypersensitivity to meropenem?",
+        "point": "Distinguish a relevant prior reaction and an immediate systemic reaction from nonallergic effects.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Prior immediate hives after meropenem, then new wheeze and hypotension minutes into infusion",
+            "explanation": "This pattern raises concern for anaphylaxis. Stop exposure and activate the emergency response per protocol."
+          },
+          {
+            "id": "B",
+            "text": "Prior nausea with oral amoxicillin, then isolated burning at the cannula with stable vital signs",
+            "explanation": "Nausea alone does not establish beta-lactam allergy, and a local finding does not show a systemic reaction."
+          },
+          {
+            "id": "C",
+            "text": "An undocumented childhood rash, then watery diarrhea after several days of meropenem",
+            "explanation": "The diarrhea requires assessment but does not fit immediate hypersensitivity."
+          },
+          {
+            "id": "D",
+            "text": "Prior carbapenem tolerance, then cool swelling limited to the IV site with stable vital signs",
+            "explanation": "This suggests a local infusion problem rather than immediate systemic hypersensitivity."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::renal_dose": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient receives repeated IV meropenem. Estimated creatinine clearance declines substantially during treatment. Which part of the regimen should be reviewed?",
+        "point": "Apply renal clearance to adjustment of dose and interval.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The prescribed dose and interval because reduced clearance can increase exposure",
+            "explanation": "The regimen may require adjustment using the product and indication-specific instructions."
+          },
+          {
+            "id": "B",
+            "text": "The dose and interval because reduced clearance usually requires more frequent dosing",
+            "explanation": "Reduced clearance can lead to accumulation rather than requiring more frequent doses."
+          },
+          {
+            "id": "C",
+            "text": "Only the infusion fluid because renal function changes preparation but not systemic exposure",
+            "explanation": "Preparation alone does not address reduced renal elimination."
+          },
+          {
+            "id": "D",
+            "text": "Only the hepatic panel because normal liver results establish adequate clearance",
+            "explanation": "Hepatic tests do not replace review of renal function for meropenem."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::antibiotic_diarrhea": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new symptoms during meropenem treatment should prompt assessment for antibiotic-associated colitis?",
+        "point": "Recognize persistent watery stool and cramping as a concerning pattern.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Repeated watery stools with new abdominal cramping",
+            "explanation": "This pattern warrants assessment for C. difficile and other causes."
+          },
+          {
+            "id": "B",
+            "text": "A single soft stool following a laxative, with no recurrence",
+            "explanation": "This is less suggestive than persistent watery diarrhea."
+          },
+          {
+            "id": "C",
+            "text": "Hard stools and straining with no fever",
+            "explanation": "This pattern is more consistent with constipation."
+          },
+          {
+            "id": "D",
+            "text": "Nausea around an infusion with no bowel change",
+            "explanation": "Nausea alone does not identify the colitis pattern."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::seizure_risk": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient receiving meropenem develops acute renal impairment followed by new myoclonic jerks and confusion. Which possibility warrants prompt escalation?",
+        "point": "Recognize possible carbapenem neurotoxicity and seizure risk in renal impairment.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Meropenem accumulation may contribute to neurotoxicity and seizures",
+            "explanation": "Renal deterioration raises exposure risk. Assess urgently for neurotoxicity and other causes."
+          },
+          {
+            "id": "B",
+            "text": "The findings establish a local infusion reaction without central involvement",
+            "explanation": "A local reaction does not account for jerks and confusion."
+          },
+          {
+            "id": "C",
+            "text": "Reduced renal clearance makes meropenem neurotoxicity less likely",
+            "explanation": "Reduced clearance can increase exposure and risk."
+          },
+          {
+            "id": "D",
+            "text": "Neurologic toxicity can be excluded if the patient did not have epilepsy before admission",
+            "explanation": "Seizures or other CNS adverse effects can occur without known epilepsy, particularly with renal impairment."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::antimicrobial_response": {
+      "action": "replace",
+      "sourceFields": [
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A serious infection improves after initial meropenem. The isolate is also susceptible to a narrower option appropriate for the site. Which issue should the team review?",
+        "point": "Apply culture-directed de-escalation alongside clinical response.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Whether to narrow treatment based on the isolate, infection site and clinical course",
+            "explanation": "Broad empiric therapy should be reassessed once reliable susceptibility data are available."
+          },
+          {
+            "id": "B",
+            "text": "Whether improvement alone establishes that broad-spectrum therapy must continue",
+            "explanation": "Improvement does not remove the reason to consider an appropriate narrower agent."
+          },
+          {
+            "id": "C",
+            "text": "Whether narrow therapy should be ruled out solely because meropenem was started first",
+            "explanation": "Initial empiric selection does not establish the best definitive regimen."
+          },
+          {
+            "id": "D",
+            "text": "Whether the narrower antibiotic can replace current therapy solely on the basis of disk susceptibility",
+            "explanation": "Susceptibility must be interpreted with infection site, clinical response and the prescribed plan."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::meropenem_iv_preparation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The prescription is for an IV meropenem infusion. Pharmacy supplies a replacement presentation whose reconstitution and final dilution instructions differ. Which preparation matches the order?",
+        "point": "Apply the exact supplied product’s IV preparation and infusion requirements.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Use the replacement product’s reconstitution, dilution and infusion instructions for the verified order",
+            "explanation": "Product-specific preparation requirements must be matched to the authorized IV regimen."
+          },
+          {
+            "id": "B",
+            "text": "Keep the old reconstitution volume and use the new final dilution",
+            "explanation": "A change in presentation can change the initial reconstitution volume as well as final dilution."
+          },
+          {
+            "id": "C",
+            "text": "Use the new reconstitution instructions but switch to the bolus method permitted for the old vial",
+            "explanation": "The IV infusion order and the supplied product determine the delivery method."
+          },
+          {
+            "id": "D",
+            "text": "Keep the old dilution and rate if the replacement contains the same drug name",
+            "explanation": "Matching active ingredients does not establish matching preparation instructions."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::valproate": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient’s seizure control was stable on divalproex before meropenem. Which paired change best fits the known interaction?",
+        "point": "Recall the direction of the valproate change and the clinical consequence.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A marked fall in valproate concentration with breakthrough seizures",
+            "explanation": "Carbapenems can markedly reduce valproate exposure. Escalate to the prescribing team for a treatment plan."
+          },
+          {
+            "id": "B",
+            "text": "A marked rise in valproate concentration with dose-related sedation",
+            "explanation": "The characteristic carbapenem interaction lowers valproate concentration."
+          },
+          {
+            "id": "C",
+            "text": "Stable valproate concentrations with reduced meropenem exposure",
+            "explanation": "This misses the interaction involving lowered valproate."
+          },
+          {
+            "id": "D",
+            "text": "A rise in valproate concentration with improved seizure control",
+            "explanation": "The direction and clinical effect are opposite to the known risk."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::meropenem_not_prophylaxis": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient is scheduled for an uncomplicated orthopaedic procedure. The ward has meropenem and the prophylactic agent specified by the local procedure protocol. Which approach is appropriate?",
+        "point": "Distinguish procedure-specific prophylaxis from broad treatment of a serious infection.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Use the ordered procedure-specific prophylactic regimen unless a documented indication supports a different choice",
+            "explanation": "Broad activity and ward availability do not establish meropenem as routine prophylaxis."
+          },
+          {
+            "id": "B",
+            "text": "Replace the indicated prophylactic agent with meropenem because it covers more organisms",
+            "explanation": "Broader activity does not automatically improve prevention and may increase unnecessary exposure."
+          },
+          {
+            "id": "C",
+            "text": "Add meropenem to the ordered prophylactic drug whenever a prosthesis is used",
+            "explanation": "This is not a routine indication for dual broad prophylaxis."
+          },
+          {
+            "id": "D",
+            "text": "Use the meropenem regimen specified for a different patient with established complicated infection",
+            "explanation": "Treatment regimens for active infection do not determine routine prophylaxis."
+          }
+        ]
+      }
+    },
+    "ibd2-meropenem::meropenem_cns_risk": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with stable renal function is about to start meropenem. Which history still specifically raises concern about the drug’s seizure potential?",
+        "point": "Recognize pre-existing CNS disease despite preserved renal function.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A prior seizure disorder requiring treatment",
+            "explanation": "CNS disease, including seizure history, can increase seizure risk despite preserved renal clearance."
+          },
+          {
+            "id": "B",
+            "text": "A remote drug-related rash without neurologic involvement",
+            "explanation": "This may affect allergy assessment, rather than specifically increasing seizure vulnerability."
+          },
+          {
+            "id": "C",
+            "text": "A history of gastritis without neurologic disease",
+            "explanation": "This informs GI history but does not establish the CNS risk factor."
+          },
+          {
+            "id": "D",
+            "text": "A prior episode of infusion-site irritation without neurologic symptoms",
+            "explanation": "This does not identify a predisposition to meropenem-associated seizures."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -7226,6 +7646,7 @@
     "ibd2-acamol": "paracetamol-source-review-20261115",
     "ibd2-trufen": "ibuprofen-source-review-20261115",
     "ibd2-cefazolin": "cefazolin-source-review-20261115",
-    "ibd2-tramadol": "tramadol-source-review-20261115"
+    "ibd2-tramadol": "tramadol-source-review-20261115",
+    "ibd2-meropenem": "meropenem-source-review-20261116"
   }
 }
