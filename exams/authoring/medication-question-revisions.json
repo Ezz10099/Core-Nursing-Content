@@ -5521,6 +5521,337 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ibd2-acamol::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which mechanism best fits the predominant analgesic and antipyretic effects of paracetamol?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Predominantly central inhibition of prostaglandin synthesis",
+            "explanation": "Central prostaglandin signaling is implicated in paracetamol’s analgesia and antipyresis."
+          },
+          {
+            "id": "B",
+            "text": "Predominantly peripheral irreversible inhibition of platelet COX-1",
+            "explanation": "That describes aspirin’s platelet action rather than paracetamol’s primary effect."
+          },
+          {
+            "id": "C",
+            "text": "Central activation of mu-opioid receptors",
+            "explanation": "Paracetamol does not act as a standard mu-opioid agonist."
+          },
+          {
+            "id": "D",
+            "text": "Predominantly peripheral inhibition of prostaglandins at inflamed joints",
+            "explanation": "This better fits the peripheral anti-inflammatory activity of NSAIDs."
+          }
+        ],
+        "point": "Identify its predominantly central prostaglandin-related action.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which therapeutic classification best fits paracetamol in a postoperative medication chart?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Non-opioid analgesic and antipyretic with little peripheral anti-inflammatory effect",
+            "explanation": "Paracetamol is used for analgesia and fever reduction rather than the typical peripheral anti-inflammatory effects of NSAIDs."
+          },
+          {
+            "id": "B",
+            "text": "Non-opioid NSAID used primarily for peripheral anti-inflammatory effect",
+            "explanation": "Its therapeutic profile differs from anti-inflammatory NSAIDs."
+          },
+          {
+            "id": "C",
+            "text": "Centrally acting opioid used mainly for analgesia",
+            "explanation": "Paracetamol is centrally acting but is not an opioid."
+          },
+          {
+            "id": "D",
+            "text": "Opioid antagonist used mainly for reversing opioid effects",
+            "explanation": "Paracetamol does not reverse opioid toxicity."
+          }
+        ],
+        "point": "Distinguish a non-opioid analgesic and antipyretic from adjacent drug classes.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "On an orthopaedic ward, a patient has mild-to-moderate pain after fracture fixation. Which role fits prescribed paracetamol in a multimodal plan?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Scheduled non-opioid analgesia alongside the other indicated measures",
+            "explanation": "Paracetamol can provide a non-opioid component of postoperative or fracture pain control."
+          },
+          {
+            "id": "B",
+            "text": "A targeted peripheral anti-inflammatory substitute with the same effect as an NSAID",
+            "explanation": "Its peripheral anti-inflammatory effect is limited compared with usual NSAIDs."
+          },
+          {
+            "id": "C",
+            "text": "An opioid rescue dose for breakthrough pain",
+            "explanation": "Paracetamol is not an opioid and does not replace the indicated rescue plan."
+          },
+          {
+            "id": "D",
+            "text": "A local anesthetic delivered at the fracture site",
+            "explanation": "Paracetamol is not a local anesthetic."
+          }
+        ],
+        "point": "Choose an adjunct for mild-to-moderate pain within multimodal therapy.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::acetaminophen_total": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "At 18:00, before a pending dose, the chart shows 500 mg paracetamol yesterday at 16:00, two 500-mg tablets today at 07:00, 1,000 mg IV acetaminophen at 11:00, and two combination tablets at 15:00 that each contain 325 mg acetaminophen. How many milligrams of paracetamol/acetaminophen has the patient already received in the preceding 24 hours?",
+        "answer": 2650,
+        "unit": "mg",
+        "tolerance": 0,
+        "explanation": "Count 1,000 mg oral + 1,000 mg IV + 650 mg in the combination tablets. The dose at 16:00 yesterday falls outside the 24-hour window. Compare the cumulative exposure and pending dose with the patient-specific order and limit.",
+        "point": "Calculate rolling 24-hour exposure from all formulations and routes.",
+        "criticalForSafety": true
+      }
+    },
+    "ibd2-acamol::hepatic_overdose": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A dosing reconciliation finds a potentially toxic paracetamol exposure. The patient feels well several hours after the last dose. Which interpretation should guide escalation?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hepatic injury may become evident later, so escalate the suspected overdose now",
+            "explanation": "Early symptoms may be absent even when the exposure can cause serious hepatic injury."
+          },
+          {
+            "id": "B",
+            "text": "Hepatic injury would already cause jaundice, so reassess tomorrow before escalating",
+            "explanation": "Clinical signs may be delayed. Waiting for jaundice can delay overdose treatment."
+          },
+          {
+            "id": "C",
+            "text": "There is mainly an immediate platelet effect, so wait for a platelet count",
+            "explanation": "Platelet count does not establish the risk of delayed acetaminophen-induced liver injury."
+          },
+          {
+            "id": "D",
+            "text": "The main issue is delayed NSAID-type GI bleeding, so monitor stool alone",
+            "explanation": "Excess paracetamol is principally a hepatotoxicity concern. Stool surveillance cannot replace urgent assessment."
+          }
+        ],
+        "point": "Recognize that serious liver injury can be delayed despite few early symptoms.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::pain_response": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Before oral paracetamol, an orthopaedic patient reports 2/10 pain at rest and 6/10 during transfer. Which reassessment supports an analgesic response for the documented activity?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Transfer pain falls from 6/10 to 3/10 at a comparable level of assistance",
+            "explanation": "A comparable transfer directly assesses the patient’s documented movement pain."
+          },
+          {
+            "id": "B",
+            "text": "Resting pain after the dose is 2/10, compared with 6/10 during transfer before it",
+            "explanation": "Resting and movement scores are not directly comparable."
+          },
+          {
+            "id": "C",
+            "text": "Pain is 3/10 with passive movement, but transfer is not repeated",
+            "explanation": "This uses a different activity and does not establish the response for transfer."
+          },
+          {
+            "id": "D",
+            "text": "Transfer pain stays at 6/10, while temperature falls",
+            "explanation": "The temperature response does not establish a benefit for movement pain."
+          }
+        ],
+        "point": "Compare pain on the same activity before and after the dose.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::acetam_fever_response": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After ordered paracetamol in a febrile patient, temperature falls from 39.1°C to 37.9°C while other infection findings persist. Which interpretation is appropriate?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The temperature trend is consistent with antipyresis, and the cause still needs assessment",
+            "explanation": "Paracetamol can reduce fever without treating its underlying cause."
+          },
+          {
+            "id": "B",
+            "text": "The temperature trend establishes resolution of infection",
+            "explanation": "An antipyretic response does not prove that infection has resolved."
+          },
+          {
+            "id": "C",
+            "text": "The temperature trend establishes adequate analgesia",
+            "explanation": "Temperature does not measure pain relief."
+          },
+          {
+            "id": "D",
+            "text": "The temperature trend indicates an anti-inflammatory effect equivalent to an NSAID",
+            "explanation": "Reduced fever alone does not establish the peripheral anti-inflammatory action of NSAIDs."
+          }
+        ],
+        "point": "Use measured temperature to assess symptomatic antipyresis without inferring resolution of the cause.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::acetam_nsaid_distinction": {
+      "action": "replace",
+      "sourceFields": [
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "When comparing oral paracetamol with a conventional NSAID for mild orthopaedic pain, which trade-off matters for a patient with bleeding concerns?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Paracetamol has less of the typical NSAID platelet and GI effect, but excess dosing can injure the liver",
+            "explanation": "Paracetamol provides analgesia without the usual NSAID platelet/GI profile. Its total exposure still needs review."
+          },
+          {
+            "id": "B",
+            "text": "Paracetamol has the same platelet and GI effects as a conventional NSAID, but no cumulative liver toxicity",
+            "explanation": "This misses its different adverse-effect profile and hepatic overdose risk."
+          },
+          {
+            "id": "C",
+            "text": "Paracetamol has the same irreversible platelet inhibition as aspirin and less liver toxicity at any dose",
+            "explanation": "It does not reproduce aspirin’s irreversible platelet inhibition. Excess paracetamol can injure the liver."
+          },
+          {
+            "id": "D",
+            "text": "Paracetamol provides stronger peripheral anti-inflammatory action and equivalent GI bleeding risk",
+            "explanation": "It is used chiefly for pain and fever rather than stronger peripheral anti-inflammatory action."
+          }
+        ],
+        "point": "Distinguish usual NSAID platelet and GI effects from paracetamol’s exposure-related liver risk.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::acetam_alcohol_review": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which history is most directly relevant to reassessing the hepatic safety of repeated paracetamol dosing?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Heavy alcohol use with known chronic liver disease",
+            "explanation": "Both are relevant to the individualized hepatic risk and dosing review."
+          },
+          {
+            "id": "B",
+            "text": "Aspirin-exacerbated wheeze without liver disease or heavy alcohol use",
+            "explanation": "This is an important medication history, but does not identify the hepatic risk factors asked for."
+          },
+          {
+            "id": "C",
+            "text": "A remote peptic ulcer without liver disease or heavy alcohol use",
+            "explanation": "This matters particularly when considering NSAIDs, but is not the hepatic risk sought."
+          },
+          {
+            "id": "D",
+            "text": "Previous opioid-related constipation without liver disease or heavy alcohol use",
+            "explanation": "This influences opioid selection and monitoring rather than this hepatic comparison."
+          }
+        ],
+        "point": "Distinguish heavy alcohol exposure or liver disease from histories that chiefly affect alternatives.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ibd2-acamol::acen_patient_limit": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A frail patient with chronic liver disease is due for paracetamol. The documented total is below a standard adult maximum. Which quantity should determine whether the ordered dose can proceed?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The patient-specific limit applied to the rolling total including the pending dose",
+            "explanation": "Frailty and liver disease can affect the suitable limit, even when an exposure is below a common adult maximum."
+          },
+          {
+            "id": "B",
+            "text": "The standard adult maximum applied to the rolling total without adjustment",
+            "explanation": "A usual adult maximum is not automatically appropriate for this patient."
+          },
+          {
+            "id": "C",
+            "text": "The patient-specific limit applied to IV doses alone",
+            "explanation": "Oral and combination products contribute to the same total."
+          },
+          {
+            "id": "D",
+            "text": "The standard adult maximum applied to oral doses alone",
+            "explanation": "The reference limit is not individualized and restricting the calculation to one route undercounts the total."
+          }
+        ],
+        "point": "Apply an individualized exposure limit rather than a universal adult maximum.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -5596,6 +5927,7 @@
     "trolley-magnesium-sulfate": "infusion-calculations-20261115",
     "ccu-aspirin": "aspirin-source-review-20261115",
     "ccu-isosorbide-mononitrate": "isosorbide-formulation-review-20261115",
-    "ccu-isosorbide-dinitrate": "isosorbide-formulation-review-20261115"
+    "ccu-isosorbide-dinitrate": "isosorbide-formulation-review-20261115",
+    "ibd2-acamol": "paracetamol-source-review-20261115"
   }
 }
