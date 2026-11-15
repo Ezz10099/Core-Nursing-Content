@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-trufen",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of adult ibuprofen teaching card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.pharmacy.moh.ps/index/More/ProductsId/1475/Language/ar",
+      "section": "Palestinian MOH Trufen 200 registry",
+      "scope": "Single-ingredient ibuprofen 200 mg."
+    },
+    {
+      "url": "https://www.pharmacy.moh.ps/index/More/ProductsId/1477/Language/ar",
+      "section": "Palestinian MOH Trufen 600 registry",
+      "scope": "Single-ingredient ibuprofen 600 mg."
+    },
+    {
+      "url": "https://www.pharmacy.moh.ps/index/More/ProductsId/16483/Language/ar",
+      "section": "Palestinian MOH Trufen Extra registry",
+      "scope": "Combination of ibuprofen 200 mg and paracetamol 500 mg. Verify the actual pack."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/ibuprofen-oral-16683877.html",
+      "section": "MSF ibuprofen oral",
+      "scope": "Musculoskeletal and other analgesia, anti-inflammatory use, brief duration and contraindications or precautions for renal, GI and hypersensitivity risks. General guidance is not a verified ward policy."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b1e1578-3ff5-47a4-a53b-c19512d0f953",
+      "section": "Ibuprofen tablet prescribing information, boxed warning and precautions",
+      "scope": "COX-related safety, GI bleed, renal prostaglandin effects, bronchospasm, edema, hypertension, MI and stroke, and lowest effective exposure."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19152549/",
+      "section": "Primary randomized crossover study of COX-mediated prostanoid production",
+      "scope": "Evidence of ibuprofen effects on human COX-mediated prostanoids."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "NSAID; analgesic, antipyretic and anti-inflammatory.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--drug-class",
+          "sha256": "6779b77ee5c5531446384b0bb0ca1a6fa81891e4578b69b29f1a3be2aee05ff0"
+        }
+      ],
+      "rationale": "Recognize all three therapeutic effects and their class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Reversibly inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--principal-action",
+          "sha256": "eaefc69024d9949e9e1aa1d76983aab1c1d0f9c5afb60a18ab5eaff988d60630"
+        }
+      ],
+      "rationale": "Identify reversible COX inhibition and decreased prostaglandins."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Mild-to-moderate musculoskeletal pain and inflammation, including painful swelling after soft-tissue injury and orthopaedic conditions.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--treatment-role",
+          "sha256": "9d8290025c279d997057860b68480436dac2745d8d0725896331f23ab0f7c73c"
+        }
+      ],
+      "rationale": "Choose reduction in musculoskeletal pain and inflammation."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO when the ordered product is a tablet. Verify the exact strength and whether it is plain Trufen or Trufen Extra.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::trufen_extra"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--trufen_extra",
+          "sha256": "22fa7f8f6517cd3f044f16a29dff9e4b19e3542d901b09906ba71f8ae058a301"
+        }
+      ],
+      "rationale": "Select the exact single-ingredient oral strength."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Use the lowest effective ordered dose for the shortest appropriate duration",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::ibuprofen_minimum_exposure"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--ibuprofen_minimum_exposure",
+          "sha256": "d781854289c0ea3799e270d56bbcab0a41e183ac98ff5a5c063a6b68332dae61"
+        }
+      ],
+      "rationale": "Choose both dose and duration minimization."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "do not duplicate with another NSAID unless specifically intended.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::duplicate_nsaid"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--duplicate_nsaid",
+          "sha256": "42971ee80e4ce1dc5f1b62da6509f6777516cb5e9a998791e37b1de8d9b5d691"
+        }
+      ],
+      "rationale": "Identify naproxen as duplicate NSAID exposure."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess pain and inflammation before/after.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::pain_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--pain_response",
+          "sha256": "7e8a94d095ad69c836f41e4b7ea81f63361318aa473281506ae1b05310d9dd50"
+        }
+      ],
+      "rationale": "Compare activity-specific pain and swelling to baseline."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Watch for GI pain, melena/hematemesis or other bleeding.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::nsaid_gi"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--nsaid_gi",
+          "sha256": "1e1865e800a34d4b9b5cd1dffe08aee72abf20f65e5d76d459009d506b8d46d5"
+        }
+      ],
+      "rationale": "Distinguish epigastric discomfort from upper GI blood loss."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Review renal function, hydration and concurrent nephrotoxic drugs.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::nsaid_renal"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--nsaid_renal",
+          "sha256": "6cab21ca05d4c6ceff3cca7c47bf881a27b0d6e731860855a4d561e87db0ea64"
+        }
+      ],
+      "rationale": "Identify combined volume depletion and nephrotoxic co-exposure as reasons to reassess renal safety."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check for NSAID/aspirin hypersensitivity or bronchospasm history.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::nsaid_allergy"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--nsaid_allergy",
+          "sha256": "18b49bc062fecae05fcaaac76c451456bb132eaef5ae6d1166c1d6fb207ca56a"
+        }
+      ],
+      "rationale": "Distinguish likely cross-reactive bronchospasm."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "NSAIDs can worsen fluid retention/BP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::nsaid_cv"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--nsaid_cv",
+          "sha256": "49f6bebee3bf19dcf7d9ea3a3daa5a7ec35f8f047189f5878536695f6ef43521"
+        }
+      ],
+      "rationale": "Distinguish the concurrent retention and increased pressure profile."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "increase cardiovascular risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::ibuprofen_cv_risk"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--ibuprofen_cv_risk",
+          "sha256": "8d9baa34f8a860f2c75771613a5c376df7cc78604b7b66999ee9384aef2b2497"
+        }
+      ],
+      "rationale": "Identify MI and stroke separately from volume-related effects."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Verify combination products to avoid accidental extra paracetamol.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::trufen_extra"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--trufen_extra",
+          "sha256": "22fa7f8f6517cd3f044f16a29dff9e4b19e3542d901b09906ba71f8ae058a301"
+        }
+      ],
+      "rationale": "Recognize and avoid adding unprescribed paracetamol."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "COX inhibition reduces prostaglandins, improving pain and inflammation but also reducing gastric protection and renal prostaglandin effects.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--principal-action",
+          "sha256": "eaefc69024d9949e9e1aa1d76983aab1c1d0f9c5afb60a18ab5eaff988d60630"
+        }
+      ],
+      "rationale": "Connect COX inhibition with loss of gastric and renal prostaglandins."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Palestinian MoH records Trufen 200 mg and 600 mg tablets as ibuprofen.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::trufen_extra"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--trufen_extra",
+          "sha256": "22fa7f8f6517cd3f044f16a29dff9e4b19e3542d901b09906ba71f8ae058a301"
+        }
+      ],
+      "rationale": "Use actual package strengths to reconcile a specified 200-mg oral order."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Trufen Extra is a different combination product containing ibuprofen + paracetamol",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-trufen::trufen_extra"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-trufen--comprehensive--trufen_extra",
+          "sha256": "22fa7f8f6517cd3f044f16a29dff9e4b19e3542d901b09906ba71f8ae058a301"
+        }
+      ],
+      "rationale": "Distinguish the combination from plain tablets."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Musculoskeletal pain + inflammation.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats already tested therapeutic effect, organ risk or combination recognition."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "GI bleeding and kidney injury; verify plain Trufen vs Trufen Extra before giving.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats already tested therapeutic effect, organ risk or combination recognition."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Dated stock observation, not a pharmacology objective or verification of current ward stock."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "2159478ee8bb4344c272ac60f2f612a615972c32ca5005a585eb97c1db9e2f01",
+    "mechanism": "f8965b02108ebcdd66392609887bfec36bc99905f6342ee7ceaf9dbe7f948376",
+    "use": "3111790c29d0616db80a46cd938d0c024a8637e09b551c6f6f6d9a79c7b554a4",
+    "administration": "e1faf95123c64e205f6c42e2cbe36583c2507b501f3a3e6e2e91b4337efd6201",
+    "monitor": "f4660c1363af6f79704fe2e94abefe09244982ee46dde3b9d9273e074f1b6929",
+    "why": "04ce5ce3d6ca38cc7d1e007df82defb9c5a155ddea01f4f714a169a954e98569",
+    "availability": "b69d497d36595ecb5b8459c52f6d548d5c5b661efb08ce9824ab23074fba2b48",
+    "memoryUse": "549b3f2abb409c62fd95d2629ecc5fb79f09665f4d0083e9872962a6b6339ef4",
+    "memoryDanger": "c1df52c85e445b30f23522ccfdd881e31f2ac84174a21fa54fba55efc507a9bf"
+  },
+  "questionSetSha256": "fae586d248310c855109e30d0528594830ee437ef01a7a03506faa166cff3367",
+  "questionReview": {
+    "ibd2-trufen--comprehensive--principal-action": "Identify reversible COX inhibition and decreased prostaglandins.",
+    "ibd2-trufen--comprehensive--drug-class": "Recognize all three therapeutic effects and their class.",
+    "ibd2-trufen--comprehensive--treatment-role": "Choose reduction in musculoskeletal pain and inflammation.",
+    "ibd2-trufen--comprehensive--nsaid_gi": "Distinguish epigastric discomfort from upper GI blood loss.",
+    "ibd2-trufen--comprehensive--nsaid_renal": "Identify combined volume depletion and nephrotoxic co-exposure as reasons to reassess renal safety.",
+    "ibd2-trufen--comprehensive--nsaid_allergy": "Distinguish likely cross-reactive bronchospasm.",
+    "ibd2-trufen--comprehensive--nsaid_cv": "Distinguish the concurrent retention and increased pressure profile.",
+    "ibd2-trufen--comprehensive--trufen_extra": "Select the exact single-ingredient oral strength.",
+    "ibd2-trufen--comprehensive--pain_response": "Compare activity-specific pain and swelling to baseline.",
+    "ibd2-trufen--comprehensive--ibuprofen_cv_risk": "Identify MI and stroke separately from volume-related effects.",
+    "ibd2-trufen--comprehensive--duplicate_nsaid": "Identify naproxen as duplicate NSAID exposure.",
+    "ibd2-trufen--comprehensive--ibuprofen_minimum_exposure": "Choose both dose and duration minimization."
+  }
+}

@@ -5852,6 +5852,426 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ibd2-trufen::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which enzyme effect explains both ibuprofen’s anti-inflammatory action and its effect on protective prostaglandins?",
+        "point": "Link reversible COX inhibition to lower inflammatory, gastric and renal prostaglandins.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reversible COX inhibition lowers inflammatory, gastric and renal prostaglandins",
+            "explanation": "COX inhibition contributes to symptom relief and can impair mucosal protection and renal perfusion."
+          },
+          {
+            "id": "B",
+            "text": "Irreversible platelet COX inhibition lowers thromboxane without affecting other prostaglandins",
+            "explanation": "Ibuprofen reversibly inhibits COX and its effects are not limited to platelet thromboxane."
+          },
+          {
+            "id": "C",
+            "text": "Reversible COX inhibition raises gastric and renal prostaglandins",
+            "explanation": "Inhibiting COX reduces rather than increases production of these prostaglandins."
+          },
+          {
+            "id": "D",
+            "text": "Reversible lipoxygenase inhibition lowers leukotrienes without affecting prostaglandins",
+            "explanation": "The relevant pathway for ibuprofen here is COX-dependent prostaglandin synthesis."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which therapeutic profile identifies ibuprofen in an orthopaedic medication review?",
+        "point": "Identify ibuprofen as an analgesic, antipyretic and anti-inflammatory NSAID.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "NSAID with analgesic, antipyretic and anti-inflammatory activity",
+            "explanation": "All three actions are characteristic of ibuprofen."
+          },
+          {
+            "id": "B",
+            "text": "Non-NSAID analgesic-antipyretic with little peripheral anti-inflammatory activity",
+            "explanation": "This more closely describes paracetamol."
+          },
+          {
+            "id": "C",
+            "text": "Glucocorticoid anti-inflammatory with immunosuppressive activity",
+            "explanation": "Ibuprofen is not a corticosteroid."
+          },
+          {
+            "id": "D",
+            "text": "Opioid analgesic with no direct antipyretic activity",
+            "explanation": "Ibuprofen is not an opioid."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After a soft-tissue injury, an adult has movement pain and localized inflammatory swelling. Which effect is the appropriate goal of an ordered ibuprofen course?",
+        "point": "Recognize relief of musculoskeletal pain and inflammatory swelling.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Reduce both movement-related pain and localized inflammatory swelling",
+            "explanation": "Ibuprofen’s analgesic and anti-inflammatory effects fit the treatment goal."
+          },
+          {
+            "id": "B",
+            "text": "Reduce pain while leaving inflammatory swelling unchanged as an expected drug limitation",
+            "explanation": "This would miss the NSAID’s potential anti-inflammatory benefit."
+          },
+          {
+            "id": "C",
+            "text": "Reduce muscle spasm through direct skeletal muscle relaxation",
+            "explanation": "Ibuprofen is not a direct muscle relaxant."
+          },
+          {
+            "id": "D",
+            "text": "Reduce edema by producing a diuretic effect",
+            "explanation": "Ibuprofen is not a diuretic and can contribute to fluid retention."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::nsaid_gi": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult taking ibuprofen reports several new GI symptoms. Which pattern most strongly suggests upper GI bleeding?",
+        "point": "Distinguish melena and coffee-ground emesis from nonhemorrhagic symptoms.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Tarry stool and coffee-ground emesis",
+            "explanation": "Both can indicate upper GI blood loss and require timely escalation."
+          },
+          {
+            "id": "B",
+            "text": "Epigastric discomfort with clear emesis and unchanged stool",
+            "explanation": "Dyspepsia needs assessment but is less specific for overt bleeding."
+          },
+          {
+            "id": "C",
+            "text": "Bright red streaks on hard stool with no emesis",
+            "explanation": "This can be lower tract bleeding. The pattern is less suggestive of an upper source."
+          },
+          {
+            "id": "D",
+            "text": "Dark formed stool after starting iron and a single episode of clear emesis",
+            "explanation": "Iron can darken stool. Tarry consistency or altered blood in emesis makes an upper bleed more likely."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::nsaid_renal": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which change in a patient taking ibuprofen most strongly warrants reassessing renal risk before the next ordered dose?",
+        "point": "Identify volume depletion and nephrotoxic co-exposure as risks for NSAID-associated kidney injury.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Repeated vomiting, poor intake and concurrent gentamicin treatment",
+            "explanation": "Reduced effective volume makes renal perfusion more dependent on prostaglandins, and gentamicin adds nephrotoxic risk. Review renal function and the regimen."
+          },
+          {
+            "id": "B",
+            "text": "Controlled nausea, normal intake and a prescribed paracetamol dose",
+            "explanation": "These findings do not identify the same renal perfusion or nephrotoxic risk."
+          },
+          {
+            "id": "C",
+            "text": "Constipation, normal intake and stable creatinine",
+            "explanation": "This does not identify new volume depletion or deteriorating renal function."
+          },
+          {
+            "id": "D",
+            "text": "Improving mobility, stable urine output and a new oral iron prescription",
+            "explanation": "This does not identify the same renal risk pattern."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::nsaid_allergy": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which prior reaction most directly changes the decision to give ibuprofen because of potential cross-reactivity?",
+        "point": "Identify aspirin or NSAID-associated bronchospasm as a hypersensitivity concern.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Acute wheezing after taking aspirin",
+            "explanation": "Aspirin-associated bronchospasm can cross-react with nonselective NSAIDs such as ibuprofen. Escalate before administration."
+          },
+          {
+            "id": "B",
+            "text": "Dyspepsia after taking naproxen",
+            "explanation": "This deserves GI risk review but does not by itself identify a respiratory hypersensitivity pattern."
+          },
+          {
+            "id": "C",
+            "text": "Nausea after taking codeine",
+            "explanation": "This can be an opioid adverse effect rather than evidence of NSAID cross-reactivity."
+          },
+          {
+            "id": "D",
+            "text": "Dry cough while taking enalapril",
+            "explanation": "An ACE inhibitor cough does not establish NSAID-associated bronchospasm."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::nsaid_cv": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After several doses of ibuprofen, which paired trend suggests the drug may be worsening fluid retention and BP control?",
+        "point": "Link sodium and water retention to edema and rising blood pressure.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "New ankle edema with rising BP",
+            "explanation": "NSAIDs can promote fluid retention and worsen hypertension. Reassess volume status and the treatment plan."
+          },
+          {
+            "id": "B",
+            "text": "New ankle edema with a postural BP fall after vomiting",
+            "explanation": "Edema needs assessment, but vomiting and postural hypotension suggest another concurrent volume problem."
+          },
+          {
+            "id": "C",
+            "text": "Rising BP with weight loss and increased urine output",
+            "explanation": "BP needs review, but this pattern does not support simultaneous fluid retention."
+          },
+          {
+            "id": "D",
+            "text": "Weight gain with new melena and a falling BP",
+            "explanation": "Possible bleeding and hemodynamic instability require evaluation. The BP trend does not fit the coupled retention and hypertension pattern."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::trufen_extra": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The order calls for a full tablet of plain ibuprofen 200 mg by the oral route. The patient also receives scheduled paracetamol. Which verified package matches the order without adding an unprescribed ingredient?",
+        "point": "Distinguish the exact oral strength and plain formulation from the combination product.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Plain Trufen 200 mg containing ibuprofen alone",
+            "explanation": "This matches the oral tablet order and adds no paracetamol."
+          },
+          {
+            "id": "B",
+            "text": "Trufen Extra containing 200 mg ibuprofen plus paracetamol",
+            "explanation": "The ibuprofen strength matches, but the extra paracetamol would add to the scheduled exposure."
+          },
+          {
+            "id": "C",
+            "text": "Plain Trufen 600 mg containing ibuprofen alone",
+            "explanation": "The active ingredient matches, but a full tablet would exceed the prescribed 200 mg."
+          },
+          {
+            "id": "D",
+            "text": "An oral paracetamol tablet containing 500 mg paracetamol alone",
+            "explanation": "This does not provide the prescribed ibuprofen and adds paracetamol."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::pain_response": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Before ibuprofen, a patient has 6/10 pain on a standardized ankle movement and visible localized swelling. Which comparison most directly measures the intended treatment response?",
+        "point": "Reassess pain under comparable movement and reassess swelling.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Repeat the same movement pain assessment and compare swelling at the same site",
+            "explanation": "Comparable baseline and follow-up measures assess both analgesic and anti-inflammatory response."
+          },
+          {
+            "id": "B",
+            "text": "Compare resting pain afterward with baseline movement pain and reassess swelling",
+            "explanation": "The swelling comparison helps, but the pain measures are taken under different conditions."
+          },
+          {
+            "id": "C",
+            "text": "Repeat movement pain but use pulse and BP alone to judge swelling",
+            "explanation": "The pain comparison is relevant. Vital signs do not directly measure local swelling."
+          },
+          {
+            "id": "D",
+            "text": "Compare swelling with baseline but use the temperature trend to judge analgesia",
+            "explanation": "The local swelling comparison helps, but temperature does not measure pain relief."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::ibuprofen_cv_risk": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Apart from fluid retention and blood pressure changes, which serious cardiovascular event pair is covered by the NSAID boxed warning for ibuprofen?",
+        "point": "Identify myocardial infarction and stroke as thrombotic risks.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Myocardial infarction and stroke",
+            "explanation": "Ibuprofen carries a warning about serious cardiovascular thrombotic events including MI and stroke."
+          },
+          {
+            "id": "B",
+            "text": "Sinus arrest and second-degree AV block",
+            "explanation": "The warning concerns thrombotic events rather than direct nodal suppression."
+          },
+          {
+            "id": "C",
+            "text": "Atrial fibrillation and torsades de pointes",
+            "explanation": "This is not the pair named in the cardiovascular thrombotic warning."
+          },
+          {
+            "id": "D",
+            "text": "Pericarditis and myocarditis",
+            "explanation": "These are inflammatory conditions, not the thrombotic outcomes the warning identifies."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::duplicate_nsaid": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult is due for ibuprofen after an injury. Which purchased product creates an unintended duplicate NSAID exposure?",
+        "point": "Apply class knowledge to identify a second NSAID.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Naproxen taken for the same pain",
+            "explanation": "Naproxen and ibuprofen both inhibit COX. Concurrent use can increase GI and renal risk."
+          },
+          {
+            "id": "B",
+            "text": "Paracetamol taken for the same pain",
+            "explanation": "This is not a second NSAID, although cumulative paracetamol needs separate review."
+          },
+          {
+            "id": "C",
+            "text": "Gabapentin prescribed for neuropathic pain",
+            "explanation": "Gabapentin has a different mechanism and does not create NSAID class duplication."
+          },
+          {
+            "id": "D",
+            "text": "Tramadol prescribed for breakthrough pain",
+            "explanation": "Tramadol is not an NSAID. Its own risks need separate consideration."
+          }
+        ]
+      }
+    },
+    "ibd2-trufen::ibuprofen_minimum_exposure": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient’s orthopaedic pain is controlled at the lower end of the prescribed ibuprofen dose range. Which principle should guide review of the remaining treatment?",
+        "point": "Apply the lowest effective ordered dose and shortest appropriate duration.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Use the lowest effective ordered dose and review whether a shorter course meets the clinical goal",
+            "explanation": "Limiting dose and duration can reduce cumulative NSAID risk."
+          },
+          {
+            "id": "B",
+            "text": "Use the lowest effective ordered dose and continue for a fixed course despite recovery",
+            "explanation": "The dose is appropriate but duration should be reviewed against response."
+          },
+          {
+            "id": "C",
+            "text": "Use a higher ordered dose and shorten the course even when the lower dose is effective",
+            "explanation": "A short course does not require dose escalation when the lower dose meets the goal."
+          },
+          {
+            "id": "D",
+            "text": "Use a higher ordered dose for the original duration to prevent pain from returning",
+            "explanation": "Unnecessary escalation increases exposure without an established need."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -5928,6 +6348,7 @@
     "ccu-aspirin": "aspirin-source-review-20261115",
     "ccu-isosorbide-mononitrate": "isosorbide-formulation-review-20261115",
     "ccu-isosorbide-dinitrate": "isosorbide-formulation-review-20261115",
-    "ibd2-acamol": "paracetamol-source-review-20261115"
+    "ibd2-acamol": "paracetamol-source-review-20261115",
+    "ibd2-trufen": "ibuprofen-source-review-20261115"
   }
 }
