@@ -2142,6 +2142,32 @@
       ]
     },
     {
+      "id": "ccu-warfarin-coumadin::warfarin_bridge_start",
+      "itemId": "ccu-warfarin-coumadin",
+      "point": "Start a VKA with therapeutic UFH or LMWH within 24 hours or as soon as safe.",
+      "questionIds": [
+        "ccu-warfarin-coumadin--standard--warfarin_bridge_start",
+        "ccu-warfarin-coumadin--7-day--warfarin_bridge_start"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-warfarin-coumadin::warfarin_occult_bleeding",
+      "itemId": "ccu-warfarin-coumadin",
+      "point": "Recognize urinary or gastrointestinal blood as a red flag with hypotension.",
+      "questionIds": [
+        "ccu-warfarin-coumadin--standard--warfarin_occult_bleeding",
+        "ccu-warfarin-coumadin--7-day--warfarin_occult_bleeding"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-warfarin-coumadin::bleeding",
       "itemId": "ccu-warfarin-coumadin",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -13668,11 +13694,13 @@
         "administration": [
           "ccu-warfarin-coumadin--standard--warfarin_inr",
           "ccu-warfarin-coumadin--standard--warfarin_bridge_stop",
+          "ccu-warfarin-coumadin--standard--warfarin_bridge_start",
           "ccu-warfarin-coumadin--advanced--warfarin_delay",
           "ccu-warfarin-coumadin--advanced--warfarin_interactions",
           "ccu-warfarin-coumadin--advanced--mechanical_valve",
           "ccu-warfarin-coumadin--7-day--warfarin_inr",
           "ccu-warfarin-coumadin--7-day--warfarin_bridge_stop",
+          "ccu-warfarin-coumadin--7-day--warfarin_bridge_start",
           "ccu-warfarin-coumadin--7-day--warfarin_delay",
           "ccu-warfarin-coumadin--7-day--warfarin_interactions",
           "ccu-warfarin-coumadin--7-day--mechanical_valve"
@@ -13681,6 +13709,7 @@
           "ccu-warfarin-coumadin--standard--warfarin_inr",
           "ccu-warfarin-coumadin--standard--warfarin_reversal",
           "ccu-warfarin-coumadin--standard--warfarin_vitamin_k_consistency",
+          "ccu-warfarin-coumadin--standard--warfarin_occult_bleeding",
           "ccu-warfarin-coumadin--advanced--bleeding",
           "ccu-warfarin-coumadin--advanced--warfarin_delay",
           "ccu-warfarin-coumadin--advanced--warfarin_interactions",
@@ -13688,6 +13717,7 @@
           "ccu-warfarin-coumadin--7-day--warfarin_inr",
           "ccu-warfarin-coumadin--7-day--warfarin_reversal",
           "ccu-warfarin-coumadin--7-day--warfarin_vitamin_k_consistency",
+          "ccu-warfarin-coumadin--7-day--warfarin_occult_bleeding",
           "ccu-warfarin-coumadin--7-day--bleeding",
           "ccu-warfarin-coumadin--7-day--warfarin_delay",
           "ccu-warfarin-coumadin--7-day--warfarin_interactions",

@@ -4470,6 +4470,286 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-warfarin-coumadin::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which change in hepatic production follows warfarin’s inhibition of vitamin K recycling?",
+        "choices": [
+          {
+            "text": "Reduced functional factors II, VII, IX and X and proteins C and S",
+            "explanation": "Warfarin reduces vitamin K-dependent activation of these coagulation factors and natural anticoagulants.",
+            "id": "A"
+          },
+          {
+            "text": "Reduced functional factors II, VII, IX and X with unchanged proteins C and S",
+            "explanation": "Proteins C and S are also vitamin K dependent.",
+            "id": "B"
+          },
+          {
+            "text": "Reduced functional factors II, V, VIII and X and proteins C and S",
+            "explanation": "Factors V and VIII are not part of the vitamin K-dependent set. This omits VII and IX.",
+            "id": "C"
+          },
+          {
+            "text": "Reduced functional factors II, V, VIII and X with unchanged proteins C and S",
+            "explanation": "The clotting-factor set is incorrect and proteins C and S are also affected.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify the complete vitamin K-dependent factor and protein pattern.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which anticoagulant class contains warfarin?",
+        "choices": [
+          {
+            "text": "Vitamin K antagonist",
+            "explanation": "Warfarin acts through inhibition of vitamin K recycling.",
+            "id": "A"
+          },
+          {
+            "text": "Direct factor Xa inhibitor",
+            "explanation": "This is the class of drugs such as apixaban.",
+            "id": "B"
+          },
+          {
+            "text": "Direct thrombin inhibitor",
+            "explanation": "This describes drugs such as dabigatran.",
+            "id": "C"
+          },
+          {
+            "text": "Antithrombin-dependent heparin",
+            "explanation": "UFH and LMWH act through antithrombin rather than inhibiting vitamin K recycling.",
+            "id": "D"
+          }
+        ],
+        "point": "Differentiate the vitamin K antagonist from common direct and indirect anticoagulants.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with a mechanical aortic prosthesis has completed the immediate postoperative phase. Which long-term anticoagulant plan is consistent with the valve indication?",
+        "choices": [
+          {
+            "text": "Oral warfarin with INR monitoring",
+            "explanation": "Mechanical prosthetic valves require monitored long-term VKA anticoagulation unless a specialist determines an exceptional plan.",
+            "id": "A"
+          },
+          {
+            "text": "Oral apixaban with renal function monitoring",
+            "explanation": "Direct oral anticoagulants are not recommended for mechanical prosthetic valves.",
+            "id": "B"
+          },
+          {
+            "text": "Daily aspirin with platelet count monitoring",
+            "explanation": "Aspirin does not replace VKA anticoagulation for the mechanical valve.",
+            "id": "C"
+          },
+          {
+            "text": "Subcutaneous enoxaparin with creatinine clearance monitoring",
+            "explanation": "LMWH can be used for bridging. It is not the guideline’s routine long-term maintenance strategy for this valve.",
+            "id": "D"
+          }
+        ],
+        "point": "Choose an oral VKA for mechanical valve anticoagulation.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::warfarin_reversal": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which intervention restores vitamin K-dependent factor production during protocol-directed warfarin reversal?",
+        "choices": [
+          {
+            "text": "Vitamin K",
+            "explanation": "Restores availability for hepatic production of functional factors. The clinical protocol determines whether rapid factor replacement is also indicated.",
+            "id": "A"
+          },
+          {
+            "text": "Four-factor prothrombin complex concentrate",
+            "explanation": "This rapidly replaces circulating factors. It does not itself restore their hepatic production.",
+            "id": "B"
+          },
+          {
+            "text": "Protamine",
+            "explanation": "Protamine neutralizes heparin, rather than restoring vitamin K-dependent production.",
+            "id": "C"
+          },
+          {
+            "text": "Idarucizumab",
+            "explanation": "This binds dabigatran rather than acting on vitamin K recycling.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish vitamin K from factor replacement and anticoagulant-specific antidotes.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::warfarin_delay": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which onset and peak profile fits a single oral dose of warfarin in its prescribing information?",
+        "choices": [
+          {
+            "text": "Effect can begin within 24 hours, with peak effect about 72–96 hours",
+            "explanation": "Existing functional factors decline over time. The peak after one dose does not establish a stable therapeutic INR.",
+            "id": "A"
+          },
+          {
+            "text": "Effect can begin within 24 hours, with peak effect in the same 24 hours",
+            "explanation": "Early measurable effect does not mean that peak anticoagulant effect has been reached.",
+            "id": "B"
+          },
+          {
+            "text": "Effect first begins at 72–96 hours, with peak effect the same day",
+            "explanation": "Some anticoagulant effect can occur substantially earlier than 72–96 hours.",
+            "id": "C"
+          },
+          {
+            "text": "Effect first begins at 72–96 hours, with peak a further week later",
+            "explanation": "This delays both the usual onset and single-dose peak beyond the teaching reference.",
+            "id": "D"
+          }
+        ],
+        "point": "Recall early onset, delayed peak, and the distinction from time to stable INR.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::warfarin_interactions": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with a previously stable therapeutic INR starts an antibiotic that can interact with warfarin and has an acute febrile illness. Which monitoring plan most directly evaluates a change in anticoagulation?",
+        "choices": [
+          {
+            "text": "Arrange an earlier INR check and assess for bleeding",
+            "explanation": "Both the new medicine and the illness can change INR. Follow the anticoagulation service’s monitoring plan.",
+            "id": "A"
+          },
+          {
+            "text": "Arrange aPTT monitoring and assess for bleeding",
+            "explanation": "aPTT is not used to guide warfarin therapy.",
+            "id": "B"
+          },
+          {
+            "text": "Arrange a CBC alone and wait for the routine INR appointment",
+            "explanation": "CBC helps detect blood loss but does not quantify warfarin effect.",
+            "id": "C"
+          },
+          {
+            "text": "Arrange anti-Xa monitoring and wait for the routine INR appointment",
+            "explanation": "Anti-Xa is not the warfarin monitoring test.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify the need to reassess INR with medication and illness changes.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::mechanical_valve": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which findings can justify different prescribed INR targets for two patients with mechanical heart valves?",
+        "choices": [
+          {
+            "text": "Prosthesis type and position plus patient thromboembolic risk",
+            "explanation": "Targets are individualized using valve and patient risk characteristics.",
+            "id": "A"
+          },
+          {
+            "text": "Baseline INR before the first dose plus the scheduled dose time",
+            "explanation": "Baseline INR helps assess the patient but does not define the valve-specific treatment target.",
+            "id": "B"
+          },
+          {
+            "text": "Warfarin tablet strength plus total milligrams prescribed per week",
+            "explanation": "Dose is adjusted to reach the target. It does not set that target.",
+            "id": "C"
+          },
+          {
+            "text": "Bridging agent and its current monitoring result",
+            "explanation": "These guide the bridge but do not set the INR target for long-term valve protection.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize valve type, position and thromboembolic risk as target determinants.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-warfarin-coumadin::valve_thrombosis": {
+      "action": "replace",
+      "sourceFields": [
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which mechanism explains why a functioning mechanical heart valve still creates a long-term thromboembolic risk?",
+        "choices": [
+          {
+            "text": "A non-endothelial surface and disturbed blood flow favor thrombus formation",
+            "explanation": "Prosthetic surface contact and abnormal local flow contribute to valve thrombosis and systemic embolic risk.",
+            "id": "A"
+          },
+          {
+            "text": "A non-endothelial surface but normal local flow makes embolism the only concern",
+            "explanation": "Abnormal flow contributes to thrombogenicity, and both valve thrombosis and embolism matter.",
+            "id": "B"
+          },
+          {
+            "text": "An endothelial surface and disturbed flow make platelet contact irrelevant",
+            "explanation": "The mechanical prosthesis is not a native endothelial surface, and platelet activation can contribute.",
+            "id": "C"
+          },
+          {
+            "text": "An endothelial surface and normal local flow cause thrombosis through vitamin K depletion",
+            "explanation": "Vitamin K depletion is not the mechanism of prosthetic thrombogenicity.",
+            "id": "D"
+          }
+        ],
+        "point": "Connect the prosthetic surface and disturbed flow to thrombosis and embolization.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -4538,7 +4818,7 @@
     "ccu-norepinephrine": "norepinephrine-source-review-20261115",
     "ccu-dobutamine": "dobutamine-source-review-20261115",
     "ccu-dopamine": "dopamine-source-review-20261115",
-    "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
+    "ccu-warfarin-coumadin": "warfarin-source-review-20261115",
     "ccu-enoxaparin": "enoxaparin-source-review-20261115",
     "ccu-clopidogrel": "clopidogrel-source-review-20261115",
     "trolley-amiodarone": "infusion-calculations-20261115",
