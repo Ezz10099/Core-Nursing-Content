@@ -58,7 +58,7 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--lmwh_route",
-          "sha256": "a81ae1fa035ef06c87ab4222860c3381b04f16fbf9b8a1d76c697d3c3d9bd970"
+          "sha256": "571fec9fe9df38d798bb4906b57519a75878cc27320d58838e5ad816dc74c345"
         }
       ],
       "rationale": "Distinguishes routes for the two specified regimens."
@@ -74,10 +74,10 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--infusion_precision",
-          "sha256": "545e850fe0593dd0a465350ab9aa547154a6a3bf04a0c4a4de37fec903504349"
+          "sha256": "eeb7d89cb56d21421de97035a0514a17d38dd48f4fe58368fdd218da0faa0cb1"
         }
       ],
-      "rationale": "Requires verifying concentration and linking units/hour to pump rate."
+      "rationale": "The item directly tests the new pump rate. Standard concentrations and authorized adjustment are taught context."
     },
     {
       "sourceField": "administration",
@@ -90,7 +90,7 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--lmwh_route",
-          "sha256": "a81ae1fa035ef06c87ab4222860c3381b04f16fbf9b8a1d76c697d3c3d9bd970"
+          "sha256": "571fec9fe9df38d798bb4906b57519a75878cc27320d58838e5ad816dc74c345"
         }
       ],
       "rationale": "Rejects IM in either stated regimen."
@@ -138,7 +138,7 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--heparin_protamine",
-          "sha256": "e7264077a30b1e472d2cf91100eab1d07d582bd997d04198b0f19e9960a8ef98"
+          "sha256": "849db96b2063790503dff94a2d91ca7e685a365392d244380dabe71979683da4"
         }
       ],
       "rationale": "Distinguishes the reversal agent from other anticoagulant reversal agents."
@@ -154,7 +154,7 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--heparin_samples",
-          "sha256": "eb7b6ab996a4042a6e30b324c26af24da79bd9520f5d49492c17bd22858c1be9"
+          "sha256": "016df9d06c5000e257302382b17227f01b5687581288e95a0ad925a21deed8f1"
         }
       ],
       "rationale": "Requires timed coagulation tests and separate platelet trending."
@@ -170,7 +170,7 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--hit",
-          "sha256": "ca9e137d6d6b5c92a46bc3ec424f8390a91cdd1e7665033f1fc6902a1729027f"
+          "sha256": "2d8b16c935c8c312c7426549962103631379394e25206e12ab06a05af66c0db5"
         }
       ],
       "rationale": "Identifies HIT when platelet fall and new clot coexist."
@@ -186,10 +186,10 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--infusion_precision",
-          "sha256": "545e850fe0593dd0a465350ab9aa547154a6a3bf04a0c4a4de37fec903504349"
+          "sha256": "eeb7d89cb56d21421de97035a0514a17d38dd48f4fe58368fdd218da0faa0cb1"
         }
       ],
-      "rationale": "Requires ordered or protocol-based pump changes."
+      "rationale": "The item directly tests the new pump rate. Standard concentrations and authorized adjustment are taught context."
     },
     {
       "sourceField": "why",
@@ -202,7 +202,7 @@
       "observedQuestionEvidence": [
         {
           "questionId": "ccu-heparin-ufh--comprehensive--heparin_samples",
-          "sha256": "eb7b6ab996a4042a6e30b324c26af24da79bd9520f5d49492c17bd22858c1be9"
+          "sha256": "016df9d06c5000e257302382b17227f01b5687581288e95a0ad925a21deed8f1"
         }
       ],
       "rationale": "Requires lab surveillance that serves separate clinical purposes."
@@ -227,10 +227,20 @@
       "requiredForCoverage": false,
       "coverageCredit": false,
       "rationale": "Recap of the main teaching fields."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": " an ordered units/hour after a verified concentration change, divide units/hour by the new units/mL to obtain mL/hour.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::infusion_precision"
+      ],
+      "rationale": "Direct numeric pump-rate calculation."
     }
   ],
   "reviewedSourceFieldSha256": {
-    "administration": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f",
+    "administration": "198adbe9e9b5865254ccda6950ac447530ae1c4b35649cd85ad8af54b48bf725",
     "availability": "757685cc466b1cc74e01362adb1b383ec7888e21ef852deeefd9b3df711839f1",
     "drugclass": "57e0dd738e4da1cd3af2490ab69d1f9e83ad5aaf2f63e7edbf74bb32f0aa57cd",
     "mechanism": "8378f484efb66b9a8029ddab7de4376cadaf9231a1c1ed192a5757dabdca9fdd",
@@ -240,5 +250,5 @@
     "use": "12598d1c7ba42aa166fd47effb78766ca5688dec7e7807338643db49656e8235",
     "why": "3caf01c2f8e42e655385fe177636d57591e54b99ae2017109d415f4b25f70858"
   },
-  "questionSetSha256": "e9fe4cef4d259775d1a0f9c419ddf41355e442a5ab309ceafc77f47ba92e1ee0"
+  "questionSetSha256": "d34485f5267dd121789434fcfda395eca4b6d9dd54eac13a47d29b20827fbe86"
 }
