@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 58,
-  "sourceContentSha256": "6a9cff7d9dd3b26683ca858f9178a978046ddef69323613c71d77f05bb3db8db",
+  "sourceContentVersion": 59,
+  "sourceContentSha256": "b1fba890169f19e03813bbc0e8e466a9a5a9370d252947bf2056b6be3cb030f6",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 333,
-    "questions": 1983,
-    "single-best-answer": 1953,
+    "questions": 1987,
+    "single-best-answer": 1957,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 111,
     "medications": 82,
     "lessons": 29,
-    "mappedLearningPoints": 939
+    "mappedLearningPoints": 941
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -779,7 +779,7 @@
         {
           "id": "ccu-furosemide--standard",
           "stage": "standard",
-          "questionCount": 12
+          "questionCount": 14
         },
         {
           "id": "ccu-furosemide--advanced",
@@ -789,7 +789,7 @@
         {
           "id": "ccu-furosemide--7-day",
           "stage": "7-day",
-          "questionCount": 13
+          "questionCount": 15
         }
       ]
     },
@@ -2595,7 +2595,7 @@
     },
     {
       "path": "banks-02.json",
-      "sha256": "c3e28e047830f77661811250d6ae444a850f3fe851b5fe80f260d7a3e2af83f0"
+      "sha256": "ae6ea8aee3ae68919fefe991385f9ddcc5eb76feb4a2342b975ef216387c86c6"
     },
     {
       "path": "banks-03.json",
@@ -2615,7 +2615,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "dea47588bf59427f35acb466e10f0d57c24b9ccae50d5eab76482289d1ab7397"
+      "sha256": "e8007d20c82083e1b7360bf615eee31294fde794a7a5da031cf27e92febaeca0"
     }
   ]
 }

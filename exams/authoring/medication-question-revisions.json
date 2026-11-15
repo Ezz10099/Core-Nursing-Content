@@ -507,32 +507,32 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "Which assessment most closely matches a clinical reason to give prescribed IV furosemide?",
+        "stem": "An adult with acute heart failure remains breathless after initial stabilization. Which hemodynamic profile most specifically supports prescribed IV furosemide for decongestion?",
+        "point": "Recognize fluid-overloaded acute heart failure as the treatment target.",
+        "criticalForSafety": false,
+        "answerKey": "A",
         "choices": [
           {
             "id": "A",
-            "text": "Pulmonary congestion with fluid overload in acute heart failure",
-            "explanation": "IV loop diuretic treatment can relieve volume-overload-associated pulmonary congestion."
+            "text": "Elevated filling pressures with pulmonary and peripheral congestion",
+            "explanation": "This profile supports IV loop diuresis to relieve congestion."
           },
           {
             "id": "B",
-            "text": "Severe hypotension with dehydration and no pulmonary congestion",
-            "explanation": "Additional diuresis can worsen volume depletion and hypotension."
+            "text": "Low filling pressures with reduced cardiac output",
+            "explanation": "This profile indicates reduced preload and output rather than excess volume."
           },
           {
             "id": "C",
-            "text": "Oliguria caused by a mechanical urinary obstruction",
-            "explanation": "Treat the urinary obstruction; furosemide does not relieve mechanical outflow blockage."
+            "text": "Normal filling pressures with isolated severe bradycardia",
+            "explanation": "Isolated bradycardia requires a rhythm-focused assessment."
           },
           {
             "id": "D",
-            "text": "Low cardiac output from shock with depleted intravascular volume",
-            "explanation": "Diuresis is not a substitute for restoring volume and perfusion in hypovolemic shock."
+            "text": "Normal filling pressures with isolated high vascular resistance",
+            "explanation": "High vascular resistance alone does not establish fluid overload."
           }
-        ],
-        "answerKey": "A",
-        "point": "Identify the main treatment role taught for this medicine.",
-        "criticalForSafety": false
+        ]
       }
     },
     "ccu-furosemide::principal-action": {
@@ -793,34 +793,34 @@
       "sourceFields": [
         "monitor"
       ],
-      "reason": "Author review: comparable clinically plausible alternatives without symptom or wording giveaways.",
       "question": {
         "format": "single-best-answer",
-        "stem": "Which pair best follows renal function during furosemide treatment?",
+        "stem": "Which trend during repeated furosemide dosing most specifically suggests worsening renal function and should be escalated?",
+        "point": "Recognize oliguria with rising creatinine during diuresis.",
+        "criticalForSafety": true,
+        "answerKey": "A",
         "choices": [
           {
             "id": "A",
-            "text": "Creatinine trend and urine-output trend",
-            "explanation": "Together these follow renal function and output."
+            "text": "Rising creatinine with falling urine output",
+            "explanation": "This combination warrants prompt review for worsening renal function."
           },
           {
             "id": "B",
-            "text": "Creatinine trend and stool-frequency trend",
-            "explanation": "Stool frequency does not replace urine-output assessment."
+            "text": "Falling magnesium with stable creatinine and output",
+            "explanation": "This is an electrolyte safety concern without the renal trend asked for."
           },
           {
             "id": "C",
-            "text": "Urine-output trend and hemoglobin trend",
-            "explanation": "Hemoglobin does not replace the renal-function measurement."
+            "text": "Falling weight with stable creatinine and output",
+            "explanation": "This can occur with effective decongestion."
           },
           {
             "id": "D",
-            "text": "Daily weight and serum-potassium trend",
-            "explanation": "Both are useful during diuresis but do not replace this renal-function/output pair."
+            "text": "Falling sodium with stable creatinine and output",
+            "explanation": "This is an electrolyte concern without the renal trend asked for."
           }
-        ],
-        "answerKey": "A",
-        "point": "Follow creatinine and urine-output trends."
+        ]
       }
     },
     "ccu-verapamil::verapamil_constipation": {
@@ -3229,6 +3229,162 @@
         "point": "Calculate infusion delivery from the verified preparation and prescribed rate or duration.",
         "explanation": "100 mL ÷ 2 hours = 50 mL/hour. Use the final diluted volume and the prescribed duration."
       }
+    },
+    "ccu-furosemide::decongestion": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Urine output increases after IV furosemide for pulmonary congestion. Which paired reassessment best confirms that lung congestion is also improving?",
+        "point": "Pair diuresis with respiratory reassessment.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Less orthopnea and fewer bilateral crackles",
+            "explanation": "Both findings indicate a reduction in pulmonary congestion."
+          },
+          {
+            "id": "B",
+            "text": "Less orthopnea and more bilateral crackles",
+            "explanation": "The increased crackles call for reassessment despite improvement in orthopnea."
+          },
+          {
+            "id": "C",
+            "text": "Unchanged orthopnea and lower systolic blood pressure",
+            "explanation": "A pressure fall does not establish relief of lung congestion."
+          },
+          {
+            "id": "D",
+            "text": "Less ankle edema and unchanged orthopnea",
+            "explanation": "Peripheral edema can improve while pulmonary symptoms persist."
+          }
+        ]
+      }
+    },
+    "ccu-furosemide::ototoxicity": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new symptom pair after IV furosemide most specifically points to an adverse effect separate from volume or electrolyte loss?",
+        "point": "Recognize furosemide-associated tinnitus or hearing change.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "New ringing and muffled hearing",
+            "explanation": "This pair suggests auditory toxicity and should be reported promptly."
+          },
+          {
+            "id": "B",
+            "text": "New muscle cramps and palpitations",
+            "explanation": "These may reflect electrolyte loss after diuresis."
+          },
+          {
+            "id": "C",
+            "text": "New thirst and postural lightheadedness",
+            "explanation": "These may reflect volume depletion after diuresis."
+          },
+          {
+            "id": "D",
+            "text": "New muscle weakness and irregular beats",
+            "explanation": "These may reflect potassium or magnesium loss."
+          }
+        ]
+      }
+    },
+    "ccu-furosemide::diuretic_timing": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "When counselling an adult starting prescribed once-daily oral furosemide, which dosing time best aligns with the usual timing recommendation?",
+        "point": "Recall preferred oral timing to reduce nocturia.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "With breakfast",
+            "explanation": "Earlier dosing generally moves most diuresis into waking hours."
+          },
+          {
+            "id": "B",
+            "text": "With the evening meal",
+            "explanation": "Evening dosing can still cause overnight urination."
+          },
+          {
+            "id": "C",
+            "text": "At bedtime",
+            "explanation": "Bedtime dosing shifts diuresis into sleep hours."
+          },
+          {
+            "id": "D",
+            "text": "With lunch",
+            "explanation": "Morning dosing is preferred when practical so that the diuretic effect occurs earlier."
+          }
+        ]
+      }
+    },
+    "ccu-furosemide::furosemide_rapid_ototoxicity": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which administration change most directly increases the risk of drug-related hearing injury during IV furosemide therapy?",
+        "point": "Link both larger dose and faster IV delivery to hearing injury.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Increase the dose and shorten the delivery time",
+            "explanation": "Both higher parenteral doses and rapid injection increase ototoxicity risk."
+          },
+          {
+            "id": "B",
+            "text": "Keep the dose and increase the flush volume",
+            "explanation": "A flush-volume change alone does not establish higher or faster drug exposure."
+          },
+          {
+            "id": "C",
+            "text": "Keep the dose and extend the infusion time",
+            "explanation": "Extending the infusion reduces the delivery rate."
+          },
+          {
+            "id": "D",
+            "text": "Keep the dose and lower the bag concentration at the same mass delivery rate",
+            "explanation": "A lower concentration at the same mass delivery rate does not speed furosemide administration."
+          }
+        ]
+      }
+    },
+    "ccu-furosemide::furosemide_controlled_delivery": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "numeric-entry",
+        "stem": "MSF Essential Drugs recommends controlled IV infusion for prescribed furosemide doses above what amount? Enter the cutoff in mg.",
+        "answer": 50,
+        "unit": "mg",
+        "tolerance": 0,
+        "explanation": "The MSF Essential Drugs remarks recommend IV infusion when the dose exceeds 50 mg. The product and applicable facility protocol determine the method and rate for the actual order.",
+        "point": "Recall the MSF dose threshold for IV infusion.",
+        "criticalForSafety": true
+      }
     }
   },
   "evidenceChecks": [
@@ -3283,7 +3439,7 @@
   },
   "correctionRevisions": {
     "ccu-verapamil": "gaza-administration-reference-20261109",
-    "ccu-furosemide": "closed-source-review-20261107",
+    "ccu-furosemide": "lasix-source-review-20261115",
     "ed-ondansetron-provisional-shelf": "closed-source-review-20261107",
     "verified-losartan": "bp-author-review-20261107",
     "ccu-enalapril": "bp-author-review-20261107",

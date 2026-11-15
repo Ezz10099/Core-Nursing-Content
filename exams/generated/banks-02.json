@@ -13275,13 +13275,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
-                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
+                  "text": "Inhibits hepatic HMG-CoA reductase",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Furosemide promotes salt and water loss, reducing congestion."
                 },
                 {
                   "id": "D",
-                  "text": "Inhibits hepatic HMG-CoA reductase",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Furosemide promotes salt and water loss, reducing congestion."
+                  "text": "Inhibits Na-K-2Cl transport in the ascending loop",
+                  "explanation": "Furosemide promotes salt and water loss, reducing congestion."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -13314,7 +13314,7 @@
               "learningPointIds": [
                 "ccu-furosemide::principal-action"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -13322,13 +13322,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Loop diuretic",
-                  "explanation": "Loop diuretic."
+                  "text": "Insulin",
+                  "explanation": "The medicine is classified as: Loop diuretic."
                 },
                 {
                   "id": "B",
-                  "text": "Insulin",
-                  "explanation": "The medicine is classified as: Loop diuretic."
+                  "text": "Loop diuretic",
+                  "explanation": "Loop diuretic."
                 },
                 {
                   "id": "C",
@@ -13357,7 +13357,7 @@
               "learningPointIds": [
                 "ccu-furosemide::drug-class"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -13365,13 +13365,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Treatment of oral fungal lesions",
-                  "explanation": "This is a different treatment role."
+                  "text": "Relief of congestion and fluid overload",
+                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
                 },
                 {
                   "id": "B",
-                  "text": "Relief of congestion and fluid overload",
-                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
+                  "text": "Treatment of oral fungal lesions",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
@@ -13407,7 +13407,7 @@
               "learningPointIds": [
                 "ccu-furosemide::treatment-role"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which change best supports a beneficial decongestive response to furosemide?",
@@ -13419,18 +13419,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Easier breathing with fewer crackles and less edema",
-                  "explanation": "Improvement should include the clinical overload picture, not urine alone."
-                },
-                {
-                  "id": "C",
                   "text": "A BP fall with increasing confusion",
                   "explanation": "This may indicate poor perfusion rather than uncomplicated benefit."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "More orthopnea with increasing crackles",
                   "explanation": "This suggests worsening pulmonary congestion."
+                },
+                {
+                  "id": "D",
+                  "text": "Easier breathing with fewer crackles and less edema",
+                  "explanation": "Improvement should include the clinical overload picture, not urine alone."
                 }
               ],
               "format": "single-best-answer",
@@ -13464,30 +13464,30 @@
               "learningPointIds": [
                 "ccu-furosemide::decongestion"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "stem": "A patient becomes light-headed on standing after LASIX — furosemide. Which paired assessment best checks the suspected adverse effect?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Postural BP and associated symptoms",
+                  "explanation": "A positional pressure fall can account for the light-headedness."
+                },
+                {
+                  "id": "B",
                   "text": "Bowel frequency and abdominal distension",
                   "explanation": "These investigate a gastrointestinal effect rather than postural circulatory tolerance."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Visual acuity and accommodation symptoms",
                   "explanation": "These evaluate visual effects rather than establish a postural pressure fall."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Resting temperature and infection symptoms",
                   "explanation": "These investigate infection rather than the suspected pressure effect."
-                },
-                {
-                  "id": "D",
-                  "text": "Postural BP and associated symptoms",
-                  "explanation": "A positional pressure fall can account for the light-headedness."
                 }
               ],
               "format": "single-best-answer",
@@ -13514,7 +13514,7 @@
               "learningPointIds": [
                 "ccu-furosemide::hypotension"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which trend is most directly relevant to the renal safety monitoring described for LASIX — furosemide?",
@@ -13531,13 +13531,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "INR and puncture-site bleeding trends",
-                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 },
                 {
                   "id": "D",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                  "text": "INR and puncture-site bleeding trends",
+                  "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 }
               ],
               "format": "single-best-answer",
@@ -13557,7 +13557,7 @@
               "learningPointIds": [
                 "ccu-furosemide::renal_monitor"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which new symptom during LASIX — furosemide therapy specifically warrants review for ototoxicity?",
@@ -13614,13 +13614,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Less sleep disruption from nocturia",
-                  "explanation": "The timing reduces inconvenient overnight diuresis."
+                  "text": "Less potassium loss at an identical total dose",
+                  "explanation": "Time of day does not remove the need to monitor potassium."
                 },
                 {
                   "id": "B",
-                  "text": "Less potassium loss at an identical total dose",
-                  "explanation": "Time of day does not remove the need to monitor potassium."
+                  "text": "Less sleep disruption from nocturia",
+                  "explanation": "The timing reduces inconvenient overnight diuresis."
                 },
                 {
                   "id": "C",
@@ -13650,7 +13650,7 @@
               "learningPointIds": [
                 "ccu-furosemide::diuretic_timing"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -13658,18 +13658,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Sodium/water depletion with a fall in BP",
-                  "explanation": "Excessive diuresis can deplete sodium and intravascular volume and produce hypotension."
-                },
-                {
-                  "id": "B",
                   "text": "Sodium/water retention with a fall in BP",
                   "explanation": "Retention is not the direct excessive-diuresis effect."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Sodium/water retention with a predictable BP rise",
                   "explanation": "This does not describe excessive loop diuresis."
+                },
+                {
+                  "id": "C",
+                  "text": "Sodium/water depletion with a fall in BP",
+                  "explanation": "Excessive diuresis can deplete sodium and intravascular volume and produce hypotension."
                 },
                 {
                   "id": "D",
@@ -13693,7 +13693,7 @@
               "learningPointIds": [
                 "ccu-furosemide::furosemide_volume_sodium"
               ],
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -13706,18 +13706,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Serum sodium",
-                  "explanation": "Sodium is part of the required electrolyte surveillance during diuresis."
-                },
-                {
-                  "id": "C",
                   "text": "Serum phosphate",
                   "explanation": "Phosphate does not replace the missing sodium measurement."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Serum bicarbonate alone",
                   "explanation": "Bicarbonate does not replace direct sodium measurement."
+                },
+                {
+                  "id": "D",
+                  "text": "Serum sodium",
+                  "explanation": "Sodium is part of the required electrolyte surveillance during diuresis."
                 }
               ],
               "point": "Include serum sodium in electrolyte surveillance.",
@@ -13736,7 +13736,7 @@
               "learningPointIds": [
                 "ccu-furosemide::furosemide_sodium_monitor"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -13744,23 +13744,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Giving a large IV dose more rapidly",
+                  "explanation": "Large doses and rapid injection increase the risk of ototoxicity."
+                },
+                {
+                  "id": "B",
                   "text": "Giving a routine oral dose earlier in the day",
                   "explanation": "Earlier oral timing helps limit nocturia and is not the administration risk sought."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Using the prescribed controlled IV infusion rate",
                   "explanation": "Controlled delivery avoids unnecessary rapid exposure."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Maintaining the ordered dose with slower IV delivery",
                   "explanation": "Slower delivery does not create the rapid-injection risk sought."
-                },
-                {
-                  "id": "D",
-                  "text": "Giving a large IV dose more rapidly",
-                  "explanation": "Large doses and rapid injection increase the risk of ototoxicity."
                 }
               ],
               "point": "Connect rapid/high-dose IV administration with ototoxicity risk.",
@@ -13779,7 +13779,7 @@
               "learningPointIds": [
                 "ccu-furosemide::furosemide_rapid_ototoxicity"
               ],
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -13792,13 +13792,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "A rapid IV push followed by a slow saline flush",
-                  "explanation": "A slow flush does not make the preceding rapid drug injection a controlled infusion."
+                  "text": "Controlled infusion within the prescribed rate limit",
+                  "explanation": "High-dose parenteral therapy requires controlled delivery within the authorized rate."
                 },
                 {
                   "id": "C",
-                  "text": "Controlled infusion within the prescribed rate limit",
-                  "explanation": "High-dose parenteral therapy requires controlled delivery within the authorized rate."
+                  "text": "A rapid IV push followed by a slow saline flush",
+                  "explanation": "A slow flush does not make the preceding rapid drug injection a controlled infusion."
                 },
                 {
                   "id": "D",
@@ -13822,10 +13822,96 @@
               "learningPointIds": [
                 "ccu-furosemide::furosemide_controlled_delivery"
               ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "In the general adult injectable furosemide guidance in MSF Essential Drugs, which dose and IV delivery pair is listed before indication-specific adjustment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "40–50 mg by slow IV injection",
+                  "explanation": "40 mg is the upper end of the general range; 50 mg is outside it."
+                },
+                {
+                  "id": "B",
+                  "text": "20–40 mg by rapid IV injection",
+                  "explanation": "The dose range matches but the MSF instructions specify slow IV injection."
+                },
+                {
+                  "id": "C",
+                  "text": "20–40 mg by slow IV injection",
+                  "explanation": "This is the general adult dose range and IV route in the MSF monograph."
+                },
+                {
+                  "id": "D",
+                  "text": "10–20 mg by slow IV injection",
+                  "explanation": "This is below the general adult injectable reference range."
+                }
+              ],
+              "point": "Recall the MSF general adult injectable reference and slow IV route.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "administration",
+                  "textSha256": "56cbed7651cd10cd16cb7ff1d2993bec3196d3e30081451449188335a4fb758d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--standard--furosemide_msf_adult_injection",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_msf_adult_injection"
+              ],
               "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient taking digoxin starts furosemide for congestion. Which proposed change most specifically increases susceptibility to digoxin toxicity?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Chloride falls from 102 to 95 mmol/L",
+                  "explanation": "This can occur with loop diuresis but is not the electrolyte change implicated in this interaction."
+                },
+                {
+                  "id": "B",
+                  "text": "Potassium falls from 4.2 to 3.0 mmol/L",
+                  "explanation": "Hypokalaemia increases susceptibility to digoxin toxicity."
+                },
+                {
+                  "id": "C",
+                  "text": "Sodium falls from 140 to 132 mmol/L",
+                  "explanation": "This needs review but is not the taught potentiator of digoxin toxicity."
+                },
+                {
+                  "id": "D",
+                  "text": "Bicarbonate rises from 24 to 30 mmol/L",
+                  "explanation": "This can accompany loop diuresis but is not the potassium-mediated interaction."
+                }
+              ],
+              "point": "Identify falling potassium as a specific digoxin–furosemide interaction risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "monitor",
+                  "textSha256": "805ea91421a1f8cea9cbc9ca128ee299cf75b3ae999ceda13e942c872d9b8be0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--standard--furosemide_digoxin_potassium",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_digoxin_potassium"
+              ],
+              "answerKey": "B"
             }
           ],
-          "questionCount": 12
+          "questionCount": 14
         },
         {
           "id": "ccu-furosemide--advanced",
@@ -14069,13 +14155,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Loop diuretic",
-                  "explanation": "Loop diuretic."
+                  "text": "Insulin",
+                  "explanation": "The medicine is classified as: Loop diuretic."
                 },
                 {
                   "id": "C",
-                  "text": "Insulin",
-                  "explanation": "The medicine is classified as: Loop diuretic."
+                  "text": "Loop diuretic",
+                  "explanation": "Loop diuretic."
                 },
                 {
                   "id": "D",
@@ -14100,7 +14186,7 @@
                 "ccu-furosemide::drug-class"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--drug-class",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -14113,13 +14199,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Relief of congestion and fluid overload",
-                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
+                  "text": "Suppression of bacterial cell-wall synthesis",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "C",
-                  "text": "Suppression of bacterial cell-wall synthesis",
-                  "explanation": "This is a different treatment role."
+                  "text": "Relief of congestion and fluid overload",
+                  "explanation": "This is a clinical use of the medicine: Pulmonary/peripheral congestion and fluid overload, including selected acute heart-failure patients."
                 },
                 {
                   "id": "D",
@@ -14151,7 +14237,7 @@
                 "ccu-furosemide::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--treatment-role",
-              "answerKey": "B"
+              "answerKey": "C"
             },
             {
               "stem": "Which change best supports a beneficial decongestive response to furosemide?",
@@ -14267,23 +14353,23 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Creatinine and urine-output trends",
+                  "explanation": "These assess kidney function and renal perfusion in clinical context."
+                },
+                {
+                  "id": "B",
                   "text": "INR and puncture-site bleeding trends",
                   "explanation": "These assess anticoagulation and bleeding rather than renal function."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Temperature and neutrophil-count trends",
                   "explanation": "These primarily assess infection or blood-cell changes."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Troponin and chest-pain trends",
                   "explanation": "These assess myocardial injury rather than directly establish renal status."
-                },
-                {
-                  "id": "D",
-                  "text": "Creatinine and urine-output trends",
-                  "explanation": "These assess kidney function and renal perfusion in clinical context."
                 }
               ],
               "format": "single-best-answer",
@@ -14304,30 +14390,30 @@
                 "ccu-furosemide::renal_monitor"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--renal_monitor",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "Which new symptom during LASIX — furosemide therapy specifically warrants review for ototoxicity?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Tinnitus or hearing change",
-                  "explanation": "These can be auditory toxicity signals."
-                },
-                {
-                  "id": "B",
                   "text": "Dry mouth or urinary hesitancy",
                   "explanation": "These suggest an antimuscarinic pattern."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Ankle soreness or tendon tenderness",
                   "explanation": "These suggest a different medication warning."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Metallic taste or mild dyspepsia",
                   "explanation": "These are a different adverse-effect pattern."
+                },
+                {
+                  "id": "D",
+                  "text": "Tinnitus or hearing change",
+                  "explanation": "These can be auditory toxicity signals."
                 }
               ],
               "format": "single-best-answer",
@@ -14355,7 +14441,7 @@
                 "ccu-furosemide::ototoxicity"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--ototoxicity",
-              "answerKey": "A"
+              "answerKey": "D"
             },
             {
               "stem": "Why may an authorized routine oral furosemide schedule favor earlier daytime doses?",
@@ -14544,13 +14630,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "A free-flow infusion adjusted only when symptoms occur",
-                  "explanation": "Symptom-triggered adjustment does not provide the required rate control."
+                  "text": "Controlled infusion within the prescribed rate limit",
+                  "explanation": "High-dose parenteral therapy requires controlled delivery within the authorized rate."
                 },
                 {
                   "id": "C",
-                  "text": "Controlled infusion within the prescribed rate limit",
-                  "explanation": "High-dose parenteral therapy requires controlled delivery within the authorized rate."
+                  "text": "A free-flow infusion adjusted only when symptoms occur",
+                  "explanation": "Symptom-triggered adjustment does not provide the required rate control."
                 },
                 {
                   "id": "D",
@@ -14575,7 +14661,95 @@
                 "ccu-furosemide::furosemide_controlled_delivery"
               ],
               "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_controlled_delivery",
-              "answerKey": "C"
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "In the general adult injectable furosemide guidance in MSF Essential Drugs, which dose and IV delivery pair is listed before indication-specific adjustment?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "20–40 mg by rapid IV injection",
+                  "explanation": "The dose range matches but the MSF instructions specify slow IV injection."
+                },
+                {
+                  "id": "B",
+                  "text": "20–40 mg by slow IV injection",
+                  "explanation": "This is the general adult dose range and IV route in the MSF monograph."
+                },
+                {
+                  "id": "C",
+                  "text": "10–20 mg by slow IV injection",
+                  "explanation": "This is below the general adult injectable reference range."
+                },
+                {
+                  "id": "D",
+                  "text": "40–50 mg by slow IV injection",
+                  "explanation": "40 mg is the upper end of the general range; 50 mg is outside it."
+                }
+              ],
+              "point": "Recall the MSF general adult injectable reference and slow IV route.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "administration",
+                  "textSha256": "56cbed7651cd10cd16cb7ff1d2993bec3196d3e30081451449188335a4fb758d"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--7-day--furosemide_msf_adult_injection",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_msf_adult_injection"
+              ],
+              "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_msf_adult_injection",
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "A patient taking digoxin starts furosemide for congestion. Which proposed change most specifically increases susceptibility to digoxin toxicity?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Potassium falls from 4.2 to 3.0 mmol/L",
+                  "explanation": "Hypokalaemia increases susceptibility to digoxin toxicity."
+                },
+                {
+                  "id": "B",
+                  "text": "Sodium falls from 140 to 132 mmol/L",
+                  "explanation": "This needs review but is not the taught potentiator of digoxin toxicity."
+                },
+                {
+                  "id": "C",
+                  "text": "Chloride falls from 102 to 95 mmol/L",
+                  "explanation": "This can occur with loop diuresis but is not the electrolyte change implicated in this interaction."
+                },
+                {
+                  "id": "D",
+                  "text": "Bicarbonate rises from 24 to 30 mmol/L",
+                  "explanation": "This can accompany loop diuresis but is not the potassium-mediated interaction."
+                }
+              ],
+              "point": "Identify falling potassium as a specific digoxin–furosemide interaction risk.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-furosemide",
+                  "field": "monitor",
+                  "textSha256": "805ea91421a1f8cea9cbc9ca128ee299cf75b3ae999ceda13e942c872d9b8be0"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-furosemide--7-day--furosemide_digoxin_potassium",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-furosemide::furosemide_digoxin_potassium"
+              ],
+              "reusedFromQuestionId": "ccu-furosemide--standard--furosemide_digoxin_potassium",
+              "answerKey": "A"
             },
             {
               "stem": "A patient on furosemide develops new PVCs after substantial diuresis. Which laboratory pair is especially relevant?",
@@ -14643,7 +14817,7 @@
               "answerKey": "B"
             }
           ],
-          "questionCount": 13
+          "questionCount": 15
         }
       ]
     },
