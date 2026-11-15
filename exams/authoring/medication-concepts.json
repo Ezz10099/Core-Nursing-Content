@@ -9096,5 +9096,89 @@
       ],
       "correct": 0
     }
+  },
+  "norepinephrine_cardiac_context": {
+    "point": "Recognize concomitant cardiac dysfunction as a modifier of first-line vasopressor selection.",
+    "anchor": "Cardiac dysfunction may change the choice",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An adult with septic shock needs a first-line vasopressor. Which additional finding can change the range of agents considered first-line under adult septic shock guidance?",
+      "choices": [
+        {
+          "text": "New myocardial dysfunction on bedside echocardiography",
+          "explanation": "For septic shock with cardiac dysfunction, the guideline conditionally allows either norepinephrine or epinephrine first-line."
+        },
+        {
+          "text": "An isolated rise in creatinine",
+          "explanation": "Kidney dysfunction requires assessment but does not invoke this cardiac-specific recommendation."
+        },
+        {
+          "text": "A rising temperature",
+          "explanation": "Fever does not invoke the cardiac dysfunction recommendation."
+        },
+        {
+          "text": "A confirmed urinary source",
+          "explanation": "Infection source guides treatment of the infection but does not invoke this cardiac-specific recommendation."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "norepinephrine_extravasation_ischemia": {
+    "point": "Infer local alpha-mediated ischemia from focal changes suggesting extravasation.",
+    "anchor": "extravasation can cause local ischemia",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "During a peripheral norepinephrine infusion, the nurse finds new blanching, coolness and swelling confined to the tissue around the cannula. Which mechanism explains the risk of tissue injury?",
+      "choices": [
+        {
+          "text": "Norepinephrine in surrounding tissue constricts local vessels",
+          "explanation": "Extravasated norepinephrine can reduce local blood supply and cause ischemic injury."
+        },
+        {
+          "text": "Norepinephrine in surrounding tissue dilates local vessels",
+          "explanation": "The principal local action is vasoconstriction, consistent with blanching and coolness."
+        },
+        {
+          "text": "Systemic loss of vascular tone reduces perfusion at the cannula first",
+          "explanation": "The changes are focal, and the leaked vasopressor itself threatens local perfusion."
+        },
+        {
+          "text": "Systemic beta1 blockade reduces perfusion at the cannula first",
+          "explanation": "Norepinephrine does not block beta1 receptors. The focal findings point to a local tissue problem."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "norepinephrine_extravasation_continuity": {
+    "point": "Coordinate continued therapy through safe alternate access while preserving the affected catheter for aspiration.",
+    "anchor": "coordinate safe alternate access if pressure support is still needed",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient still requires norepinephrine after suspected extravasation. The affected line is already stopped and left in place. Which access plan preserves both systemic pressure support and the opportunity for aspiration?",
+      "choices": [
+        {
+          "text": "Restart via verified alternate access and reserve the affected catheter for aspiration",
+          "explanation": "This maintains appropriate pressure support and preserves access to aspirate drug from the affected site under protocol."
+        },
+        {
+          "text": "Restart via verified alternate access and remove the affected catheter before aspiration",
+          "explanation": "Alternate access is appropriate but immediate removal loses the route for aspiration."
+        },
+        {
+          "text": "Restart via verified alternate access and flush the affected catheter before aspiration",
+          "explanation": "Flushing risks pushing more drug into the tissue."
+        },
+        {
+          "text": "Keep the affected catheter in place and wait for local treatment to finish before arranging alternate access",
+          "explanation": "Pressure support may be needed during local treatment. Arrange prompt alternate delivery under the emergency plan."
+        }
+      ],
+      "correct": 0
+    }
   }
 }
