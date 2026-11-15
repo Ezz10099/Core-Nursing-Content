@@ -31,20 +31,26 @@ for(const b of banks){
   assert(!result.attempt.passed);assert.equal(r.due.stage,stage);assert.equal(r.due.at,due+1+3*C.DAY);assert.equal(r.readingAfter,null);
   const restored=C.normalize(clone(state));assert.equal(restored.items[bank.itemId].due.at,r.due.at);assert.equal(JSON.stringify(restored.items[bank.itemId].comprehensiveForm.questions),saved);
   assert(!C.eligible(state,bank.itemId,stage,bank.readingSections,r.due.at-1,C.MODEL).ok);
-  const answers=Object.fromEntries(r.pendingSafety.map(p=>[p.question.id,right(p.question)]));C.safetyCheck(state,bank.itemId,answers,r.due.at-10);
   due=r.due.at;C.start(state,bank,stage,due);assert.equal(JSON.stringify(state.active.form.questions),saved);
   state.active.answers=Object.fromEntries(state.active.form.questions.map(q=>[q.id,right(q)]));result=C.submit(state,due+1);
   assert(result.attempt.completedAt);if(stage==='7-day')assert.equal(r.due.at,due+1+21*C.DAY);else assert.equal(r.due,null);
  }
 }
-// Error allowance does not bypass safety checks; the actual completion date starts the interval.
+// Clinically important misses use ordinary correction and score rules.
 const b=clone(banks.find(b=>b.exams[0].questions.some(q=>q.criticalForSafety))),s=C.empty();
 C.start(s,b,'comprehensive',100);const a=s.active; a.answers=Object.fromEntries(a.form.questions.map(q=>[q.id,right(q)]));
 const q=a.form.questions.find(q=>q.criticalForSafety);a.answers[q.id]='WRONG';const result=C.submit(s,101),r=C.item(s,b.itemId);
-assert(result.attempt.passed);assert.equal(result.attempt.completedAt,null);assert.equal(r.due,null);
-C.safetyCheck(s,b.itemId,Object.fromEntries(r.pendingSafety.map(p=>[p.question.id,right(p.question)])),200);
-assert.equal(result.attempt.completedAt,200);assert.equal(r.due.at,200+7*C.DAY);
-console.log('PASS: all '+banks.length+' comprehensive banks, exact error thresholds, identical pinned forms, retry boundaries, restart and safety gating');
+assert(result.attempt.passed);assert.equal(result.attempt.completedAt,101);
+assert.equal(r.due.at,101+7*C.DAY);assert(result.result.review.includes(q.id));
+const oldState=clone(s),oldRecord=oldState.items[b.itemId];
+oldRecord.attempts[0].completedAt=null;oldRecord.due=null;
+oldRecord.pendingSafety=[{attemptId:result.attempt.id,question:q}];
+const migrated=C.normalize(oldState).items[b.itemId];
+assert.equal(migrated.attempts[0].completedAt,101);
+assert.equal(migrated.attempts[0].correct,result.attempt.correct);
+assert.deepEqual(migrated.due,r.due);
+assert.equal(migrated.pendingSafety,undefined);
+console.log('PASS: comprehensive scoring, pinned forms, retries and old safety-check migration');
 // Explicit clinical-authoring corrections refresh the next start, preserving
 // active forms, old answers/scores and scheduled dates.
 {
@@ -59,7 +65,7 @@ console.log('PASS: all '+banks.length+' comprehensive banks, exact error thresho
  assert.equal(JSON.stringify(rec.attempts),history);assert.deepEqual(rec.due,due);
  const rate=restored.active.form.questions.find(q=>q.learningPointIds[0].endsWith('::slow_iv'));
  assert.equal(rate.format,'numeric-entry');assert.equal(rate.answer,2);
- assert.equal(restored.active.followups[rate.id],undefined,'Do not substitute the old generic reference question');
+ assert.equal(restored.active.followups,undefined);
 }
 const medicationBanks=banks.filter(b=>b.itemType==='medication');
 assert.equal(medicationBanks.length,82);

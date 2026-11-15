@@ -14,13 +14,11 @@ assert(C.grade(form('standard',20),answers(form('standard',20),12)).below65);
 assert(!C.grade(form('standard',1),{}).passed);
 assert.equal(C.grade(form('standard'),answers(form('standard'),10),{q0:true}).review.length,1);
 assert.equal(C.grade(form('standard'),answers(form('standard'),10),{q0:true}).safetyMisses.length,0);
-// Safety misses leave the numeric score alone and require a separate check.
+// Safety misses remain in corrections with normal scoring.
 let state=C.empty(),criticalBank=JSON.parse(JSON.stringify(bank));criticalBank.exams[0]=form('standard',10,true);
 C.start(state,criticalBank,'standard',100);state.active.answers=Object.fromEntries(state.active.form.questions.map((q,i)=>[q.id,i===0?'A':'B']));
-let result=C.submit(state,101);assert.equal(result.attempt.correct,9);assert(result.attempt.passed);assert.equal(result.attempt.completedAt,null);
-assert(!C.eligible(state,'test','advanced',bank.readingSections,102).ok);
-C.safetyCheck(state,'test',{q0:'A'},103);assert.equal(C.item(state,'test').pendingSafety.length,1);
-C.safetyCheck(state,'test',{q0:'B'},104);assert(C.eligible(state,'test','advanced',bank.readingSections,105).ok);assert.equal(result.attempt.correct,9);
+let result=C.submit(state,101);assert.equal(result.attempt.correct,9);assert(result.attempt.passed);assert.equal(result.attempt.completedAt,101);
+assert(C.eligible(state,'test','advanced',bank.readingSections,102).ok);
 // Below 65 requires a new confirmation of every section, without deleting old history.
 state=C.empty();C.item(state,'test').reads=[{sectionId:'s1',at:20},{sectionId:'s2',at:20}];
 attempt(state,'standard',6,200);let r=C.item(state,'test');assert.equal(r.reads.length,2);
@@ -64,7 +62,7 @@ assert.equal(state.active.form.questions[0].choices[0].explanation,'Clearer expl
 assert.equal(state.active.form.questions[1].stem,'Old wording');assert.equal(state.active.form.questions[1].answerKey,'B');
 assert.equal(state.active.bankVersion,1);assert.equal(state.active.form.questions.length,10);
 assert.equal(JSON.stringify(C.item(state,'test').attempts),before);
-console.log('PASS: exact score boundaries, unsure flags, safety checks, rereading, timer persistence, 7/21-day retries, history, safe prose refresh and answer formats');
+console.log('PASS: exact score boundaries, unsure flags, rereading, timer persistence, 7/21-day retries, history, safe prose refresh and answer formats');
 // Failed advanced exams lock only that material's advanced stage for exactly 24h.
 state=C.empty();attempt(state,'standard',10,3000);
 const failedAdvanced=attempt(state,'advanced',9,3010),unlock=failedAdvanced.attempt.finishedAt+C.DAY;
@@ -79,19 +77,17 @@ assert(!C.eligible(state,'test','advanced',bank.readingSections,unlock-1).ok);
 assert(C.eligible(state,'test','advanced',bank.readingSections,unlock).ok);
 attempt(state,'advanced',9,unlock);
 assert.equal(C.eligible(state,'test','advanced',bank.readingSections,unlock+2).unlockAt,unlock+1+C.DAY);
-// Reading and safety follow-ups cannot clear the cooldown; expiry cannot skip them.
+// Reading cannot clear the cooldown.
 state=C.empty();attempt(state,'standard',10,4000);
 const safetyBank=JSON.parse(JSON.stringify(bank));safetyBank.exams[1]=form('advanced',10,true);
 C.start(state,safetyBank,'advanced',4010);state.active.answers=answers(state.active.form,7);state.active.answers.q0='A';C.submit(state,4011);r=C.item(state,'test');
 const unlockLow=r.attempts.at(-1).finishedAt+C.DAY;
 assert(!C.eligible(state,'test','advanced',bank.readingSections,unlockLow).ok);
 r.reads.push({sectionId:'s1',at:4020},{sectionId:'s2',at:4020});
-assert(!C.eligible(state,'test','advanced',bank.readingSections,unlockLow).ok);
-C.safetyCheck(state,'test',{q0:'B'},4021);
 assert(!C.eligible(state,'test','advanced',bank.readingSections,unlockLow-1).ok);
 assert(C.eligible(state,'test','advanced',bank.readingSections,unlockLow).ok);
 attempt(state,'advanced',10,unlockLow);
 assert(C.eligible(state,'test','advanced',bank.readingSections,unlockLow+2).ok);
-console.log('PASS: 24-hour advanced lock boundary, reload/backup persistence, per-material isolation, repeat failures, reading/safety gates and successful attempts');
+console.log('PASS: 24-hour advanced lock boundary, reload/backup persistence, per-material isolation, repeat failures, reading gates and successful attempts');
 
 require('./seven-day.cjs');
