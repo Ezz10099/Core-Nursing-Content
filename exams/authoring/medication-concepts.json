@@ -8984,5 +8984,61 @@
       ],
       "correct": 0
     }
+  },
+  "furosemide_msf_adult_injection": {
+    "point": "Recall the MSF general adult injectable reference and slow IV route.",
+    "anchor": "20–40 mg per injection",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "In the general adult injectable furosemide guidance in MSF Essential Drugs, which dose and IV delivery pair is listed before indication-specific adjustment?",
+      "choices": [
+        {
+          "text": "20–40 mg by slow IV injection",
+          "explanation": "This is the general adult dose range and IV route in the MSF monograph."
+        },
+        {
+          "text": "10–20 mg by slow IV injection",
+          "explanation": "This is below the general adult injectable reference range."
+        },
+        {
+          "text": "40–50 mg by slow IV injection",
+          "explanation": "40 mg is the upper end of the general range; 50 mg is outside it."
+        },
+        {
+          "text": "20–40 mg by rapid IV injection",
+          "explanation": "The dose range matches but the MSF instructions specify slow IV injection."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "furosemide_digoxin_potassium": {
+    "point": "Identify falling potassium as a specific digoxin–furosemide interaction risk.",
+    "anchor": "Hypokalaemia increases the risk of digoxin toxicity",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "A patient taking digoxin starts furosemide for congestion. Which proposed change most specifically increases susceptibility to digoxin toxicity?",
+      "choices": [
+        {
+          "text": "Potassium falls from 4.2 to 3.0 mmol/L",
+          "explanation": "Hypokalaemia increases susceptibility to digoxin toxicity."
+        },
+        {
+          "text": "Sodium falls from 140 to 132 mmol/L",
+          "explanation": "This needs review but is not the taught potentiator of digoxin toxicity."
+        },
+        {
+          "text": "Bicarbonate rises from 24 to 30 mmol/L",
+          "explanation": "This can accompany loop diuresis but is not the potassium-mediated interaction."
+        },
+        {
+          "text": "Chloride falls from 102 to 95 mmol/L",
+          "explanation": "This can occur with loop diuresis but is not the electrolyte change implicated in this interaction."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-furosemide",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and its scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://pharmacy.moh.ps/service/getDrugs",
+      "section": "Furosemide catalogue codes M-276-0005, M-276-1020 and M-276-0010",
+      "scope": "Listed formulations only."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/furosemide-injectable-16682724.html",
+      "section": "Forms and strengths, Dosage, Precautions, Remarks",
+      "scope": "Reference scope for slow IV, 20–40 mg per adult injection, the >50 mg infusion remark, and digoxin interaction. The same monograph lists an indication-specific 80 mg slow injection escalation; these statements do not establish a universal route or rate. The exam names the general recommendation only."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/furosemide-oral-16683798.html",
+      "section": "Precautions and Remarks",
+      "scope": "Earlier oral timing and volume, BP, electrolyte and renal precautions."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/CG/english/acute-heart-failure-acute-pulmonary-oedema-35654125.html",
+      "section": "Treatment",
+      "scope": "Pulmonary congestion with volume overload; reassess urine output and respiratory status."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/digoxin-oral-16683483.html",
+      "section": "Precautions",
+      "scope": "Potassium-depleting drugs and increased risk of digoxin toxicity."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58cc1e38-6000-1489-e063-6394a90a5978",
+      "section": "1, 2.2, 5.1–5.3",
+      "scope": "Indication, product-specific administration, renal and electrolyte monitoring, volume depletion and ototoxicity. Reference label does not establish a Nasser Medical Complex protocol."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11882915/",
+      "section": "Primary experimental abstract",
+      "scope": "Furosemide inhibition of NKCC2 measured in rat medullary thick ascending limb."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Loop diuretic.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--drug-class",
+          "sha256": "09688e94055fde57ee093591e95c86c47420eebd268331d7a6b25c53907db35e"
+        }
+      ],
+      "rationale": "Select the pharmacologic class among other diuretics."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Na-K-2Cl cotransporter in the thick ascending loop of Henle",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--principal-action",
+          "sha256": "7d62ecbabbff4f833f5a31956e617e28ab335127f6019f7d8a057f319a8cf4ec"
+        }
+      ],
+      "rationale": "Identify both the transporter and the nephron site."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Pulmonary/peripheral congestion and fluid overload",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--treatment-role",
+          "sha256": "082d625da1dc15a50b64e1afdcd686900d6f7792841d79f07b488b781ac918c7"
+        }
+      ],
+      "rationale": "Select the filling-pressure and congestion profile that matches the indication."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "slow IV as prescribed",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_msf_adult_injection"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_msf_adult_injection",
+          "sha256": "1e1c6fa75c13d98cca295efd37475480846431d928893fa85e8502de0c383ada"
+        }
+      ],
+      "rationale": "Distinguish slow from rapid IV administration at the same dose."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "20–40 mg per injection",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_msf_adult_injection"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_msf_adult_injection",
+          "sha256": "1e1c6fa75c13d98cca295efd37475480846431d928893fa85e8502de0c383ada"
+        }
+      ],
+      "rationale": "Discriminate the named adult MSF reference range from adjacent ranges."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "MSF recommends an IV infusion when a prescribed dose exceeds 50 mg",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_controlled_delivery"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_controlled_delivery",
+          "sha256": "a882d61bd21d47e9c8f5cc5781d476b6224a2aeadc1ddc79f4cc00208a6d7c96"
+        }
+      ],
+      "rationale": "Enter the named guideline cutoff from memory."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Reassess breathing, lung congestion/oedema and urine output to evaluate diuresis",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::decongestion"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--decongestion",
+          "sha256": "ed5d0b9445108a21de3b89325f6123783b50d0ddaadc27d139e243169198f49c"
+        }
+      ],
+      "rationale": "Use respiratory findings to judge response when urine output alone is insufficient."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor BP and fluid balance; report symptomatic hypotension or dehydration",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_volume_sodium"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_volume_sodium",
+          "sha256": "ccd5249d2ad9cbaaeb1bd941a3bc7de0a64e9c1092252dc5d7a6ff744d49f6e2"
+        }
+      ],
+      "rationale": "Identify falling pressure and sodium/water depletion as the coupled hazard. Reporting is a shared escalation safeguard."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Follow K+, Na+, Mg2+",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::low_k_mg"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--low_k_mg",
+          "sha256": "d58b3f26f9f7dadc8bc955b888265e71b7088976cab1c721e7cf50f18fb8f1dd"
+        }
+      ],
+      "rationale": "Identify both K and Mg when assessing post-diuresis ectopy. Sodium is assessed separately."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Follow K+, Na+, Mg2+",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_sodium_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_sodium_monitor",
+          "sha256": "dbdd116e60544f778dfd6e0d806209d1d034574c17a51e61c9f9caa17d523207"
+        }
+      ],
+      "rationale": "Choose Na when K, Mg and creatinine are already included."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "renal function; escalate important derangements or oliguria",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::renal_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--renal_monitor",
+          "sha256": "1646a2794e867e29aba8fc75c279cde73b16d5620ebe3e093a8b0a3c8f9f7531"
+        }
+      ],
+      "rationale": "Recognize rising creatinine and falling output as a renal trend needing escalation."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Report tinnitus or hearing change",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::ototoxicity"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--ototoxicity",
+          "sha256": "eb427bdd7764d5878a0662593201b300f7e99ec1d05052b5ad1e6a5bcdd20045"
+        }
+      ],
+      "rationale": "Distinguish the auditory symptom pair from volume and electrolyte loss."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "especially with large/rapid IV doses",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_rapid_ototoxicity"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_rapid_ototoxicity",
+          "sha256": "d9287ad92b240c57a133f56a02270371de7552f925644307e5871b34f56ab4ad"
+        }
+      ],
+      "rationale": "Identify the route/rate and dose circumstances that increase hearing risk."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Hypokalaemia increases the risk of digoxin toxicity",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_digoxin_potassium"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_digoxin_potassium",
+          "sha256": "fd36266a23d081168737dd8edc9f29abeff1b210eafa6253a9126d8db132e344"
+        }
+      ],
+      "rationale": "Distinguish low potassium from other laboratory changes during diuresis."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Oral dosing is often scheduled earlier in the day to limit nocturia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::diuretic_timing"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--diuretic_timing",
+          "sha256": "3b9b9c7a982515e509e48d535909e47427420e09058a94b4b2c006f1c58e2a50"
+        }
+      ],
+      "rationale": "Recall earlier timing of a prescribed once-daily oral dose and why it matters."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Loop diuresis removes sodium/water rapidly but can deplete electrolytes and volume",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-furosemide::furosemide_volume_sodium"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-furosemide--comprehensive--furosemide_volume_sodium",
+          "sha256": "ccd5249d2ad9cbaaeb1bd941a3bc7de0a64e9c1092252dc5d7a6ff744d49f6e2"
+        }
+      ],
+      "rationale": "Select the underlying sodium/water depletion with falling BP. K and Mg losses are separately tested."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO or slow IV as prescribed",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Oral versus injectable product and the ordered route are shared formulation safeguards. Slow IV delivery is credited separately through the dose/route question."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Verify the actual preparation, concentration, dose, infusion method and product-specific rate",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "General product verification is kept in study text. No fixed push duration or universal numerical rate is taught or scored."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "MOH-LISTED; local stock not independently verified.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Formulary listing and photographed label are provenance, without evidence of current facility stock."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Strong loop diuretic for fluid overload/pulmonary congestion.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates the class and clinical-indication objectives."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Hypotension, electrolyte loss and high/rapid-dose ototoxicity.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates BP/volume, electrolyte and hearing-risk objectives."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "adff96e02a802564efa6824dba7314776f32e1641d014dea815f50954f01ec81",
+    "mechanism": "7af6c132904ed973de21b580ff38d2b475813d390d2e80136b51d86f8524b126",
+    "use": "28b0706471221540e0c0be31d71e600c4bc592a2f110e21b4d4a5b17c24fed23",
+    "administration": "56cbed7651cd10cd16cb7ff1d2993bec3196d3e30081451449188335a4fb758d",
+    "monitor": "805ea91421a1f8cea9cbc9ca128ee299cf75b3ae999ceda13e942c872d9b8be0",
+    "why": "5405bfaf14e369f7737cbaf36682d5267ad46c84d76af1604fddd26348734f09",
+    "availability": "45095c6fde375299a924f50d08265277a1221d40a6b0f5a668fbb89851c938b7",
+    "memoryUse": "d6feb4fdd7070ea127f860afca5a571d5a67e005f70abd6f9f4585f977a5c245",
+    "memoryDanger": "b3b4ad6edb176e1c4622d6cf0c239f5fd4e886dd1a472b9a61267a847886610b"
+  },
+  "questionSetSha256": "7e29c0b59586d48a8495e9b515db95c76291a340671f8d5e93c6911305067dcf",
+  "questionReview": {
+    "ccu-furosemide--comprehensive--principal-action": "Identify both the transporter and the nephron site.",
+    "ccu-furosemide--comprehensive--drug-class": "Select the pharmacologic class among other diuretics.",
+    "ccu-furosemide--comprehensive--treatment-role": "Select the filling-pressure and congestion profile that matches the indication.",
+    "ccu-furosemide--comprehensive--decongestion": "Use respiratory findings to judge response when urine output alone is insufficient.",
+    "ccu-furosemide--comprehensive--renal_monitor": "Recognize rising creatinine and falling output as a renal trend needing escalation.",
+    "ccu-furosemide--comprehensive--ototoxicity": "Distinguish the auditory symptom pair from volume and electrolyte loss.",
+    "ccu-furosemide--comprehensive--diuretic_timing": "Recall earlier timing of a prescribed once-daily oral dose and why it matters.",
+    "ccu-furosemide--comprehensive--furosemide_volume_sodium": "Identify falling pressure and sodium/water depletion as the coupled hazard. Reporting is a shared escalation safeguard.",
+    "ccu-furosemide--comprehensive--furosemide_sodium_monitor": "Choose Na when K, Mg and creatinine are already included.",
+    "ccu-furosemide--comprehensive--furosemide_rapid_ototoxicity": "Identify the route/rate and dose circumstances that increase hearing risk.",
+    "ccu-furosemide--comprehensive--furosemide_controlled_delivery": "Enter the named guideline cutoff from memory.",
+    "ccu-furosemide--comprehensive--furosemide_msf_adult_injection": "Distinguish slow from rapid IV administration at the same dose.",
+    "ccu-furosemide--comprehensive--furosemide_digoxin_potassium": "Distinguish low potassium from other laboratory changes during diuresis.",
+    "ccu-furosemide--comprehensive--low_k_mg": "Identify both K and Mg when assessing post-diuresis ectopy. Sodium is assessed separately."
+  }
+}
