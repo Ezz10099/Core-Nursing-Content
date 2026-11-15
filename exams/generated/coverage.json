@@ -2849,6 +2849,32 @@
       ]
     },
     {
+      "id": "ccu-enoxaparin::enoxaparin_abdominal_strength",
+      "itemId": "ccu-enoxaparin",
+      "point": "Select the labeled dose and alternate the deep abdominal SC site.",
+      "questionIds": [
+        "ccu-enoxaparin--standard--enoxaparin_abdominal_strength",
+        "ccu-enoxaparin--7-day--enoxaparin_abdominal_strength"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-enoxaparin::enoxaparin_stemi_iv",
+      "itemId": "ccu-enoxaparin",
+      "point": "Distinguish the selected STEMI IV exception from standard SC regimens.",
+      "questionIds": [
+        "ccu-enoxaparin--standard--enoxaparin_stemi_iv",
+        "ccu-enoxaparin--7-day--enoxaparin_stemi_iv"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-enoxaparin::bleeding",
       "itemId": "ccu-enoxaparin",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -13990,7 +14016,9 @@
         ],
         "use": [
           "ccu-enoxaparin--standard--treatment-role",
-          "ccu-enoxaparin--7-day--treatment-role"
+          "ccu-enoxaparin--standard--enoxaparin_stemi_iv",
+          "ccu-enoxaparin--7-day--treatment-role",
+          "ccu-enoxaparin--7-day--enoxaparin_stemi_iv"
         ],
         "memoryUse": [
           "ccu-enoxaparin--standard--treatment-role",
@@ -14021,8 +14049,10 @@
         "administration": [
           "ccu-enoxaparin--standard--enoxaparin_syringe",
           "ccu-enoxaparin--standard--lmwh_route",
+          "ccu-enoxaparin--standard--enoxaparin_abdominal_strength",
           "ccu-enoxaparin--7-day--enoxaparin_syringe",
-          "ccu-enoxaparin--7-day--lmwh_route"
+          "ccu-enoxaparin--7-day--lmwh_route",
+          "ccu-enoxaparin--7-day--enoxaparin_abdominal_strength"
         ]
       },
       "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."

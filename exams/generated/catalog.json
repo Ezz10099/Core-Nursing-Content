@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 63,
-  "sourceContentSha256": "26444222a3d8b1cdbeaa60bf970c8038e9a1af6b236baca27ebff1a546ce8af6",
+  "sourceContentVersion": 64,
+  "sourceContentSha256": "8be7294856cdec12632abd28dd0aa3643d4c3feb1d71f5c932f2791ffebda47c",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 333,
-    "questions": 2003,
-    "single-best-answer": 1973,
+    "questions": 2007,
+    "single-best-answer": 1977,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 111,
     "medications": 82,
     "lessons": 29,
-    "mappedLearningPoints": 949
+    "mappedLearningPoints": 951
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -526,7 +526,7 @@
         {
           "id": "ccu-enoxaparin--standard",
           "stage": "standard",
-          "questionCount": 8
+          "questionCount": 10
         },
         {
           "id": "ccu-enoxaparin--advanced",
@@ -536,7 +536,7 @@
         {
           "id": "ccu-enoxaparin--7-day",
           "stage": "7-day",
-          "questionCount": 10
+          "questionCount": 12
         }
       ]
     },
@@ -2595,7 +2595,7 @@
     },
     {
       "path": "banks-02.json",
-      "sha256": "593d6cf78f6e4dbfb61bbe257c8a1626ffe3a655dffdea2900af71b36351a8cd"
+      "sha256": "9efd4ed33907de45ce4765b991c77c744bc29b65820eb8876237a7507c92d687"
     },
     {
       "path": "banks-03.json",
@@ -2615,7 +2615,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "a16e6f13133854adc239e7cfbc77e4e80f86890b9ffb54b0551e7898ce062de3"
+      "sha256": "b05b6e34f53b3141c1e92c19d79c3f90d486511200284dfc3812e7c5836a6d03"
     }
   ]
 }
