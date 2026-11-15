@@ -193,7 +193,7 @@ w.CoreNursingExams.launch('heparin');assert.equal(state(w).exams.active.form.sta
  assert.equal(app.eval('memory.reading["med:ccu-furosemide"]'),'in-progress','Legacy reading follows the canonical card');
  assert.equal(app.eval('memory.questionMarks[0].itemId'),'ccu-furosemide','Legacy marks follow the canonical card');
  app.showTab('home');
- assert.equal(page.querySelector('#nextActionsHome [data-reading-id]')?.dataset.readingId,'ed-captopril-tablets','Continue studying chooses a preparation-complete unfinished item');
+ assert.equal(page.querySelector('#nextActionsHome [data-reading-id]')?.dataset.readingId,'ccu-furosemide','Continue studying chooses the first preparation-complete unfinished item in catalogue order');
  app.openMed('ccu-46');assert.equal(app.eval('current'),'ccu-furosemide','Legacy links open the canonical medication');
  app.close();
 }
