@@ -34,6 +34,12 @@
         if(attempt===latest&&(!out.due||out.due.stage===attempt.stage))complete(out,attempt,attempt.finishedAt);
         else attempt.completedAt=attempt.finishedAt;
       }
+      // Shorten an unattempted first review from the former seven-day plan.
+      // Keep historical attempts and failed-stage retry dates unchanged.
+      if(out.due?.model===MODEL&&out.due.stage==='7-day'&&!out.attempts.some(a=>a.stage==='7-day')){
+        const first=out.attempts.filter(a=>a.model===MODEL&&a.stage==='comprehensive'&&a.completedAt!==null).at(-1);
+        if(first)out.due.at=Math.min(out.due.at,first.completedAt+3*DAY);
+      }
     }
     const a=input.active;
     if(a&&validId(a.itemId)&&a.form&&Array.isArray(a.form.questions)&&a.form.questions.length&&stages.includes(a.form.stage)&&finite(a.startedAt)&&(!a.deadline||finite(a.deadline))){
@@ -134,7 +140,7 @@
     if(!attempt.passed||attempt.completedAt!==null)return;
     attempt.completedAt=now;
     if(attempt.model===MODEL){
-      if(attempt.stage==='comprehensive')record.due={stage:'7-day',at:now+7*DAY,model:MODEL};
+      if(attempt.stage==='comprehensive')record.due={stage:'7-day',at:now+3*DAY,model:MODEL};
       else if(attempt.stage==='7-day')record.due={stage:'21-day',at:now+21*DAY,model:MODEL};
       else record.due=null;
       return;

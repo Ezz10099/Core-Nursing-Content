@@ -9,7 +9,7 @@
   const canonical=id=>data.aliases[id]||id;
   const bankFor=id=>banks.get(canonical(id));
   const date=x=>new Date(x).toLocaleString(undefined,{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
-  const label=stage=>({'comprehensive':'Comprehensive','standard':'Standard (previous system)','advanced':'Advanced (previous system)','7-day':'7-day','21-day':'21-day'}[stage]||stage)+' exam';
+  const label=stage=>({'comprehensive':'Comprehensive','standard':'Standard (previous system)','advanced':'Advanced (previous system)','7-day':'First review','21-day':'21-day'}[stage]||stage)+' exam';
   const allowed=bank=>!bank.capabilityRequirement||nativeHasCapability(bank.capabilityRequirement);
   function changed(bank){
     const source=bank.itemType==='lesson'?lessons.find(x=>x.id===bank.itemId):meds.find(x=>x.id===bank.itemId);
@@ -101,7 +101,7 @@
     const node=byId('practiceExamOverview');if(!node)return;const a=state().active;
     const continuation=a?'<div class="panel"><h2>Continue exam</h2><p>'+safe(banks.get(a.itemId)?.title||a.itemId)+' · '+safe(label(a.form.stage))+'</p><button class="primary" id="continueExam" onclick="CoreNursingExams.resume()">Continue exam</button></div>':'';
     const passed=[];for(const bank of banks.values())if(allowed(bank)){const stages=['standard','advanced','comprehensive','7-day','21-day'].map(stage=>record(bank.itemId).attempts.filter(a=>a.stage===stage&&a.completedAt).sort((a,b)=>b.completedAt-a.completedAt)[0]).filter(Boolean);if(stages.length)passed.push({bank,stages});}
-    node.innerHTML=continuation+'<details class="panel" id="practicePassedExams"><summary>Passed exams · '+passed.reduce((n,x)=>n+x.stages.length,0)+'</summary>'+(passed.length?passed.map(({bank,stages})=>'<button class="exam-link" onclick="CoreNursingExams.open(\''+bank.itemId+'\')"><strong>'+safe(bank.title)+'</strong><small>'+stages.map(a=>safe(label(a.stage))+' · Passed · '+a.correct+'/'+a.total+' · '+safe(date(a.completedAt))).join('<br>')+'</small></button>').join(''):'<p class="muted">No passed exams yet.</p>')+'</details>';
+    node.innerHTML=continuation+(window.CoreNursingExamReminders?.controls()||'')+'<details class="panel" id="practicePassedExams"><summary>Passed exams · '+passed.reduce((n,x)=>n+x.stages.length,0)+'</summary>'+(passed.length?passed.map(({bank,stages})=>'<button class="exam-link" onclick="CoreNursingExams.open(\''+bank.itemId+'\')"><strong>'+safe(bank.title)+'</strong><small>'+stages.map(a=>safe(label(a.stage))+' · Passed · '+a.correct+'/'+a.total+' · '+safe(date(a.completedAt))).join('<br>')+'</small></button>').join(''):'<p class="muted">No passed exams yet.</p>')+'</details>';
   }
 
   function resume(){
@@ -191,7 +191,7 @@
       const read=r.reads.some(x=>x.sectionId===section.id&&(r.readingAfter===null||x.at>r.readingAfter));
       return '<details class="exam-source"><summary>'+safe(section.label)+'</summary><div class="exam-source-text">'+safe(section.text.replace(/\\n/g,'\n'))+'</div><button '+(read?'disabled':'')+' onclick="CoreNursingExams.read(\''+section.id+'\')">'+(read?'Section marked as read':'Mark section as read')+'</button></details>';
     }).join('')+'</details>';
-    const rules='<details class="panel exam-details"><summary>Exam details</summary><p>One comprehensive exam, repeated at each stage. Up to '+Core.allowedErrors(bank.exams[0].questionCount)+' incorrect answers allowed. A failed stage repeats after 3 days. Passing schedules the next review after 7 days, then 21 days.</p><p class="note">Unsure flags do not reduce the score. '+(window.CoreNursingReadiness?.status(bank.itemId)==='complete'?'Author review completed for this material.':'Bank coverage is still under review.')+'</p></details>';
+    const rules='<details class="panel exam-details"><summary>Exam details</summary><p>One comprehensive exam, repeated at each stage. Up to '+Core.allowedErrors(bank.exams[0].questionCount)+' incorrect answers allowed. A failed stage repeats after 3 days. Passing schedules the first review after 3 days, then the next review 21 days after that pass.</p><p class="note">Unsure flags do not reduce the score. '+(window.CoreNursingReadiness?.status(bank.itemId)==='complete'?'Author review completed for this material.':'Bank coverage is still under review.')+'</p></details>';
     const points=new Map();for(const form of bank.exams)for(const q of form.questions)for(const p of q.learningPointIds)points.set(p,q.point);
     const shown=new Set(r.attempts.flatMap(a=>a.shownQuestionIds||[])),tested=new Set();for(const form of bank.exams)for(const q of form.questions)if(shown.has(q.id))q.learningPointIds.forEach(p=>tested.add(p));
     container.innerHTML='<button class="back" onclick="CoreNursingExams.catalog()">← All exams</button><div class="panel exam-material-header"><h2>'+safe(bank.title)+'</h2>'+headline+'</div><div class="panel exam-next-step" id="examNextStep"><span class="exam-section-label">'+(next.scheduled?'Next scheduled exam':'Your next step')+'</span><h2>'+safe(next.title)+'</h2>'+(next.text?'<p class="next-step-description">'+next.text+'</p>':'')+next.button+'<div class="exam-secondary"><button onclick="CoreNursingExams.material(\''+bank.itemId+'\')">Open material</button><button onclick="CoreNursingExams.review()">Review saved answers</button></div></div>'+completed+source+rules+'<details class="panel"><summary>Tested points · '+tested.size+'/'+points.size+' bank points asked</summary><p class="note">Mapped bank points only. Unvisited questions remain not yet tested.</p>'+Array.from(points).map(([id,text])=>'<p>'+safe(text)+'<br><small>'+(tested.has(id)?'Asked in an exam':'Not yet tested')+'</small></p>').join('')+'</details>';
@@ -242,7 +242,7 @@
     const showResult=!automatic||(viewingExam&&tab==='practice');
     selected=a.itemId;resultView=Core.submit(state(),now());viewingExam=false;
     if(!showResult){selected=null;resultView=null}
-    saveState();render();
+    saveState();syncReminders();render();
     if(tab==='practice')scrollStudyTo(0,0);
   }
   function feedback(q,response){
@@ -283,12 +283,13 @@
     try{Core.start(state(),bank,stage,now());viewingExam=true;resultView=null;saveState();render();scrollStudyTo(0,0)}catch(e){alert(e.message)}
   }
   function read(sectionId){const bank=banks.get(selected);if(!bank?.readingSections.some(s=>s.id===sectionId))return;Core.item(state(),selected).reads.push({sectionId,at:now()});saveState();render()}
-  function restore(){memory.exams=Core.normalize(memory.exams);selected=null;resultView=null;viewingExam=false;refreshDashboards();render();tick()}
+  function syncReminders(){window.CoreNursingExamReminders?.sync(Array.from(banks.values()).filter(allowed).map(bank=>({id:bank.itemId,title:bank.title,...(record(bank.itemId).due||{})})));}
+  function restore(){memory.exams=Core.normalize(memory.exams);selected=null;resultView=null;viewingExam=false;syncReminders();refreshDashboards();render();tick()}
   window.CoreNursingExams={nextCompleted,refreshReaderEntries,requiredReading,launch,review,material,reviewRows,nextAction:action,showDue:()=>{examListFilter='due';showTab('practice')},reviewFilter:value=>{if(['all','unsure','incorrect'].includes(value)){reviewFilter=value;render()}},listFilter:value=>{if(['due','available','ready','upcoming','passed'].includes(value)){examListFilter=value;renderCatalog()}},open,resume,navigation,decorate,refresh:refreshDashboards,restore,start,answer,unsure,move,submit,read,
     filter:text=>{examSearch=text.toLowerCase();renderCatalog()},
     catalog:()=>{reviewing=false;viewingExam=false;selected=null;resultView=null;render();scrollStudyTo(0,0)},reviewItem:()=>{resultView=null;render();scrollStudyTo(0,0)}};
   restore();timer=setInterval(tick,1000);setInterval(refreshDashboards,60000);
-  document.addEventListener('visibilitychange',tick);
+  document.addEventListener('visibilitychange',()=>{tick();if(!document.hidden)syncReminders()});
   window.addEventListener('pagehide',()=>{if(state().active)save()});
 })();
 

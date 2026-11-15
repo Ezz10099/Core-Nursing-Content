@@ -22,7 +22,7 @@ for(const b of banks){
  const questions=JSON.stringify(b.exams[0].questions);assert.equal(JSON.stringify(b.exams[1].questions),questions);assert.equal(JSON.stringify(b.exams[2].questions),questions);
  const bank=clone(b),state=C.empty();
  let result=finish(state,bank,'comprehensive',0,1000),r=C.item(state,bank.itemId);
- assert(result.attempt.completedAt);assert.equal(r.due.at,1001+7*C.DAY);
+ assert(result.attempt.completedAt);assert.equal(r.due.at,1001+3*C.DAY);
  assert.throws(()=>C.start(state,bank,'7-day',r.due.at-1),/not due/);
  const saved=JSON.stringify(r.comprehensiveForm.questions);
  bank.exams.forEach(e=>e.questions[0].stem='Later bank revision');
@@ -41,7 +41,7 @@ const b=clone(banks.find(b=>b.exams[0].questions.some(q=>q.criticalForSafety))),
 C.start(s,b,'comprehensive',100);const a=s.active; a.answers=Object.fromEntries(a.form.questions.map(q=>[q.id,right(q)]));
 const q=a.form.questions.find(q=>q.criticalForSafety);a.answers[q.id]='WRONG';const result=C.submit(s,101),r=C.item(s,b.itemId);
 assert(result.attempt.passed);assert.equal(result.attempt.completedAt,101);
-assert.equal(r.due.at,101+7*C.DAY);assert(result.result.review.includes(q.id));
+assert.equal(r.due.at,101+3*C.DAY);assert(result.result.review.includes(q.id));
 const oldState=clone(s),oldRecord=oldState.items[b.itemId];
 oldRecord.attempts[0].completedAt=null;oldRecord.due=null;
 oldRecord.pendingSafety=[{attemptId:result.attempt.id,question:q}];
@@ -51,6 +51,19 @@ assert.equal(migrated.attempts[0].correct,result.attempt.correct);
 assert.deepEqual(migrated.due,r.due);
 assert.equal(migrated.pendingSafety,undefined);
 console.log('PASS: comprehensive scoring, pinned forms, retries and old safety-check migration');
+// A previously scheduled first review moves to day three without altering history.
+{
+ const state=C.empty(),bank=clone(banks[0]);finish(state,bank,'comprehensive',0,1000);
+ const record=C.item(state,bank.itemId),attempts=JSON.stringify(record.attempts);
+ record.due.at=1001+7*C.DAY;
+ const migrated=C.normalize(clone(state));
+ assert.equal(migrated.items[bank.itemId].due.at,1001+3*C.DAY);
+ assert.equal(JSON.stringify(migrated.items[bank.itemId].attempts),attempts);
+ const retry=C.empty(),old=C.item(retry,bank.itemId);
+ old.attempts=clone(record.attempts);old.attempts.push({...old.attempts[0],id:'failed-first-review',stage:'7-day',passed:false,completedAt:null,finishedAt:1001+4*C.DAY});
+ old.due={stage:'7-day',at:1001+7*C.DAY,model:C.MODEL};
+ assert.equal(C.normalize(clone(retry)).items[bank.itemId].due.at,old.due.at,'An already attempted review keeps its retry date');
+}
 // Explicit clinical-authoring corrections refresh the next start, preserving
 // active forms, old answers/scores and scheduled dates.
 {

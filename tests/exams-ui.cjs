@@ -6,7 +6,7 @@ function boot(saved){
  const dom=new JSDOM(fs.readFileSync(path.join(base,'index.html'),'utf8'),{url:'https://test.local',runScripts:'outside-only',pretendToBeVisual:true}),w=dom.window;
  w.HTMLElement.prototype.scrollIntoView=function(){};w.alert=()=>{};w.confirm=()=>true;
  if(saved)w.localStorage.setItem(KEY,saved);
- for(const file of ['study-ui','reading','question-marks','exam-core','exam-data','exam-data-01','exam-data-02','exam-data-03','exam-data-04','exam-data-05','exam-data-06','app','exams','readiness-data','material-readiness'])vm.runInContext(fs.readFileSync(path.join(base,'js',file+'.js'),'utf8'),dom.getInternalVMContext());
+ for(const file of ['study-ui','reading','question-marks','exam-core','exam-data','exam-data-01','exam-data-02','exam-data-03','exam-data-04','exam-data-05','exam-data-06','app','exam-reminders','exams','readiness-data','material-readiness'])vm.runInContext(fs.readFileSync(path.join(base,'js',file+'.js'),'utf8'),dom.getInternalVMContext());
  w.CoreNursingSync.receive(JSON.stringify(content));return w;
 }
 const state=w=>JSON.parse(w.localStorage.getItem(KEY));
@@ -138,9 +138,14 @@ w.CoreNursingExams.answer(first.id,first.answerKey??first.answer??first.accepted
 const active=JSON.stringify(state(w).exams.active);w.showTab('home');w.showTab('practice');
 assert(d.querySelector('#examSession').hidden);assert(d.querySelector('#continueExam'));
 w.CoreNursingExams.resume();assert.equal(JSON.stringify(state(w).exams.active),active);
+const reminders=[];
+w.CoreNursingAndroid={scheduleLocalNotification:(...args)=>reminders.push(args),cancelLocalNotification:()=>{},canPostNotifications:()=>true};
+w.CoreNursingExamReminders.toggle();
+assert(d.querySelector('#practiceExamOverview').textContent.includes('Exam reminders'));
 w.CoreNursingExams.move(-1);answerAll(w);w.CoreNursingExams.submit();
 let saved=state(w),r=saved.exams.items['ccu-heparin-ufh'];assert(r.attempts[0].passed);assert.equal(r.due.stage,'7-day');
-assert.equal(r.due.at-r.attempts[0].completedAt,7*86400000);assert.equal(r.attempts[0].reviewQuestions.length,1);
+assert.equal(r.due.at-r.attempts[0].completedAt,3*86400000);assert.equal(r.attempts[0].reviewQuestions.length,1);
+assert(reminders.some(([id,at])=>id==='core-exam-due:ccu-heparin-ufh'&&at===r.due.at),'Passing schedules the Android first-review reminder');
 assert.equal(d.querySelectorAll('.exam-feedback').length,1,'Only flagged answers in result');
 assert(d.querySelector('.review-correct-answer'));assert(d.querySelector('.exam-feedback').open);
 assert.equal(saved.attempts.length,1);assert.deepEqual(saved.reading,{'med:ccu-heparin-ufh':'read'});
