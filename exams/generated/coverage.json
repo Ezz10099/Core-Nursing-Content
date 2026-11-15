@@ -2637,6 +2637,19 @@
       ]
     },
     {
+      "id": "ccu-isosorbide-dinitrate::isdn_iv_context",
+      "itemId": "ccu-isosorbide-dinitrate",
+      "point": "Select severe or unstable angina or refractory LV failure as IV nitrate contexts.",
+      "questionIds": [
+        "ccu-isosorbide-dinitrate--standard--isdn_iv_context",
+        "ccu-isosorbide-dinitrate--7-day--isdn_iv_context"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-isosorbide-dinitrate::nitrate_pde5",
       "itemId": "ccu-isosorbide-dinitrate",
       "point": "PDE5 inhibitors and nitrates can cause profound hypotension.",
@@ -13944,7 +13957,9 @@
         ],
         "use": [
           "ccu-isosorbide-dinitrate--standard--treatment-role",
-          "ccu-isosorbide-dinitrate--7-day--treatment-role"
+          "ccu-isosorbide-dinitrate--standard--isdn_iv_context",
+          "ccu-isosorbide-dinitrate--7-day--treatment-role",
+          "ccu-isosorbide-dinitrate--7-day--isdn_iv_context"
         ],
         "memoryUse": [
           "ccu-isosorbide-dinitrate--standard--treatment-role",

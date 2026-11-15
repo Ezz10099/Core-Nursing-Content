@@ -5030,6 +5030,497 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-isosorbide-mononitrate::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pharmacologic class contains isosorbide mononitrate?",
+        "choices": [
+          {
+            "text": "Organic nitrate",
+            "explanation": "It produces nitric-oxide-mediated vasodilation.",
+            "id": "A"
+          },
+          {
+            "text": "Dihydropyridine calcium-channel blocker",
+            "explanation": "That group reduces calcium entry through L-type channels.",
+            "id": "B"
+          },
+          {
+            "text": "Beta-adrenergic blocker",
+            "explanation": "That group reduces adrenergic stimulation rather than delivering nitrate-mediated vasodilation.",
+            "id": "C"
+          },
+          {
+            "text": "Late sodium current inhibitor",
+            "explanation": "That mechanism describes ranolazine, a different antianginal drug.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish an organic nitrate from other antianginal classes.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which sequence explains the change in venous return and blood pressure after isosorbide mononitrate?",
+        "choices": [
+          {
+            "text": "NO raises cGMP and promotes venodilation, lowering preload and BP",
+            "explanation": "Increased cGMP relaxes vascular smooth muscle. Venodilation reduces venous return and can lower pressure.",
+            "id": "A"
+          },
+          {
+            "text": "NO raises cGMP and promotes venoconstriction, raising preload and BP",
+            "explanation": "Increased cGMP promotes smooth-muscle relaxation, not constriction.",
+            "id": "B"
+          },
+          {
+            "text": "NO lowers cGMP and promotes venodilation, lowering preload and BP",
+            "explanation": "The hemodynamic direction matches but NO increases cGMP.",
+            "id": "C"
+          },
+          {
+            "text": "NO lowers cGMP and promotes venoconstriction, raising preload and BP",
+            "explanation": "Neither the cGMP direction nor the vascular response fits nitrate pharmacology.",
+            "id": "D"
+          }
+        ],
+        "point": "Connect NO/cGMP-mediated vascular relaxation to reduced preload and blood pressure.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pharmacologic class contains isosorbide dinitrate?",
+        "choices": [
+          {
+            "text": "Organic nitrate",
+            "explanation": "It produces nitric-oxide-mediated vasodilation.",
+            "id": "A"
+          },
+          {
+            "text": "Dihydropyridine calcium-channel blocker",
+            "explanation": "That group reduces calcium entry through L-type channels.",
+            "id": "B"
+          },
+          {
+            "text": "Beta-adrenergic blocker",
+            "explanation": "That group reduces adrenergic stimulation rather than delivering nitrate-mediated vasodilation.",
+            "id": "C"
+          },
+          {
+            "text": "Late sodium current inhibitor",
+            "explanation": "That mechanism describes ranolazine, a different antianginal drug.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish an organic nitrate from other antianginal classes.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which signaling and vascular effect pair accounts for isosorbide dinitrate action?",
+        "choices": [
+          {
+            "text": "Increased nitric oxide signaling raises cGMP and relaxes vascular smooth muscle",
+            "explanation": "Organic nitrates increase NO signaling and cGMP, leading to relaxation.",
+            "id": "A"
+          },
+          {
+            "text": "Increased nitric oxide signaling lowers cGMP and contracts vascular smooth muscle",
+            "explanation": "NO activates guanylate cyclase and raises cGMP.",
+            "id": "B"
+          },
+          {
+            "text": "Increased beta1 signaling raises cAMP and directly relaxes veins",
+            "explanation": "Beta1 signaling is not the primary pathway for nitrate-induced vasodilation.",
+            "id": "C"
+          },
+          {
+            "text": "Increased alpha1 signaling raises intracellular calcium and contracts vascular smooth muscle",
+            "explanation": "This describes vasoconstriction, the opposite of the nitrate effect.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify nitric-oxide/cGMP-mediated vascular smooth muscle relaxation.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with recurrent exertional angina needs an oral medicine to reduce episodes over time. Which is the intended role of ordered isosorbide mononitrate?",
+        "choices": [
+          {
+            "text": "Scheduled therapy to reduce the frequency of angina",
+            "explanation": "Oral mononitrate is intended for prevention and control.",
+            "id": "A"
+          },
+          {
+            "text": "An extra dose at symptom onset to terminate each episode rapidly",
+            "explanation": "The oral mononitrate formulation does not act quickly enough for rescue.",
+            "id": "B"
+          },
+          {
+            "text": "A pre-procedure dose to replace prescribed antiplatelet protection",
+            "explanation": "Nitrates relieve ischemic symptoms through hemodynamic effects and do not inhibit platelets.",
+            "id": "C"
+          },
+          {
+            "text": "A short course to terminate coronary thrombosis",
+            "explanation": "Mononitrate does not dissolve thrombi.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify scheduled preventive use.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::nitrate_rescue": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient with sudden chest pain has scheduled oral isosorbide mononitrate and an authorized rapid-rescue plan. What property makes the maintenance tablet unsuitable as a substitute?",
+        "choices": [
+          {
+            "text": "The oral formulation cannot provide a sufficiently rapid onset for an acute episode",
+            "explanation": "A maintenance nitrate is not a substitute for the authorized acute chest-pain plan.",
+            "id": "A"
+          },
+          {
+            "text": "The oral formulation has the same onset but a shorter duration than a sublingual rescue nitrate",
+            "explanation": "The important distinction is a slower onset, not a shorter duration.",
+            "id": "B"
+          },
+          {
+            "text": "The oral formulation acts as an antiplatelet before acting as a vasodilator",
+            "explanation": "Its action is nitrate vasodilation and does not include an antiplatelet step.",
+            "id": "C"
+          },
+          {
+            "text": "The oral formulation raises preload until the dose wears off",
+            "explanation": "Nitrate venodilation reduces preload. This does not account for rescue timing.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish preventive duration from rapid onset.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "The chart orders modified-release oral isosorbide mononitrate, but only immediate-release tablets of the same nominal strength are available. Which difference makes direct substitution inappropriate?",
+        "choices": [
+          {
+            "text": "The rate of release and the effective dosing schedule can differ",
+            "explanation": "The prescriber and pharmacist must verify a formulation-specific replacement regimen.",
+            "id": "A"
+          },
+          {
+            "text": "The immediate-release tablet has an equivalent release profile at the same strength",
+            "explanation": "Equal labeled milligrams do not establish the same release profile.",
+            "id": "B"
+          },
+          {
+            "text": "The modified-release formulation has a faster initial release and shorter scheduled interval by definition",
+            "explanation": "Modified release changes the release profile. This does not make it a faster equivalent.",
+            "id": "C"
+          },
+          {
+            "text": "The approximate duration is determined by the milligrams alone",
+            "explanation": "Timing depends on formulation as well as dose.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify release-dependent timing and exposure despite the same nominal strength.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::nitrate_headache": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After an oral isosorbide mononitrate dose, which new symptom and observation pair best fits the expected vasodilatory adverse-effect pattern?",
+        "choices": [
+          {
+            "text": "Headache and standing dizziness with a BP drop",
+            "explanation": "Headache and postural symptoms can accompany nitrate vasodilation. Recheck BP and assess severity.",
+            "id": "A"
+          },
+          {
+            "text": "Headache with sustained BP elevation",
+            "explanation": "Headache can occur, but sustained hypertension does not fit the expected vasodilatory BP effect.",
+            "id": "B"
+          },
+          {
+            "text": "Dizziness with marked new AV block and unchanged BP",
+            "explanation": "A new conduction defect needs assessment. It is not the characteristic BP-mediated dizziness of nitrates.",
+            "id": "C"
+          },
+          {
+            "text": "Dizziness with falling glucose and unchanged BP",
+            "explanation": "This suggests a separate metabolic cause.",
+            "id": "D"
+          }
+        ],
+        "point": "Link nitrate headache and postural symptoms to BP surveillance.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-mononitrate::nitrate_pde5": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Before the next isosorbide mononitrate dose, which group of reported drugs would each raise concern for the same dangerous nitrate interaction?",
+        "choices": [
+          {
+            "text": "Sildenafil, tadalafil and vardenafil",
+            "explanation": "All three inhibit PDE5. Combining one with a nitrate can cause severe hypotension or syncope.",
+            "id": "A"
+          },
+          {
+            "text": "Sildenafil, tadalafil and finasteride",
+            "explanation": "Sildenafil and tadalafil interact. Finasteride is not a PDE5 inhibitor.",
+            "id": "B"
+          },
+          {
+            "text": "Sildenafil, vardenafil and dutasteride",
+            "explanation": "Sildenafil and vardenafil interact. Dutasteride is not a PDE5 inhibitor.",
+            "id": "C"
+          },
+          {
+            "text": "Tadalafil, finasteride and dutasteride",
+            "explanation": "Only tadalafil in this group inhibits PDE5.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize sildenafil, tadalafil and vardenafil as interacting PDE5 inhibitors.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which relative onset should the nurse expect from verified sublingual isosorbide dinitrate compared with oral maintenance isosorbide mononitrate?",
+        "choices": [
+          {
+            "text": "Sublingual dinitrate can start acting sooner than oral maintenance mononitrate",
+            "explanation": "The formulations serve different onset goals. Follow the prescribed acute chest-pain plan. Sublingual nitroglycerin generally acts faster than sublingual dinitrate.",
+            "id": "A"
+          },
+          {
+            "text": "Oral maintenance mononitrate starts sooner because it is already the active metabolite",
+            "explanation": "Metabolite status does not make an oral preventive tablet suitable for rapid rescue.",
+            "id": "B"
+          },
+          {
+            "text": "Equivalent nitrate activity means the two route formulations have the same onset",
+            "explanation": "Nitrate class does not establish route-specific onset.",
+            "id": "C"
+          },
+          {
+            "text": "The higher labeled tablet strength always predicts the faster onset",
+            "explanation": "Milligrams cannot establish onset between different drugs or routes.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish onset by route and formulation without implying preferred acute rescue.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::sl_tablet": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient’s order specifies the 5-mg isosorbide dinitrate tablet listed in the Palestinian formulary for the faster-acting nitrate route. Which placement matches that specific formulation?",
+        "choices": [
+          {
+            "text": "Let the tablet dissolve under the tongue",
+            "explanation": "This matches the prescribed sublingual route.",
+            "id": "A"
+          },
+          {
+            "text": "Let the tablet dissolve between the cheek and gum",
+            "explanation": "This is buccal placement, a different route.",
+            "id": "B"
+          },
+          {
+            "text": "Swallow the intact tablet with water",
+            "explanation": "Swallowing changes the delivery route of an SL tablet.",
+            "id": "C"
+          },
+          {
+            "text": "Crush the tablet into an oral liquid and swallow it",
+            "explanation": "This would deliver the drug enterally rather than sublingually.",
+            "id": "D"
+          }
+        ],
+        "point": "Recall the verified sublingual route.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A prescriber orders an IV nitrate infusion, and the only confirmed isosorbide dinitrate product on the trolley is a sublingual tablet. What preparation would fulfill the IV order?",
+        "choices": [
+          {
+            "text": "An exact IV-labeled product with verified concentration, compatible tubing and infusion method",
+            "explanation": "A separate IV formulation is needed. Product and material choice can affect delivery.",
+            "id": "A"
+          },
+          {
+            "text": "The SL tablet dissolved in IV fluid with the same labeled mass",
+            "explanation": "The SL tablet is not a sterile IV dosage form and cannot fulfill the infusion order.",
+            "id": "B"
+          },
+          {
+            "text": "An IV nitrate borrowed from another order with the same pump rate",
+            "explanation": "Different nitrate preparations and concentrations make copying a rate unsafe.",
+            "id": "C"
+          },
+          {
+            "text": "An IV vial labeled only with the same trade name, using the SL tablet strength to set the rate",
+            "explanation": "The trade name and tablet strength cannot establish the IV preparation or rate.",
+            "id": "D"
+          }
+        ],
+        "point": "Require a separate product labeled for IV use with verified administration requirements.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::nitrate_headache": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After sublingual isosorbide dinitrate, which cluster is consistent with the nitrate’s vasodilatory effect and indicates why BP should be reassessed?",
+        "choices": [
+          {
+            "text": "Headache, facial flushing and dizziness with lower BP",
+            "explanation": "Vasodilation can produce all three symptoms and lower arterial pressure.",
+            "id": "A"
+          },
+          {
+            "text": "Headache, facial pallor and dizziness with persistently rising BP",
+            "explanation": "The rising BP does not fit the characteristic nitrate vasodilatory effect.",
+            "id": "B"
+          },
+          {
+            "text": "Flushing and dizziness with falling glucose but unchanged BP",
+            "explanation": "Hypoglycemia needs assessment but is not the expected primary mechanism.",
+            "id": "C"
+          },
+          {
+            "text": "Dizziness with progressive AV block and unchanged BP",
+            "explanation": "A conduction disturbance needs assessment. It does not describe the typical vasodilatory pattern.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize headache, flushing, dizziness and hypotension after nitrate delivery.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-isosorbide-dinitrate::nitrate_pde5": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient took sildenafil before a planned isosorbide dinitrate dose. Which interaction mechanism explains the immediate safety concern?",
+        "choices": [
+          {
+            "text": "Reduced cGMP breakdown amplifies nitrate vasodilation",
+            "explanation": "Sildenafil can markedly increase nitrate-induced hypotension. Escalate the interaction before administration.",
+            "id": "A"
+          },
+          {
+            "text": "Increased cGMP breakdown reduces nitrate absorption",
+            "explanation": "PDE5 inhibition slows cGMP breakdown. This is not an absorption interaction.",
+            "id": "B"
+          },
+          {
+            "text": "Platelet COX-1 inhibition amplifies nitrate-related bleeding",
+            "explanation": "The characteristic interaction is hypotension, not additive COX-1 inhibition.",
+            "id": "C"
+          },
+          {
+            "text": "Increased AV nodal blockade combines to cause bradycardia",
+            "explanation": "The concern is amplified vascular relaxation, rather than direct AV nodal blockade.",
+            "id": "D"
+          }
+        ],
+        "point": "Link PDE5 blockade with amplified nitrate cGMP effects.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -5103,6 +5594,8 @@
     "ccu-clopidogrel": "clopidogrel-source-review-20261115",
     "trolley-amiodarone": "infusion-calculations-20261115",
     "trolley-magnesium-sulfate": "infusion-calculations-20261115",
-    "ccu-aspirin": "aspirin-source-review-20261115"
+    "ccu-aspirin": "aspirin-source-review-20261115",
+    "ccu-isosorbide-mononitrate": "isosorbide-formulation-review-20261115",
+    "ccu-isosorbide-dinitrate": "isosorbide-formulation-review-20261115"
   }
 }
