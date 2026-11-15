@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-acamol",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of adult paracetamol teaching card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.who.int/publications/m/item/occupied-palestinian-territory--essential-medicine-list-2024-(english)",
+      "section": "Palestinian Essential Medicines List, analgesics",
+      "scope": "Formulary documentation is not a ward stock check."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/paracetamol-acetaminophen-oral-16684400.html",
+      "section": "MSF paracetamol oral, indications, dosage and precautions",
+      "scope": "Pain, fever, oral use and individualized reduced exposure with risk factors. Do not treat this guidance as the facility’s dosing order."
+    },
+    {
+      "url": "https://mohpublic.z6.web.core.windows.net/IsraelDrugs/Rishum01_25_352515525.pdf",
+      "section": "Acamol Teva SPC September 2025 §§2, 4.1, 4.4, 4.9, 5.1",
+      "scope": "500-mg marketed product, non-opioid analgesia and antipyresis, exposure-related liver risk, delayed overdose manifestations, and predominant central prostaglandin inhibition. Actual ward tablets were not independently examined."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8481d9f3-d2a5-457f-b92c-99445d063c8f",
+      "section": "Acetaminophen injection boxed warning and §§2, 5, 10, 12",
+      "scope": "All routes and sources contribute to daily exposure, including combination medications. The exact analgesic/antipyretic mechanism is not established in the injection label, so the card describes a predominant central contribution rather than an exclusive pathway."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Non-opioid analgesic and antipyretic.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--drug-class",
+          "sha256": "6c31a625189d1e02ea19085449e966f199579bdce2a033641d598424e98d8b5c"
+        }
+      ],
+      "rationale": "Identify the non-opioid analgesic and antipyretic class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Predominantly central analgesic/antipyretic action involving inhibition of prostaglandin synthesis in the CNS.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--principal-action",
+          "sha256": "718eeec7cb321143ee7fc515e6a543b26fdcda6bc23b2e142d68b66cbd6e8799"
+        }
+      ],
+      "rationale": "Distinguish predominant CNS prostaglandin action from peripheral anti-inflammatory, platelet and opioid effects."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Mild-to-moderate pain",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--treatment-role",
+          "sha256": "7774c73bfaacac7bbcc8e83c73bbf59f5be06e6850a7cdc300cef3bd8ac2b4d2"
+        }
+      ],
+      "rationale": "Select the non-opioid role for mild-to-moderate postoperative or fracture pain."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "fever",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::acetam_fever_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--acetam_fever_response",
+          "sha256": "3898704ff5d35bc4584f465729d2df43bf40a4db016f547a64c1ad4ddad20f7e"
+        }
+      ],
+      "rationale": "Interpret antipyretic response without inferring cure."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "part of multimodal pain control after injury or surgery",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--treatment-role",
+          "sha256": "7774c73bfaacac7bbcc8e83c73bbf59f5be06e6850a7cdc300cef3bd8ac2b4d2"
+        }
+      ],
+      "rationale": "Distinguish an adjunct in a multimodal plan from a rescue opioid or local anesthetic."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Give only by the ordered route/formulation.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Remains a general medication verification safeguard. The exposure question includes both documented routes."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "calculate the patient's total paracetamol/acetaminophen exposure from ALL products in the previous 24 hours.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::acetaminophen_total"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--acetaminophen_total",
+          "sha256": "ac1edb76e385adc2f6a3b14353670ce1c3ef58f9436dcd8008ddbec15c7fb51c"
+        }
+      ],
+      "rationale": "Calculate the rolling sum, including combination products and IV plus oral doses."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Do not assume a fixed universal maximum for every patient; liver disease, alcohol use, frailty and other factors can lower the safe limit.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::acen_patient_limit"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--acen_patient_limit",
+          "sha256": "b59c58e8591f7e334a9a92193c83ca7d1ee5647f050c7ff471f6b97fe0a8828e"
+        }
+      ],
+      "rationale": "Apply patient-specific limits despite a stated standard adult maximum. The history question separately tests alcohol and liver disease."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess pain/temperature before and after administration.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::pain_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--pain_response",
+          "sha256": "79c65816b68fc53815762dd70b3b306e3aa1e795683b4d4d25f902d69cbca7f1"
+        }
+      ],
+      "rationale": "Compare the same pain-provoking activity before and after. Temperature is assessed separately."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess pain/temperature before and after administration.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::acetam_fever_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--acetam_fever_response",
+          "sha256": "3898704ff5d35bc4584f465729d2df43bf40a4db016f547a64c1ad4ddad20f7e"
+        }
+      ],
+      "rationale": "Interpret a measured temperature decrease as symptomatic antipyresis."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check for duplicate paracetamol/acetaminophen in combination products.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::acetaminophen_total"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--acetaminophen_total",
+          "sha256": "ac1edb76e385adc2f6a3b14353670ce1c3ef58f9436dcd8008ddbec15c7fb51c"
+        }
+      ],
+      "rationale": "Require inclusion of the acetaminophen in the combination product."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Review liver disease, heavy alcohol use and total 24-hour exposure.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::acetam_alcohol_review"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--acetam_alcohol_review",
+          "sha256": "a8087ec60ca7b85559832c68e8ebc897110248dbaf4ae710bb6b803327014621"
+        }
+      ],
+      "rationale": "Identify liver disease and heavy alcohol use. The calculation separately assesses rolling exposure."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Escalate suspected overdose promptly because serious hepatotoxicity can be delayed.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::hepatic_overdose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--hepatic_overdose",
+          "sha256": "3170a746a9418c1f2ce44385db6192c48b3119bfefda0907b978369f3dc5f2f4"
+        }
+      ],
+      "rationale": "Escalate immediately even when early symptoms are absent."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "without the platelet/GI effects typical of NSAIDs",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::acetam_nsaid_distinction"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--acetam_nsaid_distinction",
+          "sha256": "4c148738e8e5f8e9d82545f52efc2bc78c7d5cc45e10c9ede6b2830058c93528"
+        }
+      ],
+      "rationale": "Distinguish the typical NSAID risk pattern from paracetamol’s liver risk without claiming zero GI risk."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "excessive total exposure can cause severe liver injury.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-acamol::hepatic_overdose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-acamol--comprehensive--hepatic_overdose",
+          "sha256": "3170a746a9418c1f2ce44385db6192c48b3119bfefda0907b978369f3dc5f2f4"
+        }
+      ],
+      "rationale": "Identify delayed severe hepatic injury."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Acamol tablets contain paracetamol; a common marketed tablet is 500 mg, but verify the exact ward pack and strength before administration.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Brand and ward observation provenance requires checking the actual package."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Pain/fever; common non-opioid component of postoperative and fracture pain control.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats facts tested by the use, exposure or overdose questions."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Count total paracetamol from every product; overdose can cause severe liver injury.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats facts tested by the use, exposure or overdose questions."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "97aa2c209f83b77da6baca36c44a42844251cdea65d1c19bbf7506cf1a969f16",
+    "mechanism": "d04ecbab35b3e9729e38c5a29cf3fa4e0920434dbf40527c34637ba7df0ec339",
+    "use": "f9a05cb6cb9998f3d7c31b2eb4987615763ed40998442ce61dc2b57839f18c7b",
+    "administration": "0e21f0aac72c941141e3e84be4ac3192a2b0ca0d0b38a1f30f74b3a3bc921a36",
+    "monitor": "8c0b9c7e37b76a71fc3d388934d4f6f89afd742aca9808bf7ab9cb3a1f4a71a8",
+    "why": "83ca2568b731928c51c62e0bde25b53cff839328ef5410f4e8088b56ba44005b",
+    "availability": "ac05d188d458a145bb5064577ef4669b6cfdc1a456fee3284d677c95dfea08a5",
+    "memoryUse": "fcba682fa49bc8f12a10a2df79a76c3e5b6f5c4ff4690267da72ab42b0d78ab1",
+    "memoryDanger": "d02fc3e8e9f0439acd52259fcdb20792b5126b66ba7f62ff5e46d481f6d94696"
+  },
+  "questionSetSha256": "6f6e8d66b0e54c3ad02f039171a748067f275ff10a3b7d0990948dddaf9c7547",
+  "questionReview": {
+    "ibd2-acamol--comprehensive--principal-action": "Distinguish predominant CNS prostaglandin action from peripheral anti-inflammatory, platelet and opioid effects.",
+    "ibd2-acamol--comprehensive--drug-class": "Identify the non-opioid analgesic and antipyretic class.",
+    "ibd2-acamol--comprehensive--treatment-role": "Select the non-opioid role for mild-to-moderate postoperative or fracture pain.",
+    "ibd2-acamol--comprehensive--acetaminophen_total": "Calculate the rolling sum, including combination products and IV plus oral doses.",
+    "ibd2-acamol--comprehensive--hepatic_overdose": "Escalate immediately even when early symptoms are absent.",
+    "ibd2-acamol--comprehensive--pain_response": "Compare the same pain-provoking activity before and after. Temperature is assessed separately.",
+    "ibd2-acamol--comprehensive--acetam_fever_response": "Interpret antipyretic response without inferring cure.",
+    "ibd2-acamol--comprehensive--acetam_nsaid_distinction": "Distinguish the typical NSAID risk pattern from paracetamol’s liver risk without claiming zero GI risk.",
+    "ibd2-acamol--comprehensive--acetam_alcohol_review": "Identify liver disease and heavy alcohol use. The calculation separately assesses rolling exposure.",
+    "ibd2-acamol--comprehensive--acen_patient_limit": "Apply patient-specific limits despite a stated standard adult maximum. The history question separately tests alcohol and liver disease."
+  }
+}
