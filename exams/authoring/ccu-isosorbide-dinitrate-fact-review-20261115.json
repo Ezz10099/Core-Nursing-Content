@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-isosorbide-dinitrate",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.who.int/publications/m/item/occupied-palestinian-territory--essential-medicine-list-2024-(english)",
+      "section": "2024 Palestinian Essential Medicines List, antianginal medicines",
+      "scope": "Supports generic form listing only. Current brands, exact stock, release type, and facility practice require verification."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=44ede034-1fa1-4993-9aa5-49e04fada541&type=display",
+      "section": "Sublingual isosorbide dinitrate primary label",
+      "scope": "Sublingual formulations, vasodilation, hypotension and delayed onset compared with sublingual nitroglycerin."
+    },
+    {
+      "url": "https://www.medicines.org.uk/emc/product/9216/smpc",
+      "section": "Isoket 1 mg/mL concentrate SmPC §§4.1–4.5 and 6.2",
+      "scope": "Severe or unstable angina and refractory LV failure indications, controlled IV administration, nitrate-PDE5 contraindication and tubing-dependent adsorption."
+    },
+    {
+      "url": "https://medicalguidelines.msf.org/en/viewport/EssDr/english/isosorbide-dinitrate-injectable-91160765.html",
+      "section": "MSF injectable isosorbide dinitrate guide",
+      "scope": "Corroborates monitored indication-specific injectable use and dose titration. MSF guidance does not confirm local stock or a facility protocol."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Organic nitrate",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--drug-class",
+          "sha256": "fbca6df681df910148542bf34671aeeac10b99a318146873e111a5141ad8d7d7"
+        }
+      ],
+      "rationale": "Identify the drug class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Nitric-oxide/cGMP-mediated vasodilation.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--principal-action",
+          "sha256": "43dec9ee517ae35424eb9692850b005a74ba6f9df2a50754c3c1358129b70232"
+        }
+      ],
+      "rationale": "Require the NO-cGMP and relaxation sequence."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "place under the tongue and let dissolve.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::sl_tablet"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--sl_tablet",
+          "sha256": "76299ee1d132422da87ed623a8bb3aee09dc0129738975cc59810073b34f7f28"
+        }
+      ],
+      "rationale": "Choose placement for the documented locally listed 5-mg sublingual product."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Do not treat an SL tablet as an IV product. IV ISDN exists internationally as a controlled infusion",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--formulation",
+          "sha256": "f8244cb5e09827dc779784c55af104e6aabd960ba1b7a3dee3bbf2f45b1ace77"
+        }
+      ],
+      "rationale": "Distinguish the IV product and administration requirements from the SL tablet."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Faster nitrate relief than long-acting oral isosorbide mononitrate",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--treatment-role",
+          "sha256": "5aac31cb5f4e5ad576a167b361e352693deff2dd04e96b9a4495520068013772"
+        }
+      ],
+      "rationale": "Discriminate route-dependent onset without treating sublingual ISDN as preferred rescue over sublingual nitroglycerin."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "IV nitrate therapy may be used for severe/unstable angina or refractory LV failure when specifically ordered.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::isdn_iv_context"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--isdn_iv_context",
+          "sha256": "5acdced46721e9c95c53fcb437477cee06ab61c60800b53755424156c292529e"
+        }
+      ],
+      "rationale": "Select the appropriate hemodynamically monitored IV nitrate indications."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check BP before and after use. • Headache, flushing and dizziness are common.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::nitrate_headache"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--nitrate_headache",
+          "sha256": "5f11ad072521ac566bf778bdccb7b8f804cf3b21ca41c2ba6e9385298aad596f"
+        }
+      ],
+      "rationale": "Identify the characteristic vasodilation pattern and indication for BP monitoring."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check for PDE-5 inhibitor exposure.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::nitrate_pde5"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--nitrate_pde5",
+          "sha256": "9824a0c2dff1111b2b1f64acc196bc2a6bcfe76542919b4e49d51079f1d73734"
+        }
+      ],
+      "rationale": "Identify the mechanistic interaction and risk of severe hypotension."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "verify the exact product, concentration, tubing and infusion method.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--formulation",
+          "sha256": "f8244cb5e09827dc779784c55af104e6aabd960ba1b7a3dee3bbf2f45b1ace77"
+        }
+      ],
+      "rationale": "Select verification of all IV delivery components."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Route determines onset and delivery",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--treatment-role",
+          "sha256": "5aac31cb5f4e5ad576a167b361e352693deff2dd04e96b9a4495520068013772"
+        }
+      ],
+      "rationale": "Choose the appropriate comparison of onset by route and formulation."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "nitrate vasodilation can rapidly lower BP.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-dinitrate::nitrate_headache"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-dinitrate--comprehensive--nitrate_headache",
+          "sha256": "5f11ad072521ac566bf778bdccb7b8f804cf3b21ca41c2ba6e9385298aad596f"
+        }
+      ],
+      "rationale": "Recognize the hemodynamic effect."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES for the Palestinian 5-mg sublingual form. A Palestinian IV isosorbide-dinitrate product was not publicly confirmed in the trolley research; Palestine separately lists IV nitroglycerin. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use. User confirmed on 2 Nov 2026 that Cordil is isosorbide in their ED. Existing reference identifies CORDIL 5 mg as sublingual isosorbide dinitrate; user did not specify the mono-/dinitrate salt or release form, so check the physical product before using formulation-specific advice.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Product availability is provenance."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Sublingual ISDN is a faster nitrate; IV nitrate formulations are separate products.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats concepts already tested."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "PDE-5 inhibitor + nitrate can cause severe hypotension.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats concepts already tested."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "310e3f0d938a9df9f30818e28e62c16043c0af85027d9117632d3a3e4a636667",
+    "mechanism": "0341c50e7e6fd0b251798579046f3992e9d99509a0086023049373c42e565f3d",
+    "use": "0fcbf0ace5b6ed03cac233dd3d010ca4ef99706dfa7ae08764d398b17292f4f0",
+    "administration": "47fb98ee9db5799ec12b205eaac06851668b9f9e579cefb5f8a9eaadb4e5cc77",
+    "monitor": "fb0cffa5cb4dcb2ad191dd9b5601ed30c07561cebe478ebb6dc01e76f5e498d7",
+    "why": "cfec1ffdf4d2779f0d889d37ba83d892cdbd128bfc635cb3fe581832ea1ff5ab",
+    "availability": "e900d56547a40a95bc4708fa1db328c5abed59cedd78e78d300f0111b925fbd4",
+    "memoryUse": "d1a57a5785321d86a00a5e8c81b7f8859d83aec9affd7dc410eec5d9323e94b8",
+    "memoryDanger": "6a1d1e036998cc43047e68131cc61fe571f59dee8523bd8fac25433da4a82008"
+  },
+  "questionSetSha256": "640382ab961bf776b1f003f9aa4d83621dc47418c62cd920356a2da0ae8c0144",
+  "questionReview": {
+    "ccu-isosorbide-dinitrate--comprehensive--principal-action": "Require the NO-cGMP and relaxation sequence.",
+    "ccu-isosorbide-dinitrate--comprehensive--drug-class": "Identify the drug class.",
+    "ccu-isosorbide-dinitrate--comprehensive--treatment-role": "Discriminate route-dependent onset without treating sublingual ISDN as preferred rescue over sublingual nitroglycerin.",
+    "ccu-isosorbide-dinitrate--comprehensive--nitrate_headache": "Identify the characteristic vasodilation pattern and indication for BP monitoring.",
+    "ccu-isosorbide-dinitrate--comprehensive--sl_tablet": "Choose placement for the documented locally listed 5-mg sublingual product.",
+    "ccu-isosorbide-dinitrate--comprehensive--isdn_iv_context": "Select the appropriate hemodynamically monitored IV nitrate indications.",
+    "ccu-isosorbide-dinitrate--comprehensive--nitrate_pde5": "Identify the mechanistic interaction and risk of severe hypotension.",
+    "ccu-isosorbide-dinitrate--comprehensive--formulation": "Distinguish the IV product and administration requirements from the SL tablet."
+  }
+}

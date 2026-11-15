@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-isosorbide-mononitrate",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.who.int/publications/m/item/occupied-palestinian-territory--essential-medicine-list-2024-(english)",
+      "section": "2024 Palestinian Essential Medicines List, antianginal medicines",
+      "scope": "Supports generic form listing only. Current brands, exact stock, release type, and facility practice require verification."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?audience=professional&setid=0d739bf3-0672-4504-9064-b39d6b200b47",
+      "section": "Immediate-release mononitrate label",
+      "scope": "Prevention, lack of sufficiently rapid rescue action, side effects, nitrate mechanism, and contraindicated PDE5 combination."
+    },
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?audience=consumer&setid=0a1e317a-7b05-4d30-9bbc-1d4ccd56ba3c",
+      "section": "Extended-release mononitrate label, updated May 11, 2026",
+      "scope": "Corroborates oral preventive use and product-specific dosing schedule, hypotension, headache and drug interaction precautions."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Organic nitrate",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--drug-class",
+          "sha256": "2a5502a9368b2c68b0c89b8d414e274bc8b60cf3112c2213d98b4065e164ccd8"
+        }
+      ],
+      "rationale": "Distinguish the nitrate class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Releases nitric oxide → increases cGMP → vascular smooth-muscle relaxation.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--principal-action",
+          "sha256": "02e3efc3c402214be2d2ed7d0a29c52fd46782cef303dad2be5da0fcd6eb78a5"
+        }
+      ],
+      "rationale": "Require the NO-cGMP and relaxation sequence."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO. No dilution, IV line or pump.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "An oral formulation is presupposed in the prevention and release questions. Generic oral preparation does not warrant a freestanding scored item."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "do not assume immediate-release and modified-release products are interchangeable.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--formulation",
+          "sha256": "aaf0acf396b88af8da7834fee14586ad74d9ec457912800d83a847fdbc986edb"
+        }
+      ],
+      "rationale": "Identify why the same nominal strength does not provide an equivalent release profile or schedule."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Prevention/control of angina",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--treatment-role",
+          "sha256": "198f642d4a7d84b4034d4d4efe4cda3b8324d2be102daa5ab03165c62f907813"
+        }
+      ],
+      "rationale": "Identify scheduled prevention and control."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "not the rapid-rescue formulation for an acute angina attack.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::nitrate_rescue"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--nitrate_rescue",
+          "sha256": "f4db77f6392978055dd814b77ba963f4cef5d0a7e6facd25d2c3c582a86c4bc6"
+        }
+      ],
+      "rationale": "Identify insufficiently rapid onset as the limitation."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Check BP and dizziness before/after the dose. • Headache is common.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::nitrate_headache"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--nitrate_headache",
+          "sha256": "999aae58f889d82a2d17900c17686441b5907539e0c1663f6a3d67900bb94f57"
+        }
+      ],
+      "rationale": "Identify expected nitrate headache and postural dizziness with lower BP."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Never combine with sildenafil, tadalafil or vardenafil because profound hypotension/syncope can occur.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::nitrate_pde5"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--nitrate_pde5",
+          "sha256": "e57d787055d97e4b1f52623e9571d2da380ed99797d169220b1bf13e5dfe5d43"
+        }
+      ],
+      "rationale": "Identify all named interacting agents. Inhibition of cGMP breakdown potentiates nitrate hypotension."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Verify whether the local tablet is immediate- or modified-release.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--formulation",
+          "sha256": "aaf0acf396b88af8da7834fee14586ad74d9ec457912800d83a847fdbc986edb"
+        }
+      ],
+      "rationale": "Recognize the consequences of substituting a different release product."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Nitrate vasodilation lowers preload/BP",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-isosorbide-mononitrate::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-isosorbide-mononitrate--comprehensive--principal-action",
+          "sha256": "02e3efc3c402214be2d2ed7d0a29c52fd46782cef303dad2be5da0fcd6eb78a5"
+        }
+      ],
+      "rationale": "Connect NO-mediated venodilation to reduced preload and blood pressure."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "this oral long-acting form is mainly preventive.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats the scheduled angina prevention role."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES for the generic/form. Palestinian essential-medicine data document isosorbide mononitrate 20-mg tablets. Vasocore is the ward-reported trade spelling and should be matched to the package.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Product availability is provenance."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Long-acting nitrate used mainly to prevent/control angina.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats concepts already tested."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Major danger: hypotension, especially with PDE-5 inhibitors.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats concepts already tested."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "bc31fbae589da4de4ab2adc84d1ab49b7e2f5f2f2cd0fae95a984800bcab75bc",
+    "mechanism": "2355b974941891cf652fa1f7fdbb3c5c3c0f465e011615d9c4bede1eeaeba56c",
+    "use": "ca0c22ea9aeb8b80f23e09538e0927f33ef50dd49833a6410836b4d13c0b8051",
+    "administration": "dd1b771c40d2181eec64979aeeacac0f214dd5c8f0269a8c4ce3206b7d2beecf",
+    "monitor": "ea600349289d45fb0cd83fdb9848e041cf411fb7f2ea14378f76a16ec34874d5",
+    "why": "38bbcf811933f97d095b84e8fca56fd3ee2d54bd220cbb37a787fd838ef29524",
+    "availability": "a6e08055f4780434f03ec4711c0d1880b9079d429f682443f24e67bf8c9c1b27",
+    "memoryUse": "0e817bb663371e28eb8e2e941fe1ca3c705fe340039de127b065859df055d3f9",
+    "memoryDanger": "91e416f017d6601f0c7a7c7653873f3c9438a494bab83f6a7701680bcbb32352"
+  },
+  "questionSetSha256": "534aa407254e3de54d47ea5b4dc568c70cadbf10c9a5a1a2b5d28d76b3257c02",
+  "questionReview": {
+    "ccu-isosorbide-mononitrate--comprehensive--principal-action": "Require the NO-cGMP and relaxation sequence.",
+    "ccu-isosorbide-mononitrate--comprehensive--drug-class": "Distinguish the nitrate class.",
+    "ccu-isosorbide-mononitrate--comprehensive--treatment-role": "Identify scheduled prevention and control.",
+    "ccu-isosorbide-mononitrate--comprehensive--nitrate_headache": "Identify expected nitrate headache and postural dizziness with lower BP.",
+    "ccu-isosorbide-mononitrate--comprehensive--nitrate_pde5": "Identify all named interacting agents. Inhibition of cGMP breakdown potentiates nitrate hypotension.",
+    "ccu-isosorbide-mononitrate--comprehensive--nitrate_rescue": "Identify insufficiently rapid onset as the limitation.",
+    "ccu-isosorbide-mononitrate--comprehensive--formulation": "Identify why the same nominal strength does not provide an equivalent release profile or schedule."
+  }
+}

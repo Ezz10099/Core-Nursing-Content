@@ -9404,5 +9404,33 @@
       ],
       "correct": 0
     }
+  },
+  "isdn_iv_context": {
+    "point": "Select severe or unstable angina or refractory LV failure as IV nitrate contexts.",
+    "anchor": "severe/unstable angina or refractory LV failure",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which clinical scenario can justify a specifically ordered controlled IV nitrate under a monitored protocol?",
+      "choices": [
+        {
+          "text": "Persistent severe ischemic chest pain or refractory acute left-sided heart failure with adequate pressure",
+          "explanation": "A monitored IV nitrate can be considered in these selected settings when authorized and hemodynamically appropriate."
+        },
+        {
+          "text": "Stable exertional angina without symptoms and a need for routine maintenance",
+          "explanation": "Routine stable maintenance is not an indication for an urgent IV infusion."
+        },
+        {
+          "text": "Cardiogenic shock with markedly low pressure and impaired perfusion",
+          "explanation": "Additional nitrate vasodilation can worsen hypotension in this setting."
+        },
+        {
+          "text": "Isolated bradycardia with hypotension and no ischemic symptoms",
+          "explanation": "An IV nitrate does not provide chronotropic or pressor support."
+        }
+      ],
+      "correct": 0
+    }
   }
 }
