@@ -4219,6 +4219,32 @@
       ]
     },
     {
+      "id": "ccu-furosemide::furosemide_msf_adult_injection",
+      "itemId": "ccu-furosemide",
+      "point": "Recall the MSF general adult injectable reference and slow IV route.",
+      "questionIds": [
+        "ccu-furosemide--standard--furosemide_msf_adult_injection",
+        "ccu-furosemide--7-day--furosemide_msf_adult_injection"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-furosemide::furosemide_digoxin_potassium",
+      "itemId": "ccu-furosemide",
+      "point": "Identify falling potassium as a specific digoxin–furosemide interaction risk.",
+      "questionIds": [
+        "ccu-furosemide--standard--furosemide_digoxin_potassium",
+        "ccu-furosemide--7-day--furosemide_digoxin_potassium"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-furosemide::low_k_mg",
       "itemId": "ccu-furosemide",
       "point": "Loop-diuretic electrolyte losses can contribute to ectopy.",
@@ -14626,6 +14652,7 @@
           "ccu-furosemide--standard--diuretic_timing",
           "ccu-furosemide--standard--furosemide_sodium_monitor",
           "ccu-furosemide--standard--furosemide_rapid_ototoxicity",
+          "ccu-furosemide--standard--furosemide_digoxin_potassium",
           "ccu-furosemide--advanced--hypotension",
           "ccu-furosemide--advanced--low_k_mg",
           "ccu-furosemide--7-day--decongestion",
@@ -14635,6 +14662,7 @@
           "ccu-furosemide--7-day--diuretic_timing",
           "ccu-furosemide--7-day--furosemide_sodium_monitor",
           "ccu-furosemide--7-day--furosemide_rapid_ototoxicity",
+          "ccu-furosemide--7-day--furosemide_digoxin_potassium",
           "ccu-furosemide--7-day--low_k_mg"
         ],
         "memoryDanger": [
@@ -14648,8 +14676,10 @@
         ],
         "administration": [
           "ccu-furosemide--standard--furosemide_controlled_delivery",
+          "ccu-furosemide--standard--furosemide_msf_adult_injection",
           "ccu-furosemide--advanced--low_k_mg",
           "ccu-furosemide--7-day--furosemide_controlled_delivery",
+          "ccu-furosemide--7-day--furosemide_msf_adult_injection",
           "ccu-furosemide--7-day--low_k_mg"
         ]
       },
