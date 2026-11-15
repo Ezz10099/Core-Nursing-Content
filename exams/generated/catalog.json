@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 70,
-  "sourceContentSha256": "cdadfb61362bd2248d0a684ab1cd1786223676f0b752ca8d52020e1b60e8a762",
+  "sourceContentVersion": 71,
+  "sourceContentSha256": "f0aa6a50fc6ef3fb5a1a9d25317e080ccf07eb1914466976a59f9ebb9c2c0a94",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 333,
-    "questions": 2015,
-    "single-best-answer": 1985,
+    "questions": 2017,
+    "single-best-answer": 1987,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 111,
     "medications": 82,
     "lessons": 29,
-    "mappedLearningPoints": 955
+    "mappedLearningPoints": 956
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -135,7 +135,7 @@
         {
           "id": "ibd2-tramadol--standard",
           "stage": "standard",
-          "questionCount": 12
+          "questionCount": 13
         },
         {
           "id": "ibd2-tramadol--advanced",
@@ -145,7 +145,7 @@
         {
           "id": "ibd2-tramadol--7-day",
           "stage": "7-day",
-          "questionCount": 13
+          "questionCount": 14
         }
       ]
     },
@@ -2591,7 +2591,7 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "0025d764d5eea40cab6f192d313d5419dec3ac2e8a1806b0671cf97dd60916b1"
+      "sha256": "5dc69e3aaebca2bb0156bd038997c32184f648470e6f898c3d204617af3f73d8"
     },
     {
       "path": "banks-02.json",
@@ -2615,7 +2615,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "96e2a98bae2e0a84ab2e9a08abb65074719067191abe3123ff398adad1dced74"
+      "sha256": "59d6a07dcd3a38eb1f19999f4a60bf7568a5692228488d3b8bdd3a0133422552"
     }
   ]
 }
