@@ -9180,5 +9180,61 @@
       ],
       "correct": 0
     }
+  },
+  "dopamine_continuous_monitor": {
+    "point": "Distinguish continuous HR, rhythm and BP from supplementary perfusion checks.",
+    "anchor": "Monitor HR, rhythm and BP continuously",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which signals should remain under continuous surveillance during dopamine titration for adult bradycardia?",
+      "choices": [
+        {
+          "text": "ECG rate and rhythm plus arterial pressure",
+          "explanation": "These detect the intended chronotropic effect, new arrhythmia and pressure changes."
+        },
+        {
+          "text": "ECG rate and rhythm plus urine output",
+          "explanation": "Urine output is useful but does not replace BP surveillance."
+        },
+        {
+          "text": "Oximetry pulse rate plus arterial pressure",
+          "explanation": "Pulse rate is not a substitute for an ECG rhythm assessment."
+        },
+        {
+          "text": "Arterial pressure plus capillary refill",
+          "explanation": "These do not continuously assess ECG rate and rhythm."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "dopamine_bradycardia_taper": {
+    "point": "Connect a gradual taper with detection of recurrent bradycardia or hypotension.",
+    "anchor": "titrated to response with a gradual taper",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "An adult is stable on a low dopamine infusion after treatment for symptomatic bradycardia. The underlying cause has been corrected. Which response is a reason to taper the dose as ordered while monitoring HR and BP?",
+      "choices": [
+        {
+          "text": "Circulatory support may fall as dopamine is withdrawn",
+          "explanation": "Slow tapering gives the team a chance to recognize recurrent instability. Abrupt discontinuation can cause hypotension."
+        },
+        {
+          "text": "Rebound hypertension is the expected effect of stopping the infusion",
+          "explanation": "Withdrawal removes pressor support and may instead cause hypotension."
+        },
+        {
+          "text": "The infusion keeps its full chronotropic effect after the pump stops",
+          "explanation": "Dopamine has a short effect. Support cannot be assumed to persist after cessation."
+        },
+        {
+          "text": "Dose reduction produces steadily increasing inotropic support",
+          "explanation": "Reducing the infusion is intended to step down, not augment, pharmacologic support."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

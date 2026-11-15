@@ -3840,6 +3840,286 @@
         "criticalForSafety": true,
         "answerKey": "A"
       }
+    },
+    "ccu-dopamine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which pharmacologic classification best describes dopamine’s hemodynamic use?",
+        "choices": [
+          {
+            "text": "Catecholamine with inotropic and vasopressor actions",
+            "explanation": "Dopamine can stimulate the myocardium and increase vascular tone, depending on dose.",
+            "id": "A"
+          },
+          {
+            "text": "Noncatecholamine with inotropic and vasopressor actions",
+            "explanation": "Dopamine is a catecholamine.",
+            "id": "B"
+          },
+          {
+            "text": "Catecholamine used as an inotrope and peripheral vasodilator",
+            "explanation": "Dopamine also has a vasopressor effect through dose-dependent adrenergic stimulation.",
+            "id": "C"
+          },
+          {
+            "text": "Noncatecholamine used as an inotrope and peripheral vasodilator",
+            "explanation": "This grouping better describes an inodilator such as milrinone.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify dopamine as a catecholamine with inotropic and vasopressor actions.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which receptor pattern best explains why the clinical response to dopamine changes as its infusion dose changes?",
+        "choices": [
+          {
+            "text": "Dose-dependent activation of dopamine and adrenergic receptors",
+            "explanation": "The relative dopaminergic and adrenergic effects vary with dose.",
+            "id": "A"
+          },
+          {
+            "text": "Dose-dependent activation of dopamine and muscarinic receptors",
+            "explanation": "Dopamine’s dose-related cardiac and pressor effects involve adrenergic receptors rather than direct muscarinic stimulation.",
+            "id": "B"
+          },
+          {
+            "text": "Dose-dependent blockade of dopamine and adrenergic receptors",
+            "explanation": "Dopamine activates these receptors instead of blocking them.",
+            "id": "C"
+          },
+          {
+            "text": "Dose-dependent blockade of dopamine and muscarinic receptors",
+            "explanation": "This does not explain the drug’s agonist actions.",
+            "id": "D"
+          }
+        ],
+        "point": "Identify dose-dependent dopaminergic and adrenergic stimulation.",
+        "criticalForSafety": false,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::tachyarrhythmia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After an increase in dopamine for symptomatic bradycardia, which ECG trend most specifically suggests an adverse rhythm response rather than the intended increase in rate?",
+        "choices": [
+          {
+            "text": "New frequent ventricular couplets at the higher rate",
+            "explanation": "Ventricular ectopy and tachyarrhythmia can be adverse effects of dopamine.",
+            "id": "A"
+          },
+          {
+            "text": "Sinus rate rises with a stable PR interval",
+            "explanation": "A modest sinus rate increase is consistent with the intended effect.",
+            "id": "B"
+          },
+          {
+            "text": "Stable sinus rhythm with fewer pauses",
+            "explanation": "Fewer pauses can accompany improvement in bradycardia.",
+            "id": "C"
+          },
+          {
+            "text": "Narrow QRS complexes with a modest rise in sinus rate",
+            "explanation": "This pattern alone does not indicate an adverse ventricular rhythm.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish ventricular ectopy and tachyarrhythmia from therapeutic chronotropy.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::infusion_route": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Dopamine is supplied as concentrate. Which setup matches the ordered sustained infusion and limits local ischemic risk if the access has to be peripheral?",
+        "choices": [
+          {
+            "text": "Approved dilution, continuous pump, suitable large vein",
+            "explanation": "Dilute the concentrate, use controlled continuous delivery and select large-vein access under the facility protocol.",
+            "id": "A"
+          },
+          {
+            "text": "Approved dilution, continuous pump, small distal vein",
+            "explanation": "A small distal vein is less suitable for a drug that can cause ischemia if it leaks.",
+            "id": "B"
+          },
+          {
+            "text": "Approved dilution, gravity infusion, suitable large vein",
+            "explanation": "The correct site does not replace precise pump control.",
+            "id": "C"
+          },
+          {
+            "text": "Undiluted concentrate, continuous pump, suitable large vein",
+            "explanation": "Pump and vein choice do not remove the requirement to dilute the concentrate.",
+            "id": "D"
+          }
+        ],
+        "point": "Choose compatible dilution, continuous pump delivery and a suitable large vein.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::dopamine_bicarbonate": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient is receiving dopamine and has a new order for IV sodium bicarbonate. What property of this pair determines whether the infusions can run simultaneously through the same tubing?",
+        "choices": [
+          {
+            "text": "Bicarbonate alkalinity can inactivate dopamine in the shared tubing",
+            "explanation": "Use a separate compatible route under local protocol.",
+            "id": "A"
+          },
+          {
+            "text": "Bicarbonate enhances dopamine activity by lowering the mixture pH",
+            "explanation": "Bicarbonate is alkalinizing and threatens dopamine activity.",
+            "id": "B"
+          },
+          {
+            "text": "Dopamine activity is stable in alkaline fluid if both rates are low",
+            "explanation": "Lower flow rates do not remove the incompatibility.",
+            "id": "C"
+          },
+          {
+            "text": "Dopamine activity is stable in alkaline fluid if both use the same base diluent",
+            "explanation": "A common base diluent does not remove the incompatibility.",
+            "id": "D"
+          }
+        ],
+        "point": "Recall dopamine inactivation in alkaline solution and avoid the shared infusion set.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::dopamine_distal_ischemia": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After dopamine titration, BP is at target. Both feet are newly mottled and cool, while the forearm cannula site remains asymptomatic. Which interpretation warrants evaluation?",
+        "choices": [
+          {
+            "text": "Systemic vasoconstriction may be reducing distal perfusion",
+            "explanation": "Ischemia can occur at sites distant from the cannula even when pressure improves.",
+            "id": "A"
+          },
+          {
+            "text": "Extravasation at the forearm cannula best explains the bilateral foot changes",
+            "explanation": "Extravasation generally produces focal changes near the affected cannula.",
+            "id": "B"
+          },
+          {
+            "text": "New venous congestion is established by the lower limb discoloration",
+            "explanation": "Cool mottled feet warrant perfusion assessment. The finding does not establish venous congestion.",
+            "id": "C"
+          },
+          {
+            "text": "Improved arterial pressure establishes restored limb perfusion",
+            "explanation": "Systemic pressure and distal tissue perfusion can diverge.",
+            "id": "D"
+          }
+        ],
+        "point": "Distinguish systemic peripheral vasoconstriction from a focal IV-site problem.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::pressor_site": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "During peripheral dopamine infusion, which local pattern most strongly points to an extravasation that should be escalated immediately?",
+        "choices": [
+          {
+            "text": "New focal pain, pallor and cool swelling with slowing flow",
+            "explanation": "These signs raise concern for dopamine leaking into surrounding tissue and local vasoconstriction.",
+            "id": "A"
+          },
+          {
+            "text": "A warm red streak along the vein with unchanged flow",
+            "explanation": "This is more typical of phlebitis but also warrants assessment.",
+            "id": "B"
+          },
+          {
+            "text": "Both hands become cool with no change around the cannula",
+            "explanation": "This suggests a systemic perfusion change rather than focal leakage.",
+            "id": "C"
+          },
+          {
+            "text": "Flow slows only with joint flexion and there is no local skin change",
+            "explanation": "A positional flow problem can be mechanical. Reassess patency and the site rather than assuming extravasation.",
+            "id": "D"
+          }
+        ],
+        "point": "Recognize focal pallor, cooling and impaired flow during a dopamine infusion.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
+    },
+    "ccu-dopamine::perfusion": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After dopamine titration achieves the BP target, which paired trend gives the strongest evidence that organ perfusion still needs reassessment?",
+        "choices": [
+          {
+            "text": "Urine output stays low and capillary refill stays prolonged",
+            "explanation": "Both trends remain concerning despite the pressure response.",
+            "id": "A"
+          },
+          {
+            "text": "Urine output rises and capillary refill stays prolonged",
+            "explanation": "The peripheral finding needs assessment, but the urine trend has improved.",
+            "id": "B"
+          },
+          {
+            "text": "Urine output stays low and capillary refill normalizes",
+            "explanation": "Urine output still needs assessment, but peripheral perfusion has improved.",
+            "id": "C"
+          },
+          {
+            "text": "Urine output rises and capillary refill normalizes",
+            "explanation": "Both trends support improved perfusion.",
+            "id": "D"
+          }
+        ],
+        "point": "Use urine output and peripheral perfusion independently of BP.",
+        "criticalForSafety": true,
+        "answerKey": "A"
+      }
     }
   },
   "evidenceChecks": [
@@ -3907,7 +4187,7 @@
     "ccu-heparin-ufh": "infusion-calculations-20261115",
     "ccu-norepinephrine": "norepinephrine-source-review-20261115",
     "ccu-dobutamine": "dobutamine-source-review-20261115",
-    "ccu-dopamine": "infusion-calculations-20261115",
+    "ccu-dopamine": "dopamine-source-review-20261115",
     "ccu-warfarin-coumadin": "antithrombotic-clinical-20261111",
     "ccu-enoxaparin": "antithrombotic-clinical-20261111",
     "ccu-clopidogrel": "antithrombotic-clinical-20261111",
