@@ -3002,30 +3002,30 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "The supply tray contains therapeutic heparin vials and heparin catheter-flush syringes. Which check prevents selecting the wrong product for an ordered infusion?",
-        "point": "Verify therapeutic heparin vial identity and concentration instead of substituting flush product.",
+        "stem": "A pharmacy preparation order calls for 25,000 units of UFH in an infusion bag. The tray contains therapeutic UFH at 5,000 units/mL and catheter-lock heparin at 100 units/mL. Which product and volume provide the ordered amount for preparation?",
+        "point": "Select therapeutic UFH and convert the ordered units to a volume using its labeled concentration.",
         "criticalForSafety": true,
         "answerKey": "A",
         "choices": [
           {
             "id": "A",
-            "text": "Match the therapeutic product and labeled units/mL to the preparation order.",
-            "explanation": "The flush presentation and concentration are distinct."
+            "text": "Therapeutic UFH, 5 mL.",
+            "explanation": "25,000 units ÷ 5,000 units/mL = 5 mL. Use the therapeutic presentation specified for infusion preparation."
           },
           {
             "id": "B",
-            "text": "Match the heparin name and the container volume to the order.",
-            "explanation": "Name and volume do not verify intended use or concentration."
+            "text": "Therapeutic UFH, 0.5 mL.",
+            "explanation": "At this concentration, 0.5 mL supplies 2,500 units."
           },
           {
             "id": "C",
-            "text": "Pick the smaller container and verify total volume at the pump.",
-            "explanation": "Container size and volume alone do not establish the dose."
+            "text": "Therapeutic UFH, 25 mL.",
+            "explanation": "At this concentration, 25 mL supplies 125,000 units."
           },
           {
             "id": "D",
-            "text": "Match the route and select either product if the total fluid volume fits.",
-            "explanation": "Shared IV use does not make the products interchangeable."
+            "text": "Catheter-lock heparin, 250 mL.",
+            "explanation": "The arithmetic gives 25,000 units, but the catheter-lock product is not the therapeutic preparation product."
           }
         ]
       }
@@ -3212,7 +3212,7 @@
     "trolley-spironolactone": "beta-mra-review-20261115",
     "ccu-adenosine": "acute-completed-20261115",
     "ccu-atropine": "acute-completed-20261115",
-    "ccu-heparin-ufh": "acute-completed-20261115",
+    "ccu-heparin-ufh": "ufh-preparation-calculation-20261115",
     "ccu-norepinephrine": "vasoactive-coverage-20261111",
     "ccu-dobutamine": "vasoactive-coverage-20261111",
     "ccu-dopamine": "vasoactive-coverage-20261111",
@@ -3232,7 +3232,7 @@
     "ccu-metoprolol": "beta-mra-review-20261115",
     "ccu-adenosine": "acute-completed-20261115",
     "ccu-atropine": "acute-completed-20261115",
-    "ccu-heparin-ufh": "acute-completed-20261115",
+    "ccu-heparin-ufh": "ufh-preparation-calculation-20261115",
     "ccu-norepinephrine": "vasoactive-infusion-20261111",
     "ccu-dobutamine": "vasoactive-infusion-20261111",
     "ccu-dopamine": "vasoactive-infusion-20261111",
