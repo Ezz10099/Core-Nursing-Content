@@ -4195,13 +4195,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: Its active metabolite inhibits ADP-mediated platelet activation."
+                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
+                  "explanation": "Its active metabolite inhibits ADP-mediated platelet activation."
                 },
                 {
                   "id": "B",
-                  "text": "Irreversibly inhibits platelet P2Y12 receptors",
-                  "explanation": "Its active metabolite inhibits ADP-mediated platelet activation."
+                  "text": "Nitric-oxide/cGMP-mediated vascular relaxation",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: Its active metabolite inhibits ADP-mediated platelet activation."
                 },
                 {
                   "id": "C",
@@ -4244,7 +4244,7 @@
               "learningPointIds": [
                 "ccu-clopidogrel::principal-action"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -4257,13 +4257,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "Fibrinolytic",
-                  "explanation": "The medicine is classified as: P2Y12 antiplatelet."
+                  "text": "Antiplatelet",
+                  "explanation": "P2Y12 antiplatelet."
                 },
                 {
                   "id": "C",
-                  "text": "Antiplatelet",
-                  "explanation": "P2Y12 antiplatelet."
+                  "text": "Fibrinolytic",
+                  "explanation": "The medicine is classified as: P2Y12 antiplatelet."
                 },
                 {
                   "id": "D",
@@ -4287,7 +4287,7 @@
               "learningPointIds": [
                 "ccu-clopidogrel::drug-class"
               ],
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -4345,23 +4345,23 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Whether the loading dose was already given and whether a separate loading order applies.",
-                  "explanation": "Reconciling the record and authorized order avoids both a missed load and duplicate dosing."
-                },
-                {
-                  "id": "B",
                   "text": "Whether to give the maintenance dose twice to approximate the loading dose.",
                   "explanation": "Do not construct a loading dose from the maintenance schedule."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Whether to treat the scheduled maintenance dose as the documented loading dose.",
                   "explanation": "Maintenance and loading are separate regimens."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Whether the next scheduled maintenance dose can be advanced to replace the loading order.",
                   "explanation": "Moving a maintenance dose does not establish the intended loading regimen."
+                },
+                {
+                  "id": "D",
+                  "text": "Whether the loading dose was already given and whether a separate loading order applies.",
+                  "explanation": "Reconciling the record and authorized order avoids both a missed load and duplicate dosing."
                 }
               ],
               "point": "A clopidogrel loading dose requires a distinct order or authorized protocol.",
@@ -4380,10 +4380,53 @@
               "learningPointIds": [
                 "ccu-clopidogrel::clopidogrel_loading_order"
               ],
-              "answerKey": "A"
+              "answerKey": "D"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which change explains why omeprazole or esomeprazole can reduce clopidogrel’s antiplatelet effect?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reduced CYP2C19-mediated elimination of the active metabolite",
+                  "explanation": "Reduced elimination would not explain reduced formation and diminished effect."
+                },
+                {
+                  "id": "B",
+                  "text": "Increased CYP2C19-mediated breakdown of the active metabolite",
+                  "explanation": "The interaction is principally inhibition of activation, rather than increased breakdown."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduced CYP2C19-mediated formation of the active metabolite",
+                  "explanation": "Clopidogrel is a prodrug. Inhibiting this conversion reduces the active metabolite available to inhibit platelets."
+                },
+                {
+                  "id": "D",
+                  "text": "Increased CYP2C19-mediated formation of the active metabolite",
+                  "explanation": "Increased conversion would have the opposite effect on the available metabolite."
+                }
+              ],
+              "point": "Connect CYP2C19 inhibition to reduced active metabolite formation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-clopidogrel",
+                  "field": "why",
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-clopidogrel--standard--clopidogrel_cyp_activation",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-clopidogrel::clopidogrel_cyp_activation"
+              ],
+              "answerKey": "C"
             }
           ],
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-clopidogrel--advanced",
@@ -4863,6 +4906,50 @@
               "answerKey": "A"
             },
             {
+              "format": "single-best-answer",
+              "stem": "Which change explains why omeprazole or esomeprazole can reduce clopidogrel’s antiplatelet effect?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Reduced CYP2C19-mediated formation of the active metabolite",
+                  "explanation": "Clopidogrel is a prodrug. Inhibiting this conversion reduces the active metabolite available to inhibit platelets."
+                },
+                {
+                  "id": "B",
+                  "text": "Increased CYP2C19-mediated formation of the active metabolite",
+                  "explanation": "Increased conversion would have the opposite effect on the available metabolite."
+                },
+                {
+                  "id": "C",
+                  "text": "Reduced CYP2C19-mediated elimination of the active metabolite",
+                  "explanation": "Reduced elimination would not explain reduced formation and diminished effect."
+                },
+                {
+                  "id": "D",
+                  "text": "Increased CYP2C19-mediated breakdown of the active metabolite",
+                  "explanation": "The interaction is principally inhibition of activation, rather than increased breakdown."
+                }
+              ],
+              "point": "Connect CYP2C19 inhibition to reduced active metabolite formation.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-clopidogrel",
+                  "field": "why",
+                  "textSha256": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520"
+                }
+              ],
+              "criticalForSafety": false,
+              "id": "ccu-clopidogrel--7-day--clopidogrel_cyp_activation",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-clopidogrel::clopidogrel_cyp_activation"
+              ],
+              "reusedFromQuestionId": "ccu-clopidogrel--standard--clopidogrel_cyp_activation",
+              "answerKey": "A"
+            },
+            {
               "stem": "During PLAVIX — clopidogrel therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
               "choices": [
                 {
@@ -5088,7 +5175,7 @@
               "answerKey": "D"
             }
           ],
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },

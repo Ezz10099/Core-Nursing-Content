@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-clopidogrel",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and its scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.who.int/publications/m/item/occupied-palestinian-territory--essential-medicine-list-2024-(english)",
+      "section": "Palestinian Essential Medicines List 2024",
+      "scope": "Palestinian formulary reference."
+    },
+    {
+      "url": "https://www.pharmacy.moh.ps/index/MorePrice/DrugsId/286",
+      "section": "Palestinian MOH registered Plavix 75 mg",
+      "scope": "Product listing documents the 75-mg tablet. It does not verify local stock or a dosing protocol."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de8b0b67-eb25-4684-83b5-7ad785314227",
+      "section": "Plavix primary label §§1, 2, 5, 7 and 12",
+      "scope": "Use, oral loading versus maintenance, bleeding, premature discontinuation, CYP2C19 activation and the PPI differences, including 12-hour omeprazole separation."
+    },
+    {
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309",
+      "section": "2025 multisociety ACS guideline, antiplatelet therapy and bleeding reduction",
+      "scope": "DAPT after ACS/PCI and PPI use when GI bleeding risk warrants it. Clopidogrel choice and DAPT duration depend on the clinical setting and prescriber."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "P2Y12 antiplatelet.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--drug-class",
+          "sha256": "eee60737f458baf05161794b2e3ae0432908487d585b4362153e463e8a7a3788"
+        }
+      ],
+      "rationale": "Identify the P2Y12 antiplatelet class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Prodrug whose active metabolite irreversibly inhibits platelet P2Y12 receptors.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--principal-action",
+          "sha256": "37cedc1a23fdeb0241cdab751fa1c1c2332019228f674c7db87b8c0e7e74b8ba"
+        }
+      ],
+      "rationale": "Differentiate indirect irreversible P2Y12 inhibition from aspirin, direct reversible P2Y12 inhibition, and GP IIb/IIIa blockade."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "PO.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::clopidogrel_loading_order"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--clopidogrel_loading_order",
+          "sha256": "4b58e343d362c676e0a294da6950b006fb9c23ea5c2f560a47ba019db45ee42e"
+        }
+      ],
+      "rationale": "Apply continuation of ordered oral therapy following a documented one-time load. No IV preparation is in scope."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "loading doses are separate physician/protocol orders.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::clopidogrel_loading_order"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--clopidogrel_loading_order",
+          "sha256": "4b58e343d362c676e0a294da6950b006fb9c23ea5c2f560a47ba019db45ee42e"
+        }
+      ],
+      "rationale": "Distinguish the one-time loading order from oral maintenance."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Routine maintenance needs no special preparation",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Shared oral medication preparation is not a distinct objective."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Commonly part of dual antiplatelet therapy after ACS/PCI and coronary stenting.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--treatment-role",
+          "sha256": "a39c31faae3c76045da66ba56eb7320752aadd5eb58a3ff13c193edcfba07911"
+        }
+      ],
+      "rationale": "Choose the complementary antiplatelet for DAPT after ACS and PCI."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess for bleeding.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::bleeding"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--bleeding",
+          "sha256": "f2d0ca564241157489e6dfde32d0211124d9e6aa4f5bc9b9433c35fd6cb425c0"
+        }
+      ],
+      "rationale": "Recognize possible significant GI bleeding and prioritize urgent evaluation in a recent stent recipient."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess for bleeding.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::antithrombotic_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--antithrombotic_combination",
+          "sha256": "06527eb028f9ce5a754581d520f554e0a484af290eac4c13d117bfa4097668e9"
+        }
+      ],
+      "rationale": "Recognize access-site bruising and declining hemoglobin as possible additive bleeding during combined treatment."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Clarify unexpected omissions after recent coronary stenting promptly because premature interruption raises thrombotic risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::stent_omission"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--stent_omission",
+          "sha256": "4b6fd4fb5fda74cedda79f99e1f7b2d884cca137592e8fa63ebc5c382b50fdd4"
+        }
+      ],
+      "rationale": "Identify the time-sensitive risk of stent thrombosis despite the patient being asymptomatic and on aspirin."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Avoid coadministration with omeprazole or esomeprazole. Separating omeprazole by 12 hours does not prevent the interaction. Pantoprazole has less effect",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::ppi_clopidogrel"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--ppi_clopidogrel",
+          "sha256": "b03300dadebad0a33efa86bfe2dc48f96f474f46c4c1ddf6d9c70b48aa0059b5"
+        }
+      ],
+      "rationale": "Select the less-interacting PPI and reject omeprazole separation and esomeprazole substitution."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Clopidogrel requires metabolic activation, in part by CYP2C19. Omeprazole and esomeprazole can inhibit this step.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::clopidogrel_cyp_activation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--clopidogrel_cyp_activation",
+          "sha256": "7e02a46c3eee3fa2781e6ba0c64e67d12c1d12d563e74f34e36158556bb6db03"
+        }
+      ],
+      "rationale": "Explain the interaction through reduced CYP2C19-mediated prodrug activation."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Interrupting therapy after stenting can raise the risk of thrombosis.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-clopidogrel::stent_omission"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-clopidogrel--comprehensive--stent_omission",
+          "sha256": "4b6fd4fb5fda74cedda79f99e1f7b2d884cca137592e8fa63ebc5c382b50fdd4"
+        }
+      ],
+      "rationale": "Identify risk specific to interruption following a recent stent."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine and registry data document 75-mg tablets. ED shelf/drawer label photographed, 2 Nov 2026. This is a named compartment, not an independently audited stock count; check the package before use.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Formulary, registry and local shelf-label provenance, not proof of current package supply."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "P2Y12 antiplatelet used after ACS/PCI.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates class and therapeutic role."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Bleeding; avoid casual interruption after recent coronary stenting.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates bleeding and stent omission objectives."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "9a71b5d9eb9afb1d9066175c629f86d11573f1bf265ac89253da11d99f7cc7d3",
+    "mechanism": "c8f7c43593cd9bd04dc9066e9cd8375c7965dba2211e3ebbc451c15b69eb0b34",
+    "use": "e4cb180e757cb52fd49b2ddc6189736e665e5d1be0d8898cf636267ed1f71368",
+    "administration": "3117d962186a2745a259afeaefd8cb025b7c2002d0250a503f15c353a37d4beb",
+    "monitor": "0f64bc1fecf9451db8389cfb360107b787d25ca64bd7a7d7229cbfdd3290d4c4",
+    "why": "888bfb915a343d736be481ef2493e69a68409e26db3a09ea652ea917a5802520",
+    "availability": "fd266f606282fc52f8fa5af3af4d8e3f64caca120edb723082889623e8fc1144",
+    "memoryUse": "c1ccc80e5b8c1145ed7f99b4699987b0ce07592afffc92b20018e004fd27f376",
+    "memoryDanger": "f59ea7ae6e31f8f141a8e5d8a984d56f7510482d7ceabdf6c6a0ba1daa1d3a95"
+  },
+  "questionSetSha256": "07e7ec1329037798a734431646d06dbe98d62ff76a0f0d3be938b9865677290f",
+  "questionReview": {
+    "ccu-clopidogrel--comprehensive--principal-action": "Differentiate indirect irreversible P2Y12 inhibition from aspirin, direct reversible P2Y12 inhibition, and GP IIb/IIIa blockade.",
+    "ccu-clopidogrel--comprehensive--drug-class": "Identify the P2Y12 antiplatelet class.",
+    "ccu-clopidogrel--comprehensive--treatment-role": "Choose the complementary antiplatelet for DAPT after ACS and PCI.",
+    "ccu-clopidogrel--comprehensive--clopidogrel_loading_order": "Apply continuation of ordered oral therapy following a documented one-time load. No IV preparation is in scope.",
+    "ccu-clopidogrel--comprehensive--clopidogrel_cyp_activation": "Explain the interaction through reduced CYP2C19-mediated prodrug activation.",
+    "ccu-clopidogrel--comprehensive--bleeding": "Recognize possible significant GI bleeding and prioritize urgent evaluation in a recent stent recipient.",
+    "ccu-clopidogrel--comprehensive--stent_omission": "Identify the time-sensitive risk of stent thrombosis despite the patient being asymptomatic and on aspirin.",
+    "ccu-clopidogrel--comprehensive--ppi_clopidogrel": "Select the less-interacting PPI and reject omeprazole separation and esomeprazole substitution.",
+    "ccu-clopidogrel--comprehensive--antithrombotic_combination": "Recognize access-site bruising and declining hemoglobin as possible additive bleeding during combined treatment."
+  }
+}

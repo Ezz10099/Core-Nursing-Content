@@ -9236,5 +9236,33 @@
       ],
       "correct": 0
     }
+  },
+  "clopidogrel_cyp_activation": {
+    "point": "Connect CYP2C19 inhibition to reduced active metabolite formation.",
+    "anchor": "requires metabolic activation, in part by CYP2C19",
+    "criticalForSafety": false,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "Which change explains why omeprazole or esomeprazole can reduce clopidogrel’s antiplatelet effect?",
+      "choices": [
+        {
+          "text": "Reduced CYP2C19-mediated formation of the active metabolite",
+          "explanation": "Clopidogrel is a prodrug. Inhibiting this conversion reduces the active metabolite available to inhibit platelets."
+        },
+        {
+          "text": "Increased CYP2C19-mediated breakdown of the active metabolite",
+          "explanation": "The interaction is principally inhibition of activation, rather than increased breakdown."
+        },
+        {
+          "text": "Reduced CYP2C19-mediated elimination of the active metabolite",
+          "explanation": "Reduced elimination would not explain reduced formation and diminished effect."
+        },
+        {
+          "text": "Increased CYP2C19-mediated formation of the active metabolite",
+          "explanation": "Increased conversion would have the opposite effect on the available metabolite."
+        }
+      ],
+      "correct": 0
+    }
   }
 }
