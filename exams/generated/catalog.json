@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 66,
-  "sourceContentSha256": "da4dc8a61f3b708322fe8ea35eb51dcc5db3242f5878feff43177bb6dd6d0226",
+  "sourceContentVersion": 67,
+  "sourceContentSha256": "be03fadc31af531e62e06af08ac3fcbdd32a51b6a00de6ef0925457b05d80135",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 333,
-    "questions": 2013,
-    "single-best-answer": 1983,
+    "questions": 2015,
+    "single-best-answer": 1985,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 111,
     "medications": 82,
     "lessons": 29,
-    "mappedLearningPoints": 954
+    "mappedLearningPoints": 955
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -480,7 +480,7 @@
         {
           "id": "ccu-isosorbide-dinitrate--standard",
           "stage": "standard",
-          "questionCount": 6
+          "questionCount": 7
         },
         {
           "id": "ccu-isosorbide-dinitrate--advanced",
@@ -490,7 +490,7 @@
         {
           "id": "ccu-isosorbide-dinitrate--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -2591,7 +2591,7 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "c3876ab3dbd54db525cbed7f6c2baa755f90827c5f2cf3816e8cad72afe0d1b6"
+      "sha256": "0025d764d5eea40cab6f192d313d5419dec3ac2e8a1806b0671cf97dd60916b1"
     },
     {
       "path": "banks-02.json",
@@ -2615,7 +2615,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "4a162ead3b74cf584bab503f1b53e064efee921cece2ec9f211ff4205a63381d"
+      "sha256": "96e2a98bae2e0a84ab2e9a08abb65074719067191abe3123ff398adad1dced74"
     }
   ]
 }
