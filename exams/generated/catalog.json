@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 64,
-  "sourceContentSha256": "8be7294856cdec12632abd28dd0aa3643d4c3feb1d71f5c932f2791ffebda47c",
+  "sourceContentVersion": 65,
+  "sourceContentSha256": "d12edc959fc2b216936ac8c58f238ca2bee02a938d93d24c63ad80b89ff01bc5",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 333,
-    "questions": 2007,
-    "single-best-answer": 1977,
+    "questions": 2011,
+    "single-best-answer": 1981,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 111,
     "medications": 82,
     "lessons": 29,
-    "mappedLearningPoints": 951
+    "mappedLearningPoints": 953
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -388,7 +388,7 @@
         {
           "id": "ccu-warfarin-coumadin--standard",
           "stage": "standard",
-          "questionCount": 7
+          "questionCount": 9
         },
         {
           "id": "ccu-warfarin-coumadin--advanced",
@@ -398,7 +398,7 @@
         {
           "id": "ccu-warfarin-coumadin--7-day",
           "stage": "7-day",
-          "questionCount": 12
+          "questionCount": 14
         }
       ]
     },
@@ -2591,7 +2591,7 @@
   "files": [
     {
       "path": "banks-01.json",
-      "sha256": "502dfeb094853d8a22887721f0632a6d45f30a778b85bd7b31b49d5ee9ac7df7"
+      "sha256": "c3876ab3dbd54db525cbed7f6c2baa755f90827c5f2cf3816e8cad72afe0d1b6"
     },
     {
       "path": "banks-02.json",
@@ -2615,7 +2615,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "b05b6e34f53b3141c1e92c19d79c3f90d486511200284dfc3812e7c5836a6d03"
+      "sha256": "ee2d0e805dc550fc92a076694d53a7968f1f0a3aaf31af830b5382c39ca111dd"
     }
   ]
 }
