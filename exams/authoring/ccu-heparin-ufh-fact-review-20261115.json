@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-heparin-ufh",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the current bedside teaching scope.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "scope": "Core UFH administration and surveillance. Gaza MOH guide and prescribing information support routes and reversal. ASH guidance supports HIT recognition. Local dilution and lab targets are protocol-specific.",
+  "evidenceIds": [
+    "content-v35",
+    "label-ccu-heparin-ufh",
+    "gaza-moh-injectables-2018-heparin-ufh",
+    "ash-hit-guideline"
+  ],
+  "facts": [
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Binds antithrombin and accelerates inhibition of thrombin and factor Xa",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--principal-action",
+          "sha256": "3e6a36f29de37295a0a47fa9470f3793bbf6e2a23644255aa7b41a50a5c5b573"
+        }
+      ],
+      "rationale": "Requires the antithrombin–IIa/Xa relationship."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Therapeutic anticoagulation and selected prophylactic uses",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--treatment-role",
+          "sha256": "76fc8a0d12822039be1e4eab032a4a0f47a8b5b4d511d0805410aa03e727ff82"
+        }
+      ],
+      "rationale": "Selects DVT treatment and VTE prophylaxis as a valid pair."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "May be SC or IV depending on the order",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::lmwh_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--lmwh_route",
+          "sha256": "a81ae1fa035ef06c87ab4222860c3381b04f16fbf9b8a1d76c697d3c3d9bd970"
+        }
+      ],
+      "rationale": "Distinguishes routes for the two specified regimens."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Therapeutic IV infusion requires a controlled pump after dilution to the hospital-standard concentration",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::infusion_precision"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--infusion_precision",
+          "sha256": "545e850fe0593dd0a465350ab9aa547154a6a3bf04a0c4a4de37fec903504349"
+        }
+      ],
+      "rationale": "Requires verifying concentration and linking units/hour to pump rate."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Do not give IM",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::lmwh_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--lmwh_route",
+          "sha256": "a81ae1fa035ef06c87ab4222860c3381b04f16fbf9b8a1d76c697d3c3d9bd970"
+        }
+      ],
+      "rationale": "Rejects IM in either stated regimen."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "do not confuse a treatment vial with a catheter-flush product",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::heparin_infusion"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--heparin_infusion",
+          "sha256": "96bd2d914910c15a477261810f934ce123bee6f681ed6fb8053b9ebb0312c911"
+        }
+      ],
+      "rationale": "Requires checking therapeutic presentation and units/mL."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "report suspected major bleeding promptly",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::bleeding"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--bleeding",
+          "sha256": "43fccdb3d865630deeaf52c182fc94007e1c8ed4831455bd5fe09caee8af7a56"
+        }
+      ],
+      "rationale": "Requires escalation for concealed hemorrhage."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Protamine sulfate reverses UFH",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::heparin_protamine"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--heparin_protamine",
+          "sha256": "e7264077a30b1e472d2cf91100eab1d07d582bd997d04198b0f19e9960a8ef98"
+        }
+      ],
+      "rationale": "Distinguishes the reversal agent from other anticoagulant reversal agents."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "obtain coagulation samples at the times specified by the authorized protocol",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::heparin_samples"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--heparin_samples",
+          "sha256": "eb7b6ab996a4042a6e30b324c26af24da79bd9520f5d49492c17bd22858c1be9"
+        }
+      ],
+      "rationale": "Requires timed coagulation tests and separate platelet trending."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Report an unexpected platelet fall or new thrombosis promptly for HIT assessment",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::hit"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--hit",
+          "sha256": "ca9e137d6d6b5c92a46bc3ec424f8390a91cdd1e7665033f1fc6902a1729027f"
+        }
+      ],
+      "rationale": "Identifies HIT when platelet fall and new clot coexist."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Adjust the infusion only under an authorized protocol or order",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::infusion_precision"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--infusion_precision",
+          "sha256": "545e850fe0593dd0a465350ab9aa547154a6a3bf04a0c4a4de37fec903504349"
+        }
+      ],
+      "rationale": "Requires ordered or protocol-based pump changes."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "controlled delivery and lab follow-up",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-heparin-ufh::heparin_samples"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-heparin-ufh--comprehensive--heparin_samples",
+          "sha256": "eb7b6ab996a4042a6e30b324c26af24da79bd9520f5d49492c17bd22858c1be9"
+        }
+      ],
+      "rationale": "Requires lab surveillance that serves separate clinical purposes."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document heparin 5,000 IU/mL in a 5-mL vial.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Local reference strength/availability is not a treatment target."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "UFH anticoagulant; commonly used as a titrated IV infusion.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Recap of the main teaching fields."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Bleeding and HIT are major safety concerns.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Recap of the main teaching fields."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "administration": "a26fc9fc29eadcbd6ca90d33014dab88e51b190fff61b892a61ae34e9f35162f",
+    "availability": "757685cc466b1cc74e01362adb1b383ec7888e21ef852deeefd9b3df711839f1",
+    "drugclass": "57e0dd738e4da1cd3af2490ab69d1f9e83ad5aaf2f63e7edbf74bb32f0aa57cd",
+    "mechanism": "8378f484efb66b9a8029ddab7de4376cadaf9231a1c1ed192a5757dabdca9fdd",
+    "memoryDanger": "09228045bb3c1509a8082867e2aa2b298b5df5d488d08b1a5c240b6ac34b25ae",
+    "memoryUse": "f5d789872f9ffb5157dd25b33ecbbd963a8cd7409116d41fed95ecc1e61adb43",
+    "monitor": "32bb60a39a15d59e694ceddbd9d7c740bca5e465cd6884a079e5c4d06a1a8048",
+    "use": "12598d1c7ba42aa166fd47effb78766ca5688dec7e7807338643db49656e8235",
+    "why": "3caf01c2f8e42e655385fe177636d57591e54b99ae2017109d415f4b25f70858"
+  },
+  "questionSetSha256": "9d2ebab0cd580b92df50fa22dd9e703bf9a364d8c6335ff470777aa640d3fb66"
+}

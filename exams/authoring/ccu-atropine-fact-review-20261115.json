@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-atropine",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the current bedside teaching scope.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "scope": "Adult bradycardia with a pulse. AHA provides the clinical pathway and dose. The Gaza MOH injectable guide supports IV bolus technique. Current ward protocol and stock are unconfirmed.",
+  "evidenceIds": [
+    "content-v35",
+    "label-ccu-atropine",
+    "aha-bradycardia-2025",
+    "gaza-moh-injectables-2018-atropine"
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "specifically antimuscarinic",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--drug-class",
+          "sha256": "f9cb89f16cf4f7deb3d0e63929d653b6a3b34c8f1795442c78ed7458f0486814"
+        }
+      ],
+      "rationale": "Identifies the relevant drug class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "reducing vagal slowing of the heart",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--principal-action",
+          "sha256": "45c3bd03efac308092e209a2dcca011843fdb5d26c752e03f82279918aad47ca"
+        }
+      ],
+      "rationale": "Distinguishes reduction in vagal effect from common rhythm-drug alternatives."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "reduces vagal slowing of the heart",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--principal-action",
+          "sha256": "45c3bd03efac308092e209a2dcca011843fdb5d26c752e03f82279918aad47ca"
+        }
+      ],
+      "rationale": "Repeats the tested mechanism."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Symptomatic bradycardia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--treatment-role",
+          "sha256": "6d551e8618096ce5adc6104765cdab156bb77e186e8a02a81e8adca31c2a73a5"
+        }
+      ],
+      "rationale": "Requires identifying bradycardia with signs of compromised perfusion."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "1 mg by IV bolus",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::atropine_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--atropine_route",
+          "sha256": "01aa50b0894b3e6afad9b447f8e40b6fd9166eeaf265e8d8d5821917c6d1cff8"
+        }
+      ],
+      "rationale": "Requires correct dose and administration method."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Repeat every 3–5 minutes if indicated, up to a total of 3 mg",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::atropine_repeat_limit"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--atropine_repeat_limit",
+          "sha256": "2089c766b66a3a3adbbca6bc49306f92405952a21848fe0748614b7d4108bd88"
+        }
+      ],
+      "rationale": "Options vary interval and ceiling independently."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Recheck heart rate, rhythm, blood pressure and perfusion",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::rhythm_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--rhythm_response",
+          "sha256": "c385a12ca16d0c2e44deb476ab3b9164ece7a661a41c9d5127a1d6bb4146d881"
+        }
+      ],
+      "rationale": "Requires clinical reassessment alongside ECG."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Dry mouth and urinary retention",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::anticholinergic"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--anticholinergic",
+          "sha256": "eb6a6e2002a927b125e9ea131fb5ad5a1d1f10efe0a7fed3e08e01a834e3e699"
+        }
+      ],
+      "rationale": "Both are tested adverse effects."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "escalate promptly for transcutaneous pacing and/or a dopamine or epinephrine infusion",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-atropine::atropine_failure"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-atropine--comprehensive--atropine_failure",
+          "sha256": "a73a7b0e5c628075f2a1e5fe7a6ca191972b47c8ead3f45badb319a50db96841"
+        }
+      ],
+      "rationale": "Distinguishes prompt pacing or vasoactive support from delaying escalation."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document 1-mg ampoules.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Local reference strength/availability is not a treatment target."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Antimuscarinic used in symptomatic bradycardia pathways.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Recap of the main teaching fields."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Persistent instability needs escalation beyond atropine.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "rationale": "Recap of the main teaching fields."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "administration": "cf596357d404d5adb436c8651a3eac6b47f611da9a8210438b36214f01ab1b6b",
+    "availability": "1a53549c3ef622aac198662574930f6a8fe5cae6e38c24ec98a3c11517c47cb3",
+    "drugclass": "6894df62672ae07d500a09628ae51ca73cda4c640a7dbb12ceb1f7609cf18f57",
+    "mechanism": "08d856571d3adf13db6165d6baf6be137d9593fa6548fba0be85d846c381097c",
+    "memoryDanger": "cb678a6f3c89421aa8f3455b692fb67d93bfdef59c06356a28417da19576f171",
+    "memoryUse": "3c04a88cc1bc557fd3ea6bda68a4d9759a82a8ef33b850b510637f75f8364d77",
+    "monitor": "0d6fd55556583a0a7024daf084f27123ae6d103a850df9d04e939912690976a5",
+    "use": "7bcfe8b9c4a24c651b2dd000700199ab8050c56413aa9ad66c183d93114d280b",
+    "why": "d1c920882e0f2b4577da4d94f55c206b417dcd38fe0817a3b7c498b1df20a3d6"
+  },
+  "questionSetSha256": "e96d7e0ae2fcc7ed11bcfeb12d3c1a6159f1df95d08d426c81b4293c3090e591"
+}
