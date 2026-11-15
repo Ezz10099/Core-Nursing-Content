@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "bankVersion": 4,
   "status": "authoring draft",
-  "sourceContentVersion": 62,
-  "sourceContentSha256": "cfcd79894405f72f67a6724e6a0ea0366ccf7ce6471f59caf517279d1b6f36ad",
+  "sourceContentVersion": 63,
+  "sourceContentSha256": "26444222a3d8b1cdbeaa60bf970c8038e9a1af6b236baca27ebff1a546ce8af6",
   "generationInputs": [
     "content.json",
     "exams/authoring/medication-profiles.json",
@@ -16,14 +16,14 @@
   ],
   "counts": {
     "exams": 333,
-    "questions": 2001,
-    "single-best-answer": 1971,
+    "questions": 2003,
+    "single-best-answer": 1973,
     "numeric-entry": 22,
     "short-answer": 8,
     "materials": 111,
     "medications": 82,
     "lessons": 29,
-    "mappedLearningPoints": 948
+    "mappedLearningPoints": 949
   },
   "difficulty": {
     "standard": "recognition, recall, and core interpretation",
@@ -595,7 +595,7 @@
         {
           "id": "ccu-clopidogrel--standard",
           "stage": "standard",
-          "questionCount": 4
+          "questionCount": 5
         },
         {
           "id": "ccu-clopidogrel--advanced",
@@ -605,7 +605,7 @@
         {
           "id": "ccu-clopidogrel--7-day",
           "stage": "7-day",
-          "questionCount": 8
+          "questionCount": 9
         }
       ]
     },
@@ -2595,7 +2595,7 @@
     },
     {
       "path": "banks-02.json",
-      "sha256": "394d45e7247d4b2f496207f54ebdbde024453736de9ba5b476098437b2dcf2c1"
+      "sha256": "593d6cf78f6e4dbfb61bbe257c8a1626ffe3a655dffdea2900af71b36351a8cd"
     },
     {
       "path": "banks-03.json",
@@ -2615,7 +2615,7 @@
     },
     {
       "path": "coverage.json",
-      "sha256": "4912d3293390bd6d4ba2ba3473e098cc2bc6226756a2005836efb510c53247e6"
+      "sha256": "a16e6f13133854adc239e7cfbc77e4e80f86890b9ffb54b0551e7898ce062de3"
     }
   ]
 }

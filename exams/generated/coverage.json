@@ -3150,6 +3150,19 @@
       ]
     },
     {
+      "id": "ccu-clopidogrel::clopidogrel_cyp_activation",
+      "itemId": "ccu-clopidogrel",
+      "point": "Connect CYP2C19 inhibition to reduced active metabolite formation.",
+      "questionIds": [
+        "ccu-clopidogrel--standard--clopidogrel_cyp_activation",
+        "ccu-clopidogrel--7-day--clopidogrel_cyp_activation"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-clopidogrel::bleeding",
       "itemId": "ccu-clopidogrel",
       "point": "Recognize important bleeding during antithrombotic treatment.",
@@ -14167,10 +14180,12 @@
         ],
         "why": [
           "ccu-clopidogrel--standard--principal-action",
+          "ccu-clopidogrel--standard--clopidogrel_cyp_activation",
           "ccu-clopidogrel--advanced--stent_omission",
           "ccu-clopidogrel--advanced--ppi_clopidogrel",
           "ccu-clopidogrel--advanced--antithrombotic_combination",
           "ccu-clopidogrel--7-day--principal-action",
+          "ccu-clopidogrel--7-day--clopidogrel_cyp_activation",
           "ccu-clopidogrel--7-day--stent_omission",
           "ccu-clopidogrel--7-day--ppi_clopidogrel",
           "ccu-clopidogrel--7-day--antithrombotic_combination"
