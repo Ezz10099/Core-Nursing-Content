@@ -9264,5 +9264,61 @@
       ],
       "correct": 0
     }
+  },
+  "enoxaparin_abdominal_strength": {
+    "point": "Select the labeled dose and alternate the deep abdominal SC site.",
+    "anchor": "deep SC at alternating abdominal sites",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "The order is for the full contents of a 60-mg prefilled enoxaparin syringe by the abdominal route. Yesterday’s injection was on the left. Which preparation and site match today’s order?",
+      "choices": [
+        {
+          "text": "A 60-mg syringe, deep subcutaneous injection on the right abdomen",
+          "explanation": "The full syringe matches the prescribed dose and the opposite side rotates the injection site."
+        },
+        {
+          "text": "A 60-mg syringe, deep subcutaneous injection on the same left site",
+          "explanation": "The strength matches. Rotate abdominal sites rather than repeating the same site."
+        },
+        {
+          "text": "A 40-mg syringe, deep subcutaneous injection on the right abdomen",
+          "explanation": "The site is appropriate, but the full syringe would supply only 40 mg."
+        },
+        {
+          "text": "A 60-mg syringe, intradermal injection on the right abdomen",
+          "explanation": "The dose and side match, but the prescribed abdominal route requires deep SC injection."
+        }
+      ],
+      "correct": 0
+    }
+  },
+  "enoxaparin_stemi_iv": {
+    "point": "Distinguish the selected STEMI IV exception from standard SC regimens.",
+    "anchor": "Some STEMI regimens include an ordered initial IV bolus",
+    "criticalForSafety": true,
+    "standard": {
+      "format": "single-best-answer",
+      "stem": "During medication reconciliation, in which adult indication can an enoxaparin regimen include an ordered initial intravenous bolus as well as subcutaneous dosing?",
+      "choices": [
+        {
+          "text": "Selected acute STEMI regimens",
+          "explanation": "Some indication- and age-specific STEMI regimens start with an ordered IV bolus and SC dosing."
+        },
+        {
+          "text": "Routine postoperative DVT prophylaxis",
+          "explanation": "Routine prophylaxis uses SC dosing without an initial IV bolus."
+        },
+        {
+          "text": "Standard treatment of acute DVT without ACS",
+          "explanation": "Treatment uses an indication-specific SC regimen. An initial IV bolus is not the usual enoxaparin approach."
+        },
+        {
+          "text": "Unstable angina or NSTEMI managed medically",
+          "explanation": "The standard enoxaparin regimen for this context uses SC dosing, distinct from the STEMI exception."
+        }
+      ],
+      "correct": 0
+    }
   }
 }

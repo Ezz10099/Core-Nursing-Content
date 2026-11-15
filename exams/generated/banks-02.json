@@ -975,13 +975,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Inhibits serotonin/norepinephrine reuptake",
-                  "explanation": "This is a different pharmacological action. The drug’s action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
+                  "text": "Enhances antithrombin activity, predominantly against Xa",
+                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 },
                 {
                   "id": "D",
-                  "text": "Enhances antithrombin activity, predominantly against Xa",
-                  "explanation": "LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
+                  "text": "Inhibits serotonin/norepinephrine reuptake",
+                  "explanation": "This is a different pharmacological action. The drug’s action is: LMWH activity is predominantly anti-Xa; different products are not dose-for-dose interchangeable."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -1014,7 +1014,7 @@
               "learningPointIds": [
                 "ccu-enoxaparin::principal-action"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -1022,13 +1022,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "LMWH",
-                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "Antiplatelet",
+                  "explanation": "The medicine is classified as: Low-molecular-weight heparin (LMWH) anticoagulant."
                 },
                 {
                   "id": "B",
-                  "text": "Antiplatelet",
-                  "explanation": "The medicine is classified as: Low-molecular-weight heparin (LMWH) anticoagulant."
+                  "text": "LMWH",
+                  "explanation": "Low-molecular-weight heparin (LMWH) anticoagulant."
                 },
                 {
                   "id": "C",
@@ -1057,7 +1057,7 @@
               "learningPointIds": [
                 "ccu-enoxaparin::drug-class"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -1075,13 +1075,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Prescribed anticoagulation in ACS or thromboembolic disease",
-                  "explanation": "This is a clinical use of the medicine: Prevention or treatment of venous thromboembolism and anticoagulation in selected ACS regimens. Follow the indication-specific order and protocol. Some STEMI regimens include an ordered initial IV bolus."
+                  "text": "Suppression of bacterial protein synthesis",
+                  "explanation": "This is a different treatment role."
                 },
                 {
                   "id": "D",
-                  "text": "Suppression of bacterial protein synthesis",
-                  "explanation": "This is a different treatment role."
+                  "text": "Prescribed anticoagulation in ACS or thromboembolic disease",
+                  "explanation": "This is a clinical use of the medicine: Prevention or treatment of venous thromboembolism and anticoagulation in selected ACS regimens. Follow the indication-specific order and protocol. Some STEMI regimens include an ordered initial IV bolus."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -1107,20 +1107,20 @@
               "learningPointIds": [
                 "ccu-enoxaparin::treatment-role"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "During CLEXANE / CLEXAN — enoxaparin therapy, which blood-count change requires particular review?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "A significant platelet fall",
-                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
+                  "text": "An isolated normal red-cell index",
+                  "explanation": "Red-cell size does not establish platelet safety."
                 },
                 {
                   "id": "B",
-                  "text": "An isolated normal red-cell index",
-                  "explanation": "Red-cell size does not establish platelet safety."
+                  "text": "A significant platelet fall",
+                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
                 },
                 {
                   "id": "C",
@@ -1150,20 +1150,20 @@
               "learningPointIds": [
                 "ccu-enoxaparin::platelets"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for CLEXANE / CLEXAN — enoxaparin?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "TSH trend and free thyroxine",
-                  "explanation": "These assess thyroid function rather than renal elimination."
+                  "text": "Creatinine trend and estimated GFR",
+                  "explanation": "These inform renal clearance and regimen review."
                 },
                 {
                   "id": "B",
-                  "text": "Creatinine trend and estimated GFR",
-                  "explanation": "These inform renal clearance and regimen review."
+                  "text": "TSH trend and free thyroxine",
+                  "explanation": "These assess thyroid function rather than renal elimination."
                 },
                 {
                   "id": "C",
@@ -1207,20 +1207,20 @@
               "learningPointIds": [
                 "ccu-enoxaparin::renal_dose"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "stem": "Which technique is appropriate for a standard manufacturer prefilled enoxaparin syringe?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Expel the air bubble; do not rub afterward",
-                  "explanation": "Expelling the bubble conflicts with the stated standard syringe technique."
+                  "text": "Retain the air bubble; do not rub afterward",
+                  "explanation": "This matches the stated prefilled-syringe instructions."
                 },
                 {
                   "id": "B",
-                  "text": "Retain the air bubble; do not rub afterward",
-                  "explanation": "This matches the stated prefilled-syringe instructions."
+                  "text": "Expel the air bubble; do not rub afterward",
+                  "explanation": "Expelling the bubble conflicts with the stated standard syringe technique."
                 },
                 {
                   "id": "C",
@@ -1250,7 +1250,7 @@
               "learningPointIds": [
                 "ccu-enoxaparin::enoxaparin_syringe"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "short-answer",
@@ -1302,13 +1302,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Local SC injection-site hematoma.",
-                  "explanation": "A local abdominal injection reaction does not explain this neurological pattern."
+                  "text": "Possible spinal or epidural hematoma.",
+                  "explanation": "New back pain with progressive motor deficit requires immediate evaluation for neuraxial bleeding."
                 },
                 {
                   "id": "D",
-                  "text": "Possible spinal or epidural hematoma.",
-                  "explanation": "New back pain with progressive motor deficit requires immediate evaluation for neuraxial bleeding."
+                  "text": "Local SC injection-site hematoma.",
+                  "explanation": "A local abdominal injection reaction does not explain this neurological pattern."
                 }
               ],
               "point": "New neurological symptoms after a neuraxial procedure warrant emergency evaluation for spinal hematoma.",
@@ -1327,10 +1327,96 @@
               "learningPointIds": [
                 "ccu-enoxaparin::enoxaparin_neuraxial_red_flag"
               ],
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "The order is for the full contents of a 60-mg prefilled enoxaparin syringe by the abdominal route. Yesterday’s injection was on the left. Which preparation and site match today’s order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A 60-mg syringe, intradermal injection on the right abdomen",
+                  "explanation": "The dose and side match, but the prescribed abdominal route requires deep SC injection."
+                },
+                {
+                  "id": "B",
+                  "text": "A 60-mg syringe, deep subcutaneous injection on the right abdomen",
+                  "explanation": "The full syringe matches the prescribed dose and the opposite side rotates the injection site."
+                },
+                {
+                  "id": "C",
+                  "text": "A 40-mg syringe, deep subcutaneous injection on the right abdomen",
+                  "explanation": "The site is appropriate, but the full syringe would supply only 40 mg."
+                },
+                {
+                  "id": "D",
+                  "text": "A 60-mg syringe, deep subcutaneous injection on the same left site",
+                  "explanation": "The strength matches. Rotate abdominal sites rather than repeating the same site."
+                }
+              ],
+              "point": "Select the labeled dose and alternate the deep abdominal SC site.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "administration",
+                  "textSha256": "0dcf11b3931ec87529b14cad7bd7e69052cb49e592d994cb7d2d2f75a7cb4a98"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enoxaparin--standard--enoxaparin_abdominal_strength",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enoxaparin::enoxaparin_abdominal_strength"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During medication reconciliation, in which adult indication can an enoxaparin regimen include an ordered initial intravenous bolus as well as subcutaneous dosing?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Unstable angina or NSTEMI managed medically",
+                  "explanation": "The standard enoxaparin regimen for this context uses SC dosing, distinct from the STEMI exception."
+                },
+                {
+                  "id": "B",
+                  "text": "Routine postoperative DVT prophylaxis",
+                  "explanation": "Routine prophylaxis uses SC dosing without an initial IV bolus."
+                },
+                {
+                  "id": "C",
+                  "text": "Standard treatment of acute DVT without ACS",
+                  "explanation": "Treatment uses an indication-specific SC regimen. An initial IV bolus is not the usual enoxaparin approach."
+                },
+                {
+                  "id": "D",
+                  "text": "Selected acute STEMI regimens",
+                  "explanation": "Some indication- and age-specific STEMI regimens start with an ordered IV bolus and SC dosing."
+                }
+              ],
+              "point": "Distinguish the selected STEMI IV exception from standard SC regimens.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "use",
+                  "textSha256": "2ee1807d531a2fcea7eca5287b0dba3434ca7a0acef454413e1e9875d7c71532"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enoxaparin--standard--enoxaparin_stemi_iv",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enoxaparin::enoxaparin_stemi_iv"
+              ],
               "answerKey": "D"
             }
           ],
-          "questionCount": 8
+          "questionCount": 10
         },
         {
           "id": "ccu-enoxaparin--advanced",
@@ -1711,13 +1797,13 @@
                 },
                 {
                   "id": "B",
-                  "text": "An unchanged normal neutrophil count",
-                  "explanation": "This does not assess the heparin-related platelet change."
+                  "text": "A significant platelet fall",
+                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
                 },
                 {
                   "id": "C",
-                  "text": "A significant platelet fall",
-                  "explanation": "Thrombocytopenia during heparin-family exposure can signal an important adverse reaction."
+                  "text": "An unchanged normal neutrophil count",
+                  "explanation": "This does not assess the heparin-related platelet change."
                 },
                 {
                   "id": "D",
@@ -1743,7 +1829,7 @@
                 "ccu-enoxaparin::platelets"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--standard--platelets",
-              "answerKey": "C"
+              "answerKey": "B"
             },
             {
               "stem": "Which result best informs assessment of accumulation risk and possible regimen adjustment for CLEXANE / CLEXAN — enoxaparin?",
@@ -1927,27 +2013,115 @@
               "answerKey": "B"
             },
             {
+              "format": "single-best-answer",
+              "stem": "The order is for the full contents of a 60-mg prefilled enoxaparin syringe by the abdominal route. Yesterday’s injection was on the left. Which preparation and site match today’s order?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "A 60-mg syringe, deep subcutaneous injection on the right abdomen",
+                  "explanation": "The full syringe matches the prescribed dose and the opposite side rotates the injection site."
+                },
+                {
+                  "id": "B",
+                  "text": "A 60-mg syringe, deep subcutaneous injection on the same left site",
+                  "explanation": "The strength matches. Rotate abdominal sites rather than repeating the same site."
+                },
+                {
+                  "id": "C",
+                  "text": "A 60-mg syringe, intradermal injection on the right abdomen",
+                  "explanation": "The dose and side match, but the prescribed abdominal route requires deep SC injection."
+                },
+                {
+                  "id": "D",
+                  "text": "A 40-mg syringe, deep subcutaneous injection on the right abdomen",
+                  "explanation": "The site is appropriate, but the full syringe would supply only 40 mg."
+                }
+              ],
+              "point": "Select the labeled dose and alternate the deep abdominal SC site.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "administration",
+                  "textSha256": "0dcf11b3931ec87529b14cad7bd7e69052cb49e592d994cb7d2d2f75a7cb4a98"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enoxaparin--7-day--enoxaparin_abdominal_strength",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enoxaparin::enoxaparin_abdominal_strength"
+              ],
+              "reusedFromQuestionId": "ccu-enoxaparin--standard--enoxaparin_abdominal_strength",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "During medication reconciliation, in which adult indication can an enoxaparin regimen include an ordered initial intravenous bolus as well as subcutaneous dosing?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Routine postoperative DVT prophylaxis",
+                  "explanation": "Routine prophylaxis uses SC dosing without an initial IV bolus."
+                },
+                {
+                  "id": "B",
+                  "text": "Standard treatment of acute DVT without ACS",
+                  "explanation": "Treatment uses an indication-specific SC regimen. An initial IV bolus is not the usual enoxaparin approach."
+                },
+                {
+                  "id": "C",
+                  "text": "Selected acute STEMI regimens",
+                  "explanation": "Some indication- and age-specific STEMI regimens start with an ordered IV bolus and SC dosing."
+                },
+                {
+                  "id": "D",
+                  "text": "Unstable angina or NSTEMI managed medically",
+                  "explanation": "The standard enoxaparin regimen for this context uses SC dosing, distinct from the STEMI exception."
+                }
+              ],
+              "point": "Distinguish the selected STEMI IV exception from standard SC regimens.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-enoxaparin",
+                  "field": "use",
+                  "textSha256": "2ee1807d531a2fcea7eca5287b0dba3434ca7a0acef454413e1e9875d7c71532"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-enoxaparin--7-day--enoxaparin_stemi_iv",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-enoxaparin::enoxaparin_stemi_iv"
+              ],
+              "reusedFromQuestionId": "ccu-enoxaparin--standard--enoxaparin_stemi_iv",
+              "answerKey": "C"
+            },
+            {
               "stem": "During CLEXANE / CLEXAN — enoxaparin therapy, a patient has new melena, pallor, dizziness, and a BP fall. Which concern best unifies the findings?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "Clinically important blood loss",
+                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
+                },
+                {
+                  "id": "B",
                   "text": "A therapeutic reduction in coagulation alone",
                   "explanation": "Bleeding with circulatory symptoms is more than evidence of the intended drug action."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Uncomplicated postural intolerance",
                   "explanation": "This does not account for the new evidence of GI bleeding."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Isolated vasodilator headache",
                   "explanation": "This does not explain melena and the systemic blood-loss pattern."
-                },
-                {
-                  "id": "D",
-                  "text": "Clinically important blood loss",
-                  "explanation": "The stool finding and hemodynamic change suggest bleeding with impaired perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -1982,30 +2156,30 @@
                 "ccu-enoxaparin::bleeding"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--advanced--bleeding",
-              "answerKey": "D"
+              "answerKey": "A"
             },
             {
               "stem": "A patient receiving enoxaparin is being prepared for an invasive procedure. Which medication detail is especially important to communicate?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Time and amount of the most recent dose",
-                  "explanation": "The team needs recent anticoagulant exposure when planning procedural bleeding safety."
-                },
-                {
-                  "id": "B",
                   "text": "Time and route of an old discontinued antibiotic",
                   "explanation": "That does not establish current anticoagulant-related bleeding risk."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Time and amount of the last meal alone",
                   "explanation": "This does not replace anticoagulant exposure information."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Time and duration of the last physiotherapy session",
                   "explanation": "This is not the medication timing required for the procedure."
+                },
+                {
+                  "id": "D",
+                  "text": "Time and amount of the most recent dose",
+                  "explanation": "The team needs recent anticoagulant exposure when planning procedural bleeding safety."
                 }
               ],
               "format": "single-best-answer",
@@ -2026,10 +2200,10 @@
                 "ccu-enoxaparin::procedure_timing"
               ],
               "reusedFromQuestionId": "ccu-enoxaparin--advanced--procedure_timing",
-              "answerKey": "A"
+              "answerKey": "D"
             }
           ],
-          "questionCount": 10
+          "questionCount": 12
         }
       ]
     },
