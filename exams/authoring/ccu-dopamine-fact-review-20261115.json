@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ccu-dopamine",
+  "reviewDate": "2026-11-15",
+  "status": "Completed author review of the adult bedside card and its scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://site.moh.ps/Content/app/durg.pdf",
+      "section": "Palestinian Essential Medicines List 2022, M-125-0015",
+      "scope": "200-mg ampoule listing."
+    },
+    {
+      "url": "https://www.moh.gov.ps/portal/wp-content/uploads/2019/01/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D8%B9%D8%B7%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA-5.pdf",
+      "section": "Gaza MOH injectable medicines guide, p. 40",
+      "scope": "Dilution and controlled continuous IV delivery. Product-specific concentrations and present facility policy are separate."
+    },
+    {
+      "url": "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-ACLS-Bradycardia-LngDscrp-250725-Ed.pdf",
+      "section": "2025 AHA Adult Bradycardia Algorithm",
+      "scope": "Dopamine is an option after atropine is ineffective in adult bradycardia with compromise. The cited weight-based range is specific to this pathway. Titrate to response and taper slowly."
+    },
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?audience=professional&setid=1f306ad2-3606-4525-5a8a-ce78f426c1a2",
+      "section": "Dopamine HCl concentrate label, §§2, 5 and 12",
+      "scope": "Dilution, large vein, pump, alkaline inactivation, arrhythmia, tissue ischemia, withdrawal hypotension and dose-dependent receptor activity. Labeled shock dosing is distinct from the AHA bradycardia algorithm."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Catecholamine inotrope/vasopressor with dose-dependent effects.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--drug-class",
+          "sha256": "a43460709305f2c23be1e500c84610f0eaa01df51ee2ec57d8ffeca59f70e114"
+        }
+      ],
+      "rationale": "Select the catecholamine class with both hemodynamic roles."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Stimulates dopaminergic and adrenergic receptors in a dose-dependent pattern.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--principal-action",
+          "sha256": "fdfbc3638948b8587796aad2144711f71ddab6d5edc227904e3d5cd0091d432b"
+        }
+      ],
+      "rationale": "Distinguish dose-dependent dopaminergic and adrenergic activation from blockade or muscarinic action."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "Selected hemodynamic support.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--drug-class",
+          "sha256": "a43460709305f2c23be1e500c84610f0eaa01df51ee2ec57d8ffeca59f70e114"
+        }
+      ],
+      "rationale": "Identify the inotropic and pressor roles. The card does not teach a general first-line indication for shock."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "dopamine infusion is one option if atropine is ineffective.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--treatment-role",
+          "sha256": "32fe1484e970dfcc1a4134fad3222e2162e824777031985b07af7ff504a5a84d"
+        }
+      ],
+      "rationale": "Choose the listed infusion after atropine under the AHA adult bradycardia algorithm."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "5–20 mcg/kg/min",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::dopamine_bradycardia_units"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--dopamine_bradycardia_units",
+          "sha256": "8463919c7ce294dc01fe1373f26dfb19e0508fc44a23cb5ef57585a9b7d243c4"
+        }
+      ],
+      "rationale": "Distinguish the pathway’s weight-based per-minute regimen from unit errors and the epinephrine regimen."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "titrated to response with a gradual taper",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::dopamine_bradycardia_taper"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--dopamine_bradycardia_taper",
+          "sha256": "f9f945fb137e073feea42a57b4edf96ad050f4effda5c7e7c4dac963cdcbc33d"
+        }
+      ],
+      "rationale": "Identify loss of circulatory support after withdrawal as the reason to taper and monitor the response."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Dilute the concentrate and infuse continuously IV by pump through a large vein",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::infusion_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--infusion_route",
+          "sha256": "e9d30015b73d4fc3cd1da9cf752e3559f8a3af706336608c43074461ce00a9a4"
+        }
+      ],
+      "rationale": "Choose correct preparation, controlled delivery, and large-vein access."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Avoid simultaneous administration with sodium bicarbonate or other alkaline solutions through the same infusion set.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::dopamine_bicarbonate"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--dopamine_bicarbonate",
+          "sha256": "099fbe18ad0c726f2af1351995d265e72f935af319249f87253cd9f4f35fad51"
+        }
+      ],
+      "rationale": "Recognize alkaline inactivation and reject simultaneous infusion through shared tubing."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "For an order in micrograms/kg/min, multiply by weight in kg and by 60 to obtain micrograms/hour, then divide by concentration in micrograms/mL.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::infusion_precision"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--infusion_precision",
+          "sha256": "cbe3b0caf566157c024c6733e30666b33754a3c8e34f7cad82f00d33e9163548"
+        }
+      ],
+      "rationale": "Apply weight, conversion from minutes to hours, and verified concentration."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Monitor HR, rhythm and BP continuously.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::dopamine_continuous_monitor"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--dopamine_continuous_monitor",
+          "sha256": "ad9421419711ddb41bc5f4d9c6f7bcad30b86d23e4992930d50675c2b5360488"
+        }
+      ],
+      "rationale": "Distinguish continuous rhythm, rate, and pressure assessment from supplementary checks."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Follow urine output and peripheral perfusion.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::perfusion"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--perfusion",
+          "sha256": "67958946fd6f8859e84d0cfaf158305a5ce2249f33e24620f3273a7d17eda4a7"
+        }
+      ],
+      "rationale": "Assess both perfusion indicators independently of pressure."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Assess for new tachyarrhythmia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::tachyarrhythmia"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--tachyarrhythmia",
+          "sha256": "6052b39c5ccb4edd74b502023262c400b0f107db758613c53371323bedc6aa25"
+        }
+      ],
+      "rationale": "Distinguish ventricular ectopy from the intended chronotropic effect."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "ischemia, including distal coolness or discoloration away from the infusion site.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::dopamine_distal_ischemia"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--dopamine_distal_ischemia",
+          "sha256": "76c0877ca0a7f482b8268a19b7bfcf0393bb591acf7ec4134445e0044020c188"
+        }
+      ],
+      "rationale": "Identify distant ischemia as a systemic risk even when the IV site is normal."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Inspect the IV frequently for extravasation and escalate promptly if suspected.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::pressor_site"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--pressor_site",
+          "sha256": "900acc1a251eb001cecc52d52b0d8e7d7dc4cabc51b98d3b60a28bd1a33004ce"
+        }
+      ],
+      "rationale": "Recognize the focal findings that warrant prompt escalation."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Effects change with dose",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--principal-action",
+          "sha256": "fdfbc3638948b8587796aad2144711f71ddab6d5edc227904e3d5cd0091d432b"
+        }
+      ],
+      "rationale": "Identify the dose-dependent receptor pattern."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "excessive exposure can become pro-arrhythmic or strongly vasoconstrictive.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ccu-dopamine::dopamine_distal_ischemia"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ccu-dopamine--comprehensive--dopamine_distal_ischemia",
+          "sha256": "76c0877ca0a7f482b8268a19b7bfcf0393bb591acf7ec4134445e0044020c188"
+        }
+      ],
+      "rationale": "Identify systemic vasoconstriction. Proarrhythmia is assessed separately by the ventricular-ectopy question."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "YES. Palestinian essential-medicine data document 200-mg ampoules.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "The Palestinian formulary documents a 200-mg ampoule. Current bedside stock or the exact product still requires verification."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Dose-dependent catecholamine for selected hemodynamic/bradycardia support.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates class and treatment role."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Watch for tachyarrhythmia, peripheral ischemia and extravasation during continuous infusion.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Duplicates rhythm, distal perfusion, and site surveillance objectives."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "41d64d1d95301c68a5cbdf42e1bbdab59ac2f5fa932d0e69df0d5ef34ee553f5",
+    "mechanism": "738edd8d7f5594934abd48bf59a58ae4647ba346fb6cd7e2e905b39e3cc1f97f",
+    "use": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5",
+    "administration": "1bf6fd56c7297ca6aa37b4a2e95cca7a41f345e7bc4269f4947fee5ff93adcec",
+    "monitor": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7",
+    "why": "c24435714248e7be9ec1bdf20f643b3f008bcaa0858017dafe67522f4843196c",
+    "availability": "0326c121853502ad0c21ad311d3db3f78a4180f65334ff03df5cbd4856d390d9",
+    "memoryUse": "a71865ac3788af3b4b4d4e1981bb5d0cd202d950e1e5beee8ec49e88cd7711b6",
+    "memoryDanger": "cba13ed747b3871ba908e3c5a0c0f82fa50ee4925649c0bc7146bd2d66704e6a"
+  },
+  "questionSetSha256": "b0b41e7a5cfadda64047fcbdd014f989db0484d2a139298714477827d0a13c2f",
+  "questionReview": {
+    "ccu-dopamine--comprehensive--principal-action": "Distinguish dose-dependent dopaminergic and adrenergic activation from blockade or muscarinic action.",
+    "ccu-dopamine--comprehensive--drug-class": "Select the catecholamine class with both hemodynamic roles.",
+    "ccu-dopamine--comprehensive--treatment-role": "Choose the listed infusion after atropine under the AHA adult bradycardia algorithm.",
+    "ccu-dopamine--comprehensive--tachyarrhythmia": "Distinguish ventricular ectopy from the intended chronotropic effect.",
+    "ccu-dopamine--comprehensive--dopamine_bicarbonate": "Recognize alkaline inactivation and reject simultaneous infusion through shared tubing.",
+    "ccu-dopamine--comprehensive--infusion_route": "Choose correct preparation, controlled delivery, and large-vein access.",
+    "ccu-dopamine--comprehensive--dopamine_bradycardia_units": "Distinguish the pathway’s weight-based per-minute regimen from unit errors and the epinephrine regimen.",
+    "ccu-dopamine--comprehensive--dopamine_distal_ischemia": "Identify distant ischemia as a systemic risk even when the IV site is normal.",
+    "ccu-dopamine--comprehensive--dopamine_continuous_monitor": "Distinguish continuous rhythm, rate, and pressure assessment from supplementary checks.",
+    "ccu-dopamine--comprehensive--dopamine_bradycardia_taper": "Identify loss of circulatory support after withdrawal as the reason to taper and monitor the response.",
+    "ccu-dopamine--comprehensive--infusion_precision": "Apply weight, conversion from minutes to hours, and verified concentration.",
+    "ccu-dopamine--comprehensive--perfusion": "Assess both perfusion indicators independently of pressure.",
+    "ccu-dopamine--comprehensive--pressor_site": "Recognize the focal findings that warrant prompt escalation."
+  }
+}

@@ -4845,6 +4845,32 @@
       ]
     },
     {
+      "id": "ccu-dopamine::dopamine_continuous_monitor",
+      "itemId": "ccu-dopamine",
+      "point": "Distinguish continuous HR, rhythm and BP from supplementary perfusion checks.",
+      "questionIds": [
+        "ccu-dopamine--standard--dopamine_continuous_monitor",
+        "ccu-dopamine--7-day--dopamine_continuous_monitor"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
+      "id": "ccu-dopamine::dopamine_bradycardia_taper",
+      "itemId": "ccu-dopamine",
+      "point": "Connect a gradual taper with detection of recurrent bradycardia or hypotension.",
+      "questionIds": [
+        "ccu-dopamine--standard--dopamine_bradycardia_taper",
+        "ccu-dopamine--7-day--dopamine_bradycardia_taper"
+      ],
+      "stages": [
+        "standard",
+        "7-day"
+      ]
+    },
+    {
       "id": "ccu-dopamine::infusion_precision",
       "itemId": "ccu-dopamine",
       "point": "Infusion delivery depends on ordered dose and prepared concentration.",
@@ -15025,9 +15051,11 @@
         "use": [
           "ccu-dopamine--standard--treatment-role",
           "ccu-dopamine--standard--dopamine_bradycardia_units",
+          "ccu-dopamine--standard--dopamine_bradycardia_taper",
           "ccu-dopamine--advanced--infusion_precision",
           "ccu-dopamine--7-day--treatment-role",
           "ccu-dopamine--7-day--dopamine_bradycardia_units",
+          "ccu-dopamine--7-day--dopamine_bradycardia_taper",
           "ccu-dopamine--7-day--infusion_precision"
         ],
         "memoryUse": [
@@ -15038,12 +15066,14 @@
           "ccu-dopamine--standard--tachyarrhythmia",
           "ccu-dopamine--standard--infusion_route",
           "ccu-dopamine--standard--dopamine_distal_ischemia",
+          "ccu-dopamine--standard--dopamine_continuous_monitor",
           "ccu-dopamine--advanced--infusion_precision",
           "ccu-dopamine--advanced--perfusion",
           "ccu-dopamine--advanced--pressor_site",
           "ccu-dopamine--7-day--tachyarrhythmia",
           "ccu-dopamine--7-day--infusion_route",
           "ccu-dopamine--7-day--dopamine_distal_ischemia",
+          "ccu-dopamine--7-day--dopamine_continuous_monitor",
           "ccu-dopamine--7-day--infusion_precision",
           "ccu-dopamine--7-day--perfusion",
           "ccu-dopamine--7-day--pressor_site"

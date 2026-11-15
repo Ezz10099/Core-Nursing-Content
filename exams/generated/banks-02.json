@@ -19206,18 +19206,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Dose-dependent dopaminergic and adrenergic effects",
-                  "explanation": "Dopamine can provide selected hemodynamic support; effects depend on the regimen."
-                },
-                {
-                  "id": "C",
                   "text": "Supports calcium and cardiac membrane stability",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Dopamine can provide selected hemodynamic support; effects depend on the regimen."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Blocks serotonin-mediated emesis",
                   "explanation": "This is a different pharmacological action. The drug’s action is: Dopamine can provide selected hemodynamic support; effects depend on the regimen."
+                },
+                {
+                  "id": "D",
+                  "text": "Dose-dependent dopaminergic and adrenergic effects",
+                  "explanation": "Dopamine can provide selected hemodynamic support; effects depend on the regimen."
                 }
               ],
               "point": "Identify the principal pharmacological action taught for this medicine.",
@@ -19250,7 +19250,7 @@
               "learningPointIds": [
                 "ccu-dopamine::principal-action"
               ],
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -19258,13 +19258,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Inotrope",
-                  "explanation": "The medicine is classified as: Catecholamine inotrope/vasopressor with dose-dependent effects."
+                  "text": "Catecholamine",
+                  "explanation": "Catecholamine inotrope/vasopressor with dose-dependent effects."
                 },
                 {
                   "id": "B",
-                  "text": "Catecholamine",
-                  "explanation": "Catecholamine inotrope/vasopressor with dose-dependent effects."
+                  "text": "Inotrope",
+                  "explanation": "The medicine is classified as: Catecholamine inotrope/vasopressor with dose-dependent effects."
                 },
                 {
                   "id": "C",
@@ -19293,7 +19293,7 @@
               "learningPointIds": [
                 "ccu-dopamine::drug-class"
               ],
-              "answerKey": "B"
+              "answerKey": "A"
             },
             {
               "format": "single-best-answer",
@@ -19311,13 +19311,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Replacement of glucose during severe hypoglycemia",
-                  "explanation": "This is a different treatment role."
+                  "text": "Selected hemodynamic or bradycardia support",
+                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support. In the AHA adult bradycardia pathway, dopamine infusion is one option if atropine is ineffective. The usual IV infusion range in that pathway is 5–20 mcg/kg/min, titrated to response with a gradual taper."
                 },
                 {
                   "id": "D",
-                  "text": "Selected hemodynamic or bradycardia support",
-                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support. In the AHA adult bradycardia pathway, dopamine infusion is one option if atropine is ineffective. The usual IV infusion range in that pathway is 5–20 mcg/kg/min, titrated to response with a gradual taper."
+                  "text": "Replacement of glucose during severe hypoglycemia",
+                  "explanation": "This is a different treatment role."
                 }
               ],
               "point": "Identify the main treatment role taught for this medicine.",
@@ -19343,7 +19343,7 @@
               "learningPointIds": [
                 "ccu-dopamine::treatment-role"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
             },
             {
               "stem": "Which new change during DOPAMINE infusion is a relevant cardiac adverse-effect warning?",
@@ -19360,13 +19360,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "New tachycardia or ventricular ectopy",
-                  "explanation": "Catecholamine effects can increase rhythm instability."
+                  "text": "Improving peripheral warmth without rhythm change",
+                  "explanation": "This can reflect a beneficial perfusion response."
                 },
                 {
                   "id": "D",
-                  "text": "Improving peripheral warmth without rhythm change",
-                  "explanation": "This can reflect a beneficial perfusion response."
+                  "text": "New tachycardia or ventricular ectopy",
+                  "explanation": "Catecholamine effects can increase rhythm instability."
                 }
               ],
               "format": "single-best-answer",
@@ -19393,7 +19393,7 @@
               "learningPointIds": [
                 "ccu-dopamine::tachyarrhythmia"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which solution should not be directly mixed with dopamine because of alkaline inactivation?",
@@ -19410,13 +19410,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "Sodium bicarbonate",
-                  "explanation": "Strong alkalinity can inactivate dopamine."
+                  "text": "5% dextrose in 0.9% sodium chloride",
+                  "explanation": "This is a compatible dopamine diluent for referenced products, subject to the actual label."
                 },
                 {
                   "id": "D",
-                  "text": "5% dextrose in 0.9% sodium chloride",
-                  "explanation": "This is a compatible dopamine diluent for referenced products, subject to the actual label."
+                  "text": "Sodium bicarbonate",
+                  "explanation": "Strong alkalinity can inactivate dopamine."
                 }
               ],
               "format": "single-best-answer",
@@ -19436,20 +19436,20 @@
               "learningPointIds": [
                 "ccu-dopamine::dopamine_bicarbonate"
               ],
-              "answerKey": "C"
+              "answerKey": "D"
             },
             {
               "stem": "Which feature is required for safe IV administration of DOPAMINE?",
               "choices": [
                 {
                   "id": "A",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
+                  "text": "Undiluted rapid injection based on the ampoule’s full volume",
+                  "explanation": "Container content is not a default patient bolus."
                 },
                 {
                   "id": "B",
-                  "text": "Undiluted rapid injection based on the ampoule’s full volume",
-                  "explanation": "Container content is not a default patient bolus."
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 },
                 {
                   "id": "C",
@@ -19493,7 +19493,7 @@
               "learningPointIds": [
                 "ccu-dopamine::infusion_route"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -19501,13 +19501,13 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "5–20 mcg/kg/min",
-                  "explanation": "This is the usual weight-based range for this AHA pathway."
+                  "text": "5–20 mcg/kg/hour",
+                  "explanation": "The dose is per minute rather than per hour."
                 },
                 {
                   "id": "B",
-                  "text": "5–20 mcg/kg/hour",
-                  "explanation": "The dose is per minute rather than per hour."
+                  "text": "5–20 mcg/kg/min",
+                  "explanation": "This is the usual weight-based range for this AHA pathway."
                 },
                 {
                   "id": "C",
@@ -19536,7 +19536,7 @@
               "learningPointIds": [
                 "ccu-dopamine::dopamine_bradycardia_units"
               ],
-              "answerKey": "A"
+              "answerKey": "B"
             },
             {
               "format": "single-best-answer",
@@ -19554,13 +19554,13 @@
                 },
                 {
                   "id": "C",
-                  "text": "The toe changes indicate dopamine extravasation at the arm IV.",
-                  "explanation": "Extravasation typically produces changes near the leaking IV site."
+                  "text": "Systemic vasoconstriction may be compromising distal perfusion despite a patent IV.",
+                  "explanation": "Dopamine can contribute to peripheral ischemia. Reassess the limbs and overall perfusion and escalate promptly."
                 },
                 {
                   "id": "D",
-                  "text": "Systemic vasoconstriction may be compromising distal perfusion despite a patent IV.",
-                  "explanation": "Dopamine can contribute to peripheral ischemia. Reassess the limbs and overall perfusion and escalate promptly."
+                  "text": "The toe changes indicate dopamine extravasation at the arm IV.",
+                  "explanation": "Extravasation typically produces changes near the leaking IV site."
                 }
               ],
               "point": "Dopamine can contribute to distal ischemia away from a patent infusion site.",
@@ -19579,10 +19579,96 @@
               "learningPointIds": [
                 "ccu-dopamine::dopamine_distal_ischemia"
               ],
-              "answerKey": "D"
+              "answerKey": "C"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which signals should remain under continuous surveillance during dopamine titration for adult bradycardia?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Oximetry pulse rate plus arterial pressure",
+                  "explanation": "Pulse rate is not a substitute for an ECG rhythm assessment."
+                },
+                {
+                  "id": "B",
+                  "text": "ECG rate and rhythm plus arterial pressure",
+                  "explanation": "These detect the intended chronotropic effect, new arrhythmia and pressure changes."
+                },
+                {
+                  "id": "C",
+                  "text": "Arterial pressure plus capillary refill",
+                  "explanation": "These do not continuously assess ECG rate and rhythm."
+                },
+                {
+                  "id": "D",
+                  "text": "ECG rate and rhythm plus urine output",
+                  "explanation": "Urine output is useful but does not replace BP surveillance."
+                }
+              ],
+              "point": "Distinguish continuous HR, rhythm and BP from supplementary perfusion checks.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "monitor",
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--standard--dopamine_continuous_monitor",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_continuous_monitor"
+              ],
+              "answerKey": "B"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult is stable on a low dopamine infusion after treatment for symptomatic bradycardia. The underlying cause has been corrected. Which response is a reason to taper the dose as ordered while monitoring HR and BP?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Circulatory support may fall as dopamine is withdrawn",
+                  "explanation": "Slow tapering gives the team a chance to recognize recurrent instability. Abrupt discontinuation can cause hypotension."
+                },
+                {
+                  "id": "B",
+                  "text": "Dose reduction produces steadily increasing inotropic support",
+                  "explanation": "Reducing the infusion is intended to step down, not augment, pharmacologic support."
+                },
+                {
+                  "id": "C",
+                  "text": "Rebound hypertension is the expected effect of stopping the infusion",
+                  "explanation": "Withdrawal removes pressor support and may instead cause hypotension."
+                },
+                {
+                  "id": "D",
+                  "text": "The infusion keeps its full chronotropic effect after the pump stops",
+                  "explanation": "Dopamine has a short effect. Support cannot be assumed to persist after cessation."
+                }
+              ],
+              "point": "Connect a gradual taper with detection of recurrent bradycardia or hypotension.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "use",
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--standard--dopamine_bradycardia_taper",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_bradycardia_taper"
+              ],
+              "answerKey": "A"
             }
           ],
-          "questionCount": 8
+          "questionCount": 10
         },
         {
           "id": "ccu-dopamine--advanced",
@@ -19864,18 +19950,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Catecholamine",
-                  "explanation": "Catecholamine inotrope/vasopressor with dose-dependent effects."
-                },
-                {
-                  "id": "B",
                   "text": "Vasopressor",
                   "explanation": "The medicine is classified as: Catecholamine inotrope/vasopressor with dose-dependent effects."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Inotrope",
                   "explanation": "The medicine is classified as: Catecholamine inotrope/vasopressor with dose-dependent effects."
+                },
+                {
+                  "id": "C",
+                  "text": "Catecholamine",
+                  "explanation": "Catecholamine inotrope/vasopressor with dose-dependent effects."
                 },
                 {
                   "id": "D",
@@ -19900,7 +19986,7 @@
                 "ccu-dopamine::drug-class"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--drug-class",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "format": "single-best-answer",
@@ -19908,18 +19994,18 @@
               "choices": [
                 {
                   "id": "A",
-                  "text": "Selected hemodynamic or bradycardia support",
-                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support. In the AHA adult bradycardia pathway, dopamine infusion is one option if atropine is ineffective. The usual IV infusion range in that pathway is 5–20 mcg/kg/min, titrated to response with a gradual taper."
-                },
-                {
-                  "id": "B",
                   "text": "Treatment of oral fungal lesions",
                   "explanation": "This is a different treatment role."
                 },
                 {
-                  "id": "C",
+                  "id": "B",
                   "text": "Suppression of gastric acid secretion",
                   "explanation": "This is a different treatment role."
+                },
+                {
+                  "id": "C",
+                  "text": "Selected hemodynamic or bradycardia support",
+                  "explanation": "This is a clinical use of the medicine: Selected hemodynamic support. In the AHA adult bradycardia pathway, dopamine infusion is one option if atropine is ineffective. The usual IV infusion range in that pathway is 5–20 mcg/kg/min, titrated to response with a gradual taper."
                 },
                 {
                   "id": "D",
@@ -19951,25 +20037,25 @@
                 "ccu-dopamine::treatment-role"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--treatment-role",
-              "answerKey": "A"
+              "answerKey": "C"
             },
             {
               "stem": "Which new change during DOPAMINE infusion is a relevant cardiac adverse-effect warning?",
               "choices": [
                 {
                   "id": "A",
+                  "text": "New tachycardia or ventricular ectopy",
+                  "explanation": "Catecholamine effects can increase rhythm instability."
+                },
+                {
+                  "id": "B",
                   "text": "Improving alertness without rhythm change",
                   "explanation": "This does not identify the rhythm warning."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "Improving urine output without rhythm change",
                   "explanation": "This may support improved perfusion rather than identify arrhythmia."
-                },
-                {
-                  "id": "C",
-                  "text": "New tachycardia or ventricular ectopy",
-                  "explanation": "Catecholamine effects can increase rhythm instability."
                 },
                 {
                   "id": "D",
@@ -20002,7 +20088,7 @@
                 "ccu-dopamine::tachyarrhythmia"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--tachyarrhythmia",
-              "answerKey": "C"
+              "answerKey": "A"
             },
             {
               "stem": "Which solution should not be directly mixed with dopamine because of alkaline inactivation?",
@@ -20058,18 +20144,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "Controlled infusion using the product-specific preparation and order",
-                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
-                },
-                {
-                  "id": "C",
                   "text": "Undiluted rapid injection based on the ampoule’s full volume",
                   "explanation": "Container content is not a default patient bolus."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "Gravity flow without accounting for the prepared concentration",
                   "explanation": "Accurate controlled dosing depends on the concentration and delivery device."
+                },
+                {
+                  "id": "D",
+                  "text": "Controlled infusion using the product-specific preparation and order",
+                  "explanation": "Delivery and concentration must follow the authorized infusion regimen."
                 }
               ],
               "format": "single-best-answer",
@@ -20104,7 +20190,7 @@
                 "ccu-dopamine::infusion_route"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--infusion_route",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -20117,18 +20203,18 @@
                 },
                 {
                   "id": "B",
-                  "text": "5–20 mcg/kg/min",
-                  "explanation": "This is the usual weight-based range for this AHA pathway."
-                },
-                {
-                  "id": "C",
                   "text": "2–10 mcg/min",
                   "explanation": "This is the epinephrine range in the same pathway."
                 },
                 {
-                  "id": "D",
+                  "id": "C",
                   "text": "5–20 mcg/min",
                   "explanation": "Omitting weight changes the dose substantially."
+                },
+                {
+                  "id": "D",
+                  "text": "5–20 mcg/kg/min",
+                  "explanation": "This is the usual weight-based range for this AHA pathway."
                 }
               ],
               "point": "The usual adult AHA dopamine range is 5–20 mcg/kg/min for this bradycardia pathway.",
@@ -20148,7 +20234,7 @@
                 "ccu-dopamine::dopamine_bradycardia_units"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--dopamine_bradycardia_units",
-              "answerKey": "B"
+              "answerKey": "D"
             },
             {
               "format": "single-best-answer",
@@ -20156,18 +20242,18 @@
               "choices": [
                 {
                   "id": "A",
+                  "text": "Systemic vasoconstriction may be compromising distal perfusion despite a patent IV.",
+                  "explanation": "Dopamine can contribute to peripheral ischemia. Reassess the limbs and overall perfusion and escalate promptly."
+                },
+                {
+                  "id": "B",
                   "text": "A patent IV makes a dopamine-related perfusion problem unlikely.",
                   "explanation": "A patent IV does not exclude a systemic adverse effect."
                 },
                 {
-                  "id": "B",
+                  "id": "C",
                   "text": "The toe changes show increased cardiac output and adequate limb perfusion.",
                   "explanation": "Cool mottled toes are concerning for impaired perfusion."
-                },
-                {
-                  "id": "C",
-                  "text": "Systemic vasoconstriction may be compromising distal perfusion despite a patent IV.",
-                  "explanation": "Dopamine can contribute to peripheral ischemia. Reassess the limbs and overall perfusion and escalate promptly."
                 },
                 {
                   "id": "D",
@@ -20192,7 +20278,95 @@
                 "ccu-dopamine::dopamine_distal_ischemia"
               ],
               "reusedFromQuestionId": "ccu-dopamine--standard--dopamine_distal_ischemia",
-              "answerKey": "C"
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "Which signals should remain under continuous surveillance during dopamine titration for adult bradycardia?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "ECG rate and rhythm plus arterial pressure",
+                  "explanation": "These detect the intended chronotropic effect, new arrhythmia and pressure changes."
+                },
+                {
+                  "id": "B",
+                  "text": "ECG rate and rhythm plus urine output",
+                  "explanation": "Urine output is useful but does not replace BP surveillance."
+                },
+                {
+                  "id": "C",
+                  "text": "Arterial pressure plus capillary refill",
+                  "explanation": "These do not continuously assess ECG rate and rhythm."
+                },
+                {
+                  "id": "D",
+                  "text": "Oximetry pulse rate plus arterial pressure",
+                  "explanation": "Pulse rate is not a substitute for an ECG rhythm assessment."
+                }
+              ],
+              "point": "Distinguish continuous HR, rhythm and BP from supplementary perfusion checks.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "monitor",
+                  "textSha256": "9d9dc2a0a877a477f434f16679be4c69e2d0f805e2f26b77c14ba4ba08e921e7"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--7-day--dopamine_continuous_monitor",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_continuous_monitor"
+              ],
+              "reusedFromQuestionId": "ccu-dopamine--standard--dopamine_continuous_monitor",
+              "answerKey": "A"
+            },
+            {
+              "format": "single-best-answer",
+              "stem": "An adult is stable on a low dopamine infusion after treatment for symptomatic bradycardia. The underlying cause has been corrected. Which response is a reason to taper the dose as ordered while monitoring HR and BP?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Rebound hypertension is the expected effect of stopping the infusion",
+                  "explanation": "Withdrawal removes pressor support and may instead cause hypotension."
+                },
+                {
+                  "id": "B",
+                  "text": "Circulatory support may fall as dopamine is withdrawn",
+                  "explanation": "Slow tapering gives the team a chance to recognize recurrent instability. Abrupt discontinuation can cause hypotension."
+                },
+                {
+                  "id": "C",
+                  "text": "The infusion keeps its full chronotropic effect after the pump stops",
+                  "explanation": "Dopamine has a short effect. Support cannot be assumed to persist after cessation."
+                },
+                {
+                  "id": "D",
+                  "text": "Dose reduction produces steadily increasing inotropic support",
+                  "explanation": "Reducing the infusion is intended to step down, not augment, pharmacologic support."
+                }
+              ],
+              "point": "Connect a gradual taper with detection of recurrent bradycardia or hypotension.",
+              "sourceRefs": [
+                {
+                  "file": "content.json",
+                  "collection": "medications",
+                  "itemId": "ccu-dopamine",
+                  "field": "use",
+                  "textSha256": "80d208f48714fa75bc7ef9356719daea228bb6ea8262a96320b2279cfda31ea5"
+                }
+              ],
+              "criticalForSafety": true,
+              "id": "ccu-dopamine--7-day--dopamine_bradycardia_taper",
+              "points": 1,
+              "learningPointIds": [
+                "ccu-dopamine::dopamine_bradycardia_taper"
+              ],
+              "reusedFromQuestionId": "ccu-dopamine--standard--dopamine_bradycardia_taper",
+              "answerKey": "B"
             },
             {
               "stem": "A prescribed drug dose per minute stays the same, but the prepared infusion concentration doubles. What happens to the required mL/hour?",
@@ -20313,18 +20487,18 @@
                 },
                 {
                   "id": "B",
+                  "text": "Extravasation with local ischemic risk",
+                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
+                },
+                {
+                  "id": "C",
                   "text": "A therapeutic improvement in peripheral circulation",
                   "explanation": "The pain, pallor, and coolness argue against this interpretation."
                 },
                 {
-                  "id": "C",
+                  "id": "D",
                   "text": "Isolated systemic volume expansion",
                   "explanation": "This does not explain the focal cannula-site pattern."
-                },
-                {
-                  "id": "D",
-                  "text": "Extravasation with local ischemic risk",
-                  "explanation": "Local vasopressor exposure can threaten tissue perfusion."
                 }
               ],
               "format": "single-best-answer",
@@ -20352,10 +20526,10 @@
                 "ccu-dopamine::pressor_site"
               ],
               "reusedFromQuestionId": "ccu-dopamine--advanced--pressor_site",
-              "answerKey": "D"
+              "answerKey": "B"
             }
           ],
-          "questionCount": 11
+          "questionCount": 13
         }
       ]
     },
