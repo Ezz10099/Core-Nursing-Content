@@ -15,10 +15,14 @@ for(const b of banks){
  const actual=new Set(b.exams[0].questions.flatMap(q=>q.learningPointIds));
  const excluded=new Set((b.scoringExclusions||[]).map(e=>e.learningPointId));
  assert([...excluded].every(id=>!actual.has(id)),'Excluded generic prompts receive no coverage credit');
- if(b.itemType==='medication-group'){
+ if(b.members){
   assert.equal(expected.size,0);
   assert(b.members.length>=2&&b.members.every(m=>banks.some(x=>x.itemType==='medication'&&x.itemId===m.id)));
   assert(b.exams[0].questions.every(q=>q.evidenceIds.length&&q.evidenceIds.every(id=>b.sources.some(s=>s.id===id))));
+  if(b.itemType==='treatment-plan'){
+   assert(banks.some(x=>x.itemType==='lesson'&&x.itemId===b.lessonId));
+   assert(b.plan.length>=3&&b.plan.every(step=>step.evidenceIds.every(id=>b.sources.some(s=>s.id===id))));
+  }
  }else{
   assert.deepEqual([...actual,...excluded].sort(),[...expected].sort(),'Every legacy mapping is retained or explicitly excluded');
  }

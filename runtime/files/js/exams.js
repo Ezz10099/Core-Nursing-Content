@@ -4,8 +4,9 @@
   if(!Core||!data)return;
   const banks=new Map(data.banks.map(b=>[b.itemId,b]));
   const groupBanks=data.banks.filter(b=>b.itemType==='medication-group');
+  const planBanks=data.banks.filter(b=>b.itemType==='treatment-plan');
   const groupTitle=bank=>bank.members?.map(member=>member.title).join(' · ')||'';
-  const listLabels={due:'Due',available:'Available',groups:'Medication groups',ready:'Available ready',upcoming:'Upcoming',passed:'Passed'};
+  const listLabels={due:'Due',available:'Available',groups:'Medication groups',plans:'Treatment plans',ready:'Available ready',upcoming:'Upcoming',passed:'Passed'};
   let reviewing=false,reviewFilter='all',examListFilter=null,examSearch='';
   let selected=null,resultView=null,timer=null,viewingExam=false;
   const state=()=>memory.exams, record=id=>state().items[id]||{attempts:[],reads:[],readingAfter:null,due:null}, now=()=>Date.now();
@@ -80,7 +81,8 @@
   }
   function examCard(bank){
     const a=action(bank);
-    return '<article class="exam-card" data-exam-title="'+safe(bank.title.toLowerCase())+'"><h3>'+safe(bank.title)+'</h3>'+(bank.members?'<p class="note">'+safe(groupTitle(bank))+'</p>':'')+(a.note?'<p class="note">'+safe(a.note)+'</p>':'')+'<button class="primary" onclick="CoreNursingExams.launch(\''+bank.itemId+'\')">'+safe(a.text)+'</button><details><summary>Stages &amp; results</summary><button class="exam-link" onclick="CoreNursingExams.open(\''+bank.itemId+'\')">'+bank.exams.map(e=>safe(label(e.stage))+': '+(stageResult(bank,e.stage)||e.questionCount+' questions')).join(' · ')+'</button></details></article>';
+    const primary=bank.plan&&a.kind==='start'&&a.stage==='comprehensive'&&!record(bank.itemId).attempts.length;
+    return '<article class="exam-card" data-exam-title="'+safe(bank.title.toLowerCase())+'"><h3>'+safe(bank.title)+'</h3>'+(bank.members&&!bank.plan?'<p class="note">'+safe(groupTitle(bank))+'</p>':'')+(a.note?'<p class="note">'+safe(a.note)+'</p>':'')+'<button class="primary" onclick="CoreNursingExams.'+(primary?'open':'launch')+'(\''+bank.itemId+'\')">'+safe(primary?'Study treatment plan':a.text)+'</button><details><summary>Stages &amp; results</summary><button class="exam-link" onclick="CoreNursingExams.open(\''+bank.itemId+'\')">'+bank.exams.map(e=>safe(label(e.stage))+': '+(stageResult(bank,e.stage)||e.questionCount+' questions')).join(' · ')+'</button></details></article>';
   }
   function renderCatalog(){
     const node=byId('examCatalog');if(!node)return;
@@ -89,6 +91,7 @@
     const ready=all.filter(b=>window.CoreNursingReadiness?.status(b.itemId)==='complete'&&['start','resume'].includes(action(b).kind));
     groups.ready=ready;
     groups.groups=groupBanks.filter(allowed);
+    groups.plans=planBanks.filter(allowed);
     groups.available.sort((a,b)=>Number(!!b.members)-Number(!!a.members));
     if(!examListFilter)examListFilter=groups.due.length?'due':'available';
     const passed=all.filter(b=>record(b.itemId).attempts.some(a=>a.completedAt));
@@ -148,9 +151,16 @@
   function decorate(type,id,container){
     const bank=bankFor(id);if(!bank||!allowed(bank))return;
     container.querySelector('.exam-entry')?.remove();
+    container.querySelectorAll('[data-treatment-plan-entry]').forEach(entry=>entry.remove());
     const panel=document.createElement('div');panel.className='panel exam-entry';
     panel.dataset.readerType=type==='lesson'?'lesson':'med';panel.dataset.readerItem=id;
     container.append(panel);refreshReaderEntries();
+    for(const plan of planBanks.filter(p=>p.lessonId===id&&allowed(p))){
+      const button=document.createElement('button');
+      button.type='button';button.className='primary';button.dataset.treatmentPlanEntry=plan.itemId;button.textContent='Study treatment plan →';
+      button.addEventListener('click',()=>open(plan.itemId));
+      panel.before(button);
+    }
   }
   function open(id){
     const bank=bankFor(id);if(!bank||!allowed(bank))return;
@@ -194,15 +204,15 @@
     const passed=['standard','advanced','comprehensive','7-day','21-day'].map(stage=>r.attempts.filter(a=>a.stage===stage&&a.completedAt).sort((a,b)=>b.completedAt-a.completedAt)[0]).filter(Boolean);
     const headline=latest?'<div class="exam-latest"><span>Latest result</span><strong>'+safe(label(latest.stage))+' · '+(latest.completedAt?'Passed':latest.passed?'Score passed':'Below passing score')+'</strong><p>'+latest.correct+'/'+latest.total+' · '+exactPercent(latest)+'%<small>'+safe(date(latest.finishedAt))+'</small></p></div>':'<p class="note">No exam attempts yet.</p>';
     const completed=passed.length?'<details class="panel exam-completed"><summary>Passed exams · '+passed.length+'</summary>'+passed.map(a=>'<div class="exam-passed-row" data-stage="'+a.stage+'"><h3>'+safe(label(a.stage))+' · Passed</h3><p>'+a.correct+'/'+a.total+' · '+exactPercent(a)+'%<small>'+safe(date(a.completedAt))+'</small></p></div>').join('')+'</details>':'';
-    const source=bank.members?'<div class="panel" id="examGroupMaterials"><h3>Study these medications</h3>'+bank.members.map(member=>'<button class="exam-link" onclick="CoreNursingExams.material(\''+member.id+'\')">'+safe(member.title)+'</button>').join('')+'<details><summary>Clinical sources</summary>'+bank.sources.map(s=>'<p><a href="'+safe(s.url)+'" target="_blank" rel="noopener noreferrer">'+safe(s.title)+'</a></p>').join('')+'</details></div>':'<details class="panel exam-reading" '+(remaining.length?'open':'')+'><summary>'+(remaining.length?'Required reading · '+remaining.length+' sections':'Read the material')+'</summary><p class="note">Mark each section after reading. Reading and exam results are saved separately.</p>'+bank.readingSections.map(section=>{
+    const source=bank.members?'<div class="panel" id="examGroupMaterials">'+(bank.plan?bank.plan.map(step=>'<section><h3>'+safe(step.label)+'</h3><p>'+safe(step.text)+'</p></section>').join(''):'<h3>Study these medications</h3>')+(bank.plan?'<details><summary>Related medication cards</summary>':'')+bank.members.map(member=>'<button class="exam-link" onclick="CoreNursingExams.material(\''+member.id+'\')">'+safe(member.title)+'</button>').join('')+(bank.plan?'</details>':'')+'<details><summary>Clinical sources</summary>'+bank.sources.map(s=>'<p><a href="'+safe(s.url)+'" target="_blank" rel="noopener noreferrer">'+safe(s.title)+'</a></p>').join('')+'</details></div>':'<details class="panel exam-reading" '+(remaining.length?'open':'')+'><summary>'+(remaining.length?'Required reading · '+remaining.length+' sections':'Read the material')+'</summary><p class="note">Mark each section after reading. Reading and exam results are saved separately.</p>'+bank.readingSections.map(section=>{
       const read=r.reads.some(x=>x.sectionId===section.id&&(r.readingAfter===null||x.at>r.readingAfter));
       return '<details class="exam-source"><summary>'+safe(section.label)+'</summary><div class="exam-source-text">'+safe(section.text.replace(/\\n/g,'\n'))+'</div><button '+(read?'disabled':'')+' onclick="CoreNursingExams.read(\''+section.id+'\')">'+(read?'Section marked as read':'Mark section as read')+'</button></details>';
     }).join('')+'</details>';
-    const coverage=bank.members?'This exam samples practical points across the group.':window.CoreNursingReadiness?.status(bank.itemId)==='complete'?'Author review completed for this material.':'Bank coverage is still under review.';
+    const coverage=bank.plan?'This exam covers the decisions in the treatment plan.':bank.members?'This exam samples practical points across the group.':window.CoreNursingReadiness?.status(bank.itemId)==='complete'?'Author review completed for this material.':'Bank coverage is still under review.';
     const rules='<details class="panel exam-details"><summary>Exam details</summary><p>One comprehensive exam, repeated at each stage. Up to '+Core.allowedErrors(bank.exams[0].questionCount)+' incorrect answers allowed. A failed stage repeats after 3 days. Passing schedules the first review after 3 days, then the next review 21 days after that pass.</p><p class="note">Unsure flags do not reduce the score. '+coverage+'</p></details>';
     const points=new Map();for(const form of bank.exams)for(const q of form.questions)for(const p of q.learningPointIds)points.set(p,q.point);
     const shown=new Set(r.attempts.flatMap(a=>a.shownQuestionIds||[])),tested=new Set();for(const form of bank.exams)for(const q of form.questions)if(shown.has(q.id))q.learningPointIds.forEach(p=>tested.add(p));
-    container.innerHTML='<button class="back" onclick="CoreNursingExams.catalog()">← All exams</button><div class="panel exam-material-header"><h2>'+safe(bank.title)+'</h2>'+headline+'</div><div class="panel exam-next-step" id="examNextStep"><span class="exam-section-label">'+(next.scheduled?'Next scheduled exam':'Your next step')+'</span><h2>'+safe(next.title)+'</h2>'+(next.text?'<p class="next-step-description">'+next.text+'</p>':'')+next.button+'<div class="exam-secondary"><button onclick="CoreNursingExams.material(\''+bank.itemId+'\')">Open material</button><button onclick="CoreNursingExams.review()">Review saved answers</button></div></div>'+completed+source+rules+'<details class="panel"><summary>Tested points · '+tested.size+'/'+points.size+' bank points asked</summary><p class="note">Mapped bank points only. Unvisited questions remain not yet tested.</p>'+Array.from(points).map(([id,text])=>'<p>'+safe(text)+'<br><small>'+(tested.has(id)?'Asked in an exam':'Not yet tested')+'</small></p>').join('')+'</details>';
+    container.innerHTML='<button class="back" onclick="CoreNursingExams.catalog()">← All exams</button><div class="panel exam-material-header"><h2>'+safe(bank.title)+'</h2>'+headline+'</div>'+(bank.plan?source:'')+'<div class="panel exam-next-step" id="examNextStep"><span class="exam-section-label">'+(next.scheduled?'Next scheduled exam':'Your next step')+'</span><h2>'+safe(next.title)+'</h2>'+(next.text?'<p class="next-step-description">'+next.text+'</p>':'')+next.button+'<div class="exam-secondary">'+(bank.plan?'':'<button onclick="CoreNursingExams.material(\''+bank.itemId+'\')">Open material</button>')+'<button onclick="CoreNursingExams.review()">Review saved answers</button></div></div>'+completed+(bank.plan?'':source)+rules+'<details class="panel"><summary>Tested points · '+tested.size+'/'+points.size+' bank points asked</summary><p class="note">Mapped bank points only. Unvisited questions remain not yet tested.</p>'+Array.from(points).map(([id,text])=>'<p>'+safe(text)+'<br><small>'+(tested.has(id)?'Asked in an exam':'Not yet tested')+'</small></p>').join('')+'</details>';
   }
 
   function render(){
@@ -276,7 +286,7 @@
     const next=nextCompletedMaterial(bank);if(next)material(next.id);
   }
   function nextCompletedHtml(bank){
-    if(bank.members)return '<div class="exam-next-material"><button type="button" onclick="CoreNursingExams.material(\''+bank.itemId+'\')">Review the medications</button></div>';
+    if(bank.members)return '<div class="exam-next-material"><button type="button" onclick="CoreNursingExams.material(\''+bank.itemId+'\')">'+(bank.plan?'Review treatment plan':'Review the medications')+'</button></div>';
     const next=nextCompletedMaterial(bank),kind=bank.itemType==='lesson'?'lesson':'medication';
     return next?'<div class="exam-next-material"><button type="button" class="primary" onclick="CoreNursingExams.nextCompleted(\''+bank.itemId+'\')">Next completed '+kind+' →</button><p class="note">'+safe(next.title||next.name)+'</p></div>':'<p class="note">No more preparation-complete '+(kind==='lesson'?'lessons':'medications')+' needing a first exam after this material.</p>';
   }

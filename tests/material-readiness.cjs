@@ -13,7 +13,7 @@ assert(!d.querySelector('#home #materialReadiness'),'Home no longer contains the
 assert(d.querySelector('#library #materialReadiness'),'Detailed preparation status remains on the Medications page');
 assert(d.querySelector('#source-complete'),'Medications has its own Completed classification');
 assert.equal(d.querySelector('#materialPreparationDetails').open,false,'Detailed preparation status stays collapsed by default');
-const available=w.CoreNursingExamData.banks.filter(b=>!b.capabilityRequirement||w.nativeHasCapability(b.capabilityRequirement));
+const available=w.CoreNursingExamData.banks.filter(b=>['medication','lesson'].includes(b.itemType)&&(!b.capabilityRequirement||w.nativeHasCapability(b.capabilityRequirement)));
 const expected=key=>available.filter(b=>w.CoreNursingReadinessData.items[b.itemId].status===key).length;
 assert.equal(d.querySelector('#materialReadiness button[data-status=complete]').textContent,'مكتمل ('+expected('complete')+')');
 if(!expected('complete'))assert(d.querySelector('.material-readiness-empty').textContent.includes('لم تُعتمد'));

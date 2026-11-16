@@ -51,6 +51,29 @@ function answerAll(w,correct=true){
  assert.deepEqual(state(restored).exams.items[group.itemId].due,record.due);
  restored.close();
 }
+// Treatment plans are readable before the exam, and their original lessons remain available.
+{
+ const w=boot(),d=w.document;
+ const plans=w.CoreNursingExamData.banks.filter(b=>b.itemType==='treatment-plan');
+ assert.equal(plans.length,2);
+ w.showTab('practice');w.CoreNursingExams.listFilter('plans');
+ assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,2);
+ for(const plan of plans){
+  const card=[...d.querySelectorAll('#examCatalog .exam-card')].find(c=>c.dataset.examTitle===plan.title.toLowerCase());
+  assert.equal(card.querySelector('.primary').textContent,'Study treatment plan');
+  w.eval(card.querySelector('.primary').getAttribute('onclick'));
+  assert.equal(state(w)?.exams.active??null,null);
+  assert.equal(d.querySelectorAll('#examGroupMaterials section').length,plan.plan.length);
+  assert(d.querySelector('#examGroupMaterials').compareDocumentPosition(d.querySelector('#examNextStep'))&w.Node.DOCUMENT_POSITION_FOLLOWING);
+  w.showTab('clinical');w.openLesson(plan.lessonId);
+  assert(d.querySelector('[data-treatment-plan-entry="'+plan.itemId+'"]'));
+  w.showTab('practice');
+ }
+ w.CoreNursingExams.launch(plans[0].itemId);answerAll(w);w.CoreNursingExams.submit();
+ assert(d.querySelector('.exam-next-material').textContent.includes('Review treatment plan'));
+ assert.equal(state(w).exams.items[plans[0].lessonId],undefined);
+ w.close();
+}
 // Available ready intersects current preparation completion with exam eligibility.
 {
  const w=boot(),d=w.document,data=w.CoreNursingExamData;

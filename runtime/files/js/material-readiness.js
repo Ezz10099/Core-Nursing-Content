@@ -2,7 +2,7 @@
 (function(){
   'use strict';
   const data=window.CoreNursingReadinessData||{items:{}},examData=window.CoreNursingExamData||{banks:[],aliases:{}};
-  const banks=new Map(examData.banks.map(b=>[b.itemId,b]));
+  const banks=new Map(examData.banks.filter(b=>b.itemType==='medication'||b.itemType==='lesson').map(b=>[b.itemId,b]));
   const labels={complete:'مكتمل',in_review:'قيد المراجعة',not_reviewed:'بانتظار المراجعة'};
   let filter='complete',kind='all',term='',limit=6;
   const canonical=id=>examData.aliases?.[id]||id;
