@@ -5790,27 +5790,27 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "Which history is most directly relevant to reassessing the hepatic safety of repeated paracetamol dosing?",
+        "stem": "During medication reconciliation, which finding changes the safety review for repeated paracetamol itself, even when the current prescription is within the usual adult dose range?",
         "choices": [
           {
             "id": "A",
-            "text": "Heavy alcohol use with known chronic liver disease",
-            "explanation": "Both are relevant to the individualized hepatic risk and dosing review."
+            "text": "Heavy daily alcohol use with chronic liver disease",
+            "explanation": "Both findings are reasons to review hepatic risk and the appropriate patient-specific regimen."
           },
           {
             "id": "B",
-            "text": "Aspirin-exacerbated wheeze without liver disease or heavy alcohol use",
-            "explanation": "This is an important medication history, but does not identify the hepatic risk factors asked for."
+            "text": "Low-dose aspirin use with a previous ulcer bleed",
+            "explanation": "This history strongly affects NSAID-related bleeding risk. It does not by itself identify increased paracetamol hepatic risk."
           },
           {
             "id": "C",
-            "text": "A remote peptic ulcer without liver disease or heavy alcohol use",
-            "explanation": "This matters particularly when considering NSAIDs, but is not the hepatic risk sought."
+            "text": "Treated asthma with wheeze after previous ibuprofen",
+            "explanation": "This is relevant to analgesic selection and hypersensitivity assessment. It does not identify a hepatic dosing risk."
           },
           {
             "id": "D",
-            "text": "Previous opioid-related constipation without liver disease or heavy alcohol use",
-            "explanation": "This influences opioid selection and monitoring rather than this hepatic comparison."
+            "text": "Chronic constipation that worsened during codeine treatment",
+            "explanation": "This history informs opioid tolerability and bowel management. It does not identify a hepatic dosing risk."
           }
         ],
         "point": "Distinguish heavy alcohol exposure or liver disease from histories that chiefly affect alternatives.",
@@ -6875,30 +6875,30 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "Which history specifically increases concern about tramadol-associated convulsions even when it is given as prescribed?",
+        "stem": "A postoperative patient with controlled epilepsy is due for the first prescribed oral tramadol dose. Which interpretation should guide the medication review?",
         "point": "Identify a seizure-risk factor and recognize that risk is not limited to overdose.",
         "criticalForSafety": true,
         "answerKey": "A",
         "choices": [
           {
             "id": "A",
-            "text": "Epilepsy or a history of seizures",
-            "explanation": "Tramadol can provoke seizures at recommended doses. Prior seizures increase concern and warrant review."
+            "text": "Prior seizures remain relevant because tramadol can provoke seizures at prescribed doses.",
+            "explanation": "The label reports seizures within the recommended range and identifies epilepsy and prior seizures as risk factors."
           },
           {
             "id": "B",
-            "text": "Remote uncomplicated peptic ulcer disease",
-            "explanation": "This matters for NSAID selection but does not in itself identify tramadol-associated seizure risk."
+            "text": "Prior seizures matter for tramadol only if the prescribed dose exceeds the usual range.",
+            "explanation": "Seizures can occur within the recommended dosage range."
           },
           {
             "id": "C",
-            "text": "Stable chronic constipation with no seizure history",
-            "explanation": "Constipation needs separate management but does not identify this neurologic susceptibility."
+            "text": "Prior seizures stop affecting tramadol risk once epilepsy is controlled by medication.",
+            "explanation": "Control on antiseizure treatment does not remove the labeled risk factor."
           },
           {
             "id": "D",
-            "text": "A prior episode of opioid-related nausea without convulsions",
-            "explanation": "This informs tolerability rather than specifically increasing seizure susceptibility."
+            "text": "The seizure risk is confined to injected tramadol, so the oral order can proceed on that basis.",
+            "explanation": "The seizure warning applies to oral tramadol as well."
           }
         ]
       }
@@ -7540,30 +7540,30 @@
       ],
       "question": {
         "format": "single-best-answer",
-        "stem": "A patient with stable renal function is about to start meropenem. Which history still specifically raises concern about the drug’s seizure potential?",
+        "stem": "An adult with a treated seizure disorder and preserved renal function is starting meropenem. Which statement should guide neurologic monitoring?",
         "point": "Recognize pre-existing CNS disease despite preserved renal function.",
         "criticalForSafety": true,
         "answerKey": "A",
         "choices": [
           {
             "id": "A",
-            "text": "A prior seizure disorder requiring treatment",
-            "explanation": "CNS disease, including seizure history, can increase seizure risk despite preserved renal clearance."
+            "text": "Continue ordered antiseizure treatment and monitor for new myoclonus or seizures.",
+            "explanation": "Pre-existing seizure disorders increase susceptibility even when renal clearance is preserved. The label advises continuing antiseizure therapy."
           },
           {
             "id": "B",
-            "text": "A remote drug-related rash without neurologic involvement",
-            "explanation": "This may affect allergy assessment, rather than specifically increasing seizure vulnerability."
+            "text": "Continue ordered antiseizure treatment and start neurologic surveillance only if creatinine rises.",
+            "explanation": "Renal impairment increases risk, but preserved clearance does not remove risk from a seizure disorder."
           },
           {
             "id": "C",
-            "text": "A history of gastritis without neurologic disease",
-            "explanation": "This informs GI history but does not establish the CNS risk factor."
+            "text": "Continue ordered antiseizure treatment and use temperature trends as the primary indicator of drug-related seizures.",
+            "explanation": "Temperature tracks the illness but does not replace assessment for new neurologic findings."
           },
           {
             "id": "D",
-            "text": "A prior episode of infusion-site irritation without neurologic symptoms",
-            "explanation": "This does not identify a predisposition to meropenem-associated seizures."
+            "text": "Continue ordered antiseizure treatment and reserve neurologic surveillance for doses above the recommended range.",
+            "explanation": "CNS risk is relevant during usual treatment in patients with predisposing CNS disease."
           }
         ]
       }

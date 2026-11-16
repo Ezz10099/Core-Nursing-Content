@@ -7782,29 +7782,29 @@
     }
   },
   "ondansetron_bradyarrhythmia": {
-    "point": "Identify bradyarrhythmia as an ondansetron ECG-monitoring risk independent of other stated factors.",
+    "point": "Identify a pre-existing bradyarrhythmia from a rhythm summary and recognize when it warrants ECG monitoring with ondansetron.",
     "anchor": "bradyarrhythmia",
     "criticalForSafety": true,
     "standard": {
       "format": "single-best-answer",
-      "stem": "An adult has normal potassium and magnesium, no congenital long-QT syndrome and no QT-prolonging co-medication. Which history still supports ECG monitoring with ondansetron?",
+      "stem": "An adult is due for ondansetron. Potassium and magnesium are normal, and no other QT-prolonging drugs are charted. Which telemetry finding independently supports ECG monitoring for ondansetron?",
       "correct": 0,
       "choices": [
         {
-          "text": "An established bradyarrhythmia",
-          "explanation": "Bradyarrhythmia is a labeled ECG-monitoring risk factor even when the other listed risks are absent."
+          "text": "Sinus bradycardia at 44/min on repeated recordings",
+          "explanation": "A pre-existing bradyarrhythmia is a labeled reason for ECG monitoring with ondansetron."
         },
         {
-          "text": "Well-controlled uncomplicated hypertension",
-          "explanation": "This alone is not the specified rhythm-related risk factor."
+          "text": "Sinus rhythm at 78/min with an isolated premature atrial beat",
+          "explanation": "An isolated atrial ectopic beat at a normal underlying rate does not establish bradyarrhythmia."
         },
         {
-          "text": "A healed peptic ulcer without bleeding",
-          "explanation": "This is not the specified rhythm-related risk factor."
+          "text": "Sinus rhythm at 84/min with cyclic variation during breathing",
+          "explanation": "Respiratory sinus arrhythmia at a normal rate does not establish bradyarrhythmia."
         },
         {
-          "text": "Chronic constipation without obstruction",
-          "explanation": "This is not the specified rhythm-related risk factor."
+          "text": "Sinus tachycardia at 106/min during a painful dressing change",
+          "explanation": "The underlying rhythm is fast, so this finding does not meet the bradyarrhythmia criterion."
         }
       ]
     }
@@ -8118,29 +8118,29 @@
     }
   },
   "losartan_volume_risk": {
-    "point": "Recognize volume/salt depletion as a hypotension risk.",
+    "point": "Use recent fluid loss and continued diuretic exposure to identify first-dose hypotension risk and address volume depletion before losartan.",
     "anchor": "volume or salt depletion",
     "criticalForSafety": false,
     "standard": {
       "format": "single-best-answer",
-      "stem": "Which pretreatment history increases the risk of symptomatic hypotension when losartan is started?",
+      "stem": "Before the first losartan dose, a patient who continued furosemide through two days of vomiting has a seated BP of 151/86. Which plan addresses the immediate medication risk?",
       "correct": 0,
       "choices": [
         {
-          "text": "Recent vomiting with reduced intake and volume depletion",
-          "explanation": "Volume or salt depletion increases the first-dose hypotension risk."
+          "text": "Clarify the start and address likely volume depletion before giving losartan.",
+          "explanation": "Recent fluid loss and ongoing diuresis can predispose to symptomatic hypotension after the first dose despite an elevated seated BP."
         },
         {
-          "text": "Stable ankle edema without reduced intake or fluid loss",
-          "explanation": "This does not identify the volume-depletion risk sought."
+          "text": "Give the first dose and review volume status before the second dose.",
+          "explanation": "The hypotension can occur with the first dose, so volume status needs review before administration."
         },
         {
-          "text": "Stable glucose control without recent illness",
-          "explanation": "This does not identify depletion of fluid or salt."
+          "text": "Give the first dose and reassess only if the seated BP falls below baseline.",
+          "explanation": "A single seated pressure does not exclude volume depletion or first-dose orthostatic symptoms."
         },
         {
-          "text": "A remote healed fracture without current symptoms",
-          "explanation": "This does not identify volume or salt depletion."
+          "text": "Move the first dose to bedtime and review fluid losses the next morning.",
+          "explanation": "Changing the administration time does not correct volume or salt depletion."
         }
       ]
     }
