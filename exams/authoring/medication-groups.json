@@ -1,0 +1,117 @@
+{
+  "groups": [
+    {
+      "id": "med-group-rhythm-drugs",
+      "title": "Rhythm drugs",
+      "memberIds": ["ccu-adenosine", "trolley-amiodarone", "trolley-digoxin"],
+      "questions": [
+        {
+          "concept": "regular-svt",
+          "point": "Drug choice for stable regular narrow-complex SVT",
+          "stem": "A stable adult develops abrupt regular narrow-complex tachycardia at 186/min. The modified Valsalva maneuver fails. Which drug is used to briefly block the AV node and try to terminate the rhythm? Enter the generic name.",
+          "acceptedAnswers": ["adenosine"],
+          "explanation": "Adenosine briefly blocks AV nodal conduction. It can terminate a re-entry circuit that depends on the AV node.",
+          "evidenceIds": ["aha-tachycardia-2025"]
+        },
+        {
+          "concept": "recognize-rapid-af",
+          "point": "Distinguish AF with a rapid ventricular response from regular SVT and VT",
+          "stem": "An adult has palpitations and a ventricular rate of 152/min. The ECG shows narrow QRS complexes, irregularly irregular R–R intervals, and no consistent P waves. What rhythm best fits?",
+          "choices": [
+            ["Atrial fibrillation with a rapid ventricular response.", "Irregularly irregular ventricular intervals and absent consistent P waves support AF. The rapid rate counts ventricular beats."],
+            ["AV nodal re-entrant tachycardia.", "AV nodal re-entrant tachycardia generally produces a regular narrow-complex rhythm."],
+            ["Atrial flutter with 2:1 conduction.", "A fixed 2:1 conduction pattern produces a regular ventricular response and organized flutter waves."],
+            ["Monomorphic ventricular tachycardia.", "Monomorphic VT typically has a regular wide-complex pattern."]
+          ],
+          "evidenceIds": ["aha-af-2023", "aha-tachycardia-2025"]
+        },
+        {
+          "concept": "rate-control",
+          "point": "Ventricular rate control versus rhythm conversion in AF",
+          "stem": "A patient with heart failure and atrial fibrillation is prescribed digoxin for rate control. Which monitor finding shows the intended effect?",
+          "choices": [
+            ["The ventricular rate falls from 135 to 88/min while the rhythm stays irregular.", "Digoxin can slow conduction through the AV node and reduce the ventricular response while AF persists."],
+            ["The rhythm abruptly converts to sinus rhythm at 88/min.", "Conversion to sinus rhythm reflects rhythm control. Digoxin is being used here to slow the ventricular rate."],
+            ["A pause of several seconds is followed by the same ventricular rate.", "A brief pause with the original rate returning does not demonstrate sustained rate control."],
+            ["Ventricular ectopy clears while the ventricular rate stays at 135/min.", "This does not demonstrate a reduction in the ventricular response to AF."]
+          ],
+          "evidenceIds": ["aha-af-2023", "label-trolley-digoxin"]
+        },
+        {
+          "concept": "refractory-pulseless-vt",
+          "point": "Antiarrhythmic adjunct in shock-refractory pulseless VT",
+          "stem": "An adult in cardiac arrest remains in pulseless VT after the third shock. CPR has resumed and the team chooses the antiarrhythmic alternative to lidocaine. Enter its generic name.",
+          "acceptedAnswers": ["amiodarone"],
+          "explanation": "Amiodarone or lidocaine may be used for shock-refractory VF or pulseless VT while the team continues high-quality CPR and defibrillation as indicated.",
+          "criticalForSafety": true,
+          "evidenceIds": ["aha-arrest-2025"]
+        },
+        {
+          "concept": "iv-delivery",
+          "point": "Rapid adenosine delivery versus controlled amiodarone infusion",
+          "stem": "Adenosine is ordered for a monitored adult with stable regular narrow-complex SVT. A patent peripheral IV is available. Which delivery technique fits the order?",
+          "choices": [
+            ["Rapid IV push through the proximal port, followed immediately by a saline flush.", "Adenosine is cleared within seconds. The rapid push and immediate flush deliver it to the heart promptly."],
+            ["Rapid IV push through the proximal port, followed by a flush after ECG reassessment.", "Waiting for the rhythm check before flushing can prevent enough drug from reaching the heart promptly."],
+            ["Slow IV push through the proximal port, followed immediately by a saline flush.", "The slow delivery allows the drug to be cleared before it can produce adequate AV nodal blockade."],
+            ["Diluted IV loading infusion through a pump, followed by a saline flush.", "A controlled loading infusion is used for IV amiodarone in selected perfusing ventricular rhythms. Adenosine requires a rapid push."]
+          ],
+          "criticalForSafety": true,
+          "evidenceIds": ["aha-tachycardia-2025", "label-ccu-adenosine"]
+        },
+        {
+          "concept": "digoxin-toxicity",
+          "point": "Recognize possible digoxin toxicity at the bedside",
+          "stem": "Before a scheduled dose, a patient with AF has new nausea, a ventricular rate of 46/min, and worsening renal function. The medication list includes digoxin. Which action fits these findings?",
+          "choices": [
+            ["Withhold the dose, check BP and ECG, and promptly notify the clinical team.", "Bradycardia with nausea and deteriorating renal function raises concern for digoxin toxicity. Assess the patient and escalate before further dosing."],
+            ["Give the dose as ordered and repeat the pulse and BP in 30 minutes.", "Another dose could worsen bradycardia if this represents digoxin accumulation."],
+            ["Give the dose with food and reassess whether the nausea settles.", "Giving it with food does not address probable toxicity or a dangerous change in rate."],
+            ["Wait for the next scheduled lab round before assessing the rhythm.", "The new bradycardia calls for immediate clinical assessment and escalation."]
+          ],
+          "criticalForSafety": true,
+          "evidenceIds": ["label-trolley-digoxin"]
+        },
+        {
+          "concept": "unstable-vt-with-pulse",
+          "point": "Prioritize electrical treatment for unstable VT with a pulse",
+          "stem": "A patient has sustained monomorphic VT at 178/min, a palpable pulse, BP 68/42, and new confusion. What treatment should the nurse prepare for immediately as help arrives?",
+          "choices": [
+            ["Synchronized cardioversion.", "Persistent monomorphic VT with a pulse and signs of shock requires urgent synchronized cardioversion."],
+            ["An IV amiodarone loading infusion.", "An antiarrhythmic infusion can be considered for selected stable wide-complex tachycardias. Waiting for it in this case delays urgent cardioversion."],
+            ["A rapid IV adenosine push.", "Adenosine may be considered for selected stable regular monomorphic wide-complex tachycardias. This patient has severe instability."],
+            ["An unsynchronized shock under the pulseless VT algorithm.", "The patient still has a pulse and the rhythm is monomorphic. Prepare synchronized cardioversion while reassessing for deterioration."]
+          ],
+          "criticalForSafety": true,
+          "evidenceIds": ["aha-tachycardia-2025", "aha-arrest-2025"]
+        },
+        {
+          "concept": "digoxin-amiodarone-interaction",
+          "point": "Recognize the digoxin–amiodarone interaction",
+          "stem": "A patient who takes digoxin daily starts amiodarone. What medication review should the nurse raise with the prescriber?",
+          "choices": [
+            ["Review the digoxin dose and arrange follow-up for bradycardia and digoxin exposure.", "Amiodarone can increase digoxin concentrations, and both drugs can slow AV nodal conduction. The prescriber may adjust the dose and monitoring plan."],
+            ["Separate the doses by two hours to avoid the interaction.", "This interaction is not resolved by spacing the doses because amiodarone changes digoxin handling in the body."],
+            ["Plan for a higher digoxin dose if the ventricular rate falls.", "Falling rate can signal additive conduction slowing. A higher dose would increase toxicity risk."],
+            ["Review QT as the only marker of the interaction.", "QT monitoring can matter for amiodarone, but it does not detect increased digoxin exposure or replace rate and rhythm assessment."]
+          ],
+          "criticalForSafety": true,
+          "evidenceIds": ["label-trolley-digoxin", "label-trolley-amiodarone"]
+        },
+        {
+          "concept": "amiodarone-infusion-monitoring",
+          "point": "Recognize hypotension during IV amiodarone",
+          "stem": "During an IV amiodarone loading infusion for VT with a pulse, BP falls from 118/72 to 78/46 and the patient becomes light-headed. What is the immediate nursing priority?",
+          "choices": [
+            ["Reassess perfusion and rhythm, escalate immediately, and manage the infusion per protocol.", "IV amiodarone can cause rate-related hypotension. Reassess circulation and rhythm, call for help, and manage the infusion using the facility protocol."],
+            ["Continue the infusion and obtain a repeat BP at the end of the load.", "New symptomatic hypotension needs immediate assessment. Waiting can delay recognition of shock."],
+            ["Increase the infusion rate so the patient reaches the maintenance dose sooner.", "Increasing the rate can worsen infusion-related hypotension."],
+            ["Treat the episode as a brief expected effect and watch whether it resolves.", "A transient sensation after an adenosine push is a different situation. This marked BP drop during an amiodarone infusion requires immediate action."]
+          ],
+          "criticalForSafety": true,
+          "evidenceIds": ["label-trolley-amiodarone"]
+        }
+      ]
+    }
+  ]
+}

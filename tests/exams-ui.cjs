@@ -18,6 +18,39 @@ function answerAll(w,correct=true){
   if(i<active.form.questions.length-1)w.CoreNursingExams.move(1);
  }
 }
+// A medication group is searchable by each member and uses its own saved review cycle.
+{
+ const w=boot(),d=w.document,group=w.CoreNursingExamData.banks.find(b=>b.itemType==='medication-group');
+ const med=group.members[0];
+ w.showTab('practice');
+ w.CoreNursingExams.listFilter('groups');w.CoreNursingExams.filter(med.title.toLowerCase());
+ assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,1);
+ w.CoreNursingExams.open(group.itemId);
+ assert.equal(d.querySelectorAll('#examGroupMaterials button').length,group.members.length);
+ w.eval(d.querySelector('#examGroupMaterials button').getAttribute('onclick'));
+ const reader=d.querySelector('#detail .exam-entry');
+ assert(reader.hidden);
+ w.toggleReading(d.querySelector('#detail .reader-finish .reading-control'));
+ assert.match(reader.querySelector('button.primary').textContent,/Group exam/);
+ assert.match(reader.textContent,/individual exam/);
+ // An existing individual result and reading status are independent of the group.
+ w.CoreNursingExams.launch(med.id);answerAll(w);w.CoreNursingExams.submit();
+ const individual=state(w).exams.items[med.id];
+ w.CoreNursingExams.launch(group.itemId);
+ assert.equal(state(w).exams.active.itemId,group.itemId);
+ assert(d.querySelector('.exam-written input'));
+ w.CoreNursingExams.unsure(true);answerAll(w);w.CoreNursingExams.submit();
+ const saved=state(w),record=saved.exams.items[group.itemId];
+ assert.deepEqual(saved.exams.items[med.id],individual);
+ assert.equal(record.due.at,record.attempts[0].completedAt+3*86400000);
+ assert.equal(w.CoreNursingExams.reviewRows().some(x=>x.bank.itemId===group.itemId&&x.response.unsure),true);
+ w.close();
+ const restored=boot(JSON.stringify(saved));
+ restored.showTab('practice');restored.CoreNursingExams.listFilter('upcoming');
+ assert(restored.document.querySelector('[data-exam-title="rhythm drugs"]'));
+ assert.deepEqual(state(restored).exams.items[group.itemId].due,record.due);
+ restored.close();
+}
 // Available ready intersects current preparation completion with exam eligibility.
 {
  const w=boot(),d=w.document,data=w.CoreNursingExamData;

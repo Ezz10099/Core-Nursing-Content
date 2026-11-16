@@ -54,6 +54,7 @@ def build():
         banks+=json.loads(path.read_text().split('banks.push(...',1)[1].rsplit(');',1)[0])
     items={}
     for bank in banks:
+        if bank['itemType']=='medication-group':continue
         item=bank['itemId'];record=config['items'].get(item,{});status=record.get('status',config['defaultStatus'])
         if status not in ('complete','in_review','not_reviewed'):raise ValueError('Unknown readiness status: '+item)
         if status=='complete':complete_proof(item,record,materials[item],bank)

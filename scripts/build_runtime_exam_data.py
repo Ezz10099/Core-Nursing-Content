@@ -6,9 +6,67 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from build_exams import arrange_answers
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'runtime/files/js/exam-data.js'
+
+def build_medication_groups(banks, materials, evidence):
+    config=json.loads((ROOT/'exams/authoring/medication-groups.json').read_text())
+    medication_ids={b['itemId'] for b in banks if b['itemType']=='medication'}
+    bank_ids={b['itemId'] for b in banks}
+    for group in config['groups']:
+        item_id=group['id']
+        members=group['memberIds']
+        if not re.fullmatch(r'med-group-[a-z0-9]+(?:-[a-z0-9]+)*',item_id) or item_id in bank_ids:
+            raise ValueError('Invalid or duplicate medication group ID: '+item_id)
+        if len(members)<2 or len(set(members))!=len(members) or not set(members)<=medication_ids:
+            raise ValueError('Medication groups need distinct medication banks: '+item_id)
+        questions=[]
+        concepts=set()
+        sources={}
+        for spec in group['questions']:
+            concept=spec['concept']
+            if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',concept) or concept in concepts:
+                raise ValueError('Invalid or duplicate group concept: '+concept)
+            concepts.add(concept)
+            if not spec['evidenceIds']:
+                raise ValueError('Medication group question lacks evidence: '+concept)
+            for source_id in spec['evidenceIds']:
+                sources[source_id]={k:evidence[source_id][k] for k in ('id','title','url','filename') if k in evidence[source_id]}
+            question={
+                'id':item_id+'--comprehensive--'+concept,'stem':spec['stem'],'point':spec['point'],
+                'points':1,'learningPointIds':[item_id+'::'+concept],
+                'criticalForSafety':spec.get('criticalForSafety',False),'evidenceIds':spec['evidenceIds']
+            }
+            if 'choices' in spec:
+                choices=spec['choices']
+                if len(choices)!=4 or len({text for text,_ in choices})!=4 or not all(text and why for text,why in choices):
+                    raise ValueError('Medication group MCQ needs four distinct explained options: '+concept)
+                question.update(format='single-best-answer',correct=0,choices=[{'text':text,'explanation':why} for text,why in choices])
+            else:
+                if not spec['acceptedAnswers'] or not spec['explanation']:
+                    raise ValueError('Medication group recall question needs a key and rationale: '+concept)
+                question.update(format='short-answer',acceptedAnswers=spec['acceptedAnswers'],explanation=spec['explanation'])
+            questions.append(question)
+        if len(questions)<3 or len({q['stem'] for q in questions})!=len(questions):
+            raise ValueError('Medication group needs at least three distinct questions: '+item_id)
+        form={
+            'id':item_id+'--comprehensive','itemId':item_id,'itemType':'medication-group',
+            'title':group['title'],'model':'comprehensive-v1','questionCount':len(questions),'questions':questions,
+            'passRule':{'type':'error-count','allowedErrors':1 if len(questions)<10 else 2},
+            'timing':{'timed':False,'secondsPerQuestion':None,'timerEnforcement':'untimed'}
+        }
+        arrange_answers(form)
+        version=int(hashlib.sha256(json.dumps(form,ensure_ascii=False,sort_keys=True).encode()).hexdigest()[:12],16)
+        bank_ids.add(item_id)
+        yield {
+            'itemId':item_id,'itemType':'medication-group','title':group['title'],'bankVersion':version,
+            'members':[{'id':member,'title':materials[member]['name']} for member in members],
+            'sourceFields':{},'readingSections':[],'sources':list(sources.values()),'legacyExams':[],
+            'exams':[dict(form,id=item_id+'--'+stage,stage=stage) for stage in ('comprehensive','7-day','21-day')]
+        }
+
 def build():
     content=json.loads((ROOT/'content.json').read_text())
     catalog=json.loads((ROOT/'exams/generated/catalog.json').read_text())
@@ -129,6 +187,7 @@ def build():
                 form['id']=bank['itemId']+'--'+stage
                 bank['exams'].append(form)
             banks.append(bank)
+    banks.extend(list(build_medication_groups(banks,materials,evidence)))
     # Explicit mappings preserve old progress IDs; they do not migrate old quizzes into passes.
     aliases={
         'ccu-4':'ccu-isosorbide-mononitrate','ccu-7':'ccu-isosorbide-dinitrate','ccu-10':'ccu-nadroparin','ccu-13':'ccu-enoxaparin','heparin':'ccu-heparin-ufh','ccu-19':'ccu-aspirin','ccu-22':'ccu-clopidogrel','ccu-25':'ccu-bisoprolol','ccu-28':'ccu-metoprolol','ccu-31':'ccu-propranolol','ccu-34':'ccu-amlodipine','ccu-37':'ccu-verapamil','ccu-40':'ccu-enalapril','ccu-43':'ccu-atorvastatin','ccu-46':'ccu-furosemide','ccu-49':'ccu-dapagliflozin','ccu-52':'ccu-correction-insulin','norepinephrine':'ccu-norepinephrine','ccu-58':'ccu-dobutamine','ccu-61':'ccu-dopamine','atropine':'ccu-atropine','ccu-67':'ccu-pantoprazole','ccu-70':'ccu-omeprazole','ccu-72':'ccu-metronidazole','ccu-75':'ibd2-fortum-ceftazidime','ccu-78':'ccu-linezolid','ccu-81':'ibd2-levox-levofloxacin','ccu-84':'ccu-salbutamol','ccu-87':'ccu-nystatin','ccu-90':'ccu-betahistine','ccu-98':'ccu-propafenone','ccu-102':'ccu-valzadepine','ccu-106':'ccu-valzan-hct','ccu-110':'ccu-symbicort','ccu-115':'ccu-gentamicin','ccu-120':'ccu-ipratropium','ccu-124':'ccu-adenosine','ccu-128':'ccu-labetalol','ccu-132':'ccu-ketamine','ccu-137':'ccu-pethidine','ccu-141':'ccu-morphine','trolley-3':'trolley-spironolactone','trolley-6':'trolley-lidocaine','trolley-9':'trolley-sodium-bicarbonate','trolley-12':'ccu-labetalol','trolley-15':'trolley-hydralazine','trolley-17':'trolley-dextrose50','trolley-20':'trolley-hydrocortisone','trolley-23':'ccu-isosorbide-dinitrate','trolley-26':'trolley-diazepam','trolley-32':'trolley-amiodarone','trolley-35':'trolley-calcium-gluconate','trolley-38':'trolley-magnesium-sulfate','trolley-41':'ccu-adenosine','trolley-44':'trolley-digoxin','trolley-47':'trolley-aminophylline'}

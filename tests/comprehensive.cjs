@@ -15,7 +15,13 @@ for(const b of banks){
  const actual=new Set(b.exams[0].questions.flatMap(q=>q.learningPointIds));
  const excluded=new Set((b.scoringExclusions||[]).map(e=>e.learningPointId));
  assert([...excluded].every(id=>!actual.has(id)),'Excluded generic prompts receive no coverage credit');
- assert.deepEqual([...actual,...excluded].sort(),[...expected].sort(),'Every legacy mapping is retained or explicitly excluded');
+ if(b.itemType==='medication-group'){
+  assert.equal(expected.size,0);
+  assert(b.members.length>=2&&b.members.every(m=>banks.some(x=>x.itemType==='medication'&&x.itemId===m.id)));
+  assert(b.exams[0].questions.every(q=>q.evidenceIds.length&&q.evidenceIds.every(id=>b.sources.some(s=>s.id===id))));
+ }else{
+  assert.deepEqual([...actual,...excluded].sort(),[...expected].sort(),'Every legacy mapping is retained or explicitly excluded');
+ }
  assert.equal(new Set(b.exams[0].questions.map(q=>q.stem)).size,b.exams[0].questions.length,'No duplicate question stems');
  const keys={A:0,B:0,C:0,D:0};for(const q of b.exams[0].questions)if(q.format==='single-best-answer'){assert.equal(new Set(q.choices.map(c=>c.text)).size,4);assert(q.choices.every(c=>c.explanation));keys[q.answerKey]++;}
  assert(Math.max(...Object.values(keys))-Math.min(...Object.values(keys))<=1,'Balanced key positions');
