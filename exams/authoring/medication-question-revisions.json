@@ -7567,6 +7567,572 @@
           }
         ]
       }
+    },
+    "ibd2-prothiazine::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Besides its main antihistamine action, which paired receptor effects can promethazine have?",
+        "point": "Distinguish antimuscarinic and weaker antidopaminergic activity from other antiemetic mechanisms.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Muscarinic blockade and weaker dopamine antagonism",
+            "explanation": "Promethazine has anticholinergic effects and weaker dopamine antagonism than many other phenothiazines."
+          },
+          {
+            "id": "B",
+            "text": "Muscarinic stimulation and weaker dopamine antagonism",
+            "explanation": "It has antimuscarinic activity rather than muscarinic stimulation."
+          },
+          {
+            "id": "C",
+            "text": "Muscarinic blockade and selective serotonin 5-HT3 antagonism",
+            "explanation": "Antimuscarinic activity fits, but selective 5-HT3 blockade describes drugs such as ondansetron."
+          },
+          {
+            "id": "D",
+            "text": "Muscarinic stimulation and selective serotonin 5-HT3 antagonism",
+            "explanation": "This does not fit the secondary receptor effects taught for promethazine."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which antiemetic class description best fits promethazine?",
+        "point": "Identify a sedating first-generation H1 antihistamine of the phenothiazine group.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Sedating first-generation H1 antihistamine and phenothiazine derivative",
+            "explanation": "The classification accounts for substantial sedation and its antihistamine and antiemetic uses."
+          },
+          {
+            "id": "B",
+            "text": "Less-sedating second-generation H1 antihistamine",
+            "explanation": "Promethazine crosses into the CNS and commonly causes drowsiness."
+          },
+          {
+            "id": "C",
+            "text": "Selective 5-HT3 receptor antagonist",
+            "explanation": "This class includes ondansetron and does not describe promethazine."
+          },
+          {
+            "id": "D",
+            "text": "Peripheral dopamine-antagonist prokinetic",
+            "explanation": "Promethazine is primarily a sedating H1 antihistamine rather than a selective prokinetic."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which set of adult treatment goals can each fit a separately indicated and prescribed use of promethazine?",
+        "point": "Recognize antiemetic, antihistamine and sedative indications.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Relief of nausea, treatment of allergic symptoms, and prescribed perioperative sedation",
+            "explanation": "These roles are described for oral promethazine under indication-specific orders."
+          },
+          {
+            "id": "B",
+            "text": "Relief of nausea, treatment of allergic symptoms, and reversal of postoperative opioid sedation",
+            "explanation": "Promethazine is sedating and can add to opioid effects. It does not reverse them."
+          },
+          {
+            "id": "C",
+            "text": "Relief of nausea, replacement of first-line emergency epinephrine, and perioperative sedation",
+            "explanation": "An antihistamine is not a replacement for first-line emergency epinephrine in anaphylaxis."
+          },
+          {
+            "id": "D",
+            "text": "Relief of nausea, routine postoperative analgesia, and perioperative sedation",
+            "explanation": "Promethazine can fit the first and third goals but is not an analgesic."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::sedation_falls": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which promethazine receptor effect most directly contributes to drowsiness that can impair mobility after surgery?",
+        "point": "Connect sedation and fall risk to central H1 blockade.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Central histamine H1 blockade.",
+            "explanation": "Central H1 blockade contributes to drowsiness and impaired mobility after promethazine."
+          },
+          {
+            "id": "B",
+            "text": "Gastric histamine H2 blockade.",
+            "explanation": "H2 blockade reduces gastric acid and does not explain this sedative effect."
+          },
+          {
+            "id": "C",
+            "text": "Peripheral serotonin 5-HT3 blockade.",
+            "explanation": "This is an antiemetic mechanism, as with ondansetron, rather than the driver of this sedation."
+          },
+          {
+            "id": "D",
+            "text": "Brainstem opioid receptor activation.",
+            "explanation": "Opioids can add sedation, but promethazine does not activate opioid receptors."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::anticholinergic": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new symptom pair after oral promethazine specifically fits its antimuscarinic adverse effects?",
+        "point": "Identify reduced secretions and impaired bladder emptying.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Dry mouth and difficulty emptying the bladder",
+            "explanation": "Muscarinic blockade can reduce secretions and cause urinary retention."
+          },
+          {
+            "id": "B",
+            "text": "Dry mouth and new urinary urgency without retention",
+            "explanation": "Dry mouth fits, but impaired emptying is the expected urinary pattern."
+          },
+          {
+            "id": "C",
+            "text": "Increased salivation and difficulty emptying the bladder",
+            "explanation": "Retention fits, but increased salivation is opposite to the expected effect."
+          },
+          {
+            "id": "D",
+            "text": "Increased salivation and new diarrhea",
+            "explanation": "Both point away from the antimuscarinic pattern."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::promethazine_h1": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which receptor action most directly explains promethazine reducing histamine-mediated itching?",
+        "point": "Distinguish H1 blockade from related receptor actions.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Histamine H1 blockade",
+            "explanation": "This is the principal antihistamine action."
+          },
+          {
+            "id": "B",
+            "text": "Histamine H2 blockade",
+            "explanation": "H2 blockade mainly relates to gastric acid secretion."
+          },
+          {
+            "id": "C",
+            "text": "Dopamine D2 blockade",
+            "explanation": "Dopamine antagonism does not explain the primary antihistamine effect."
+          },
+          {
+            "id": "D",
+            "text": "Muscarinic blockade",
+            "explanation": "Antimuscarinic activity contributes to side effects but does not replace H1 blockade as the direct explanation."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::promethazine_postural_bp": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A stable postoperative patient has dizziness on standing after promethazine. Which finding most strongly supports an orthostatic BP effect rather than sedation alone?",
+        "point": "Link symptoms on standing with a measured postural decrease in pressure.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A reproducible standing BP drop with the same dizziness",
+            "explanation": "The timing and pressure change support orthostatic hypotension."
+          },
+          {
+            "id": "B",
+            "text": "Unchanged BP across posture with new drowsiness at rest",
+            "explanation": "This can fit sedation but does not show an orthostatic BP drop."
+          },
+          {
+            "id": "C",
+            "text": "Higher BP on standing with the same dizziness",
+            "explanation": "This pattern does not demonstrate postural hypotension."
+          },
+          {
+            "id": "D",
+            "text": "Unchanged BP across posture with nausea after meals",
+            "explanation": "The symptoms alone do not identify a postural BP mechanism."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::cns_combination": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient received tramadol and is now due for promethazine. Which paired surveillance best detects the serious additive effect of this combination?",
+        "point": "Check alertness and ventilation for additive opioid and sedative effects.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Level of consciousness and respiratory rate and effort",
+            "explanation": "Combined CNS depression may impair arousal and ventilation. Escalate new excessive sedation or breathing impairment."
+          },
+          {
+            "id": "B",
+            "text": "Level of consciousness and BP alone",
+            "explanation": "BP can be useful, but this omits direct assessment of ventilation."
+          },
+          {
+            "id": "C",
+            "text": "Respiratory rate and effort without checking arousal",
+            "explanation": "Breathing assessment is important, but decreased consciousness is also an early safety concern."
+          },
+          {
+            "id": "D",
+            "text": "Pain score and nausea severity alone",
+            "explanation": "These assess symptom control without detecting the main additive respiratory and sedation risk."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "availability"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which oral product matches the Palestinian MOH listing for Prothiazine?",
+        "point": "Match the brand with its registered oral ingredient and strength.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Promethazine hydrochloride 25 mg tablet.",
+            "explanation": "The Palestinian MOH lists this active ingredient and strength. Confirm the ordered strength on the pack."
+          },
+          {
+            "id": "B",
+            "text": "Promethazine hydrochloride 10 mg tablet.",
+            "explanation": "The ingredient matches, but the cited Prothiazine registry entry is for a 25 mg tablet."
+          },
+          {
+            "id": "C",
+            "text": "Prochlorperazine maleate 5 mg tablet.",
+            "explanation": "This is another phenothiazine antiemetic with a similar name. It is a different drug."
+          },
+          {
+            "id": "D",
+            "text": "Hydroxyzine hydrochloride 25 mg tablet.",
+            "explanation": "The strength is plausible for an antihistamine, but the Prothiazine listing is for promethazine."
+          }
+        ]
+      }
+    },
+    "ibd2-prothiazine::promethazine_route": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "If injectable promethazine is specifically ordered, which route does FDA labeling prefer because of severe tissue injury risk?",
+        "point": "Distinguish the preferred injectable route from the restricted IV route.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Deep intramuscular injection.",
+            "explanation": "FDA prefers deep IM. Required IV use must follow the specific product’s dilution and infusion instructions and local protocol."
+          },
+          {
+            "id": "B",
+            "text": "Diluted intravenous infusion.",
+            "explanation": "IV infusion may be used when needed under product-specific instructions, but FDA prefers deep IM."
+          },
+          {
+            "id": "C",
+            "text": "Subcutaneous injection.",
+            "explanation": "Subcutaneous injection is contraindicated in FDA labeling because of serious tissue injury risk."
+          },
+          {
+            "id": "D",
+            "text": "Undiluted slow intravenous push.",
+            "explanation": "Giving it undiluted as an IV push does not meet the updated FDA restrictions."
+          }
+        ]
+      }
+    },
+    "ibd2-avilac::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "What explains how oral lactulose softens stool?",
+        "point": "Connect low absorption and colonic fermentation to water retention.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Colonic bacteria ferment it and the resulting solutes retain water in the lumen.",
+            "explanation": "Lactulose reaches the colon largely unabsorbed. Bacterial metabolism and the resulting osmotic effect soften stool."
+          },
+          {
+            "id": "B",
+            "text": "It coats the stool and prevents water from leaving it during transit.",
+            "explanation": "That is a lubricant mechanism."
+          },
+          {
+            "id": "C",
+            "text": "It lowers stool surface tension so water mixes into the stool.",
+            "explanation": "That describes a surfactant stool softener."
+          },
+          {
+            "id": "D",
+            "text": "It directly stimulates enteric nerves to increase propulsive contractions.",
+            "explanation": "That describes a stimulant mechanism. Lactulose acts through colonic osmosis."
+          }
+        ]
+      }
+    },
+    "ibd2-avilac::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass",
+        "administration",
+        "availability"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which class and formulation match a bottle of Avilac labeled 66.7 g/100 mL?",
+        "point": "Identify oral Avilac as an osmotic disaccharide rather than another liquid bowel preparation.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Osmotic laxative containing roughly 10 g lactulose per 15 mL.",
+            "explanation": "Avilac is lactulose syrup. Its listed concentration is approximately 10 g per 15 mL."
+          },
+          {
+            "id": "B",
+            "text": "Stimulant laxative containing roughly 10 g lactulose per 15 mL.",
+            "explanation": "The concentration matches, but lactulose is an osmotic laxative."
+          },
+          {
+            "id": "C",
+            "text": "Saline laxative containing roughly 10 g magnesium citrate per 15 mL.",
+            "explanation": "Avilac contains lactulose, a disaccharide."
+          },
+          {
+            "id": "D",
+            "text": "Surfactant stool softener containing roughly 10 g docusate per 15 mL.",
+            "explanation": "Avilac contains lactulose and is not a surfactant."
+          }
+        ]
+      }
+    },
+    "ibd2-avilac::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A postoperative orthopaedic patient is prescribed Avilac while taking opioid analgesia and mobilizing less. Which symptom is this drug intended to address?",
+        "point": "Recognize constipation as the relevant use in the orthopaedic setting.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Hard, infrequent stools that began after surgery.",
+            "explanation": "Both reduced mobility and opioid use promote constipation, which is an indication for lactulose."
+          },
+          {
+            "id": "B",
+            "text": "Nausea that begins soon after each opioid dose.",
+            "explanation": "That may be an opioid adverse effect, but lactulose is not an antiemetic."
+          },
+          {
+            "id": "C",
+            "text": "Reflux that worsens when the patient lies flat.",
+            "explanation": "Lactulose does not treat acid reflux."
+          },
+          {
+            "id": "D",
+            "text": "Cramping and loose stools after each meal.",
+            "explanation": "Lactulose can worsen diarrhea and is not used to stop loose stools."
+          }
+        ]
+      }
+    },
+    "ibd2-avilac::laxative_response": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Ten hours after the first oral lactulose dose for uncomplicated constipation, a stable patient has passed no stool. What timeline should guide the next bowel reassessment?",
+        "point": "Recall the expected time to effect for oral lactulose in constipation.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The first bowel movement may take 24–48 hours.",
+            "explanation": "Oral lactulose acts in the colon and can take 24–48 hours to produce a bowel movement."
+          },
+          {
+            "id": "B",
+            "text": "The first bowel movement usually occurs in 15–30 minutes.",
+            "explanation": "This is too early for the usual effect of this oral drug."
+          },
+          {
+            "id": "C",
+            "text": "The first bowel movement usually occurs in 2–4 hours.",
+            "explanation": "This window is generally too short for oral lactulose."
+          },
+          {
+            "id": "D",
+            "text": "The first bowel movement usually takes 4–7 days.",
+            "explanation": "That is longer than the expected 24–48-hour onset."
+          }
+        ]
+      }
+    },
+    "ibd2-avilac::dehydration": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An adult on lactulose has frequent watery stools after a dose increase. Which pattern best fits excessive lactulose effect?",
+        "point": "Recognize gastrointestinal fluid and potassium loss after excessive lactulose dosing.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Volume depletion with falling serum potassium.",
+            "explanation": "Watery diarrhea can deplete fluid and potassium. Assess losses and review the regimen."
+          },
+          {
+            "id": "B",
+            "text": "Volume depletion with rising serum potassium.",
+            "explanation": "Volume loss fits, but the characteristic stool loss is of potassium. A rising level needs another explanation."
+          },
+          {
+            "id": "C",
+            "text": "Volume expansion with falling serum potassium.",
+            "explanation": "Potassium can fall, but untreated stool losses deplete volume."
+          },
+          {
+            "id": "D",
+            "text": "Volume expansion with rising serum potassium.",
+            "explanation": "Neither change is typical of excess lactulose-associated watery diarrhea."
+          }
+        ]
+      }
+    },
+    "ibd2-avilac::lactulose_goal": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which stool pattern is the usual adult maintenance target when lactulose is prescribed for hepatic encephalopathy?",
+        "point": "Recall the prescribed encephalopathy stool target and distinguish it from diarrhea or a constipation regimen.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Two to three soft stools daily.",
+            "explanation": "Maintenance treatment is commonly adjusted to this target under the prescribed plan."
+          },
+          {
+            "id": "B",
+            "text": "One formed stool every other day.",
+            "explanation": "This is below the usual bowel target in hepatic encephalopathy."
+          },
+          {
+            "id": "C",
+            "text": "Four to five watery stools daily.",
+            "explanation": "Watery diarrhea indicates excessive effect and can lead to fluid and electrolyte loss."
+          },
+          {
+            "id": "D",
+            "text": "One firm stool daily with occasional straining.",
+            "explanation": "This is not the usual frequency or consistency target for encephalopathy."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -7647,6 +8213,8 @@
     "ibd2-trufen": "ibuprofen-source-review-20261115",
     "ibd2-cefazolin": "cefazolin-source-review-20261115",
     "ibd2-tramadol": "tramadol-source-review-20261115",
-    "ibd2-meropenem": "meropenem-source-review-20261116"
+    "ibd2-meropenem": "meropenem-source-review-20261116",
+    "ibd2-prothiazine": "promethazine-source-review-20261116",
+    "ibd2-avilac": "lactulose-source-review-20261116"
   }
 }

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-prothiazine",
+  "reviewDate": "2026-11-16",
+  "status": "Completed author review of adult oral promethazine card and scored form.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://pharmacy.moh.ps/index/MorePrice/DrugsId/792",
+      "section": "Palestinian MOH Prothiazine 25 mg tablets",
+      "scope": "Supports brand identity and registered oral strength. Does not verify the ward pack or injection."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0ba50da-9f70-4531-a9de-3dd3f8aa1f5d",
+      "section": "Promethazine hydrochloride tablet labeling",
+      "scope": "Adult uses, H1 effects and weaker dopamine antagonism, sedation, anticholinergic effects, blood pressure and interaction with CNS depressants."
+    },
+    {
+      "url": "https://www.medsafe.govt.nz/profs/datasheet/a/AdiramedicaPromethazinetab.pdf",
+      "section": "Medsafe promethazine tablet data sheet",
+      "scope": "Corroborates H1 action and anticholinergic, sedating and hypotensive effects."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7675718-0a57-41ff-a771-79afc12150aa",
+      "section": "Promethazine HCl injection labeling and boxed warning",
+      "scope": "Corroborates formulation-specific route restrictions and tissue injury risk. The oral card does not teach a route or technique for any unverified local injectable product."
+    },
+    {
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-requires-updates-labeling-promethazine-hydrochloride-injection-products",
+      "section": "FDA injection labeling update",
+      "scope": "Deep IM preference, IV dilution and infusion restrictions and serious tissue injury."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Sedating first-generation H1 antihistamine; phenothiazine antiemetic.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--drug-class",
+          "sha256": "cc2f2ea0af96e8d0cf82209d2cc2ab1de36e174a1e5eb508def474ef55089003"
+        }
+      ],
+      "rationale": "Select the sedating H1 phenothiazine class."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Blocks histamine H1 receptors",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::promethazine_h1"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--promethazine_h1",
+          "sha256": "5e542d8c1cf960db6ddbf65a34789d5db5340c2aa87a4ec41ada359e84e4430e"
+        }
+      ],
+      "rationale": "Identify the receptor action that alleviates histamine-linked symptoms."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "anticholinergic and antidopaminergic effects",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--principal-action",
+          "sha256": "98b40be4a5886868bdc7853f9ba95f44b0432c13eb1c3964061ecb65d16df779"
+        }
+      ],
+      "rationale": "Identify both secondary receptor effects."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "May be used for nausea/vomiting, allergic symptoms or sedation depending on the order.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--treatment-role",
+          "sha256": "82fbbe6d460e7f050b90ef960a996518c0a5ebc347ecd67dca488716b5d24fae"
+        }
+      ],
+      "rationale": "Recognize the three separate prescribed roles."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "In postoperative patients, its sedating effect is clinically important.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::sedation_falls"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--sedation_falls",
+          "sha256": "1d2deabc800d6390886b794094ad1e7bd50ce1921d40ab04db73e55fe88dedb5"
+        }
+      ],
+      "rationale": "Connect drowsiness during mobility to central H1 blockade."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "For the ward tablet, PO as ordered.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--formulation",
+          "sha256": "5866629afce52001de1dfa7b1b81b7485c6ac1a8848ec981a84235cb2fc64db3"
+        }
+      ],
+      "rationale": "Match the tablet and actual strength to the oral route."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "The FDA prefers deep IM for the injection product.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::promethazine_route"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--promethazine_route",
+          "sha256": "9711b89f1182ac4bdf134443dfdf6eef685f5e897b7eff707707220d8f142df9"
+        }
+      ],
+      "rationale": "Recall the preferred route when injection is specifically ordered."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Check other sedating medicines before administration.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::cns_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--cns_combination",
+          "sha256": "2c0ab6e7a85d3d830f43b70acfb433c2ffb0c88956426df11c233c79c5708d68"
+        }
+      ],
+      "rationale": "Account for concurrent tramadol and the resulting surveillance needs."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Watch drowsiness, dizziness, confusion and orthostatic hypotension/fall risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::sedation_falls"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--sedation_falls",
+          "sha256": "1d2deabc800d6390886b794094ad1e7bd50ce1921d40ab04db73e55fe88dedb5"
+        }
+      ],
+      "rationale": "Connect drowsiness during mobility to central H1 blockade."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "orthostatic hypotension/fall risk.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::promethazine_postural_bp"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--promethazine_postural_bp",
+          "sha256": "e1b7c017446c27195109bb7249b560664482e9121684d85eb534be177d258942"
+        }
+      ],
+      "rationale": "Distinguish a symptom-associated postural BP drop from resting sedation."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Promethazine has anticholinergic effects such as dry mouth and urinary retention.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::anticholinergic"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--anticholinergic",
+          "sha256": "d95e6ca67b0413220bccd2cc4bdf9e4f4bccb0df53dd35cd43f976ed4ff0da03"
+        }
+      ],
+      "rationale": "Identify both antimuscarinic effects."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Sedation/respiratory depression can be worse with opioids such as tramadol or other CNS depressants.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::cns_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--cns_combination",
+          "sha256": "2c0ab6e7a85d3d830f43b70acfb433c2ffb0c88956426df11c233c79c5708d68"
+        }
+      ],
+      "rationale": "Select arousal and ventilation surveillance for the opioid combination."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Escalate excessive sedation or breathing impairment.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::cns_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--cns_combination",
+          "sha256": "2c0ab6e7a85d3d830f43b70acfb433c2ffb0c88956426df11c233c79c5708d68"
+        }
+      ],
+      "rationale": "Recognize changes in consciousness and breathing as findings requiring escalation."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "H1 blockade provides antihistamine/antiemetic effects but also causes substantial sedation and anticholinergic effects.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Mechanism, antiemetic role, sedation and anticholinergic risk are each assessed elsewhere."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "WARD-OBSERVED in IBD2 at Nasser Medical Complex on 1 Oct 2026. Palestinian MoH lists Prothiazine 25 mg tablets containing promethazine HCl; verify the exact pack/strength in hand. ED departmental stock confirmed by learner, 2 Nov 2026; verify actual injectable ampoule and ordered route.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Dated product and stock observations are provenance. Current ward stock and exact ampoule are unverified."
+    },
+    {
+      "sourceField": "memoryUse",
+      "sourceExcerpt": "Sedating antihistamine/antiemetic.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    },
+    {
+      "sourceField": "memoryDanger",
+      "sourceExcerpt": "Sedation + falls; additive respiratory/CNS depression with opioids.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Repeats objectives already tested."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Prothiazine 25 mg tablets containing promethazine HCl",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--formulation",
+          "sha256": "5866629afce52001de1dfa7b1b81b7485c6ac1a8848ec981a84235cb2fc64db3"
+        }
+      ],
+      "rationale": "Identify the listed ingredient and oral strength."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "H1 blockade explains antihistamine effects and contributes to drowsiness.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::sedation_falls"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--sedation_falls",
+          "sha256": "1d2deabc800d6390886b794094ad1e7bd50ce1921d40ab04db73e55fe88dedb5"
+        }
+      ],
+      "rationale": "Identify the mechanism behind sedation."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "Muscarinic blockade contributes to dry mouth and urinary retention.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-prothiazine::anticholinergic"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-prothiazine--comprehensive--anticholinergic",
+          "sha256": "d95e6ca67b0413220bccd2cc4bdf9e4f4bccb0df53dd35cd43f976ed4ff0da03"
+        }
+      ],
+      "rationale": "Associate muscarinic blockade with expected clinical effects."
+    }
+  ],
+  "reviewedSourceFieldSha256": {
+    "drugclass": "c4140951ca2cd25d7969d4af562fa6b5065a5cc520e48a47f152f7a4c196da61",
+    "mechanism": "c54fa33aa0241a45c91e5b394b8cb929fba0faa653268c96c31af6c04d9708cc",
+    "use": "cbe9f5dffa664044d68b2fdc79e18a63e06354770940f6ab52fc8d2d9d408dad",
+    "administration": "3befbe89239865d5a067f138de8382d176aee547fb929efe6a872f90d46ad8c0",
+    "monitor": "67c8c55eb30b273063a5408ec6b01ba99a061a6694a9a06e85414160767dc571",
+    "why": "821f5a780ff5bbe840959363d25c9a62143feb68403699b8641e3ef5bee2ca56",
+    "availability": "752710285c3ffa7d5bebd15ad831f0fe01990e21df501be1de04ba5915e1fdd3",
+    "memoryUse": "38888e8ee51ec4be7d10f00b89a47faf6cdf98cbacf6a56defd511bcb819bd72",
+    "memoryDanger": "01fd469cc7e6070e6bee9de68ef976093dcbe208ff2117aa6df94176fa39354e"
+  },
+  "questionSetSha256": "b4d213f5ae14c84fcaad8b9e01268f414935198c0ee41e1caedb29ed556446f3",
+  "questionReview": {
+    "ibd2-prothiazine--comprehensive--principal-action": "Distinguish antimuscarinic and weaker antidopaminergic activity from other antiemetic mechanisms.",
+    "ibd2-prothiazine--comprehensive--drug-class": "Identify a sedating first-generation H1 antihistamine of the phenothiazine group.",
+    "ibd2-prothiazine--comprehensive--treatment-role": "Recognize antiemetic, antihistamine and sedative indications.",
+    "ibd2-prothiazine--comprehensive--sedation_falls": "Connect sedation and fall risk to central H1 blockade.",
+    "ibd2-prothiazine--comprehensive--anticholinergic": "Identify reduced secretions and impaired bladder emptying.",
+    "ibd2-prothiazine--comprehensive--promethazine_h1": "Distinguish H1 blockade from related receptor actions.",
+    "ibd2-prothiazine--comprehensive--promethazine_postural_bp": "Link symptoms on standing with a measured postural decrease in pressure.",
+    "ibd2-prothiazine--comprehensive--cns_combination": "Check alertness and ventilation for additive opioid and sedative effects.",
+    "ibd2-prothiazine--comprehensive--formulation": "Match the brand with its registered oral ingredient and strength.",
+    "ibd2-prothiazine--comprehensive--promethazine_route": "Distinguish the preferred injectable route from the restricted IV route."
+  }
+}

@@ -13142,11 +13142,9 @@
           "ibd2-prothiazine--standard--sedation_falls",
           "ibd2-prothiazine--standard--anticholinergic",
           "ibd2-prothiazine--advanced--sedation_falls",
-          "ibd2-prothiazine--advanced--cns_combination",
           "ibd2-prothiazine--7-day--principal-action",
           "ibd2-prothiazine--7-day--sedation_falls",
-          "ibd2-prothiazine--7-day--anticholinergic",
-          "ibd2-prothiazine--7-day--cns_combination"
+          "ibd2-prothiazine--7-day--anticholinergic"
         ],
         "use": [
           "ibd2-prothiazine--standard--treatment-role",
@@ -13299,8 +13297,10 @@
         "monitor": [
           "ibd2-avilac--standard--laxative_response",
           "ibd2-avilac--advanced--dehydration",
+          "ibd2-avilac--advanced--lactulose_goal",
           "ibd2-avilac--7-day--laxative_response",
-          "ibd2-avilac--7-day--dehydration"
+          "ibd2-avilac--7-day--dehydration",
+          "ibd2-avilac--7-day--lactulose_goal"
         ],
         "memoryDanger": [
           "ibd2-avilac--advanced--dehydration",
