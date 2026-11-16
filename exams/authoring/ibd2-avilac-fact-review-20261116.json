@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-avilac",
+  "reviewDate": "2026-11-16",
+  "status": "Completed author review of the adult oral lactulose card and all scored questions.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://pharmacy.moh.ps/Content/Laws/FyyyDiGxLAahGRO9eJaOhb2Q_g9JDjVhfaVsSXvw1p1j4CuZx.pdf",
+      "section": "Palestinian MOH, section 161",
+      "scope": "Local oral Avilac identity and registered concentration."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b79d0d6-b9e3-436e-bab7-01451b6f45cd",
+      "section": "Lactulose for constipation",
+      "scope": "Osmotic effect, concentration and delayed bowel response."
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8af7389-3699-4873-b05a-509af7e8eaab",
+      "section": "Adult portal-systemic encephalopathy and overdose",
+      "scope": "Maintenance stool target and fluid and potassium loss from excess dosing."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Osmotic laxative; non-absorbable disaccharide.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--drug-class",
+          "sha256": "b75546fbd5e6ff6fa73d915a0c3bb5940c2d64915d6b5da665e8c8d1c7704221"
+        }
+      ],
+      "rationale": "Identify lactulose syrup and its class."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "66.7 g/100 mL (approximately 10 g/15 mL)",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--drug-class",
+          "sha256": "b75546fbd5e6ff6fa73d915a0c3bb5940c2d64915d6b5da665e8c8d1c7704221"
+        }
+      ],
+      "rationale": "Recognize the registered oral concentration."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Non-absorbable sugar metabolized by colonic bacteria",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--principal-action",
+          "sha256": "19e7a9d55d4d1686e25aac1817050aee10305fec42003e81c777ef4fc88f0f1e"
+        }
+      ],
+      "rationale": "Explain how the medicine reaches and acts in the colon."
+    },
+    {
+      "sourceField": "why",
+      "sourceExcerpt": "draws water osmotically into the colon",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--principal-action",
+          "sha256": "19e7a9d55d4d1686e25aac1817050aee10305fec42003e81c777ef4fc88f0f1e"
+        }
+      ],
+      "rationale": "Explain stool softening."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "constipation may be promoted by immobility and opioid analgesics",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--treatment-role",
+          "sha256": "6e588302b9b93402ac246cd11b21ceeef391026d94fc7ca4c4c631ffc13fc991"
+        }
+      ],
+      "rationale": "Recognize the ortho ward indication."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "2–3 soft stools daily",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::lactulose_goal"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--lactulose_goal",
+          "sha256": "80a42331590621d6529e6534fe3577cb0f2c5cfa3518fa73926968c749a86ad2"
+        }
+      ],
+      "rationale": "Recall the indication-specific maintenance target."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "A bowel movement for constipation may take 24–48 hours.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::laxative_response"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--laxative_response",
+          "sha256": "9e79359ecc6fe69267144728e45580a08556878a50c83a0b5b18892cd778e62c"
+        }
+      ],
+      "rationale": "Distinguish delayed effect from early treatment failure."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "watery diarrhea with dehydration and electrolyte losses, including low potassium",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-avilac::dehydration"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-avilac--comprehensive--dehydration",
+          "sha256": "b6d67478b775f6942499f2d183bcc22b3ccdc42799edab29e7089cfb35aca0a9"
+        }
+      ],
+      "rationale": "Recognize fluid and potassium loss from excessive dosing."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Give the ordered oral syrup volume in mL using a calibrated oral measuring device.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "General oral liquid measurement instruction. No separate generic scored item."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Reassess persistent constipation and escalate severe abdominal symptoms.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "General escalation reminder retained in the card."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Review the dose if diarrhea occurs.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Keep dose review as a nursing action in the teaching text and question rationale."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Verify the bottle in hand.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Package verification is a bedside reminder and does not establish drug-specific knowledge."
+    }
+  ],
+  "questionReview": {
+    "ibd2-avilac--comprehensive--principal-action": "Connect low absorption and colonic fermentation to water retention.",
+    "ibd2-avilac--comprehensive--drug-class": "Identify oral Avilac as an osmotic disaccharide rather than another liquid bowel preparation.",
+    "ibd2-avilac--comprehensive--treatment-role": "Recognize constipation as the relevant use in the orthopaedic setting.",
+    "ibd2-avilac--comprehensive--laxative_response": "Recall the expected time to effect for oral lactulose in constipation.",
+    "ibd2-avilac--comprehensive--dehydration": "Recognize gastrointestinal fluid and potassium loss after excessive lactulose dosing.",
+    "ibd2-avilac--comprehensive--lactulose_goal": "Recall the prescribed encephalopathy stool target and distinguish it from diarrhea or a constipation regimen."
+  },
+  "questionSetSha256": "8583feb5e7ac858e10fc6487ab3a30161318516663071b69bd47bcb5854d6a7b",
+  "reviewedSourceFieldSha256": {
+    "drugclass": "ca2fb913df714f8735b604957844813082b42052eda06e3e8bc52bb84f5b2ac2",
+    "mechanism": "7a28db0307f48c38d56041faaa8e2cf4b5c2820d4acdf56972504b9a5a461a1d",
+    "use": "63202f4b22f5ebba76d07f71392b8688bb15c763aa42138361dd9f355ae0a3d6",
+    "administration": "9c81f6ea4756e074de5f209afcb1bea585366f094789f670f2ac0998c24606a5",
+    "monitor": "602a349a1e780b93545d28c1f17c621273b389e5cac1b43d894e80295ade37da",
+    "why": "4e69be39e2c3c991c124085ef845470ee3ba7068db91587ec0f545e0e4609b71",
+    "availability": "fe91e1c8260c0f43b62f2aca67070f3029a5546c875569e67eaed7e8b90ea277",
+    "memoryUse": "bbef30475849006d54061bc26294da38b66eec54d86d787a78cb7c169867e0ef",
+    "memoryDanger": "b6b1501fcf162cd0a08fba2ae26d276f31e57794d0d93ef466bd352b90347780"
+  }
+}
