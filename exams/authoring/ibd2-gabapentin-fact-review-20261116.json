@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-gabapentin",
+  "reviewDate": "2026-11-16",
+  "status": "Completed author review of adult oral card and all scored questions.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97935fd9-1d4a-43b6-a5d9-de994591187b",
+      "section": "Neurontin prescribing information",
+      "scope": "Indications, oral administration, renal dosing, taper, CNS adverse effects, edema and mechanism."
+    },
+    {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/020235s079%2C020882s060%2C021129s059lbl.pdf",
+      "section": "FDA Neurontin labeling",
+      "scope": "Corroborates opioid and respiratory-impairment warning."
+    },
+    {
+      "url": "https://pharmacy.moh.ps/index/MorePrice/DrugsId/4783",
+      "section": "Palestinian MOH: Gabapentin Hikma 100 mg",
+      "scope": "Listed capsule strength, separate from verified ward stock."
+    },
+    {
+      "url": "https://pharmacy.moh.ps/index/MorePrice/DrugsId/4784",
+      "section": "Palestinian MOH: Gabapentin Hikma 300 mg",
+      "scope": "Listed capsule strength, separate from verified ward stock."
+    },
+    {
+      "url": "https://pharmacy.moh.ps/index/MorePrice/DrugsId/4785",
+      "section": "Palestinian MOH: Gabapentin Hikma 400 mg",
+      "scope": "Listed capsule strength, separate from verified ward stock."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "Gabapentinoid anticonvulsant",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--drug-class",
+          "sha256": "97b904eac7e232a00cd87bd3ea5348a9e5421fb12d94ced2f67f50c01e7664a8"
+        }
+      ],
+      "rationale": "Recognize the gabapentinoid class independently of general anticonvulsant use."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "alpha-2-delta subunit of voltage-gated calcium channels",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--principal-action",
+          "sha256": "f98a7e3e68fa1a25a4afc1ed5a37dbab2b8047b519a09cd427f0971c4e5a306f"
+        }
+      ],
+      "rationale": "Identify the alpha-2-delta calcium-channel subunit and distinguish it from direct GABA activity."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "does not directly activate GABA receptors",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--principal-action",
+          "sha256": "f98a7e3e68fa1a25a4afc1ed5a37dbab2b8047b519a09cd427f0971c4e5a306f"
+        }
+      ],
+      "rationale": "Identify the alpha-2-delta calcium-channel subunit and distinguish it from direct GABA activity."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "add-on therapy for focal-onset seizures. Postherpetic neuralgia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--treatment-role",
+          "sha256": "4aa7365e183a8307a4d40cebc994b7f2465547c87b508deea9da02ff27323404"
+        }
+      ],
+      "rationale": "Identify postherpetic neuralgia and add-on therapy for focal-onset seizures."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "renal impairment may require a lower daily dose and/or a longer interval",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::renal_dose"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--renal_dose",
+          "sha256": "72556a83999e4d25c9194963f2707313eb7597aea4d4a568d006e3f620b14e2b"
+        }
+      ],
+      "rationale": "Link reduced renal clearance to accumulation and dose or interval review."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "at least one week for immediate-release Neurontin",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::anticonvulsant_stop"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--anticonvulsant_stop",
+          "sha256": "03f39c3055f5ddfdcc9f003c7fa5806d434c4f1278adf4e0d8a2a6c497ca91a7"
+        }
+      ],
+      "rationale": "Recall gradual withdrawal and the usual minimum taper duration for this product."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "somnolence, dizziness and ataxia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::sedation_falls"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--sedation_falls",
+          "sha256": "f9b6739158113ac1d65acea97d37293b19ce3e4dc920249a38e7fb4576ef56d6"
+        }
+      ],
+      "rationale": "Identify somnolence and ataxia as the gabapentin effects that threaten mobility."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Opioids such as tramadol and underlying respiratory impairment increase the risk of serious respiratory depression.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::cns_combination"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--cns_combination",
+          "sha256": "d51175c729063d7d1cdfbf54266919a434fa077d1c11aef3616e4f9ce0e7e2cb"
+        }
+      ],
+      "rationale": "Recognize the combination of opioid exposure and impaired respiratory reserve."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Peripheral edema can occur.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-gabapentin::edema"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-gabapentin--comprehensive--edema",
+          "sha256": "5dd36a8cba62f5fa174c5b06fbfc0d4a8d85f4eb7027fac8f1c0fb1bd854040c"
+        }
+      ],
+      "rationale": "Recognize peripheral edema as a possible gabapentin adverse effect."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Exact ward formulation and strength were not recorded.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "A ward-stock limitation does not warrant a scored question."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "urgently escalate new difficult arousal or abnormal breathing.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Immediate escalation stays in the card. The scored item tests the drug-specific risk factors."
+    }
+  ],
+  "questionReview": {
+    "ibd2-gabapentin--comprehensive--principal-action": "Identify the alpha-2-delta calcium-channel subunit and distinguish it from direct GABA activity.",
+    "ibd2-gabapentin--comprehensive--drug-class": "Recognize the gabapentinoid class independently of general anticonvulsant use.",
+    "ibd2-gabapentin--comprehensive--treatment-role": "Identify postherpetic neuralgia and add-on therapy for focal-onset seizures.",
+    "ibd2-gabapentin--comprehensive--renal_dose": "Link reduced renal clearance to accumulation and dose or interval review.",
+    "ibd2-gabapentin--comprehensive--sedation_falls": "Identify somnolence and ataxia as the gabapentin effects that threaten mobility.",
+    "ibd2-gabapentin--comprehensive--cns_combination": "Recognize the combination of opioid exposure and impaired respiratory reserve.",
+    "ibd2-gabapentin--comprehensive--anticonvulsant_stop": "Recall gradual withdrawal and the usual minimum taper duration for this product.",
+    "ibd2-gabapentin--comprehensive--edema": "Recognize peripheral edema as a possible gabapentin adverse effect."
+  },
+  "questionSetSha256": "01bc1d0f5175a5e52ee9895ecf0aef0c533f8c8b235b1e1abbe05442fcb0329e",
+  "reviewedSourceFieldSha256": {
+    "drugclass": "36f2c4f088beecac1b822aea5d1b5eb1f0f6867f38ff3d93c6080df5d558af2c",
+    "mechanism": "d4d0427459e481fb7bf170d25560f2afb3368ce5221122af1161ca81c1cb4544",
+    "use": "a7d91cf1b473ce9d56d9068f377c1634011d0a8fdba3b4de855cbb41cf02a7e7",
+    "administration": "85abbaa87200c734c2581bfaf254b9f1978dc0a87d22a1af816e0d315dcf5c8f",
+    "monitor": "f502449e44bb460c1ed743ba41e2e426f6b0169a09b8ec16110525b32eca4142",
+    "why": "19900328c85e55c42377dc870c02fb4eb095a15ba28a333c1934336dbc953021",
+    "availability": "4c6124e5941cb925478993d336ac7b2e0d749c39e6bdb5fd5b6823a39f5cf561",
+    "memoryUse": "0da7a89d230d20cfacdddb065d5b533b653060279a141a849ed7540bbf25aaa9",
+    "memoryDanger": "7601de2b09663b367f6de335f28b43640eda92237b93aeb39e6deb331ae9344f"
+  }
+}
