@@ -18,6 +18,62 @@ function answerAll(w,correct=true){
   if(i<active.form.questions.length-1)w.CoreNursingExams.move(1);
  }
 }
+// A medication group is searchable by each member and uses its own saved review cycle.
+{
+ const w=boot(),d=w.document,group=w.CoreNursingExamData.banks.find(b=>b.itemType==='medication-group');
+ const med=group.members[0];
+ w.showTab('practice');
+ w.CoreNursingExams.listFilter('groups');w.CoreNursingExams.filter(med.title.toLowerCase());
+ assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,1);
+ w.CoreNursingExams.open(group.itemId);
+ assert.equal(d.querySelectorAll('#examGroupMaterials button').length,group.members.length);
+ w.eval(d.querySelector('#examGroupMaterials button').getAttribute('onclick'));
+ const reader=d.querySelector('#detail .exam-entry');
+ assert(reader.hidden);
+ w.toggleReading(d.querySelector('#detail .reader-finish .reading-control'));
+ assert.match(reader.querySelector('button.primary').textContent,/Group exam/);
+ assert.match(reader.textContent,/individual exam/);
+ // An existing individual result and reading status are independent of the group.
+ w.CoreNursingExams.launch(med.id);answerAll(w);w.CoreNursingExams.submit();
+ const individual=state(w).exams.items[med.id];
+ w.CoreNursingExams.launch(group.itemId);
+ assert.equal(state(w).exams.active.itemId,group.itemId);
+ assert(d.querySelector('.exam-written input'));
+ w.CoreNursingExams.unsure(true);answerAll(w);w.CoreNursingExams.submit();
+ const saved=state(w),record=saved.exams.items[group.itemId];
+ assert.deepEqual(saved.exams.items[med.id],individual);
+ assert.equal(record.due.at,record.attempts[0].completedAt+3*86400000);
+ assert.equal(w.CoreNursingExams.reviewRows().some(x=>x.bank.itemId===group.itemId&&x.response.unsure),true);
+ w.close();
+ const restored=boot(JSON.stringify(saved));
+ restored.showTab('practice');restored.CoreNursingExams.listFilter('upcoming');
+ assert(restored.document.querySelector('[data-exam-title="rhythm drugs"]'));
+ assert.deepEqual(state(restored).exams.items[group.itemId].due,record.due);
+ restored.close();
+}
+// Treatment plans are readable before the exam, and their original lessons remain available.
+{
+ const w=boot(),d=w.document;
+ const plans=w.CoreNursingExamData.banks.filter(b=>b.itemType==='treatment-plan');
+ assert.equal(plans.length,2);
+ w.showTab('practice');w.CoreNursingExams.listFilter('plans');
+ assert.equal(d.querySelectorAll('#examCatalog .exam-card').length,2);
+ for(const plan of plans){
+  const card=[...d.querySelectorAll('#examCatalog .exam-card')].find(c=>c.dataset.examTitle===plan.title.toLowerCase());
+  assert.equal(card.querySelector('.primary').textContent,'Study treatment plan');
+  w.eval(card.querySelector('.primary').getAttribute('onclick'));
+  assert.equal(state(w)?.exams.active??null,null);
+  assert.equal(d.querySelectorAll('#examGroupMaterials section').length,plan.plan.length);
+  assert(d.querySelector('#examGroupMaterials').compareDocumentPosition(d.querySelector('#examNextStep'))&w.Node.DOCUMENT_POSITION_FOLLOWING);
+  w.showTab('clinical');w.openLesson(plan.lessonId);
+  assert(d.querySelector('[data-treatment-plan-entry="'+plan.itemId+'"]'));
+  w.showTab('practice');
+ }
+ w.CoreNursingExams.launch(plans[0].itemId);answerAll(w);w.CoreNursingExams.submit();
+ assert(d.querySelector('.exam-next-material').textContent.includes('Review treatment plan'));
+ assert.equal(state(w).exams.items[plans[0].lessonId],undefined);
+ w.close();
+}
 // Available ready intersects current preparation completion with exam eligibility.
 {
  const w=boot(),d=w.document,data=w.CoreNursingExamData;

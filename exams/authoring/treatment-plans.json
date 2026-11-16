@@ -1,0 +1,388 @@
+{
+  "plans": [
+    {
+      "id": "plan-heart-failure",
+      "title": "Heart failure",
+      "lessonId": "ccu-quick-heart-failure",
+      "memberIds": [
+        "ccu-furosemide",
+        "ccu-bisoprolol",
+        "ccu-enalapril",
+        "trolley-spironolactone",
+        "ccu-dapagliflozin"
+      ],
+      "plan": [
+        {
+          "label": "Assess congestion and perfusion",
+          "text": "Orthopnea, crackles, edema, and weight gain suggest congestion. Check breathing, SpO₂, BP, rhythm, and perfusion. Falling BP with cold skin, confusion, or low urine output calls for urgent escalation.",
+          "evidenceIds": [
+            "acc-inpatient-hf-2024"
+          ]
+        },
+        {
+          "label": "Relieve fluid overload",
+          "text": "For significant fluid overload in hospital, prepare the prescribed IV loop diuretic, such as furosemide (Lasix). Reassess breathing and urine response. Trend BP, intake/output, daily weight, creatinine, potassium, and magnesium. Report poor response, worsening perfusion, or concerning electrolyte changes.",
+          "evidenceIds": [
+            "aha-hf-2022",
+            "acc-inpatient-hf-2024"
+          ]
+        },
+        {
+          "label": "Build the long-term HFrEF regimen",
+          "text": "Once stable, look for four groups in heart failure with reduced ejection fraction: an ARNI such as sacubitril/valsartan (ACE inhibitor or ARB when appropriate), an evidence-based beta blocker such as bisoprolol, an MRA such as spironolactone, and an SGLT2 inhibitor such as dapagliflozin. Furosemide helps control fluid overload alongside this regimen.",
+          "evidenceIds": [
+            "aha-hf-2022",
+            "acc-hfref-2024"
+          ]
+        },
+        {
+          "label": "Check safety before adjusting",
+          "text": "Check pulse and BP with beta blockers. Initiation or dose increases wait until HF is compensated. Review potassium and kidney function before starting or increasing spironolactone or renin–angiotensin system therapy. Confirm the discharge diuretic plan, lab follow-up, and when to report worsening breathlessness or weight gain.",
+          "evidenceIds": [
+            "aha-hf-2022",
+            "acc-hfref-2024",
+            "acc-inpatient-hf-2024"
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "concept": "loop-diuretic",
+          "point": "Recall the loop diuretic used for acute congestion",
+          "stem": "A patient admitted with HF has new orthopnea, bilateral crackles, edema, and a 3 kg weight gain. BP and perfusion are maintained. Which IV medication from the plan directly treats this fluid overload? Enter its generic name.",
+          "acceptedAnswers": [
+            "furosemide",
+            "frusemide"
+          ],
+          "explanation": "IV furosemide is one option for prompt decongestion in hospitalized HF with significant fluid overload.",
+          "evidenceIds": [
+            "aha-hf-2022"
+          ],
+          "criticalForSafety": false
+        },
+        {
+          "concept": "diuresis-response",
+          "point": "Recognize a useful response to diuresis",
+          "stem": "Two hours after the first IV loop diuretic dose, which change most clearly supports an effective initial response?",
+          "choices": [
+            [
+              "Urine output rises, breathing eases, and BP is maintained.",
+              "This suggests decongestion with maintained perfusion."
+            ],
+            [
+              "Urine output rises, but the patient is newly confused and hypotensive.",
+              "Higher urine output does not offset signs of poor perfusion."
+            ],
+            [
+              "Peripheral edema looks similar and orthopnea worsens.",
+              "Worsening orthopnea requires reassessment even if leg edema looks unchanged."
+            ],
+            [
+              "Weight is unchanged and urine output is falling.",
+              "These findings do not show an adequate initial diuretic response."
+            ]
+          ],
+          "evidenceIds": [
+            "acc-inpatient-hf-2024"
+          ],
+          "criticalForSafety": false
+        },
+        {
+          "concept": "low-potassium",
+          "point": "Escalate electrolyte loss with new ectopy",
+          "stem": "A patient receiving repeated IV loop doses develops frequent new ventricular ectopy. Potassium is 2.8 mmol/L. Which action takes priority?",
+          "choices": [
+            [
+              "Assess rhythm and vitals and promptly escalate the potassium result.",
+              "New ectopy with significant hypokalemia needs prompt assessment and a correction plan. Review magnesium as well."
+            ],
+            [
+              "Document the ectopy and repeat the electrolytes at the next scheduled draw.",
+              "The new rhythm change makes waiting unsafe."
+            ],
+            [
+              "Give the next loop dose first and assess BP afterward.",
+              "Additional diuresis may worsen electrolyte loss. Escalate the rhythm and lab findings before proceeding."
+            ],
+            [
+              "Ask the patient about usual potassium intake before reviewing the ECG.",
+              "Diet history can wait while the immediate rhythm risk is assessed."
+            ]
+          ],
+          "evidenceIds": [
+            "acc-inpatient-hf-2024",
+            "label-ccu-furosemide"
+          ],
+          "criticalForSafety": true
+        },
+        {
+          "concept": "missing-pillar",
+          "point": "Recall the missing HFrEF treatment class",
+          "stem": "A stable patient with HFrEF is taking sacubitril/valsartan, bisoprolol, and spironolactone. The team reviews the fourth treatment class, which includes dapagliflozin. Name that class.",
+          "acceptedAnswers": [
+            "SGLT2 inhibitor",
+            "SGLT2 inhibitors",
+            "SGLT-2 inhibitor",
+            "SGLT-2 inhibitors",
+            "sodium-glucose cotransporter 2 inhibitor",
+            "sodium glucose cotransporter 2 inhibitor"
+          ],
+          "explanation": "An SGLT2 inhibitor completes this four-class regimen when eligible. Its HFrEF benefit also applies to patients without diabetes.",
+          "evidenceIds": [
+            "aha-hf-2022",
+            "acc-hfref-2024"
+          ],
+          "criticalForSafety": false
+        },
+        {
+          "concept": "spironolactone-check",
+          "point": "Check potassium and renal function before spironolactone initiation",
+          "stem": "Spironolactone is added to an HFrEF regimen. Before the first dose, potassium is 5.6 mmol/L and eGFR has fallen to 25 mL/min/1.73 m². What should the nurse do?",
+          "choices": [
+            [
+              "Withhold the first dose and clarify the order promptly.",
+              "Both findings increase the risk of hyperkalemia. The prescriber should review the new order before administration."
+            ],
+            [
+              "Administer the dose and request potassium testing next week.",
+              "Existing hyperkalemia and reduced renal function require review before dosing."
+            ],
+            [
+              "Administer it if the patient is also taking furosemide.",
+              "Taking a loop diuretic does not guarantee a safe potassium level."
+            ],
+            [
+              "Administer it if the heart rate and BP are at baseline.",
+              "Stable vitals do not resolve the high potassium and renal risk."
+            ]
+          ],
+          "evidenceIds": [
+            "aha-hf-2022"
+          ],
+          "criticalForSafety": true
+        },
+        {
+          "concept": "beta-blocker-timing",
+          "point": "Defer new beta-blocker initiation during poor perfusion",
+          "stem": "A patient with acute decompensated HFrEF has BP 82/48, cold extremities, and worsening confusion. A newly entered bisoprolol order is due. What is the priority?",
+          "choices": [
+            [
+              "Escalate the signs of poor perfusion immediately and clarify the new order before giving it.",
+              "Urgently assess for shock. Initiating a beta blocker is deferred until HF is compensated."
+            ],
+            [
+              "Give the new dose and repeat BP in 30 minutes.",
+              "This could worsen current hemodynamic compromise."
+            ],
+            [
+              "Give the dose if the patient has no wheeze and reassess on rounds.",
+              "The immediate concern is poor perfusion, regardless of the presence of wheeze."
+            ],
+            [
+              "Wait for the next creatinine result before reporting the change.",
+              "Shock signs require escalation without waiting for the next lab result."
+            ]
+          ],
+          "evidenceIds": [
+            "acc-inpatient-hf-2024",
+            "acc-hfref-2024"
+          ],
+          "criticalForSafety": true
+        }
+      ]
+    },
+    {
+      "id": "plan-unstable-angina",
+      "title": "Unstable angina",
+      "lessonId": "ccu-lesson-01-acs",
+      "memberIds": [
+        "ccu-aspirin",
+        "ccu-clopidogrel",
+        "ccu-heparin-ufh",
+        "ccu-atorvastatin"
+      ],
+      "plan": [
+        {
+          "label": "Start with suspected acute coronary syndrome",
+          "text": "New rest chest pressure or worsening ischemic symptoms need rapid review. Check vitals, attach monitoring, obtain a 12-lead ECG within 10 minutes, and draw the initial troponin promptly. Repeat ECG for persistent or recurrent symptoms and follow the local serial troponin pathway. Unstable angina is ischemia without troponin evidence of acute myocardial injury. An early normal troponin can occur in NSTEMI.",
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ]
+        },
+        {
+          "label": "Reduce clot progression",
+          "text": "Give the prescribed or protocol-directed chewable aspirin loading dose early if eligible. Review allergy and bleeding risk. The team selects parenteral anticoagulation and a second antiplatelet as appropriate for the diagnosis, bleeding risk, kidney function, and angiography plan. Aspirin and clopidogrel act on platelets. Heparin acts on the coagulation system.",
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ]
+        },
+        {
+          "label": "Relieve symptoms and reassess",
+          "text": "Sublingual nitroglycerin can relieve ischemic pain if ordered and hemodynamics permit. Check BP and ask about recent erectile-dysfunction drugs such as sildenafil or tadalafil before use. Avoid routine oxygen with normal saturation. Escalate recurrent pain, ischemic ECG changes, hypotension, arrhythmia, or pulmonary edema promptly for urgent cardiology assessment.",
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ]
+        },
+        {
+          "label": "Prevent another event",
+          "text": "High-intensity statin therapy is part of ACS treatment when appropriate. Verify the discharge antiplatelet plan and bleeding instructions. New or recurrent rest pain during care needs repeat assessment even if earlier symptoms resolved.",
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "concept": "first-actions",
+          "point": "Obtain an early ECG and continue serial evaluation",
+          "stem": "A patient arrives with 25 minutes of new chest pressure at rest. BP and oxygen saturation are maintained. Which initial plan fits suspected ACS?",
+          "choices": [
+            [
+              "Obtain and review a 12-lead ECG within 10 minutes and draw the initial troponin promptly.",
+              "An early ECG can reveal an urgent reperfusion indication. Troponin supports classification and may need repeating."
+            ],
+            [
+              "Draw troponin now and obtain an ECG after the first result.",
+              "Biomarker results must not delay the early ECG."
+            ],
+            [
+              "Try nitroglycerin first and obtain an ECG if the pressure continues.",
+              "Pain response does not establish or rule out ischemia. Obtain the ECG promptly."
+            ],
+            [
+              "Monitor on telemetry until the next episode and then obtain a 12-lead ECG.",
+              "A 12-lead ECG is needed promptly, even if discomfort settles."
+            ]
+          ],
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ],
+          "criticalForSafety": true
+        },
+        {
+          "concept": "early-antiplatelet",
+          "point": "Recall the early chewable antiplatelet",
+          "stem": "The ACS pathway is activated for a patient with suspected unstable angina. There are no medication allergies or active bleeding. Which antiplatelet is usually chewed for the initial loading dose? Enter the generic name.",
+          "acceptedAnswers": [
+            "aspirin",
+            "acetylsalicylic acid",
+            "asa"
+          ],
+          "explanation": "Aspirin is the initial antiplatelet in eligible patients with ACS. Chewing the loading dose speeds absorption.",
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ],
+          "criticalForSafety": false
+        },
+        {
+          "concept": "early-normal-troponin",
+          "point": "Keep unstable angina and early NSTEMI in the differential",
+          "stem": "Thirty minutes after symptom onset, the first high-sensitivity troponin is below the assay's upper reference limit. Chest pressure recurs and repeat ECG shows new ST depression. Which interpretation supports the next nursing action?",
+          "choices": [
+            [
+              "Continue the ACS pathway and escalate now while serial troponin is obtained.",
+              "An early normal result does not rule out evolving NSTEMI or unstable angina. Dynamic ischemic ECG changes require prompt escalation."
+            ],
+            [
+              "The first result establishes unstable angina, so repeat troponin can wait until tomorrow.",
+              "An early low troponin cannot definitively distinguish unstable angina from evolving NSTEMI."
+            ],
+            [
+              "New ST depression alone confirms NSTEMI, so a repeat troponin is unnecessary.",
+              "ST depression supports ischemia. NSTEMI classification also requires evidence of acute myocardial injury."
+            ],
+            [
+              "Delay escalation until a troponin rises because BP is maintained.",
+              "Dynamic ECG changes and recurrent pain merit escalation without waiting for a biomarker rise."
+            ]
+          ],
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ],
+          "criticalForSafety": true
+        },
+        {
+          "concept": "nitrate-safety",
+          "point": "Identify a nitrate interaction",
+          "stem": "An adult with ongoing ischemic chest pain has an order for sublingual nitroglycerin, BP 116/70, and reports taking sildenafil six hours ago. What should the nurse do?",
+          "choices": [
+            [
+              "Withhold nitroglycerin and alert the team while continuing ACS assessment.",
+              "Recent sildenafil and nitrates can cause profound hypotension even when the starting BP is adequate."
+            ],
+            [
+              "Give the ordered dose because the systolic BP is currently above 100.",
+              "An adequate starting BP does not prevent the interaction."
+            ],
+            [
+              "Give half the dose with frequent BP checks.",
+              "Dose reduction does not make nitrate administration safe after recent sildenafil."
+            ],
+            [
+              "Switch to IV nitroglycerin so the infusion can be titrated.",
+              "Using a different route does not remove the contraindication."
+            ]
+          ],
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ],
+          "criticalForSafety": true
+        },
+        {
+          "concept": "heparin-purpose",
+          "point": "Differentiate anticoagulation from antiplatelet treatment",
+          "stem": "A patient with NSTE-ACS has received aspirin and now has an order for unfractionated heparin. Why can both be used in the same treatment plan?",
+          "choices": [
+            [
+              "Aspirin inhibits platelet activation. Heparin limits clot propagation through anticoagulation.",
+              "They act on different components of clot formation. Combined treatment also increases bleeding risk."
+            ],
+            [
+              "Aspirin limits coagulation factor activity. Heparin mainly blocks platelet activation.",
+              "These mechanisms are reversed. Heparin acts through antithrombin, while aspirin inhibits platelet activation."
+            ],
+            [
+              "Heparin dissolves the formed clot. Aspirin keeps the dissolved clot from reforming.",
+              "Heparin is an anticoagulant rather than a fibrinolytic drug."
+            ],
+            [
+              "Heparin relieves ischemic pain through vasodilation. Aspirin provides anticoagulation.",
+              "Nitroglycerin is the vasodilator considered for pain. Aspirin is an antiplatelet."
+            ]
+          ],
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ],
+          "criticalForSafety": false
+        },
+        {
+          "concept": "recurrent-angina",
+          "point": "Escalate recurrent ischemia during treatment",
+          "stem": "A patient treated for NSTE-ACS develops recurrent rest pain with new ST depression despite initial therapy. BP is 110/68 and SpO₂ is 97% on room air. What should the nurse prioritize?",
+          "choices": [
+            [
+              "Escalate immediately, reassess vitals and perfusion, and obtain a repeat 12-lead ECG.",
+              "Recurrent ischemia despite initial treatment can require urgent angiography assessment despite acceptable BP and SpO₂."
+            ],
+            [
+              "Provide routine oxygen and wait to see if the pain resolves.",
+              "At 97% there is no routine oxygen indication, and recurrent ischemia needs escalation."
+            ],
+            [
+              "Wait for the next planned troponin before calling cardiology.",
+              "Escalation should occur while serial biomarkers are obtained."
+            ],
+            [
+              "Give the scheduled high-intensity statin first and reassess pain at the next vital sign check.",
+              "A statin reduces future risk. It does not address the immediate change."
+            ]
+          ],
+          "evidenceIds": [
+            "aha-acc-acs-2025-antiplatelets"
+          ],
+          "criticalForSafety": true
+        }
+      ]
+    }
+  ]
+}
