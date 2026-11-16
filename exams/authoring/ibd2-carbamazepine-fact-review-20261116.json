@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "itemId": "ibd2-carbamazepine",
+  "reviewDate": "2026-11-16",
+  "status": "Completed author review of adult oral card and all scored questions.",
+  "certifiedFullCoverage": true,
+  "authorQuestionReviewComplete": true,
+  "independentClinicalValidation": false,
+  "empiricallyCalibratedDifficulty": false,
+  "sources": [
+    {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/020234s57lbl.pdf",
+      "section": "FDA Tegretol and Tegretol-XR prescribing information",
+      "scope": "Indications, formulations, rash and CBC warnings, SIADH, interactions and withdrawal."
+    },
+    {
+      "url": "https://pharmacy.moh.ps/index/MorePrice/DrugsId/2333",
+      "section": "Palestinian MOH: Tegretol 200 mg",
+      "scope": "Lists Tegretol 200 mg tablets. Does not confirm ward stock."
+    },
+    {
+      "url": "https://site.moh.ps/Content/app/durg.pdf",
+      "section": "Palestinian Essential Medicines List, anticonvulsants",
+      "scope": "Lists conventional and controlled-release carbamazepine."
+    },
+    {
+      "url": "https://ichd-3.org/13-painful-cranial-neuropathies-and-other-facial-pains/13-1-trigeminal-neuralgia/",
+      "section": "ICHD-3, trigeminal neuralgia",
+      "scope": "Characterizes the brief, unilateral, stimulus-triggered facial pain."
+    },
+    {
+      "url": "https://www.medicines.org.uk/emc/product/1040/smpc",
+      "section": "Tegretol SmPC, section 5.1",
+      "scope": "Supports voltage-dependent sodium channel blockade and reduced repetitive firing."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482455/",
+      "section": "Carbamazepine, mechanism of action",
+      "scope": "Supports the inactivated-state model for sodium channels."
+    }
+  ],
+  "facts": [
+    {
+      "sourceField": "drugclass",
+      "sourceExcerpt": "voltage-gated sodium-channel blocker",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::drug-class"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--drug-class",
+          "sha256": "f38ee7bef21cee53bf47d96a7297c9f3512c092b52c049467b3ea2270a8e594e"
+        }
+      ],
+      "rationale": "Distinguish a sodium-channel anticonvulsant from gabapentinoids and antidepressants."
+    },
+    {
+      "sourceField": "mechanism",
+      "sourceExcerpt": "Stabilizes inactivated voltage-gated sodium channels",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::principal-action"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--principal-action",
+          "sha256": "474ff1a8df73accc9e6efe641dd365bcf18d23363362227bf8ae2a819b5cb5ac"
+        }
+      ],
+      "rationale": "Distinguish stabilization of the inactivated state from other channel effects."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "brief, unilateral electric-shock facial pain triggered by light touch or chewing",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::treatment-role"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--treatment-role",
+          "sha256": "5e0370829a2196f7a7992529cb819d981268f95a1c782b4d3955c4c9416c0079"
+        }
+      ],
+      "rationale": "Recognize the clinical pattern of trigeminal neuralgia."
+    },
+    {
+      "sourceField": "use",
+      "sourceExcerpt": "selected seizure disorders",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::anticonvulsant_stop"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--anticonvulsant_stop",
+          "sha256": "94a211000742d6104693eb1c321ada8a69c13e25720019e9c52c07780365b6d7"
+        }
+      ],
+      "rationale": "Identify return or worsening of seizures after abrupt withdrawal."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Tegretol-XR tablets must be swallowed whole",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--formulation",
+          "sha256": "ab45eab5bf5eeb7ab14f1fe8084a96b453af8eb85bd5783d3d470aaf106f2df3"
+        }
+      ],
+      "rationale": "Protect extended release and distinguish formulation-specific administration."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "Clarify any conventional-to-extended-release switch and its dosing interval",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::formulation"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--formulation",
+          "sha256": "ab45eab5bf5eeb7ab14f1fe8084a96b453af8eb85bd5783d3d470aaf106f2df3"
+        }
+      ],
+      "rationale": "Protect extended release and distinguish formulation-specific administration."
+    },
+    {
+      "sourceField": "administration",
+      "sourceExcerpt": "abrupt withdrawal can precipitate seizures",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::anticonvulsant_stop"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--anticonvulsant_stop",
+          "sha256": "94a211000742d6104693eb1c321ada8a69c13e25720019e9c52c07780365b6d7"
+        }
+      ],
+      "rationale": "Identify return or worsening of seizures after abrupt withdrawal."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Painful mouth sores, blistering or skin peeling raise concern for SJS/TEN.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::rash_serious"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--rash_serious",
+          "sha256": "85c131ceae84949d7c9566d24e578b8a8e672f0907437685a935891aefbc1d7a"
+        }
+      ],
+      "rationale": "Recognize the combination that raises concern for SJS/TEN after carbamazepine."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "withhold the next dose pending urgent review",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "The stem supplies the immediate action. The scored item tests recognition of the serious complication."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Falling counts, new fever with sore throat, or unexplained bruising",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::cbc"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--cbc",
+          "sha256": "14ba1c2b0162f5ec31689b2969e638e3cd0020157665907a94e832c3ae24a733"
+        }
+      ],
+      "rationale": "Recognize neutropenia and thrombocytopenia as a concerning CBC pattern."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "SIADH-related hyponatremia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::low_na"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--low_na",
+          "sha256": "36e04cbde1df8f57d9547f66983b4f7c9d810fbdc54bbfa52b9b5b4aa738af0a"
+        }
+      ],
+      "rationale": "Link carbamazepine-associated SIADH to a fall in serum sodium."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "dizziness, drowsiness and ataxia",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::sedation_falls"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--sedation_falls",
+          "sha256": "3a828f6986619ed029de580125c75c737c2c2624e331c9685aacf0db1ac2c3d9"
+        }
+      ],
+      "rationale": "Recognize dizziness, drowsiness and ataxia as a mobility hazard."
+    },
+    {
+      "sourceField": "monitor",
+      "sourceExcerpt": "Hepatic enzyme induction can reduce the effectiveness of some hormonal contraceptives.",
+      "requiredForCoverage": true,
+      "coverageCredit": true,
+      "learningPointIds": [
+        "ibd2-carbamazepine::enzyme_induction"
+      ],
+      "observedQuestionEvidence": [
+        {
+          "questionId": "ibd2-carbamazepine--comprehensive--enzyme_induction",
+          "sha256": "19f1223ddee1248649a643a6783819e44f1be6d406ffc816848ce4ab21d40791"
+        }
+      ],
+      "rationale": "Identify enzyme induction as a cause of reduced contraceptive exposure and effectiveness."
+    },
+    {
+      "sourceField": "availability",
+      "sourceExcerpt": "Palestinian MOH lists Tegretol carbamazepine 200 mg tablets.",
+      "requiredForCoverage": false,
+      "coverageCredit": false,
+      "learningPointIds": [],
+      "observedQuestionEvidence": [],
+      "rationale": "Registry strength is contextual. The scored question tests clinically important release differences."
+    }
+  ],
+  "questionReview": {
+    "ibd2-carbamazepine--comprehensive--principal-action": "Distinguish stabilization of the inactivated state from other channel effects.",
+    "ibd2-carbamazepine--comprehensive--drug-class": "Distinguish a sodium-channel anticonvulsant from gabapentinoids and antidepressants.",
+    "ibd2-carbamazepine--comprehensive--treatment-role": "Recognize the clinical pattern of trigeminal neuralgia.",
+    "ibd2-carbamazepine--comprehensive--rash_serious": "Recognize the combination that raises concern for SJS/TEN after carbamazepine.",
+    "ibd2-carbamazepine--comprehensive--cbc": "Recognize neutropenia and thrombocytopenia as a concerning CBC pattern.",
+    "ibd2-carbamazepine--comprehensive--low_na": "Link carbamazepine-associated SIADH to a fall in serum sodium.",
+    "ibd2-carbamazepine--comprehensive--sedation_falls": "Recognize dizziness, drowsiness and ataxia as a mobility hazard.",
+    "ibd2-carbamazepine--comprehensive--enzyme_induction": "Identify enzyme induction as a cause of reduced contraceptive exposure and effectiveness.",
+    "ibd2-carbamazepine--comprehensive--anticonvulsant_stop": "Identify return or worsening of seizures after abrupt withdrawal.",
+    "ibd2-carbamazepine--comprehensive--formulation": "Protect extended release and distinguish formulation-specific administration."
+  },
+  "questionSetSha256": "623a7c4baeeda4abfb25dbf9e47c7a671f01ad2f43294d0769bc7ec17f796f35",
+  "reviewedSourceFieldSha256": {
+    "drugclass": "76e209ace2e3af74de2ab35e9e5a0fcbb663c3d61499cb12c20991d35e136fa8",
+    "mechanism": "8d16814724b855485ad7ada0a9f51e174025a147206e1e658b508ae1c86b0698",
+    "use": "0ce2ba5ff902a036b27e6784ac06bdc2867b7acd93140e4dd9695b0bf2db78bb",
+    "administration": "d97a490919e7461b62cad58a484bc6fc260e853277730cf970e04d509b60c668",
+    "monitor": "dbc1bc5609b016f6aace20130fa4e40ba2174f5e43ed9af3188324c6b0cd6237",
+    "why": "d7704539480c8457c9ef2deabddb1b3489c7af17e2145502ae382502105b1457",
+    "availability": "d77e3c77d088ec6f8f2dcb110d73a9f684211b012a39898b8c7c27f9d124f126",
+    "memoryUse": "85e95c79e5c6d1b51b226d6fd67ea11a2fe116572310e6b5d5acbbf1aa680d78",
+    "memoryDanger": "4259b783c079a3701cdc8d48cf5c12e97a731c6f67e4bd3f176c25515bf0d466"
+  }
+}

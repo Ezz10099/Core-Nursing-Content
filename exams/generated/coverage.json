@@ -13228,18 +13228,6 @@
           "ibd2-gabapentin--7-day--renal_dose",
           "ibd2-gabapentin--7-day--anticonvulsant_stop"
         ],
-        "monitor": [
-          "ibd2-gabapentin--standard--renal_dose",
-          "ibd2-gabapentin--standard--sedation_falls",
-          "ibd2-gabapentin--advanced--renal_dose",
-          "ibd2-gabapentin--advanced--sedation_falls",
-          "ibd2-gabapentin--advanced--cns_combination",
-          "ibd2-gabapentin--advanced--edema",
-          "ibd2-gabapentin--7-day--renal_dose",
-          "ibd2-gabapentin--7-day--sedation_falls",
-          "ibd2-gabapentin--7-day--cns_combination",
-          "ibd2-gabapentin--7-day--edema"
-        ],
         "memoryDanger": [
           "ibd2-gabapentin--standard--renal_dose",
           "ibd2-gabapentin--standard--sedation_falls",
@@ -13249,6 +13237,15 @@
           "ibd2-gabapentin--7-day--renal_dose",
           "ibd2-gabapentin--7-day--sedation_falls",
           "ibd2-gabapentin--7-day--cns_combination"
+        ],
+        "monitor": [
+          "ibd2-gabapentin--standard--sedation_falls",
+          "ibd2-gabapentin--advanced--sedation_falls",
+          "ibd2-gabapentin--advanced--cns_combination",
+          "ibd2-gabapentin--advanced--edema",
+          "ibd2-gabapentin--7-day--sedation_falls",
+          "ibd2-gabapentin--7-day--cns_combination",
+          "ibd2-gabapentin--7-day--edema"
         ]
       },
       "interpretation": "Source references locate support. They do not claim that every fact in a referenced paragraph is tested."

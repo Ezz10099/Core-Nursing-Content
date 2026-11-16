@@ -8133,6 +8133,639 @@
           }
         ]
       }
+    },
+    "ibd2-gabapentin::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which molecular target distinguishes gabapentin from a benzodiazepine or a sodium-channel anticonvulsant?",
+        "point": "Identify the alpha-2-delta calcium-channel subunit and distinguish it from direct GABA activity.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Alpha-2-delta subunit of voltage-gated calcium channels",
+            "explanation": "Gabapentin binds this subunit and can reduce excitatory signaling."
+          },
+          {
+            "id": "B",
+            "text": "Benzodiazepine site on the GABA-A receptor",
+            "explanation": "Benzodiazepines act at this site. Gabapentin does not directly act on GABA receptors."
+          },
+          {
+            "id": "C",
+            "text": "Inactivated voltage-gated sodium channels",
+            "explanation": "This describes agents such as carbamazepine."
+          },
+          {
+            "id": "D",
+            "text": "Synaptic vesicle protein SV2A",
+            "explanation": "This is a target of levetiracetam, not gabapentin."
+          }
+        ]
+      }
+    },
+    "ibd2-gabapentin::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which other medication is in the same pharmacologic class as gabapentin?",
+        "point": "Recognize the gabapentinoid class independently of general anticonvulsant use.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Pregabalin",
+            "explanation": "Both medicines are gabapentinoids."
+          },
+          {
+            "id": "B",
+            "text": "Carbamazepine",
+            "explanation": "It is a sodium-channel anticonvulsant."
+          },
+          {
+            "id": "C",
+            "text": "Clonazepam",
+            "explanation": "It is a benzodiazepine anticonvulsant."
+          },
+          {
+            "id": "D",
+            "text": "Phenobarbital",
+            "explanation": "It is a barbiturate anticonvulsant."
+          }
+        ]
+      }
+    },
+    "ibd2-gabapentin::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which paired indications best explain why oral gabapentin may appear on both a pain service and a neurology medication list?",
+        "point": "Identify postherpetic neuralgia and add-on therapy for focal-onset seizures.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Postherpetic neuralgia and add-on treatment for focal seizures",
+            "explanation": "Both are labeled uses for immediate-release Neurontin."
+          },
+          {
+            "id": "B",
+            "text": "Postherpetic neuralgia and rescue treatment for status epilepticus",
+            "explanation": "The pain indication fits, but oral gabapentin is not rescue therapy for status epilepticus."
+          },
+          {
+            "id": "C",
+            "text": "Inflammatory joint pain and add-on treatment for focal seizures",
+            "explanation": "Focal seizures fit. Gabapentin is used for the neuropathic pain component, not as an anti-inflammatory analgesic."
+          },
+          {
+            "id": "D",
+            "text": "Inflammatory joint pain and rescue treatment for status epilepticus",
+            "explanation": "Neither is the usual role of oral gabapentin."
+          }
+        ]
+      }
+    },
+    "ibd2-gabapentin::renal_dose": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient’s creatinine clearance falls substantially while taking immediate-release gabapentin. Why might the daily dose or interval need review?",
+        "point": "Link reduced renal clearance to accumulation and dose or interval review.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Slower renal elimination can increase gabapentin exposure.",
+            "explanation": "Gabapentin is cleared renally. Lower clearance can cause accumulation at the previous regimen."
+          },
+          {
+            "id": "B",
+            "text": "Reduced first-pass metabolism can increase gabapentin exposure.",
+            "explanation": "Gabapentin is not appreciably metabolized. Renal clearance is the concern."
+          },
+          {
+            "id": "C",
+            "text": "Increased renal elimination can lower gabapentin exposure.",
+            "explanation": "Declining creatinine clearance tends to reduce rather than increase gabapentin elimination."
+          },
+          {
+            "id": "D",
+            "text": "Increased hepatic enzyme activity can lower gabapentin exposure.",
+            "explanation": "Gabapentin is not cleared principally by hepatic enzyme metabolism."
+          }
+        ]
+      }
+    },
+    "ibd2-gabapentin::sedation_falls": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which finding pair would most directly suggest that a recent gabapentin increase is impairing safe mobility?",
+        "point": "Identify somnolence and ataxia as the gabapentin effects that threaten mobility.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "New somnolence and an ataxic gait",
+            "explanation": "Sedation and incoordination are known effects and can appear after a dose increase."
+          },
+          {
+            "id": "B",
+            "text": "New insomnia and a resting tremor",
+            "explanation": "This is less characteristic than the sedation and ataxia pattern."
+          },
+          {
+            "id": "C",
+            "text": "New urinary urgency and slowed bowel sounds",
+            "explanation": "This pair does not explain gabapentin-related psychomotor impairment."
+          },
+          {
+            "id": "D",
+            "text": "New muscular rigidity and painful neck spasms",
+            "explanation": "This suggests a different problem, such as dystonia, rather than gabapentin-related incoordination."
+          }
+        ]
+      }
+    },
+    "ibd2-gabapentin::cns_combination": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Two patients have just started the same oral gabapentin dose. Which additional findings would most increase your concern for respiratory depression?",
+        "point": "Recognize the combination of opioid exposure and impaired respiratory reserve.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Regular tramadol and chronic respiratory impairment",
+            "explanation": "Tramadol is an opioid. Opioid exposure and reduced respiratory reserve increase concern for sedation and respiratory depression."
+          },
+          {
+            "id": "B",
+            "text": "Regular paracetamol and chronic respiratory impairment",
+            "explanation": "Respiratory impairment is a risk factor, but paracetamol does not add opioid respiratory depression."
+          },
+          {
+            "id": "C",
+            "text": "Regular paracetamol and controlled hypertension",
+            "explanation": "Neither adds opioid exposure or underlying respiratory impairment."
+          },
+          {
+            "id": "D",
+            "text": "Regular ibuprofen and stable iron-deficiency anemia",
+            "explanation": "This combination lacks the two main risk factors in this comparison."
+          }
+        ]
+      }
+    },
+    "ibd2-gabapentin::anticonvulsant_stop": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient taking immediate-release Neurontin for epilepsy is stable and the prescriber plans routine discontinuation. Which plan is consistent with product labeling?",
+        "point": "Recall gradual withdrawal and the usual minimum taper duration for this product.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Gradual reduction over at least one week, individualized by the prescriber",
+            "explanation": "Labeling advises a gradual withdrawal of at least one week, with longer if needed. Abrupt withdrawal can increase seizure risk."
+          },
+          {
+            "id": "B",
+            "text": "Gradual reduction over two days, then stop if there are no symptoms",
+            "explanation": "An uneventful two days do not satisfy the labeled minimum for routine withdrawal."
+          },
+          {
+            "id": "C",
+            "text": "Gradual reduction over three days, then stop if pain remains controlled",
+            "explanation": "Pain status does not establish a safe anticonvulsant withdrawal schedule."
+          },
+          {
+            "id": "D",
+            "text": "Gradual reduction over four days, then stop if the patient is seizure-free",
+            "explanation": "A brief seizure-free period does not replace the usual minimum taper."
+          }
+        ]
+      }
+    },
+    "ibd2-gabapentin::edema": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which new peripheral finding is a recognized adverse effect after starting gabapentin and can be assessed at the bedside?",
+        "point": "Recognize peripheral edema as a possible gabapentin adverse effect.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Symmetric pitting swelling at the ankles",
+            "explanation": "Peripheral edema is a recognized adverse effect. Timing alone does not establish the cause."
+          },
+          {
+            "id": "B",
+            "text": "Painful red nodules over both shins",
+            "explanation": "Gabapentin can cause peripheral edema, but it is not expected to cause an inflammatory flare in the legs."
+          },
+          {
+            "id": "C",
+            "text": "New pinpoint nonblanching spots over both feet",
+            "explanation": "Petechiae are distinct from edema and require assessment for other causes."
+          },
+          {
+            "id": "D",
+            "text": "Tender, warm swelling along a superficial vein",
+            "explanation": "A tender, warm vein suggests a local venous condition. Evaluate it separately."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::principal-action": {
+      "action": "replace",
+      "sourceFields": [
+        "mechanism",
+        "why"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "What does carbamazepine do to voltage-gated sodium channels during repetitive firing?",
+        "point": "Distinguish stabilization of the inactivated state from other channel effects.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Stabilizes their inactivated state and limits repetitive firing.",
+            "explanation": "Prolonged inactivation reduces sustained repetitive neuronal activity."
+          },
+          {
+            "id": "B",
+            "text": "Stabilizes their open state and prolongs sodium entry.",
+            "explanation": "Open-state stabilization with prolonged sodium entry is opposite to the taught action."
+          },
+          {
+            "id": "C",
+            "text": "Speeds their recovery from inactivation and promotes repeated firing.",
+            "explanation": "Carbamazepine limits repetitive firing by slowing recovery from inactivation."
+          },
+          {
+            "id": "D",
+            "text": "Shifts them to activation at a lower threshold and increases excitability.",
+            "explanation": "The intended action is reduced repetitive activity."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::drug-class": {
+      "action": "replace",
+      "sourceFields": [
+        "drugclass"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which class best describes carbamazepine among drugs used for neuropathic pain?",
+        "point": "Distinguish a sodium-channel anticonvulsant from gabapentinoids and antidepressants.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Sodium-channel-blocking anticonvulsant",
+            "explanation": "This class describes carbamazepine."
+          },
+          {
+            "id": "B",
+            "text": "Calcium-channel-subunit-binding anticonvulsant",
+            "explanation": "This describes gabapentinoids such as gabapentin."
+          },
+          {
+            "id": "C",
+            "text": "Tricyclic antidepressant",
+            "explanation": "Amitriptyline is an example of that class."
+          },
+          {
+            "id": "D",
+            "text": "Serotonin–noradrenaline reuptake inhibitor",
+            "explanation": "Duloxetine is an example of that class."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::treatment-role": {
+      "action": "replace",
+      "sourceFields": [
+        "use"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Which facial-pain presentation best fits the labeled pain indication for carbamazepine?",
+        "point": "Recognize the clinical pattern of trigeminal neuralgia.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Brief unilateral electric-shock pain triggered by chewing or light touch",
+            "explanation": "This pattern is typical of trigeminal neuralgia, an indication for carbamazepine."
+          },
+          {
+            "id": "B",
+            "text": "Persistent burning around a healed shingles eruption on the cheek",
+            "explanation": "This is more consistent with postherpetic neuralgia."
+          },
+          {
+            "id": "C",
+            "text": "Hours of unilateral throbbing pain with nausea and light sensitivity",
+            "explanation": "This pattern is more consistent with migraine."
+          },
+          {
+            "id": "D",
+            "text": "Dull bilateral jaw aching after prolonged chewing with joint tenderness",
+            "explanation": "This suggests a musculoskeletal jaw problem rather than trigeminal neuralgia."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::rash_serious": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "Ten days after starting carbamazepine, an adult develops a spreading rash and painful mouth erosions. Which complication should drive immediate escalation and withholding the next dose pending review?",
+        "point": "Recognize the combination that raises concern for SJS/TEN after carbamazepine.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Stevens–Johnson syndrome or toxic epidermal necrolysis",
+            "explanation": "The timing and mucocutaneous findings raise concern for a severe drug reaction. Escalate immediately."
+          },
+          {
+            "id": "B",
+            "text": "A localized fixed drug eruption without mucosal involvement",
+            "explanation": "The rash is spreading and already involves mucosa. A localized reaction is not an adequate explanation."
+          },
+          {
+            "id": "C",
+            "text": "Isolated acute urticaria without epidermal injury",
+            "explanation": "Simple urticaria does not usually cause painful mucosal erosions."
+          },
+          {
+            "id": "D",
+            "text": "An uncomplicated exanthematous drug eruption",
+            "explanation": "Mucosal erosions make an uncomplicated rash an unsafe working assumption."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::cbc": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient taking carbamazepine develops fever, sore throat and new bruising. Which lab pattern would support a serious hematologic adverse effect?",
+        "point": "Recognize neutropenia and thrombocytopenia as a concerning CBC pattern.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Falling absolute neutrophil count and falling platelets",
+            "explanation": "Neutropenia can present with infection symptoms, and thrombocytopenia can contribute to bruising. Carbamazepine can cause clinically important cytopenias."
+          },
+          {
+            "id": "B",
+            "text": "Falling absolute neutrophil count and rising platelets",
+            "explanation": "Neutropenia is concerning, but rising platelets do not explain the bruising as part of a cytopenic pattern."
+          },
+          {
+            "id": "C",
+            "text": "Rising absolute neutrophil count and falling mean cell volume",
+            "explanation": "This pattern does not demonstrate either neutropenia or thrombocytopenia."
+          },
+          {
+            "id": "D",
+            "text": "Rising absolute neutrophil count and rising platelets",
+            "explanation": "Neither trend demonstrates the suspected cytopenias."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::low_na": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "An older adult recently had carbamazepine increased and now has confusion, weakness and more unsteadiness. Which drug-related mechanism and electrolyte change best fit?",
+        "point": "Link carbamazepine-associated SIADH to a fall in serum sodium.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Water retention from SIADH with falling serum sodium",
+            "explanation": "SIADH causes water retention and dilutional hyponatremia, which can cause these symptoms."
+          },
+          {
+            "id": "B",
+            "text": "Water loss from reduced ADH effect with rising serum sodium",
+            "explanation": "Carbamazepine is associated with water retention and dilutional hyponatremia rather than this pattern."
+          },
+          {
+            "id": "C",
+            "text": "Reduced calcium absorption with falling serum calcium",
+            "explanation": "This is not the characteristic electrolyte explanation for acute new confusion after a dose increase."
+          },
+          {
+            "id": "D",
+            "text": "Reduced renal potassium excretion with rising serum potassium",
+            "explanation": "This would prompt a different evaluation. SIADH-related water retention primarily lowers the serum sodium."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::sedation_falls": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "After a carbamazepine titration, which paired findings are consistent with its common CNS adverse effects that affect transfer safety?",
+        "point": "Recognize dizziness, drowsiness and ataxia as a mobility hazard.",
+        "criticalForSafety": false,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "New drowsiness and poor coordination",
+            "explanation": "Sedation and ataxia can impair transfers even without a sodium abnormality."
+          },
+          {
+            "id": "B",
+            "text": "New insomnia and painful muscle spasms",
+            "explanation": "This is not the typical sedative or coordination pattern."
+          },
+          {
+            "id": "C",
+            "text": "New agitation and increased reflexes",
+            "explanation": "This suggests a different neurologic pattern."
+          },
+          {
+            "id": "D",
+            "text": "New dry mouth and difficulty voiding",
+            "explanation": "This fits antimuscarinic effects rather than the typical mobility-limiting effects of carbamazepine."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::enzyme_induction": {
+      "action": "replace",
+      "sourceFields": [
+        "monitor"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A patient using a combined oral contraceptive starts carbamazepine. Which interaction should be flagged at medication reconciliation?",
+        "point": "Identify enzyme induction as a cause of reduced contraceptive exposure and effectiveness.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Enzyme induction may lower hormone exposure and reduce contraceptive effectiveness.",
+            "explanation": "Carbamazepine can speed the metabolism of contraceptive hormones. Request review of a suitable contraceptive plan."
+          },
+          {
+            "id": "B",
+            "text": "Enzyme inhibition may raise hormone exposure and reduce contraceptive effectiveness.",
+            "explanation": "Carbamazepine is an inducer in this interaction."
+          },
+          {
+            "id": "C",
+            "text": "Enzyme induction may raise hormone exposure and increase estrogen adverse effects.",
+            "explanation": "Induction generally lowers hormone exposure in this combination."
+          },
+          {
+            "id": "D",
+            "text": "Reduced renal hormone clearance may raise exposure without altering effectiveness.",
+            "explanation": "The relevant mechanism is increased metabolism, rather than reduced renal elimination."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::anticonvulsant_stop": {
+      "action": "replace",
+      "sourceFields": [
+        "administration"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "What is the main neurologic concern if a stable patient with epilepsy abruptly stops maintenance carbamazepine?",
+        "point": "Identify return or worsening of seizures after abrupt withdrawal.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Breakthrough seizures, which may progress to status epilepticus",
+            "explanation": "Abrupt anticonvulsant withdrawal can precipitate seizures. Routine withdrawal requires a prescriber-directed plan."
+          },
+          {
+            "id": "B",
+            "text": "A new persistent sensory neuropathy from withdrawal",
+            "explanation": "A new persistent neuropathy is not the expected reason for tapered withdrawal."
+          },
+          {
+            "id": "C",
+            "text": "A new extrapyramidal syndrome from dopamine blockade",
+            "explanation": "Carbamazepine withdrawal does not produce this by dopamine blockade."
+          },
+          {
+            "id": "D",
+            "text": "A focal deficit from predictable rebound cerebral vasospasm",
+            "explanation": "The primary neurologic concern is seizure recurrence, not rebound vasospasm."
+          }
+        ]
+      }
+    },
+    "ibd2-carbamazepine::formulation": {
+      "action": "replace",
+      "sourceFields": [
+        "administration",
+        "availability"
+      ],
+      "question": {
+        "format": "single-best-answer",
+        "stem": "A verified order is for Tegretol-XR. Which instruction distinguishes this tablet from a conventional carbamazepine tablet?",
+        "point": "Protect extended release and distinguish formulation-specific administration.",
+        "criticalForSafety": true,
+        "answerKey": "A",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Swallow the XR tablet whole and clarify the schedule before switching formulations.",
+            "explanation": "Tegretol-XR should remain intact. A switch requires review of the schedule and formulation."
+          },
+          {
+            "id": "B",
+            "text": "Crush the XR tablet with food if the same total daily dose is given.",
+            "explanation": "Crushing interferes with its extended-release design."
+          },
+          {
+            "id": "C",
+            "text": "Substitute a conventional tablet on the XR schedule if the strength matches.",
+            "explanation": "A matching tablet strength does not establish the correct dosing interval."
+          },
+          {
+            "id": "D",
+            "text": "Disperse the XR tablet in water and use the suspension schedule.",
+            "explanation": "Tegretol-XR is not meant for dispersion as an oral suspension."
+          }
+        ]
+      }
     }
   },
   "evidenceChecks": [
@@ -8215,6 +8848,8 @@
     "ibd2-tramadol": "tramadol-source-review-20261115",
     "ibd2-meropenem": "meropenem-source-review-20261116",
     "ibd2-prothiazine": "promethazine-source-review-20261116",
-    "ibd2-avilac": "lactulose-source-review-20261116"
+    "ibd2-avilac": "lactulose-source-review-20261116",
+    "ibd2-gabapentin": "gabapentin-source-review-20261116",
+    "ibd2-carbamazepine": "carbamazepine-source-review-20261116"
   }
 }
